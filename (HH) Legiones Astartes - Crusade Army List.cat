@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="12" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.14b" name="Legiones Astartes: Crusade Army List - HH:LACAL (2014) v12" authorName="Millicant" authorContact="Horus Heresy: Legiones Astartes - Crusade Army List (HH:LACAL)" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="12" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.14b" name="Legiones Astartes: Crusade Army List - HH:LACAL (2014) v12" authorName="Millicant" authorContact="Submit &quot;new issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" book="HH:LACAL" page="55">
       <entries/>
@@ -13395,6 +13395,11 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       <description>A model using a close combat weapon with this special rule can only every make a single attack at WS 1 in an Assault phase, regardless of their profile or any bonus or special rule.  </description>
       <modifiers/>
     </rule>
+    <rule id="e78b8ae8-5c48-50d1-2d2f-a81c95abd13a" name="Cybernetic Resiliance" hidden="false" book="HH3: Extermination" page="206">
+      <description>- Successful wounds by attacks with Poisoned or Fleshbane must be re-rolled against this model
+- In addition to any other effects, attacks with Haywire cause an additional wound on a D6 roll of 6.  </description>
+      <modifiers/>
+    </rule>
     <rule id="ca3e98a3-b768-c0dc-8af3-41ec91179bb2" name="Cybernetica Cortex" hidden="false" book="HH3: Extermination" page="206">
       <description>Models the have Programmed Behaviour, Fearless, Cybernetic Resiliance, and Adamantium Will special rules.  </description>
       <modifiers/>
@@ -13405,6 +13410,10 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
     </rule>
     <rule id="e31cf870-3fa6-f2a2-8704-9bf05f7efcd8" name="Deflagrate" hidden="false" book="HH:LACAL" page="85">
       <description>After normal attacks by this weapon have been resolved, count the number of unsaved wounds caused on the target unit.  Immediately resolve a number of additional automatic hits on the same unit using the weapon&apos;s profile equal to the number of unsaved wounds - these can then be saved normally.  Models must still be in range in order for the additional hits to take effect.  These additional hits do not themselves cause more hits.  </description>
+      <modifiers/>
+    </rule>
+    <rule id="483ce418-4410-b57f-c6da-0abdeba6e2d5" name="Djinn-sight" hidden="false" book="HH3: Extermination" page="222">
+      <description>Reduces enemy benefit from cover by -2.  Additionally infiltrators may not be deployed within 24&quot;.  </description>
       <modifiers/>
     </rule>
     <rule id="ecfa2ca1-a0dc-98c5-cf90-3d110382112f" name="Duellist&apos;s Edge" hidden="false" book="HH:LACAL" page="86">
@@ -13461,6 +13470,15 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
 - In the case of a failed Cybertheurgy attempt, always apply Malifica instead of rolling</description>
       <modifiers/>
     </rule>
+    <rule id="c836b3b1-0275-ebaa-4b8b-e164b29b159d" name="Programmed Behaviour" hidden="false" book="HH3: Extermination" page="206">
+      <description>Unless within 12&quot; of a friendly model with a Cortex Controller, the following restrictions apply (unless already locked in an assault)
+
+- Methodical: May not make Sweeping Advances or Run moves
+- Target Priority: If enemy models are within 12&quot; and line of sight during their shooting phase, the unit must fire all its weapons against the closest enemy unit it is able to harm.  If this is not the case, they are free to select targets as normal.
+- Onslaught: If enemy units are within 12&quot; during their Assault phase, them must attempt to charge the closest enemy unit.  May still only charge a unit fired upon.  If consolidating, must consolidate towards the closest enemy if within 12&quot;
+- Fire Protocols: May fire up to three weapons in the shooting phase against the same target. </description>
+      <modifiers/>
+    </rule>
     <rule id="3c82221c-a8de-fa0e-845e-225e326822d8" name="Rad-phage" hidden="false" book="HH:LACAL" page="84">
       <description>A model which loses one or more wounds to an attack with this rule and survives suffers a -1 penalty to its Toughness value for the rest of the battle.  </description>
       <modifiers/>
@@ -13483,24 +13501,6 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       <description>Attacks with this special rule may re-roll failed armour penetration rolls against fortifications and immobile structures and add +1 to any result rolled on the Building Damage chart.  If this attack damages a bulkhead or wall section of terrain and destroys it, remove that section of terrain from play if possible.  </description>
       <modifiers/>
     </rule>
-    <rule id="e78b8ae8-5c48-50d1-2d2f-a81c95abd13a" name="Cybernetic Resiliance" hidden="false" book="HH3: Extermination" page="206">
-      <description>- Successful wounds by attacks with Poisoned or Fleshbane must be re-rolled against this model
-- In addition to any other effects, attacks with Haywire cause an additional wound on a D6 roll of 6.  </description>
-      <modifiers/>
-    </rule>
-    <rule id="c836b3b1-0275-ebaa-4b8b-e164b29b159d" name="Programmed Behaviour" hidden="false" book="HH3: Extermination" page="206">
-      <description>Unless within 12&quot; of a friendly model with a Cortex Controller, the following restrictions apply (unless already locked in an assault)
-
-- Methodical: May not make Sweeping Advances or Run moves
-- Target Priority: If enemy models are within 12&quot; and line of sight during their shooting phase, the unit must fire all its weapons against the closest enemy unit it is able to harm.  If this is not the case, they are free to select targets as normal.
-- Onslaught: If enemy units are within 12&quot; during their Assault phase, them must attempt to charge the closest enemy unit.  May still only charge a unit fired upon.  If consolidating, must consolidate towards the closest enemy if within 12&quot;
-- Fire Protocols: May fire up to three weapons in the shooting phase against the same target. </description>
-      <modifiers/>
-    </rule>
-    <rule id="483ce418-4410-b57f-c6da-0abdeba6e2d5" name="Djinn-sight" hidden="false" book="HH3: Extermination" page="222">
-      <description>Reduces enemy benefit from cover by -2.  Additionally infiltrators may not be deployed within 24&quot;.  </description>
-      <modifiers/>
-    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="9045e242-71f8-6029-fc57-2b7cbedcc398" profileTypeId="576561706f6e23232344415441232323" name="Archaeotech Pistol" hidden="false" book="HH:LACAL" page="82">
@@ -13521,6 +13521,12 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
     <profile id="06710a9d-a2a8-638f-91b0-2af2fb3e95c2" profileTypeId="57617267656172204974656d23232344415441232323" name="Armoured Cockpit" hidden="false" book="HH:LACAL" page="88">
       <characteristics>
         <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="May ignore Crew shaken or stunned on a D6 roll of 4+"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="e0898f15-4b47-28f4-313e-0b321f0a3dca" profileTypeId="57617267656172204974656d23232344415441232323" name="Atomantic Shielding" hidden="false" book="HH3: Extermination" page="207">
+      <characteristics>
+        <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Gains 5++ Invulnerable save from shooting attacks and explosions, and a 6++ Invulnerable save in close combat.  In addition, add +1 to the range of explosions from the Reactor Blast rule.  "/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -13644,6 +13650,15 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
     <profile id="67e9d995-de3f-f033-9026-c1faa0a9433a" profileTypeId="57617267656172204974656d23232344415441232323" name="Cyber-familiar" hidden="false" book="HH:LACAL" page="89">
       <characteristics>
         <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="A Cyber-familiar adds +1 to its owners Invulnerable save (to a maximum of 3++) or provides an Invulnerable save of a 6++.   In addition they allow the owner to re-roll failed characteristic tests other than Leadership tests and failed Dangerous Terrain tests.  "/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="9b545cad-f453-fde8-4d11-c8d7fc63a97d" profileTypeId="576561706f6e23232344415441232323" name="Darkfire Cannon" hidden="false" book="HH3: Extermination" page="209">
+      <characteristics>
+        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="60&quot;"/>
+        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="7"/>
+        <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
+        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 2, Lance, Blind, Gets Hot"/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -13779,6 +13794,15 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       </characteristics>
       <modifiers/>
     </profile>
+    <profile id="d5997105-bba3-137b-3c61-d8fa2e2b79da" profileTypeId="576561706f6e23232344415441232323" name="Irad-cleanser" hidden="false" book="HH1: Betrayal" page="240">
+      <characteristics>
+        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="Template"/>
+        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="2"/>
+        <characteristic characteristicId="415023232344415441232323" name="AP" value="5"/>
+        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Assault 1, Fleshbane, Rad-Phage"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
     <profile id="10b59cf4-3c97-e3e0-2185-853bcde6d112" profileTypeId="57617267656172204974656d23232344415441232323" name="Iron Halo" hidden="false" page="0">
       <characteristics>
         <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Confers 4++ Invulnerable Save"/>
@@ -13874,6 +13898,21 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       </characteristics>
       <modifiers/>
     </profile>
+    <profile id="db39009f-4389-822f-d3ba-fe3b5ee5e506" profileTypeId="576561706f6e23232344415441232323" name="Lightning Gun" hidden="false" book="HH1: Betrayal" page="240">
+      <characteristics>
+        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="18&quot;"/>
+        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="7"/>
+        <characteristic characteristicId="415023232344415441232323" name="AP" value="5"/>
+        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 1, Shred, Rending"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="55149030-a3cd-418d-d04f-06aa29450a55" profileTypeId="57617267656172204974656d23232344415441232323" name="Lorica Thallax" hidden="false" book="HH1: Betrayal" page="240">
+      <characteristics>
+        <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Porvides 4+ Armour and FNP 6+ but may not make Sweeping Advances"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
     <profile id="b4632691-8dcc-7fe7-b324-18b20f07c4ab" profileTypeId="57617267656172204974656d23232344415441232323" name="Narthecium" hidden="false" page="0">
       <characteristics>
         <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description"/>
@@ -13910,6 +13949,15 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
         <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="5"/>
         <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
         <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Assault 1, One Use, Blast, Poisoned (3+), Crawling Fire, Lingering Death"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="770a703c-f4d1-1b4c-cdd2-124fe8d3018d" profileTypeId="576561706f6e23232344415441232323" name="Photon Thruster" hidden="false" book="HH3: Extermination" page="209">
+      <characteristics>
+        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="48&quot;"/>
+        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="6"/>
+        <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
+        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 2, Lance, Blind, Gets Hot"/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -14099,54 +14147,6 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
         <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="5"/>
         <characteristic characteristicId="415023232344415441232323" name="AP" value="5"/>
         <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Pistol, Deflagrate"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="9b545cad-f453-fde8-4d11-c8d7fc63a97d" profileTypeId="576561706f6e23232344415441232323" name="Darkfire Cannon" hidden="false" book="HH3: Extermination" page="209">
-      <characteristics>
-        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="60&quot;"/>
-        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="7"/>
-        <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
-        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 2, Lance, Blind, Gets Hot"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="db39009f-4389-822f-d3ba-fe3b5ee5e506" profileTypeId="576561706f6e23232344415441232323" name="Lightning Gun" hidden="false" book="HH1: Betrayal" page="240">
-      <characteristics>
-        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="18&quot;"/>
-        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="7"/>
-        <characteristic characteristicId="415023232344415441232323" name="AP" value="5"/>
-        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 1, Shred, Rending"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="55149030-a3cd-418d-d04f-06aa29450a55" profileTypeId="57617267656172204974656d23232344415441232323" name="Lorica Thallax" hidden="false" book="HH1: Betrayal" page="240">
-      <characteristics>
-        <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Porvides 4+ Armour and FNP 6+ but may not make Sweeping Advances"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="770a703c-f4d1-1b4c-cdd2-124fe8d3018d" profileTypeId="576561706f6e23232344415441232323" name="Photon Thruster" hidden="false" book="HH3: Extermination" page="209">
-      <characteristics>
-        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="48&quot;"/>
-        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="6"/>
-        <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
-        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 2, Lance, Blind, Gets Hot"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="d5997105-bba3-137b-3c61-d8fa2e2b79da" profileTypeId="576561706f6e23232344415441232323" name="Irad-cleanser" hidden="false" book="HH1: Betrayal" page="240">
-      <characteristics>
-        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="Template"/>
-        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="2"/>
-        <characteristic characteristicId="415023232344415441232323" name="AP" value="5"/>
-        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Assault 1, Fleshbane, Rad-Phage"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="e0898f15-4b47-28f4-313e-0b321f0a3dca" profileTypeId="57617267656172204974656d23232344415441232323" name="Atomantic Shielding" hidden="false" book="HH3: Extermination" page="207">
-      <characteristics>
-        <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Gains 5++ Invulnerable save from shooting attacks and explosions, and a 6++ Invulnerable save in close combat.  In addition, add +1 to the range of explosions from the Reactor Blast rule.  "/>
       </characteristics>
       <modifiers/>
     </profile>
