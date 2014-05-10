@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d8d6fdc5-782e-cc34-6b3a-fc027ebf35f0" revision="15" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.14b" name="Mechanicum: Taghmata Omnissiah - HH3: Extermination (2014) v15" authorName="Millicant" authorContact="Submit &quot;New Issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d8d6fdc5-782e-cc34-6b3a-fc027ebf35f0" revision="17" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.14b" name="Mechanicum: Taghmata Omnissiah - HH3: Extermination (2014) v17" authorName="Millicant" authorContact="Submit &quot;New Issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a45b29b6-925c-d858-ea0c-e187a23123fa" name="Adsecularis Covenant" points="5.0" categoryId="54726f6f707323232344415441232323" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" book="HH3: Extermination" page="221">
       <entries>
@@ -1734,23 +1734,7 @@
     <entry id="6f120601-2058-a8cd-070e-daf14adfaa10" name="Magos Prime" points="95.0" categoryId="485123232344415441232323" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" book="HH3: Extermination" page="214">
       <entries>
         <entry id="18d57256-237b-ddbb-592c-694f19758d6b" name="Archmagos Prime" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="1" collective="false" book="" page="0">
-          <entries>
-            <entry id="1de96c27-b7b3-68e0-c819-f68e9e343c44" name="Djinn-skein" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" book="" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles>
-                <profile id="7da31f99-7941-3b32-81d9-9ef66a8120e4" profileTypeId="57617267656172204974656d23232344415441232323" name="Djinn-skein" hidden="false" book="HH3: Extermination" page="215">
-                  <characteristics>
-                    <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Provides the following:  - At the start of his shooting phase, the Archmagos Prime may nominate a single unit from his primary detachment (including himself) within 6&quot; of him or any Cyber-occularis purchased as a part of his wargear to benefit from +1 BS. - Friendly units from the primary detachment including the Archmagos who deep strike within 6&quot; do not scatter - Barrage weapons in the same detachment may draw line of sight from the Archmagos or any of his Cyrber-occularis"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-              </profiles>
-              <links/>
-            </entry>
-          </entries>
+          <entries/>
           <entryGroups/>
           <modifiers/>
           <rules>
@@ -2420,8 +2404,44 @@
           </entries>
           <entryGroups/>
           <modifiers>
-            <modifier type="set" field="maxSelections" value="2.0" repeat="true" numRepeats="1" incrementParentId="6f120601-2058-a8cd-070e-daf14adfaa10" incrementChildId="ce336280-eb07-01ff-052c-e4eef049f5f9" incrementField="selections" incrementValue="1.0">
+            <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="6f120601-2058-a8cd-070e-daf14adfaa10" incrementChildId="ce336280-eb07-01ff-052c-e4eef049f5f9" incrementField="selections" incrementValue="1.0">
               <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <links/>
+        </entryGroup>
+        <entryGroup id="76956a6f-b69b-5c33-39fd-e5d0cc94552c" name="Archmagos Prime may take:" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false">
+          <entries>
+            <entry id="2f8954c7-bf25-017b-5d83-495066e4142f" name="Djinn-skein" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" book="" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="6f120601-2058-a8cd-070e-daf14adfaa10" childId="18d57256-237b-ddbb-592c-694f19758d6b" field="selections" type="equal to" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <rules/>
+              <profiles>
+                <profile id="ca605e3d-28fb-761a-6a0c-d616eabae2f4" profileTypeId="57617267656172204974656d23232344415441232323" name="Djinn-skein" hidden="false" book="HH3: Extermination" page="215">
+                  <characteristics>
+                    <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Provides the following:  - At the start of his shooting phase, the Archmagos Prime may nominate a single unit from his primary detachment (including himself) within 6&quot; of him or any Cyber-occularis purchased as a part of his wargear to benefit from +1 BS. - Friendly units from the primary detachment including the Archmagos who deep strike within 6&quot; do not scatter - Barrage weapons in the same detachment may draw line of sight from the Archmagos or any of his Cyrber-occularis"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers>
+            <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="6f120601-2058-a8cd-070e-daf14adfaa10" childId="18d57256-237b-ddbb-592c-694f19758d6b" field="selections" type="equal to" value="0.0"/>
+              </conditions>
               <conditionGroups/>
             </modifier>
           </modifiers>
