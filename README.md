@@ -1,4 +1,5 @@
-##Horus Heresy datafiles##
+Horus Heresy
+============
 
 ####Contents####
 
