@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d8d6fdc5-782e-cc34-6b3a-fc027ebf35f0" revision="18" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.14b" name="Mechanicum: Taghmata Omnissiah - HH3: Extermination (2014) v18" authorName="Millicant" authorContact="Submit &quot;New Issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d8d6fdc5-782e-cc34-6b3a-fc027ebf35f0" revision="19" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.14b" name="Mechanicum: Taghmata Omnissiah - HH3: Extermination (2014) v19" authorName="Millicant" authorContact="Submit &quot;New Issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a45b29b6-925c-d858-ea0c-e187a23123fa" name="Adsecularis Covenant" points="5.0" categoryId="54726f6f707323232344415441232323" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" book="HH3: Extermination" page="221">
       <entries>
@@ -1763,14 +1763,6 @@
           </profiles>
           <links/>
         </entry>
-        <entry id="0970ab7c-9dc8-4163-6037-f178498279bb" name="May be mounted on an Abeyant" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles/>
-          <links/>
-        </entry>
         <entry id="fc3b6107-122a-0678-e5af-baf1276b0083" name="Mastercraft a single weapon" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups/>
@@ -1787,7 +1779,7 @@
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="6f120601-2058-a8cd-070e-daf14adfaa10" incrementChildId="18d57256-237b-ddbb-592c-694f19758d6b" incrementField="selections" incrementValue="1.0">
+                <modifier type="hide" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="6f120601-2058-a8cd-070e-daf14adfaa10" incrementChildId="18d57256-237b-ddbb-592c-694f19758d6b" incrementField="selections" incrementValue="1.0">
                   <conditions>
                     <condition parentId="6f120601-2058-a8cd-070e-daf14adfaa10" childId="18d57256-237b-ddbb-592c-694f19758d6b" field="selections" type="equal to" value="0.0"/>
                   </conditions>
@@ -2415,19 +2407,12 @@
           </modifiers>
           <links/>
         </entryGroup>
-        <entryGroup id="76956a6f-b69b-5c33-39fd-e5d0cc94552c" name="Archmagos Prime may take:" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="true">
+        <entryGroup id="76956a6f-b69b-5c33-39fd-e5d0cc94552c" name="Archmagos Prime may take:" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
           <entries>
             <entry id="4fa794bb-c66c-6570-5fcf-ef5107df5fd2" name="Djinn-skein" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" book="" page="0">
               <entries/>
               <entryGroups/>
-              <modifiers>
-                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="6f120601-2058-a8cd-070e-daf14adfaa10" childId="18d57256-237b-ddbb-592c-694f19758d6b" field="selections" type="equal to" value="0.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
+              <modifiers/>
               <rules/>
               <profiles>
                 <profile id="bdabb5b8-e220-e9f3-a29e-ab5b7a8b125f" profileTypeId="57617267656172204974656d23232344415441232323" name="Djinn-skein" hidden="false" book="HH3: Extermination" page="215">
@@ -2437,6 +2422,28 @@
                   <modifiers/>
                 </profile>
               </profiles>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers>
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="6f120601-2058-a8cd-070e-daf14adfaa10" childId="18d57256-237b-ddbb-592c-694f19758d6b" field="selections" type="equal to" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <links/>
+        </entryGroup>
+        <entryGroup id="81caf4f2-f900-fef6-1aca-5f899d39b98c" name="May be mounted on:" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+          <entries>
+            <entry id="d150e774-a2f8-58fc-5875-b1c9dc4d6566" name="Abeyant" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
               <links/>
             </entry>
           </entries>
@@ -2632,193 +2639,6 @@
           <modifiers/>
         </link>
       </links>
-    </entry>
-    <entry id="495ccaf3-b38f-10ab-1f81-dd66b7b3e9ca" name="Mechanicum Cerastus Knight-Lancer" points="400.0" categoryId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" book="HH3: Extermination" page="231">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <rules>
-        <rule id="5867f745-02cb-ce5e-6a69-8b88f6c0b5ff" name="Swift Strike" hidden="false" book="HH3: Extermination" page="231">
-          <description>Gains +1 to initiative on any turn that it charges into close combat. </description>
-          <modifiers/>
-        </rule>
-        <rule id="2b6f3306-a80e-3b10-2874-548e631414d2" name="Flank Speed" hidden="false" book="HH3: Extermination" page="231">
-          <description>If the Knight chooses to Run instead of firing a weapon in the shooting phase, may move 3D6&quot;</description>
-          <modifiers/>
-        </rule>
-      </rules>
-      <profiles>
-        <profile id="19541bf5-ea0c-15cc-51e7-337176651e8f" profileTypeId="57617267656172204974656d23232344415441232323" name="Ion Gauntlet Shield" hidden="false" book="HH3: Extermination" page="2310">
-          <characteristics>
-            <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Operates as a Knights Ion Shield with the following exceptions:  - May not protect Rear armour - Provides 5++ Invulnerable save in close combat - Forces close combat attacks by other Super-heavy Walkers or Gargantuan Creatures to suffer a -1 to hit. "/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-        <profile id="dc324d9b-c61b-d0e7-795f-07370e766868" profileTypeId="576561706f6e23232344415441232323" name="Cerastus Shock Lance (Melee)" hidden="false" book="HH3: Extermination" page="231">
-          <characteristics>
-            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
-            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="D"/>
-            <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
-            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Swift Strike"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-        <profile id="8ded8d6c-cd19-b6b6-de52-8a0726f11a84" profileTypeId="576561706f6e23232344415441232323" name="Cerastus Shock Lance (Ranged)" hidden="false" book="HH3: Extermination" page="231">
-          <characteristics>
-            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="18&quot;"/>
-            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="7"/>
-            <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
-            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 6, Concussive"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-        <profile id="46f07208-68c6-3a55-bc22-b28e740c8986" profileTypeId="57616c6b657223232344415441232323" name="Cerastus Knight-Lancer" hidden="false" book="HH3: Extermination" page="231">
-          <characteristics>
-            <characteristic characteristicId="575323232344415441232323" name="WS" value="4"/>
-            <characteristic characteristicId="425323232344415441232323" name="BS" value="4"/>
-            <characteristic characteristicId="5323232344415441232323" name="S" value="10"/>
-            <characteristic characteristicId="46726f6e7423232344415441232323" name="Front" value="13"/>
-            <characteristic characteristicId="5369646523232344415441232323" name="Side" value="12"/>
-            <characteristic characteristicId="5265617223232344415441232323" name="Rear" value="12"/>
-            <characteristic characteristicId="4923232344415441232323" name="I" value="4"/>
-            <characteristic characteristicId="4123232344415441232323" name="A" value="4"/>
-            <characteristic characteristicId="485023232344415441232323" name="HP" value="6"/>
-            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Super-heavy Walker"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-      </profiles>
-      <links/>
-    </entry>
-    <entry id="b39f6c4a-95ac-a123-ab10-548870e74ccf" name="Mechanicum Questoris Knight" points="0.0" categoryId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" type="model" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" book="HH3: Extermination" page="230">
-      <entries/>
-      <entryGroups>
-        <entryGroup id="c272f0ac-1ed0-978a-0ef1-0f9dd0cee327" name="Knight" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
-          <entries>
-            <entry id="ae4a9d11-0fb9-4aff-19b3-0c14ca07fd19" name="Knight Errant" points="375.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles>
-                <profile id="4f1c7403-77e7-3dcb-9625-1c4e8e66e296" profileTypeId="57616c6b657223232344415441232323" name="Knight Errant" hidden="false" book="HH3: Extermination" page="230">
-                  <characteristics>
-                    <characteristic characteristicId="575323232344415441232323" name="WS" value="4"/>
-                    <characteristic characteristicId="425323232344415441232323" name="BS" value="4"/>
-                    <characteristic characteristicId="5323232344415441232323" name="S" value="10"/>
-                    <characteristic characteristicId="46726f6e7423232344415441232323" name="Front" value="13"/>
-                    <characteristic characteristicId="5369646523232344415441232323" name="Side" value="12"/>
-                    <characteristic characteristicId="5265617223232344415441232323" name="Rear" value="12"/>
-                    <characteristic characteristicId="4923232344415441232323" name="I" value="4"/>
-                    <characteristic characteristicId="4123232344415441232323" name="A" value="3"/>
-                    <characteristic characteristicId="485023232344415441232323" name="HP" value="6"/>
-                    <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Super-heavy Walker"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-                <profile id="1ac758bc-c24f-c92a-4feb-3abb7fc12a5b" profileTypeId="576561706f6e23232344415441232323" name="Thermal Cannon" hidden="false" book="HH3: Extermination" page="230">
-                  <characteristics>
-                    <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="36&quot;"/>
-                    <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="9"/>
-                    <characteristic characteristicId="415023232344415441232323" name="AP" value="1"/>
-                    <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 1, Melta, Large Blast"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-                <profile id="e25d2874-86a4-adc3-f44f-2f8c45fc497b" profileTypeId="576561706f6e23232344415441232323" name="Reaper Chainsword" hidden="false" book="HH3: Extermination" page="230">
-                  <characteristics>
-                    <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
-                    <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="D"/>
-                    <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
-                    <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-                <profile id="355f3c11-2aca-125a-5701-2644e1d370d4" profileTypeId="57617267656172204974656d23232344415441232323" name="Ion Shield" hidden="false" book="HH3: Extermination" page="230">
-                  <characteristics>
-                    <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Upon deployment and at the start of each of the opponents shooting phases, the controlling player must declare which facing the Ion Shield is covering.  May choose Front, Left, Right, or Rear.    Confers 4++ Invulnerable save against all hits on chosen single facing until the start of your opponent&apos;s next shooting phase.  Ion Shields are repositioned prior to any attacks any may not be used against close combat attacks.  "/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-                <profile id="96b1b55c-8ef1-cb67-08d0-8cf8ca5c81d9" profileTypeId="576561706f6e23232344415441232323" name="Heavy Stubber" hidden="false" book="HH3: Extermination" page="230">
-                  <characteristics>
-                    <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="36&quot;"/>
-                    <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="4"/>
-                    <characteristic characteristicId="415023232344415441232323" name="AP" value="6"/>
-                    <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 3"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-              </profiles>
-              <links/>
-            </entry>
-            <entry id="4bcdfced-69d3-e627-aa23-c8572ba57d74" name="Knight Paladin" points="375.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles>
-                <profile id="f00bc8fa-3e38-65d8-239f-877824b63334" profileTypeId="57616c6b657223232344415441232323" name="Knight Paladin" hidden="false" book="HH3: Extermination" page="230">
-                  <characteristics>
-                    <characteristic characteristicId="575323232344415441232323" name="WS" value="4"/>
-                    <characteristic characteristicId="425323232344415441232323" name="BS" value="4"/>
-                    <characteristic characteristicId="5323232344415441232323" name="S" value="10"/>
-                    <characteristic characteristicId="46726f6e7423232344415441232323" name="Front" value="13"/>
-                    <characteristic characteristicId="5369646523232344415441232323" name="Side" value="12"/>
-                    <characteristic characteristicId="5265617223232344415441232323" name="Rear" value="12"/>
-                    <characteristic characteristicId="4923232344415441232323" name="I" value="4"/>
-                    <characteristic characteristicId="4123232344415441232323" name="A" value="3"/>
-                    <characteristic characteristicId="485023232344415441232323" name="HP" value="6"/>
-                    <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Super-heavy Walker"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-                <profile id="b0e93b37-bb6e-389d-9f5d-d55208264ff0" profileTypeId="576561706f6e23232344415441232323" name="Reaper Chainsword" hidden="false" book="HH3: Extermination" page="230">
-                  <characteristics>
-                    <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
-                    <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="D"/>
-                    <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
-                    <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-                <profile id="3e824b46-f739-89b3-b000-03e0df5a4207" profileTypeId="57617267656172204974656d23232344415441232323" name="Ion Shield" hidden="false" book="HH3: Extermination" page="230">
-                  <characteristics>
-                    <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Upon deployment and at the start of each of the opponents shooting phases, the controlling player must declare which facing the Ion Shield is covering.  May choose Front, Left, Right, or Rear.    Confers 4++ Invulnerable save against all hits on chosen single facing until the start of your opponent&apos;s next shooting phase.  Ion Shields are repositioned prior to any attacks any may not be used against close combat attacks.  "/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-                <profile id="acdc6d8d-eeda-f7b4-4ea6-40423a1a79ca" profileTypeId="576561706f6e23232344415441232323" name="Rapid-fire Battle Cannon" hidden="false" book="HH3: Extermination" page="230">
-                  <characteristics>
-                    <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="72&quot;"/>
-                    <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="6"/>
-                    <characteristic characteristicId="415023232344415441232323" name="AP" value="3"/>
-                    <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Ordnance 3, Large Blast"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-                <profile id="d748ea73-8d53-c620-b7b3-a4300408c21d" profileTypeId="576561706f6e23232344415441232323" name="Heavy Stubber" hidden="false" book="HH3: Extermination" page="230">
-                  <characteristics>
-                    <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="36&quot;"/>
-                    <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="4"/>
-                    <characteristic characteristicId="415023232344415441232323" name="AP" value="6"/>
-                    <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 3"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-              </profiles>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <links/>
-        </entryGroup>
-      </entryGroups>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links/>
     </entry>
     <entry id="3891401d-d185-fd14-aea1-8fa1905588cd" name="Myrmidon Destructors" points="50.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" book="HH3: Extermination" page="229">
       <entries>
@@ -4814,6 +4634,193 @@
           <modifiers/>
         </link>
       </links>
+    </entry>
+    <entry id="492a6ae0-eba2-0014-38f2-d5b6d763b973" name="War Machine Detachment" points="0.0" categoryId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="47ac1cbf-9d01-9ee0-cf83-2e18cfa0f1fd" name="War Machine Detachment" minSelections="0" maxSelections="2" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+          <entries>
+            <entry id="b4eac189-23aa-be2e-f117-d75ebef5be18" name="Mechanicum Cerastus Knight-Lancer" points="400.0" categoryId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" type="model" minSelections="0" maxSelections="2" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" book="HH3: Extermination" page="231">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules>
+                <rule id="4f3be5d6-3176-0492-c4b4-f80bc0440efe" name="Swift Strike" hidden="false" book="HH3: Extermination" page="231">
+                  <description>Gains +1 to initiative on any turn that it charges into close combat. </description>
+                  <modifiers/>
+                </rule>
+                <rule id="a3d45c3e-acda-2215-2b4d-54e713dbb687" name="Flank Speed" hidden="false" book="HH3: Extermination" page="231">
+                  <description>If the Knight chooses to Run instead of firing a weapon in the shooting phase, may move 3D6&quot;</description>
+                  <modifiers/>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="e8c43e6f-8dcd-c71c-83b9-a9a1537d0d80" profileTypeId="57617267656172204974656d23232344415441232323" name="Ion Gauntlet Shield" hidden="false" book="HH3: Extermination" page="2310">
+                  <characteristics>
+                    <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Operates as a Knights Ion Shield with the following exceptions:  - May not protect Rear armour - Provides 5++ Invulnerable save in close combat - Forces close combat attacks by other Super-heavy Walkers or Gargantuan Creatures to suffer a -1 to hit. "/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+                <profile id="1b31e6e4-7f39-12b3-ff79-06da44cd39c8" profileTypeId="576561706f6e23232344415441232323" name="Cerastus Shock Lance (Melee)" hidden="false" book="HH3: Extermination" page="231">
+                  <characteristics>
+                    <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
+                    <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="D"/>
+                    <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
+                    <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Swift Strike"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+                <profile id="34fbcecb-ecc4-99d0-7f18-0ca40016bdd2" profileTypeId="576561706f6e23232344415441232323" name="Cerastus Shock Lance (Ranged)" hidden="false" book="HH3: Extermination" page="231">
+                  <characteristics>
+                    <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="18&quot;"/>
+                    <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="7"/>
+                    <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
+                    <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 6, Concussive"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+                <profile id="d0579ea3-d398-8e1e-a366-32ff6cdd1a51" profileTypeId="57616c6b657223232344415441232323" name="Cerastus Knight-Lancer" hidden="false" book="HH3: Extermination" page="231">
+                  <characteristics>
+                    <characteristic characteristicId="575323232344415441232323" name="WS" value="4"/>
+                    <characteristic characteristicId="425323232344415441232323" name="BS" value="4"/>
+                    <characteristic characteristicId="5323232344415441232323" name="S" value="10"/>
+                    <characteristic characteristicId="46726f6e7423232344415441232323" name="Front" value="13"/>
+                    <characteristic characteristicId="5369646523232344415441232323" name="Side" value="12"/>
+                    <characteristic characteristicId="5265617223232344415441232323" name="Rear" value="12"/>
+                    <characteristic characteristicId="4923232344415441232323" name="I" value="4"/>
+                    <characteristic characteristicId="4123232344415441232323" name="A" value="4"/>
+                    <characteristic characteristicId="485023232344415441232323" name="HP" value="6"/>
+                    <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Super-heavy Walker"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="fa2873a0-6243-87fa-6ad5-20b6b4d50ff7" name="Mechanicum Questoris Knight Errant" points="375.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="35eae736-682f-abe7-6cc9-3a7ffd6753ad" profileTypeId="57616c6b657223232344415441232323" name="Knight Errant" hidden="false" book="HH3: Extermination" page="230">
+                  <characteristics>
+                    <characteristic characteristicId="575323232344415441232323" name="WS" value="4"/>
+                    <characteristic characteristicId="425323232344415441232323" name="BS" value="4"/>
+                    <characteristic characteristicId="5323232344415441232323" name="S" value="10"/>
+                    <characteristic characteristicId="46726f6e7423232344415441232323" name="Front" value="13"/>
+                    <characteristic characteristicId="5369646523232344415441232323" name="Side" value="12"/>
+                    <characteristic characteristicId="5265617223232344415441232323" name="Rear" value="12"/>
+                    <characteristic characteristicId="4923232344415441232323" name="I" value="4"/>
+                    <characteristic characteristicId="4123232344415441232323" name="A" value="3"/>
+                    <characteristic characteristicId="485023232344415441232323" name="HP" value="6"/>
+                    <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Super-heavy Walker"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+                <profile id="406e9b4e-e0f5-6455-64f6-c137fba2798a" profileTypeId="576561706f6e23232344415441232323" name="Thermal Cannon" hidden="false" book="HH3: Extermination" page="230">
+                  <characteristics>
+                    <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="36&quot;"/>
+                    <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="9"/>
+                    <characteristic characteristicId="415023232344415441232323" name="AP" value="1"/>
+                    <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 1, Melta, Large Blast"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+                <profile id="a163c388-e1b6-bf97-f63d-04dbf1062454" profileTypeId="576561706f6e23232344415441232323" name="Reaper Chainsword" hidden="false" book="HH3: Extermination" page="230">
+                  <characteristics>
+                    <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
+                    <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="D"/>
+                    <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
+                    <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+                <profile id="d3b0fcf4-60d1-69c0-6e3e-1cb400760139" profileTypeId="57617267656172204974656d23232344415441232323" name="Ion Shield" hidden="false" book="HH3: Extermination" page="230">
+                  <characteristics>
+                    <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Upon deployment and at the start of each of the opponents shooting phases, the controlling player must declare which facing the Ion Shield is covering.  May choose Front, Left, Right, or Rear.    Confers 4++ Invulnerable save against all hits on chosen single facing until the start of your opponent&apos;s next shooting phase.  Ion Shields are repositioned prior to any attacks any may not be used against close combat attacks.  "/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+                <profile id="5f46f03c-2482-c27a-64d5-53840ba205d6" profileTypeId="576561706f6e23232344415441232323" name="Heavy Stubber" hidden="false" book="HH3: Extermination" page="230">
+                  <characteristics>
+                    <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="36&quot;"/>
+                    <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="4"/>
+                    <characteristic characteristicId="415023232344415441232323" name="AP" value="6"/>
+                    <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 3"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="ee0148be-41e8-00e4-bb16-4c9594821f57" name="Mechanicum Questoris Knight Paladin" points="375.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="da573132-2a78-38fa-66d9-69520e0234f6" profileTypeId="57616c6b657223232344415441232323" name="Knight Paladin" hidden="false" book="HH3: Extermination" page="230">
+                  <characteristics>
+                    <characteristic characteristicId="575323232344415441232323" name="WS" value="4"/>
+                    <characteristic characteristicId="425323232344415441232323" name="BS" value="4"/>
+                    <characteristic characteristicId="5323232344415441232323" name="S" value="10"/>
+                    <characteristic characteristicId="46726f6e7423232344415441232323" name="Front" value="13"/>
+                    <characteristic characteristicId="5369646523232344415441232323" name="Side" value="12"/>
+                    <characteristic characteristicId="5265617223232344415441232323" name="Rear" value="12"/>
+                    <characteristic characteristicId="4923232344415441232323" name="I" value="4"/>
+                    <characteristic characteristicId="4123232344415441232323" name="A" value="3"/>
+                    <characteristic characteristicId="485023232344415441232323" name="HP" value="6"/>
+                    <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Super-heavy Walker"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+                <profile id="ed701810-b2b5-41fc-7954-fcf1ee4adbc0" profileTypeId="576561706f6e23232344415441232323" name="Reaper Chainsword" hidden="false" book="HH3: Extermination" page="230">
+                  <characteristics>
+                    <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
+                    <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="D"/>
+                    <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
+                    <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+                <profile id="7e0751ca-5f97-f26f-36e9-3bbaa25d588b" profileTypeId="57617267656172204974656d23232344415441232323" name="Ion Shield" hidden="false" book="HH3: Extermination" page="230">
+                  <characteristics>
+                    <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Upon deployment and at the start of each of the opponents shooting phases, the controlling player must declare which facing the Ion Shield is covering.  May choose Front, Left, Right, or Rear.    Confers 4++ Invulnerable save against all hits on chosen single facing until the start of your opponent&apos;s next shooting phase.  Ion Shields are repositioned prior to any attacks any may not be used against close combat attacks.  "/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+                <profile id="e35488ee-20cb-f7d7-9c2f-54dfcdd5f257" profileTypeId="576561706f6e23232344415441232323" name="Rapid-fire Battle Cannon" hidden="false" book="HH3: Extermination" page="230">
+                  <characteristics>
+                    <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="72&quot;"/>
+                    <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="6"/>
+                    <characteristic characteristicId="415023232344415441232323" name="AP" value="3"/>
+                    <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Ordnance 3, Large Blast"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+                <profile id="5e45d537-95c9-c083-4ae1-0196dcbf9234" profileTypeId="576561706f6e23232344415441232323" name="Heavy Stubber" hidden="false" book="HH3: Extermination" page="230">
+                  <characteristics>
+                    <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="36&quot;"/>
+                    <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="4"/>
+                    <characteristic characteristicId="415023232344415441232323" name="AP" value="6"/>
+                    <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 3"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
     </entry>
   </entries>
   <rules/>
