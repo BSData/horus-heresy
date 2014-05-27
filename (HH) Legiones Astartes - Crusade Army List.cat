@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="23" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.14b" name="Legiones Astartes: Crusade Army List - HH:LACAL (2014) v23" authorName="Millicant" authorContact="Submit &quot;new issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues?state=open" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="24" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.14b" name="Legiones Astartes: Crusade Army List - HH:LACAL (2014) v24" authorName="Millicant" authorContact="Submit &quot;new issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues?state=open" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" book="HH:LACAL" page="55">
       <entries/>
@@ -12520,7 +12520,7 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
             </entry>
           </entries>
           <entryGroups>
-            <entryGroup id="94f39ce3-a567-ad5c-fd6a-3ef2bc1865bb" name="Trade Bolt Pistol for:" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+            <entryGroup id="94f39ce3-a567-ad5c-fd6a-3ef2bc1865bb" name="Exchange Chainsword/Combat Blade for:" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
               <entries>
                 <entry id="633070a8-016e-457a-a8c8-d07e4690f6fc" name="Combi-Weapon" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
                   <entries/>
@@ -12572,7 +12572,15 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
                 </entry>
               </entries>
               <entryGroups/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="hide" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="da40e015-a22c-ecc4-c9b8-0add9ff5d50f" childId="f0b3cd06-d2a7-888c-1d33-756a8a492b26" field="selections" type="equal to" value="0.0"/>
+                    <condition parentId="da40e015-a22c-ecc4-c9b8-0add9ff5d50f" childId="26c838db-a6f2-b887-5cde-2e7236130fee" field="selections" type="equal to" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <links>
                 <link id="2188d7ae-7fb3-7ecc-e6a1-f4096d4bc745" targetId="30834ca2-20b0-cb5a-c7db-f76092533a64" linkType="entry">
                   <modifiers>
@@ -12607,9 +12615,12 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
                 <link id="57d76696-d6c3-5983-bf77-a3512575b405" targetId="2acd15a3-57b3-6c4e-1199-0fa706a5b3d8" linkType="entry">
                   <modifiers/>
                 </link>
+                <link id="3c9b4dca-c383-1793-b4b2-bcd8b52a5a80" targetId="fa1c768d-9b24-bfbd-8dea-ec7b4ff72bb2" linkType="entry">
+                  <modifiers/>
+                </link>
               </links>
             </entryGroup>
-            <entryGroup id="a8b03166-dd5e-29fa-a642-bd1b7d0bcae2" name="Trade Bolter for:" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+            <entryGroup id="a8b03166-dd5e-29fa-a642-bd1b7d0bcae2" name="Exchange Bolter for:" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
               <entries>
                 <entry id="7270192d-e832-36fe-0afc-220f1cf6a80c" name="Combi-Weapon" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
                   <entries/>
@@ -12662,7 +12673,7 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
               </entries>
               <entryGroups/>
               <modifiers>
-                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="hide" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
                     <condition parentId="da40e015-a22c-ecc4-c9b8-0add9ff5d50f" childId="26c838db-a6f2-b887-5cde-2e7236130fee" field="selections" type="equal to" value="1.0"/>
                   </conditions>
@@ -12701,39 +12712,6 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
                   <modifiers/>
                 </link>
                 <link id="b1271871-f0a7-fdfe-9e8f-ae7ce4ee8e9e" targetId="c31253d0-d1b9-35ac-6435-f1a06611e356" linkType="entry">
-                  <modifiers/>
-                </link>
-              </links>
-            </entryGroup>
-            <entryGroup id="0617a7c2-eb69-c833-9885-24162ff043d9" name="Exchange Chainsword/Combat Blade for a Caedere Weapon:" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers>
-                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="da40e015-a22c-ecc4-c9b8-0add9ff5d50f" childId="26c838db-a6f2-b887-5cde-2e7236130fee" field="selections" type="equal to" value="0.0"/>
-                    <condition parentId="da40e015-a22c-ecc4-c9b8-0add9ff5d50f" childId="f0b3cd06-d2a7-888c-1d33-756a8a492b26" field="selections" type="equal to" value="0.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-                <modifier type="hide" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="roster" childId="9b4df3ce-4083-9562-3cc1-02947b5ba466" field="selections" type="equal to" value="0.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <links>
-                <link id="94bcc19b-b210-0255-d83e-7a8c2708e526" targetId="19aadb8a-b814-c2c0-0198-223c038c1950" linkType="entry">
-                  <modifiers/>
-                </link>
-                <link id="a80835a8-9209-c84e-c2f9-72aa25f517b1" targetId="c668914a-edb4-6b51-13b1-b1b4542eed6f" linkType="entry">
-                  <modifiers/>
-                </link>
-                <link id="b8690102-53ae-3cfa-d3e9-b90d3cd004a0" targetId="4b74a48f-4b50-01c0-53b2-f88c01fc0306" linkType="entry">
-                  <modifiers/>
-                </link>
-                <link id="7075f3b9-b6db-fda5-8cb3-1261cfd72704" targetId="ca97e7b7-6f10-cd1c-17be-8d56aa708770" linkType="entry">
                   <modifiers/>
                 </link>
               </links>
@@ -17677,6 +17655,16 @@ Phalanx Breacher squads and Legion Terminator squads may be taken as troops in a
     </link>
     <link id="5e5fe1df-a642-9d32-cd77-b03e74da98b5" targetId="9c4b5745-1a15-ed4a-0124-e6a877f2c496" linkType="entry" categoryId="466173742041747461636b23232344415441232323">
       <modifiers/>
+    </link>
+    <link id="27979d40-d52a-33c3-fbb5-9ff716f2d194" targetId="e6d27859-b474-aa9d-c4bc-7a4b9b2c8737" linkType="entry" categoryId="54726f6f707323232344415441232323">
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="7c741cce-8850-b98f-3b84-cd0d84c3dada" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
     </link>
   </links>
   <sharedEntries>
@@ -28938,17 +28926,11 @@ If the test is failed, the unit immediately suffers D6 wounds at AP2 with Instan
         </link>
       </links>
     </entryGroup>
-    <entryGroup id="bc0f78af-a75f-e3b4-b48f-af5df2bc8207" name="Caedere Weapons" minSelections="0" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+    <entryGroup id="bc0f78af-a75f-e3b4-b48f-af5df2bc8207" name="Caedere Weapons" defaultEntryId="e5e3381f-b1e4-1704-4950-cd1e57ab4f28" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
       <entries/>
       <entryGroups/>
       <modifiers>
         <modifier type="hide" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="9b4df3ce-4083-9562-3cc1-02947b5ba466" field="selections" type="equal to" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-        <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
             <condition parentId="roster" childId="9b4df3ce-4083-9562-3cc1-02947b5ba466" field="selections" type="equal to" value="0.0"/>
           </conditions>
