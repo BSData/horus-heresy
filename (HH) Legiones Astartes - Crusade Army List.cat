@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="29" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.14b" name="Legiones Astartes: Crusade Army List" books="HH:LACAL - 2014" authorName="Millicant" authorContact="Submit &quot;new issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues?state=open" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="30" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.14b" name="Legiones Astartes: Crusade Army List" books="HH:LACAL - 2014" authorName="Millicant" authorContact="Submit &quot;new issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues?state=open" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" book="HH:LACAL" page="55">
       <entries/>
@@ -7124,7 +7124,7 @@ In addtion, all units with the Legiones Astartes (Emperor&apos;s Children) rule 
         </link>
       </links>
     </entry>
-    <entry id="957bd47c-1513-0f25-6950-611bced0c302" name="Legion Destroyer Squad" points="30.0" categoryId="456c6974657323232344415441232323" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" book="HH:LACAL" page="21">
+    <entry id="957bd47c-1513-0f25-6950-611bced0c302" name="Legion Destroyer Squad" points="70.0" categoryId="456c6974657323232344415441232323" type="unit" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" book="HH:LACAL" page="21">
       <entries>
         <entry id="a1b4e6ca-5f80-fa2e-2b7e-0d2d490d2fcb" name="Legion Destroyer Space Marine" points="20.0" categoryId="(No Category)" type="model" minSelections="4" maxSelections="9" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false" page="0">
           <entries/>
@@ -7391,18 +7391,13 @@ In addtion, all units with the Legiones Astartes (Emperor&apos;s Children) rule 
                     <conditionGroup type="or">
                       <conditions>
                         <condition parentId="roster" childId="4a764dc5-72ab-10bb-22e3-fee1ae4edfe2" field="selections" type="equal to" value="1.0"/>
-                        <condition parentId="roster" childId="d4a072f3-d9e1-f557-02f5-e0bd15cb38d0" field="selections" type="equal to" value="1.0"/>
                         <condition parentId="roster" childId="e0cec0c2-a6db-2c94-aacb-dc4dc8085e41" field="selections" type="equal to" value="1.0"/>
-                        <condition parentId="roster" childId="52fbec20-bbab-4ff5-4258-ef4cb6ca8752" field="selections" type="equal to" value="1.0"/>
                       </conditions>
                       <conditionGroups/>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
               </modifiers>
-            </link>
-            <link id="3ee0110c-34cc-46c5-596a-cb72fccdaeae" targetId="8cc05fec-8274-bea3-5d54-d249b36a3209" linkType="entry">
-              <modifiers/>
             </link>
             <link id="e1ffd1d1-71dc-2354-ce56-778faaa56f33" targetId="a8eda173-f749-cfb6-fd0e-3d6fb35cad3b" linkType="entry">
               <modifiers>
@@ -7442,6 +7437,22 @@ In addtion, all units with the Legiones Astartes (Emperor&apos;s Children) rule 
                     <condition parentId="roster" childId="e0cec0c2-a6db-2c94-aacb-dc4dc8085e41" field="selections" type="equal to" value="0.0"/>
                   </conditions>
                   <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </link>
+            <link id="cabf1108-c9d2-98e9-bc36-b0d714006448" targetId="8cc05fec-8274-bea3-5d54-d249b36a3209" linkType="entry">
+              <modifiers>
+                <modifier type="hide" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition parentId="roster" childId="4a764dc5-72ab-10bb-22e3-fee1ae4edfe2" field="selections" type="equal to" value="1.0"/>
+                        <condition parentId="roster" childId="e0cec0c2-a6db-2c94-aacb-dc4dc8085e41" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </link>
@@ -11805,9 +11816,7 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
                     <conditionGroup type="or">
                       <conditions>
                         <condition parentId="roster" childId="4a764dc5-72ab-10bb-22e3-fee1ae4edfe2" field="selections" type="equal to" value="1.0"/>
-                        <condition parentId="roster" childId="d4a072f3-d9e1-f557-02f5-e0bd15cb38d0" field="selections" type="equal to" value="1.0"/>
                         <condition parentId="roster" childId="e0cec0c2-a6db-2c94-aacb-dc4dc8085e41" field="selections" type="equal to" value="1.0"/>
-                        <condition parentId="roster" childId="52fbec20-bbab-4ff5-4258-ef4cb6ca8752" field="selections" type="equal to" value="1.0"/>
                       </conditions>
                       <conditionGroups/>
                     </conditionGroup>
@@ -12066,9 +12075,7 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
                     <conditionGroup type="or">
                       <conditions>
                         <condition parentId="roster" childId="4a764dc5-72ab-10bb-22e3-fee1ae4edfe2" field="selections" type="equal to" value="1.0"/>
-                        <condition parentId="roster" childId="d4a072f3-d9e1-f557-02f5-e0bd15cb38d0" field="selections" type="equal to" value="1.0"/>
                         <condition parentId="roster" childId="e0cec0c2-a6db-2c94-aacb-dc4dc8085e41" field="selections" type="equal to" value="1.0"/>
-                        <condition parentId="roster" childId="52fbec20-bbab-4ff5-4258-ef4cb6ca8752" field="selections" type="equal to" value="1.0"/>
                       </conditions>
                       <conditionGroups/>
                     </conditionGroup>
@@ -12855,11 +12862,17 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
           <entries/>
           <entryGroups/>
           <modifiers>
-            <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="da40e015-a22c-ecc4-c9b8-0add9ff5d50f" childId="cdc44304-100a-25d6-01d5-4be1eb3b32b7" field="selections" type="greater than" value="9.0"/>
-              </conditions>
-              <conditionGroups/>
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition parentId="cda6c5c1-c988-0cb3-a02a-6cade997f240" childId="3c8a23f6-77e7-fbe3-e710-3fbf13bc4498" field="selections" type="equal to" value="0.0"/>
+                    <condition parentId="da40e015-a22c-ecc4-c9b8-0add9ff5d50f" childId="cdc44304-100a-25d6-01d5-4be1eb3b32b7" field="selections" type="greater than" value="9.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <links>
@@ -12871,9 +12884,7 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
                     <conditionGroup type="or">
                       <conditions>
                         <condition parentId="roster" childId="4a764dc5-72ab-10bb-22e3-fee1ae4edfe2" field="selections" type="equal to" value="1.0"/>
-                        <condition parentId="roster" childId="d4a072f3-d9e1-f557-02f5-e0bd15cb38d0" field="selections" type="equal to" value="1.0"/>
                         <condition parentId="roster" childId="e0cec0c2-a6db-2c94-aacb-dc4dc8085e41" field="selections" type="equal to" value="1.0"/>
-                        <condition parentId="roster" childId="52fbec20-bbab-4ff5-4258-ef4cb6ca8752" field="selections" type="equal to" value="1.0"/>
                       </conditions>
                       <conditionGroups/>
                     </conditionGroup>
@@ -13258,7 +13269,7 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
                   <conditions/>
                   <conditionGroups/>
                 </modifier>
-                <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="hide" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
                     <condition parentId="roster" childId="52fbec20-bbab-4ff5-4258-ef4cb6ca8752" field="selections" type="equal to" value="0.0"/>
                   </conditions>
@@ -20066,9 +20077,7 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
                     <conditionGroup type="or">
                       <conditions>
                         <condition parentId="roster" childId="4a764dc5-72ab-10bb-22e3-fee1ae4edfe2" field="selections" type="equal to" value="1.0"/>
-                        <condition parentId="roster" childId="d4a072f3-d9e1-f557-02f5-e0bd15cb38d0" field="selections" type="equal to" value="1.0"/>
                         <condition parentId="roster" childId="e0cec0c2-a6db-2c94-aacb-dc4dc8085e41" field="selections" type="equal to" value="1.0"/>
-                        <condition parentId="roster" childId="52fbec20-bbab-4ff5-4258-ef4cb6ca8752" field="selections" type="equal to" value="1.0"/>
                       </conditions>
                       <conditionGroups/>
                     </conditionGroup>
@@ -21159,9 +21168,7 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
                     <conditionGroup type="or">
                       <conditions>
                         <condition parentId="roster" childId="4a764dc5-72ab-10bb-22e3-fee1ae4edfe2" field="selections" type="equal to" value="1.0"/>
-                        <condition parentId="roster" childId="d4a072f3-d9e1-f557-02f5-e0bd15cb38d0" field="selections" type="equal to" value="1.0"/>
                         <condition parentId="roster" childId="e0cec0c2-a6db-2c94-aacb-dc4dc8085e41" field="selections" type="equal to" value="1.0"/>
-                        <condition parentId="roster" childId="52fbec20-bbab-4ff5-4258-ef4cb6ca8752" field="selections" type="equal to" value="1.0"/>
                       </conditions>
                       <conditionGroups/>
                     </conditionGroup>
@@ -24194,9 +24201,7 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
                     <conditionGroup type="or">
                       <conditions>
                         <condition parentId="roster" childId="4a764dc5-72ab-10bb-22e3-fee1ae4edfe2" field="selections" type="equal to" value="1.0"/>
-                        <condition parentId="roster" childId="d4a072f3-d9e1-f557-02f5-e0bd15cb38d0" field="selections" type="equal to" value="1.0"/>
                         <condition parentId="roster" childId="e0cec0c2-a6db-2c94-aacb-dc4dc8085e41" field="selections" type="equal to" value="1.0"/>
-                        <condition parentId="roster" childId="52fbec20-bbab-4ff5-4258-ef4cb6ca8752" field="selections" type="equal to" value="1.0"/>
                       </conditions>
                       <conditionGroups/>
                     </conditionGroup>
@@ -25075,7 +25080,6 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
                     <conditionGroup type="or">
                       <conditions>
                         <condition parentId="roster" childId="4a764dc5-72ab-10bb-22e3-fee1ae4edfe2" field="selections" type="equal to" value="1.0"/>
-                        <condition parentId="roster" childId="d4a072f3-d9e1-f557-02f5-e0bd15cb38d0" field="selections" type="equal to" value="1.0"/>
                         <condition parentId="roster" childId="e0cec0c2-a6db-2c94-aacb-dc4dc8085e41" field="selections" type="equal to" value="1.0"/>
                       </conditions>
                       <conditionGroups/>
@@ -26153,13 +26157,13 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
               <modifiers>
                 <modifier type="increment" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
-                    <condition parentId="08851922-b3de-b46f-ff8d-9fefaa58141f" childId="934d7fd6-6542-9ae3-dcc6-f51869b2afff" field="selections" type="equal to" value="14.0"/>
+                    <condition parentId="08851922-b3de-b46f-ff8d-9fefaa58141f" childId="934d7fd6-6542-9ae3-dcc6-f51869b2afff" field="selections" type="at least" value="14.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
                 <modifier type="increment" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
-                    <condition parentId="08851922-b3de-b46f-ff8d-9fefaa58141f" childId="934d7fd6-6542-9ae3-dcc6-f51869b2afff" field="selections" type="equal to" value="19.0"/>
+                    <condition parentId="08851922-b3de-b46f-ff8d-9fefaa58141f" childId="934d7fd6-6542-9ae3-dcc6-f51869b2afff" field="selections" type="at least" value="19.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -27193,7 +27197,6 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
                     <conditionGroup type="or">
                       <conditions>
                         <condition parentId="roster" childId="4a764dc5-72ab-10bb-22e3-fee1ae4edfe2" field="selections" type="equal to" value="1.0"/>
-                        <condition parentId="roster" childId="d4a072f3-d9e1-f557-02f5-e0bd15cb38d0" field="selections" type="equal to" value="1.0"/>
                         <condition parentId="roster" childId="e0cec0c2-a6db-2c94-aacb-dc4dc8085e41" field="selections" type="equal to" value="1.0"/>
                       </conditions>
                       <conditionGroups/>
@@ -27699,9 +27702,7 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
                     <conditionGroup type="or">
                       <conditions>
                         <condition parentId="roster" childId="4a764dc5-72ab-10bb-22e3-fee1ae4edfe2" field="selections" type="equal to" value="1.0"/>
-                        <condition parentId="roster" childId="d4a072f3-d9e1-f557-02f5-e0bd15cb38d0" field="selections" type="equal to" value="1.0"/>
                         <condition parentId="roster" childId="e0cec0c2-a6db-2c94-aacb-dc4dc8085e41" field="selections" type="equal to" value="1.0"/>
-                        <condition parentId="roster" childId="52fbec20-bbab-4ff5-4258-ef4cb6ca8752" field="selections" type="equal to" value="1.0"/>
                       </conditions>
                       <conditionGroups/>
                     </conditionGroup>
@@ -27747,6 +27748,21 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
               </modifiers>
             </link>
           </links>
+        </entryGroup>
+        <entryGroup id="e44c9cae-7a25-36ab-62e1-27b6bb1df3f9" name="Up to two Templar Brethren may exchange their bolt pistols for:" minSelections="0" maxSelections="2" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+          <entries>
+            <entry id="77d9ae71-0fe5-9323-b074-ef3525ebb3af" name="Plasma Pistol" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minPoints="0.0" maxPoints="-1.0" minInRoster="0" maxInRoster="-1" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
         </entryGroup>
       </entryGroups>
       <modifiers>
@@ -29154,9 +29170,7 @@ If the test is failed, the unit immediately suffers D6 wounds at AP2 with Instan
                 <conditionGroup type="or">
                   <conditions>
                     <condition parentId="roster" childId="4a764dc5-72ab-10bb-22e3-fee1ae4edfe2" field="selections" type="equal to" value="1.0"/>
-                    <condition parentId="roster" childId="d4a072f3-d9e1-f557-02f5-e0bd15cb38d0" field="selections" type="equal to" value="1.0"/>
                     <condition parentId="roster" childId="e0cec0c2-a6db-2c94-aacb-dc4dc8085e41" field="selections" type="equal to" value="1.0"/>
-                    <condition parentId="roster" childId="52fbec20-bbab-4ff5-4258-ef4cb6ca8752" field="selections" type="equal to" value="1.0"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
