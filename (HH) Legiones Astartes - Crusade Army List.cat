@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="33" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.14b" name="Legiones Astartes: Crusade Army List" books="HH:LACAL - 2014" authorName="Millicant" authorContact="Submit &quot;new issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues?state=open" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="34" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.14b" name="Legiones Astartes: Crusade Army List" books="HH:LACAL - 2014" authorName="Millicant" authorContact="Submit &quot;new issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues?state=open" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LACAL" page="55">
       <entries/>
@@ -2953,7 +2953,7 @@ In addtion, all units with the Legiones Astartes (Emperor&apos;s Children) rule 
         <profile id="afa85f77-b135-e195-b02b-8c67aaa8522d" profileTypeId="576561706f6e23232344415441232323" name="Widowmaker Volley" hidden="false" book="HH:LAICL" page="61">
           <characteristics>
             <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="12&quot;"/>
-            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value=""/>
+            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="4"/>
             <characteristic characteristicId="415023232344415441232323" name="AP" value="5"/>
             <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Assault 3, Lethal Precision"/>
           </characteristics>
@@ -5188,17 +5188,11 @@ In addtion, all units with the Legiones Astartes (Emperor&apos;s Children) rule 
               <entries/>
               <entryGroups/>
               <modifiers>
-                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="945b2009-7717-4bdc-90a8-44c0699ed01b" field="selections" type="equal to" value="1.0"/>
-                        <condition parentId="196317ba-5d61-d9ae-a254-2485e7b82829" childId="fc29e2a8-80f7-4778-8c5d-f434ed297a97" field="selections" type="equal to" value="1.0"/>
-                      </conditions>
-                      <conditionGroups/>
-                    </conditionGroup>
-                  </conditionGroups>
+                <modifier type="set" field="points" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="945b2009-7717-4bdc-90a8-44c0699ed01b" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
                 </modifier>
               </modifiers>
               <rules/>
@@ -5282,7 +5276,14 @@ In addtion, all units with the Legiones Astartes (Emperor&apos;s Children) rule 
             <entry id="06da21ef-7489-9f96-28ee-4924a6ce3df2" name="Power Armour" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="945b2009-7717-4bdc-90a8-44c0699ed01b" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <rules/>
               <profiles/>
               <links/>
@@ -32586,6 +32587,30 @@ If the test is failed, the unit immediately suffers D6 wounds at AP2 with Instan
           </profiles>
           <links/>
         </entry>
+        <entry id="695ee7e1-d60d-18f6-2106-ff2d815e0798" name="Tyrant Siege Master" points="0.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups>
+            <entryGroup id="e548a309-b87b-a618-aaab-699b931a00d8" name="May exchange Combi-bolter for:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries>
+                <entry id="606deba2-d834-28fb-141a-f0ee4d4088ca" name="Combi-weapon" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <links/>
+            </entryGroup>
+          </entryGroups>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
       </entries>
       <entryGroups>
         <entryGroup id="884fd8e5-bc26-55b9-76a5-4520b6a46322" name="Any model may upgrade their Power Fist for:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -32606,21 +32631,6 @@ If the test is failed, the unit immediately suffers D6 wounds at AP2 with Instan
               <conditionGroups/>
             </modifier>
           </modifiers>
-          <links/>
-        </entryGroup>
-        <entryGroup id="5b07da70-75b2-b9ba-f341-877efb9c3a7e" name="Tyrant Siege Master may exchange his Combi-bolter for:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="ed936754-ec16-ca66-7d70-ba659116cda6" name="Combi-weapon" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
           <links/>
         </entryGroup>
         <entryGroup id="fa7646a0-fffb-0627-eb5b-c9d46c42b2b0" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
