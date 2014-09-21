@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="36" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.14b" name="Legiones Astartes: Crusade Army List" books="HH:LACAL - 2014" authorName="Millicant" authorContact="Submit &quot;new issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues?state=open" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="37" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.14b" name="Legiones Astartes: Crusade Army List" books="HH:LACAL - 2014" authorName="Millicant" authorContact="Submit &quot;new issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues?state=open" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LACAL" page="55">
       <entries/>
@@ -6191,7 +6191,11 @@ In addtion, all units with the Legiones Astartes (Emperor&apos;s Children) rule 
               </entries>
               <entryGroups/>
               <modifiers/>
-              <links/>
+              <links>
+                <link id="ff972e51-f9f6-a3e8-0f8b-43d6225f98c8" targetId="15662370-7d13-ed80-50aa-02aa0368c309" linkType="entry">
+                  <modifiers/>
+                </link>
+              </links>
             </entryGroup>
             <entryGroup id="4bbf54a3-4dca-7a64-32bd-78123d900251" name="Exchange Power Weapon for:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries>
@@ -6760,6 +6764,26 @@ In addtion, all units with the Legiones Astartes (Emperor&apos;s Children) rule 
                     <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="45c41d46-871f-4cfc-758e-ad0ccb58aab5" field="selections" type="equal to" value="0.0"/>
                   </conditions>
                   <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </link>
+            <link id="9b0be7a5-0d3b-fcdd-67fc-72695472b5ae" targetId="15662370-7d13-ed80-50aa-02aa0368c309" linkType="entry">
+              <modifiers>
+                <modifier type="set" field="points" value="10.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="7817f79e-d687-9fee-cbd4-02ba76bab68a" field="selections" type="equal to" value="1.0"/>
+                        <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="45c41d46-871f-4cfc-758e-ad0ccb58aab5" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </link>
@@ -26584,7 +26608,16 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
                   <conditionGroups/>
                 </modifier>
               </modifiers>
-              <links/>
+              <links>
+                <link id="0bcd395b-7cee-c45d-fd1b-7201b3a0d61b" targetId="15662370-7d13-ed80-50aa-02aa0368c309" linkType="entry">
+                  <modifiers>
+                    <modifier type="set" field="maxSelections" value="5.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                </link>
+              </links>
             </entryGroup>
             <entryGroup id="45184b0d-2c72-c06f-221e-7dfa520b526d" name="Exchange Power Weapon for:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries>
@@ -26829,7 +26862,7 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
         </link>
       </links>
     </entry>
-    <entry id="3bd8064e-91eb-24e0-b07f-555fceb5f674" name="Legion Terminator Squad" points="55.0" categoryId="456c6974657323232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LACAL" page="22">
+    <entry id="3bd8064e-91eb-24e0-b07f-555fceb5f674" name="Legion Terminator Command Squad" points="55.0" categoryId="456c6974657323232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LACAL" page="22">
       <entries>
         <entry id="91e33f36-7917-a2d4-7a87-c83355bbb592" name="Legion Terminators" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="4" maxSelections="9" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -26930,7 +26963,11 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
                   </entries>
                   <entryGroups/>
                   <modifiers/>
-                  <links/>
+                  <links>
+                    <link id="8fd38f72-ee27-e640-9414-805de565a73c" targetId="15662370-7d13-ed80-50aa-02aa0368c309" linkType="entry">
+                      <modifiers/>
+                    </link>
+                  </links>
                 </entryGroup>
                 <entryGroup id="fe23fc4a-9347-c5f1-9c60-e7bce777017e" name="Exchange Power Weapon for:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
                   <entries>
@@ -27142,7 +27179,16 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
                   <conditionGroups/>
                 </modifier>
               </modifiers>
-              <links/>
+              <links>
+                <link id="6c2901f6-10ed-629f-f5f5-5d888c57a9fb" targetId="15662370-7d13-ed80-50aa-02aa0368c309" linkType="entry">
+                  <modifiers>
+                    <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="3bd8064e-91eb-24e0-b07f-555fceb5f674" incrementChildId="91e33f36-7917-a2d4-7a87-c83355bbb592" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                </link>
+              </links>
             </entryGroup>
             <entryGroup id="b1d3d88b-8b1c-b6d9-0e12-8702604c74c8" name="Exchange Power Weapon for:" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries>
