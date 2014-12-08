@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="41" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Crusade Army List" books="HH:LACAL - 2014" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="42" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Crusade Army List" books="HH:LACAL - 2014" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LACAL" page="55">
       <entries/>
@@ -3580,6 +3580,28 @@ In addtion, all units with the Legiones Astartes (Emperor&apos;s Children) rule 
                         </link>
                       </links>
                     </entryGroup>
+                    <entryGroup id="61a14968-e1fe-858a-9cd8-9a3567e0fb9d" name="May exchange normal shells for:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                      <entries>
+                        <entry id="0bc4d457-92a4-17c6-717d-588e642f4142" name="Phosphex Shells" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                          <entries/>
+                          <entryGroups/>
+                          <modifiers/>
+                          <rules/>
+                          <profiles/>
+                          <links/>
+                        </entry>
+                      </entries>
+                      <entryGroups/>
+                      <modifiers>
+                        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                          <conditions>
+                            <condition parentId="force type" childId="66cb4a66-d860-119c-edfc-1749a899f258" field="selections" type="equal to" value="0.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <links/>
+                    </entryGroup>
                   </entryGroups>
                   <modifiers/>
                   <links>
@@ -6735,7 +6757,31 @@ In addtion, all units with the Legiones Astartes (Emperor&apos;s Children) rule 
         </entryGroup>
         <entryGroup id="5e667b9b-5a3a-9a38-0847-5000b4575169" name="Legion-specific upgrades" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
-          <entryGroups/>
+          <entryGroups>
+            <entryGroup id="f3d959a2-fd3c-6592-53b8-a6b3930624bc" name="May upgrade Cataphractii Terminator armour to:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition parentId="roster" childId="8de96b92-0d9f-8bc0-5fa0-09e0e917f63e" field="selections" type="equal to" value="0.0"/>
+                        <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="45c41d46-871f-4cfc-758e-ad0ccb58aab5" field="selections" type="equal to" value="0.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <links>
+                <link id="2ab56808-7193-ded5-13b1-7c8003d6e24f" targetId="ae27fde6-59da-4d61-b030-b48ba3e501c1" linkType="entry">
+                  <modifiers/>
+                </link>
+              </links>
+            </entryGroup>
+          </entryGroups>
           <modifiers/>
           <links>
             <link id="21a2ef8b-b34f-9bc5-ba63-1efe855bf0cc" targetId="955bce92-a604-419f-0f2e-de6ce81af313" linkType="entry">
@@ -9888,7 +9934,31 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
         </entryGroup>
         <entryGroup id="6939dea7-7ccb-a2a2-c9e4-2d7ccd3a6673" name="Legion-specific upgrades" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
-          <entryGroups/>
+          <entryGroups>
+            <entryGroup id="e2d9a391-1c66-1d44-f5eb-12dbb738927f" name="May upgrade Cataphractii Terminator armour to:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition parentId="roster" childId="8de96b92-0d9f-8bc0-5fa0-09e0e917f63e" field="selections" type="equal to" value="0.0"/>
+                        <condition parentId="51f64bbe-2968-91a9-051f-51d166caf36a" childId="ec2a8b3f-fafe-48d8-8b7b-281f7decd048" field="selections" type="equal to" value="0.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <links>
+                <link id="b7db6a93-4557-853f-8898-43ecc1e249ec" targetId="ae27fde6-59da-4d61-b030-b48ba3e501c1" linkType="entry">
+                  <modifiers/>
+                </link>
+              </links>
+            </entryGroup>
+          </entryGroups>
           <modifiers/>
           <links>
             <link id="7214d2ee-8d9d-f239-bd1b-c0799590c2d7" targetId="955bce92-a604-419f-0f2e-de6ce81af313" linkType="entry">
@@ -28942,6 +29012,21 @@ If the test is failed, the unit immediately suffers D6 wounds at AP2 with Instan
         </link>
       </links>
     </entry>
+    <entry id="ae27fde6-59da-4d61-b030-b48ba3e501c1" name="The Cataphractii Primus" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH4: Conquest" page="227">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="8de96b92-0d9f-8bc0-5fa0-09e0e917f63e" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
   </sharedEntries>
   <sharedEntryGroups>
     <entryGroup id="fc8ed347-6cd6-c24e-942f-bda78004e894" name="Bodyguard" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -29077,61 +29162,6 @@ If the test is failed, the unit immediately suffers D6 wounds at AP2 with Instan
           <modifiers/>
         </link>
         <link id="69bb161b-6fcc-b5bf-5ac9-5f01f2e532f1" targetId="bb7961b5-6a23-9806-bb17-f30335c66389" linkType="entry">
-          <modifiers/>
-        </link>
-      </links>
-    </entryGroup>
-    <entryGroup id="2bbb2aaa-d999-7ae6-a856-f0565c7e679b" name="Rites of War" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <links>
-        <link id="6b65e819-bb4a-fcc5-d2f3-2c2122a88fc6" targetId="34bd31b6-3b94-2a1f-4e4a-e04854507984" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="0bcfe566-33e0-f5d8-cf1e-1f95dc75144d" targetId="e0cec0c2-a6db-2c94-aacb-dc4dc8085e41" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="fb5f954f-5999-ace4-c8cc-0bd7a2257349" targetId="4a764dc5-72ab-10bb-22e3-fee1ae4edfe2" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="d1c02e47-b42e-5f8b-693b-811ea904f951" targetId="d4a072f3-d9e1-f557-02f5-e0bd15cb38d0" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="9db2939c-d5d8-54bf-8b5f-2dae31e84cb0" targetId="06259dff-a022-883a-69e4-8d8e02ea4714" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="01fa0cd3-9973-3318-5f60-ad21e00425ce" targetId="52cfa78b-c81b-02e7-f7c6-2fbb1965b149" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="fa572534-c45a-3ede-acdd-7f202455bf1a" targetId="454b8f4c-d55b-783b-1461-d2aa77de8f89" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="fbf09165-1a78-e825-a88d-31e87816a0dd" targetId="45745ec5-a05f-f0ed-5330-782659bb3974" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="41eff9ff-d80f-bfa3-675e-171aaedff4c8" targetId="86c82afd-7ea7-d7f7-441e-330ec18cfd85" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="83e68a75-de2c-d83f-d3c9-562f5d079e46" targetId="52fbec20-bbab-4ff5-4258-ef4cb6ca8752" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="f129156a-61ed-31f0-4729-5739bdd8b8fe" targetId="7ba4bddb-f4ea-4e6d-4d19-5e722e44908b" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="54837185-c3de-71dd-5c31-2515740ac9d7" targetId="8d240ee2-07a0-3249-7971-5fb88687f489" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="84896604-a794-a3e7-467e-fa3ef32545bc" targetId="85580796-1728-6886-9871-3aa94a4c466f" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="5030bc3f-c92e-99e0-c07f-454fee862e85" targetId="e1efefb5-5f19-7ef9-fe05-789e5e9b07a4" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="f60a7c90-af59-da32-4fdd-ffead8663873" targetId="acc31be4-8d7c-491f-7f52-6b735cf6d6ad" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="5291df9a-b4e4-012b-7b58-1fca94988e7e" targetId="7c741cce-8850-b98f-3b84-cd0d84c3dada" linkType="entry">
           <modifiers/>
         </link>
       </links>
@@ -29505,21 +29535,6 @@ If the test is failed, the unit immediately suffers D6 wounds at AP2 with Instan
           </profiles>
           <links/>
         </entry>
-        <entry id="4e730599-44ae-9164-c05e-17038e6f32f1" name="The Cataphractii Primus" points="50.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH4: Conquest" page="227">
-          <entries/>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="roster" childId="8de96b92-0d9f-8bc0-5fa0-09e0e917f63e" field="selections" type="equal to" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <rules/>
-          <profiles/>
-          <links/>
-        </entry>
         <entry id="4371d797-676c-4497-c25c-c4eeb8397541" name="Conversion Dissonator" points="40.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH4: Conquest" page="227">
           <entries/>
           <entryGroups/>
@@ -29604,6 +29619,61 @@ If the test is failed, the unit immediately suffers D6 wounds at AP2 with Instan
       <entryGroups/>
       <modifiers/>
       <links/>
+    </entryGroup>
+    <entryGroup id="2bbb2aaa-d999-7ae6-a856-f0565c7e679b" name="Rites of War" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <links>
+        <link id="6b65e819-bb4a-fcc5-d2f3-2c2122a88fc6" targetId="34bd31b6-3b94-2a1f-4e4a-e04854507984" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="0bcfe566-33e0-f5d8-cf1e-1f95dc75144d" targetId="e0cec0c2-a6db-2c94-aacb-dc4dc8085e41" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="fb5f954f-5999-ace4-c8cc-0bd7a2257349" targetId="4a764dc5-72ab-10bb-22e3-fee1ae4edfe2" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="d1c02e47-b42e-5f8b-693b-811ea904f951" targetId="d4a072f3-d9e1-f557-02f5-e0bd15cb38d0" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="9db2939c-d5d8-54bf-8b5f-2dae31e84cb0" targetId="06259dff-a022-883a-69e4-8d8e02ea4714" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="01fa0cd3-9973-3318-5f60-ad21e00425ce" targetId="52cfa78b-c81b-02e7-f7c6-2fbb1965b149" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="fa572534-c45a-3ede-acdd-7f202455bf1a" targetId="454b8f4c-d55b-783b-1461-d2aa77de8f89" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="fbf09165-1a78-e825-a88d-31e87816a0dd" targetId="45745ec5-a05f-f0ed-5330-782659bb3974" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="41eff9ff-d80f-bfa3-675e-171aaedff4c8" targetId="86c82afd-7ea7-d7f7-441e-330ec18cfd85" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="83e68a75-de2c-d83f-d3c9-562f5d079e46" targetId="52fbec20-bbab-4ff5-4258-ef4cb6ca8752" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="f129156a-61ed-31f0-4729-5739bdd8b8fe" targetId="7ba4bddb-f4ea-4e6d-4d19-5e722e44908b" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="54837185-c3de-71dd-5c31-2515740ac9d7" targetId="8d240ee2-07a0-3249-7971-5fb88687f489" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="84896604-a794-a3e7-467e-fa3ef32545bc" targetId="85580796-1728-6886-9871-3aa94a4c466f" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="5030bc3f-c92e-99e0-c07f-454fee862e85" targetId="e1efefb5-5f19-7ef9-fe05-789e5e9b07a4" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="f60a7c90-af59-da32-4fdd-ffead8663873" targetId="acc31be4-8d7c-491f-7f52-6b735cf6d6ad" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="5291df9a-b4e4-012b-7b58-1fca94988e7e" targetId="7c741cce-8850-b98f-3b84-cd0d84c3dada" linkType="entry">
+          <modifiers/>
+        </link>
+      </links>
     </entryGroup>
   </sharedEntryGroups>
   <sharedRules>
