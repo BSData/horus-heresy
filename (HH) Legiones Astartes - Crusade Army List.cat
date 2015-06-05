@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="57" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Crusade Army List" books="HH:LACAL - 2014" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="58" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Crusade Army List" books="HH:LACAL - 2014" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LACAL" page="55">
       <entries/>
@@ -2365,10 +2365,17 @@ In addtion, all units with the Legiones Astartes (Emperor&apos;s Children) rule 
         </link>
       </links>
     </entry>
-    <entry id="a8d1-f787-461d-79d0" name="Hol Beloth" points="165.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH5: Tempest" page="252">
+    <entry id="a8d1-f787-461d-79d0" name="Hol Beloth" points="165.0" categoryId="485123232344415441232323" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH5: Tempest" page="252">
       <entries/>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="ecfb6109-61f5-c148-708c-f53340667cb5" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="29f4-fcfe-3231-9cdc" name="Hexaglyphic Ward" hidden="false" book="HH5: Tempest" page="252">
           <description>Hol Beloth ignores the first wound suffered as a result of a failed save in the game, even if that wound would normally inflict Instant Death. </description>
@@ -20433,9 +20440,25 @@ Phalanx Breacher squads and Legion Terminator squads may be taken as troops in a
       <links/>
     </entry>
     <entry id="2910-50af-e9f9-1d90" name="Zardu Layak" points="175.0" categoryId="485123232344415441232323" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH5: Tempest" page="250">
-      <entries/>
+      <entries>
+        <entry id="fb52-79c3-9747-338b" name="Warlord" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="ecfb6109-61f5-c148-708c-f53340667cb5" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="4288-45c6-dbf7-5e47" name="Daemon" hidden="false">
           <modifiers/>
@@ -20733,7 +20756,14 @@ Phalanx Breacher squads and Legion Terminator squads may be taken as troops in a
       <modifiers/>
     </link>
     <link id="01a089e2-1b73-f44b-ab37-a4c66d6d2889" targetId="a94a00ff-77c2-bc8c-1044-283e14795b55" linkType="entry" categoryId="466173742041747461636b23232344415441232323">
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="fb52-79c3-9747-338b" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
     </link>
     <link id="376ca06a-4491-1559-032c-5243d854a297" targetId="4a689753-47b5-5897-1023-1b51b177ec61" linkType="entry" categoryId="456c6974657323232344415441232323">
       <modifiers>
@@ -20913,6 +20943,16 @@ Phalanx Breacher squads and Legion Terminator squads may be taken as troops in a
     </link>
     <link id="6ffd-48db-03b0-d22d" targetId="a040-15fd-9aa5-caf1" linkType="entry" categoryId="466173742041747461636b23232344415441232323">
       <modifiers/>
+    </link>
+    <link id="122e-c93c-036a-3384" targetId="a94a00ff-77c2-bc8c-1044-283e14795b55" linkType="entry" categoryId="54726f6f707323232344415441232323">
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="fb52-79c3-9747-338b" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
     </link>
   </links>
   <sharedEntries>
@@ -21386,6 +21426,7 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
             <condition parentId="roster" childId="80a93122-ed98-a665-5b8c-370d0a83ac13" field="selections" type="equal to" value="0.0"/>
             <condition parentId="roster" childId="f8c62021-240c-267c-9641-709db3982934" field="selections" type="equal to" value="0.0"/>
             <condition parentId="roster" childId="dc548d23-0bd3-4137-2d59-2e21f604c029" field="selections" type="equal to" value="0.0"/>
+            <condition parentId="roster" childId="2910-50af-e9f9-1d90" field="selections" type="equal to" value="0.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -31858,6 +31899,20 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
         </link>
         <link id="8ad9c6c6-0785-40be-431d-909fe1623889" targetId="7439f6fd-4c50-f88a-eb41-81d9b9c9eed8" linkType="rule">
           <modifiers/>
+        </link>
+        <link id="7523-344b-72ef-8b97" targetId="8e9aa9ef-7863-9522-7741-f7a3ebec8585" linkType="entry">
+          <modifiers>
+            <modifier type="set" field="points" value="25.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="roster" childId="fb52-79c3-9747-338b" field="selections" type="equal to" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
       </links>
     </entry>
