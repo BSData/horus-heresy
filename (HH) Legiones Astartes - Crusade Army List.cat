@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="59" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Crusade Army List" books="HH:LACAL - 2014" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="60" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Crusade Army List" books="HH:LACAL - 2014" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LACAL" page="55">
       <entries/>
@@ -598,6 +598,75 @@
         </link>
       </links>
     </entry>
+    <entry id="203e-ad37-4821-04a7" name="Captain Remus Ventanus" points="155.0" categoryId="485123232344415441232323" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH5: Tempest" page="236">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="10db-ca24-5cf8-2d63" name="Bodyguard" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="1398-ab86-ab11-4ce3" targetId="cba7eacc-627d-ad1f-3c72-70e35c15fd9f" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="8e5b-241c-7b17-b2b5" targetId="ef1d-f7d5-2c48-0bba" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers>
+        <modifier type="hide" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="64bdd508-d609-87cb-fa2a-1e73bd709d94" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="e322-dab9-5d48-73a2" name="Adamantium Will" hidden="false">
+          <modifiers/>
+        </rule>
+        <rule id="d974-1f1e-c579-ee04" name="Cunning Strategist" hidden="false" book="HH5: Tempest" page="236">
+          <description>While Remus Ventanus is alive, the opposing player has a -1 modifier to all reserve rolls and the owning player may re-roll any reserves rolls (failed or successful). </description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="ff77-0a81-51aa-2983" profileTypeId="556e697423232344415441232323" name="Remus Ventanus" hidden="false" book="HH5: Tempest" page="236">
+          <characteristics>
+            <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Infantry (Character)"/>
+            <characteristic characteristicId="575323232344415441232323" name="WS" value="5"/>
+            <characteristic characteristicId="425323232344415441232323" name="BS" value="5"/>
+            <characteristic characteristicId="5323232344415441232323" name="S" value="4"/>
+            <characteristic characteristicId="5423232344415441232323" name="T" value="4"/>
+            <characteristic characteristicId="5723232344415441232323" name="W" value="3"/>
+            <characteristic characteristicId="4923232344415441232323" name="I" value="5"/>
+            <characteristic characteristicId="4123232344415441232323" name="A" value="3"/>
+            <characteristic characteristicId="4c4423232344415441232323" name="LD" value="10"/>
+            <characteristic characteristicId="5361766523232344415441232323" name="Save" value="3+"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links>
+        <link id="7f84-1c98-ea9d-da8b" targetId="10b59cf4-3c97-e3e0-2185-853bcde6d112" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="efb7-87e8-9f4d-24f9" targetId="9a458a3c-a9b5-db5e-a218-2041a3a49004" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="6743-3b09-8fe5-e1e0" targetId="d4a1a878-9ad4-6ae0-a864-08f58264c4a5" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="c37b-f6c7-783d-7cc4" targetId="7f468ad2-37a2-384e-62c6-59a0ef008fe9" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="1992-b468-1e94-032f" targetId="352f5f7a-45e0-0416-e7cd-1cb8f985b0ac" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
     <entry id="92236093-e863-59bc-083b-2c7a9930d82d" name="Captain Saul Tarvitz" points="135.0" categoryId="485123232344415441232323" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LAICL" page="35">
       <entries/>
       <entryGroups>
@@ -724,7 +793,7 @@
         </link>
       </links>
     </entry>
-    <entry id="5fab84ab-ab50-ecc0-a170-bb2ebc0059ad" name="Castellax Class Battle-Automata Maniple" points="0.0" categoryId="486561767920537570706f727423232344415441232323" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="0" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="HH3: Extermination" page="223">
+    <entry id="5fab84ab-ab50-ecc0-a170-bb2ebc0059ad" name="Castellax Class Battle-Automata Maniple" points="0.0" categoryId="486561767920537570706f727423232344415441232323" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="HH3: Extermination" page="223">
       <entries>
         <entry id="f4d182d9-0e3e-80e8-cd54-de9c84bf9abb" name="Castellax" points="85.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -2929,9 +2998,6 @@ In addtion, all units with the Legiones Astartes (Emperor&apos;s Children) rule 
         <link id="f8b0278c-026b-3a98-f4bf-1834c74bf739" targetId="2fd78c56-eae0-49c5-9103-62ebadb9a05c" linkType="profile">
           <modifiers/>
         </link>
-        <link id="d2580549-e97c-0297-0368-f32d65f18620" targetId="454c5ea7-d961-d86f-81a5-3f7f3c796545" linkType="profile">
-          <modifiers/>
-        </link>
         <link id="9c496bf6-6c8d-c6bc-5ff4-1c531bf73bde" targetId="5aad03df-0fd0-5920-0aec-2aefbe5bcf5b" linkType="rule">
           <modifiers/>
         </link>
@@ -2948,6 +3014,9 @@ In addtion, all units with the Legiones Astartes (Emperor&apos;s Children) rule 
           <modifiers/>
         </link>
         <link id="2b79e9e7-cd91-e900-0635-4c0418f9a583" targetId="7f468ad2-37a2-384e-62c6-59a0ef008fe9" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="8654-4266-ecad-39e4" targetId="8eddab41-c893-f420-3b53-3e40b25cee89" linkType="entry">
           <modifiers/>
         </link>
       </links>
@@ -17518,6 +17587,110 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
         </link>
       </links>
     </entry>
+    <entry id="9996-5e6c-8349-31c4" name="Roboute Guilliman" points="400.0" categoryId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH5: Tempest" page="238">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="a1e3-93d4-0461-d490" name="Bodyguard" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="cd40-e237-f114-557d" targetId="cba7eacc-627d-ad1f-3c72-70e35c15fd9f" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="fbd0-dee6-92b1-d9a5" targetId="ef1d-f7d5-2c48-0bba" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="64bdd508-d609-87cb-fa2a-1e73bd709d94" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="bb53-8592-8f6b-34b5" name="Bulky" hidden="false">
+          <modifiers/>
+        </rule>
+        <rule id="f87c-b175-bd09-2d1e" name="Sire of the Ultramarines" hidden="false" book="HH5: Tempest" page="239">
+          <modifiers/>
+        </rule>
+        <rule id="0255-ed7d-af71-9132" name="Preternatural Strategy" hidden="false" book="HH5: Tempest" page="239">
+          <modifiers/>
+        </rule>
+        <rule id="d91b-465d-2734-4baa" name="Unyielding Will" hidden="false" book="HH5: Tempest" page="239">
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="5533-8a41-cb3f-a97b" profileTypeId="556e697423232344415441232323" name="Roboute Guilliman" hidden="false" book="HH5: Tempest" page="238">
+          <characteristics>
+            <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Infantry (Character)"/>
+            <characteristic characteristicId="575323232344415441232323" name="WS" value="7"/>
+            <characteristic characteristicId="425323232344415441232323" name="BS" value="6"/>
+            <characteristic characteristicId="5323232344415441232323" name="S" value="6"/>
+            <characteristic characteristicId="5423232344415441232323" name="T" value="6"/>
+            <characteristic characteristicId="5723232344415441232323" name="W" value="6"/>
+            <characteristic characteristicId="4923232344415441232323" name="I" value="6"/>
+            <characteristic characteristicId="4123232344415441232323" name="A" value="4"/>
+            <characteristic characteristicId="4c4423232344415441232323" name="LD" value="10"/>
+            <characteristic characteristicId="5361766523232344415441232323" name="Save" value="2+"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="32d9-66e6-2b59-f6dc" profileTypeId="57617267656172204974656d23232344415441232323" name="The Armour of Reason" hidden="false" book="HH5: Tempest" page="239">
+          <characteristics>
+            <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Confers a 2+ armour save and a 4++ Invulnerable save.  In addition, the first failed invulnerable save in each phase may be re-rolled.  "/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="466e-d06a-9c20-d4d0" profileTypeId="576561706f6e23232344415441232323" name="Gladius Incandor" hidden="false" book="HH5: Tempest" page="239">
+          <characteristics>
+            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
+            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="+1"/>
+            <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
+            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Shred, Murderous Strike, Specialist Weapon"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="74f4-f5e3-a984-8b6a" profileTypeId="576561706f6e23232344415441232323" name="Hand of Dominion" hidden="false" book="HH5: Tempest" page="239">
+          <characteristics>
+            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
+            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="10"/>
+            <characteristic characteristicId="415023232344415441232323" name="AP" value="1"/>
+            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Concussive, Unwieldy, Specialist Weapon"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="9a24-33db-05e2-18e5" profileTypeId="576561706f6e23232344415441232323" name="The Arbitrator" hidden="false" book="HH5: Tempest" page="239">
+          <characteristics>
+            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="18&quot;"/>
+            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="6"/>
+            <characteristic characteristicId="415023232344415441232323" name="AP" value="3"/>
+            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Assault 2, Rending"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links>
+        <link id="aeb3-cb09-ac2b-2f5f" targetId="3b34336e-0f22-6a62-f665-74f37f5305f5" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="7390-e263-28c9-9c9d" targetId="7f468ad2-37a2-384e-62c6-59a0ef008fe9" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="2434-94bd-6181-31cb" targetId="c97c30ed-23f0-f96e-dbd6-2ef58c777618" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="108d-6d5a-c7bc-6b45" targetId="4687f5b1-f0b1-12bd-8cc7-27f9f25befaf" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
     <entry id="984bebc1-092f-994d-ef0b-454e3bdf5580" name="Rogal Dorn" points="385.0" categoryId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LAICL" page="102">
       <entries>
         <entry id="f88e9f1d-95d7-b649-669c-4315014b94fc" name="AEtos Dios" points="600.0" categoryId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LAICL" page="103">
@@ -19063,7 +19236,7 @@ Phalanx Breacher squads and Legion Terminator squads may be taken as troops in a
         </link>
       </links>
     </entry>
-    <entry id="80ade231-979a-a454-9621-efc840ec8e94" name="Thallax Cohort" points="15.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="0" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH3: Extermination" page="222">
+    <entry id="80ade231-979a-a454-9621-efc840ec8e94" name="Thallax Cohort" points="15.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="HH3: Extermination" page="222">
       <entries>
         <entry id="240759e4-f5d3-d95c-7017-37352f28bbe4" name="Thallax" points="40.0" categoryId="(No Category)" type="upgrade" minSelections="3" maxSelections="9" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -19190,11 +19363,17 @@ Phalanx Breacher squads and Legion Terminator squads may be taken as troops in a
         </entryGroup>
       </entryGroups>
       <modifiers>
-        <modifier type="set" field="maxInRoster" value="-1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="5ef30031-ef25-276e-cadd-56aee499b1d2" field="selections" type="at least" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
+        <modifier type="show" field="maxInRoster" value="-1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="roster" childId="5ef30031-ef25-276e-cadd-56aee499b1d2" field="selections" type="at least" value="1.0"/>
+                <condition parentId="roster" childId="8eddab41-c893-f420-3b53-3e40b25cee89" field="selections" type="at least" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <rules>
@@ -19833,7 +20012,7 @@ Phalanx Breacher squads and Legion Terminator squads may be taken as troops in a
       <profiles/>
       <links/>
     </entry>
-    <entry id="3119-06e7-753b-25bd" name="Vorax Class Battle-automata Maniple" points="0.0" categoryId="466173742041747461636b23232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="0" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="HH3: Extermination" page="226">
+    <entry id="3119-06e7-753b-25bd" name="Vorax Class Battle-automata Maniple" points="0.0" categoryId="466173742041747461636b23232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" book="HH3: Extermination" page="226">
       <entries>
         <entry id="a303-e41a-a9cb-3927" name="Vorax" points="75.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -20067,6 +20246,15 @@ Phalanx Breacher squads and Legion Terminator squads may be taken as troops in a
             <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="6"/>
             <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
             <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Assault 1, Rending, Line of Effect"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="3fa5-9196-26e8-2793" profileTypeId="576561706f6e23232344415441232323" name="Heavy Flamer (St 6)" hidden="false" book="HH: LAICL" page="68">
+          <characteristics>
+            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value=""/>
+            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value=""/>
+            <characteristic characteristicId="415023232344415441232323" name="AP" value=""/>
+            <characteristic characteristicId="5479706523232344415441232323" name="Type" value=""/>
           </characteristics>
           <modifiers/>
         </profile>
@@ -20704,175 +20892,6 @@ Phalanx Breacher squads and Legion Terminator squads may be taken as troops in a
         </link>
       </links>
     </entry>
-    <entry id="203e-ad37-4821-04a7" name="Captain Remus Ventanus" points="155.0" categoryId="485123232344415441232323" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH5: Tempest" page="236">
-      <entries/>
-      <entryGroups>
-        <entryGroup id="10db-ca24-5cf8-2d63" name="Bodyguard" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <links>
-            <link id="1398-ab86-ab11-4ce3" targetId="cba7eacc-627d-ad1f-3c72-70e35c15fd9f" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="8e5b-241c-7b17-b2b5" targetId="ef1d-f7d5-2c48-0bba" linkType="entry">
-              <modifiers/>
-            </link>
-          </links>
-        </entryGroup>
-      </entryGroups>
-      <modifiers>
-        <modifier type="hide" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="64bdd508-d609-87cb-fa2a-1e73bd709d94" field="selections" type="equal to" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <rules>
-        <rule id="e322-dab9-5d48-73a2" name="Adamantium Will" hidden="false">
-          <modifiers/>
-        </rule>
-        <rule id="d974-1f1e-c579-ee04" name="Cunning Strategist" hidden="false" book="HH5: Tempest" page="236">
-          <description>While Remus Ventanus is alive, the opposing player has a -1 modifier to all reserve rolls and the owning player may re-roll any reserves rolls (failed or successful). </description>
-          <modifiers/>
-        </rule>
-      </rules>
-      <profiles>
-        <profile id="ff77-0a81-51aa-2983" profileTypeId="556e697423232344415441232323" name="Remus Ventanus" hidden="false" book="HH5: Tempest" page="236">
-          <characteristics>
-            <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Infantry (Character)"/>
-            <characteristic characteristicId="575323232344415441232323" name="WS" value="5"/>
-            <characteristic characteristicId="425323232344415441232323" name="BS" value="5"/>
-            <characteristic characteristicId="5323232344415441232323" name="S" value="4"/>
-            <characteristic characteristicId="5423232344415441232323" name="T" value="4"/>
-            <characteristic characteristicId="5723232344415441232323" name="W" value="3"/>
-            <characteristic characteristicId="4923232344415441232323" name="I" value="5"/>
-            <characteristic characteristicId="4123232344415441232323" name="A" value="3"/>
-            <characteristic characteristicId="4c4423232344415441232323" name="LD" value="10"/>
-            <characteristic characteristicId="5361766523232344415441232323" name="Save" value="3+"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-      </profiles>
-      <links>
-        <link id="7f84-1c98-ea9d-da8b" targetId="10b59cf4-3c97-e3e0-2185-853bcde6d112" linkType="profile">
-          <modifiers/>
-        </link>
-        <link id="efb7-87e8-9f4d-24f9" targetId="9a458a3c-a9b5-db5e-a218-2041a3a49004" linkType="profile">
-          <modifiers/>
-        </link>
-        <link id="6743-3b09-8fe5-e1e0" targetId="d4a1a878-9ad4-6ae0-a864-08f58264c4a5" linkType="rule">
-          <modifiers/>
-        </link>
-        <link id="c37b-f6c7-783d-7cc4" targetId="7f468ad2-37a2-384e-62c6-59a0ef008fe9" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="1992-b468-1e94-032f" targetId="352f5f7a-45e0-0416-e7cd-1cb8f985b0ac" linkType="profile">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
-    <entry id="9996-5e6c-8349-31c4" name="Roboute Guilliman" points="400.0" categoryId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH5: Tempest" page="238">
-      <entries/>
-      <entryGroups>
-        <entryGroup id="a1e3-93d4-0461-d490" name="Bodyguard" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <links>
-            <link id="cd40-e237-f114-557d" targetId="cba7eacc-627d-ad1f-3c72-70e35c15fd9f" linkType="entry">
-              <modifiers/>
-            </link>
-            <link id="fbd0-dee6-92b1-d9a5" targetId="ef1d-f7d5-2c48-0bba" linkType="entry">
-              <modifiers/>
-            </link>
-          </links>
-        </entryGroup>
-      </entryGroups>
-      <modifiers/>
-      <rules>
-        <rule id="bb53-8592-8f6b-34b5" name="Bulky" hidden="false">
-          <modifiers/>
-        </rule>
-        <rule id="f87c-b175-bd09-2d1e" name="Sire of the Ultramarines" hidden="false" book="HH5: Tempest" page="239">
-          <description></description>
-          <modifiers/>
-        </rule>
-        <rule id="0255-ed7d-af71-9132" name="Preternatural Strategy" hidden="false" book="HH5: Tempest" page="239">
-          <description></description>
-          <modifiers/>
-        </rule>
-        <rule id="d91b-465d-2734-4baa" name="Unyielding Will" hidden="false" book="HH5: Tempest" page="239">
-          <description></description>
-          <modifiers/>
-        </rule>
-      </rules>
-      <profiles>
-        <profile id="5533-8a41-cb3f-a97b" profileTypeId="556e697423232344415441232323" name="Roboute Guilliman" hidden="false" book="HH5: Tempest" page="238">
-          <characteristics>
-            <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Infantry (Character)"/>
-            <characteristic characteristicId="575323232344415441232323" name="WS" value="7"/>
-            <characteristic characteristicId="425323232344415441232323" name="BS" value="6"/>
-            <characteristic characteristicId="5323232344415441232323" name="S" value="6"/>
-            <characteristic characteristicId="5423232344415441232323" name="T" value="6"/>
-            <characteristic characteristicId="5723232344415441232323" name="W" value="6"/>
-            <characteristic characteristicId="4923232344415441232323" name="I" value="6"/>
-            <characteristic characteristicId="4123232344415441232323" name="A" value="4"/>
-            <characteristic characteristicId="4c4423232344415441232323" name="LD" value="10"/>
-            <characteristic characteristicId="5361766523232344415441232323" name="Save" value="2+"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-        <profile id="32d9-66e6-2b59-f6dc" profileTypeId="57617267656172204974656d23232344415441232323" name="The Armour of Reason" hidden="false" book="HH5: Tempest" page="239">
-          <characteristics>
-            <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Confers a 2+ armour save and a 4++ Invulnerable save.  In addition, the first failed invulnerable save in each phase may be re-rolled.  "/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-        <profile id="466e-d06a-9c20-d4d0" profileTypeId="576561706f6e23232344415441232323" name="Gladius Incandor" hidden="false" book="HH5: Tempest" page="239">
-          <characteristics>
-            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
-            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="+1"/>
-            <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
-            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Shred, Murderous Strike, Specialist Weapon"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-        <profile id="74f4-f5e3-a984-8b6a" profileTypeId="576561706f6e23232344415441232323" name="Hand of Dominion" hidden="false" book="HH5: Tempest" page="239">
-          <characteristics>
-            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
-            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="10"/>
-            <characteristic characteristicId="415023232344415441232323" name="AP" value="1"/>
-            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Concussive, Unwieldy, Specialist Weapon"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-        <profile id="9a24-33db-05e2-18e5" profileTypeId="576561706f6e23232344415441232323" name="The Arbitrator" hidden="false" book="HH5: Tempest" page="239">
-          <characteristics>
-            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="18&quot;"/>
-            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="6"/>
-            <characteristic characteristicId="415023232344415441232323" name="AP" value="3"/>
-            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Assault 2, Rending"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-      </profiles>
-      <links>
-        <link id="aeb3-cb09-ac2b-2f5f" targetId="3b34336e-0f22-6a62-f665-74f37f5305f5" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="7390-e263-28c9-9c9d" targetId="7f468ad2-37a2-384e-62c6-59a0ef008fe9" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="2434-94bd-6181-31cb" targetId="c97c30ed-23f0-f96e-dbd6-2ef58c777618" linkType="rule">
-          <modifiers/>
-        </link>
-        <link id="108d-6d5a-c7bc-6b45" targetId="4687f5b1-f0b1-12bd-8cc7-27f9f25befaf" linkType="profile">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
   </entries>
   <rules/>
   <links>
@@ -21032,10 +21051,10 @@ Phalanx Breacher squads and Legion Terminator squads may be taken as troops in a
       <modifiers>
         <modifier type="hide" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
-            <condition parentId="force type" childId="984bebc1-092f-994d-ef0b-454e3bdf5580" field="selections" type="equal to" value="0.0"/>
-            <condition parentId="force type" childId="001243b8-3601-849e-c3a8-cc1cfb3c6826" field="selections" type="equal to" value="0.0"/>
-            <condition parentId="force type" childId="34bd31b6-3b94-2a1f-4e4a-e04854507984" field="selections" type="equal to" value="0.0"/>
-            <condition parentId="force type" childId="9996-5e6c-8349-31c4" field="selections" type="equal to" value="0.0"/>
+            <condition parentId="roster" childId="984bebc1-092f-994d-ef0b-454e3bdf5580" field="selections" type="equal to" value="0.0"/>
+            <condition parentId="roster" childId="001243b8-3601-849e-c3a8-cc1cfb3c6826" field="selections" type="equal to" value="0.0"/>
+            <condition parentId="roster" childId="34bd31b6-3b94-2a1f-4e4a-e04854507984" field="selections" type="equal to" value="0.0"/>
+            <condition parentId="roster" childId="9996-5e6c-8349-31c4" field="selections" type="equal to" value="0.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -21789,6 +21808,88 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
           <modifiers/>
         </link>
       </links>
+    </entry>
+    <entry id="5eb4-31b6-a79b-bcde" name="Damocles Command Rhino" points="100.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH5: Tempest" page="237">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="4c55-f99a-2264-22d1" name="May take any of the following:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="b25b-534f-473a-94c3" name="Extra Armour" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="f73b-33f9-e1c9-56cd" name="Pintle-mounted Heavy Bolter" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="7808-4c8f-2872-8182" name="Hunter-killer Missile" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="cd0a-93bd-5c96-3b82" name="Dozer Blade" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules>
+        <rule id="dfb5-4993-7b83-25c9" name="Geo-locator Beacon" hidden="false" book="HH5: Tempest" page="237">
+          <description>Units arriving via Deep Strike which are part of the force containing the Damocles do not scatter if they choose to arrive within 24&quot;</description>
+          <modifiers/>
+        </rule>
+        <rule id="1ccc-b98b-e0d4-ab85" name="Command Vox Relay" hidden="false" book="HH5: Tempest" page="237">
+          <description>Allows the controlling player to add a +1 or -1 modifer to reserve rolls while in play.  Additionally, enemy models suffer a +1 to Deep Strike Mishap table rolls. </description>
+          <modifiers/>
+        </rule>
+        <rule id="254f-52fc-ca51-9d18" name="Focused Bombardment" hidden="false" book="HH5: Tempest" page="237">
+          <description>Once per game, may call down a bombardment in the shooting phase.  May not move in the turn it shoots this weapon. </description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="9015-a27e-cfa5-ba42" profileTypeId="56656869636c6523232344415441232323" name="Damocles Command Rhino" hidden="false" book="HH5: Tempest" page="237">
+          <characteristics>
+            <characteristic characteristicId="425323232344415441232323" name="BS" value="4"/>
+            <characteristic characteristicId="46726f6e7423232344415441232323" name="Front" value="11"/>
+            <characteristic characteristicId="5369646523232344415441232323" name="Side" value="11"/>
+            <characteristic characteristicId="5265617223232344415441232323" name="Rear" value="11"/>
+            <characteristic characteristicId="485023232344415441232323" name="HP" value="3"/>
+            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Tank"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="e0f4-13f9-b1fa-765b" profileTypeId="576561706f6e23232344415441232323" name="Focused Bombardment" hidden="false" book="HH5: Tempest" page="237">
+          <characteristics>
+            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="Unlimited"/>
+            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="8"/>
+            <characteristic characteristicId="415023232344415441232323" name="AP" value="3"/>
+            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Ordnance 1, Lance, Twin-linked, Barrage, Large Blast"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links/>
     </entry>
     <entry id="8e9aa9ef-7863-9522-7741-f7a3ebec8585" name="Dark Channelling" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries/>
@@ -22838,6 +22939,257 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
       <profiles/>
       <links>
         <link id="bf0f177a-136b-f7e0-7758-a4fb9d65210c" targetId="64f9440e-6178-f5ae-f529-4d23a91f0bf9" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="fea8-bbb6-fe4d-2892" name="Fulmentarus Terminator Squad" points="85.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH5: Tempest" page="235">
+      <entries>
+        <entry id="9c9a-fc65-224d-37b1" name="Fulmentarus Terminator" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="4" maxSelections="9" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="c446-1bbe-7c0e-95ba" profileTypeId="556e697423232344415441232323" name="Fulmentarus Terminator" hidden="false" book="HH5: Tempest" page="235">
+              <characteristics>
+                <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Infantry"/>
+                <characteristic characteristicId="575323232344415441232323" name="WS" value="4"/>
+                <characteristic characteristicId="425323232344415441232323" name="BS" value="5"/>
+                <characteristic characteristicId="5323232344415441232323" name="S" value="4"/>
+                <characteristic characteristicId="5423232344415441232323" name="T" value="4"/>
+                <characteristic characteristicId="5723232344415441232323" name="W" value="1"/>
+                <characteristic characteristicId="4923232344415441232323" name="I" value="4"/>
+                <characteristic characteristicId="4123232344415441232323" name="A" value="2"/>
+                <characteristic characteristicId="4c4423232344415441232323" name="LD" value="8"/>
+                <characteristic characteristicId="5361766523232344415441232323" name="Save" value="2+"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="b471-7895-fddd-1a8a" name="Fulmentarus Decurion" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="">
+          <entries/>
+          <entryGroups>
+            <entryGroup id="8b6b-14e5-8028-3e68" name="May exchange Power Maul for:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries>
+                <entry id="9db3-0d8c-b5f9-60ea" name="Power Sword" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="71c3-58f8-ebdc-deee" name="Power Axe" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="2966-16bc-f2f5-d0b4" name="Power Fist" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <links/>
+            </entryGroup>
+          </entryGroups>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="10f4-79ad-43d6-7afa" profileTypeId="556e697423232344415441232323" name="Fulmentarus Decurion" hidden="false" book="HH5: Tempest" page="235">
+              <characteristics>
+                <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Infantry"/>
+                <characteristic characteristicId="575323232344415441232323" name="WS" value="4"/>
+                <characteristic characteristicId="425323232344415441232323" name="BS" value="5"/>
+                <characteristic characteristicId="5323232344415441232323" name="S" value="4"/>
+                <characteristic characteristicId="5423232344415441232323" name="T" value="4"/>
+                <characteristic characteristicId="5723232344415441232323" name="W" value="1"/>
+                <characteristic characteristicId="4923232344415441232323" name="I" value="4"/>
+                <characteristic characteristicId="4123232344415441232323" name="A" value="2"/>
+                <characteristic characteristicId="4c4423232344415441232323" name="LD" value="9"/>
+                <characteristic characteristicId="5361766523232344415441232323" name="Save" value="2+"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups>
+        <entryGroup id="b44c-1c86-f3f1-ecb7" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="e307-17ef-3090-10c9" targetId="a8eda173-f749-cfb6-fd0e-3d6fb35cad3b" linkType="entry">
+              <modifiers>
+                <modifier type="hide" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="fea8-bbb6-fe4d-2892" childId="9c9a-fc65-224d-37b1" field="selections" type="greater than" value="4.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </link>
+            <link id="8a8a-d42c-833f-c8b9" targetId="8cc05fec-8274-bea3-5d54-d249b36a3209" linkType="entry">
+              <modifiers>
+                <modifier type="hide" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="fea8-bbb6-fe4d-2892" childId="9c9a-fc65-224d-37b1" field="selections" type="greater than" value="4.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </link>
+            <link id="10fd-7730-7e62-321a" targetId="bce74018-92f3-2081-4079-a5eab9d107b2" linkType="entry">
+              <modifiers>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="fea8-bbb6-fe4d-2892" childId="9c9a-fc65-224d-37b1" field="selections" type="less than" value="5.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="97b0-aa4c-5ada-292f" name="Any Fulmentarus Terminator may exchange their Power Maul for:" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="bc13-746d-259e-a85e" name="Power Sword" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="9" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="4710-c9a6-791e-4842" name="Power Axe" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="9" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="3b6c-b194-3903-7891" name="Power Fist" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="9" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers>
+            <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="fea8-bbb6-fe4d-2892" incrementChildId="9c9a-fc65-224d-37b1" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <links/>
+        </entryGroup>
+        <entryGroup id="8695-d3eb-712e-ccd5" name="Entire Squad may exchange their Combi-bolters for:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="58b0-7b21-dfa8-f0c6" name="Combi-melta" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="increment" field="points" value="5.0" repeat="true" numRepeats="1" incrementParentId="fea8-bbb6-fe4d-2892" incrementChildId="9c9a-fc65-224d-37b1" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="30c3-c64b-3743-88eb" name="Reaper Autocannon" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="increment" field="points" value="20.0" repeat="true" numRepeats="1" incrementParentId="fea8-bbb6-fe4d-2892" incrementChildId="9c9a-fc65-224d-37b1" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers>
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="fea8-bbb6-fe4d-2892" childId="172d-6094-efbb-5334" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <links/>
+        </entryGroup>
+        <entryGroup id="172d-6094-efbb-5334" name="Entire Squad may take:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="7dc7-d818-4d6a-9f67" name="Cyclone Missile Launcher" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="increment" field="points" value="30.0" repeat="true" numRepeats="1" incrementParentId="fea8-bbb6-fe4d-2892" incrementChildId="9c9a-fc65-224d-37b1" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers>
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="fea8-bbb6-fe4d-2892" childId="8695-d3eb-712e-ccd5" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="64bdd508-d609-87cb-fa2a-1e73bd709d94" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles>
+        <profile id="61b9-455f-9d0e-c65a" profileTypeId="57617267656172204974656d23232344415441232323" name="Peritarch Targeter" hidden="false" book="HH5: Tempest" page="235">
+          <characteristics>
+            <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Confers the following abilities: - With at least two models, unit gains Night Vision - With at least five models, unit gains Tank Hunter - With at least eight models, unit forces cover saves a -1"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links>
+        <link id="dd8c-6816-3f36-d14b" targetId="59304e4a-18c6-1283-455b-f79c559b207f" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="1b95-f184-acf5-0c19" targetId="d4a1a878-9ad4-6ae0-a864-08f58264c4a5" linkType="rule">
           <modifiers/>
         </link>
       </links>
@@ -25014,7 +25366,14 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
     <entry id="f2b4-83cd-492c-d495" name="Legatine Axe" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="64bdd508-d609-87cb-fa2a-1e73bd709d94" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles/>
       <links>
@@ -28545,6 +28904,192 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
           <modifiers/>
         </link>
         <link id="be14d837-7d9f-e56d-bd08-3a3c680dea49" targetId="d4ecfa6a-ed59-8dc4-6606-b62d65cc5e28" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="b7c9-010a-fcab-2fe5" name="Locutarus Storm Squad" points="105.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH5: Tempest" page="234">
+      <entries>
+        <entry id="a484-0325-cd34-9d23" name="Locutarus" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="4" maxSelections="9" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="d2e8-9531-f600-1d62" profileTypeId="556e697423232344415441232323" name="Locutarus" hidden="false" book="HH5: Tempest" page="234">
+              <characteristics>
+                <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Jump Infantry"/>
+                <characteristic characteristicId="575323232344415441232323" name="WS" value="4"/>
+                <characteristic characteristicId="425323232344415441232323" name="BS" value="4"/>
+                <characteristic characteristicId="5323232344415441232323" name="S" value="4"/>
+                <characteristic characteristicId="5423232344415441232323" name="T" value="4"/>
+                <characteristic characteristicId="5723232344415441232323" name="W" value="1"/>
+                <characteristic characteristicId="4923232344415441232323" name="I" value="4"/>
+                <characteristic characteristicId="4123232344415441232323" name="A" value="1"/>
+                <characteristic characteristicId="4c4423232344415441232323" name="LD" value="8"/>
+                <characteristic characteristicId="5361766523232344415441232323" name="Save" value="2+"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+        <entry id="920c-0608-7338-f10d" name="Locutarus Strike Leader" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups>
+            <entryGroup id="ee70-ca8a-dcf6-9dfb" name="May take any of the following:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries>
+                <entry id="f095-28b0-8307-5f6c" name="Melta Bombs" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="bd57-aa47-ef5a-feb9" name="Combat Shield" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <links/>
+            </entryGroup>
+            <entryGroup id="1d87-1679-1f7e-bc0d" name="May exchange bolt pistol for:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries>
+                <entry id="042a-b7bd-890b-71e3" name="Plasma Pistol" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="1192-9da4-5a0d-57ac" name="Hand Flamer" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <links/>
+            </entryGroup>
+            <entryGroup id="ce67-a8a4-a151-8ff7" name="May exchange Power Sword for:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries>
+                <entry id="aaeb-ca5a-fcca-a762" name="Power Axe" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="4d7f-ca38-0f4f-fc53" name="Single Lightning Claw" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="e3df-88ee-50b8-c46f" name="Power Fist" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <links/>
+            </entryGroup>
+          </entryGroups>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="e69a-b4c0-5ea2-1dd4" profileTypeId="556e697423232344415441232323" name="Locutarus Strike Leader" hidden="false" book="HH5: Tempest" page="234">
+              <characteristics>
+                <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Jump Infantry (Character)"/>
+                <characteristic characteristicId="575323232344415441232323" name="WS" value="4"/>
+                <characteristic characteristicId="425323232344415441232323" name="BS" value="4"/>
+                <characteristic characteristicId="5323232344415441232323" name="S" value="4"/>
+                <characteristic characteristicId="5423232344415441232323" name="T" value="4"/>
+                <characteristic characteristicId="5723232344415441232323" name="W" value="1"/>
+                <characteristic characteristicId="4923232344415441232323" name="I" value="4"/>
+                <characteristic characteristicId="4123232344415441232323" name="A" value="2"/>
+                <characteristic characteristicId="4c4423232344415441232323" name="LD" value="9"/>
+                <characteristic characteristicId="5361766523232344415441232323" name="Save" value="2+"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups>
+        <entryGroup id="90af-cbdb-1aeb-dd8a" name="One in five Locutarus may exchange their Bolt Pistol for:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="75bf-66e0-3c94-b0ad" name="Hand Flamer" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="ece9-59df-47a5-63cf" name="Plasma Pistol" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers>
+            <modifier type="increment" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="4.0">
+              <conditions>
+                <condition parentId="b7c9-010a-fcab-2fe5" childId="a484-0325-cd34-9d23" field="selections" type="at least" value="9.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="roster" childId="64bdd508-d609-87cb-fa2a-1e73bd709d94" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="4b0e-606e-154f-7124" name="Opening Salvo" hidden="false" book="HH5: Tempest" page="234">
+          <description>On the turn in which the squad arrives via Deep Strike, it may fire its Pistol type weapons twice in the shooting phase.  It must be against the same target and Characters joining the unit do not gain this ability. </description>
+          <modifiers/>
+        </rule>
+        <rule id="698d-049b-cdc9-af1e" name="Precision Intervention" hidden="false" book="HH5: Tempest" page="234">
+          <description>When arriving via Deep Strike, the unit may re-roll the scatter dice.  </description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links>
+        <link id="7465-2d08-2518-651c" targetId="d4a1a878-9ad4-6ae0-a864-08f58264c4a5" linkType="rule">
           <modifiers/>
         </link>
       </links>
@@ -33421,528 +33966,6 @@ If the test is failed, the unit immediately suffers D6 wounds at AP2 with Instan
           <modifiers/>
         </link>
       </links>
-    </entry>
-    <entry id="b7c9-010a-fcab-2fe5" name="Locutarus Storm Squad" points="105.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH5: Tempest" page="234">
-      <entries>
-        <entry id="a484-0325-cd34-9d23" name="Locutarus" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="4" maxSelections="9" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles>
-            <profile id="d2e8-9531-f600-1d62" profileTypeId="556e697423232344415441232323" name="Locutarus" hidden="false" book="HH5: Tempest" page="234">
-              <characteristics>
-                <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Jump Infantry"/>
-                <characteristic characteristicId="575323232344415441232323" name="WS" value="4"/>
-                <characteristic characteristicId="425323232344415441232323" name="BS" value="4"/>
-                <characteristic characteristicId="5323232344415441232323" name="S" value="4"/>
-                <characteristic characteristicId="5423232344415441232323" name="T" value="4"/>
-                <characteristic characteristicId="5723232344415441232323" name="W" value="1"/>
-                <characteristic characteristicId="4923232344415441232323" name="I" value="4"/>
-                <characteristic characteristicId="4123232344415441232323" name="A" value="1"/>
-                <characteristic characteristicId="4c4423232344415441232323" name="LD" value="8"/>
-                <characteristic characteristicId="5361766523232344415441232323" name="Save" value="2+"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
-        </entry>
-        <entry id="920c-0608-7338-f10d" name="Locutarus Strike Leader" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups>
-            <entryGroup id="ee70-ca8a-dcf6-9dfb" name="May take any of the following:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="f095-28b0-8307-5f6c" name="Melta Bombs" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-                <entry id="bd57-aa47-ef5a-feb9" name="Combat Shield" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers/>
-              <links/>
-            </entryGroup>
-            <entryGroup id="1d87-1679-1f7e-bc0d" name="May exchange bolt pistol for:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="042a-b7bd-890b-71e3" name="Plasma Pistol" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-                <entry id="1192-9da4-5a0d-57ac" name="Hand Flamer" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers/>
-              <links/>
-            </entryGroup>
-            <entryGroup id="ce67-a8a4-a151-8ff7" name="May exchange Power Sword for:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="aaeb-ca5a-fcca-a762" name="Power Axe" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-                <entry id="4d7f-ca38-0f4f-fc53" name="Single Lightning Claw" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-                <entry id="e3df-88ee-50b8-c46f" name="Power Fist" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers/>
-              <links/>
-            </entryGroup>
-          </entryGroups>
-          <modifiers/>
-          <rules/>
-          <profiles>
-            <profile id="e69a-b4c0-5ea2-1dd4" profileTypeId="556e697423232344415441232323" name="Locutarus Strike Leader" hidden="false" book="HH5: Tempest" page="234">
-              <characteristics>
-                <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Jump Infantry (Character)"/>
-                <characteristic characteristicId="575323232344415441232323" name="WS" value="4"/>
-                <characteristic characteristicId="425323232344415441232323" name="BS" value="4"/>
-                <characteristic characteristicId="5323232344415441232323" name="S" value="4"/>
-                <characteristic characteristicId="5423232344415441232323" name="T" value="4"/>
-                <characteristic characteristicId="5723232344415441232323" name="W" value="1"/>
-                <characteristic characteristicId="4923232344415441232323" name="I" value="4"/>
-                <characteristic characteristicId="4123232344415441232323" name="A" value="2"/>
-                <characteristic characteristicId="4c4423232344415441232323" name="LD" value="9"/>
-                <characteristic characteristicId="5361766523232344415441232323" name="Save" value="2+"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
-        </entry>
-      </entries>
-      <entryGroups>
-        <entryGroup id="90af-cbdb-1aeb-dd8a" name="One in five Locutarus may exchange their Bolt Pistol for:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="75bf-66e0-3c94-b0ad" name="Hand Flamer" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="ece9-59df-47a5-63cf" name="Plasma Pistol" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="increment" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="4.0">
-              <conditions>
-                <condition parentId="b7c9-010a-fcab-2fe5" childId="a484-0325-cd34-9d23" field="selections" type="at least" value="9.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <links/>
-        </entryGroup>
-      </entryGroups>
-      <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="64bdd508-d609-87cb-fa2a-1e73bd709d94" field="selections" type="equal to" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <rules>
-        <rule id="4b0e-606e-154f-7124" name="Opening Salvo" hidden="false" book="HH5: Tempest" page="234">
-          <description>On the turn in which the squad arrives via Deep Strike, it may fire its Pistol type weapons twice in the shooting phase.  It must be against the same target and Characters joining the unit do not gain this ability. </description>
-          <modifiers/>
-        </rule>
-        <rule id="698d-049b-cdc9-af1e" name="Precision Intervention" hidden="false" book="HH5: Tempest" page="234">
-          <description>When arriving via Deep Strike, the unit may re-roll the scatter dice.  </description>
-          <modifiers/>
-        </rule>
-      </rules>
-      <profiles/>
-      <links>
-        <link id="7465-2d08-2518-651c" targetId="d4a1a878-9ad4-6ae0-a864-08f58264c4a5" linkType="rule">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
-    <entry id="fea8-bbb6-fe4d-2892" name="Fulmentarus Terminator Squad" points="85.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH5: Tempest" page="235">
-      <entries>
-        <entry id="9c9a-fc65-224d-37b1" name="Fulmentarus Terminator" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="4" maxSelections="9" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles>
-            <profile id="c446-1bbe-7c0e-95ba" profileTypeId="556e697423232344415441232323" name="Fulmentarus Terminator" hidden="false" book="HH5: Tempest" page="235">
-              <characteristics>
-                <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Infantry"/>
-                <characteristic characteristicId="575323232344415441232323" name="WS" value="4"/>
-                <characteristic characteristicId="425323232344415441232323" name="BS" value="5"/>
-                <characteristic characteristicId="5323232344415441232323" name="S" value="4"/>
-                <characteristic characteristicId="5423232344415441232323" name="T" value="4"/>
-                <characteristic characteristicId="5723232344415441232323" name="W" value="1"/>
-                <characteristic characteristicId="4923232344415441232323" name="I" value="4"/>
-                <characteristic characteristicId="4123232344415441232323" name="A" value="2"/>
-                <characteristic characteristicId="4c4423232344415441232323" name="LD" value="8"/>
-                <characteristic characteristicId="5361766523232344415441232323" name="Save" value="2+"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
-        </entry>
-        <entry id="b471-7895-fddd-1a8a" name="Fulmentarus Decurion" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="">
-          <entries/>
-          <entryGroups>
-            <entryGroup id="8b6b-14e5-8028-3e68" name="May exchange Power Maul for:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="9db3-0d8c-b5f9-60ea" name="Power Sword" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-                <entry id="71c3-58f8-ebdc-deee" name="Power Axe" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-                <entry id="2966-16bc-f2f5-d0b4" name="Power Fist" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers/>
-              <links/>
-            </entryGroup>
-          </entryGroups>
-          <modifiers/>
-          <rules/>
-          <profiles>
-            <profile id="10f4-79ad-43d6-7afa" profileTypeId="556e697423232344415441232323" name="Fulmentarus Decurion" hidden="false" book="HH5: Tempest" page="235">
-              <characteristics>
-                <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Infantry"/>
-                <characteristic characteristicId="575323232344415441232323" name="WS" value="4"/>
-                <characteristic characteristicId="425323232344415441232323" name="BS" value="5"/>
-                <characteristic characteristicId="5323232344415441232323" name="S" value="4"/>
-                <characteristic characteristicId="5423232344415441232323" name="T" value="4"/>
-                <characteristic characteristicId="5723232344415441232323" name="W" value="1"/>
-                <characteristic characteristicId="4923232344415441232323" name="I" value="4"/>
-                <characteristic characteristicId="4123232344415441232323" name="A" value="2"/>
-                <characteristic characteristicId="4c4423232344415441232323" name="LD" value="9"/>
-                <characteristic characteristicId="5361766523232344415441232323" name="Save" value="2+"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
-        </entry>
-      </entries>
-      <entryGroups>
-        <entryGroup id="b44c-1c86-f3f1-ecb7" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <links>
-            <link id="e307-17ef-3090-10c9" targetId="a8eda173-f749-cfb6-fd0e-3d6fb35cad3b" linkType="entry">
-              <modifiers>
-                <modifier type="hide" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="fea8-bbb6-fe4d-2892" childId="9c9a-fc65-224d-37b1" field="selections" type="greater than" value="4.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-            </link>
-            <link id="8a8a-d42c-833f-c8b9" targetId="8cc05fec-8274-bea3-5d54-d249b36a3209" linkType="entry">
-              <modifiers>
-                <modifier type="hide" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="fea8-bbb6-fe4d-2892" childId="9c9a-fc65-224d-37b1" field="selections" type="greater than" value="4.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-            </link>
-            <link id="10fd-7730-7e62-321a" targetId="bce74018-92f3-2081-4079-a5eab9d107b2" linkType="entry">
-              <modifiers>
-                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="fea8-bbb6-fe4d-2892" childId="9c9a-fc65-224d-37b1" field="selections" type="less than" value="5.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-            </link>
-          </links>
-        </entryGroup>
-        <entryGroup id="97b0-aa4c-5ada-292f" name="Any Fulmentarus Terminator may exchange their Power Maul for:" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="bc13-746d-259e-a85e" name="Power Sword" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="9" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="4710-c9a6-791e-4842" name="Power Axe" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="9" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="3b6c-b194-3903-7891" name="Power Fist" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="9" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="fea8-bbb6-fe4d-2892" incrementChildId="9c9a-fc65-224d-37b1" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <links/>
-        </entryGroup>
-        <entryGroup id="8695-d3eb-712e-ccd5" name="Entire Squad may exchange their Combi-bolters for:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="58b0-7b21-dfa8-f0c6" name="Combi-melta" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers>
-                <modifier type="increment" field="points" value="5.0" repeat="true" numRepeats="1" incrementParentId="fea8-bbb6-fe4d-2892" incrementChildId="9c9a-fc65-224d-37b1" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="30c3-c64b-3743-88eb" name="Reaper Autocannon" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers>
-                <modifier type="increment" field="points" value="20.0" repeat="true" numRepeats="1" incrementParentId="fea8-bbb6-fe4d-2892" incrementChildId="9c9a-fc65-224d-37b1" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="fea8-bbb6-fe4d-2892" childId="172d-6094-efbb-5334" field="selections" type="equal to" value="1.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <links/>
-        </entryGroup>
-        <entryGroup id="172d-6094-efbb-5334" name="Entire Squad may take:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="7dc7-d818-4d6a-9f67" name="Cyclone Missile Launcher" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers>
-                <modifier type="increment" field="points" value="30.0" repeat="true" numRepeats="1" incrementParentId="fea8-bbb6-fe4d-2892" incrementChildId="9c9a-fc65-224d-37b1" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="fea8-bbb6-fe4d-2892" childId="8695-d3eb-712e-ccd5" field="selections" type="equal to" value="1.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <links/>
-        </entryGroup>
-      </entryGroups>
-      <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="64bdd508-d609-87cb-fa2a-1e73bd709d94" field="selections" type="equal to" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <rules/>
-      <profiles>
-        <profile id="61b9-455f-9d0e-c65a" profileTypeId="57617267656172204974656d23232344415441232323" name="Peritarch Targeter" hidden="false" book="HH5: Tempest" page="235">
-          <characteristics>
-            <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Confers the following abilities:
-- With at least two models, unit gains Night Vision
-- With at least five models, unit gains Tank Hunter
-- With at least eight models, unit forces cover saves a -1"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-      </profiles>
-      <links>
-        <link id="dd8c-6816-3f36-d14b" targetId="59304e4a-18c6-1283-455b-f79c559b207f" linkType="profile">
-          <modifiers/>
-        </link>
-        <link id="1b95-f184-acf5-0c19" targetId="d4a1a878-9ad4-6ae0-a864-08f58264c4a5" linkType="rule">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
-    <entry id="5eb4-31b6-a79b-bcde" name="Damocles Command Rhino" points="100.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH5: Tempest" page="237">
-      <entries/>
-      <entryGroups>
-        <entryGroup id="4c55-f99a-2264-22d1" name="May take any of the following:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="b25b-534f-473a-94c3" name="Extra Armour" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="f73b-33f9-e1c9-56cd" name="Pintle-mounted Heavy Bolter" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="7808-4c8f-2872-8182" name="Hunter-killer Missile" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="cd0a-93bd-5c96-3b82" name="Dozer Blade" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <links/>
-        </entryGroup>
-      </entryGroups>
-      <modifiers/>
-      <rules>
-        <rule id="dfb5-4993-7b83-25c9" name="Geo-locator Beacon" hidden="false" book="HH5: Tempest" page="237">
-          <description>Units arriving via Deep Strike which are part of the force containing the Damocles do not scatter if they choose to arrive within 24&quot;</description>
-          <modifiers/>
-        </rule>
-        <rule id="1ccc-b98b-e0d4-ab85" name="Command Vox Relay" hidden="false" book="HH5: Tempest" page="237">
-          <description>Allows the controlling player to add a +1 or -1 modifer to reserve rolls while in play.  Additionally, enemy models suffer a +1 to Deep Strike Mishap table rolls. </description>
-          <modifiers/>
-        </rule>
-        <rule id="254f-52fc-ca51-9d18" name="Focused Bombardment" hidden="false" book="HH5: Tempest" page="237">
-          <description>Once per game, may call down a bombardment in the shooting phase.  May not move in the turn it shoots this weapon. </description>
-          <modifiers/>
-        </rule>
-      </rules>
-      <profiles>
-        <profile id="9015-a27e-cfa5-ba42" profileTypeId="56656869636c6523232344415441232323" name="Damocles Command Rhino" hidden="false" book="HH5: Tempest" page="237">
-          <characteristics>
-            <characteristic characteristicId="425323232344415441232323" name="BS" value="4"/>
-            <characteristic characteristicId="46726f6e7423232344415441232323" name="Front" value="11"/>
-            <characteristic characteristicId="5369646523232344415441232323" name="Side" value="11"/>
-            <characteristic characteristicId="5265617223232344415441232323" name="Rear" value="11"/>
-            <characteristic characteristicId="485023232344415441232323" name="HP" value="3"/>
-            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Tank"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-        <profile id="e0f4-13f9-b1fa-765b" profileTypeId="576561706f6e23232344415441232323" name="Focused Bombardment" hidden="false" book="HH5: Tempest" page="237">
-          <characteristics>
-            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="Unlimited"/>
-            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="8"/>
-            <characteristic characteristicId="415023232344415441232323" name="AP" value="3"/>
-            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Ordnance 1, Lance, Twin-linked, Barrage, Large Blast"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-      </profiles>
-      <links/>
     </entry>
   </sharedEntries>
   <sharedEntryGroups>
