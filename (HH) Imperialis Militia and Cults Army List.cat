@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="90aa-c2c8-ffb0-496e" revision="2" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="29" battleScribeVersion="1.15" name="Imperialis Militia and Cults Army List" books="HH5: Tempest" authorName="Millicant" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="90aa-c2c8-ffb0-496e" revision="3" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="29" battleScribeVersion="1.15" name="Imperialis Militia and Cults Army List" books="HH5: Tempest" authorName="Millicant" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="c170-a157-c7c0-c7a7" name="Auxilia Baneblade Super-heavy Battle Tank" points="535.0" categoryId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH4: Conquest" page="284">
       <entries/>
@@ -3142,6 +3142,50 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                 </modifier>
               </modifiers>
             </link>
+            <link id="5def-f49e-fabc-a9c8" targetId="3738-7adf-ea3d-8a7e" linkType="entry">
+              <modifiers>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="roster" childId="d18f-6d15-942c-0ac5" field="selections" type="equal to" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition parentId="7363-3856-b416-c2cc" childId="7912-f7ee-95b4-2e23" field="selections" type="greater than" value="9.0"/>
+                        <condition parentId="7363-3856-b416-c2cc" childId="ace0-d2ce-3f05-9839" field="selections" type="greater than" value="0.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </link>
+            <link id="fc8a-155c-c2f0-0f81" targetId="11ce-7e74-239c-fee7" linkType="entry">
+              <modifiers>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="roster" childId="d18f-6d15-942c-0ac5" field="selections" type="equal to" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition parentId="7363-3856-b416-c2cc" childId="7912-f7ee-95b4-2e23" field="selections" type="greater than" value="9.0"/>
+                        <condition parentId="7363-3856-b416-c2cc" childId="ace0-d2ce-3f05-9839" field="selections" type="greater than" value="0.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </link>
           </links>
         </entryGroup>
         <entryGroup id="2b6a-a737-6f37-6dd1" name="Grenade Launcher(s) may be upgraded to use:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -3182,6 +3226,25 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
           </modifiers>
           <links/>
         </entryGroup>
+        <entryGroup id="a355-91ce-5dbd-78fc" name="Provenance" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="c52c-1135-93f6-ecdb" targetId="93a4-c515-6894-0cda" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="b851-bbdf-701d-fa8e" targetId="debc-cc0e-8478-6cb5" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="b18b-928a-268a-6012" targetId="e27e-c832-69b2-1872" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="cee7-30d7-9feb-9a8c" targetId="2512-6bcd-7038-84bd" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
       </entryGroups>
       <modifiers>
         <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
@@ -3193,11 +3256,7 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       </modifiers>
       <rules/>
       <profiles/>
-      <links>
-        <link id="f995-25cf-63c0-5c0c" targetId="9d50-7127-dc55-d542" linkType="entry group">
-          <modifiers/>
-        </link>
-      </links>
+      <links/>
     </entry>
     <entry id="96d5-e897-8a04-a1ad" name="Imperialis Militia Reconaissance Squad" points="50.0" categoryId="54726f6f707323232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
@@ -3960,7 +4019,7 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       <entryGroups>
         <entryGroup id="5b3c-478a-d310-905f" name="Leman Russ Tank" defaultEntryId="91d8-be25-013e-3a0c" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
-            <entry id="3a51-a190-ca2e-8681" name="Leman Russ Annihilator" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entry id="3a51-a190-ca2e-8681" name="Leman Russ Annihilator" points="140.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -3993,7 +4052,7 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                 </link>
               </links>
             </entry>
-            <entry id="bec8-7013-b0f7-605b" name="Leman Russ Exterminator" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entry id="bec8-7013-b0f7-605b" name="Leman Russ Exterminator" points="140.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -4026,7 +4085,7 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                 </link>
               </links>
             </entry>
-            <entry id="5842-5374-17e8-a87f" name="Leman Russ Demolisher" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entry id="5842-5374-17e8-a87f" name="Leman Russ Demolisher" points="160.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -4059,7 +4118,7 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                 </link>
               </links>
             </entry>
-            <entry id="d1f1-7a3a-f4b9-4113" name="Leman Russ Vanquisher" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entry id="d1f1-7a3a-f4b9-4113" name="Leman Russ Vanquisher" points="155.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -4092,7 +4151,7 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                 </link>
               </links>
             </entry>
-            <entry id="91d8-be25-013e-3a0c" name="Leman Russ Battle Tank" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entry id="91d8-be25-013e-3a0c" name="Leman Russ Battle Tank" points="140.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
