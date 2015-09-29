@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="60" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Crusade Army List" books="HH:LACAL - 2014" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="62" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Crusade Army List" books="HH:LACAL - 2014" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LACAL" page="55">
       <entries/>
@@ -6346,6 +6346,9 @@ D6    Result		S	AP
       </profiles>
       <links>
         <link id="e9f3334e-9bf1-c107-6a77-90d323183014" targetId="b3ea1d32-ba66-0585-d7f7-0dc56e707736" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="d937-4ce6-0bfb-e7f7" targetId="1ea8-a8a3-3a8c-ba32" linkType="profile">
           <modifiers/>
         </link>
       </links>
@@ -13513,23 +13516,17 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
                     </link>
                   </links>
                 </entry>
-                <entry id="06556a30-c351-f5b1-4d64-2403a68f9424" name="Magna-Melta Cannon" points="45.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                <entry id="1386-6278-f0f2-57e8" name="Magna-Melta Cannon" points="45.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
                   <rules/>
-                  <profiles>
-                    <profile id="a4e5b102-7f4e-eaaf-4e70-a11112d965d0" profileTypeId="576561706f6e23232344415441232323" name="Magna-Melta Cannon" hidden="false" book="HH:LACAL" page="92">
-                      <characteristics>
-                        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="18&quot;"/>
-                        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="8"/>
-                        <characteristic characteristicId="415023232344415441232323" name="AP" value="1"/>
-                        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 1, Large Blast, Melta"/>
-                      </characteristics>
+                  <profiles/>
+                  <links>
+                    <link id="2351-c39c-83c6-3204" targetId="1ea8-a8a3-3a8c-ba32" linkType="profile">
                       <modifiers/>
-                    </profile>
-                  </profiles>
-                  <links/>
+                    </link>
+                  </links>
                 </entry>
               </entries>
               <entryGroups/>
@@ -21060,29 +21057,8 @@ Phalanx Breacher squads and Legion Terminator squads may be taken as troops in a
         </modifier>
       </modifiers>
     </link>
-    <link id="c7ae1cdc-7aaa-bfdb-234c-a18b19804000" targetId="b4ae8f2a-ef96-0289-5600-4634a00a4c9f" linkType="entry" categoryId="54726f6f707323232344415441232323">
-      <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="c372be5e-1a5d-8018-bd71-0e8383690344" field="selections" type="equal to" value="0.0"/>
-            <condition parentId="roster" childId="34bd31b6-3b94-2a1f-4e4a-e04854507984" field="selections" type="equal to" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-    </link>
     <link id="79261a0c-e58d-9bfb-dac0-160c412bc89c" targetId="1dc6f0b3-861b-6ca5-203f-052281aed3e1" linkType="entry" categoryId="486561767920537570706f727423232344415441232323">
       <modifiers/>
-    </link>
-    <link id="0649727c-3d4c-8434-2a45-df0dc71182bc" targetId="1dc6f0b3-861b-6ca5-203f-052281aed3e1" linkType="entry" categoryId="54726f6f707323232344415441232323">
-      <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="8d240ee2-07a0-3249-7971-5fb88687f489" field="selections" type="equal to" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
     </link>
     <link id="39a03b8d-8f9d-e117-4dea-1c72868b68dc" targetId="b14a9d49-fb08-e3f5-8e39-6dedfc0a69c1" linkType="entry" categoryId="456c6974657323232344415441232323">
       <modifiers>
@@ -21112,14 +21088,7 @@ Phalanx Breacher squads and Legion Terminator squads may be taken as troops in a
       </modifiers>
     </link>
     <link id="08ff23ef-2f66-68ab-7a75-eb36fbe17878" targetId="ae82263c-4bad-79fd-c274-305b8f0f7ffb" linkType="entry" categoryId="456c6974657323232344415441232323">
-      <modifiers>
-        <modifier type="hide" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="34bd31b6-3b94-2a1f-4e4a-e04854507984" field="selections" type="equal to" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
+      <modifiers/>
     </link>
     <link id="4e3cdbac-ddda-850a-6d8b-de5b7b8757cc" targetId="d2668403-0cc0-a0c2-c2d8-c120e3a61437" linkType="entry" categoryId="486561767920537570706f727423232344415441232323">
       <modifiers/>
@@ -21135,27 +21104,13 @@ Phalanx Breacher squads and Legion Terminator squads may be taken as troops in a
       </modifiers>
     </link>
     <link id="376ca06a-4491-1559-032c-5243d854a297" targetId="4a689753-47b5-5897-1023-1b51b177ec61" linkType="entry" categoryId="456c6974657323232344415441232323">
-      <modifiers>
-        <modifier type="hide" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="34bd31b6-3b94-2a1f-4e4a-e04854507984" field="selections" type="equal to" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
+      <modifiers/>
     </link>
     <link id="be359358-38b7-aebd-89af-43c76676b886" targetId="8c9ab402-5181-cb3e-9e53-6e3e77c3fac6" linkType="entry" categoryId="486561767920537570706f727423232344415441232323">
       <modifiers/>
     </link>
     <link id="9c1c2bb4-1ebc-3ccf-34dd-357d6719bdd1" targetId="5de71262-935f-d357-f3d5-aefd3ac0bfcd" linkType="entry" categoryId="456c6974657323232344415441232323">
-      <modifiers>
-        <modifier type="hide" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="34bd31b6-3b94-2a1f-4e4a-e04854507984" field="selections" type="equal to" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
+      <modifiers/>
     </link>
     <link id="652dce78-6635-90cd-fd84-b8f4e6188758" targetId="d74303db-b69f-85c7-d14c-bf9743a70ff9" linkType="entry" categoryId="456c6974657323232344415441232323">
       <modifiers/>
@@ -21209,86 +21164,6 @@ Phalanx Breacher squads and Legion Terminator squads may be taken as troops in a
         <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
             <condition parentId="roster" childId="7c741cce-8850-b98f-3b84-cd0d84c3dada" field="selections" type="equal to" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-    </link>
-    <link id="54c1f16f-239b-03f7-5787-1738aece1c50" targetId="38de9d1a-135a-55d2-32e0-575f2726d753" linkType="entry" categoryId="54726f6f707323232344415441232323">
-      <modifiers>
-        <modifier type="hide" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="34bd31b6-3b94-2a1f-4e4a-e04854507984" field="selections" type="equal to" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-    </link>
-    <link id="14c16af2-f09b-ff69-756c-f4b8069d6205" targetId="ae82263c-4bad-79fd-c274-305b8f0f7ffb" linkType="entry" categoryId="54726f6f707323232344415441232323">
-      <modifiers>
-        <modifier type="hide" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="34bd31b6-3b94-2a1f-4e4a-e04854507984" field="selections" type="equal to" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-    </link>
-    <link id="672a9897-961a-e2b9-4afb-4ae1d4e74cdf" targetId="5de71262-935f-d357-f3d5-aefd3ac0bfcd" linkType="entry" categoryId="54726f6f707323232344415441232323">
-      <modifiers>
-        <modifier type="hide" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="34bd31b6-3b94-2a1f-4e4a-e04854507984" field="selections" type="equal to" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-    </link>
-    <link id="6589c428-79a5-97b3-ce71-bad9b5e9a709" targetId="b14a9d49-fb08-e3f5-8e39-6dedfc0a69c1" linkType="entry" categoryId="54726f6f707323232344415441232323">
-      <modifiers>
-        <modifier type="hide" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="34bd31b6-3b94-2a1f-4e4a-e04854507984" field="selections" type="equal to" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-    </link>
-    <link id="3827bf28-9b1d-1dd4-5e31-e983b0ef72e2" targetId="bfa29302-44f6-78de-d3d0-505017188013" linkType="entry" categoryId="54726f6f707323232344415441232323">
-      <modifiers>
-        <modifier type="hide" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="34bd31b6-3b94-2a1f-4e4a-e04854507984" field="selections" type="equal to" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-    </link>
-    <link id="2c7dab97-65fa-eb71-9bb8-586c92a8b594" targetId="4a689753-47b5-5897-1023-1b51b177ec61" linkType="entry" categoryId="54726f6f707323232344415441232323">
-      <modifiers>
-        <modifier type="hide" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="34bd31b6-3b94-2a1f-4e4a-e04854507984" field="selections" type="equal to" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-    </link>
-    <link id="6f8c5499-5671-0faa-27a6-946eaae6d795" targetId="59dc2f80-3991-a6ca-84d7-7e4299c755ad" linkType="entry" categoryId="456c6974657323232344415441232323">
-      <modifiers>
-        <modifier type="hide" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="34bd31b6-3b94-2a1f-4e4a-e04854507984" field="selections" type="equal to" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-    </link>
-    <link id="0635bd80-999c-6f45-1120-f8db3a38f143" targetId="59dc2f80-3991-a6ca-84d7-7e4299c755ad" linkType="entry" categoryId="54726f6f707323232344415441232323">
-      <modifiers>
-        <modifier type="hide" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="34bd31b6-3b94-2a1f-4e4a-e04854507984" field="selections" type="equal to" value="0.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -35312,6 +35187,15 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
     <profile id="55149030-a3cd-418d-d04f-06aa29450a55" profileTypeId="57617267656172204974656d23232344415441232323" name="Lorica Thallax" hidden="false" book="HH1: Betrayal" page="240">
       <characteristics>
         <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Porvides 4+ Armour and FNP 6+ but may not make Sweeping Advances"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="1ea8-a8a3-3a8c-ba32" profileTypeId="576561706f6e23232344415441232323" name="Magna-Melta Cannon" hidden="false" book="HH:LACAL" page="92">
+      <characteristics>
+        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="18&quot;"/>
+        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="8"/>
+        <characteristic characteristicId="415023232344415441232323" name="AP" value="1"/>
+        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 1, Large Blast, Melta"/>
       </characteristics>
       <modifiers/>
     </profile>
