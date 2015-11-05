@@ -6525,7 +6525,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
       <profiles/>
       <links/>
     </entry>
-    <entry id="32e6-8092-ad80-2543" name="Tarantula Sentry Gun Battery" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="32e6-8092-ad80-2543" name="Tarantula Sentry Gun Battery" points="0.0" categoryId="466173742041747461636b23232344415441232323" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
         <entry id="3972-c22b-14a5-1ccc" name="Exchange all twin-linked Heavy Bolters for Hyperios Air-defence Missile Launchers" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
           <entries>
@@ -6602,7 +6602,17 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <entryGroups/>
               <modifiers/>
               <rules/>
-              <profiles/>
+              <profiles>
+                <profile id="e849-09fa-99f1-d40c" profileTypeId="576561706f6e23232344415441232323" name="Twin-linked Heavy Flamers" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="Template"/>
+                    <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="5"/>
+                    <characteristic characteristicId="415023232344415441232323" name="AP" value="4"/>
+                    <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Assault 1"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
               <links/>
             </entry>
             <entry id="f0d3-70b9-9136-1664" name="Two twin-linked Rotor Cannons" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
@@ -6631,7 +6641,82 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <modifiers/>
               <rules/>
               <profiles/>
+              <links>
+                <link id="9080-03ec-b44d-60ea" targetId="ed91-7534-4852-fb7a" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="9c71-70b0-68ec-bc19" name="Twin-linked Photon Thruster" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="5d34-8088-1bb4-2654" targetId="43648289-5a0f-99d3-1cfc-55b689750afa" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="9114-215c-7d89-8e11" name="Twin-Linked rotor cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="003b-31c0-a2ad-1034" targetId="75683330-6490-c0bf-560c-2e58617425a1" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="f163-9358-9723-0869" name="Twin-linked Volkite Culverin" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="5c71-5754-0ae2-8db6" targetId="c7838603-9e18-8756-26b1-222a294c5c2c" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="8012-cc79-0873-d34b" name="Quad-gun" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules>
+                <rule id="a901-24a0-9f8c-dbdf" name="Shell Shock" hidden="false" book="HH:LACAL" page="83">
+                  <description>Pinning tests taken because of a weapon with this special rule suffer a -1 Leadership penalty.</description>
+                  <modifiers/>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="90a0-8284-4e92-b8b0" profileTypeId="576561706f6e23232344415441232323" name="Quad Mortar" hidden="false" book="HH:LACAL" page="83">
+                  <characteristics>
+                    <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="12&quot; - 60&quot;"/>
+                    <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="5"/>
+                    <characteristic characteristicId="415023232344415441232323" name="AP" value="5"/>
+                    <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 4, Barrage, Blast, Shell Shock"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
               <links/>
+            </entry>
+            <entry id="e387-5e40-20e0-8771" name="Twin-linked Mauler Bolt Cannon" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="cf78-da6a-6f08-2280" targetId="4e8db74f-78a9-b643-e032-2fedd5458eba" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
             </entry>
           </entries>
           <entryGroups/>
@@ -6641,6 +6726,67 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <conditionGroups/>
             </modifier>
           </modifiers>
+          <links/>
+        </entryGroup>
+        <entryGroup id="bd46-d0b8-78f3-8269" name="Entire battery may take one upgrade:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="3409-ae99-35be-867b" name="Concealment" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="increment" field="points" value="10.0" repeat="true" numRepeats="1" incrementParentId="32e6-8092-ad80-2543" incrementChildId="c08f-8c0c-c128-e63c" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule id="0f9f-6b44-79fb-4686" name="Concealment" hidden="false" book="HH:LACAL" page="44">
+                  <description>Sentry Gun Battery has Shrouded special rule until the first time it fires a weapon.  </description>
+                  <modifiers/>
+                </rule>
+              </rules>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="ce37-e39c-edbb-1d13" name="Forward Deployment" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="increment" field="points" value="5.0" repeat="true" numRepeats="1" incrementParentId="32e6-8092-ad80-2543" incrementChildId="c08f-8c0c-c128-e63c" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule id="1179-bb90-4343-4af9" name="Forward Deployment" hidden="false" book="HH:LACAL" page="44">
+                  <description>The Sentry Gun Battery has the Scout special rule. </description>
+                  <modifiers/>
+                </rule>
+              </rules>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="7366-3013-c7d8-e771" name="Drop Capsule" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="increment" field="points" value="20.0" repeat="true" numRepeats="1" incrementParentId="32e6-8092-ad80-2543" incrementChildId="c08f-8c0c-c128-e63c" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule id="aa73-95dc-6b41-74ac" name="Drop Capsule" hidden="false" book="Taghmata Army List" page="45">
+                  <description>The Sentry Gun must be deployed via Deep Strilke. Each gun in the battery is treated as a separate unit for this, and Reserves rolls, etc, are made separately for each gun.</description>
+                  <modifiers/>
+                </rule>
+              </rules>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
           <links/>
         </entryGroup>
       </entryGroups>
@@ -7531,130 +7677,6 @@ Units with this augment count as a Heavy Support choice instead of a troops choi
           <modifiers/>
         </link>
       </links>
-    </entry>
-    <entry id="37f5-06f0-f588-733e" name="Tarantula Sentry Gun Battery" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries>
-        <entry id="91b3-96f8-54ac-5877" name="Exchange all twin-linked Heavy Bolters for Hyperios Air-defence Missile Launchers" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
-          <entries>
-            <entry id="1a90-b3c3-cdb0-22bd" name="Exchange Hyperios Air-defence Missile Launcher for Hyperios Command Platform" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers>
-                <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="37f5-06f0-f588-733e" incrementChildId="82bb-a479-0fb6-9225" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <rules>
-                <rule id="7c33-42fb-2fb7-a422" name="Hyperios Command Platform" hidden="false" book="HH:LACAL" page="44">
-                  <description>While on the table, all Hyperios Air-defence Missile Launcher equipped Tarantula Sentry Guns in the same unit receive the Split Fire special rule.  The test is automatically passed for Split Fire.  </description>
-                  <modifiers/>
-                </rule>
-              </rules>
-              <profiles/>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="increment" field="points" value="20.0" repeat="true" numRepeats="1" incrementParentId="37f5-06f0-f588-733e" incrementChildId="82bb-a479-0fb6-9225" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="37f5-06f0-f588-733e" childId="1a90-b3c3-cdb0-22bd" field="selections" type="greater than" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <rules/>
-          <profiles/>
-          <links>
-            <link id="93b0-ffb0-3269-eccc" targetId="b8643d20-d7ef-7974-7261-11c7b9787be0" linkType="profile">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
-        <entry id="82bb-a479-0fb6-9225" name="Tarantula Sentry Gun" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LACAL" page="44">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles>
-            <profile id="08e8-3555-a92d-1dba" profileTypeId="556e697423232344415441232323" name="Tarantula Sentry Gun" hidden="false" book="HH:LACAL" page="44">
-              <characteristics>
-                <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Artillery (Immobile)"/>
-                <characteristic characteristicId="575323232344415441232323" name="WS" value="-"/>
-                <characteristic characteristicId="425323232344415441232323" name="BS" value="3"/>
-                <characteristic characteristicId="5323232344415441232323" name="S" value="-"/>
-                <characteristic characteristicId="5423232344415441232323" name="T" value="6"/>
-                <characteristic characteristicId="5723232344415441232323" name="W" value="2"/>
-                <characteristic characteristicId="4923232344415441232323" name="I" value="-"/>
-                <characteristic characteristicId="4123232344415441232323" name="A" value="-"/>
-                <characteristic characteristicId="4c4423232344415441232323" name="LD" value="-"/>
-                <characteristic characteristicId="5361766523232344415441232323" name="Save" value="3+"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
-        </entry>
-      </entries>
-      <entryGroups>
-        <entryGroup id="d5d5-bb08-87c4-a45d" name="Exchange any Twin-linked Heavy Bolter for:" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="cee4-fb42-54ab-e840" name="Twin-linked Heavy Flamers" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="6aef-792e-97eb-1f1d" name="Two twin-linked Rotor Cannons" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="997e-b4e8-c4f6-1e0e" targetId="75683330-6490-c0bf-560c-2e58617425a1" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="0aba-9e51-c99c-8a23" name="Twin-linked Lascannon" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="cee0-2d04-47e3-e4f1" name="Multi-melta and Searchlight" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="37f5-06f0-f588-733e" incrementChildId="82bb-a479-0fb6-9225" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <links/>
-        </entryGroup>
-      </entryGroups>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links/>
     </entry>
   </entries>
   <rules/>
