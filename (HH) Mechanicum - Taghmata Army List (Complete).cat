@@ -7364,7 +7364,7 @@ Units with this augment count as a Heavy Support choice instead of a troops choi
         </link>
       </links>
     </entry>
-    <entry id="4f7e-7203-67ec-3384" name="Vorax Class Battle-automata Maniple" points="0.0" categoryId="466173742041747461636b23232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH3: Extermination" page="226">
+    <entry id="4f7e-7203-67ec-3384" name="Vorax Class Battle-automata Maniple" points="0.0" categoryId="466173742041747461636b23232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Taghmata Army List" page="46">
       <entries>
         <entry id="2705-70cf-55eb-b9cd" name="Vorax" points="75.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -7388,6 +7388,14 @@ Units with this augment count as a Heavy Support choice instead of a troops choi
               <modifiers/>
             </profile>
           </profiles>
+          <links/>
+        </entry>
+        <entry id="f080-3bd6-6ab7-29ac" name="Bio-corrosive ammunition" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
           <links/>
         </entry>
       </entries>
@@ -7442,7 +7450,7 @@ Units with this augment count as a Heavy Support choice instead of a troops choi
           <modifiers/>
           <links/>
         </entryGroup>
-        <entryGroup id="e1e6-5090-f67b-dab0" name="Any Vorax class Battle-automata may exchange its lightning gun for:" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="e1e6-5090-f67b-dab0" name="Any Vorax class Battle-automata may exchange its rotor cannon for:" defaultEntryId="01d8-16f3-5f23-e02a" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="9e50-54dc-caff-bda3" name="Irad-cleanser" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
@@ -7456,10 +7464,35 @@ Units with this augment count as a Heavy Support choice instead of a troops choi
                 </link>
               </links>
             </entry>
+            <entry id="01d8-16f3-5f23-e02a" name="Rotor Cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="4411-9800-1b4e-617b" targetId="75683330-6490-c0bf-560c-2e58617425a1" linkType="profile">
+                  <modifiers>
+                    <modifier type="set" field="52616e676523232344415441232323" value="15" repeat="true" numRepeats="1" incrementParentId="4f7e-7203-67ec-3384" incrementChildId="f080-3bd6-6ab7-29ac" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                    <modifier type="set" field="537472656e67746823232344415441232323" value="Poison 4+" repeat="true" numRepeats="1" incrementParentId="4f7e-7203-67ec-3384" incrementChildId="f080-3bd6-6ab7-29ac" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                </link>
+              </links>
+            </entry>
           </entries>
           <entryGroups/>
           <modifiers>
             <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="4f7e-7203-67ec-3384" incrementChildId="2705-70cf-55eb-b9cd" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="minSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="4f7e-7203-67ec-3384" incrementChildId="2705-70cf-55eb-b9cd" incrementField="selections" incrementValue="1.0">
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -7491,13 +7524,7 @@ Units with this augment count as a Heavy Support choice instead of a troops choi
         <link id="279a-087f-97cb-da62" targetId="d94ec38f-20c8-84b8-79e6-6aba811aae26" linkType="profile">
           <modifiers/>
         </link>
-        <link id="f747-36d9-7ad9-4598" targetId="ec450cd6-6dba-ca68-091c-9c48fcbc2112" linkType="profile">
-          <modifiers/>
-        </link>
         <link id="675b-c327-5dde-c8d1" targetId="6e9c4f42-34a8-9253-3f68-8b582ee5830b" linkType="profile">
-          <modifiers/>
-        </link>
-        <link id="808c-c30b-658a-9ed7" targetId="75683330-6490-c0bf-560c-2e58617425a1" linkType="profile">
           <modifiers/>
         </link>
         <link id="cabc-0a50-11ed-25cc" targetId="8fcf6a3e-2394-ea8b-62a4-b78168a2dd15" linkType="rule">
