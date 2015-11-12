@@ -205,18 +205,6 @@
                 </link>
               </links>
             </entry>
-            <entry id="6ae7-d4ea-98ac-833d" name="Machinator Array" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="7d23-a7d4-b2ae-6c2c" targetId="3ffc1f76-719b-bc95-a3c9-15614a8c94bc" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
             <entry id="c275-f77c-2a67-4a22" name="Conversion Beamer" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LACAL" page="0">
               <entries/>
               <entryGroups/>
@@ -238,7 +226,11 @@
           </entries>
           <entryGroups/>
           <modifiers/>
-          <links/>
+          <links>
+            <link id="260c-a209-331c-3ed8" targetId="9d9f-63d3-f635-7fd5" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
         </entryGroup>
         <entryGroup id="13bb-b102-a26b-42f8" name="May take any of the following:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
@@ -345,21 +337,6 @@
           <modifiers/>
           <links/>
         </entryGroup>
-        <entryGroup id="c527-bb90-b232-6879" name="May be mounted on an: " minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="01d5-325a-cd54-7bd6" name="Abeyant" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <links/>
-        </entryGroup>
         <entryGroup id="f326-a9d6-b544-c701" name="The Archmagos Dominus may take one of the following options" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="1006-9efc-ece5-2ded" name="Rad/irad Cleanser" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
@@ -458,7 +435,16 @@
             <characteristic characteristicId="4c4423232344415441232323" name="LD" value="10"/>
             <characteristic characteristicId="5361766523232344415441232323" name="Save" value="2+"/>
           </characteristics>
-          <modifiers/>
+          <modifiers>
+            <modifier type="increment" field="5723232344415441232323" value="1" repeat="true" numRepeats="1" incrementParentId="7bc3-4c9b-a14c-d3c2" incrementChildId="df18-c724-2a3d-a6e5" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="5423232344415441232323" value="1" repeat="true" numRepeats="1" incrementParentId="7bc3-4c9b-a14c-d3c2" incrementChildId="9d9f-63d3-f635-7fd5" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <links>
@@ -481,6 +467,9 @@
           <modifiers/>
         </link>
         <link id="45a1-c428-b89a-3ac0" targetId="8eaa-d294-e708-bbde" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="be2f-fee2-554b-9450" targetId="df18-c724-2a3d-a6e5" linkType="entry group">
           <modifiers/>
         </link>
       </links>
@@ -514,21 +503,6 @@
                   <modifiers/>
                 </link>
               </links>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <links/>
-        </entryGroup>
-        <entryGroup id="13aa-fb14-3911-ffc3" name="May be mounted on:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="ce87-7cd6-4aae-eced" name="Abeyant" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
             </entry>
           </entries>
           <entryGroups/>
@@ -576,7 +550,12 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
             <characteristic characteristicId="4c4423232344415441232323" name="LD" value="10"/>
             <characteristic characteristicId="5361766523232344415441232323" name="Save" value="2+"/>
           </characteristics>
-          <modifiers/>
+          <modifiers>
+            <modifier type="increment" field="5723232344415441232323" value="1" repeat="true" numRepeats="1" incrementParentId="fc87-1477-dc2f-53bf" incrementChildId="df18-c724-2a3d-a6e5" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </profile>
         <profile id="1c00-fe31-d4ec-340a" profileTypeId="57617267656172204974656d23232344415441232323" name="Djinn-skein" hidden="false" book="HH3: Extermination" page="215">
           <characteristics>
@@ -611,6 +590,9 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
           <modifiers/>
         </link>
         <link id="1266-8eec-63c5-99d9" targetId="8eaa-d294-e708-bbde" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="a266-e321-dc47-d5bf" targetId="df18-c724-2a3d-a6e5" linkType="entry group">
           <modifiers/>
         </link>
       </links>
@@ -4019,7 +4001,11 @@ D6    Result		S	AP
           </entries>
           <entryGroups/>
           <modifiers/>
-          <links/>
+          <links>
+            <link id="8c08-fbc7-52fa-1994" targetId="9d9f-63d3-f635-7fd5" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
         </entryGroup>
         <entryGroup id="861c-37c6-2469-88bd" name="May take any of the following:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
@@ -4134,21 +4120,6 @@ D6    Result		S	AP
           <modifiers/>
           <links/>
         </entryGroup>
-        <entryGroup id="f6ea-2ac2-0d4d-852e" name="May be mounted on an: " minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="cdee-0719-9496-6144" name="Abeyant" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <links/>
-        </entryGroup>
       </entryGroups>
       <modifiers>
         <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
@@ -4177,7 +4148,16 @@ D6    Result		S	AP
             <characteristic characteristicId="4c4423232344415441232323" name="LD" value="9"/>
             <characteristic characteristicId="5361766523232344415441232323" name="Save" value="3+"/>
           </characteristics>
-          <modifiers/>
+          <modifiers>
+            <modifier type="increment" field="5723232344415441232323" value="1" repeat="true" numRepeats="1" incrementParentId="26e6-4e76-0f8e-29c2" incrementChildId="df18-c724-2a3d-a6e5" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="5423232344415441232323" value="1" repeat="true" numRepeats="1" incrementParentId="26e6-4e76-0f8e-29c2" incrementChildId="9d9f-63d3-f635-7fd5" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <links>
@@ -4191,6 +4171,9 @@ D6    Result		S	AP
           <modifiers/>
         </link>
         <link id="e3cd-ab8a-9cc1-4f80" targetId="4d0a2655-b103-5681-15a0-74973416358a" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="33a6-e7bb-8d76-fdac" targetId="df18-c724-2a3d-a6e5" linkType="entry group">
           <modifiers/>
         </link>
       </links>
@@ -4513,21 +4496,6 @@ D6    Result		S	AP
           <modifiers/>
           <links/>
         </entryGroup>
-        <entryGroup id="a6c6-6fd4-5761-15af" name="May be mounted on:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="8ddd-709d-ca34-d12d" name="Abeyant" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <links/>
-        </entryGroup>
         <entryGroup id="a79d-22b0-1fa0-1417" name="May take any of the following:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="8bc7-fe48-acee-b11b" name="Augury Scanner" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
@@ -4776,7 +4744,11 @@ D6    Result		S	AP
           </entries>
           <entryGroups/>
           <modifiers/>
-          <links/>
+          <links>
+            <link id="471b-dc11-2b31-251b" targetId="9d9f-63d3-f635-7fd5" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
         </entryGroup>
         <entryGroup id="a23b-2018-956e-b718" name="May take one second additional weapon:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
@@ -5024,11 +4996,22 @@ D6    Result		S	AP
               <conditions/>
               <conditionGroups/>
             </modifier>
+            <modifier type="increment" field="5723232344415441232323" value="1" repeat="true" numRepeats="1" incrementParentId="f2b2-170e-52e7-073d" incrementChildId="df18-c724-2a3d-a6e5" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="5423232344415441232323" value="1" repeat="true" numRepeats="1" incrementParentId="f2b2-170e-52e7-073d" incrementChildId="9d9f-63d3-f635-7fd5" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
           </modifiers>
         </profile>
       </profiles>
       <links>
         <link id="ad23-f541-dc73-1d66" targetId="e1ca-c072-fd46-7a57" linkType="entry group">
+          <modifiers/>
+        </link>
+        <link id="74aa-04ef-1ead-bb90" targetId="df18-c724-2a3d-a6e5" linkType="entry group">
           <modifiers/>
         </link>
       </links>
@@ -5282,18 +5265,6 @@ D6    Result		S	AP
                 </link>
               </links>
             </entry>
-            <entry id="03dd-2f7d-bcce-1206" name="Machinator Array" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="f220-c1e6-96e9-8ac2" targetId="3ffc1f76-719b-bc95-a3c9-15614a8c94bc" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
             <entry id="8d65-a168-4f7f-e626" name="Conversion Beamer" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LACAL" page="0">
               <entries/>
               <entryGroups/>
@@ -5315,7 +5286,11 @@ D6    Result		S	AP
           </entries>
           <entryGroups/>
           <modifiers/>
-          <links/>
+          <links>
+            <link id="7ddb-73ea-50eb-725a" targetId="9d9f-63d3-f635-7fd5" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
         </entryGroup>
         <entryGroup id="d035-6ef9-4a14-edfd" name="Order Reductor Magos may take:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
@@ -5404,21 +5379,6 @@ D6    Result		S	AP
                   <modifiers/>
                 </profile>
               </profiles>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <links/>
-        </entryGroup>
-        <entryGroup id="5f94-c6af-d43d-13a8" name="May be mounted on: " minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="15ad-681e-b30c-0dda" name="Abeyant" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
               <links/>
             </entry>
           </entries>
@@ -5558,6 +5518,14 @@ D6    Result		S	AP
               </conditions>
               <conditionGroups/>
             </modifier>
+            <modifier type="increment" field="5723232344415441232323" value="1" repeat="true" numRepeats="1" incrementParentId="53a1-ee52-c81e-d15c" incrementChildId="df18-c724-2a3d-a6e5" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="5423232344415441232323" value="1" repeat="true" numRepeats="1" incrementParentId="53a1-ee52-c81e-d15c" incrementChildId="9d9f-63d3-f635-7fd5" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
           </modifiers>
         </profile>
       </profiles>
@@ -5572,6 +5540,9 @@ D6    Result		S	AP
           <modifiers/>
         </link>
         <link id="3e5f-6fe6-9a5e-b945" targetId="a0004b05-48c7-5546-fcfc-61e504a5da38" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="5204-97fd-617a-5bb7" targetId="df18-c724-2a3d-a6e5" linkType="entry group">
           <modifiers/>
         </link>
       </links>
@@ -9249,6 +9220,18 @@ Reduces transport capacity to 8.  </description>
         </link>
       </links>
     </entry>
+    <entry id="9d9f-63d3-f635-7fd5" name="Machinator Array" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="14b5-eba3-f9ec-d791" targetId="3ffc1f76-719b-bc95-a3c9-15614a8c94bc" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
   </sharedEntries>
   <sharedEntryGroups>
     <entryGroup id="d696-042d-2afa-b026" name="Heavy Bolter or Heavy Flamer" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -9358,6 +9341,35 @@ Reduces transport capacity to 8.  </description>
           <rules/>
           <profiles/>
           <links/>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <links/>
+    </entryGroup>
+    <entryGroup id="df18-c724-2a3d-a6e5" name="May be mounted on:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries>
+        <entry id="b64f-0f26-64a5-8298" name="Abeyant" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="d4c4-cc9d-5ad9-6a5a" name="Very Bulky" hidden="false">
+              <modifiers/>
+            </rule>
+            <rule id="454c-d921-2a99-c547" name="Hardened Armour" hidden="false">
+              <modifiers/>
+            </rule>
+            <rule id="360d-dfac-00a2-7be5" name="It Will Not Die" hidden="false">
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles/>
+          <links>
+            <link id="bb3a-dc5e-d37a-3ab0" targetId="64b566b4-cb21-5f4c-6e76-1dd302e152f8" linkType="rule">
+              <modifiers/>
+            </link>
+          </links>
         </entry>
       </entries>
       <entryGroups/>
