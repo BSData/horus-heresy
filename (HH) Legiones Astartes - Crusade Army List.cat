@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="61" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Crusade Army List" books="HH:LACAL - 2014" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="65" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Crusade Army List" books="HH:LACAL - 2014" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LACAL" page="55">
       <entries/>
@@ -27313,7 +27313,14 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
                       <conditions>
                         <condition parentId="roster" childId="26450b2e-1c7b-b82c-3119-4c93036fa36e" field="selections" type="equal to" value="0.0"/>
                       </conditions>
-                      <conditionGroups/>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition parentId="roster" childId="71409af8-8fb7-98b7-6996-99eff74cce84" field="selections" type="equal to" value="0.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <rules/>
@@ -27856,7 +27863,14 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
                       <conditions>
                         <condition parentId="roster" childId="26450b2e-1c7b-b82c-3119-4c93036fa36e" field="selections" type="equal to" value="0.0"/>
                       </conditions>
-                      <conditionGroups/>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition parentId="roster" childId="71409af8-8fb7-98b7-6996-99eff74cce84" field="selections" type="equal to" value="0.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <rules/>
@@ -35312,6 +35326,15 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       </characteristics>
       <modifiers/>
     </profile>
+    <profile id="1ea8-a8a3-3a8c-ba32" profileTypeId="576561706f6e23232344415441232323" name="Magna-Melta Cannon" hidden="false" book="HH:LACAL" page="92">
+      <characteristics>
+        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="18&quot;"/>
+        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="8"/>
+        <characteristic characteristicId="415023232344415441232323" name="AP" value="1"/>
+        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 1, Large Blast, Melta"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
     <profile id="959ff616-ce22-b9ee-1ee6-2496b305e880" profileTypeId="57617267656172204974656d23232344415441232323" name="Mantle of the Elder Drake" hidden="false" book="HH:LAICL" page="65">
       <characteristics>
         <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Confers Eternal Warrior"/>
@@ -35612,15 +35635,6 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
         <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="5"/>
         <characteristic characteristicId="415023232344415441232323" name="AP" value="5"/>
         <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Pistol, Deflagrate"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="1ea8-a8a3-3a8c-ba32" profileTypeId="576561706f6e23232344415441232323" name="Magna-Melta Cannon" hidden="false" book="HH:LACAL" page="92">
-      <characteristics>
-        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="18&quot;"/>
-        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="8"/>
-        <characteristic characteristicId="415023232344415441232323" name="AP" value="1"/>
-        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 1, Large Blast, Melta"/>
       </characteristics>
       <modifiers/>
     </profile>
