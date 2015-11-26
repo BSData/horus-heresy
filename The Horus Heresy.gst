@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" revision="29" battleScribeVersion="1.15" name="Warhammer 30,000 - The Horus Heresy" books="" authorName="Millicant" authorContact="Submit &quot;New Issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues?page=1&amp;state=open" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" revision="30" battleScribeVersion="1.15" name="Warhammer 30,000 - The Horus Heresy" books="" authorName="Millicant" authorContact="Submit &quot;New Issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues?page=1&amp;state=open" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <forceTypes>
     <forceType id="416c6c696564204465746163686d656e7423232344415441232323" name="Allied Detachment" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
       <categories>
@@ -385,6 +385,32 @@
               <conditionGroups/>
             </modifier>
           </modifiers>
+        </category>
+      </categories>
+      <forceTypes/>
+    </forceType>
+    <forceType id="5f72-b988-abee-b64b" name="Matrix of Ruin" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
+      <categories>
+        <category id="485123232344415441232323" name="HQ" minSelections="1" maxSelections="2" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
+          <modifiers/>
+        </category>
+        <category id="54726f6f707323232344415441232323" name="Troops" minSelections="2" maxSelections="5" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
+          <modifiers/>
+        </category>
+        <category id="456c6974657323232344415441232323" name="Elites" minSelections="0" maxSelections="2" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
+          <modifiers/>
+        </category>
+        <category id="486561767920537570706f727423232344415441232323" name="Heavy Support" minSelections="2" maxSelections="4" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
+          <modifiers/>
+        </category>
+        <category id="466173742041747461636b23232344415441232323" name="Fast Attack" minSelections="0" maxSelections="2" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
+          <modifiers/>
+        </category>
+        <category id="258478de-d031-8a7e-dcb0-7d56bee86952" name="Legion" minSelections="1" maxSelections="1" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
+          <modifiers/>
+        </category>
+        <category id="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" name="Lords of War" minSelections="0" maxSelections="2" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
+          <modifiers/>
         </category>
       </categories>
       <forceTypes/>
