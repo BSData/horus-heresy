@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" revision="1" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Mechanicum: Taghmata Army List" books="Taghmata Army List" authorName="Millicant" authorContact="Submit &quot;New Issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" revision="2" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Mechanicum: Taghmata Army List" books="Taghmata Army List" authorName="Millicant" authorContact="Submit &quot;New Issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="cb78-d695-f736-f672" name="Adsecularis Covenant" points="5.0" categoryId="54726f6f707323232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Taghmata Army List" page="37">
       <entries>
@@ -407,7 +407,7 @@
       <modifiers>
         <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
-            <condition parentId="roster" childId="f676-4c11-278a-46b8" field="selections" type="equal to" value="0.0"/>
+            <condition parentId="roster" childId="24c1-17e8-1d35-a85e" field="selections" type="equal to" value="0.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -513,7 +513,7 @@
       <modifiers>
         <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
-            <condition parentId="roster" childId="f676-4c11-278a-46b8" field="selections" type="equal to" value="1.0"/>
+            <condition parentId="force type" childId="7bc3-4c9b-a14c-d3c2" field="selections" type="equal to" value="1.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -641,7 +641,7 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
       <modifiers>
         <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
-            <condition parentId="roster" childId="f676-4c11-278a-46b8" field="selections" type="equal to" value="1.0"/>
+            <condition parentId="force type" childId="7bc3-4c9b-a14c-d3c2" field="selections" type="equal to" value="1.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -1057,7 +1057,7 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
       <modifiers>
         <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
-            <condition parentId="roster" childId="e825-7c15-cdd1-43a9" field="selections" type="equal to" value="0.0"/>
+            <condition parentId="force type" childId="9e11-a748-2a7d-dbdc" field="selections" type="equal to" value="0.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -1704,7 +1704,7 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
               </entries>
               <entryGroups/>
               <modifiers>
-                <modifier type="set" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="5ba7-f2ea-4599-f2a4" incrementChildId="8ab1-9898-fea9-571a" incrementField="selections" incrementValue="1.0">
+                <modifier type="set" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="5ba7-f2ea-4599-f2a4" incrementChildId="23c3-6664-0fd1-b233" incrementField="selections" incrementValue="1.0">
                   <conditions/>
                   <conditionGroups/>
                 </modifier>
@@ -1747,8 +1747,10 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
             </entryGroup>
           </entryGroups>
           <modifiers>
-            <modifier type="set" field="minSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="f676-4c11-278a-46b8" incrementField="selections" incrementValue="1.0">
-              <conditions/>
+            <modifier type="set" field="minSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="24c1-17e8-1d35-a85e" field="selections" type="equal to" value="1.0"/>
+              </conditions>
               <conditionGroups/>
             </modifier>
           </modifiers>
@@ -1858,8 +1860,10 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
         </entryGroup>
       </entryGroups>
       <modifiers>
-        <modifier type="set" field="minInRoster" value="2.0" repeat="true" numRepeats="1" incrementParentId="force type" incrementChildId="f676-4c11-278a-46b8" incrementField="selections" incrementValue="1.0">
-          <conditions/>
+        <modifier type="set" field="minInRoster" value="2.0" repeat="false" numRepeats="1" incrementParentId="force type" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="24c1-17e8-1d35-a85e" field="selections" type="equal to" value="1.0"/>
+          </conditions>
           <conditionGroups/>
         </modifier>
       </modifiers>
@@ -2691,9 +2695,41 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
         </link>
       </links>
     </entry>
-    <entry id="f676-4c11-278a-46b8" name="Legio Cybernetica" points="0.0" categoryId="258478de-d031-8a7e-dcb0-7d56bee86952" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="0604-311c-7b10-8fca" name="Legio" points="0.0" categoryId="258478de-d031-8a7e-dcb0-7d56bee86952" type="upgrade" minSelections="0" maxSelections="-1" minInForce="1" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
-      <entryGroups/>
+      <entryGroups>
+        <entryGroup id="0403-e360-b5b3-4308" name="Legio" defaultEntryId="23d2-d61b-1f84-401a" minSelections="1" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="24c1-17e8-1d35-a85e" name="Legio Cybernetica" points="0.0" categoryId="258478de-d031-8a7e-dcb0-7d56bee86952" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="9e11-a748-2a7d-dbdc" name="Ordo Reductor" points="0.0" categoryId="258478de-d031-8a7e-dcb0-7d56bee86952" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="23d2-d61b-1f84-401a" name="Taghmata Omnissiah" points="0.0" categoryId="258478de-d031-8a7e-dcb0-7d56bee86952" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
       <modifiers/>
       <rules/>
       <profiles/>
@@ -4121,14 +4157,7 @@ D6    Result		S	AP
           <links/>
         </entryGroup>
       </entryGroups>
-      <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="f676-4c11-278a-46b8" field="selections" type="equal to" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
+      <modifiers/>
       <rules>
         <rule id="d42e-ec28-80b7-0bf4" name="Stubborn" hidden="false" page="0">
           <modifiers/>
@@ -4182,38 +4211,15 @@ D6    Result		S	AP
       <entries>
         <entry id="62b8-d0ed-1236-6100" name="Archmagos Prime" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
           <entries/>
-          <entryGroups>
-            <entryGroup id="9ded-2545-ff7b-9650" name="Archmagos Prime may take:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="5329-85b0-a4b8-d06e" name="Djinn-skein" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles>
-                    <profile id="0ab9-9828-3f52-70d7" profileTypeId="57617267656172204974656d23232344415441232323" name="Djinn-skein" hidden="false" book="HH3: Extermination" page="215">
-                      <characteristics>
-                        <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Provides the following:  - At the start of his shooting phase, the Archmagos Prime may nominate a single unit from his primary detachment (including himself) within 6&quot; of him or any Cyber-occularis purchased as a part of his wargear to benefit from +1 BS. - Friendly units from the primary detachment including the Archmagos who deep strike within 6&quot; do not scatter - Barrage weapons in the same detachment may draw line of sight from the Archmagos or any of his Cyrber-occularis"/>
-                      </characteristics>
-                      <modifiers/>
-                    </profile>
-                  </profiles>
-                  <links/>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers>
-                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="f2b2-170e-52e7-073d" childId="62b8-d0ed-1236-6100" field="selections" type="equal to" value="0.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <links/>
-            </entryGroup>
-          </entryGroups>
-          <modifiers/>
+          <entryGroups/>
+          <modifiers>
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="7bc3-4c9b-a14c-d3c2" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <rules>
             <rule id="283a-4f73-4644-f90c" name="Relentless" hidden="false" page="0">
               <modifiers/>
@@ -4337,7 +4343,7 @@ D6    Result		S	AP
               <profiles/>
               <links/>
             </entry>
-            <entry id="c9c1-6cc0-2c89-004b" name="Paragon Blade" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
+            <entry id="c9c1-6cc0-2c89-004b" name="Paragon Blade" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
               <entries/>
               <entryGroups/>
               <modifiers>
@@ -4957,15 +4963,37 @@ D6    Result		S	AP
           <modifiers/>
           <links/>
         </entryGroup>
+        <entryGroup id="db7f-3862-8e6c-21fa" name="Archmagos Prime may take:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="3add-0a72-0a85-04e2" name="Djinn-skein" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="8b3b-bfb9-033e-6b0a" profileTypeId="57617267656172204974656d23232344415441232323" name="Djinn-skein" hidden="false" book="HH3: Extermination" page="215">
+                  <characteristics>
+                    <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Provides the following:  - At the start of his shooting phase, the Archmagos Prime may nominate a single unit from his primary detachment (including himself) within 6&quot; of him or any Cyber-occularis purchased as a part of his wargear to benefit from +1 BS. - Friendly units from the primary detachment including the Archmagos who deep strike within 6&quot; do not scatter - Barrage weapons in the same detachment may draw line of sight from the Archmagos or any of his Cyrber-occularis"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers>
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="f2b2-170e-52e7-073d" childId="62b8-d0ed-1236-6100" field="selections" type="equal to" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <links/>
+        </entryGroup>
       </entryGroups>
-      <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="f676-4c11-278a-46b8" field="selections" type="equal to" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
+      <modifiers/>
       <rules/>
       <profiles>
         <profile id="f21b-7d99-3cea-7d7f" profileTypeId="556e697423232344415441232323" name="Magos Prime" hidden="false" book="HH3: Extermination" page="214">
@@ -5024,6 +5052,34 @@ D6    Result		S	AP
           <modifiers/>
           <rules/>
           <profiles/>
+          <links/>
+        </entry>
+        <entry id="61dc-95ea-e4b8-c449" name="Archmagos Reductor" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="662d-284c-57bb-eba4" name="Relentless" hidden="false" page="0">
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles>
+            <profile id="dada-b51b-262c-67a3" profileTypeId="556e697423232344415441232323" name="Archmagos Dominus" hidden="false" book="HH2: Massacre" page="270">
+              <characteristics>
+                <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Infantry (Character)"/>
+                <characteristic characteristicId="575323232344415441232323" name="WS" value="4"/>
+                <characteristic characteristicId="425323232344415441232323" name="BS" value="5"/>
+                <characteristic characteristicId="5323232344415441232323" name="S" value="4"/>
+                <characteristic characteristicId="5423232344415441232323" name="T" value="5"/>
+                <characteristic characteristicId="5723232344415441232323" name="W" value="3"/>
+                <characteristic characteristicId="4923232344415441232323" name="I" value="3"/>
+                <characteristic characteristicId="4123232344415441232323" name="A" value="2"/>
+                <characteristic characteristicId="4c4423232344415441232323" name="LD" value="10"/>
+                <characteristic characteristicId="5361766523232344415441232323" name="Save" value="3+"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
           <links/>
         </entry>
       </entries>
@@ -5336,52 +5392,7 @@ D6    Result		S	AP
           <links/>
         </entryGroup>
         <entryGroup id="4eee-5d23-79d9-aa03" name="May be upgraded to:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="fd19-a38e-7573-aced" name="Magos of the Ordo Reductor" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules>
-                <rule id="dc16-f88c-c500-d9fd" name="Tank Hunters" hidden="false" page="0">
-                  <modifiers/>
-                </rule>
-              </rules>
-              <profiles/>
-              <links>
-                <link id="cfe3-aaaa-099f-7a30" targetId="a0004b05-48c7-5546-fcfc-61e504a5da38" linkType="rule">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="710b-cd36-3af6-1fcb" name="Archmagos Dominus" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules>
-                <rule id="9b92-beb2-2eb3-13ba" name="Relentless" hidden="false" page="0">
-                  <modifiers/>
-                </rule>
-              </rules>
-              <profiles>
-                <profile id="be3f-d5b4-61b8-747d" profileTypeId="556e697423232344415441232323" name="Archmagos Dominus" hidden="false" book="HH2: Massacre" page="270">
-                  <characteristics>
-                    <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Infantry (Character)"/>
-                    <characteristic characteristicId="575323232344415441232323" name="WS" value="4"/>
-                    <characteristic characteristicId="425323232344415441232323" name="BS" value="5"/>
-                    <characteristic characteristicId="5323232344415441232323" name="S" value="4"/>
-                    <characteristic characteristicId="5423232344415441232323" name="T" value="5"/>
-                    <characteristic characteristicId="5723232344415441232323" name="W" value="3"/>
-                    <characteristic characteristicId="4923232344415441232323" name="I" value="3"/>
-                    <characteristic characteristicId="4123232344415441232323" name="A" value="2"/>
-                    <characteristic characteristicId="4c4423232344415441232323" name="LD" value="10"/>
-                    <characteristic characteristicId="5361766523232344415441232323" name="Save" value="3+"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-              </profiles>
-              <links/>
-            </entry>
-          </entries>
+          <entries/>
           <entryGroups/>
           <modifiers/>
           <links/>
@@ -5484,7 +5495,7 @@ D6    Result		S	AP
       <modifiers>
         <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
-            <condition parentId="roster" childId="f676-4c11-278a-46b8" field="selections" type="equal to" value="1.0"/>
+            <condition parentId="force type" childId="9e11-a748-2a7d-dbdc" field="selections" type="equal to" value="0.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -5514,7 +5525,7 @@ D6    Result		S	AP
           <modifiers>
             <modifier type="hide" field="556e6974205479706523232344415441232323" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="53a1-ee52-c81e-d15c" childId="710b-cd36-3af6-1fcb" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="53a1-ee52-c81e-d15c" childId="61dc-95ea-e4b8-c449" field="selections" type="equal to" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -5632,7 +5643,7 @@ D6    Result		S	AP
       <modifiers>
         <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
-            <condition parentId="roster" childId="f676-4c11-278a-46b8" field="selections" type="equal to" value="1.0"/>
+            <condition parentId="roster" childId="24c1-17e8-1d35-a85e" field="selections" type="equal to" value="1.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -6274,14 +6285,6 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
         </link>
       </links>
     </entry>
-    <entry id="e825-7c15-cdd1-43a9" name="Ordo Reductor" points="0.0" categoryId="258478de-d031-8a7e-dcb0-7d56bee86952" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links/>
-    </entry>
     <entry id="713a-29a5-10e8-55da" name="Scyllax Guardian-Automata Covenant" points="15.0" categoryId="54726f6f707323232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Taghmata Army List" page="40">
       <entries>
         <entry id="7df3-6932-5771-88bb" name="Scyllax Guardian-Automata" points="35.0" categoryId="(No Category)" type="model" minSelections="4" maxSelections="16" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -6488,14 +6491,6 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
         </link>
       </links>
     </entry>
-    <entry id="ac66-ba4d-d3cf-c59d" name="Taghmata Omnissiah" points="0.0" categoryId="258478de-d031-8a7e-dcb0-7d56bee86952" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links/>
-    </entry>
     <entry id="32e6-8092-ad80-2543" name="Tarantula Sentry Gun Battery" points="0.0" categoryId="466173742041747461636b23232344415441232323" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
         <entry id="3972-c22b-14a5-1ccc" name="Exchange all twin-linked Heavy Bolters for Hyperios Air-defence Missile Launchers" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
@@ -6618,7 +6613,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 </link>
               </links>
             </entry>
-            <entry id="9c71-70b0-68ec-bc19" name="Twin-linked Photon Thruster" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entry id="9c71-70b0-68ec-bc19" name="Twin-linked Photon Thruster" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -6630,7 +6625,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 </link>
               </links>
             </entry>
-            <entry id="9114-215c-7d89-8e11" name="Twin-Linked rotor cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entry id="9114-215c-7d89-8e11" name="Twin-Linked rotor cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -6642,7 +6637,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 </link>
               </links>
             </entry>
-            <entry id="f163-9358-9723-0869" name="Twin-linked Volkite Culverin" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entry id="f163-9358-9723-0869" name="Twin-linked Volkite Culverin" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -6654,7 +6649,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 </link>
               </links>
             </entry>
-            <entry id="8012-cc79-0873-d34b" name="Quad-gun" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entry id="8012-cc79-0873-d34b" name="Quad-gun" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -6677,7 +6672,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               </profiles>
               <links/>
             </entry>
-            <entry id="e387-5e40-20e0-8771" name="Twin-linked Mauler Bolt Cannon" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entry id="e387-5e40-20e0-8771" name="Twin-linked Mauler Bolt Cannon" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -6737,7 +6732,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <profiles/>
               <links/>
             </entry>
-            <entry id="7366-3013-c7d8-e771" name="Drop Capsule" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+            <entry id="7366-3013-c7d8-e771" name="Drop Capsule" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers>
@@ -8211,6 +8206,18 @@ Units with this augment count as a Heavy Support choice instead of a troops choi
       </profiles>
       <links/>
     </entry>
+    <entry id="9d9f-63d3-f635-7fd5" name="Machinator Array" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="14b5-eba3-f9ec-d791" targetId="3ffc1f76-719b-bc95-a3c9-15614a8c94bc" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
     <entry id="6f8e-c7a5-c784-384d" name="Machine Spirit" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups/>
@@ -9220,18 +9227,6 @@ Reduces transport capacity to 8.  </description>
         </link>
       </links>
     </entry>
-    <entry id="9d9f-63d3-f635-7fd5" name="Machinator Array" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links>
-        <link id="14b5-eba3-f9ec-d791" targetId="3ffc1f76-719b-bc95-a3c9-15614a8c94bc" linkType="profile">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
   </sharedEntries>
   <sharedEntryGroups>
     <entryGroup id="d696-042d-2afa-b026" name="Heavy Bolter or Heavy Flamer" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -9246,6 +9241,35 @@ Reduces transport capacity to 8.  </description>
           <modifiers/>
         </link>
       </links>
+    </entryGroup>
+    <entryGroup id="df18-c724-2a3d-a6e5" name="May be mounted on:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries>
+        <entry id="b64f-0f26-64a5-8298" name="Abeyant" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="d4c4-cc9d-5ad9-6a5a" name="Very Bulky" hidden="false">
+              <modifiers/>
+            </rule>
+            <rule id="454c-d921-2a99-c547" name="Hardened Armour" hidden="false">
+              <modifiers/>
+            </rule>
+            <rule id="360d-dfac-00a2-7be5" name="It Will Not Die" hidden="false">
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles/>
+          <links>
+            <link id="bb3a-dc5e-d37a-3ab0" targetId="64b566b4-cb21-5f4c-6e76-1dd302e152f8" linkType="rule">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <links/>
     </entryGroup>
     <entryGroup id="e1ca-c072-fd46-7a57" name="Relics of the Dark Age of Technology" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
@@ -9341,35 +9365,6 @@ Reduces transport capacity to 8.  </description>
           <rules/>
           <profiles/>
           <links/>
-        </entry>
-      </entries>
-      <entryGroups/>
-      <modifiers/>
-      <links/>
-    </entryGroup>
-    <entryGroup id="df18-c724-2a3d-a6e5" name="May be mounted on:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries>
-        <entry id="b64f-0f26-64a5-8298" name="Abeyant" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules>
-            <rule id="d4c4-cc9d-5ad9-6a5a" name="Very Bulky" hidden="false">
-              <modifiers/>
-            </rule>
-            <rule id="454c-d921-2a99-c547" name="Hardened Armour" hidden="false">
-              <modifiers/>
-            </rule>
-            <rule id="360d-dfac-00a2-7be5" name="It Will Not Die" hidden="false">
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles/>
-          <links>
-            <link id="bb3a-dc5e-d37a-3ab0" targetId="64b566b4-cb21-5f4c-6e76-1dd302e152f8" linkType="rule">
-              <modifiers/>
-            </link>
-          </links>
         </entry>
       </entries>
       <entryGroups/>
