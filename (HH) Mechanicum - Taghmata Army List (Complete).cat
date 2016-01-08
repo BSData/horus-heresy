@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" revision="2" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Mechanicum: Taghmata Army List" books="Taghmata Army List" authorName="Capitaladot" authorContact="Submit &quot;New Issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" revision="3" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Mechanicum: Taghmata Army List" books="Taghmata Army List" authorName="Capitaladot" authorContact="Submit &quot;New Issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="cb78-d695-f736-f672" name="Adsecularis Covenant" points="5.0" categoryId="54726f6f707323232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Taghmata Army List" page="37">
       <entries>
@@ -5681,7 +5681,27 @@ D6    Result		S	AP
       </links>
     </entry>
     <entry id="2e8651d2-f46c-04ae-9a4a-c9de33605496" name="Magos Reductor Calleb Decima" points="175.0" categoryId="485123232344415441232323" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Taghmata Army List" page="32-33">
-      <entries/>
+      <entries>
+        <entry id="b663-1b2a-1062-66c6" name="Decima Invictus" points="45.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Taghmata Army List" page="33">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="ede2-f77c-6fb6-db17" name="Hatred (Traitor Faction)" hidden="false" book="Taghmata Army List" page="45">
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles/>
+          <links>
+            <link id="5ce5-ea06-6286-cd91" targetId="01c4-c9b2-e9e2-6210" linkType="rule">
+              <modifiers/>
+            </link>
+            <link id="2035-98ab-4afb-b60f" targetId="8eaa-d294-e708-bbde" linkType="rule">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
       <entryGroups>
         <entryGroup id="ed77f675-9f5c-735b-3c28-b6c71cc12425" name="Servo-automata" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
@@ -9746,6 +9766,9 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
     <rule id="0a9d-3f08-f373-f08a" name="Extra Armour" hidden="false">
       <modifiers/>
     </rule>
+    <rule id="0be9-1a9f-14a5-ebb8" name="Feel No Pain" hidden="false">
+      <modifiers/>
+    </rule>
     <rule id="718145e4-0a8e-1007-046b-7d2157a5ea3d" name="Firing Calibration" hidden="false" book="HH:LACAL" page="82">
       <description>This weapon may not be fired if the model carrying it has moved in the same turn, regardless of the Relentless special rule or if the carrying model is a vehicle, etc...</description>
       <modifiers/>
@@ -9820,8 +9843,15 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
 - In the case of a failed Cybertheurgy attempt, always apply Malifica instead of rolling</description>
       <modifiers/>
     </rule>
+    <rule id="a41e-00bb-2ace-734f" name="Patris Cybernetica" hidden="false" book="75" page="Taghmata Army List">
+      <description>A character with this special rule may join a unit of Monstrous creatures so long as they have the Cybernetica Cortex special rule, even thought this would not normally be allowed. while it is part of a unit of Monstrous Creatures, a model with this special rule may not Go To Ground, voluntarily or otherwise, and enemy shooting at the unit may opt to ignore the fact that the character is the closest model in the unit for the purposes of shooting attacks if they wish and instead target the closest Monstrous Creature in the unit, if they have attacks in range.</description>
+      <modifiers/>
+    </rule>
     <rule id="7eea-f6fc-8316-96b0" name="Plasma Wave" hidden="false" book="HH5: Tempest" page="264">
       <description>Succesful cover saves against this weapon&apos;s attacks must be re-rolled.  </description>
+      <modifiers/>
+    </rule>
+    <rule id="fa9a-ff67-537f-3be9" name="Precision Shot" hidden="false">
       <modifiers/>
     </rule>
     <rule id="bf2972af-bb29-328c-6554-3e2130bd731a" name="Programmed Behaviour" hidden="false" book="HH3: Extermination" page="206">
@@ -9886,14 +9916,7 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       <description>Attacks with this special rule may re-roll failed armour penetration rolls against fortifications and immobile structures and add +1 to any result rolled on the Building Damage chart.  If this attack damages a bulkhead or wall section of terrain and destroys it, remove that section of terrain from play if possible.  </description>
       <modifiers/>
     </rule>
-    <rule id="fa9a-ff67-537f-3be9" name="Precision Shot" hidden="false">
-      <modifiers/>
-    </rule>
-    <rule id="0be9-1a9f-14a5-ebb8" name="Feel No Pain" hidden="false">
-      <modifiers/>
-    </rule>
-    <rule id="a41e-00bb-2ace-734f" name="Patris Cybernetica" hidden="false" book="75" page="Taghmata Army List">
-      <description>A character with this special rule may join a unit of Monstrous creatures so long as they have the Cybernetica Cortex special rule, even thought this would not normally be allowed. while it is part of a unit of Monstrous Creatures, a model with this special rule may not Go To Ground, voluntarily or otherwise, and enemy shooting at the unit may opt to ignore the fact that the character is the closest model in the unit for the purposes of shooting attacks if they wish and instead target the closest Monstrous Creature in the unit, if they have attacks in range.</description>
+    <rule id="01c4-c9b2-e9e2-6210" name="Eternal Warrior" hidden="false">
       <modifiers/>
     </rule>
   </sharedRules>
