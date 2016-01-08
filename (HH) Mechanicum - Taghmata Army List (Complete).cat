@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" revision="3" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Mechanicum: Taghmata Army List" books="Taghmata Army List" authorName="Capitaladot" authorContact="Submit &quot;New Issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" revision="4" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Mechanicum: Taghmata Army List" books="Taghmata Army List" authorName="Capitaladot" authorContact="Submit &quot;New Issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="cb78-d695-f736-f672" name="Adsecularis Covenant" points="5.0" categoryId="54726f6f707323232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Taghmata Army List" page="37">
       <entries>
@@ -1701,7 +1701,7 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
               </entries>
               <entryGroups/>
               <modifiers>
-                <modifier type="set" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="5ba7-f2ea-4599-f2a4" incrementChildId="8ab1-9898-fea9-571a" incrementField="selections" incrementValue="1.0">
+                <modifier type="set" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="5ba7-f2ea-4599-f2a4" incrementChildId="23c3-6664-0fd1-b233" incrementField="selections" incrementValue="1.0">
                   <conditions/>
                   <conditionGroups/>
                 </modifier>
@@ -1744,8 +1744,10 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
             </entryGroup>
           </entryGroups>
           <modifiers>
-            <modifier type="set" field="minSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="f676-4c11-278a-46b8" incrementField="selections" incrementValue="1.0">
-              <conditions/>
+            <modifier type="set" field="minSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="f676-4c11-278a-46b8" field="selections" type="equal to" value="1.0"/>
+              </conditions>
               <conditionGroups/>
             </modifier>
           </modifiers>
@@ -9763,6 +9765,9 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       <description>When fighting a challenge, the user of this weapon gains +1 to their initiative value.  </description>
       <modifiers/>
     </rule>
+    <rule id="01c4-c9b2-e9e2-6210" name="Eternal Warrior" hidden="false">
+      <modifiers/>
+    </rule>
     <rule id="0a9d-3f08-f373-f08a" name="Extra Armour" hidden="false">
       <modifiers/>
     </rule>
@@ -9914,9 +9919,6 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
     </rule>
     <rule id="a0004b05-48c7-5546-fcfc-61e504a5da38" name="Wrecker" hidden="false" book="HH:LACAL" page="87">
       <description>Attacks with this special rule may re-roll failed armour penetration rolls against fortifications and immobile structures and add +1 to any result rolled on the Building Damage chart.  If this attack damages a bulkhead or wall section of terrain and destroys it, remove that section of terrain from play if possible.  </description>
-      <modifiers/>
-    </rule>
-    <rule id="01c4-c9b2-e9e2-6210" name="Eternal Warrior" hidden="false">
       <modifiers/>
     </rule>
   </sharedRules>
