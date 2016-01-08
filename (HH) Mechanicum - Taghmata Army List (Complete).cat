@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" revision="5" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Mechanicum: Taghmata Army List" books="Taghmata Army List" authorName="Capitaladot" authorContact="Submit &quot;New Issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" revision="6" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Mechanicum: Taghmata Army List" books="Taghmata Army List" authorName="Capitaladot" authorContact="Submit &quot;New Issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="cb78-d695-f736-f672" name="Adsecularis Covenant" points="5.0" categoryId="54726f6f707323232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Taghmata Army List" page="37">
       <entries>
@@ -7773,7 +7773,7 @@ Units with this augment count as a Heavy Support choice instead of a troops choi
     </entry>
     <entry id="4f7e-7203-67ec-3384" name="Vorax Class Battle-automata Maniple" points="0.0" categoryId="466173742041747461636b23232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Taghmata Army List" page="46">
       <entries>
-        <entry id="2705-70cf-55eb-b9cd" name="Vorax" points="65.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+        <entry id="2705-70cf-55eb-b9cd" name="Vorax" points="65.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false" page="0">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -7797,10 +7797,21 @@ Units with this augment count as a Heavy Support choice instead of a troops choi
           </profiles>
           <links/>
         </entry>
-        <entry id="f080-3bd6-6ab7-29ac" name="Bio-corrosive ammunition" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+        <entry id="90ac-3c05-330c-8b3b" name="Bio-corrosive ammunition" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="4f7e-7203-67ec-3384" incrementChildId="a795-09b4-7543-a36f" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="minSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="roster" incrementChildId="a795-09b4-7543-a36f" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="4f7e-7203-67ec-3384" childId="90ac-3c05-330c-8b3b" field="selections" type="greater than" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <rules/>
           <profiles/>
           <links/>
@@ -7857,55 +7868,6 @@ Units with this augment count as a Heavy Support choice instead of a troops choi
           <modifiers/>
           <links/>
         </entryGroup>
-        <entryGroup id="e1e6-5090-f67b-dab0" name="Any Vorax class Battle-automata may exchange its rotor cannon for:" defaultEntryId="01d8-16f3-5f23-e02a" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="9e50-54dc-caff-bda3" name="Irad-cleanser" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="0936-ef95-ec52-0d22" targetId="087e3cad-c849-204a-b83a-29093869a431" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="01d8-16f3-5f23-e02a" name="Rotor Cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="4411-9800-1b4e-617b" targetId="75683330-6490-c0bf-560c-2e58617425a1" linkType="profile">
-                  <modifiers>
-                    <modifier type="set" field="52616e676523232344415441232323" value="15" repeat="true" numRepeats="1" incrementParentId="4f7e-7203-67ec-3384" incrementChildId="f080-3bd6-6ab7-29ac" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups/>
-                    </modifier>
-                    <modifier type="set" field="537472656e67746823232344415441232323" value="Poison 4+" repeat="true" numRepeats="1" incrementParentId="4f7e-7203-67ec-3384" incrementChildId="f080-3bd6-6ab7-29ac" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups/>
-                    </modifier>
-                  </modifiers>
-                </link>
-              </links>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="4f7e-7203-67ec-3384" incrementChildId="2705-70cf-55eb-b9cd" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="increment" field="minSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="4f7e-7203-67ec-3384" incrementChildId="2705-70cf-55eb-b9cd" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <links/>
-        </entryGroup>
         <entryGroup id="901a-811f-5eb0-beed" name="A single Maniple may take:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
@@ -7915,6 +7877,69 @@ Units with this augment count as a Heavy Support choice instead of a troops choi
               <modifiers/>
             </link>
           </links>
+        </entryGroup>
+        <entryGroup id="1b00-057f-bcd0-eb59" name="Any Vorax class Battle-automata may exchange its rotor cannon for:" defaultEntryId="a795-09b4-7543-a36f" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+          <entries>
+            <entry id="72b3-458e-74d5-5de3" name="Irad-cleanser" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="4f7e-7203-67ec-3384" incrementChildId="2705-70cf-55eb-b9cd" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="4516-68ab-ae98-4397" targetId="087e3cad-c849-204a-b83a-29093869a431" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="a795-09b4-7543-a36f" name="Rotor Cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="true" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="4f7e-7203-67ec-3384" incrementChildId="2705-70cf-55eb-b9cd" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="930b-4a75-ca68-ae49" targetId="75683330-6490-c0bf-560c-2e58617425a1" linkType="profile">
+                  <modifiers>
+                    <modifier type="set" field="52616e676523232344415441232323" value="15" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="4f7e-7203-67ec-3384" childId="90ac-3c05-330c-8b3b" field="selections" type="greater than" value="0.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                    <modifier type="set" field="537472656e67746823232344415441232323" value="Poison 4+" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="4f7e-7203-67ec-3384" childId="90ac-3c05-330c-8b3b" field="selections" type="greater than" value="0.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                </link>
+              </links>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers>
+            <modifier type="increment" field="minSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="4f7e-7203-67ec-3384" incrementChildId="2705-70cf-55eb-b9cd" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="4f7e-7203-67ec-3384" incrementChildId="2705-70cf-55eb-b9cd" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <links/>
         </entryGroup>
       </entryGroups>
       <modifiers/>
