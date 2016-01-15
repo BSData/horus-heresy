@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="65" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Crusade Army List" books="HH:LACAL - 2014" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="66" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Crusade Army List" books="HH:LACAL - 2014" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LACAL" page="55">
       <entries/>
@@ -18366,7 +18366,20 @@ Phalanx Breacher squads and Legion Terminator squads may be taken as troops in a
       </links>
     </entry>
     <entry id="4209833e-bb43-b24d-dcfa-8bc4ec863ade" name="Section Leader Crysos Mortug" points="175.0" categoryId="485123232344415441232323" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LAICL" page="42">
-      <entries/>
+      <entries>
+        <entry id="bbb9-8b7a-8bfe-4564" name="Combi-Flamer" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="b089-ec01-9bea-1184" targetId="86e70545-ed1a-7cf4-5a3d-d60662a6b3be" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
       <entryGroups/>
       <modifiers>
         <modifier type="hide" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
@@ -35765,12 +35778,12 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       <description>Instead of using model&apos;s Attacks value, make a number of attacks equal to the number of enemy models in base contact.  </description>
       <modifiers/>
     </rule>
-    <rule id="a0004b05-48c7-5546-fcfc-61e504a5da38" name="Wrecker" hidden="false" book="HH:LACAL" page="87">
-      <description>Attacks with this special rule may re-roll failed armour penetration rolls against fortifications and immobile structures and add +1 to any result rolled on the Building Damage chart.  If this attack damages a bulkhead or wall section of terrain and destroys it, remove that section of terrain from play if possible.  </description>
-      <modifiers/>
-    </rule>
     <rule id="2a5a-9600-91aa-1c29" name="Venom Spheres" hidden="false" book="HH:LAICL" page="89">
       <description>Replaces Frag grenades.  Assault grenade that grants Hammer of Wrath to user. </description>
+      <modifiers/>
+    </rule>
+    <rule id="a0004b05-48c7-5546-fcfc-61e504a5da38" name="Wrecker" hidden="false" book="HH:LACAL" page="87">
+      <description>Attacks with this special rule may re-roll failed armour penetration rolls against fortifications and immobile structures and add +1 to any result rolled on the Building Damage chart.  If this attack damages a bulkhead or wall section of terrain and destroys it, remove that section of terrain from play if possible.  </description>
       <modifiers/>
     </rule>
   </sharedRules>
@@ -36350,6 +36363,15 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       </characteristics>
       <modifiers/>
     </profile>
+    <profile id="9ad2-2e0f-1261-f494" profileTypeId="576561706f6e23232344415441232323" name="Power Dagger" hidden="false" book="HH:LAICL" page="89">
+      <characteristics>
+        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
+        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="-1"/>
+        <characteristic characteristicId="415023232344415441232323" name="AP" value="3"/>
+        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Specialist Weapon, Rending"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
     <profile id="c2e7cdbc-56ee-8cfa-c72e-3e778367f823" profileTypeId="576561706f6e23232344415441232323" name="Quad Gun" hidden="false" book="HH:LACAL" page="75">
       <characteristics>
         <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="48&quot;"/>
@@ -36389,6 +36411,15 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
         <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="4"/>
         <characteristic characteristicId="415023232344415441232323" name="AP" value="3"/>
         <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 1, Blast, Fleshbane, Rad-phage"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="5e57-5878-9c79-4841" profileTypeId="576561706f6e23232344415441232323" name="Raven&apos;s Talons" hidden="false" book="HH:LAICL" page="105">
+      <characteristics>
+        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
+        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="User"/>
+        <characteristic characteristicId="415023232344415441232323" name="AP" value="3"/>
+        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Shred, Master-crafted, Rending, Specialist Weapon"/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -36533,23 +36564,6 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
         <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="5"/>
         <characteristic characteristicId="415023232344415441232323" name="AP" value="5"/>
         <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Pistol, Deflagrate"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="9ad2-2e0f-1261-f494" profileTypeId="576561706f6e23232344415441232323" name="Power Dagger" hidden="false" book="HH:LAICL" page="89">
-      <characteristics>
-        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
-        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="-1"/>
-        <characteristic characteristicId="415023232344415441232323" name="AP" value="3"/>
-        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Specialist Weapon, Rending"/>
-      </characteristics>
-    </profile>
-    <profile id="5e57-5878-9c79-4841" profileTypeId="576561706f6e23232344415441232323" name="Raven&apos;s Talons" hidden="false" book="HH:LAICL" page="105">
-      <characteristics>
-        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
-        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="User"/>
-        <characteristic characteristicId="415023232344415441232323" name="AP" value="3"/>
-        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Shred, Master-crafted, Rending, Specialist Weapon"/>
       </characteristics>
       <modifiers/>
     </profile>
