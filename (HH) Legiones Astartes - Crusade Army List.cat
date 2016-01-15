@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="64" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Crusade Army List" books="HH:LACAL - 2014" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="65" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Crusade Army List" books="HH:LACAL - 2014" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LACAL" page="55">
       <entries/>
@@ -22347,28 +22347,52 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
             </link>
           </links>
         </entry>
-      </entries>
-      <entryGroups>
-        <entryGroup id="71f497fb-f981-461c-bef4-3cb37aeda3f7" name="Chooser of the Slain may take:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="e430d4e5-aec4-7a40-cf26-513abcb847d9" name="Melta Bombs" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
+        <entry id="1802-3661-5d05-c2ec" name="Chooser of the Slain" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups>
+            <entryGroup id="50e3-fe95-c927-e2de" name="Chooser of the Slain may take:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries>
+                <entry id="0212-a2d2-0713-120a" name="Melta Bombs" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+              </entries>
               <entryGroups/>
               <modifiers/>
-              <rules/>
-              <profiles/>
               <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
+            </entryGroup>
+          </entryGroups>
           <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="af9c-7fb4-ec0e-9305" profileTypeId="556e697423232344415441232323" name="Chooser of the Slain" hidden="false" book="HH:LAICL" page="107">
+              <characteristics>
+                <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Infantry (Character)"/>
+                <characteristic characteristicId="575323232344415441232323" name="WS" value="5"/>
+                <characteristic characteristicId="425323232344415441232323" name="BS" value="4"/>
+                <characteristic characteristicId="5323232344415441232323" name="S" value="4"/>
+                <characteristic characteristicId="5423232344415441232323" name="T" value="4"/>
+                <characteristic characteristicId="5723232344415441232323" name="W" value="1"/>
+                <characteristic characteristicId="4923232344415441232323" name="I" value="4"/>
+                <characteristic characteristicId="4123232344415441232323" name="A" value="2"/>
+                <characteristic characteristicId="4c4423232344415441232323" name="LD" value="9"/>
+                <characteristic characteristicId="5361766523232344415441232323" name="Save" value="2+"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
           <links>
-            <link id="4087-7242-86bd-04eb" targetId="bb7961b5-6a23-9806-bb17-f30335c66389" linkType="entry">
+            <link id="8adb-2ca5-911b-ab6a" targetId="5e57-5878-9c79-4841" linkType="profile">
               <modifiers/>
             </link>
           </links>
-        </entryGroup>
-      </entryGroups>
+        </entry>
+      </entries>
+      <entryGroups/>
       <modifiers>
         <modifier type="hide" field="maxInRoster" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
@@ -22378,23 +22402,7 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
         </modifier>
       </modifiers>
       <rules/>
-      <profiles>
-        <profile id="94949192-7476-e82f-88af-852a4f59ca75" profileTypeId="556e697423232344415441232323" name="Chooser of the Slain" hidden="false" book="HH:LAICL" page="107">
-          <characteristics>
-            <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Infantry (Character)"/>
-            <characteristic characteristicId="575323232344415441232323" name="WS" value="5"/>
-            <characteristic characteristicId="425323232344415441232323" name="BS" value="4"/>
-            <characteristic characteristicId="5323232344415441232323" name="S" value="4"/>
-            <characteristic characteristicId="5423232344415441232323" name="T" value="4"/>
-            <characteristic characteristicId="5723232344415441232323" name="W" value="1"/>
-            <characteristic characteristicId="4923232344415441232323" name="I" value="4"/>
-            <characteristic characteristicId="4123232344415441232323" name="A" value="2"/>
-            <characteristic characteristicId="4c4423232344415441232323" name="LD" value="9"/>
-            <characteristic characteristicId="5361766523232344415441232323" name="Save" value="2+"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-      </profiles>
+      <profiles/>
       <links>
         <link id="5f2fa8ed-9c7b-67f8-c7ee-c493aec7a661" targetId="d4a1a878-9ad4-6ae0-a864-08f58264c4a5" linkType="rule">
           <modifiers/>
@@ -32528,18 +32536,12 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
         </modifier>
       </modifiers>
       <rules/>
-      <profiles>
-        <profile id="1f1a0906-8f8d-b5d9-4a3c-8d2734a99c49" profileTypeId="576561706f6e23232344415441232323" name="Raven&apos;s Talons" hidden="false" book="HH:LAICL" page="105">
-          <characteristics>
-            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
-            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="User"/>
-            <characteristic characteristicId="415023232344415441232323" name="AP" value="3"/>
-            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Shred, Master-crafted, Rending, Specialist Weapon"/>
-          </characteristics>
+      <profiles/>
+      <links>
+        <link id="07c0-3820-7681-438d" targetId="5e57-5878-9c79-4841" linkType="profile">
           <modifiers/>
-        </profile>
-      </profiles>
-      <links/>
+        </link>
+      </links>
     </entry>
     <entry id="cb9e1c3d-8547-ecf0-0260-26720068088d" name="Reaver Attack Squad" points="75.0" categoryId="466173742041747461636b23232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LAICL" page="12">
       <entries>
@@ -36540,6 +36542,12 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
         <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="-1"/>
         <characteristic characteristicId="415023232344415441232323" name="AP" value="3"/>
         <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Specialist Weapon, Rending"/>
+    <profile id="5e57-5878-9c79-4841" profileTypeId="576561706f6e23232344415441232323" name="Raven&apos;s Talons" hidden="false" book="HH:LAICL" page="105">
+      <characteristics>
+        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
+        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="User"/>
+        <characteristic characteristicId="415023232344415441232323" name="AP" value="3"/>
+        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Shred, Master-crafted, Rending, Specialist Weapon"/>
       </characteristics>
       <modifiers/>
     </profile>
