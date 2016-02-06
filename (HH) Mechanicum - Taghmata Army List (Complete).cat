@@ -407,7 +407,7 @@
       <modifiers>
         <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
-            <condition parentId="roster" childId="f676-4c11-278a-46b8" field="selections" type="equal to" value="0.0"/>
+            <condition parentId="force type" childId="b88e-5d48-41ab-6422" field="selections" type="equal to" value="0.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -509,14 +509,7 @@
           <links/>
         </entryGroup>
       </entryGroups>
-      <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="f676-4c11-278a-46b8" field="selections" type="equal to" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
+      <modifiers/>
       <rules>
         <rule id="f158-c337-e208-cf12" name="Liquifractor" hidden="false" book="HH4: Conquest" page="300">
           <description>May exchange all attacks in an assault phase for a single special attack.  May be used against a single model in base contact and occurs at Initative 1 and hits automatically.  
@@ -549,12 +542,7 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
             <characteristic characteristicId="4c4423232344415441232323" name="LD" value="10"/>
             <characteristic characteristicId="5361766523232344415441232323" name="Save" value="2+"/>
           </characteristics>
-          <modifiers>
-            <modifier type="increment" field="5723232344415441232323" value="1" repeat="true" numRepeats="1" incrementParentId="fc87-1477-dc2f-53bf" incrementChildId="df18-c724-2a3d-a6e5" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
+          <modifiers/>
         </profile>
         <profile id="1c00-fe31-d4ec-340a" profileTypeId="57617267656172204974656d23232344415441232323" name="Djinn-skein" hidden="false" book="HH3: Extermination" page="215">
           <characteristics>
@@ -594,6 +582,9 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
         <link id="a266-e321-dc47-d5bf" targetId="df18-c724-2a3d-a6e5" linkType="entry group">
           <modifiers/>
         </link>
+        <link id="861d-2302-461e-8467" targetId="00cf-20ab-1b17-aad1" linkType="entry">
+          <modifiers/>
+        </link>
       </links>
     </entry>
     <entry id="be7d-5e7a-26a6-e9c6" name="Archmagos Inar Satarael" points="295.0" categoryId="485123232344415441232323" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Taghmata Army List" page="30">
@@ -619,18 +610,6 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
               <modifiers/>
             </link>
             <link id="45d5-e25a-83b7-3fe3" targetId="00adbad1-e036-aef5-281f-2ce5f1959409" linkType="rule">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
-        <entry id="5bf1-d73d-b6cc-129e" name="Twin-Linked Maxima Bolter" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles/>
-          <links>
-            <link id="6200-d0a1-8a5e-eab3" targetId="8043abca-b8b1-2694-0fc0-4e3d58910eca" linkType="profile">
               <modifiers/>
             </link>
           </links>
@@ -719,6 +698,12 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
           <modifiers/>
         </link>
         <link id="eb53-b7b5-5cc0-3eb7" targetId="454c5ea7-d961-d86f-81a5-3f7f3c796545" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="ead7-37b9-fd8b-99a6" targetId="8043abca-b8b1-2694-0fc0-4e3d58910eca" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="5818-ee0e-7d51-5c4f" targetId="00cf-20ab-1b17-aad1" linkType="entry">
           <modifiers/>
         </link>
       </links>
@@ -1054,7 +1039,7 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
       <modifiers>
         <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
-            <condition parentId="roster" childId="e825-7c15-cdd1-43a9" field="selections" type="equal to" value="0.0"/>
+            <condition parentId="force type" childId="aa4e-df87-d1bd-76d0" field="selections" type="equal to" value="0.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -1746,7 +1731,7 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
           <modifiers>
             <modifier type="set" field="minSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="force type" childId="f676-4c11-278a-46b8" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="force type" childId="b88e-5d48-41ab-6422" field="selections" type="greater than" value="0.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -1856,12 +1841,7 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
           </links>
         </entryGroup>
       </entryGroups>
-      <modifiers>
-        <modifier type="set" field="minInRoster" value="2.0" repeat="true" numRepeats="1" incrementParentId="force type" incrementChildId="f676-4c11-278a-46b8" incrementField="selections" incrementValue="1.0">
-          <conditions/>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
+      <modifiers/>
       <rules>
         <rule id="eb6f-0011-a041-f597" name="Rage" hidden="false" page="0">
           <modifiers/>
@@ -2690,9 +2670,41 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
         </link>
       </links>
     </entry>
-    <entry id="f676-4c11-278a-46b8" name="Legio Cybernetica" points="0.0" categoryId="258478de-d031-8a7e-dcb0-7d56bee86952" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="f0bd-3bdb-ef15-8973" name="Legio" points="0.0" categoryId="258478de-d031-8a7e-dcb0-7d56bee86952" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
-      <entryGroups/>
+      <entryGroups>
+        <entryGroup id="0977-3f89-febf-91eb" name="Legio" defaultEntryId="e426-bb92-0876-e866" minSelections="1" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="b88e-5d48-41ab-6422" name="Legio Cybernetica" points="0.0" categoryId="258478de-d031-8a7e-dcb0-7d56bee86952" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="aa4e-df87-d1bd-76d0" name="Ordo Reductor" points="0.0" categoryId="258478de-d031-8a7e-dcb0-7d56bee86952" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="e426-bb92-0876-e866" name="Taghmata Omnissiah" points="0.0" categoryId="258478de-d031-8a7e-dcb0-7d56bee86952" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
       <modifiers/>
       <rules/>
       <profiles/>
@@ -3893,14 +3905,6 @@ D6    Result		S	AP
           <profiles/>
           <links/>
         </entry>
-        <entry id="830c-56d5-b4bf-fcbb" name="Power Weapon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Taghmata Army List">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles/>
-          <links/>
-        </entry>
       </entries>
       <entryGroups>
         <entryGroup id="2508-d7ef-180e-2616" name="May take one of the following:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -3925,18 +3929,6 @@ D6    Result		S	AP
               <profiles/>
               <links>
                 <link id="ca4d-80c6-e6a9-afc0" targetId="3ffc1f76-719b-bc95-a3c9-15614a8c94bc" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="1e89-4f8a-110c-f470" name="Rad/irad Cleanser" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="0221-47a1-a9b7-76e7" targetId="087e3cad-c849-204a-b83a-29093869a431" linkType="profile">
                   <modifiers/>
                 </link>
               </links>
@@ -4176,16 +4168,7 @@ D6    Result		S	AP
             <characteristic characteristicId="4c4423232344415441232323" name="LD" value="9"/>
             <characteristic characteristicId="5361766523232344415441232323" name="Save" value="3+"/>
           </characteristics>
-          <modifiers>
-            <modifier type="increment" field="5723232344415441232323" value="1" repeat="true" numRepeats="1" incrementParentId="26e6-4e76-0f8e-29c2" incrementChildId="df18-c724-2a3d-a6e5" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="increment" field="5423232344415441232323" value="1" repeat="true" numRepeats="1" incrementParentId="26e6-4e76-0f8e-29c2" incrementChildId="9d9f-63d3-f635-7fd5" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
+          <modifiers/>
         </profile>
       </profiles>
       <links>
@@ -4216,37 +4199,7 @@ D6    Result		S	AP
       <entries>
         <entry id="62b8-d0ed-1236-6100" name="Archmagos Prime" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
           <entries/>
-          <entryGroups>
-            <entryGroup id="9ded-2545-ff7b-9650" name="Archmagos Prime may take:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="5329-85b0-a4b8-d06e" name="Djinn-skein" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles>
-                    <profile id="0ab9-9828-3f52-70d7" profileTypeId="57617267656172204974656d23232344415441232323" name="Djinn-skein" hidden="false" book="HH3: Extermination" page="215">
-                      <characteristics>
-                        <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Provides the following:  - At the start of his shooting phase, the Archmagos Prime may nominate a single unit from his primary detachment (including himself) within 6&quot; of him or any Cyber-occularis purchased as a part of his wargear to benefit from +1 BS. - Friendly units from the primary detachment including the Archmagos who deep strike within 6&quot; do not scatter - Barrage weapons in the same detachment may draw line of sight from the Archmagos or any of his Cyrber-occularis"/>
-                      </characteristics>
-                      <modifiers/>
-                    </profile>
-                  </profiles>
-                  <links/>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers>
-                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="f2b2-170e-52e7-073d" childId="62b8-d0ed-1236-6100" field="selections" type="equal to" value="0.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <links/>
-            </entryGroup>
-          </entryGroups>
+          <entryGroups/>
           <modifiers/>
           <rules>
             <rule id="283a-4f73-4644-f90c" name="Relentless" hidden="false" page="0">
@@ -4270,7 +4223,11 @@ D6    Result		S	AP
               <modifiers/>
             </profile>
           </profiles>
-          <links/>
+          <links>
+            <link id="0ab9-4140-10a9-32f9" targetId="00cf-20ab-1b17-aad1" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
         </entry>
         <entry id="8988-6c08-bd22-de4f" name="Mastercraft a single weapon" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -4280,271 +4237,20 @@ D6    Result		S	AP
           <profiles/>
           <links/>
         </entry>
+        <entry id="2b34-fd5a-f0ad-3183" name="Relics of the Dark Age of Technology" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="d00b-710c-824c-a65d" targetId="e1ca-c072-fd46-7a57" linkType="entry group">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
       </entries>
       <entryGroups>
-        <entryGroup id="713c-8d3a-17e7-2974" name="Exchange Power Weapon for:" defaultEntryId="320d-470f-f823-baa4" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="8ba7-88cf-221a-9f74" name="Archaeotech Pistol" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="1bfb-ffe2-b9be-aba6" targetId="9045e242-71f8-6029-fc57-2b7cbedcc398" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="ad1b-1979-6b26-2373" name="Photon Gauntlet" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="a76d-1c0c-ecb6-952e" targetId="54b8d1d6-d443-4571-936f-aca7c3c451db" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="5c0b-e1a8-14ed-c393" name="Plasma Pistol" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="ae7a-6c1b-03e8-2d83" name="Lucifex" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="93bb-b51f-0348-d0f5" targetId="bbe4567f-45d7-cbfe-23f5-10edcb96e895" linkType="profile">
-                  <modifiers/>
-                </link>
-                <link id="dcb7-9786-38b1-9e84" targetId="3c82221c-a8de-fa0e-845e-225e326822d8" linkType="rule">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="00b2-6b8b-2ece-c6cf" name="Maxim Bolter" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="ddaf-8c93-4485-7777" targetId="8043abca-b8b1-2694-0fc0-4e3d58910eca" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="a020-3f51-2ab4-9434" name="Corposant Stave" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="530d-0d38-0cc5-ff20" targetId="ce4b6663-6a42-bb46-22b2-430fb43b6c5d" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="6375-3f52-fbdc-0c5b" name="Power Fist" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="4256-e854-f7c2-3783" name="Chainfist" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="c9c1-6cc0-2c89-004b" name="Paragon Blade" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers>
-                <modifier type="show" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="f2b2-170e-52e7-073d" incrementChildId="62b8-d0ed-1236-6100" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <rules>
-                <rule id="5dfb-ad9b-1043-f34c" name="Murderous Strike" hidden="false" page="0">
-                  <description>Causes Instant Death on a To Wound roll of 6</description>
-                  <modifiers/>
-                </rule>
-              </rules>
-              <profiles>
-                <profile id="95f6-0b2e-4ee5-add0" profileTypeId="576561706f6e23232344415441232323" name="Paragon Blade" hidden="false" book="HH1: Betrayal" page="235">
-                  <characteristics>
-                    <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
-                    <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="+1"/>
-                    <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
-                    <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Murderous Strike, Specialist Weapon"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-              </profiles>
-              <links/>
-            </entry>
-            <entry id="320d-470f-f823-baa4" name="Power Weapon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Taghmata Army List">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <links/>
-        </entryGroup>
-        <entryGroup id="d12d-4733-79f6-ccc8" name="Exchange Volkite Serpenta for:" defaultEntryId="1555-5f1a-3fc8-e8ea" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="f7c1-5355-4e87-cc64" name="Archaeotech Pistol" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="04b7-8fc0-7474-3423" targetId="9045e242-71f8-6029-fc57-2b7cbedcc398" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="792d-97b7-cc90-a697" name="Photon Gauntlet" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="64fa-b37f-0b8e-af3e" targetId="54b8d1d6-d443-4571-936f-aca7c3c451db" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="4073-7228-c2ba-707c" name="Plasma Pistol" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="4b4a-c0c1-6e88-1fb1" name="Lucifex" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="a0cc-29a7-5ba9-d261" targetId="bbe4567f-45d7-cbfe-23f5-10edcb96e895" linkType="profile">
-                  <modifiers/>
-                </link>
-                <link id="41cf-3c25-6e4d-c519" targetId="3c82221c-a8de-fa0e-845e-225e326822d8" linkType="rule">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="3b0a-94f3-2a2f-87f0" name="Maxim Bolter" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="032f-a100-eded-6d14" targetId="8043abca-b8b1-2694-0fc0-4e3d58910eca" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="99d9-2864-a692-0843" name="Corposant Stave" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="b68a-84cc-620a-5a6f" name="Power Fist" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="08cf-5007-fdf3-8783" name="Chainfist" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="af9a-6a8e-b504-4d5e" name="Paragon Blade" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers>
-                <modifier type="show" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="f2b2-170e-52e7-073d" incrementChildId="62b8-d0ed-1236-6100" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <rules>
-                <rule id="60b7-b106-cd64-471f" name="Murderous Strike" hidden="false" page="0">
-                  <description>Causes Instant Death on a To Wound roll of 6</description>
-                  <modifiers/>
-                </rule>
-              </rules>
-              <profiles>
-                <profile id="69fa-3188-0701-becf" profileTypeId="576561706f6e23232344415441232323" name="Paragon Blade" hidden="false" book="HH1: Betrayal" page="235">
-                  <characteristics>
-                    <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
-                    <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="+1"/>
-                    <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
-                    <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Murderous Strike, Specialist Weapon"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-              </profiles>
-              <links/>
-            </entry>
-            <entry id="1555-5f1a-3fc8-e8ea" name="Volkite Serpenta" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="b2da-7c71-e442-9ab0" targetId="2c6ee84f-08d4-4e84-2468-6f39375d509b" linkType="profile">
-                  <modifiers/>
-                </link>
-                <link id="03cd-0380-05e0-7ff3" targetId="e31cf870-3fa6-f2a2-8704-9bf05f7efcd8" linkType="rule">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <links/>
-        </entryGroup>
         <entryGroup id="a79d-22b0-1fa0-1417" name="May take any of the following:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="8bc7-fe48-acee-b11b" name="Augury Scanner" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
@@ -4640,12 +4346,34 @@ D6    Result		S	AP
                 </link>
               </links>
             </entry>
+            <entry id="a04c-647f-88b3-8926" name="Djinn-skein" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="f2b2-170e-52e7-073d" childId="62b8-d0ed-1236-6100" field="selections" type="equal to" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <rules/>
+              <profiles>
+                <profile id="6feb-ac8d-a58d-2584" profileTypeId="57617267656172204974656d23232344415441232323" name="Djinn-skein" hidden="false" book="HH3: Extermination" page="215">
+                  <characteristics>
+                    <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Provides the following:  - At the start of his shooting phase, the Archmagos Prime may nominate a single unit from his primary detachment (including himself) within 6&quot; of him or any Cyber-occularis purchased as a part of his wargear to benefit from +1 BS. - Friendly units from the primary detachment including the Archmagos who deep strike within 6&quot; do not scatter - Barrage weapons in the same detachment may draw line of sight from the Archmagos or any of his Cyrber-occularis"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
           </entries>
           <entryGroups/>
           <modifiers/>
           <links/>
         </entryGroup>
-        <entryGroup id="1db7-efeb-e0bc-2876" name="May take of the following additional weapons:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="1db7-efeb-e0bc-2876" name="May take one of the following additional weapons:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="a8a7-9f6a-de8d-3bea" name="Rotor Cannon" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
@@ -4809,18 +4537,6 @@ D6    Result		S	AP
                 </link>
               </links>
             </entry>
-            <entry id="4948-473f-e1c8-5ad6" name="Rad Furnace" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="85a4-cf34-a3ed-2fc6" targetId="7f32-3376-7246-eeb0" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
           </entries>
           <entryGroups/>
           <modifiers/>
@@ -4969,15 +4685,263 @@ D6    Result		S	AP
           <modifiers/>
           <links/>
         </entryGroup>
+        <entryGroup id="14be-6918-6d38-74fb" name="Weapons" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups>
+            <entryGroup id="da2f-c1d1-f938-9edd" name="Exchange Power Weapon for:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries>
+                <entry id="ef5f-7188-027d-a61a" name="Archaeotech Pistol" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="84fc-dfc8-ffbf-3cc6" targetId="9045e242-71f8-6029-fc57-2b7cbedcc398" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="6eb0-7285-d52d-78c7" name="Photon Gauntlet" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="8fb8-b665-8c65-f9bf" targetId="54b8d1d6-d443-4571-936f-aca7c3c451db" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="c03d-6242-edf9-6dbe" name="Plasma Pistol" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="13f8-157e-e553-4b86" name="Lucifex" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="b421-34ba-1f4e-8591" targetId="bbe4567f-45d7-cbfe-23f5-10edcb96e895" linkType="profile">
+                      <modifiers/>
+                    </link>
+                    <link id="1d32-32ab-7c96-3e75" targetId="3c82221c-a8de-fa0e-845e-225e326822d8" linkType="rule">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="1528-cdf0-6480-2324" name="Maxim Bolter" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="6ce3-b875-d23e-92d9" targetId="8043abca-b8b1-2694-0fc0-4e3d58910eca" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="ef0c-cc69-cf04-8cb6" name="Corposant Stave" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="5d39-6d0b-8663-f16e" targetId="ce4b6663-6a42-bb46-22b2-430fb43b6c5d" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="28a0-3236-f8e8-d0ed" name="Power Fist" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="9321-3378-a23f-9a10" name="Chainfist" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="fff2-964d-f5dd-4aab" name="Paragon Blade" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers>
+                    <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="f2b2-170e-52e7-073d" childId="62b8-d0ed-1236-6100" field="selections" type="equal to" value="0.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <rules>
+                    <rule id="9cee-c1b0-05fb-7908" name="Murderous Strike" hidden="false" page="0">
+                      <description>Causes Instant Death on a To Wound roll of 6</description>
+                      <modifiers/>
+                    </rule>
+                  </rules>
+                  <profiles>
+                    <profile id="e6b8-530e-c685-db9b" profileTypeId="576561706f6e23232344415441232323" name="Paragon Blade" hidden="false" book="HH1: Betrayal" page="235">
+                      <characteristics>
+                        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
+                        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="+1"/>
+                        <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
+                        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Murderous Strike, Specialist Weapon"/>
+                      </characteristics>
+                      <modifiers/>
+                    </profile>
+                  </profiles>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <links/>
+            </entryGroup>
+            <entryGroup id="f59e-1a1f-63d9-3ab7" name="Exchange Volkite Serpenta for:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+              <entries>
+                <entry id="aca1-1586-bf99-7d52" name="Archaeotech Pistol" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="ad4a-7115-92cf-613d" targetId="9045e242-71f8-6029-fc57-2b7cbedcc398" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="6d67-a919-540b-de25" name="Photon Gauntlet" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="0419-dd7e-d2a4-35ca" targetId="54b8d1d6-d443-4571-936f-aca7c3c451db" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="c00d-2c62-ed19-1030" name="Plasma Pistol" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="cffb-f24f-e269-12a6" name="Lucifex" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="ba6f-c92b-e33b-2235" targetId="bbe4567f-45d7-cbfe-23f5-10edcb96e895" linkType="profile">
+                      <modifiers/>
+                    </link>
+                    <link id="73ee-03cb-8cb2-a95e" targetId="3c82221c-a8de-fa0e-845e-225e326822d8" linkType="rule">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="070f-276d-21b6-5acd" name="Maxim Bolter" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="58fa-025e-a291-1343" targetId="8043abca-b8b1-2694-0fc0-4e3d58910eca" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="c27d-6635-ac02-4eaf" name="Corposant Stave" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="3dcc-a056-ee61-4a42" targetId="ce4b6663-6a42-bb46-22b2-430fb43b6c5d" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="22ae-e001-513a-9373" name="Power Fist" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="27e5-a0b2-d4ee-cd60" name="Chainfist" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="bf88-ef2d-47f0-ac78" name="Paragon Blade" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers>
+                    <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="f2b2-170e-52e7-073d" childId="62b8-d0ed-1236-6100" field="selections" type="equal to" value="0.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <rules>
+                    <rule id="a046-32ec-1531-2be5" name="Murderous Strike" hidden="false" page="0">
+                      <description>Causes Instant Death on a To Wound roll of 6</description>
+                      <modifiers/>
+                    </rule>
+                  </rules>
+                  <profiles>
+                    <profile id="6dba-dd70-7620-b09e" profileTypeId="576561706f6e23232344415441232323" name="Paragon Blade" hidden="false" book="HH1: Betrayal" page="235">
+                      <characteristics>
+                        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
+                        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="+1"/>
+                        <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
+                        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Murderous Strike, Specialist Weapon"/>
+                      </characteristics>
+                      <modifiers/>
+                    </profile>
+                  </profiles>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <links/>
+            </entryGroup>
+          </entryGroups>
+          <modifiers/>
+          <links/>
+        </entryGroup>
       </entryGroups>
-      <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="roster" childId="f676-4c11-278a-46b8" field="selections" type="equal to" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
+      <modifiers/>
       <rules/>
       <profiles>
         <profile id="f21b-7d99-3cea-7d7f" profileTypeId="556e697423232344415441232323" name="Magos Prime" hidden="false" book="HH3: Extermination" page="214">
@@ -4996,33 +4960,14 @@ D6    Result		S	AP
           <modifiers>
             <modifier type="hide" field="556e6974205479706523232344415441232323" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions>
-                <condition parentId="f2b2-170e-52e7-073d" childId="645a-190d-c703-cc9b" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="f2b2-170e-52e7-073d" childId="62b8-d0ed-1236-6100" field="selections" type="equal to" value="1.0"/>
               </conditions>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="increment" field="575323232344415441232323" value="1" repeat="true" numRepeats="1" incrementParentId="f2b2-170e-52e7-073d" incrementChildId="645a-190d-c703-cc9b" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="increment" field="4123232344415441232323" value="1" repeat="true" numRepeats="1" incrementParentId="roster" incrementChildId="645a-190d-c703-cc9b" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="increment" field="5723232344415441232323" value="1" repeat="true" numRepeats="1" incrementParentId="f2b2-170e-52e7-073d" incrementChildId="df18-c724-2a3d-a6e5" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="increment" field="5423232344415441232323" value="1" repeat="true" numRepeats="1" incrementParentId="f2b2-170e-52e7-073d" incrementChildId="9d9f-63d3-f635-7fd5" incrementField="selections" incrementValue="1.0">
-              <conditions/>
               <conditionGroups/>
             </modifier>
           </modifiers>
         </profile>
       </profiles>
       <links>
-        <link id="ad23-f541-dc73-1d66" targetId="e1ca-c072-fd46-7a57" linkType="entry group">
-          <modifiers/>
-        </link>
         <link id="74aa-04ef-1ead-bb90" targetId="df18-c724-2a3d-a6e5" linkType="entry group">
           <modifiers/>
         </link>
@@ -5666,7 +5611,7 @@ D6    Result		S	AP
       <modifiers>
         <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
-            <condition parentId="roster" childId="e825-7c15-cdd1-43a9" field="selections" type="equal to" value="0.0"/>
+            <condition parentId="force type" childId="aa4e-df87-d1bd-76d0" field="selections" type="equal to" value="0.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -5848,7 +5793,7 @@ D6    Result		S	AP
       <modifiers>
         <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
-            <condition parentId="roster" childId="f676-4c11-278a-46b8" field="selections" type="equal to" value="1.0"/>
+            <condition parentId="force type" childId="b88e-5d48-41ab-6422" field="selections" type="equal to" value="1.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -5867,6 +5812,10 @@ D6    Result		S	AP
         </rule>
         <rule id="e97aad4e-e298-6ee3-7747-fb0a55b6ec1c" name="Castellan Reductor" hidden="false" book="HH1: Betraya" page="278">
           <description>Force Org for use in Istvaan III campaign. </description>
+          <modifiers/>
+        </rule>
+        <rule id="06af-8d96-8617-aec5" name="Walker in Ruin" hidden="false" book="HH: MT" page="33">
+          <description>Decima and unit joined are immune to Pinning caused by enemy attacks and may ignore the penaltires and risks of moving or charging through difficult or dangerous terrain if it consists of areas of rubble, ruin, minefields, or trenchworks. </description>
           <modifiers/>
         </rule>
       </rules>
@@ -5904,6 +5853,12 @@ D6    Result		S	AP
           <modifiers/>
         </link>
         <link id="3cb1-b949-0433-d186" targetId="0de5-5b51-907d-e5e2" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="a005-9bcd-80b1-2ce9" targetId="fa9a-ff67-537f-3be9" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="ccdd-de55-4b2c-2903" targetId="8199e922-e844-5d34-b04b-86edadffa2df" linkType="rule">
           <modifiers/>
         </link>
       </links>
@@ -6617,22 +6572,6 @@ D6   Result 1-2 Explosion
           <modifiers/>
         </link>
       </links>
-    </entry>
-    <entry id="e825-7c15-cdd1-43a9" name="Ordo Reductor" points="0.0" categoryId="258478de-d031-8a7e-dcb0-7d56bee86952" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links/>
-    </entry>
-    <entry id="ac66-ba4d-d3cf-c59d" name="Taghmata Omnissiah" points="0.0" categoryId="258478de-d031-8a7e-dcb0-7d56bee86952" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links/>
     </entry>
     <entry id="32e6-8092-ad80-2543" name="Tarantula Sentry Gun Battery" points="0.0" categoryId="466173742041747461636b23232344415441232323" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
@@ -8720,22 +8659,6 @@ Reduces transport capacity to 8.  </description>
         <link id="4ee4-be5f-74e5-a725" targetId="0a9d-3f08-f373-f08a" linkType="rule">
           <modifiers/>
         </link>
-        <link id="4cd9-6d38-367f-d67f" targetId="1e27e511-cf75-d55a-6807-b67be6f7474f" linkType="entry">
-          <modifiers>
-            <modifier type="set" field="points" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-        </link>
-        <link id="1c39-2076-d19a-da30" targetId="ae84-b0ea-6c1b-d2c8" linkType="entry">
-          <modifiers>
-            <modifier type="set" field="points" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-        </link>
       </links>
     </entry>
     <entry id="34924deb-f4e5-7739-5606-87600d1740bb" name="Paragon of Metal" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
@@ -8902,6 +8825,227 @@ Reduces transport capacity to 8.  </description>
       <profiles/>
       <links>
         <link id="d0d44aa4-126f-c4aa-b76f-fc64a5a0502b" targetId="75683330-6490-c0bf-560c-2e58617425a1" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="314b-bec3-5501-a0aa" name="Scyllax Guardian-Automata Covenant" points="15.0" categoryId="54726f6f707323232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Taghmata Army List" page="40">
+      <entries>
+        <entry id="92f0-d2fd-187f-9640" name="Scyllax Guardian-Automata" points="35.0" categoryId="(No Category)" type="model" minSelections="4" maxSelections="16" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="6214-d259-f981-fb17" profileTypeId="556e697423232344415441232323" name="Scyllax Guardian-Automata" hidden="false" book="HH5: Tempest" page="223">
+              <characteristics>
+                <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Infantry"/>
+                <characteristic characteristicId="575323232344415441232323" name="WS" value="3"/>
+                <characteristic characteristicId="425323232344415441232323" name="BS" value="4"/>
+                <characteristic characteristicId="5323232344415441232323" name="S" value="4"/>
+                <characteristic characteristicId="5423232344415441232323" name="T" value="5"/>
+                <characteristic characteristicId="5723232344415441232323" name="W" value="2"/>
+                <characteristic characteristicId="4923232344415441232323" name="I" value="3"/>
+                <characteristic characteristicId="4123232344415441232323" name="A" value="2"/>
+                <characteristic characteristicId="4c4423232344415441232323" name="LD" value="7"/>
+                <characteristic characteristicId="5361766523232344415441232323" name="Save" value="4+"/>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" field="4123232344415441232323" value="3" repeat="true" numRepeats="1" incrementParentId="314b-bec3-5501-a0aa" incrementChildId="3340-0140-85c9-4601" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups>
+        <entryGroup id="a02e-68f0-8bd9-882f" name="For every four Scyllax, one may replace their Scyllax boltgun with one of the following:" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="d32c-8a3c-44ca-cff2" name="Meltagun" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="7a75-b48e-553a-193f" name="Graviton Gun" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="432b-e1ee-1265-4d38" name="Rad-cleanser" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="7aca-bdc8-a8f8-ca3a" name="Plasmagun" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers>
+            <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="314b-bec3-5501-a0aa" incrementChildId="92f0-d2fd-187f-9640" incrementField="selections" incrementValue="4.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <links/>
+        </entryGroup>
+        <entryGroup id="d271-880e-5c73-9be9" name="Any Scyllax may replace their Scyllax boltgun for:" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="83b9-0cc1-a8d6-f06e" name="Rotor Cannon" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="16" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="e8d0-bb0e-5f5c-e1b2" targetId="75683330-6490-c0bf-560c-2e58617425a1" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="5638-fed6-2c5d-7d43" name="Flamer" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="16" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="9bd5-eb9f-c506-c260" name="Volkite Charger" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="16" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="c6a1-3def-7353-6a28" targetId="9c9de857-ac5e-11ff-ead6-1df8480d3f28" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="3340-0140-85c9-4601" name="Enhanced Array" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="16" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="8567-6208-c3c1-d251" profileTypeId="576561706f6e23232344415441232323" name="Enhanced Array" hidden="false">
+                  <characteristics>
+                    <characteristic characteristicId="52616e676523232344415441232323" name="Range"/>
+                    <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength"/>
+                    <characteristic characteristicId="415023232344415441232323" name="AP"/>
+                    <characteristic characteristicId="5479706523232344415441232323" name="Type"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers>
+            <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="314b-bec3-5501-a0aa" incrementChildId="92f0-d2fd-187f-9640" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="314b-bec3-5501-a0aa" incrementChildId="a02e-68f0-8bd9-882f" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <links/>
+        </entryGroup>
+        <entryGroup id="d752-8e75-e5cb-fbe1" name="Entire squad may take:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="416b-0a32-f138-ab27" name="Frag Grenades" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules>
+        <rule id="6b0a-9b8e-758f-4dc6" name="Relentless" hidden="false">
+          <modifiers/>
+        </rule>
+        <rule id="0410-6785-0f45-9b66" name="Night Vision" hidden="false">
+          <modifiers/>
+        </rule>
+        <rule id="128b-f011-44be-3a1e" name="Move Through Cover" hidden="false">
+          <modifiers/>
+        </rule>
+        <rule id="c96a-49b9-1d4e-a82f" name="Guardian-Servitor Protocols" hidden="false" book="HH5: Tempest" page="223">
+          <description>So long as a model in this unit is within 24&quot; of a model from the same detachment which as the Battlesmith or Cybertheurgy rule, the Guardian-automata are Fearless.  If no such unit is within range, the controlling player must take a leadership test at the start of their movement phase or remain stationary.  If locked in assault, may fight normally.  </description>
+          <modifiers/>
+        </rule>
+        <rule id="ec25-ec24-868f-1705" name="Maelstrom" hidden="false" book="HH5: Tempest" page="223">
+          <description>Any To Wound roll of a 6 generates an additional attack, resolved as normal.  These do not generate additional attacks.  </description>
+          <modifiers/>
+        </rule>
+        <rule id="813e-3a69-4e43-4eac" name="Dismemberment" hidden="false" book="HH5: Tempest" page="223">
+          <description>May forgo its normal number of attacks (including any bonus for charging, etc) to make a single attack with the Dismemberment profile instead. </description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="10d6-1492-bf52-9349" profileTypeId="576561706f6e23232344415441232323" name="Scyllax Bolter" hidden="false" book="HH5: Tempest" page="223">
+          <characteristics>
+            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="30&quot;"/>
+            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="4"/>
+            <characteristic characteristicId="415023232344415441232323" name="AP" value="4"/>
+            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Rapid Fire"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="d79b-192c-aad4-27f2" profileTypeId="576561706f6e23232344415441232323" name="Mechadendrite Combat Array" hidden="false" book="HH5: Tempest" page="223">
+          <characteristics>
+            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
+            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="User"/>
+            <characteristic characteristicId="415023232344415441232323" name="AP" value="5"/>
+            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Maelstrom, Dismemberment"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="072e-6d41-32ef-e5de" profileTypeId="576561706f6e23232344415441232323" name="Mechadendrite Combat Array (Dismemberment)" hidden="false" book="HH5: Tempest" page="223">
+          <characteristics>
+            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
+            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="+3"/>
+            <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
+            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Unwieldly"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links>
+        <link id="5e3f-f812-312a-644e" targetId="bb6538b0-0f23-8a43-9752-dd356ba76e46" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="71eb-9f37-b479-ff66" targetId="7f32-3376-7246-eeb0" linkType="profile">
           <modifiers/>
         </link>
       </links>
@@ -9434,226 +9578,18 @@ Reduces transport capacity to 8.  </description>
         </link>
       </links>
     </entry>
-    <entry id="314b-bec3-5501-a0aa" name="Scyllax Guardian-Automata Covenant" points="15.0" categoryId="54726f6f707323232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Taghmata Army List" page="40">
-      <entries>
-        <entry id="92f0-d2fd-187f-9640" name="Scyllax Guardian-Automata" points="35.0" categoryId="(No Category)" type="model" minSelections="4" maxSelections="16" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles>
-            <profile id="6214-d259-f981-fb17" profileTypeId="556e697423232344415441232323" name="Scyllax Guardian-Automata" hidden="false" book="HH5: Tempest" page="223">
-              <characteristics>
-                <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Infantry"/>
-                <characteristic characteristicId="575323232344415441232323" name="WS" value="3"/>
-                <characteristic characteristicId="425323232344415441232323" name="BS" value="4"/>
-                <characteristic characteristicId="5323232344415441232323" name="S" value="4"/>
-                <characteristic characteristicId="5423232344415441232323" name="T" value="5"/>
-                <characteristic characteristicId="5723232344415441232323" name="W" value="2"/>
-                <characteristic characteristicId="4923232344415441232323" name="I" value="3"/>
-                <characteristic characteristicId="4123232344415441232323" name="A" value="2"/>
-                <characteristic characteristicId="4c4423232344415441232323" name="LD" value="7"/>
-                <characteristic characteristicId="5361766523232344415441232323" name="Save" value="4+"/>
-              </characteristics>
-              <modifiers>
-                <modifier type="set" field="4123232344415441232323" value="3" repeat="true" numRepeats="1" incrementParentId="314b-bec3-5501-a0aa" incrementChildId="3340-0140-85c9-4601" incrementField="selections" incrementValue="1.0">
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-            </profile>
-          </profiles>
-          <links/>
-        </entry>
-      </entries>
-      <entryGroups>
-        <entryGroup id="a02e-68f0-8bd9-882f" name="For every four Scyllax, one may replace their Scyllax boltgun with one of the following:" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="d32c-8a3c-44ca-cff2" name="Meltagun" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="7a75-b48e-553a-193f" name="Graviton Gun" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="432b-e1ee-1265-4d38" name="Rad-cleanser" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="7aca-bdc8-a8f8-ca3a" name="Plasmagun" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="314b-bec3-5501-a0aa" incrementChildId="92f0-d2fd-187f-9640" incrementField="selections" incrementValue="4.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <links/>
-        </entryGroup>
-        <entryGroup id="d271-880e-5c73-9be9" name="Any Scyllax may replace their Scyllax boltgun for:" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="83b9-0cc1-a8d6-f06e" name="Rotor Cannon" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="16" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="e8d0-bb0e-5f5c-e1b2" targetId="75683330-6490-c0bf-560c-2e58617425a1" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="5638-fed6-2c5d-7d43" name="Flamer" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="16" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="9bd5-eb9f-c506-c260" name="Volkite Charger" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="16" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="c6a1-3def-7353-6a28" targetId="9c9de857-ac5e-11ff-ead6-1df8480d3f28" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="3340-0140-85c9-4601" name="Enhanced Array" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="16" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles>
-                <profile id="8567-6208-c3c1-d251" profileTypeId="576561706f6e23232344415441232323" name="Enhanced Array" hidden="false">
-                  <characteristics>
-                    <characteristic characteristicId="52616e676523232344415441232323" name="Range"/>
-                    <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength"/>
-                    <characteristic characteristicId="415023232344415441232323" name="AP"/>
-                    <characteristic characteristicId="5479706523232344415441232323" name="Type"/>
-                  </characteristics>
-                  <modifiers/>
-                </profile>
-              </profiles>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="314b-bec3-5501-a0aa" incrementChildId="92f0-d2fd-187f-9640" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="314b-bec3-5501-a0aa" incrementChildId="a02e-68f0-8bd9-882f" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <links/>
-        </entryGroup>
-        <entryGroup id="d752-8e75-e5cb-fbe1" name="Entire squad may take:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="416b-0a32-f138-ab27" name="Frag Grenades" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <links/>
-        </entryGroup>
-      </entryGroups>
+    <entry id="00cf-20ab-1b17-aad1" name="Archmagos" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
       <modifiers/>
       <rules>
-        <rule id="6b0a-9b8e-758f-4dc6" name="Relentless" hidden="false">
-          <modifiers/>
-        </rule>
-        <rule id="0410-6785-0f45-9b66" name="Night Vision" hidden="false">
-          <modifiers/>
-        </rule>
-        <rule id="128b-f011-44be-3a1e" name="Move Through Cover" hidden="false">
-          <modifiers/>
-        </rule>
-        <rule id="c96a-49b9-1d4e-a82f" name="Guardian-Servitor Protocols" hidden="false" book="HH5: Tempest" page="223">
-          <description>So long as a model in this unit is within 24&quot; of a model from the same detachment which as the Battlesmith or Cybertheurgy rule, the Guardian-automata are Fearless.  If no such unit is within range, the controlling player must take a leadership test at the start of their movement phase or remain stationary.  If locked in assault, may fight normally.  </description>
-          <modifiers/>
-        </rule>
-        <rule id="ec25-ec24-868f-1705" name="Maelstrom" hidden="false" book="HH5: Tempest" page="223">
-          <description>Any To Wound roll of a 6 generates an additional attack, resolved as normal.  These do not generate additional attacks.  </description>
-          <modifiers/>
-        </rule>
-        <rule id="813e-3a69-4e43-4eac" name="Dismemberment" hidden="false" book="HH5: Tempest" page="223">
-          <description>May forgo its normal number of attacks (including any bonus for charging, etc) to make a single attack with the Dismemberment profile instead. </description>
+        <rule id="223b-5c4a-d190-017d" name="The Rule of the Archmagos" hidden="false" book="HH: MT" page="14">
+          <description>Only a single Archmagos of any kind may be included in a Mechanicum detachment of any kind (including named Archmagos) and where present they must be the army&apos;s warlord.  </description>
           <modifiers/>
         </rule>
       </rules>
-      <profiles>
-        <profile id="10d6-1492-bf52-9349" profileTypeId="576561706f6e23232344415441232323" name="Scyllax Bolter" hidden="false" book="HH5: Tempest" page="223">
-          <characteristics>
-            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="30&quot;"/>
-            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="4"/>
-            <characteristic characteristicId="415023232344415441232323" name="AP" value="4"/>
-            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Rapid Fire"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-        <profile id="d79b-192c-aad4-27f2" profileTypeId="576561706f6e23232344415441232323" name="Mechadendrite Combat Array" hidden="false" book="HH5: Tempest" page="223">
-          <characteristics>
-            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
-            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="User"/>
-            <characteristic characteristicId="415023232344415441232323" name="AP" value="5"/>
-            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Maelstrom, Dismemberment"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-        <profile id="072e-6d41-32ef-e5de" profileTypeId="576561706f6e23232344415441232323" name="Mechadendrite Combat Array (Dismemberment)" hidden="false" book="HH5: Tempest" page="223">
-          <characteristics>
-            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
-            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="+3"/>
-            <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
-            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Unwieldly"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-      </profiles>
-      <links>
-        <link id="5e3f-f812-312a-644e" targetId="bb6538b0-0f23-8a43-9752-dd356ba76e46" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="71eb-9f37-b479-ff66" targetId="7f32-3376-7246-eeb0" linkType="profile">
-          <modifiers/>
-        </link>
-      </links>
+      <profiles/>
+      <links/>
     </entry>
   </sharedEntries>
   <sharedEntryGroups>
