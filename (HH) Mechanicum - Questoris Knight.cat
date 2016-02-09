@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="32d1ddc6-3187-cf6f-3bf8-9891e527a002" revision="8" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="27" battleScribeVersion="1.15" name="Questoris Knight Crusade Army" books="HH4: Conquest - 2014" authorName="Millicant" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="32d1ddc6-3187-cf6f-3bf8-9891e527a002" revision="9" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="27" battleScribeVersion="1.15" name="Questoris Knight Crusade Army" books="HH4: Conquest - 2014" authorName="Millicant" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="27575b75-5e1e-26ab-1074-fa91b73e2216" name="Archmagos Draykavac" points="240.0" categoryId="485123232344415441232323" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH4: Conquest" page="300">
       <entries/>
@@ -3243,6 +3243,106 @@ D6    Result		S	AP
               <modifiers/>
             </link>
             <link id="795f-f849-f959-a875" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+        <entry id="e007-c135-cb1d-9fe1" name="Cerastus Knight-Atrapos" points="435.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups>
+            <entryGroup id="c70b-bc3c-e9c8-f410" name="May be upgraded with:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries>
+                <entry id="7d66-75fc-1aaa-5529" name="Occular Augmetics" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="973f-0c69-5262-c52d" targetId="faa4ea24-e51b-8663-3e7c-1a791b55aed7" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <links/>
+            </entryGroup>
+          </entryGroups>
+          <modifiers/>
+          <rules>
+            <rule id="35c1-0608-831d-1bc7" name="Macro-extinction Targeting Protocols" hidden="false">
+              <description>When making shooting attacks against targets of the Super-heavy or Gargantuan Creature type, the Cerastus Knight-Atrapos counts its weapons as Twin-linked.</description>
+              <modifiers/>
+            </rule>
+            <rule id="5981-8cf3-f660-4c47" name="Catastrophic Destruction" hidden="false">
+              <description>When destroyed, the Cerastus Knight-Atrapos adds +2 to the result rolled on the Catastrophic Damage table.</description>
+              <modifiers/>
+            </rule>
+            <rule id="cd64-d954-f951-6f4e" name="Collapsing Singularity" hidden="false">
+              <description>Before firing the weapon, roll a D6. On a result of a 1, the firing Knight-Atrapos suffers a single Hull Point of damage with no saves of any kind before the attack is carried out. On a result of a 6, the attack is carried out with the Vortex special rule. </description>
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles>
+            <profile id="a407-5b4d-aa86-2ff3" profileTypeId="57616c6b657223232344415441232323" name="Indentured Knight Atrapos" hidden="false" book="Forgeworld.co.uk">
+              <characteristics>
+                <characteristic characteristicId="575323232344415441232323" name="WS" value=" 4"/>
+                <characteristic characteristicId="425323232344415441232323" name="BS" value="4"/>
+                <characteristic characteristicId="5323232344415441232323" name="S" value="10"/>
+                <characteristic characteristicId="46726f6e7423232344415441232323" name="Front" value="13"/>
+                <characteristic characteristicId="5369646523232344415441232323" name="Side" value="12"/>
+                <characteristic characteristicId="5265617223232344415441232323" name="Rear" value="12"/>
+                <characteristic characteristicId="4923232344415441232323" name="I" value="4"/>
+                <characteristic characteristicId="4123232344415441232323" name="A" value="4"/>
+                <characteristic characteristicId="485023232344415441232323" name="HP" value="7"/>
+                <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Super-heavy Walker"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+            <profile id="fd41-a14f-5d5c-bf4c" profileTypeId="576561706f6e23232344415441232323" name="Graviton Singularity Cannon" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="38&quot;"/>
+                <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="8"/>
+                <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
+                <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 1, Large Blast, Armourbane, Concussive, Collapsing Singularity"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+            <profile id="d096-a630-f03c-1e46" profileTypeId="576561706f6e23232344415441232323" name="Atrapos Lascutter (Beam)" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="8&quot;"/>
+                <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="D"/>
+                <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
+                <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 1"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+            <profile id="a6cc-195c-c814-4fdb" profileTypeId="576561706f6e23232344415441232323" name="Atrapos Lascutter (Close Combat)" hidden="false">
+              <characteristics>
+                <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
+                <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="D"/>
+                <characteristic characteristicId="415023232344415441232323" name="AP" value="1"/>
+                <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Wrecker"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links>
+            <link id="8616-e4ee-9194-b891" targetId="b352ed0c-5fc2-2b26-e1ea-8bc60068af56" linkType="rule">
+              <modifiers/>
+            </link>
+            <link id="364d-d85b-80bc-f3bb" targetId="76f43c9f-9d2b-e019-63db-3ac3082ee07c" linkType="profile">
+              <modifiers/>
+            </link>
+            <link id="d726-ad40-73cd-2e9e" targetId="53c751ef-105f-b2a8-7a17-7812d605b9f2" linkType="rule">
+              <modifiers/>
+            </link>
+            <link id="c80e-0054-9aa8-11e0" targetId="9445fd7c-5f0e-e2fd-f586-2beafd8d3b6b" linkType="rule">
+              <modifiers/>
+            </link>
+            <link id="ab27-d09c-4646-423c" targetId="283aab20-3917-4fe6-dec8-5fae4245c517" linkType="rule">
               <modifiers/>
             </link>
           </links>
