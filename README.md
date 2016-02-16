@@ -1,6 +1,8 @@
 Horus Heresy
 ============
 
+[![Join the chat at https://gitter.im/BSData/horus-heresy](https://badges.gitter.im/BSData/horus-heresy.svg)](https://gitter.im/BSData/horus-heresy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ####Contents####
 
 * [Overview][]
