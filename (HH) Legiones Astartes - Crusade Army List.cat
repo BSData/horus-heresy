@@ -7181,7 +7181,7 @@ D6    Result		S	AP
         </link>
       </links>
     </entry>
-   <entry id="eaa143bc-3040-7031-faaf-314871d4811a" name="Legion Caestus Assault Ram" points="305.0" categoryId="486561767920537570706f727423232344415441232323" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LACAL" page="59">
+    <entry id="eaa143bc-3040-7031-faaf-314871d4811a" name="Legion Caestus Assault Ram" points="305.0" categoryId="486561767920537570706f727423232344415441232323" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LACAL" page="59">
       <entries/>
       <entryGroups>
         <entryGroup id="692a321e-1b83-883a-5569-371d97d581ec" name="May be upgraded with any of the following:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -7890,7 +7890,7 @@ D6    Result		S	AP
                       </conditions>
                       <conditionGroups/>
                     </modifier>
-                    <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                    <modifier type="set" field="minInForce" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                       <conditions>
                         <condition parentId="force type" childId="bf8f-560e-fe98-293c" field="selections" type="at least" value="1.0"/>
                       </conditions>
@@ -14564,7 +14564,7 @@ D6    Result		S	AP
                     </link>
                   </links>
                 </entry>
-               <entry id="06556a30-c351-f5b1-4d64-2403a68f9424" name="Magna-Melta Cannon" points="45.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                <entry id="06556a30-c351-f5b1-4d64-2403a68f9424" name="Magna-Melta Cannon" points="45.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
@@ -23340,6 +23340,28 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
         </link>
       </links>
     </entry>
+    <entry id="9cc1-7f97-14a4-bd88" name="Company of Bitter Iron" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="0896-6faa-3d39-8a89" field="selections" type="at least" value="1.0"/>
+            <condition parentId="force type" childId="9be06372-f9f8-5fe6-aa48-29a9beca328b" field="selections" type="at least" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="d45f-23f2-6d6d-ffec" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
     <entry id="5ea9-06d0-d880-86f1" name="Contemptor Dreadnought Talon" points="0.0" categoryId="456c6974657323232344415441232323" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LACAL" page="26">
       <entries>
         <entry id="48c8-5bb4-3541-bc91" name="Legion Contemptor Dreadnought" points="175.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
@@ -24291,6 +24313,12 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
           <conditions>
             <condition parentId="force type" childId="ce8d84a0-43c8-2047-5990-bd867125c994" field="selections" type="at least" value="1.0"/>
             <condition parentId="force type" childId="d21b-a452-4de8-e454" field="selections" type="at least" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="d45f-23f2-6d6d-ffec" field="selections" type="at least" value="1.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -27423,13 +27451,14 @@ In addtion, all units with the Legiones Astartes (Emperor&apos;s Children) rule 
       <profiles/>
       <links/>
     </entry>
-    <entry id="5b51-ea14-20af-6caf" name="Horror Cult" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="5b51-ea14-20af-6caf" name="Horror Cult" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries/>
       <entryGroups/>
       <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions>
-            <condition parentId="force type" childId="3ef8dfa5-8844-fd89-ce9b-afee530d7728" field="selections" type="equal to" value="0.0"/>
+            <condition parentId="force type" childId="3ef8dfa5-8844-fd89-ce9b-afee530d7728" field="selections" type="equal to" value="1.0"/>
+            <condition parentId="force type" childId="d21b-a452-4de8-e454" field="selections" type="equal to" value="1.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -27565,22 +27594,6 @@ In addtion, all units with the Legiones Astartes (Emperor&apos;s Children) rule 
           <modifiers/>
         </link>
       </links>
-    </entry>
-    <entry id="a02e-b15a-8758-d629" name="Hunter-killer Mission" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
-      <entries/>
-      <entryGroups/>
-      <modifiers>
-        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="d21b-a452-4de8-e454" field="selections" type="equal to" value="1.0"/>
-            <condition parentId="force type" childId="d45f-23f2-6d6d-ffec" field="selections" type="equal to" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <rules/>
-      <profiles/>
-      <links/>
     </entry>
     <entry id="a02e-b15a-8758-d629" name="Hunter-killer Mission" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
       <entries/>
@@ -31063,7 +31076,7 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
                 <modifier type="hide" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
                     <condition parentId="force type" childId="e0cec0c2-a6db-2c94-aacb-dc4dc8085e41" field="selections" type="equal to" value="0.0"/>
-                    <condition parentId="force type" childId="454b8f4c-d55b-783b-1461-d2aa77de8f89" field="selections" type="equal to" value="0.0"/>         
+                    <condition parentId="force type" childId="454b8f4c-d55b-783b-1461-d2aa77de8f89" field="selections" type="equal to" value="0.0"/>
                     <condition parentId="force type" childId="bfe0-fcb4-aa9e-da71" field="selections" type="equal to" value="0.0"/>
                   </conditions>
                   <conditionGroups/>
@@ -33973,6 +33986,28 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
         </link>
       </links>
     </entry>
+    <entry id="9baf-b880-dc66-4269" name="Liberation Force" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="0896-6faa-3d39-8a89" field="selections" type="at least" value="1.0"/>
+            <condition parentId="force type" childId="bbe52603-6dbe-5d2a-0c41-73cee758ab9d" field="selections" type="at least" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="d45f-23f2-6d6d-ffec" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
     <entry id="b7c9-010a-fcab-2fe5" name="Locutarus Storm Squad" points="105.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH5: Tempest" page="234">
       <entries>
         <entry id="a484-0325-cd34-9d23" name="Locutarus" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="4" maxSelections="9" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -36203,6 +36238,20 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
         </link>
         <link id="93fdb905-2116-58d3-e70a-05abc9446746" targetId="38d51988-0d1a-0974-c0df-0bb6a5b2a693" linkType="profile">
           <modifiers/>
+        </link>
+        <link id="ae8e-93b5-70fc-5638" targetId="679b7bea-d780-dcba-46a2-05fbc83cabed" linkType="entry">
+          <modifiers>
+            <modifier type="set" field="points" value="15.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="7663-6a79-dc3f-7ff3" field="selections" type="equal to" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
       </links>
     </entry>
@@ -38477,6 +38526,20 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
         <link id="0950c205-7b86-0c08-9fcd-85d81bd6952e" targetId="d4a1a878-9ad4-6ae0-a864-08f58264c4a5" linkType="rule">
           <modifiers/>
         </link>
+        <link id="6c32-c306-ac16-56a2" targetId="679b7bea-d780-dcba-46a2-05fbc83cabed" linkType="entry">
+          <modifiers>
+            <modifier type="set" field="points" value="15.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="7663-6a79-dc3f-7ff3" field="selections" type="equal to" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </link>
       </links>
     </entry>
     <entry id="7c741cce-8850-b98f-3b84-cd0d84c3dada" name="Terror Assault" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
@@ -38993,6 +39056,21 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
         </link>
       </links>
     </entry>
+    <entry id="be06-0eed-0241-69be" name="The Awakening Fire" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="6e6033dd-e441-f2a3-13fb-96304ca36e97" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
     <entry id="06259dff-a022-883a-69e4-8d8e02ea4714" name="The Black Reaving" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LAICL" page="9">
       <entries/>
       <entryGroups/>
@@ -39300,21 +39378,6 @@ If the test is failed, the unit immediately suffers D6 wounds at AP2 with Instan
           <conditions>
             <condition parentId="force type" childId="8de96b92-0d9f-8bc0-5fa0-09e0e917f63e" field="selections" type="equal to" value="1.0"/>
             <condition parentId="force type" childId="d21b-a452-4de8-e454" field="selections" type="equal to" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <rules/>
-      <profiles/>
-      <links/>
-    </entry>
-    <entry id="7420-a892-edd7-0158" name="The Long March" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries/>
-      <entryGroups/>
-      <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="8de96b92-0d9f-8bc0-5fa0-09e0e917f63e" field="selections" type="equal to" value="0.0"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -40279,6 +40342,22 @@ If the test is failed, the unit immediately suffers D6 wounds at AP2 with Instan
         </link>
       </links>
     </entry>
+    <entry id="7148-f03a-8120-83a5" name="Vigil Opertii Mission" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="64bdd508-d609-87cb-fa2a-1e73bd709d94" field="selections" type="at least" value="1.0"/>
+            <condition parentId="force type" childId="0896-6faa-3d39-8a89" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
     <entry id="e92b-34de-9f52-5c3a" name="Vigil Pattern Storm Shield" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries/>
       <entryGroups/>
@@ -40765,81 +40844,6 @@ If the test is failed, the unit immediately suffers D6 wounds at AP2 with Instan
       <entries/>
       <entryGroups/>
       <modifiers/>
-      <rules/>
-      <profiles/>
-      <links/>
-    </entry>
-    <entry id="7148-f03a-8120-83a5" name="Vigil Opertii Mission" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
-      <entries/>
-      <entryGroups/>
-      <modifiers>
-        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="64bdd508-d609-87cb-fa2a-1e73bd709d94" field="selections" type="at least" value="1.0"/>
-            <condition parentId="force type" childId="0896-6faa-3d39-8a89" field="selections" type="equal to" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <rules/>
-      <profiles/>
-      <links/>
-    </entry>
-    <entry id="9cc1-7f97-14a4-bd88" name="Company of Bitter Iron" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
-      <entries/>
-      <entryGroups/>
-      <modifiers>
-        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="0896-6faa-3d39-8a89" field="selections" type="at least" value="1.0"/>
-            <condition parentId="force type" childId="9be06372-f9f8-5fe6-aa48-29a9beca328b" field="selections" type="at least" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="d45f-23f2-6d6d-ffec" field="selections" type="equal to" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <rules/>
-      <profiles/>
-      <links/>
-    </entry>
-    <entry id="9baf-b880-dc66-4269" name="Liberation Force" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
-      <entries/>
-      <entryGroups/>
-      <modifiers>
-        <modifier type="show" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="0896-6faa-3d39-8a89" field="selections" type="at least" value="1.0"/>
-            <condition parentId="force type" childId="bbe52603-6dbe-5d2a-0c41-73cee758ab9d" field="selections" type="at least" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="d45f-23f2-6d6d-ffec" field="selections" type="equal to" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <rules/>
-      <profiles/>
-      <links/>
-    </entry>
-    <entry id="be06-0eed-0241-69be" name="The Awakening Fire" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries/>
-      <entryGroups/>
-      <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="6e6033dd-e441-f2a3-13fb-96304ca36e97" field="selections" type="equal to" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
       <rules/>
       <profiles/>
       <links/>
@@ -42477,15 +42481,6 @@ King Slayer (3 Victory points): If the opposing army includes a Primarch, this m
     </rule>
   </sharedRules>
   <sharedProfiles>
-     <profile id="c49a-4a6c-913f-9c09" profileTypeId="576561706f6e23232344415441232323" name="Magna-Melta Cannon" hidden="false" book="HH:LACAL" page="92">
-      <characteristics>
-        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="18&quot;"/>
-        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="8"/>
-        <characteristic characteristicId="415023232344415441232323" name="AP" value="1"/>
-        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 1, Large Blast, Melta"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
     <profile id="9045e242-71f8-6029-fc57-2b7cbedcc398" profileTypeId="576561706f6e23232344415441232323" name="Archaeotech Pistol" hidden="false" book="HH:LACAL" page="82">
       <characteristics>
         <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="12&quot;"/>
@@ -42980,6 +42975,15 @@ King Slayer (3 Victory points): If the opposing army includes a Primarch, this m
       </characteristics>
       <modifiers/>
     </profile>
+    <profile id="c49a-4a6c-913f-9c09" profileTypeId="576561706f6e23232344415441232323" name="Magna-Melta Cannon" hidden="false" book="HH:LACAL" page="92">
+      <characteristics>
+        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="18&quot;"/>
+        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="8"/>
+        <characteristic characteristicId="415023232344415441232323" name="AP" value="1"/>
+        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 1, Large Blast, Melta"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
     <profile id="959ff616-ce22-b9ee-1ee6-2496b305e880" profileTypeId="57617267656172204974656d23232344415441232323" name="Mantle of the Elder Drake" hidden="false" book="HH:LAICL" page="65">
       <characteristics>
         <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Confers Eternal Warrior"/>
@@ -43304,15 +43308,6 @@ King Slayer (3 Victory points): If the opposing army includes a Primarch, this m
         <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="5"/>
         <characteristic characteristicId="415023232344415441232323" name="AP" value="5"/>
         <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Pistol, Deflagrate"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="c49a-4a6c-913f-9c09" profileTypeId="576561706f6e23232344415441232323" name="Magna-Melta Cannon" hidden="false" book="HH:LACAL" page="92">
-      <characteristics>
-        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="18&quot;"/>
-        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="8"/>
-        <characteristic characteristicId="415023232344415441232323" name="AP" value="1"/>
-        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 1, Large Blast, Melta"/>
       </characteristics>
       <modifiers/>
     </profile>
