@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" revision="18" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Mechanicum: Taghmata Army List" books="Taghmata Army List" authorName="Millicant and CapitalDot" authorContact="Submit &quot;New Issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" revision="19" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Mechanicum: Taghmata Army List" books="Taghmata Army List" authorName="Millicant and CapitalDot" authorContact="Submit &quot;New Issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="cb78-d695-f736-f672" name="Adsecularis Covenant" points="5.0" categoryId="54726f6f707323232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Taghmata Army List" page="37">
       <entries>
@@ -145,6 +145,141 @@
       <profiles/>
       <links>
         <link id="c015-9488-9cb3-71f8" targetId="bb6538b0-0f23-8a43-9752-dd356ba76e46" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="2277-8025-5884-8663" targetId="65bf6242-8fa0-55f7-92ac-71f4a8fba433" linkType="profile">
+          <modifiers>
+            <modifier type="hide" field="None" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="cb78-d695-f736-f672" childId="8b0c-13f5-1a5a-67e7" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </link>
+      </links>
+    </entry>
+    <entry id="ec1d-4a6b-b808-a60d" name="Anacharis Scoria" points="275.0" categoryId="485123232344415441232323" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="3713-5f49-e415-0e63" name="May be mounted on:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="511a-22a3-3092-f333" name="Xanathite Abeyant" points="40.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="7894-acf1-c862-fb76" profileTypeId="57617267656172204974656d23232344415441232323" name="Xanathite Abeyant" hidden="false" book="HH6: Retribution" page="273">
+                  <characteristics>
+                    <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Confers +1 Wound, +1 Attack, Move Through Cover, Very Bulky, Hardened Armour, It Will Not Die, and a Photon Thruster which can be fired in addition to his usual shooting attacks.  "/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links>
+                <link id="bcc3-b496-2989-8fc7" targetId="43648289-5a0f-99d3-1cfc-55b689750afa" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="b88e-5d48-41ab-6422" field="selections" type="equal to" value="0.0"/>
+            <condition parentId="force type" childId="e426-bb92-0876-e866" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="b3dc-0405-d1ad-cfeb" name="Adamantium Will" hidden="false">
+          <modifiers/>
+        </rule>
+        <rule id="695c-4590-c6e0-05b6" name="Eternal Warrior" hidden="false">
+          <modifiers/>
+        </rule>
+        <rule id="92fb-1628-9dab-5aba" name="Stubborn" hidden="false">
+          <modifiers/>
+        </rule>
+        <rule id="402e-4c6a-870e-6f0c" name="Feel No Pain (5+)" hidden="false">
+          <modifiers/>
+        </rule>
+        <rule id="0138-3f90-3a29-137e" name="Relentless" hidden="false">
+          <modifiers/>
+        </rule>
+        <rule id="8649-ee7d-8b46-a7c9" name="Entropic Destroyer" hidden="false" book="HH6: Retribution" page="273">
+          <description>Any successful hit with this weapon inflicts D3 wounds automatically on the targeted unit or model, or causes 1 Hull Point of damage per hit.  Invulnerable saves may be taken as normal against these wounds but Feel No Pain or It Will Not Die rolls may not.  </description>
+          <modifiers/>
+        </rule>
+        <rule id="eaa8-f304-7026-eaa9" name="Patris Cybernetica" hidden="false" book="HH6: Retribution" page="273">
+          <description>May join a unit of Monstrous Creatures so long as they have the Cybernetica Cortex special rule.  May not Go to Ground, voluntary or otherwise, and enemy shooting may opt to ignore the fact that the character is the closest model if they wish.  </description>
+          <modifiers/>
+        </rule>
+        <rule id="6bf5-514a-a579-e554" name="Rite of the Beast" hidden="false" book="HH6: Retribution" page="273">
+          <description>Counts as an additional Cybertheurgy power which only he may use. </description>
+          <modifiers/>
+        </rule>
+        <rule id="1791-2cc0-1d8f-ddcd" name="The Homonculex" hidden="false" book="HH6: Retribution" page="273">
+          <description>May take a single Arlatax Battle Automata.  </description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="9f29-8ca8-bfde-7986" profileTypeId="556e697423232344415441232323" name="Anacharis Scoria" hidden="false" book="HH6: Retribution" page="272">
+          <characteristics>
+            <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Infantry (Character)"/>
+            <characteristic characteristicId="575323232344415441232323" name="WS" value="5"/>
+            <characteristic characteristicId="425323232344415441232323" name="BS" value="5"/>
+            <characteristic characteristicId="5323232344415441232323" name="S" value="5"/>
+            <characteristic characteristicId="5423232344415441232323" name="T" value="5"/>
+            <characteristic characteristicId="5723232344415441232323" name="W" value="4"/>
+            <characteristic characteristicId="4923232344415441232323" name="I" value="5"/>
+            <characteristic characteristicId="4123232344415441232323" name="A" value="3"/>
+            <characteristic characteristicId="4c4423232344415441232323" name="LD" value="10"/>
+            <characteristic characteristicId="5361766523232344415441232323" name="Save" value="2+"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="13ae-191a-898a-5ed5" profileTypeId="576561706f6e23232344415441232323" name="The Vodian Sceptre" hidden="false" book="HH6: Retribution" page="272">
+          <characteristics>
+            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
+            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="*"/>
+            <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
+            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Two-handed, Entropic Destroyer"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links>
+        <link id="9c2f-c6be-89d4-702a" targetId="454c5ea7-d961-d86f-81a5-3f7f3c796545" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="7826-5ed3-e8ff-8f7a" targetId="9045e242-71f8-6029-fc57-2b7cbedcc398" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="bd03-7d03-3a99-3be1" targetId="ec8086ee-40ef-30cb-d8ed-2138991ab56b" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="6306-0e40-c822-d586" targetId="3ffc1f76-719b-bc95-a3c9-15614a8c94bc" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="af2c-5a4a-0632-51c6" targetId="67e9d995-de3f-f033-9026-c1faa0a9433a" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="3ac4-f7f8-33a9-73b3" targetId="5aad03df-0fd0-5920-0aec-2aefbe5bcf5b" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="ea24-94e3-f4fe-9006" targetId="84ed4b8e-b301-ea39-b8f3-d1abaf186f7f" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="98d1-ef33-997e-e74c" targetId="8199e922-e844-5d34-b04b-86edadffa2df" linkType="rule">
           <modifiers/>
         </link>
       </links>
@@ -694,6 +829,29 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
           <modifiers/>
         </link>
         <link id="5818-ee0e-7d51-5c4f" targetId="00cf-20ab-1b17-aad1" linkType="entry">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="58d2-3e21-1b1e-6908" name="Arlatax Class Battle-automata Maniple" points="0.0" categoryId="466173742041747461636b23232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="bd85-795c-515a-fd32" name="A single Maniple take:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="f131-d409-5a1d-836b" targetId="34924deb-f4e5-7739-5606-87600d1740bb" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="2b9d-9b8a-b1d4-e2f4" targetId="3f6b-6c3a-5855-a5ae" linkType="entry">
           <modifiers/>
         </link>
       </links>
@@ -5510,11 +5668,11 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 </rule>
               </rules>
               <profiles>
-                <profile id="d3db-4945-95a2-0076" profileTypeId="56656869636c6523232344415441232323" name="Ordinatus Sagittar" hidden="false">
+                <profile id="d3db-4945-95a2-0076" profileTypeId="56656869636c6523232344415441232323" name="Ordinatus Sagittar" hidden="false" book="HH6: Retribution" page="276">
                   <characteristics>
                     <characteristic characteristicId="425323232344415441232323" name="BS" value="4"/>
                     <characteristic characteristicId="46726f6e7423232344415441232323" name="Front" value="14"/>
-                    <characteristic characteristicId="5369646523232344415441232323" name="Side" value="14"/>
+                    <characteristic characteristicId="5369646523232344415441232323" name="Side" value="13"/>
                     <characteristic characteristicId="5265617223232344415441232323" name="Rear" value="13"/>
                     <characteristic characteristicId="485023232344415441232323" name="HP" value="14"/>
                     <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Vehicle (Super-heavy)"/>
@@ -5558,18 +5716,18 @@ Buildings and Fortifications                                          D
                 </rule>
               </rules>
               <profiles>
-                <profile id="7c73-22eb-a60d-d883" profileTypeId="56656869636c6523232344415441232323" name="Ordinatus Ulator" hidden="false">
+                <profile id="7c73-22eb-a60d-d883" profileTypeId="56656869636c6523232344415441232323" name="Ordinatus Ulator" hidden="false" book="HH6: Retribution" page="276">
                   <characteristics>
                     <characteristic characteristicId="425323232344415441232323" name="BS" value="4"/>
                     <characteristic characteristicId="46726f6e7423232344415441232323" name="Front" value="14"/>
-                    <characteristic characteristicId="5369646523232344415441232323" name="Side" value="14"/>
+                    <characteristic characteristicId="5369646523232344415441232323" name="Side" value="13"/>
                     <characteristic characteristicId="5265617223232344415441232323" name="Rear" value="13"/>
                     <characteristic characteristicId="485023232344415441232323" name="HP" value="14"/>
                     <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Vehicle (Super-heavy)"/>
                   </characteristics>
                   <modifiers/>
                 </profile>
-                <profile id="cc1b-14c0-6338-7200" profileTypeId="576561706f6e23232344415441232323" name="Ulator class Sonic Destructor" hidden="false">
+                <profile id="cc1b-14c0-6338-7200" profileTypeId="576561706f6e23232344415441232323" name="Ulator class Sonic Destructor" hidden="false" book="HH6: Retribution" page="277">
                   <characteristics>
                     <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="72&quot;"/>
                     <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="X*"/>
@@ -5605,7 +5763,7 @@ D6   Result 1-2 Explosion
       <profiles>
         <profile id="cca2-507c-52e5-8b81" profileTypeId="57617267656172204974656d23232344415441232323" name="Ordinatus Dispersion Shield" hidden="false" book="HH:MT" page="63">
           <characteristics>
-            <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="An arcane and obscure hybrid of both void shield and flare shield technologies, the powerful dispersion shields mounted on Ordinatus class vehicles are designed to make them all but impervious to counter-battery fire. However, such is the strain the field creates on its generators that its protection degrades over time as its elements begin to burn out.  The protection provided by the dispersion shield affects only shooting attacks originating from its front and side arcs, and against barrage weapons from any arc.  • On the first turn the ordinatus is in play, the strength of shooting attacks and the roll result on the Destroyer table made against it are at -3.  • On the second turn the Ordinatus is in play, the strength of shooting attacks and the roll result on the Dectroyer table made against it are at -2. • On the third and subsequent turns the Ordinatus is in play, the strength of shooting attacks and the roll result on the Destroyer table made against it are at  -1. "/>
+            <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="An arcane and obscure hybrid of both void shield and flare shield technologies, the powerful dispersion shields mounted on Ordinatus class vehicles are designed to make them all but impervious to counter-battery fire. However, such is the strain the field creates on its generators that its protection degrades over time as its elements begin to burn out.  The protection provided by the dispersion shield affects only shooting attacks originating from its front and side arcs, and against barrage weapons from any arc.   • On the first turn the ordinatus is in play, the strength of shooting attacks and the roll result on the Destroyer table made against it are at -3.   • On the second turn the Ordinatus is in play, the strength of shooting attacks and the roll result on the Dectroyer table made against it are at -2.  • On the third and subsequent turns the Ordinatus is in play, the strength of shooting attacks and the roll result on the Destroyer table made against it are at  -1. "/>
           </characteristics>
           <modifiers/>
         </profile>
@@ -5618,6 +5776,9 @@ D6   Result 1-2 Explosion
           <modifiers/>
         </link>
         <link id="1e53-3620-2804-b7f2" targetId="c7838603-9e18-8756-26b1-222a294c5c2c" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="f5bc-c266-e61e-f7f8" targetId="2e87b8ca-7cd1-78b9-2116-246015e7935e" linkType="profile">
           <modifiers/>
         </link>
       </links>
@@ -6971,6 +7132,104 @@ D6   Result 1-2 Explosion
         </link>
       </links>
     </entry>
+    <entry id="38f8-832c-1638-0623" name="The Homonculex" points="175.0" categoryId="466173742041747461636b23232344415441232323" type="model" minSelections="1" maxSelections="3" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="2da1-491c-ff8e-5787" name="May replace one of its Power Claws with:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="5814-d443-f053-bc5c" name="Arc Scourge" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="a856-5067-19eb-3660" profileTypeId="576561706f6e23232344415441232323" name="Arc Scourge" hidden="false" book="HH6: Retribution" page="274">
+                  <characteristics>
+                    <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
+                    <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="User"/>
+                    <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
+                    <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Rampage, Armourbane, Concussive"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="ec1d-4a6b-b808-a60d" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="3515-6c4b-c183-a47c" name="Feel No Pain (6+)" hidden="false">
+          <modifiers/>
+        </rule>
+        <rule id="a448-4fa8-ee0b-418c" name="Rage" hidden="false">
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="712b-82d0-b50a-5ab9" profileTypeId="556e697423232344415441232323" name="Arlatax" hidden="false" book="HH6: Retribution" page="274">
+          <characteristics>
+            <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Jump Pack Monstrous Creature"/>
+            <characteristic characteristicId="575323232344415441232323" name="WS" value="4"/>
+            <characteristic characteristicId="425323232344415441232323" name="BS" value="3"/>
+            <characteristic characteristicId="5323232344415441232323" name="S" value="7"/>
+            <characteristic characteristicId="5423232344415441232323" name="T" value="6"/>
+            <characteristic characteristicId="5723232344415441232323" name="W" value="4"/>
+            <characteristic characteristicId="4923232344415441232323" name="I" value="4"/>
+            <characteristic characteristicId="4123232344415441232323" name="A" value="3"/>
+            <characteristic characteristicId="4c4423232344415441232323" name="LD" value="8"/>
+            <characteristic characteristicId="5361766523232344415441232323" name="Save" value="3+"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="75f2-56f7-e686-3b38" profileTypeId="576561706f6e23232344415441232323" name="Arlatax Power Claw" hidden="false" book="HH6: Retribution" page="274">
+          <characteristics>
+            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
+            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="+2"/>
+            <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
+            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Shred"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="646f-cd3e-9b2f-298e" profileTypeId="576561706f6e23232344415441232323" name="Inbuilt Cannon" hidden="false" book="HH6: Retribution" page="274">
+          <characteristics>
+            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="24&quot;"/>
+            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="6"/>
+            <characteristic characteristicId="415023232344415441232323" name="AP" value="4"/>
+            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Assault 3"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links>
+        <link id="2a56-9bf2-9ff3-0668" targetId="6eb5b812-8b8b-9e7c-279e-c9e9c93fefe9" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="452e-bc9d-41b3-c926" targetId="2c169963-d356-aa63-60bd-eee2ee1afcc0" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="eb3a-bbbc-a57c-0bc7" targetId="8fcf6a3e-2394-ea8b-62a4-b78168a2dd15" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="7230-eed0-1818-a9e7" targetId="d77a5e49-6699-8eb3-f6cc-1e3560501f2a" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="e4c6-44dd-14d7-596a" targetId="75aa984a-2f47-df95-bf4d-275da175d220" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
     <entry id="bcf8-f72e-87ac-915e" name="Ursarax Cohort" points="25.0" categoryId="466173742041747461636b23232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="Taghmata Army List" page="43">
       <entries>
         <entry id="d1c7-0509-ffe5-96c1" name="Ursarax" points="50.0" categoryId="(No Category)" type="model" minSelections="3" maxSelections="9" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
@@ -7941,9 +8200,9 @@ D6   Result 1-2 Explosion
                 </rule>
               </rules>
               <profiles>
-                <profile id="1188-ef3f-1d66-cbcd" profileTypeId="57616c6b657223232344415441232323" name="Indentured Knight Atrapos" hidden="false" book="Forgeworld.co.uk">
+                <profile id="1188-ef3f-1d66-cbcd" profileTypeId="57616c6b657223232344415441232323" name="Indentured Knight Atrapos" hidden="false" book="HH6: Retribution" page="278">
                   <characteristics>
-                    <characteristic characteristicId="575323232344415441232323" name="WS" value=" 4"/>
+                    <characteristic characteristicId="575323232344415441232323" name="WS" value="4"/>
                     <characteristic characteristicId="425323232344415441232323" name="BS" value="4"/>
                     <characteristic characteristicId="5323232344415441232323" name="S" value="10"/>
                     <characteristic characteristicId="46726f6e7423232344415441232323" name="Front" value="13"/>
@@ -8053,6 +8312,91 @@ D6   Result 1-2 Explosion
       </rules>
       <profiles/>
       <links/>
+    </entry>
+    <entry id="3f6b-6c3a-5855-a5ae" name="Arlatax" points="175.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="0e70-6b1b-6528-5cb7" name="May replace one of its Power Claws with:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="5ad1-37cb-cce1-0788" name="Arc Scourge" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles>
+                <profile id="0d84-1f87-fc93-e3c0" profileTypeId="576561706f6e23232344415441232323" name="Arc Scourge" hidden="false" book="HH6: Retribution" page="274">
+                  <characteristics>
+                    <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
+                    <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="User"/>
+                    <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
+                    <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Rampage, Armourbane, Concussive"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules>
+        <rule id="9eba-4667-679a-3ab8" name="Feel No Pain (6+)" hidden="false">
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="6541-820d-ace7-de64" profileTypeId="556e697423232344415441232323" name="Arlatax" hidden="false" book="HH6: Retribution" page="274">
+          <characteristics>
+            <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Jump Pack Monstrous Creature"/>
+            <characteristic characteristicId="575323232344415441232323" name="WS" value="4"/>
+            <characteristic characteristicId="425323232344415441232323" name="BS" value="3"/>
+            <characteristic characteristicId="5323232344415441232323" name="S" value="7"/>
+            <characteristic characteristicId="5423232344415441232323" name="T" value="6"/>
+            <characteristic characteristicId="5723232344415441232323" name="W" value="4"/>
+            <characteristic characteristicId="4923232344415441232323" name="I" value="4"/>
+            <characteristic characteristicId="4123232344415441232323" name="A" value="3"/>
+            <characteristic characteristicId="4c4423232344415441232323" name="LD" value="8"/>
+            <characteristic characteristicId="5361766523232344415441232323" name="Save" value="3+"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="fee7-003f-11f8-d56a" profileTypeId="576561706f6e23232344415441232323" name="Arlatax Power Claw" hidden="false" book="HH6: Retribution" page="274">
+          <characteristics>
+            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
+            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="+2"/>
+            <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
+            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Shred"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="b63e-172e-2f5c-7fc2" profileTypeId="576561706f6e23232344415441232323" name="Inbuilt Cannon" hidden="false" book="HH6: Retribution" page="274">
+          <characteristics>
+            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="24&quot;"/>
+            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="6"/>
+            <characteristic characteristicId="415023232344415441232323" name="AP" value="4"/>
+            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Assault 3"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links>
+        <link id="9fa8-2486-a5ad-e522" targetId="6eb5b812-8b8b-9e7c-279e-c9e9c93fefe9" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="b27a-69c0-ae9d-77e8" targetId="2c169963-d356-aa63-60bd-eee2ee1afcc0" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="7ba1-5765-e358-4868" targetId="8fcf6a3e-2394-ea8b-62a4-b78168a2dd15" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="fa2e-d78f-3ce6-e409" targetId="d77a5e49-6699-8eb3-f6cc-1e3560501f2a" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
     </entry>
     <entry id="d9b1f29e-b530-49be-4b13-919e81a45b69" name="Battle Servitor Control" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LACAL" page="43">
       <entries/>
@@ -8917,6 +9261,12 @@ Reduces transport capacity to 8.  </description>
           <modifiers/>
         </link>
         <link id="4ee4-be5f-74e5-a725" targetId="0a9d-3f08-f373-f08a" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="4131-5e01-05db-1efb" targetId="52c01c37-8d2a-043b-1225-c19562a840cb" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="c195-5ad2-edac-d239" targetId="2904feff-37ef-ffc4-89b7-340b250746a3" linkType="rule">
           <modifiers/>
         </link>
       </links>
@@ -10081,7 +10431,7 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       <description>Models the have Programmed Behaviour, Fearless, Cybernetic Resiliance, and Adamantium Will special rules.  </description>
       <modifiers/>
     </rule>
-    <rule id="84ed4b8e-b301-ea39-b8f3-d1abaf186f7f" name="Cybertheurgy" hidden="false" book="HH3: Extermination" page="210">
+    <rule id="84ed4b8e-b301-ea39-b8f3-d1abaf186f7f" name="Cybertheurgy" hidden="false" book="HH: MT">
       <description>May use Cybertheurgy abilities and table.  </description>
       <modifiers/>
     </rule>
