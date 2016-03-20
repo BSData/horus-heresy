@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="90" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Crusade Army List" books="HH Series" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="91" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Crusade Army List" books="HH Series" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LACAL" page="55">
       <entries/>
@@ -946,6 +946,29 @@
                   <conditionGroups/>
                 </modifier>
               </modifiers>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="9dfa-9636-9191-4ac2" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers>
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="b265-40da-ae16-1f42" childId="9025-251e-d04e-c8f5" field="selections" type="greater than" value="9.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <links>
+            <link id="2032-855c-3aef-784b" targetId="3215e60a-5c78-9efe-e6d4-ba87f3e74a21" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="2749-891a-756c-bcc0" targetId="ba9221f1-7a8a-4d55-0c30-ca4c502fab8d" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="b1d9-952a-ce68-a89d" targetId="8cc05fec-8274-bea3-5d54-d249b36a3209" linkType="entry">
+              <modifiers/>
             </link>
           </links>
         </entryGroup>
@@ -8428,6 +8451,12 @@ D6    Result		S	AP
                       </conditions>
                       <conditionGroups/>
                     </modifier>
+                    <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="force type" childId="0e57-a608-6fce-9fc5" field="selections" type="at least" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
                   </modifiers>
                   <rules/>
                   <profiles>
@@ -8617,11 +8646,7 @@ D6    Result		S	AP
               </modifiers>
               <rules/>
               <profiles/>
-              <links>
-                <link id="8230-0881-471f-cb34" targetId="c443-ad53-4e61-77bc" linkType="entry">
-                  <modifiers/>
-                </link>
-              </links>
+              <links/>
             </entry>
           </entries>
           <entryGroups/>
@@ -10231,6 +10256,16 @@ D6    Result		S	AP
                 <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions>
                     <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="cc23d458-6cfb-37cd-afd3-8b4fd175495c" field="selections" type="equal to" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </link>
+            <link id="3281-3641-bd34-e0c5" targetId="c443-ad53-4e61-77bc" linkType="entry">
+              <modifiers>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="06da21ef-7489-9f96-28ee-4924a6ce3df2" field="selections" type="equal to" value="0.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
