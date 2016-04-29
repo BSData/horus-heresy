@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="94" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Crusade Army List" books="HH Series" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="95" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Crusade Army List" books="HH Series" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LACAL" page="55">
       <entries/>
@@ -22865,6 +22865,90 @@ While counted as a single building, multiple units may be embarked within the Pr
     </link>
   </links>
   <sharedEntries>
+    <entry id="a9bf-b37e-126b-a699" name="&apos;Iron Circle&apos; Domitar-Ferrum Class Battle-automata Maniple" points="0.0" categoryId="456c6974657323232344415441232323" type="unit" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries>
+        <entry id="8e6f-a3ee-1248-dbed" name="Domitar-Ferrum Class Battle Automata" points="205.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="3">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="5125-a3f0-fce0-3e65" profileTypeId="556e697423232344415441232323" name="Domitar-Ferrum" hidden="false" book="LA:ADL" page="22">
+              <characteristics>
+                <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Monstrous Creature"/>
+                <characteristic characteristicId="575323232344415441232323" name="WS" value="4"/>
+                <characteristic characteristicId="425323232344415441232323" name="BS" value="4"/>
+                <characteristic characteristicId="5323232344415441232323" name="S" value="7"/>
+                <characteristic characteristicId="5423232344415441232323" name="T" value="7"/>
+                <characteristic characteristicId="5723232344415441232323" name="W" value="4"/>
+                <characteristic characteristicId="4923232344415441232323" name="I" value="3"/>
+                <characteristic characteristicId="4123232344415441232323" name="A" value="2"/>
+                <characteristic characteristicId="4c4423232344415441232323" name="LD" value="8"/>
+                <characteristic characteristicId="5361766523232344415441232323" name="Save" value="3+"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="7b4aa675-1e6d-f3c3-8a6a-1cce92d53acf" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="fc30-d717-0d15-edb6" name="Brutal Charge" hidden="false" book="HH5: Tempest" page="227">
+          <description>Inflicts D3 Hammer of Wrath attacks.  Roll once for the entire unit.  </description>
+          <modifiers/>
+        </rule>
+        <rule id="c314-1b84-d982-14dc" name="Crushing Blow" hidden="false" book="LA:ADL" page="22">
+          <description>To Hit results of a 6 generate an additional automatic hit against the target.  </description>
+          <modifiers/>
+        </rule>
+        <rule id="1321-059f-b907-ece6" name="Moving Bulwark" hidden="false" book="LA:ADL" page="23">
+          <description>If two or more Domitar-Ferrum from the same unit are in base contact with each other, their invulberable save is increased to a 4+ and they may re-roll failed armour saves and invulnerable saves against Blast and Template type weapons.  
+
+In addition, units of Domitar-Ferrum may be joined by a single Independent Character with the Legiones Astartes (Iron Warriors) special rule or The Primarch Perturabo.  The model that has joined the unit benefits from the effects of the Karceri Battle Shield and Moving Bulwark special rules.  </description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="0c57-67b0-3820-1403" profileTypeId="576561706f6e23232344415441232323" name="Graviton Maul" hidden="false" book="LA:ADL" page="22">
+          <characteristics>
+            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
+            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="10"/>
+            <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
+            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Concussive, Wrecker, Crushing Blow"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="c13f-2b86-6d33-cc71" profileTypeId="576561706f6e23232344415441232323" name="Olympia Pattern Bolt Cannon" hidden="false" book="LA:ADL" page="23">
+          <characteristics>
+            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="36&quot;"/>
+            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="5"/>
+            <characteristic characteristicId="415023232344415441232323" name="AP" value="4"/>
+            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 5, Pinning"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="39d9-3f68-ccc3-c11f" profileTypeId="57617267656172204974656d23232344415441232323" name="Karceri Battle Shield" hidden="false" book="LA:ADL" page="23">
+          <characteristics>
+            <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Provides a 5+ Invulnerable save.  In addition, units charging a unit of Domitar-Ferrum which is not already engaged in an assault at the start of the phase must make a disordered charge.  "/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links>
+        <link id="1ffc-a34b-de6e-6ef9" targetId="b961-0c67-6c50-d80c" linkType="entry">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
     <entry id="ad64-844e-4f6b-9348" name="3rd Company Elite" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups/>
@@ -25109,35 +25193,6 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
         </link>
       </links>
     </entry>
-    <entry id="479f576b-b28d-801e-b928-d82431d554b9" name="Power Scythe" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-      <entries/>
-      <entryGroups/>
-      <modifiers>
-        <modifier type="hide" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="ce8d84a0-43c8-2047-5990-bd867125c994" field="selections" type="equal to" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <rules/>
-      <profiles>
-        <profile id="ea61528d-78b3-91e3-b551-3b5e494703cc" profileTypeId="576561706f6e23232344415441232323" name="Power Scythe" hidden="false" book="LA:ADL" page="70">
-          <characteristics>
-            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
-            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="+1"/>
-            <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
-            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Two-handed, Reaping Blow"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-      </profiles>
-      <links>
-        <link id="3059cb8c-ed72-97e4-d569-78ebdfeb0b3c" targetId="b1d5-e3ca-2d49-8fdc" linkType="rule">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
     <entry id="59dc2f80-3991-a6ca-84d7-7e4299c755ad" name="Deathshroud Terminator Squad" points="10.0" categoryId="(No Category)" type="unit" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LAICL" page="41">
       <entries>
         <entry id="faffe0f0-aee5-4d6b-60d0-4ece9dd625fc" name="Deathshroud Terminators" points="40.0" categoryId="(No Category)" type="upgrade" minSelections="2" maxSelections="10" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
@@ -25234,7 +25289,7 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
             <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
             <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="+1"/>
             <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
-            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Unwieldy, Two-handed, Sweep Attack"/>
+            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Unwieldy, Two-handed, Reaping Blow"/>
           </characteristics>
           <modifiers/>
         </profile>
@@ -25252,9 +25307,6 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
         <link id="f59c55ec-66bb-4f6a-ccdd-f81f1ed075d9" targetId="d4ecfa6a-ed59-8dc4-6606-b62d65cc5e28" linkType="rule">
           <modifiers/>
         </link>
-        <link id="7451dca5-d625-f896-379d-acf6993415d3" targetId="6e5c1243-39bf-4878-ec55-ab59a499e777" linkType="rule">
-          <modifiers/>
-        </link>
         <link id="b09f54b0-201b-7bb0-715e-c162a18439b2" targetId="63a55007-3c8c-21ea-41b0-85d8292c868f" linkType="entry">
           <modifiers>
             <modifier type="decrement" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
@@ -25266,6 +25318,9 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
               <conditionGroups/>
             </modifier>
           </modifiers>
+        </link>
+        <link id="b69e-ef8e-330c-19af" targetId="b1d5-e3ca-2d49-8fdc" linkType="rule">
+          <modifiers/>
         </link>
       </links>
     </entry>
@@ -26170,6 +26225,21 @@ All models in an army with Ferrus Manus with Legions Astartes (Iron Hands) gain 
                   <profiles/>
                   <links/>
                 </entry>
+                <entry id="52ea-a610-8301-5611" name="Dragonscale Storm Shield" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="9" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LAICL" page="65">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles>
+                    <profile id="2d0b-15e7-bd14-5749" profileTypeId="57617267656172204974656d23232344415441232323" name="Dragonscale Storm Shield" hidden="false" book="HH:LAICL" page="65">
+                      <characteristics>
+                        <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Confers a 5++ invulnerable save or increases existing invulnerable save by +1. May never claim the extra attack for having two close combat weapons.  "/>
+                      </characteristics>
+                      <modifiers/>
+                    </profile>
+                  </profiles>
+                  <links/>
+                </entry>
               </entries>
               <entryGroups/>
               <modifiers>
@@ -26182,16 +26252,7 @@ All models in an army with Ferrus Manus with Legions Astartes (Iron Hands) gain 
                   <conditionGroups/>
                 </modifier>
               </modifiers>
-              <links>
-                <link id="329fba1e-a085-030d-78c8-150751962a7f" targetId="15662370-7d13-ed80-50aa-02aa0368c309" linkType="entry">
-                  <modifiers>
-                    <modifier type="set" field="maxSelections" value="9.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups/>
-                    </modifier>
-                  </modifiers>
-                </link>
-              </links>
+              <links/>
             </entryGroup>
             <entryGroup id="6b4dfc09-9217-7e2a-a507-d056c9e404b7" name="A single Firedrake may exchange his Combi-bolter for:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries>
@@ -29221,6 +29282,28 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
               <rules/>
               <profiles/>
               <links/>
+            </entry>
+            <entry id="d937-989e-7425-fbad" name="Twin-linked Iliastus Assault Cannon" points="25.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="force type" childId="71409af8-8fb7-98b7-6996-99eff74cce84" field="selections" type="equal to" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="aa10-ed3c-68e4-d7ca" targetId="0d8bdd64-39f0-7759-d8ca-0702ee1f0fd0" linkType="profile">
+                  <modifiers/>
+                </link>
+                <link id="c14d-3fd4-fae9-cd98" targetId="0d300426-e90a-4a8d-bff5-9b64949b128d" linkType="rule">
+                  <modifiers/>
+                </link>
+              </links>
             </entry>
           </entries>
           <entryGroups/>
@@ -37684,6 +37767,35 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
         </link>
       </links>
     </entry>
+    <entry id="479f576b-b28d-801e-b928-d82431d554b9" name="Power Scythe" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="hide" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="ce8d84a0-43c8-2047-5990-bd867125c994" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles>
+        <profile id="ea61528d-78b3-91e3-b551-3b5e494703cc" profileTypeId="576561706f6e23232344415441232323" name="Power Scythe" hidden="false" book="LA:ADL" page="70">
+          <characteristics>
+            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
+            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="+1"/>
+            <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
+            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Two-handed, Reaping Blow"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links>
+        <link id="3059cb8c-ed72-97e4-d569-78ebdfeb0b3c" targetId="b1d5-e3ca-2d49-8fdc" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
     <entry id="34bd31b6-3b94-2a1f-4e4a-e04854507984" name="Pride of the Legion" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
       <entries/>
       <entryGroups/>
@@ -39406,7 +39518,14 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
     <entry id="f118-45b2-9b94-d7f3" name="Stasis Shells" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="6ed45e2a-c607-3386-57ad-63637315f548" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules/>
       <profiles>
         <profile id="aa16-9755-6d82-cb6a" profileTypeId="576561706f6e23232344415441232323" name="Statis Missile" hidden="false" book="HH6: Retribution" page="267">
@@ -42337,90 +42456,6 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
       <profiles/>
       <links/>
     </entry>
-    <entry id="a9bf-b37e-126b-a699" name="&apos;Iron Circle&apos; Domitar-Ferrum Class Battle-automata Maniple" points="0.0" categoryId="456c6974657323232344415441232323" type="unit" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries>
-        <entry id="8e6f-a3ee-1248-dbed" name="Domitar-Ferrum Class Battle Automata" points="205.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="3">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles>
-            <profile id="5125-a3f0-fce0-3e65" profileTypeId="556e697423232344415441232323" name="Domitar-Ferrum" hidden="false" book="LA:ADL" page="22">
-              <characteristics>
-                <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Monstrous Creature"/>
-                <characteristic characteristicId="575323232344415441232323" name="WS" value="4"/>
-                <characteristic characteristicId="425323232344415441232323" name="BS" value="4"/>
-                <characteristic characteristicId="5323232344415441232323" name="S" value="7"/>
-                <characteristic characteristicId="5423232344415441232323" name="T" value="7"/>
-                <characteristic characteristicId="5723232344415441232323" name="W" value="4"/>
-                <characteristic characteristicId="4923232344415441232323" name="I" value="3"/>
-                <characteristic characteristicId="4123232344415441232323" name="A" value="2"/>
-                <characteristic characteristicId="4c4423232344415441232323" name="LD" value="8"/>
-                <characteristic characteristicId="5361766523232344415441232323" name="Save" value="3+"/>
-              </characteristics>
-              <modifiers/>
-            </profile>
-          </profiles>
-          <links/>
-        </entry>
-      </entries>
-      <entryGroups/>
-      <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="7b4aa675-1e6d-f3c3-8a6a-1cce92d53acf" field="selections" type="equal to" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <rules>
-        <rule id="fc30-d717-0d15-edb6" name="Brutal Charge" hidden="false" book="HH5: Tempest" page="227">
-          <description>Inflicts D3 Hammer of Wrath attacks.  Roll once for the entire unit.  </description>
-          <modifiers/>
-        </rule>
-        <rule id="c314-1b84-d982-14dc" name="Crushing Blow" hidden="false" book="LA:ADL" page="22">
-          <description>To Hit results of a 6 generate an additional automatic hit against the target.  </description>
-          <modifiers/>
-        </rule>
-        <rule id="1321-059f-b907-ece6" name="Moving Bulwark" hidden="false" book="LA:ADL" page="23">
-          <description>If two or more Domitar-Ferrum from the same unit are in base contact with each other, their invulberable save is increased to a 4+ and they may re-roll failed armour saves and invulnerable saves against Blast and Template type weapons.  
-
-In addition, units of Domitar-Ferrum may be joined by a single Independent Character with the Legiones Astartes (Iron Warriors) special rule or The Primarch Perturabo.  The model that has joined the unit benefits from the effects of the Karceri Battle Shield and Moving Bulwark special rules.  </description>
-          <modifiers/>
-        </rule>
-      </rules>
-      <profiles>
-        <profile id="0c57-67b0-3820-1403" profileTypeId="576561706f6e23232344415441232323" name="Graviton Maul" hidden="false" book="LA:ADL" page="22">
-          <characteristics>
-            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
-            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="10"/>
-            <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
-            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Concussive, Wrecker, Crushing Blow"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-        <profile id="c13f-2b86-6d33-cc71" profileTypeId="576561706f6e23232344415441232323" name="Olympia Pattern Bolt Cannon" hidden="false" book="LA:ADL" page="23">
-          <characteristics>
-            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="36&quot;"/>
-            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="5"/>
-            <characteristic characteristicId="415023232344415441232323" name="AP" value="4"/>
-            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 5, Pinning"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-        <profile id="39d9-3f68-ccc3-c11f" profileTypeId="57617267656172204974656d23232344415441232323" name="Karceri Battle Shield" hidden="false" book="LA:ADL" page="23">
-          <characteristics>
-            <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Provides a 5+ Invulnerable save.  In addition, units charging a unit of Domitar-Ferrum which is not already engaged in an assault at the start of the phase must make a disordered charge.  "/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-      </profiles>
-      <links>
-        <link id="1ffc-a34b-de6e-6ef9" targetId="b961-0c67-6c50-d80c" linkType="entry">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
   </sharedEntries>
   <sharedEntryGroups>
     <entryGroup id="fc8ed347-6cd6-c24e-942f-bda78004e894" name="Bodyguard" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -44283,6 +44318,10 @@ King Slayer (3 Victory points): If the opposing army includes a Primarch, this m
       <description>When losing its final wound, roll a D6.  On a 6, inflict a Str 4 AP - hit on all models within D6&quot;</description>
       <modifiers/>
     </rule>
+    <rule id="b1d5-e3ca-2d49-8fdc" name="Reaping Blow" hidden="false" book="LA:ADL" page="70">
+      <description>Models using a weapon with this special rule fight at -1 Initiative in assault.  Additionally, if the wielder is in base contact with morme than on enemy model at the Initiative step in which they fight, they gain +1 Attack.  </description>
+      <modifiers/>
+    </rule>
     <rule id="82937940-b33a-fb8e-2588-c9ba89c8ba59" name="Retinue" hidden="false" book="HH:LACAL" page="19">
       <description>A Legion Command squad may only be chosen as a retinue for a Legion Praetor or an HQ with the Master of the Legion special rule, and may not be taken as part of an army on their own.  They take up a single Force Organisation chart selection with that Praetor/Master of the Legion, but do not have to be deployed with him and are treated as a separate unit during the game.  </description>
       <modifiers/>
@@ -44331,10 +44370,6 @@ King Slayer (3 Victory points): If the opposing army includes a Primarch, this m
     </rule>
     <rule id="a0004b05-48c7-5546-fcfc-61e504a5da38" name="Wrecker" hidden="false" book="HH:LACAL" page="87">
       <description>Attacks with this special rule may re-roll failed armour penetration rolls against fortifications and immobile structures and add +1 to any result rolled on the Building Damage chart.  If this attack damages a bulkhead or wall section of terrain and destroys it, remove that section of terrain from play if possible.  </description>
-      <modifiers/>
-    </rule>
-    <rule id="b1d5-e3ca-2d49-8fdc" name="Reaping Blow" hidden="false" book="LA:ADL" page="70">
-      <description>Models using a weapon with this special rule fight at -1 Initiative in assault.  Additionally, if the wielder is in base contact with morme than on enemy model at the Initiative step in which they fight, they gain +1 Attack.  </description>
       <modifiers/>
     </rule>
   </sharedRules>
