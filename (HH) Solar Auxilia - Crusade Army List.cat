@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" revision="10" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="27" battleScribeVersion="1.15" name="Solar Auxilia" books="HH4: Conquest" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" revision="11" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="27" battleScribeVersion="1.15" name="Solar Auxilia" books="HH4: Conquest" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="001a1504-f450-75fe-c453-15b94e7cddb9" name="Auxilia Artillery Tank Battery" points="0.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH4: Conquest" page="279">
       <entries/>
@@ -2273,16 +2273,7 @@
         </entryGroup>
       </entryGroups>
       <modifiers/>
-      <rules>
-        <rule id="f9c83001-f9d0-be15-1016-7cf88e349487" name="Attached Deployment" hidden="false" book="HH4: Conquest" page="260">
-          <description>May be attached prior to deployment and may not leave that unit for the duration of the game.  The following units are eligible:
-- Auxilia Tactical Command Section
-- Auxilia Lasrifle Section
-- Auxilia Flamer Section
-- Veletaris Storm Section</description>
-          <modifiers/>
-        </rule>
-      </rules>
+      <rules/>
       <profiles>
         <profile id="97e3f03b-b29c-e4d7-296b-afa726779ea4" profileTypeId="556e697423232344415441232323" name="Medicae Orderly" hidden="false" book="HH4: Conquest" page="260">
           <characteristics>
@@ -2314,6 +2305,9 @@
           <modifiers/>
         </link>
         <link id="556388b4-80c8-7196-a993-11b99f3ba593" targetId="86f51528-f2ce-a3eb-15d1-9396cf0548c7" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="0315-0605-9edc-1bb2" targetId="5c74-7d05-9558-75e1" linkType="rule">
           <modifiers/>
         </link>
       </links>
@@ -6820,6 +6814,133 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
         </link>
       </links>
     </entry>
+    <entry id="66c0-2453-ea5a-f24a" name="Surgeon-Primus Aevos Jovan" points="50.0" categoryId="456c6974657323232344415441232323" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries>
+        <entry id="a615-bce0-ea10-29a7" name="Medicae Orderlies" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles>
+            <profile id="2408-f58c-58e6-eb3b" profileTypeId="556e697423232344415441232323" name="Medicae Orderlies" hidden="false" book="Forgeworld.co.uk" page="Downloads">
+              <characteristics>
+                <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Infantry"/>
+                <characteristic characteristicId="575323232344415441232323" name="WS" value="3"/>
+                <characteristic characteristicId="425323232344415441232323" name="BS" value="3"/>
+                <characteristic characteristicId="5323232344415441232323" name="S" value="3"/>
+                <characteristic characteristicId="5423232344415441232323" name="T" value="3"/>
+                <characteristic characteristicId="5723232344415441232323" name="W" value="1"/>
+                <characteristic characteristicId="4923232344415441232323" name="I" value="3"/>
+                <characteristic characteristicId="4123232344415441232323" name="A" value="1"/>
+                <characteristic characteristicId="4c4423232344415441232323" name="LD" value="8"/>
+                <characteristic characteristicId="5361766523232344415441232323" name="Save" value="4+"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+            <profile id="2d59-ba5f-ac65-9707" profileTypeId="57617267656172204974656d23232344415441232323" name="Medi-pack" hidden="false" book="HH4: Conquest" page="260">
+              <characteristics>
+                <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Grants the bearer and attached unit Feel No Pain (5+). "/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links>
+            <link id="7af8-c046-82d9-c089" targetId="86f51528-f2ce-a3eb-15d1-9396cf0548c7" linkType="profile">
+              <modifiers/>
+            </link>
+            <link id="a4da-79d8-d100-9cea" targetId="f50f2dc1-624c-85a5-abdb-477618bb7d6e" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
+      <entryGroups>
+        <entryGroup id="9d07-6f68-aee5-8480" name="Any Medicae Orderly may take:" minSelections="0" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="1c97-d646-8b8e-641a" name="Needle Pistol" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="66c0-2453-ea5a-f24a" incrementChildId="a615-bce0-ea10-29a7" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="5e9b-4ff4-ff98-edf8" targetId="269c4711-8561-1d7b-0150-bbba32072f39" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules>
+        <rule id="2a53-f037-e757-1952" name="Miraculous Skil" hidden="false" book="Forgeworld.co.uk" page="Downloads">
+          <description>Once per player turn, the controlling player may opt to automatically pass a single Feel No Pain roll generated by a model with this special rule, or if this ability has not been used, opt to restore a single wound previously lost by any friendly model within 6&quot; at the end of the player turn.</description>
+          <modifiers/>
+        </rule>
+        <rule id="84cb-a5ce-13da-007b" name="Survivor&apos;s Luck" hidden="false" book="Forgeworld.co.uk" page="Downloads">
+          <description>You may re-roll failed Look Out, Sir rolls for this character</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="4887-0eeb-8a8d-e3f7" profileTypeId="556e697423232344415441232323" name="Aevos Jovan" hidden="false" book="Forgeworld.co.uk" page="Downloads">
+          <characteristics>
+            <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Infantry (Character)"/>
+            <characteristic characteristicId="575323232344415441232323" name="WS" value="2"/>
+            <characteristic characteristicId="425323232344415441232323" name="BS" value="2"/>
+            <characteristic characteristicId="5323232344415441232323" name="S" value="3"/>
+            <characteristic characteristicId="5423232344415441232323" name="T" value="3"/>
+            <characteristic characteristicId="5723232344415441232323" name="W" value="2"/>
+            <characteristic characteristicId="4923232344415441232323" name="I" value="3"/>
+            <characteristic characteristicId="4123232344415441232323" name="A" value="1"/>
+            <characteristic characteristicId="4c4423232344415441232323" name="LD" value="9"/>
+            <characteristic characteristicId="5361766523232344415441232323" name="Save" value="4+"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="fa8c-51bf-360a-a4ca" profileTypeId="576561706f6e23232344415441232323" name="Phase Lancet" hidden="false" book="Forgeworld.co.uk" page="Downloads">
+          <characteristics>
+            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
+            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="X"/>
+            <characteristic characteristicId="415023232344415441232323" name="AP" value="3"/>
+            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Poisoned (4+), Instant Death"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+        <profile id="ec26-4645-d653-6fd5" profileTypeId="57617267656172204974656d23232344415441232323" name="Auto-gurney" hidden="false" book="Forgeworld.co.uk" page="Downloads">
+          <characteristics>
+            <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="The autogurney provides the Feel No Pain (4+) special rule to the model which is equipped with it and confers this special rule to any infantry unit they have joined. In addition, a model equipped with an auto-gurney gains the Very Bulky special rule."/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links>
+        <link id="d009-4d34-8a69-5c35" targetId="86f51528-f2ce-a3eb-15d1-9396cf0548c7" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="853d-c8a2-74cf-ada0" targetId="470a38b3-ad69-52de-2996-36fa27f50e04" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="5752-78f9-0fb3-cb79" targetId="aa451588-557c-7f81-2b3f-d17583985f38" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="964f-7b2b-5693-680e" targetId="5c74-7d05-9558-75e1" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="cc56-730d-1520-1bd6" targetId="269c4711-8561-1d7b-0150-bbba32072f39" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
     <entry id="a5716801-7f01-6d16-7476-5ce9795c7f32" name="Tarantula Sentry Gun Battery" points="0.0" categoryId="466173742041747461636b23232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH4: Conquest" page="272">
       <entries>
         <entry id="8b4eedb9-ee0e-8160-0e4b-7f19c7689d8e" name="Tarantula Sentry Gun" points="30.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LACAL" page="44">
@@ -7835,6 +7956,14 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
     </entryGroup>
   </sharedEntryGroups>
   <sharedRules>
+    <rule id="5c74-7d05-9558-75e1" name="Attached Deployment" hidden="false" book="HH4: Conquest" page="260">
+      <description>May be attached prior to deployment and may not leave that unit for the duration of the game.  The following units are eligible:
+- Auxilia Tactical Command Section
+- Auxilia Lasrifle Section
+- Auxilia Flamer Section
+- Veletaris Storm Section</description>
+      <modifiers/>
+    </rule>
     <rule id="648c98ba-d7db-2992-ecc5-0c57f82a638a" name="Battle Servitor Control" hidden="false" book="HH4: Conquest" page="277">
       <description>Gains Tank Hunters</description>
       <modifiers/>
