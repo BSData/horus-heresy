@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="96" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Crusade Army List" books="HH Series" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="97" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Crusade Army List" books="HH Series" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LACAL" page="55">
       <entries/>
@@ -8409,6 +8409,9 @@ D6    Result		S	AP
                   </profiles>
                   <links>
                     <link id="6878-e6d2-2525-bdd4" targetId="dc4d-c7ca-3b5e-18f6" linkType="rule">
+                      <modifiers/>
+                    </link>
+                    <link id="1bfc-c229-8159-d55b" targetId="4357-15c6-7629-5a22" linkType="entry">
                       <modifiers/>
                     </link>
                   </links>
@@ -18923,25 +18926,6 @@ While counted as a single building, multiple units may be embarked within the Pr
       </profiles>
       <links/>
     </entry>
-    <entry id="0504-3e55-3cb0-3c03" name="Rite of War" points="0.0" categoryId="258478de-d031-8a7e-dcb0-7d56bee86952" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="true">
-      <entries/>
-      <entryGroups/>
-      <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="7f468ad2-37a2-384e-62c6-59a0ef008fe9" field="selections" type="equal to" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <rules/>
-      <profiles/>
-      <links>
-        <link id="5346-fbd1-5342-3299" targetId="2bbb2aaa-d999-7ae6-a856-f0565c7e679b" linkType="entry group">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
     <entry id="a1f9231f-cd7d-8a9d-fa05-e669a696bf1f" name="Rylanor the Unyielding" points="255.0" categoryId="456c6974657323232344415441232323" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LAICL" page="32">
       <entries/>
       <entryGroups/>
@@ -22864,6 +22848,16 @@ While counted as a single building, multiple units may be embarked within the Pr
     <link id="2065-4037-8ef4-bec6" targetId="a9bf-b37e-126b-a699" linkType="entry" categoryId="456c6974657323232344415441232323">
       <modifiers/>
     </link>
+    <link id="c04c-b5eb-8801-616e" targetId="9d93-1d8e-eb1c-f029" linkType="entry" categoryId="456c6974657323232344415441232323">
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="52fbec20-bbab-4ff5-4258-ef4cb6ca8752" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+    </link>
   </links>
   <sharedEntries>
     <entry id="a9bf-b37e-126b-a699" name="&apos;Iron Circle&apos; Domitar-Ferrum Class Battle-automata Maniple" points="0.0" categoryId="456c6974657323232344415441232323" type="unit" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -23209,6 +23203,100 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
           <modifiers/>
         </link>
       </links>
+    </entry>
+    <entry id="9d93-1d8e-eb1c-f029" name="Arlatax Class Battle-automata Maniple" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries>
+        <entry id="07b6-35ca-04de-76ee" name="Arlatax" points="175.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups>
+            <entryGroup id="9c98-4096-ce60-2498" name="May replace one of its Power Claws with:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries>
+                <entry id="d4fe-7b51-43a8-9fc7" name="Arc Scourge" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles>
+                    <profile id="8fb8-0190-500d-3a46" profileTypeId="576561706f6e23232344415441232323" name="Arc Scourge" hidden="false" book="HH6: Retribution" page="274">
+                      <characteristics>
+                        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
+                        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="User"/>
+                        <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
+                        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Rampage, Armourbane, Concussive"/>
+                      </characteristics>
+                      <modifiers/>
+                    </profile>
+                  </profiles>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers/>
+              <links/>
+            </entryGroup>
+          </entryGroups>
+          <modifiers/>
+          <rules>
+            <rule id="c61a-16e0-e3fa-0992" name="Feel No Pain (6+)" hidden="false">
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles>
+            <profile id="487a-959e-33fe-4073" profileTypeId="556e697423232344415441232323" name="Arlatax" hidden="false" book="HH6: Retribution" page="274">
+              <characteristics>
+                <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Jump Pack Monstrous Creature"/>
+                <characteristic characteristicId="575323232344415441232323" name="WS" value="4"/>
+                <characteristic characteristicId="425323232344415441232323" name="BS" value="3"/>
+                <characteristic characteristicId="5323232344415441232323" name="S" value="7"/>
+                <characteristic characteristicId="5423232344415441232323" name="T" value="6"/>
+                <characteristic characteristicId="5723232344415441232323" name="W" value="4"/>
+                <characteristic characteristicId="4923232344415441232323" name="I" value="4"/>
+                <characteristic characteristicId="4123232344415441232323" name="A" value="3"/>
+                <characteristic characteristicId="4c4423232344415441232323" name="LD" value="8"/>
+                <characteristic characteristicId="5361766523232344415441232323" name="Save" value="3+"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+            <profile id="d42c-a9e0-4146-188c" profileTypeId="576561706f6e23232344415441232323" name="Arlatax Power Claw" hidden="false" book="HH6: Retribution" page="274">
+              <characteristics>
+                <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
+                <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="+2"/>
+                <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
+                <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee, Shred"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+            <profile id="f101-f9a9-b732-cec9" profileTypeId="576561706f6e23232344415441232323" name="Inbuilt Cannon" hidden="false" book="HH6: Retribution" page="274">
+              <characteristics>
+                <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="24&quot;"/>
+                <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="6"/>
+                <characteristic characteristicId="415023232344415441232323" name="AP" value="4"/>
+                <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Assault 3"/>
+              </characteristics>
+              <modifiers/>
+            </profile>
+          </profiles>
+          <links>
+            <link id="9cda-380a-7894-c39e" targetId="2c169963-d356-aa63-60bd-eee2ee1afcc0" linkType="profile">
+              <modifiers/>
+            </link>
+            <link id="7c12-31b1-ac69-c329" targetId="ca3e98a3-b768-c0dc-8af3-41ec91179bb2" linkType="rule">
+              <modifiers/>
+            </link>
+            <link id="9049-08bf-0b03-9d95" targetId="408442df-d483-ac91-8be3-2948d61ec87c" linkType="rule">
+              <modifiers/>
+            </link>
+            <link id="d3ee-da30-02dd-de1e" targetId="e0898f15-4b47-28f4-313e-0b321f0a3dca" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
     </entry>
     <entry id="4b6b-5323-3736-2a85" name="Armoured Breakthrough" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
@@ -28623,7 +28711,7 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
           <entryGroups>
             <entryGroup id="b2782d79-252c-683c-5a92-4214ecf430c6" name="Exchange Combi-Bolter for:" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries>
-                <entry id="f0060324-3d8d-d982-bf81-1ffa24658115" name="Combi-Weapon" points="7.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="10" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                <entry id="f0060324-3d8d-d982-bf81-1ffa24658115" name="Combi-Weapon" points="7.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="12" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
@@ -28651,7 +28739,7 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
             </entryGroup>
             <entryGroup id="2d4a4997-29a0-67ca-0cb6-dd0cfb9909ca" name="Exchange Power Weapon for:" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries>
-                <entry id="542440ac-6937-6d05-e8fe-107d87a3f09f" name="Lightning Claw" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="10" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                <entry id="542440ac-6937-6d05-e8fe-107d87a3f09f" name="Lightning Claw" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="12" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
@@ -28659,7 +28747,7 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
                   <profiles/>
                   <links/>
                 </entry>
-                <entry id="7efdd872-fd27-cfbe-d651-be0c7cd85d5b" name="Chainfist" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="10" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                <entry id="7efdd872-fd27-cfbe-d651-be0c7cd85d5b" name="Chainfist" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="12" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
@@ -28667,7 +28755,7 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
                   <profiles/>
                   <links/>
                 </entry>
-                <entry id="d4c4d16b-4842-c0a9-4a14-78bbe86f34fc" name="Power Fist" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="10" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                <entry id="d4c4d16b-4842-c0a9-4a14-78bbe86f34fc" name="Power Fist" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="12" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
@@ -28731,7 +28819,7 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
             </entryGroup>
             <entryGroup id="b8e1bb13-4398-b8c8-8eb4-dc66dbeceb0d" name="Exchange both Power Weapon and Combi-bolter for:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries>
-                <entry id="c63479b3-4683-d680-94b6-7ecbd93ed1f7" name="Pair of Lightning Claws" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="10" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                <entry id="c63479b3-4683-d680-94b6-7ecbd93ed1f7" name="Pair of Lightning Claws" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="12" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
