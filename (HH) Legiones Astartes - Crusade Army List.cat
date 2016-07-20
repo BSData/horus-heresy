@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="119" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Age of Darkness Army List" books="HH Series" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="120" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Age of Darkness Army List" books="HH Series" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="AODAL" page="67">
       <entries>
@@ -222,6 +222,9 @@
                   <modifiers/>
                 </link>
                 <link id="396c-a491-e94a-64d5" targetId="c31253d0-d1b9-35ac-6435-f1a06611e356" linkType="entry">
+                  <modifiers/>
+                </link>
+                <link id="25ee-497f-081a-5f5b" targetId="5beb-0cde-90c1-0f88" linkType="entry">
                   <modifiers/>
                 </link>
               </links>
@@ -9816,7 +9819,11 @@ If all of the HQ units in the Ultramarines detachment are slain, their opponent 
                   <modifiers/>
                   <rules/>
                   <profiles/>
-                  <links/>
+                  <links>
+                    <link id="9c1b-ef8e-37a7-3d29" targetId="65b6-c9fc-aeb3-27be" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
                 </entry>
                 <entry id="64f70e24-205c-1e1f-d8b7-64ade2d800b8" name="Charnabal Sabre" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
@@ -10231,7 +10238,7 @@ If all of the HQ units in the Ultramarines detachment are slain, their opponent 
                   <modifiers>
                     <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                       <conditions>
-                        <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="92febb79-a07d-220a-401d-210880a60296" field="selections" type="equal to" value="0.0"/>
+                        <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="92febb79-a07d-220a-401d-210880a60296" field="selections" type="equal to" value="1.0"/>
                       </conditions>
                       <conditionGroups/>
                     </modifier>
@@ -15276,7 +15283,11 @@ When rolling on the Thunderblitz and/or Catastrophic Damage tables for the Malca
                   <modifiers/>
                   <rules/>
                   <profiles/>
-                  <links/>
+                  <links>
+                    <link id="5823-9fb9-67ea-2378" targetId="65b6-c9fc-aeb3-27be" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
                 </entry>
                 <entry id="b2856127-f377-bf7d-f4e0-49104a4c4f72" name="Charnabal Sabre" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
@@ -30484,7 +30495,11 @@ The army may not include a Fortification Detachment or an Allied Detachment.</de
                   <modifiers/>
                   <rules/>
                   <profiles/>
-                  <links/>
+                  <links>
+                    <link id="62f9-4023-7ba3-072a" targetId="65b6-c9fc-aeb3-27be" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
                 </entry>
                 <entry id="6e0636cd-31c6-3eb7-760f-24c63accaa3d" name="Charnabal Sabre" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
@@ -30560,14 +30575,6 @@ The army may not include a Fortification Detachment or an Allied Detachment.</de
                   </modifiers>
                 </link>
                 <link id="75d4-f805-b239-e649" targetId="6131-e22d-754c-546f" linkType="entry">
-                  <modifiers>
-                    <modifier type="set" field="maxSelections" value="5.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups/>
-                    </modifier>
-                  </modifiers>
-                </link>
-                <link id="be68-c503-1487-2f92" targetId="5beb-0cde-90c1-0f88" linkType="entry">
                   <modifiers>
                     <modifier type="set" field="maxSelections" value="5.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                       <conditions/>
@@ -35590,7 +35597,11 @@ No units or models with Terminator armour of any type may be included in a detac
               <modifiers/>
               <rules/>
               <profiles/>
-              <links/>
+              <links>
+                <link id="daf9-1040-9232-07e6" targetId="65b6-c9fc-aeb3-27be" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
             </entry>
             <entry id="369335a1-1149-08ce-22b6-81db9864af19" name="Lightning Claw" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
@@ -38361,7 +38372,7 @@ Models from the detachment with the Legiones Astartes special rule count all All
               <profiles/>
               <links/>
             </entry>
-            <entry id="ed58e424-88fe-0d74-4fc9-a1b1b960a5a4" name="Pheonix Spear" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="9" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+            <entry id="ed58e424-88fe-0d74-4fc9-a1b1b960a5a4" name="Phoenix Spear" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="9" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -39832,7 +39843,11 @@ No Lords of War choice may be taken by the detachment.</description>
                   <modifiers/>
                   <rules/>
                   <profiles/>
-                  <links/>
+                  <links>
+                    <link id="1884-11e1-b3ca-0873" targetId="65b6-c9fc-aeb3-27be" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
                 </entry>
               </entries>
               <entryGroups/>
@@ -46943,6 +46958,15 @@ If a vehicle has been upgraded to a Super-heavy command tank, all allied infantr
         <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="6"/>
         <characteristic characteristicId="415023232344415441232323" name="AP" value="3"/>
         <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 15"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="65b6-c9fc-aeb3-27be" profileTypeId="576561706f6e23232344415441232323" name="Heavy Chainsword" hidden="false">
+      <characteristics>
+        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
+        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="+2"/>
+        <characteristic characteristicId="415023232344415441232323" name="AP" value="4"/>
+        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee"/>
       </characteristics>
       <modifiers/>
     </profile>
