@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="120" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Age of Darkness Army List" books="HH Series" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="121" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Age of Darkness Army List" books="HH Series" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="AODAL" page="67">
       <entries>
@@ -8280,6 +8280,10 @@ If all of the HQ units in the Ultramarines detachment are slain, their opponent 
                       <description>Must re-roll all failed attempts at Glorious Intervention and must always issue challenges in combat if able.  </description>
                       <modifiers/>
                     </rule>
+                    <rule id="4e06-a50f-884d-ec7d" name="Legion Champion Wargear" hidden="false" book="AODAL" page="19">
+                      <description>One close combat weapon wielded by the Legion Champion gains the Master-crafted special rule.</description>
+                      <modifiers/>
+                    </rule>
                   </rules>
                   <profiles>
                     <profile id="783576ed-e7ff-33f6-728d-7e157d846644" profileTypeId="556e697423232344415441232323" name="Legion Champion" hidden="false" book="HH:LACAL" page="17">
@@ -8400,6 +8404,10 @@ If all of the HQ units in the Ultramarines detachment are slain, their opponent 
                           </conditionGroups>
                         </modifier>
                       </modifiers>
+                    </rule>
+                    <rule id="7809-21f7-8d8b-f84a" name="Psychic Powers in the Age of Darkness" hidden="false" book="AODAL" page="19">
+                      <description>During the latter days of the Imperium’s Great Crusade and the Horus Heresy, the secrets of Malefic Daemonology were known to only a select few, and the grasp of the Ruinous Powers on the galaxy had waned. As a result, unless specifically noted in their entry, Malefic Daemonology psychic powers are not available to any model with psychic powers other than models with the Legiones Astartes (Word Bearers) special rule that are part of the Traitor Faction (and in the case of their Primarch when using the Lorgar Transfigured upgrade).</description>
+                      <modifiers/>
                     </rule>
                   </rules>
                   <profiles>
@@ -8980,7 +8988,7 @@ If all of the HQ units in the Ultramarines detachment are slain, their opponent 
                       <modifiers/>
                       <rules>
                         <rule id="ec65-234f-23b4-4766" name="Master Crafted" hidden="false" book="HH6: Retribution" page="233">
-                          <description>One of the Legion Delegatus’ weapons may be Master-crafted for Free</description>
+                          <description>One of the Legion Delegatus’ weapons may be Master-crafted for Free.</description>
                           <modifiers/>
                         </rule>
                       </rules>
@@ -9840,7 +9848,19 @@ If all of the HQ units in the Ultramarines detachment are slain, their opponent 
                 <entry id="50028400-f1e1-48a3-a4af-576297109340" name="Power Weapon" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
                   <entryGroups/>
-                  <modifiers/>
+                  <modifiers>
+                    <modifier type="set" field="points" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="be0f793d-d50b-e7b4-2c0c-43b13d67408a" field="selections" type="equal to" value="0.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                   <rules/>
                   <profiles/>
                   <links/>
@@ -10258,7 +10278,14 @@ If all of the HQ units in the Ultramarines detachment are slain, their opponent 
                 <entry id="321a028e-409d-f770-bbe9-75e1f9937fc7" name="Power Fist" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
                   <entryGroups/>
-                  <modifiers/>
+                  <modifiers>
+                    <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="92febb79-a07d-220a-401d-210880a60296" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
                   <rules/>
                   <profiles/>
                   <links/>
@@ -10387,275 +10414,6 @@ If all of the HQ units in the Ultramarines detachment are slain, their opponent 
                 <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="45c41d46-871f-4cfc-758e-ad0ccb58aab5" field="selections" type="equal to" value="0.0"/>
                 <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="7817f79e-d687-9fee-cbd4-02ba76bab68a" field="selections" type="equal to" value="0.0"/>
                 <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="b15f-44df-493b-8055" field="selections" type="equal to" value="0.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <links/>
-        </entryGroup>
-        <entryGroup id="4d73a8e5-a894-e9f0-5625-593d2b4bb4cf" name="Forge Lord Options" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="e421869d-632d-efa4-5bd5-6c9d0696d1bc" name="Cyber-familiar" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH1: Betrayal" page="237">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="59190089-ec94-121d-397c-5d6500bfdd3f" targetId="67e9d995-de3f-f033-9026-c1faa0a9433a" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="f5182300-a45f-2489-943a-e2371b1d7ccf" name="Rad Grenades" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="46da22da-04d9-8a3b-4cd1-f2db0f0a529e" targetId="bf7edb98-902e-c8a7-e818-4a6ba05f12f2" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="2bf9-3932-384d-f21d" name="Cortex Controller" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="5c05-a253-5aa4-56b4" targetId="8eddab41-c893-f420-3b53-3e40b25cee89" linkType="entry">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-          </entries>
-          <entryGroups>
-            <entryGroup id="ac85dde6-190f-04ca-0c50-1dfabb2bb4ed" name="May be accompanied by up to four Servo-automata:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="da10206a-bfd7-972c-6dba-43d6fdb71a6c" name="Servo-automata" points="12.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH1: Betrayal" page="197">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules>
-                    <rule id="dcb02f99-3bdc-fdcb-44af-36077bc5bb8c" name="Cybernetica" hidden="false" book="HH1: Betrayal" page="197">
-                      <description>If Servo-automata are no longer accompanied by a legion Techmarine, they must take a Pinning test at the start of each Movement phase unless they are already engaged in combat.  </description>
-                      <modifiers/>
-                    </rule>
-                  </rules>
-                  <profiles>
-                    <profile id="c9c960d6-9157-5d45-ee5c-f503ff271e14" profileTypeId="556e697423232344415441232323" name="Servo-automata" hidden="false" book="HH1: Betrayal" page="197">
-                      <characteristics>
-                        <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type"/>
-                        <characteristic characteristicId="575323232344415441232323" name="WS" value="3"/>
-                        <characteristic characteristicId="425323232344415441232323" name="BS" value="3"/>
-                        <characteristic characteristicId="5323232344415441232323" name="S" value="4"/>
-                        <characteristic characteristicId="5423232344415441232323" name="T" value="5"/>
-                        <characteristic characteristicId="5723232344415441232323" name="W" value="1"/>
-                        <characteristic characteristicId="4923232344415441232323" name="I" value="1"/>
-                        <characteristic characteristicId="4123232344415441232323" name="A" value="1"/>
-                        <characteristic characteristicId="4c4423232344415441232323" name="LD" value="6"/>
-                        <characteristic characteristicId="5361766523232344415441232323" name="Save" value="5+"/>
-                      </characteristics>
-                      <modifiers/>
-                    </profile>
-                  </profiles>
-                  <links/>
-                </entry>
-              </entries>
-              <entryGroups>
-                <entryGroup id="b8a670bd-5a5f-e909-d198-847321ea93cd" name="Any Servo-automata may exchange their bolter for:" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries>
-                    <entry id="43da723d-f79c-3da9-dc18-f4158cdaf4a6" name="Power fist" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="6f813778-261c-78ae-1dd6-8530d32db21b" name="Lascutter" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links>
-                        <link id="1b2fd885-4fcf-e96f-8c48-f304cca84d62" targetId="862daa6c-e901-58a5-03e7-a5303413dfe9" linkType="profile">
-                          <modifiers/>
-                        </link>
-                        <link id="e4dee968-7310-6ca6-988b-ae052462cc46" targetId="c1e8ff06-fe81-cd19-fe6d-5128becc9f10" linkType="rule">
-                          <modifiers/>
-                        </link>
-                      </links>
-                    </entry>
-                    <entry id="c8d4350c-972e-9d0e-228b-3c131496a301" name="Flamer" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="fe8f7d3a-4df9-58fe-492f-3db8cf649314" name="Rotor Cannon" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links>
-                        <link id="92b1bf9a-c247-1cfe-9783-985d14a2ff24" targetId="75683330-6490-c0bf-560c-2e58617425a1" linkType="profile">
-                          <modifiers/>
-                        </link>
-                      </links>
-                    </entry>
-                  </entries>
-                  <entryGroups/>
-                  <modifiers>
-                    <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="ac85dde6-190f-04ca-0c50-1dfabb2bb4ed" incrementChildId="da10206a-bfd7-972c-6dba-43d6fdb71a6c" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups/>
-                    </modifier>
-                  </modifiers>
-                  <links/>
-                </entryGroup>
-              </entryGroups>
-              <modifiers/>
-              <links/>
-            </entryGroup>
-            <entryGroup id="3de37fa5-d383-b367-0edf-458674a233d3" name="May take one of the following:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="f8c995a5-be34-b8f8-8e16-470fc0002597" name="Nuncio-vox" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="cce402ad-d18a-7673-159a-40602465239b" targetId="9a458a3c-a9b5-db5e-a218-2041a3a49004" linkType="profile">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-                <entry id="627d4992-b1e2-8f36-68ac-34ad765bff90" name="Augury Scanner" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="cb94cce5-a858-04d4-8b82-ea2c280d2a8e" targetId="52c01c37-8d2a-043b-1225-c19562a840cb" linkType="profile">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-                <entry id="0bc5b1f0-7f4a-0fb2-9e72-72506d1746eb" name="Master-crafted Bolter" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-                <entry id="dd35c8ad-6be7-4c9e-961c-57050b4eaf16" name="Combi-weapon" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-                <entry id="3278f8bf-84b6-bf6a-5096-ece7588d7171" name="Volkite Charger" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="f581b371-4522-2a86-8793-4a7ee5784128" targetId="9c9de857-ac5e-11ff-ead6-1df8480d3f28" linkType="profile">
-                      <modifiers/>
-                    </link>
-                    <link id="8386eaa9-9e00-3b9b-1f8c-6475554fdc10" targetId="e31cf870-3fa6-f2a2-8704-9bf05f7efcd8" linkType="rule">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-                <entry id="65ee0ceb-131f-0d23-53f0-cedbe2af6580" name="Plasma Pistol" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-                <entry id="c83a8648-65cf-7d04-4049-a35311653625" name="Graviton Gun" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="2aee4662-4c68-d82c-4665-0c580d30a0e4" targetId="48a06170-d952-045d-a033-bd04d1122b59" linkType="profile">
-                      <modifiers/>
-                    </link>
-                    <link id="d37ccb60-b6db-5b26-d186-f56f35902cb0" targetId="53a62286-f01f-a0b5-7003-7cc0c702a11a" linkType="rule">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-                <entry id="792d31eb-2033-07ba-f684-6066568dc365" name="Master-crafted Bolter with exclusively Banestrike rounds" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers>
-                    <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                      <conditions>
-                        <condition parentId="roster" childId="8de96b92-0d9f-8bc0-5fa0-09e0e917f63e" field="selections" type="equal to" value="0.0"/>
-                        <condition parentId="roster" childId="006fb830-5031-cad0-6bc3-a9c3de5d1c8b" field="selections" type="equal to" value="0.0"/>
-                      </conditions>
-                      <conditionGroups/>
-                    </modifier>
-                  </modifiers>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers/>
-              <links/>
-            </entryGroup>
-            <entryGroup id="af0eca26-6d2a-4f83-70ff-df8c0e85559f" name="Replace Servo-arm with:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="8ad4b1a8-d7a7-1388-7d82-b4eae0f2739a" name="Conversion Beamer" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="08cdf279-6752-78dc-10b4-168276355b07" targetId="0ae81fbd-a9d1-4327-f3df-1fc26dce2ab1" linkType="profile">
-                      <modifiers/>
-                    </link>
-                    <link id="acc6a708-7718-1231-eb79-17818860f9e7" targetId="bf49e57d-4c20-456e-40fc-2325493da257" linkType="profile">
-                      <modifiers/>
-                    </link>
-                    <link id="dff4a327-c7b9-de77-0c27-b680fd036666" targetId="b2930d75-e708-3443-a9ba-fbba33fdf5a7" linkType="profile">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers/>
-              <links/>
-            </entryGroup>
-          </entryGroups>
-          <modifiers>
-            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="945b2009-7717-4bdc-90a8-44c0699ed01b" field="selections" type="equal to" value="0.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -11530,6 +11288,16 @@ If all of the HQ units in the Ultramarines detachment are slain, their opponent 
         </link>
         <link id="7e7e-9663-a073-4f2f" targetId="6227-e899-5673-4be9" linkType="entry">
           <modifiers/>
+        </link>
+        <link id="838f-e699-3736-11e1" targetId="ac3f-15d6-abd3-0a60" linkType="entry">
+          <modifiers>
+            <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="945b2009-7717-4bdc-90a8-44c0699ed01b" field="selections" type="equal to" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
       </links>
     </entry>
@@ -21315,299 +21083,17 @@ other wounds the attack causes</description>
     <entry id="12d746d3-ae08-8959-c298-0d748159d672" name="Techmarine Covenant" points="0.0" categoryId="456c6974657323232344415441232323" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LACAL" page="23">
       <entries>
         <entry id="b6478115-0e71-bdea-3245-7070e04f7105" name="Legion Techmarine" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="3" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-          <entries>
-            <entry id="5784d30b-48c8-b868-0e36-5674f20c0f4f" name="Melta Bombs" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="7a96a396-85a2-1cf3-285f-85ae87b409a5" name="Rad Grenades" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="a215a738-b9e8-bd00-2f52-fdb73e7f83c8" targetId="bf7edb98-902e-c8a7-e818-4a6ba05f12f2" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="9c0609e5-1e1a-a864-a203-d0101be85119" name="Cyber-familiar" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH1: Betrayal" page="237">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="4f8b03d6-e2fb-0273-6fa4-d93fc2da0b43" targetId="67e9d995-de3f-f033-9026-c1faa0a9433a" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-            <entry id="ec0b-b74f-d943-a6b0" name="Cortex Controller" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries/>
-              <entryGroups/>
-              <modifiers>
-                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="roster" childId="7b4aa675-1e6d-f3c3-8a6a-1cce92d53acf" field="selections" type="equal to" value="0.0"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="f86f-7716-49d5-0737" targetId="8eddab41-c893-f420-3b53-3e40b25cee89" linkType="entry">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-          </entries>
+          <entries/>
           <entryGroups>
-            <entryGroup id="420e4a9f-2679-5d76-9f2e-cb3c5c780621" name="May take one of the following:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entryGroup id="6b68-559b-7fec-8e14" name="Exchange Power Axe for:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries>
-                <entry id="891286a5-5817-1846-60b7-ec6e31f3255c" name="Nuncio-vox" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="736ab8c2-7d4b-65a6-04e2-1924adf664d7" targetId="9a458a3c-a9b5-db5e-a218-2041a3a49004" linkType="profile">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-                <entry id="2e9d4f45-7214-c10d-dca3-508892d40428" name="Augury Scanner" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="6c36736c-97df-5006-1f80-73cb118edef5" targetId="52c01c37-8d2a-043b-1225-c19562a840cb" linkType="profile">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-                <entry id="b2ecf79e-cf55-3a04-7801-019f72db260c" name="Master-crafted Bolter" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                <entry id="c21c-43aa-0c29-ce77" name="Thunder Hammer" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
                   <rules/>
                   <profiles/>
                   <links/>
-                </entry>
-                <entry id="8ccbeaa7-1f28-f53f-0d13-16af0d31ad7e" name="Combi-weapon" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-                <entry id="12614ff0-87d5-088e-8879-331a07d04fba" name="Volkite Charger" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="52e47cb7-8474-c241-9a31-44ec6acbe5a6" targetId="9c9de857-ac5e-11ff-ead6-1df8480d3f28" linkType="profile">
-                      <modifiers/>
-                    </link>
-                    <link id="19619a4e-b881-63f9-78e0-7799fc1653b8" targetId="e31cf870-3fa6-f2a2-8704-9bf05f7efcd8" linkType="rule">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-                <entry id="8ee1cd51-4aa6-4386-df3c-4878698a2c12" name="Plasma Pistol" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-                <entry id="399681e3-6c83-60bb-0676-603a3ff4659b" name="Graviton Gun" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="d9045ce3-8f7a-f050-1da2-b1692f1ba81a" targetId="48a06170-d952-045d-a033-bd04d1122b59" linkType="profile">
-                      <modifiers/>
-                    </link>
-                    <link id="9f2b522c-c678-5bb4-be24-5bdb1acdad4c" targetId="53a62286-f01f-a0b5-7003-7cc0c702a11a" linkType="rule">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers/>
-              <links>
-                <link id="efc265e1-c7b6-28f1-c700-9ff8c1c654b3" targetId="898ec927-2822-ec17-67a2-e001858649e1" linkType="entry">
-                  <modifiers/>
-                </link>
-              </links>
-            </entryGroup>
-            <entryGroup id="143cf6a9-db92-be55-968f-8310a7fa1f12" name="May be accompanied by up to four Servo-automata:" minSelections="0" maxSelections="8" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="189a7a82-7a39-089d-5270-d5d88941fcaf" name="Servo-automata" points="12.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="23">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules>
-                    <rule id="7c4dc9ca-5d4d-0d13-6089-8ad6163b1565" name="Cybernetica" hidden="false" book="HH:LACAL" page="23">
-                      <description>If Servo-automata are no longer accompanied by a legion Techmarine, they must take a Pinning test at the start of each Movement phase unless they are already engaged in combat.  </description>
-                      <modifiers/>
-                    </rule>
-                  </rules>
-                  <profiles>
-                    <profile id="13bc6c13-8da5-474b-f480-4bd3cf18eaf5" profileTypeId="556e697423232344415441232323" name="Servo-automata" hidden="false" book="HH:LACAL" page="23">
-                      <characteristics>
-                        <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type"/>
-                        <characteristic characteristicId="575323232344415441232323" name="WS" value="3"/>
-                        <characteristic characteristicId="425323232344415441232323" name="BS" value="3"/>
-                        <characteristic characteristicId="5323232344415441232323" name="S" value="4"/>
-                        <characteristic characteristicId="5423232344415441232323" name="T" value="5"/>
-                        <characteristic characteristicId="5723232344415441232323" name="W" value="1"/>
-                        <characteristic characteristicId="4923232344415441232323" name="I" value="1"/>
-                        <characteristic characteristicId="4123232344415441232323" name="A" value="1"/>
-                        <characteristic characteristicId="4c4423232344415441232323" name="LD" value="6"/>
-                        <characteristic characteristicId="5361766523232344415441232323" name="Save" value="5+"/>
-                      </characteristics>
-                      <modifiers/>
-                    </profile>
-                  </profiles>
-                  <links/>
-                </entry>
-              </entries>
-              <entryGroups>
-                <entryGroup id="2e988336-5be0-b7b9-ae74-1837e7b49015" name="Any Servo-automata may exchange their bolter for:" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                  <entries>
-                    <entry id="1720eb11-bacd-8e07-42d1-b2e349c6e1c9" name="Power fist" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="53e8dd8f-c42e-6f60-40c7-2aafbe8f6368" name="Lascutter" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links>
-                        <link id="3198df56-eb7f-e34f-b2e4-a05669dae754" targetId="862daa6c-e901-58a5-03e7-a5303413dfe9" linkType="profile">
-                          <modifiers/>
-                        </link>
-                        <link id="74bdf6dd-7b8b-7052-1a28-d97a8bfdecde" targetId="c1e8ff06-fe81-cd19-fe6d-5128becc9f10" linkType="rule">
-                          <modifiers/>
-                        </link>
-                      </links>
-                    </entry>
-                    <entry id="1aef8aa3-0039-e3b0-6a73-ec1a9ae3495f" name="Flamer" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="f8fee46b-5d58-8e55-83ee-2f13a8196656" name="Rotor Cannon" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links>
-                        <link id="b618d975-1264-f6ab-a974-ef9293d5947c" targetId="75683330-6490-c0bf-560c-2e58617425a1" linkType="profile">
-                          <modifiers/>
-                        </link>
-                      </links>
-                    </entry>
-                    <entry id="aeb4-200b-286f-2631" name="Heavy Bolter" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="9b1e-76f7-7d10-f0ab" name="Missile Launcher (Frag and Krak Missiles)" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                    <entry id="af63-ffd9-ac68-6f2a" name="Multi-melta" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-                      <entries/>
-                      <entryGroups/>
-                      <modifiers/>
-                      <rules/>
-                      <profiles/>
-                      <links/>
-                    </entry>
-                  </entries>
-                  <entryGroups/>
-                  <modifiers>
-                    <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="143cf6a9-db92-be55-968f-8310a7fa1f12" incrementChildId="189a7a82-7a39-089d-5270-d5d88941fcaf" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups/>
-                    </modifier>
-                  </modifiers>
-                  <links/>
-                </entryGroup>
-              </entryGroups>
-              <modifiers/>
-              <links/>
-            </entryGroup>
-            <entryGroup id="9ea5c702-464f-b77a-11e5-723699aef9a2" name="Exchange Power Axe for:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="4cb81b5c-4278-5400-5d2e-cec3b951a847" name="Thunder Hammer" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links/>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers/>
-              <links/>
-            </entryGroup>
-            <entryGroup id="b347d2d9-e6e7-946a-9be4-a70216e7af39" name="Replace Servo-arm with:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="bc8ad259-d8f6-6677-d032-6c9ffc287e36" name="Conversion Beamer" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="3f3763fa-bd04-2abd-81c6-47623ea0f613" targetId="0ae81fbd-a9d1-4327-f3df-1fc26dce2ab1" linkType="profile">
-                      <modifiers/>
-                    </link>
-                    <link id="a788443e-7c43-bfa5-6aac-225ce90150fc" targetId="bf49e57d-4c20-456e-40fc-2325493da257" linkType="profile">
-                      <modifiers/>
-                    </link>
-                    <link id="0f6cd756-5c76-1f21-82b9-baf22b44f58b" targetId="b2930d75-e708-3443-a9ba-fbba33fdf5a7" linkType="profile">
-                      <modifiers/>
-                    </link>
-                  </links>
                 </entry>
               </entries>
               <entryGroups/>
@@ -21659,6 +21145,9 @@ other wounds the attack causes</description>
               </modifiers>
             </link>
             <link id="dd33-d814-9140-df9c" targetId="86e70545-ed1a-7cf4-5a3d-d60662a6b3be" linkType="entry">
+              <modifiers/>
+            </link>
+            <link id="cfb8-0554-0213-2a5e" targetId="ac3f-15d6-abd3-0a60" linkType="entry">
               <modifiers/>
             </link>
           </links>
@@ -43925,6 +43414,303 @@ No Super-heavy Vehicles or Gargantuan Creatures may be taken</description>
       <profiles/>
       <links/>
     </entry>
+    <entry id="ac3f-15d6-abd3-0a60" name="Techmarine/Forgelord Options" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="AODOL" page="31">
+      <entries>
+        <entry id="81d3-264d-03b0-364c" name="Melta Bombs" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links/>
+        </entry>
+        <entry id="a215-0ed8-7129-3465" name="Cyber-familiar" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH1: Betrayal" page="237">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="53d0-0693-630a-d8bb" targetId="67e9d995-de3f-f033-9026-c1faa0a9433a" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+        <entry id="0d68-1593-c821-6bef" name="Rad Grenades" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <rules/>
+          <profiles/>
+          <links>
+            <link id="dc4c-72ec-0370-2161" targetId="bf7edb98-902e-c8a7-e818-4a6ba05f12f2" linkType="profile">
+              <modifiers/>
+            </link>
+          </links>
+        </entry>
+      </entries>
+      <entryGroups>
+        <entryGroup id="f7e0-4219-551f-9811" name="May be accompanied by up to four Servo-automata:" minSelections="0" maxSelections="8" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="6cd2-470a-b3c8-b37a" name="Servo-automata" points="12.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="23">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules>
+                <rule id="4736-9c7e-a362-7598" name="Cybernetica" hidden="false" book="HH:LACAL" page="23">
+                  <description>If Servo-automata are no longer accompanied by a legion Techmarine, they must take a Pinning test at the start of each Movement phase unless they are already engaged in combat.  </description>
+                  <modifiers/>
+                </rule>
+              </rules>
+              <profiles>
+                <profile id="cf0a-9083-d6ad-7b4b" profileTypeId="556e697423232344415441232323" name="Servo-automata" hidden="false" book="HH:LACAL" page="23">
+                  <characteristics>
+                    <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type"/>
+                    <characteristic characteristicId="575323232344415441232323" name="WS" value="3"/>
+                    <characteristic characteristicId="425323232344415441232323" name="BS" value="3"/>
+                    <characteristic characteristicId="5323232344415441232323" name="S" value="4"/>
+                    <characteristic characteristicId="5423232344415441232323" name="T" value="5"/>
+                    <characteristic characteristicId="5723232344415441232323" name="W" value="1"/>
+                    <characteristic characteristicId="4923232344415441232323" name="I" value="1"/>
+                    <characteristic characteristicId="4123232344415441232323" name="A" value="1"/>
+                    <characteristic characteristicId="4c4423232344415441232323" name="LD" value="6"/>
+                    <characteristic characteristicId="5361766523232344415441232323" name="Save" value="5+"/>
+                  </characteristics>
+                  <modifiers/>
+                </profile>
+              </profiles>
+              <links/>
+            </entry>
+            <entry id="fbb1-cf7f-bebd-ce09" name="Cortex Controller" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition parentId="force type" childId="7b4aa675-1e6d-f3c3-8a6a-1cce92d53acf" field="selections" type="equal to" value="0.0"/>
+                        <condition parentId="direct parent" childId="945b2009-7717-4bdc-90a8-44c0699ed01b" field="selections" type="equal to" value="0.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="416a-e170-9ff1-7577" targetId="8eddab41-c893-f420-3b53-3e40b25cee89" linkType="entry">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
+          <entryGroups>
+            <entryGroup id="08c6-ca29-9c99-9cbe" name="Any Servo-automata may exchange their bolter for:" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries>
+                <entry id="af5f-adf4-5b7b-631c" name="Power fist" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="4fec-0c99-f365-0d3e" name="Lascutter" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="6e62-b55d-8f3b-ad3e" targetId="862daa6c-e901-58a5-03e7-a5303413dfe9" linkType="profile">
+                      <modifiers/>
+                    </link>
+                    <link id="978b-c327-a3aa-1235" targetId="c1e8ff06-fe81-cd19-fe6d-5128becc9f10" linkType="rule">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="c401-e570-040e-2b31" name="Flamer" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="4b86-7cbe-aa10-f3f1" name="Rotor Cannon" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="4" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links>
+                    <link id="0d30-e9c3-1d50-c814" targetId="75683330-6490-c0bf-560c-2e58617425a1" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entry>
+                <entry id="2055-ae71-1766-d015" name="Heavy Bolter" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="f19d-0610-c594-a303" name="Missile Launcher (Frag and Krak Missiles)" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+                <entry id="c804-f466-cfc6-daad" name="Multi-melta" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
+              </entries>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="ac3f-15d6-abd3-0a60" incrementChildId="6cd2-470a-b3c8-b37a" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <links/>
+            </entryGroup>
+          </entryGroups>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+        <entryGroup id="4c82-d104-731d-43ff" name="May take one of the following:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="6543-5a92-98b4-3d1e" name="Nuncio-vox" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="e8c5-033f-e698-4c82" targetId="9a458a3c-a9b5-db5e-a218-2041a3a49004" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="d64e-8b1a-948e-c1ff" name="Augury Scanner" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="adda-0382-ff17-62eb" targetId="52c01c37-8d2a-043b-1225-c19562a840cb" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="92dd-e879-ed0d-7f61" name="Master-crafted Bolter" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="502a-4534-95a6-fe54" name="Combi-weapon" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="6166-89a8-39ad-bafe" name="Volkite Charger" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="74fc-42be-91f9-2681" targetId="9c9de857-ac5e-11ff-ead6-1df8480d3f28" linkType="profile">
+                  <modifiers/>
+                </link>
+                <link id="9952-c6f0-2234-5654" targetId="e31cf870-3fa6-f2a2-8704-9bf05f7efcd8" linkType="rule">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="7f0e-d95d-5102-3207" name="Plasma Pistol" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links/>
+            </entry>
+            <entry id="00f9-8621-d8b9-2ab6" name="Graviton Gun" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="e65e-106d-0579-0aca" targetId="48a06170-d952-045d-a033-bd04d1122b59" linkType="profile">
+                  <modifiers/>
+                </link>
+                <link id="978d-bd59-49dd-dfc5" targetId="53a62286-f01f-a0b5-7003-7cc0c702a11a" linkType="rule">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="12e1-e258-f19b-876f" targetId="898ec927-2822-ec17-67a2-e001858649e1" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+        <entryGroup id="c439-b395-4d17-f0eb" name="Replace Servo-arm with:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries>
+            <entry id="2f1c-7193-38b0-f67a" name="Conversion Beamer" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="7521-5eaf-b249-c8b9" targetId="0ae81fbd-a9d1-4327-f3df-1fc26dce2ab1" linkType="profile">
+                  <modifiers/>
+                </link>
+                <link id="4cdf-306f-8e26-0e1a" targetId="bf49e57d-4c20-456e-40fc-2325493da257" linkType="profile">
+                  <modifiers/>
+                </link>
+                <link id="b212-de96-c4f7-134f" targetId="b2930d75-e708-3443-a9ba-fbba33fdf5a7" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <links/>
+        </entryGroup>
+      </entryGroups>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
   </sharedEntries>
   <sharedEntryGroups>
     <entryGroup id="fc8ed347-6cd6-c24e-942f-bda78004e894" name="Bodyguard" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -46281,6 +46067,15 @@ If a vehicle has been upgraded to a Super-heavy command tank, all allied infantr
       </characteristics>
       <modifiers/>
     </profile>
+    <profile id="65b6-c9fc-aeb3-27be" profileTypeId="576561706f6e23232344415441232323" name="Heavy Chainsword" hidden="false">
+      <characteristics>
+        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
+        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="+2"/>
+        <characteristic characteristicId="415023232344415441232323" name="AP" value="4"/>
+        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
     <profile id="0ee6cae6-b6fa-f0e7-6a77-0112ac6710a1" profileTypeId="576561706f6e23232344415441232323" name="Heavy Conversion Beamer (1)" hidden="false" book="HH:LACAL" page="82">
       <characteristics>
         <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="&lt; 18&quot;"/>
@@ -46958,15 +46753,6 @@ If a vehicle has been upgraded to a Super-heavy command tank, all allied infantr
         <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="6"/>
         <characteristic characteristicId="415023232344415441232323" name="AP" value="3"/>
         <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 15"/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="65b6-c9fc-aeb3-27be" profileTypeId="576561706f6e23232344415441232323" name="Heavy Chainsword" hidden="false">
-      <characteristics>
-        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
-        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="+2"/>
-        <characteristic characteristicId="415023232344415441232323" name="AP" value="4"/>
-        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee"/>
       </characteristics>
       <modifiers/>
     </profile>
