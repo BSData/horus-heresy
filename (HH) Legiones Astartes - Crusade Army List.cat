@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="105" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Age of Darkness Army List" books="HH Series" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="106" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Age of Darkness Army List" books="HH Series" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="AODAL" page="67">
       <entries/>
@@ -12387,9 +12387,6 @@ The neutron wave capacitor adds the Shock Pulse and Feedback special rules (see 
         <rule id="bcbdce69-f3bb-4ccc-4759-3e69268292c8" name="Deep Strike" hidden="false" page="0">
           <modifiers/>
         </rule>
-        <rule id="fc8c4815-d153-9807-f0de-f0773f146e5b" name="Strafing Run" hidden="false" page="0">
-          <modifiers/>
-        </rule>
         <rule id="3628ab40-f8c7-4c13-3282-05e97d9ed448" name="Independent Turret Fire" hidden="false" book="HH:LACAL" page="54">
           <description>Each waist turret may fire at a different target and do not count towards the number of weapons that may be fired in a turn.  </description>
           <modifiers/>
@@ -12438,6 +12435,9 @@ The neutron wave capacitor adds the Shock Pulse and Feedback special rules (see 
           <modifiers/>
         </link>
         <link id="b779-a9b2-c622-0e3a" targetId="c487-be13-ea53-917e" linkType="entry group">
+          <modifiers/>
+        </link>
+        <link id="3daf-c615-bade-5ca4" targetId="7798-188c-4fcc-180f" linkType="rule">
           <modifiers/>
         </link>
       </links>
@@ -12689,8 +12689,7 @@ The neutron wave capacitor adds the Shock Pulse and Feedback special rules (see 
               <modifiers/>
             </rule>
             <rule id="9b28-9cf1-7aa4-7fc3" name="Grav-backwash" hidden="false" book="AODAL" page="59">
-              <description>
-Unless the Javelin Attack Speeder has become immobilised, attackers suffer a -2 To Hit in Assaul</description>
+              <description>Unless the Javelin Attack Speeder has become immobilised, attackers suffer a -2 To Hit in Assault.</description>
               <modifiers/>
             </rule>
           </rules>
@@ -12707,7 +12706,11 @@ Unless the Javelin Attack Speeder has become immobilised, attackers suffer a -2 
               <modifiers/>
             </profile>
           </profiles>
-          <links/>
+          <links>
+            <link id="b5fc-65f6-1829-92e7" targetId="7798-188c-4fcc-180f" linkType="rule">
+              <modifiers/>
+            </link>
+          </links>
         </entry>
       </entries>
       <entryGroups/>
@@ -24176,7 +24179,7 @@ The only Consul types that may be included in the detachment are the Forge Lord 
         </link>
       </links>
     </entry>
-    <entry id="5beb-0cde-90c1-0f88" name="Calibanite War Blade" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="5beb-0cde-90c1-0f88" name="Calibanite War Blade" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups/>
       <modifiers>
@@ -28417,7 +28420,7 @@ The army may not include a Fortifications Detachment or an Allied Detachment</de
       <profiles/>
       <links/>
     </entry>
-    <entry id="6131-e22d-754c-546f" name="Hand flamer" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entry id="6131-e22d-754c-546f" name="Hand flamer" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups/>
       <modifiers>
@@ -29103,7 +29106,7 @@ This Rite of War may not be taken by a detachment belonging to the Loyalist fact
         </link>
       </links>
     </entry>
-    <entry id="898ec927-2822-ec17-67a2-e001858649e1" name="Inferno Pistol" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+    <entry id="898ec927-2822-ec17-67a2-e001858649e1" name="Inferno Pistol" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries/>
       <entryGroups/>
       <modifiers>
@@ -30652,6 +30655,14 @@ The army may not include a Fortification Detachment or an Allied Detachment.</de
                     </modifier>
                   </modifiers>
                 </link>
+                <link id="be68-c503-1487-2f92" targetId="5beb-0cde-90c1-0f88" linkType="entry">
+                  <modifiers>
+                    <modifier type="set" field="maxSelections" value="5.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                </link>
               </links>
             </entryGroup>
             <entryGroup id="6e58a2d3-08db-a1bc-bf38-47a607617720" name="Exchange Bolter for:" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -32049,7 +32060,7 @@ The army may not include a Fortification Detachment or an Allied Detachment.</de
         </link>
       </links>
     </entry>
-    <entry id="604c-bdd0-25b9-2bed" name="Legion Kharybdis Assault Claw" points="260.0" categoryId="486561767920537570706f727423232344415441232323" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LACAL" page="62">
+    <entry id="604c-bdd0-25b9-2bed" name="Legion Kharybdis Assault Claw" points="235.0" categoryId="486561767920537570706f727423232344415441232323" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="AODAL" page="74">
       <entries/>
       <entryGroups>
         <entryGroup id="201a-444e-1c6e-e0ce" name="Legion-specific upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -32554,61 +32565,6 @@ The army may not include a Fortification Detachment or an Allied Detachment.</de
           <modifiers/>
           <links/>
         </entryGroup>
-        <entryGroup id="78ce-7f19-5cd4-5991" name="May take a Pintle-Mounted Weapon:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="47da-b56b-b6dd-da85" name="Twin-Linked Bolter" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="b650-f781-1bd4-4e02" name="Combi-Weapon" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="e648-e9a5-d882-f728" name="Heavy Bolter" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="2dc0-dd62-a3ab-81aa" name="Heavy Flamer" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-            <entry id="8985-076d-4933-ef8a" name="Havoc Launcher" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="c09b-6f92-e430-921e" targetId="b3ea1d32-ba66-0585-d7f7-0dc56e707736" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <links>
-            <link id="7c88-8159-417a-21f9" targetId="2d56d45d-d276-7830-2b7d-026de64bbae8" linkType="entry">
-              <modifiers/>
-            </link>
-          </links>
-        </entryGroup>
         <entryGroup id="d38e-4e7a-4874-3362" name="May take one set of sponsons:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="85b6-2e08-678b-6dfd" name="Heavy Bolters" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
@@ -32791,6 +32747,35 @@ The army may not include a Fortification Detachment or an Allied Detachment.</de
           </modifiers>
         </profile>
       </profiles>
+      <links>
+        <link id="33a8-6259-0b92-f791" targetId="42ad-21b0-0d2e-1239" linkType="entry group">
+          <modifiers>
+            <modifier type="set" field="maxSelections" value="0.0" repeat="true" numRepeats="1" incrementParentId="direct parent" incrementChildId="9c92-8e44-1052-c19d" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </link>
+      </links>
+    </entry>
+    <entry id="5887-d083-3371-2dc2" name="Legion Recon Company" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="AODOL" page="104">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules>
+        <rule id="fca3-d7ae-6ad5-c3fb" name="Legion Recon Company" hidden="false" book="AODOL" page="104">
+          <description>Effects
+Recon Company:Legion Recon Squads are compulsory Troops choices in the Primary Detachment.
+Forward Scouts:All models deployed onto the table using the Scout or Infiltrate special rules gain the Shrouded special rule during the first Game Turn.
+Rites of Observation:When rolling to determine which side takes the first turn and/or to Seize the Initiative, a force using this Rite of War may re-roll the result.
+Limitations
+No Heavy Support units may be deployed onto the battlefield during deployment, and must instead be placed into Reserves.
+The force’s Primary Detachment must include an additional compulsory Troops choice, which must be filled by a Legion Recon Squad.
+No units or models with Terminator armour of any type may be included in a detachment using this Rite of War.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
       <links/>
     </entry>
     <entry id="3215e60a-5c78-9efe-e6d4-ba87f3e74a21" name="Legion Rhino Armoured Carrier" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LACAL" page="35">
@@ -35214,7 +35199,11 @@ The army may not include a Fortification Detachment or an Allied Detachment.</de
           </entries>
           <entryGroups/>
           <modifiers/>
-          <links/>
+          <links>
+            <link id="ed81-47b3-41e2-a9e8" targetId="5beb-0cde-90c1-0f88" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
         </entryGroup>
         <entryGroup id="961c2463-e7c4-3ffc-6471-934442bf5692" name="One in five may exchange Bolter for:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
@@ -35259,7 +35248,18 @@ The army may not include a Fortification Detachment or an Allied Detachment.</de
             </entry>
             <entry id="7b231f7e-aaa6-fae8-6fc8-f26aa808838c" name="Heavy Bolter and Suspensor Web" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
-              <entryGroups/>
+              <entryGroups>
+                <entryGroup id="8832-71fb-90e7-95bd" name="Molecular Acid Shells" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <links>
+                    <link id="bb50-c35d-8981-9438" targetId="413a-6252-82be-9f41" linkType="entry">
+                      <modifiers/>
+                    </link>
+                  </links>
+                </entryGroup>
+              </entryGroups>
               <modifiers/>
               <rules/>
               <profiles/>
@@ -35313,6 +35313,25 @@ The army may not include a Fortification Detachment or an Allied Detachment.</de
               <profiles/>
               <links/>
             </entry>
+            <entry id="987a-d4af-ce12-524a" name="Plasma Repeater" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="force type" childId="6ed45e2a-c607-3386-57ad-63637315f548" field="selections" type="equal to" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="3bfb-aafe-1c54-f9cf" targetId="27df-a056-0e1c-df76" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
           </entries>
           <entryGroups/>
           <modifiers>
@@ -35364,7 +35383,16 @@ The army may not include a Fortification Detachment or an Allied Detachment.</de
           </entries>
           <entryGroups/>
           <modifiers/>
-          <links/>
+          <links>
+            <link id="dd4a-018e-2a66-0a40" targetId="6131-e22d-754c-546f" linkType="entry">
+              <modifiers>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </link>
+          </links>
         </entryGroup>
         <entryGroup id="80ce4d3a-1ca8-978c-6bef-58dcd296869b" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -39967,26 +39995,6 @@ No Lords of War choice may be taken by the detachment.</description>
           <modifiers/>
         </link>
       </links>
-    </entry>
-    <entry id="5887-d083-3371-2dc2" name="Legion Recon Company" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="AODOL" page="104">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <rules>
-        <rule id="fca3-d7ae-6ad5-c3fb" name="Legion Recon Company" hidden="false" book="AODOL" page="104">
-          <description>Effects
-Recon Company:Legion Recon Squads are compulsory Troops choices in the Primary Detachment.
-Forward Scouts:All models deployed onto the table using the Scout or Infiltrate special rules gain the Shrouded special rule during the first Game Turn.
-Rites of Observation:When rolling to determine which side takes the first turn and/or to Seize the Initiative, a force using this Rite of War may re-roll the result.
-Limitations
-No Heavy Support units may be deployed onto the battlefield during deployment, and must instead be placed into Reserves.
-The force’s Primary Detachment must include an additional compulsory Troops choice, which must be filled by a Legion Recon Squad.
-No units or models with Terminator armour of any type may be included in a detachment using this Rite of War.</description>
-          <modifiers/>
-        </rule>
-      </rules>
-      <profiles/>
-      <links/>
     </entry>
     <entry id="40e37f6e-a984-4232-4dc4-807ed9028f62" name="Refractor Field" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries/>
@@ -45539,6 +45547,9 @@ King Slayer (3 Victory points): If the opposing army includes a Primarch, this m
       <description>A model which loses one or more wounds to an attack with this rule and survives suffers a -1 penalty to its Toughness value for the rest of the battle.  </description>
       <modifiers/>
     </rule>
+    <rule id="5c66-91eb-b9e0-cfd7" name="Rage" hidden="false">
+      <modifiers/>
+    </rule>
     <rule id="408442df-d483-ac91-8be3-2948d61ec87c" name="Reactor Blast" hidden="false" book="HH3: Extermination" page="207">
       <description>When losing its final wound, roll a D6.  On a 6, inflict a Str 4 AP - hit on all models within D6&quot;</description>
       <modifiers/>
@@ -45628,7 +45639,7 @@ If a vehicle has been upgraded to a Super-heavy command tank, all allied infantr
       <description>Attacks with this special rule may re-roll failed armour penetration rolls against fortifications and immobile structures and add +1 to any result rolled on the Building Damage chart.  If this attack damages a bulkhead or wall section of terrain and destroys it, remove that section of terrain from play if possible.  </description>
       <modifiers/>
     </rule>
-    <rule id="5c66-91eb-b9e0-cfd7" name="Rage" hidden="false">
+    <rule id="7798-188c-4fcc-180f" name="Strafing Run" hidden="false" page="0">
       <modifiers/>
     </rule>
   </sharedRules>
