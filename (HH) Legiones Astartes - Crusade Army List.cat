@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="117" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Age of Darkness Army List" books="HH Series" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="118" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Age of Darkness Army List" books="HH Series" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="AODAL" page="67">
       <entries>
@@ -2487,6 +2487,99 @@
           <modifiers/>
         </link>
         <link id="0289-d26b-9bc8-ca8f" targetId="0015-ccda-bc75-6f05" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="c239-5cb2-4a92-62f1" name="Cor’bax Utterblight, Daemon Prince of the Ruinstorm" points="355.0" categoryId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Warhammer_40000/Corbax_Utterblight.pdf">
+      <entries>
+        <entry id="d6e8-13df-28ab-a23f" name="Daemon of Nurgle" points="0.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+          <entries>
+            <entry id="d60c-5670-25a2-2af6" name="Daemon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules>
+                <rule id="f5c9-ef96-9e31-14ef" name="Fear" hidden="false" page="0">
+                  <modifiers/>
+                </rule>
+                <rule id="6571-4955-a8d4-7bac" name="5+ Invulnerable Save" hidden="false" page="0">
+                  <modifiers/>
+                </rule>
+              </rules>
+              <profiles/>
+              <links/>
+            </entry>
+          </entries>
+          <entryGroups/>
+          <modifiers/>
+          <rules>
+            <rule id="6495-35ce-c6c1-d46f" name="Hatred (Daemon of Tzeencth)" hidden="false" page="0">
+              <modifiers/>
+            </rule>
+            <rule id="7ef3-5397-6d1b-6900" name="Shrouded" hidden="false" page="0">
+              <modifiers/>
+            </rule>
+            <rule id="0473-e8f8-3a1a-b29b" name="Slow &amp; Purposeful" hidden="false" page="0">
+              <modifiers/>
+            </rule>
+          </rules>
+          <profiles/>
+          <links/>
+        </entry>
+      </entries>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="ecfb6109-61f5-c148-708c-f53340667cb5" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="4ac7-9115-6d4c-fa0a" name="Slime Trail" hidden="false" page="0">
+          <modifiers/>
+        </rule>
+        <rule id="95a5-c209-5a32-e435" name="Gaping Maw" hidden="false" book="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Warhammer_40000/Corbax_Utterblight.pdf">
+          <description>Cor’bax’s vast maw opens wide enough to swallow enemies whole. When fighting against infantry models, any To Hit rolls of 5 or 6 made in the Assault phase by Cor’bax have the Instant Death special rule. Roll to wound and save with these attacks separately.</description>
+          <modifiers/>
+        </rule>
+        <rule id="7679-854c-3c37-53a7" name="Noisome Tide of Flesh" hidden="false" book="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Warhammer_40000/Corbax_Utterblight.pdf">
+          <description>Cor’bax Utterblight’s corporeal form is little more than a mass of roiling gelatinous and pestilential flesh, which makes him even harder to harm than many of his Daemon kin and allows him to seethe across the battlefield like a destroying tide of plague.
+
+Cor’bax Utterblight inflicts D3 Hammer of Wrath hits when charging. He ignores all dangerous terrain and difficult terrain. He counts as being armed with assault grenades when charging. In addition, if he is destroyed replace his model with the Massive Blast (7&quot;) template. All models under the template that do not have the Daemon of Nurgle special rule suffer a single Poisoned (4+) AP 4 hit.</description>
+          <modifiers/>
+        </rule>
+        <rule id="3dbf-ccbc-1668-4b25" name="Poisoned (3+)" hidden="false">
+          <modifiers/>
+        </rule>
+        <rule id="fffc-10d7-8d98-74f8" name="Psyker (Mastery Level 2)" hidden="false">
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="8b12-ab89-6d60-c7fa" profileTypeId="556e697423232344415441232323" name="Cor&apos;bax Utterblight" hidden="false" book="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Warhammer_40000/Corbax_Utterblight.pdf">
+          <characteristics>
+            <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Monstrous Creature (Character)"/>
+            <characteristic characteristicId="575323232344415441232323" name="WS" value="6"/>
+            <characteristic characteristicId="425323232344415441232323" name="BS" value="3"/>
+            <characteristic characteristicId="5323232344415441232323" name="S" value="6"/>
+            <characteristic characteristicId="5423232344415441232323" name="T" value="8"/>
+            <characteristic characteristicId="5723232344415441232323" name="W" value="7"/>
+            <characteristic characteristicId="4923232344415441232323" name="I" value="9"/>
+            <characteristic characteristicId="4123232344415441232323" name="A" value="4"/>
+            <characteristic characteristicId="4c4423232344415441232323" name="LD" value="9"/>
+            <characteristic characteristicId="5361766523232344415441232323" name="Save" value="-"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links>
+        <link id="6ad4-e282-c71b-3baa" targetId="5451750e-aef2-7915-77ce-6b2bd8416bac" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="7338-06c3-601a-ab29" targetId="b87e-b555-972b-6f4d" linkType="rule">
           <modifiers/>
         </link>
       </links>
@@ -22722,99 +22815,6 @@ other wounds the attack causes</description>
         </link>
       </links>
     </entry>
-    <entry id="c239-5cb2-4a92-62f1" name="Cor’bax Utterblight, Daemon Prince of the Ruinstorm" points="355.0" categoryId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Warhammer_40000/Corbax_Utterblight.pdf">
-      <entries>
-        <entry id="d6e8-13df-28ab-a23f" name="Daemon of Nurgle" points="0.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-          <entries>
-            <entry id="d60c-5670-25a2-2af6" name="Daemon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules>
-                <rule id="f5c9-ef96-9e31-14ef" name="Fear" hidden="false" page="0">
-                  <modifiers/>
-                </rule>
-                <rule id="6571-4955-a8d4-7bac" name="5+ Invulnerable Save" hidden="false" page="0">
-                  <modifiers/>
-                </rule>
-              </rules>
-              <profiles/>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <rules>
-            <rule id="6495-35ce-c6c1-d46f" name="Hatred (Daemon of Tzeencth)" hidden="false" page="0">
-              <modifiers/>
-            </rule>
-            <rule id="7ef3-5397-6d1b-6900" name="Shrouded" hidden="false" page="0">
-              <modifiers/>
-            </rule>
-            <rule id="0473-e8f8-3a1a-b29b" name="Slow &amp; Purposeful" hidden="false" page="0">
-              <modifiers/>
-            </rule>
-          </rules>
-          <profiles/>
-          <links/>
-        </entry>
-      </entries>
-      <entryGroups/>
-      <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="ecfb6109-61f5-c148-708c-f53340667cb5" field="selections" type="equal to" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <rules>
-        <rule id="4ac7-9115-6d4c-fa0a" name="Slime Trail" hidden="false" page="0">
-          <modifiers/>
-        </rule>
-        <rule id="95a5-c209-5a32-e435" name="Gaping Maw" hidden="false" book="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Warhammer_40000/Corbax_Utterblight.pdf">
-          <description>Cor’bax’s vast maw opens wide enough to swallow enemies whole. When fighting against infantry models, any To Hit rolls of 5 or 6 made in the Assault phase by Cor’bax have the Instant Death special rule. Roll to wound and save with these attacks separately.</description>
-          <modifiers/>
-        </rule>
-        <rule id="7679-854c-3c37-53a7" name="Noisome Tide of Flesh" hidden="false" book="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Warhammer_40000/Corbax_Utterblight.pdf">
-          <description>Cor’bax Utterblight’s corporeal form is little more than a mass of roiling gelatinous and pestilential flesh, which makes him even harder to harm than many of his Daemon kin and allows him to seethe across the battlefield like a destroying tide of plague.
-
-Cor’bax Utterblight inflicts D3 Hammer of Wrath hits when charging. He ignores all dangerous terrain and difficult terrain. He counts as being armed with assault grenades when charging. In addition, if he is destroyed replace his model with the Massive Blast (7&quot;) template. All models under the template that do not have the Daemon of Nurgle special rule suffer a single Poisoned (4+) AP 4 hit.</description>
-          <modifiers/>
-        </rule>
-        <rule id="3dbf-ccbc-1668-4b25" name="Poisoned (3+)" hidden="false">
-          <modifiers/>
-        </rule>
-        <rule id="fffc-10d7-8d98-74f8" name="Psyker (Mastery Level 2)" hidden="false">
-          <modifiers/>
-        </rule>
-      </rules>
-      <profiles>
-        <profile id="8b12-ab89-6d60-c7fa" profileTypeId="556e697423232344415441232323" name="Cor&apos;bax Utterblight" hidden="false" book="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Warhammer_40000/Corbax_Utterblight.pdf">
-          <characteristics>
-            <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Monstrous Creature (Character)"/>
-            <characteristic characteristicId="575323232344415441232323" name="WS" value="6"/>
-            <characteristic characteristicId="425323232344415441232323" name="BS" value="3"/>
-            <characteristic characteristicId="5323232344415441232323" name="S" value="6"/>
-            <characteristic characteristicId="5423232344415441232323" name="T" value="8"/>
-            <characteristic characteristicId="5723232344415441232323" name="W" value="7"/>
-            <characteristic characteristicId="4923232344415441232323" name="I" value="9"/>
-            <characteristic characteristicId="4123232344415441232323" name="A" value="4"/>
-            <characteristic characteristicId="4c4423232344415441232323" name="LD" value="9"/>
-            <characteristic characteristicId="5361766523232344415441232323" name="Save" value="-"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-      </profiles>
-      <links>
-        <link id="6ad4-e282-c71b-3baa" targetId="5451750e-aef2-7915-77ce-6b2bd8416bac" linkType="rule">
-          <modifiers/>
-        </link>
-        <link id="7338-06c3-601a-ab29" targetId="b87e-b555-972b-6f4d" linkType="rule">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
   </entries>
   <rules/>
   <links>
@@ -25152,7 +25152,20 @@ The army may not include Ferrus Manus</description>
             <entryGroup id="fb0b-5df8-e7de-5ff7" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition parentId="force type" childId="e0cec0c2-a6db-2c94-aacb-dc4dc8085e41" field="selections" type="equal to" value="0.0"/>
+                        <condition parentId="5ea9-06d0-d880-86f1" childId="48c8-5bb4-3541-bc91" field="selections" type="greater than" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <links>
                 <link id="0f3e-565c-2e5f-2295" targetId="ba9221f1-7a8a-4d55-0c30-ca4c502fab8d" linkType="entry">
                   <modifiers>
@@ -31027,7 +31040,20 @@ The burning retro’s effect lasts from the player turn in which the Dreadnought
             <entryGroup id="bb3ddcce-27e2-6f1b-27f2-0a8fd318a64e" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition parentId="force type" childId="e0cec0c2-a6db-2c94-aacb-dc4dc8085e41" field="selections" type="equal to" value="0.0"/>
+                        <condition parentId="dac9d882-e01e-8704-fefb-0a155e3de0dd" childId="7bb09ddd-6e04-eb0b-9755-526b119c3870" field="selections" type="greater than" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <links>
                 <link id="c7e04455-7bd9-554f-e2a2-cc4991617901" targetId="df4ceff0-6bd4-1cb9-b101-bef9ec61394e" linkType="entry">
                   <modifiers>
