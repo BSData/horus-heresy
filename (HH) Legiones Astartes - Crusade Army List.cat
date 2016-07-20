@@ -8159,7 +8159,7 @@ If all of the HQ units in the Ultramarines detachment are slain, their opponent 
         <entry id="157f4400-4cdf-c5f0-6588-4395102f502e" name="Consul" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups>
-            <entryGroup id="2d82e7cf-e26e-95a5-86c3-d9c06479fe8f" name="May be upgraded to one of these Consul roles:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entryGroup id="2d82e7cf-e26e-95a5-86c3-d9c06479fe8f" name="May be upgraded to one of these Consul roles:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="3" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries>
                 <entry id="be0f793d-d50b-e7b4-2c0c-43b13d67408a" name="Chaplain" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="AODAL" page="19">
                   <entries/>
@@ -8987,7 +8987,36 @@ If all of the HQ units in the Ultramarines detachment are slain, their opponent 
               </entries>
               <entryGroups/>
               <modifiers>
-                <modifier type="set" field="maxInForce" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="30be-5058-a8e1-f161" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="increment" field="maxInForce" value="1.0" repeat="true" numRepeats="1" incrementParentId="force type" incrementChildId="3c041007-45d1-a9be-0ba4-ed0b9e426a02" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions/>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition parentId="force type" childId="8d240ee2-07a0-3249-7971-5fb88687f489" field="selections" type="equal to" value="1.0"/>
+                            <condition parentId="force type" childId="7ba4bddb-f4ea-4e6d-4d19-5e722e44908b" field="selections" type="equal to" value="1.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="increment" field="maxInForce" value="1.0" repeat="true" numRepeats="1" incrementParentId="force type" incrementChildId="945b2009-7717-4bdc-90a8-44c0699ed01b" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="force type" childId="52fbec20-bbab-4ff5-4258-ef4cb6ca8752" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="decrement" field="maxInForce" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions/>
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -8997,14 +9026,17 @@ If all of the HQ units in the Ultramarines detachment are slain, their opponent 
                         <condition parentId="force type" childId="45745ec5-a05f-f0ed-5330-782659bb3974" field="selections" type="equal to" value="1.0"/>
                         <condition parentId="force type" childId="7c741cce-8850-b98f-3b84-cd0d84c3dada" field="selections" type="equal to" value="1.0"/>
                         <condition parentId="force type" childId="7ba4bddb-f4ea-4e6d-4d19-5e722e44908b" field="selections" type="equal to" value="1.0"/>
+                        <condition parentId="force type" childId="8d240ee2-07a0-3249-7971-5fb88687f489" field="selections" type="equal to" value="1.0"/>
+                        <condition parentId="force type" childId="52fbec20-bbab-4ff5-4258-ef4cb6ca8752" field="selections" type="equal to" value="1.0"/>
+                        <condition parentId="force type" childId="acc31be4-8d7c-491f-7f52-6b735cf6d6ad" field="selections" type="equal to" value="1.0"/>
                       </conditions>
                       <conditionGroups/>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
-                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                <modifier type="increment" field="maxInForce" value="1.0" repeat="true" numRepeats="1" incrementParentId="force type" incrementChildId="0df0a0f1-9ddf-f57b-cada-26dce57443ec" incrementField="selections" incrementValue="1.0">
                   <conditions>
-                    <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="30be-5058-a8e1-f161" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="force type" childId="acc31be4-8d7c-491f-7f52-6b735cf6d6ad" field="selections" type="equal to" value="1.0"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
