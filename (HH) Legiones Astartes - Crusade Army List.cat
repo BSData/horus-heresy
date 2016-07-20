@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="118" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Age of Darkness Army List" books="HH Series" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="119" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Age of Darkness Army List" books="HH Series" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="AODAL" page="67">
       <entries>
@@ -10079,7 +10079,7 @@ If all of the HQ units in the Ultramarines detachment are slain, their opponent 
                             <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="0df0a0f1-9ddf-f57b-cada-26dce57443ec" field="selections" type="equal to" value="1.0"/>
                             <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="d0a9e1d2-830b-8897-3e90-ce1a562da014" field="selections" type="equal to" value="1.0"/>
                             <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="53d4a249-5fa9-8bac-fda2-0c9419bb3564" field="selections" type="equal to" value="1.0"/>
-                            <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="92febb79-a07d-220a-401d-210880a60296" field="selections" type="equal to" value="0.0"/>
+                            <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="92febb79-a07d-220a-401d-210880a60296" field="selections" type="equal to" value="1.0"/>
                           </conditions>
                           <conditionGroups/>
                         </conditionGroup>
@@ -10108,6 +10108,7 @@ If all of the HQ units in the Ultramarines detachment are slain, their opponent 
                             <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="0df0a0f1-9ddf-f57b-cada-26dce57443ec" field="selections" type="equal to" value="1.0"/>
                             <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="d0a9e1d2-830b-8897-3e90-ce1a562da014" field="selections" type="equal to" value="1.0"/>
                             <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="53d4a249-5fa9-8bac-fda2-0c9419bb3564" field="selections" type="equal to" value="1.0"/>
+                            <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="92febb79-a07d-220a-401d-210880a60296" field="selections" type="equal to" value="1.0"/>
                           </conditions>
                           <conditionGroups/>
                         </conditionGroup>
@@ -10320,7 +10321,22 @@ If all of the HQ units in the Ultramarines detachment are slain, their opponent 
                 <entry id="b036a56d-b04c-c201-d84d-cb648fe4b8a0" name="Pair of Lightning Claws" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
                   <entryGroups/>
-                  <modifiers/>
+                  <modifiers>
+                    <modifier type="hide" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="92febb79-a07d-220a-401d-210880a60296" field="selections" type="equal to" value="1.0"/>
+                            <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="53d4a249-5fa9-8bac-fda2-0c9419bb3564" field="selections" type="equal to" value="1.0"/>
+                            <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="d0a9e1d2-830b-8897-3e90-ce1a562da014" field="selections" type="equal to" value="1.0"/>
+                            <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="0df0a0f1-9ddf-f57b-cada-26dce57443ec" field="selections" type="equal to" value="1.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                   <rules/>
                   <profiles/>
                   <links/>
@@ -10334,6 +10350,20 @@ If all of the HQ units in the Ultramarines detachment are slain, their opponent 
                     <modifier type="increment" field="points" value="15.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                       <conditions/>
                       <conditionGroups/>
+                    </modifier>
+                    <modifier type="hide" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="53d4a249-5fa9-8bac-fda2-0c9419bb3564" field="selections" type="equal to" value="1.0"/>
+                            <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="d0a9e1d2-830b-8897-3e90-ce1a562da014" field="selections" type="equal to" value="1.0"/>
+                            <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="0df0a0f1-9ddf-f57b-cada-26dce57443ec" field="selections" type="equal to" value="1.0"/>
+                            <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="92febb79-a07d-220a-401d-210880a60296" field="selections" type="equal to" value="1.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </link>
