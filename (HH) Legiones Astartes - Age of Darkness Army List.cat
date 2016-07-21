@@ -996,6 +996,12 @@
               </conditions>
               <conditionGroups/>
             </modifier>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
           </modifiers>
           <links>
             <link id="2032-855c-3aef-784b" targetId="3215e60a-5c78-9efe-e6d4-ba87f3e74a21" linkType="entry">
@@ -7724,7 +7730,14 @@ If all of the HQ units in the Ultramarines detachment are slain, their opponent 
         <entryGroup id="67bbf837-cb16-b7c5-f2d8-d69d91ba8193" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <links>
             <link id="5f0e91d3-b7b6-e957-5295-aa2dd86452f3" targetId="a8eda173-f749-cfb6-fd0e-3d6fb35cad3b" linkType="entry">
               <modifiers>
@@ -11563,6 +11576,12 @@ If all of the HQ units in the Ultramarines detachment are slain, their opponent 
             <modifier type="hide" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="957bd47c-1513-0f25-6950-611bced0c302" incrementChildId="053f100e-260f-7dd1-0f73-7c61d67e4d3c" incrementField="selections" incrementValue="1.0">
               <conditions>
                 <condition parentId="957bd47c-1513-0f25-6950-611bced0c302" childId="053f100e-260f-7dd1-0f73-7c61d67e4d3c" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -16268,7 +16287,14 @@ When rolling on the Thunderblitz and/or Catastrophic Damage tables for the Malca
         <entryGroup id="b3599dc4-ccc6-bbb9-5abf-25593b4128e4" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <links>
             <link id="6148b2d4-72eb-2e62-1b04-9fbd400348f0" targetId="3215e60a-5c78-9efe-e6d4-ba87f3e74a21" linkType="entry">
               <modifiers>
@@ -17020,7 +17046,14 @@ When rolling on the Thunderblitz and/or Catastrophic Damage tables for the Malca
         <entryGroup id="cda6c5c1-c988-0cb3-a02a-6cade997f240" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <links>
             <link id="cff78fb7-162a-b4fb-2feb-e320e72f47ed" targetId="3215e60a-5c78-9efe-e6d4-ba87f3e74a21" linkType="entry">
               <modifiers>
@@ -25767,10 +25800,16 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
       </entryGroups>
       <modifiers>
         <modifier type="hide" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="bbe52603-6dbe-5d2a-0c41-73cee758ab9d" field="selections" type="equal to" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="force type" childId="bbe52603-6dbe-5d2a-0c41-73cee758ab9d" field="selections" type="equal to" value="0.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <rules>
@@ -25846,7 +25885,14 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
         <entryGroup id="95cae0cd-736a-74e7-a097-ee71d4b6cbc9" name="Dedicated Transport" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <links>
             <link id="d62cb941-2904-2a95-03ce-60d8d7e3f90b" targetId="a8eda173-f749-cfb6-fd0e-3d6fb35cad3b" linkType="entry">
               <modifiers>
@@ -25861,10 +25907,16 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
             <link id="2840-e66f-614e-9a2d" targetId="ba9221f1-7a8a-4d55-0c30-ca4c502fab8d" linkType="entry">
               <modifiers>
                 <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="59dc2f80-3991-a6ca-84d7-7e4299c755ad" childId="faffe0f0-aee5-4d6b-60d0-4ece9dd625fc" field="selections" type="greater than" value="5.0"/>
-                  </conditions>
-                  <conditionGroups/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+                        <condition parentId="59dc2f80-3991-a6ca-84d7-7e4299c755ad" childId="faffe0f0-aee5-4d6b-60d0-4ece9dd625fc" field="selections" type="greater than" value="5.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </link>
@@ -26786,7 +26838,14 @@ All models in an army with Ferrus Manus with Legions Astartes (Iron Hands) gain 
         <entryGroup id="c99b5c51-52ba-845d-ce30-694b9a03d9b1" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <links>
             <link id="3b8f10d8-86f9-884c-afbb-5d8dc6266c74" targetId="a8eda173-f749-cfb6-fd0e-3d6fb35cad3b" linkType="entry">
               <modifiers>
@@ -26814,10 +26873,16 @@ All models in an army with Ferrus Manus with Legions Astartes (Iron Hands) gain 
             <link id="6704-df27-ef99-c2da" targetId="ba9221f1-7a8a-4d55-0c30-ca4c502fab8d" linkType="entry">
               <modifiers>
                 <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="b14a9d49-fb08-e3f5-8e39-6dedfc0a69c1" childId="c7553117-133b-e169-22bf-fe775a0927da" field="selections" type="greater than" value="4.0"/>
-                  </conditions>
-                  <conditionGroups/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+                        <condition parentId="b14a9d49-fb08-e3f5-8e39-6dedfc0a69c1" childId="c7553117-133b-e169-22bf-fe775a0927da" field="selections" type="greater than" value="4.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </link>
@@ -27207,7 +27272,14 @@ In addtion, all units with the Legiones Astartes (Emperor&apos;s Children) rule 
         <entryGroup id="b44c-1c86-f3f1-ecb7" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <links>
             <link id="e307-17ef-3090-10c9" targetId="a8eda173-f749-cfb6-fd0e-3d6fb35cad3b" linkType="entry">
               <modifiers>
@@ -27242,10 +27314,16 @@ In addtion, all units with the Legiones Astartes (Emperor&apos;s Children) rule 
             <link id="7515-4982-38aa-051b" targetId="ba9221f1-7a8a-4d55-0c30-ca4c502fab8d" linkType="entry">
               <modifiers>
                 <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="fea8-bbb6-fe4d-2892" childId="9c9a-fc65-224d-37b1" field="selections" type="greater than" value="4.0"/>
-                  </conditions>
-                  <conditionGroups/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+                        <condition parentId="fea8-bbb6-fe4d-2892" childId="9c9a-fc65-224d-37b1" field="selections" type="greater than" value="4.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </link>
@@ -27597,10 +27675,15 @@ For each Dreadnought destroyed from the detachment, the opposing player gains an
               <conditionGroups/>
             </modifier>
             <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="force type" childId="bfe0-fcb4-aa9e-da71" field="selections" type="at least" value="1.0"/>
-              </conditions>
-              <conditionGroups/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition parentId="force type" childId="bfe0-fcb4-aa9e-da71" field="selections" type="at least" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <links>
@@ -27762,7 +27845,14 @@ For each Dreadnought destroyed from the detachment, the opposing player gains an
         <entryGroup id="a5e54aed-c17e-f1a8-549d-49613c45f921" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <links>
             <link id="d56fd1b9-e250-3c10-f65f-c4b09fae3a14" targetId="a8eda173-f749-cfb6-fd0e-3d6fb35cad3b" linkType="entry">
               <modifiers>
@@ -27790,10 +27880,16 @@ For each Dreadnought destroyed from the detachment, the opposing player gains an
             <link id="5062-a8a9-da9c-361a" targetId="ba9221f1-7a8a-4d55-0c30-ca4c502fab8d" linkType="entry">
               <modifiers>
                 <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="38de9d1a-135a-55d2-32e0-575f2726d753" childId="f02afe03-f2a4-e126-8587-5210111ad1e7" field="selections" type="greater than" value="4.0"/>
-                  </conditions>
-                  <conditionGroups/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+                        <condition parentId="38de9d1a-135a-55d2-32e0-575f2726d753" childId="f02afe03-f2a4-e126-8587-5210111ad1e7" field="selections" type="greater than" value="4.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </link>
@@ -28115,10 +28211,16 @@ For each Dreadnought destroyed from the detachment, the opposing player gains an
             <link id="cf15-298e-75fd-3495" targetId="ba9221f1-7a8a-4d55-0c30-ca4c502fab8d" linkType="entry">
               <modifiers>
                 <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="c23a1644-8684-27a2-7028-975fab8a0ccf" childId="c30ecda4-4475-31e1-fc7f-1b5f61637cfe" field="selections" type="greater than" value="4.0"/>
-                  </conditions>
-                  <conditionGroups/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+                        <condition parentId="c23a1644-8684-27a2-7028-975fab8a0ccf" childId="c30ecda4-4475-31e1-fc7f-1b5f61637cfe" field="selections" type="greater than" value="4.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </link>
@@ -28472,7 +28574,14 @@ The army may not include a Fortifications Detachment or an Allied Detachment</de
         <entryGroup id="b11fe3e2-f810-e3aa-60ef-3f7f79792cd9" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <links>
             <link id="97a0dfc3-7506-d47b-bf16-00cbf71f3c89" targetId="3215e60a-5c78-9efe-e6d4-ba87f3e74a21" linkType="entry">
               <modifiers>
@@ -28534,7 +28643,14 @@ The army may not include a Fortifications Detachment or an Allied Detachment</de
               </modifiers>
             </link>
             <link id="52c09a24-9ea1-0e40-83bb-1367155e32e3" targetId="ba9221f1-7a8a-4d55-0c30-ca4c502fab8d" linkType="entry">
-              <modifiers/>
+              <modifiers>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
             </link>
           </links>
         </entryGroup>
@@ -29027,7 +29143,14 @@ This Rite of War may not be taken by a detachment belonging to the Loyalist fact
         <entryGroup id="fc1a-06fe-a0fe-b2a3" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <links>
             <link id="26bf-8bf0-ebaf-4ddf" targetId="a8eda173-f749-cfb6-fd0e-3d6fb35cad3b" linkType="entry">
               <modifiers/>
@@ -29552,10 +29675,23 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
               </conditions>
               <conditionGroups/>
             </modifier>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
           </modifiers>
           <links>
             <link id="a6359f7c-6347-94c1-3722-9489a4c473ca" targetId="ba9221f1-7a8a-4d55-0c30-ca4c502fab8d" linkType="entry">
-              <modifiers/>
+              <modifiers>
+                <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
             </link>
             <link id="288e8a53-724a-6f6f-2090-0609460d0bc1" targetId="a8eda173-f749-cfb6-fd0e-3d6fb35cad3b" linkType="entry">
               <modifiers/>
@@ -29848,7 +29984,14 @@ The army may not include a Fortification Detachment or an Allied Detachment.</de
         <entryGroup id="fa691483-66c5-0f4f-743c-4d805747cdcc" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <links>
             <link id="d2a5ab1f-4024-fc8f-2c41-5b2e9ea9bde9" targetId="3215e60a-5c78-9efe-e6d4-ba87f3e74a21" linkType="entry">
               <modifiers>
@@ -33914,7 +34057,14 @@ No units or models with Terminator armour of any type may be included in a detac
         <entryGroup id="10198268-7fa9-6073-bb30-b1a51781d71f" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <links>
             <link id="c194a0a3-f0b0-71d2-c7fe-3c0c26864aa8" targetId="8cc05fec-8274-bea3-5d54-d249b36a3209" linkType="entry">
               <modifiers>
@@ -33931,7 +34081,14 @@ No units or models with Terminator armour of any type may be included in a detac
               <modifiers/>
             </link>
             <link id="88986a8d-dbbe-deac-4d1c-6c942818aae9" targetId="ba9221f1-7a8a-4d55-0c30-ca4c502fab8d" linkType="entry">
-              <modifiers/>
+              <modifiers>
+                <modifier type="hide" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
             </link>
           </links>
         </entryGroup>
@@ -34523,7 +34680,14 @@ No units or models with Terminator armour of any type may be included in a detac
         <entryGroup id="1920936e-b68b-62bb-fe8d-d0b5a4a1270c" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <links>
             <link id="6de36651-c3db-90c2-f828-a8627297ee06" targetId="a8eda173-f749-cfb6-fd0e-3d6fb35cad3b" linkType="entry">
               <modifiers>
@@ -34541,10 +34705,16 @@ No units or models with Terminator armour of any type may be included in a detac
             <link id="1f58cbbc-caff-5e2e-5ad8-5f4c3f0534aa" targetId="ba9221f1-7a8a-4d55-0c30-ca4c502fab8d" linkType="entry">
               <modifiers>
                 <modifier type="hide" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                  <conditions>
-                    <condition parentId="3bd8064e-91eb-24e0-b07f-555fceb5f674" childId="91e33f36-7917-a2d4-7a87-c83355bbb592" field="selections" type="greater than" value="4.0"/>
-                  </conditions>
-                  <conditionGroups/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+                        <condition parentId="3bd8064e-91eb-24e0-b07f-555fceb5f674" childId="91e33f36-7917-a2d4-7a87-c83355bbb592" field="selections" type="greater than" value="4.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </link>
@@ -35649,7 +35819,14 @@ No units or models with Terminator armour of any type may be included in a detac
         <entryGroup id="730c0cbe-6d79-17fd-910d-1f5be6fc56f5" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <links>
             <link id="c2d592fb-a296-f0ad-2452-90e43bdb82fe" targetId="a8eda173-f749-cfb6-fd0e-3d6fb35cad3b" linkType="entry">
               <modifiers>
@@ -36563,7 +36740,14 @@ This Rite of War may only be used by a detachment belonging to the Loyalist fact
         <entryGroup id="238314de-0c4f-acb4-4272-04338eed4360" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <links>
             <link id="ae70b504-8685-0f61-dffa-cf1f72359ffa" targetId="a8eda173-f749-cfb6-fd0e-3d6fb35cad3b" linkType="entry">
               <modifiers>
@@ -36834,7 +37018,14 @@ This Rite of War may only be used by a detachment belonging to the Loyalist fact
         <entryGroup id="3cd4d223-9f88-f346-a6f8-b9dd0a48cbc9" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <links>
             <link id="7eb96d37-0c23-e739-91df-1656260af2eb" targetId="3215e60a-5c78-9efe-e6d4-ba87f3e74a21" linkType="entry">
               <modifiers>
@@ -37528,7 +37719,14 @@ This Rite of War may only be used by a detachment belonging to the Loyalist fact
         <entryGroup id="1033-0e2c-3c4b-3153" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <links>
             <link id="a05e-79e0-07a0-df5b" targetId="604c-bdd0-25b9-2bed" linkType="entry">
               <modifiers>
@@ -38299,7 +38497,14 @@ Models from the detachment with the Legiones Astartes special rule count all All
         <entryGroup id="ac425938-a3c7-dcb2-7949-646bb6670a44" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <links>
             <link id="c834ae21-2a08-7be9-ca50-0281d9bce28e" targetId="a8eda173-f749-cfb6-fd0e-3d6fb35cad3b" linkType="entry">
               <modifiers>
@@ -38459,7 +38664,14 @@ Models from the detachment with the Legiones Astartes special rule count all All
         <entryGroup id="20e51f3e-f27c-3dd4-b7a2-2aff3500313f" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <links>
             <link id="12c25449-951f-7cb8-c5b4-019d78841431" targetId="a8eda173-f749-cfb6-fd0e-3d6fb35cad3b" linkType="entry">
               <modifiers>
@@ -39073,7 +39285,14 @@ No Lords of War choice may be taken by the detachment.</description>
         <entryGroup id="71ddcf20-3d7e-34b3-cec5-4e8bf2d1e96f" name="Dedicated Transpot" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <links>
             <link id="f2a1c508-a893-a85a-fdd4-3b7a81481d5c" targetId="a8eda173-f749-cfb6-fd0e-3d6fb35cad3b" linkType="entry">
               <modifiers/>
@@ -39711,6 +39930,12 @@ No Lords of War choice may be taken by the detachment.</description>
                   <conditionGroups/>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
             </modifier>
           </modifiers>
           <links>
@@ -41054,7 +41279,14 @@ The army may not include a Fortifications Detachment or an Allied Detachment</de
         <entryGroup id="ecb0fb07-238e-0bec-5f71-595536833b4c" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <links>
             <link id="f03633aa-345a-cfa5-f4e3-e4914104695a" targetId="3215e60a-5c78-9efe-e6d4-ba87f3e74a21" linkType="entry">
               <modifiers>
@@ -41742,7 +41974,22 @@ The army may not make use of a Fortification Detachment or an Allied Detachment.
           <conditionGroups/>
         </modifier>
       </modifiers>
-      <rules/>
+      <rules>
+        <rule id="9de0-1b60-3902-1a75" name="The Black Reaving" hidden="false" book="AODL">
+          <description>Effects
+• Encirclement: Any non-Vehicle unit which is part of a detachment using this Rite of War which enters play from reserve (other than by Deep Strike) has the Fleet special rule on the turn it arrives.
+• Cut them Down: Units with the Legiones Astartes (Sons of Horus) special rule taken as part of a detachment using this Rite of War gain the Rage special rule when they successfully charge an enemy unit which is already engaged in an on-going assault.
+• Reaver Onslaught: Sons of Horus Legion Reaver squads may be chosen as Troops choices for detachments using this Rite of War.
+• The Eye of the Warmaster: Justaerin Terminators chosen as part of a detachment using this Rite of War gain the Deep Strike special rule.
+Limitations
+• Detachments using this Rite of War must take a Master of Signal as a Compulsory HQ choice, in addition to the Praetor or other characters whose presence allows for the use of a Rite of War.
+• Detachments using this Rite of War must take more Fast Attack choices than Heavy Support choices from the Force Organisation chart for the mission type they are using. So, for example, it the force contains three Fast Attack choices, it may also contain up to two Heavy Support choices 
+• Detachments using this Rite of War must take an additional Compulsory Troops choice as part of their Force Organisation chart.
+• Primary detachments using this Rite of War may not take Fortification detachments
+</description>
+          <modifiers/>
+        </rule>
+      </rules>
       <profiles/>
       <links/>
     </entry>
@@ -43089,7 +43336,14 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
         <entryGroup id="fa7646a0-fffb-0627-eb5b-c9d46c42b2b0" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <links>
             <link id="6844293f-5faf-a19f-152d-8ca0e177d0f5" targetId="a8eda173-f749-cfb6-fd0e-3d6fb35cad3b" linkType="entry">
               <modifiers>
@@ -43782,7 +44036,14 @@ No Super-heavy Vehicles or Gargantuan Creatures may be taken</description>
     <entryGroup id="571b8787-f049-c91a-f5c2-136ff022621e" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <links>
         <link id="d8c5a670-18bd-b1a4-5955-d1d50845aea7" targetId="3215e60a-5c78-9efe-e6d4-ba87f3e74a21" linkType="entry">
           <modifiers>
