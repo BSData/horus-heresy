@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="132" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Age of Darkness Army List" books="HH Series" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="133" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Age of Darkness Army List" books="HH Series" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="AODAL" page="67">
       <entries>
@@ -10178,7 +10178,11 @@ If all of the HQ units in the Ultramarines detachment are slain, their opponent 
                   <modifiers/>
                   <rules/>
                   <profiles/>
-                  <links/>
+                  <links>
+                    <link id="3a6e-ec54-b860-6efd" targetId="65b6-c9fc-aeb3-27be" linkType="profile">
+                      <modifiers/>
+                    </link>
+                  </links>
                 </entry>
                 <entry id="1ebca444-38a6-f209-3e9f-c160da192519" name="Charnabal Sabre" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
@@ -10195,7 +10199,14 @@ If all of the HQ units in the Ultramarines detachment are slain, their opponent 
                 <entry id="a5b897df-de63-9af6-a11f-f209625d0c54" name="Power Weapon" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
                   <entryGroups/>
-                  <modifiers/>
+                  <modifiers>
+                    <modifier type="set" field="points" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="be0f793d-d50b-e7b4-2c0c-43b13d67408a" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
                   <rules/>
                   <profiles/>
                   <links/>
@@ -10370,6 +10381,12 @@ If all of the HQ units in the Ultramarines detachment are slain, their opponent 
                       <conditions/>
                       <conditionGroups/>
                     </modifier>
+                    <modifier type="decrement" field="points" value="15.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="be0f793d-d50b-e7b4-2c0c-43b13d67408a" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
                   </modifiers>
                 </link>
                 <link id="4273-bc9e-ce6d-13f3" targetId="9756-a335-ec78-d580" linkType="entry">
@@ -10461,15 +10478,10 @@ If all of the HQ units in the Ultramarines detachment are slain, their opponent 
                   <entryGroups/>
                   <modifiers>
                     <modifier type="set" field="points" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-                      <conditions/>
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="be0f793d-d50b-e7b4-2c0c-43b13d67408a" field="selections" type="equal to" value="0.0"/>
-                          </conditions>
-                          <conditionGroups/>
-                        </conditionGroup>
-                      </conditionGroups>
+                      <conditions>
+                        <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="be0f793d-d50b-e7b4-2c0c-43b13d67408a" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
                     </modifier>
                   </modifiers>
                   <rules/>
@@ -10490,6 +10502,7 @@ If all of the HQ units in the Ultramarines detachment are slain, their opponent 
                             <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="0df0a0f1-9ddf-f57b-cada-26dce57443ec" field="selections" type="equal to" value="1.0"/>
                             <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="53d4a249-5fa9-8bac-fda2-0c9419bb3564" field="selections" type="equal to" value="1.0"/>
                             <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="d768afd7-dcf2-b2b4-ba38-ec74900ba3da" field="selections" type="equal to" value="1.0"/>
+                            <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="92febb79-a07d-220a-401d-210880a60296" field="selections" type="equal to" value="1.0"/>
                           </conditions>
                           <conditionGroups/>
                         </conditionGroup>
@@ -10643,6 +10656,12 @@ If all of the HQ units in the Ultramarines detachment are slain, their opponent 
                   <modifiers>
                     <modifier type="set" field="points" value="15.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                       <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                    <modifier type="decrement" field="points" value="15.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="be0f793d-d50b-e7b4-2c0c-43b13d67408a" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
                       <conditionGroups/>
                     </modifier>
                   </modifiers>
