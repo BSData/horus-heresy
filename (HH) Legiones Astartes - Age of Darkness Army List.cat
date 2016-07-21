@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="125" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Age of Darkness Army List" books="HH Series" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="126" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Age of Darkness Army List" books="HH Series" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="AODAL" page="67">
       <entries>
@@ -12609,7 +12609,7 @@ The neutron wave capacitor adds the Shock Pulse and Feedback special rules (see 
     </entry>
     <entry id="2fb4-7541-6f64-8ee8" name="Legion Jetbike Sky Slayer Squadron" points="30.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="AODAL" page="60">
       <entries>
-        <entry id="a895-d975-ace6-611f" name="Space Marine Sky Slayers" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="3" maxSelections="10" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+        <entry id="a895-d975-ace6-611f" name="Space Marine Sky Slayers" points="45.0" categoryId="(No Category)" type="upgrade" minSelections="3" maxSelections="5" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -12771,7 +12771,7 @@ The neutron wave capacitor adds the Shock Pulse and Feedback special rules (see 
         </entry>
       </entries>
       <entryGroups>
-        <entryGroup id="04d7-e2ec-a875-294f" name="The entire squadron may replace their Jetbike’s multi-melta with one of the following weapons. All squad members must be identically upgraded:" defaultEntryId="ede8-d1cb-2fc4-b7f4" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="04d7-e2ec-a875-294f" name="The entire squadron may replace their Jetbike’s multi-melta with one of the following weapons. All squad members must be identically upgraded:" defaultEntryId="ede8-d1cb-2fc4-b7f4" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="ede8-d1cb-2fc4-b7f4" name="Multi-Melta" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
@@ -12781,18 +12781,28 @@ The neutron wave capacitor adds the Shock Pulse and Feedback special rules (see 
               <profiles/>
               <links/>
             </entry>
-            <entry id="e3f0-c7e4-1792-c5b5" name="Plasma Cannon" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+            <entry id="e3f0-c7e4-1792-c5b5" name="Plasma Cannon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="increment" field="points" value="15.0" repeat="true" numRepeats="1" incrementParentId="2fb4-7541-6f64-8ee8" incrementChildId="a895-d975-ace6-611f" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <rules/>
               <profiles/>
               <links/>
             </entry>
-            <entry id="6d8f-887a-da7e-4a04" name="Volkite Culverin" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+            <entry id="6d8f-887a-da7e-4a04" name="Volkite Culverin" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="increment" field="points" value="10.0" repeat="true" numRepeats="1" incrementParentId="2fb4-7541-6f64-8ee8" incrementChildId="a895-d975-ace6-611f" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <rules/>
               <profiles/>
               <links>
@@ -12806,16 +12816,7 @@ The neutron wave capacitor adds the Shock Pulse and Feedback special rules (see 
             </entry>
           </entries>
           <entryGroups/>
-          <modifiers>
-            <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="2fb4-7541-6f64-8ee8" incrementChildId="a895-d975-ace6-611f" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="increment" field="minSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="2fb4-7541-6f64-8ee8" incrementChildId="a895-d975-ace6-611f" incrementField="selections" incrementValue="1.0">
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
+          <modifiers/>
           <links/>
         </entryGroup>
         <entryGroup id="e99c-164d-2e4f-a682" name="Legion-specific upgrades:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -23734,7 +23735,11 @@ You may not take a Fortification Allied Detachment</description>
           <description>Effects
 Armour of the Line:Legion Predator Strike Armour Squadrons (armed with Predator cannon turret and sponson weapons only) must be taken as compulsory Troops choices in the detachment, and may be taken as additional Troops choices. Legion Sicaran Battle Tanks may be taken as Elites choices in this detachment.
 Master of Armour:A single Sicaran Battle Tank or a Predator of any type available in the Legiones Astartes Age of Darkness Army list may be taken as a Company Command vehicle, counting as a HQ choice and for the purposes of selecting this Rite of War only, counts as having the Master of the Legion rule allowing this rite to be taken. The may also be the army’s Warlord. If this is the case instead of rolling for a Warlord Trait, this vehicle has the Super-heavy Command Tank vehicle upgrade (regardless of its type) and has +1 BS at no additional cost.
-Extended Range:All vehicles with the Tank type that have 3 or fewer Hull Points gain the Fast type if they do not have it already.</description>
+Extended Range:All vehicles with the Tank type that have 3 or fewer Hull Points gain the Fast type if they do not have it already.
+Limitations
+All Infantry units that can do so must purchase a Dedicated Transport, and those without the option must be deployed mounted in another vehicle which itself has a Transport capacity. All such vehicles must have the Tank or Super-heavy Tank type.
+The detachment may not have more Flyers or Skimmers (in total) than it has Tanks.
+The detachment may not include any fortifications or Immobile units.</description>
           <modifiers/>
         </rule>
       </rules>
@@ -34790,7 +34795,7 @@ No units or models with Terminator armour of any type may be included in a detac
                 </link>
               </links>
             </entryGroup>
-            <entryGroup id="1952c48e-c85f-e1c1-ce81-f09f303002c2" name="Exchange Bolt Pistol for:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entryGroup id="1952c48e-c85f-e1c1-ce81-f09f303002c2" name="Exchange Bolt Pistol for:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries>
                 <entry id="4fbb76b9-d77c-8711-01c4-7e928fd8d6b1" name="Volkite Serpenta" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
@@ -34812,7 +34817,12 @@ No units or models with Terminator armour of any type may be included in a detac
               <modifiers/>
               <links>
                 <link id="a826-80cb-d2f3-43fd" targetId="6131-e22d-754c-546f" linkType="entry">
-                  <modifiers/>
+                  <modifiers>
+                    <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
                 </link>
               </links>
             </entryGroup>
@@ -35140,9 +35150,27 @@ No units or models with Terminator armour of any type may be included in a detac
           </entries>
           <entryGroups/>
           <modifiers>
-            <modifier type="set" field="maxSelections" value="2.0" repeat="true" numRepeats="1" incrementParentId="5e9c6a5f-b807-27ae-8a84-90129437976b" incrementChildId="dd02066d-5458-c38d-990a-b6fdad016494" incrementField="selections" incrementValue="9.0">
+            <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="5e9c6a5f-b807-27ae-8a84-90129437976b" incrementChildId="dd02066d-5458-c38d-990a-b6fdad016494" incrementField="selections" incrementValue="9.0">
               <conditions/>
               <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="5e9c6a5f-b807-27ae-8a84-90129437976b" incrementChildId="f5c8-efa8-060d-eedf" incrementField="selections" incrementValue="5.0">
+              <conditions>
+                <condition parentId="5e9c6a5f-b807-27ae-8a84-90129437976b" childId="961c2463-e7c4-3ffc-6471-934442bf5692" field="selections" type="equal to" value="9.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition parentId="5e9c6a5f-b807-27ae-8a84-90129437976b" childId="f5c8-efa8-060d-eedf" field="selections" type="less than" value="9.0"/>
+                    <condition parentId="5e9c6a5f-b807-27ae-8a84-90129437976b" childId="f5c8-efa8-060d-eedf" field="selections" type="greater than" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <links>
@@ -35393,6 +35421,10 @@ No units or models with Terminator armour of any type may be included in a detac
           <entryGroups/>
           <modifiers>
             <modifier type="increment" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="5e9c6a5f-b807-27ae-8a84-90129437976b" incrementChildId="dd02066d-5458-c38d-990a-b6fdad016494" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="decrement" field="maxSelections" value="1.0" repeat="true" numRepeats="1" incrementParentId="5e9c6a5f-b807-27ae-8a84-90129437976b" incrementChildId="961c2463-e7c4-3ffc-6471-934442bf5692" incrementField="selections" incrementValue="1.0">
               <conditions/>
               <conditionGroups/>
             </modifier>
