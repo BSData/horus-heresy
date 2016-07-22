@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="143" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Age of Darkness Army List" books="HH Series" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="144" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Age of Darkness Army List" books="HH Series" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="AODAL" page="67">
       <entries>
@@ -9895,7 +9895,25 @@ If all of the HQ units in the Ultramarines detachment are slain, their opponent 
             <entry id="b15f-44df-493b-8055" name="Terminator Armour with Combi-bolter and Power Weapon" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="hide" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="53d4a249-5fa9-8bac-fda2-0c9419bb3564" field="selections" type="equal to" value="1.0"/>
+                        <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="41c9-58e2-8aec-dd82" field="selections" type="equal to" value="1.0"/>
+                        <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="d768afd7-dcf2-b2b4-ba38-ec74900ba3da" field="selections" type="equal to" value="1.0"/>
+                        <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="d0a9e1d2-830b-8897-3e90-ce1a562da014" field="selections" type="equal to" value="1.0"/>
+                        <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="0df0a0f1-9ddf-f57b-cada-26dce57443ec" field="selections" type="equal to" value="1.0"/>
+                        <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="80a93122-ed98-a665-5b8c-370d0a83ac13" field="selections" type="equal to" value="1.0"/>
+                        <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="ea6f-0a58-58b0-0d01" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <rules/>
               <profiles/>
               <links/>
@@ -14735,6 +14753,18 @@ When rolling on the Thunderblitz and/or Catastrophic Damage tables for the Malca
               <rules/>
               <profiles/>
               <links/>
+            </entry>
+            <entry id="dbb0-d5ed-7bde-21d4" name="Terminator Armour with Combi-bolter and Power Weapon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="3af1-15bb-8940-65db" targetId="085c-4547-9a40-d95b" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
             </entry>
           </entries>
           <entryGroups/>
@@ -25920,6 +25950,31 @@ Limitations
       <profiles/>
       <links/>
     </entry>
+    <entry id="aead-4441-7606-a93a" name="Armoured Encirclement" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="52fbec20-bbab-4ff5-4258-ef4cb6ca8752" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="52fbec20-bbab-4ff5-4258-ef4cb6ca8752" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="64fc-6538-3221-42f5" targetId="f81d-7422-bd86-6b93" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
     <entry id="d4a072f3-d9e1-f557-02f5-e0bd15cb38d0" name="Armoured Spearhead" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries/>
       <entryGroups/>
@@ -28746,6 +28801,25 @@ The army may not include a Fortification Detachment or an Allied Detachment.</de
       </profiles>
       <links/>
     </entry>
+    <entry id="91c6-68d0-3be1-59bd" name="Extra Armour" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="set" field="points" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="e1efefb5-5f19-7ef9-fe05-789e5e9b07a4" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="e28f-9e49-6eca-ae1f" targetId="14e3-be04-5745-5a08" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
     <entry id="4f3f-57e6-7d2f-16e1" name="Father to the Brethren of Iron" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups/>
@@ -30072,6 +30146,34 @@ For each Dreadnought destroyed from the detachment, the opposing player gains an
       <profiles/>
       <links>
         <link id="81c3f974-aecd-3862-5309-81c1cd49ec62" targetId="d4a1a878-9ad4-6ae0-a864-08f58264c4a5" linkType="rule">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="3efa-4805-66ca-0c55" name="Goliaths of War" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="4c70-2b48-cd37-dc23" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="4c70-2b48-cd37-dc23" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="f956-c5a9-fdd1-9f68" targetId="0c2c-7d18-3c65-67c5" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="a5bf-192f-ed29-54f7" targetId="7bfb-b84e-ed46-c005" linkType="rule">
           <modifiers/>
         </link>
       </links>
@@ -36188,6 +36290,23 @@ No units or models with Terminator armour of any type may be included in a detac
                 </link>
               </links>
             </entry>
+            <entry id="0f41-e344-fb32-8501" name="Terminator Armour with Combi-bolter and Power Weapon" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers>
+                <modifier type="increment" field="points" value="15.0" repeat="true" numRepeats="1" incrementParentId="0af4be1b-e2a3-c1dd-c49d-18c53e1088f8" incrementChildId="fe7bf3e4-6d84-89a3-463f-14ce40b4f7f0" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="787a-8267-cf34-978f" targetId="085c-4547-9a40-d95b" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
           </entries>
           <entryGroups/>
           <modifiers/>
@@ -37122,6 +37241,18 @@ No units or models with Terminator armour of any type may be included in a detac
               <profiles/>
               <links>
                 <link id="cabf-92d4-cda7-7916" targetId="48ee-9a7f-07f1-22d0" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
+            </entry>
+            <entry id="2218-e20b-a19b-9c30" name="Terminator Armour with Combi-bolter and Power Weapon" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+              <entries/>
+              <entryGroups/>
+              <modifiers/>
+              <rules/>
+              <profiles/>
+              <links>
+                <link id="944c-a1e8-b7d7-86b4" targetId="085c-4547-9a40-d95b" linkType="profile">
                   <modifiers/>
                 </link>
               </links>
@@ -44603,6 +44734,32 @@ Limitations
       <profiles/>
       <links/>
     </entry>
+    <entry id="42e3-71a8-37cd-aec0" name="The Dust of Untold Worlds" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="4c70-2b48-cd37-dc23" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="4c70-2b48-cd37-dc23" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="813d-16e5-cd28-c087" name="The Dust of Untold Worlds" hidden="false">
+          <description>All vehicles with the Tank type in a detachment using this Rite of War automatically ignore the first Dangerous Terrain test they fail and may add +1&quot; to the distance moved when going Flat Out.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links/>
+    </entry>
     <entry id="e1efefb5-5f19-7ef9-fe05-789e5e9b07a4" name="The Hammer of Olympia" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries/>
       <entryGroups/>
@@ -46666,104 +46823,6 @@ Limitations
 • No unit may include more than 15 models.
 • No vehicles other than Walkers may be taken.
 • No Super-heavy Vehicles or Gargantuan Creatures may be taken</description>
-          <modifiers/>
-        </rule>
-      </rules>
-      <profiles/>
-      <links/>
-    </entry>
-    <entry id="91c6-68d0-3be1-59bd" name="Extra Armour" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries/>
-      <entryGroups/>
-      <modifiers>
-        <modifier type="set" field="points" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="e1efefb5-5f19-7ef9-fe05-789e5e9b07a4" field="selections" type="equal to" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <rules/>
-      <profiles/>
-      <links>
-        <link id="e28f-9e49-6eca-ae1f" targetId="14e3-be04-5745-5a08" linkType="profile">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
-    <entry id="3efa-4805-66ca-0c55" name="Goliaths of War" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries/>
-      <entryGroups/>
-      <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="4c70-2b48-cd37-dc23" field="selections" type="equal to" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-        <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="4c70-2b48-cd37-dc23" field="selections" type="equal to" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <rules/>
-      <profiles/>
-      <links>
-        <link id="f956-c5a9-fdd1-9f68" targetId="0c2c-7d18-3c65-67c5" linkType="rule">
-          <modifiers/>
-        </link>
-        <link id="a5bf-192f-ed29-54f7" targetId="7bfb-b84e-ed46-c005" linkType="rule">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
-    <entry id="aead-4441-7606-a93a" name="Armoured Encirclement" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries/>
-      <entryGroups/>
-      <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="52fbec20-bbab-4ff5-4258-ef4cb6ca8752" field="selections" type="equal to" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-        <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="52fbec20-bbab-4ff5-4258-ef4cb6ca8752" field="selections" type="equal to" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <rules/>
-      <profiles/>
-      <links>
-        <link id="64fc-6538-3221-42f5" targetId="f81d-7422-bd86-6b93" linkType="rule">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
-    <entry id="42e3-71a8-37cd-aec0" name="The Dust of Untold Worlds" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries/>
-      <entryGroups/>
-      <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="4c70-2b48-cd37-dc23" field="selections" type="equal to" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-        <modifier type="set" field="minSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="4c70-2b48-cd37-dc23" field="selections" type="equal to" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <rules>
-        <rule id="813d-16e5-cd28-c087" name="The Dust of Untold Worlds" hidden="false">
-          <description>All vehicles with the Tank type in a detachment using this Rite of War automatically ignore the first Dangerous Terrain test they fail and may add +1&quot; to the distance moved when going Flat Out.</description>
           <modifiers/>
         </rule>
       </rules>
@@ -49030,6 +49089,9 @@ Available to Traitor faction Apothecaries and Primus Medicae models with the Leg
       <description>Models with this rule have a 5+ cover save on the turn they arrive via Deep Strike. </description>
       <modifiers/>
     </rule>
+    <rule id="7bfb-b84e-ed46-c005" name="Fear" hidden="false">
+      <modifiers/>
+    </rule>
     <rule id="5451750e-aef2-7915-77ce-6b2bd8416bac" name="Fearless" hidden="false" page="0">
       <modifiers/>
     </rule>
@@ -49397,6 +49459,9 @@ If a vehicle has been upgraded to a Super-heavy command tank, all allied infantr
       <description>Instead of using model&apos;s Attacks value, make a number of attacks equal to the number of enemy models in base contact.  </description>
       <modifiers/>
     </rule>
+    <rule id="0c2c-7d18-3c65-67c5" name="Tankhunters" hidden="false">
+      <modifiers/>
+    </rule>
     <rule id="333a54de-2edb-a60d-534b-392cc1d80b62" name="Underground Barracks" hidden="false" book="40k Apocalypse 2nd Ed" page="0">
       <modifiers/>
     </rule>
@@ -49427,12 +49492,6 @@ If a vehicle has been upgraded to a Super-heavy command tank, all allied infantr
     </rule>
     <rule id="a0004b05-48c7-5546-fcfc-61e504a5da38" name="Wrecker" hidden="false" book="HH:LACAL" page="87">
       <description>Attacks with this special rule may re-roll failed armour penetration rolls against fortifications and immobile structures and add +1 to any result rolled on the Building Damage chart.  If this attack damages a bulkhead or wall section of terrain and destroys it, remove that section of terrain from play if possible.  </description>
-      <modifiers/>
-    </rule>
-    <rule id="7bfb-b84e-ed46-c005" name="Fear" hidden="false">
-      <modifiers/>
-    </rule>
-    <rule id="0c2c-7d18-3c65-67c5" name="Tankhunters" hidden="false">
       <modifiers/>
     </rule>
   </sharedRules>
@@ -50316,6 +50375,24 @@ If a vehicle has been upgraded to a Super-heavy command tank, all allied infantr
       </characteristics>
       <modifiers/>
     </profile>
+    <profile id="ee83-129c-8efd-d5be" profileTypeId="56656869636c6523232344415441232323" name="Legion Predator Tank" hidden="false" book="HH:LACAL" page="51">
+      <characteristics>
+        <characteristic characteristicId="425323232344415441232323" name="BS" value="4"/>
+        <characteristic characteristicId="46726f6e7423232344415441232323" name="Front" value="13"/>
+        <characteristic characteristicId="5369646523232344415441232323" name="Side" value="11"/>
+        <characteristic characteristicId="5265617223232344415441232323" name="Rear" value="10"/>
+        <characteristic characteristicId="485023232344415441232323" name="HP" value="3"/>
+        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Tank"/>
+      </characteristics>
+      <modifiers>
+        <modifier type="set" field="5479706523232344415441232323" value="Tank, Fast" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+    </profile>
     <profile id="b8d20a55-69ff-eb96-e080-8f495bf99283" profileTypeId="556e697423232344415441232323" name="Legion Sergeant" hidden="false" book="HH:LACAL" page="202">
       <characteristics>
         <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Infantry (Character)"/>
@@ -50328,6 +50405,17 @@ If a vehicle has been upgraded to a Super-heavy command tank, all allied infantr
         <characteristic characteristicId="4123232344415441232323" name="A" value="2"/>
         <characteristic characteristicId="4c4423232344415441232323" name="LD" value="9"/>
         <characteristic characteristicId="5361766523232344415441232323" name="Save" value="3+"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="32e8-1f20-a3fc-7245" profileTypeId="56656869636c6523232344415441232323" name="Legion Sicaran Battle Tank" hidden="false" book="HH:LACAL" page="60">
+      <characteristics>
+        <characteristic characteristicId="425323232344415441232323" name="BS" value="4"/>
+        <characteristic characteristicId="46726f6e7423232344415441232323" name="Front" value="13"/>
+        <characteristic characteristicId="5369646523232344415441232323" name="Side" value="12"/>
+        <characteristic characteristicId="5265617223232344415441232323" name="Rear" value="12"/>
+        <characteristic characteristicId="485023232344415441232323" name="HP" value="3"/>
+        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Tank, Fast"/>
       </characteristics>
       <modifiers/>
     </profile>
@@ -51100,32 +51188,9 @@ If a vehicle has been upgraded to a Super-heavy command tank, all allied infantr
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="ee83-129c-8efd-d5be" profileTypeId="56656869636c6523232344415441232323" name="Legion Predator Tank" hidden="false" book="HH:LACAL" page="51">
+    <profile id="085c-4547-9a40-d95b" profileTypeId="57617267656172204974656d23232344415441232323" name="Terminator Armour" hidden="false" book="AODAL" page="133">
       <characteristics>
-        <characteristic characteristicId="425323232344415441232323" name="BS" value="4"/>
-        <characteristic characteristicId="46726f6e7423232344415441232323" name="Front" value="13"/>
-        <characteristic characteristicId="5369646523232344415441232323" name="Side" value="11"/>
-        <characteristic characteristicId="5265617223232344415441232323" name="Rear" value="10"/>
-        <characteristic characteristicId="485023232344415441232323" name="HP" value="3"/>
-        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Tank"/>
-      </characteristics>
-      <modifiers>
-        <modifier type="set" field="5479706523232344415441232323" value="Tank, Fast" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="4b6b-5323-3736-2a85" field="selections" type="equal to" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-    </profile>
-    <profile id="32e8-1f20-a3fc-7245" profileTypeId="56656869636c6523232344415441232323" name="Legion Sicaran Battle Tank" hidden="false" book="HH:LACAL" page="60">
-      <characteristics>
-        <characteristic characteristicId="425323232344415441232323" name="BS" value="4"/>
-        <characteristic characteristicId="46726f6e7423232344415441232323" name="Front" value="13"/>
-        <characteristic characteristicId="5369646523232344415441232323" name="Side" value="12"/>
-        <characteristic characteristicId="5265617223232344415441232323" name="Rear" value="12"/>
-        <characteristic characteristicId="485023232344415441232323" name="HP" value="3"/>
-        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Tank, Fast"/>
+        <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Terminator armour features a powerful support exoskeleton and internal energy supply, but pays for its unparalleled protection with bulk. A model in Terminator armour has the Relentless and Bulky special rules, and is not able to make Sweeping Advance moves unless otherwise specified. They also may not be transported in Rhino APCs. Terminator armour affords a 2+ armour save and a 5+ invulnerable save. Depending on its particular pattern, Terminator armour may also confer additional rules and abilities to its wearer."/>
       </characteristics>
       <modifiers/>
     </profile>
