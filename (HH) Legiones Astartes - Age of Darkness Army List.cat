@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="144" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Age of Darkness Army List" books="HH Series" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="145" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Age of Darkness Army List" books="HH Series" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="AODAL" page="67">
       <entries>
@@ -35395,6 +35395,14 @@ No units or models with Terminator armour of any type may be included in a detac
                   <profiles/>
                   <links/>
                 </entry>
+                <entry id="30b1-bd7d-58cb-1adb" name="Single Lightning Claw" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+                  <entries/>
+                  <entryGroups/>
+                  <modifiers/>
+                  <rules/>
+                  <profiles/>
+                  <links/>
+                </entry>
               </entries>
               <entryGroups/>
               <modifiers/>
@@ -35426,6 +35434,14 @@ No units or models with Terminator armour of any type may be included in a detac
                 </link>
                 <link id="db04-bffd-681c-3e84" targetId="5beb-0cde-90c1-0f88" linkType="entry">
                   <modifiers/>
+                </link>
+                <link id="c3a3-8cd9-b436-3b22" targetId="6435afdc-d8b1-09a1-a82a-9d4d7af1c869" linkType="entry">
+                  <modifiers>
+                    <modifier type="set" field="points" value="25.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
                 </link>
               </links>
             </entryGroup>
@@ -35465,7 +35481,14 @@ No units or models with Terminator armour of any type may be included in a detac
                 <characteristic characteristicId="4c4423232344415441232323" name="LD" value="9"/>
                 <characteristic characteristicId="5361766523232344415441232323" name="Save" value="3+"/>
               </characteristics>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="5361766523232344415441232323" value="2+" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="4e7b-f0a4-31c6-03d6" childId="2a88-79d9-61bd-6ec5" field="selections" type="equal to" value="1.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <links>
@@ -35710,7 +35733,14 @@ No units or models with Terminator armour of any type may be included in a detac
           <modifiers/>
         </link>
         <link id="bad5-adad-4f39-6044" targetId="067e9186-0fba-6430-507f-4fbaaecd0d17" linkType="profile">
-          <modifiers/>
+          <modifiers>
+            <modifier type="hide" field="None" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="9fb7-a82a-11cb-fc8e" childId="2f1e-c1ba-e240-73d2" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
         <link id="8224-05c0-eb21-ec50" targetId="345c9b22-c89e-3234-d710-9b9262a1fd38" linkType="profile">
           <modifiers/>
@@ -37816,23 +37846,54 @@ No units or models with Terminator armour of any type may be included in a detac
               <conditions/>
               <conditionGroups/>
             </modifier>
-            <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="5e9c6a5f-b807-27ae-8a84-90129437976b" incrementChildId="f5c8-efa8-060d-eedf" incrementField="selections" incrementValue="5.0">
-              <conditions>
-                <condition parentId="5e9c6a5f-b807-27ae-8a84-90129437976b" childId="961c2463-e7c4-3ffc-6471-934442bf5692" field="selections" type="equal to" value="9.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+            <modifier type="decrement" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="5e9c6a5f-b807-27ae-8a84-90129437976b" incrementChildId="f5c8-efa8-060d-eedf" incrementField="selections" incrementValue="4.0">
               <conditions/>
               <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition parentId="5e9c6a5f-b807-27ae-8a84-90129437976b" childId="f5c8-efa8-060d-eedf" field="selections" type="less than" value="9.0"/>
-                    <condition parentId="5e9c6a5f-b807-27ae-8a84-90129437976b" childId="f5c8-efa8-060d-eedf" field="selections" type="greater than" value="0.0"/>
-                  </conditions>
-                  <conditionGroups/>
+                <conditionGroup type="or">
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition parentId="5e9c6a5f-b807-27ae-8a84-90129437976b" childId="2aa4d284-0504-f14c-e27e-2982af8651ea" field="selections" type="equal to" value="8.0"/>
+                        <condition parentId="5e9c6a5f-b807-27ae-8a84-90129437976b" childId="f5c8-efa8-060d-eedf" field="selections" type="equal to" value="8.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition parentId="5e9c6a5f-b807-27ae-8a84-90129437976b" childId="f5c8-efa8-060d-eedf" field="selections" type="equal to" value="5.0"/>
+                        <condition parentId="5e9c6a5f-b807-27ae-8a84-90129437976b" childId="dd02066d-5458-c38d-990a-b6fdad016494" field="selections" type="equal to" value="5.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition parentId="5e9c6a5f-b807-27ae-8a84-90129437976b" childId="dd02066d-5458-c38d-990a-b6fdad016494" field="selections" type="equal to" value="4.0"/>
+                        <condition parentId="5e9c6a5f-b807-27ae-8a84-90129437976b" childId="f5c8-efa8-060d-eedf" field="selections" type="equal to" value="4.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition parentId="5e9c6a5f-b807-27ae-8a84-90129437976b" childId="dd02066d-5458-c38d-990a-b6fdad016494" field="selections" type="equal to" value="6.0"/>
+                        <condition parentId="5e9c6a5f-b807-27ae-8a84-90129437976b" childId="f5c8-efa8-060d-eedf" field="selections" type="equal to" value="6.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition parentId="5e9c6a5f-b807-27ae-8a84-90129437976b" childId="dd02066d-5458-c38d-990a-b6fdad016494" field="selections" type="equal to" value="7.0"/>
+                        <condition parentId="5e9c6a5f-b807-27ae-8a84-90129437976b" childId="f5c8-efa8-060d-eedf" field="selections" type="equal to" value="7.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" field="maxSelections" value="0.0" repeat="true" numRepeats="1" incrementParentId="5e9c6a5f-b807-27ae-8a84-90129437976b" incrementChildId="f5c8-efa8-060d-eedf" incrementField="selections" incrementValue="9.0">
+              <conditions/>
+              <conditionGroups/>
             </modifier>
           </modifiers>
           <links>
@@ -51020,6 +51081,12 @@ If a vehicle has been upgraded to a Super-heavy command tank, all allied infantr
       </characteristics>
       <modifiers/>
     </profile>
+    <profile id="085c-4547-9a40-d95b" profileTypeId="57617267656172204974656d23232344415441232323" name="Terminator Armour" hidden="false" book="AODAL" page="133">
+      <characteristics>
+        <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Terminator armour features a powerful support exoskeleton and internal energy supply, but pays for its unparalleled protection with bulk. A model in Terminator armour has the Relentless and Bulky special rules, and is not able to make Sweeping Advance moves unless otherwise specified. They also may not be transported in Rhino APCs. Terminator armour affords a 2+ armour save and a 5+ invulnerable save. Depending on its particular pattern, Terminator armour may also confer additional rules and abilities to its wearer."/>
+      </characteristics>
+      <modifiers/>
+    </profile>
     <profile id="b7d58e49-6b8c-56f3-df2c-472ac811a571" profileTypeId="57617267656172204974656d23232344415441232323" name="Trophies of Judgement" hidden="false" book="HH:LAICL" page="57">
       <characteristics>
         <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Provides Fear special rule"/>
@@ -51186,12 +51253,6 @@ If a vehicle has been upgraded to a Super-heavy command tank, all allied infantr
     <profile id="fb2c1440-364c-c4d1-137f-7e46f665b84c" profileTypeId="57617267656172204974656d23232344415441232323" name="Wreckage and Rubble" hidden="false" book="Stronghold Assault" page="0">
       <characteristics>
         <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Area Terrain. A model in cover behind wreckage or rubble has a 4+ cover save."/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="085c-4547-9a40-d95b" profileTypeId="57617267656172204974656d23232344415441232323" name="Terminator Armour" hidden="false" book="AODAL" page="133">
-      <characteristics>
-        <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Terminator armour features a powerful support exoskeleton and internal energy supply, but pays for its unparalleled protection with bulk. A model in Terminator armour has the Relentless and Bulky special rules, and is not able to make Sweeping Advance moves unless otherwise specified. They also may not be transported in Rhino APCs. Terminator armour affords a 2+ armour save and a 5+ invulnerable save. Depending on its particular pattern, Terminator armour may also confer additional rules and abilities to its wearer."/>
       </characteristics>
       <modifiers/>
     </profile>
