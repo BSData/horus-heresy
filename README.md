@@ -21,7 +21,7 @@ BSData organisation created this project. It's GitHub repository of datafiles. M
 
 __Okay, nice project. Is it actually working?__ _I just want those files..._
 
-Yeah! We have it hosted on AppSpot. Take a look: [BattleScribe Data on Appspot][http://battlescribedata.appspot.com/#/repo/horus-heresy]
+Yeah! We have it hosted on AppSpot. Take a look: [The Horus Heresy at BattleScribe Data on Appspot](http://battlescribedata.appspot.com/#/repo/horus-heresy)
 
 ##Standards##
 ###References###
