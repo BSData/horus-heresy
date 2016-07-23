@@ -21,8 +21,16 @@ BSData organisation created this project. It's GitHub repository of datafiles. M
 
 __Okay, nice project. Is it actually working?__ _I just want those files..._
 
-Yeah! We have it hosted on AppSpot. Take a look: [BattleScribe Data on Appspot][]
+Yeah! We have it hosted on AppSpot. Take a look: [BattleScribe Data on Appspot][http://battlescribedata.appspot.com/#/repo/horus-heresy]
 
+##Standards##
+###References###
+* Base Rulebook (7th Edition) = BRB 7th (I'm using the digital in order to copy/paste so no pages)
+* Legiones Astartes: Age of Darkness Army List = LA:AODAL
+* Legiones Astartes: Age of Darkness Legions = LA:ADL
+* Mechanicum: Taghmata Army List = M:TAL
+* Crusade Imperialis: Army List = CI:AL
+* Horus Heresy 1: Betrayal = HH1: Betrayal (and so on)
 
 ##Links##
 
