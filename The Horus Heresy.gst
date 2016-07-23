@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" revision="31" battleScribeVersion="1.15" name="Warhammer 30,000 - The Horus Heresy" books="" authorName="Millicant" authorContact="Submit &quot;New Issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues?page=1&amp;state=open" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" revision="32" battleScribeVersion="1.15" name="Warhammer 30,000 - The Horus Heresy" books="" authorName="Millicant" authorContact="Submit &quot;New Issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues?page=1&amp;state=open" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <forceTypes>
     <forceType id="416c6c696564204465746163686d656e7423232344415441232323" name="Allied Detachment" minSelections="0" maxSelections="-1" minPoints="0.0" maxPoints="-1.0" minPercentage="0" maxPercentage="-1" countTowardsParentMinSelections="false" countTowardsParentMaxSelections="false" countTowardsParentMinPoints="false" countTowardsParentMaxPoints="false" countTowardsParentMinPercentage="false" countTowardsParentMaxPercentage="false">
       <categories>
@@ -466,6 +466,19 @@
     <profileType id="57617267656172204974656d23232344415441232323" name="Wargear Item">
       <characteristics>
         <characteristic id="4465736372697074696f6e23232344415441232323" name="Description"/>
+      </characteristics>
+    </profileType>
+    <profileType id="dbe1-27e1-b8a6-8508" name="Flyer">
+      <characteristics>
+        <characteristic id="425323232344415441232323" name="BS"/>
+        <characteristic id="46726f6e7423232344415441232323" name="Front"/>
+        <characteristic id="5369646523232344415441232323" name="Side"/>
+        <characteristic id="5265617223232344415441232323" name="Rear"/>
+        <characteristic id="485023232344415441232323" name="HP"/>
+        <characteristic id="5479706523232344415441232323" name="Type"/>
+        <characteristic id="c509-8ffa-a93d-f1c8" name="Role"/>
+        <characteristic id="5bfa-3c51-5331-a417" name="Pursuit"/>
+        <characteristic id="5c1e-67a0-4b4c-f881" name="Agility"/>
       </characteristics>
     </profileType>
   </profileTypes>
