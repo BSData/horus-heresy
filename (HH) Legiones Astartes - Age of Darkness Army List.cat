@@ -19553,6 +19553,16 @@ Owing to the massive expenditure of ammunition involved, once a squad has made a
             <link id="07c8-2b18-ffc2-1dee" targetId="42ad-21b0-0d2e-1239" linkType="entry group">
               <modifiers/>
             </link>
+            <link id="d919-ca27-f8e2-6750" targetId="0c03-6162-7852-0adf" linkType="profile">
+              <modifiers>
+                <modifier type="hide" field="None" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                  <conditions>
+                    <condition parentId="a909-9659-925d-cf82" childId="2737-ef3e-3c73-950f" field="selections" type="equal to" value="0.0"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </link>
           </links>
         </entry>
       </entries>
@@ -24397,6 +24407,9 @@ other wounds the attack causes</description>
           <modifiers/>
         </link>
         <link id="5b50-3e0d-2cd5-1c0f" targetId="aead-4441-7606-a93a" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="e5dc-7b0a-22a4-cffc" targetId="0c03-6162-7852-0adf" linkType="profile">
           <modifiers/>
         </link>
       </links>
@@ -42468,9 +42481,9 @@ Limitations
     <entry id="6d50-58c0-1391-7468" name="Pair of side sponsons with one Lascannon and one twin-linked Heavy bolter" points="50.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups>
-        <entryGroup id="0aff-d11a-34eb-c326" name="May replace any of the sponsons&apos; twin-linked Heavy Bolters with:" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="0aff-d11a-34eb-c326" name="May replace any of the sponsons&apos; twin-linked Heavy Bolters with:" defaultEntryId="a58e-e260-a72a-cf02" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
-            <entry id="73e5-a0b1-fdab-fb80" name="Twin-linked Heavy Flamers" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+            <entry id="73e5-a0b1-fdab-fb80" name="Twin-linked Heavy Flamers" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -42482,7 +42495,7 @@ Limitations
                 </link>
               </links>
             </entry>
-            <entry id="1116-8328-25e7-9998" name="Twin-linked Iliastus Assault Cannons" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entry id="1116-8328-25e7-9998" name="Twin-linked Iliastus Assault Cannons" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers>
@@ -42504,7 +42517,7 @@ Limitations
                 </link>
               </links>
             </entry>
-            <entry id="a58e-e260-a72a-cf02" name="Twin-linked Heavy Bolters" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entry id="a58e-e260-a72a-cf02" name="Twin-linked Heavy Bolters" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries/>
               <entryGroups/>
               <modifiers/>
@@ -42525,11 +42538,7 @@ Limitations
       <modifiers/>
       <rules/>
       <profiles/>
-      <links>
-        <link id="1524-43ba-f0fd-1511" targetId="76e1-3508-92eb-b077" linkType="profile">
-          <modifiers/>
-        </link>
-      </links>
+      <links/>
     </entry>
     <entry id="d74303db-b69f-85c7-d14c-bf9743a70ff9" name="Palatine Blade Squad" points="55.0" categoryId="456c6974657323232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LAICL" page="31">
       <entries>
@@ -53826,6 +53835,15 @@ If a vehicle has been upgraded to a Super-heavy command tank, all allied infantr
     <profile id="fb2c1440-364c-c4d1-137f-7e46f665b84c" profileTypeId="57617267656172204974656d23232344415441232323" name="Wreckage and Rubble" hidden="false" book="Stronghold Assault" page="0">
       <characteristics>
         <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Area Terrain. A model in cover behind wreckage or rubble has a 4+ cover save."/>
+      </characteristics>
+      <modifiers/>
+    </profile>
+    <profile id="0c03-6162-7852-0adf" profileTypeId="576561706f6e23232344415441232323" name="Demolisher Cannon" hidden="false" book="HH:AODAL" page="125">
+      <characteristics>
+        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="24&quot;"/>
+        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="10"/>
+        <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
+        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Ordnance 1, Large Blast (5&quot;)"/>
       </characteristics>
       <modifiers/>
     </profile>
