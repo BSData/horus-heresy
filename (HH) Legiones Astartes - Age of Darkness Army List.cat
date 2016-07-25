@@ -17535,7 +17535,7 @@ When rolling on the Thunderblitz and/or Catastrophic Damage tables for the Malca
           <entryGroups/>
           <modifiers/>
           <links>
-            <link id="c0c1-07e4-dcb4-5aff" targetId="9c50-384a-19e6-dac5" linkType="entry group">
+            <link id="c0c1-07e4-dcb4-5aff" targetId="a93f-f8e2-b9da-a6b0" linkType="entry">
               <modifiers/>
             </link>
           </links>
@@ -24403,7 +24403,7 @@ other wounds the attack causes</description>
         <link id="f256-74e6-532c-0105" targetId="6d50-58c0-1391-7468" linkType="entry">
           <modifiers/>
         </link>
-        <link id="3dee-e595-2431-fa86" targetId="9c50-384a-19e6-dac5" linkType="entry group">
+        <link id="3dee-e595-2431-fa86" targetId="a93f-f8e2-b9da-a6b0" linkType="entry">
           <modifiers/>
         </link>
         <link id="5b50-3e0d-2cd5-1c0f" targetId="aead-4441-7606-a93a" linkType="entry">
@@ -24500,7 +24500,7 @@ other wounds the attack causes</description>
         <link id="3cd3-e0a1-e54f-d207" targetId="aead-4441-7606-a93a" linkType="entry">
           <modifiers/>
         </link>
-        <link id="601e-383c-3f8f-a36d" targetId="9c50-384a-19e6-dac5" linkType="entry group">
+        <link id="601e-383c-3f8f-a36d" targetId="a93f-f8e2-b9da-a6b0" linkType="entry">
           <modifiers/>
         </link>
       </links>
@@ -25979,10 +25979,10 @@ All Death of Glory attacks, Ram impacts, or Thunderblitzs that target the Minota
         <link id="adf7-94db-10d6-f470" targetId="6d50-58c0-1391-7468" linkType="entry">
           <modifiers/>
         </link>
-        <link id="6652-cbaf-e6a0-857c" targetId="9c50-384a-19e6-dac5" linkType="entry group">
+        <link id="6652-cbaf-e6a0-857c" targetId="a93f-f8e2-b9da-a6b0" linkType="entry">
           <modifiers/>
         </link>
-        <link id="dcfe-f514-ef2f-20c6" targetId="85b5-558c-ed01-0bc4" linkType="entry group">
+        <link id="dcfe-f514-ef2f-20c6" targetId="5450-8257-60ca-dffd" linkType="entry">
           <modifiers/>
         </link>
       </links>
@@ -26104,7 +26104,7 @@ All Death of Glory attacks, Ram impacts, or Thunderblitzs that target the Minota
         <link id="505e-a9c0-6108-1437" targetId="6c05-70b5-356b-d5c8" linkType="rule">
           <modifiers/>
         </link>
-        <link id="3a79-0554-0715-8e4e" targetId="9c50-384a-19e6-dac5" linkType="entry group">
+        <link id="3a79-0554-0715-8e4e" targetId="a93f-f8e2-b9da-a6b0" linkType="entry">
           <modifiers/>
         </link>
         <link id="546c-257c-ae1c-6620" targetId="6d50-58c0-1391-7468" linkType="entry">
@@ -26211,13 +26211,13 @@ All Death of Glory attacks, Ram impacts, or Thunderblitzs that target the Minota
         <link id="9a13-158d-4a37-5186" targetId="6c05-70b5-356b-d5c8" linkType="rule">
           <modifiers/>
         </link>
-        <link id="4c29-9866-dd38-198e" targetId="85b5-558c-ed01-0bc4" linkType="entry group">
+        <link id="4c29-9866-dd38-198e" targetId="5450-8257-60ca-dffd" linkType="entry">
           <modifiers/>
         </link>
         <link id="2433-dd5d-3ead-4a1c" targetId="6d50-58c0-1391-7468" linkType="entry">
           <modifiers/>
         </link>
-        <link id="15fe-fbbc-a388-65ba" targetId="9c50-384a-19e6-dac5" linkType="entry group">
+        <link id="15fe-fbbc-a388-65ba" targetId="a93f-f8e2-b9da-a6b0" linkType="entry">
           <modifiers/>
         </link>
       </links>
@@ -49029,6 +49029,33 @@ Limitations
       <profiles/>
       <links/>
     </entry>
+    <entry id="a93f-f8e2-b9da-a6b0" name="Space Marine Legion Crew" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:AODAL" page="10">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="c6df-0d5e-2a7e-b113" targetId="e1d88320-50a5-edf3-0542-004b2f5c917e" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
+    <entry id="5450-8257-60ca-dffd" name="May replace one pair of side-sponson Lascannons with: Targeters (+1 BS)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="direct parent" childId="adf7-94db-10d6-f470" field="selections" type="at least" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
   </sharedEntries>
   <sharedEntryGroups>
     <entryGroup id="e0f5d669-ba31-0459-ab56-be02335a2d17" name="Battlements &amp; Battlefield" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -51210,47 +51237,6 @@ Limitations
           <entries/>
           <entryGroups/>
           <modifiers/>
-          <rules/>
-          <profiles/>
-          <links/>
-        </entry>
-      </entries>
-      <entryGroups/>
-      <modifiers/>
-      <links/>
-    </entryGroup>
-    <entryGroup id="9c50-384a-19e6-dac5" name="May be upgraded to Space Marine Legion Crew" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries>
-        <entry id="fc45-3956-2749-b543" name="Space Marine Legion Crew" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:AODAL" page="10">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles/>
-          <links>
-            <link id="76a8-c029-8906-6110" targetId="e1d88320-50a5-edf3-0542-004b2f5c917e" linkType="profile">
-              <modifiers/>
-            </link>
-          </links>
-        </entry>
-      </entries>
-      <entryGroups/>
-      <modifiers/>
-      <links/>
-    </entryGroup>
-    <entryGroup id="85b5-558c-ed01-0bc4" name="May replace side-sponson Lascannons with:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries>
-        <entry id="4216-d94d-a5b6-2bcb" name="Targeters (+1 BS)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers>
-            <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-              <conditions>
-                <condition parentId="direct parent" childId="adf7-94db-10d6-f470" field="selections" type="greater than" value="1.0"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
           <rules/>
           <profiles/>
           <links/>
