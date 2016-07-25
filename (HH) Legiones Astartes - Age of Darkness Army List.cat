@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="156" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Age of Darkness Army List" books="HH Series" authorName="Millicant, capitaladot" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="157" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Age of Darkness Army List" books="HH Series" authorName="Millicant, capitaladot" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="AODAL" page="67">
       <entries>
@@ -13116,7 +13116,12 @@ The neutron wave capacitor adds the Shock Pulse and Feedback special rules (see 
             <characteristic characteristicId="485023232344415441232323" name="HP" value="12"/>
             <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Super-heavy Vehicle"/>
           </characteristics>
-          <modifiers/>
+          <modifiers>
+            <modifier type="increment" field="425323232344415441232323" value="1" repeat="true" numRepeats="1" incrementParentId="a2e58b26-222b-f57d-6068-0fcf62408a57" incrementChildId="5b666d4c-9a75-8b11-6552-c88c66ca3b6e" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </profile>
         <profile id="9d083c53-2df1-ae5e-f4ab-d1504d1ac7ef" profileTypeId="576561706f6e23232344415441232323" name="Fellblade Accelerator Cannon (HE Shell)" hidden="false" book="HH:LACAL" page="70">
           <characteristics>
@@ -17475,21 +17480,6 @@ When rolling on the Thunderblitz and/or Catastrophic Damage tables for the Malca
     <entry id="3a43ab18-4bef-179b-8619-09cf049d00c0" name="Legion Stormblade" points="455.0" categoryId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" type="upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="AODAL" page="85">
       <entries/>
       <entryGroups>
-        <entryGroup id="e2d31462-017f-2690-82e5-b1ce87650b7a" name="May take up to two:" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="8be192da-eb5a-9d50-64f5-86d62a169ecf" name="Pairs of side sponsons, each with one Lascannon and one twin-linked Heavy Bolter" points="50.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links/>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <links/>
-        </entryGroup>
         <entryGroup id="92b7e779-5bfd-04ce-4209-1875442fff39" name="May take any of the following:" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries>
             <entry id="01f26231-3302-a4c5-b648-b3260454ab14" name="Hunter-killer Missile" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
@@ -24856,9 +24846,17 @@ other wounds the attack causes</description>
               <modifiers/>
             </link>
             <link id="957b-9715-fe69-ea9a" targetId="07e1-1538-b916-7612" linkType="profile">
-              <modifiers/>
+              <modifiers>
+                <modifier type="increment" field="425323232344415441232323" value="1" repeat="true" numRepeats="1" incrementParentId="9197-bff3-2b81-b405" incrementChildId="63ca-2c41-f720-e4cb" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
             </link>
             <link id="c4da-64b5-a477-cc26" targetId="b90c-d619-9cc8-dad2" linkType="rule">
+              <modifiers/>
+            </link>
+            <link id="63ca-2c41-f720-e4cb" targetId="a93f-f8e2-b9da-a6b0" linkType="entry">
               <modifiers/>
             </link>
           </links>
@@ -24927,25 +24925,6 @@ other wounds the attack causes</description>
                 </link>
               </links>
             </entryGroup>
-            <entryGroup id="175a-c3b3-d871-54d9" name="May be upgraded to:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="2c63-2a94-e02c-926a" name="Space Marine Legion Crew" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="4fbb-038e-3bc2-1be2" targetId="e1d88320-50a5-edf3-0542-004b2f5c917e" linkType="profile">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers/>
-              <links/>
-            </entryGroup>
           </entryGroups>
           <modifiers/>
           <rules/>
@@ -24958,6 +24937,9 @@ other wounds the attack causes</description>
               <modifiers/>
             </link>
             <link id="14ca-2d7e-605d-8143" targetId="6833-3338-df6b-4ecc" linkType="entry group">
+              <modifiers/>
+            </link>
+            <link id="10c1-228b-cd25-4644" targetId="a93f-f8e2-b9da-a6b0" linkType="entry">
               <modifiers/>
             </link>
           </links>
@@ -25052,25 +25034,6 @@ other wounds the attack causes</description>
                 </link>
               </links>
             </entryGroup>
-            <entryGroup id="53e4-9875-b25e-4fc2" name="May be upgraded to:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="5d4c-3c36-be11-6f5d" name="Space Marine Legion Crew" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="72ea-4002-5b22-a065" targetId="e1d88320-50a5-edf3-0542-004b2f5c917e" linkType="profile">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers/>
-              <links/>
-            </entryGroup>
           </entryGroups>
           <modifiers/>
           <rules>
@@ -25082,9 +25045,17 @@ other wounds the attack causes</description>
           <profiles/>
           <links>
             <link id="6a66-1379-1e0b-aee2" targetId="e41f-704e-1b86-46c5" linkType="profile">
-              <modifiers/>
+              <modifiers>
+                <modifier type="increment" field="425323232344415441232323" value="1" repeat="true" numRepeats="1" incrementParentId="c51a-ca70-cf14-ded5" incrementChildId="f780-4717-026c-d11a" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
             </link>
             <link id="94a7-8d69-d70f-a50b" targetId="6833-3338-df6b-4ecc" linkType="entry group">
+              <modifiers/>
+            </link>
+            <link id="f780-4717-026c-d11a" targetId="a93f-f8e2-b9da-a6b0" linkType="entry">
               <modifiers/>
             </link>
           </links>
@@ -25156,25 +25127,6 @@ other wounds the attack causes</description>
                 </link>
               </links>
             </entryGroup>
-            <entryGroup id="6f16-aaa3-afb6-1bbd" name="May be upgraded to:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="4900-621a-2d83-e057" name="Space Marine Legion Crew" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="2720-a015-99ec-a968" targetId="e1d88320-50a5-edf3-0542-004b2f5c917e" linkType="profile">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers/>
-              <links/>
-            </entryGroup>
           </entryGroups>
           <modifiers/>
           <rules/>
@@ -25187,6 +25139,9 @@ other wounds the attack causes</description>
               <modifiers/>
             </link>
             <link id="b9e1-4820-1326-d883" targetId="6833-3338-df6b-4ecc" linkType="entry group">
+              <modifiers/>
+            </link>
+            <link id="688a-9d11-01ff-17ea" targetId="a93f-f8e2-b9da-a6b0" linkType="entry">
               <modifiers/>
             </link>
           </links>
@@ -25260,25 +25215,6 @@ other wounds the attack causes</description>
                 </link>
               </links>
             </entryGroup>
-            <entryGroup id="94d1-b6d1-87c2-4cbe" name="May be upgraded to:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-              <entries>
-                <entry id="f62d-c7ac-7c36-c803" name="Space Marine Legion Crew" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-                  <entries/>
-                  <entryGroups/>
-                  <modifiers/>
-                  <rules/>
-                  <profiles/>
-                  <links>
-                    <link id="f441-b563-7c2c-07ae" targetId="e1d88320-50a5-edf3-0542-004b2f5c917e" linkType="profile">
-                      <modifiers/>
-                    </link>
-                  </links>
-                </entry>
-              </entries>
-              <entryGroups/>
-              <modifiers/>
-              <links/>
-            </entryGroup>
           </entryGroups>
           <modifiers/>
           <rules/>
@@ -25291,6 +25227,9 @@ other wounds the attack causes</description>
               <modifiers/>
             </link>
             <link id="ffe3-6187-db09-00c1" targetId="6833-3338-df6b-4ecc" linkType="entry group">
+              <modifiers/>
+            </link>
+            <link id="8487-ea9c-d760-e149" targetId="a93f-f8e2-b9da-a6b0" linkType="entry">
               <modifiers/>
             </link>
           </links>
@@ -25738,25 +25677,6 @@ other wounds the attack causes</description>
             </link>
           </links>
         </entryGroup>
-        <entryGroup id="b8bb-4db1-d16a-8db4" name="May be upgraded to:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="788c-b849-567b-f696" name="Space Marine Legion Crew" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="3713-9ef0-0726-c32f" targetId="e1d88320-50a5-edf3-0542-004b2f5c917e" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <links/>
-        </entryGroup>
       </entryGroups>
       <modifiers/>
       <rules>
@@ -25766,7 +25686,7 @@ All Death of Glory attacks, Ram impacts, or Thunderblitzs that target the Minota
           <modifiers/>
         </rule>
         <rule id="dc8c-40fc-2d61-a284" name="Engine Damage" hidden="false" book="Imperial Armour Apocalypse 2013" page="6">
-          <description>When the Super-Heavy vehicle suffers an Explodes! result on the Vehicle Damage table, roll a D6. On the score of a 4+, it is Immobilised (as per the entry on the Vehicle Damage table) as well as suffering the effects of any other damage inflicted upon it, this ignores a Super-Heavy Vehicles normal immunity to such damage.</description>
+          <description>When the Super-Heavy vehicle suffers an Explodes! result on the Vehicle Damage table, roll a D6. On the score of a 4+, it is Immobilised (as per the entry on the Vehicle Damage table) as well as suffering the effects of any other damage inflicted upon it; this ignores a Super-Heavy Vehicles normal immunity to such damage.</description>
           <modifiers/>
         </rule>
       </rules>
@@ -25784,30 +25704,14 @@ All Death of Glory attacks, Ram impacts, or Thunderblitzs that target the Minota
         <link id="59a4-ae55-8eff-e682" targetId="b572273e-2b93-4961-75c8-d9022c31a47d" linkType="entry">
           <modifiers/>
         </link>
+        <link id="b708-9f2c-7372-ca7d" targetId="a93f-f8e2-b9da-a6b0" linkType="entry">
+          <modifiers/>
+        </link>
       </links>
     </entry>
     <entry id="bee7-f4d3-201a-586d" name="(Optional) Praetor Armoured Assault Launcher" points="300.0" categoryId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="IA Apoc 2013" page="28">
       <entries/>
       <entryGroups>
-        <entryGroup id="b83f-f5d1-fb7b-6f5c" name="May be upgraded to:" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries>
-            <entry id="4736-8a4e-d292-be10" name="Space Marine Legion Crew" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-              <entries/>
-              <entryGroups/>
-              <modifiers/>
-              <rules/>
-              <profiles/>
-              <links>
-                <link id="0b01-93cd-417f-3ce0" targetId="e1d88320-50a5-edf3-0542-004b2f5c917e" linkType="profile">
-                  <modifiers/>
-                </link>
-              </links>
-            </entry>
-          </entries>
-          <entryGroups/>
-          <modifiers/>
-          <links/>
-        </entryGroup>
         <entryGroup id="b269-4df3-669a-2bd6" name="Legion-specific upgrade" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups/>
@@ -25879,9 +25783,17 @@ All Death of Glory attacks, Ram impacts, or Thunderblitzs that target the Minota
           <modifiers/>
         </link>
         <link id="f142-187b-ab10-08f2" targetId="024f-5b01-c04c-e727" linkType="profile">
-          <modifiers/>
+          <modifiers>
+            <modifier type="increment" field="425323232344415441232323" value="1" repeat="true" numRepeats="1" incrementParentId="bee7-f4d3-201a-586d" incrementChildId="cf6d-c7e5-ceb9-1a7f" incrementField="selections" incrementValue="1.0">
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </link>
         <link id="1eb5-4c4c-f261-ae57" targetId="1b4e-0aff-c60b-abb6" linkType="entry group">
+          <modifiers/>
+        </link>
+        <link id="cf6d-c7e5-ceb9-1a7f" targetId="a93f-f8e2-b9da-a6b0" linkType="entry">
           <modifiers/>
         </link>
       </links>
@@ -41135,6 +41047,21 @@ Limitations
         </link>
       </links>
     </entry>
+    <entry id="5450-8257-60ca-dffd" name="May replace one pair of side-sponson Lascannons with: Targeters (+1 BS)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="direct parent" childId="adf7-94db-10d6-f470" field="selections" type="at least" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
     <entry id="56cdd068-fb04-ef20-c63b-709e3c033f7f" name="Medusan Immortals" points="142.0" categoryId="456c6974657323232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:LAICL" page="51">
       <entries>
         <entry id="42d95ca4-adcd-5ed8-2ee9-6b3207bfcf5b" name="Medusan Immortals" points="12.0" categoryId="(No Category)" type="model" minSelections="9" maxSelections="19" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="" page="0">
@@ -45344,6 +45271,18 @@ The army may not include a Fortifications Detachment or an Allied Detachment</de
         </link>
       </links>
     </entry>
+    <entry id="a93f-f8e2-b9da-a6b0" name="Space Marine Legion Crew" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:AODAL" page="10">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links>
+        <link id="c6df-0d5e-2a7e-b113" targetId="e1d88320-50a5-edf3-0542-004b2f5c917e" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
     <entry id="f118-45b2-9b94-d7f3" name="Stasis Shells" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries/>
       <entryGroups/>
@@ -49029,33 +48968,6 @@ Limitations
       <profiles/>
       <links/>
     </entry>
-    <entry id="a93f-f8e2-b9da-a6b0" name="Space Marine Legion Crew" points="15.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:AODAL" page="10">
-      <entries/>
-      <entryGroups/>
-      <modifiers/>
-      <rules/>
-      <profiles/>
-      <links>
-        <link id="c6df-0d5e-2a7e-b113" targetId="e1d88320-50a5-edf3-0542-004b2f5c917e" linkType="profile">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
-    <entry id="5450-8257-60ca-dffd" name="May replace one pair of side-sponson Lascannons with: Targeters (+1 BS)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="0" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-      <entries/>
-      <entryGroups/>
-      <modifiers>
-        <modifier type="set" field="maxSelections" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="direct parent" childId="adf7-94db-10d6-f470" field="selections" type="at least" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <rules/>
-      <profiles/>
-      <links/>
-    </entry>
   </sharedEntries>
   <sharedEntryGroups>
     <entryGroup id="e0f5d669-ba31-0459-ab56-be02335a2d17" name="Battlements &amp; Battlefield" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -49937,7 +49849,7 @@ Limitations
       <modifiers/>
       <links/>
     </entryGroup>
-    <entryGroup id="f231-8aca-ea2c-9151" name="May take a Pintle-Mounted Weapon (Superheavy)" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entryGroup id="f231-8aca-ea2c-9151" name="May take a Pintle-Mounted Weapon (Legion Superheavy)" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
         <entry id="fc11-e04b-3c2c-a7b6" name="Twin-Linked Bolter" points="5.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -50218,17 +50130,9 @@ Limitations
         </link>
       </links>
     </entryGroup>
-    <entryGroup id="6833-3338-df6b-4ecc" name="Pintle-mounted Weapon X" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entryGroup id="6833-3338-df6b-4ecc" name="Pintle-mounted Weapon (Optional Engines of Destruction and War Engines)" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
         <entry id="2b84-9e82-c214-308e" name="Pintle-mounted Heavy Stubber" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <rules/>
-          <profiles/>
-          <links/>
-        </entry>
-        <entry id="205c-34e5-3d28-6585" name="Pintle-mounted Storm Bolter" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups/>
           <modifiers/>
@@ -51215,7 +51119,7 @@ Limitations
       <modifiers/>
       <links/>
     </entryGroup>
-    <entryGroup id="7782-aef5-5652-6310" name="Sponson Option mac" defaultEntryId="253b-d609-3d7d-abdc" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+    <entryGroup id="7782-aef5-5652-6310" name="Sponson Option (Macharius pattern)" defaultEntryId="253b-d609-3d7d-abdc" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
         <entry id="daba-8838-67cc-15d0" name="2x Heavy Bolters" points="10.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
@@ -52215,6 +52119,15 @@ If a vehicle has been upgraded to a Super-heavy command tank, all allied infantr
       </characteristics>
       <modifiers/>
     </profile>
+    <profile id="0c03-6162-7852-0adf" profileTypeId="576561706f6e23232344415441232323" name="Demolisher Cannon" hidden="false" book="HH:AODAL" page="125">
+      <characteristics>
+        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="24&quot;"/>
+        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="10"/>
+        <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
+        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Ordnance 1, Large Blast (5&quot;)"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
     <profile id="0f5f4d88-fe1f-092e-ef2a-1601bcb2fc9d" profileTypeId="57617267656172204974656d23232344415441232323" name="Digital Lasers" hidden="false" book="HH:LACAL" page="87">
       <characteristics>
         <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Provides +1 Attack in close combat"/>
@@ -52962,7 +52875,12 @@ If a vehicle has been upgraded to a Super-heavy command tank, all allied infantr
         <characteristic characteristicId="485023232344415441232323" name="HP" value="6"/>
         <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Super-heavy Vehicle"/>
       </characteristics>
-      <modifiers/>
+      <modifiers>
+        <modifier type="increment" field="425323232344415441232323" value="1" repeat="true" numRepeats="1" incrementParentId="direct parent" incrementChildId="a93f-f8e2-b9da-a6b0" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
     </profile>
     <profile id="35ef-ddcd-2590-7669" profileTypeId="576561706f6e23232344415441232323" name="Macharius Battle Cannon" hidden="false" book="Imperial Armour Apocalypse 2013" page="135">
       <characteristics>
@@ -53821,15 +53739,6 @@ If a vehicle has been upgraded to a Super-heavy command tank, all allied infantr
     <profile id="fb2c1440-364c-c4d1-137f-7e46f665b84c" profileTypeId="57617267656172204974656d23232344415441232323" name="Wreckage and Rubble" hidden="false" book="Stronghold Assault" page="0">
       <characteristics>
         <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Area Terrain. A model in cover behind wreckage or rubble has a 4+ cover save."/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="0c03-6162-7852-0adf" profileTypeId="576561706f6e23232344415441232323" name="Demolisher Cannon" hidden="false" book="HH:AODAL" page="125">
-      <characteristics>
-        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="24&quot;"/>
-        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="10"/>
-        <characteristic characteristicId="415023232344415441232323" name="AP" value="2"/>
-        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Ordnance 1, Large Blast (5&quot;)"/>
       </characteristics>
       <modifiers/>
     </profile>
