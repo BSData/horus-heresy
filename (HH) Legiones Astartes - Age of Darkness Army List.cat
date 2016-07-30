@@ -241,15 +241,25 @@
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
-                  <rules/>
+                  <rules>
+                    <rule id="45aa-9baa-88f6-5044" name="Apothecary Jump Pack" hidden="false">
+                      <description>If an Apothecary is equipped with a jump pack then they may only join eligible squads with the Jump Infantry type and the Legiones Astartes special rule instead.</description>
+                      <modifiers/>
+                    </rule>
+                  </rules>
                   <profiles/>
                   <links/>
                 </entry>
-                <entry id="3a96-233a-1ebf-8260" name="Space Marine Bike with Twin-linked Bolter" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+                <entry id="3a96-233a-1ebf-8260" name="Legion Space Marine Bike with Twin-linked Bolter" points="20.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
                   <entries/>
                   <entryGroups/>
                   <modifiers/>
-                  <rules/>
+                  <rules>
+                    <rule id="fee8-b049-e8cc-dc7d" name="Apothecary Legion Space Marine Bike" hidden="false">
+                      <description>If an Apothecary is equipped with a Legion Space Marine Bike then they may only join eligible squads with the Bike type and the Legiones Astartes special rule instead.</description>
+                      <modifiers/>
+                    </rule>
+                  </rules>
                   <profiles/>
                   <links/>
                 </entry>
@@ -283,7 +293,12 @@
                 <characteristic characteristicId="4c4423232344415441232323" name="LD" value="8"/>
                 <characteristic characteristicId="5361766523232344415441232323" name="Save" value="3+"/>
               </characteristics>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="5361766523232344415441232323" value="2+" repeat="true" numRepeats="1" incrementParentId="f78df9b3-ea9e-9e07-5063-17685166fc11" incrementChildId="e9f7-c42a-6518-8488" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
             </profile>
           </profiles>
           <links>
@@ -337,7 +352,12 @@
       </entries>
       <entryGroups/>
       <modifiers/>
-      <rules/>
+      <rules>
+        <rule id="f936-7a56-795a-dcfe" name="Apothecarion Detachment" hidden="false" book="HH:AODAL" page="32">
+          <description>Each Apothecary must be assigned to one of your squads during your deployment and may not voluntarily leave it during the game. Only squads entirely comprising models with the Infantry type and the Legiones Astartes special rule are eligible to be joined by a Legion Apothecary, and squads equipped with Terminator armour or with the Daemon special rule may not be joined by a Legion Apothecary.</description>
+          <modifiers/>
+        </rule>
+      </rules>
       <profiles/>
       <links>
         <link id="7277-b3e3-5858-510a" targetId="2e22-b6a4-37c2-5635" linkType="entry">
