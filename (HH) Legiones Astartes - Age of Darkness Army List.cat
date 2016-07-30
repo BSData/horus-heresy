@@ -17862,11 +17862,16 @@ When rolling on the Thunderblitz and/or Catastrophic Damage tables for the Malca
           <profiles/>
           <links>
             <link id="e881424b-605e-1301-f65a-c41b0ce29f5d" targetId="fbcef7de-124c-9b95-7895-480adc6bc027" linkType="profile">
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="5361766523232344415441232323" value="4+" repeat="true" numRepeats="1" incrementParentId="4a2532cc-ee27-1a58-dd34-4e78263770a3" incrementChildId="99aa3baa-c1a0-1c49-664d-d26edcb46baf" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
             </link>
           </links>
         </entry>
-        <entry id="7ea62dcf-7aef-ab0b-3f92-353a272b3b5b" name="Legion Sergeant" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+        <entry id="7ea62dcf-7aef-ab0b-3f92-353a272b3b5b" name="Legion Sergeant (Recon)" points="0.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups>
             <entryGroup id="659fdeef-8250-49b8-baf5-376d44ec507b" name="Exchange Bolter for:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -50835,24 +50840,31 @@ Limitations
           <profiles/>
           <links/>
         </entry>
-        <entry id="fc29e2a8-80f7-4778-8c5d-f434ed297a97" name="Scout Armour" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+        <entry id="fc29e2a8-80f7-4778-8c5d-f434ed297a97" name="Scout / Recon Armour" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
           <entries/>
           <entryGroups/>
           <modifiers>
             <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
               <conditions/>
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition parentId="direct parent" childId="0df0a0f1-9ddf-f57b-cada-26dce57443ec" field="selections" type="equal to" value="0.0"/>
+                    <condition parentId="direct parent" childId="7ea62dcf-7aef-ab0b-3f92-353a272b3b5b" field="selections" type="equal to" value="0.0"/>
                   </conditions>
                   <conditionGroups>
-                    <conditionGroup type="and">
+                    <conditionGroup type="or">
                       <conditions>
-                        <condition parentId="direct parent" childId="157f4400-4cdf-c5f0-6588-4395102f502e" field="selections" type="equal to" value="0.0"/>
-                        <condition parentId="direct parent" childId="a21c798e-6a8f-43fa-9937-9bb447463856" field="selections" type="equal to" value="0.0"/>
+                        <condition parentId="direct parent" childId="0df0a0f1-9ddf-f57b-cada-26dce57443ec" field="selections" type="equal to" value="0.0"/>
                       </conditions>
-                      <conditionGroups/>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition parentId="direct parent" childId="157f4400-4cdf-c5f0-6588-4395102f502e" field="selections" type="equal to" value="0.0"/>
+                            <condition parentId="direct parent" childId="a21c798e-6a8f-43fa-9937-9bb447463856" field="selections" type="equal to" value="0.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -50957,10 +50969,17 @@ Limitations
                   <conditions>
                     <condition parentId="direct parent" childId="945b2009-7717-4bdc-90a8-44c0699ed01b" field="selections" type="equal to" value="1.0"/>
                     <condition parentId="direct parent" childId="51f64bbe-2968-91a9-051f-51d166caf36a" field="selections" type="equal to" value="1.0"/>
+                    <condition parentId="direct parent" childId="99aa3baa-c1a0-1c49-664d-d26edcb46baf" field="selections" type="at least" value="1.0"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+              <conditions>
+                <condition parentId="direct parent" childId="99aa3baa-c1a0-1c49-664d-d26edcb46baf" field="selections" type="at least" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
             </modifier>
           </modifiers>
           <rules/>
@@ -54786,6 +54805,17 @@ This choice must always be either a Centurion or a Chaplain Consul.</description
               <conditions>
                 <condition parentId="direct parent" childId="2103949b-7a93-bec8-0d94-ac8b28e9482a" field="selections" type="equal to" value="1.0"/>
                 <condition parentId="direct parent" childId="cc23d458-6cfb-37cd-afd3-8b4fd175495c" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="5361766523232344415441232323" value="4+" repeat="false" numRepeats="1" incrementParentId="direct parent" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition parentId="direct parent" childId="fc29e2a8-80f7-4778-8c5d-f434ed297a97" field="selections" type="equal to" value="1.0"/>
               </conditions>
               <conditionGroups/>
             </conditionGroup>
