@@ -30672,7 +30672,7 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
         </link>
       </links>
     </entry>
-    <entry id="5eb4-31b6-a79b-bcde" name="Damocles Command Rhino" points="100.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH5: Tempest" page="237">
+    <entry id="5eb4-31b6-a79b-bcde" name="Damocles Command Rhino" points="100.0" categoryId="(No Category)" type="model" minSelections="0" maxSelections="1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH5: Tempest" page="237">
       <entries/>
       <entryGroups>
         <entryGroup id="4c55-f99a-2264-22d1" name="May take any of the following:" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -30715,7 +30715,14 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
           <links/>
         </entryGroup>
       </entryGroups>
-      <modifiers/>
+      <modifiers>
+        <modifier type="increment" field="maxInForce" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="f90e-7e0d-5190-327e" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="dfb5-4993-7b83-25c9" name="Geo-locator Beacon" hidden="false" book="HH5: Tempest" page="237">
           <description>Units arriving via Deep Strike which are part of the force containing the Damocles do not scatter if they choose to arrive within 24&quot;</description>
