@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="169" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Age of Darkness Army List" books="HH Series" authorName="Millicant, capitaladot" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="171" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Age of Darkness Army List" books="HH Series" authorName="Millicant, capitaladot" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="AODAL" page="67">
       <entries>
@@ -7686,6 +7686,9 @@ D6    Result		S	AP
                 </modifier>
               </modifiers>
             </link>
+            <link id="84af-1b66-04cf-25be" targetId="a314-b570-0559-8894" linkType="entry">
+              <modifiers/>
+            </link>
           </links>
         </entryGroup>
         <entryGroup id="7a0a-ace7-fa55-ae4b" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -10609,6 +10612,9 @@ Your entire army must use the Blood Madness or the Bloodlust rules, you cannot h
                       </conditionGroups>
                     </modifier>
                   </modifiers>
+                </link>
+                <link id="733a-fe95-ca11-216d" targetId="a314-b570-0559-8894" linkType="entry">
+                  <modifiers/>
                 </link>
               </links>
             </entryGroup>
@@ -17203,6 +17209,9 @@ When rolling on the Thunderblitz and/or Catastrophic Damage tables for the Malca
                 <link id="b8e6-4426-db07-351a" targetId="5beb-0cde-90c1-0f88" linkType="entry">
                   <modifiers/>
                 </link>
+                <link id="5200-2620-1fe8-5a7c" targetId="a314-b570-0559-8894" linkType="entry">
+                  <modifiers/>
+                </link>
               </links>
             </entryGroup>
             <entryGroup id="79895595-6e3d-af5a-dd02-0d5874944046" name="Exchange both Bolt Pistol and Chainsword/Combat Blade for:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -18980,7 +18989,11 @@ When rolling on the Thunderblitz and/or Catastrophic Damage tables for the Malca
           </entries>
           <entryGroups/>
           <modifiers/>
-          <links/>
+          <links>
+            <link id="b3a7-a62a-df99-7a42" targetId="a314-b570-0559-8894" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
         </entryGroup>
         <entryGroup id="cda6c5c1-c988-0cb3-a02a-6cade997f240" name="Dedicated Transport" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
@@ -19704,7 +19717,16 @@ Owing to the massive expenditure of ammunition involved, once a squad has made a
           </entries>
           <entryGroups/>
           <modifiers/>
-          <links/>
+          <links>
+            <link id="aa2c-92b4-84e3-174f" targetId="a314-b570-0559-8894" linkType="entry">
+              <modifiers>
+                <modifier type="increment" field="points" value="2.0" repeat="true" numRepeats="1" incrementParentId="d744f750-8ad0-c8f0-fb8d-81608f361be3" incrementChildId="70f738ac-f22d-9e10-c395-781534c8cb2a" incrementField="selections" incrementValue="1.0">
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </link>
+          </links>
         </entryGroup>
       </entryGroups>
       <modifiers>
@@ -24283,7 +24305,7 @@ other wounds the attack causes</description>
                 </modifier>
               </modifiers>
             </link>
-            <link id="ba0e-df38-700e-5ddf" targetId="8eddab41-c893-f420-3b53-3e40b25cee89" linkType="entry">
+            <link id="ba0e-df38-700e-5ddf" targetId="38ca-1826-df6f-8189" linkType="entry">
               <modifiers>
                 <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                   <conditions/>
@@ -50951,6 +50973,31 @@ Limitations
         </rule>
       </rules>
       <profiles/>
+      <links/>
+    </entry>
+    <entry id="a314-b570-0559-8894" name="Chainaxe(s)" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:AODAL" page="129">
+      <entries/>
+      <entryGroups/>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="9b4df3ce-4083-9562-3cc1-02947b5ba466" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules/>
+      <profiles>
+        <profile id="1a85-698b-deb9-2eaf" profileTypeId="576561706f6e23232344415441232323" name="Chainaxe" hidden="false" book="HH:AODAL" page="129">
+          <characteristics>
+            <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="-"/>
+            <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="+1"/>
+            <characteristic characteristicId="415023232344415441232323" name="AP" value="4"/>
+            <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Melee"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
       <links/>
     </entry>
   </sharedEntries>
