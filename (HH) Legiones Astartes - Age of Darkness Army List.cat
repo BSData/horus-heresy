@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="173" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Age of Darkness Army List" books="HH Series" authorName="Millicant, capitaladot" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="174" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Age of Darkness Army List" books="HH Series" authorName="Millicant, capitaladot" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="AODAL" page="67">
       <entries>
@@ -42523,25 +42523,32 @@ Limitations
         </link>
       </links>
     </entry>
-    <entry id="7f468ad2-37a2-384e-62c6-59a0ef008fe9" name="Master of the Legion" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="0" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
+    <entry id="7f468ad2-37a2-384e-62c6-59a0ef008fe9" name="Master of the Legion" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="0" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" page="0">
       <entries/>
       <entryGroups/>
       <modifiers>
-        <modifier type="increment" field="maxInRoster" value="1.0" repeat="true" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="points limit" incrementValue="1000.0">
+        <modifier type="increment" field="maxInForce" value="1.0" repeat="true" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="points limit" incrementValue="1000.0">
           <conditions/>
           <conditionGroups/>
         </modifier>
-        <modifier type="set" field="maxInRoster" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+        <modifier type="increment" field="maxInForce" value="1.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
           <conditions/>
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition parentId="roster" childId="no child" field="points limit" type="less than" value="1000.0"/>
-                <condition parentId="roster" childId="4357-15c6-7629-5a22" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="force type" childId="0b6b-a6ed-06db-c38e" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="roster" childId="no child" field="points limit" type="less than" value="2000.0"/>
+                <condition parentId="roster" childId="no child" field="points limit" type="at least" value="1000.0"/>
               </conditions>
               <conditionGroups/>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" field="minInForce" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="3b34336e-0f22-6a62-f665-74f37f5305f5" field="selections" type="equal to" value="1.0"/>
+          </conditions>
+          <conditionGroups/>
         </modifier>
       </modifiers>
       <rules/>
@@ -45004,6 +45011,19 @@ Limitations
             <conditionGroup type="or">
               <conditions>
                 <condition parentId="force type" childId="d45f-23f2-6d6d-ffec" field="selections" type="equal to" value="1.0"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="maxInForce" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition parentId="force type" childId="7f468ad2-37a2-384e-62c6-59a0ef008fe9" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="force type" childId="1006-e22e-3aa4-f79a" field="selections" type="equal to" value="1.0"/>
+                <condition parentId="force type" childId="0b6b-a6ed-06db-c38e" field="selections" type="equal to" value="0.0"/>
               </conditions>
               <conditionGroups/>
             </conditionGroup>
