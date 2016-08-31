@@ -1,6 +1,94 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="176" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Age of Darkness Army List" books="HH Series" authorName="Millicant, capitaladot" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
+    <entry id="ecf4c911-6cd2-7afd-d5eb-85ac21c58149" name="&apos;Sevatar&apos;" points="175.0" categoryId="485123232344415441232323" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="LA:AODL" page="41">
+      <entries/>
+      <entryGroups>
+        <entryGroup id="92a46966-63fc-5f8c-80b2-751c9e718b52" name="Bodyguard" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+          <entries/>
+          <entryGroups/>
+          <modifiers/>
+          <links>
+            <link id="660d3b41-e509-6300-98d4-9414145069db" targetId="cba7eacc-627d-ad1f-3c72-70e35c15fd9f" linkType="entry">
+              <modifiers/>
+            </link>
+          </links>
+        </entryGroup>
+      </entryGroups>
+      <modifiers>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="3ef8dfa5-8844-fd89-ce9b-afee530d7728" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+          <conditions>
+            <condition parentId="force type" childId="d21b-a452-4de8-e454" field="selections" type="equal to" value="0.0"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="c3bd398f-d4d9-ed03-10e7-fc60f0b3f184" name="Master of the Atramentar" hidden="false" book="HH:LAICL" page="63">
+          <description>Night Lords Legion Terminator Squads and Terminator Command Squads will not scatter when deploying via Deep Strike within 6&quot; of Sevatar</description>
+          <modifiers/>
+        </rule>
+        <rule id="4aeb17cf-84da-4917-c4af-a6122b7b0937" name="Dirty Fighter" hidden="false" book="HH:LAICL" page="63">
+          <description>Gains Instant Death when fighting in a challenge</description>
+          <modifiers/>
+        </rule>
+        <rule id="baabedec-2b16-db3d-a181-a0bd660f1142" name="Repressed Psyker" hidden="false" book="LA:ADL" page="41">
+          <description>Level 1 Psyker with Precognition Psychic Power from the Divination Discipline.  However, you may not use more than 2 Warp Charges from your pool in order to use his Repressed Psyker ability and a modified leadership value of 7 is used should he become subject to Perils of the Warp.  </description>
+          <modifiers/>
+        </rule>
+        <rule id="840e-e834-5fa6-8195" name="Precision Strike" hidden="false">
+          <modifiers/>
+        </rule>
+        <rule id="216a-8882-c3b6-e321" name="Warlord Trait • Master of Ambush" hidden="false" book="LA:AODL" page="41">
+          <description>If chosen as the army’s Warlord, Lord Sevatar automatically has the Master of Ambush trait rather than rolling
+randomly. This means that all friendly Outflanking units have the Acute Senses special rule while Sevatar is alive.</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles>
+        <profile id="e2bfabee-a841-ef30-8e46-3b84e8b541a3" profileTypeId="556e697423232344415441232323" name="Sevatar" hidden="false" book="HH:LAICL" page="63">
+          <characteristics>
+            <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Infantry (Character"/>
+            <characteristic characteristicId="575323232344415441232323" name="WS" value="7"/>
+            <characteristic characteristicId="425323232344415441232323" name="BS" value="5"/>
+            <characteristic characteristicId="5323232344415441232323" name="S" value="4"/>
+            <characteristic characteristicId="5423232344415441232323" name="T" value="4"/>
+            <characteristic characteristicId="5723232344415441232323" name="W" value="3"/>
+            <characteristic characteristicId="4923232344415441232323" name="I" value="6"/>
+            <characteristic characteristicId="4123232344415441232323" name="A" value="4"/>
+            <characteristic characteristicId="4c4423232344415441232323" name="LD" value="9"/>
+            <characteristic characteristicId="5361766523232344415441232323" name="Save" value="3+"/>
+          </characteristics>
+          <modifiers/>
+        </profile>
+      </profiles>
+      <links>
+        <link id="e9423ef3-6e37-5a05-3a99-b568eec45e26" targetId="10b59cf4-3c97-e3e0-2185-853bcde6d112" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="d75a7444-2fb7-3401-cf21-c4ae4a4da455" targetId="8199e922-e844-5d34-b04b-86edadffa2df" linkType="rule">
+          <modifiers/>
+        </link>
+        <link id="0da64b6b-fd86-5eac-c93b-315e85d74751" targetId="ac65-1b58-5755-467c" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="355da4f8-2d49-d8a9-f42a-e3956b06ed09" targetId="7f468ad2-37a2-384e-62c6-59a0ef008fe9" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="8a12e614-1cfd-9889-95a8-ef6a7881cd60" targetId="422beb22-1aef-aba9-7c68-7ba770c48584" linkType="profile">
+          <modifiers/>
+        </link>
+        <link id="2d07c8ba-4aea-9c98-5af2-63806749122e" targetId="b7d58e49-6b8c-56f3-df2c-472ac811a571" linkType="profile">
+          <modifiers/>
+        </link>
+      </links>
+    </entry>
     <entry id="a8cf84f2-0e14-b402-f2b0-3c5d36a8f2e5" name="Achilles-Alpha Pattern Land Raider" points="300.0" categoryId="486561767920537570706f727423232344415441232323" type="unit" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="AODAL" page="67">
       <entries>
         <entry id="dbfb-9386-cd29-69ba" name="Two sponson-mounted twin-kinked Volkite Culverin" points="0.0" categoryId="(No Category)" type="model" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -9345,10 +9433,10 @@ The Warlord and any unit they join with the Legiones Astartes special rule may r
     </entry>
     <entry id="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" name="Legion Centurion" points="50.0" categoryId="485123232344415441232323" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="3" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="HH:AODAL" page="18">
       <entries>
-        <entry id="157f4400-4cdf-c5f0-6588-4395102f502e" name="Consul" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entry id="157f4400-4cdf-c5f0-6588-4395102f502e" name="May be upgraded to one of these Consul roles:" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups>
-            <entryGroup id="2d82e7cf-e26e-95a5-86c3-d9c06479fe8f" name="May be upgraded to one of these Consul roles:" defaultEntryId="72d6-7468-8e60-4697" minSelections="1" maxSelections="1" minInForce="0" maxInForce="3" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+            <entryGroup id="2d82e7cf-e26e-95a5-86c3-d9c06479fe8f" name="Consul" defaultEntryId="72d6-7468-8e60-4697" minSelections="1" maxSelections="1" minInForce="0" maxInForce="3" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
               <entries>
                 <entry id="be0f793d-d50b-e7b4-2c0c-43b13d67408a" name="Chaplain" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="AODAL" page="19">
                   <entries/>
@@ -9616,10 +9704,10 @@ The Warlord and any unit they join with the Legiones Astartes special rule may r
                     <link id="d9fe526f-c791-0bf4-c6a0-36dc133e763a" targetId="7bc689cc-398d-f1f4-2359-ddbdf3af8968" linkType="profile">
                       <modifiers/>
                     </link>
-                    <link id="0047-cc9c-1a65-11c2" targetId="dc4d-c7ca-3b5e-18f6" linkType="rule">
+                    <link id="b9ec-2214-9c34-5a25" targetId="01a6-2183-8377-aa1e" linkType="rule">
                       <modifiers/>
                     </link>
-                    <link id="b9ec-2214-9c34-5a25" targetId="01a6-2183-8377-aa1e" linkType="rule">
+                    <link id="1abd-0aaa-2c32-cb30" targetId="4a87-712e-ed4f-0d34" linkType="entry">
                       <modifiers/>
                     </link>
                   </links>
@@ -9733,10 +9821,6 @@ The Warlord and any unit they join with the Legiones Astartes special rule may r
                     <rule id="3ccb3701-07e6-fc51-c0b6-c47e1abef394" name="Counter-attack" hidden="false" page="0">
                       <modifiers/>
                     </rule>
-                    <rule id="4f39d3a6-4ccc-fd62-548e-8b0c6004a2c5" name="Lone Killer" hidden="false" book="HH:AODAL" page="21">
-                      <description>A Moritat may not be taken as a Compulsory HQ choice, only as an optional HQ choice, and may never be the army’s Warlord. Note that this means a Moritat may not be taken as part of an Allied Detachment. They may not join units or travel inside transports with other units except Legion Destroyer Squads. They may not benefit from any Blessing type psychic powers, or from Leadership bonuses, Leadership re-rolls or other beneficial special rules provided by other friendly models or army-wide effects which are the result of a Rite of War</description>
-                      <modifiers/>
-                    </rule>
                     <rule id="a18a-a01b-23de-96c2" name="Chain Fire Overheat" hidden="false" book="AODAL" page="21">
                       <description>Chain Fire Overheat!:If one or more weapons with the Gets Hot special rule is used to make a Chain Fire attack, the extra stress on the weapon can prove perilous. When used for a Chain Fire attack, such weapons overheat on rolls of a 1 or 2, inflicting a wound on the firing model. Should any overheat occur, the Chain Fire attack immediately ends without further re-rolls for hits.</description>
                       <modifiers/>
@@ -9751,6 +9835,9 @@ The Warlord and any unit they join with the Legiones Astartes special rule may r
                       <modifiers/>
                     </link>
                     <link id="a7926076-838c-bb4b-7514-6e03ae16bb6d" targetId="ba3f96a8-c144-ec70-9f5e-7e428598c16c" linkType="rule">
+                      <modifiers/>
+                    </link>
+                    <link id="683e-4bef-5c51-2f90" targetId="ca4f-fb6f-4041-1073" linkType="entry">
                       <modifiers/>
                     </link>
                   </links>
@@ -9827,10 +9914,6 @@ The Warlord and any unit they join with the Legiones Astartes special rule may r
                     </modifier>
                   </modifiers>
                   <rules>
-                    <rule id="118591f0-3c6e-53f1-4761-0af2a3a938a1" name="Lone Killer" hidden="false" book="HH:LAICL" page="89">
-                      <description>May not fulfil a compulsory HQ choice nor join other units</description>
-                      <modifiers/>
-                    </rule>
                     <rule id="8cfc332f-fe74-e8a2-8ef1-bc21e575a484" name="Special Deployment" hidden="false" book="HH:LAICL" page="89">
                       <description>Must begin the game in reserve and does not count towards the max number of units in reserve.  Deployed via reserve rules and have Outflank</description>
                       <modifiers/>
@@ -9841,7 +9924,11 @@ The Warlord and any unit they join with the Legiones Astartes special rule may r
                     </rule>
                   </rules>
                   <profiles/>
-                  <links/>
+                  <links>
+                    <link id="74df-e096-3ac2-33ff" targetId="ca4f-fb6f-4041-1073" linkType="entry">
+                      <modifiers/>
+                    </link>
+                  </links>
                 </entry>
                 <entry id="41c9-58e2-8aec-dd82" name="Praevian" points="35.0" categoryId="(No Category)" type="upgrade" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="http://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Horus_Heresy/Horus_Heresy_7th_Edition.pdf" page="5">
                   <entries/>
@@ -9862,7 +9949,7 @@ The Warlord and any unit they join with the Legiones Astartes special rule may r
                   <rules/>
                   <profiles/>
                   <links>
-                    <link id="79f1-701b-897c-c430" targetId="dc4d-c7ca-3b5e-18f6" linkType="rule">
+                    <link id="79f1-701b-897c-c430" targetId="4a87-712e-ed4f-0d34" linkType="entry">
                       <modifiers/>
                     </link>
                     <link id="2802-c530-5124-8115" targetId="a544-0b30-4b15-43ff" linkType="profile">
@@ -23710,94 +23797,6 @@ other wounds the attack causes</description>
         </link>
       </links>
     </entry>
-    <entry id="ecf4c911-6cd2-7afd-d5eb-85ac21c58149" name="&apos;Sevatar&apos;" points="175.0" categoryId="485123232344415441232323" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="LA:AODL" page="41">
-      <entries/>
-      <entryGroups>
-        <entryGroup id="92a46966-63fc-5f8c-80b2-751c9e718b52" name="Bodyguard" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
-          <entries/>
-          <entryGroups/>
-          <modifiers/>
-          <links>
-            <link id="660d3b41-e509-6300-98d4-9414145069db" targetId="cba7eacc-627d-ad1f-3c72-70e35c15fd9f" linkType="entry">
-              <modifiers/>
-            </link>
-          </links>
-        </entryGroup>
-      </entryGroups>
-      <modifiers>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="3ef8dfa5-8844-fd89-ce9b-afee530d7728" field="selections" type="equal to" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-        <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="d21b-a452-4de8-e454" field="selections" type="equal to" value="0.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <rules>
-        <rule id="c3bd398f-d4d9-ed03-10e7-fc60f0b3f184" name="Master of the Atramentar" hidden="false" book="HH:LAICL" page="63">
-          <description>Night Lords Legion Terminator Squads and Terminator Command Squads will not scatter when deploying via Deep Strike within 6&quot; of Sevatar</description>
-          <modifiers/>
-        </rule>
-        <rule id="4aeb17cf-84da-4917-c4af-a6122b7b0937" name="Dirty Fighter" hidden="false" book="HH:LAICL" page="63">
-          <description>Gains Instant Death when fighting in a challenge</description>
-          <modifiers/>
-        </rule>
-        <rule id="baabedec-2b16-db3d-a181-a0bd660f1142" name="Repressed Psyker" hidden="false" book="LA:ADL" page="41">
-          <description>Level 1 Psyker with Precognition Psychic Power from the Divination Discipline.  However, you may not use more than 2 Warp Charges from your pool in order to use his Repressed Psyker ability and a modified leadership value of 7 is used should he become subject to Perils of the Warp.  </description>
-          <modifiers/>
-        </rule>
-        <rule id="840e-e834-5fa6-8195" name="Precision Strike" hidden="false">
-          <modifiers/>
-        </rule>
-        <rule id="216a-8882-c3b6-e321" name="Warlord Trait • Master of Ambush" hidden="false" book="LA:AODL" page="41">
-          <description>If chosen as the army’s Warlord, Lord Sevatar automatically has the Master of Ambush trait rather than rolling
-randomly. This means that all friendly Outflanking units have the Acute Senses special rule while Sevatar is alive.</description>
-          <modifiers/>
-        </rule>
-      </rules>
-      <profiles>
-        <profile id="e2bfabee-a841-ef30-8e46-3b84e8b541a3" profileTypeId="556e697423232344415441232323" name="Sevatar" hidden="false" book="HH:LAICL" page="63">
-          <characteristics>
-            <characteristic characteristicId="556e6974205479706523232344415441232323" name="Unit Type" value="Infantry (Character"/>
-            <characteristic characteristicId="575323232344415441232323" name="WS" value="7"/>
-            <characteristic characteristicId="425323232344415441232323" name="BS" value="5"/>
-            <characteristic characteristicId="5323232344415441232323" name="S" value="4"/>
-            <characteristic characteristicId="5423232344415441232323" name="T" value="4"/>
-            <characteristic characteristicId="5723232344415441232323" name="W" value="3"/>
-            <characteristic characteristicId="4923232344415441232323" name="I" value="6"/>
-            <characteristic characteristicId="4123232344415441232323" name="A" value="4"/>
-            <characteristic characteristicId="4c4423232344415441232323" name="LD" value="9"/>
-            <characteristic characteristicId="5361766523232344415441232323" name="Save" value="3+"/>
-          </characteristics>
-          <modifiers/>
-        </profile>
-      </profiles>
-      <links>
-        <link id="e9423ef3-6e37-5a05-3a99-b568eec45e26" targetId="10b59cf4-3c97-e3e0-2185-853bcde6d112" linkType="profile">
-          <modifiers/>
-        </link>
-        <link id="d75a7444-2fb7-3401-cf21-c4ae4a4da455" targetId="8199e922-e844-5d34-b04b-86edadffa2df" linkType="rule">
-          <modifiers/>
-        </link>
-        <link id="0da64b6b-fd86-5eac-c93b-315e85d74751" targetId="ac65-1b58-5755-467c" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="355da4f8-2d49-d8a9-f42a-e3956b06ed09" targetId="7f468ad2-37a2-384e-62c6-59a0ef008fe9" linkType="entry">
-          <modifiers/>
-        </link>
-        <link id="8a12e614-1cfd-9889-95a8-ef6a7881cd60" targetId="422beb22-1aef-aba9-7c68-7ba770c48584" linkType="profile">
-          <modifiers/>
-        </link>
-        <link id="2d07c8ba-4aea-9c98-5af2-63806749122e" targetId="b7d58e49-6b8c-56f3-df2c-472ac811a571" linkType="profile">
-          <modifiers/>
-        </link>
-      </links>
-    </entry>
     <entry id="400e-e1b4-abac-18b8" name="Shadrak Meduson" points="195.0" categoryId="485123232344415441232323" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
       <entries>
         <entry id="488c-57d4-9cf0-4b71" name="Archaeotech Pistol" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -31113,6 +31112,9 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
       </profiles>
       <links>
         <link id="8d9b-4f3b-f5d1-4f78" targetId="2e22-b6a4-37c2-5635" linkType="entry">
+          <modifiers/>
+        </link>
+        <link id="4320-9f24-aebb-4cad" targetId="42e3-71a8-37cd-aec0" linkType="entry">
           <modifiers/>
         </link>
       </links>
@@ -42774,12 +42776,6 @@ Limitations
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="minInForce" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
-          <conditions>
-            <condition parentId="force type" childId="3b34336e-0f22-6a62-f665-74f37f5305f5" field="selections" type="equal to" value="1.0"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
       </modifiers>
       <rules/>
       <profiles/>
@@ -51269,6 +51265,27 @@ Limitations
       <profiles/>
       <links/>
     </entry>
+    <entry id="ca4f-fb6f-4041-1073" name="Lone Killer" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules>
+        <rule id="c50a-a074-560a-787e" name="Lone Killer" hidden="false" book="HH:AODAL" page="21">
+          <description>This Consul may not be taken as a Compulsory HQ choice, only as an optional HQ choice, and may never be the army’s Warlord. Note that this means this Consul may not be taken as part of an Allied Detachment. They may not join units or travel inside transports with other units except Legion Destroyer Squads. They may not benefit from any Blessing type psychic powers, or from Leadership bonuses, Leadership re-rolls or other beneficial special rules provided by other friendly models or army-wide effects which are the result of a Rite of War</description>
+          <modifiers/>
+        </rule>
+      </rules>
+      <profiles/>
+      <links/>
+    </entry>
+    <entry id="4a87-712e-ed4f-0d34" name="Support Officer" points="0.0" categoryId="(No Category)" type="upgrade" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+      <entries/>
+      <entryGroups/>
+      <modifiers/>
+      <rules/>
+      <profiles/>
+      <links/>
+    </entry>
   </sharedEntries>
   <sharedEntryGroups>
     <entryGroup id="196317ba-5d61-d9ae-a254-2485e7b82829" name="Armour" defaultEntryId="06da21ef-7489-9f96-28ee-4924a6ce3df2" minSelections="1" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -55508,6 +55525,15 @@ This choice must always be either a Centurion or a Chaplain Consul.</description
       </characteristics>
       <modifiers/>
     </profile>
+    <profile id="701b-2a8c-cb01-b0fe" profileTypeId="576561706f6e23232344415441232323" name="Molecular acid shells" hidden="false" book="HH6: Retribution" page="267">
+      <characteristics>
+        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="36&quot;"/>
+        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="2"/>
+        <characteristic characteristicId="415023232344415441232323" name="AP" value="D6"/>
+        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 3, Poison (2+)"/>
+      </characteristics>
+      <modifiers/>
+    </profile>
     <profile id="b4632691-8dcc-7fe7-b324-18b20f07c4ab" profileTypeId="57617267656172204974656d23232344415441232323" name="Narthecium" hidden="false" page="0">
       <characteristics>
         <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description"/>
@@ -56267,15 +56293,6 @@ This choice must always be either a Centurion or a Chaplain Consul.</description
     <profile id="fb2c1440-364c-c4d1-137f-7e46f665b84c" profileTypeId="57617267656172204974656d23232344415441232323" name="Wreckage and Rubble" hidden="false" book="Stronghold Assault" page="0">
       <characteristics>
         <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Area Terrain. A model in cover behind wreckage or rubble has a 4+ cover save."/>
-      </characteristics>
-      <modifiers/>
-    </profile>
-    <profile id="701b-2a8c-cb01-b0fe" profileTypeId="576561706f6e23232344415441232323" name="Molecular acid shells" hidden="false" book="HH6: Retribution" page="267">
-      <characteristics>
-        <characteristic characteristicId="52616e676523232344415441232323" name="Range" value="36&quot;"/>
-        <characteristic characteristicId="537472656e67746823232344415441232323" name="Strength" value="2"/>
-        <characteristic characteristicId="415023232344415441232323" name="AP" value="D6"/>
-        <characteristic characteristicId="5479706523232344415441232323" name="Type" value="Heavy 3, Poison (2+)"/>
       </characteristics>
       <modifiers/>
     </profile>
