@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="177" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Age of Darkness Army List" books="HH Series" authorName="Millicant, capitaladot" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="839b6f2a-4041-398b-fc2d-dc6a31d5f75e" revision="178" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" battleScribeVersion="1.15" name="Legiones Astartes: Age of Darkness Army List" books="HH Series" authorName="Millicant, capitaladot" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entries>
     <entry id="ecf4c911-6cd2-7afd-d5eb-85ac21c58149" name="&apos;Sevatar&apos;" points="175.0" categoryId="485123232344415441232323" type="model" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false" book="LA:AODL" page="41">
       <entries/>
@@ -7509,7 +7509,11 @@ D6    Result		S	AP
               </modifiers>
               <rules/>
               <profiles/>
-              <links/>
+              <links>
+                <link id="c1ad-5dcc-48aa-435b" targetId="244f6dcc-d526-1cef-a743-6120614e3898" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
             </entry>
           </entries>
           <entryGroups>
@@ -7826,7 +7830,11 @@ D6    Result		S	AP
               </modifiers>
               <rules/>
               <profiles/>
-              <links/>
+              <links>
+                <link id="1457-45b0-ca6d-4be4" targetId="244f6dcc-d526-1cef-a743-6120614e3898" linkType="profile">
+                  <modifiers/>
+                </link>
+              </links>
             </entry>
           </entries>
           <entryGroups/>
@@ -10412,7 +10420,7 @@ The Warlord and any unit they join with the Legiones Astartes special rule may r
           </modifiers>
           <links/>
         </entryGroup>
-        <entryGroup id="edffeedf-00ac-372c-6bad-56657d6ae827" name="Weapons" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="edffeedf-00ac-372c-6bad-56657d6ae827" name="Weapons (Power/Artificer Armour)" minSelections="0" maxSelections="-1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups>
             <entryGroup id="f3b50a56-1cab-c5dc-dab0-818ddb125d94" name="Exchange either Bolt Pistol or Chainsword/Combat Blade for:" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -10629,6 +10637,7 @@ The Warlord and any unit they join with the Legiones Astartes special rule may r
                             <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="0df0a0f1-9ddf-f57b-cada-26dce57443ec" field="selections" type="equal to" value="1.0"/>
                             <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="d0a9e1d2-830b-8897-3e90-ce1a562da014" field="selections" type="equal to" value="1.0"/>
                             <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="53d4a249-5fa9-8bac-fda2-0c9419bb3564" field="selections" type="equal to" value="1.0"/>
+                            <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="92febb79-a07d-220a-401d-210880a60296" field="selections" type="equal to" value="1.0"/>
                           </conditions>
                           <conditionGroups/>
                         </conditionGroup>
@@ -10706,6 +10715,19 @@ The Warlord and any unit they join with the Legiones Astartes special rule may r
                     <modifier type="set" field="maxSelections" value="2.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                       <conditions/>
                       <conditionGroups/>
+                    </modifier>
+                    <modifier type="hide" field="maxSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="53d4a249-5fa9-8bac-fda2-0c9419bb3564" field="selections" type="equal to" value="1.0"/>
+                            <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="0df0a0f1-9ddf-f57b-cada-26dce57443ec" field="selections" type="equal to" value="1.0"/>
+                            <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="d0a9e1d2-830b-8897-3e90-ce1a562da014" field="selections" type="equal to" value="1.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </link>
@@ -10900,7 +10922,7 @@ The Warlord and any unit they join with the Legiones Astartes special rule may r
           </modifiers>
           <links/>
         </entryGroup>
-        <entryGroup id="8a497b01-a54a-9a91-a2f3-f25c16658570" name="Weapons" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
+        <entryGroup id="8a497b01-a54a-9a91-a2f3-f25c16658570" name="Weapons (Terminator Armour)" minSelections="0" maxSelections="2" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
           <entries/>
           <entryGroups>
             <entryGroup id="26023a81-06c5-94a4-e362-92d3fa7708a1" name="Exchange Combi-Bolter for:" minSelections="0" maxSelections="1" minInForce="0" maxInForce="-1" minInRoster="0" maxInRoster="-1" minPoints="0.0" maxPoints="-1.0" collective="false" hidden="false">
@@ -11033,6 +11055,12 @@ The Warlord and any unit they join with the Legiones Astartes special rule may r
                       <conditions/>
                       <conditionGroups/>
                     </modifier>
+                    <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions>
+                        <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="92febb79-a07d-220a-401d-210880a60296" field="selections" type="equal to" value="1.0"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
                   </modifiers>
                 </link>
                 <link id="2dccaaf4-602d-0ad8-ddc6-c53fb413e122" targetId="479f576b-b28d-801e-b928-d82431d554b9" linkType="entry">
@@ -11040,6 +11068,17 @@ The Warlord and any unit they join with the Legiones Astartes special rule may r
                     <modifier type="set" field="points" value="5.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
                       <conditions/>
                       <conditionGroups/>
+                    </modifier>
+                    <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="92febb79-a07d-220a-401d-210880a60296" field="selections" type="equal to" value="1.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </link>
@@ -11079,7 +11118,19 @@ The Warlord and any unit they join with the Legiones Astartes special rule may r
                   <modifiers/>
                 </link>
                 <link id="05ec-8424-bb20-5aad" targetId="4cf4-a0ff-a71f-3666" linkType="entry">
-                  <modifiers/>
+                  <modifiers>
+                    <modifier type="hide" field="minSelections" value="0.0" repeat="false" numRepeats="1" incrementParentId="roster" incrementChildId="no child" incrementField="selections" incrementValue="1.0">
+                      <conditions/>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition parentId="7c08f7c0-32a3-8221-052f-48ea9e5c82d4" childId="92febb79-a07d-220a-401d-210880a60296" field="selections" type="equal to" value="1.0"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </link>
               </links>
             </entryGroup>
@@ -54539,9 +54590,9 @@ This choice must always be either a Centurion or a Chaplain Consul.</description
       </characteristics>
       <modifiers/>
     </profile>
-    <profile id="244f6dcc-d526-1cef-a743-6120614e3898" profileTypeId="57617267656172204974656d23232344415441232323" name="Combat Shield" hidden="false" book="HH:LACAL" page="89">
+    <profile id="244f6dcc-d526-1cef-a743-6120614e3898" profileTypeId="57617267656172204974656d23232344415441232323" name="Combat Shield" hidden="false" book="HH:AODL" page="131">
       <characteristics>
-        <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Confers 6++ invulnverable save, increasing to a 5++ in close combat.  User is treated as having defensive grenades, but may never claim the extra attack for being armed with an additional close combat weapon.  "/>
+        <characteristic characteristicId="4465736372697074696f6e23232344415441232323" name="Description" value="Combat shields and boarding shields confer a 6+ invulnerable save, increasing to 5+ in close combat"/>
       </characteristics>
       <modifiers/>
     </profile>
