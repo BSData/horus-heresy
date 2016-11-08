@@ -1,7 +1,12 @@
 Horus Heresy
 ============
 
+
+##Important
+
 [![Join the chat at https://gitter.im/BSData/horus-heresy](https://badges.gitter.im/BSData/horus-heresy.svg)](https://gitter.im/BSData/horus-heresy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+__BattleScribe v1.15 users Notice__: _However we don't support BattleScribe v1.15 any longer, all the files in their last revisions for that BattleScribe are available [here](https://github.com/BSData/horus-heresy/releases/tag/6.9.3). Downloading `.bsr` file(one of the Downloads) and importing it in BattleScribe v1.15 will allow you to use these no-longer-maintained datafiles._
 
 ####Contents####
 
