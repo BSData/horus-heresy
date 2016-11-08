@@ -10588,7 +10588,7 @@ Command Benefits:
           <selectionEntryGroups/>
           <entryLinks/>
           <costs>
-            <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="pts" costTypeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f0c0-384d-440f-c03b" name="Volkite Charger" hidden="false" collective="false" type="upgrade">
@@ -10745,6 +10745,21 @@ Command Benefits:
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0775-7571-0c0f-ca21" name="Heavy Bolter and Suspensor Web" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="49dd-cdc4-b1c3-800d" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -12964,6 +12979,18 @@ Jump units have the Bulky and Deep Strike special rules.</description>
       <modifiers/>
       <characteristics>
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Combat shields and boarding shields confer a 6+ invulnerable save, increasing to 5+ in close combat. A model equipped with a boarding shield also counts as being equipped with defensive grenades and cannot claim the extra attack for being armed with an additional close combat weapon."/>
+      </characteristics>
+    </profile>
+    <profile id="271e-6286-86cc-06dd" name="Heavy Bolter" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value=""/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323"/>
       </characteristics>
     </profile>
   </sharedProfiles>
