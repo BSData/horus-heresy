@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="39" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="40" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -10762,6 +10762,93 @@ Command Benefits:
             <cost name="pts" costTypeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="8447-9662-22bd-5c6c" name="Graviton Gun" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="e2e5-4887-dd36-59a5" name="New InfoLink" hidden="false" targetId="2d57-8425-0ec0-a9cf" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="85e7-fc15-e08c-b507" name="New InfoLink" hidden="false" targetId="9d85-46f7-f5e6-a5f7" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="9a64-1241-a383-977c" name="New InfoLink" hidden="false" targetId="6970-1bf3-b33e-5dce" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="cb5f-2d7c-a6bd-3a0c" name="New InfoLink" hidden="false" targetId="97a5-0583-4a2b-c44e" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="09d3-f257-408b-f1aa" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="71af-2e00-d2f7-87c7" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5fe0-432a-1edf-00a3" name="Lascutter" book="" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="3044-df1e-3d79-c65d" name="New InfoLink" hidden="false" targetId="c1d3-0c64-3702-f5f9" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="7a0e-f4fb-6ff8-c6a8" name="New InfoLink" hidden="false" targetId="5eea-958c-d623-c3c9" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="48e1-f9d3-23ae-aab1" name="New InfoLink" hidden="false" targetId="c2af-0e00-294d-8d82" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="95c1-bc99-f4e4-e1dd" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ec3f-b81d-66e6-1155" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0267-083e-86de-3c0f" name="Breaching Charge" book="LA:AODAL" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -12040,6 +12127,32 @@ Jump units always use their jump packs when Falling Back, and their Fall Back mo
 SPECIAL RULES
 Jump units have the Bulky and Deep Strike special rules.</description>
     </rule>
+    <rule id="2d57-8425-0ec0-a9cf" name="Graviton Pulse" book="LA:AODAL" page="125" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Instead of rolling To Wound normally with this weapon, any model caught in its blast must instead roll equal to or under their Strength on a D6 or suffer a wound (a roll of ‘6’ always counts as a failure). After the graviton pulse weapon has been fired, leave the Blast marker in place. This area now counts as both difficult terrain and dangerous terrain for the next turn thanks to the gravity flux.</description>
+    </rule>
+    <rule id="6970-1bf3-b33e-5dce" name="Haywire" book="BRB 7th" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>When a weapon with this special rule hits a vehicle, roll a D6 to determine the effect rather than rolling for armour penetration normally:
+
+D6 - Result
+1 - No effect
+2-5 - Glancing hit
+6 - Penetrating hit</description>
+    </rule>
+    <rule id="c2af-0e00-294d-8d82" name="Cumbersome" book="LA:AODAL" page="130" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>A model using a close combat weapon with this special rule can only ever make a single attack at WS 1 in an Assault phase, regardless of their profile or any bonus or other special rule.  </description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="09fd-8af1-a6b1-51f7" name="Bolter" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
@@ -12991,6 +13104,30 @@ Jump units have the Bulky and Deep Strike special rules.</description>
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323"/>
+      </characteristics>
+    </profile>
+    <profile id="97a5-0583-4a2b-c44e" name="Graviton Gun" book="LA:AODAL" page="134" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="18&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="Special"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Blast, Concussive, Graviton Pulse, Haywire"/>
+      </characteristics>
+    </profile>
+    <profile id="c1d3-0c64-3702-f5f9" name="Lascutter" book="LA:AODAL" page="135" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="9"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Unwieldly, Cumbersome"/>
       </characteristics>
     </profile>
   </sharedProfiles>
