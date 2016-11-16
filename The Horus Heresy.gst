@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="40" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="41" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -10847,7 +10847,32 @@ Command Benefits:
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7e20-c85a-2e04-dd0b" name="Augury Scanner" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="bebb-6a55-729a-17f8" name="New InfoLink" hidden="false" targetId="376f-adc9-b9bf-7fc9" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4bba-3258-3c50-11a3" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5373-f7e8-a8b3-abc5" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="5.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
@@ -11015,6 +11040,35 @@ Command Benefits:
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5b17-8f37-be37-1146" name="Space Marine Bike with twin-linked bolters" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="cf4f-d466-52c5-f6a4" name="New InfoLink" hidden="false" targetId="09fd-8af1-a6b1-51f7" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="b6a7-352b-bfcc-7847" name="New InfoLink" hidden="false" targetId="0434-8c4b-9614-73dd" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d441-c235-b1b9-eb8f" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8c45-d376-3ee9-a6f7" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -11229,6 +11283,71 @@ Command Benefits:
           <costs>
             <cost name="pts" costTypeId="points" value="10.0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="8e2a-0525-9100-3264" name="Bolt Pistol" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="d6b4-7a95-e32a-ba8a" name="New InfoLink" hidden="false" targetId="ec83-0776-ef74-9cc2" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8271-1c9f-64e5-e453" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c778-3da5-322d-714f" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a76d-339e-15a2-0352" name="Chainsword" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="89bb-940f-981a-f7de" name="New InfoLink" hidden="false" targetId="730c-b70b-1e8f-f2e9" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dc34-4030-62a0-ddc4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8a8c-15f3-2875-b314" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="a594-b698-7f94-627f" name="Narthecium" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="fcb1-8f40-5417-ac01" name="New InfoLink" hidden="false" targetId="7b47-c268-cdaf-fa1e" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0b52-b119-5521-4267" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cf63-c545-8fbb-0457" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
@@ -13128,6 +13247,85 @@ D6 - Result
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="9"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Unwieldly, Cumbersome"/>
+      </characteristics>
+    </profile>
+    <profile id="7b47-c268-cdaf-fa1e" name="Narthecium" book="LA:AODAL" page="132" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="While the Apothecary who carries this specialised medical and alchemical gear is still alive, all Space Marine models in their squad and any Space Marine Independent Characters that have joined it have the Feel No Pain universal special rule.  "/>
+      </characteristics>
+    </profile>
+    <profile id="0434-8c4b-9614-73dd" name="Space Marine Bike" book="BRB 7th" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="ARMOURED STEED
+Bike and Jetbike riders benefit from an increase to their Toughness characteristic by 1. If the Bike or Jetbike is part of the model’s standard wargear, this bonus is already included on its profile. In addition, Bikes and Jetbikes cannot Go to Ground, and cannot be Pinned.
+
+MOVEMENT
+Bikes and Jetbikes can move up to 12&quot; in the Movement phase.
+
+BIKES &amp; TERRAIN
+Bikes and Jetbikes are not slowed down by difficult terrain (even when charging). However, Bikes treat all difficult terrain as dangerous terrain instead.
+
+FALL BACK MOVES
+Bikes and Jetbikes move 3D6&quot; when Falling Back, rather than 2D6&quot;.
+
+SHOOTING
+Each Bike or Jetbike in a unit can fire with one weapon for each rider on the Bike. Thus a Space Marine Attack Bike with a driver and passenger in sidecar can fire two weapons.
+
+SPECIAL RULES
+Bikes and Jetbikes have the Hammer of Wrath, Jink, Relentless and Very Bulky special rules.
+
+TURBO-BOOST
+Bikes and Jetbikes cannot Run, but can make a special Turbo-boost move instead of firing in their Shooting phase.
+Turbo-boosting Bikes move up to 12&quot;, Turbo-boosting Jetbikes move up to 24&quot;. Controlling their Bikes at such speeds takes all the riders’ concentration and skill, however. Bikes and Jetbikes therefore cannot shoot, charge or execute any other voluntary action until the end of their turn after Turbo-boosting."/>
+      </characteristics>
+    </profile>
+    <profile id="3c28-4994-00ed-bbe5" name="Space Marine Jetbike" book="BRB 7th" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="ARMOURED STEED
+Bike and Jetbike riders benefit from an increase to their Toughness characteristic by 1. If the Bike or Jetbike is part of the model’s standard wargear, this bonus is already included on its profile. In addition, Bikes and Jetbikes cannot Go to Ground, and cannot be Pinned.
+
+MOVEMENT
+Bikes and Jetbikes can move up to 12&quot; in the Movement phase.
+
+BIKES &amp; TERRAIN
+Bikes and Jetbikes are not slowed down by difficult terrain (even when charging). However, Bikes treat all difficult terrain as dangerous terrain instead.
+
+JETBIKES, MODELS AND TERRAIN
+Jetbikes can move over all other models and terrain freely. However, if a moving Jetbike begins or ends its move in difficult terrain, it must take a Dangerous Terrain test. Jetbikes cannot end their move over other models or impassable terrain, except that they can end their move on top of impassable terrain if it is actually possible to place the models on top of it. If they do so, they treat the impassable terrain as dangerous terrain.
+
+FALL BACK MOVES
+Bikes and Jetbikes move 3D6&quot; when Falling Back, rather than 2D6&quot;.
+
+SHOOTING
+Each Bike or Jetbike in a unit can fire with one weapon for each rider on the Bike. Thus a Space Marine Attack Bike with a driver and passenger in sidecar can fire two weapons.
+
+SPECIAL RULES
+Bikes and Jetbikes have the Hammer of Wrath, Jink, Relentless and Very Bulky special rules.
+
+TURBO-BOOST
+Bikes and Jetbikes cannot Run, but can make a special Turbo-boost move instead of firing in their Shooting phase.
+Turbo-boosting Bikes move up to 12&quot;, Turbo-boosting Jetbikes move up to 24&quot;. Controlling their Bikes at such speeds takes all the riders’ concentration and skill, however. Bikes and Jetbikes therefore cannot shoot, charge or execute any other voluntary action until the end of their turn after Turbo-boosting."/>
+      </characteristics>
+    </profile>
+    <profile id="376f-adc9-b9bf-7fc9" name="Augury Scanner" book="LA:AODAL" page="131" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Models cannot be deployed using the Infiltrate special rule within 18&quot; of a model with an augury scanner. Enemy models deployed using Deep Strike within this range can also be attacked by a unit carrying an augury scanner in the Shooting phase as if their Rapid Fire and Heavy weapons (if they have any) had the Interceptor special rule.  "/>
       </characteristics>
     </profile>
   </sharedProfiles>
