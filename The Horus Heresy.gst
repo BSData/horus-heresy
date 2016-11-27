@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="41" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="42" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -5894,6 +5894,20 @@ D6    Result		S	AP
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="3f46-519e-be97-c6bf" name="Custodes: Allied Detachment" book="" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a18a-56c6-644d-4385" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45a1-c9c4-19d4-05db" type="min"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4779-8e30-0a8f-4037" name="Rite of War" hidden="false" collective="false">
@@ -11326,7 +11340,9 @@ Command Benefits:
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="a594-b698-7f94-627f" name="Narthecium" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -11343,6 +11359,173 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0b52-b119-5521-4267" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cf63-c545-8fbb-0457" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="afd7-1ff8-9d40-50dc" name="Custodian Armour" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="f144-0cf0-32de-88f4" name="New InfoLink" hidden="false" targetId="1a24-2fc3-0191-e8ca" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8076-0270-d6d7-7abf" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8f4-e3a3-447e-4e69" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="f000-ebfb-3bc8-e612" name="Sentinel Warblade" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="2d32-e270-68fc-2830" name="New InfoLink" hidden="false" targetId="d405-10bd-6181-3388" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="b1fb-c2b9-9f26-4c85" name="New InfoLink" hidden="false" targetId="3e18-0076-38d2-3b23" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d50-44b6-b9f8-f65d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e18e-6f32-7be8-3adb" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="0aff-3787-aba5-fae7" name="Guardian Spear" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="707f-85b2-b425-adab" name="New InfoLink" hidden="false" targetId="1bc4-0de1-4bfe-b6d8" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="51ad-d88a-bebc-33c1" name="New InfoLink" hidden="false" targetId="0ad4-1adb-5d8b-5ba7" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6987-fbc7-7491-b991" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3548-3b71-b917-ecf2" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="a14e-970f-8fe3-8797" name="Praesidium Shield" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="87d8-336c-9497-4317" name="New InfoLink" hidden="false" targetId="b8d6-47d4-12a9-f5e1" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96d7-2ffe-2098-93e1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fb8-a8eb-4c2a-9816" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="1488-81b8-f0ad-3703" name="Plasma Grenades" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="2aff-c5df-ea9f-cb2b" name="New InfoLink" hidden="false" targetId="0d78-e15c-74f6-5701" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="1a96-60af-34d2-755f" name="New InfoLink" hidden="false" targetId="7b4d-1c91-ab33-1b12" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="125a-4acf-2ca2-90e5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f91e-a871-567b-f40d" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="9ab7-4eee-d3f0-25a1" name="Krak Grenades" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="e3dd-22fb-41ed-9834" name="New InfoLink" hidden="false" targetId="d9f7-775b-1047-f335" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20a3-6d34-a27c-36ee" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e126-a876-27ab-1181" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="3060-5ce0-cb9d-3bbd" name="Close Combat Weapon" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="25d2-f77c-25a5-4679" name="New InfoLink" hidden="false" targetId="730c-b70b-1e8f-f2e9" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e6f-3983-0fb3-983f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0563-ac8e-0a63-4eff" type="min"/>
           </constraints>
           <selectionEntries/>
           <selectionEntryGroups/>
@@ -11523,6 +11706,256 @@ Command Benefits:
           <costs>
             <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="490e-24da-8462-d98c" name="Wargear Vehicles" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries>
+        <selectionEntry id="eef6-a613-e479-7274" name="Armoured Ceramite" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="3e26-8893-7b1a-8d5a" name="New InfoLink" hidden="false" targetId="6191-5a5d-0000-7f09" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19a6-04bf-902e-faff" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a78-ae84-ef7c-c81b" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="da87-4ba8-b8cd-bea3" name="Searchlight" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="d23a-bb8b-4f94-cda0" name="New InfoLink" hidden="false" targetId="9bb4-3833-5343-0dd9" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc98-69df-fbda-61b2" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95be-bfe6-c04c-fab4" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="1.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a6cd-f04b-711e-c083" name="Extra Armour" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="b382-3b3d-c814-b047" name="New InfoLink" hidden="false" targetId="79c7-90f6-b453-e799" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b17f-93b8-0d8c-a7db" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="131b-e239-1cea-ac3d" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7332-4181-03b9-d402" name="Flare Shield" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="e687-26b6-3de9-97e9" name="New InfoLink" hidden="false" targetId="cb4a-644f-bd8d-7d97" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e4e-1afa-1f33-9202" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e0a-b412-ec2c-d2ac" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="f30a-210c-0677-1c83" name="Machine Spirit" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="679f-71f1-bbdc-afc2" name="New InfoLink" hidden="false" targetId="0ac1-dfc1-295b-50a6" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="6096-9ae9-c1a5-e798" name="New InfoLink" hidden="false" targetId="1578-d22a-060c-4700" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d7b-db6d-0d90-5944" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3955-2494-4430-729d" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="148f-80a0-567b-5c87" name="Wargear Vehicles - Profile" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries>
+        <selectionEntry id="ca5e-98e3-dff7-fa49" name="Armoured Ceramite" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="5bc4-80c5-f65a-828d" name="New InfoLink" hidden="false" targetId="6191-5a5d-0000-7f09" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb80-42a2-aa2d-5e3a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6be5-dd8e-96da-604f" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="7b19-0e33-9c8d-e56a" name="Searchlight" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="c611-772f-e8b2-b809" name="New InfoLink" hidden="false" targetId="9bb4-3833-5343-0dd9" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0694-665e-e4ed-7e37" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13ec-a328-f762-6b4d" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="4167-42c8-42d8-1ce0" name="Extra Armour" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="8be5-8899-5674-249b" name="New InfoLink" hidden="false" targetId="79c7-90f6-b453-e799" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8702-8242-0b63-3471" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c55-d80f-7f28-0ec6" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="da74-5542-17da-8a49" name="Machine Spirit" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="1f26-867f-947b-1d2b" name="New InfoLink" hidden="false" targetId="0ac1-dfc1-295b-50a6" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="119f-6b3b-5d89-aac7" name="New InfoLink" hidden="false" targetId="1578-d22a-060c-4700" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a31-6dc0-a544-fdd7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="680e-4bd9-603f-949f" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="5627-96b7-0b67-5274" name="Flare Shield" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="bb23-8cfc-d84d-3cc6" name="New InfoLink" hidden="false" targetId="cb4a-644f-bd8d-7d97" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac16-3527-3d5d-4db4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="822a-6a29-e1ea-ae68" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
@@ -12271,6 +12704,69 @@ D6 - Result
       <infoLinks/>
       <modifiers/>
       <description>A model using a close combat weapon with this special rule can only ever make a single attack at WS 1 in an Assault phase, regardless of their profile or any bonus or other special rule.  </description>
+    </rule>
+    <rule id="eabf-f2b0-71f8-0f72" name="Preternatural Skill" book="White Dwarf" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Any model with this special rule gains a bonus of +1 to their Initiative in the Assault phase if their Weapon Skill is equal to or greater than the majority Weapon Skill of the unit or units they are fighting.  </description>
+    </rule>
+    <rule id="02a2-75f4-f5cf-90c4" name="The Sodality" book="White Dwarf" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>A unit composed entirely of models with this special rule has a coherency of 3&quot; instead of the usual 2&quot; and may always attempt to Regroup as an unmodified Leadership test regardless of casualties taken or any other effects.  </description>
+    </rule>
+    <rule id="4911-3960-0d1b-7136" name="Inviolable Psyche" book="White Dwarf" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>A unit with this special rule is immune to Fear and can re-roll failed Deny the Witch attempts.  	</description>
+    </rule>
+    <rule id="7bf6-45ab-1138-10c7" name="Lightning Blows" book="White Dwarf" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Every roll of a 6 To Hit with this weapon generates another attack with the same weapon at the same Initiative step.  These extra attacks do not themselves also generate extra attacks.  </description>
+    </rule>
+    <rule id="e7e7-5907-0351-2ef0" name="Hail of Fire" book="White Dwarf" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>This weapon makes snap shots at BS2. </description>
+    </rule>
+    <rule id="0d78-e15c-74f6-5701" name="Plasma Grenades" book="BRB 7th" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Models equipped with plasma grenades don’t suffer the penalty to their Initiative for charging enemies through difficult terrain, but fight at their normal Initiative step in the ensuing combat.</description>
+    </rule>
+    <rule id="0ac1-dfc1-295b-50a6" name="Power of the Machine Spirit" book="BRB 7th" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>In a turn in which the vehicle neither moves Flat Out nor uses smoke launchers, the vehicle can fire one more weapon at its full Ballistic Skill than normally permitted. In addition, this weapon can be fired at a different target unit to any other weapons, subject to the normal rules for shooting.</description>
+    </rule>
+    <rule id="4af6-46f8-9c3e-cb33" name="Heliothermic Detonation" book="Forgeworld.co.uk" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>If any target suffers one or more unsaved wounds from this weapon and is not slain, they must take an immediate Toughness test. If this test is failed, they suffer Instant Death. If a vehicle suffers a penetrating hit from this weapon, add +1 to the result rolled on the Vehicle Damage table.</description>
+    </rule>
+    <rule id="3bc1-64f3-ed64-6959" name="Rapid Tracking" book="LA:AODAL" page="127" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Targets may not take Jink saves against damage from this weapon.  </description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -13264,27 +13760,7 @@ D6 - Result
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="ARMOURED STEED
-Bike and Jetbike riders benefit from an increase to their Toughness characteristic by 1. If the Bike or Jetbike is part of the model’s standard wargear, this bonus is already included on its profile. In addition, Bikes and Jetbikes cannot Go to Ground, and cannot be Pinned.
-
-MOVEMENT
-Bikes and Jetbikes can move up to 12&quot; in the Movement phase.
-
-BIKES &amp; TERRAIN
-Bikes and Jetbikes are not slowed down by difficult terrain (even when charging). However, Bikes treat all difficult terrain as dangerous terrain instead.
-
-FALL BACK MOVES
-Bikes and Jetbikes move 3D6&quot; when Falling Back, rather than 2D6&quot;.
-
-SHOOTING
-Each Bike or Jetbike in a unit can fire with one weapon for each rider on the Bike. Thus a Space Marine Attack Bike with a driver and passenger in sidecar can fire two weapons.
-
-SPECIAL RULES
-Bikes and Jetbikes have the Hammer of Wrath, Jink, Relentless and Very Bulky special rules.
-
-TURBO-BOOST
-Bikes and Jetbikes cannot Run, but can make a special Turbo-boost move instead of firing in their Shooting phase.
-Turbo-boosting Bikes move up to 12&quot;, Turbo-boosting Jetbikes move up to 24&quot;. Controlling their Bikes at such speeds takes all the riders’ concentration and skill, however. Bikes and Jetbikes therefore cannot shoot, charge or execute any other voluntary action until the end of their turn after Turbo-boosting."/>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="ARMOURED STEED Bike and Jetbike riders benefit from an increase to their Toughness characteristic by 1. If the Bike or Jetbike is part of the model’s standard wargear, this bonus is already included on its profile. In addition, Bikes and Jetbikes cannot Go to Ground, and cannot be Pinned.  MOVEMENT Bikes and Jetbikes can move up to 12&quot; in the Movement phase.  BIKES &amp; TERRAIN Bikes and Jetbikes are not slowed down by difficult terrain (even when charging). However, Bikes treat all difficult terrain as dangerous terrain instead.  FALL BACK MOVES Bikes and Jetbikes move 3D6&quot; when Falling Back, rather than 2D6&quot;.  SHOOTING Each Bike or Jetbike in a unit can fire with one weapon for each rider on the Bike. Thus a Space Marine Attack Bike with a driver and passenger in sidecar can fire two weapons.  SPECIAL RULES Bikes and Jetbikes have the Hammer of Wrath, Jink, Relentless and Very Bulky special rules.  TURBO-BOOST Bikes and Jetbikes cannot Run, but can make a special Turbo-boost move instead of firing in their Shooting phase. Turbo-boosting Bikes move up to 12&quot;, Turbo-boosting Jetbikes move up to 24&quot;. Controlling their Bikes at such speeds takes all the riders’ concentration and skill, however. Bikes and Jetbikes therefore cannot shoot, charge or execute any other voluntary action until the end of their turn after Turbo-boosting."/>
       </characteristics>
     </profile>
     <profile id="3c28-4994-00ed-bbe5" name="Space Marine Jetbike" book="BRB 7th" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
@@ -13293,30 +13769,7 @@ Turbo-boosting Bikes move up to 12&quot;, Turbo-boosting Jetbikes move up to 24&
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="ARMOURED STEED
-Bike and Jetbike riders benefit from an increase to their Toughness characteristic by 1. If the Bike or Jetbike is part of the model’s standard wargear, this bonus is already included on its profile. In addition, Bikes and Jetbikes cannot Go to Ground, and cannot be Pinned.
-
-MOVEMENT
-Bikes and Jetbikes can move up to 12&quot; in the Movement phase.
-
-BIKES &amp; TERRAIN
-Bikes and Jetbikes are not slowed down by difficult terrain (even when charging). However, Bikes treat all difficult terrain as dangerous terrain instead.
-
-JETBIKES, MODELS AND TERRAIN
-Jetbikes can move over all other models and terrain freely. However, if a moving Jetbike begins or ends its move in difficult terrain, it must take a Dangerous Terrain test. Jetbikes cannot end their move over other models or impassable terrain, except that they can end their move on top of impassable terrain if it is actually possible to place the models on top of it. If they do so, they treat the impassable terrain as dangerous terrain.
-
-FALL BACK MOVES
-Bikes and Jetbikes move 3D6&quot; when Falling Back, rather than 2D6&quot;.
-
-SHOOTING
-Each Bike or Jetbike in a unit can fire with one weapon for each rider on the Bike. Thus a Space Marine Attack Bike with a driver and passenger in sidecar can fire two weapons.
-
-SPECIAL RULES
-Bikes and Jetbikes have the Hammer of Wrath, Jink, Relentless and Very Bulky special rules.
-
-TURBO-BOOST
-Bikes and Jetbikes cannot Run, but can make a special Turbo-boost move instead of firing in their Shooting phase.
-Turbo-boosting Bikes move up to 12&quot;, Turbo-boosting Jetbikes move up to 24&quot;. Controlling their Bikes at such speeds takes all the riders’ concentration and skill, however. Bikes and Jetbikes therefore cannot shoot, charge or execute any other voluntary action until the end of their turn after Turbo-boosting."/>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="ARMOURED STEED Bike and Jetbike riders benefit from an increase to their Toughness characteristic by 1. If the Bike or Jetbike is part of the model’s standard wargear, this bonus is already included on its profile. In addition, Bikes and Jetbikes cannot Go to Ground, and cannot be Pinned.  MOVEMENT Bikes and Jetbikes can move up to 12&quot; in the Movement phase.  BIKES &amp; TERRAIN Bikes and Jetbikes are not slowed down by difficult terrain (even when charging). However, Bikes treat all difficult terrain as dangerous terrain instead.  JETBIKES, MODELS AND TERRAIN Jetbikes can move over all other models and terrain freely. However, if a moving Jetbike begins or ends its move in difficult terrain, it must take a Dangerous Terrain test. Jetbikes cannot end their move over other models or impassable terrain, except that they can end their move on top of impassable terrain if it is actually possible to place the models on top of it. If they do so, they treat the impassable terrain as dangerous terrain.  FALL BACK MOVES Bikes and Jetbikes move 3D6&quot; when Falling Back, rather than 2D6&quot;.  SHOOTING Each Bike or Jetbike in a unit can fire with one weapon for each rider on the Bike. Thus a Space Marine Attack Bike with a driver and passenger in sidecar can fire two weapons.  SPECIAL RULES Bikes and Jetbikes have the Hammer of Wrath, Jink, Relentless and Very Bulky special rules.  TURBO-BOOST Bikes and Jetbikes cannot Run, but can make a special Turbo-boost move instead of firing in their Shooting phase. Turbo-boosting Bikes move up to 12&quot;, Turbo-boosting Jetbikes move up to 24&quot;. Controlling their Bikes at such speeds takes all the riders’ concentration and skill, however. Bikes and Jetbikes therefore cannot shoot, charge or execute any other voluntary action until the end of their turn after Turbo-boosting."/>
       </characteristics>
     </profile>
     <profile id="376f-adc9-b9bf-7fc9" name="Augury Scanner" book="LA:AODAL" page="131" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
@@ -13326,6 +13779,120 @@ Turbo-boosting Bikes move up to 12&quot;, Turbo-boosting Jetbikes move up to 24&
       <modifiers/>
       <characteristics>
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Models cannot be deployed using the Infiltrate special rule within 18&quot; of a model with an augury scanner. Enemy models deployed using Deep Strike within this range can also be attacked by a unit carrying an augury scanner in the Shooting phase as if their Rapid Fire and Heavy weapons (if they have any) had the Interceptor special rule.  "/>
+      </characteristics>
+    </profile>
+    <profile id="1bc4-0de1-4bfe-b6d8" name="Guardian Spear (Power Blade)" book="White Dwarf" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="Melee"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="User/+1*"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3/2*"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Lightning Blows, Specialist Weapon"/>
+      </characteristics>
+    </profile>
+    <profile id="0ad4-1adb-5d8b-5ba7" name="Guardian Spear (Guardian Bolter)" book="White Dwarf" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="18&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="4"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 2"/>
+      </characteristics>
+    </profile>
+    <profile id="3e18-0076-38d2-3b23" name="Sentinel Warblade (Warblade)" book="White Dwarf" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="Melee"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="User"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Rending, Specialist Weapon"/>
+      </characteristics>
+    </profile>
+    <profile id="d405-10bd-6181-3388" name="Sentinel Warblade (Bolt Caster)" book="White Dwarf" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="12&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="4"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="5"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 2, Hail of Fire"/>
+      </characteristics>
+    </profile>
+    <profile id="b8d6-47d4-12a9-f5e1" name="Praesidium Shield" book="White Dwarf" page="" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="A Praesidium Shield provides a 4++ Invulnerable save which may be re-rolled if failed when the bearer is in an assault.  A model equipped with a Praesidium Shield, however, cannot use a weapon with the Two-handed special rule or claim the benefit of an additional close combat weapon in assault.  "/>
+      </characteristics>
+    </profile>
+    <profile id="1a24-2fc3-0191-e8ca" name="Custodian Armour" book="White Dwarf" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Custodian armour provides a 2+ armour save, a 5++ invulnerable save and confers the Move Through Cover special rule.  "/>
+      </characteristics>
+    </profile>
+    <profile id="7b4d-1c91-ab33-1b12" name="Plasma Grenades" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="8&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="4"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 1, Blast"/>
+      </characteristics>
+    </profile>
+    <profile id="79c7-90f6-b453-e799" name="Extra Armour" book="BRB 7th" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Vehicles equipped with extra armour count Crew Stunned results from the Vehicle Damage table as Crew Shaken results instead."/>
+      </characteristics>
+    </profile>
+    <profile id="6191-5a5d-0000-7f09" name="Armoured Ceramite" book="LA:AODAL" page="131" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="A vehicle with this wargear is not subject to the additional D6 armour penetration caused by weapons with the Melta special rule.  "/>
+      </characteristics>
+    </profile>
+    <profile id="cb4a-644f-bd8d-7d97" name="Flare Shield" book="LA:AODAL" page="132" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="A flare shield operates against shooting attacks that strike the vehicle’s front arc. It reduces the strength of attacks by weapons with the Template or Blast type by -2, and other shooting attacks’ Strength by -1. A flare shield has no effect on close combat attacks or attacks inflicted with the Destroyer special rule.  "/>
+      </characteristics>
+    </profile>
+    <profile id="1578-d22a-060c-4700" name="Machine Spirit" book="LA:AODAL" page="132" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="A vehicle equipped with a Machine Spirit gains the Power of the Machine Spirit special rule."/>
       </characteristics>
     </profile>
   </sharedProfiles>
