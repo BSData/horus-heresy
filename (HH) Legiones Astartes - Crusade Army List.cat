@@ -7979,6 +7979,13 @@
           <modifiers/>
           <constraints/>
         </entryLink>
+        <entryLink id="a5ec-321c-ac13-3071" name="New EntryLink" hidden="false" targetId="823f-eedd-c0c8-783c" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
@@ -49195,7 +49202,7 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6fcc-807e-a797-ff37" name="Legion Predator Strike Armoured Squadron" book="HH:LACAL" page="51" hidden="false" collective="false" categoryEntryId="486561767920537570706f727423232344415441232323" type="unit">
+    <selectionEntry id="6fcc-807e-a797-ff37" name="Legion Predator Strike Squadron" book="HH:LACAL" page="51" hidden="false" collective="false" categoryEntryId="486561767920537570706f727423232344415441232323" type="unit">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -49207,7 +49214,15 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="6fcc-807e-a797-ff37" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="82c6-e8ec-2e9d-e095" type="notEqualTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
           <selectionEntries>
             <selectionEntry id="37b4-6a2c-bc3a-00ae" name="Command Tank" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
