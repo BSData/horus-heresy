@@ -13160,7 +13160,7 @@ D6 - Result
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Searchlights are used when the Night Fighting rules are in effect. If a vehicle has a searchlight, it can, after firing all of its weapons, choose to illuminate its target with the searchlight. If it does so, it also illuminates itself. You may find it helpful to place coins, or other suitable counters, next to the units as reminders, and next to a vehicle to show it has used its searchlights this turn. Illumination lasts until the end of the following turn. Illuminated units gain no benefit from the Night Fighting rule."/>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Night fighting only. It can illuminate a target it has fired at. Illuminates itself in the process (illuminated units lose Night Fighting benefits)"/>
       </characteristics>
     </profile>
     <profile id="a8c1-185a-cdd9-b5ce" name="Infravisor" book="HH:MT" page="111" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
@@ -13995,6 +13995,15 @@ D6 - Result
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="1"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Melta, Large Blast (5&quot;)"/>
+      </characteristics>
+    </profile>
+    <profile id="6875-ee73-2a85-6a97" name="Smoke Launchers" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Once per game, instead of shooting or flat out movements/running, the vehicle can activate smoke launchers. May not fire its weapons that turn but recieves a 5+ cover save until next player turn. Unaffected by weapon destroyed, crew shaken and crew stunned results."/>
       </characteristics>
     </profile>
   </sharedProfiles>
