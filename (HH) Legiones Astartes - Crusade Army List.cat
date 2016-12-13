@@ -49613,26 +49613,6 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
             <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Tank"/>
           </characteristics>
         </profile>
-        <profile id="d251-f756-8109-0b38" name="Predator Cannon" book="HH:LACAL" page="93" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <repeats/>
-              <conditions>
-                <condition field="selections" scope="e6ae-2abb-2ddf-be8a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="67d5-f8a6-4414-e802" type="equalTo"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot;"/>
-            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
-            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 4"/>
-          </characteristics>
-        </profile>
       </profiles>
       <rules/>
       <infoLinks/>
@@ -49948,21 +49928,14 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="67d5-f8a6-4414-e802" name="Exchange Predator Cannon for:" hidden="false" collective="false">
+        <selectionEntryGroup id="67d5-f8a6-4414-e802" name="Turret Weapon:" hidden="false" collective="false" defaultSelectionEntryId="bc7c-f7de-bc20-0dcd">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="maxSelections" value="0.0">
-              <repeats/>
-              <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9c92-8e44-1052-c19d" type="instanceOf"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
+          <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc66-832c-b00f-1a96" type="min"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="c8f0-8303-199e-819e" name="Flamestorm Cannon" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -49970,9 +49943,7 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
+              <constraints/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -49998,9 +49969,7 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
+              <constraints/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -50038,9 +50007,7 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
                 </infoLink>
               </infoLinks>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
+              <constraints/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -50066,9 +50033,7 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
+              <constraints/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -50112,6 +50077,30 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
               <costs>
                 <cost name="pts" costTypeId="points" value="0.0"/>
               </costs>
+            </selectionEntry>
+            <selectionEntry id="bc7c-f7de-bc20-0dcd" name="Predator Cannon" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="1698-4ed8-fd03-38ad" name="Predator Cannon" book="HH:LACAL" page="93" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 4"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
