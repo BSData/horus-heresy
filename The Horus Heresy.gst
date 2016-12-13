@@ -3715,7 +3715,7 @@ D6    Result		S	AP
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="db0c-631b-d669-7bd9" name="New InfoLink" hidden="false" targetId="b1af-a106-15e7-4d01" type="profile">
+                <infoLink id="db0c-631b-d669-7bd9" name="New InfoLink" hidden="false" targetId="c840-52c7-96a1-2917" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -4258,7 +4258,7 @@ D6    Result		S	AP
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="5fdb-b5f6-8cf1-4405" name="New InfoLink" hidden="false" targetId="b1af-a106-15e7-4d01" type="profile">
+                <infoLink id="5fdb-b5f6-8cf1-4405" name="New InfoLink" hidden="false" targetId="c840-52c7-96a1-2917" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -5906,7 +5906,9 @@ D6    Result		S	AP
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -11386,7 +11388,9 @@ Command Benefits:
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="f000-ebfb-3bc8-e612" name="Sentinel Warblade" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -11413,7 +11417,9 @@ Command Benefits:
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="0aff-3787-aba5-fae7" name="Guardian Spear" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -11440,7 +11446,9 @@ Command Benefits:
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="a14e-970f-8fe3-8797" name="Praesidium Shield" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -11461,7 +11469,9 @@ Command Benefits:
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="1488-81b8-f0ad-3703" name="Plasma Grenades" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -11488,7 +11498,9 @@ Command Benefits:
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="9ab7-4eee-d3f0-25a1" name="Krak Grenades" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -11509,7 +11521,9 @@ Command Benefits:
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="3060-5ce0-cb9d-3bbd" name="Close Combat Weapon" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -11530,7 +11544,9 @@ Command Benefits:
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
@@ -11806,7 +11822,9 @@ Command Benefits:
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="f30a-210c-0677-1c83" name="Machine Spirit" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -11833,7 +11851,9 @@ Command Benefits:
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
@@ -11865,7 +11885,9 @@ Command Benefits:
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="7b19-0e33-9c8d-e56a" name="Searchlight" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -11886,7 +11908,9 @@ Command Benefits:
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="4167-42c8-42d8-1ce0" name="Extra Armour" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -11907,7 +11931,9 @@ Command Benefits:
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="da74-5542-17da-8a49" name="Machine Spirit" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -11934,7 +11960,9 @@ Command Benefits:
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="5627-96b7-0b67-5274" name="Flare Shield" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -11955,7 +11983,9 @@ Command Benefits:
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
@@ -13037,18 +13067,6 @@ D6 - Result
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Primary Weapon 1, Instant Death"/>
       </characteristics>
     </profile>
-    <profile id="b1af-a106-15e7-4d01" name="Sunfury Plasma Annihilator" book="HH5: Tempest" page="264" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="72&quot;"/>
-        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="9"/>
-        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
-        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Primary Weapon 4, Apocalyptic Barrage, Plasma Wave"/>
-      </characteristics>
-    </profile>
     <profile id="e135-8b23-7190-9f2c" name="Cortex Controller" book="HH:MT" page="111" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
       <profiles/>
       <rules/>
@@ -13893,6 +13911,90 @@ D6 - Result
       <modifiers/>
       <characteristics>
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="A vehicle equipped with a Machine Spirit gains the Power of the Machine Spirit special rule."/>
+      </characteristics>
+    </profile>
+    <profile id="e97c-a368-88a3-3fb0" name="Executioner Plasma Cannon" book="" page="" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3, 3&quot; Blast"/>
+      </characteristics>
+    </profile>
+    <profile id="7861-701e-b6d5-be87" name="Predator Cannon" book="HH:LACAL" page="93" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 4"/>
+      </characteristics>
+    </profile>
+    <profile id="890c-3cfe-af38-b022" name="Magna-Melta Cannon" book="HH:LACAL" page="92" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="18&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="1"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Large Blast, Melta"/>
+      </characteristics>
+    </profile>
+    <profile id="c2dc-5db9-b18b-d360" name="Flamestorm Cannon" book="BRB" page="Ranged Weapons" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="Template"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="6"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 1"/>
+      </characteristics>
+    </profile>
+    <profile id="82da-c04f-09bf-302c" name="Predator Cannon" book="LA:AoDAL" page="127" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 4"/>
+      </characteristics>
+    </profile>
+    <profile id="c840-52c7-96a1-2917" name="Sunfury Plasma Annihilator" book="HH5: Tempest" page="264" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="72&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="9"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Primary Weapon 4, Apocalyptic Barrage, Plasma Wave"/>
+      </characteristics>
+    </profile>
+    <profile id="2ffa-a441-e058-7780" name="Magna-Melta" book="LA:AoDAL" page="126" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="18&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="1"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Melta, Large Blast (5&quot;)"/>
       </characteristics>
     </profile>
   </sharedProfiles>

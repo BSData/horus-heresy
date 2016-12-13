@@ -9900,7 +9900,7 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="6f2c-eff4-e969-2d30" hidden="false" targetId="c49a-4a6c-913f-9c09" type="profile">
+        <infoLink id="6f2c-eff4-e969-2d30" hidden="false" targetId="890c-3cfe-af38-b022" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -49583,7 +49583,10 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ecf-9cc1-f981-f87a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f875-7013-4905-04b1" type="min"/>
+          </constraints>
         </entryLink>
         <entryLink id="c64e-97bc-6eb6-4887" hidden="false" targetId="c487-be13-ea53-917e" type="selectionEntryGroup">
           <profiles/>
@@ -49928,184 +49931,6 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="67d5-f8a6-4414-e802" name="Turret Weapon:" hidden="false" collective="false" defaultSelectionEntryId="bc7c-f7de-bc20-0dcd">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc66-832c-b00f-1a96" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="c8f0-8303-199e-819e" name="Flamestorm Cannon" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="15.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="00f9-a7f0-ce5f-1117" name="Executioner Plasma Cannon" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles>
-                <profile id="9fe3-be35-1ca2-2c6b" name="Executioner Plasma Cannon" book="HH:LACAL" page="92" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <characteristics>
-                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
-                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
-                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
-                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3, Blast"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="55.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b838-9e73-21df-5faf" name="Heavy Conversion Beamer" book="HH1: Betrayal" page="230" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks>
-                <infoLink id="fd46-ab7a-fbda-5706" hidden="false" targetId="0ee6cae6-b6fa-f0e7-6a77-0112ac6710a1" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-                <infoLink id="77d1-3bc7-b862-aea6" hidden="false" targetId="08ebafcd-366d-43ca-2591-21133dd130d2" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-                <infoLink id="74cc-4771-1de2-40e4" hidden="false" targetId="9b7588a6-5b9a-a011-dbb2-ed73a34a521f" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-                <infoLink id="c712-30b8-b5c7-c2d1" hidden="false" targetId="718145e4-0a8e-1007-046b-7d2157a5ea3d" type="rule">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
-              <modifiers/>
-              <constraints/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="40.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="af68-1f4a-4ebf-b5f1" name="Magna-Melta Cannon" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles>
-                <profile id="5d16-05c5-b573-c1ce" name="Magna-Melta Cannon" book="HH:LACAL" page="92" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <characteristics>
-                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="18&quot;"/>
-                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
-                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="1"/>
-                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Large Blast, Melta"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="45.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="1aa2-077b-1986-7e52" name="Twin-linked Iliastus Assault Cannon" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks>
-                <infoLink id="469e-f241-4177-4a9d" hidden="false" targetId="0d8bdd64-39f0-7759-d8ca-0702ee1f0fd0" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-                <infoLink id="52b8-fe60-f9ad-2fad" hidden="false" targetId="0d300426-e90a-4a8d-bff5-9b64949b128d" type="rule">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16a2-56d6-9be5-ede0" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="bc7c-f7de-bc20-0dcd" name="Predator Cannon" hidden="false" collective="false" type="upgrade">
-              <profiles>
-                <profile id="1698-4ed8-fd03-38ad" name="Predator Cannon" book="HH:LACAL" page="93" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <characteristics>
-                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot;"/>
-                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
-                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
-                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 4"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs/>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
-        </selectionEntryGroup>
         <selectionEntryGroup id="5004-f7f0-4be8-4696" name="Legion-specific upgrade" hidden="false" collective="false">
           <profiles/>
           <rules/>
@@ -50130,6 +49955,55 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
               <constraints/>
             </entryLink>
             <entryLink id="39b8-e918-f474-f18c" hidden="false" targetId="f785888f-6dfa-08f4-054f-29b1a0e4f20c" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="26cb-8892-f662-a81b" name="Predator Turret Weapon:" hidden="false" collective="false" defaultSelectionEntryId="d257-2128-f357-9f1c">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1681-4503-803b-6a88" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d80-49ff-eaa4-1443" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="a957-f497-5972-bd45" name="New EntryLink" hidden="false" targetId="3763d263-605b-61d9-4dc5-5a4ebfc66d5f" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="d257-2128-f357-9f1c" name="New EntryLink" hidden="false" targetId="8710-51ac-cb49-b3ab" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="fff1-5b71-22d8-d8b8" name="New EntryLink" hidden="false" targetId="8f33-2321-ffd1-9b1c" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="dc4f-5a20-46bb-821a" name="New EntryLink" hidden="false" targetId="7bc7-d6c3-c4c9-6a17" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="5783-131d-a404-c62d" name="New EntryLink" hidden="false" targetId="5986-c8ef-d448-397b" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -65984,7 +65858,14 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
     <selectionEntry id="bf22e42c-d16a-d354-a7f2-f6aba925f510" name="Twin-linked Heavy Flamer" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
       <profiles/>
       <rules/>
-      <infoLinks/>
+      <infoLinks>
+        <infoLink id="1110-521c-6a99-7d50" name="New InfoLink" hidden="false" targetId="c554-a05e-607c-5831" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <repeats/>
@@ -66955,6 +66836,121 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="35.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8710-51ac-cb49-b3ab" name="Predator Cannon" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="e5e6-a8cb-4456-4cdc" name="New InfoLink" hidden="false" targetId="7861-701e-b6d5-be87" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8f33-2321-ffd1-9b1c" name="Magna-Melta Cannon" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="61b7-08b1-8ddb-5a8e" name="New InfoLink" hidden="false" targetId="890c-3cfe-af38-b022" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="45.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7bc7-d6c3-c4c9-6a17" name="Flamestorm Cannon" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="f461-e110-f3b8-800c" name="New InfoLink" hidden="false" targetId="c2dc-5db9-b18b-d360" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ec96-607e-4374-8906" name="Executioner Plasma Cannon" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="55.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5986-c8ef-d448-397b" name="Twin-Linked Iliastus Pattern Assault Cannon" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="9ff5-143d-6f8d-8bdc" hidden="false" targetId="0d8bdd64-39f0-7759-d8ca-0702ee1f0fd0" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="append" field="5479706523232344415441232323" value=", Twin-Linked">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="7ec3-2e43-cc56-012d" hidden="false" targetId="0d300426-e90a-4a8d-bff5-9b64949b128d" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16a2-56d6-9be5-ede0" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5392-4570-be89-40d2" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -70684,18 +70680,6 @@ Kharybdis: After it has landed treat as a flyer in Hover mode. LA:AODAL P75</des
       <modifiers/>
       <characteristics>
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Porvides 4+ Armour and FNP 6+ but may not make Sweeping Advances"/>
-      </characteristics>
-    </profile>
-    <profile id="c49a-4a6c-913f-9c09" name="Magna-Melta Cannon" book="HH:LACAL" page="92" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="18&quot;"/>
-        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
-        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="1"/>
-        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Large Blast, Melta"/>
       </characteristics>
     </profile>
     <profile id="959ff616-ce22-b9ee-1ee6-2496b305e880" name="Mantle of the Elder Drake" book="HH:LAICL" page="65" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
