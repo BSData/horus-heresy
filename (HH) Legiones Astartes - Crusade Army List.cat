@@ -49550,38 +49550,31 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
       <constraints/>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="d48f-ea09-f44d-94ba" name="One Legion Predator may be upgraded to:" hidden="false" collective="false">
+        <selectionEntryGroup id="d48f-ea09-f44d-94ba" name="One Legion Predator Tank may be upgraded to:" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" type="lessThan"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
-          <selectionEntries>
-            <selectionEntry id="37b4-6a2c-bc3a-00ae" name="Command Tank" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="ae2f-9eab-d3c2-3de6" name="New EntryLink" hidden="false" targetId="2330-16be-009d-4a66" type="selectionEntry">
               <profiles/>
               <rules/>
-              <infoLinks>
-                <infoLink id="334b-9e94-9688-7995" hidden="false" targetId="eb87c0fc-8658-25c4-b594-2a9fbc752328" type="rule">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
+              <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="25.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -49604,7 +49597,7 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e6ae-2abb-2ddf-be8a" name="Legion Predator Tank" book="" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+    <selectionEntry id="e6ae-2abb-2ddf-be8a" name="Legion Predator Tank" book="" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
       <profiles>
         <profile id="e04a-60a3-0a75-173c" name="Legion Predator Tank" book="HH:LACAL" page="51" hidden="false" profileTypeId="56656869636c6523232344415441232323">
           <profiles/>
@@ -66953,6 +66946,28 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="2330-16be-009d-4a66" name="Squadron Command Tank" book="LA:AODAL" page="123" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="b560-300b-3a47-5e1e" name="" hidden="false" targetId="eb87c0fc-8658-25c4-b594-2a9fbc752328" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ec9a-dcaf-c6c7-e4e1" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="35.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fc8ed347-6cd6-c24e-942f-bda78004e894" name="Bodyguard" hidden="false" collective="false">
@@ -69469,12 +69484,14 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       <modifiers/>
       <description>Bolter with single-use special weapon attachment.  May choose Flamer, Melta, or Plasma.  </description>
     </rule>
-    <rule id="eb87c0fc-8658-25c4-b594-2a9fbc752328" name="Command Tank" book="HH:FAQ" page="5" hidden="false">
+    <rule id="eb87c0fc-8658-25c4-b594-2a9fbc752328" name="Squadron Command Tank" book="LA:AODAL" page="123" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>If the vehicle is upgraded to a command tank, then all models in the same army within 24&quot; may re-roll failed Morale checks.</description>
+      <description>Unless the squadron command tank has been destroyed, all the tanks in the squadron gain the following benefits while they remain in coherency:
+Ignore the effects of Crew Shaken results on a roll of a 4+.
+When the entire squadron fires at a single target within 24&quot;, the squadron gains the Tank Hunters and Monster Hunter rules.</description>
     </rule>
     <rule id="395c911d-e7ca-b2cc-c4e9-1e5d807187f1" name="Crawling Fire" book="HH:LACAL" page="84" hidden="false">
       <profiles/>
