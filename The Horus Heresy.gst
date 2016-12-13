@@ -14104,5 +14104,35 @@ D6 - Result
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1"/>
       </characteristics>
     </profile>
+    <profile id="c5c3-cf81-76c6-b0c0" name="Auxiliary Drive" book="LA:AoDAL" page="131" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="A vehicle with an auxiliary drive may repair Immobilised results it suffers on a D6 roll of 4+ at the start of the controlling player&apos;s Movement phase."/>
+      </characteristics>
+    </profile>
+    <profile id="35a2-2083-1522-cd61" name="Dozer Blade" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Vehicles equipped with dozer blades treat their front armour as one higher than normal when ramming. The vehicle can re-roll failed Dangerous Terrain tests."/>
+      </characteristics>
+    </profile>
+    <profile id="a117-de7b-6200-3076" name="Hunter-killer Missile" book="BRB 7th" page="" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="Infinite"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, One Use Only"/>
+      </characteristics>
+    </profile>
   </sharedProfiles>
 </gameSystem>
