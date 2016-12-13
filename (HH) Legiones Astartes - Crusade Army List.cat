@@ -39661,7 +39661,7 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
         <cost name="pts" costTypeId="points" value="10.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5b8da8d0-7c0f-1744-bd13-550239ea056c" name="Deathstorm Drop Pod" book="HH:LACAL" page="49" hidden="false" collective="false" categoryEntryId="486561767920537570706f727423232344415441232323" type="upgrade">
+    <selectionEntry id="5b8da8d0-7c0f-1744-bd13-550239ea056c" name="Deathstorm Drop Pod" book="LA:AODAL" page="61" hidden="false" collective="false" categoryEntryId="486561767920537570706f727423232344415441232323" type="upgrade">
       <profiles>
         <profile id="150a541e-7f0a-ea30-4f03-b02acb86ecd2" name="Deathstorm Drop Pod" book="HH:LACAL" page="49" hidden="false" profileTypeId="56656869636c6523232344415441232323">
           <profiles/>
@@ -39694,66 +39694,49 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
             <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot;"/>
             <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="5"/>
             <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Blast, Pinning"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 2, Blast, Pinning"/>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="3e79599e-fde1-3fc0-3f4c-ead205e8d610" name="Drop Pod Assault" page="0" hidden="true">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <repeats/>
-              <conditions>
-                <condition field="selections" scope="5b8da8d0-7c0f-1744-bd13-550239ea056c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e610c319-0d7d-59c6-4db7-487ad119a966" type="equalTo"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-        </rule>
-        <rule id="e73f8e6e-11b2-76f4-5b73-64ead057c6a1" name="Deep Strike" page="0" hidden="false">
+      <rules/>
+      <infoLinks>
+        <infoLink id="90be-2ecb-2122-d985" name="Deep Strike" book="BRB" hidden="false" targetId="d219-2314-4834-c054" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-        </rule>
-        <rule id="4087ab9f-3cf4-9a18-788e-9d3f489b40a2" name="Immobile" page="0" hidden="false">
+        </infoLink>
+        <infoLink id="8b08-5ca8-fe1d-1748" name="New InfoLink" hidden="false" targetId="2e40-b450-8714-586e" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-        </rule>
-        <rule id="1387ab87-e3ce-225f-8d10-5e6354c5f8e6" name="Inertial Guidance System" page="0" hidden="false">
+        </infoLink>
+        <infoLink id="d903-cecb-8642-3ba7" name="New InfoLink" hidden="false" targetId="e6ad-38b8-14e7-1c48" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-        </rule>
-        <rule id="2c9df6f0-95dc-59fa-9679-7be0d2251ded" name="Area Denial" book="HH:LACAL" page="49" hidden="false">
+        </infoLink>
+        <infoLink id="26bf-53b7-de41-e6b2" name="" hidden="false" targetId="4cc0-7433-b76f-01f2" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>Any successful Morale or Pinning checks caused by a Deathstorm Drop Pod on the turn it deploys must be re-rolled. </description>
-        </rule>
-        <rule id="78cb401c-4944-9dbe-2c17-448959a964cc" name="Independant Machine Spirits" book="HH:LACAL" page="49" hidden="false">
+        </infoLink>
+        <infoLink id="9f5d-376d-e921-ea64" name="" hidden="false" targetId="502e-1950-cef4-540b" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>Each of the five weapons may fire at different targets. </description>
-        </rule>
-        <rule id="d42ddf8e-1962-c738-cb30-64b1f6799dc7" name="Automated Weapons" book="HH:FAQ" page="5" hidden="false">
+        </infoLink>
+        <infoLink id="cc35-1329-87e0-804a" name="" hidden="false" targetId="1e1f-97cd-3109-626d" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>When a Deathstorm Drop Pod lands, it opens fire indiscriminately in its first Shooting phase. Each unit (enemy or friendly) within 12&quot; of the model’s weapon mounts comes under attack. Each target unit with one or more models in range suffers D3 full shooting attacks using the profile listed for the Deathstorm’s armament instead of the Deathstorm Drop Pod’s normal attack this turn, resolved at BS 2. In subsequent turns, the Deathstorm may continue to fire normally.</description>
-        </rule>
-      </rules>
-      <infoLinks/>
+        </infoLink>
+      </infoLinks>
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <repeats/>
@@ -39776,10 +39759,17 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
             <selectionEntry id="e610c319-0d7d-59c6-4db7-487ad119a966" name="Drop Pod Assault special rule" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
               <profiles/>
               <rules/>
-              <infoLinks/>
+              <infoLinks>
+                <infoLink id="a7d4-8daf-8f05-bb83" name="New InfoLink" hidden="false" targetId="9bc2-f58b-4edd-8673" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <selectionEntries/>
               <selectionEntryGroups/>
@@ -39801,7 +39791,7 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
           <selectionEntries>
             <selectionEntry id="f80a33ab-58b8-2453-1d56-df8d4d9e4830" name="Five Deathstorm Krak Launchers" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
               <profiles>
-                <profile id="27b1733a-a2b1-a797-06fe-6815eb2563e3" name="Deathstorm Krak Launchers" book="HH:LACAL" page="49" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                <profile id="27b1733a-a2b1-a797-06fe-6815eb2563e3" name="Deathstorm Krak Launchers" book="LA:AODAL" page="61" hidden="false" profileTypeId="576561706f6e23232344415441232323">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -39810,7 +39800,7 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
                     <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot;"/>
                     <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
                     <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
-                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 2"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -39818,7 +39808,7 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
               <infoLinks/>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <selectionEntries/>
               <selectionEntryGroups/>
@@ -39835,7 +39825,15 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6c15-ac33-6bdc-979a" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
           <selectionEntries/>
           <selectionEntryGroups/>
@@ -69924,6 +69922,54 @@ Veteran tactical OR Terminator - Primarch&apos;s Chosen **Not implemented**
 Legion Dreadnought or Legion Contemptor Dreadnoughts - Fury of the Ancients (Dreadnought Talon shared entry)
 Legion Assault Squad - Drop Assault Vanguard
 Legion Reconnaissance Squad - Legion Recon Company (+1)</description>
+    </rule>
+    <rule id="2e40-b450-8714-586e" name="Automated Weapons" book="LA:AODAL" page="61" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>When a Deathstorm Drop Pod lands, it opens fire indiscriminately in its first Shooting phase. Each unit (enemy or friendly) within 12&quot; of the model’s weapon mounts comes under attack. Each target unit with one or more models in range suffers D3 full shooting attacks using the profile listed for the Deathstorm’s armament instead of the Deathstorm Drop Pod’s normal attack this turn, resolved at BS 2. In subsequent turns, the Deathstorm may continue to fire normally.</description>
+    </rule>
+    <rule id="e6ad-38b8-14e7-1c48" name="Immobile" book="LA:AODAL" page="46" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Once it has been deployed, a Drop Pod cannot move and counts as a vehicle that has suffered an irreparable Immobilised result (although no Hull Point loss is suffered).</description>
+    </rule>
+    <rule id="4cc0-7433-b76f-01f2" name="Area Denial" book="LA:AODAL" page="61" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Any successful Morale or Pinning checks caused by a Deathstorm Drop Pod on the turn it deploys must be re-rolled. </description>
+    </rule>
+    <rule id="502e-1950-cef4-540b" name="Inertial Guidance System" book="LA:AODAL" page="61" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Should a Drop Pod scatter on top of impassable terrain or another model, then reduce the scatter distance by theminimum required to avoid the obstacle. Note that some Drop Pods are considerably larger than the more common Drop Pod and so will need a larger space in which to land successfully.</description>
+    </rule>
+    <rule id="1e1f-97cd-3109-626d" name="Independant Machine Spirits" book="LA:AODAL" page="61" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Each of the five weapons may fire at different targets. </description>
+    </rule>
+    <rule id="9bc2-f58b-4edd-8673" name="Drop Pod Assault" book="LA:AODAL" page="" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>At the beginning of the controlling player’s first player turn, they must choose half of their Drop Pod units (rounding up) to make a Drop Pod Assault. These units arrive on their controlling player’s first player turn. 
+The arrival of the remaining Drop Pods in the player’s force is rolled for as usual for the mission. A unit that Deep Strikes via Drop Pod may not assault in the turn it arrives.
+
+Legion Drop Pod: Once a Drop Pod lands, all passengers must disembark, doors are automatically opened to their full extent as soon as it is deployed. LA:AODAL P46
+Dreadnought Drop pod: The controlling player may choose to disembark or not. Doors are automatically opened to their full extent as soon as it is deployed. LA:AODAL P47
+Dreadclaw: After it has landed treat as a flyer in Hover mode. LA:AODAL P55
+Kharybdis: After it has landed treat as a flyer in Hover mode. LA:AODAL P75</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
