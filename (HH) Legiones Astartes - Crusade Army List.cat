@@ -43268,7 +43268,7 @@ In addtion, all units with the Legiones Astartes (Emperor&apos;s Children) rule 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="537472656e67746823232344415441232323" value="6">
+            <modifier type="increment" field="537472656e67746823232344415441232323" value="1">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -44854,12 +44854,6 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
       </profiles>
       <rules/>
       <infoLinks>
-        <infoLink id="3306550b-3706-a594-4ae8-d9f473b74935" hidden="false" targetId="b3a67bd4-f932-41e0-0fe1-e9c03d73b197" type="profile">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
         <infoLink id="258d9fcb-c404-93cd-342b-29543b7fbbb1" name="" hidden="false" targetId="3a93202e-ac23-5508-2dda-248efcc8ff3d" type="rule">
           <profiles/>
           <rules/>
@@ -45013,7 +45007,7 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
               </constraints>
               <selectionEntries/>
               <selectionEntryGroups/>
@@ -45059,6 +45053,19 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
           <rules/>
           <infoLinks/>
           <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="5eff-7116-7d2e-8852" name="" hidden="false" targetId="5986-c8ef-d448-397b" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="name" value="Two Sponson-mounted Twin-Linked Multi-Meltas">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
         </entryLink>
       </entryLinks>
@@ -65168,7 +65175,13 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="increment" field="537472656e67746823232344415441232323" value="1">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
         </infoLink>
       </infoLinks>
       <modifiers>
@@ -66691,6 +66704,34 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8b1d-77d3-74f2-9d1c" name="Twin-Linked Lascannon" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="434e-b473-14ec-4e11" name="New InfoLink" hidden="false" targetId="1cce-972c-022a-2590" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="append" field="5479706523232344415441232323" value=", Twin-Linked">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8e5e-5062-ff53-a002" type="max"/>
+      </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -70389,20 +70430,6 @@ Kharybdis: After it has landed treat as a flyer in Hover mode. LA:AODAL P75</des
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="4"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Rapid Fire"/>
-      </characteristics>
-    </profile>
-    <profile id="b3a67bd4-f932-41e0-0fe1-e9c03d73b197" name="Land Raider Phobos" book="HH1: Betrayal" page="218" hidden="false" profileTypeId="56656869636c6523232344415441232323">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
-        <characteristic name="Front" characteristicTypeId="46726f6e7423232344415441232323" value="14"/>
-        <characteristic name="Side" characteristicTypeId="5369646523232344415441232323" value="14"/>
-        <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="14"/>
-        <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="4"/>
-        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Tank"/>
       </characteristics>
     </profile>
     <profile id="e2c7-737b-825e-7488" name="Lascarbine/Autogun" book="HH6: Retribution" page="222" hidden="false" profileTypeId="576561706f6e23232344415441232323">
