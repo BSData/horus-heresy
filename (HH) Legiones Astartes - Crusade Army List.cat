@@ -66475,19 +66475,25 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
             <characteristic name="Side" characteristicTypeId="5369646523232344415441232323" value="14"/>
             <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="14"/>
             <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="4"/>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Tank"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Vehicle (Tank, Transport)"/>
           </characteristics>
         </profile>
-      </profiles>
-      <rules>
-        <rule id="f583-a7e7-f30c-d66c" name="Ferromantic Invulnerability" book="HH:LACAL" page="52" hidden="false">
+        <profile id="50bb-6e55-4a1d-9cab" name="Land Raider Achilles (Transport)" book="HH:LACAL" page="52" hidden="false" profileTypeId="56656869636c6523232344415441232323">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>Land Raider Achilles is not subject to the effects of the Melta and Lance special rules by attacks made against it.  In addition it reduces the effects of all rolls on the damage chart by -1 (except Destroyer hits).  </description>
-        </rule>
-      </rules>
+          <characteristics>
+            <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
+            <characteristic name="Front" characteristicTypeId="46726f6e7423232344415441232323" value="14"/>
+            <characteristic name="Side" characteristicTypeId="5369646523232344415441232323" value="14"/>
+            <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="14"/>
+            <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="4"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Tank"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
       <infoLinks>
         <infoLink id="a24f-b232-6116-3a01" name="" hidden="false" targetId="3a93202e-ac23-5508-2dda-248efcc8ff3d" type="rule">
           <profiles/>
@@ -66519,10 +66525,16 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
           <infoLinks/>
           <modifiers/>
         </infoLink>
+        <infoLink id="7d43-f619-d446-bf93" name="New InfoLink" hidden="false" targetId="b7b8-b769-3465-9ec6" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
       </infoLinks>
       <modifiers/>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f483-0bcc-a350-a486" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f483-0bcc-a350-a486" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups>
@@ -69782,6 +69794,13 @@ Legion Drop Pod: Once a Drop Pod lands, all passengers must disembark, doors are
 Dreadnought Drop pod: The controlling player may choose to disembark or not. Doors are automatically opened to their full extent as soon as it is deployed. LA:AODAL P47
 Dreadclaw: After it has landed treat as a flyer in Hover mode. LA:AODAL P55
 Kharybdis: After it has landed treat as a flyer in Hover mode. LA:AODAL P75</description>
+    </rule>
+    <rule id="b7b8-b769-3465-9ec6" name="Ferromantic Invulnerability" book="HH:LACAL" page="52" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Land Raider Achilles is not subject to the effects of the Melta and Lance special rules by attacks made against it.  In addition it reduces the effects of all rolls on the damage chart by -1 (except Destroyer hits).  </description>
     </rule>
   </sharedRules>
   <sharedProfiles>

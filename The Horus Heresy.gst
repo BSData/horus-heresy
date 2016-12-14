@@ -58,6 +58,13 @@
         <characteristicType id="4465736372697074696f6e23232344415441232323" name="Description"/>
       </characteristicTypes>
     </profileType>
+    <profileType id="307d-047f-ca13-706b" name="Transport">
+      <characteristicTypes>
+        <characteristicType id="8285-4205-b6cd-8473" name="Capacity"/>
+        <characteristicType id="b270-a7f9-22b2-3702" name="Fire Points"/>
+        <characteristicType id="d17b-0342-b1dc-b8e7" name="Access Points"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <forceEntries>
     <forceEntry id="98db-b4ba-fbcd-3239" name="The Age of Darkness" hidden="false">
@@ -5994,7 +6001,9 @@ D6    Result		S	AP
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
