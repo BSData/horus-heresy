@@ -44835,7 +44835,19 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="258d9fcb-c404-93cd-342b-29543b7fbbb1" hidden="false" targetId="3a93202e-ac23-5508-2dda-248efcc8ff3d" type="rule">
+        <infoLink id="258d9fcb-c404-93cd-342b-29543b7fbbb1" name="" hidden="false" targetId="3a93202e-ac23-5508-2dda-248efcc8ff3d" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="ce1f-c6c5-22ff-1e5c" name="New InfoLink" hidden="false" targetId="9bb4-3833-5343-0dd9" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="5ce6-a22e-126e-e530" name="New InfoLink" hidden="false" targetId="6875-ee73-2a85-6a97" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -44846,23 +44858,7 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
-      <selectionEntries>
-        <selectionEntry id="bf99a9e8-b189-993c-3a7b-1f41a75713fd" name="Frag Assault Launchers" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="10.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+      <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="53ca72a9-050a-6e70-13c7-42961f7192af" name="May take any of the following:" hidden="false" collective="false">
           <profiles/>
@@ -45059,6 +45055,18 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
       <rules/>
       <infoLinks>
         <infoLink id="26ddbaa2-d2e4-7473-3269-423b26031912" hidden="false" targetId="3a93202e-ac23-5508-2dda-248efcc8ff3d" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="7944-cf16-e3f3-aa1f" name="New InfoLink" hidden="false" targetId="9bb4-3833-5343-0dd9" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="917c-1685-cbf7-7a1f" name="New InfoLink" hidden="false" targetId="6875-ee73-2a85-6a97" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -49077,6 +49085,13 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
               <constraints/>
             </entryLink>
             <entryLink id="a652-7fb9-d82b-cae4" name="New EntryLink" hidden="false" targetId="f888-a294-fcff-8391" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="f753-117a-d425-a755" name="New EntryLink" hidden="false" targetId="00d9-65e8-94b2-2396" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -65114,7 +65129,7 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bf22e42c-d16a-d354-a7f2-f6aba925f510" name="Twin-linked Heavy Flamer" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+    <selectionEntry id="bf22e42c-d16a-d354-a7f2-f6aba925f510" name="Twin-linked Heavy Flamer (Salamanders)" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
       <profiles/>
       <rules/>
       <infoLinks>
@@ -66323,7 +66338,7 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
       <selectionEntryGroups/>
       <entryLinks/>
       <costs>
-        <cost name="pts" costTypeId="points" value="10.0"/>
+        <cost name="pts" costTypeId="points" value="5.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f888-a294-fcff-8391" name="Armoured Ceramite" book="" hidden="false" collective="false" type="upgrade">
@@ -66411,7 +66426,15 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b36e-7ece-2ac0-303f" type="lessThan"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
           <selectionEntries/>
           <selectionEntryGroups/>
@@ -66466,13 +66489,31 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="a24f-b232-6116-3a01" hidden="false" targetId="3a93202e-ac23-5508-2dda-248efcc8ff3d" type="rule">
+        <infoLink id="a24f-b232-6116-3a01" name="" hidden="false" targetId="3a93202e-ac23-5508-2dda-248efcc8ff3d" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
         <infoLink id="b1f0-99c0-dfdf-e919" hidden="false" targetId="2e87b8ca-7cd1-78b9-2116-246015e7935e" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="05f7-c81a-8f16-1e70" name="New InfoLink" hidden="false" targetId="9bb4-3833-5343-0dd9" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="1e5a-1bf7-8a38-6f36" name="New InfoLink" hidden="false" targetId="6875-ee73-2a85-6a97" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="dc0e-16be-a16c-a578" name="New InfoLink" hidden="false" targetId="5283-9b50-3dcd-78e4" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -66485,84 +66526,6 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="66dc-c4f4-7776-24c7" name="May take any of the following:" hidden="false" collective="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <selectionEntries>
-            <selectionEntry id="1788-2238-78dc-45e2" name="Extra Armour" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cdad-534a-ecd1-ca69" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="696b-1118-a2d6-21c4" name="Dozer Blade" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="07b7-476a-3042-2c73" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="5.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d2c8-0932-e9b3-b906" name="Auxiliary Drive" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks>
-                <infoLink id="912f-519a-361c-8d64" hidden="false" targetId="d963a2dd-d9a3-8974-aac6-61ffcc78a99a" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="45d0-cd72-6774-e576" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="216d-e1fd-0534-1860" name="Hunter-killer Missile" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b692-ea1f-097d-56e2" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
-        </selectionEntryGroup>
         <selectionEntryGroup id="c8be-8b1d-7acb-4ab5" name="Legion-specific upgrade" hidden="false" collective="false">
           <profiles/>
           <rules/>
@@ -66595,6 +66558,38 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="7c8c-89f3-4713-7a88" name="May take any of the following:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="969b-d669-6edf-2973" name="New EntryLink" hidden="false" targetId="a0a4-4e61-7118-fcff" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="ffdf-5b3a-f262-54d0" name="New EntryLink" hidden="false" targetId="915f-bdbc-c3cb-9b0b" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="1b33-56d1-e8da-c75c" name="New EntryLink" hidden="false" targetId="00d9-65e8-94b2-2396" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="d18e-e02a-1b20-d454" name="New EntryLink" hidden="false" targetId="fe17-5ed2-ca63-9379" type="selectionEntryGroup">
@@ -66604,9 +66599,63 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
           <modifiers/>
           <constraints/>
         </entryLink>
+        <entryLink id="026f-000f-3686-4fb9" name="" hidden="false" targetId="16b8-350f-f3ad-2af6" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="name" value="Two Sponson-mounted Twin-Linked Multi-Meltas">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="275.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="eca0-004a-24f2-e2e9" name="Frag Assault Launchers" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1816-461e-8759-23d4" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="16b8-350f-f3ad-2af6" name="Twin-Linked Multi-Melta" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="42fc-90c3-a4a9-002a" name="New InfoLink" book="" hidden="false" targetId="4fc7-8b16-afe4-dad3" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="append" field="5479706523232344415441232323" value=", Twin-Linked">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
