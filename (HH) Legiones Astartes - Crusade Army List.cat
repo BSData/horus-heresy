@@ -44819,15 +44819,34 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
       </costs>
     </selectionEntry>
     <selectionEntry id="a8eda173-f749-cfb6-fd0e-3d6fb35cad3b" name="Land Raider Phobos" book="HH:LACAL" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-      <profiles/>
-      <rules>
-        <rule id="61bdff70-b1dc-c6ad-5d6f-c2362b3bb54b" name="Assault Vehicle" page="0" hidden="false">
+      <profiles>
+        <profile id="aa7e-8a1f-3294-7ba3" name="Land Raider Phobos" book="HH:LACAL" page="52" hidden="false" profileTypeId="56656869636c6523232344415441232323">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-        </rule>
-      </rules>
+          <characteristics>
+            <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
+            <characteristic name="Front" characteristicTypeId="46726f6e7423232344415441232323" value="14"/>
+            <characteristic name="Side" characteristicTypeId="5369646523232344415441232323" value="14"/>
+            <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="14"/>
+            <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="4"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Vehicle (Tank, Transport)"/>
+          </characteristics>
+        </profile>
+        <profile id="9eab-63a6-1bcc-df04" name="Land Raider Phobos (Transport)" book="HH:LACAL" page="52" hidden="false" profileTypeId="307d-047f-ca13-706b" profileTypeName="Transport">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Capacity" characteristicTypeId="8285-4205-b6cd-8473" value="10."/>
+            <characteristic name="Fire Points" characteristicTypeId="b270-a7f9-22b2-3702" value="None."/>
+            <characteristic name="Access Points" characteristicTypeId="d17b-0342-b1dc-b8e7" value="3. One on each side of the hull and one on the front"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
       <infoLinks>
         <infoLink id="3306550b-3706-a594-4ae8-d9f473b74935" hidden="false" targetId="b3a67bd4-f932-41e0-0fe1-e9c03d73b197" type="profile">
           <profiles/>
@@ -44848,6 +44867,12 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
           <modifiers/>
         </infoLink>
         <infoLink id="5ce6-a22e-126e-e530" name="New InfoLink" hidden="false" targetId="6875-ee73-2a85-6a97" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="5a80-d423-07aa-d8fa" name="New InfoLink" hidden="false" targetId="9298-04e9-9b11-795b" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -66478,18 +66503,15 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
             <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Vehicle (Tank, Transport)"/>
           </characteristics>
         </profile>
-        <profile id="50bb-6e55-4a1d-9cab" name="Land Raider Achilles (Transport)" book="HH:LACAL" page="52" hidden="false" profileTypeId="56656869636c6523232344415441232323">
+        <profile id="50bb-6e55-4a1d-9cab" name="Land Raider Achilles (Transport)" book="HH:LACAL" page="52" hidden="false" profileTypeId="307d-047f-ca13-706b" profileTypeName="Transport">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
-            <characteristic name="Front" characteristicTypeId="46726f6e7423232344415441232323" value="14"/>
-            <characteristic name="Side" characteristicTypeId="5369646523232344415441232323" value="14"/>
-            <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="14"/>
-            <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="4"/>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Tank"/>
+            <characteristic name="Capacity" characteristicTypeId="8285-4205-b6cd-8473" value="6."/>
+            <characteristic name="Fire Points" characteristicTypeId="b270-a7f9-22b2-3702" value="None."/>
+            <characteristic name="Access Points" characteristicTypeId="d17b-0342-b1dc-b8e7" value="2. One on each side of the hull."/>
           </characteristics>
         </profile>
       </profiles>
@@ -69223,11 +69245,12 @@ Phalanx Warders</description>
       <modifiers/>
       <description>May be included as a HQ choice in a Legion army whose Legiones Astartes rule he does not share.  Where this is the case, he does not gain any benefits from the different Legiones Astartes rules nor does he negate those rules.  When his Leadership value is used to make tests for the unit, his special rules rather than any for the unit are used.  In the case of a Legion Command Squad, these must use the Legiones Astartes special rules from the detachment he is a part of, rather than his own.  </description>
     </rule>
-    <rule id="9298-04e9-9b11-795b" name="Assault Vehicle" hidden="false">
+    <rule id="9298-04e9-9b11-795b" name="Assault Vehicle" book="BRB 7th" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>Passengers disembarking from Access Points on a vehicle with this special rule can charge on the turn they do so (even in a turn that the vehicle was destroyed, or in the following turn) unless the vehicle arrived from Reserve that turn.</description>
     </rule>
     <rule id="beb478f9-bf5e-772f-e627-8ea394beaa5c" name="Banestrike" book="HH:LAICL" page="9" hidden="false">
       <profiles/>
