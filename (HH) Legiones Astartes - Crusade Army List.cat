@@ -61444,7 +61444,7 @@ Phalanx Breacher squads and Legion Terminator squads may be taken as troops in a
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1e27e511-cf75-d55a-6807-b67be6f7474f" name="Searchlight" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+    <selectionEntry id="1e27e511-cf75-d55a-6807-b67be6f7474f" name="Searchlight" page="0" hidden="false" collective="true" categoryEntryId="(No Category)" type="upgrade">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -61521,7 +61521,7 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b572273e-2b93-4961-75c8-d9022c31a47d" name="Searchlight and Smoke Launchers" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+    <selectionEntry id="b572273e-2b93-4961-75c8-d9022c31a47d" name="Searchlight and Smoke Launchers" page="0" hidden="false" collective="true" categoryEntryId="(No Category)" type="upgrade">
       <profiles/>
       <rules/>
       <infoLinks>
@@ -66523,26 +66523,6 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
     </selectionEntry>
     <selectionEntry id="eb64-e310-ac49-08e7" name="Legion Fire Raptor Gunship" book="HH:LACAL" page="54" hidden="false" collective="false" categoryEntryId="486561767920537570706f727423232344415441232323" type="unit">
       <profiles>
-        <profile id="1aa7-62f5-51ab-2614" name="Tempest Rockets" book="HH:LACAL" page="47" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <repeats/>
-              <conditions>
-                <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d19d-a7b0-1a56-1cf7" type="instanceOf"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="60&quot;"/>
-            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="6"/>
-            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Sunder, One-shot"/>
-          </characteristics>
-        </profile>
         <profile id="a2ab-6b7c-4917-2f04" name="Legion Fire Raptor Gunship" book="HH:LACAL" page="54" hidden="false" profileTypeId="56656869636c6523232344415441232323">
           <profiles/>
           <rules/>
@@ -66571,12 +66551,6 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
         </profile>
       </profiles>
       <rules>
-        <rule id="671b-0496-2f61-1f4c" name="Deep Strike" page="0" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </rule>
         <rule id="82fd-947c-096f-e4f8" name="Strafing Run" page="0" hidden="false">
           <profiles/>
           <rules/>
@@ -66591,7 +66565,26 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
           <description>Each waist turret may fire at a different target and do not count towards the number of weapons that may be fired in a turn.  </description>
         </rule>
       </rules>
-      <infoLinks/>
+      <infoLinks>
+        <infoLink id="88c6-cc7d-04b5-6c68" name="New InfoLink" hidden="false" targetId="d219-2314-4834-c054" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="ae3c-63c2-e1c6-8202" name="New InfoLink" hidden="false" targetId="79c7-90f6-b453-e799" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="873a-d709-f16a-2289" name="New InfoLink" hidden="false" targetId="1578-d22a-060c-4700" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
       <modifiers/>
       <constraints/>
       <selectionEntries/>
@@ -66672,31 +66665,50 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="5f4c-ac10-74dc-cccd" name="Exchange four Tempest Rockets for:" hidden="false" collective="false">
+        <selectionEntryGroup id="5f4c-ac10-74dc-cccd" name="Wing-mounted:" hidden="false" collective="false" defaultSelectionEntryId="d0ed-8860-b67a-6df2">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
-          <selectionEntries>
-            <selectionEntry id="d19d-a7b0-1a56-1cf7" name="Four Hellstrike Missiles" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2ac-61d4-9e88-f98d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab84-d97a-527a-9f6c" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="d0ed-8860-b67a-6df2" name="New EntryLink" hidden="false" targetId="688b-8c27-2579-ffdd" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f349-f36a-b7f1-6842" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="20.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
+              <modifiers>
+                <modifier type="set" field="name" value="Four Tempest Rockets">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+            <entryLink id="dcc6-9ca5-5822-2fcc" name="New EntryLink" hidden="false" targetId="7a6c-699b-f816-764d" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="name" value="Four Hellstrike Missiles">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="points" value="20">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="02d3-f6b0-b643-ce34" name="Legion-specific upgrade" hidden="false" collective="false">
           <profiles/>
@@ -66818,6 +66830,54 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
       <costs>
         <cost name="pts" costTypeId="points" value="10.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="688b-8c27-2579-ffdd" name="Tempest Rockets" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="2c94-12ec-83a4-ff75" name="New InfoLink" hidden="false" targetId="808b-34b7-2ca8-29fd" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="6cff-cd93-2462-390a" name="New InfoLink" hidden="false" targetId="b67a5fd8-9dcd-1d03-ef50-8170a6b1e839" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="7a6c-699b-f816-764d" name="Hellstrike Missiles" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="d0f9-4e05-a27b-51d0" name="New InfoLink" hidden="false" targetId="16f6-887b-504f-56da" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="15f2-f0a7-ce75-e31e" name="New InfoLink" hidden="false" targetId="b67a5fd8-9dcd-1d03-ef50-8170a6b1e839" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -71129,6 +71189,30 @@ Kharybdis: After it has landed treat as a flyer in Hover mode. LA:AODAL P75</des
       <modifiers/>
       <characteristics>
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="At the start of the controlling player&apos;s turn, prior to any reserve rolls, declare which mode is being used - it remains until their next player turn.  Disruption Mode: the oppsoing player suffers -1 to their reserve rolls.  Relay Mode: Owning player&apos;s reserve rolls may be re-rolled, whether successful or not.  Reduces transport capacity to 8.  "/>
+      </characteristics>
+    </profile>
+    <profile id="808b-34b7-2ca8-29fd" name="Tempest Rockets" book="HH:LACAL" page="47" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="60&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="6"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Sunder, One-shot"/>
+      </characteristics>
+    </profile>
+    <profile id="16f6-887b-504f-56da" name="Hellstrike Missiles" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="72&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Sunder, One-Shot"/>
       </characteristics>
     </profile>
   </sharedProfiles>
