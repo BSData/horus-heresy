@@ -66159,13 +66159,6 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
-                <entryLink id="93c7-37f1-e9c1-9517" name="New EntryLink" hidden="false" targetId="fe17-5ed2-ca63-9379" type="selectionEntryGroup">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints/>
-                </entryLink>
                 <entryLink id="b4ee-085a-fba1-fe1a" name="New EntryLink" hidden="false" targetId="b572273e-2b93-4961-75c8-d9022c31a47d" type="selectionEntry">
                   <profiles/>
                   <rules/>
@@ -66479,368 +66472,56 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
       <infoLinks/>
       <modifiers/>
       <constraints/>
-      <selectionEntries>
-        <selectionEntry id="d1df-667a-f167-7e62" name="Legion Vindicator Tank" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
-          <profiles>
-            <profile id="2985-3017-61a9-adc1" name="Legion Vindicator" book="HH:LACAL" page="57" hidden="false" profileTypeId="56656869636c6523232344415441232323">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
-                <characteristic name="Front" characteristicTypeId="46726f6e7423232344415441232323" value="13"/>
-                <characteristic name="Side" characteristicTypeId="5369646523232344415441232323" value="11"/>
-                <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="10"/>
-                <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="3"/>
-                <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Tank"/>
-              </characteristics>
-            </profile>
-          </profiles>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="403d-cf01-86c8-a116" name="Squadron Vehicles" hidden="false" collective="false">
+          <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b09e-34db-6219-f6e5" type="min"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7c47-1831-089e-f4a4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14bd-68c3-4bb0-c772" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1df7-7829-2a43-e828" type="max"/>
           </constraints>
           <selectionEntries/>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="d7ed-f038-273a-b195" name="Exchange Demolisher Cannon for:" hidden="false" collective="false">
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="a5ae-c55c-b6d2-305b" name="New EntryLink" hidden="false" targetId="ddd7-5e93-1110-5a68" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
-              <selectionEntries>
-                <selectionEntry id="a847-6304-1563-8960" name="Laser Destroyer Array" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules>
-                    <rule id="9254-006e-01a1-49ce" name="Power Capacitor" book="HH6: Retribution" page="241" hidden="false">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                      <description>- Capacitor Fire: If the tank has not moved this turn, the Laser Destroyer Array becomes an Ordnance 2 Twin-linked weapon.
-- Overcharged Fire: The owning player may declare an overcharged volley if the vehicle has not moved this turn.  The Laser Destroyer Array becomes Ordnance 3, Twin-linked.  After firing, roll a D6 - on a 1 the Vindicator suffers a single Hull Point of damage. </description>
-                    </rule>
-                  </rules>
-                  <infoLinks>
-                    <infoLink id="204b-a799-2b99-a2be" hidden="false" targetId="c4094da7-8d2e-8d6a-8af8-4cf88f5d7c06" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ba10-69bf-1c2e-0d38" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="10.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups/>
-              <entryLinks/>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="73c5-58d8-cacd-f44a" name="Legion-specific upgrade" hidden="false" collective="false">
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="e952-c5f7-98d1-963c" name="In squadrons of three, one Vehicle may be upgraded to:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="403d-cf01-86c8-a116" type="lessThan"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="499a-4c6f-0cdd-86b4" name="New EntryLink" hidden="false" targetId="2330-16be-009d-4a66" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks>
-                <entryLink id="6a2a-61dd-1d0d-3094" hidden="false" targetId="a15bdf56-4ffe-fe04-ff77-3d533ab99dfa" type="selectionEntry">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints/>
-                </entryLink>
-                <entryLink id="bb91-64e9-94ae-6165" hidden="false" targetId="86e70545-ed1a-7cf4-5a3d-d60662a6b3be" type="selectionEntry">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints/>
-                </entryLink>
-                <entryLink id="a3d6-7278-97cb-9ecd" hidden="false" targetId="f785888f-6dfa-08f4-054f-29b1a0e4f20c" type="selectionEntry">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints/>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="fbe5-8215-1436-9ea5" name="May take a Pintle-Mounted Weapon:" hidden="false" collective="false">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6080-448a-6196-1e26" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="ba1a-6019-0a3f-1205" name="Twin-Linked Bolter" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5761-811d-612c-5abe" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="5.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="7722-1a20-a027-09b9" name="Combi-Weapon" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1388-6d45-545b-60d8" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="10.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="39db-d2f4-858b-d0a8" name="Heavy Bolter" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d5ab-0884-ad16-3477" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="15.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="d69b-5a01-ea30-3ed7" name="Heavy Flamer" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2336-7dde-187a-7f5f" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="10.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="2b96-1545-79a4-2358" name="Havoc Launcher" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="d262-a941-7a52-c17d" hidden="false" targetId="b3ea1d32-ba66-0585-d7f7-0dc56e707736" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1c05-3146-fa3c-4c74" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="15.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups/>
-              <entryLinks>
-                <entryLink id="d952-4c15-27ea-0b41" hidden="false" targetId="2d56d45d-d276-7830-2b7d-026de64bbae8" type="selectionEntry">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints/>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="ae26-45a5-f561-0234" name="May take any of the following:" hidden="false" collective="false">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-              <selectionEntries>
-                <selectionEntry id="2474-4d1a-f548-0c7b" name="Auxiliary Drive" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="5286-31f4-db65-7e76" hidden="false" targetId="d963a2dd-d9a3-8974-aac6-61ffcc78a99a" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3eb3-08d6-3819-2db7" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="10.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="0524-f3d3-6951-4d35" name="Hunter-killer Missile" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a433-4950-3be2-7d39" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="10.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="ab69-9c8c-b34e-86b6" name="Armoured Ceramite" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="2e99-f4cb-c34f-7404" hidden="false" targetId="2e87b8ca-7cd1-78b9-2116-246015e7935e" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cbf5-59a4-1abc-84b0" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="20.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="2827-e4bd-1aab-fa94" name="Extra Armour" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7fc5-b925-a301-0ab9" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="10.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="392c-9f44-efd4-a040" name="Machine Spirit" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="463c-ef8a-8ca3-d97f" hidden="false" targetId="3a93202e-ac23-5508-2dda-248efcc8ff3d" type="rule">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9181-dec2-9c3e-ab5d" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="25.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups/>
-              <entryLinks/>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="37fb-ea9b-da4e-4b97" name="May take one of the following:" hidden="false" collective="false">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6625-ec72-cddb-839a" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="eead-69a6-67bc-e9ec" name="Dozer Blade" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="192e-d410-83f0-fb37" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="5.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="5a1d-28d0-86b3-dd1b" name="Mine Plough" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2891-5ff6-2532-2708" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="10.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups/>
-              <entryLinks/>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="120.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="a548-6a7c-aa84-c044" hidden="false" targetId="c487-be13-ea53-917e" type="selectionEntryGroup">
           <profiles/>
@@ -66853,6 +66534,258 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="ddd7-5e93-1110-5a68" name="Legion Vindicator Tank" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
+      <profiles>
+        <profile id="1d03-c363-2eb9-842e" name="Legion Vindicator" book="HH:LACAL" page="57" hidden="false" profileTypeId="56656869636c6523232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
+            <characteristic name="Front" characteristicTypeId="46726f6e7423232344415441232323" value="13"/>
+            <characteristic name="Side" characteristicTypeId="5369646523232344415441232323" value="11"/>
+            <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="10"/>
+            <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="3"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Vehicle (Tank)"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="0ee4-0c13-41d9-7979" name="New InfoLink" hidden="false" targetId="21f23fa8-cf11-b9c3-d613-1b711b0897d7" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="6c97-26a8-0921-e79d" name="New InfoLink" hidden="false" targetId="885d-81f6-6ace-3228" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1279-0cdc-87e2-de22" name="Traverse-mounted:" hidden="false" collective="false" defaultSelectionEntryId="c007-8540-9cab-a4b7">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04f5-60d7-05b5-5125" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aceb-b764-3c16-2a54" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="5661-2ffe-9a77-8725" name="New EntryLink" hidden="false" targetId="5708-9bd4-2edc-ddc9" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="c007-8540-9cab-a4b7" name="New EntryLink" hidden="false" targetId="7d9a-8d94-f9b4-aebf" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8ea1-a5c0-19fd-f171" name="Legion-specific upgrade" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="5c51-23a0-4aa3-34a8" hidden="false" targetId="a15bdf56-4ffe-fe04-ff77-3d533ab99dfa" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="b034-1117-7291-cc6f" hidden="false" targetId="86e70545-ed1a-7cf4-5a3d-d60662a6b3be" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="a60a-903b-b2f5-2603" hidden="false" targetId="f785888f-6dfa-08f4-054f-29b1a0e4f20c" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="bab2-98cd-2b8d-43c0" name="May take one of the following:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ff2-f4c8-c740-c027" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="63b2-d6c4-f52f-beda" name="New EntryLink" hidden="false" targetId="915f-bdbc-c3cb-9b0b" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="c724-18cc-f33c-ed70" name="New EntryLink" hidden="false" targetId="7c81-4f38-1f4e-ac6b" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="9123-8751-5598-556c" name="May take any of the following:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="2986-323b-b141-e14a" name="New EntryLink" hidden="false" targetId="a6cd-f04b-711e-c083" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="2734-2969-c4ce-3b38" name="New EntryLink" hidden="false" targetId="a0a4-4e61-7118-fcff" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="2ddd-e0c8-befd-94b2" name="New EntryLink" hidden="false" targetId="f888-a294-fcff-8391" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="1f23-20a8-32e9-4f1a" name="New EntryLink" hidden="false" targetId="00d9-65e8-94b2-2396" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="efaf-e0d7-b1f1-2903" name="New EntryLink" hidden="false" targetId="f30a-210c-0677-1c83" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="6665-b65e-0a91-aff1" name="New EntryLink" hidden="false" targetId="fe17-5ed2-ca63-9379" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="af88-d1f6-cde8-f5fd" name="New EntryLink" hidden="false" targetId="b572273e-2b93-4961-75c8-d9022c31a47d" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="926c-94cd-2ba3-13b6" name="New EntryLink" hidden="false" targetId="10e739aa-3153-9348-3458-738dd5938617" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="120.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7c81-4f38-1f4e-ac6b" name="Mine Plough" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="93df-8954-23ad-b8d4" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5708-9bd4-2edc-ddc9" name="Laser Destroyer Array" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="2fb1-e0fc-20f5-280d" hidden="false" targetId="c4094da7-8d2e-8d6a-8af8-4cf88f5d7c06" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f32-11dd-7c73-c37d" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7d9a-8d94-f9b4-aebf" name="Demolisher Cannon" book="LA:AoDAL" page="125" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="e5b2-4586-ec0f-9551" name="New InfoLink" hidden="false" targetId="683c-5486-3438-cae9" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -70008,6 +69941,14 @@ Kharybdis: After it has landed treat as a flyer in Hover mode. LA:AODAL P75</des
       <modifiers/>
       <description>A weapon with this special rule can re-roll all failed To Hit rolls against Flyers and Fast Skimmers.</description>
     </rule>
+    <rule id="885d-81f6-6ace-3228" name="Power Capacitor" book="LA:AoDAL" page="69" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>- Capacitor Fire: If the tank has not moved this turn, the Laser Destroyer Array becomes an Ordnance 2 Twin-linked weapon.
+- Overcharged Fire: The owning player may declare an overcharged volley if the vehicle has not moved this turn.  The Laser Destroyer Array becomes Ordnance 3, Twin-linked.  After firing, roll a D6 - on a 1 the Vindicator suffers a single Hull Point of damage. </description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="9045e242-71f8-6029-fc57-2b7cbedcc398" name="Archaeotech Pistol" book="HH:LACAL" page="82" hidden="false" profileTypeId="576561706f6e23232344415441232323">
@@ -70193,7 +70134,7 @@ Kharybdis: After it has landed treat as a flyer in Hover mode. LA:AODAL P75</des
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Confers 6++ invulnverable save, increasing to a 5++ in close combat.  User is treated as having defensive grenades, but may never claim the extra attack for being armed with an additional close combat weapon.  "/>
       </characteristics>
     </profile>
-    <profile id="21f23fa8-cf11-b9c3-d613-1b711b0897d7" name="Combi-bolter" book="HH:LACAL" page="82" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+    <profile id="21f23fa8-cf11-b9c3-d613-1b711b0897d7" name="Combi-bolter" book="LA:AoDAL" page="124" hidden="false" profileTypeId="576561706f6e23232344415441232323">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -70592,7 +70533,7 @@ Kharybdis: After it has landed treat as a flyer in Hover mode. LA:AODAL P75</des
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Unwieldy, Cumbersome"/>
       </characteristics>
     </profile>
-    <profile id="c4094da7-8d2e-8d6a-8af8-4cf88f5d7c06" name="Laser Destroyer" book="HH:LACAL" page="84" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+    <profile id="c4094da7-8d2e-8d6a-8af8-4cf88f5d7c06" name="Laser Destroyer" book="LA:AoDAL" page="126" hidden="false" profileTypeId="576561706f6e23232344415441232323">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -71214,6 +71155,18 @@ Kharybdis: After it has landed treat as a flyer in Hover mode. LA:AODAL P75</des
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="6"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 7"/>
+      </characteristics>
+    </profile>
+    <profile id="683c-5486-3438-cae9" name="Demolisher Cannon" book="LA:AoDAL" page="125" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="24&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="10"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Large Blast"/>
       </characteristics>
     </profile>
   </sharedProfiles>
