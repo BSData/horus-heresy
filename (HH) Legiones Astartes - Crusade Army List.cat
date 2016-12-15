@@ -61435,7 +61435,7 @@ Phalanx Breacher squads and Legion Terminator squads may be taken as troops in a
       </infoLinks>
       <modifiers/>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -61450,8 +61450,8 @@ Phalanx Breacher squads and Legion Terminator squads may be taken as troops in a
       <infoLinks/>
       <modifiers/>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -61540,8 +61540,8 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
       </infoLinks>
       <modifiers/>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -66595,47 +66595,30 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
           <infoLinks/>
           <modifiers/>
           <constraints/>
-          <selectionEntries>
-            <selectionEntry id="b022-1650-3bec-90bb" name="Searchlight" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="0342-4c7a-50a6-2001" name="New EntryLink" hidden="false" targetId="f888-a294-fcff-8391" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1184-150f-f3e5-a0a3" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="1.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="a7dd-0216-1dbe-8b20" name="Armoured Ceramite" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <constraints/>
+            </entryLink>
+            <entryLink id="4caa-8b1d-1fbf-fbb8" name="New EntryLink" hidden="false" targetId="1e27e511-cf75-d55a-6807-b67be6f7474f" type="selectionEntry">
               <profiles/>
               <rules/>
-              <infoLinks>
-                <infoLink id="fd98-d85f-e49b-e1a6" hidden="false" targetId="2e87b8ca-7cd1-78b9-2116-246015e7935e" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1572-0012-993b-12a3" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="20.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="points" value="1">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="c0ba-0d78-6db3-cd6c" name="Two Turret Mounted:" hidden="false" collective="false" defaultSelectionEntryId="ce55-b5dc-c18b-fc38">
           <profiles/>
