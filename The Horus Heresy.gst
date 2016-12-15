@@ -12893,6 +12893,13 @@ D6 - Result
       <modifiers/>
       <description>Targets may not take Jink saves against damage from this weapon.  </description>
     </rule>
+    <rule id="45cf-653a-4ff6-f22d" name="Assault Vehicle" book="BRB 7th" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Passengers disembarking from Access Points on a vehicle with this special rule can charge on the turn they do so (even in a turn that the vehicle was destroyed, or in the following turn) unless the vehicle arrived from Reserve that turn.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="09fd-8af1-a6b1-51f7" name="Bolter" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
