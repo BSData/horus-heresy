@@ -66593,51 +66593,19 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
               </constraints>
               <selectionEntries/>
               <selectionEntryGroups>
-                <selectionEntryGroup id="a4ed-55f7-78c9-2ef4" name="Exchange Vengeance and Castellan missiles for:" hidden="false" collective="false" defaultSelectionEntryId="910e-cea0-521f-5b79">
+                <selectionEntryGroup id="a4ed-55f7-78c9-2ef4" name="Whirlwind Launcher Equiped with" hidden="false" collective="false" defaultSelectionEntryId="910e-cea0-521f-5b79">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <constraints/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb03-00b2-2e42-dcb8" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91ac-ffe8-9cd2-b3c6" type="max"/>
+                  </constraints>
                   <selectionEntries>
-                    <selectionEntry id="132d-f357-3e51-6e96" name="Hyperios air-defence Missiles" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+                    <selectionEntry id="910e-cea0-521f-5b79" name="Castellan and Vengeance Warheads" hidden="false" collective="false" type="upgrade">
                       <profiles>
-                        <profile id="460a-ad43-ca82-d49b" name="Whirlwind Launcher: Hyperios Warhead" book="HH:LACAL" page="93" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                          <characteristics>
-                            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot;"/>
-                            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
-                            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
-                            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Skyfire, Interceptor, Heatseaker"/>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <rules/>
-                      <infoLinks>
-                        <infoLink id="6440-61bf-b612-e52d" name="New InfoLink" hidden="false" targetId="6970-1bf3-b33e-5dce" type="rule">
-                          <profiles/>
-                          <rules/>
-                          <infoLinks/>
-                          <modifiers/>
-                        </infoLink>
-                      </infoLinks>
-                      <modifiers/>
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b447-6cd6-af1e-4e59" type="max"/>
-                      </constraints>
-                      <selectionEntries/>
-                      <selectionEntryGroups/>
-                      <entryLinks/>
-                      <costs>
-                        <cost name="pts" costTypeId="points" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="910e-cea0-521f-5b79" name="Whirlwind Launcher" hidden="false" collective="false" type="upgrade">
-                      <profiles>
-                        <profile id="f533-5a47-47a6-4e8b" name="Whirlwind Launcher: Castellan Warhead" book="HH:LACAL" page="93" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                        <profile id="f533-5a47-47a6-4e8b" name="Castellan Warhead" book="HH:LACAL" page="93" hidden="false" profileTypeId="576561706f6e23232344415441232323">
                           <profiles/>
                           <rules/>
                           <infoLinks/>
@@ -66649,7 +66617,7 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
                             <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Barrage, Large Blast, Ignores Cover"/>
                           </characteristics>
                         </profile>
-                        <profile id="eee8-e6aa-bfcd-7de2" name="Whirlwind Launcher: Vengeance Warhead" book="HH:LACAL" page="93" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                        <profile id="eee8-e6aa-bfcd-7de2" name="Vengeance Warhead" book="HH:LACAL" page="93" hidden="false" profileTypeId="576561706f6e23232344415441232323">
                           <profiles/>
                           <rules/>
                           <infoLinks/>
@@ -66663,7 +66631,14 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
                         </profile>
                       </profiles>
                       <rules/>
-                      <infoLinks/>
+                      <infoLinks>
+                        <infoLink id="4557-4f72-59f7-5ace" name="New InfoLink" hidden="false" targetId="acf2-681d-4188-94d7" type="rule">
+                          <profiles/>
+                          <rules/>
+                          <infoLinks/>
+                          <modifiers/>
+                        </infoLink>
+                      </infoLinks>
                       <modifiers/>
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c775-8ae0-99ab-b495" type="max"/>
@@ -66671,11 +66646,27 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
                       <selectionEntries/>
                       <selectionEntryGroups/>
                       <entryLinks/>
-                      <costs/>
+                      <costs>
+                        <cost name="pts" costTypeId="points" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                   </selectionEntries>
                   <selectionEntryGroups/>
-                  <entryLinks/>
+                  <entryLinks>
+                    <entryLink id="ef1d-2315-c55c-d230" name="New EntryLink" hidden="false" targetId="8917-121a-d28f-4f03" type="selectionEntry">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="append" field="name" value="Missiles">
+                          <repeats/>
+                          <conditions/>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <constraints/>
+                    </entryLink>
+                  </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="923e-cff0-623f-c8b8" name="Legion-specific upgrade" hidden="false" collective="false">
                   <profiles/>
@@ -66805,6 +66796,53 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
           <constraints/>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8917-121a-d28f-4f03" name="Hyperios air-defence" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+      <profiles>
+        <profile id="98f4-5e83-d6cf-96f9" name="Hyperios Warhead" book="HH:LACAL" page="93" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Skyfire, Interceptor, Heatseaker"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="dd2f-74c2-9e85-0b91" name="New InfoLink" hidden="false" targetId="cdae-1226-8aa6-6e69" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="f4ca-ae40-0a60-3187" name="New InfoLink" hidden="false" targetId="be7f-8146-6cb8-9a53" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="6066-98fe-7bfc-b382" name="New InfoLink" hidden="false" targetId="ca3e-e94e-58f6-75d9" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b080-7a95-902f-aa2b" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
