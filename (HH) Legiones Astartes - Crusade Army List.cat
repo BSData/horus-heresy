@@ -66534,19 +66534,7 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
             <characteristic name="Side" characteristicTypeId="5369646523232344415441232323" value="12"/>
             <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="12"/>
             <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="4"/>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Flyer, Hover"/>
-          </characteristics>
-        </profile>
-        <profile id="2294-380b-5d0c-86ff" name="Avenger Bolt Cannon" book="HH:LACAL" page="54" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
-            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="6"/>
-            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 7"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Vehicle (Flyer, Hover)"/>
           </characteristics>
         </profile>
       </profiles>
@@ -66709,6 +66697,27 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="bf2c-bb95-7b18-9431" name="Hull Mounted:" hidden="false" collective="false" defaultSelectionEntryId="a59c-512d-d8c8-9171">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ddb-1423-1551-95a9" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60ff-fecc-e287-32f5" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="a59c-512d-d8c8-9171" name="Twin Linked Avenger Bolt Cannon" hidden="false" targetId="9f7b-ce08-7726-63af" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="d510-5924-3592-b464" hidden="false" targetId="f785888f-6dfa-08f4-054f-29b1a0e4f20c" type="selectionEntry">
@@ -66718,7 +66727,7 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
           <modifiers/>
           <constraints/>
         </entryLink>
-        <entryLink id="3541-5cf4-07a7-11b5" hidden="false" targetId="c487-be13-ea53-917e" type="selectionEntryGroup">
+        <entryLink id="3541-5cf4-07a7-11b5" name="" hidden="false" targetId="c487-be13-ea53-917e" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -66855,6 +66864,55 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="4210-154f-6cf3-61d8" name="Avenger Bolt Cannon" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="8c37-f83e-7018-a767" name="New InfoLink" hidden="false" targetId="f3f5-75f6-90bd-2224" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="9f7b-ce08-7726-63af" name="Twin-linked Avenger Bolt Cannon" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="a70e-71fc-944e-e664" name="New InfoLink" hidden="false" targetId="f3f5-75f6-90bd-2224" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="append" field="5479706523232344415441232323" value=", Twin-Linked">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="name" value="Twin-Linked Avenger Bolt Cannon">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8140-e3b2-d9fb-3b96" type="max"/>
+      </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -71208,6 +71266,18 @@ Kharybdis: After it has landed treat as a flyer in Hover mode. LA:AODAL P75</des
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Sunder, One-Shot"/>
+      </characteristics>
+    </profile>
+    <profile id="f3f5-75f6-90bd-2224" name="Avenger Bolt Cannon" book="HH:LACAL" page="54" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="6"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 7"/>
       </characteristics>
     </profile>
   </sharedProfiles>
