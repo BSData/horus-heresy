@@ -46672,7 +46672,7 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
             <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Vehicle (Flyer, Transport, Hover)"/>
           </characteristics>
         </profile>
-        <profile id="9e3d-ac3b-1e86-9807" name="Kharybdis Storm Launcher" book="HH:LACAL" page="63" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+        <profile id="9e3d-ac3b-1e86-9807" name="Five Kharybdis Storm Launchers" book="AL:AoDAL" page="75" hidden="false" profileTypeId="576561706f6e23232344415441232323">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -46684,15 +46684,20 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
             <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 2, Pinning, Twin-linked"/>
           </characteristics>
         </profile>
-      </profiles>
-      <rules>
-        <rule id="c94c-4616-6444-bb6b" name="Inertial Guidance System" page="0" hidden="false">
+        <profile id="3d8d-10c1-8d08-e3f6" name="Legion Kharybdis Assault Claw (Transport)" book="HH:LACAL" page="62" hidden="false" profileTypeId="307d-047f-ca13-706b" profileTypeName="Transport">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-        </rule>
-        <rule id="86f1-39c0-5841-0b59" name="Heat Blast" book="HH:LACAL" page="63" hidden="false">
+          <characteristics>
+            <characteristic name="Capacity" characteristicTypeId="8285-4205-b6cd-8473" value="20, or a single Dreadnought or a unit of Rapier Carrier Teams"/>
+            <characteristic name="Fire Points" characteristicTypeId="b270-a7f9-22b2-3702" value="None."/>
+            <characteristic name="Access Points" characteristicTypeId="d17b-0342-b1dc-b8e7" value="One access hatch beneath the hull. Passengers can disembark at ground level, measuring their disembarkation from the ground level of the main hull."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="86f1-39c0-5841-0b59" name="Heat Blast" book="LA:AoDAL" page="75" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -46703,28 +46708,34 @@ Heat Blast (Deep Strike): Immediately after deploying, measure a radius of 3+D3&
 
 Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit with no cover saves.  Vehicles are struck on their weakest armour value.  This counts as a flamer based attack.  Unit being hit determines wound allocation.  On a D6 of 1, the Drop Pod suffers a penetrating hit.  </description>
         </rule>
-        <rule id="01df-0b7b-2948-524c" name="Melta-ram" book="HH:LACAL" page="63" hidden="false">
+        <rule id="01df-0b7b-2948-524c" name="Melta-ram" book="LA:AoDAL" page="75" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-        </rule>
-        <rule id="895e-7dd1-fabc-cb95" name="Independant Machine Spirits" book="HH:LACAL" page="63" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Each of the weapons may fire at different targets. </description>
-        </rule>
-        <rule id="96d6-b83d-85aa-72b7" name="Assault Vehicle" page="0" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
+          <description>the Kharybdis may conduct Ram attacks as if it were a Tank while using Hover mode. It may not, however, Ram other Flyers or make such an attack on any turn in which it arrives from Reserve. It also may not conduct a Ram on any turn on which it embarks or disembarks models or uses its Heat Blast attack.</description>
         </rule>
       </rules>
       <infoLinks>
         <infoLink id="250a-992f-3375-14f4" name="New InfoLink" hidden="false" targetId="9bc2-f58b-4edd-8673" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="334e-d86a-7989-2337" name="New InfoLink" hidden="false" targetId="502e-1950-cef4-540b" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="4ed8-435c-8672-cf83" name="New InfoLink" hidden="false" targetId="1e1f-97cd-3109-626d" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="8a71-cfb1-f253-0f15" name="New InfoLink" hidden="false" targetId="45cf-653a-4ff6-f22d" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -46768,6 +46779,21 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
           <infoLinks/>
           <modifiers/>
           <constraints/>
+        </entryLink>
+        <entryLink id="ebae-fec5-262e-4b7b" name="New EntryLink" page="" hidden="false" targetId="eca0-004a-24f2-e2e9" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e12-1c99-67fc-e8a2" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
