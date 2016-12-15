@@ -33919,7 +33919,7 @@ Ignores Cover special rule.</description>
       </modifiers>
       <constraints/>
     </entryLink>
-    <entryLink id="2e77-bcb4-9def-f7c5" hidden="false" targetId="b9f0-57cc-d0da-4ae3" type="selectionEntry" categoryEntryId="466173742041747461636b23232344415441232323">
+    <entryLink id="2e77-bcb4-9def-f7c5" name="" hidden="false" targetId="b9f0-57cc-d0da-4ae3" type="selectionEntry" categoryEntryId="466173742041747461636b23232344415441232323">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -46692,12 +46692,6 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
           <infoLinks/>
           <modifiers/>
         </rule>
-        <rule id="925a-8c58-281f-f5f3" name="Drop Pod Assault" page="0" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </rule>
         <rule id="86f1-39c0-5841-0b59" name="Heat Blast" book="HH:LACAL" page="63" hidden="false">
           <profiles/>
           <rules/>
@@ -46729,7 +46723,14 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
           <modifiers/>
         </rule>
       </rules>
-      <infoLinks/>
+      <infoLinks>
+        <infoLink id="250a-992f-3375-14f4" name="New InfoLink" hidden="false" targetId="9bc2-f58b-4edd-8673" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -66679,6 +66680,18 @@ When conducting a Ram attack, use Strength 10, roll two dice and pick the higher
           <infoLinks/>
           <modifiers/>
         </infoLink>
+        <infoLink id="0ff0-7dc7-11ea-4e32" name="New InfoLink" hidden="false" targetId="3138-683d-a9a0-570d" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="32a0-6915-df49-cfb3" name="New InfoLink" hidden="false" targetId="3a93202e-ac23-5508-2dda-248efcc8ff3d" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
       </infoLinks>
       <modifiers/>
       <constraints/>
@@ -66727,7 +66740,7 @@ When conducting a Ram attack, use Strength 10, roll two dice and pick the higher
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="5031-fabb-8e2b-30df" name="Wing Weapons" hidden="false" collective="false">
+        <selectionEntryGroup id="5031-fabb-8e2b-30df" name="Two wing-mounted:" hidden="false" collective="false" defaultSelectionEntryId="2ce4-cc59-9164-81f2">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -66736,47 +66749,30 @@ When conducting a Ram attack, use Strength 10, roll two dice and pick the higher
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ac60-d1bd-1f94-06f1" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cde2-e92e-2a12-4a02" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="714f-e993-f4af-908e" name="Two wing-mounted Havoc Launchers" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="2ce4-cc59-9164-81f2" name="New EntryLink" hidden="false" targetId="d6bf-b694-8ca0-a6c5" type="selectionEntry">
               <profiles/>
               <rules/>
-              <infoLinks>
-                <infoLink id="c923-1a49-b02f-1486" hidden="false" targetId="b3ea1d32-ba66-0585-d7f7-0dc56e707736" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f88a-269e-2c8a-3227" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="5635-04fa-c120-2066" name="Two wing-mounted Missile Launchers" book="LACAL" page="59" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="points" value="0.0">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+            <entryLink id="d909-391e-eda3-f9de" name="New EntryLink" hidden="false" targetId="e5d2-e10d-1552-c5c6" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d9a-1de0-c7ec-9ee2" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -66787,25 +66783,35 @@ When conducting a Ram attack, use Strength 10, roll two dice and pick the higher
           <modifiers/>
           <constraints/>
         </entryLink>
-        <entryLink id="f582-d635-649b-eebc" name="New EntryLink" hidden="false" targetId="f888-a294-fcff-8391" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="points" value="0.0">
-              <repeats/>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="62c7-65ad-7f4a-2767" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f86a-7393-ad0d-c2e6" type="min"/>
-          </constraints>
-        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="305.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e5d2-e10d-1552-c5c6" name="Missile Launcher" book="BRB 7th" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="a01f-0962-3dba-deab" name="New InfoLink" hidden="false" targetId="40e6-c95c-7c8d-cf02" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="fa77-3f32-ad17-5ee7" name="New InfoLink" hidden="false" targetId="1e33-d8ec-f833-b584" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
