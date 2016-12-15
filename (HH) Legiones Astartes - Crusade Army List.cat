@@ -65404,7 +65404,7 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="df03-d269-13b4-94d7" name="In squadrons of three, one Land Raider may be upgraded to:" hidden="false" collective="false">
+        <selectionEntryGroup id="ea28-aaf1-93fb-a0f4" name="In squadrons of three, one Vehicle may be upgraded to:" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -65421,7 +65421,7 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="f5a7-890a-ff02-5d13" name="New EntryLink" hidden="false" targetId="2330-16be-009d-4a66" type="selectionEntry">
+            <entryLink id="8b60-5d5e-e83f-81d1" name="New EntryLink" hidden="false" targetId="2330-16be-009d-4a66" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -66178,7 +66178,7 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="57e7-980d-f042-f566" name="Legion Artillery Tank Squadron" book="HH:LACAL" page="56" hidden="false" collective="false" categoryEntryId="486561767920537570706f727423232344415441232323" type="unit">
+    <selectionEntry id="57e7-980d-f042-f566" name="Legion Artillery Tank Squadron" book="LA:AoDAL" page="68" hidden="false" collective="false" categoryEntryId="486561767920537570706f727423232344415441232323" type="unit">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -66343,6 +66343,22 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
                   <infoLinks/>
                   <modifiers/>
                   <constraints/>
+                </entryLink>
+                <entryLink id="0345-676b-179a-e625" name="New EntryLink" hidden="false" targetId="a161-76b3-9ef1-da7b" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Hull-mounted Heavy Bolter">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b207-ad0c-a8b1-0ea0" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d737-863a-ae42-b39f" type="min"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
               <costs>
@@ -66531,6 +66547,22 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
                   <modifiers/>
                   <constraints/>
                 </entryLink>
+                <entryLink id="f3e1-923f-4f09-6c2b" name="New EntryLink" hidden="false" targetId="a161-76b3-9ef1-da7b" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Hull-mounted Heavy Bolter">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9393-c17e-9a2e-bc8b" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f405-c1e4-fd54-52d6" type="min"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="pts" costTypeId="points" value="155.0"/>
@@ -66552,30 +66584,6 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
                     <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Vehicle (Tank)"/>
                   </characteristics>
                 </profile>
-                <profile id="a08d-6af0-36af-5a2c" name="Whirlwind Launcher: Vengeance Warhead" book="HH:LACAL" page="93" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <characteristics>
-                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="12&quot; - 48&quot;"/>
-                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="5"/>
-                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
-                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Barrage, Large Blast"/>
-                  </characteristics>
-                </profile>
-                <profile id="d708-d409-5d33-5caf" name="Whirlwind Launcher: Castellan Warhead" book="HH:LACAL" page="93" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <characteristics>
-                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="12&quot; - 48&quot;"/>
-                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="4"/>
-                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="5"/>
-                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Barrage, Large Blast, Ignores Cover"/>
-                  </characteristics>
-                </profile>
               </profiles>
               <rules/>
               <infoLinks/>
@@ -66585,7 +66593,7 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
               </constraints>
               <selectionEntries/>
               <selectionEntryGroups>
-                <selectionEntryGroup id="a4ed-55f7-78c9-2ef4" name="Exchange Vengeance and Castellan missiles for:" hidden="false" collective="false">
+                <selectionEntryGroup id="a4ed-55f7-78c9-2ef4" name="Exchange Vengeance and Castellan missiles for:" hidden="false" collective="false" defaultSelectionEntryId="910e-cea0-521f-5b79">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -66619,6 +66627,44 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
                       <costs>
                         <cost name="pts" costTypeId="points" value="0.0"/>
                       </costs>
+                    </selectionEntry>
+                    <selectionEntry id="910e-cea0-521f-5b79" name="Whirlwind Launcher" hidden="false" collective="false" type="upgrade">
+                      <profiles>
+                        <profile id="f533-5a47-47a6-4e8b" name="Whirlwind Launcher: Castellan Warhead" book="HH:LACAL" page="93" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                          <profiles/>
+                          <rules/>
+                          <infoLinks/>
+                          <modifiers/>
+                          <characteristics>
+                            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="12&quot; - 48&quot;"/>
+                            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="4"/>
+                            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="5"/>
+                            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Barrage, Large Blast, Ignores Cover"/>
+                          </characteristics>
+                        </profile>
+                        <profile id="eee8-e6aa-bfcd-7de2" name="Whirlwind Launcher: Vengeance Warhead" book="HH:LACAL" page="93" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                          <profiles/>
+                          <rules/>
+                          <infoLinks/>
+                          <modifiers/>
+                          <characteristics>
+                            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="12&quot; - 48&quot;"/>
+                            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="5"/>
+                            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+                            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Barrage, Large Blast"/>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c775-8ae0-99ab-b495" type="max"/>
+                      </constraints>
+                      <selectionEntries/>
+                      <selectionEntryGroups/>
+                      <entryLinks/>
+                      <costs/>
                     </selectionEntry>
                   </selectionEntries>
                   <selectionEntryGroups/>
@@ -66697,6 +66743,16 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
                   <modifiers/>
                   <constraints/>
                 </entryLink>
+                <entryLink id="37e6-f31d-d105-2788" name="New EntryLink" hidden="false" targetId="30c2c848-c1d3-e61f-6632-a91bcee1fdc4" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5837-2e6c-e6fd-a932" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4362-be8c-ac67-1feb" type="min"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="pts" costTypeId="points" value="75.0"/>
@@ -66706,16 +66762,24 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
           <selectionEntryGroups/>
           <entryLinks/>
         </selectionEntryGroup>
-        <selectionEntryGroup id="54de-fb9d-794e-b73b" name="In squadrons of three, one model may upgraded to:" hidden="false" collective="false">
+        <selectionEntryGroup id="22c3-c9be-b6b3-5e15" name="In squadrons of three, one Vehicle may be upgraded to:" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="511d-594e-09c3-7ee1" type="lessThan"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="385e-f4c7-27a1-ca73" name="New EntryLink" hidden="false" targetId="2330-16be-009d-4a66" type="selectionEntry">
+            <entryLink id="67ce-13db-7187-cab2" name="New EntryLink" hidden="false" targetId="2330-16be-009d-4a66" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
