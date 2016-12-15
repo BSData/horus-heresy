@@ -66727,31 +66727,11 @@ When conducting a Ram attack, use Strength 10, roll two dice and pick the higher
             <characteristic name="Side" characteristicTypeId="5369646523232344415441232323" value="12"/>
             <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="10"/>
             <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="3"/>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Tank"/>
-          </characteristics>
-        </profile>
-        <profile id="2fa1-ae30-0e71-24f7" name="Scorpius Multi-launcher" book="HH:LACAL" page="64" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot;"/>
-            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
-            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Barrage, Blast, Rocket Barrage"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Vehicle (Tank)"/>
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="377f-8c2e-33b7-29d1" name="Rocket Barrage" book="HH:LACAL" page="64" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>In a turn in which the vehicle has not moved, increase rate of fire to Heavy 1+D3.  </description>
-        </rule>
-      </rules>
+      <rules/>
       <infoLinks/>
       <modifiers/>
       <constraints/>
@@ -66763,55 +66743,31 @@ When conducting a Ram attack, use Strength 10, roll two dice and pick the higher
           <infoLinks/>
           <modifiers/>
           <constraints/>
-          <selectionEntries>
-            <selectionEntry id="6a47-9f65-90a7-bd83" name="Hunter-killer Missile" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f611-d1f3-67b3-92f1" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="2ecf-581c-a6f8-88e3" name="Dozer Blade" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="83e2-4bf4-17db-f509" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="5.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="ae8c-8dbb-033a-979c" name="Extra Armour" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7161-7268-8adb-c181" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+          <selectionEntries/>
           <selectionEntryGroups/>
-          <entryLinks/>
+          <entryLinks>
+            <entryLink id="4e74-ed82-7db5-9650" name="New EntryLink" hidden="false" targetId="915f-bdbc-c3cb-9b0b" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="4102-1b60-27b9-7b84" name="New EntryLink" hidden="false" targetId="00d9-65e8-94b2-2396" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="5c09-3a93-7489-14d5" name="New EntryLink" hidden="false" targetId="a6cd-f04b-711e-c083" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="2e8c-b3b5-4e2c-0faa" name="Legion-specific upgrade" hidden="false" collective="false">
           <profiles/>
@@ -66831,6 +66787,52 @@ When conducting a Ram attack, use Strength 10, roll two dice and pick the higher
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="dec4-a6d8-f380-a6f1" name="Scorpius Multi-Launcher" hidden="false" collective="false" defaultSelectionEntryId="b434-6d2d-8b4e-6653">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f526-cd6e-d624-1eac" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e845-0ba3-a976-32a9" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b434-6d2d-8b4e-6653" name="Scorpius Multi-Launcher" book="LA:AoDLA" page="80" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="8333-d762-1ecf-fe22" name="Scorpius Multi-launcher" book="HH:LACAL" page="64" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Barrage, Blast, Rocket Barrage"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="4967-56fb-c9bb-7f54" name="Rocket Barrage" book="HH:LACAL" page="64" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>In a turn in which the vehicle has not moved, increase rate of fire to Heavy 1+D3.  </description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="665d-c55f-78fd-1a7a" hidden="false" targetId="c487-be13-ea53-917e" type="selectionEntryGroup">
@@ -66839,6 +66841,30 @@ When conducting a Ram attack, use Strength 10, roll two dice and pick the higher
           <infoLinks/>
           <modifiers/>
           <constraints/>
+        </entryLink>
+        <entryLink id="f0ee-31f4-391a-a31c" name="x" hidden="false" targetId="fe17-5ed2-ca63-9379" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="5f84-847a-de2d-9942" name="New EntryLink" hidden="false" targetId="b572273e-2b93-4961-75c8-d9022c31a47d" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="c0f1-d468-f343-bde2" name="New EntryLink" hidden="false" targetId="30c2c848-c1d3-e61f-6632-a91bcee1fdc4" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc00-e1c9-7a73-35ab" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24cd-70f7-7c98-7299" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
