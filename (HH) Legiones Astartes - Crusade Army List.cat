@@ -66601,7 +66601,7 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
     </selectionEntry>
     <selectionEntry id="9099-0989-0bda-ff4f" name="Legion Caestus Assault Ram" book="LA:AoDAL" page="" hidden="false" collective="false" categoryEntryId="486561767920537570706f727423232344415441232323" type="model">
       <profiles>
-        <profile id="aeb8-e6bf-3f8a-978d" name="Legion Caestus Assault Ram" book="HH:LACAL" page="59" hidden="false" profileTypeId="56656869636c6523232344415441232323">
+        <profile id="aeb8-e6bf-3f8a-978d" name="Legion Caestus Assault Ram" book="LA:AoDAL" page="71" hidden="false" profileTypeId="56656869636c6523232344415441232323">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -66612,23 +66612,31 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
             <characteristic name="Side" characteristicTypeId="5369646523232344415441232323" value="13"/>
             <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="11"/>
             <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="4"/>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Tank*, Flyer, Hover, Transport"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Vehicle (Tank*, Flyer, Hover, Transport)"/>
           </characteristics>
         </profile>
-      </profiles>
-      <rules>
-        <rule id="36ed-79b7-8891-b6c5" name="Deep Strike" page="0" hidden="false">
+        <profile id="a9d7-fa80-cfdf-e126" name="Legion Caestus Assault Ram (Transport)" book="LA:AoDAL" page="71" hidden="false" profileTypeId="307d-047f-ca13-706b" profileTypeName="Transport">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-        </rule>
+          <characteristics>
+            <characteristic name="Capacity" characteristicTypeId="8285-4205-b6cd-8473" value="10 - See Misericord Rule"/>
+            <characteristic name="Fire Points" characteristicTypeId="b270-a7f9-22b2-3702" value="None"/>
+            <characteristic name="Access Points" characteristicTypeId="d17b-0342-b1dc-b8e7" value="Two, at the front of it&apos;s hull"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
         <rule id="c437-ed8a-5906-9c22" name="Caestus Ram" book="HH:LACAL" page="59" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>When conducting a Ram attack, use Strength 10, roll two dice and pick the higher when determining if it has penetrated the target&apos;s armour and add +1 to any rolls on the damage chart that is causes.  Additionally, the Caestus Ram has a 5++ Invulnerable save from any attacks made against its front armour, including damage from ramming or being rammed. </description>
+          <description>*Note that even though the Caestus is a Flyer, it may choose to ram just as if it were a tank. This attack must be declared at the start of the Caestus’ Movement phase.
+
+When conducting a Ram attack, use Strength 10, roll two dice and pick the higher when determining if it has penetrated the target&apos;s armour and add +1 to any rolls on the damage chart that is causes.  Additionally, the Caestus Ram has a 5++ Invulnerable save from any attacks made against its front armour, including damage from ramming or being rammed. 
+</description>
         </rule>
         <rule id="6aed-ea24-8417-e27c" name="Misericord" book="HH:LACAL" page="59" hidden="false">
           <profiles/>
@@ -66639,13 +66647,31 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="57b3-cff0-a651-b4df" hidden="false" targetId="890c-3cfe-af38-b022" type="profile">
+        <infoLink id="158c-c931-b133-a8fb" name="New InfoLink" hidden="false" targetId="45cf-653a-4ff6-f22d" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="158c-c931-b133-a8fb" name="New InfoLink" hidden="false" targetId="45cf-653a-4ff6-f22d" type="rule">
+        <infoLink id="bf34-4c77-a489-4342" name="New InfoLink" hidden="false" targetId="d219-2314-4834-c054" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="e1bf-ea2a-419d-3829" name="" hidden="false" targetId="890c-3cfe-af38-b022" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="name" value="Twin-linked Hull-mounted Magna-melta">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="4b6a-832d-c664-0b25" name="New InfoLink" hidden="false" targetId="5283-9b50-3dcd-78e4" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -66662,47 +66688,24 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
           <infoLinks/>
           <modifiers/>
           <constraints/>
-          <selectionEntries>
-            <selectionEntry id="4517-b720-dcd7-3f9e" name="Frag Assault Launchers" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="768f-d3e4-4b0d-5264" name="New EntryLink" hidden="false" targetId="eca0-004a-24f2-e2e9" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f1dd-be01-4d25-e757" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="19b3-2756-47ae-2ef9" name="Auxiliary Drive" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <constraints/>
+            </entryLink>
+            <entryLink id="737b-baf4-79c7-4144" name="New EntryLink" hidden="false" targetId="a0a4-4e61-7118-fcff" type="selectionEntry">
               <profiles/>
               <rules/>
-              <infoLinks>
-                <infoLink id="9fc4-d3b4-1643-8e19" hidden="false" targetId="d963a2dd-d9a3-8974-aac6-61ffcc78a99a" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
+              <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="07f4-d451-4593-81fc" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="122c-3039-a0cc-9444" name="Legion-specific upgrade" hidden="false" collective="false">
           <profiles/>
@@ -66781,6 +66784,22 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
           <infoLinks/>
           <modifiers/>
           <constraints/>
+        </entryLink>
+        <entryLink id="f582-d635-649b-eebc" name="New EntryLink" hidden="false" targetId="f888-a294-fcff-8391" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="62c7-65ad-7f4a-2767" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f86a-7393-ad0d-c2e6" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
