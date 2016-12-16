@@ -14197,5 +14197,14 @@ D6 - Result
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1"/>
       </characteristics>
     </profile>
+    <profile id="48f1-0c16-d5e5-6d98" name="Flare Shield" book="LA:AoDAL" page="132" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="A flare shield operates against shooting attacks that strike the vehicle&apos;s front arc.  It reduces the strength of attacks by weapons with the Templae or Blast type by -2, and other shooting attacks by -1.  A flare shield has no effect on attacks from close combat or with the Destroyer rule.  "/>
+      </characteristics>
+    </profile>
   </sharedProfiles>
 </gameSystem>
