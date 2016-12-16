@@ -11902,7 +11902,7 @@ Command Benefits:
           <profiles/>
           <rules/>
           <infoLinks>
-            <infoLink id="e687-26b6-3de9-97e9" name="New InfoLink" hidden="false" targetId="cb4a-644f-bd8d-7d97" type="profile">
+            <infoLink id="3052-7b26-9eed-36b1" name="New InfoLink" hidden="false" targetId="d0b7-ed3f-25c8-1e63" type="rule">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -12913,6 +12913,13 @@ D6 - Result
       <infoLinks/>
       <modifiers/>
       <description>A vehicle with this wargear is not subject to the additional D6 armour penetration caused by weapons with the Melta special rule.</description>
+    </rule>
+    <rule id="d0b7-ed3f-25c8-1e63" name="Flare Shield" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>A flare shield operates against shooting attacks that strike the vehicle&apos;s front arc.  It reduces the strength of attacks by weapons with the Templae or Blast type by -2, and other shooting attacks by -1.  A flare shield has no effect on attacks from close combat or with the Destroyer rule.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -14195,15 +14202,6 @@ D6 - Result
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1"/>
-      </characteristics>
-    </profile>
-    <profile id="48f1-0c16-d5e5-6d98" name="Flare Shield" book="LA:AoDAL" page="132" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="A flare shield operates against shooting attacks that strike the vehicle&apos;s front arc.  It reduces the strength of attacks by weapons with the Templae or Blast type by -2, and other shooting attacks by -1.  A flare shield has no effect on attacks from close combat or with the Destroyer rule.  "/>
       </characteristics>
     </profile>
   </sharedProfiles>
