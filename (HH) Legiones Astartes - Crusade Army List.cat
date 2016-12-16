@@ -37820,15 +37820,7 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <repeats/>
-              <conditions>
-                <condition field="selections" scope="45fd-559d-32de-5110" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b0a7-73cc-b50e-94d7" type="equalTo"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
+          <modifiers/>
           <characteristics>
             <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot;"/>
             <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
@@ -37836,26 +37828,16 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
             <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 4, Sunder"/>
           </characteristics>
         </profile>
-        <profile id="0ee7-6cf1-48e4-4feb" name="Helical Targeting Array" book="HH5: Tempest" page="214" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="If the Deredeo chooses to neither move nor Run in its turn it may, if its controlling player wishes, gain the Skyfire and Interceptor special rules for that entire game turn (ie, both the controlling player’s turn and their opponent’s following player turn) for all of its weapons except its heavy bolters/heavy flamers."/>
-          </characteristics>
-        </profile>
       </profiles>
-      <rules>
-        <rule id="60da-07bf-6ffe-8c12" name="Extra Armour" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </rule>
-      </rules>
+      <rules/>
       <infoLinks>
         <infoLink id="fa3c-741a-2443-6189" hidden="false" targetId="e0898f15-4b47-28f4-313e-0b321f0a3dca" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="116e-720b-52cf-c24a" name="New InfoLink" hidden="false" targetId="5283-9b50-3dcd-78e4" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -37866,70 +37848,39 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
       <constraints/>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="6421-e8ff-e03a-0696" name="May exchange twin-linked heavy bolter for:" hidden="false" collective="false">
+        <selectionEntryGroup id="6421-e8ff-e03a-0696" name="Torso-mounted:" hidden="false" collective="false" defaultSelectionEntryId="362c-cdff-5b6c-a68d">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="164e-7939-3f1c-b07b" name="Twin-linked Heavy Flamer" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="f61f-28bb-a530-2939" name="New EntryLink" hidden="false" targetId="2bc5-53e9-b8fd-0b6b" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="949a-6141-fca3-0410" name="Twin-linked Iliastus Assault Cannon" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <constraints/>
+            </entryLink>
+            <entryLink id="eb80-f6b5-77bf-c15f" name="New EntryLink" hidden="false" targetId="5986-c8ef-d448-397b" type="selectionEntry">
               <profiles/>
               <rules/>
-              <infoLinks>
-                <infoLink id="7b68-837b-2fee-d57d" hidden="false" targetId="0d8bdd64-39f0-7759-d8ca-0702ee1f0fd0" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-                <infoLink id="9c51-fec3-ca04-b458" hidden="false" targetId="0d300426-e90a-4a8d-bff5-9b64949b128d" type="rule">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16a2-56d6-9be5-ede0" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="5.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="362c-cdff-5b6c-a68d" name="New EntryLink" hidden="false" targetId="aa78-540d-996f-52ff" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="4e89-c0d1-627b-1c67" name="May be equipped with:" hidden="false" collective="false">
           <profiles/>
@@ -37937,32 +37888,17 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
           <infoLinks/>
           <modifiers/>
           <constraints/>
-          <selectionEntries>
-            <selectionEntry id="f86d-b5ce-c0d3-41d1" name="Armoured Ceramite" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="fc49-3e68-76a6-9ac9" name="New EntryLink" hidden="false" targetId="f888-a294-fcff-8391" type="selectionEntry">
               <profiles/>
               <rules/>
-              <infoLinks>
-                <infoLink id="1454-0771-08c3-f852" hidden="false" targetId="2e87b8ca-7cd1-78b9-2116-246015e7935e" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
+              <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="20.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="ede0-544c-21d8-fe1a" name="May be fitted with the following carapace-mounted systems:" hidden="false" collective="false">
           <profiles/>
@@ -37970,7 +37906,7 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="3054-0dce-e9e3-bb1a" name="Aiolos Missile Launcher" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -38000,7 +37936,7 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
               <infoLinks/>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <selectionEntries/>
               <selectionEntryGroups/>
@@ -38025,7 +37961,7 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
               <infoLinks/>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <selectionEntries/>
               <selectionEntryGroups/>
@@ -38036,9 +37972,17 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
-          <entryLinks/>
+          <entryLinks>
+            <entryLink id="fe12-2e24-0a5d-2b52" name="New EntryLink" hidden="false" targetId="92bd-b77f-2857-28db" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="2670-2695-b491-9d43" name="May exchange Anvilus Pattern Autocannon Battery for:" hidden="false" collective="false">
+        <selectionEntryGroup id="2670-2695-b491-9d43" name="May exchange Anvilus Pattern Autocannon Battery for:" hidden="false" collective="false" defaultSelectionEntryId="18bf-193c-c3b0-408d">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -38076,7 +38020,7 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
               <infoLinks/>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <selectionEntries/>
               <selectionEntryGroups/>
@@ -38087,7 +38031,22 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
-          <entryLinks/>
+          <entryLinks>
+            <entryLink id="18bf-193c-c3b0-408d" name="New EntryLink" book="" hidden="false" targetId="efb9-6294-ddbf-ee16" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="8677-ca9f-a028-3b66" name="New EntryLink" hidden="false" targetId="92bd-b77f-2857-28db" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="9a00-690a-ee03-41ab" name="Legion-specific upgrade" hidden="false" collective="false">
           <profiles/>
@@ -38124,6 +38083,13 @@ Token representing the Cyber-hawk plays no other role in the game and may not be
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="b730-62ec-6069-2964" hidden="false" targetId="c487-be13-ea53-917e" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="33d9-fb91-5a57-fd6e" name="New EntryLink" hidden="false" targetId="6633-bb06-ca81-2a22" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -48764,8 +48730,8 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5c53-ba30-2622-14a0" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ad11-b600-4504-8516" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c53-ba30-2622-14a0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad11-b600-4504-8516" type="min"/>
           </constraints>
           <selectionEntries/>
           <selectionEntryGroups/>
@@ -48799,8 +48765,8 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="57b1-da06-8e38-8f67" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d300-b3d3-71a1-14de" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57b1-da06-8e38-8f67" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d300-b3d3-71a1-14de" type="min"/>
           </constraints>
           <selectionEntries/>
           <selectionEntryGroups/>
@@ -48928,6 +48894,13 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
           <constraints/>
         </entryLink>
         <entryLink id="b740-a536-73bc-c194" name="New EntryLink" hidden="false" targetId="fe17-5ed2-ca63-9379" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="ef15-1621-2f77-5006" name="New EntryLink" hidden="false" targetId="b572273e-2b93-4961-75c8-d9022c31a47d" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -66719,6 +66692,84 @@ When conducting a Ram attack, use Strength 10, roll two dice and pick the higher
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="efb9-6294-ddbf-ee16" name="Twin-linked Anvilius Pattern Autocannon Battery" book="LA:AoDAL" page="79" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="89d3-3ef0-d4db-7bdf" name="Anvilus Pattern Autocannon Battery" book="HH5: Tempest" page="214" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 4, Sunder"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="0800-84c7-7b53-e4cb" name="New InfoLink" hidden="false" targetId="b67a5fd8-9dcd-1d03-ef50-8170a6b1e839" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="92bd-b77f-2857-28db" name="Single Arachnus heavy lascannon battery" book="AL:AoADL" page="79" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="c092-6851-cbfc-3efe" name="New InfoLink" hidden="false" targetId="99df-1868-ca24-eafb" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="1229-5586-d6c9-c694" name="New InfoLink" hidden="false" targetId="328c-2d71-a3d8-20c6" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="50.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6633-bb06-ca81-2a22" name="Helical Targeting Array" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="3186-3053-951f-5fb7" name="New InfoLink" hidden="false" targetId="a654-c4d7-5e67-0a65" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fcd-3dc2-8aa9-5b22" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="054f-632e-e212-5363" type="min"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fc8ed347-6cd6-c24e-942f-bda78004e894" name="Bodyguard" hidden="false" collective="false">
@@ -69888,6 +69939,13 @@ Kharybdis: After it has landed treat as a flyer in Hover mode. LA:AODAL P75</des
       <modifiers/>
       <description>Any unit charging into close combat on the same turn it disembarks from a transport vehicle equipped with frag assault launchers counts as having frag grenades.</description>
     </rule>
+    <rule id="99df-1868-ca24-eafb" name="Exoshock" book="AL:AoDLA" page="79" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>If this weapon successfully scores a penetrating hit on a target, roll a D6. On the roll of a 4,+ a second automatic penetrating hit is in􀁵icted on the same target against which cover saves may not be taken.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="9045e242-71f8-6029-fc57-2b7cbedcc398" name="Archaeotech Pistol" book="HH:LACAL" page="82" hidden="false" profileTypeId="576561706f6e23232344415441232323">
@@ -71097,6 +71155,27 @@ Kharybdis: After it has landed treat as a flyer in Hover mode. LA:AODAL P75</des
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="10"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Large Blast"/>
+      </characteristics>
+    </profile>
+    <profile id="328c-2d71-a3d8-20c6" name="Arachnus heavy lascannon battery" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="10"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 2, Exoshock"/>
+      </characteristics>
+    </profile>
+    <profile id="a654-c4d7-5e67-0a65" name="Helica Targeting Array" book="LA:AoDAL" page="79" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="If the Dreadnought chooses to neither move nor Run in its turn it may, if its controlling player wishes, gain the Skyfire and Interceptor special rules for that entire game turn (ie, both the controlling player’s turn and their opponent’s following player turn) for all of its weapons except its heavy bolters/heavy flamers."/>
       </characteristics>
     </profile>
   </sharedProfiles>
