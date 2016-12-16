@@ -67139,19 +67139,7 @@ Explodes results add D3&quot; to radius.  </description>
             <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Tank, Transport"/>
           </characteristics>
         </profile>
-        <profile id="588f-bf62-c683-acb7" name="Quad Mortar (Shatter)" book="HH:LACAL" page="55" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
-            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
-            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 4, Sunder"/>
-          </characteristics>
-        </profile>
-        <profile id="ff5a-79dd-62ff-4dfd" name="Achilles-Alpha Pattern Land Raider" book="AL:AoDAL" page="67" hidden="false" profileTypeId="307d-047f-ca13-706b" profileTypeName="Transport">
+        <profile id="ff5a-79dd-62ff-4dfd" name="Achilles-Alpha Pattern Land Raider (Transport)" book="AL:AoDAL" page="67" hidden="false" profileTypeId="307d-047f-ca13-706b" profileTypeName="Transport">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -67180,12 +67168,6 @@ Explodes results add D3&quot; to radius.  </description>
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="a72f-c8ff-6bac-ff36" hidden="false" targetId="6d02b74f-b832-0249-9ba0-01ac9c192099" type="profile">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
         <infoLink id="9331-f648-c3ea-8942" hidden="false" targetId="887c2e1c-8eae-d449-e212-7dddb39cf726" type="rule">
           <profiles/>
           <rules/>
@@ -67268,6 +67250,13 @@ Explodes results add D3&quot; to radius.  </description>
           </modifiers>
           <constraints/>
         </entryLink>
+        <entryLink id="b5b0-43b4-fddd-c3bb" name="New EntryLink" hidden="false" targetId="1914-1ced-69c6-585c" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="300.0"/>
@@ -67328,7 +67317,10 @@ Explodes results add D3&quot; to radius.  </description>
         </infoLink>
       </infoLinks>
       <modifiers/>
-      <constraints/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="302f-49b0-89f6-65da" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e526-83b5-8729-1321" type="min"/>
+      </constraints>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="00fa-34d6-294f-fb4e" name="May be upgraded with:" hidden="false" collective="false">
