@@ -33423,7 +33423,7 @@ Ignores Cover special rule.</description>
       </modifiers>
       <constraints/>
     </entryLink>
-    <entryLink id="e5d7-d7ed-3d5b-0101" hidden="false" targetId="b9f0-57cc-d0da-4ae3" type="selectionEntry" categoryEntryId="54726f6f707323232344415441232323">
+    <entryLink id="e5d7-d7ed-3d5b-0101" name="" hidden="false" targetId="b9f0-57cc-d0da-4ae3" type="selectionEntry" categoryEntryId="54726f6f707323232344415441232323">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -33746,6 +33746,13 @@ Ignores Cover special rule.</description>
       <constraints/>
     </entryLink>
     <entryLink id="93b1-e9d5-166d-fc52" name="Legion Malcador Assualt Tank" hidden="false" targetId="6885-6434-7ed7-ce46" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="ccf8-7aa6-34af-651b" name="New EntryLink" hidden="false" targetId="9b0f-fe11-248c-953f" type="selectionEntry" categoryEntryId="486561767920537570706f727423232344415441232323">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -45248,14 +45255,14 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
               <rules/>
               <infoLinks/>
               <modifiers>
-                <modifier type="increment" field="points" value="15.0">
+                <modifier type="increment" field="points" value="15">
                   <repeats>
                     <repeat field="selections" scope="aa571dbd-da68-5e74-3593-7fda3e713898" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7cf102e8-d48f-92be-dc50-90c79d74d3a8" repeats="1"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
                 </modifier>
-                <modifier type="decrement" field="points" value="15.0">
+                <modifier type="decrement" field="points" value="15">
                   <repeats>
                     <repeat field="selections" scope="aa571dbd-da68-5e74-3593-7fda3e713898" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="10a134c9-dfdd-c921-6c14-17d0875f3b82" repeats="1"/>
                   </repeats>
@@ -45278,14 +45285,14 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
               <rules/>
               <infoLinks/>
               <modifiers>
-                <modifier type="increment" field="points" value="20.0">
+                <modifier type="increment" field="points" value="20">
                   <repeats>
                     <repeat field="selections" scope="aa571dbd-da68-5e74-3593-7fda3e713898" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7cf102e8-d48f-92be-dc50-90c79d74d3a8" repeats="1"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
                 </modifier>
-                <modifier type="decrement" field="points" value="20.0">
+                <modifier type="decrement" field="points" value="20">
                   <repeats>
                     <repeat field="selections" scope="aa571dbd-da68-5e74-3593-7fda3e713898" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="10a134c9-dfdd-c921-6c14-17d0875f3b82" repeats="1"/>
                   </repeats>
@@ -67917,16 +67924,16 @@ Explodes results add D3&quot; to radius.  </description>
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="02f8-fc1d-4e34-8fed" type="min"/>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d7dc-e9ce-0517-a31f" type="max"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d7dc-e9ce-0517-a31f" type="max"/>
           </constraints>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
           <costs>
-            <cost name="pts" costTypeId="points" value="35.0"/>
+            <cost name="pts" costTypeId="points" value="45.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b932-2302-a52f-a269" name="Sky Slayer Sergeant" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+        <selectionEntry id="b932-2302-a52f-a269" name="One Sky Slayer may be upgraded to a Sky Slayer Sergeant" book="AL:AoDAL" page="60" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
           <profiles/>
           <rules/>
           <infoLinks>
@@ -68166,51 +68173,44 @@ Explodes results add D3&quot; to radius.  </description>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="079a-31e3-90c4-c7c0" name="The entire Squadron may exchange their Jetbike&apos;s Multi-Melta for:" hidden="false" collective="false" defaultSelectionEntryId="6cbe-1141-fb99-0cfa">
+        <selectionEntryGroup id="079a-31e3-90c4-c7c0" name="The entire Squadron may take (All squad members must be identically upgraded):" hidden="false" collective="false" defaultSelectionEntryId="cc49-468e-d126-ca37">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers>
-            <modifier type="increment" field="724c-4d3e-b127-eabc" value="1">
-              <repeats>
-                <repeat field="selections" scope="9b0f-fe11-248c-953f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6112-73ef-3754-6518" repeats="1"/>
-              </repeats>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="increment" field="724c-4d3e-b127-eabc" value="1">
-              <repeats>
-                <repeat field="selections" scope="9b0f-fe11-248c-953f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6112-73ef-3754-6518" repeats="1"/>
-              </repeats>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
+          <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="724c-4d3e-b127-eabc" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6f2e-a1e7-987b-3078" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="6cbe-1141-fb99-0cfa" name="Multi-Melta" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2812-139d-6a5d-ccf6" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs/>
-            </selectionEntry>
             <selectionEntry id="5f2a-eb96-e759-e022" name="Plasma Cannon" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
               <profiles/>
               <rules/>
-              <infoLinks/>
-              <modifiers/>
+              <infoLinks>
+                <infoLink id="b54b-5211-53d9-acc7" name="New InfoLink" hidden="false" targetId="13df-d6b0-3f33-bf9b" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="de0a-fb40-528a-063c" name="New InfoLink" hidden="false" targetId="f4fd-d519-4769-5510" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="increment" field="points" value="15">
+                  <repeats>
+                    <repeat field="selections" scope="9b0f-fe11-248c-953f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6112-73ef-3754-6518" repeats="1"/>
+                  </repeats>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e201-972b-14f9-e6c5" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e201-972b-14f9-e6c5" type="max"/>
               </constraints>
               <selectionEntries/>
               <selectionEntryGroups/>
@@ -68219,37 +68219,32 @@ Explodes results add D3&quot; to radius.  </description>
                 <cost name="pts" costTypeId="points" value="15.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3e19-c26f-0062-828b" name="Volkite Culverin" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks>
-                <infoLink id="8cdc-2d30-f09d-3d94" hidden="false" targetId="c7838603-9e18-8756-26b1-222a294c5c2c" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-                <infoLink id="4608-0b56-ae34-8fa0" hidden="false" targetId="e31cf870-3fa6-f2a2-8704-9bf05f7efcd8" type="rule">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ba58-436d-3b34-778f" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
-          <entryLinks/>
+          <entryLinks>
+            <entryLink id="cc49-468e-d126-ca37" name="Multi-Metla" hidden="false" targetId="d1c0-746f-2b39-5f17" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="4ee8-4526-a5f6-a229" name="Volkite Culverin" hidden="false" targetId="edadef72-c786-ab75-6888-15d0cc090857" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="increment" field="points" value="10">
+                  <repeats>
+                    <repeat field="selections" scope="9b0f-fe11-248c-953f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6112-73ef-3754-6518" repeats="1"/>
+                  </repeats>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="8637-c985-1bd4-16eb" name="Legion-specific upgrades:" hidden="false" collective="false">
           <profiles/>
