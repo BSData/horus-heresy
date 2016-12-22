@@ -33703,6 +33703,13 @@ Ignores Cover special rule.</description>
       <modifiers/>
       <constraints/>
     </entryLink>
+    <entryLink id="17eb-40da-17d1-9a01" name="New EntryLink" hidden="false" targetId="5828-a1e9-28fc-b09b" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="a9bf-b37e-126b-a699" name="&apos;Iron Circle&apos; Domitar-Ferrum Class Battle-automata Maniple" hidden="false" collective="false" categoryEntryId="456c6974657323232344415441232323" type="unit">
@@ -68324,6 +68331,162 @@ Explodes results add D3&quot; to radius.  </description>
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5828-a1e9-28fc-b09b" name="Legion Praetor Tribune" hidden="false" collective="false" categoryEntryId="485123232344415441232323" type="unit">
+      <profiles>
+        <profile id="8467-ffd0-1e2e-873b" name="Legion Praetor Tribune" book="Package" hidden="false" profileTypeId="556e697423232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Unit Type" characteristicTypeId="556e6974205479706523232344415441232323" value="Infantry (Character)"/>
+            <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="6"/>
+            <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="5"/>
+            <characteristic name="S" characteristicTypeId="5323232344415441232323" value="4"/>
+            <characteristic name="T" characteristicTypeId="5423232344415441232323" value="4"/>
+            <characteristic name="W" characteristicTypeId="5723232344415441232323" value="3"/>
+            <characteristic name="I" characteristicTypeId="4923232344415441232323" value="5"/>
+            <characteristic name="A" characteristicTypeId="4123232344415441232323" value="4(5*)"/>
+            <characteristic name="LD" characteristicTypeId="4c4423232344415441232323" value="10"/>
+            <characteristic name="Save" characteristicTypeId="5361766523232344415441232323" value="2+"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="b93e-846a-aa2c-cda3" name="Exemplary Tribune" book="Package" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="44f7-1cec-4415-e01c" hidden="false" targetId="48ee-9a7f-07f1-22d0" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="7ae4-9dd8-6382-55cb" hidden="false" targetId="8199e922-e844-5d34-b04b-86edadffa2df" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="d175-f405-7886-01e9" hidden="false" targetId="d4a1a878-9ad4-6ae0-a864-08f58264c4a5" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="274a-5c0d-319b-a20d" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3215-720d-8883-ab23" repeats="1"/>
+          </repeats>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1006-e22e-3aa4-f79a" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="823c-4fc1-0154-35b6" type="min"/>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="26c4-599f-4885-b6e2" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="f244-04dc-f87f-745f" name="Master-crafted Paragon Blade" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="86ca-22be-bdd2-8de4" hidden="false" targetId="2fd78c56-eae0-49c5-9103-62ebadb9a05c" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b929-4423-1fc4-6953" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="15af-e15d-4016-cfb4" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a852-e71c-f224-b2fa" name="Iron Halo" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="4a73-8c46-f621-afbb" hidden="false" targetId="10b59cf4-3c97-e3e0-2185-853bcde6d112" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a499-8acf-f816-20ab" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1ee2-47a2-4f8b-882a" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="58d6-9bb6-17cf-ffcf" name="Digital Lasers*" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="764b-86be-b8cc-fde4" hidden="false" targetId="0f5f4d88-fe1f-092e-ef2a-1601bcb2fc9d" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b3bd-5aa9-387f-ee7f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b6e8-eac2-fcb9-184e" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="1ff0-7c10-fc3c-4771" name="" hidden="false" targetId="7f468ad2-37a2-384e-62c6-59a0ef008fe9" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="180.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
