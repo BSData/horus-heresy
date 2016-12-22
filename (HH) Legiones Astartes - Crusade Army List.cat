@@ -50997,6 +50997,21 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
                   </modifiers>
                   <constraints/>
                 </entryLink>
+                <entryLink id="f594-27de-123d-ab79" name="New EntryLink" book="HH:6" page="259" hidden="false" targetId="5eb2-7950-9270-ceb5" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <repeats/>
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="16a2-56d6-9be5-ede0" type="equalTo"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints/>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="ef3f-f368-a7ac-cd2a" name="Any Veteran may exchange their bolter:" hidden="false" collective="false">
@@ -68277,6 +68292,26 @@ Explodes results add D3&quot; to radius.  </description>
         <cost name="pts" costTypeId="points" value="30.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="5eb2-7950-9270-ceb5" name="Hand Flamer" book="HH:6" page="259" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="fa9f-25dd-6267-0721" name="Hand Flamer" book="HH:6" page="259" hidden="false" targetId="b7b7-09e6-8101-0834" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="15.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fc8ed347-6cd6-c24e-942f-bda78004e894" name="Bodyguard" hidden="false" collective="false">
@@ -72808,6 +72843,18 @@ Kharybdis: After it has landed treat as a flyer in Hover mode. LA:AODAL P75</des
         <characteristic name="A" characteristicTypeId="4123232344415441232323" value="2"/>
         <characteristic name="LD" characteristicTypeId="4c4423232344415441232323" value="9"/>
         <characteristic name="Save" characteristicTypeId="5361766523232344415441232323" value="2+"/>
+      </characteristics>
+    </profile>
+    <profile id="b7b7-09e6-8101-0834" name="Hand Flamer" book="HH: 6" page="259" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="Template"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="3"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="6"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Pistol"/>
       </characteristics>
     </profile>
   </sharedProfiles>
