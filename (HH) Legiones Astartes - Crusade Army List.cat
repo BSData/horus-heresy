@@ -56075,33 +56075,8 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
       </costs>
     </selectionEntry>
     <selectionEntry id="5de71262-935f-d357-f3d5-aefd3ac0bfcd" name="Phoenix Terminator Squad" book="HH:LAICL" page="30" hidden="false" collective="false" categoryEntryId="456c6974657323232344415441232323" type="unit">
-      <profiles>
-        <profile id="ea89ee2a-7b0b-932a-ba44-a5ae6a54a54b" name="Phoenix Champion" book="LA:ADL" page="10" hidden="false" profileTypeId="556e697423232344415441232323">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Unit Type" characteristicTypeId="556e6974205479706523232344415441232323" value="Infantry (Character)"/>
-            <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="5"/>
-            <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
-            <characteristic name="S" characteristicTypeId="5323232344415441232323" value="4"/>
-            <characteristic name="T" characteristicTypeId="5423232344415441232323" value="4"/>
-            <characteristic name="W" characteristicTypeId="5723232344415441232323" value="1"/>
-            <characteristic name="I" characteristicTypeId="4923232344415441232323" value="4"/>
-            <characteristic name="A" characteristicTypeId="4123232344415441232323" value="3"/>
-            <characteristic name="LD" characteristicTypeId="4c4423232344415441232323" value="9"/>
-            <characteristic name="Save" characteristicTypeId="5361766523232344415441232323" value="2+"/>
-          </characteristics>
-        </profile>
-      </profiles>
+      <profiles/>
       <rules>
-        <rule id="69b88f88-be4b-ee3f-ee89-be987c2515ae" name="Stubborn" page="0" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </rule>
         <rule id="814f99bb-229f-6708-ae75-8cea536bcd47" name="Living Icon" book="HH:LAICL" page="30" hidden="false">
           <profiles/>
           <rules/>
@@ -56136,6 +56111,12 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
           <modifiers/>
         </infoLink>
         <infoLink id="686a-60c2-8f88-b1ec" hidden="false" targetId="48ee-9a7f-07f1-22d0" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="2bbc-0624-e9f3-332d" name="New InfoLink" hidden="false" targetId="7be5-30af-1a02-0a89" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -56188,6 +56169,68 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
             <cost name="pts" costTypeId="points" value="40.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="da68-3384-e4b0-f685" name="Pheonix Champion" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="1c2e-f241-c396-1be0" name="Phoenix Champion" book="LA:ADL" page="10" hidden="false" profileTypeId="556e697423232344415441232323">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Unit Type" characteristicTypeId="556e6974205479706523232344415441232323" value="Infantry (Character)"/>
+                <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="5"/>
+                <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
+                <characteristic name="S" characteristicTypeId="5323232344415441232323" value="4"/>
+                <characteristic name="T" characteristicTypeId="5423232344415441232323" value="4"/>
+                <characteristic name="W" characteristicTypeId="5723232344415441232323" value="1"/>
+                <characteristic name="I" characteristicTypeId="4923232344415441232323" value="4"/>
+                <characteristic name="A" characteristicTypeId="4123232344415441232323" value="3"/>
+                <characteristic name="LD" characteristicTypeId="4c4423232344415441232323" value="9"/>
+                <characteristic name="Save" characteristicTypeId="5361766523232344415441232323" value="2+"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bd3-adf3-3ef9-638d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41fc-f5ff-d0c9-968d" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="2713-9c3c-5418-c454" name="Grenade Harness" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="a050-44d6-b38b-591b" hidden="false" targetId="889ea663-40f5-0ecc-7ba9-4b68e2955022" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="ea65-b504-edb2-4d2d" hidden="false" targetId="659ff44e-b4b4-e754-d640-1207926a1f5b" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2229-5d43-b7c4-07d1" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="16aa85f5-edeb-dbe9-cc49-e8999e24b964" name="Entire squad may take:" hidden="false" collective="false">
@@ -56201,7 +56244,7 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="e71d-84d5-c7da-b616" hidden="false" targetId="580dd5a9-f85d-c9f3-eeff-e72d970ad9e5" type="profile">
+                <infoLink id="e71d-84d5-c7da-b616" name="" hidden="false" targetId="580dd5a9-f85d-c9f3-eeff-e72d970ad9e5" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -56229,36 +56272,7 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
           <infoLinks/>
           <modifiers/>
           <constraints/>
-          <selectionEntries>
-            <selectionEntry id="9409ff8f-7d30-1ef5-20d1-deb6f17e8f33" name="Grenade Harness" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks>
-                <infoLink id="7e525517-85c3-7603-5162-002b361613bd" hidden="false" targetId="889ea663-40f5-0ecc-7ba9-4b68e2955022" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-                <infoLink id="3e3d5783-a77b-2f8a-7c71-e802d49dbfa6" hidden="false" targetId="659ff44e-b4b4-e754-d640-1207926a1f5b" type="rule">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+          <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
         </selectionEntryGroup>
