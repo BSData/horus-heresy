@@ -44655,7 +44655,7 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8a93771a-74ca-98ed-4560-4125176e5193" name="Legion Drop Pod" book="HH:LACAL" page="36" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+    <selectionEntry id="8a93771a-74ca-98ed-4560-4125176e5193" name="Legion Drop Pod" book="AD:AoDAL" page="46" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
       <profiles>
         <profile id="ee05819d-6495-32ca-484a-b15c9bdf8b4d" name="Legion Drop Pod" book="HH:LACAL" page="36" hidden="false" profileTypeId="56656869636c6523232344415441232323">
           <profiles/>
@@ -44671,28 +44671,39 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
             <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Open-topped, Transport"/>
           </characteristics>
         </profile>
+        <profile id="8894-e785-64e5-756e" name="Legion Drop Pod (Transport)" hidden="false" profileTypeId="307d-047f-ca13-706b" profileTypeName="Transport">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Capacity" characteristicTypeId="8285-4205-b6cd-8473" value="10, or 1 Legion Dreadnought, or 1 Rapier Carrier and crew"/>
+            <characteristic name="Fire Points" characteristicTypeId="b270-a7f9-22b2-3702" value="Open-Topped"/>
+            <characteristic name="Access Points" characteristicTypeId="d17b-0342-b1dc-b8e7" value="-"/>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule id="5b8135cf-3c49-2c29-3575-a6939ead44c3" name="Drop Pod Assault" page="0" hidden="false">
+      <rules/>
+      <infoLinks>
+        <infoLink id="9334-55fa-298d-9f02" name="New InfoLink" hidden="false" targetId="9bc2-f58b-4edd-8673" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-        </rule>
-        <rule id="454c038f-d625-3b9c-c191-bb674d16f383" name="Immobile" page="0" hidden="false">
+        </infoLink>
+        <infoLink id="0a37-16c2-3cd1-ad33" name="New InfoLink" hidden="false" targetId="e6ad-38b8-14e7-1c48" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-        </rule>
-        <rule id="c846dbba-524b-bb1e-1fe9-a677410284d8" name="Inertial Guidance System" page="0" hidden="false">
+        </infoLink>
+        <infoLink id="6a02-b796-8345-18f6" name="New InfoLink" hidden="false" targetId="502e-1950-cef4-540b" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-        </rule>
-      </rules>
-      <infoLinks/>
+        </infoLink>
+      </infoLinks>
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <repeats/>
@@ -44726,7 +44737,18 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="21c4-a122-22d0-05c3" name="New EntryLink" hidden="false" targetId="30c2c848-c1d3-e61f-6632-a91bcee1fdc4" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c83-27b5-b4d5-90d4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca0e-6188-3b53-962a" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="35.0"/>
       </costs>
