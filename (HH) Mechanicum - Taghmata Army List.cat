@@ -2855,12 +2855,6 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="1baf-e9da-6311-5219" hidden="false" targetId="8fcf6a3e-2394-ea8b-62a4-b78168a2dd15" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
         <infoLink id="b661-86b0-8888-02cb" hidden="false" targetId="d77a5e49-6699-8eb3-f6cc-1e3560501f2a" type="rule">
           <profiles/>
           <rules/>
@@ -2868,6 +2862,12 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
           <modifiers/>
         </infoLink>
         <infoLink id="0942-002a-2f92-712e" hidden="false" targetId="6eb5b812-8b8b-9e7c-279e-c9e9c93fefe9" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="6582-54d8-341b-0055" hidden="false" targetId="8fcf6a3e-2394-ea8b-62a4-b78168a2dd15" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -12412,20 +12412,7 @@ Buildings and Fortifications                                          D
     </selectionEntry>
     <selectionEntry id="85fd-a4b3-a28f-9a98" name="Vorax Class Battle-automata Maniple" book="" hidden="false" collective="false" categoryEntryId="466173742041747461636b23232344415441232323" type="unit">
       <profiles/>
-      <rules>
-        <rule id="f07e-29d9-86da-983e" name="Fleet" page="0" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </rule>
-        <rule id="1aa6-02fa-3e8c-269e" name="Scout" page="0" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </rule>
-      </rules>
+      <rules/>
       <infoLinks>
         <infoLink id="b276-4bce-84a7-2742" hidden="false" targetId="75683330-6490-c0bf-560c-2e58617425a1" type="profile">
           <profiles/>
@@ -12445,7 +12432,25 @@ Buildings and Fortifications                                          D
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="be4c-1160-31a0-dd05" hidden="false" targetId="8fcf6a3e-2394-ea8b-62a4-b78168a2dd15" type="rule">
+        <infoLink id="be4c-1160-31a0-dd05" name="" hidden="false" targetId="8fcf6a3e-2394-ea8b-62a4-b78168a2dd15" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="append" field="description" value="*For the purposes of this special rule, a Stratosautomata counts as a Battle-automata except that the ‘Methodical’ provision does not apply, and in the case of the ‘Target Priority’ provision of the special rule, the controlling player may always attempt to target the nearest enemy Flyer or Flying Creature rather than just the closest enemy model when this special rule comes into effect.">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="ac91-89d2-e472-623b" name="New InfoLink" hidden="false" targetId="9b30-1da3-eb8d-ce7a" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="e5a0-473b-71f7-b2b7" name="New InfoLink" hidden="false" targetId="69e5-fc02-1f9d-63c2" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -12477,14 +12482,40 @@ Buildings and Fortifications                                          D
             </profile>
           </profiles>
           <rules/>
-          <infoLinks/>
+          <infoLinks>
+            <infoLink id="fec1-7e56-9795-5882" name="New InfoLink" hidden="false" targetId="d0b7-ed3f-25c8-1e63" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <selectionEntries/>
-          <selectionEntryGroups/>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="a281-32f4-442b-55fd" name="Standard Wargear" hidden="false" collective="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="0670-7cb3-0eca-6d94" name="New EntryLink" hidden="false" targetId="1e27e511-cf75-d55a-6807-b67be6f7474f" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="65.0"/>
@@ -13959,6 +13990,71 @@ Buildings and Fortifications                                          D
           <infoLinks/>
           <modifiers/>
           <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0fbb-6dc7-ee41-7f17" name="Vultarax Stratos-automata Maniple" hidden="false" collective="false" categoryEntryId="466173742041747461636b23232344415441232323" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6a02-7a93-73b3-8320" name="The Maniple may be upgrade to take:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="ed57-f53a-4565-2671" name="New EntryLink" hidden="false" targetId="fb66-11c0-3cb4-aac3" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="points" value="20">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6653-c42b-0326-094a" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="points" value="30">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6653-c42b-0326-094a" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="a124-f586-3578-5092" name="New EntryLink" hidden="false" targetId="0533-d54e-8dc0-9c57" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="6653-c42b-0326-094a" name="New EntryLink" hidden="false" targetId="3e05-38ff-1f0e-2f2f" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46b0-479f-00dd-ca5a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0de8-e440-f657-ae0c" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -17398,6 +17494,236 @@ Reduces transport capacity to 8.  </description>
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="3041-09bd-d512-8568" name="Sethe" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="6242-bb77-c685-6171" name="Enchanced Targeting Array" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="102b-65d4-0007-9cbb" name="New InfoLink" hidden="false" targetId="c85c-3be5-d699-b6f3" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="943d-5acf-5fdb-f4d5" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d710-122e-40b7-307d" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="3e05-38ff-1f0e-2f2f" name="Vultarax" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
+      <profiles>
+        <profile id="11d2-97d1-7e65-5afd" name="Vultarax" book="" page="" hidden="false" profileTypeId="556e697423232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Unit Type" characteristicTypeId="556e6974205479706523232344415441232323" value="Flying Monstrous Creature"/>
+            <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="3"/>
+            <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
+            <characteristic name="S" characteristicTypeId="5323232344415441232323" value="4"/>
+            <characteristic name="T" characteristicTypeId="5423232344415441232323" value="7"/>
+            <characteristic name="W" characteristicTypeId="5723232344415441232323" value="4"/>
+            <characteristic name="I" characteristicTypeId="4923232344415441232323" value="3"/>
+            <characteristic name="A" characteristicTypeId="4123232344415441232323" value="2"/>
+            <characteristic name="LD" characteristicTypeId="4c4423232344415441232323" value="8"/>
+            <characteristic name="Save" characteristicTypeId="5361766523232344415441232323" value="3+"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="5883-08a8-bd74-ffe4" name="New InfoLink" hidden="false" targetId="f6c9-cdb7-c695-5b6b" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="append" field="description" value="*For the purposes of this special rule, a Stratosautomata counts as a Battle-automata except that the ‘Methodical’ provision does not apply, and in the case of the ‘Target Priority’ provision of the special rule, the controlling player may always attempt to target the nearest enemy Flyer or Flying Creature rather than just the closest enemy model when this special rule comes into effect.">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="f916-2011-7bc8-f30f" name="New InfoLink" hidden="false" targetId="a225-e39b-3699-c8f8" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="a9bf-d9eb-e926-c736" name="New InfoLink" hidden="false" targetId="d5cf-bd98-2854-13cf" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="append" field="description" value=" – in the case of the Vultarax, measure from the edge of the model’s base.">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9600-0829-f8bc-96c2" name="Standard Wargear" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries>
+            <selectionEntry id="bca5-d029-fe8f-bc13" name="Two Setheno Pattern havoc Launchers" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="6a52-3810-6aff-4dcc" name="New InfoLink" hidden="false" targetId="5c44-3270-e851-c796" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="ef62-0c6e-adc9-e3e3" name="New InfoLink" hidden="false" targetId="516c-a244-36e3-e4b7" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb05-3798-a6d1-7a3d" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9ac-3e71-1f74-52ea" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1042-b6ca-5fdd-f4db" name="Vultarax Arc Blaster" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="e786-5f26-319b-bda5" name="New InfoLink" hidden="false" targetId="89da-0cb5-bee4-8ec2" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="32fd-2a8b-f949-ad5c" name="New InfoLink" hidden="false" targetId="6970-1bf3-b33e-5dce" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="972b-ac1b-8a73-553d" name="New InfoLink" hidden="false" targetId="f5b0-d321-4684-74da" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1794-4165-89a4-b390" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4caf-704e-48db-d405" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="96e1-c3f3-7e8a-4317" name="New EntryLink" page="" hidden="false" targetId="6242-bb77-c685-6171" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="53ca-3bed-7f70-780b" name="New EntryLink" hidden="false" targetId="1e27e511-cf75-d55a-6807-b67be6f7474f" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="3aa9-c132-bffe-f1a5" name="May be upgrade with:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries>
+            <selectionEntry id="e7b9-9371-8e4e-3b8b" name="Battle-automata power blades" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="1598-6dac-e4d2-6aea" name="New InfoLink" page="" hidden="false" targetId="7544-1891-3c0b-e9d0" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="2c04-7a94-2182-6188" name="New InfoLink" hidden="false" targetId="8269-2cd6-9236-16e7" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="c3b2-5dda-a548-1969" name="New InfoLink" hidden="false" targetId="c56e-d46b-a4ca-8cdc" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5efe-86e0-b3f0-85cc" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0c9-a76c-70dc-8648" type="min"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="175.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="d696-042d-2afa-b026" name="Heavy Bolter or Heavy Flamer" hidden="false" collective="false">
@@ -17691,6 +18017,24 @@ Reduces transport capacity to 8.  </description>
       </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks/>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="0533-d54e-8dc0-9c57" name="A single Maniple may take:" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="cd4d-9871-6699-9321" hidden="false" targetId="34924deb-f4e5-7739-5606-87600d1740bb" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -18097,6 +18441,20 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       <infoLinks/>
       <modifiers/>
       <description>Attacks with this special rule may re-roll failed armour penetration rolls against fortifications and immobile structures and add +1 to any result rolled on the Building Damage chart.  If this attack damages a bulkhead or wall section of terrain and destroys it, remove that section of terrain from play if possible.  </description>
+    </rule>
+    <rule id="7544-1891-3c0b-e9d0" name="Paired Weapons" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Battle-automata power blades are paired weapons and so add +1 to the model’s attacks and count as being Two-handed.</description>
+    </rule>
+    <rule id="5c44-3270-e851-c796" name="Setheno-Djinn" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Successful cover saves against this weapon must be re-rolled.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -19619,6 +19977,42 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="6"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 15"/>
+      </characteristics>
+    </profile>
+    <profile id="c56e-d46b-a4ca-8cdc" name="Battle-automata power blades" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="As User"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Rending, Paried Weapons"/>
+      </characteristics>
+    </profile>
+    <profile id="516c-a244-36e3-e4b7" name="Setheno Pattern havoc Launcher" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="5"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="5"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 2, Blast (3&quot;), Twin-Linked, Sethno-Djinn"/>
+      </characteristics>
+    </profile>
+    <profile id="f5b0-d321-4684-74da" name="Vultarax Arc Blaster" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="24&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="6"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="5"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3, Shred, Haywire"/>
       </characteristics>
     </profile>
   </sharedProfiles>
