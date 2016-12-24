@@ -8323,7 +8323,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -67087,24 +67089,6 @@ Explodes results add D3&quot; to radius.  </description>
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="9331-f648-c3ea-8942" hidden="false" targetId="887c2e1c-8eae-d449-e212-7dddb39cf726" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="6152-7578-714a-a775" hidden="false" targetId="c7838603-9e18-8756-26b1-222a294c5c2c" type="profile">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="f94a-4c57-596f-87e0" hidden="false" targetId="e31cf870-3fa6-f2a2-8704-9bf05f7efcd8" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
         <infoLink id="46ce-d5b2-5115-3f94" name="New InfoLink" page="" hidden="false" targetId="79c7-90f6-b453-e799" type="profile">
           <profiles/>
           <rules/>
@@ -67120,7 +67104,36 @@ Explodes results add D3&quot; to radius.  </description>
       </infoLinks>
       <modifiers/>
       <constraints/>
-      <selectionEntries/>
+      <selectionEntries>
+        <selectionEntry id="4d66-c6a7-f3c9-502e" name="Sponson Mounts" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94ec-4b33-ac95-e625" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aecc-ffba-3711-0270" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="d9de-1fef-d8cc-ce81" name="New EntryLink" hidden="false" targetId="d9c1-46b9-e742-8d83" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="name" value="Two Sponson-mount Twin-linked Volkite Culverin">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+          <costs/>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="62fa-c446-e3e7-d317" name="Legion-specific upgrade" hidden="false" collective="false">
           <profiles/>
@@ -67156,22 +67169,6 @@ Explodes results add D3&quot; to radius.  </description>
           <modifiers/>
           <constraints/>
         </entryLink>
-        <entryLink id="cac5-f77d-bfd2-a3bc" name="New EntryLink" hidden="false" targetId="d9c1-46b9-e742-8d83" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="name" value="Two Sponson-mount Twin-linked Culverin">
-              <repeats/>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c816-7bfb-3b6f-6e6b" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a37a-2107-9c3e-c3da" type="min"/>
-          </constraints>
-        </entryLink>
         <entryLink id="b5b0-43b4-fddd-c3bb" name="New EntryLink" hidden="false" targetId="1914-1ced-69c6-585c" type="selectionEntry">
           <profiles/>
           <rules/>
@@ -67202,7 +67199,10 @@ Explodes results add D3&quot; to radius.  </description>
         </infoLink>
       </infoLinks>
       <modifiers/>
-      <constraints/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e3c-e240-5d96-d1b4" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad80-a178-99d3-53fc" type="max"/>
+      </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -67211,26 +67211,7 @@ Explodes results add D3&quot; to radius.  </description>
       </costs>
     </selectionEntry>
     <selectionEntry id="1914-1ced-69c6-585c" name="Quad Launcher" hidden="false" collective="false" type="upgrade">
-      <profiles>
-        <profile id="3f1d-2245-7ee6-4bb2" name="Quad Launcher" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Unit Type" characteristicTypeId="556e6974205479706523232344415441232323"/>
-            <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="-"/>
-            <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="-"/>
-            <characteristic name="S" characteristicTypeId="5323232344415441232323" value="-"/>
-            <characteristic name="T" characteristicTypeId="5423232344415441232323" value="7"/>
-            <characteristic name="W" characteristicTypeId="5723232344415441232323" value="2"/>
-            <characteristic name="I" characteristicTypeId="4923232344415441232323" value="-"/>
-            <characteristic name="A" characteristicTypeId="4123232344415441232323" value="-"/>
-            <characteristic name="LD" characteristicTypeId="4c4423232344415441232323" value="-"/>
-            <characteristic name="Save" characteristicTypeId="5361766523232344415441232323" value="3+"/>
-          </characteristics>
-        </profile>
-      </profiles>
+      <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
@@ -67335,7 +67316,15 @@ Explodes results add D3&quot; to radius.  </description>
                   <modifiers/>
                 </infoLink>
               </infoLinks>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66cb4a66-d860-119c-edfc-1749a899f258" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e59f-a981-7ffe-7edd" type="max"/>
               </constraints>
