@@ -17503,7 +17503,9 @@ Reduces transport capacity to 8.  </description>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="6242-bb77-c685-6171" name="Enchanced Targeting Array" hidden="false" collective="false" type="upgrade">
       <profiles/>
@@ -17524,7 +17526,9 @@ Reduces transport capacity to 8.  </description>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="3e05-38ff-1f0e-2f2f" name="Vultarax" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
       <profiles>
@@ -17582,26 +17586,28 @@ Reduces transport capacity to 8.  </description>
       </infoLinks>
       <modifiers/>
       <constraints/>
-      <selectionEntries/>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="9600-0829-f8bc-96c2" name="Standard Wargear" hidden="false" collective="false">
+      <selectionEntries>
+        <selectionEntry id="c012-7d43-1475-ea1a" name="Standard Weapons" hidden="false" collective="false" type="upgrade">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebc4-b33c-a3cd-7c4e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="347c-049d-b52d-0ec9" type="max"/>
+          </constraints>
           <selectionEntries>
-            <selectionEntry id="bca5-d029-fe8f-bc13" name="Two Setheno Pattern havoc Launchers" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="77e7-632c-7bde-e2c1" name="Two Setheno Pattern havoc Launchers" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="6a52-3810-6aff-4dcc" name="New InfoLink" hidden="false" targetId="5c44-3270-e851-c796" type="rule">
+                <infoLink id="6675-1e69-26b9-6f77" name="New InfoLink" hidden="false" targetId="5c44-3270-e851-c796" type="rule">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="ef62-0c6e-adc9-e3e3" name="New InfoLink" hidden="false" targetId="516c-a244-36e3-e4b7" type="profile">
+                <infoLink id="c32b-4253-8e66-328e" name="New InfoLink" hidden="false" targetId="516c-a244-36e3-e4b7" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -17610,8 +17616,8 @@ Reduces transport capacity to 8.  </description>
               </infoLinks>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb05-3798-a6d1-7a3d" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9ac-3e71-1f74-52ea" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="097b-bb3d-c0cd-50c0" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94dd-ea09-3538-9139" type="max"/>
               </constraints>
               <selectionEntries/>
               <selectionEntryGroups/>
@@ -17620,23 +17626,23 @@ Reduces transport capacity to 8.  </description>
                 <cost name="pts" costTypeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1042-b6ca-5fdd-f4db" name="Vultarax Arc Blaster" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="bd5e-d1ec-0fb1-c537" name="Vultarax Arc Blaster" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="e786-5f26-319b-bda5" name="New InfoLink" hidden="false" targetId="89da-0cb5-bee4-8ec2" type="rule">
+                <infoLink id="ae37-baed-3bdc-6f6c" name="New InfoLink" hidden="false" targetId="89da-0cb5-bee4-8ec2" type="rule">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="32fd-2a8b-f949-ad5c" name="New InfoLink" hidden="false" targetId="6970-1bf3-b33e-5dce" type="rule">
+                <infoLink id="f1ef-e587-331f-6bca" name="New InfoLink" hidden="false" targetId="6970-1bf3-b33e-5dce" type="rule">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="972b-ac1b-8a73-553d" name="New InfoLink" hidden="false" targetId="f5b0-d321-4684-74da" type="profile">
+                <infoLink id="2d1c-94e3-be2f-c4e7" name="New InfoLink" hidden="false" targetId="f5b0-d321-4684-74da" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -17645,25 +17651,40 @@ Reduces transport capacity to 8.  </description>
               </infoLinks>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1794-4165-89a4-b390" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4caf-704e-48db-d405" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6df6-0cdd-fd78-6689" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c5f-1a06-910b-39e8" type="max"/>
               </constraints>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9600-0829-f8bc-96c2" name="Standard Wargear" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="96e1-c3f3-7e8a-4317" name="New EntryLink" page="" hidden="false" targetId="6242-bb77-c685-6171" type="selectionEntry">
+            <entryLink id="53ca-3bed-7f70-780b" name="New EntryLink" hidden="false" targetId="1e27e511-cf75-d55a-6807-b67be6f7474f" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints/>
             </entryLink>
-            <entryLink id="53ca-3bed-7f70-780b" name="New EntryLink" hidden="false" targetId="1e27e511-cf75-d55a-6807-b67be6f7474f" type="selectionEntry">
+            <entryLink id="4f70-3c4e-cda6-c975" name="New EntryLink" page="" hidden="false" targetId="6242-bb77-c685-6171" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
