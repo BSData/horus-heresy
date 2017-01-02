@@ -44816,7 +44816,29 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
               <profiles/>
               <rules/>
               <infoLinks/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="b5dc5eb3-2070-ce68-0ca6-5d26f0d238d4" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363b8c4d-a8c8-8faa-d78a-f8415f3ee2cc" type="greaterThan"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink id="aed4-4f4b-e486-8cdb" name="New InfoLink" hidden="false" targetId="9fee-4776-4af3-200b" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="b5dc5eb3-2070-ce68-0ca6-5d26f0d238d4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="363b8c4d-a8c8-8faa-d78a-f8415f3ee2cc" type="lessThan"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
             </infoLink>
           </infoLinks>
           <modifiers/>
@@ -45126,13 +45148,14 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="902a08ef-cda1-51c8-1c15-37aff66c0c1a" name="Exchange all Heavy Bolters for:" hidden="false" collective="false">
+        <selectionEntryGroup id="902a08ef-cda1-51c8-1c15-37aff66c0c1a" name="The entire squad may be equiped with:" hidden="false" collective="false" defaultSelectionEntryId="c927-9bc1-c180-b676">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6558-6cc9-025a-ab66" type="min"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="9768419b-c1f8-1896-8956-33c73e5c0c4c" name="Heavy Flamers" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -45346,7 +45369,7 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
           </selectionEntries>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="dab9-3c11-bb8a-e8be" hidden="false" targetId="2d56d45d-d276-7830-2b7d-026de64bbae8" type="selectionEntry">
+            <entryLink id="dab9-3c11-bb8a-e8be" name="" hidden="false" targetId="2d56d45d-d276-7830-2b7d-026de64bbae8" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -45371,6 +45394,13 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
                   <conditionGroups/>
                 </modifier>
               </modifiers>
+              <constraints/>
+            </entryLink>
+            <entryLink id="c927-9bc1-c180-b676" name="New EntryLink" book="" hidden="false" targetId="a161-76b3-9ef1-da7b" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
               <constraints/>
             </entryLink>
           </entryLinks>
@@ -73165,6 +73195,24 @@ Kharybdis: After it has landed treat as a flyer in Hover mode. LA:AODAL P75</des
         <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="12"/>
         <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="3"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Open-topped"/>
+      </characteristics>
+    </profile>
+    <profile id="9fee-4776-4af3-200b" name="Legion Sergeant (Artificer Armour)" book="AL:AoDAL" page="131" hidden="false" profileTypeId="556e697423232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Unit Type" characteristicTypeId="556e6974205479706523232344415441232323" value="Infantry (Character)"/>
+        <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="4"/>
+        <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
+        <characteristic name="S" characteristicTypeId="5323232344415441232323" value="4"/>
+        <characteristic name="T" characteristicTypeId="5423232344415441232323" value="4"/>
+        <characteristic name="W" characteristicTypeId="5723232344415441232323" value="1"/>
+        <characteristic name="I" characteristicTypeId="4923232344415441232323" value="4"/>
+        <characteristic name="A" characteristicTypeId="4123232344415441232323" value="2"/>
+        <characteristic name="LD" characteristicTypeId="4c4423232344415441232323" value="9"/>
+        <characteristic name="Save" characteristicTypeId="5361766523232344415441232323" value="2+"/>
       </characteristics>
     </profile>
   </sharedProfiles>
