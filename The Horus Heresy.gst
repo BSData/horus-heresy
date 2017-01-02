@@ -5955,9 +5955,7 @@ D6    Result		S	AP
         </infoLink>
       </infoLinks>
       <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0708-fbf0-d536-a48c" type="max"/>
-      </constraints>
+      <constraints/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
