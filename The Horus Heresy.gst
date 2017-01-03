@@ -14214,5 +14214,17 @@ D6 - Result
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Blast, Gets Hot"/>
       </characteristics>
     </profile>
+    <profile id="c9ab-e5ee-05cd-da3e" name="Plasma Executioner" book="LA:AoDL" page="127" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3, Blast (3&quot;)"/>
+      </characteristics>
+    </profile>
   </sharedProfiles>
 </gameSystem>
