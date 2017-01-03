@@ -7690,7 +7690,21 @@ D3     Mutation
       </costs>
     </selectionEntry>
   </selectionEntries>
-  <entryLinks/>
+  <entryLinks>
+    <entryLink id="346e-4f96-da50-f2c4" name="New EntryLink" hidden="false" targetId="2f44-0ed6-d014-be2f" type="selectionEntry" categoryEntryId="466173742041747461636b23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="maxSelections" value="-1">
+          <repeats/>
+          <conditions/>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints/>
+    </entryLink>
+  </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="1072-a486-548b-2be7" name="Abhuman Helots" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
       <profiles/>
@@ -7773,16 +7787,27 @@ D3     Mutation
             <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Flyer (Hover, Transport)"/>
           </characteristics>
         </profile>
-      </profiles>
-      <rules>
-        <rule id="d82a-1f70-99a4-e0cf" name="Deep Strike" hidden="false">
+        <profile id="7759-4e5c-6f3c-08c5" name="Auxilia Arvus Lighter (Transport)" book="HH5: Tempest" page="202" hidden="false" profileTypeId="307d-047f-ca13-706b" profileTypeName="Transport">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-        </rule>
-      </rules>
-      <infoLinks/>
+          <characteristics>
+            <characteristic name="Capacity" characteristicTypeId="8285-4205-b6cd-8473" value="12"/>
+            <characteristic name="Fire Points" characteristicTypeId="b270-a7f9-22b2-3702" value="None"/>
+            <characteristic name="Access Points" characteristicTypeId="d17b-0342-b1dc-b8e7" value="Access hatch on the rear"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="0b31-831f-5490-ccfc" name="New InfoLink" hidden="false" targetId="d219-2314-4834-c054" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -7877,9 +7902,39 @@ D3     Mutation
                 <cost name="pts" costTypeId="points" value="1.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="d9db-6075-c219-bc80" name="Flare Shield" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="34a1-06eb-8139-08d8" hidden="false" targetId="130b-5a7b-fb5e-db81" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2c65-dc55-79c7-99c3" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="20.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
-          <entryLinks/>
+          <entryLinks>
+            <entryLink id="e7c3-04b9-1e1f-cd6c" name="New EntryLink" hidden="false" targetId="eb3c-2350-27fe-8d9d" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="406b-99cc-5df7-a639" name="May take one of the following:" hidden="false" collective="false">
           <profiles/>
@@ -7930,7 +7985,14 @@ D3     Mutation
             <selectionEntry id="7a0c-70ee-18a5-b9a8" name="Lascannon" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
               <profiles/>
               <rules/>
-              <infoLinks/>
+              <infoLinks>
+                <infoLink id="9662-fa77-1754-1d07" name="New InfoLink" hidden="false" targetId="1cce-972c-022a-2590" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -7967,7 +8029,14 @@ D3     Mutation
             <selectionEntry id="b6c1-cb35-f11c-2c5a" name="Twin-linked Lascannon" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
               <profiles/>
               <rules/>
-              <infoLinks/>
+              <infoLinks>
+                <infoLink id="6409-6c9f-4f10-57bb" name="New InfoLink" hidden="false" targetId="1cce-972c-022a-2590" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
