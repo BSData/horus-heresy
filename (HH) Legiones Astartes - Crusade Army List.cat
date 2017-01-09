@@ -27984,399 +27984,6 @@ Ignores Cover special rule.</description>
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="402b-d064-160d-e6dd" name="Tarantula Sentry Gun Battery" hidden="false" collective="false" categoryEntryId="466173742041747461636b23232344415441232323" type="upgrade">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89fc-8558-ded2-c901" type="equalTo"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <constraints/>
-      <selectionEntries>
-        <selectionEntry id="d272-97ae-020e-2d32" name="Tarantula Sentry Gun" book="HH:LACAL" page="44" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-          <profiles>
-            <profile id="e8be-d639-3862-7072" name="Tarantula Sentry Gun" book="HH:LACAL" page="44" hidden="false" profileTypeId="556e697423232344415441232323">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Unit Type" characteristicTypeId="556e6974205479706523232344415441232323" value="Artillery (Immobile)"/>
-                <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="-"/>
-                <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="3"/>
-                <characteristic name="S" characteristicTypeId="5323232344415441232323" value="-"/>
-                <characteristic name="T" characteristicTypeId="5423232344415441232323" value="6"/>
-                <characteristic name="W" characteristicTypeId="5723232344415441232323" value="2"/>
-                <characteristic name="I" characteristicTypeId="4923232344415441232323" value="-"/>
-                <characteristic name="A" characteristicTypeId="4123232344415441232323" value="-"/>
-                <characteristic name="LD" characteristicTypeId="4c4423232344415441232323" value="-"/>
-                <characteristic name="Save" characteristicTypeId="5361766523232344415441232323" value="3+"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="35.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="96f4-88c7-1da8-b8b0" name="Entire battery may take one upgrade:" hidden="false" collective="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="a01d-0898-8c5f-08cb" name="Concealment" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules>
-                <rule id="014c-1ac9-787c-cb2b" name="Concealment" book="HH:LACAL" page="44" hidden="false">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <description>Sentry Gun Battery has Shrouded special rule until the first time it fires a weapon.  </description>
-                </rule>
-              </rules>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="increment" field="points" value="10.0">
-                  <repeats>
-                    <repeat field="selections" scope="402b-d064-160d-e6dd" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d272-97ae-020e-2d32" repeats="1"/>
-                  </repeats>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="3cb1-7730-8d4a-7273" name="Forward Deployment" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules>
-                <rule id="0cd6-29b5-05b9-074e" name="Forward Deployment" book="HH:LACAL" page="44" hidden="false">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <description>The Sentry Gun Battery has the Scout special rule. </description>
-                </rule>
-              </rules>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="increment" field="points" value="5.0">
-                  <repeats>
-                    <repeat field="selections" scope="402b-d064-160d-e6dd" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d272-97ae-020e-2d32" repeats="1"/>
-                  </repeats>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="d2f2-3157-bb34-5034" name="Entire battery may exchange Twin-linked heavy bolters for:" hidden="false" collective="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <selectionEntries>
-            <selectionEntry id="1161-914f-61be-589b" name="Hyperios Air-defence Missile Launchers" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks>
-                <infoLink id="2010-ebc8-2dbc-d3fe" hidden="false" targetId="b8643d20-d7ef-7974-7261-11c7b9787be0" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
-              <modifiers>
-                <modifier type="increment" field="points" value="20.0">
-                  <repeats>
-                    <repeat field="selections" scope="402b-d064-160d-e6dd" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d272-97ae-020e-2d32" repeats="1"/>
-                  </repeats>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="07e4-98db-dccb-a8f9" name="Exchange any Twin-linked Heavy Bolter for:" hidden="false" collective="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <repeats/>
-              <conditions>
-                <condition field="selections" scope="402b-d064-160d-e6dd" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1161-914f-61be-589b" type="equalTo"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-            <modifier type="increment" field="maxSelections" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="402b-d064-160d-e6dd" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d272-97ae-020e-2d32" repeats="1"/>
-              </repeats>
-              <conditions/>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="0aeb-dac8-73d4-6bba" name="Twin-linked Heavy Flamers" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles>
-                <profile id="f34a-b266-e446-4bb7" name="Twin-linked Heavy Flamers" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <characteristics>
-                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="Template"/>
-                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="5"/>
-                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
-                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 1"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="41b2-c770-a3c5-ef0a" name="Two twin-linked Rotor Cannons" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks>
-                <infoLink id="eb35-6f46-7050-d94e" hidden="false" targetId="75683330-6490-c0bf-560c-2e58617425a1" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6f8e-3ca7-9304-edfa" name="Twin-linked Lascannon" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="879d-b28b-3556-09b7" name="Multi-melta and Searchlight" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="5.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="edd8-79e9-938e-192c" name="Twin-linked Iliastus Assault Cannons" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks>
-                <infoLink id="6e00-6123-5890-7fca" hidden="false" targetId="0d8bdd64-39f0-7759-d8ca-0702ee1f0fd0" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-                <infoLink id="d3a8-25b2-5163-d867" hidden="false" targetId="0d300426-e90a-4a8d-bff5-9b64949b128d" type="rule">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16a2-56d6-9be5-ede0" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="5.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="be3c-7183-1b05-a064" name="Exchange any Hyperios Air-defence Missile Launcher for:" hidden="true" collective="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <repeats/>
-              <conditions>
-                <condition field="selections" scope="402b-d064-160d-e6dd" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1161-914f-61be-589b" type="equalTo"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="a264-a424-182b-2495" name="Hyperios Command Platform" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules>
-                <rule id="14c8-e755-af6b-667b" name="Hyperios Command Platform" book="HH:LACAL" page="44" hidden="false">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <description>While on the table, all Hyperios Air-defence Missile Launcher equipped Tarantula Sentry Guns in the same unit receive the Split Fire special rule.  The test is automatically passed for Split Fire.  </description>
-                </rule>
-              </rules>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="increment" field="maxSelections" value="1.0">
-                  <repeats>
-                    <repeat field="selections" scope="402b-d064-160d-e6dd" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d272-97ae-020e-2d32" repeats="1"/>
-                  </repeats>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="5a06-b2fc-b07b-ff81" hidden="false" targetId="86e70545-ed1a-7cf4-5a3d-d60662a6b3be" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-        <entryLink id="0014-fcf7-e8b8-a900" hidden="false" targetId="f785888f-6dfa-08f4-054f-29b1a0e4f20c" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-        <entryLink id="31c8-3238-201c-da66" hidden="false" targetId="c487-be13-ea53-917e" type="selectionEntryGroup">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="12d746d3-ae08-8959-c298-0d748159d672" name="Techmarine Covenant" book="HH:LACAL" page="23" hidden="false" collective="false" categoryEntryId="456c6974657323232344415441232323" type="upgrade">
       <profiles/>
       <rules/>
@@ -33470,6 +33077,21 @@ Ignores Cover special rule.</description>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="5991-c4b8-a6d3-e0a4" name="Legion Tarantual Sentry Gun Battery" hidden="false" targetId="7218-3d68-4761-d7fd" type="selectionEntry" categoryEntryId="466173742041747461636b23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="89fc-8558-ded2-c901" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints/>
     </entryLink>
   </entryLinks>
@@ -58752,7 +58374,7 @@ Phalanx Breacher squads and Legion Terminator squads may be taken as troops in a
         <cost name="pts" costTypeId="points" value="385.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0e7b97c8-732a-74fa-6bf2-de2e1f747483" name="Rotor Cannon" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+    <selectionEntry id="fe75-7b06-f9a5-26bd" name="Rotor Cannon" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
       <profiles/>
       <rules/>
       <infoLinks>
@@ -62998,6 +62620,12 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
           <infoLinks/>
           <modifiers/>
         </infoLink>
+        <infoLink id="8056-a01f-399d-1f32" name="New InfoLink" hidden="false" targetId="b35f-72bc-bdac-c298" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
       </infoLinks>
       <modifiers/>
       <constraints>
@@ -65039,7 +64667,6 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b080-7a95-902f-aa2b" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3191-b839-d4e3-7e93" type="min"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -69027,7 +68654,9 @@ Explodes results add D3&quot; to radius.  </description>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="3b01-3691-b570-475d" name="Twin-linked Missile Launcher" book="BRB 7th" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
       <profiles/>
@@ -69223,6 +68852,475 @@ Explodes results add D3&quot; to radius.  </description>
       <costs>
         <cost name="pts" costTypeId="points" value="15.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="7218-3d68-4761-d7fd" name="Legion Tarantula Sentry Gun Battery" hidden="false" collective="false" categoryEntryId="466173742041747461636b23232344415441232323" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2497-d6ca-d5d9-634e" name="Trantula Sentry Gun" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries>
+            <selectionEntry id="6fe4-e743-ab98-5e44" name="Tarantula Sentry Gun" book="HH:LACAL" page="44" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles>
+                <profile id="c54b-71b3-9c02-6de9" name="Tarantula Sentry Gun" book="AL:AoDAL" page="54" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Unit Type" characteristicTypeId="556e6974205479706523232344415441232323" value="Artillery (Immobile)"/>
+                    <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="-"/>
+                    <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="3"/>
+                    <characteristic name="S" characteristicTypeId="5323232344415441232323" value="-"/>
+                    <characteristic name="T" characteristicTypeId="5423232344415441232323" value="6"/>
+                    <characteristic name="W" characteristicTypeId="5723232344415441232323" value="2"/>
+                    <characteristic name="I" characteristicTypeId="4923232344415441232323" value="-"/>
+                    <characteristic name="A" characteristicTypeId="4123232344415441232323" value="-"/>
+                    <characteristic name="LD" characteristicTypeId="4c4423232344415441232323" value="-"/>
+                    <characteristic name="Save" characteristicTypeId="5361766523232344415441232323" value="3+"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="e78d-c1b1-cdaa-7888" name="Targeting" book="AL:AoDAL" page="54" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <repeats/>
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="edd8-6ef1-4bc3-637e" type="instanceOf"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <description>Which enemy unit within range is the Sentry Gun’s preferred target is determined by its armament. If no preferred target exists in its line of sight, it will simply attack the nearest enemy target in range:
+
+A heavy bolter, heavy flamer or rotor cannon-equipped Sentry Gun will fire at the nearest enemy non-Vehicle target according to its firing mode.
+
+A lascannon or multi-melta equipped Sentry Gun will fire at the nearest enemy Vehicle or Monstrous Creature according to its firing mode (note that immobilised vehicles still count as viable targets, only wrecked vehicles will be ignored).
+
+Hyperios Tarantulas may only target Flyers.
+
+Note that this means while a preferred target type is within range, it is possible for a unit of
+differently armed Sentry Guns to fire at two separate targets.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="13a0-bfc7-f0d1-8388" name="New InfoLink" hidden="false" targetId="56ad-c026-7680-1d4d" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="745c-967e-6f9a-ada4" name="New InfoLink" hidden="false" targetId="9846-a03b-5721-3355" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="044d-279d-df1a-37d3" name="New InfoLink" hidden="false" targetId="2e40-b450-8714-586e" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4edf-1777-ccfc-ec04" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9af9-7b97-5a16-8977" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="35.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="2856-d161-fb2a-4d23" name="Any Sentry Gun in the battery make take" hidden="false" collective="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="increment" field="9489-2191-9d76-96b5" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="7218-3d68-4761-d7fd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fe4-e743-ab98-5e44" repeats="1"/>
+                  </repeats>
+                  <conditions>
+                    <condition field="selections" scope="7218-3d68-4761-d7fd" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="edd8-6ef1-4bc3-637e" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="increment" field="1228-49ef-c35c-8b88" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="7218-3d68-4761-d7fd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fe4-e743-ab98-5e44" repeats="1"/>
+                  </repeats>
+                  <conditions>
+                    <condition field="selections" scope="7218-3d68-4761-d7fd" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="edd8-6ef1-4bc3-637e" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="7218-3d68-4761-d7fd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="edd8-6ef1-4bc3-637e" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9489-2191-9d76-96b5" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1228-49ef-c35c-8b88" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="6e54-df15-8b7c-b2b5" name="Multi-Melta with Searchlight" hidden="false" collective="false" type="upgrade">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks>
+                    <infoLink id="114b-f6a4-a227-299f" name="New InfoLink" hidden="false" targetId="4fc7-8b16-afe4-dad3" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                    <infoLink id="c5ce-48b1-7107-bf3d" name="New InfoLink" hidden="false" targetId="9bb4-3833-5343-0dd9" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e210-d8c1-7f33-f0c0" type="max"/>
+                  </constraints>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="1bd1-43cb-4cd7-a7a2" name="New EntryLink" hidden="false" targetId="8b1d-77d3-74f2-9d1c" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="set" field="731a-c5cb-6c97-9592" value="3">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                    <modifier type="set" field="points" value="10">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints/>
+                </entryLink>
+                <entryLink id="39a8-fb37-b037-434e" name="New EntryLink" hidden="false" targetId="5986-c8ef-d448-397b" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="set" field="5392-4570-be89-40d2" value="3">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints/>
+                </entryLink>
+                <entryLink id="3a42-285e-7493-9a42" name="New EntryLink" hidden="false" targetId="2bc5-53e9-b8fd-0b6b" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="set" field="c8ad-ce96-e370-e273" value="3">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints/>
+                </entryLink>
+                <entryLink id="dc94-000c-fdcb-8554" name="New EntryLink" hidden="false" targetId="aa78-540d-996f-52ff" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="set" field="0efc-77c6-70db-e53a" value="3">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints/>
+                </entryLink>
+                <entryLink id="f591-c193-4e77-d46b" name="New EntryLink" hidden="false" targetId="15c1-2cf9-0fa4-6093" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="set" field="9842-3456-56a5-67ac" value="3">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                    <modifier type="set" field="name" value="Two Twin-linked Rotor Cannons">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="7ccb-0c29-f81f-cf1f" name="Entire battery may exchange its wargear for" hidden="false" collective="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e731-7871-b2c7-69d9" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="edd8-6ef1-4bc3-637e" name="hyperios" hidden="false" targetId="8917-121a-d28f-4f03" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="increment" field="points" value="20">
+                      <repeats>
+                        <repeat field="selections" scope="7218-3d68-4761-d7fd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fe4-e743-ab98-5e44" repeats="1"/>
+                      </repeats>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="4af2-8591-06a4-1820" name="The entire battery may be upgrade to have" hidden="false" collective="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <selectionEntries>
+                <selectionEntry id="98c3-b3fd-cdaa-4bec" name="May repace one Hyperos Missile Launcher with one Hyperios Command Platform" hidden="true" collective="false" type="upgrade">
+                  <profiles/>
+                  <rules>
+                    <rule id="1432-5aaf-f8c8-0fd9" name="Hyperios Command Platform" book="AL:AoDAL" page="54" hidden="false">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <description>While on the table, all Hyperios Air-defence Missile Launcher equipped Tarantula Sentry Guns in the same unit receive the Split Fire special rule.  The test is automatically passed for Split Fire.  </description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink id="2285-37ad-d3de-f724" name="New InfoLink" hidden="false" targetId="38ff-a919-70c4-aec4" type="rule">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <repeats/>
+                      <conditions>
+                        <condition field="selections" scope="7218-3d68-4761-d7fd" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="edd8-6ef1-4bc3-637e" type="greaterThan"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="10.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="2ca4-b1f3-20d1-5887" name="New EntryLink" hidden="false" targetId="75a8-04ea-77af-e8bc" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="set" field="points" value="10">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints/>
+                </entryLink>
+                <entryLink id="ae38-417d-a88d-31bb" hidden="false" targetId="f785888f-6dfa-08f4-054f-29b1a0e4f20c" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+                <entryLink id="5bd4-3616-6076-e582" name="" hidden="false" targetId="86e70545-ed1a-7cf4-5a3d-d60662a6b3be" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="5ee2-a494-d922-e665" name="Entire battery may deploy using" hidden="false" collective="false" defaultSelectionEntryId="5672-1c71-652a-3942">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0280-3b2c-8022-503f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9115-6895-d71e-8458" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5672-1c71-652a-3942" name="Forward Deployment" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules>
+                <rule id="abe4-aa04-77da-4c8a" name="Forward Deployment" book="AL:AoDAL" page="54" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>The Sentry Gun Battery has the Scout special rule. (note that it still may not be deployed from Reserve).</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="09f0-6cbb-03c2-ee08" name="New InfoLink" hidden="false" targetId="9b30-1da3-eb8d-ce7a" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="879d-4a5f-dfde-da0a" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="083a-e79e-522b-8a36" name="New EntryLink" hidden="false" targetId="75a8-04ea-77af-e8bc" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="5709-d426-291c-d9d2" hidden="false" targetId="c487-be13-ea53-917e" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="75a8-04ea-77af-e8bc" name="Concealment" book="AL:AoDAL" page="54" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules>
+        <rule id="9a22-ab29-3d19-f973" name="Concealment" book="AL:AoDAL" page="54" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Sentry Gun Battery has Shrouded special rule until the first time it fires a weapon, afterwards the effects of this rule no longer apply</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="6f82-1199-4ce6-0660" name="New InfoLink" hidden="false" targetId="9c80-5c1a-3b9d-971e" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b84-09ad-38ee-9343" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="15c1-2cf9-0fa4-6093" name="Twin-linked Rotor Cannon" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="b536-c573-a6c0-978d" name="New InfoLink" hidden="false" targetId="c32e-0d1a-f6db-2007" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="append" field="5479706523232344415441232323" value=", Twin-Linked">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="name" value="Twin-Linked Multi-melta">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9842-3456-56a5-67ac" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -72362,7 +72460,7 @@ Kharybdis: After it has landed treat as a flyer in Hover mode. LA:AODAL P75</des
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>A weapon with this special rule can re-roll all failed To Hit rolls against Flyers and Fast Skimmers.</description>
+      <description>Failed To Hit and AP rolls of a 1 must be re-rolled.</description>
     </rule>
     <rule id="885d-81f6-6ace-3228" name="Power Capacitor" book="LA:AoDAL" page="69" hidden="false">
       <profiles/>
@@ -72404,6 +72502,22 @@ Kharybdis: After it has landed treat as a flyer in Hover mode. LA:AODAL P75</des
       <rules/>
       <infoLinks/>
       <modifiers/>
+    </rule>
+    <rule id="56ad-c026-7680-1d4d" name="Automated Artillery" book="AL:AoDAL" page="122" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>does not require crew in order to function. It is no removed from play due to a lack of crew and each gun must be destroyed normally before it removed. Automated Artillery cannot move and cannot charge. If assaulted they do not Pile In and cannot be locked in combat; their attackers will hit automatically, but must roll To Wound normally.
+If a unit of Automated Artillery loses an assault nothing happens, there are no Sweeping Advances, no Pile Ins and no Consolidation moves. The Automated Artillery remains in place and may fire normally in future turns. If the Automated Artillery wins an assault, the enemy must take a Moral check as normal, although the artillery piece cannot Consolidate or make a Sweeping Advance.</description>
+    </rule>
+    <rule id="9846-a03b-5721-3355" name="Immobile (Artillery Type)" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>An Immobile Artillery piece cannot be moved after it has been deployed except by the use of a specialised vehicle, and ignores any effect which forces it to move. This only affects the platform – not any crew who are subject to all normal Artillery rules. When called upon to Fall Back, the crew must leave their guns behind and fall back; the platforms are then removed as casualties.
+Note that an Immobile unit may still have the Scout or Deep Strike special rules as these reflect redeployment or deployment during battle, rather than game movement. Only if it has the Deep Strike special rule may an Immobile unit be held in Reserve.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
