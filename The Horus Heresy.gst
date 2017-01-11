@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="44" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="45" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -147,14 +147,14 @@
             </modifier>
             <modifier type="increment" field="c6eb-35af-11b1-afd0" value="1">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fc8c-3f13-02b6-034e" repeats="1"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fc8c-3f13-02b6-034e" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
             <modifier type="increment" field="c6eb-35af-11b1-afd0" value="1">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c419-45b3-44e8-b390" repeats="1"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c419-45b3-44e8-b390" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -312,7 +312,7 @@
             </modifier>
             <modifier type="increment" field="8122-8dbd-27ea-9ab7" value="1">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2ecc-1bd4-10ef-cfb1" repeats="1"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2ecc-1bd4-10ef-cfb1" repeats="1" roundUp="false"/>
               </repeats>
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a955-3b63-2411-3e8e" type="equalTo"/>
@@ -328,7 +328,7 @@
             </modifier>
             <modifier type="increment" field="c8f2-ddb2-4f55-0e8b" value="1">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="54726f6f707323232344415441232323" repeats="1"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="54726f6f707323232344415441232323" repeats="1" roundUp="false"/>
               </repeats>
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b77-4000-0985-41bc" type="equalTo"/>
@@ -510,14 +510,14 @@
             </modifier>
             <modifier type="increment" field="f007-45ee-a366-021c" value="1">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="04c4-8239-657a-ced2" repeats="1"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="04c4-8239-657a-ced2" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
             <modifier type="increment" field="f007-45ee-a366-021c" value="1">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9c8f-17f9-f7c0-1324" repeats="1"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9c8f-17f9-f7c0-1324" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups>
@@ -551,7 +551,7 @@
             </modifier>
             <modifier type="increment" field="f007-45ee-a366-021c" value="1">
               <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed6e-b5b9-ab42-adce" repeats="1"/>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed6e-b5b9-ab42-adce" repeats="1" roundUp="false"/>
               </repeats>
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6b5e-6b5a-8505-f943" type="equalTo"/>
@@ -560,7 +560,7 @@
             </modifier>
             <modifier type="increment" field="f007-45ee-a366-021c" value="1">
               <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9af-7cd4-9639-eaa6" repeats="1"/>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9af-7cd4-9639-eaa6" repeats="1" roundUp="false"/>
               </repeats>
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6b5e-6b5a-8505-f943" type="equalTo"/>
@@ -569,14 +569,14 @@
             </modifier>
             <modifier type="increment" field="f007-45ee-a366-021c" value="1">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="36c5-d6db-7224-1e47" repeats="1"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="36c5-d6db-7224-1e47" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
             <modifier type="increment" field="f007-45ee-a366-021c" value="1">
               <repeats>
-                <repeat field="selections" scope="98db-b4ba-fbcd-3239::54726f6f707323232344415441232323" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb9-0d45-bc12-bb51" repeats="1"/>
+                <repeat field="selections" scope="98db-b4ba-fbcd-3239::54726f6f707323232344415441232323" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb9-0d45-bc12-bb51" repeats="1" roundUp="false"/>
               </repeats>
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fe95-9a5f-9896-8f03" type="equalTo"/>
@@ -598,7 +598,7 @@
             </modifier>
             <modifier type="increment" field="f007-45ee-a366-021c" value="1">
               <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bcb9-0d45-bc12-bb51" repeats="1"/>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bcb9-0d45-bc12-bb51" repeats="1" roundUp="false"/>
               </repeats>
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="99e8-4840-8b4e-eb96" type="equalTo"/>
@@ -671,7 +671,7 @@
             </modifier>
             <modifier type="increment" field="de22-120d-9502-2984" value="1">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="486561767920537570706f727423232344415441232323" repeats="1"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="486561767920537570706f727423232344415441232323" repeats="1" roundUp="false"/>
               </repeats>
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da38-be72-6499-c20b" type="equalTo"/>
@@ -734,7 +734,7 @@
             </modifier>
             <modifier type="increment" field="58a5-9d39-7971-065e" value="1">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2445-ec95-06bb-5c81" repeats="1"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2445-ec95-06bb-5c81" repeats="1" roundUp="false"/>
               </repeats>
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a955-3b63-2411-3e8e" type="equalTo"/>
@@ -888,7 +888,7 @@
             </modifier>
             <modifier type="increment" field="7e4d-85ba-3fc8-514b" value="1">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="466173742041747461636b23232344415441232323" repeats="1"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="466173742041747461636b23232344415441232323" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups>
@@ -919,7 +919,7 @@
             </modifier>
             <modifier type="increment" field="7e4d-85ba-3fc8-514b" value="1">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="54726f6f707323232344415441232323" repeats="1"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="54726f6f707323232344415441232323" repeats="1" roundUp="false"/>
               </repeats>
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e006-2ef7-ee40-afec" type="equalTo"/>
@@ -1022,7 +1022,7 @@
             </modifier>
             <modifier type="increment" field="7e4d-85ba-3fc8-514b" value="1">
               <repeats>
-                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="466173742041747461636b23232344415441232323" repeats="1"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="466173742041747461636b23232344415441232323" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups>
@@ -1196,11 +1196,91 @@
             <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7aaa-383a-2d50-f80f" type="min"/>
           </constraints>
         </categoryEntry>
+        <categoryEntry id="d27d-9e9b-d8c7-afe6" name="No Force Org" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryEntry>
       </categoryEntries>
       <forceEntries/>
     </forceEntry>
   </forceEntries>
-  <selectionEntries/>
+  <selectionEntries>
+    <selectionEntry id="15c1-8d52-4488-7001" name="Patch notes" hidden="false" collective="false" categoryEntryId="d27d-9e9b-d8c7-afe6" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="2d18-149a-0fdc-2aa7" name="New InfoLink" hidden="false" targetId="cc3d-bc60-3f55-768a" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="96b2-9c32-e025-befd" name="Adding a LoW" hidden="false" collective="false" categoryEntryId="d27d-9e9b-d8c7-afe6" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="c48c-6e59-36dc-d7e7" name="New InfoLink" hidden="false" targetId="990f-5ddd-0286-5219" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="f45a-74c6-05f5-48dd" name="Selecting a Rite of War" hidden="false" collective="false" categoryEntryId="d27d-9e9b-d8c7-afe6" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="e97b-f0cd-7a15-29d4" name="New InfoLink" hidden="false" targetId="5664-f3db-c205-6bb1" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="f41e-f8fb-4665-5718" name="Existing issues" hidden="false" collective="false" categoryEntryId="d27d-9e9b-d8c7-afe6" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="c580-c50b-2e98-6231" name="New InfoLink" hidden="false" targetId="ed53-ae11-0216-187b" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+  </selectionEntries>
   <entryLinks/>
   <sharedSelectionEntries>
     <selectionEntry id="5a28-b426-b67c-3dab" name="Allied Detachment" hidden="false" collective="false" type="upgrade">
@@ -4577,7 +4657,7 @@ D6    Result		S	AP
         </modifier>
         <modifier type="increment" field="503f-794f-8ddd-c6dd" value="3">
           <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b76-5e02-0970-7b40" repeats="1"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b76-5e02-0970-7b40" repeats="1" roundUp="false"/>
           </repeats>
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a955-3b63-2411-3e8e" type="equalTo"/>
@@ -4991,7 +5071,7 @@ D6    Result		S	AP
               <modifiers>
                 <modifier type="increment" field="points" value="1">
                   <repeats>
-                    <repeat field="selections" scope="94d7-495e-e0a7-3f8e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2190-0968-a3a0-ec11" repeats="1"/>
+                    <repeat field="selections" scope="94d7-495e-e0a7-3f8e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2190-0968-a3a0-ec11" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -5027,7 +5107,7 @@ D6    Result		S	AP
               <modifiers>
                 <modifier type="increment" field="points" value="5">
                   <repeats>
-                    <repeat field="selections" scope="94d7-495e-e0a7-3f8e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2190-0968-a3a0-ec11" repeats="1"/>
+                    <repeat field="selections" scope="94d7-495e-e0a7-3f8e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2190-0968-a3a0-ec11" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -5063,7 +5143,7 @@ D6    Result		S	AP
               <modifiers>
                 <modifier type="increment" field="points" value="5.0">
                   <repeats>
-                    <repeat field="selections" scope="94d7-495e-e0a7-3f8e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2190-0968-a3a0-ec11" repeats="1"/>
+                    <repeat field="selections" scope="94d7-495e-e0a7-3f8e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2190-0968-a3a0-ec11" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -5093,7 +5173,7 @@ D6    Result		S	AP
               <modifiers>
                 <modifier type="increment" field="points" value="15">
                   <repeats>
-                    <repeat field="selections" scope="94d7-495e-e0a7-3f8e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2190-0968-a3a0-ec11" repeats="1"/>
+                    <repeat field="selections" scope="94d7-495e-e0a7-3f8e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2190-0968-a3a0-ec11" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -5426,7 +5506,7 @@ D6    Result		S	AP
               <modifiers>
                 <modifier type="increment" field="points" value="1.0">
                   <repeats>
-                    <repeat field="selections" scope="2445-ec95-06bb-5c81" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c30a-7aa1-baed-9047" repeats="1"/>
+                    <repeat field="selections" scope="2445-ec95-06bb-5c81" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c30a-7aa1-baed-9047" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -5462,7 +5542,7 @@ D6    Result		S	AP
               <modifiers>
                 <modifier type="increment" field="points" value="5.0">
                   <repeats>
-                    <repeat field="selections" scope="2445-ec95-06bb-5c81" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c30a-7aa1-baed-9047" repeats="1"/>
+                    <repeat field="selections" scope="2445-ec95-06bb-5c81" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c30a-7aa1-baed-9047" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -5492,7 +5572,7 @@ D6    Result		S	AP
               <modifiers>
                 <modifier type="increment" field="points" value="15">
                   <repeats>
-                    <repeat field="selections" scope="2445-ec95-06bb-5c81" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c30a-7aa1-baed-9047" repeats="1"/>
+                    <repeat field="selections" scope="2445-ec95-06bb-5c81" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c30a-7aa1-baed-9047" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -5526,7 +5606,7 @@ D6    Result		S	AP
               <modifiers>
                 <modifier type="increment" field="points" value="10.0">
                   <repeats>
-                    <repeat field="selections" scope="2445-ec95-06bb-5c81" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c30a-7aa1-baed-9047" repeats="1"/>
+                    <repeat field="selections" scope="2445-ec95-06bb-5c81" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c30a-7aa1-baed-9047" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -5734,7 +5814,7 @@ D6    Result		S	AP
               <modifiers>
                 <modifier type="increment" field="points" value="1.0">
                   <repeats>
-                    <repeat field="selections" scope="2ecc-1bd4-10ef-cfb1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1838-01e3-dcf6-a3b4" repeats="1"/>
+                    <repeat field="selections" scope="2ecc-1bd4-10ef-cfb1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1838-01e3-dcf6-a3b4" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -5770,7 +5850,7 @@ D6    Result		S	AP
               <modifiers>
                 <modifier type="increment" field="points" value="5.0">
                   <repeats>
-                    <repeat field="selections" scope="2ecc-1bd4-10ef-cfb1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1838-01e3-dcf6-a3b4" repeats="1"/>
+                    <repeat field="selections" scope="2ecc-1bd4-10ef-cfb1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1838-01e3-dcf6-a3b4" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -5806,7 +5886,7 @@ D6    Result		S	AP
               <modifiers>
                 <modifier type="increment" field="points" value="5.0">
                   <repeats>
-                    <repeat field="selections" scope="2ecc-1bd4-10ef-cfb1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1838-01e3-dcf6-a3b4" repeats="1"/>
+                    <repeat field="selections" scope="2ecc-1bd4-10ef-cfb1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1838-01e3-dcf6-a3b4" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -12999,6 +13079,167 @@ Cover save bonuses from the Shrouded and Stealth special rules are cumulative (t
       <infoLinks/>
       <modifiers/>
       <description>If a model with this special rule suffers an unsaved Wound from an attack that inflicts Instant Death, it only reduces its Wounds by 1, instead of automatically reducing its Wounds to 0.</description>
+    </rule>
+    <rule id="5664-f3db-c205-6bb1" name="Instruction: Rite of War" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Rite of War has moved from the unit entry.
+
+Add in your master of the legion and then scroll down to the Legion section and hit the + you&apos;ll have a Rite of War entry there now.
+
+We are aware of the issues using a Primarch (LoW and HQ) as a Master of the Legion and are working on a solution, please bear with us as it may take some time to implement this properly.</description>
+    </rule>
+    <rule id="990f-5ddd-0286-5219" name="Instruction: Lord of War" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Adding a Lord of War, currently you must add a new detachment and select the appropriate Force Org chart.
+
+Once you add a new detachment
+Add a new Force Org
+Touch it for options
+Touch the Force Org Chart selection (the text, not the radio button!)
+Change to Lord of War
+Go back to the main roster
+Add in your Lord of War in a seperate detachment
+
+This isn&apos;t a great method and is a very roundabout way of adding one but it will allow you to do it. Primarchs added this way will not count as Master of the Legion for rites of war. We will be looking in to changing this to a more suitable </description>
+    </rule>
+    <rule id="cc3d-bc60-3f55-768a" name="Instruction: Patch notes" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>If you have discovered a bug, points costs are wrong or have a suggestion please report them here or the github page https://github.com/BSData/horus-heresy/issues or the appspot page http://battlescribedata.appspot.com/#/repo/horus-heresy via report a bug for the catalogue in question.
+
+Forum posts and facebook posts are not actively monitored so may not be seen and tracked. Logging an issue using the above methods garuntees the problem/bug/request will be looked at. Unfortunatly we have a large list of issues to review and work through so they may take some time to fix.
+
+This data set is maintained by an open-source community and is not linked in any way with the Battlescribe Development team.
+
+
+Change log
+----------
+7.1.5
+Astarte/Legions
+Fixed and optimised choices for the Legion Tactical support squad. (Thanks Alaric (Invision boards))
+Optimised:
+Legion Sky Hunter squad
+Legion Attack bikes
+Anvillus Drop Pod
+Legion Outrider squad
+Phalanx Warder Squad
+Updated some minor entries for BS2 features.
+Fixed Heavy Support squad weapon cost error (Thanks Cannibal Kuchen (Facebook))
+Fixed Ceastus Assault Ram missile launcher, it was free when it should have a cost. (Thanks Matt Waite (Facebook))
+
+Questoris Knights
+Fixed roster limitation for the Atrapos. (Thanks fedratsailor (Github))
+
+----------
+7.1.4 - Fast attack fixes and updates. Remaining Heavy support update. Minor fixes and added Leman Russ (Get you by)
+Remaining heavy support unit bugs, 
+Added missing command squad for Shadrak
+Added Leman Russell, Russ&apos; tamer cousin who uses &quot;Get you by&quot; rules
+Updated Fast Attack units (fixing points, missing profile, missing options and missing rules)
+
+Updated units in the fast attack slot, corrections and optimisations for BS2.
+
+BS2 optimisation still needst to be done for Outriders, Attack bikes, Jetbikes and Anvillus.
+
+----------
+7.1.3 - Taghmata Updates
+Numerous small fixes.
+
+Primarily adding basic weapon entries for most of the units.
+Added profiles to many weapons and unit entries.
+Added text to many rules.
+Updated costs on many entries.
+
+----------
+7.1.2 - Minor Heavy Support, Militia and catalogue updates/corrections
+Astarte changes and fixes:
+Added: Predator Plasma Executioner turret
+Correction: Predator heavy conversion Beamer has no cost.
+Fixed: Sicaran battle tank missing optional pintle-mount.
+Fixed: Phosphex Grenades had no cost.
+Fixed: Deathstorm not showing in Orbital RoW as a fast attack choice.
+Fixed: Deathstorm showing in Stone Gauntlet as no deep strike is allowed by that RoW.
+
+Cults and Militia Changes:
+Arvus Lighter available as fast attack choice.
+
+Misc:
+The main GST catalogue wasn&apos;t incremented, this would have caused some errors when files were pulled in by the app. It wouldn&apos;t update the GST file. Deleting files and refreshing them would fix it but this shouldn&apos;t be needed.
+
+----------
+7.1.1 - Heavy suppor and Consul fixes/updates
+Heavy Support slot has been updated to the Red Book, some entries require more work. If there are any mistakes or omissions please report them and they will be fixed. This is the biggest part of this update. If you have any current lists please export/save them before updating your datafiles as this required quite a few changes.
+
+This means the Sky-Slayer and Malcador units are now available for use.
+
+Units that are functional but require futher work are
+Sky Slayer Support (Could be better layed out)
+Legion Heavey Support squad (missing heavy weapon profiles)
+
+Other units could do with some work but it&apos;ll be purely cosmetic.
+
+Updated Command tank condition, the Vinidcator has this option available now and other squadron tanks will have it displayed correctly when three tanks are taken.
+
+-HQ
+
+Re-added Praetor Tribune
+
+Consul
+Fixed Libarian mastery levels. They&apos;ll be selectable now.
+Fixed Bots for Praevian. They can be added now but I haven&apos;t checked the loadout for the bots, please review this and let me know of any mistakes or changes needed.
+Fixed Scout Armour for Vigilator. It can be selected now
+Fixed bodyguard/command squad for Delegatus and some other consul types. It can be added and modified now.
+Fixed Phosphex bombs for Siege Breaker.
+Fixed many more issue, options where avaiable when they should not have (terminator armour for the Moritat for example)
+
+Misc
+
+Updated Pintle-mount weapon costs and missing options. Now standard across Astarte vehicles except for Super-Heavies.
+Updated Vehicle wargear across vehicles. Please report any that are incorrect and we&apos;ll update them.
+Updated Droppod rules and profiles.
+Updated Kharybdis so it&apos;s not limited to 1.
+
+Legions
+Cleaned up Pheonix Terminator Squad so the Champion is more visable.
+Removed Unwieldy from Deathshroud Scythes.
+Added in Hand Flamer for Legion Veteran squad for Blood Angels.
+
+Mechanicum
+Added Vultarax unit to Tagmata list</description>
+    </rule>
+    <rule id="ed53-ae11-0216-187b" name="Instruction: Existing issues" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>This is a list of exisiting issues we are aware of and are actively looking at, some may take a while to implement so please bear with us.
+
+If you have discovered a bug, points costs are wrong or have a suggestion please report them here or the github page https://github.com/BSData/horus-heresy/issues or the appspot page http://battlescribedata.appspot.com/#/repo/horus-heresy via report a bug for the catalogue in question.
+
+--------- Current Focus
+Profile/Points corrections - Simple to implement but with the amount of books to review this can take awhile to get to. If you spot a mistake or a correction is required please submit an issue. As long as the unit doesn&apos;t require a complete overhaul it will be fixed in a release or two. Please  read of the current issues outlined below to prevent dupliate issues.
+General bug fixes - Some slightly more complicated issues but similar to the above. Please submit an issue for any errors you spot but have a read of the current issues outlined below.
+Updating basic legion units to Battlescribe 2 standards and bringing them fully up to date with the red books.
+Heavy Support, Dedicated Transports and Fast attack entries have been complete. Please submit any errors with these entries and they will be fixed within a release or two.
+Legion specific units and wargear will be looked at after we complete the basic units.
+
+
+--------- Current issues
+Lords of War not available - working on changing the current method - See Instructions: Lord of War for the current method.
+Rites of War not working: Multiple rites of war are not working or do not function fully. We&apos;ll be reviewing them all as
+Primarchs Chosen not working properly - You need to add a different Master of the Legion to enable the Rite of War option (see Instructions: Rite of War), chose Primarchs Chosen. Your Primarch will now appear as a HQ choice. Build your list as required and then remove the Master of the Legion unit you added. You will have validate errors at the end and some Primarchs that change units to a Troops selections currently do not work.
+Fortifications missing/to be added - We&apos;ll be copying the current list from the 40k files, as they&apos;re exactly the same. The fortification slot has the same problems as the LoW slot, needs to be added as a detachment. Once it&apos;s reviewed and a fix is in place we&apos;ll be adding all the fortifications.
+Knights Errant not available as HQ choice for loyalist armies
+Taghmata Army list cannot select Matrix of Ruin force org
+</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
