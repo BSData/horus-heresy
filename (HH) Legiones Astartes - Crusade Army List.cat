@@ -32402,7 +32402,7 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
     </selectionEntry>
     <selectionEntry id="ba9221f1-7a8a-4d55-0c30-ca4c502fab8d" name="Anvillus Pattern Dreadclaw Drop Pod" book="HH:LACAL" page="45" hidden="false" collective="false" categoryEntryId="466173742041747461636b23232344415441232323" type="model">
       <profiles>
-        <profile id="78e2cfcb-9ba5-32ad-69ac-3f11fb92335f" name="Anvillus Pattern Dreadclaw Drop Pod" book="HH:LACAL" page="45" hidden="false" profileTypeId="56656869636c6523232344415441232323">
+        <profile id="78e2cfcb-9ba5-32ad-69ac-3f11fb92335f" name="Anvillus Pattern Dreadclaw Drop Pod" book="AL:AoDAL" page="55" hidden="false" profileTypeId="56656869636c6523232344415441232323">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -32416,42 +32416,68 @@ In addition, units of Domitar-Ferrum may be joined by a single Independent Chara
             <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Flyer, Hover, Transport"/>
           </characteristics>
         </profile>
+        <profile id="81ed-d66c-ef26-0744" name="Anvillus Pattern Dreadclaw Drop Pod (Transport)" book="AL:AoDAL" page="55" hidden="false" profileTypeId="307d-047f-ca13-706b" profileTypeName="Transport">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Capacity" characteristicTypeId="8285-4205-b6cd-8473" value="10 or a single Dreadnought *see Dreadclaw Transport Capacity rule"/>
+            <characteristic name="Fire Points" characteristicTypeId="b270-a7f9-22b2-3702" value="None"/>
+            <characteristic name="Access Points" characteristicTypeId="d17b-0342-b1dc-b8e7" value="One access hatch beneath the hull. Passengers can disembark at ground level within 2&quot; of the hull."/>
+          </characteristics>
+        </profile>
       </profiles>
       <rules>
-        <rule id="e22e1971-f89c-ce36-ca85-2adf7eb0c2cd" name="Assault Vehicle" page="0" hidden="false">
+        <rule id="8a85-2ac6-c4b3-8d46" name="Dreadclaw Transport Capacity" book="AL:AoDAL" page="55" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-        </rule>
-        <rule id="b460cb6b-bde8-c63c-ce79-0f3f0437e1cc" name="Deep Strike" page="0" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </rule>
-        <rule id="7844451a-533b-1140-1643-9ed0b89ca3a1" name="Drop Pod Assault" page="0" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </rule>
-        <rule id="aa996e78-21fb-2dc9-9be2-78e14a1dff21" name="Heat Blast" book="HH:LACAL" page="45" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>May be used when the model arrives from Deep strike or later when operating in Hover mode.  No models may embark or disembark on the turn this attack is used.  
+          <description>The Dreadclaw has a transport capacity of 10 or can be used to transport a single Dreadnought from the following list:
 
-Heat Blast (Deep Strike): Immediately after deploying, measure a radius of 3+D3&quot; horizontally from the main hull.  Any model caught in the blast suffers a S6 AP5 hit with no cover saves.  Vehicles are struck on their weakest armour value.  This counts as a flamer based attack.  
-
-Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit with no cover saves.  Vehicles are struck on their weakest armour value.  This counts as a flamer based attack.  Unit being hit determines wound allocation.  On a D6 of 1, the Drop Pod suffers a penetrating hit.  </description>
+Legion Dreadnought
+Legion Mortis Dreadnought
+Contemptor Dreadnought
+Contemptor Mortis
+Contemptor-Cortus</description>
         </rule>
       </rules>
-      <infoLinks/>
+      <infoLinks>
+        <infoLink id="3cc4-a70d-315e-64c8" name="New InfoLink" hidden="false" targetId="d219-2314-4834-c054" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="cf1b-fc4a-8ac3-3959" name="New InfoLink" hidden="false" targetId="9bc2-f58b-4edd-8673" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="1d99-c24e-6112-f26f" name="New InfoLink" hidden="false" targetId="45cf-653a-4ff6-f22d" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="b2ee-e63f-ac20-712f" name="New InfoLink" hidden="false" targetId="abbb-19db-a983-dc47" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="7a98-813b-5f3b-ab15" name="New InfoLink" hidden="false" targetId="502e-1950-cef4-540b" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
       <modifiers/>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups>
@@ -32472,6 +32498,24 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
               <constraints/>
             </entryLink>
             <entryLink id="5c1d99a5-599c-db7d-e5e1-9bed73b6b57a" hidden="false" targetId="86e70545-ed1a-7cf4-5a3d-d60662a6b3be" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="bcb4-4b98-aa14-1f78" name="Standard Wargear" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="a4ed-fde6-124e-2d2c" name="New EntryLink" hidden="false" targetId="eca0-004a-24f2-e2e9" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -44418,17 +44462,6 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
         </profile>
       </profiles>
       <rules>
-        <rule id="86f1-39c0-5841-0b59" name="Heat Blast" book="LA:AoDAL" page="75" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>May be used when the model arrives from Deep strike or later when operating in Hover mode.  No models may embark or disembark on the turn this attack is used.  
-
-Heat Blast (Deep Strike): Immediately after deploying, measure a radius of 3+D3&quot; horizontally from the main hull.  Any model caught in the blast suffers a S6 AP5 hit with no cover saves.  Vehicles are struck on their weakest armour value.  This counts as a flamer based attack.  
-
-Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit with no cover saves.  Vehicles are struck on their weakest armour value.  This counts as a flamer based attack.  Unit being hit determines wound allocation.  On a D6 of 1, the Drop Pod suffers a penetrating hit.  </description>
-        </rule>
         <rule id="01df-0b7b-2948-524c" name="Melta-ram" book="LA:AoDAL" page="75" hidden="false">
           <profiles/>
           <rules/>
@@ -44457,6 +44490,12 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
           <modifiers/>
         </infoLink>
         <infoLink id="8a71-cfb1-f253-0f15" name="New InfoLink" hidden="false" targetId="45cf-653a-4ff6-f22d" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="dd09-8f9e-359d-6513" name="New InfoLink" hidden="false" targetId="abbb-19db-a983-dc47" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -44521,7 +44560,7 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
         <cost name="pts" costTypeId="points" value="235.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="517b-d4ca-d6ee-ef8c" name="Legion Outrider Squad" book="HH:LACAL" page="39" hidden="false" collective="false" categoryEntryId="466173742041747461636b23232344415441232323" type="unit">
+    <selectionEntry id="517b-d4ca-d6ee-ef8c" name="Legion Outrider Squad" book="AL:AoDAL" page="49" hidden="false" collective="false" categoryEntryId="466173742041747461636b23232344415441232323" type="unit">
       <profiles/>
       <rules/>
       <infoLinks>
@@ -44543,7 +44582,7 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
       <selectionEntries>
         <selectionEntry id="94a7-5e77-7a91-1e94" name="Legion Space Marine Outrider" book="" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
           <profiles>
-            <profile id="3a90-2a76-b8fd-195d" name="Legion Space Marine Outrider" book="HH:LACAL" page="39" hidden="false" profileTypeId="556e697423232344415441232323">
+            <profile id="3a90-2a76-b8fd-195d" name="Legion Space Marine Outrider" book="AL:AoDAL" page="49" hidden="false" profileTypeId="556e697423232344415441232323">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -44578,7 +44617,7 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
         </selectionEntry>
         <selectionEntry id="2b9f-bf3a-4286-3fec" name="Outrider Sergeant" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
           <profiles>
-            <profile id="2829-aa53-0480-c7f3" name="Legion Outrider Sergeant" book="HH:LACAL" page="39" hidden="false" profileTypeId="556e697423232344415441232323">
+            <profile id="2829-aa53-0480-c7f3" name="Legion Outrider Sergeant" book="AL:AoDAL" page="49" hidden="false" profileTypeId="556e697423232344415441232323">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -72824,6 +72863,17 @@ Note that an Immobile unit may still have the Scout or Deep Strike special rules
       <infoLinks/>
       <modifiers/>
       <description>Unless the Javelin Attack Speeder has become immobilised, attackers suffer a -2 To Hit in Assault.</description>
+    </rule>
+    <rule id="abbb-19db-a983-dc47" name="Heat Blast" book="LA:AoDAL" page="75" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>May be used when the model arrives from Deep strike or later when operating in Hover mode.  No models may embark or disembark on the turn this attack is used.  
+
+Heat Blast (Deep Strike): Immediately after deploying, measure a radius of 3+D3&quot; horizontally from the main hull.  Any model caught in the blast suffers a S6 AP5 hit with no cover saves.  Vehicles are struck on their weakest armour value.  This counts as a flamer based attack.  
+
+Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit with no cover saves.  Vehicles are struck on their weakest armour value.  This counts as a flamer based attack.  Unit being hit determines wound allocation.  On a D6 of 1, the Drop Pod suffers a penetrating hit.  </description>
     </rule>
   </sharedRules>
   <sharedProfiles>
