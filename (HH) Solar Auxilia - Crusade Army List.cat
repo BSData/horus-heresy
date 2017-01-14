@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" book="HH4: Conquest" revision="20" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" book="HH4: Conquest" revision="22" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -2568,7 +2568,7 @@
           <modifiers>
             <modifier type="set" field="maxSelections" value="0.0">
               <repeats>
-                <repeat field="selections" scope="8af854f9-98dd-28a3-0d31-741792f5e373" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7561a979-6714-cdf8-047a-901da30ab8b2" repeats="1"/>
+                <repeat field="selections" scope="8af854f9-98dd-28a3-0d31-741792f5e373" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7561a979-6714-cdf8-047a-901da30ab8b2" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -3968,7 +3968,7 @@
               <modifiers>
                 <modifier type="increment" field="maxSelections" value="1.0">
                   <repeats>
-                    <repeat field="selections" scope="7456e1fe-cb07-b22c-cf11-10a67a3a4dd0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb81d19b-9bd5-662b-a167-6f6aea32ec47" repeats="1"/>
+                    <repeat field="selections" scope="7456e1fe-cb07-b22c-cf11-10a67a3a4dd0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb81d19b-9bd5-662b-a167-6f6aea32ec47" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -5388,7 +5388,7 @@
               <modifiers>
                 <modifier type="increment" field="maxSelections" value="1.0">
                   <repeats>
-                    <repeat field="selections" scope="fb0553bf-3c24-a057-354d-3815611a2213" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="426bc91d-bdd7-04e3-2298-36b274643aad" repeats="1"/>
+                    <repeat field="selections" scope="fb0553bf-3c24-a057-354d-3815611a2213" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="426bc91d-bdd7-04e3-2298-36b274643aad" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -6703,382 +6703,6 @@
         <cost name="pts" costTypeId="points" value="300.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6e810809-efc7-966a-27ae-0881ad573a6e" name="Castellax Class Battle-Automata Maniple" book="HH3: Extermination" page="223" hidden="false" collective="false" categoryEntryId="486561767920537570706f727423232344415441232323" type="unit">
-      <profiles>
-        <profile id="381fe508-ad16-4e6d-f731-2d2ce3552c6e" name="Atomantic Shielding" book="HH3: Extermination" page="207" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Gains 5++ Invulnerable save from shooting attacks and explosions, and a 6++ Invulnerable save in close combat.  In addition, add +1 to the range of explosions from the Reactor Blast rule.  "/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="4fa9ce76-8c56-ca11-56b2-871a83e68aa3" name="Rage" page="0" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </rule>
-        <rule id="df0167c0-57ed-46b0-9215-1830fb812700" name="Reactor Blast" book="HH3: Extermination" page="207" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>When losing its final wound, roll a D6.  On a 6, inflict a Str 4 AP - hit on all models within D6&quot;</description>
-        </rule>
-        <rule id="2ab06956-de14-a34d-38fd-1b7e13633f91" name="Cybernetica Cortex" book="HH3: Extermination" page="206" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>Models the have Programmed Behaviour, Fearless, Cybernetic Resiliance, and Adamantium Will special rules.  </description>
-        </rule>
-      </rules>
-      <infoLinks/>
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="feca5998-1e05-c682-4f9d-207be0de75a7" type="equalTo"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="a04d16a0-1398-7a6e-c58b-c85647c09779" name="Castellax" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-          <profiles>
-            <profile id="bd784d43-8ad8-7a82-cae5-e465dd9ad234" name="Castellax" book="HH3: Extermination" page="223" hidden="false" profileTypeId="556e697423232344415441232323">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <characteristics>
-                <characteristic name="Unit Type" characteristicTypeId="556e6974205479706523232344415441232323" value="Monstrous Creature"/>
-                <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="3"/>
-                <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
-                <characteristic name="S" characteristicTypeId="5323232344415441232323" value="6"/>
-                <characteristic name="T" characteristicTypeId="5423232344415441232323" value="7"/>
-                <characteristic name="W" characteristicTypeId="5723232344415441232323" value="4"/>
-                <characteristic name="I" characteristicTypeId="4923232344415441232323" value="3"/>
-                <characteristic name="A" characteristicTypeId="4123232344415441232323" value="2"/>
-                <characteristic name="LD" characteristicTypeId="4c4423232344415441232323" value="7"/>
-                <characteristic name="Save" characteristicTypeId="5361766523232344415441232323" value="3+"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules/>
-          <infoLinks>
-            <infoLink id="1b7b5226-d60d-7176-92e0-f682f513059a" hidden="false" targetId="af25b7de-d035-2c93-6ced-76c45bd5f5da" type="profile">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-            </infoLink>
-          </infoLinks>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-          </constraints>
-          <selectionEntries/>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="27519706-2306-1ac8-31e5-1793193c7081" name="May exchange its Mauler bolt cannon for:" hidden="false" collective="false">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="4a6a4cad-60e3-241c-d35b-3b447abdaa60" name="Darkfire Cannon" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="d43b4cbe-23ef-7756-b71e-41a37f019647" hidden="false" targetId="cffa84fe-0304-a520-2662-461fa2f67e78" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="20.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="b8d8d024-2c24-f8e7-4728-d02bdcd9e70b" name="Multi-melta" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups/>
-              <entryLinks/>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="5c550f89-09dd-a536-8d71-bb446616a93a" name="May Exchange one or both bolters for:" hidden="false" collective="false">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="maxSelections" value="1.0">
-                  <repeats>
-                    <repeat field="selections" scope="a04d16a0-1398-7a6e-c58b-c85647c09779" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="db26eb9b-a05c-a535-746b-56162e78d7a8" repeats="1"/>
-                  </repeats>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="abca630b-fb82-ff22-2ecc-acca1bf0b879" name="Flamer" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="5.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups/>
-              <entryLinks/>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="d73e6bea-dd13-c3bb-f2c8-9431d01537ae" name="May Exchange Stock Chargers for:" hidden="false" collective="false">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="ca39379f-9921-efad-588f-3d03f60488a0" name="Two Power Blades" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="5fb29a7d-84e3-afcb-50ab-82ede92a849d" hidden="false" targetId="7ad65a49-98f4-549a-2904-ce9a67d0ccaa" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="10.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="db26eb9b-a05c-a535-746b-56162e78d7a8" name="Siege Wrecker" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles>
-                    <profile id="c76a693b-4e55-61c1-6f60-e7f7a9a5d4e7" name="Siege Wrecker" book="HH:LACAL" page="87" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                      <characteristics>
-                        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
-                        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="10"/>
-                        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
-                        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Concussive, Wrecker, Specialist Weapon"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <rules>
-                    <rule id="aa1a33e9-76f2-30d6-086a-6a677a38cc64" name="Wrecker" book="HH:LACAL" page="87" hidden="false">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                      <description>Attacks with this special rule may re-roll failed armour penetration rolls against fortifications and immobile structures and add +1 to any result rolled on the Building Damage chart.  If this attack damages a bulkhead or wall section of terrain and destroys it, remove that section of terrain from play if possible.  </description>
-                    </rule>
-                  </rules>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="20.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups/>
-              <entryLinks/>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks/>
-          <costs>
-            <cost name="pts" costTypeId="points" value="85.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="d43b13fd-745a-cfc5-1e99-1f0b556f4244" name="Maniple may take any of the following upgrades:" hidden="false" collective="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <selectionEntries>
-            <selectionEntry id="4bdaf708-2c10-d22b-ee04-71eebd83c9be" name="Searchlight" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="increment" field="points" value="1.0">
-                  <repeats>
-                    <repeat field="selections" scope="6e810809-efc7-966a-27ae-0881ad573a6e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a04d16a0-1398-7a6e-c58b-c85647c09779" repeats="1"/>
-                  </repeats>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="508a6f20-93f2-38aa-39d8-62bb78caac9b" name="Infravisor" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks>
-                <infoLink id="2ae2db0d-4e17-d2be-879d-0085c7f090b6" hidden="false" targetId="2b41c2af-292a-5e17-1996-1f086afc5bd2" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
-              <modifiers>
-                <modifier type="increment" field="points" value="5.0">
-                  <repeats>
-                    <repeat field="selections" scope="6e810809-efc7-966a-27ae-0881ad573a6e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a04d16a0-1398-7a6e-c58b-c85647c09779" repeats="1"/>
-                  </repeats>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="bfd9cfae-9da5-04ad-3f5f-0cba47eca816" name="Frag Grenades" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="increment" field="points" value="5.0">
-                  <repeats>
-                    <repeat field="selections" scope="6e810809-efc7-966a-27ae-0881ad573a6e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a04d16a0-1398-7a6e-c58b-c85647c09779" repeats="1"/>
-                  </repeats>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b1316a6e-ad2b-9c74-7e71-1f8c86de297f" name="Enhanced Targeting Array" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles>
-                <profile id="6b60122c-01c2-36f9-02de-3b2d944d1ac3" name="Enhanced Targeting Array" book="HH3: Extermination" page="207" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <characteristics>
-                    <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="A model with this upgrade increases its BS by +1 and reduces enemy cover saves by -1. "/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="increment" field="points" value="15.0">
-                  <repeats>
-                    <repeat field="selections" scope="6e810809-efc7-966a-27ae-0881ad573a6e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a04d16a0-1398-7a6e-c58b-c85647c09779" repeats="1"/>
-                  </repeats>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="2a45ee3b-42f5-4106-c676-1e056b3009d2" name="Cyclops Remote Demolitions Unit" book="HH4: Conquest" page="283" hidden="false" collective="false" categoryEntryId="486561767920537570706f727423232344415441232323" type="unit">
       <profiles>
         <profile id="4660bccb-b559-dd8b-947f-d2cad333e598" name="Demolition Charge" book="HH4: Conquest" page="283" hidden="false" profileTypeId="576561706f6e23232344415441232323">
@@ -7198,7 +6822,7 @@
               <modifiers>
                 <modifier type="increment" field="points" value="10.0">
                   <repeats>
-                    <repeat field="selections" scope="2a45ee3b-42f5-4106-c676-1e056b3009d2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="45253bac-e984-2de4-68d7-cc68ef5d872f" repeats="1"/>
+                    <repeat field="selections" scope="2a45ee3b-42f5-4106-c676-1e056b3009d2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="45253bac-e984-2de4-68d7-cc68ef5d872f" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -7234,7 +6858,7 @@
               <modifiers>
                 <modifier type="increment" field="points" value="50.0">
                   <repeats>
-                    <repeat field="selections" scope="2a45ee3b-42f5-4106-c676-1e056b3009d2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="45253bac-e984-2de4-68d7-cc68ef5d872f" repeats="1"/>
+                    <repeat field="selections" scope="2a45ee3b-42f5-4106-c676-1e056b3009d2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="45253bac-e984-2de4-68d7-cc68ef5d872f" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -7565,7 +7189,7 @@
           <modifiers>
             <modifier type="increment" field="maxSelections" value="1.0">
               <repeats>
-                <repeat field="selections" scope="7070c1a2-0136-1c55-7e2b-152d0e3f6b50" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="48c29c86-64fd-07ee-276c-6199d2a7176a" repeats="1"/>
+                <repeat field="selections" scope="7070c1a2-0136-1c55-7e2b-152d0e3f6b50" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="48c29c86-64fd-07ee-276c-6199d2a7176a" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -11559,7 +11183,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <modifiers>
                 <modifier type="increment" field="points" value="10.0">
                   <repeats>
-                    <repeat field="selections" scope="a5716801-7f01-6d16-7476-5ce9795c7f32" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b4eedb9-ee0e-8160-0e4b-7f19c7689d8e" repeats="1"/>
+                    <repeat field="selections" scope="a5716801-7f01-6d16-7476-5ce9795c7f32" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b4eedb9-ee0e-8160-0e4b-7f19c7689d8e" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -11590,7 +11214,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <modifiers>
                 <modifier type="increment" field="points" value="5.0">
                   <repeats>
-                    <repeat field="selections" scope="a5716801-7f01-6d16-7476-5ce9795c7f32" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b4eedb9-ee0e-8160-0e4b-7f19c7689d8e" repeats="1"/>
+                    <repeat field="selections" scope="a5716801-7f01-6d16-7476-5ce9795c7f32" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b4eedb9-ee0e-8160-0e4b-7f19c7689d8e" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -11621,7 +11245,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <modifiers>
                 <modifier type="increment" field="points" value="20.0">
                   <repeats>
-                    <repeat field="selections" scope="a5716801-7f01-6d16-7476-5ce9795c7f32" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b4eedb9-ee0e-8160-0e4b-7f19c7689d8e" repeats="1"/>
+                    <repeat field="selections" scope="a5716801-7f01-6d16-7476-5ce9795c7f32" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b4eedb9-ee0e-8160-0e4b-7f19c7689d8e" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -11648,7 +11272,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
           <modifiers>
             <modifier type="increment" field="maxSelections" value="1.0">
               <repeats>
-                <repeat field="selections" scope="a5716801-7f01-6d16-7476-5ce9795c7f32" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b4eedb9-ee0e-8160-0e4b-7f19c7689d8e" repeats="1"/>
+                <repeat field="selections" scope="a5716801-7f01-6d16-7476-5ce9795c7f32" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b4eedb9-ee0e-8160-0e4b-7f19c7689d8e" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -11792,7 +11416,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 </modifier>
                 <modifier type="increment" field="points" value="20.0">
                   <repeats>
-                    <repeat field="selections" scope="a5716801-7f01-6d16-7476-5ce9795c7f32" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b4eedb9-ee0e-8160-0e4b-7f19c7689d8e" repeats="1"/>
+                    <repeat field="selections" scope="a5716801-7f01-6d16-7476-5ce9795c7f32" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b4eedb9-ee0e-8160-0e4b-7f19c7689d8e" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -11844,7 +11468,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <modifiers>
                 <modifier type="increment" field="maxSelections" value="1.0">
                   <repeats>
-                    <repeat field="selections" scope="a5716801-7f01-6d16-7476-5ce9795c7f32" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b4eedb9-ee0e-8160-0e4b-7f19c7689d8e" repeats="1"/>
+                    <repeat field="selections" scope="a5716801-7f01-6d16-7476-5ce9795c7f32" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b4eedb9-ee0e-8160-0e4b-7f19c7689d8e" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -11970,7 +11594,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <modifiers>
                 <modifier type="increment" field="points" value="5.0">
                   <repeats>
-                    <repeat field="selections" scope="d2558823-2356-b783-88cd-5bb701e20015" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b9c6e09-b623-454f-0486-87a7c82bb14a" repeats="1"/>
+                    <repeat field="selections" scope="d2558823-2356-b783-88cd-5bb701e20015" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b9c6e09-b623-454f-0486-87a7c82bb14a" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -11997,7 +11621,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
           <modifiers>
             <modifier type="increment" field="maxSelections" value="1.0">
               <repeats>
-                <repeat field="selections" scope="d2558823-2356-b783-88cd-5bb701e20015" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b9c6e09-b623-454f-0486-87a7c82bb14a" repeats="1"/>
+                <repeat field="selections" scope="d2558823-2356-b783-88cd-5bb701e20015" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b9c6e09-b623-454f-0486-87a7c82bb14a" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -12128,7 +11752,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <modifiers>
                 <modifier type="increment" field="maxSelections" value="1.0">
                   <repeats>
-                    <repeat field="selections" scope="d2558823-2356-b783-88cd-5bb701e20015" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b9c6e09-b623-454f-0486-87a7c82bb14a" repeats="1"/>
+                    <repeat field="selections" scope="d2558823-2356-b783-88cd-5bb701e20015" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0b9c6e09-b623-454f-0486-87a7c82bb14a" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -12436,7 +12060,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <modifiers>
                 <modifier type="increment" field="maxSelections" value="1.0">
                   <repeats>
-                    <repeat field="selections" scope="66c0-2453-ea5a-f24a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a615-bce0-ea10-29a7" repeats="1"/>
+                    <repeat field="selections" scope="66c0-2453-ea5a-f24a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a615-bce0-ea10-29a7" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
@@ -12491,7 +12115,23 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
       </costs>
     </selectionEntry>
   </selectionEntries>
-  <entryLinks/>
+  <entryLinks>
+    <entryLink id="7583-4606-7fa5-755d" name="New EntryLink" hidden="false" targetId="94d7-495e-e0a7-3f8e" type="selectionEntry" categoryEntryId="486561767920537570706f727423232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="feca5998-1e05-c682-4f9d-207be0de75a7" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints/>
+    </entryLink>
+  </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="98e057b6-29c7-b240-8a57-a936b45c1299" name="Auxilia Arvus Lighter Orbital Shuttle" book="HH4: Conquest" page="271" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
       <profiles>
