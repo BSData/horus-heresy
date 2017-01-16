@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="45" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="46" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -89,6 +89,7 @@
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dc72-082d-808e-dd2f" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4635-338b-aef0-a2cc" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c9fd-8e3f-eaa7-b788" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9277-a85b-517d-91c6" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -166,7 +167,6 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d96b-4191-ec28-0485" type="equalTo"/>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9277-a85b-517d-91c6" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </conditionGroup>
@@ -1224,7 +1224,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="96b2-9c32-e025-befd" name="Adding a LoW" hidden="false" collective="false" categoryEntryId="d27d-9e9b-d8c7-afe6" type="upgrade">
       <profiles/>
@@ -1242,7 +1244,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f45a-74c6-05f5-48dd" name="Selecting a Rite of War" hidden="false" collective="false" categoryEntryId="d27d-9e9b-d8c7-afe6" type="upgrade">
       <profiles/>
@@ -1260,7 +1264,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f41e-f8fb-4665-5718" name="Existing issues" hidden="false" collective="false" categoryEntryId="d27d-9e9b-d8c7-afe6" type="upgrade">
       <profiles/>
@@ -1278,7 +1284,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <entryLinks/>
