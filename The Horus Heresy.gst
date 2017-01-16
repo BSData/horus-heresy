@@ -6101,7 +6101,7 @@ D6    Result		S	AP
         <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f052-9258-d993-e639" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f052-9258-d993-e639" type="equalTo"/>
           </conditions>
           <conditionGroups/>
         </modifier>
