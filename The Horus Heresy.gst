@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="47" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="48" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -63,6 +63,20 @@
         <characteristicType id="8285-4205-b6cd-8473" name="Capacity"/>
         <characteristicType id="b270-a7f9-22b2-3702" name="Fire Points"/>
         <characteristicType id="d17b-0342-b1dc-b8e7" name="Access Points"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="0694-6ddb-9e1d-40bd" name="Super-heavy Walker">
+      <characteristicTypes>
+        <characteristicType id="abd6-ed07-8491-eb85" name="WS"/>
+        <characteristicType id="aabf-e6cf-1929-65fd" name="BS"/>
+        <characteristicType id="8d3d-332e-0576-3813" name="S"/>
+        <characteristicType id="a3b5-f395-614e-95dc" name="Front"/>
+        <characteristicType id="4f2c-13a4-98b7-ff72" name="Side"/>
+        <characteristicType id="c45e-7fb0-f4c7-2909" name="Rear"/>
+        <characteristicType id="d7de-23c6-aa99-cb87" name="I"/>
+        <characteristicType id="ec4e-6e09-1493-1867" name="A"/>
+        <characteristicType id="36e0-e195-2d91-3e2a" name="HP"/>
+        <characteristicType id="c887-e846-fa1f-9389" name="Type"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
