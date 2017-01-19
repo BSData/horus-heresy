@@ -2256,7 +2256,7 @@ D6    Result		S	AP
         <cost name="pts" costTypeId="points" value="25.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0b70ac61-0393-7061-ff36-50432e5f65f0" name="Scion Aspirant" book="HH4: Conquest" page="297" hidden="false" collective="false" categoryEntryId="54726f6f707323232344415441232323" type="model">
+    <selectionEntry id="2f44-17e9-3707-22f2" name="Scion Aspirant" book="HH4: Conquest" page="297" hidden="false" collective="false" categoryEntryId="54726f6f707323232344415441232323" type="model">
       <profiles/>
       <rules>
         <rule id="20c36841-86b5-f4c2-406e-c82ca71c107a" name="Aspirant" book="HH4: Conquest" page="297" hidden="false">
@@ -2283,7 +2283,7 @@ D6    Result		S	AP
         </infoLink>
       </infoLinks>
       <modifiers>
-        <modifier type="increment" field="maxInForce" value="1.0">
+        <modifier type="increment" field="maxInForce" value="1">
           <repeats>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5053f8a2-cc7f-f635-1044-b149aed1513e" repeats="1" roundUp="false"/>
           </repeats>
@@ -2334,7 +2334,7 @@ D6    Result		S	AP
         </modifier>
         <modifier type="increment" field="maxInForce" value="1.0">
           <repeats>
-            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1eb55824-68fb-ea4f-b5dd-5838cdfa3afc" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f44-17e9-3707-22f2" repeats="1" roundUp="false"/>
           </repeats>
           <conditions/>
           <conditionGroups/>
@@ -2465,7 +2465,7 @@ D6    Result		S	AP
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1eb55824-68fb-ea4f-b5dd-5838cdfa3afc" name="Scion Uhlan" book="HH4: Conquest" page="297" hidden="false" collective="false" categoryEntryId="466173742041747461636b23232344415441232323" type="model">
+    <selectionEntry id="ff61-cf0e-681b-82bb" name="Scion Uhlan" book="HH4: Conquest" page="297" hidden="false" collective="false" categoryEntryId="466173742041747461636b23232344415441232323" type="model">
       <profiles/>
       <rules>
         <rule id="955c6a6d-62db-3190-a6fb-ad53119398ca" name="Impetuous Advance" book="HH4: Conquest" page="297" hidden="false">
@@ -5120,7 +5120,21 @@ D6    Result		S	AP
               <modifiers/>
             </infoLink>
           </infoLinks>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ff61-cf0e-681b-82bb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2f44-17e9-3707-22f2" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f38-2f45-a1a8-1aab" type="max"/>
           </constraints>
