@@ -13330,6 +13330,21 @@ Taghmata Army list cannot select Matrix of Ruin force org
       <modifiers/>
       <description>The many rules presented for this unit are experimental rules, still under development, and are not the final version. Experimental rules will change over time before a final version is published.</description>
     </rule>
+    <rule id="c0a6-5a38-2ea5-e740" name="Shock Pulse" book="HH:LACAL" page="60" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Any vehicle, including super-heavies, that suffers a penetrating hit may only fire snap shots on the following game turn.  </description>
+    </rule>
+    <rule id="1b17-c243-6518-4f8a" name="Dangerous Reactor Core" book="AL:AoDAL" page="75" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>If enemy inflicts a Penetrating hit against the Sicarian Venator, they may re-roll a result of a 1 on the Vehicle Damage table.
+Explodes results add D3&quot; to radius.  </description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="09fd-8af1-a6b1-51f7" name="Bolter" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
