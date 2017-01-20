@@ -66826,6 +66826,38 @@ differently armed Sentry Guns to fire at two separate targets.</description>
             <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="4252-ce2a-de1d-0ce3" name="Additional Wargear" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a11c-9896-1b1c-14f1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bd9-1dfb-2bb1-4734" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="cebd-c5e8-5da4-00c3" name="New EntryLink" hidden="false" targetId="4c62-8983-4a1b-d1c6" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="increment" field="points" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="f19e-c9b0-dc39-21ef" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3662-d407-072d-e69b" repeats="1" roundUp="false"/>
+                  </repeats>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="8fc9-18b7-5e05-c772" name="Any Attack Bike may be equiped with:" hidden="false" collective="false" defaultSelectionEntryId="e8d3-e4d9-7307-e8f2">
