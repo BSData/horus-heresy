@@ -13204,6 +13204,51 @@ This data set is maintained by an open-source community and is not linked in any
 
 Change log
 ----------
+7.1.6 patch notes
+
+Updated following profiles for Battlescribe 2 standards
+
+Legions:
+Legion Mortis Dreadnought
+Contemtpor Mortis Dreadnought
+Contemtpor Dreadnought
+Legion Dreadnought
+Contemptor-Cortus Dreadnought
+Legion Falchion
+Heavy Support Sergeant
+Damocles
+
+Solar Auxillia
+Valdor Tank Hunter
+Auxillia Malcador tank
+
+More work is being carried out with each release. Please bear with us as we make this transition and improvements to the catalogues.
+
+Fixed:
+
+Legions
+Legion command squad costs for Centurion and Preator.
+Assault Cannon cost on Tarantula
+Points cost too high on Tactical Support Squad
+Rite of War not showing when a Primarch is selected in a seperate LoW detachment
+Falchion missing Neutron Wave Capacitor upgrade.
+Optional Searchlight on vehicles is automatically selected.
+World Eaters - Cannot exchange two power axes without a validation error
+Sons of Horus - Limitation on Justaerin squads, was limited to 1 per force
+Ultramarines RoW - The Logos Lectora - Too many HQ choices and not checking to see if a MoS or Damocles was selected.
+
+Mechanicum/General
+Castellax - Could still selected 2 bolters when using a Siege Wrecker.
+Vorax - Squad size was 5, should be 6.
+
+Questoris Knights
+Added Acastus Knight Porphyrion to Questoris Knights list. More work to be done to allow it to be take in a LoW detachment for Mechanicum
+Fixed Force Org validation, this matches the Questoris Knight custom force org.
+
+Solar Auxillia
+Solar Aux - Valdor Tank Hunter sponson options updated
+
+----------
 7.1.5
 Astarte/Legions
 Fixed and optimised choices for the Legion Tactical support squad. (Thanks Alaric (Invision boards))
@@ -13254,48 +13299,7 @@ Cults and Militia Changes:
 Arvus Lighter available as fast attack choice.
 
 Misc:
-The main GST catalogue wasn&apos;t incremented, this would have caused some errors when files were pulled in by the app. It wouldn&apos;t update the GST file. Deleting files and refreshing them would fix it but this shouldn&apos;t be needed.
-
-----------
-7.1.1 - Heavy suppor and Consul fixes/updates
-Heavy Support slot has been updated to the Red Book, some entries require more work. If there are any mistakes or omissions please report them and they will be fixed. This is the biggest part of this update. If you have any current lists please export/save them before updating your datafiles as this required quite a few changes.
-
-This means the Sky-Slayer and Malcador units are now available for use.
-
-Units that are functional but require futher work are
-Sky Slayer Support (Could be better layed out)
-Legion Heavey Support squad (missing heavy weapon profiles)
-
-Other units could do with some work but it&apos;ll be purely cosmetic.
-
-Updated Command tank condition, the Vinidcator has this option available now and other squadron tanks will have it displayed correctly when three tanks are taken.
-
--HQ
-
-Re-added Praetor Tribune
-
-Consul
-Fixed Libarian mastery levels. They&apos;ll be selectable now.
-Fixed Bots for Praevian. They can be added now but I haven&apos;t checked the loadout for the bots, please review this and let me know of any mistakes or changes needed.
-Fixed Scout Armour for Vigilator. It can be selected now
-Fixed bodyguard/command squad for Delegatus and some other consul types. It can be added and modified now.
-Fixed Phosphex bombs for Siege Breaker.
-Fixed many more issue, options where avaiable when they should not have (terminator armour for the Moritat for example)
-
-Misc
-
-Updated Pintle-mount weapon costs and missing options. Now standard across Astarte vehicles except for Super-Heavies.
-Updated Vehicle wargear across vehicles. Please report any that are incorrect and we&apos;ll update them.
-Updated Droppod rules and profiles.
-Updated Kharybdis so it&apos;s not limited to 1.
-
-Legions
-Cleaned up Pheonix Terminator Squad so the Champion is more visable.
-Removed Unwieldy from Deathshroud Scythes.
-Added in Hand Flamer for Legion Veteran squad for Blood Angels.
-
-Mechanicum
-Added Vultarax unit to Tagmata list</description>
+The main GST catalogue wasn&apos;t incremented, this would have caused some errors when files were pulled in by the app. It wouldn&apos;t update the GST file. Deleting files and refreshing them would fix it but this shouldn&apos;t be needed.</description>
     </rule>
     <rule id="ed53-ae11-0216-187b" name="Instruction: Existing issues" hidden="false">
       <profiles/>
@@ -13316,7 +13320,7 @@ Legion specific units and wargear will be looked at after we complete the basic 
 
 --------- Current issues
 Lords of War not available - working on changing the current method - See Instructions: Lord of War for the current method.
-Rites of War not working: Multiple rites of war are not working or do not function fully. We&apos;ll be reviewing them all as
+Rites of War not working: Multiple rites of war are not working or do not function fully. We&apos;ll be reviewing them all as we work our way through the Legions.
 Primarchs Chosen not working properly - You need to add a different Master of the Legion to enable the Rite of War option (see Instructions: Rite of War), chose Primarchs Chosen. Your Primarch will now appear as a HQ choice. Build your list as required and then remove the Master of the Legion unit you added. You will have validate errors at the end and some Primarchs that change units to a Troops selections currently do not work.
 Fortifications missing/to be added - We&apos;ll be copying the current list from the 40k files, as they&apos;re exactly the same. The fortification slot has the same problems as the LoW slot, needs to be added as a detachment. Once it&apos;s reviewed and a fix is in place we&apos;ll be adding all the fortifications.
 Knights Errant not available as HQ choice for loyalist armies
