@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="46" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="47" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -11634,6 +11634,12 @@ Command Benefits:
               <infoLinks/>
               <modifiers/>
             </infoLink>
+            <infoLink id="882f-5498-9392-a233" name="New InfoLink" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
           </infoLinks>
           <modifiers/>
           <constraints>
@@ -11663,6 +11669,24 @@ Command Benefits:
               <infoLinks/>
               <modifiers/>
             </infoLink>
+            <infoLink id="ec48-abf2-ec18-fcd6" name="re" hidden="false" targetId="8269-2cd6-9236-16e7" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="78d7-1e69-298c-6439" name="New InfoLink" hidden="false" targetId="7ee3-d437-bc44-3630" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="9e3d-e30e-6858-344c" name="h" hidden="false" targetId="e7e7-5907-0351-2ef0" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
           </infoLinks>
           <modifiers/>
           <constraints>
@@ -11687,6 +11711,18 @@ Command Benefits:
               <modifiers/>
             </infoLink>
             <infoLink id="51ad-d88a-bebc-33c1" name="New InfoLink" hidden="false" targetId="0ad4-1adb-5d8b-5ba7" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="1072-45db-a1e3-60bc" name="New InfoLink" hidden="false" targetId="7bf6-45ab-1138-10c7" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="2be8-f2ca-d9ee-1979" name="New InfoLink" hidden="false" targetId="7ee3-d437-bc44-3630" type="rule">
               <profiles/>
               <rules/>
               <infoLinks/>
