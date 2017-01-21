@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" book="HH4: Conquest" revision="21" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" book="HH4: Conquest" revision="22" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -7180,7 +7180,7 @@ but the tank loses the Fast special rule.</description>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="1bcf28da-61bd-2669-d347-33b8a9f227a0" hidden="false" targetId="dff0089a-4273-26a0-d96f-b5a36d57a18f" type="profile">
+        <infoLink id="1bcf28da-61bd-2669-d347-33b8a9f227a0" name="" hidden="false" targetId="dff0089a-4273-26a0-d96f-b5a36d57a18f" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -7202,10 +7202,16 @@ but the tank loses the Fast special rule.</description>
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <repeats/>
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="706db83f-7065-0d8a-c141-1406c1032a9d" type="equalTo"/>
-          </conditions>
-          <conditionGroups/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4685ab44-9dc6-d88f-04e6-4601d1a559f6" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="706db83f-7065-0d8a-c141-1406c1032a9d" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -13146,6 +13152,7 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>In an army with a Lord Marshal as its Warlord, Veletaris Storm Sections may be taken as Household Retinue squads in addition to their usual role. Such squads are WS 4 but do not have the Hold the Line special rule. In addition, they have the Preferred Enemy (Infantry) special rule while the Lord Marshal is present on the table and not Falling Back. Household Retinue squads are Elites choices (and not Tercio Troops choices) for the army, and may take either a Dracosan Armoured Transport or an Auxilia Arvus Lighter as a Dedicated Transport choice.</description>
     </rule>
     <rule id="bfa1f745-f8d6-de2c-0b8e-e6dc4ef6dea7" name="Independent Character" hidden="false">
       <profiles/>
