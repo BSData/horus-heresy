@@ -46998,7 +46998,7 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
               <rules/>
               <infoLinks/>
               <modifiers>
-                <modifier type="increment" field="maxSelections" value="1.0">
+                <modifier type="increment" field="maxSelections" value="1">
                   <repeats>
                     <repeat field="selections" scope="3bd8064e-91eb-24e0-b07f-555fceb5f674" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="91e33f36-7917-a2d4-7a87-c83355bbb592" repeats="1" roundUp="false"/>
                   </repeats>
@@ -47007,69 +47007,9 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry id="62fdc45e-4500-d8df-923a-a84881ae35b3" name="Plasma Blaster" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="a72a9dcb-a3ea-950b-0b5d-5df77a01b638" hidden="false" targetId="2c169963-d356-aa63-60bd-eee2ee1afcc0" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="15.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="60508690-c354-0ea5-b160-341fcee26bfc" name="Heavy Flamer" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="10.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="97e3041a-1943-6313-0634-c97b3f4eebd3" name="Reaper Autocannon" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="76a7ffa6-9958-c5be-f746-30a95871cf46" hidden="false" targetId="22d2c64e-3873-429f-5cf8-27e022bb1d6a" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="15.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
+              <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks>
                 <entryLink id="7687-0617-9e33-7d73" hidden="false" targetId="2d56d45d-d276-7830-2b7d-026de64bbae8" type="selectionEntry">
@@ -47090,6 +47030,39 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
                       <conditionGroups/>
                     </modifier>
                   </modifiers>
+                  <constraints/>
+                </entryLink>
+                <entryLink id="c866-d8bc-5a9f-7e26" name="New EntryLink" hidden="false" targetId="9fef-d14e-0e9f-1cc8" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="set" field="points" value="10">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints/>
+                </entryLink>
+                <entryLink id="c715-faad-1785-68ae" name="New EntryLink" hidden="false" targetId="3999-9892-f158-7411" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="set" field="points" value="15">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints/>
+                </entryLink>
+                <entryLink id="c1c7-54ca-47b1-1fbd" name="New EntryLink" hidden="false" targetId="3cb9-7ef8-c6cd-aab4" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
                   <constraints/>
                 </entryLink>
               </entryLinks>
