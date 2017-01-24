@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" book="HH4: Conquest" revision="22" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" book="HH4: Conquest" revision="23" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -3334,63 +3334,76 @@
           <selectionEntryGroups/>
           <entryLinks/>
         </selectionEntryGroup>
-        <selectionEntryGroup id="0cb28b0c-5d06-9f55-a6e9-e1a8a3f6ea6c" name="May exchange both sponson-mounted autocannons for:" hidden="false" collective="false">
+        <selectionEntryGroup id="aa19-2e45-9775-5591" name="May exchange both sponson-mounted:" hidden="false" collective="false" defaultSelectionEntryId="e2e5-d3f4-bc2d-5ed8">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c821-7b58-aaa3-4eff" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fae1-2b8e-07b5-8dc5" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="2cc287b0-c07e-616a-d4cc-aae45069a44a" name="Multi-lasers" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="ea022639-644d-3cf7-99e5-e41d929b8baa" name="Heavy flamers" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="0901279d-b66f-f906-cdac-fd96651d5f16" name="Lascannons" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="20.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+          <selectionEntries/>
           <selectionEntryGroups/>
-          <entryLinks/>
+          <entryLinks>
+            <entryLink id="bc4d-6ea2-254e-1c75" name="New EntryLink" hidden="false" targetId="d3b4-93b8-3ccd-745e" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="name" value="Sponson-mounted Multi-lasers">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+            <entryLink id="fb3a-fe48-5831-0cd3" name="New EntryLink" hidden="false" targetId="ead9-305c-a7e7-323e" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="name" value="Sponson-mounted Heavy Flamers">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+            <entryLink id="a601-1c81-1b26-d3e7" name="New EntryLink" hidden="false" targetId="8036-b730-d533-e31f" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="name" value="Sponson-mounted Lascannons">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="points" value="20">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+            <entryLink id="e2e5-d3f4-bc2d-5ed8" name="New EntryLink" hidden="false" targetId="60cf-f5f1-77f6-f613" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="name" value="Sponson-mounted Autocannons">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="2e5a-d102-9922-3f71" name="Make take any of the following:" hidden="false" collective="false">
           <profiles/>
@@ -6385,7 +6398,7 @@ but the tank loses the Fast special rule.</description>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="59ddbcd8-ca40-8062-a0af-c6cda5581254" name="May exchange sponson-mounted autocannon for:" hidden="false" collective="false">
+        <selectionEntryGroup id="59ddbcd8-ca40-8062-a0af-c6cda5581254" name="May exchange sponson-mounted:" hidden="false" collective="false" defaultSelectionEntryId="c2d3-fda4-544d-3b7b">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6416,7 +6429,14 @@ but the tank loses the Fast special rule.</description>
               </modifiers>
               <constraints/>
             </entryLink>
-            <entryLink id="3fcc-edae-33ff-a9ba" name="New EntryLink" hidden="false" targetId="3aed-c90b-61a7-0365" type="selectionEntry">
+            <entryLink id="3fcc-edae-33ff-a9ba" name="New EntryLink" hidden="false" targetId="d3b4-93b8-3ccd-745e" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="c2d3-fda4-544d-3b7b" name="New EntryLink" hidden="false" targetId="60cf-f5f1-77f6-f613" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -11920,26 +11940,6 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
         <cost name="pts" costTypeId="points" value="20.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3aed-c90b-61a7-0365" name="Multi-laser" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-      <profiles/>
-      <rules/>
-      <infoLinks>
-        <infoLink id="9b64-a095-821d-d91f" name="New InfoLink" hidden="false" targetId="9e5daeb2-93d7-cac7-9d23-c85b81e46ea2" type="profile">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-      </infoLinks>
-      <modifiers/>
-      <constraints/>
-      <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
   </selectionEntries>
   <entryLinks>
     <entryLink id="7583-4606-7fa5-755d" name="New EntryLink" hidden="false" targetId="94d7-495e-e0a7-3f8e" type="selectionEntry" categoryEntryId="486561767920537570706f727423232344415441232323">
@@ -12525,16 +12525,45 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
         <cost name="pts" costTypeId="points" value="10.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9555-71d2-18d5-0cb8" name="Autocannon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="60cf-f5f1-77f6-f613" name="Autocannon" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules/>
-      <infoLinks/>
+      <infoLinks>
+        <infoLink id="0f59-530a-f0bc-0fdb" name="New InfoLink" hidden="false" targetId="d55f-eed0-800f-5789" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
       <modifiers/>
       <constraints/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d3b4-93b8-3ccd-745e" name="Multi-laser" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="0928-78e1-b083-2df8" name="New InfoLink" hidden="false" targetId="9e5daeb2-93d7-cac7-9d23-c85b81e46ea2" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -13010,7 +13039,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
           </modifiers>
           <constraints/>
         </entryLink>
-        <entryLink id="78cc-e7d7-f597-bae0" name="New EntryLink" hidden="false" targetId="3aed-c90b-61a7-0365" type="selectionEntry">
+        <entryLink id="78cc-e7d7-f597-bae0" name="New EntryLink" hidden="false" targetId="d3b4-93b8-3ccd-745e" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
