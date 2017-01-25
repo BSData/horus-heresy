@@ -13267,7 +13267,7 @@
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0076-4cc8-7e0d-309b" type="max"/>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0076-4cc8-7e0d-309b" type="max"/>
                   </constraints>
                   <selectionEntries>
                     <selectionEntry id="3701-6c75-a5dc-453a" name="Combat Shield" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -13531,7 +13531,7 @@
                       <rules/>
                       <infoLinks/>
                       <modifiers>
-                        <modifier type="increment" field="points" value="15.0">
+                        <modifier type="increment" field="points" value="15">
                           <repeats>
                             <repeat field="selections" scope="8b0f-fea0-0809-a6d5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6cd2-2be8-d98b-1cee" repeats="1" roundUp="false"/>
                           </repeats>
@@ -16164,36 +16164,6 @@
                   <modifiers/>
                   <constraints/>
                   <selectionEntries>
-                    <selectionEntry id="5828-81b2-ee29-6406" name="Jump Packs" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers>
-                        <modifier type="increment" field="points" value="15">
-                          <repeats>
-                            <repeat field="selections" scope="4e9a-d038-2c6e-2db4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a2e-3b4a-637d-6c13" repeats="1" roundUp="false"/>
-                          </repeats>
-                          <conditions/>
-                          <conditionGroups/>
-                        </modifier>
-                        <modifier type="set" field="hidden" value="true">
-                          <repeats/>
-                          <conditions>
-                            <condition field="selections" scope="51f64bbe-2968-91a9-051f-51d166caf36a" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5828-81b2-ee29-6406" type="equalTo"/>
-                          </conditions>
-                          <conditionGroups/>
-                        </modifier>
-                      </modifiers>
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="903d-4404-32a1-b683" type="max"/>
-                      </constraints>
-                      <selectionEntries/>
-                      <selectionEntryGroups/>
-                      <entryLinks/>
-                      <costs>
-                        <cost name="pts" costTypeId="points" value="15.0"/>
-                      </costs>
-                    </selectionEntry>
                     <selectionEntry id="d27c-bc76-bbbb-9b16" name="Space Marine Bikes with Twin-linked Bolters" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
                       <profiles/>
                       <rules/>
@@ -16209,7 +16179,7 @@
                         <modifier type="set" field="hidden" value="true">
                           <repeats/>
                           <conditions>
-                            <condition field="selections" scope="51f64bbe-2968-91a9-051f-51d166caf36a" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d27c-bc76-bbbb-9b16" type="equalTo"/>
+                            <condition field="selections" scope="51f64bbe-2968-91a9-051f-51d166caf36a" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f727-af7b-d834-9b13" type="equalTo"/>
                           </conditions>
                           <conditionGroups/>
                         </modifier>
@@ -16239,7 +16209,7 @@
                         <modifier type="set" field="hidden" value="true">
                           <repeats/>
                           <conditions>
-                            <condition field="selections" scope="51f64bbe-2968-91a9-051f-51d166caf36a" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="302d-20c2-e23d-5362" type="equalTo"/>
+                            <condition field="selections" scope="51f64bbe-2968-91a9-051f-51d166caf36a" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b0c-146e-d3e4-133c" type="equalTo"/>
                           </conditions>
                           <conditionGroups/>
                         </modifier>
@@ -16267,6 +16237,36 @@
                       <entryLinks/>
                       <costs>
                         <cost name="pts" costTypeId="points" value="25.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="070f-03fe-beb1-906f" name="Jump Packs" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="increment" field="points" value="15">
+                          <repeats>
+                            <repeat field="selections" scope="4e9a-d038-2c6e-2db4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a2e-3b4a-637d-6c13" repeats="1" roundUp="false"/>
+                          </repeats>
+                          <conditions/>
+                          <conditionGroups/>
+                        </modifier>
+                        <modifier type="set" field="hidden" value="true">
+                          <repeats/>
+                          <conditions>
+                            <condition field="selections" scope="51f64bbe-2968-91a9-051f-51d166caf36a" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="98dd-d7da-fedb-7b2e" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ae28-6fa8-a68f-d2a3" type="max"/>
+                      </constraints>
+                      <selectionEntries/>
+                      <selectionEntryGroups/>
+                      <entryLinks/>
+                      <costs>
+                        <cost name="pts" costTypeId="points" value="15.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -16784,11 +16784,11 @@
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="minSelections" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="9caf6941-300e-f50c-a0e4-d0c43dcaf3e5" name="Jump Pack" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+            <selectionEntry id="98dd-d7da-fedb-7b2e" name="Jump Pack" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -16812,7 +16812,7 @@
                 <cost name="pts" costTypeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="78504142-3056-274b-348b-40658d58e87f" name="Space Marine Bike with Twin-linked Bolter" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+            <selectionEntry id="f727-af7b-d834-9b13" name="Space Marine Bike with Twin-linked Bolter" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -16827,7 +16827,7 @@
                 <cost name="pts" costTypeId="points" value="25.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="99cadca2-7677-b851-6f4c-24d443fac6a3" name="Legion Scimitar Jetbike with Heavy Bolter" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+            <selectionEntry id="5b0c-146e-d3e4-133c" name="Legion Scimitar Jetbike with Heavy Bolter" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -17300,7 +17300,7 @@
                 <modifier type="set" field="hidden" value="true">
                   <repeats/>
                   <conditions>
-                    <condition field="selections" scope="51f64bbe-2968-91a9-051f-51d166caf36a" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="99cadca2-7677-b851-6f4c-24d443fac6a3" type="equalTo"/>
+                    <condition field="selections" scope="51f64bbe-2968-91a9-051f-51d166caf36a" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5b0c-146e-d3e4-133c" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -72245,7 +72245,7 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Confers 6++ invulnverable save, increasing to a 5++ in close combat.  User is treated as having defensive grenades, but may never claim the extra attack for being armed with an additional close combat weapon.  "/>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Confers 6++ invulnverable save, increasing to a 5++ in close combat."/>
       </characteristics>
     </profile>
     <profile id="21f23fa8-cf11-b9c3-d613-1b711b0897d7" name="Combi-bolter" book="LA:AoDAL" page="124" hidden="false" profileTypeId="576561706f6e23232344415441232323">
