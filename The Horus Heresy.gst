@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="48" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="49" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -13239,6 +13239,15 @@ This data set is maintained by an open-source community and is not linked in any
 
 
 Change log
+----------
+7.1.8 patch notes
+
+Fix for Seeker combi weapon selections
+Updated Meltabomb cost on legion attack bike.
+Fixed lascannon points on Valdor Tank hunter.
+Updated costs of Iliastus Assault cannon across the board.
+Fixed selections for combi-weapon on Legion Seekers
+Had the wrong entries selected for Preator upgrades and command squads when choosing bikes or jump packs.
 ----------
 7.1.6 patch notes
 
