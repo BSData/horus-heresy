@@ -41459,36 +41459,6 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
                 <cost name="pts" costTypeId="points" value="25.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9b43-c118-07f5-fb10" name="Flakk Missiles" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks>
-                <infoLink id="4ce5-2d09-f9da-6a94" name="New InfoLink" hidden="false" targetId="1182-02a7-3325-8c51" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="aa571dbd-da68-5e74-3593-7fda3e713898" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb9c-32cd-46d5-608d" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c72a-8912-d63b-595f" type="max"/>
-              </constraints>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="50.0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
           <entryLinks>
@@ -41501,6 +41471,26 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
                   <repeats>
                     <repeat field="selections" scope="aa571dbd-da68-5e74-3593-7fda3e713898" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b8f1-e2a7-0c25-1c08" repeats="1" roundUp="false"/>
                   </repeats>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+            <entryLink id="be28-960c-6d8f-89c0" name="New EntryLink" hidden="true" targetId="fb8c-755d-85a7-4c4c" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="aa571dbd-da68-5e74-3593-7fda3e713898" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb9c-32cd-46d5-608d" type="greaterThan"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="points" value="50">
+                  <repeats/>
                   <conditions/>
                   <conditionGroups/>
                 </modifier>
@@ -46780,8 +46770,8 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <selectionEntries/>
           <selectionEntryGroups/>
@@ -46933,55 +46923,9 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="09f5-2106-3ccd-5315" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="09f5-2106-3ccd-5315" type="max"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry id="6ce6-ed58-d532-7272" name="Heavy Bolter and Suspensor Web" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dcc7-27ff-834b-dc33" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="20.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="a1cb-b347-263f-20c6" name="Missile Launcher and Suspensor Web" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7a3f-f6bb-8c50-c814" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="25.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="5acc-947d-5443-1658" name="Missile Launcher with Suspensor Web and Flakk Missiles" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1cee-1cc4-f94d-eb3c" type="max"/>
-                  </constraints>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="35.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
+              <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks>
                 <entryLink id="fcc4-f95e-8d88-5399" hidden="false" targetId="1a16-0b2a-8ba1-c450" type="selectionEntry">
@@ -47134,6 +47078,78 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
                   </modifiers>
                   <constraints/>
                 </entryLink>
+                <entryLink id="10e1-d4ff-9872-dce5" name="New EntryLink" hidden="false" targetId="7a1d-0d7e-bb2f-bb42" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+                <entryLink id="3f28-3860-995d-90ab" name="New EntryLink" hidden="false" targetId="d744-e080-4d15-3c55" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="89d2-c8de-ce8e-e368" name="Upgrade Missile Launchers with:" book="" page="" hidden="true" collective="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="ab3a-1090-7c55-400a" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f28-3860-995d-90ab" type="greaterThan"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="81d1-ff89-09bb-4c0b" name="New EntryLink" hidden="false" targetId="fb8c-755d-85a7-4c4c" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="set" field="points" value="10">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                    <modifier type="increment" field="632d-d068-b789-80e2" value="1">
+                      <repeats/>
+                      <conditions>
+                        <condition field="selections" scope="ab3a-1090-7c55-400a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3f28-3860-995d-90ab" type="greaterThan"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="632d-d068-b789-80e2" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="35f9-e73b-eb32-5d88" name="New EntryLink" hidden="false" targetId="f118-45b2-9b94-d7f3" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="increment" field="f666-9c02-30ce-3bc6" value="1">
+                      <repeats/>
+                      <conditions>
+                        <condition field="selections" scope="ab3a-1090-7c55-400a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3f28-3860-995d-90ab" type="greaterThan"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f666-9c02-30ce-3bc6" type="max"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -47224,14 +47240,14 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="fbdd5cb1-89f7-5ad7-6c6e-c69557991d4e" name="Veteran Tactics" hidden="false" collective="false" defaultSelectionEntryId="8806d35f-ad89-dd17-d256-67c45f01239a">
+        <selectionEntryGroup id="fbdd5cb1-89f7-5ad7-6c6e-c69557991d4e" name="Veteran Tactics" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="minSelections" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="8806d35f-ad89-dd17-d256-67c45f01239a" name="Veteran Tactics: Resolve" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
@@ -47254,9 +47270,7 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
                 </infoLink>
               </infoLinks>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
+              <constraints/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -47277,9 +47291,7 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
               </rules>
               <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
+              <constraints/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -47300,9 +47312,7 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
               </rules>
               <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
+              <constraints/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -47323,9 +47333,7 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
               </rules>
               <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
+              <constraints/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -47359,9 +47367,7 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
                 </infoLink>
               </infoLinks>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
+              <constraints/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -47652,13 +47658,6 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
           <constraints/>
         </entryLink>
         <entryLink id="c40a-429c-721f-2415" hidden="false" targetId="c487-be13-ea53-917e" type="selectionEntryGroup">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-        <entryLink id="b998-5a36-c690-ea81" name="New EntryLink" hidden="false" targetId="ed6e-b5b9-ab42-adce" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -55218,9 +55217,7 @@ All Heavy Bolters/Twin-linked Heavy Bolters/Quad Heavy Bolters in unit are affec
           <conditionGroups/>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-      </constraints>
+      <constraints/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -68569,6 +68566,82 @@ differently armed Sentry Guns to fire at two separate targets.</description>
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="7a1d-0d7e-bb2f-bb42" name="Heavy Bolter and Suspensor Web" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="8510-b719-9134-e7e7" name="New InfoLink" hidden="false" targetId="271e-6286-86cc-06dd" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="b641-7770-fa83-fdbf" name="New InfoLink" hidden="false" targetId="7ecb-6f93-5425-064c" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d744-e080-4d15-3c55" name="Missile Launcher and Suspensor Web" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="2630-c0db-4884-9bf9" name="New InfoLink" hidden="false" targetId="7ecb-6f93-5425-064c" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="640a-e88e-1437-76d8" name="New InfoLink" hidden="false" targetId="40e6-c95c-7c8d-cf02" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="f7e1-009b-9d51-3c0b" name="New InfoLink" hidden="false" targetId="1e33-d8ec-f833-b584" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fb8c-755d-85a7-4c4c" name="Flakk Missiles" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="6edd-f717-95f5-7791" name="New InfoLink" hidden="false" targetId="1182-02a7-3325-8c51" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fc8ed347-6cd6-c24e-942f-bda78004e894" name="Bodyguard" hidden="false" collective="false">
@@ -71298,7 +71371,9 @@ differently armed Sentry Guns to fire at two separate targets.</description>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
@@ -72031,6 +72106,13 @@ Heat Blast (Fire Sweep): Any unit the model passes over suffers a S6 AP5 hit wit
       <rules/>
       <infoLinks/>
       <modifiers/>
+    </rule>
+    <rule id="7ecb-6f93-5425-064c" name="Suspensor Web" book="AL:AoDAL" page="133" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>A heavy weapon with a suspensor web effectively allows the firer to treat the weapon as having the type Assault rather than Heavy (meaning that they can move and fire at full WS, etc) when firing in the Shooting phase at targets at up to half the weapon’s usual maximum range. this has no other effect, such as on Snap Shots when charged, etc.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
