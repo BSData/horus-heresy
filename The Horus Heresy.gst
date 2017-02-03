@@ -1280,6 +1280,262 @@
       </categoryEntries>
       <forceEntries/>
     </forceEntry>
+    <forceEntry id="f843-1cc7-b5d4-055e" name="Allied Detachment" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryEntries>
+        <categoryEntry id="a914-da7c-b051-c603" name="No Force Org Slot" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryEntry>
+        <categoryEntry id="810a-f406-6f73-a95e" name="HQ" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3aab-522d-d365-7194" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="7344-eb86-38dd-bbe6" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="3448-2dbe-ea0b-e906" name="Elites" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="20f7-e19a-4670-4a43" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="5fbd-83ef-8d81-f6ea" name="Troops" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b9a7-8c65-8740-7270" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="8f96-fee2-f927-70b1" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="0a01-3fd9-11a0-e478" name="Fast Attack" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="1435-cd2b-f264-fdf9" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="4250-aedb-cf5f-7704" name="Heavy Support" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="20df-0ab4-d5c7-2a15" type="max"/>
+          </constraints>
+        </categoryEntry>
+      </categoryEntries>
+      <forceEntries/>
+    </forceEntry>
+    <forceEntry id="c19d-c6a3-32b7-63bd" name="Zone Mortalis: Attacker" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryEntries>
+        <categoryEntry id="b910-f4ef-23a1-1400" name="No Force Org Slot" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryEntry>
+        <categoryEntry id="787b-6e18-59e4-32e9" name="HQ" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bd9f-6c28-17cc-8974" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="298d-c4e8-0ca6-19fb" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="5872-f9da-f163-99cc" name="Elites" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a950-58a1-6c20-9502" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="54d6-d274-9098-b5ee" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="41b6-a80d-02d5-4f2d" name="Fast Attack" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="e9c6-0ee4-f9f5-4268" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="8992-378b-1fb5-02d9" name="Troops" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="1a9c-a8cb-1fa8-1972" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="52f0-6b39-0c7c-d5cc" name="Heavy Support" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="1a10-9a4c-0aac-da8f" type="max"/>
+          </constraints>
+        </categoryEntry>
+      </categoryEntries>
+      <forceEntries/>
+    </forceEntry>
+    <forceEntry id="cec9-5617-bcd7-daa9" name="Zone Mortalis: Combatant" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryEntries>
+        <categoryEntry id="0a6f-e0b8-1efe-0df1" name="No Force Org Slot" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryEntry>
+        <categoryEntry id="a7c4-af84-090e-ccb6" name="HQ" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0d74-07a4-bf18-11e3" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="a0dc-2ab4-6423-cf6f" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="d533-5020-0467-80d7" name="Elites" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="3826-7e08-42b4-f7a4" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="cef0-7e0d-9b90-3ee5" name="Fast Attack" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="e91e-8263-1500-a7fb" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="8fe6-d3eb-148c-a5c9" name="Troops" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ed1a-f4dd-cbe1-5721" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="6348-cb85-2014-56ba" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="c3d8-8f81-5da1-2a0a" name="Heavy Support" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="b809-a84d-44da-11a5" type="max"/>
+          </constraints>
+        </categoryEntry>
+      </categoryEntries>
+      <forceEntries/>
+    </forceEntry>
+    <forceEntry id="6152-5fec-a4f6-e8ff" name="Zone Mortalis: Defender" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryEntries>
+        <categoryEntry id="b42e-166b-907c-91a5" name="No Force Org Slot" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryEntry>
+        <categoryEntry id="9938-7cf4-4191-3a60" name="HQ" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="62bd-a7b3-a941-d6c3" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="43c3-7eb7-d6ff-ba58" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="c891-261b-6f01-7554" name="Elites" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="a2c4-66bb-23d9-7ae9" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="ab91-6155-0ac7-7b86" name="Fast Attack" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="c124-f7f5-f07c-b40d" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="ff2d-53b3-e618-3dea" name="Troops" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e232-d8e4-c1b8-efda" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="b809-386e-83e7-e41d" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="996e-3c1d-9146-cad0" name="Heavy Support" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="4046-73fc-9e9e-dec9" type="max"/>
+          </constraints>
+        </categoryEntry>
+      </categoryEntries>
+      <forceEntries/>
+    </forceEntry>
   </forceEntries>
   <selectionEntries>
     <selectionEntry id="15c1-8d52-4488-7001" name="Patch notes" hidden="false" collective="false" categoryEntryId="d27d-9e9b-d8c7-afe6" type="upgrade">
