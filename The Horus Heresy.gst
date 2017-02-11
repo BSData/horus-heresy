@@ -140,9 +140,7 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8cee-87cf-0c70-a556" type="max"/>
-          </constraints>
+          <constraints/>
         </categoryEntry>
         <categoryEntry id="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" name="Lords of War" hidden="false">
           <profiles/>
@@ -205,9 +203,7 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="81f8-8de8-db4d-8c53" type="max"/>
-          </constraints>
+          <constraints/>
         </categoryEntry>
         <categoryEntry id="456c6974657323232344415441232323" name="Elites" hidden="false">
           <profiles/>
@@ -436,9 +432,7 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45f0-c39b-a94a-2d72" type="max"/>
-          </constraints>
+          <constraints/>
         </categoryEntry>
         <categoryEntry id="466173742041747461636b23232344415441232323" name="Fast Attack" hidden="false">
           <profiles/>
@@ -513,9 +507,7 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aea8-1a02-820a-b7d3" type="max"/>
-          </constraints>
+          <constraints/>
         </categoryEntry>
         <categoryEntry id="466173742041747461636b23232344415441232323" name="Fast Attack" hidden="false">
           <profiles/>
