@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" book="HH5: Tempest" revision="21" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" book="HH5: Tempest" revision="23" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -6510,15 +6510,7 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
           <modifiers/>
         </infoLink>
       </infoLinks>
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="faeb-5d3c-974b-cbbb" type="equalTo"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
+      <modifiers/>
       <constraints/>
       <selectionEntries>
         <selectionEntry id="45ec-ca92-d686-d5ef" name="Levy Auxiliaries" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
@@ -7659,34 +7651,6 @@ D3     Mutation
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="35.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="460e-6901-11ce-f3d1" name="Force Organization" hidden="false" collective="false" categoryEntryId="951a-4d0f-464c-210b" type="upgrade">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-      <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks>
-        <entryLink id="bf98-ea7c-74d1-a0b3" name="New EntryLink" hidden="false" targetId="64e8-ec7c-e5d8-6767" type="selectionEntryGroup">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-        <entryLink id="2d9e-bd31-1b20-537a" name="New EntryLink" hidden="false" targetId="bcdc-08fb-cea1-309a" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -9084,6 +9048,22 @@ D3     Mutation
         <cost name="pts" costTypeId="points" value="50.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="7701-95c0-64ee-2b33" name="Imperialis Militia and Cults" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="28b5-264c-526d-cc49" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="63ef-469c-0d99-5542" type="min"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4be5-eee6-ab84-8558" name="May exchange heavy bolter for:" hidden="false" collective="false">
@@ -9401,35 +9381,15 @@ D3     Mutation
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="95d0-24d3-3574-2689" value="1">
-              <repeats/>
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="faeb-5d3c-974b-cbbb" type="equalTo"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="95d0-24d3-3574-2689" type="min"/>
-          </constraints>
+          <modifiers/>
+          <constraints/>
         </entryLink>
         <entryLink id="6636-115c-2785-e3b3" hidden="false" targetId="a77a-bcf8-90fd-d9e5" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="c21d-6856-f596-bd19" value="1">
-              <repeats/>
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="faeb-5d3c-974b-cbbb" type="equalTo"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c21d-6856-f596-bd19" type="min"/>
-          </constraints>
+          <modifiers/>
+          <constraints/>
         </entryLink>
         <entryLink id="48e4-e391-0738-9043" hidden="false" targetId="3e9e-38b2-3633-713a" type="selectionEntry">
           <profiles/>
@@ -9619,6 +9579,49 @@ D3     Mutation
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="8378-9fc6-c67d-98b4" name="Allegiance" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5449-a8ad-4587-259e" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="c9ca-8f13-731b-44f1" name="Traitor" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0196-4bf2-1549-04f9" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b16e-1ec1-e0a4-16a4" name="Loyalist" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="04ac-1633-acd3-db3e" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>

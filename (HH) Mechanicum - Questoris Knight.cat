@@ -1,11 +1,78 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="32d1ddc6-3187-cf6f-3bf8-9891e527a002" name="Questoris Knight Crusade Army" book="HH4: Conquest" revision="23" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="32d1ddc6-3187-cf6f-3bf8-9891e527a002" name="Questoris Knight Crusade Army" book="HH4: Conquest" revision="28" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
   <costTypes/>
   <profileTypes/>
-  <forceEntries/>
+  <forceEntries>
+    <forceEntry id="b3ea-e268-8cb2-0152" name="Questoris Knight Crusade Army" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryEntries>
+        <categoryEntry id="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" name="Lords of War" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab06-8b55-4a43-a606" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="54726f6f707323232344415441232323" name="Troops" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06f8-7455-9c01-216c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2721-9040-ab9d-ef3e" type="min"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="466173742041747461636b23232344415441232323" name="Fast Attack" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd2a-9aca-76da-fd9b" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="456c6974657323232344415441232323" name="Elites" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29ec-136c-3790-aa73" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="485123232344415441232323" name="HQ" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79a6-2b55-cbd7-7f8f" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe79-e2b2-05a8-0bcd" type="max"/>
+          </constraints>
+        </categoryEntry>
+        <categoryEntry id="486561767920537570706f727423232344415441232323" name="Heavy Support" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2531-6b7f-4f4e-975a" type="max"/>
+          </constraints>
+        </categoryEntry>
+      </categoryEntries>
+      <forceEntries/>
+    </forceEntry>
+  </forceEntries>
   <selectionEntries>
     <selectionEntry id="27575b75-5e1e-26ab-1074-fa91b73e2216" name="Archmagos Draykavac" book="HH4: Conquest" page="300" hidden="false" collective="false" categoryEntryId="485123232344415441232323" type="model">
       <profiles>
@@ -2552,66 +2619,8 @@ D6    Result		S	AP
         <cost name="pts" costTypeId="points" value="50.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8de1-49ff-3f23-9e9d" name="Force Organization" hidden="false" collective="false" categoryEntryId="951a-4d0f-464c-210b" type="upgrade">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-      <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks>
-        <entryLink id="306e-8e80-df15-e927" name="New EntryLink" hidden="false" targetId="64e8-ec7c-e5d8-6767" type="selectionEntryGroup">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-        <entryLink id="c1be-ff33-9410-4397" name="New EntryLink" hidden="false" targetId="6a11-7506-0389-8edc" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
   </selectionEntries>
   <entryLinks>
-    <entryLink id="03a4-04b4-ad1f-660f" name="Castellax Class Battle-Automata Maniple" hidden="true" targetId="94d7-495e-e0a7-3f8e" type="selectionEntry" categoryEntryId="54726f6f707323232344415441232323">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27575b75-5e1e-26ab-1074-fa91b73e2216" type="equalTo"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <constraints/>
-    </entryLink>
-    <entryLink id="9ec5-9e9d-2899-c4a7" name="New EntryLink" hidden="true" targetId="2445-ec95-06bb-5c81" type="selectionEntry" categoryEntryId="466173742041747461636b23232344415441232323">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27575b75-5e1e-26ab-1074-fa91b73e2216" type="equalTo"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <constraints/>
-    </entryLink>
     <entryLink id="00b3-1076-7f86-4a51" name="New EntryLink" hidden="true" targetId="4ded-9de3-f964-33a7" type="selectionEntry" categoryEntryId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f">
       <profiles/>
       <rules/>
@@ -2619,12 +2628,24 @@ D6    Result		S	AP
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <repeats/>
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="19d5-1f7a-92df-3e91" type="equalTo"/>
-          </conditions>
+          <conditions/>
           <conditionGroups/>
         </modifier>
       </modifiers>
+      <constraints/>
+    </entryLink>
+    <entryLink id="f312-c122-88f0-895a" name="New EntryLink" hidden="false" targetId="deb3-68a3-5d36-eb3d" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="daf0-4297-3944-3593" name="New EntryLink" hidden="false" targetId="48db-84ca-2bad-520f" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
       <constraints/>
     </entryLink>
   </entryLinks>
