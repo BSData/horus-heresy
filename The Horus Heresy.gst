@@ -79,6 +79,41 @@
         <characteristicType id="c887-e846-fa1f-9389" name="Type"/>
       </characteristicTypes>
     </profileType>
+    <profileType id="286c-0cd4-7630-47d0" name="Building">
+      <characteristicTypes>
+        <characteristicType id="4bd3-785c-fc8c-ceed" name="Armour Value"/>
+        <characteristicType id="592f-c966-5fca-0f13" name="Transport Capacity"/>
+        <characteristicType id="a373-52ac-9ee3-144f" name="Access Points"/>
+        <characteristicType id="b911-91da-4a43-768e" name="Fire Points"/>
+        <characteristicType id="2394-3584-777e-2da5" name="Hull Points"/>
+        <characteristicType id="8925-a6cb-dd63-8483" name="Building Type"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="ae70-4738-0161-bec0" name="Psychic Power">
+      <characteristicTypes>
+        <characteristicType id="b0a6-b80d-edf3-d7c8" name="Warp Charge"/>
+        <characteristicType id="3b52-8959-2bca-2d49" name="Power Category"/>
+        <characteristicType id="b8a1-f865-ef13-2e74" name="Range"/>
+        <characteristicType id="9f42-bbea-0691-8b0d" name="Details"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="9c33-b0c8-74bd-e5a7" name="Psychic Power (Attack)">
+      <characteristicTypes>
+        <characteristicType id="e75c-5214-d275-2431" name="Warp Charge"/>
+        <characteristicType id="3e8a-8ad1-cb64-5601" name="Power Category"/>
+        <characteristicType id="e5ff-d081-a7b5-c0bc" name="Range"/>
+        <characteristicType id="f335-d801-aacf-4b2e" name="Strength"/>
+        <characteristicType id="6b59-040b-e068-5a98" name="AP"/>
+        <characteristicType id="39ee-2b48-d59f-4f59" name="Type"/>
+        <characteristicType id="ae65-74e8-15dc-4c41" name="Details"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="bc97-dea9-9e88-bb7d" name="Psyker">
+      <characteristicTypes>
+        <characteristicType id="7f31-2540-0aa0-27db" name="Mastery Level"/>
+        <characteristicType id="b4c1-4e90-59f9-556c" name="Disciplines"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <forceEntries>
     <forceEntry id="98db-b4ba-fbcd-3239" name="The Age of Darkness" hidden="false">
@@ -6213,6 +6248,355 @@ Command Benefits:
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="a6f3-9949-7516-19f3" name="Battlements &amp; Battlefield" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="531f-b464-7260-61c0" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="1ab6-0259-78c2-2859" name="Ammunition Dump" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="359f-949e-fa6c-f375" hidden="false" targetId="58a2-c92e-57cc-d44c" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="adc4-6993-7e9b-72dc" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e18f-3135-557c-b555" name="Comms Relay" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="c111-e21c-0718-d8d7" hidden="false" targetId="70aa-366f-15ac-da4d" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8995-bdf2-3d31-1950" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="053b-1e04-02d6-0bcb" name="Gun Emplacement with Icarus Lascannon" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="e451-84da-1115-23cb" hidden="false" targetId="1da7-2e0b-0114-762c" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="c4f7-3c4d-38eb-2484" hidden="false" targetId="cb26-27b4-9393-a768" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="ceef-e79c-eddc-37a6" hidden="false" targetId="705c-91aa-6591-507b" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="55f8-49ae-4459-4580" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e8de-684d-09d2-1f63" name="Gun Emplacement with Quad-gun" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="3e9f-b912-bc41-b28e" hidden="false" targetId="1f7d-9765-ed8e-f6e5" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="0a02-2306-4221-00f1" hidden="false" targetId="705c-91aa-6591-507b" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="5712-0be9-2ca9-0aea" hidden="false" targetId="1da7-2e0b-0114-762c" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7139-092c-bb08-430f" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="50.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="ac7c-fdbd-a00a-0045" name="Buildings List" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cd03-be61-f336-ac4c" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="3594-c9bd-9bfc-fa77" name="Ammo Store" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="cc9c-2e71-b0cf-2d0d" hidden="false" targetId="d4b6-7a3a-aee5-d293" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="77bb-8c11-9da3-94db" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="bbdf-d2cf-bce1-d722" name="Booby Traps" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="143c-5441-54cd-c77d" hidden="false" targetId="2a6f-53c2-d2ea-092f" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c8b9-254d-7843-7edd" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d587-38f9-16c4-dbb1" name="Void Shield" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="f515-ed41-f326-62a6" hidden="false" targetId="e144-1293-ec28-d3a9" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3c7e-a0eb-4461-00af" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6471-eb40-56de-ff85" name="Searchlight" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="be10-ffb2-a8d3-723f" hidden="false" targetId="9bb4-3833-5343-0dd9" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a896-e708-1f96-ea24" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d9d2-78d6-2927-a8b0" name="Escape Hatch" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="ed19-4a65-da02-1d2e" hidden="false" targetId="4986-b80f-dc78-d02f" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f252-366f-7696-f687" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="65a8-4315-d746-af28" name="Magos Machine Spirit" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="583c-c3fa-d802-4db1" hidden="false" targetId="31ba-2b94-6600-22f3" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2f40-dcf0-8f9b-4b12" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="49a8-6965-894f-a322" name="Obstacles List" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e8d1-a4f4-3a6c-1878" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="bf1d-555b-a16e-8d29" name="Tanglewire" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="a3f7-2cdf-78f2-f8bf" hidden="false" targetId="e158-7adf-1565-ef08" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c01c-615a-ea39-45e3" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="72be-367c-ce98-20db" name="Barricades" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="a149-5d28-9796-309d" hidden="false" targetId="68d8-f686-c260-76db" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c39f-64e0-0897-1fad" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="fe7e-1a9a-5566-5e06" name="Tank Traps" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="f133-1126-a49c-52c0" hidden="false" targetId="4a45-65e5-2d8c-8792" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7b5f-e5d3-b643-5081" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
