@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="56" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="57" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -81,37 +81,50 @@
     </profileType>
     <profileType id="286c-0cd4-7630-47d0" name="Building">
       <characteristicTypes>
-        <characteristicType id="4bd3-785c-fc8c-ceed" name="Armour Value"/>
-        <characteristicType id="592f-c966-5fca-0f13" name="Transport Capacity"/>
-        <characteristicType id="a373-52ac-9ee3-144f" name="Access Points"/>
-        <characteristicType id="b911-91da-4a43-768e" name="Fire Points"/>
-        <characteristicType id="2394-3584-777e-2da5" name="Hull Points"/>
-        <characteristicType id="8925-a6cb-dd63-8483" name="Building Type"/>
+        <characteristicType id="83f8-a458-93f9-3e46" name="Armour Value"/>
+        <characteristicType id="0e9c-76b3-2877-614d" name="Transport Capacity"/>
+        <characteristicType id="13de-08da-586d-f7c0" name="Access Points"/>
+        <characteristicType id="0767-d18e-a48d-3b39" name="Fire Points"/>
+        <characteristicType id="d1d7-bcc6-18cd-c948" name="Hull Points"/>
+        <characteristicType id="ff97-f5f0-521b-eaf4" name="Building Type"/>
       </characteristicTypes>
     </profileType>
     <profileType id="ae70-4738-0161-bec0" name="Psychic Power">
       <characteristicTypes>
-        <characteristicType id="b0a6-b80d-edf3-d7c8" name="Warp Charge"/>
-        <characteristicType id="3b52-8959-2bca-2d49" name="Power Category"/>
-        <characteristicType id="b8a1-f865-ef13-2e74" name="Range"/>
-        <characteristicType id="9f42-bbea-0691-8b0d" name="Details"/>
+        <characteristicType id="5ffd-b800-c317-532a" name="Warp Charge"/>
+        <characteristicType id="f04c-a782-d794-ddad" name="Power Category"/>
+        <characteristicType id="fd64-cbc4-94de-24cc" name="Range"/>
+        <characteristicType id="ad96-dfa4-b4ed-656d" name="Details"/>
       </characteristicTypes>
     </profileType>
     <profileType id="9c33-b0c8-74bd-e5a7" name="Psychic Power (Attack)">
       <characteristicTypes>
-        <characteristicType id="e75c-5214-d275-2431" name="Warp Charge"/>
-        <characteristicType id="3e8a-8ad1-cb64-5601" name="Power Category"/>
-        <characteristicType id="e5ff-d081-a7b5-c0bc" name="Range"/>
-        <characteristicType id="f335-d801-aacf-4b2e" name="Strength"/>
-        <characteristicType id="6b59-040b-e068-5a98" name="AP"/>
-        <characteristicType id="39ee-2b48-d59f-4f59" name="Type"/>
-        <characteristicType id="ae65-74e8-15dc-4c41" name="Details"/>
+        <characteristicType id="c1b6-4261-dee4-923a" name="Warp Charge"/>
+        <characteristicType id="668e-d504-8244-7422" name="Power Category"/>
+        <characteristicType id="5bf6-378a-0cb7-b079" name="Range"/>
+        <characteristicType id="12da-9b3e-f37b-bc35" name="Strength"/>
+        <characteristicType id="10b5-aa5b-ccde-79cc" name="AP"/>
+        <characteristicType id="20e7-cbcb-1781-a732" name="Type"/>
+        <characteristicType id="a812-390d-dff6-dabd" name="Details"/>
       </characteristicTypes>
     </profileType>
     <profileType id="bc97-dea9-9e88-bb7d" name="Psyker">
       <characteristicTypes>
-        <characteristicType id="7f31-2540-0aa0-27db" name="Mastery Level"/>
-        <characteristicType id="b4c1-4e90-59f9-556c" name="Disciplines"/>
+        <characteristicType id="ca56-02c3-af4b-ea2a" name="Mastery Level"/>
+        <characteristicType id="ea53-f5c7-08e4-980c" name="Disciplines"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="3a08-ea03-a598-8615" name="Flyer">
+      <characteristicTypes>
+        <characteristicType id="9878-e3f6-b7b4-7225" name="BS"/>
+        <characteristicType id="3a4e-bc1d-4a12-7176" name="Front"/>
+        <characteristicType id="d12e-7bdb-191c-4849" name="Side"/>
+        <characteristicType id="a4cb-791a-6a75-4e4a" name="Rear"/>
+        <characteristicType id="93e6-d4b1-28a8-944b" name="HP"/>
+        <characteristicType id="eb65-838c-8eaa-8b5d" name="Type"/>
+        <characteristicType id="d477-c087-173f-9f1c" name="Combat Role"/>
+        <characteristicType id="e04d-332e-8b52-0071" name="Pursuit"/>
+        <characteristicType id="ae34-f5c0-19af-4883" name="Agility"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -4073,6 +4086,4653 @@ D6    Result		S	AP
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="a505-05af-bd44-56b6" name="Aegis Defense Line" book="Planetary Onslaught" page="79" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+      <profiles>
+        <profile id="acfc-9384-8119-d9d8" name="Aegis Defence Line" book="Warhammer 40k rulebook" page="" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="A model in cover behind a defence line has a 4+ cover save. If a unit Goes to Ground, then models from the unit gain +2 to the cover save from the defence line rather than +1. Models that are in base contact with a defence line are treated as being in base contact with any enemy models who are directly opposite them and in base contact with the other side of that defence line. Units charging an enemy that is behind a defence line count as charging through difficult terrain."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="0c63-f80e-a87b-c244" hidden="false" targetId="8732-6189-cd26-de94" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="72f7-b924-082c-60be" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="50.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="16d6-25c4-af92-4329" name="Aquila Strongpoint" book="Planetary Onslaught" page="" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="ca07-96ca-ec6d-844b" hidden="false" targetId="cf90-39d9-c923-f6bf" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="559e-a92a-124a-eb4c" hidden="false" targetId="3384-a962-78e5-d13c" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="3229-dd8d-f6a0-9cf2" hidden="false" targetId="ad74-698e-d727-4b16" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="8100-49da-bc21-a394" name="New InfoLink" hidden="false" targetId="97df-06a3-356e-02a8" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries>
+        <selectionEntry id="76ca-0813-d9e4-c2a4" name="Heavy Bolter" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="9bed-3be4-c9bd-1ca2" hidden="false" targetId="271e-6286-86cc-06dd" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="68d5-86cf-8273-7d82" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3c07-10d7-7c84-5e31" name="Main Strongpoint" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="aee2-4d20-5ebf-92cd" name="Aquila Strongpoint Main Strongpoint" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Armour Value" characteristicTypeId="83f8-a458-93f9-3e46" value="15"/>
+                <characteristic name="Transport Capacity" characteristicTypeId="0e9c-76b3-2877-614d" value="30"/>
+                <characteristic name="Access Points" characteristicTypeId="13de-08da-586d-f7c0" value="as per model"/>
+                <characteristic name="Fire Points" characteristicTypeId="0767-d18e-a48d-3b39" value="5"/>
+                <characteristic name="Hull Points" characteristicTypeId="d1d7-bcc6-18cd-c948"/>
+                <characteristic name="Building Type" characteristicTypeId="ff97-f5f0-521b-eaf4" value="Large Building with Battlements"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51a9-bfff-8893-0aef" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b99-5548-8125-dc29" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="2954-0dc0-7db5-8f07" hidden="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="cd03-be61-f336-ac4c" value="3">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+            <entryLink id="465b-a892-3ebb-0093" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c697-5d05-1a94-1a02" name="Bunker Annex" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="b6b6-182b-3df9-b79d" name="Aquila Strongpoint Bunker Annex" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Armour Value" characteristicTypeId="83f8-a458-93f9-3e46" value="15"/>
+                <characteristic name="Transport Capacity" characteristicTypeId="0e9c-76b3-2877-614d" value="20"/>
+                <characteristic name="Access Points" characteristicTypeId="13de-08da-586d-f7c0" value="as per model"/>
+                <characteristic name="Fire Points" characteristicTypeId="0767-d18e-a48d-3b39" value="4"/>
+                <characteristic name="Hull Points" characteristicTypeId="d1d7-bcc6-18cd-c948"/>
+                <characteristic name="Building Type" characteristicTypeId="ff97-f5f0-521b-eaf4" value="Medium Building with Battlements"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be1d-15dc-a700-bc3a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf57-1a7b-be42-f8cd" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="1497-47ac-6c67-0d4c" hidden="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="cd03-be61-f336-ac4c" value="2">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+            <entryLink id="c959-3008-3f8f-1a3c" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d0a8-d0b2-65f3-3658" name="Emplaced Weapons" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7d40-ca27-97b9-6acc" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="de1d-1fb1-4bd6-17f4" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6af0-ed0f-f128-458c" name="Vortex Missle Battery" book="Planetary Onslaught" page="90" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules>
+                <rule id="9903-97f7-2fb9-8919" name="Containment Failure" book="Stronghold Assault" page="" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>If the main strongpoint suffers a Total Collapse or Detonation! result, roll one dice for each remaining vortex missile.  On a roll of 1-2, the missile explodes.  Place the vortex&apos;s blast marker on the center of the main strongpoint, then scatter 2D6&quot;</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="6e77-ae12-24f1-f52d" hidden="false" targetId="57e2-2b5e-5b21-32e8" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="d76e-bb2a-fa71-5981" hidden="false" targetId="3d3c-398b-775d-72ff" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5378-3e03-608c-ff94" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="110.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9102-7f7e-3d4a-d72e" name="Macro Cannon" book="Planetary Onslaught" page="88" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="0589-671c-0dc5-9af4" hidden="false" targetId="39bf-dff4-053a-7360" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="5398-a448-f39c-1415" hidden="false" targetId="0293-567f-c305-724a" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="efd8-44e3-8192-1efd" hidden="false" targetId="63c3-7047-44b3-6aaa" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="053a-fd01-be65-238e" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8c7d-6a0f-0388-0e29" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="110.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3ae9-83e6-0cd3-3dff" name="Plasma Obliterator" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles>
+                <profile id="4e3a-ce8c-86f6-293c" name="Plasma Obliterator" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="72&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Primary Weapon 1, Massive Blast, Gets Hot"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fb3c-a646-a850-b318" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="425.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e10f-7b90-ecd3-80a5" name="Basilica Administratum" book="Planetary Onslaught" page="94" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="3565-9ece-4ada-e7dc" name="Basilica Administratum" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Ruins"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="0ae8-898b-912a-2cc7" name="The Eternal Progress to Victory" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>A unit that identifies a Mysterious Objective (see BRB) that is in a Basilica Administratum can choose to re-roll the dice to determine what it is.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="e85c-ddb0-47cd-400c" name="New InfoLink" hidden="false" targetId="12af-0798-6659-e21e" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7b11-22c7-16af-3bd4" name="BRB: Command Traits" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="cfe2-9cdd-5a7f-c824" name="Warlord Trait: Inspiring Presence" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Friendly units within 12&quot; of the Warlord can use his Leadership rather than their own."/>
+          </characteristics>
+        </profile>
+        <profile id="b0c9-26c9-a259-9acf" name="Warlord Trait: Coordinated Assault" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="In the Assault phase, your Warlord and all friendly units within 12&quot; of him re-roll To Hit rolls of 1."/>
+          </characteristics>
+        </profile>
+        <profile id="faee-6ac9-e1e9-2475" name="Warlord Trait: Target Priority" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="In the Shooting phase, your Warlord and all friendly units within 12&quot; of him re-roll To Hit rolls of 1."/>
+          </characteristics>
+        </profile>
+        <profile id="a578-9a31-6f36-26da" name="Warlord Trait: Master of the Vanguard" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Your Warlord, and all friendly units within 12&quot;, add 1&quot; to the distance that they can move when they Run or Charge."/>
+          </characteristics>
+        </profile>
+        <profile id="e2fd-c583-0688-4738" name="Warlord Trait: Intimidating Presence" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Enemy units within 12&quot; of the Warlord must use their Lowest Leadership value, not the highest."/>
+          </characteristics>
+        </profile>
+        <profile id="2123-b3b6-de4b-0db5" name="Warlord Trait: The Dust of a Thousand Worlds" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Your Warlord, and all friendly units within 12&quot;, have the Move Through Cover special rule."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="6c7c-ed04-aa17-16c0" name="New InfoLink" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6d89-6ae9-05ea-0579" name="BRB: Personal Traits" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="5814-8698-8309-5c7a" name="Warlord Trait: Master of Defence" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Your Warlord has the Counter-attack special rule."/>
+          </characteristics>
+        </profile>
+        <profile id="8b51-c91b-bd55-2d71" name="Warlord Trait: Immovable Object" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Your Warlord has the Fearless and It Will Not Die special rules."/>
+          </characteristics>
+        </profile>
+        <profile id="9828-d73e-e464-4daa" name="Warlord Trait: Tenacity" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Your Warlord has the Feel No Pain special rule."/>
+          </characteristics>
+        </profile>
+        <profile id="ffa3-f6d9-cd71-beb0" name="Warlord Trait: Master of Manoeuvre" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Your Warlord has the Outflank special rule."/>
+          </characteristics>
+        </profile>
+        <profile id="5621-6e23-64e7-642d" name="Warlord Trait: Legendary Fighter" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Your army gains 1 Victory Point for each enemy character slain by your Warlord in a challenge."/>
+          </characteristics>
+        </profile>
+        <profile id="ecf1-07e8-857f-2c3a" name="Warlord Trait: Master of Offence" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Your Warlord has the Furious Charge special rule."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="9349-53b1-5292-0aad" name="New InfoLink" hidden="false" targetId="0900-71d5-1937-aa96" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="0dd6-36b1-1130-b3d8" name="New InfoLink" hidden="false" targetId="de18-25a0-504b-74be" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="395c-34cf-a1fc-d50c" name="New InfoLink" hidden="false" targetId="3aa7-9a8f-1e0d-921d" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="5543-976c-9383-a9f2" name="New InfoLink" hidden="false" targetId="72d9-7041-9d30-d150" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="1f0e-8d40-d30e-9afc" name="New InfoLink" hidden="false" targetId="9bdd-5ec7-8dd6-63c0" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="6b65-4aa0-383d-fc12" name="New InfoLink" hidden="false" targetId="dc70-e199-5525-e78c" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fd25-8750-1716-cff8" name="BRB: Strategic Traits" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="fb07-ddb8-23f5-7eda" name="Warlord Trait: Conqueror of Cities" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Your units have the Move Through Cover special rule if moving through Ruins, and the Stealth (Ruins) Special rule."/>
+          </characteristics>
+        </profile>
+        <profile id="90ee-2233-de3f-e122" name="Warlord Trait: Night Attacker" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="If you choose to use the Night Fighting rules in your game, there is no need to roll - it is Night on the first turn, and all models in your army have the Night Vision special rule."/>
+          </characteristics>
+        </profile>
+        <profile id="c745-d7b2-68f7-9d92" name="Warlord Trait: Master of Ambush" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Your Warlord and three non-vehicle units of your choice have the Infiltrate special rule."/>
+          </characteristics>
+        </profile>
+        <profile id="312e-33bf-d4e0-36ba" name="Warlord Trait: Strategic Genius" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="You add +1 to any Seize the Initiative roll.  In addition, whilst your Warlord is alive, you can re-roll any Reserve Rolls (failed or successful)."/>
+          </characteristics>
+        </profile>
+        <profile id="cde5-6744-ed87-eaa7" name="Warlord Trait: Princeps of Deceit" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="At the start of your opponent&apos;s first turn, pick 3 units in the enemy army.  Each of these units must take a Pinning test."/>
+          </characteristics>
+        </profile>
+        <profile id="ead1-056f-4340-b428" name="Warlord Trait: Divide to Conquer" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Whilst your Warlord is alive, your opponent has a -1 modifier to their Reserve Rolls."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="4ea7-c6ea-7e3c-e1b1" name="New InfoLink" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="name" value="(Ruins)">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="d2f0-9fe0-b4ab-36d8" name="New InfoLink" hidden="false" targetId="34c7-8b61-a5b8-a301" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="6c58-32bf-1d79-e4e1" name="New InfoLink" hidden="false" targetId="0d66-14c9-d2f4-708b" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="name" value="(Ruins)">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="9c06-531a-c502-a158" name="New InfoLink" hidden="false" targetId="a225-e39b-3699-c8f8" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4085-3b11-ff4b-20e2" name="BRB: Tactical Traits" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="a459-ad6c-f621-7580" name="Warlord Trait: Tactical Genius" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Whilst your Warlord is alive, you can discard up to 2 Active Tactical Objectives at the end of your turn instead of only 1."/>
+          </characteristics>
+        </profile>
+        <profile id="a716-d616-8725-8b9d" name="Warlord Trait: Lead by Example" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Any &apos;Secure Objective X&apos; Tactical Objective, where X is a number between 1 and 6, that is scored because your Warlord or his unit controls that Objective Marker, scores 1 additional Victory Point."/>
+          </characteristics>
+        </profile>
+        <profile id="a3f8-ddb5-78c6-dd90" name="Warlord Trait: Master of Fate" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Whilst your Warlord is alive, you can re-roll the dice when determining how many Victory Points are awarded for Tactical Objectives that award a random number of Victory Points when scored."/>
+          </characteristics>
+        </profile>
+        <profile id="bb2d-d233-0b43-a368" name="Warlord Trait: Well Prepared" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Generate one additional Tactical Objective on your First Turn."/>
+          </characteristics>
+        </profile>
+        <profile id="d8cd-7140-e6d2-4986" name="Warlord Trait: Forward Planning" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="After generating Tactical Objectives on your First Turn, you can immediately choose to use this Warlord Trait.  If you do so, discard all your Active Tactical Objectives; generate new Tactical Objectives for each one that was discarded."/>
+          </characteristics>
+        </profile>
+        <profile id="fb08-31ad-17b4-ed84" name="Warlord Trait: Master of Interference" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="One use only.  Declare your Warlord is using this ability at the end of one of your turns.  Your opponent must randomly select one of his Active Tactical Objectives and immediately discard it."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0fab-78b0-0708-7329" name="Discipline: Biomancy" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="4cda-87d2-694c-73f7" name="Enfeeble" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Malediction"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the target unit suffers a -1 penalty to both Strength and Toughness, and treats all terrain (even open ground) as difficult terrain."/>
+          </characteristics>
+        </profile>
+        <profile id="315b-628b-d4b1-b075" name="Iron Arm" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power (Witchfire)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the Psyker has +3 to his Strength and Toughness and he gains the Smash special rule."/>
+          </characteristics>
+        </profile>
+        <profile id="aabd-a6cf-defb-ac34" name="Life Leech" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Witchfire)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Witchfire"/>
+            <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="18&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="6"/>
+            <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="2"/>
+            <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Assault 2"/>
+            <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value="If Life Leech causes at least one unsaved Wound, the Psyker, or one friendly model within 6&quot; of the Psyker, immediately regains a Wound lost earlier in the battle."/>
+          </characteristics>
+        </profile>
+        <profile id="0af8-456a-2fc4-f974" name="Warp Speed" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the Psyker has +3 to his Initiative and Attacks and he gains the Fleet special rule."/>
+          </characteristics>
+        </profile>
+        <profile id="1048-ccd5-2e5d-4111" name="Endurance" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, all models in the target unit gain the Eternal Warrior, Feel No Pain (4+) and Relentless special rules."/>
+          </characteristics>
+        </profile>
+        <profile id="e140-e6e5-cc6d-ebb3" name="Haemorrhage" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Focussed Witchfire"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="18&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="The target must pass two separate Toughness tests or suffer a Wound with no armour or cover saves allowed for each test that was failed.  If the target is removed as a casualty, randomly select another model (friend or foe) within 2&quot; of him.  That model must pass a single Toughness test or suffer a Wound with no armour or cover saves allowed.  If that model is removed as a casualty, continue the process of selecting anothe rmodel and taking a single Toughness test until either a model survives or there are no more suitable targets within range."/>
+          </characteristics>
+        </profile>
+        <profile id="6061-064d-3e6e-33f4" name="(Primaris) Smite" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Witchfire)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Witchfire"/>
+            <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="18&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="4"/>
+            <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="2"/>
+            <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Assault 4"/>
+            <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="fe8f-87a9-3326-62cb" name="New InfoLink" hidden="false" targetId="3e0b-be9f-b7eb-8c5e" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="5e52-aa1d-a9b0-aa4c" name="New InfoLink" hidden="false" targetId="69e5-fc02-1f9d-63c2" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="d3af-6068-e4af-f2c1" name="New InfoLink" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="8140-ac59-0f49-85b7" name="New InfoLink" hidden="false" targetId="4284-18a1-9844-a0bd" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="73c0-c686-ff9a-ae31" name="New InfoLink" hidden="false" targetId="9bdd-5ec7-8dd6-63c0" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5d8d-02d9-88cf-965f" name="Discipline: Daemonology (Malefic)" book="" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="2bd4-22b0-173e-277f" name="Possession" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="3"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Conjuration"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="6"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Possession creates one of the following new units (your choice): 1 Bloodthirster, 1 Lord of Change, 1 Great Unclean One or 1 Keeper of Secrets. If this power is successfully manifested, the Psyker is immediately removed as a casualty (if the Psyker was part of a unit with the Brotherhood of Psykers/Sorcerers special rule, remove the entire unit as casualties). If, when using this power, the Psyker fails his Psychic test, he automatically suffers Perils of the Warp."/>
+          </characteristics>
+        </profile>
+        <profile id="9bc0-7e8d-d0cf-d07c" name="Infernal Gaze" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Beam"/>
+            <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="18&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value=""/>
+            <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="4"/>
+            <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Assault 1, Armourbane, Fleshbane"/>
+            <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
+          </characteristics>
+        </profile>
+        <profile id="b705-3eca-463f-898c" name="Cursed Earth" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, all models with the Daemon special rule (friend or foe) within 12&quot; of the Psyker have a +1 bonus to their invulnerable save (normally increasing it to 4+). This is cumulative withany other modifiers to a Daemon’s invulnerable save. In addition, whilst the power is in effect, friendly units with the Daemon special rule will not scatter when arriving from Deep Strike Reserve so long as the first model is placed within 12&quot; of the Psyker."/>
+          </characteristics>
+        </profile>
+        <profile id="f8f2-4b8b-644b-6f06" name="(Primaris) Summoning" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="3"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Conjuration"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="12&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Summoning creates one of the following units (your choice): 10 Bloodletters of Khorne, 10 Pink Horrors of Tzeentch, 10 Plaguebearers of Nurgle, 10 Daemonettes of Slaanesh, 5 Flesh Hounds of Khorne, 3 Flamers ofTzeentch, 3 Nurgling swarms or 5 Seekers of Slaanesh."/>
+          </characteristics>
+        </profile>
+        <profile id="1825-f3d6-e904-f999" name="Dark Flame" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Witchfire"/>
+            <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="Template"/>
+            <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="4"/>
+            <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="5"/>
+            <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Assault 1, Soul Blaze, Torrent"/>
+            <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
+          </characteristics>
+        </profile>
+        <profile id="98f0-c12b-2fb2-56f8" name="Sacrifice" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Conjuration"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="6&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Sacrifice creates one of the following units (your choice): 1 Herald of Khorne, 1 Herald of Tzeentch, 1 Herald of Nurgle or 1 Herald of Slaanesh, with up to 30 points’ worth of options. If this power is successfully manifested, one friendly model within 6&quot; of the Psyker (or the Psyker himself) immediately suffers a single Wound with no saves of any kind allowed."/>
+          </characteristics>
+        </profile>
+        <profile id="724f-ebc5-d6c3-3172" name="Incursion" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="3"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Conjuration"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="12&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Incursion creates one of the following units (your choice): 3 Bloodcrushers of Khorne, 3 Screamers of Tzeentch, 3 Plague Drones of Nurgle, or 3 Fiends of Slaanesh."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="0682-4abd-2616-5fbd" name="New InfoLink" hidden="false" targetId="e182-50cd-0867-9a8d" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="51f0-fe5c-61fe-65f4" name="New InfoLink" hidden="false" targetId="4575-0a0a-caaf-e4bf" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="9a8a-f88f-77a1-5e9c" name="New InfoLink" hidden="false" targetId="acb1-64c4-ef54-3a55" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="b81a-ab92-e39f-1b88" name="New InfoLink" hidden="false" targetId="5039-18f0-a9ed-0938" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a6ef-b870-fa86-f44a" name="Discipline: Daemonology (Sanctic)" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="e231-5912-1606-7f3b" name="Hammerhand" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the Psyker and his unit have +2 Strength"/>
+          </characteristics>
+        </profile>
+        <profile id="ae82-4bd3-bff9-24e9" name="(Primaris) Banishment" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Malediction"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst this power is in effect, all models in the target Daemon unit suffer a -1 penalty to their invulnerable save (normally reducing it to a 6+). This is cumulative with any other modifiers to a Daemon&apos;s invulnerable save, but cannot make it worse than 6+."/>
+          </characteristics>
+        </profile>
+        <profile id="3843-43d4-0fb8-3875" name="Gate of Infinity" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Unless the target is Zooming or Swooping, remove the target and his unit from the board. It then immediately arrives anywhere on the board using the rules for Deep Strike."/>
+          </characteristics>
+        </profile>
+        <profile id="2751-d13c-bcee-b421" name="Sanctuary" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect the Psyker and all models in his unit receive a +1 bonus to their invulnerable save (models that do not have an invulnerable save gain a 6+ invulnerable save whilst this power is in effect instead). In addition, all units with the Daemon special rule (friend or foe) treat allterrain, including open ground, within 12&quot; of the Psyker as dangerous terrain."/>
+          </characteristics>
+        </profile>
+        <profile id="04a8-89e7-3f89-6c7f" name="Purge Soul" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Focussed Witchfire"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Both the Psyker and thetarget model roll a D6 and add their respective Leadership values. If the target’s total isgreater than the Psyker’s total, nothing happens. If the Psyker’s total is greater than orequal to the target’s total, the target model suffers an automatic Wound with no armouror cover saves allowed. Purge Soul has no effect on vehicles."/>
+          </characteristics>
+        </profile>
+        <profile id="c11c-1dac-e496-181e" name="Cleansing Flame" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="2"/>
+            <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Nova"/>
+            <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="9&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="5"/>
+            <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="4"/>
+            <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Assault 2D6, Ignores Cover, Soul Blaze"/>
+            <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
+          </characteristics>
+        </profile>
+        <profile id="97a4-4be5-6664-da68" name="Vortex of Doom" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="3"/>
+            <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Witchfire"/>
+            <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="12&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="D"/>
+            <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="1"/>
+            <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Assault 1, Blast, Vortex"/>
+            <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value="If the Psyker fails his Psychic test when using this power, he automatically suffers Perils of the Warp"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="edd7-3223-10ed-9798" name="New InfoLink" hidden="false" targetId="acf2-681d-4188-94d7" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="423a-a8b4-2d1c-8ae4" name="New InfoLink" hidden="false" targetId="acb1-64c4-ef54-3a55" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="767a-d079-9bcc-d035" name="New InfoLink" hidden="false" targetId="3d3c-398b-775d-72ff" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="236f-417a-9ed3-8d3a" name="Discipline: Divination" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="3a7d-921d-9950-73ed" name="Perfect Timing" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst this power is in effect, the Psyker and his unit&apos;s weapons ahve the Ignores Cover special rule."/>
+          </characteristics>
+        </profile>
+        <profile id="1b8f-06fb-82f8-9f6c" name="Precognition" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the Psyker re-rolls all failed To Hit and To Wound rolls. In addition, while the power is in effect, the Psyker re-rolls failed saving throws."/>
+          </characteristics>
+        </profile>
+        <profile id="d4bf-ea83-3a84-8535" name="Misfortunre" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Maledictio"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, all attacks that hit the target unit have the Rending special rule."/>
+          </characteristics>
+        </profile>
+        <profile id="5954-4cb9-4bdd-6d18" name="Scrier&apos;s Gaze" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, you can re-roll the dice when rolling for Reserves, Outflank, and when any of your units identifies a Mysterious Objective.  In addition, if the mission has the Tactical Objectives special rule, you can immediately choose to discard one of your active Tactical Objectives and generate a new one."/>
+          </characteristics>
+        </profile>
+        <profile id="c4cb-2e4d-fda7-bb26" name="Foreboding" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst this power is in effect, the Psyker and his unit have the Counter-attack special rule and fire Overwatch using their full Ballistic Skill, rather than Ballistic Skill 1."/>
+          </characteristics>
+        </profile>
+        <profile id="dcf4-8194-115c-45cc" name="Forewarning" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="12&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the target unit has a 4+ invulnerable save."/>
+          </characteristics>
+        </profile>
+        <profile id="e7a3-0f73-f77d-ffdc" name="(Primaris) Prescience" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="12&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst this power is in effect, the target unit can re-roll all failed To Hit rolls."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="fd68-78c4-d930-c8c7" name="New InfoLink" hidden="false" targetId="acf2-681d-4188-94d7" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="7f90-fdf9-af75-2cc2" name="New InfoLink" hidden="false" targetId="8269-2cd6-9236-16e7" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7488-e159-40ca-095e" name="Discipline: Fulmination" book="" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="c69b-83ff-beac-4195" name="(Primaris) Electrosurge" book="Angels of Death" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Witchfire"/>
+            <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="18&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="5"/>
+            <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="4"/>
+            <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Assault 6"/>
+            <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd"/>
+          </characteristics>
+        </profile>
+        <profile id="b6ca-65b9-76e9-1c81" name="Electroshield" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the Psyker has a 3+ invulnerable save."/>
+          </characteristics>
+        </profile>
+        <profile id="0bac-032b-a001-543b" name="Electropulse" book="Angels of Death" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Nova"/>
+            <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="9&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="1"/>
+            <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="Assault 1"/>
+            <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Haywire"/>
+            <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
+          </characteristics>
+        </profile>
+        <profile id="63a8-efb7-5534-d51f" name="Lightning Arc" book="Angels of Death" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="2"/>
+            <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Witchfire"/>
+            <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="18&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="5"/>
+            <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="4"/>
+            <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Assault D6"/>
+            <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value="After this attack has been resolved against the target, roll a dice for every other enemy unit within 6&quot; of the target. On the roll of a 4 or more, that unit suffers D6 Strength 5 AP4 hits that are Randomly Allocated"/>
+          </characteristics>
+        </profile>
+        <profile id="a67c-30c6-e5c8-60cc" name="Electrodisplacement" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Remove all models in the target unit except one, then swap the position of the Psyker with that model. Then, set up all models from the Psyker&apos;s unit (if any) within 6&quot; and unit coherency of the Psyker, and set up all remaining models from the swapped model&apos;s unit within 6&quot; and unit coherency of that model. If either unit was locked in combat, the displaced unit is now locked in combat with that enemy; models cannot otherwise be placed within 1&quot; of an enemy model. Unless locked in close combat, these units can charge in the same turn."/>
+          </characteristics>
+        </profile>
+        <profile id="6c1a-b929-548d-b25a" name="Fists of Lightning" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst this power is in effect, the Psyker adds I to both his Strength and Attacks. In addition, each time the Psyker hits an enemy unit in close combat, that unit suffers two additional Strength 5 AP- Hits."/>
+          </characteristics>
+        </profile>
+        <profile id="a2d0-4d08-57d8-f262" name="Magnetokinesis" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="18&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Unless the target is Zooming, Swooping or is locked in combat, it can immediately make a move of up to 18&quot;. The unit can move over all other models and terrain as if they were open ground, but it cannot end its move on top of other models or impassable terrain. Any model that starts or ends this move in difficult terrain must take a Dangerous Terrain test. The unit cannot charge in the same turn that it was moved using this power, and all models in the unit count as having moved in the Movement phase for the purposes of shooting weapons in the Shooting phase."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="249c-2442-0901-a7c9" name="New InfoLink" hidden="false" targetId="6970-1bf3-b33e-5dce" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dfa5-5964-52f7-568d" name="Discipline: Geokinesis" book="" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="d8a4-d1f7-cc62-7546" name="(Primaris) Chasm" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="N/A"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="18&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="All models in the enemy unit must immediately take a Dangerous Terrain test with no armour saves allowed (invulnerable saves can be taken normally). This psychic power has no effect on Swooping or Zooming units."/>
+          </characteristics>
+        </profile>
+        <profile id="8350-80df-20e7-ae87" name="Earth Blood" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="18&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="The target immediately regains D3 wounds lost earlier during the battle. In addition, whilst the power is in effect, the target and all models in their unit have the It Will Not Die special rule."/>
+          </characteristics>
+        </profile>
+        <profile id="9d8e-1034-4103-b8fa" name="Phase Form" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the unit has the Move Through Cover special rule and all of its weapons have the Ignores Cover special rule. In addition, the unit does not need line of sight in order to attack an enemy unit in the Shooting phase; as long as the target is in range, it can be shot at."/>
+          </characteristics>
+        </profile>
+        <profile id="11ad-7cb7-e698-ba7b" name="Shifting Worldscape" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="3"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="N/A"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="The targetted terrain feature must be one that can be physically picked up and placed in a different location on battlefield. Move the terrain to an area of open ground anywhere on the battlefield within 24&quot; of its starting position, so long as it is more than 1&quot; away from any other models or other terrain features after the relocation is complete. Any units that have all of their models on the piece of terrain are moved with it. If a unit has only a portion of its models on the terrain feature, then the models that occupy the terrain piece are immediately moved off it by their player, in the same manner as a model disembarking from a vehicle (treating the edge of the terrain as an Access Point and ending this move wholly within 6&quot; of the terrain and in coherency). Models moved in this way must then take a Dangerous Terrain test."/>
+          </characteristics>
+        </profile>
+        <profile id="135a-84bc-6032-c3a8" name="Warp Quake" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Witchfire"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="If you targeted a building, roll a dice; on a roll of 1-3, the building suffers a glancing hit, and on a roll of 4-6, it suffers a penetrating hit. If you targeted a piece of Ruins terrain, roll a dice for each unit that is even partially within those ruins: on a 4 or more, that unit suffers D6 Strength 6 AP-hits as they are struck by falling debris. These hits are Randomly Allocated."/>
+          </characteristics>
+        </profile>
+        <profile id="25ee-fee8-343c-ac80" name="Scorched Earth" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Malediction"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Choose the point on the battlefield when the power is manifested. Each unit within 6&quot; of that point immediately suffers a single Strength 5 AP4 hit with the Ignores Cover special rule (hits are Randomly Allocated). In addition, whilst the power is in effect, all terrain (including open ground) within 6&quot; of the point chosen is treated as being dangerous terrain."/>
+          </characteristics>
+        </profile>
+        <profile id="79c4-ece3-da45-7c70" name="Landquake" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Malediction"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="18&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst this power in effect, the targets move as though they were in difficult terrain. Furthermore, whilst this power is in effect, the targets cannot Run, Turbo-boost, or move Flat Out. This psychic power has no effect on Swooping or Zooming units."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="cd95-1359-393e-aa1f" name="New InfoLink" hidden="false" targetId="acf2-681d-4188-94d7" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="0091-e590-a873-4e7d" name="New InfoLink" hidden="false" targetId="72d9-7041-9d30-d150" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="c6b1-f7b7-1c6d-e47b" name="" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="821b-f228-d2c4-3061" name="Discipline: Librarius" book="" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="6f7a-214f-fec3-5881" name="(Primaris) The Emporer&apos;s Wrath" book="Angels of Death" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Witchfire)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Witchfire"/>
+            <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="18&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="5"/>
+            <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="3"/>
+            <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Assault 1, Blast"/>
+            <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
+          </characteristics>
+        </profile>
+        <profile id="e779-6451-96cc-5215" name="Veil of Time" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the Psyker and his unit can re-roll all failed saving throws."/>
+          </characteristics>
+        </profile>
+        <profile id="09bb-0768-bda5-59a6" name="Fury of the Ancients" book="Angels of Death" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Witchfire)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Beam"/>
+            <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="20&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="6"/>
+            <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="4"/>
+            <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Assault 1, Pinning"/>
+            <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
+          </characteristics>
+        </profile>
+        <profile id="4dc6-59bd-4e08-e3d9" name="Psychic Scourge" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Malediction"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="The Psyker manifesting this power rolls two dice and adds their Mastery Level to the highest result. The target Psykerrolls a single dice and adds their Mastery Level to the result. If the enemy Psyker&apos;s result is higher, there is no effect. If the scores are drawn, or your result is higher than the enemy Psyker&apos;s, the target suffers a Wound with no saves of any kind allowed and, whilst this power is in effect, can only successfully manifest Warp Charge points on the roll of a 6. Finally, if your result is at least 3 points higher than that of the enemy Psyker&apos;s, then they also lose a randomly chosen psychic power; they cannot use it for the rest of the battle."/>
+          </characteristics>
+        </profile>
+        <profile id="10d4-cfee-9f88-031f" name="Psychic Fortress" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Psychic Fortress is a blessing that targets the Psyker. Whilst the power is in effect, all friendly units within 12&quot; of the Psyker have the Fearless and Adamantium Will special rules. ln addition, whilst this power is in effect, all friendly units within 12&quot; of the Psyker have a 4+ invulnerable save against any Wounds caused by witchfire powers."/>
+          </characteristics>
+        </profile>
+        <profile id="a466-c059-ad04-b567" name="Null Zone" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Malediction"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, all models in the target unit suffer a -2 penalty to any invulnerable saves they have. This is cumulative with any other modifiers to a model&apos;s invulnerable save, but cannot make it worse than 6+."/>
+          </characteristics>
+        </profile>
+        <profile id="c524-2b78-b44d-8caa" name="Might of Heroes" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, add 2 to the Psyker&apos;s Strength, Toughness, Initiative and Attacks. "/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="e454-3493-36a7-223c" name="New InfoLink" hidden="false" targetId="df87-e991-2d30-dc38" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="bc2f-84ec-d8d0-4932" name="New InfoLink" hidden="false" targetId="dc70-e199-5525-e78c" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="30d2-98a8-0953-dcef" name="New InfoLink" hidden="false" targetId="f624-f475-e5ec-0dfa" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="38d9-2855-fb63-c702" name="Discipline: Pyromancy" book="" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="29fc-7711-7da6-b0cb" name="(Primaris) Flame Breath" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Witchfire"/>
+            <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="Template"/>
+            <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="5"/>
+            <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="4"/>
+            <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Assault 1"/>
+            <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value="Soul Blaze"/>
+          </characteristics>
+        </profile>
+        <profile id="4b72-2bad-754b-2249" name="Fiery Form" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the Psyker gains a 4+ invulnerable save and his close combat attacks have the Soul Blaze special rule. Whilst the power is in effect, the Psyker re-rolls failed To Wound rolls inflicted by any further Pyromancy powers he manifests."/>
+          </characteristics>
+        </profile>
+        <profile id="7a2b-9d87-6916-3e2b" name="Fire Shield" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the target unit has a 4+ cover save and all enemy units treat all terrain within 6&quot; of the target as Dangerous Terrain."/>
+          </characteristics>
+        </profile>
+        <profile id="3d84-b3a6-0b6c-1c1b" name="Sunburst" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Nova"/>
+            <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="9&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="4"/>
+            <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="5"/>
+            <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Assault 2D6, Ignores Cover, Soul Blaze"/>
+            <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
+          </characteristics>
+        </profile>
+        <profile id="2f21-e14e-38bc-0b4e" name="Inferno" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="2"/>
+            <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Witchfire"/>
+            <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="24&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="4"/>
+            <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="5"/>
+            <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Assault 1, Ignores Cover, Large Blast, Soul Blaze"/>
+            <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
+          </characteristics>
+        </profile>
+        <profile id="999c-a5c3-6eb7-f139" name="Spontaneous Combustion" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Focussed Witchfire"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="18&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="The target model suffers a Strength 6 AP3 hit with the Soul Blaze special rule. If the model is slainby this hit in the Psychic phase, centre the small blast marker over the target before removing him as a casualty. All other models under the marker suffer a Strength 5 AP4 hit with the Ignores Cover and Soul Blaze special rules."/>
+          </characteristics>
+        </profile>
+        <profile id="c05f-a898-82eb-00a4" name="Molten Beam" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="2"/>
+            <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Beam"/>
+            <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="18&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="8"/>
+            <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="1"/>
+            <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Assault 1, Melta"/>
+            <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="336d-f83f-e310-3d4c" name="New InfoLink" hidden="false" targetId="acb1-64c4-ef54-3a55" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="bc2d-a845-2087-8cc5" name="New InfoLink" hidden="false" targetId="acf2-681d-4188-94d7" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="f116-979c-09b2-705c" name="New InfoLink" hidden="false" targetId="21c0-62ff-3ed2-17a7" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f531-405d-592a-3991" name="Discipline: Technomancy" book="" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="ba6a-48d1-aa59-7da7" name="(Primaris) Subvert Machine" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Malediction"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="18&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="If this power is successfully manifested, randomly select one of the vehicle&apos;s weapons (do not include Bombs, weapons with the One Use Only/One Shot Only special rule that have already fired, and weapons that have been destroyed). Then, you and your opponent each roll a dice and look up the result below: If your opponent rolls higher, nothing happens. If the results are drawn, then that weapon can only fire Snap Shots whilst this power is in effect. If you roll higher, you can immediately shoot with that weapon at another enemy unit; the weapon fires using the vehicle&apos;s Ballistic Skill, unless the vehicle is Crew Stunned or Shaken, in which case the weapon can only fire Snap Shts. "/>
+          </characteristics>
+        </profile>
+        <profile id="b29d-04ed-2f8f-7133" name="Blessing of the Machine" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the target vehicle ignores the effects of Crew Shaken and/or Crew Stunned damage results and has the Power of the Machine Spirit special rule. If the vehicle already has this special rule, it instead increases its Ballistic Skill by 1 whilst this power is in effect. "/>
+          </characteristics>
+        </profile>
+        <profile id="df7c-066f-bca6-742f" name="Machine Curse" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Focussed Witchfire"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="18&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Machine Curse is a focussed witchfire power that targets a single enemy vehicle unit within 18&quot;. The target model immediately surfers D3 Strength 1 AP- hits with the Haywire special rule. "/>
+          </characteristics>
+        </profile>
+        <profile id="d54c-4c36-65c8-8f05" name="Reforge" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="The controlling player can choose for the target vehicle either to immediately recover one Hull Point lost earlier in the battle, or repair a Weapon Destroyed or Immobilised result suffered earlier in the battle. In addition, the target vehicle has the It Will Not Die special rule whilst this power is in effect. If the Psyker is embarked on a Transport vehicle, he may still attempt to manifest this psychic power, but may only target the vehicle he is embarked upon."/>
+          </characteristics>
+        </profile>
+        <profile id="7bcf-1646-e192-a297" name="Warpmetal Armour" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessin"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="If this power targets a vehicle unit, then whilst it is in effect add 1 to all the Armour Values (Front, Sides and Rear) of models in that unit. If this power targets a non-vehicle unit, then whilst it is in effect add 1 to the Toughness of all models in the target unit. If the Psyker is embarked on a Transport vehicle, he may still attempt to manifest this psychic power, but may only target the vehicle he is embarked upon."/>
+          </characteristics>
+        </profile>
+        <profile id="1c5e-0e55-6342-1d7d" name="Machine Flense" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Focussed Witchfire"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="18&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="The target immediately loses D3 Hull Points. For each Hull Point that the vehicle loses, the Psyker inflicts D6 Strength 4 AP6 hits with the Rending special rule on a single enemy unit within 12&quot; of the target vehicle. You can choose a different target for each Hull Point lost in this way if you wish."/>
+          </characteristics>
+        </profile>
+        <profile id="d7f0-7c4e-f2de-c134" name="Fury of Mars" book="Angels of Death" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Beam"/>
+            <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="18&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="1"/>
+            <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="-"/>
+            <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Assault 1, Haywire"/>
+            <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="b422-fdd0-c09d-4fbc" name="New InfoLink" hidden="false" targetId="6970-1bf3-b33e-5dce" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="8f5d-7edc-4cd0-5e55" name="New InfoLink" hidden="false" targetId="72d9-7041-9d30-d150" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0268-83ac-dfc9-5a58" name="Discipline: Telekinesis" book="" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="4cef-a77b-fcbe-7238" name="Psychic Maelstrom" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="2"/>
+            <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Witchfire"/>
+            <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="12&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="10"/>
+            <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="1"/>
+            <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Assault 1, Barrage, Large Blast"/>
+            <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
+          </characteristics>
+        </profile>
+        <profile id="3386-3504-a10c-4c75" name="Shockwave" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Nova"/>
+            <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="9&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="4"/>
+            <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="-"/>
+            <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Assault 2D6, Pinning"/>
+            <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
+          </characteristics>
+        </profile>
+        <profile id="443f-0ae5-0d1c-9131" name="(Primaris) Assail" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Beam"/>
+            <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="18&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="6"/>
+            <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="-"/>
+            <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Assault 1, Strikedown"/>
+            <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd"/>
+          </characteristics>
+        </profile>
+        <profile id="63a1-6b3a-f7c1-6f54" name="Crush" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Focussed Witchfire"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="18&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Roll 2D6. The target model suffers a hit with a Strength equal to the result (a result of an 11 or 12 wounds automatically or, in the case of a vehicle, causes an automatic penetrating hit) with APD6."/>
+          </characteristics>
+        </profile>
+        <profile id="2aac-a9e8-be23-abe4" name="Telekine Dome" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the Psyker, and all friendly models within 12&quot; of the Psyker, have a 5+ invulnerable save against any shooting attack."/>
+          </characteristics>
+        </profile>
+        <profile id="6013-e336-dc0f-ffe1" name="Objuration Mechanicum" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Malediction"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, all of the target’s ranged weapons have the Gets Hot special rule. In addition, if the target is a vehicle (or vehicle squadron), each vehicle in the unit suffers a single Strength 1 hit with the Haywire special rule."/>
+          </characteristics>
+        </profile>
+        <profile id="5702-6c49-983f-aeaf" name="Levitation" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Unless the target is Zooming, Swooping or is locked in close combat, the Psyker and his unit immediately make a move of up to 12&quot;. This move cannot end up on top of another unit or impassable terrain, but ignores intervening units, terrain etc. Any model that starts or ends this move in difficult terrainmust take a Dangerous Terrain test. The Psyker and his unit cannot charge in the sameturn that they use this power, and all models count as having moved in the Movement phase for the purposes of shooting weapons in the Shooting phase."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="e4fd-ab59-d8da-4af2" name="New InfoLink" hidden="false" targetId="f4fd-d519-4769-5510" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="daea-8deb-ebdb-9a9f" name="New InfoLink" hidden="false" targetId="6970-1bf3-b33e-5dce" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="eb4f-3317-3faa-d22b" name="New InfoLink" hidden="false" targetId="f624-f475-e5ec-0dfa" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="dd96-55b7-8034-e379" name="New InfoLink" hidden="false" targetId="9c80-5c1a-3b9d-971e" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="13eb-0252-de5d-24d4" name="Discipline: Telepathy" book="" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="3b62-952d-e950-f7d0" name="Hallucination" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Malediction"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Roll once this power has been successfully manifested to determine the manner of hallucinations the target is suffering from (roll once for the whole unit).  1-2: The unit must take a Pinning Test. 3-4: Whilst the power is in effect, all models in the unit suffer a -1 penalty to their Weapon Skill, Ballistic Skill, Initiative and Attacks (to a minimum of 1). 5-6: Randomly select one character in the target unit. That model suffers a single Strength 3 hit for every other model in the target unit. Cover saves cannot be taken against these hits, and they can never be allocated to another model. If there are no character models in the target unit, or if there are no other modelsapart from the character model, treat this result as 3-4 instead."/>
+          </characteristics>
+        </profile>
+        <profile id="7c98-79ed-ecc1-8507" name="Dominate" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Malediction"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the target unit must pass a Leadership test each time it attempts to move, manifest a psychic power, shoot, Run or declare a charge – if the test is failed, the action is forfeit and the unit can do nothing else that phase. A unit that fails this test when attempting to fire Overwatch does not fire any shots, but acts normally in the ensuing Fight sub-phase."/>
+          </characteristics>
+        </profile>
+        <profile id="7251-be85-3b42-d921" name="Terrify" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Malediction"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the target has a -1 penalty to their Leadership and treats all enemy units ashaving the Fear special rule. Furthermore, the target must take a Morale check at the end of the Psychic phase."/>
+          </characteristics>
+        </profile>
+        <profile id="53fe-023d-ca90-46fd" name="(Primaris) Psychic Shriek" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Witchfire"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="18&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Roll 3D6 and subtract the target’s Leadership – the target unit suffers a number of Wounds equal to the result. Armour and cover saves cannot be taken against Wounds caused by Psychic Shriek."/>
+          </characteristics>
+        </profile>
+        <profile id="2fa6-56c5-974f-9368" name="Mental Fortitude" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="If the target is falling back, it immediately Regroups. In addition, whilst the power is in effect, the target gains the Fearless special rule."/>
+          </characteristics>
+        </profile>
+        <profile id="51d1-3742-104e-1569" name="Invisibility" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, enemy units can only fire Snap Shots at the target unit and in close combat will only hit models in it on To Hit rolls of a 6."/>
+          </characteristics>
+        </profile>
+        <profile id="66f8-2849-5db1-34bb" name="Shrouding" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst this power is in effect, the Psyker,and all friendly models within 6&quot; of the Psyker, have the Shrouded special rule."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="d0e2-f5cc-6805-eb29" name="New InfoLink" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="b78a-e189-a4f1-9ec7" name="New InfoLink" hidden="false" targetId="9c80-5c1a-3b9d-971e" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="a8d4-a809-9cfd-9fbb" name="New InfoLink" hidden="false" targetId="dc70-e199-5525-e78c" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="08c7-bb2a-f62a-2d4d" name="New InfoLink" hidden="false" targetId="f624-f475-e5ec-0dfa" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="053a-fd01-be65-238e" name="Wall of Martyrs Defence Strongpoint" book="Warzone Damnos" page="" hidden="false" collective="false" categoryEntryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="unit">
+      <profiles/>
+      <rules>
+        <rule id="b315-579b-33ac-b5f3" name="Magos Machine Spirit" book="Warzone Damnos" page="" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </rule>
+        <rule id="aaab-b23f-e634-13b6" name="Automated Repairs" book="Warzone Damnos" page="" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3e84-4ddb-fdbd-d70a" name="Aquila Stongpoints" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e9b3-a112-f160-b39a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bcee-b81b-df8b-e41f" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="d18a-2df7-3d71-c4cb" hidden="false" targetId="16d6-25c4-af92-4329" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0993-ae53-0c7f-006c" name="Firestorm Redoubt" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3691-f5bb-c9f1-1f0a" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c454-cc19-7c80-2090" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="028a-d0de-f315-2419" name="" hidden="false" targetId="a172-78de-aaa6-2201" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b30a-c032-c3db-be19" name="Vengeance Weapons Battery" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="33e0-7033-d6ec-3206" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="4f9a-6bba-19e4-00ca" hidden="false" targetId="04bf-6c22-19fb-4e46" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="d432-412f-5b94-3104" name="Imperial Defence Lines" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="adcf-45e1-9f7d-02a3" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="8e1e-558c-79e1-d9a4" hidden="false" targetId="0f73-97f2-b832-f6d0" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a172-78de-aaa6-2201" name="Wall of Martyrs Firestorm Redoubt" book="Planetary Onslaught" page="85" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+      <profiles>
+        <profile id="bab6-1527-ba02-6d52" name="Firestorm Redoubt" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Armour Value" characteristicTypeId="83f8-a458-93f9-3e46" value="14"/>
+            <characteristic name="Transport Capacity" characteristicTypeId="0e9c-76b3-2877-614d" value="20"/>
+            <characteristic name="Access Points" characteristicTypeId="13de-08da-586d-f7c0" value="as per model"/>
+            <characteristic name="Fire Points" characteristicTypeId="0767-d18e-a48d-3b39" value="as per model"/>
+            <characteristic name="Hull Points" characteristicTypeId="d1d7-bcc6-18cd-c948" value="4"/>
+            <characteristic name="Building Type" characteristicTypeId="ff97-f5f0-521b-eaf4" value="Medium Building with Battlements"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="76b9-695d-1de5-df16" hidden="false" targetId="8c62-54ee-2b8d-bdce" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="b717-b44c-2221-2059" hidden="false" targetId="d04c-20b3-dc49-ea06" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="b0cf-ea08-8443-e475" hidden="false" targetId="38b6-e53f-8514-a49e" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="1309-c3d9-310a-61e8" hidden="false" targetId="cf90-39d9-c923-f6bf" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="fbaf-59c3-719c-495f" name="Emplaced Weapons" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b1b1-b3d9-e146-83d7" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0835-e963-a243-dc99" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="45a5-cc8a-1b48-0114" name="Quad Icarus lascannon" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="52d4-9280-2c10-8583" hidden="false" targetId="d503-4001-e4b8-c804" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a9fd-f4f3-6f97-c70a" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="16f6-7972-e4b2-8b9f" name="Punisher Gatling Cannon" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="7a24-9976-6c04-736a" hidden="false" targetId="69ab-ade0-e0b6-f48e" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cab0-a144-930f-8eae" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f28c-280b-6161-6d1b" name="Battle Cannon" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="7be5-d7d1-7517-87cb" hidden="false" targetId="94da-501b-a2f5-6c61" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="948f-e308-f953-1c3e" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="9c62-7f9e-91ec-1d12" hidden="false" targetId="8732-6189-cd26-de94" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="4007-3ea1-8e21-4a94" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="4693-4442-c63f-6ab6" hidden="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="cd03-be61-f336-ac4c" value="2">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="200.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="04bf-6c22-19fb-4e46" name="Wall of Martyrs Vengeance Weapon Battery" book="Planetary Onslaught" page="86" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+      <profiles>
+        <profile id="c8cf-d554-7744-259b" name="Vengeance Weapons Battery" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Armour Value" characteristicTypeId="83f8-a458-93f9-3e46" value="14"/>
+            <characteristic name="Transport Capacity" characteristicTypeId="0e9c-76b3-2877-614d" value="0"/>
+            <characteristic name="Access Points" characteristicTypeId="13de-08da-586d-f7c0" value="0"/>
+            <characteristic name="Fire Points" characteristicTypeId="0767-d18e-a48d-3b39" value="0"/>
+            <characteristic name="Hull Points" characteristicTypeId="d1d7-bcc6-18cd-c948" value="3"/>
+            <characteristic name="Building Type" characteristicTypeId="ff97-f5f0-521b-eaf4" value="Impassable Building"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="3c0a-dc85-eaa2-d98b" hidden="false" targetId="cf90-39d9-c923-f6bf" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="5166-7b3c-5ead-a4cf" hidden="false" targetId="9f71-25a6-08e5-f088" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b5fd-935c-f68f-0c1a" name="Emplaced Weapons" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e9e1-b866-f069-f07b" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c848-ee1c-56f5-3df0" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="8c32-30a7-713f-6e2d" name="Punisher Gatling Cannon" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="5819-995b-334f-359f" hidden="false" targetId="69ab-ade0-e0b6-f48e" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="00b9-bfd1-f36d-2385" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="8aed-888a-214d-26dd" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" costTypeId="points" value="75.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6056-ffd8-14e6-d1b6" name="Battle Cannon" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="255e-7422-cc49-3890" hidden="false" targetId="94da-501b-a2f5-6c61" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="89f7-7df8-88d7-5d5c" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="9d45-78df-3ec9-fa0e" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" costTypeId="points" value="85.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="975e-85ba-2c90-0f99" name="Quad Icarus lascannon" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="b3f5-216b-4c35-07f3" hidden="false" targetId="d503-4001-e4b8-c804" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="60fb-b7d0-a5f9-3e7b" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="75ae-272a-7b16-f65b" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" costTypeId="points" value="75.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0d50-24ac-a53e-5db7" name="Wall of Martyrs Imperial Defence Network" book="Planetary Onslaught" page="87" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="unit">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4b96-620a-ba93-d365" name="Imperial Bunkers" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3b28-edb3-88e8-fd0c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="65c4-b288-1ffb-3a51" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="b691-dd8f-47db-ffc9" hidden="false" targetId="0116-c81b-1c0f-251c" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="233a-2c52-e38a-fc9a" name="Imperial Defence Lines" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c436-0aec-471c-e096" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="45d6-6b29-d5c9-dbdd" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="459b-0f97-ea39-fdcf" hidden="false" targetId="0f73-97f2-b832-f6d0" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b092-c6f6-9126-ac72" name="Imperial Defence Emplacements" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a480-50fb-7fb2-427b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="26a2-0f3f-bdae-7e07" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="f427-e43b-6ed7-e5e3" hidden="false" targetId="df05-8179-624e-f8b2" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0242-9152-d700-149f" name="Firestorm Redoubt" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fa53-d388-6251-f052" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="224b-6fec-06ea-11c6" hidden="false" targetId="a172-78de-aaa6-2201" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="fe24-4be8-85d1-e653" name="Vengeance Weapons Battery" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5ddb-be30-d143-aae1" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="0f4d-1a09-7bb3-0d0a" hidden="false" targetId="04bf-6c22-19fb-4e46" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0f73-97f2-b832-f6d0" name="Wall of Martyrs Imperial Defence Line" book="Planetary Onslaught" page="82" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+      <profiles>
+        <profile id="944e-63e0-c589-b37c" name="Imperial Defence Line" book="Stronghold Assault" page="" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="A model in cover behind a defence line has a 4+ cover save. If a unit Goes to Ground, then models from the unit gain +2 to the cover save from the defence line rather than +1. Models that are in base contact with a defence line are treated as being in base contact with any enemy models who are directly opposite them and in base contact with the other side of that defence line. Units charging an enemy that is behind a defence line count as charging through difficult terrain."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="9aa7-8601-781e-ead8" hidden="false" targetId="7d5c-1af6-942c-8ca2" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="52b1-bc21-f8d7-cde9" hidden="false" targetId="afb7-b281-a9ce-4272" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="caa1-2762-e454-b1fa" name="" hidden="false" targetId="7be5-30af-1a02-0a89" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="d067-83d6-3f88-f98f" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="80.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="df05-8179-624e-f8b2" name="Wall of Martyrs Imperial Defence Emplacement" book="Planetary Onslaught" page="83" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+      <profiles>
+        <profile id="e1cc-0dae-51d0-b061" name="Imperial Defence Emplacement" book="Stronghold Assault" page="" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Battlefield Debris. Stalwart Defence. Improved Arcs of Fire."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="9d3f-9ea3-e8ce-8c7c" hidden="false" targetId="afb7-b281-a9ce-4272" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="73fa-1db4-4d85-0daf" name="" hidden="false" targetId="7be5-30af-1a02-0a89" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="3f5a-bdfa-c3a9-54a1" name="New InfoLink" hidden="false" targetId="d191-d6ec-e3c8-31f6" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="2758-2f92-8d3a-05ae" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0116-c81b-1c0f-251c" name="Wall of Martyrs Imperial Bunker" book="Planetary Onslaught" page="84" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+      <profiles>
+        <profile id="1aa3-6499-e787-5b5d" name="Imperial Bunker" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Armour Value" characteristicTypeId="83f8-a458-93f9-3e46" value="14"/>
+            <characteristic name="Transport Capacity" characteristicTypeId="0e9c-76b3-2877-614d" value="20"/>
+            <characteristic name="Access Points" characteristicTypeId="13de-08da-586d-f7c0" value="as per model"/>
+            <characteristic name="Fire Points" characteristicTypeId="0767-d18e-a48d-3b39" value="as per model"/>
+            <characteristic name="Hull Points" characteristicTypeId="d1d7-bcc6-18cd-c948" value="4"/>
+            <characteristic name="Building Type" characteristicTypeId="ff97-f5f0-521b-eaf4" value="Medium Building with Battlements"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="e5e1-2b8c-850b-8371" hidden="false" targetId="cf90-39d9-c923-f6bf" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="5adf-1a24-8d58-f151" name="New InfoLink" hidden="false" targetId="207b-b21e-68cb-ace0" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4182-0810-4294-5cbc" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="c8d6-f00f-1435-4b3d" hidden="false" targetId="8732-6189-cd26-de94" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="d9b6-a781-f202-e799" hidden="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="cd03-be61-f336-ac4c" value="2">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+        </entryLink>
+        <entryLink id="e92d-7662-17ce-3761" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="55.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bbd4-5f41-35d1-6c5f" name="Void Shield Generator" book="Planetary Onslaught" page="92" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+      <profiles>
+        <profile id="002c-d06c-4447-a02b" name="Void Shield Generator" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Armour Value" characteristicTypeId="83f8-a458-93f9-3e46" value="13"/>
+            <characteristic name="Transport Capacity" characteristicTypeId="0e9c-76b3-2877-614d" value="0"/>
+            <characteristic name="Access Points" characteristicTypeId="13de-08da-586d-f7c0" value="0"/>
+            <characteristic name="Fire Points" characteristicTypeId="0767-d18e-a48d-3b39" value="0"/>
+            <characteristic name="Hull Points" characteristicTypeId="d1d7-bcc6-18cd-c948" value="4"/>
+            <characteristic name="Building Type" characteristicTypeId="ff97-f5f0-521b-eaf4" value="Impassible Building with Battlements"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries>
+        <selectionEntry id="80d4-aaa3-01d3-e97b" name="Projected Void Shields" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules>
+            <rule id="0eba-5ad1-8907-77a7" name="Projected Void Shields" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>Each projected void shield has a 12&quot; area of effect (measured from any point on the Void Shield Generator building) known as a Void Shield Zone. Any shooting attack that originates from outside a Void Shield Zone and hits a unit that is wholly within the Void Shield Zone instead his the projected void shield. If a unit is wholly within 12&quot; of multiple Void Shield Generators, and so within more than one Void Shield Zone when it is hit, randomly determine which of the buildings&apos; projected void shields is hit.
+
+Projected void shields have no effect against witchfire powers that do not ave a S value (Psychic Shriek, Haemorrhage, Purge Soul, etc).
+
+Each projected void shield has an Armour Value of 12. A glancing or penetrating hit (or any hit from a D weapon) scored against a projected void shield causes it to collapse. If all the projected void shields have collapsed, further hits strike the original target instead. At the end of each of the controlling player&apos;s turns, roll a die for each projected void shield that has collapsed; each roll of 5+ instantly restores one shield.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="95ce-71dc-06d1-6167" hidden="false" targetId="e144-1293-ec28-d3a9" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c237-c971-aa16-87a5" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="678c-4530-e08a-e457" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="2d23-410d-6438-b294" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="796a-21c2-7281-17a8" name="Void Relay Network" book="Planetary Onslaught" page="93" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="unit">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2ad5-a816-de59-da8c" name="Honored Imperium" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="00a4-2141-ed1f-022c" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="a49b-c917-3109-3509" hidden="false" targetId="0fe6-096b-23ae-1134" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="13b7-ee19-7e88-928a" name="Void Shield Generators" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8b0b-e88f-62fd-4b39" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ea3a-249e-d403-0626" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="3a6c-1f4b-57e9-47f9" hidden="false" targetId="bbd4-5f41-35d1-6c5f" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c879-4ad7-6dce-092d" name="Promethium Relay Pipes" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2d65-217c-d527-7ddc" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="706a-770e-a715-d2a1" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="5575-1a19-edf8-40d1" hidden="false" targetId="1a59-dd0f-a7f2-32be" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="474a-96df-3847-a5d8" name="Twisted Copse" book="Planetary Onslaught" page="100" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="2cd1-e95c-df57-4840" name="Twisted Copse" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Difficult Terrain"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="46bb-f210-13f2-b7c1" name="Dense Thicket" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>With the exception of vehicles and monstrous creatures, a model on the base of a Citadel Wood model receives a 5+ cover save, regardless of whether or not it is 25% obscured.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1a59-dd0f-a7f2-32be" name="Promethium Relay Pipes" book="Planetary Onslaught" page="103" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+      <profiles>
+        <profile id="1c76-1592-2725-da7f" name="Promethium Relay Pipes" book="Stronghold Assault" page="" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Battlefield Debris. Fuel Siphon. A model in cover behind a fuel pipe has a 4+ cover save. However, each time a unit successfully makes this cover save on the roll of a6, immediately roll a further D6. On a roll of 1, the shot has caused a minor explosion and the unit thatmade that cover save immediately suffers an additional D6 S4 AP5 hits with the Ignores Cover special rule. These additional hits use Random Allocation, and vehicles are hit on the armour facing nearest to the Promethium Relay Pipes."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="070c-2b23-3cb2-95d2" name="" hidden="false" targetId="57a3-2add-b379-0bb5" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="b149-3f12-19b1-d7a0" name="New InfoLink" hidden="false" targetId="5039-18f0-a9ed-0938" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="aba8-498a-38e2-a8e2" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0fe6-096b-23ae-1134" name="Honoured Imperium" book="Planetary Onslaught" page="102" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="d384-1f13-5e6c-ad09" hidden="false" targetId="7d5c-1af6-942c-8ca2" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="96ba-2919-deff-2d0a" hidden="false" targetId="7571-d9f2-17b0-c3e0" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="252b-f85d-5204-e503" hidden="false" targetId="d174-6df8-fbc5-64d1" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="9836-e912-08bd-f3e4" name="" hidden="false" targetId="7be5-30af-1a02-0a89" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="47cf-5cbe-8459-d31d" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="33f8-e6da-89a3-01d5" name="Firestorm Nexus" book="Warzone Armageddon" page="" hidden="false" collective="false" categoryEntryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="unit">
+      <profiles>
+        <profile id="03b2-5174-5847-b78a" name="Firestorm" book="Warzone Armageddon" page="" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="bedb-a41c-7afb-67f9" name="Firestorm" book="Warzone Armageddon" page="" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f292-bb41-59a1-8b0c" name="Firestorm Redoubt" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6aa4-624c-385d-e1c6" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1a07-9676-dcf2-55f8" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="3916-9ea0-909d-6b2c" name="" hidden="false" targetId="a172-78de-aaa6-2201" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8300-7ced-aafd-2a27" name="Fortress of Redemption" book="Planetary Onslaught" page="91" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="e35c-c2a8-8036-570d" hidden="false" targetId="cf90-39d9-c923-f6bf" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries>
+        <selectionEntry id="4ddc-8f00-c620-2e55" name="Heavy Bolters" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="655a-f69c-2c1f-d05e" hidden="false" targetId="271e-6286-86cc-06dd" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cacc-41cf-e8bb-d2fc" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7cb8-bde3-0e26-fd57" name="Twin-linked Icarus Lascannon" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="aa64-f841-0433-c96f" hidden="false" targetId="cb26-27b4-9393-a768" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d3b4-e962-8638-b17b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="54ab-62b4-e1cc-d7e8" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c015-7698-4e2d-b86d" name="Remote Fire" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="90f4-5446-bede-f5e9" hidden="false" targetId="376e-9c4d-f804-6d61" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="76cd-259a-a006-48c7" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d156-ca0a-6f1d-65e7" name="Main Tower" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="551c-eb69-38bf-1b73" name="Fortress of Redemption Main Tower" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Armour Value" characteristicTypeId="83f8-a458-93f9-3e46" value="14"/>
+                <characteristic name="Transport Capacity" characteristicTypeId="0e9c-76b3-2877-614d" value="20"/>
+                <characteristic name="Access Points" characteristicTypeId="13de-08da-586d-f7c0" value="as per model"/>
+                <characteristic name="Fire Points" characteristicTypeId="0767-d18e-a48d-3b39" value="as per model"/>
+                <characteristic name="Hull Points" characteristicTypeId="d1d7-bcc6-18cd-c948" value="4"/>
+                <characteristic name="Building Type" characteristicTypeId="ff97-f5f0-521b-eaf4" value="Medium Building with Battlements"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90a3-6e05-2ae4-1920" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="683f-e93f-c40c-f941" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="2b0d-df30-b9f3-5109" hidden="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="cd03-be61-f336-ac4c" value="2">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ad12-3cce-a7a7-4dad" name="Bunker Annex" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="adf7-2711-796c-c2e3" name="Fortress of Redemption Bunker Annex" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Armour Value" characteristicTypeId="83f8-a458-93f9-3e46" value="14"/>
+                <characteristic name="Transport Capacity" characteristicTypeId="0e9c-76b3-2877-614d" value="10"/>
+                <characteristic name="Access Points" characteristicTypeId="13de-08da-586d-f7c0" value="as per model"/>
+                <characteristic name="Fire Points" characteristicTypeId="0767-d18e-a48d-3b39" value="as per model"/>
+                <characteristic name="Hull Points" characteristicTypeId="d1d7-bcc6-18cd-c948" value="3"/>
+                <characteristic name="Building Type" characteristicTypeId="ff97-f5f0-521b-eaf4" value="Small Building with Battlements"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="991d-d088-9721-7318" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77a0-8cb3-1211-bb4e" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="5eec-4e63-d33b-f9e3" hidden="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="238d-6406-91ff-e102" name="Connecting Walkway" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="07cc-7acc-7a42-2134" name="Fortress of Redemption Connecting Walkway" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Armour Value" characteristicTypeId="83f8-a458-93f9-3e46" value="14"/>
+                <characteristic name="Transport Capacity" characteristicTypeId="0e9c-76b3-2877-614d" value="10"/>
+                <characteristic name="Access Points" characteristicTypeId="13de-08da-586d-f7c0" value="as per model"/>
+                <characteristic name="Fire Points" characteristicTypeId="0767-d18e-a48d-3b39" value="as per model"/>
+                <characteristic name="Hull Points" characteristicTypeId="d1d7-bcc6-18cd-c948" value="3"/>
+                <characteristic name="Building Type" characteristicTypeId="ff97-f5f0-521b-eaf4" value="Small Building with Battlements"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d00-8ff3-036d-3ef9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed23-889e-d903-1553" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="e4ca-2cab-8830-2fad" hidden="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="541c-6a58-3e3f-4cd8" name="Missile Silo" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d44e-3f00-7802-9c3f" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ee50-bffe-6cbb-8b38" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6b8c-54c9-fdda-c3a9" name="Fragstorm missiles" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="caa3-c437-6a56-a44e" hidden="false" targetId="becf-8670-0c83-dc94" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e472-b9a6-36c4-6745" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d18a-86b4-14be-19eb" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="99e6-42ab-e310-cb59" name="Krakstorm missiles" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="405e-d4ed-96ae-11af" hidden="false" targetId="458f-1e34-27a8-2cbb" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ad33-bab0-50c4-736f" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="30.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b789-6db3-92d2-ee8a" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="220.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="55c6-268b-357f-d070" name="Imperial Bastion" book="Planetary Onslaught" page="80" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+      <profiles>
+        <profile id="67c7-0b8b-bba6-e965" name="Imperial Bastion" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Armour Value" characteristicTypeId="83f8-a458-93f9-3e46" value="14"/>
+            <characteristic name="Transport Capacity" characteristicTypeId="0e9c-76b3-2877-614d" value="20"/>
+            <characteristic name="Access Points" characteristicTypeId="13de-08da-586d-f7c0" value="as per model"/>
+            <characteristic name="Fire Points" characteristicTypeId="0767-d18e-a48d-3b39" value="as per model"/>
+            <characteristic name="Hull Points" characteristicTypeId="d1d7-bcc6-18cd-c948" value="4"/>
+            <characteristic name="Building Type" characteristicTypeId="ff97-f5f0-521b-eaf4" value="Medium Building with Battlements"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="236b-b61b-4a07-4ba6" hidden="false" targetId="cf90-39d9-c923-f6bf" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries>
+        <selectionEntry id="f8c9-8047-e3cc-b2c2" name="Heavy Bolters" page="" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="15bf-185c-863c-0af6" hidden="false" targetId="271e-6286-86cc-06dd" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e750-7362-530b-53f4" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ae5c-63f3-0067-e60d" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="9986-91a1-d559-864d" hidden="false" targetId="8732-6189-cd26-de94" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="4288-fee0-9a5d-60ba" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="e3f5-954e-ed7a-0510" hidden="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="cd03-be61-f336-ac4c" value="2">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="75.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5cdd-edbb-07c3-0ba5" name="Skyshield Landing Pad" book="Planetary Onslaught" page="101" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+      <profiles>
+        <profile id="4eff-4ef5-3fae-f3d8" name="Skyshield Landing Pad" book="Stronghold Assault" page="" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Unusual. Landing Pad Configuration. The top surface of the Skyshield Landing Pad is Open Ground. To move onto or off of the landing pad counts as moving through Difficult Terrain."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="9b7b-0219-40d0-e928" name="Ready for Takeoff" book="Stronghold Assault" page="" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>When deploying your army, you can deploy one of your Flyers with the Hover type on top of each of your Skyshield Landing Pads that has this upgrade, even though Flyers normally have to start the game in Reserve.  Flyers that deploy in this way start the game hovering and cannot Zoom in the first game turn.</description>
+        </rule>
+        <rule id="78f0-1792-11dc-7d27" name="Landing Pad Configuration" book="Stronghold Assault" page="" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>A Skyshield Landing Pad has certain rules depending on its current configuration, shielded or unfurled. 
+
+At the beginning of the Movement phase, before rolling for Reserves, a model in base contact with a Skyshield Landing pad can change its configuration from Shielded to Unfurled (or vice versa). If there are models from both sides in base contact with the landing pad, its configuration cannot be changed.
+
+Shielded: Units on top of a shielded Skyshield Landing pad have a 4+ invulnerable save against shooting attacks.
+
+Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it will never scatter.  Jump units, Jet Pack units, Jetbikes, and Skimmers do not need to take Dangerous Terrain tests for moving on to or off of an unfurled Skyshield Landing Pad.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="6ce4-0f59-a637-c878" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="75.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="595a-908e-96a1-f121" name="Shrine of the Aquila" book="Planetary Onslaught" page="97" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="6cf9-a002-6ee6-5742" name="Shrine of the Aquila" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Ruins"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="b27c-0dbd-e299-41b3" name="The Eagle&apos;s Gaze" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>If a unit from The Armies of the Imperium (as defined in BRB) has any of its models within a Shrine of the Aquila, it re-rolls failed Morale checks. Any other model that is in a Shrine of the Aquila has the Hatred (Armies of the Imperium) special rule.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="09a9-713b-5cb1-1e88" name="New InfoLink" hidden="false" targetId="12af-0798-6659-e21e" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b973-7d7d-754e-b022" name="Grand Redoubt" book="40k Apocalypse 2nd Ed" page="" hidden="false" collective="false" categoryEntryId="8dbf948c-125b-4886-b21e-3ccabc1e1188" type="unit">
+      <profiles/>
+      <rules>
+        <rule id="9de9-5acb-5737-ec57" name="Underground Barracks" book="40k Apocalypse 2nd Ed" page="" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </rule>
+        <rule id="0c84-66e9-d5c5-f5b2" name="Defend to the Last Man" book="40k Apocalypse 2nd Ed" page="" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="493a-c7f5-0da7-eb12" name="Structures" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="01cc-d104-961b-2dc8" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="00be-4366-f00e-b069" name="Firestorm Redoubt" hidden="false" collective="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f9f6-ae87-cf89-3b3e" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="741c-835b-f477-613b" name="" hidden="false" targetId="a172-78de-aaa6-2201" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="9cdf-7ef2-63b0-05fa" name="Imperial Bunkers" hidden="false" collective="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="ec99-de1d-0e6a-eec8" hidden="false" targetId="0116-c81b-1c0f-251c" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="9442-987f-c293-5807" name="Imperial Defence Emplacements" hidden="false" collective="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="7ec5-9faf-accc-3261" hidden="false" targetId="df05-8179-624e-f8b2" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="316c-b650-bac5-d951" name="Imperial Defence Lines" hidden="false" collective="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="8e1b-fe5c-e4cf-7412" hidden="false" targetId="0f73-97f2-b832-f6d0" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="a9f3-6cdd-4e1b-0417" name="Vengeance Weapons Battery" hidden="false" collective="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="dbbd-26ba-6656-7e0d" hidden="false" targetId="04bf-6c22-19fb-4e46" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="63ab-9dec-cb47-5568" name="Imperial Bastions" hidden="false" collective="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a993-8314-c070-1bc4" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="dc30-249a-3b42-4e4a" hidden="false" targetId="55c6-268b-357f-d070" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="935c-356e-eebd-08f4" name="Fortress of Redemption" hidden="false" collective="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="14da-b94c-8766-1367" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="9f91-b67d-a2f6-e218" hidden="false" targetId="8300-7ced-aafd-2a27" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="0feb-7c7f-9b90-9a53" name="Aquila Stongpoints" hidden="false" collective="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b21b-af47-3fea-9cfe" type="min"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="d846-aed4-2dc3-5cd1" hidden="false" targetId="16d6-25c4-af92-4329" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="fb3d-6e56-0598-6d77" name="Skyshield Landing Pad" hidden="false" collective="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c10e-dbcd-c312-7ba0" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="3533-cca0-8042-bf63" hidden="false" targetId="5cdd-edbb-07c3-0ba5" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="06e2-2420-ffc8-13b8" name="Haemotrope Reactors" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules>
+        <rule id="836f-f195-e6a6-1c83" name="Plasma Feed" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Any plasma weapon (as defined in BRB) fired by a non-vehicle model within 2&quot; of a Haemotrop Reactor in the Shooting phase may use the extra power to supercharge their weapon. If they do then until the end of the phase their plasma weapon gains the Blast special rule (weapons that already have the Blast special rule gain the Large Blast special rule instead), however, their weapon also Gets Hot! on rolls of a 1 or 2, instead of just 2. </description>
+        </rule>
+        <rule id="c0b1-638c-4f25-4a0e" name="Power Supply" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Haemotrope Reactors can bolster the effectiveness of Void Shield Generators and Plasma Obliterators as follows:
+
+If at least two Haemotrope Reactors are either within 6&quot; of a Void Shield Generator, or are connected to the Void Shield Generator via Promethium Relay Pipes, you can re-rollt he dice when attempting to restore collapsed shields.
+
+If at least two Haemotrope Reactors are within 6&quot; of a Plasma Obliterator, or are connected to the Plasma Obliterator via Promethium Relay Pipes, increase the Strength of the weapon to S 8.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries>
+        <selectionEntry id="8e71-28fc-b5b7-69e1" name="Pair of Haemotrope Reactors" hidden="false" collective="false" type="upgrade">
+          <profiles>
+            <profile id="1a54-a593-751b-3b34" name="Pair of Haemotrope Reactors" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Battlefield Debris (Reactor)"/>
+              </characteristics>
+            </profile>
+            <profile id="0792-e885-8271-e5b3" name="Reactor" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Unit Type" characteristicTypeId="556e6974205479706523232344415441232323" value="Terrain"/>
+                <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="-"/>
+                <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="-"/>
+                <characteristic name="S" characteristicTypeId="5323232344415441232323" value="-"/>
+                <characteristic name="T" characteristicTypeId="5423232344415441232323" value="6"/>
+                <characteristic name="W" characteristicTypeId="5723232344415441232323" value="6"/>
+                <characteristic name="I" characteristicTypeId="4923232344415441232323" value="-"/>
+                <characteristic name="A" characteristicTypeId="4123232344415441232323" value="-"/>
+                <characteristic name="LD" characteristicTypeId="4c4423232344415441232323"/>
+                <characteristic name="Save" characteristicTypeId="5361766523232344415441232323" value="4+"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="2752-bb95-aadd-8d74" name="Reactor" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>With the exception of vehicles and mostrous creatures, a model in cover behind a reactor has a 4+ save. However, each time a unit successfully makes this cover save ont he roll of a 6, immediately roll a further D6. On a roll of 1, the showt has caused a power leak and the unit that made that cover save immediately suffers an additional D6 S6 AP- hits with the Ignores Cover special rule. These additional hits use Random Allocation, and vehicles are hit on the armour facing nearest to the reactor. 
+
+A reactor can be shot at and attacked in close combat. If destroyed, the closest unit to it immediately suffers hits as if they were the victims of a power leak, as described above. A Reactor is hit automatically in close combat. </description>
+            </rule>
+          </rules>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="185d-3642-acc5-b3ff" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3899-ce19-7d3d-dd3b" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6140-dc64-5896-957f" name="Manufactorum" book="Planetary Onslaught" page="95" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="840b-724f-c215-9cfb" name="Manufactorum" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Ruins"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="139f-39f2-d453-9968" name="The Omnissiah&apos;s Benediction" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Models in a Manufactorum that are firing weapons with the Gets Hot special rule re-roll failed saving throws for Wounds inflicted upon themselves as a result of the Gets Hot special rule.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="191a-241b-a04b-4ac6" name="New InfoLink" hidden="false" targetId="12af-0798-6659-e21e" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="63b0-0b66-5eb0-382a" name="Munitorum Armoured Container Cache" book="Planetary Onslaught" page="98" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries>
+        <selectionEntry id="91db-0420-d420-0f55" name="Munitorum Armoured Container Cache" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles/>
+          <rules>
+            <rule id="06a0-3947-0f73-4a55" name="Mysterious Containers" book="Datasheet: Munitorium Armoured Container Cache" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>The first time a unit moves or deploys in base contact with a Munitorum Armoured Container, roll a D6 and consult the following table to discover its contents. If you are using the Munitorum Armoured Containers to represent Objective Markers, this table replaces the Mysterious Objectives in BRB. 
+
+1 - Xenos Creature: The container was transporting a rare and deadly xenos creature that immediately lashes out in anger as it escapes. All units within 6&quot; of the armoured container take D6 S 4 AP 6 hits with the Ignores Cover special rule. Wounds are randomly allocated.
+2 - Nothing of Note: The container contains vital supplies of red berets en route to an Astra Militarum regiment, but has no additional effect on the game.
+3 - Uplifting Primers: The container was transporting boxes of the Imperial Infantryman&apos;s Uplifting Primer. All units from the Armies of the Imperium add +1 Ld whilst they are within 6&quot; of this armoured container.
+4 - Archeotech Ammunition: The container was shipping crates of rare and powerful ammunition. Add +1 S of all Assault and Rapid Fire weapons fired by models that are within 6&quot; of this armoured container.
+5 - Shield Generator: A shield generator hums to life once the container is opened. All models have a 4+ invulnerable save whilst they are within 6&quot; of this armoured container.
+6 - Orbital Comms Array: Inside the container is simply a nav-map and a flashing red button. The player who identified this container can immedicately call down an orbital strike anywhere on the battlefield, after which the armoured container has no additional effect on the game.</description>
+            </rule>
+            <rule id="ac53-60af-0fdf-f348" name="Munitorum Armoured Container Cache" book="Datasheet: Munitorium Armoured Container Cache" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>Munitorum Armoured Containers are Battlefield Debris (Armoured Container). Munitorum Supply Crates are Battlefield Debris (Ammunition Dump). Munitorum Promethium Barrels are Battlefield Debris (Fuel Drums). All parts of a Munitorum Armoured Container Cache must be placed wholly within 12&quot; of each other. </description>
+            </rule>
+            <rule id="b1db-963f-816d-bc16" name="Orbital Comms" book="Datasheet: Munitorium Armoured Container Cache" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>If an arrow is rolled on the scatter dice when firing a weapon that has this special rule, the shot always scatters 4D6&quot; regardless of the firing model&apos;s Ballistic Skill.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="fbdf-df8e-971f-d8bb" name="New InfoLink" hidden="false" targetId="98ac-5132-9ebd-c355" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9881-7950-be0a-b316" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2ef5-15f0-f91c-5086" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b46d-4c0c-d509-19ad" name="Munitorum Armoured Container" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles>
+                <profile id="f9a4-fb1b-1cfa-33ce" name="Munitorum Armoured Container" book="Datasheet: Munitorium Armoured Container Cache" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Unit Type" characteristicTypeId="556e6974205479706523232344415441232323" value="Terrain"/>
+                    <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="-"/>
+                    <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="-"/>
+                    <characteristic name="S" characteristicTypeId="5323232344415441232323" value="-"/>
+                    <characteristic name="T" characteristicTypeId="5423232344415441232323" value="7"/>
+                    <characteristic name="W" characteristicTypeId="5723232344415441232323" value="6"/>
+                    <characteristic name="I" characteristicTypeId="4923232344415441232323" value="-"/>
+                    <characteristic name="A" characteristicTypeId="4123232344415441232323" value="-"/>
+                    <characteristic name="LD" characteristicTypeId="4c4423232344415441232323"/>
+                    <characteristic name="Save" characteristicTypeId="5361766523232344415441232323" value="3+"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="4043-7801-7d5c-27a1" name="Munitorum Armoured Container" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>A model in cover behind an armoured container has a 4+ cover save. One non-vehicle model in base contact with an armoured container can fire all of the container&apos;s storm bolters instead of firing their own weapon, following the normal rules for shooting. The armoured container can be shot at and attacked in close combat. it is hit automatically in close combat.</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9192-e995-a8d5-a3b1" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2877-99c1-1629-8de9" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="cc68-d1d0-2b01-b23a" name="Storm Bolters" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks>
+                    <infoLink id="6141-8331-617a-603f" hidden="false" targetId="505e-a5aa-edab-6d5b" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5dca-d8b4-52e2-80e0" type="max"/>
+                  </constraints>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ffe6-6202-5c1b-b460" name="Munitorum Supply Crates" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="6672-db7b-f52d-1240" hidden="false" targetId="58a2-c92e-57cc-d44c" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ade3-528f-a897-344b" type="min"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="81fb-39be-8d91-65dd" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8cbe-c272-1d7d-8def" name="Munitorum Promethium Barrels" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles>
+                <profile id="c564-d5a8-6e04-b606" name="Fuel Drum" book="Datasheet: Munitorium Armoured Container Cache" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="A model in cover behind a fuel drum has a 5+ cover save. However, each time a unit successfully makes this cover save on the roll of a 6, immediately roll another D6. If the result of this roll is a 1, the unit that made the cover save immediately suffers an additional D3 S4 AP5 hits with the Ignores Cover special rule. These additional hits use Random Allocation, and vehicles are hit on the armour facing nearest to the Fuel Drum.  Any Flamer weapon (as defined in BRB) fired by a non-vehicle model within 2&quot; of a fuel drum in the shooting phase can change its weapon type from Assault to Heavy, or from Pistol to Heavy. If it does so, the weapon gains the Torrent special rule until the end of that phase."/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e9a3-498f-293c-c000" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ac78-71ae-d23f-d93f" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3015-0b77-e848-c0f5" name="Plasma Obliterator" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+      <profiles>
+        <profile id="c88d-7245-9c24-d9bf" name="Plasma Obliterator" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="72&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Primary Weapon 1, Massive Blast, Gets Hot"/>
+          </characteristics>
+        </profile>
+        <profile id="6344-4644-fc66-e262" name="Plasma Obliterator" hidden="true" profileTypeId="286c-0cd4-7630-47d0">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Armour Value" characteristicTypeId="83f8-a458-93f9-3e46" value="14"/>
+            <characteristic name="Transport Capacity" characteristicTypeId="0e9c-76b3-2877-614d" value="20"/>
+            <characteristic name="Access Points" characteristicTypeId="13de-08da-586d-f7c0" value="as per model"/>
+            <characteristic name="Fire Points" characteristicTypeId="0767-d18e-a48d-3b39" value="as per model"/>
+            <characteristic name="Hull Points" characteristicTypeId="d1d7-bcc6-18cd-c948" value="4"/>
+            <characteristic name="Building Type" characteristicTypeId="ff97-f5f0-521b-eaf4" value="Medium Building"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="1f44-916a-9413-cee3" name="Plasma Overheat" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>If this building suffers a glancing hit as a result of the plasma obliterator&apos;s Gets Hot special rule then, in addition to any other effects, any unit embarked in the building suffers D3 Wounds. These Wounds are Randomly Allocated.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="05db-6f70-6e39-a027" hidden="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="cd03-be61-f336-ac4c" value="2">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+        </entryLink>
+        <entryLink id="8c4c-4101-a673-e5ac" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="230.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c05d-2231-2481-4037" name="Primus Redoubt" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
+      <profiles>
+        <profile id="254b-5059-bde3-4eac" name="Primus Redoubt" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Armour Value" characteristicTypeId="83f8-a458-93f9-3e46" value="15"/>
+            <characteristic name="Transport Capacity" characteristicTypeId="0e9c-76b3-2877-614d" value="30"/>
+            <characteristic name="Access Points" characteristicTypeId="13de-08da-586d-f7c0" value="as per model"/>
+            <characteristic name="Fire Points" characteristicTypeId="0767-d18e-a48d-3b39" value="0"/>
+            <characteristic name="Hull Points" characteristicTypeId="d1d7-bcc6-18cd-c948" value="10"/>
+            <characteristic name="Building Type" characteristicTypeId="ff97-f5f0-521b-eaf4" value="Large Building with Two Battlements"/>
+          </characteristics>
+        </profile>
+        <profile id="465d-2e63-c6a2-c4eb" name="Force Dome" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="The Primus Redoubt is protected from enemy attack by a projected force shield intended primarily to ward off bombardments from planetary assault vessels in low orbit or from strategic bombardments fired from a great distance away. The redoubt has a 4+ invulnerable save against direct shooting attacks, increased to 3+ against barrage attacks that are fired without being adjusted by the firer’s or an observer’s Ballistic Skill."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="936a-e85a-87ef-78e8" name="Super-heavy Emplacement" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>The Primus Redoubt may only be claimed by an opposing player by embarking models within it – simply moving models onto a Battlement is insufficient to claim it. If no enemy troops are embarked within the redoubt, it is always claimed by the owning side.
+
+The Primus Redoubt’s turbo laser turret is never rendered unable to fire as a result of rolls on the Building Damage table. The turret is never removed as a result of a Structural Collapse or Catastrophic Breach damage result – only the total destruction of the Primus Redoubt destroys the turret weapon.
+
+While counted as a single building, multiple units may be embarked within the Primus
+Redoubt. Multiple units may enter or exit the building each turn, so long as each uses a different Access Point.</description>
+        </rule>
+        <rule id="f321-4a11-3252-3915" name="Reactor Breach" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Should the Primus Redoubt suffer a Detonation! result on the Building Damage table, in addition to the effects described and after they have been resolved, roll on the Catastrophic Damage table, centring the Apocalyptic Mega-blast marker in the centre of the turbo laser turret.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="922a-192e-a82f-9aa2" hidden="false" targetId="3384-a962-78e5-d13c" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries>
+        <selectionEntry id="5690-431a-06a3-4a59" name="Double-barrelled Turbo Laser Destructor Turret" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+          <profiles>
+            <profile id="4781-0365-9c26-0a10" name="Turbo Laser Destructor" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="96&quot;"/>
+                <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="D"/>
+                <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+                <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Primary Weapon 2, Large Blast, Battle Crew"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="7368-118f-28b6-7b82" name="Battle Crew" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>This weapon is controlled by a crew of dedicated gunners, located far below the turret and protected by metres-thick heavy armour. The owning side always fires the turbo laser destructor and it may not be fired by embarked models. The crew count as having a Ballistic Skill of 3, increased to 4 when firing at Super-heavy vehicles or Gargantuan Creatures. The weapon may fire independently and need not target the same enemy as the redoubt’s other weapons.
+
+In the event of enemy models embarking inside the Primus Redoubt, the Battle Crew are slain and the weapon may not be fired again for the remainder of the battle.</description>
+            </rule>
+          </rules>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f56d-1de8-d853-5163" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c021-d6b8-90c2-f5c2" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9962-3941-754c-3abb" name="May take one of the following" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1403-a7f1-2053-252c" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6a60-a800-19ca-49de" name="Twin-linked Heavy Bolter" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="2b69-90a3-7c32-85d4" name="New InfoLink" hidden="false" targetId="271e-6286-86cc-06dd" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ca81-6349-acfe-3ac7" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0d4f-d2be-6c25-9c32" name="Twin-linked Heavy Flamer" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles>
+                <profile id="2d57-19d4-c2a5-2573" name="Twin-linked Heavy Flamer" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="Template"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="5"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ac56-9185-b9b1-4136" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a864-d6ef-a0a2-d879" name="Twin-linked Lascannon" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles>
+                <profile id="160f-d350-3fef-8e82" name="Twin-linked Lascannon" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5f83-563f-341d-d556" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="20.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9321-0136-c85d-ee06" name="Multi-melta &amp; Searchlight" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles>
+                <profile id="c317-2857-4a6c-1a73" name="Multi-melta &amp; Searchlight" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="24&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="1"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Melta"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks>
+                <infoLink id="a385-1c5d-1998-c44b" hidden="false" targetId="9bb4-3833-5343-0dd9" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a245-8367-e848-9054" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f212-a525-33ca-fa7d" name="Hyperios missle Launcher" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="67a3-fa95-a80a-807b" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="30.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a9d8-bc78-6e5e-b282" name="Icarus Lascannon" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="730b-5dbf-9df9-f5e1" hidden="false" targetId="cb26-27b4-9393-a768" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="590f-d3a7-a418-e879" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="35.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="678d-b2b6-5fef-481a" name="Quad-gun" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="75b4-a27c-5cfb-fa7c" hidden="false" targetId="1f7d-9765-ed8e-f6e5" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="70a9-9041-73c0-5b82" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="50.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4820-a666-af97-ac7e" name="Battle Cannon Turret" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f64e-2266-9649-520b" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="50.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7834-20f9-65a7-439d" name="Icarus Quad Lascannon" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="f33e-c6d1-0309-8186" hidden="false" targetId="d503-4001-e4b8-c804" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b9db-6718-ca1c-c14b" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="75.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="25df-7f58-2296-8582" name="Whirlwind Launcher" hidden="false" collective="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <selectionEntries>
+                <selectionEntry id="1e0f-5586-68fe-1c18" name="Vengeance &amp; Castellan Missles" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+                  <profiles>
+                    <profile id="9f99-6fe5-cc6c-2c18" name="Vengeance Missles" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="12&quot; - 48&quot;"/>
+                        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="5"/>
+                        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+                        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Barrage, Large Blast"/>
+                      </characteristics>
+                    </profile>
+                    <profile id="5d91-eab7-f3b9-9109" name="Castellan Missles" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="12&quot; - 48&quot;"/>
+                        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="4"/>
+                        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="5"/>
+                        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Barrage, Large Blast, Ignores Cover"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="35.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="cb3c-3c61-96db-ce42" name="Hyperios Air Defense Missles" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+                  <profiles>
+                    <profile id="0b09-5914-6eca-cdc6" name="Hyperios Air Defense Missles" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot;"/>
+                        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
+                        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+                        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 2, Skyfire, Interceptor"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups/>
+              <entryLinks/>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="df21-624f-8611-5d9a" name="Each Battlement may have up to 2 Heavy Bolters" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fa41-6025-c7d9-c109" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="d3ef-993f-c985-128c" name="Heavy Bolter" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="52a6-5e2d-f5b5-5411" name="New InfoLink" hidden="false" targetId="271e-6286-86cc-06dd" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6544-dc46-1d46-2f67" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b34f-574b-cdc5-2d17" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="55a3-fe1e-d2ec-bddf" hidden="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="cd03-be61-f336-ac4c" value="3">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="650.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e0b3-77ca-af76-bd8b" name="Sanctum Imperialis" book="Planetary Onslaught" page="96" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="b7b9-5650-b83d-96f3" name="Sanctum Imperialis" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Ruins"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="8c64-b74c-64a9-1c95" name="Benevolent Light" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Models in a Sanctum Imperialis have the Adamantium Will and Night Vision special rules.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="a6ae-0d4a-1c28-91fc" name="New InfoLink" hidden="false" targetId="df87-e991-2d30-dc38" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="dec5-e997-f763-0c1f" name="New InfoLink" hidden="false" targetId="a225-e39b-3699-c8f8" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="b70c-e60e-6126-7a79" name="New InfoLink" hidden="false" targetId="12af-0798-6659-e21e" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="20.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="64e8-ec7c-e5d8-6767" name="Force Organization Chart" hidden="false" collective="false">
@@ -6254,7 +10914,7 @@ Command Benefits:
       <selectionEntryGroups/>
       <entryLinks/>
     </selectionEntryGroup>
-    <selectionEntryGroup id="a6f3-9949-7516-19f3" name="Battlements &amp; Battlefield" hidden="false" collective="false">
+    <selectionEntryGroup id="8732-6189-cd26-de94" name="Battlements &amp; Battlefield" hidden="false" collective="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -6379,7 +11039,7 @@ Command Benefits:
       <selectionEntryGroups/>
       <entryLinks/>
     </selectionEntryGroup>
-    <selectionEntryGroup id="ac7c-fdbd-a00a-0045" name="Buildings List" hidden="false" collective="false">
+    <selectionEntryGroup id="6bfa-e532-4165-63ce" name="Buildings List" hidden="false" collective="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -6524,7 +11184,7 @@ Command Benefits:
       <selectionEntryGroups/>
       <entryLinks/>
     </selectionEntryGroup>
-    <selectionEntryGroup id="49a8-6965-894f-a322" name="Obstacles List" hidden="false" collective="false">
+    <selectionEntryGroup id="ad42-921f-358f-2970" name="Obstacles List" hidden="false" collective="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -8005,6 +12665,13 @@ At the beginning of every subsequent player turn, the marker scatters 2D6&quot; 
       <infoLinks/>
       <modifiers/>
       <description>Wing Leaders are free upgrades for Flyers.  One model in each Flyer wing can be upgraded to a Wing Leader at no additional points cost.  At the start of any game, immediately after determining your Warlord Trait, roll on the Wing Leader table for each Wing Leader to determine their special rule.</description>
+    </rule>
+    <rule id="376e-9c4d-f804-6d61" name="Remote Fire" book="Stronghold Assault" page="" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Any of the fortification&apos;s emplaced weapons can be fired (using either automated or manual fire) by models occupying the main tower, even if the building housing the emplaced weapons itself is unoccupied.  This rule cannot be used to fire emplaced weapons on any part of the fortification occupied by an enemy unit.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -9740,6 +14407,30 @@ At the beginning of every subsequent player turn, the marker scatters 2D6&quot; 
       <modifiers/>
       <characteristics>
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Each time a unit (or model) is targeted by an enemy psycic power and is within 12&quot; of a friendly model with a psychic hood, the wearer of the hood can attempt to Deny the Witch in their stead, as if he were in the target unit.  If the Deny the Witch attempt is failed, the psychic power is resolved as norma, but effects only the initial target, not the wearer of the hood.  If a model with a psychic hood is embarked in a vehicle or building, he can only use the hood to nullify powers targeting the vehicle or buildign he is embarked within."/>
+      </characteristics>
+    </profile>
+    <profile id="becf-8670-0c83-dc94" name="Fragstorm missile" book="Planetary Onslaught" page="111" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="18-96"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="4"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="5"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Barrage, Large Blast"/>
+      </characteristics>
+    </profile>
+    <profile id="458f-1e34-27a8-2cbb" name="Krakstorm missile" book="Planetary Onslaught" page="111" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="18-96"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Barrage, Large Blast"/>
       </characteristics>
     </profile>
   </sharedProfiles>
