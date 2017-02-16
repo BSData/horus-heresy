@@ -654,7 +654,190 @@
     </forceEntry>
   </forceEntries>
   <selectionEntries/>
-  <entryLinks/>
+  <entryLinks>
+    <entryLink id="f4de-b983-4df3-0022" name="" hidden="false" targetId="a505-05af-bd44-56b6" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="5c76-6fe4-eef8-545b" name="" hidden="false" targetId="16d6-25c4-af92-4329" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="b14f-a768-b472-77b6" name="" hidden="false" targetId="e10f-7b90-ecd3-80a5" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="135c-0a52-308e-1da5" name="" hidden="false" targetId="33f8-e6da-89a3-01d5" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="6f6f-1e9c-11d2-f68e" name="" hidden="false" targetId="8300-7ced-aafd-2a27" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="bc83-bfc6-07a4-1a65" name="" hidden="false" targetId="b973-7d7d-754e-b022" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="7a8c-d788-dd56-52dd" name="New EntryLink" hidden="false" targetId="06e2-2420-ffc8-13b8" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="9502-e320-5800-7151" name="" hidden="false" targetId="0fe6-096b-23ae-1134" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="e309-aec1-2b07-b46d" name="" hidden="false" targetId="55c6-268b-357f-d070" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="8405-5715-506d-5e2e" name="" hidden="false" targetId="ed7e-757a-4ced-adff" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="9b30-bfc3-8221-9f79" name="" hidden="false" targetId="6140-dc64-5896-957f" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="47bc-f259-825a-5da3" name="" hidden="false" targetId="3015-0b77-e848-c0f5" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="c308-d136-b985-de1d" name="" hidden="false" targetId="c05d-2231-2481-4037" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="b79c-9d4c-de0c-28c8" name="" hidden="false" targetId="1a59-dd0f-a7f2-32be" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="07dd-9945-1d0d-bbef" name="" hidden="false" targetId="e0b3-77ca-af76-bd8b" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="1d57-8b84-eb4b-cc29" name="" hidden="false" targetId="595a-908e-96a1-f121" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="1855-5c7d-ec21-08b5" name="" hidden="false" targetId="5cdd-edbb-07c3-0ba5" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="a30e-73a9-7c8c-1e4c" name="" hidden="false" targetId="796a-21c2-7281-17a8" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="fd35-7d4c-2a96-d271" name="" hidden="false" targetId="bbd4-5f41-35d1-6c5f" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="ad10-a932-ef93-dc33" name="" hidden="false" targetId="053a-fd01-be65-238e" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="85fc-6620-0473-772d" name="" hidden="false" targetId="a172-78de-aaa6-2201" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="ca7f-01d4-dca0-c6f1" name="" hidden="false" targetId="0116-c81b-1c0f-251c" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="c4fd-41b3-643a-45c6" name="" hidden="false" targetId="df05-8179-624e-f8b2" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="7721-0774-53ab-c66c" name="" hidden="false" targetId="0f73-97f2-b832-f6d0" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="e869-e718-f37e-b745" name="" hidden="false" targetId="0d50-24ac-a53e-5db7" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+    <entryLink id="20e5-6adb-59a5-da65" name="" hidden="false" targetId="04bf-6c22-19fb-4e46" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </entryLink>
+  </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="66c9-eaa6-a91a-00ed" name="Fortification" hidden="false" collective="false" type="upgrade">
       <profiles/>
@@ -8731,6 +8914,104 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ed7e-757a-4ced-adff" name="Imperial Strongpoint" book="Planetary Onslaught" page="81" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="unit">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="65de-14fb-542f-6d4c" name="Aegis Defense Line" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fc1b-c54a-bc57-cd04" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2302-b7cc-5f1c-d5de" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="e735-065d-d687-5b65" hidden="false" targetId="a505-05af-bd44-56b6" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8e7d-2128-250c-cdaa" name="Imperial Bastions" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3699-d39f-fbac-0860" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9f91-557d-188d-8cc2" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="daf6-5ca2-4cea-91dd" hidden="false" targetId="55c6-268b-357f-d070" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0297-1453-6d1d-0184" name="Skyshield Landing Pad" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="04af-5ce8-377c-4c92" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6173-3fc9-18d5-0d26" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="8aa0-05da-fdaa-51bd" hidden="false" targetId="5cdd-edbb-07c3-0ba5" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="995c-7d67-1878-9e9d" name="Honored Imperium" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="adce-4f8e-953b-bc0c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="762f-972e-a38d-25c9" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="c576-7c0d-8118-d341" hidden="false" targetId="0fe6-096b-23ae-1134" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
