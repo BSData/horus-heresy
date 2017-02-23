@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="60" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="61" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -3372,7 +3372,7 @@ D6    Result		S	AP
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="f6e0-7b9f-be98-044e" name="New InfoLink" hidden="false" targetId="f495-679e-1976-68d1" type="rule">
+                <infoLink id="f6e0-7b9f-be98-044e" name="New InfoLink" hidden="false" targetId="c49d-a848-144a-14d6" type="rule">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -3934,7 +3934,7 @@ D6    Result		S	AP
                       <infoLinks/>
                       <modifiers/>
                     </infoLink>
-                    <infoLink id="d1ce-14e7-b9a1-53b7" name="New InfoLink" hidden="false" targetId="f495-679e-1976-68d1" type="rule">
+                    <infoLink id="d1ce-14e7-b9a1-53b7" name="New InfoLink" hidden="false" targetId="c49d-a848-144a-14d6" type="rule">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
@@ -13378,6 +13378,13 @@ At the beginning of every subsequent player turn, the marker scatters 2D6&quot; 
       <infoLinks/>
       <modifiers/>
       <description>Any of the fortification&apos;s emplaced weapons can be fired (using either automated or manual fire) by models occupying the main tower, even if the building housing the emplaced weapons itself is unoccupied.  This rule cannot be used to fire emplaced weapons on any part of the fortification occupied by an enemy unit.</description>
+    </rule>
+    <rule id="c49d-a848-144a-14d6" name="Battle-automata power blades" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description> Battle-automata power blades are paired weapons and so add +1 to the model’s attacks and count as being Two-handed.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
