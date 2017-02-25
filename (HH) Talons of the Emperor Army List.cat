@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a30a-7522-3343-553a" name="Talons of the Emperor" book="HH7" page="" revision="62" battleScribeVersion="2.00" authorName="Alphalas, Earl Bishop" authorContact="Gitter: @Alphalas, @Kohato; twitter: @kingoverlord" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a30a-7522-3343-553a" name="Talons of the Emperor" book="HH7" page="" revision="64" battleScribeVersion="2.00" authorName="Alphalas, Earl Bishop" authorContact="Gitter: @Alphalas, @Kohato; twitter: @kingoverlord" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -71,13 +71,6 @@
       <modifiers/>
       <constraints/>
     </entryLink>
-    <entryLink id="3f9c-7485-10f9-d0a1" name="New EntryLink" hidden="false" targetId="52aa-6b05-24b3-d283" type="selectionEntry">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-    </entryLink>
     <entryLink id="ce30-2f93-dba9-98c0" name="New EntryLink" hidden="false" targetId="d290-734d-18b9-e387" type="selectionEntry" categoryEntryId="456c6974657323232344415441232323">
       <profiles/>
       <rules/>
@@ -107,13 +100,6 @@
       <constraints/>
     </entryLink>
     <entryLink id="64f9-bed3-1fd6-3379" name="New EntryLink" hidden="false" targetId="1ebb-ff7d-d5f8-ee60" type="selectionEntry" categoryEntryId="485123232344415441232323">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-    </entryLink>
-    <entryLink id="350b-26dd-d348-38d0" name="New EntryLink" hidden="false" targetId="fdd2-62b7-2df5-5793" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -339,7 +325,7 @@
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="pts" costTypeId="points" value="55.0"/>
+            <cost name="pts" costTypeId="points" value="65.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1071,7 +1057,7 @@
               <rules/>
               <infoLinks/>
               <modifiers>
-                <modifier type="set" field="points" value="10">
+                <modifier type="set" field="points" value="20">
                   <repeats/>
                   <conditions/>
                   <conditionGroups/>
@@ -1101,7 +1087,7 @@
               <rules/>
               <infoLinks/>
               <modifiers>
-                <modifier type="set" field="points" value="10">
+                <modifier type="set" field="points" value="20">
                   <repeats/>
                   <conditions/>
                   <conditionGroups/>
@@ -1336,7 +1322,7 @@
               </infoLinks>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47d4-a02b-9a40-d8f1" type="max"/>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="47d4-a02b-9a40-d8f1" type="max"/>
               </constraints>
               <selectionEntries/>
               <selectionEntryGroups/>
@@ -2046,9 +2032,7 @@
                       </constraints>
                     </entryLink>
                   </entryLinks>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="10.0"/>
-                  </costs>
+                  <costs/>
                 </selectionEntry>
               </selectionEntries>
               <selectionEntryGroups/>
@@ -2152,7 +2136,13 @@
                   <profiles/>
                   <rules/>
                   <infoLinks/>
-                  <modifiers/>
+                  <modifiers>
+                    <modifier type="set" field="points" value="15">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="1ebb-ff7d-d5f8-ee60" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f2a6-5b31-2251-79ff" type="max"/>
                   </constraints>
@@ -2817,7 +2807,7 @@
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup id="2015-e681-2dc6-f853" name="May Replace his Custodian Spear with:" hidden="false" collective="false" defaultSelectionEntryId="e858-d4f4-e1b7-27b8">
+            <selectionEntryGroup id="2015-e681-2dc6-f853" name="May Replace his Guardian Spear with:" hidden="false" collective="false" defaultSelectionEntryId="e858-d4f4-e1b7-27b8">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -3419,7 +3409,9 @@
               </constraints>
             </entryLink>
           </entryLinks>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="37a0-222f-3e30-5879" name="Twin-Linked Arachnus Blaze Cannon" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -3451,7 +3443,9 @@
               </constraints>
             </entryLink>
           </entryLinks>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -3475,7 +3469,7 @@
               </infoLinks>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4190-c0c2-2ffe-d181" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4190-c0c2-2ffe-d181" type="max"/>
               </constraints>
               <selectionEntries/>
               <selectionEntryGroups/>
@@ -3649,7 +3643,9 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -3673,7 +3669,7 @@
               </infoLinks>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5250-bd43-559b-52b5" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5250-bd43-559b-52b5" type="max"/>
               </constraints>
               <selectionEntries/>
               <selectionEntryGroups/>
@@ -3748,7 +3744,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="459b-caf5-0703-cff5" name="Twin-Linked Multi-Melta" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -3774,14 +3772,24 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
           <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="4728-23a5-5188-114f" name="New EntryLink" hidden="false" targetId="dc16-2d58-276a-ae27" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="125.0"/>
       </costs>
@@ -3821,19 +3829,8 @@
           <modifiers/>
         </infoLink>
       </infoLinks>
-      <modifiers>
-        <modifier type="increment" field="b01c-2167-3001-ed47" value="1">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ebb-ff7d-d5f8-ee60" repeats="3" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc00-5542-b66c-07ee" repeats="3" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="26dd-4eb2-fe70-ea73" repeats="3" roundUp="false"/>
-          </repeats>
-          <conditions/>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
+      <modifiers/>
       <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b01c-2167-3001-ed47" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f26a-bf03-6983-4205" type="max"/>
       </constraints>
       <selectionEntries>
@@ -4201,6 +4198,13 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="be32-1364-0313-8168" name="New EntryLink" hidden="false" targetId="90bd-22e7-9326-3298" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="9cc3-a328-5e91-68df" name="New EntryLink" hidden="false" targetId="dc16-2d58-276a-ae27" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4609,20 +4613,8 @@
           <modifiers/>
         </infoLink>
       </infoLinks>
-      <modifiers>
-        <modifier type="increment" field="76bc-76f6-9b49-ae98" value="1">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ebb-ff7d-d5f8-ee60" repeats="3" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc00-5542-b66c-07ee" repeats="3" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="26dd-4eb2-fe70-ea73" repeats="3" roundUp="false"/>
-          </repeats>
-          <conditions/>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76bc-76f6-9b49-ae98" type="max"/>
-      </constraints>
+      <modifiers/>
+      <constraints/>
       <selectionEntries>
         <selectionEntry id="c9fc-4070-c8d4-a1fd" name="Seeker Mistress" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -4857,7 +4849,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4905,7 +4897,7 @@
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="pts" costTypeId="points" value="12.0"/>
+            <cost name="pts" costTypeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4955,6 +4947,20 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="5142-4844-b812-0a84" name="New EntryLink" hidden="false" targetId="90bd-22e7-9326-3298" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="41f6-7915-1a23-aa05" name="New EntryLink" hidden="false" targetId="dc16-2d58-276a-ae27" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="c832-c855-446e-d476" name="New EntryLink" hidden="false" targetId="90bd-22e7-9326-3298" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5029,7 +5035,9 @@
                       </constraints>
                     </entryLink>
                   </entryLinks>
-                  <costs/>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="3ecd-b207-0c49-4ed1" name="One member may replace their Adrastus Bolt Caliver with:" hidden="false" collective="false" type="upgrade">
                   <profiles/>
@@ -5308,7 +5316,9 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="4bfc-eaf8-31e0-29f2" name="Dreadnought Praesidium Shield" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -5329,7 +5339,9 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
@@ -5385,20 +5397,8 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers>
-        <modifier type="increment" field="75ff-3a16-97ee-6995" value="1">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ebb-ff7d-d5f8-ee60" repeats="3" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc00-5542-b66c-07ee" repeats="3" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="26dd-4eb2-fe70-ea73" repeats="3" roundUp="false"/>
-          </repeats>
-          <conditions/>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75ff-3a16-97ee-6995" type="max"/>
-      </constraints>
+      <modifiers/>
+      <constraints/>
       <selectionEntries>
         <selectionEntry id="4296-476d-bbcf-5191" name="Raptor Guard Cadre" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -5777,7 +5777,22 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="18d5-d1c5-9fed-9e13" name="New EntryLink" hidden="false" targetId="dc16-2d58-276a-ae27" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="b09f-7efe-8568-225a" name="New EntryLink" hidden="false" targetId="90bd-22e7-9326-3298" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
@@ -6001,20 +6016,8 @@
           <modifiers/>
         </infoLink>
       </infoLinks>
-      <modifiers>
-        <modifier type="increment" field="f0be-f02a-3c23-8657" value="1">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ebb-ff7d-d5f8-ee60" repeats="3" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc00-5542-b66c-07ee" repeats="3" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="26dd-4eb2-fe70-ea73" repeats="3" roundUp="false"/>
-          </repeats>
-          <conditions/>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0be-f02a-3c23-8657" type="max"/>
-      </constraints>
+      <modifiers/>
+      <constraints/>
       <selectionEntries>
         <selectionEntry id="3230-5d28-c87c-cd84" name="Prosecutors" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -6257,7 +6260,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="d1df-8a72-8b0b-c67e" name="Breaching Charge" hidden="false" collective="false" type="upgrade">
@@ -6273,7 +6276,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -6355,7 +6358,22 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="6b58-ae1a-4b28-79f5" name="New EntryLink" hidden="false" targetId="dc16-2d58-276a-ae27" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="81cd-ce33-c917-f793" name="New EntryLink" hidden="false" targetId="90bd-22e7-9326-3298" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
@@ -6389,20 +6407,8 @@
           <modifiers/>
         </infoLink>
       </infoLinks>
-      <modifiers>
-        <modifier type="increment" field="8dda-d67f-bb0d-fa9c" value="1">
-          <repeats>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ebb-ff7d-d5f8-ee60" repeats="3" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc00-5542-b66c-07ee" repeats="3" roundUp="false"/>
-            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="26dd-4eb2-fe70-ea73" repeats="3" roundUp="false"/>
-          </repeats>
-          <conditions/>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8dda-d67f-bb0d-fa9c" type="max"/>
-      </constraints>
+      <modifiers/>
+      <constraints/>
       <selectionEntries>
         <selectionEntry id="fcd4-d99f-6309-de2e" name="Vigilator" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -6776,7 +6782,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -6829,7 +6835,22 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="6a7d-49b5-1500-355e" name="New EntryLink" hidden="false" targetId="dc16-2d58-276a-ae27" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="2413-88ea-923d-a525" name="New EntryLink" hidden="false" targetId="90bd-22e7-9326-3298" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
@@ -6850,7 +6871,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="4f36-1f24-0152-73d0" name="Grenade Launcher" hidden="false" collective="true" type="upgrade">
       <profiles/>
@@ -6880,7 +6903,36 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dc16-2d58-276a-ae27" name="Company Cadre Choice" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="increment" field="34d4-cfaf-ca68-2b7a" value="1">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ebb-ff7d-d5f8-ee60" repeats="3" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc00-5542-b66c-07ee" repeats="3" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="26dd-4eb2-fe70-ea73" repeats="3" roundUp="false"/>
+          </repeats>
+          <conditions/>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f129-4406-805f-46ab" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81a9-733e-6f95-fcb9" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="34d4-cfaf-ca68-2b7a" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -8913,7 +8965,7 @@
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>Attacks with this weapon cause Instant Death on a To Wound roll of a 6. Roll any viable saves against thses Instant Death-causing wounds seperately to any other wounds the attack inflicts.</description>
+      <description>Attacks with this weapon cause Instant Death on a To Wound roll of 5 or 6. Roll any viable saves against thses Instant Death-causing wounds seperately to any other wounds the attack inflicts.</description>
     </rule>
     <rule id="dd32-1791-4789-051f" name="Heliothermic Detonation" hidden="false">
       <profiles/>
@@ -8936,17 +8988,29 @@
       <modifiers/>
       <description>If this wepon scores a penetrating hit on a target, roll a D6. on a roll of a 4+, a second automatic penetrating hit is inflicted on the same target, against which cover saves may not be taken.</description>
     </rule>
-    <rule id="584d-e540-7fdd-92c9" name="Psykic Anathema" hidden="false">
+    <rule id="584d-e540-7fdd-92c9" name="Psykic Anathema" book="HH7:Inferno" page="247" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>Models witht his rule ar eimmune to all psychic powers and cannot be affected by them. They also ignore any Telepathy Discipline Blessings on enemy units which would negatively affect the models which this rule. This does not extend to Transport Vehicles.
+
+All units with in 12&quot; of any model with this rul suffer -1 to their Leadership value increasing to -2 if the model is a Psyker. Models with Fearless or the Psychic Anathema are not subject to this effect. This affects friend and foe equally.
+
+Units within 12&quot; of models with this rul must re-roll Deny the Witch tests.
+
+All units with Daemon within 12&quot; of any model with this rule suffer -1 to their Toughness of if they have armour instead of toughness they add +1 to all rolls on the Vehicle damage table.
+
+All models with psychic powers suffer a penalty to roll to manifest psychic powers when near any model with this rule. -1 within 12&quot;, increasting to -2 when in base contact.</description>
     </rule>
-    <rule id="c793-7756-3669-827c" name="Ex Oblivio" hidden="false">
+    <rule id="c793-7756-3669-827c" name="Ex Oblivio" book="HH7:Inferno" page="247" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>Psychi models or units of any kind within 6&quot; of models with tis rul at the start of their Psychic phase do not generate additional warp charge dice.
+
+If any Psyhic model is in base contact with a model that has this special rule at the start of any Psychic phase they must immediately make a Leadership text before Warp Charge is rulled for. If this test is failed they must immediately suffer Perils of the Warp at -1and may not use any psychic powers durung this phase should they survive this.</description>
     </rule>
     <rule id="97d7-d358-141a-8579" name="Fanatic Disipline" hidden="false">
       <profiles/>
@@ -8960,7 +9024,7 @@
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>In order to feild any units with the Company-Cadre special rule using the Talons of the Emperor army list, at least one HQ unit with this special rule must be part of this detachment for every 3 non-HQ units with the Company Cadre special rule in the same detachment. </description>
+      <description>In order to field any units with the Company-Cadre special rule using the Talons of the Emperor army list, at least one HQ unit with this special rule must be part of this detachment for every 3 non-HQ units with the Company Cadre special rule in the same detachment. </description>
     </rule>
     <rule id="6774-89d9-ba61-1071" name="Cadre Tactics" hidden="false">
       <profiles/>
@@ -9022,11 +9086,12 @@ Overawe(+1 to the total score to determine the result of an assault)</descriptio
       <modifiers/>
       <description>Provides the wearer with a 4++, which increases to a 3++ vs Template and Blast weapons</description>
     </rule>
-    <rule id="3eed-1fde-941e-af2d" name="Compression Tanks" hidden="false">
+    <rule id="3eed-1fde-941e-af2d" name="Compression Tanks" book="HH7:Inferno" page="255" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
+      <description>Once per game, a model equipped with this wargear can use it, and their controlling player must declare its use before any rolls To Wound are made for this attack. When it is used, the flamer&apos;s Strenght is increated to 6. Once used in this manner the flamer cannot be used again at all for the rest of the game.</description>
     </rule>
     <rule id="7e19-5042-d0cb-0d82" name="Instruments of Torment" hidden="false">
       <profiles/>
