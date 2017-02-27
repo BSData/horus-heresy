@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="32d1ddc6-3187-cf6f-3bf8-9891e527a002" name="Questoris Knight Crusade Army" book="HH4: Conquest" revision="30" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="32d1ddc6-3187-cf6f-3bf8-9891e527a002" name="Questoris Knight Crusade Army" book="HH4: Conquest" revision="31" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -2634,18 +2634,34 @@ D6    Result		S	AP
       </modifiers>
       <constraints/>
     </entryLink>
-    <entryLink id="f312-c122-88f0-895a" name="New EntryLink" hidden="false" targetId="deb3-68a3-5d36-eb3d" type="selectionEntry" categoryEntryId="466173742041747461636b23232344415441232323">
+    <entryLink id="f312-c122-88f0-895a" name="New EntryLink" hidden="true" targetId="deb3-68a3-5d36-eb3d" type="selectionEntry" categoryEntryId="466173742041747461636b23232344415441232323">
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27575b75-5e1e-26ab-1074-fa91b73e2216" type="lessThan"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints/>
     </entryLink>
-    <entryLink id="daf0-4297-3944-3593" name="New EntryLink" hidden="false" targetId="48db-84ca-2bad-520f" type="selectionEntry" categoryEntryId="54726f6f707323232344415441232323">
+    <entryLink id="daf0-4297-3944-3593" name="New EntryLink" hidden="true" targetId="48db-84ca-2bad-520f" type="selectionEntry" categoryEntryId="54726f6f707323232344415441232323">
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27575b75-5e1e-26ab-1074-fa91b73e2216" type="lessThan"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints/>
     </entryLink>
   </entryLinks>
