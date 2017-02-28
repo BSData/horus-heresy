@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" book="HH5: Tempest" revision="38" battleScribeVersion="2.00" authorName="Alphalas" authorContact="Gitter: @Alphalas, twitter: @kingoverlord" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" book="HH5: Tempest" revision="39" battleScribeVersion="2.00" authorName="Alphalas" authorContact="Gitter: @Alphalas, twitter: @kingoverlord" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules>
     <rule id="0f6d-7554-f6a7-f825" name="Warmaster&apos;s Due" hidden="false">
@@ -682,6 +682,7 @@
           <constraints>
             <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="bf64-916a-a3d3-6591" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5cd-84e8-0216-0fbd" type="min"/>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="175d-c658-497e-e895" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="387f-23ec-fca4-40f1" name="New EntryLink" hidden="true" targetId="6bb0-c04d-10f4-b992" type="selectionEntry">
@@ -6361,10 +6362,18 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
               </conditions>
               <conditionGroups/>
             </modifier>
+            <modifier type="set" field="ad79-923a-b10d-6dd5" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="80a2-7d5f-396f-352e" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="aa44-16f0-7051-6702" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="158b-c896-9892-2898" type="min"/>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad79-923a-b10d-6dd5" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="179b-de0d-3430-985a" name="New EntryLink" hidden="true" targetId="6bb0-c04d-10f4-b992" type="selectionEntry">
@@ -7113,10 +7122,18 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
               </conditions>
               <conditionGroups/>
             </modifier>
+            <modifier type="set" field="81ba-1d44-c114-c889" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="80a2-7d5f-396f-352e" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2a5c-d508-ede1-14d3" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a46f-a0dd-80a0-aa14" type="min"/>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81ba-1d44-c114-c889" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="b7e3-0b32-3886-95bd" name="New EntryLink" hidden="true" targetId="6bb0-c04d-10f4-b992" type="selectionEntry">
@@ -8029,10 +8046,18 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
               </conditions>
               <conditionGroups/>
             </modifier>
+            <modifier type="set" field="c578-2e53-55a0-20fd" value="2">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="80a2-7d5f-396f-352e" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b5c3-3de1-ba9a-f261" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0def-16be-71d7-6096" type="min"/>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c578-2e53-55a0-20fd" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="af1c-572b-5880-ae9e" name="New EntryLink" hidden="true" targetId="6bb0-c04d-10f4-b992" type="selectionEntry">
@@ -9148,10 +9173,18 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
               </conditions>
               <conditionGroups/>
             </modifier>
+            <modifier type="set" field="ed5c-4cda-caf1-b76b" value="2">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="80a2-7d5f-396f-352e" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="edbb-8550-28ef-09b5" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e50-7c2b-6688-bf61" type="min"/>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ed5c-4cda-caf1-b76b" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="bbef-f876-be8d-6af9" name="New EntryLink" hidden="true" targetId="6bb0-c04d-10f4-b992" type="selectionEntry">
@@ -9460,10 +9493,18 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
               </conditions>
               <conditionGroups/>
             </modifier>
+            <modifier type="set" field="3525-2e52-bdec-2b94" value="2">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="80a2-7d5f-396f-352e" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3f28-2af6-2770-9e9b" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0814-72d6-ed6d-3140" type="min"/>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3525-2e52-bdec-2b94" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="f4fe-74eb-b8a4-4a45" name="New EntryLink" hidden="true" targetId="6bb0-c04d-10f4-b992" type="selectionEntry">
@@ -10047,10 +10088,18 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
               </conditions>
               <conditionGroups/>
             </modifier>
+            <modifier type="set" field="12ee-0378-ffae-2c14" value="2">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="80a2-7d5f-396f-352e" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a7fe-130c-f3ec-2f23" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93a7-fc1e-1bd9-a634" type="min"/>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="12ee-0378-ffae-2c14" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="4ca9-8cb8-1b3d-a09a" name="New EntryLink" hidden="true" targetId="6bb0-c04d-10f4-b992" type="selectionEntry">
@@ -10642,10 +10691,18 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
               </conditions>
               <conditionGroups/>
             </modifier>
+            <modifier type="set" field="06cd-4a3b-7dc0-cd0d" value="2">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="80a2-7d5f-396f-352e" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3a61-0e55-4124-aa0b" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="838a-0bdf-04b7-4a9b" type="min"/>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="06cd-4a3b-7dc0-cd0d" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="ebf2-2b06-6f59-6208" name="New EntryLink" hidden="true" targetId="6bb0-c04d-10f4-b992" type="selectionEntry">
