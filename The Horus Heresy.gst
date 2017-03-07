@@ -12528,46 +12528,6 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
         <cost name="pts" costTypeId="points" value="240.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="48ee846f-5f68-d83d-4f9a-e1a797dc1cd1" name="Aucteller" book="HH4: Conquest" page="296" hidden="false" collective="false" categoryEntryId="456c6974657323232344415441232323" type="model">
-      <profiles/>
-      <rules>
-        <rule id="1a6b815b-3423-47b1-06e4-98cb5e9119ee" name="Sworn Enemy" book="HH4: Conquest" page="296" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>After set-up but before the game begins, the Aucteller&apos;s owning player must specify one of the following as the Knight&apos;s &apos;Sworn Enemy&apos;: the enemy Warlord, a Lords of War unit other than a Flyer, a Super-heavy Walker or ground vehicle, or a Gargantuan Creature. Should the Aucteller destroy the unit (i.e., cause its last Hull Point or wound to be lost, or the unit to flee from the table), the Aucteller&apos;s owning player gains an additional D3 Victory points (this is in addition to any other provision of the mission, such as Slay the Warlord). If the Sworn Enemy unit is destroyed or removed from play by any other means, no additional Victory points are scored for the Sworn Enemy unit by either side.
-
-If the Sword Enemy still remains in play at the end of the game, its owning player gains +1 Victory point.</description>
-        </rule>
-        <rule id="3bf0ccd0-6cb5-4f84-88d6-b6eb6cc464d2" name="From Death I Strike" book="HH4: Conquest" page="296" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>If the Aucteller&apos;s Knight is destroyed in an assault against their sworn foe, before any other effects take place (for example, rolle on hte Catastrophic Damage table), the Knight may immediately make an additional single close combat attack using its normal profile and weapon against their Sworn Enemy.</description>
-        </rule>
-      </rules>
-      <infoLinks/>
-      <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxInForce" type="max"/>
-      </constraints>
-      <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks>
-        <entryLink id="c1e90647-960a-2d15-b131-b355ea288de1" hidden="false" targetId="dcd9f954-73a9-25ad-b7db-1a8591d65d10" type="selectionEntryGroup">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="pts" costTypeId="points" value="35.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="b911-4621-d6a5-7c4f" name="Legio Titanicus Reaver Battle Titan" book="HH5: Tempest" page="261" hidden="false" collective="false" categoryEntryId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" type="model">
       <profiles>
         <profile id="dd6b-9b55-1693-e9c7" name="Reaver Battle Titan" book="HH5: Tempest" page="264" hidden="false" profileTypeId="57616c6b657223232344415441232323">
