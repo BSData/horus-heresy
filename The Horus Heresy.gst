@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="66" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="68" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -844,6 +844,36 @@
       <modifiers/>
       <constraints/>
     </entryLink>
+    <entryLink id="f312-c122-88f0-895a" name="New EntryLink" hidden="true" targetId="deb3-68a3-5d36-eb3d" type="selectionEntry" categoryEntryId="466173742041747461636b23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27575b75-5e1e-26ab-1074-fa91b73e2216" type="lessThan"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints/>
+    </entryLink>
+    <entryLink id="daf0-4297-3944-3593" name="New EntryLink" hidden="true" targetId="48db-84ca-2bad-520f" type="selectionEntry" categoryEntryId="54726f6f707323232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27575b75-5e1e-26ab-1074-fa91b73e2216" type="lessThan"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints/>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="66c9-eaa6-a91a-00ed" name="Fortification" hidden="true" collective="false" type="upgrade">
@@ -1244,24 +1274,6 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="68e1-5845-924d-6446" name="New InfoLink" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="bd1f-e2e3-eeec-3c8c" name="New InfoLink" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="bd83-d725-de54-a936" name="New InfoLink" hidden="false" targetId="b5c1-4b08-5ddc-1504" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
       </infoLinks>
       <modifiers/>
       <constraints/>
@@ -1315,13 +1327,13 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="6018-217b-c5bc-7f05" name="New InfoLink" hidden="false" targetId="39e9-832d-44e8-426f" type="profile">
+                <infoLink id="6018-217b-c5bc-7f05" name="New InfoLink" hidden="false" targetId="d0f5-09ae-4c91-8764" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="98e4-7116-f4b0-13d4" name="New InfoLink" hidden="false" targetId="d44e-3ae0-bac4-23f9" type="profile">
+                <infoLink id="98e4-7116-f4b0-13d4" name="507b-2215-7be8-61d7" hidden="false" targetId="507b-2215-7be8-61d7" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -1447,13 +1459,13 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="40cf-7127-6cd3-1831" name="New InfoLink" hidden="false" targetId="39e9-832d-44e8-426f" type="profile">
+                <infoLink id="40cf-7127-6cd3-1831" name="New InfoLink" hidden="false" targetId="d0f5-09ae-4c91-8764" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="a979-9fd0-837a-f48f" name="New InfoLink" hidden="false" targetId="d44e-3ae0-bac4-23f9" type="profile">
+                <infoLink id="a979-9fd0-837a-f48f" name="New InfoLink" hidden="false" targetId="507b-2215-7be8-61d7" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -1532,7 +1544,15 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
           <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="1f6b-92d2-799f-d6df" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="750.0"/>
       </costs>
@@ -1593,24 +1613,6 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
           <modifiers/>
         </infoLink>
         <infoLink id="03c7-d1dd-6f84-3a4d" name="New InfoLink" hidden="false" targetId="666f-e93b-4f0b-ae40" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="9446-1a0d-34de-c232" name="New InfoLink" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="48cd-f2a1-68fb-c88d" name="New InfoLink" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="2cdf-5adb-9aa8-9074" name="New InfoLink" hidden="false" targetId="b5c1-4b08-5ddc-1504" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1760,13 +1762,13 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="284a-5bf3-7f0f-8a72" name="New InfoLink" hidden="false" targetId="39e9-832d-44e8-426f" type="profile">
+                <infoLink id="284a-5bf3-7f0f-8a72" name="New InfoLink" hidden="false" targetId="d0f5-09ae-4c91-8764" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="5a89-968a-ae1c-2a61" name="New InfoLink" hidden="false" targetId="d44e-3ae0-bac4-23f9" type="profile">
+                <infoLink id="5a89-968a-ae1c-2a61" name="New InfoLink" hidden="false" targetId="507b-2215-7be8-61d7" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -2181,7 +2183,15 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
           <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="1394-e2e8-78da-7418" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="1450.0"/>
       </costs>
@@ -2287,50 +2297,7 @@ D6    Result		S	AP
           <description>May fire Overwatch attacks even when not normally allowed to do so and carries out all Snap Shots at BS2.  </description>
         </rule>
       </rules>
-      <infoLinks>
-        <infoLink id="f82d-e783-b623-c239" name="New InfoLink" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="2e1f-970a-eef3-ef1f" name="New InfoLink" hidden="false" targetId="6f66-b417-6004-0916" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="07b0-4aef-e5a0-bbb5" name="New InfoLink" hidden="false" targetId="4284-18a1-9844-a0bd" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="1e74-c4d3-c698-7f63" name="New InfoLink" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="b675-3858-a320-6ee2" name="New InfoLink" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="c964-2099-cb83-ddc2" name="New InfoLink" hidden="false" targetId="dd83-7fb9-6f58-0c96" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="896c-476d-a48a-9514" name="New InfoLink" hidden="false" targetId="b5c1-4b08-5ddc-1504" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-      </infoLinks>
+      <infoLinks/>
       <modifiers/>
       <constraints/>
       <selectionEntries/>
@@ -2656,13 +2623,13 @@ D6    Result		S	AP
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="d790-cd99-e0f1-cba9" name="New InfoLink" hidden="false" targetId="39e9-832d-44e8-426f" type="profile">
+                <infoLink id="d790-cd99-e0f1-cba9" name="New InfoLink" hidden="false" targetId="d0f5-09ae-4c91-8764" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="3167-6a34-ea42-d324" name="New InfoLink" hidden="false" targetId="d44e-3ae0-bac4-23f9" type="profile">
+                <infoLink id="3167-6a34-ea42-d324" name="New InfoLink" hidden="false" targetId="507b-2215-7be8-61d7" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -3124,7 +3091,15 @@ D6    Result		S	AP
           <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="e1e5-dafc-6dba-6446" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="2750.0"/>
       </costs>
@@ -3321,7 +3296,7 @@ D6    Result		S	AP
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="7536-fa3d-9d94-c7b4" name="New InfoLink" hidden="false" targetId="c32e-0d1a-f6db-2007" type="profile">
+                <infoLink id="7536-fa3d-9d94-c7b4" name="New InfoLink" hidden="false" targetId="871025a3-7729-f97d-378d-804c3571cdf3" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -3968,7 +3943,7 @@ D6    Result		S	AP
                   <profiles/>
                   <rules/>
                   <infoLinks>
-                    <infoLink id="4080-b42f-51a4-6c9a" hidden="false" targetId="32d5-9382-d290-b026" type="profile">
+                    <infoLink id="4080-b42f-51a4-6c9a" hidden="false" targetId="51100eb8-f6e6-7048-df0a-84f0163a38bd" type="profile">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
@@ -9637,6 +9612,2854 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="02eb28bb-1883-8603-0af7-b8bf2b7b69c8" name="Questoris Knight Paladin" book="HH4: Conquest" page="301" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
+      <profiles>
+        <profile id="bbc7426f-0a42-4f60-04e5-890db3826ec3" name="Questoris Knight Paladin" book="HH4: Conquest" page="301" hidden="false" profileTypeId="57616c6b657223232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="4"/>
+            <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
+            <characteristic name="S" characteristicTypeId="5323232344415441232323" value="10"/>
+            <characteristic name="Front" characteristicTypeId="46726f6e7423232344415441232323" value="13"/>
+            <characteristic name="Side" characteristicTypeId="5369646523232344415441232323" value="12"/>
+            <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="12"/>
+            <characteristic name="I" characteristicTypeId="4923232344415441232323" value="4"/>
+            <characteristic name="A" characteristicTypeId="4123232344415441232323" value="3"/>
+            <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="6"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Super-Heavy Walker"/>
+          </characteristics>
+        </profile>
+        <profile id="4580dd76-7ecd-4c31-c664-d442c492779a" name="Questoris battlecannon" book="HH4: Conquest" page="308" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="02eb28bb-1883-8603-0af7-b8bf2b7b69c8" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f89283d8-d9d1-7f20-b630-4ad158e12292" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="72&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="6"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 3, Large Blast"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="a9800c8c-4e65-b796-cea4-ddcfa68e7a1b" hidden="false" targetId="342d5e83-9f9b-42c0-cecb-e6c9c197ab9d" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="82ce9879-35ab-49f0-55de-8b8bd9e7d26c" hidden="false" targetId="76191f60-ba9c-4e52-9faf-24b23e46c7a9" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="69f8af61-ab69-9f1d-d1b3-cf3ea26ba06d" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f89283d8-d9d1-7f20-b630-4ad158e12292" name="May exchange Questoris battlecannon for:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries>
+            <selectionEntry id="c7e655d1-24ba-0f3c-b15e-3874f6ee954c" name="Rapid-fire battlecannon" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles>
+                <profile id="7c3d4d95-4d1d-f3c9-d69e-b36b0b160159" name="Rapid-fire battlecannon" book="HH4: Conquest" page="308" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="72&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 2, Large Blast"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="eef5e012-fb2a-a50a-34b1-85268e51cadc" name="May be upgraded with:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries>
+            <selectionEntry id="a0fe2e7e-0934-d570-9b21-ffd094742e42" name="Bio-corrosive rounds for its heavy stubbers" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles>
+                <profile id="ceeb7d99-c289-77eb-8929-28f66fb2d166" name="Heavy Stubber (Bio-corrosive rounds)" book="HH4: Conquest" page="301" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="30&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="2"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="6"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3, Poisoned (4+)"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="8650-f3c0-85c2-6ea7" name="New EntryLink" hidden="false" targetId="348b-40f4-c774-1f9a" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b496-156d-b9eb-95f3" name="May take one of the following carapace weapons:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="fd9e-6e9b-8b90-94ff" name="Ironstorm missile pod" book="FAQ" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="ef06-cb74-02ba-caf4" hidden="false" targetId="69b6-e87d-f483-e57a" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="30.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a763-1661-0c22-7b87" name="Twin Icarus autocannon" book="FAQ" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="18c3-ffe1-e610-cbda" hidden="false" targetId="534b-67b0-62d7-b977" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="35.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9ffd-1a7c-b311-69e3" name="Stormspear rocket pod" book="FAQ" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="8743-eda7-ce9a-90b8" hidden="false" targetId="05cc-32b8-e59e-7dff" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="40.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="1ea6-838e-2df3-78a9" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="6fd6-0678-7777-d0b9" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="375.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4b70feb1-a2e7-2f93-8320-1d6775bf5a59" name="Questoris Knight Errant" book="HH4: Conquest" page="302" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
+      <profiles>
+        <profile id="2bc44173-c43d-b7d0-9ad5-65c0f0c6ff82" name="Questoris Knight Errant" book="HH4: Conquest" page="302" hidden="false" profileTypeId="57616c6b657223232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="4"/>
+            <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
+            <characteristic name="S" characteristicTypeId="5323232344415441232323" value="10"/>
+            <characteristic name="Front" characteristicTypeId="46726f6e7423232344415441232323" value="13"/>
+            <characteristic name="Side" characteristicTypeId="5369646523232344415441232323" value="12"/>
+            <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="12"/>
+            <characteristic name="I" characteristicTypeId="4923232344415441232323" value="4"/>
+            <characteristic name="A" characteristicTypeId="4123232344415441232323" value="3"/>
+            <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="6"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Super-Heavy Walker"/>
+          </characteristics>
+        </profile>
+        <profile id="d759c074-6ff7-9f45-c862-50a400f9b12a" name="Thermal Cannon" book="HH4: Conquest" page="308" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="9"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="1"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Melta, Large Blast"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="73815ee7-021e-82ba-5d28-73241105349e" hidden="false" targetId="342d5e83-9f9b-42c0-cecb-e6c9c197ab9d" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="0cd0d538-4c5a-aaa4-ac96-f4f266954d32" hidden="false" targetId="76191f60-ba9c-4e52-9faf-24b23e46c7a9" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="c7aedb4b-3588-ff92-fada-ddd79a43de63" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="423c1873-c56d-8ca1-b01f-a2660b0b0198" name="May be upgraded with:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries>
+            <selectionEntry id="24f0bce9-4d48-7761-798a-06d983bc9e09" name="Bio-corrosive rounds for its heavy stubbers" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles>
+                <profile id="b76bfe96-595e-e8ec-1aa2-b24d127c6a8c" name="Heavy Stubber (Bio-corrosive rounds)" book="HH4: Conquest" page="301" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="30&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="2"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="6"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3, Poisoned (4+)"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="daa4-d280-3978-ddee" name="New EntryLink" hidden="false" targetId="348b-40f4-c774-1f9a" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="161b-6e36-d2e5-516d" name="May take one of the following carapace weapons:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="e776-6427-6f58-cc8d" name="Ironstorm missile pod" book="FAQ" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="0866-bf5f-50cd-3b6f" hidden="false" targetId="69b6-e87d-f483-e57a" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="30.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e989-298b-b903-ae34" name="Twin Icarus autocannon" book="FAQ" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="902b-356c-043f-5324" hidden="false" targetId="534b-67b0-62d7-b977" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="35.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5572-200a-f887-3d7a" name="Stormspear rocket pod" book="FAQ" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="9f4b-cdeb-2a2f-c549" hidden="false" targetId="05cc-32b8-e59e-7dff" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="40.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="9560-ca69-210a-f115" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="3869-5b07-27b6-2018" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="370.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fb7cd031-7573-eb28-4446-d709eb5acdbc" name="Questoris Knight Magaera" book="HH4: Conquest" page="303" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
+      <profiles>
+        <profile id="b47bae59-6ba9-18c4-2954-8966bd11beb8" name="Questoris Knight Magaera" book="HH4: Conquest" page="303" hidden="false" profileTypeId="57616c6b657223232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="4"/>
+            <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
+            <characteristic name="S" characteristicTypeId="5323232344415441232323" value="10"/>
+            <characteristic name="Front" characteristicTypeId="46726f6e7423232344415441232323" value="13"/>
+            <characteristic name="Side" characteristicTypeId="5369646523232344415441232323" value="12"/>
+            <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="12"/>
+            <characteristic name="I" characteristicTypeId="4923232344415441232323" value="2"/>
+            <characteristic name="A" characteristicTypeId="4123232344415441232323" value="3"/>
+            <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="6"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Super-Heavy Walker"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="a0d42172-1a16-82ae-561a-98218604c374" hidden="false" targetId="6ce7-5e83-a2dd-571e" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="3a6ed8b9-c7b3-0c88-1d4f-acc9422f5bcf" hidden="false" targetId="418fbfed-277a-7376-dfd3-7d5a95fae9f5" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="ced447ea-d7f1-d55d-8d0a-8eba2dabb170" hidden="false" targetId="76191f60-ba9c-4e52-9faf-24b23e46c7a9" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="25585f12-e17b-8fa7-4fab-4c43e8ac9298" hidden="false" targetId="306adc93-713f-8c18-71d3-6956c376e9e2" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="7df4e2c0-74dd-c2ef-9341-c4fdc2ac2f89" hidden="false" targetId="76f43c9f-9d2b-e019-63db-3ac3082ee07c" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="959d6be5-d04c-aa61-b1db-a1b93e4b0888" hidden="false" targetId="409ed051-b4d2-fcc4-916d-1f2e7090366f" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f1816b2d-d7ad-435b-6862-843f885c8ecc" name="May exchange its Reaper Chainsword for:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries>
+            <selectionEntry id="f3c0c540-1e73-89b8-46c3-2aca29c79009" name="Hekaton Siege Claw with twin-linked Rad Cleanser" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles>
+                <profile id="0ad2338f-2a48-1121-a3f1-d1d185f0a1f7" name="Hekaton Siege Claw" book="HH4: Conquest" page="308" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="D"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee,  Wrecker"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks>
+                <infoLink id="d84af9b2-1522-bbaf-1464-9d36c617e3b1" hidden="false" targetId="fe2f-3220-3fef-b177" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="e5e96119-7c5c-d879-ef06-d7e73d89c4b8" hidden="false" targetId="3c77a0e2-2b38-0fff-5d7d-8f63f811bbdf" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="04b39ae6-f0a5-686d-6285-2ac971ef9e08" hidden="false" targetId="eefe-09e4-17aa-deb2" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="25.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="e2e886d2-716d-2139-a5d9-650bae4bc53c" name="May be upgraded with:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="bcb5-069f-bb42-5343" name="New EntryLink" hidden="false" targetId="348b-40f4-c774-1f9a" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="d55c-9631-4112-7b42" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="7914-ad8c-7a1e-e6c7" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="395.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ca45ca55-eae1-1a81-8afc-1330611055a6" name="Cerastus Knight-Lancer" book="HH4: Conquest" page="305" hidden="false" collective="false" categoryEntryId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" type="model">
+      <profiles>
+        <profile id="629a6c72-2e06-6a7b-1535-6048dd79d15a" name="Ion Gauntlet Shield" book="HH3: Extermination" page="2310" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Operates as a Knights Ion Shield with the following exceptions:  - May not protect Rear armour - Provides 5++ Invulnerable save in close combat - Forces close combat attacks by other Super-heavy Walkers or Gargantuan Creatures to suffer a -1 to hit. "/>
+          </characteristics>
+        </profile>
+        <profile id="1d8aa0dc-3399-3aaa-159b-4349b74ba12a" name="Cerastus Shock Lance (Melee)" book="HH3: Extermination" page="231" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="D"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Swift Strike"/>
+          </characteristics>
+        </profile>
+        <profile id="7953df1c-82af-4a91-20f7-3affb23cf7f2" name="Cerastus Shock Lance (Ranged)" book="HH3: Extermination" page="231" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="18&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 6, Concussive"/>
+          </characteristics>
+        </profile>
+        <profile id="0b8433ff-6e32-e9aa-94e1-16e91997c267" name="Cerastus Knight-Lancer" book="HH4: Conquest" page="305" hidden="false" profileTypeId="57616c6b657223232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="4"/>
+            <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
+            <characteristic name="S" characteristicTypeId="5323232344415441232323" value="10"/>
+            <characteristic name="Front" characteristicTypeId="46726f6e7423232344415441232323" value="13"/>
+            <characteristic name="Side" characteristicTypeId="5369646523232344415441232323" value="12"/>
+            <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="12"/>
+            <characteristic name="I" characteristicTypeId="4923232344415441232323" value="4"/>
+            <characteristic name="A" characteristicTypeId="4123232344415441232323" value="4"/>
+            <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="6"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Super-heavy Walker"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="6dc16208-a28b-cbea-dea9-6bd6885242a4" name="Swift Strike" book="HH3: Extermination" page="231" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Gains +1 to initiative on any turn that it charges into close combat. </description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="36608ff1-aa5c-22d2-b79f-22e56ccf59da" hidden="false" targetId="53c751ef-105f-b2a8-7a17-7812d605b9f2" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f6462c55-4eef-3565-2a00-b18b8444bd20" name="May be upgraded with:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="11b6-982a-c832-8217" name="New EntryLink" hidden="false" targetId="348b-40f4-c774-1f9a" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b8dc-d97f-ec91-05d6" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="d7fd-bb6e-dc51-f8ed" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="400.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a5b350ff-895e-4557-70a6-d24a936919c2" name="Questoris Knight Styrix" book="HH4: Conquest" page="304" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
+      <profiles>
+        <profile id="24d3f37e-1c49-59a1-1263-7240cebb4d02" name="Volkite Chieorovile" book="HH4: Conquest" page="308" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="45&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 5, Deflagrate"/>
+          </characteristics>
+        </profile>
+        <profile id="8a01-a44f-6d0d-9593" name="Questoris Knight Styrix" book="HH4: Conquest" page="304" hidden="false" profileTypeId="57616c6b657223232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="4"/>
+            <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
+            <characteristic name="S" characteristicTypeId="5323232344415441232323" value="10"/>
+            <characteristic name="Front" characteristicTypeId="46726f6e7423232344415441232323" value="13"/>
+            <characteristic name="Side" characteristicTypeId="5369646523232344415441232323" value="12"/>
+            <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="12"/>
+            <characteristic name="I" characteristicTypeId="4923232344415441232323" value="4"/>
+            <characteristic name="A" characteristicTypeId="4123232344415441232323" value="3"/>
+            <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="6"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Super-Heavy Walker"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="21e2a0b0-d74c-3255-04c6-5a85bf6a3ee7" hidden="false" targetId="76f43c9f-9d2b-e019-63db-3ac3082ee07c" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="6b1dd6b7-11fe-89b1-192a-393a50932fbe" hidden="false" targetId="409ed051-b4d2-fcc4-916d-1f2e7090366f" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="42d3d4f7-1fbe-6440-1bf2-22ee91ed7d0d" hidden="false" targetId="6ce7-5e83-a2dd-571e" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="cd92a1f0-675d-5c87-28bf-07899bba9995" hidden="false" targetId="481b32ee-2904-c9e0-8612-35ff2bcab65a" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="bc0104e8-2532-0caa-c684-57b5d8186e17" hidden="false" targetId="cbcf-5f25-f8ea-7cfd" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="828f4a19-02bb-40b8-0974-6dc4cbf24e62" hidden="false" targetId="2d57-8425-0ec0-a9cf" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="24723cac-66f3-e231-9092-1333de8d98c1" name="May exchange its Reaper Chainsword for:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries>
+            <selectionEntry id="5be171c3-5c43-333c-e1b8-5b98516f8c0b" name="Hekaton Siege Claw with twin-linked Rad Cleanser" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles>
+                <profile id="9f451766-f78d-facc-1593-86aa2f7228e8" name="Hekaton Siege Claw" book="HH4: Conquest" page="308" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="D"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee,  Wrecker"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks>
+                <infoLink id="9931306e-824c-db8b-12f2-c58e0e8bf9b9" hidden="false" targetId="fe2f-3220-3fef-b177" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="a99bad4d-7187-389f-ed8b-181443d26503" hidden="false" targetId="3c77a0e2-2b38-0fff-5d7d-8f63f811bbdf" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="3ef43818-d39f-8983-3127-1306854c69f6" hidden="false" targetId="eefe-09e4-17aa-deb2" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="25.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b67f479c-7f22-807d-e410-1ea59b1e24d5" name="May be upgraded with:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="bfc1-c694-67ae-0457" name="New EntryLink" hidden="false" targetId="348b-40f4-c774-1f9a" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="92e5-c97f-9080-d4ee" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="3bec-dc40-8e56-a8d7" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="405.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b1cf8528-c9d0-2c2a-3f19-522e5532f273" name="Cerastus Knight-Castigator" book="HH4: Conquest" page="306" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
+      <profiles>
+        <profile id="5858fd67-30bf-5157-905b-4f0823ddbae7" name="Cerastus Knight-Castigator" book="HH4: Conquest" page="306" hidden="false" profileTypeId="57616c6b657223232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="4"/>
+            <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
+            <characteristic name="S" characteristicTypeId="5323232344415441232323" value="10"/>
+            <characteristic name="Front" characteristicTypeId="46726f6e7423232344415441232323" value="13"/>
+            <characteristic name="Side" characteristicTypeId="5369646523232344415441232323" value="12"/>
+            <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="12"/>
+            <characteristic name="I" characteristicTypeId="4923232344415441232323" value="4"/>
+            <characteristic name="A" characteristicTypeId="4123232344415441232323" value="4"/>
+            <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="6"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Super-heavy Walker"/>
+          </characteristics>
+        </profile>
+        <profile id="95076c1b-9de6-414b-85e6-b38f167aa205" name="Castigator pattern bolt cannon" book="HH4: Conquest" page="308" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 8"/>
+          </characteristics>
+        </profile>
+        <profile id="77d2abd5-ac92-194e-35d4-a11e170e43a5" name="Tempest Warblade" book="HH4: Conquest" page="308" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="10"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Deflagrate, Tempest Attack, Sunder"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="19b83a55-e275-86b2-44db-b2df02bb83ac" name="Tempest Attack" book="HH4: Conquest" page="306" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Rather than attacking normally, the Knight may make a single special attack at Iniative 2.  This automatically hits each model in base contact.  </description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="2b830653-e0c0-23e2-1b86-8f8210bcfdf5" hidden="false" targetId="342d5e83-9f9b-42c0-cecb-e6c9c197ab9d" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="e7442c5f-d262-7f85-0d78-c93561b3301b" hidden="false" targetId="53c751ef-105f-b2a8-7a17-7812d605b9f2" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="05ccc725-4149-bbe0-d1c4-291383f7d189" name="" hidden="false" targetId="cbcf-5f25-f8ea-7cfd" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5e3a6b4f-0c5e-5b29-cc54-cf20f5668eb3" name="May be upgraded with:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="97b8-c2fb-2978-945e" name="New EntryLink" hidden="false" targetId="348b-40f4-c774-1f9a" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="6282-af01-e0d6-6150" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="ae87-4f6a-c839-010a" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="380.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b4ddbe68-7095-397e-dec4-162170dbdbcd" name="Cerastus Knight-Acheron" book="HH4: Conquest" page="307" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
+      <profiles>
+        <profile id="7b5e9ae8-bdbc-ad55-b137-03e11dce5ede" name="Cerastus Knight-Acheron" book="HH4: Conquest" page="307" hidden="false" profileTypeId="57616c6b657223232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="4"/>
+            <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
+            <characteristic name="S" characteristicTypeId="5323232344415441232323" value="10"/>
+            <characteristic name="Front" characteristicTypeId="46726f6e7423232344415441232323" value="13"/>
+            <characteristic name="Side" characteristicTypeId="5369646523232344415441232323" value="12"/>
+            <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="12"/>
+            <characteristic name="I" characteristicTypeId="4923232344415441232323" value="4"/>
+            <characteristic name="A" characteristicTypeId="4123232344415441232323" value="4"/>
+            <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="6"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Super-heavy Walker"/>
+          </characteristics>
+        </profile>
+        <profile id="038c1fc5-ebbd-253e-04a0-a5166ab1b99a" name="Acheron pattern flame cannon" book="HH4: Conquest" page="308" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="Hellstorm"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1"/>
+          </characteristics>
+        </profile>
+        <profile id="c6591890-5674-35b3-65ff-bcff5ab1e883" name="Reaper Chainfist" book="HH4: Conquest" page="308" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="D"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Machine Destroyer"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="ec54ab08-63fb-e288-861f-25e2d0338eaf" name="Machine Destroyer" book="HH4: Conquest" page="308" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>When attacking any target with an Amour Value, rolls of 1 on the destroyer damage table may be re-rolled.  </description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="56a352e5-bd00-e34a-fab2-bddbd2f14d90" name="" hidden="false" targetId="342d5e83-9f9b-42c0-cecb-e6c9c197ab9d" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="ed03ee31-8955-4ab8-3285-09590bfed45e" hidden="false" targetId="53c751ef-105f-b2a8-7a17-7812d605b9f2" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="97a1af42-3800-4b30-9e22-d8955e00394e" name="May be upgraded with:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="d808-e275-8ba5-6f32" name="New EntryLink" hidden="false" targetId="348b-40f4-c774-1f9a" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="2e49-d06f-a396-8652" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="1d72-a337-b4a1-c67b" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="415.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f4f1-dad6-0596-ca5a" name="Questoris Knight Warden" book="C:IK" page="104" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
+      <profiles>
+        <profile id="472f-d151-1754-59fd" name="Questoris Knight Warden" book="C:IK" page="104" hidden="false" profileTypeId="57616c6b657223232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="4"/>
+            <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
+            <characteristic name="S" characteristicTypeId="5323232344415441232323" value="10"/>
+            <characteristic name="Front" characteristicTypeId="46726f6e7423232344415441232323" value="13"/>
+            <characteristic name="Side" characteristicTypeId="5369646523232344415441232323" value="12"/>
+            <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="12"/>
+            <characteristic name="I" characteristicTypeId="4923232344415441232323" value="4"/>
+            <characteristic name="A" characteristicTypeId="4123232344415441232323" value="3"/>
+            <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="6"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Super-Heavy Walker"/>
+          </characteristics>
+        </profile>
+        <profile id="07d8-8572-88b4-a0e5" name="Avenger Gatling Cannon" book="C:IK" page="115" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="6"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 12, Rending"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="78ac-5e2a-fb4a-04c5" hidden="false" targetId="342d5e83-9f9b-42c0-cecb-e6c9c197ab9d" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="21f8-1a26-b4ef-d73a" hidden="false" targetId="76191f60-ba9c-4e52-9faf-24b23e46c7a9" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="f4f1-dad6-0596-ca5a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b490-5f1c-feaf-6394" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="1904-5043-2469-8b0b" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c89a-2e7e-cc89-dfc4" name="May be upgraded with:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries>
+            <selectionEntry id="7b07-791a-2a51-34d2" name="Bio-corrosive rounds for its heavy stubbers" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles>
+                <profile id="92e9-39dc-8cb0-ace3" name="Heavy Stubber (Bio-corrosive rounds)" book="HH4: Conquest" page="301" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="30&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="2"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="6"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3, Poisoned (4+)"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="f4f1-dad6-0596-ca5a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8035-65ed-a788-4c0e" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="3b5e-0a97-6a33-f3db" name="New EntryLink" hidden="false" targetId="348b-40f4-c774-1f9a" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="7e6c-a072-4bf1-2f4b" name="May take one of the following carapace weapons:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="afec-cc37-37b7-8074" name="Ironstorm missile pod" book="FAQ" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="4bad-7a95-b434-29da" hidden="false" targetId="69b6-e87d-f483-e57a" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="30.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="db94-3b91-29b1-6317" name="Twin Icarus autocannon" book="FAQ" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="10f3-a633-6f7b-4b39" hidden="false" targetId="534b-67b0-62d7-b977" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="35.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0f57-b26d-e805-bd83" name="Stormspear rocket pod" book="FAQ" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="edd3-e891-d47a-131f" hidden="false" targetId="05cc-32b8-e59e-7dff" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="40.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b490-5f1c-feaf-6394" name="May exchange Reaper Chainsword for:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries>
+            <selectionEntry id="4578-c708-d057-a240" name="Thunderstrike Gauntlet" book="C:IK" page="117" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles>
+                <profile id="c3f1-19dc-ae18-b4ec" name="Thunderstrike Gauntlet" book="C:IK" page="117" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="D"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Colossal, Hurl"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="7ca5-a8d0-e94c-5491" name="Colossal" book="C:IK" page="117" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>A model fighting with this weapon Piles In and fights at Initiative 1</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8035-65ed-a788-4c0e" name="May exchange Heavy Stubber for:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries>
+            <selectionEntry id="e244-6d45-c2f5-61a7" name="Meltagun" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="6ebe-2ff7-97c1-5d25" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="f723-f484-1830-89d6" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="375.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="74b8-f485-4b58-0071" name="Questoris Knight Gallant" book="C:IK" page="105" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
+      <profiles>
+        <profile id="1f3a-39b8-f98b-a0bd" name="Questoris Knight Gallant" book="C:IK" page="105" hidden="false" profileTypeId="57616c6b657223232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="4"/>
+            <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
+            <characteristic name="S" characteristicTypeId="5323232344415441232323" value="10"/>
+            <characteristic name="Front" characteristicTypeId="46726f6e7423232344415441232323" value="13"/>
+            <characteristic name="Side" characteristicTypeId="5369646523232344415441232323" value="12"/>
+            <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="12"/>
+            <characteristic name="I" characteristicTypeId="4923232344415441232323" value="4"/>
+            <characteristic name="A" characteristicTypeId="4123232344415441232323" value="3"/>
+            <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="6"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Super-Heavy Walker"/>
+          </characteristics>
+        </profile>
+        <profile id="c7a4-c8f2-88e1-3651" name="Thunderstrike Gauntlet" book="C:IK" page="117" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="D"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Colossal, Hurl"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="64a7-36c9-dac6-0d1f" name="Colossal" book="C:IK" page="117" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>A model fighting with this weapon Piles In and fights at Initiative 1</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="cf6e-f66e-6c52-dded" hidden="false" targetId="342d5e83-9f9b-42c0-cecb-e6c9c197ab9d" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="9837-2be3-e4da-22f7" hidden="false" targetId="76191f60-ba9c-4e52-9faf-24b23e46c7a9" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="d1c7-21da-3aad-a67f" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c12e-0c88-5050-819f" name="May be upgraded with:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries>
+            <selectionEntry id="566f-f1ce-0901-fc99" name="Bio-corrosive rounds for its heavy stubbers" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles>
+                <profile id="7c58-cf04-e2e2-0551" name="Heavy Stubber (Bio-corrosive rounds)" book="HH4: Conquest" page="301" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="30&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="2"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="6"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3, Poisoned (4+)"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="74b8-f485-4b58-0071" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c827-6e76-4d1d-ee3e" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="5bb8-a7b6-80df-e61f" name="New EntryLink" hidden="false" targetId="348b-40f4-c774-1f9a" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c583-687e-8127-66d2" name="May take one of the following carapace weapons:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="7a8b-9722-8b68-ceec" name="Ironstorm missile pod" book="FAQ" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="1960-bd16-d729-f27b" hidden="false" targetId="69b6-e87d-f483-e57a" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="30.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ddc5-3ff7-2159-e724" name="Twin Icarus autocannon" book="FAQ" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="a932-23f0-c1ab-2b7c" hidden="false" targetId="534b-67b0-62d7-b977" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="35.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="af90-9278-046f-9058" name="Stormspear rocket pod" book="FAQ" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="a4f7-12d6-f0f0-3115" hidden="false" targetId="05cc-32b8-e59e-7dff" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="40.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c827-6e76-4d1d-ee3e" name="May exchange Heavy Stubber for:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries>
+            <selectionEntry id="f7e1-9700-a27d-b2f7" name="Meltagun" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="c7a3-44ad-ebdd-70ce" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="f3c2-a76b-fad8-0cd0" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="325.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="09ee-4370-1462-2cb5" name="Questoris Knight Crusader" book="C:IK" page="106" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
+      <profiles>
+        <profile id="29b8-80d5-1d6d-5410" name="Questoris Knight Crusader" book="C:IK" page="106" hidden="false" profileTypeId="57616c6b657223232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="4"/>
+            <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
+            <characteristic name="S" characteristicTypeId="5323232344415441232323" value="10"/>
+            <characteristic name="Front" characteristicTypeId="46726f6e7423232344415441232323" value="13"/>
+            <characteristic name="Side" characteristicTypeId="5369646523232344415441232323" value="12"/>
+            <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="12"/>
+            <characteristic name="I" characteristicTypeId="4923232344415441232323" value="4"/>
+            <characteristic name="A" characteristicTypeId="4123232344415441232323" value="3"/>
+            <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="6"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Super-Heavy Walker"/>
+          </characteristics>
+        </profile>
+        <profile id="619c-3ff0-05a9-fd45" name="Avenger Gatling Cannon" book="C:IK" page="115" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="6"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 12, Rending"/>
+          </characteristics>
+        </profile>
+        <profile id="d55c-6657-a3bd-b9ae" name="Thermal Cannon" book="C:IK" page="116" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="9"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="1"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Large Blast, Melta"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="a1b7-d5bc-52b1-5954" hidden="false" targetId="342d5e83-9f9b-42c0-cecb-e6c9c197ab9d" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="795f-f849-f959-a875" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ee0a-75b3-4033-d106" name="May be upgraded with:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries>
+            <selectionEntry id="7472-d17f-5dd2-d902" name="Bio-corrosive rounds for its heavy stubbers" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles>
+                <profile id="1a38-e593-534a-7e7e" name="Heavy Stubber (Bio-corrosive rounds)" book="HH4: Conquest" page="301" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="30&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="2"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="6"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3, Poisoned (4+)"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="09ee-4370-1462-2cb5" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4e60-ef5b-d3df-669d" type="equalTo"/>
+                        <condition field="selections" scope="09ee-4370-1462-2cb5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bf22-efc3-ea2a-769f" type="equalTo"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="8451-15e6-de8b-cb69" name="New EntryLink" hidden="false" targetId="348b-40f4-c774-1f9a" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="6a4c-1d50-97f2-fbb0" name="May take one of the following carapace weapons:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="891a-3a0e-4430-9259" name="Ironstorm missile pod" book="FAQ" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="8ebd-01d8-f6d2-b8d8" hidden="false" targetId="69b6-e87d-f483-e57a" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="30.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5c4e-c76c-4a09-5a44" name="Twin Icarus autocannon" book="FAQ" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="21aa-ff29-1d93-bdad" hidden="false" targetId="534b-67b0-62d7-b977" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="35.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ede7-688a-78de-eb97" name="Stormspear rocket pod" book="FAQ" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="3242-04e5-5799-a5c3" hidden="false" targetId="05cc-32b8-e59e-7dff" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="40.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="bf22-efc3-ea2a-769f" name="May exchange Heavy Stubber for:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries>
+            <selectionEntry id="75f8-4e76-795a-4f09" name="Meltagun" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="increment" field="maxSelections" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="09ee-4370-1462-2cb5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4e60-ef5b-d3df-669d" repeats="1" roundUp="false"/>
+                  </repeats>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="493b-2822-4d17-0885" name="May exchange Thermal cannon for:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries>
+            <selectionEntry id="4e60-ef5b-d3df-669d" name="Rapid-fire battlecannon and Heavy Stubber" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles>
+                <profile id="c82a-9a9a-b00b-aeab" name="Rapid-fire battlecannon" book="HH4: Conquest" page="308" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="72&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 2, Large Blast"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="d4d6-a3ee-62d7-0215" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="da6b-9be6-897e-c0c9" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="425.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="baad-77d0-04c2-e05f" name="Cerastus Knight-Atrapos" book="HH6: Retribution" page="278" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
+      <profiles>
+        <profile id="95c1-8de7-bef1-6fa1" name="Cerastus Knight-Atrapos" book="HH4: Conquest" page="306" hidden="false" profileTypeId="57616c6b657223232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="4"/>
+            <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
+            <characteristic name="S" characteristicTypeId="5323232344415441232323" value="10"/>
+            <characteristic name="Front" characteristicTypeId="46726f6e7423232344415441232323" value="13"/>
+            <characteristic name="Side" characteristicTypeId="5369646523232344415441232323" value="12"/>
+            <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="12"/>
+            <characteristic name="I" characteristicTypeId="4923232344415441232323" value="4"/>
+            <characteristic name="A" characteristicTypeId="4123232344415441232323" value="4"/>
+            <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="6"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Super-heavy Walker"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="ad4c-6ac3-01fb-a54c" hidden="false" targetId="53c751ef-105f-b2a8-7a17-7812d605b9f2" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="7629-09d1-79f3-3f7a" name="New InfoLink" hidden="false" targetId="333c-a3b2-4353-f484" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="175b-ee67-d5b7-02d8" name="New InfoLink" hidden="false" targetId="8fb5-0c46-e8b4-0ef6" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="1895-e4dd-46a4-3b0a" name="New InfoLink" hidden="false" targetId="81fe-8580-34f6-28ae" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="increment" field="8f86-62fb-dba4-afc4" value="1">
+          <repeats>
+            <repeat field="points" scope="roster" value="2000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" repeats="1" roundUp="false"/>
+          </repeats>
+          <conditions/>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8f86-62fb-dba4-afc4" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="797b-8685-04c6-72f4" name="May be upgraded with:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="a890-2700-1060-bb32" name="New EntryLink" hidden="false" targetId="348b-40f4-c774-1f9a" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="ea91-b3c1-b65c-bdaf" name="Singularity Cannon" hidden="false" collective="false" defaultSelectionEntryId="c6cf-46ab-5358-3771">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1f91-871d-6bef-5216" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8477-2187-7951-fdb3" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c6cf-46ab-5358-3771" name="Singularity Cannon" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="0483-ace3-ca6b-e55e" name="Gravaton Singularity Cannon" book="HH6: Retribution" page="279" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Large Blast (5&quot;), Armourbane, Concussive, Collapsing Singularity"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="3431-e056-229c-9e40" name="Collapsing Singularity" book="HH6: Retribution" page="279" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>Before firing the weapon, roll a D6. On a r, the firing Knight-Atrapos suffers a single Hull Point of damage with no saves of any kind before the attack is carried out. On a result of a 6, the attack is carried out with the Vortex special rule.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="73d2-c7e5-ff62-be2f" name="New InfoLink" hidden="false" targetId="e182-50cd-0867-9a8d" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="568b-52ba-ba70-631b" name="New InfoLink" hidden="false" targetId="9d85-46f7-f5e6-a5f7" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="d520-383c-95ed-8e5f" name="Lascutter" hidden="false" collective="false" defaultSelectionEntryId="5b2d-434f-7a2d-7ad3">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2044-af1a-9add-b6dc" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2225-b3bc-9b72-de91" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5b2d-434f-7a2d-7ad3" name="Lascutter" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="3825-cb38-0956-1089" name="Atrapos Lascutter (Beam)" book="HH6: Retribution" page="279" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="8&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="D"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, "/>
+                  </characteristics>
+                </profile>
+                <profile id="24d7-a4aa-f9ff-d5d0" name="Atrapos Lascutter (Melee)" book="HH6: Retribution" page="279" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="D"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="1"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Wrecker"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks>
+                <infoLink id="c410-3217-0bbd-cbcb" name="New InfoLink" hidden="false" targetId="fe2f-3220-3fef-b177" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="5265-a680-959d-e648" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="d35c-930d-b252-9eb3" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="435.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4ded-9de3-f964-33a7" name="Acastus Knight Porphyrion" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="208e-17a3-a067-6ea1" name="Acastus Knight Porphyrion" hidden="false" profileTypeId="57616c6b657223232344415441232323" profileTypeName="Walker">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="4"/>
+            <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="5"/>
+            <characteristic name="S" characteristicTypeId="5323232344415441232323" value="10"/>
+            <characteristic name="Front" characteristicTypeId="46726f6e7423232344415441232323" value="14"/>
+            <characteristic name="Side" characteristicTypeId="5369646523232344415441232323" value="13"/>
+            <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="12"/>
+            <characteristic name="I" characteristicTypeId="4923232344415441232323" value="3"/>
+            <characteristic name="A" characteristicTypeId="4123232344415441232323" value="3"/>
+            <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="8"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Super-heavy Walker"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="c53b-73a7-8559-d968" name="" hidden="false" targetId="342d5e83-9f9b-42c0-cecb-e6c9c197ab9d" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="bc7f-7c35-2dd4-7136" name="New InfoLink" hidden="false" targetId="860d-1c1d-04ef-2829" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f38-2f45-a1a8-1aab" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="eb2c-a7c7-2c3f-fc1d" name="Exchange Ironstorm missiles for:" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="c7e2-f145-1551-b1fa" name="New InfoLink" hidden="false" targetId="9170-c4db-7a4c-87fb" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3502-e290-bffb-cdbe" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a5de-b150-3eab-e8bf" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ffb3-9b68-982e-edd2" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="3502-e290-bffb-cdbe" name="New EntryLink" hidden="false" targetId="b3f2-333a-7bba-54a8" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="688f-fb97-cd9d-72d1" name="Two Twin linked Magna Lascannons" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="3294-e89f-73ac-a7c3" name="New InfoLink" hidden="false" targetId="10a8-8d89-0bec-3e21" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc07-151b-0f26-b610" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="71ac-a51f-a723-8636" type="min"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="3f65-ad04-8903-6c6d" name="New EntryLink" hidden="false" targetId="2553-eaa0-d6af-2ec0" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69f0-135a-1afd-05e1" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0a1-8432-8b6a-d8e6" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2bb9-e33f-d3e8-0e4e" name="May be upgraded with:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="d283-9ab7-d74b-00b1" name="New EntryLink" hidden="false" targetId="348b-40f4-c774-1f9a" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="71f9-bc5d-f0f0-10ce" name="May exchange any autocannon for:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6db0-3d88-9ff3-fbf9" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="ebc5-6e95-3aa1-89b3" name="New EntryLink" hidden="false" targetId="8036-b730-d533-e31f" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="points" value="10">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+            <entryLink id="52ce-4c33-8f3e-e9bf" name="New EntryLink" hidden="false" targetId="32e0-80f7-982d-b29a" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="5f03-c1a8-c7c1-f1a5" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="de8d-df3c-f1e5-eae0" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="495.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5ae6ac18-0fd0-ee6d-17e8-9b9354820d04" name="Paragon of Metal" book="" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="f24656bf-c677-271e-8c55-71099c7ff534" hidden="false" targetId="cb2c-171e-df0f-2bec" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="35.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="348b-40f4-c774-1f9a" name="Occular Augmetics" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="3108-3d2c-0469-83c4" hidden="false" targetId="faa4ea24-e51b-8663-3e7c-1a791b55aed7" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20e9-5be0-6d88-afd5" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1782-c86b-a434-19d8" name="Super Heavy Walker" book="" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="665d-6e62-aa12-926c" name="New InfoLink" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="e543-687d-3cb8-e079" name="New InfoLink" hidden="false" targetId="6f66-b417-6004-0916" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="d75f-66f2-a649-e93b" name="New InfoLink" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="14fa-b27e-0740-6663" name="New InfoLink" hidden="false" targetId="b5c1-4b08-5ddc-1504" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="5946-1e49-b9d9-de14" name="New InfoLink" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="879b-ed11-c2f4-5782" name="New InfoLink" hidden="false" targetId="4284-18a1-9844-a0bd" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="f8f7-7026-fd60-a7ee" name="New InfoLink" hidden="false" targetId="dd83-7fb9-6f58-0c96" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da95-f77a-2e96-2fae" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1240-ab1a-2701-5b08" type="min"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2f28-c5f0-6110-c614" name="Household Rank" book="CI:AL" page="99" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="69ce-f517-8a8f-62a8" name="New InfoLink" hidden="false" targetId="d169-a0dc-6155-c754" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbaa-3884-f2e0-c413" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ce4-a31a-c6f1-a702" type="min"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b09a-5d32-464b-4b2d" name="Blessed Autosimulacra" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="123e-6e83-d605-481a" name="New InfoLink" hidden="false" targetId="6ce7-5e83-a2dd-571e" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01c3-e1c0-617e-150c" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="caa1-a92a-403a-af71" type="min"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="32e0-80f7-982d-b29a" name="Irad-Cleanser" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="10b6-2766-edca-4dc7" name="New InfoLink" hidden="false" targetId="7d03914a-f940-12e5-590b-822083dff647" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="8aab-1812-6f5d-6eff" name="New InfoLink" hidden="false" targetId="4575-0a0a-caaf-e4bf" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="cd3c-efff-0f01-9045" name="New InfoLink" hidden="false" targetId="eefe-09e4-17aa-deb2" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b3f2-333a-7bba-54a8" name="Helios defence missiles" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="9891-7bee-2d15-f2ee" name="New InfoLink" hidden="false" targetId="69d4-4da4-6a07-623e" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="4e13-0451-8dd3-0bf4" name="New InfoLink" hidden="false" targetId="be7f-8146-6cb8-9a53" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="b460-5cfe-7289-d496" name="New InfoLink" hidden="false" targetId="ca3e-e94e-58f6-75d9" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="81af-e96f-4a06-239f" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2553-eaa0-d6af-2ec0" name="Magna Lascannon" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="3b85-56e6-b738-a687" name="New InfoLink" hidden="false" targetId="3e31-9d8c-29ab-2e70" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="27575b75-5e1e-26ab-1074-fa91b73e2216" name="Archmagos Draykavac" book="HH4: Conquest" page="300" hidden="false" collective="false" categoryEntryId="485123232344415441232323" type="model">
+      <profiles>
+        <profile id="7c187296-f9ed-0293-9bb2-c8071f1a26f5" name="Archmagos Draykavac" book="HH4: Conquest" page="300" hidden="false" profileTypeId="556e697423232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Unit Type" characteristicTypeId="556e6974205479706523232344415441232323" value="Infantry (Character)"/>
+            <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="4"/>
+            <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="5"/>
+            <characteristic name="S" characteristicTypeId="5323232344415441232323" value="4"/>
+            <characteristic name="T" characteristicTypeId="5423232344415441232323" value="6"/>
+            <characteristic name="W" characteristicTypeId="5723232344415441232323" value="3"/>
+            <characteristic name="I" characteristicTypeId="4923232344415441232323" value="4"/>
+            <characteristic name="A" characteristicTypeId="4123232344415441232323" value="2"/>
+            <characteristic name="LD" characteristicTypeId="4c4423232344415441232323" value="10"/>
+            <characteristic name="Save" characteristicTypeId="5361766523232344415441232323" value="2+"/>
+          </characteristics>
+        </profile>
+        <profile id="8c33e5f7-195b-e4e1-5d67-664011b71ee0" name="Djinn-skein" book="HH3: Extermination" page="215" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Provides the following:   - At the start of his shooting phase, the Archmagos Prime may nominate a single unit from his primary detachment (including himself) within 6&quot; of him or any Cyber-occularis purchased as a part of his wargear to benefit from +1 BS.  - Friendly units from the primary detachment including the Archmagos who deep strike within 6&quot; do not scatter - Barrage weapons in the same detachment may draw line of sight from the Archmagos or any of his Cyrber-occularis"/>
+          </characteristics>
+        </profile>
+        <profile id="102b5105-d646-540a-268d-bd8096c07451" name="Paragon Blade" book="" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="+1"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Murderous Strike, Specialist Weapon"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="ae5a762b-80f0-d671-e5c0-4037dc244d00" name="Liquifractor" book="HH4: Conquest" page="300" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>May exchange all attacks in an assault phase for a single special attack.  May be used against a single model in base contact and occurs at Initative 1 and hits automatically.  
+
+Attacking player rolls 2D6.  If the target has a Toughness characteristic, they suffer a number of wounds equal to the roll minus their Toughness value with an AP of 2.  If the target has an armour value, deduct the number rolled from half the score fo the armour value being struck, the result is the number of penetrating hits suffered.  </description>
+        </rule>
+        <rule id="2da87554-2119-743d-7f25-e2f1ec1bf414" name="High Techno-arcana (Stataraga)" book="HH4: Conquest" page="300" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>All units with the Walker, Super-heavy Walker, or Monstrous Creature types in the same detachment as the Warlord gain +1 to their  charge distances and sweeping advance rolls.  </description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="b738b043-7e9e-cb9e-669f-d243e65c6c22" hidden="false" targetId="f4750e31-0624-912a-bf07-7a1febca222e" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="8dab4515-5121-dd68-512f-87e303cd75f6" hidden="false" targetId="06291170-198f-6a71-07c8-278feed54e89" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="92d83f8e-f566-62f0-7a31-6644bab4b00c" hidden="false" targetId="e135-8b23-7190-9f2c" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="fc8eba3e-fec2-dd47-d55e-c0d36dbf389b" hidden="false" targetId="481b32ee-2904-c9e0-8612-35ff2bcab65a" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="6a716762-6609-ea62-2a1c-47b9b9512321" hidden="false" targetId="9edbc777-7d2b-011b-7488-335b14870be5" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="f6ae-a06f-4c00-95a3" name="New InfoLink" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="ff55-1dbc-8920-efb0" name="New InfoLink" hidden="false" targetId="7be5-30af-1a02-0a89" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="7ad7-b50a-ef3b-143f" name="New InfoLink" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="fcafb9d2-c4d7-16eb-4d77-21a93c2e6b8c" name="May take up to four:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="10035625-80f1-4b62-0eab-047edbecd95f" name="Cyber-occularis" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="cf50fabc-e374-fb4c-f619-b479050abe2e" hidden="false" targetId="dd4fa1b2-43b4-75d6-974c-83c1a4115c07" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="dfcf393e-40c1-34de-e1bc-ab48107ea1bb" hidden="false" targetId="aa779861-a8af-fa95-4150-ba94585d1aff" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="2085981f-d80e-7beb-1e60-ac4c292dbba9" hidden="false" targetId="5a6e2a63-286a-a771-587c-6a41724b1e6b" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="36fd-79b6-7d4c-fb63" name="New InfoLink" hidden="false" targetId="dc70-e199-5525-e78c" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="bf23-6e7c-e7ed-e647" name="New InfoLink" hidden="false" targetId="0d66-14c9-d2f4-708b" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="26082c4d-85f4-ac7b-a36a-077dde7443f6" name="May be mounted on:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries>
+            <selectionEntry id="dafd12dc-ac4d-911c-a15d-bae8a9a7604e" name="Abeyant" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="25.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="240.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="64e8-ec7c-e5d8-6767" name="Force Organization Chart" hidden="false" collective="false">
@@ -12099,6 +14922,97 @@ Command Benefits:
       <selectionEntryGroups/>
       <entryLinks/>
     </selectionEntryGroup>
+    <selectionEntryGroup id="dcd9f954-73a9-25ad-b7db-1a8591d65d10" name="Knight Armour" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="b563-34dc-db2b-bf1f" name="Acheron" hidden="false" targetId="b4ddbe68-7095-397e-dec4-162170dbdbcd" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="eec7-2072-1387-7077" name="Atrapos" hidden="false" targetId="baad-77d0-04c2-e05f" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="1fef-06dd-f23a-52b9" name="Castigator" hidden="false" targetId="b1cf8528-c9d0-2c2a-3f19-522e5532f273" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="19c8-584e-212b-78e5" name="Lancer" hidden="false" targetId="ca45ca55-eae1-1a81-8afc-1330611055a6" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="f824-695c-4082-6faa" name="Crusader" hidden="false" targetId="09ee-4370-1462-2cb5" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="2b8e-e34f-3672-729d" name="Errant" hidden="false" targetId="4b70feb1-a2e7-2f93-8320-1d6775bf5a59" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="cc5d-8ff3-27ad-ce11" name="Gallant" hidden="false" targetId="74b8-f485-4b58-0071" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="5428-2403-1e57-555a" name="Magaera" hidden="false" targetId="fb7cd031-7573-eb28-4446-d709eb5acdbc" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="2f16-1cb5-386b-c561" name="Paladin" hidden="false" targetId="02eb28bb-1883-8603-0af7-b8bf2b7b69c8" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="cf05-e5fb-f76e-0228" name="Styrix" hidden="false" targetId="a5b350ff-895e-4557-70a6-d24a936919c2" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="65c8-631a-a57d-6b58" name="Warden" hidden="false" targetId="f4f1-dad6-0596-ca5a" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="5342-bf92-d6c0-ebb9" name="Hit and Run" book="BRB 7th" hidden="false">
@@ -12291,12 +15205,12 @@ Full details in BRB. Rule too long to copy verbatim.</description>
       <modifiers/>
       <description>This rule is often presented as Hatred (X) where X identifies a specific type of foe. If the special rule does not specify a type of foe, then the unit has Hatred against everyone. This can refer to a Faction, or a specific unit. For example, Hatred (Orks) means any model with the Ork Faction, whilst Hatred (Big Meks) means only Big Meks. A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of each close combat.</description>
     </rule>
-    <rule id="6ce7-5e83-a2dd-571e" name="Blessed Autosimulacra" book="HH3: Extermination" page="206" hidden="false">
+    <rule id="6ce7-5e83-a2dd-571e" name="Blessed Autosimulacra" book="HH:MTAL" page="113" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>If the vehicle has lost a hull point, at the end of the controlling players turn roll a D6. On a result of a 6 one lost hull point is restored.  </description>
+      <description>If the vehicle has suffered hull point damage, at the end of the controlling players turn roll a D6. On a result of a 6 one lost hull point is restored.  </description>
     </rule>
     <rule id="33ab-99bc-5c24-3cdf" name="Night Fighting" book="BRB 7th" hidden="false">
       <profiles/>
@@ -12394,7 +15308,7 @@ If, when charged, the unit was already locked in combat, the Counter-attack spec
       <modifiers/>
       <description>At the end of each of your turns, roll a D6 for each of your models with this special rule that has less than its starting number of Wounds or Hull Points, but has not been removed as a casualty or destroyed. On a roll of 5+, that model regains a Wound, or Hull Point, lost earlier in the game.</description>
     </rule>
-    <rule id="666f-e93b-4f0b-ae40" name="God-Engine" book="HH1: Betrayal" page="273" hidden="false">
+    <rule id="666f-e93b-4f0b-ae40" name="God-Engine" book="HH:MTAL" page="91" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -12408,7 +15322,7 @@ If, when charged, the unit was already locked in combat, the Counter-attack spec
       <modifiers/>
       <description>A model shooting a Primary weapon shoots the number of times indicated on its profile – whether or not the bearer has moved. A model carrying a Primary weapon can fire it in the Shooting phase and still charge into close combat in the Assault phase. In addition, when you roll for armour penetration with hits caused by a Primary weapon, roll two dice instead of one and pick the highest result. If the weapon rolls 2D6 for armour penetration (because of the Armourbane special rule, for example), roll three dice instead of two and pick the two highest results.</description>
     </rule>
-    <rule id="ca57-5483-64d5-ad52" name="Reactor Meltdown" book="HH5: Tempest" page="260" hidden="false">
+    <rule id="ca57-5483-64d5-ad52" name="Reactor Meltdown" book="HH:MTAL" page="90" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -12530,7 +15444,7 @@ Fast vehicles that moved at Combat Speed in the preceding Movement phase can fir
       <modifiers/>
       <description>Units made up of models with a Cyberntica Cortex can never count as Scoring units, regardless of the Force Organization Chart being used or the rules for the mission being played.  They do count as Denial units.  </description>
     </rule>
-    <rule id="3ebf-b52d-5006-2426" name="Cybernetic Resiliance" book="HH:MT" page="110" hidden="false">
+    <rule id="3ebf-b52d-5006-2426" name="Cybernetic Resiliance" book="HH:MTAL" page="110" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -12812,7 +15726,7 @@ Jump units have the Bulky and Deep Strike special rules.</description>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>Instead of rolling To Wound normally with this weapon, any model caught in its blast must instead roll equal to or under their Strength on a D6 or suffer a wound (a roll of ‘6’ always counts as a failure). After the graviton pulse weapon has been fired, leave the Blast marker in place. This area now counts as both difficult terrain and dangerous terrain for the next turn thanks to the gravity flux.</description>
+      <description>Instead of rolling To Wound normally with this weapon, any model caught in its blast must instead roll equal to or under their Strength on a D6 or suffer a wound (a roll of ‘6’ always counts as a failure). After the graviton pulse weapon has been fired, leave the Blast marker in place. This area now counts as both difficult terrain and dangerous terrain for the next turn.</description>
     </rule>
     <rule id="6970-1bf3-b33e-5dce" name="Haywire" book="BRB 7th" hidden="false">
       <profiles/>
@@ -13516,6 +16430,77 @@ At the beginning of every subsequent player turn, the marker scatters 2D6&quot; 
       <modifiers/>
       <description> Battle-automata power blades are paired weapons and so add +1 to the model’s attacks and count as being Two-handed.</description>
     </rule>
+    <rule id="aa779861-a8af-fa95-4150-ba94585d1aff" name="Augur-sweep" book="HH:MTAL" page="111" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Enemy units within 12&quot; reduce their cover saves by -1 when fired at by units in the same detachment as the Cyber-occularis</description>
+    </rule>
+    <rule id="9edbc777-7d2b-011b-7488-335b14870be5" name="Battlesmith" book="HH:LACAL" page="81" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>If a Battlesmith is embarked on or in base contact with one or more damaged vehicles during the shooting phase, they may attempt to repair one of them instead of firing a weapon.  To attempt, roll a D6.  On a result of 5+ the Battlesmith may do one of the following:
+
+- Restore a lost Hull Point
+- Repair a Weapon Destroyed result
+- Repair an Immobilised result
+
+If a Weapon Destroyed result is repaired, that weapon may be fired in the following shooting phase.  The Battlesmith cannot use this ability if he has gone to ground or is falling back.  </description>
+    </rule>
+    <rule id="53c751ef-105f-b2a8-7a17-7812d605b9f2" name="Flank Speed" book="HH3: Extermination" page="231" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>If the Knight chooses to Run instead of firing a weapon in the shooting phase, may move 3D6&quot;</description>
+    </rule>
+    <rule id="d169-a0dc-6155-c754" name="Household Rank" book="HH4: Conquest" page="301" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>The model is subject to the Household Rank special rule, which may grant it an alteration to its basic profile and additional special rules as shown in the Questoris Knight Crusade Army Special Rules section on page 295. </description>
+    </rule>
+    <rule id="409ed051-b4d2-fcc4-916d-1f2e7090366f" name="Overtaxed Reactor" book="HH4: Conquest" page="303" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>When destroyed, the knight adds +1 to the result rolled on the Catastrophic Damage table.  </description>
+    </rule>
+    <rule id="5a6e2a63-286a-a771-587c-6a41724b1e6b" name="Warning Relay" book="HH3: Extermination" page="207" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Confers Interceptor to all friendly models within the same detachment 3&quot;</description>
+    </rule>
+    <rule id="333c-a3b2-4353-f484" name="Macro-extinction Targeting Protocols" book="HH6: Retibution" page="279" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>When making shooting attacks against targets of the Super-heavy or Gargantuan Creature type, the Cerastus Knight-Atrapos counts its weapons as Twin-linked.</description>
+    </rule>
+    <rule id="8fb5-0c46-e8b4-0ef6" name="Ionic Flare Shield" book="HH6: Retibution" page="279" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>When a Cerastus Knight-Atrapos is deployed, and subsequently at the start of each of the opposing side&apos;s Shooting phases, the Cerastus
+Knight-Atrapos&apos; controlling player must declare which facing each Cerastus Knight-Atrapos&apos; ion flare shield is covering. The choices are front, left side, right side or rear. The Knight has a 4+ invulnerable save against all hits against the shield facing and the strength of any 
+Shooting attack against the shield facing is reduced by -1, the effect increasing to -2 if the weapon has the Blast or Template special rules (note however that this strength reduction has no effect on Destroyer or Haywire attacks). Ionic flare shields are repositioned before any attacks are carried out in the Shooting phase and may not be used to make 	saving throws against close combat attacks.</description>
+    </rule>
+    <rule id="81fe-8580-34f6-28ae" name="Catastrophic Destruction" book="HH6: Retibution" page="279" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>When destroyed, the Cerastus Knight-Atrapos adds +2 to the result rolled on the Catastrophic Damage table.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="09fd-8af1-a6b1-51f7" name="Boltgun" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
@@ -13591,30 +16576,6 @@ At the beginning of every subsequent player turn, the marker scatters 2D6&quot; 
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Primary Weapon 1"/>
-      </characteristics>
-    </profile>
-    <profile id="39e9-832d-44e8-426f" name="Plasma Blastgun (Overload)" book="HH5: Tempest" page="264" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="96&quot;"/>
-        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="10"/>
-        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
-        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Primary Weapon 1, Apocalyptic Blast"/>
-      </characteristics>
-    </profile>
-    <profile id="d44e-3ae0-bac4-23f9" name="Plasma Blastgun (Rapid)" book="HH5: Tempest" page="264" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="72&quot;"/>
-        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
-        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
-        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Primary Weapon 2, Massive Blast"/>
       </characteristics>
     </profile>
     <profile id="3b45-b564-4fce-e3d8" name="Vulcan Mega-bolter" book="HH5: Tempest" page="264" hidden="false" profileTypeId="576561706f6e23232344415441232323">
@@ -13851,18 +16812,6 @@ At the beginning of every subsequent player turn, the marker scatters 2D6&quot; 
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Rending, Paired Weapons"/>
       </characteristics>
     </profile>
-    <profile id="32d5-9382-d290-b026" name="Siege Wrecker" book="HH:MT" page="115" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
-        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="10"/>
-        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
-        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Concussive, Wrecker, Specialist Weapon"/>
-      </characteristics>
-    </profile>
     <profile id="13e0-4939-5232-8d85" name="Atomantic Shielding" book="HH:MT" page="110" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
       <profiles/>
       <rules/>
@@ -13909,18 +16858,6 @@ At the beginning of every subsequent player turn, the marker scatters 2D6&quot; 
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="3"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="-"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 1, Blast"/>
-      </characteristics>
-    </profile>
-    <profile id="c32e-0d1a-f6db-2007" name="Rotor Cannon" book="HH:MT" page="115" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="30&quot;"/>
-        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="3"/>
-        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="6"/>
-        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Salvo 3/4"/>
       </characteristics>
     </profile>
     <profile id="d1ac-3bb0-0a9d-e48f" name="Rotor Cannon (Bio-corrosive rounds)" book="HH:MT" page="115" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
@@ -15286,6 +18223,336 @@ At the beginning of every subsequent player turn, the marker scatters 2D6&quot; 
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Skyfire, Interceptor, Heat Seeker"/>
+      </characteristics>
+    </profile>
+    <profile id="dd4fa1b2-43b4-75d6-974c-83c1a4115c07" name="Cyber-occularis" book="HH3: Extermination" page="207" hidden="false" profileTypeId="556e697423232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Unit Type" characteristicTypeId="556e6974205479706523232344415441232323" value="Jet Pack Infantry"/>
+        <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="2"/>
+        <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="3"/>
+        <characteristic name="S" characteristicTypeId="5323232344415441232323" value="2"/>
+        <characteristic name="T" characteristicTypeId="5423232344415441232323" value="3"/>
+        <characteristic name="W" characteristicTypeId="5723232344415441232323" value="1"/>
+        <characteristic name="I" characteristicTypeId="4923232344415441232323" value="4"/>
+        <characteristic name="A" characteristicTypeId="4123232344415441232323" value="1"/>
+        <characteristic name="LD" characteristicTypeId="4c4423232344415441232323" value="9"/>
+        <characteristic name="Save" characteristicTypeId="5361766523232344415441232323" value="3+"/>
+      </characteristics>
+    </profile>
+    <profile id="6fbf4c0f-334f-844d-3d75-ce8a1da6c1fa" name="Darkfire Cannon" book="HH3: Extermination" page="209" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="60&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 2, Lance, Blind, Gets Hot"/>
+      </characteristics>
+    </profile>
+    <profile id="481b32ee-2904-c9e0-8612-35ff2bcab65a" name="Graviton Gun" book="HH4: Conquest" page="308" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="18&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="*"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Blast, Concussion, Graviton Pulse, Haywire"/>
+      </characteristics>
+    </profile>
+    <profile id="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" name="Heavy Stubber" book="HH4: Conquest" page="308" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="4"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="6"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3"/>
+      </characteristics>
+    </profile>
+    <profile id="4133-c843-ebc6-8f33" name="Inferno Cannon" book="HH1: Betrayal" page="274" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="Hellstorm*"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1"/>
+      </characteristics>
+    </profile>
+    <profile id="342d5e83-9f9b-42c0-cecb-e6c9c197ab9d" name="Ion Shield" book="HH4: Conquest" page="301" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="When deployed, and at the start of each subsequent opposing side&apos;s shooting phase, the Knight&apos;s controlling player must declare a facing for the ion shield.  Choices are front, left, right, or rear.    The Knight has a 4+ invulnerable save  against all hits on that facing until the start of the opposing side&apos;s next shooting phase.  Ion shields are repositioned before any attacks are carried out and may not protect against close combat attacks.  "/>
+      </characteristics>
+    </profile>
+    <profile id="76f43c9f-9d2b-e019-63db-3ac3082ee07c" name="Ionic Flare Shield" book="HH4: Conquest" page="303" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="When deployed, and at the start of each subsequent opposing side&apos;s shooting phase, the Knight&apos;s controlling player must declare a facing for the ionic flare shield.  Choices are front, left, right, or rear.    The Knight has a 4+ invulnerable save  against all hits on that facing until the start of the opposing side&apos;s next shooting phase.  The strength of any shooting attack is reduced by -1, increasing to -2 if the weapon has the blast or template rule.  This does not effect Destroyer or Haywire attacks.  Ionic flare shields are repositioned before any attacks are carried out and may not protect against close combat attacks.  "/>
+      </characteristics>
+    </profile>
+    <profile id="7d03914a-f940-12e5-590b-822083dff647" name="Irad-cleanser" book="HH1: Betrayal" page="240" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="Template"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="2"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="5"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 1, Fleshbane, Rad-Phage"/>
+      </characteristics>
+    </profile>
+    <profile id="69b6-e87d-f483-e57a" name="Ironstorm missile pod" book="FAQ" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="72&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="5"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Large Blast, Barrage "/>
+      </characteristics>
+    </profile>
+    <profile id="418fbfed-277a-7376-dfd3-7d5a95fae9f5" name="Lightning Cannon" book="HH4: Conquest" page="308" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Rending, Shred, Large Blast"/>
+      </characteristics>
+    </profile>
+    <profile id="2850d06c-1eef-bae4-1314-6a3d9635193b" name="Lightning Gun" book="HH1: Betrayal" page="240" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="18&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="5"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Shred, Rending"/>
+      </characteristics>
+    </profile>
+    <profile id="f4750e31-0624-912a-bf07-7a1febca222e" name="Machinator Array" book="HH3: Extermination" page="240" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="+1"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Unwieldy, Shred, Armourbane"/>
+      </characteristics>
+    </profile>
+    <profile id="06291170-198f-6a71-07c8-278feed54e89" name="Mechanicum Protectiva" book="HH3: Extermination" page="207" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Provides 4++ Invulnerable save"/>
+      </characteristics>
+    </profile>
+    <profile id="faa4ea24-e51b-8663-3e7c-1a791b55aed7" name="Occular Augmetics" book="CI:AL" page="109" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Has Night Vision special rule, and may re-roll results of a 1 on the Vehicle Damage table and Destroyer Weapon Attack table which are inflicted by their shooting attacks at a range of 12&quot; or less.  "/>
+      </characteristics>
+    </profile>
+    <profile id="306adc93-713f-8c18-71d3-6956c376e9e2" name="Phased-Plasma Fusil" book="HH4: Conquest" page="308" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="24&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="6"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Salvo 2/3"/>
+      </characteristics>
+    </profile>
+    <profile id="d0f5-09ae-4c91-8764" name="Plasma Blastgun (Overload)" book="HH:LACAL" page="65" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="96&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="10"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Primary Weapon 1, Apocalyptic Blast (10&quot;)"/>
+      </characteristics>
+    </profile>
+    <profile id="507b-2215-7be8-61d7" name="Plasma Blastgun (Rapid)" book="HH:LACAL" page="65" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="72&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Primary Weapon 2, Massive Blast (7&quot;)"/>
+      </characteristics>
+    </profile>
+    <profile id="3c77a0e2-2b38-0fff-5d7d-8f63f811bbdf" name="Rad cleanser" book="HH4: Conquest" page="308" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="Template"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="2"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="5"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 1, Fleshbane, Rad-Phage"/>
+      </characteristics>
+    </profile>
+    <profile id="76191f60-ba9c-4e52-9faf-24b23e46c7a9" name="Reaper Chainsword" book="HH4: Conquest" page="308" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="D"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee"/>
+      </characteristics>
+    </profile>
+    <profile id="871025a3-7729-f97d-378d-804c3571cdf3" name="Rotor Cannon" book="HH:LACAL" page="85" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="30&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="3"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="6"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Salvo 3/4"/>
+      </characteristics>
+    </profile>
+    <profile id="51100eb8-f6e6-7048-df0a-84f0163a38bd" name="Siege Wrecker" book="HH:LACAL" page="87" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="10"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Concussive, Wrecker, Specialist Weapon"/>
+      </characteristics>
+    </profile>
+    <profile id="05cc-32b8-e59e-7dff" name="Stormspear rocket pod" book="FAQ" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3"/>
+      </characteristics>
+    </profile>
+    <profile id="d9b3-3506-e372-22e2" name="Turbo-laser Destructor" book="HH:LACAL" page="73" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="96&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="D"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Primary Weapon 1,  Large Blast"/>
+      </characteristics>
+    </profile>
+    <profile id="534b-67b0-62d7-b977" name="Twin Icarus autocannon" book="FAQ" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 2, Interceptor, Skyfire, Twin-linked"/>
+      </characteristics>
+    </profile>
+    <profile id="8f57-fa37-5c5c-e7cb" name="Vortex Missile" book="HH1: Betrayal" page="274" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot; - 480&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="*"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="*"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Apocalyptic Blast (10&quot;), One Shot"/>
+      </characteristics>
+    </profile>
+    <profile id="9170-c4db-7a4c-87fb" name="Ironstorm Missiles" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="72&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="6"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Massive Blast (7&quot;)"/>
+      </characteristics>
+    </profile>
+    <profile id="69d4-4da4-6a07-623e" name="Helios defence missiles" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="60&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 2, Skyfire, Interceptor"/>
+      </characteristics>
+    </profile>
+    <profile id="3e31-9d8c-29ab-2e70" name="Magna Lascannon" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="70&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="10"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 2, Large Blast (5&quot;)"/>
       </characteristics>
     </profile>
   </sharedProfiles>
