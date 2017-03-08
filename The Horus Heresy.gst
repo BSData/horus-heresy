@@ -1327,13 +1327,13 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="6018-217b-c5bc-7f05" name="New InfoLink" hidden="false" targetId="39e9-832d-44e8-426f" type="profile">
+                <infoLink id="6018-217b-c5bc-7f05" name="New InfoLink" hidden="false" targetId="d0f5-09ae-4c91-8764" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="98e4-7116-f4b0-13d4" name="New InfoLink" hidden="false" targetId="d44e-3ae0-bac4-23f9" type="profile">
+                <infoLink id="98e4-7116-f4b0-13d4" name="507b-2215-7be8-61d7" hidden="false" targetId="507b-2215-7be8-61d7" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -1459,13 +1459,13 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="40cf-7127-6cd3-1831" name="New InfoLink" hidden="false" targetId="39e9-832d-44e8-426f" type="profile">
+                <infoLink id="40cf-7127-6cd3-1831" name="New InfoLink" hidden="false" targetId="d0f5-09ae-4c91-8764" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="a979-9fd0-837a-f48f" name="New InfoLink" hidden="false" targetId="d44e-3ae0-bac4-23f9" type="profile">
+                <infoLink id="a979-9fd0-837a-f48f" name="New InfoLink" hidden="false" targetId="507b-2215-7be8-61d7" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -1762,13 +1762,13 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="284a-5bf3-7f0f-8a72" name="New InfoLink" hidden="false" targetId="39e9-832d-44e8-426f" type="profile">
+                <infoLink id="284a-5bf3-7f0f-8a72" name="New InfoLink" hidden="false" targetId="d0f5-09ae-4c91-8764" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="5a89-968a-ae1c-2a61" name="New InfoLink" hidden="false" targetId="d44e-3ae0-bac4-23f9" type="profile">
+                <infoLink id="5a89-968a-ae1c-2a61" name="New InfoLink" hidden="false" targetId="507b-2215-7be8-61d7" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -2623,13 +2623,13 @@ D6    Result		S	AP
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="d790-cd99-e0f1-cba9" name="New InfoLink" hidden="false" targetId="39e9-832d-44e8-426f" type="profile">
+                <infoLink id="d790-cd99-e0f1-cba9" name="New InfoLink" hidden="false" targetId="d0f5-09ae-4c91-8764" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="3167-6a34-ea42-d324" name="New InfoLink" hidden="false" targetId="d44e-3ae0-bac4-23f9" type="profile">
+                <infoLink id="3167-6a34-ea42-d324" name="New InfoLink" hidden="false" targetId="507b-2215-7be8-61d7" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -3296,7 +3296,7 @@ D6    Result		S	AP
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="7536-fa3d-9d94-c7b4" name="New InfoLink" hidden="false" targetId="c32e-0d1a-f6db-2007" type="profile">
+                <infoLink id="7536-fa3d-9d94-c7b4" name="New InfoLink" hidden="false" targetId="871025a3-7729-f97d-378d-804c3571cdf3" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -3943,7 +3943,7 @@ D6    Result		S	AP
                   <profiles/>
                   <rules/>
                   <infoLinks>
-                    <infoLink id="4080-b42f-51a4-6c9a" hidden="false" targetId="32d5-9382-d290-b026" type="profile">
+                    <infoLink id="4080-b42f-51a4-6c9a" hidden="false" targetId="51100eb8-f6e6-7048-df0a-84f0163a38bd" type="profile">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
@@ -12325,7 +12325,7 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="92d83f8e-f566-62f0-7a31-6644bab4b00c" hidden="false" targetId="9244539c-1242-7e6e-bb3c-0773cfe85e51" type="profile">
+        <infoLink id="92d83f8e-f566-62f0-7a31-6644bab4b00c" hidden="false" targetId="e135-8b23-7190-9f2c" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -16585,30 +16585,6 @@ Shooting attack against the shield facing is reduced by -1, the effect increasin
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Primary Weapon 1"/>
       </characteristics>
     </profile>
-    <profile id="39e9-832d-44e8-426f" name="Plasma Blastgun (Overload)" book="HH5: Tempest" page="264" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="96&quot;"/>
-        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="10"/>
-        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
-        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Primary Weapon 1, Apocalyptic Blast"/>
-      </characteristics>
-    </profile>
-    <profile id="d44e-3ae0-bac4-23f9" name="Plasma Blastgun (Rapid)" book="HH5: Tempest" page="264" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="72&quot;"/>
-        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
-        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
-        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Primary Weapon 2, Massive Blast"/>
-      </characteristics>
-    </profile>
     <profile id="3b45-b564-4fce-e3d8" name="Vulcan Mega-bolter" book="HH5: Tempest" page="264" hidden="false" profileTypeId="576561706f6e23232344415441232323">
       <profiles/>
       <rules/>
@@ -16843,18 +16819,6 @@ Shooting attack against the shield facing is reduced by -1, the effect increasin
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Rending, Paired Weapons"/>
       </characteristics>
     </profile>
-    <profile id="32d5-9382-d290-b026" name="Siege Wrecker" book="HH:MT" page="115" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
-        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="10"/>
-        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
-        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Concussive, Wrecker, Specialist Weapon"/>
-      </characteristics>
-    </profile>
     <profile id="13e0-4939-5232-8d85" name="Atomantic Shielding" book="HH:MT" page="110" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
       <profiles/>
       <rules/>
@@ -16901,18 +16865,6 @@ Shooting attack against the shield facing is reduced by -1, the effect increasin
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="3"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="-"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 1, Blast"/>
-      </characteristics>
-    </profile>
-    <profile id="c32e-0d1a-f6db-2007" name="Rotor Cannon" book="HH:MT" page="115" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="30&quot;"/>
-        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="3"/>
-        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="6"/>
-        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Salvo 3/4"/>
       </characteristics>
     </profile>
     <profile id="d1ac-3bb0-0a9d-e48f" name="Rotor Cannon (Bio-corrosive rounds)" book="HH:MT" page="115" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
@@ -18280,36 +18232,6 @@ Shooting attack against the shield facing is reduced by -1, the effect increasin
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Skyfire, Interceptor, Heat Seeker"/>
       </characteristics>
     </profile>
-    <profile id="6368-f4e8-1e75-8ea4" name="Apocalypse Launcher" book="HH1: Betrayal" page="274" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="24&quot; - 360&quot;"/>
-        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
-        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
-        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Apocalyptic Barrage 5"/>
-      </characteristics>
-    </profile>
-    <profile id="25e70aa3-867c-af48-6c22-1dbb7460be4c" name="Atomantic Shielding" book="HH3: Extermination" page="207" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Gains 5++ Invulnerable save from shooting attacks and explosions, and a 6++ Invulnerable save in close combat.  In addition, add +1 to the range of explosions from the Reactor Blast rule.  "/>
-      </characteristics>
-    </profile>
-    <profile id="9244539c-1242-7e6e-bb3c-0773cfe85e51" name="Cortex Controller" book="HH:LACAL" page="89" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Presence of a Cortex Controller within 12&quot; of a unit of friendly models with the Programmed Behaviour special rule at the start of any phase means that special rule is negated for that phase and their controlling player is free to use them as any other unit.  "/>
-      </characteristics>
-    </profile>
     <profile id="dd4fa1b2-43b4-75d6-974c-83c1a4115c07" name="Cyber-occularis" book="HH3: Extermination" page="207" hidden="false" profileTypeId="556e697423232344415441232323">
       <profiles/>
       <rules/>
@@ -18338,39 +18260,6 @@ Shooting attack against the shield facing is reduced by -1, the effect increasin
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 2, Lance, Blind, Gets Hot"/>
-      </characteristics>
-    </profile>
-    <profile id="d1d0-42b3-d48b-1348" name="Double-barrelled Turbo-laser Destructor" book="HH1: Betrayal" page="274" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="96&quot;"/>
-        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="D"/>
-        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
-        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 2, Large Blast"/>
-      </characteristics>
-    </profile>
-    <profile id="6253dfdd-8f74-faf6-de17-9a6b52b97abc" name="Enhanced Targeting Array" book="HH3: Extermination" page="207" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="A model with this upgrade increases its BS by +1 and reduces enemy cover saves by -1. "/>
-      </characteristics>
-    </profile>
-    <profile id="f6c1-d78d-16f5-4209" name="Gatling Blaster" book="HH1: Betrayal" page="274" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="72&quot;"/>
-        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
-        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
-        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 6, Large Blast"/>
       </characteristics>
     </profile>
     <profile id="481b32ee-2904-c9e0-8612-35ff2bcab65a" name="Graviton Gun" book="HH4: Conquest" page="308" hidden="false" profileTypeId="576561706f6e23232344415441232323">
@@ -18407,15 +18296,6 @@ Shooting attack against the shield facing is reduced by -1, the effect increasin
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1"/>
-      </characteristics>
-    </profile>
-    <profile id="9221f401-6459-1e62-00fc-cd39eb567d88" name="Infravisor" book="HH3: Extermination" page="208" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Confers Night Vision, but counts as I1 for blind tests.  "/>
       </characteristics>
     </profile>
     <profile id="342d5e83-9f9b-42c0-cecb-e6c9c197ab9d" name="Ion Shield" book="HH4: Conquest" page="301" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
@@ -18458,18 +18338,6 @@ Shooting attack against the shield facing is reduced by -1, the effect increasin
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="5"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Large Blast, Barrage "/>
-      </characteristics>
-    </profile>
-    <profile id="ad9f-da38-7e2c-13bf" name="Laser Blaster" book="HH1: Betrayal" page="274" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="96&quot;"/>
-        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="D"/>
-        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
-        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3, Large Blast"/>
       </characteristics>
     </profile>
     <profile id="418fbfed-277a-7376-dfd3-7d5a95fae9f5" name="Lightning Cannon" book="HH4: Conquest" page="308" hidden="false" profileTypeId="576561706f6e23232344415441232323">
@@ -18517,18 +18385,6 @@ Shooting attack against the shield facing is reduced by -1, the effect increasin
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Provides 4++ Invulnerable save"/>
       </characteristics>
     </profile>
-    <profile id="60bb-5aa9-2642-06f5" name="Melta Cannon" book="HH1: Betrayal" page="274" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="72&quot;"/>
-        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="10"/>
-        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
-        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Apocalyptic Blast (10&quot;)"/>
-      </characteristics>
-    </profile>
     <profile id="faa4ea24-e51b-8663-3e7c-1a791b55aed7" name="Occular Augmetics" book="CI:AL" page="109" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
       <profiles/>
       <rules/>
@@ -18572,18 +18428,6 @@ Shooting attack against the shield facing is reduced by -1, the effect increasin
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Primary Weapon 2, Massive Blast (7&quot;)"/>
-      </characteristics>
-    </profile>
-    <profile id="8d53b674-e240-cff6-bd05-4822a2783b6e" name="Power Blades" book="HH3: Extermination" page="208" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
-        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="User"/>
-        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
-        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Rending"/>
       </characteristics>
     </profile>
     <profile id="3c77a0e2-2b38-0fff-5d7d-8f63f811bbdf" name="Rad cleanser" book="HH4: Conquest" page="308" hidden="false" profileTypeId="576561706f6e23232344415441232323">
@@ -18670,18 +18514,6 @@ Shooting attack against the shield facing is reduced by -1, the effect increasin
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 2, Interceptor, Skyfire, Twin-linked"/>
       </characteristics>
     </profile>
-    <profile id="dfa9-60b6-4028-e0ef" name="Volcano Cannon" book="HH1: Betrayal" page="274" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="180&quot;"/>
-        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="D"/>
-        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
-        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Massive Blast (7&quot;)"/>
-      </characteristics>
-    </profile>
     <profile id="8f57-fa37-5c5c-e7cb" name="Vortex Missile" book="HH1: Betrayal" page="274" hidden="false" profileTypeId="576561706f6e23232344415441232323">
       <profiles/>
       <rules/>
@@ -18692,18 +18524,6 @@ Shooting attack against the shield facing is reduced by -1, the effect increasin
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="*"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="*"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Apocalyptic Blast (10&quot;), One Shot"/>
-      </characteristics>
-    </profile>
-    <profile id="1ef4-b456-8ae5-800f" name="Vulcan Mega-bolter" book="HH1: Betrayal" page="274" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <characteristics>
-        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="60&quot;"/>
-        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="6"/>
-        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
-        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 15"/>
       </characteristics>
     </profile>
     <profile id="9170-c4db-7a4c-87fb" name="Ironstorm Missiles" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
