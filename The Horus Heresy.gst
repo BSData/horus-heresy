@@ -10096,7 +10096,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       </profiles>
       <rules/>
       <infoLinks>
-        <infoLink id="a0d42172-1a16-82ae-561a-98218604c374" hidden="false" targetId="b352ed0c-5fc2-2b26-e1ea-8bc60068af56" type="rule">
+        <infoLink id="a0d42172-1a16-82ae-561a-98218604c374" hidden="false" targetId="6ce7-5e83-a2dd-571e" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -10399,7 +10399,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="42d3d4f7-1fbe-6440-1bf2-22ee91ed7d0d" hidden="false" targetId="b352ed0c-5fc2-2b26-e1ea-8bc60068af56" type="rule">
+        <infoLink id="42d3d4f7-1fbe-6440-1bf2-22ee91ed7d0d" hidden="false" targetId="6ce7-5e83-a2dd-571e" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -10417,7 +10417,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="828f4a19-02bb-40b8-0974-6dc4cbf24e62" hidden="false" targetId="0aa87e3d-7cb4-d681-0280-017ebea94c1f" type="rule">
+        <infoLink id="828f4a19-02bb-40b8-0974-6dc4cbf24e62" hidden="false" targetId="2d57-8425-0ec0-a9cf" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -12020,7 +12020,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="f24656bf-c677-271e-8c55-71099c7ff534" hidden="false" targetId="5345cd77-a0ed-7c00-c236-7fca4f3bdeeb" type="rule">
+        <infoLink id="f24656bf-c677-271e-8c55-71099c7ff534" hidden="false" targetId="cb2c-171e-df0f-2bec" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -15212,12 +15212,12 @@ Full details in BRB. Rule too long to copy verbatim.</description>
       <modifiers/>
       <description>This rule is often presented as Hatred (X) where X identifies a specific type of foe. If the special rule does not specify a type of foe, then the unit has Hatred against everyone. This can refer to a Faction, or a specific unit. For example, Hatred (Orks) means any model with the Ork Faction, whilst Hatred (Big Meks) means only Big Meks. A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of each close combat.</description>
     </rule>
-    <rule id="6ce7-5e83-a2dd-571e" name="Blessed Autosimulacra" book="HH3: Extermination" page="206" hidden="false">
+    <rule id="6ce7-5e83-a2dd-571e" name="Blessed Autosimulacra" book="HH:MTAL" page="113" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>If the vehicle has lost a hull point, at the end of the controlling players turn roll a D6. On a result of a 6 one lost hull point is restored.  </description>
+      <description>If the vehicle has suffered hull point damage, at the end of the controlling players turn roll a D6. On a result of a 6 one lost hull point is restored.  </description>
     </rule>
     <rule id="33ab-99bc-5c24-3cdf" name="Night Fighting" book="BRB 7th" hidden="false">
       <profiles/>
@@ -15315,7 +15315,7 @@ If, when charged, the unit was already locked in combat, the Counter-attack spec
       <modifiers/>
       <description>At the end of each of your turns, roll a D6 for each of your models with this special rule that has less than its starting number of Wounds or Hull Points, but has not been removed as a casualty or destroyed. On a roll of 5+, that model regains a Wound, or Hull Point, lost earlier in the game.</description>
     </rule>
-    <rule id="666f-e93b-4f0b-ae40" name="God-Engine" book="HH1: Betrayal" page="273" hidden="false">
+    <rule id="666f-e93b-4f0b-ae40" name="God-Engine" book="HH:MTAL" page="91" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15329,7 +15329,7 @@ If, when charged, the unit was already locked in combat, the Counter-attack spec
       <modifiers/>
       <description>A model shooting a Primary weapon shoots the number of times indicated on its profile – whether or not the bearer has moved. A model carrying a Primary weapon can fire it in the Shooting phase and still charge into close combat in the Assault phase. In addition, when you roll for armour penetration with hits caused by a Primary weapon, roll two dice instead of one and pick the highest result. If the weapon rolls 2D6 for armour penetration (because of the Armourbane special rule, for example), roll three dice instead of two and pick the two highest results.</description>
     </rule>
-    <rule id="ca57-5483-64d5-ad52" name="Reactor Meltdown" book="HH5: Tempest" page="260" hidden="false">
+    <rule id="ca57-5483-64d5-ad52" name="Reactor Meltdown" book="HH:MTAL" page="90" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15451,7 +15451,7 @@ Fast vehicles that moved at Combat Speed in the preceding Movement phase can fir
       <modifiers/>
       <description>Units made up of models with a Cyberntica Cortex can never count as Scoring units, regardless of the Force Organization Chart being used or the rules for the mission being played.  They do count as Denial units.  </description>
     </rule>
-    <rule id="3ebf-b52d-5006-2426" name="Cybernetic Resiliance" book="HH:MT" page="110" hidden="false">
+    <rule id="3ebf-b52d-5006-2426" name="Cybernetic Resiliance" book="HH:MTAL" page="110" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15733,7 +15733,7 @@ Jump units have the Bulky and Deep Strike special rules.</description>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>Instead of rolling To Wound normally with this weapon, any model caught in its blast must instead roll equal to or under their Strength on a D6 or suffer a wound (a roll of ‘6’ always counts as a failure). After the graviton pulse weapon has been fired, leave the Blast marker in place. This area now counts as both difficult terrain and dangerous terrain for the next turn thanks to the gravity flux.</description>
+      <description>Instead of rolling To Wound normally with this weapon, any model caught in its blast must instead roll equal to or under their Strength on a D6 or suffer a wound (a roll of ‘6’ always counts as a failure). After the graviton pulse weapon has been fired, leave the Blast marker in place. This area now counts as both difficult terrain and dangerous terrain for the next turn.</description>
     </rule>
     <rule id="6970-1bf3-b33e-5dce" name="Haywire" book="BRB 7th" hidden="false">
       <profiles/>
@@ -16437,12 +16437,12 @@ At the beginning of every subsequent player turn, the marker scatters 2D6&quot; 
       <modifiers/>
       <description> Battle-automata power blades are paired weapons and so add +1 to the model’s attacks and count as being Two-handed.</description>
     </rule>
-    <rule id="aa779861-a8af-fa95-4150-ba94585d1aff" name="Augur-sweep" book="HH3: Extermination" page="207" hidden="false">
+    <rule id="aa779861-a8af-fa95-4150-ba94585d1aff" name="Augur-sweep" book="HH:MTAL" page="111" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>Enemy units within 12&quot; reduce their cover saves by -1 when fired at by all units in the same detachment as the Cyber-occularis</description>
+      <description>Enemy units within 12&quot; reduce their cover saves by -1 when fired at by units in the same detachment as the Cyber-occularis</description>
     </rule>
     <rule id="9edbc777-7d2b-011b-7488-335b14870be5" name="Battlesmith" book="HH:LACAL" page="81" hidden="false">
       <profiles/>
@@ -16457,41 +16457,12 @@ At the beginning of every subsequent player turn, the marker scatters 2D6&quot; 
 
 If a Weapon Destroyed result is repaired, that weapon may be fired in the following shooting phase.  The Battlesmith cannot use this ability if he has gone to ground or is falling back.  </description>
     </rule>
-    <rule id="b352ed0c-5fc2-2b26-e1ea-8bc60068af56" name="Blessed Autosimulacra" book="HH4: Conquest" page="303" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>If the vehicle has suffered damage, roll a D6 at the end of the owning players turn.  On a 6, restore one lost hull point.  </description>
-    </rule>
-    <rule id="eff0316a-36cf-2c59-1cec-25a58cb78986" name="Cybernetic Resiliance" book="HH3: Extermination" page="206" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>- Successful wounds by attacks with Poisoned or Fleshbane must be re-rolled against this model
-- In addition to any other effects, attacks with Haywire cause an additional wound on a D6 roll of 6.  </description>
-    </rule>
     <rule id="53c751ef-105f-b2a8-7a17-7812d605b9f2" name="Flank Speed" book="HH3: Extermination" page="231" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>If the Knight chooses to Run instead of firing a weapon in the shooting phase, may move 3D6&quot;</description>
-    </rule>
-    <rule id="e574-3c61-a76c-ce9e" name="God-Engine" book="HH1: Betrayal" page="273" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>All friendly Mechanicum units within 24&quot; are Fearless</description>
-    </rule>
-    <rule id="0aa87e3d-7cb4-d681-0280-017ebea94c1f" name="Graviton Pulse" book="HH4: Conquest" page="308" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>Instead of rolling to wound normally with this weapon, any model caught in its blast must instead roll equal to or under their Strength on a D6 or sugger a wound (a roll of a 6 always counts as a failure).  After the Graviton pulse weapon has been fired, leave the Blast marker in place.  This area now counts as both difficult terrain and dangerous terrain for the next turn.  </description>
     </rule>
     <rule id="d169-a0dc-6155-c754" name="Household Rank" book="HH4: Conquest" page="301" hidden="false">
       <profiles/>
@@ -16500,53 +16471,12 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       <modifiers/>
       <description>The model is subject to the Household Rank special rule, which may grant it an alteration to its basic profile and additional special rules as shown in the Questoris Knight Crusade Army Special Rules section on page 295. </description>
     </rule>
-    <rule id="1a39d585-c6e2-729c-4c0b-6de16ab9ee49" name="Objective Secured" book="HH4: Conquest" page="297" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-    </rule>
     <rule id="409ed051-b4d2-fcc4-916d-1f2e7090366f" name="Overtaxed Reactor" book="HH4: Conquest" page="303" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>When destroyed, the knight adds +1 to the result rolled on the Catastrophic Damage table.  </description>
-    </rule>
-    <rule id="5345cd77-a0ed-7c00-c236-7fca4f3bdeeb" name="Paragon of Metal" book="HH3: Extermination" page="209" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>- Not subject to the Programmed Behavior special rule and gains It Will Not Die and Rampage special rules
-- Never counts as scoring regardless of mission type
-- In the case of a failed Cybertheurgy attempt, always apply Malifica instead of rolling</description>
-    </rule>
-    <rule id="5df0114e-9c76-158b-dee0-a8b617249554" name="Programmed Behaviour" book="HH3: Extermination" page="206" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>Unless within 12&quot; of a friendly model with a Cortex Controller, the following restrictions apply (unless already locked in an assault)
-
-- Methodical: May not make Sweeping Advances or Run moves
-- Target Priority: If enemy models are within 12&quot; and line of sight during their shooting phase, the unit must fire all its weapons against the closest enemy unit it is able to harm.  If this is not the case, they are free to select targets as normal.
-- Onslaught: If enemy units are within 12&quot; during their Assault phase, them must attempt to charge the closest enemy unit.  May still only charge a unit fired upon.  If consolidating, must consolidate towards the closest enemy if within 12&quot;
-- Fire Protocols: May fire up to three weapons in the shooting phase against the same target. </description>
-    </rule>
-    <rule id="304d15d2-5775-efdf-f680-aa75b73911ad" name="Reactor Blast" book="HH3: Extermination" page="207" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>When losing its final wound, roll a D6.  On a 6, inflict a Str 4 AP - hit on all models within D6&quot;</description>
-    </rule>
-    <rule id="1903-1111-b174-5005" name="Reactor Meltdown" book="HH1: Betrayal" page="273" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>If suffers an Apocalyptic Explosion result, Str D range is 6D6&quot;</description>
     </rule>
     <rule id="5a6e2a63-286a-a771-587c-6a41724b1e6b" name="Warning Relay" book="HH3: Extermination" page="207" hidden="false">
       <profiles/>
