@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" book="HH4: Conquest" revision="34" battleScribeVersion="2.00" authorName="Alphalas" authorContact="Gitter: @Alphalas, twitter: @kingoverlord" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" book="HH4: Conquest" revision="35" battleScribeVersion="2.00" authorName="Alphalas" authorContact="Gitter: @Alphalas, twitter: @kingoverlord" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -3659,7 +3659,66 @@ but the tank loses the Fast special rule.</description>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="80af-a486-a564-b923" type="max"/>
                   </constraints>
-                  <selectionEntries/>
+                  <selectionEntries>
+                    <selectionEntry id="b32d-5f80-de5c-597c" name="Shatter Shells" hidden="false" collective="false" type="upgrade">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks>
+                        <infoLink id="3b95-f43d-d579-a902" name="New InfoLink" hidden="false" targetId="841f-9119-9f9d-5058" type="rule">
+                          <profiles/>
+                          <rules/>
+                          <infoLinks/>
+                          <modifiers/>
+                        </infoLink>
+                        <infoLink id="0c60-3640-a3ec-fb8c" name="New InfoLink" hidden="false" targetId="61cf-0c48-9a9a-9562" type="profile">
+                          <profiles/>
+                          <rules/>
+                          <infoLinks/>
+                          <modifiers/>
+                        </infoLink>
+                      </infoLinks>
+                      <modifiers/>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9bcc-3788-f3f0-0246" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3b4c-0625-8693-c7ab" type="min"/>
+                      </constraints>
+                      <selectionEntries/>
+                      <selectionEntryGroups/>
+                      <entryLinks/>
+                      <costs>
+                        <cost name="pts" costTypeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="d956-8299-85e0-f680" name="Frag Shells" hidden="false" collective="false" type="upgrade">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks>
+                        <infoLink id="b9b5-c314-4ec1-93f0" name="New InfoLink" hidden="false" targetId="40ea-f002-47cb-4e4e" type="rule">
+                          <profiles/>
+                          <rules/>
+                          <infoLinks/>
+                          <modifiers/>
+                        </infoLink>
+                        <infoLink id="1048-43a0-50b7-5576" name="New InfoLink" hidden="false" targetId="6563-97c5-620f-69bb" type="profile">
+                          <profiles/>
+                          <rules/>
+                          <infoLinks/>
+                          <modifiers/>
+                        </infoLink>
+                      </infoLinks>
+                      <modifiers/>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c43b-3077-caa1-512d" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2022-46c5-3660-c619" type="min"/>
+                      </constraints>
+                      <selectionEntries/>
+                      <selectionEntryGroups/>
+                      <entryLinks/>
+                      <costs>
+                        <cost name="pts" costTypeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
                   <selectionEntryGroups/>
                   <entryLinks/>
                   <costs>
@@ -5339,7 +5398,7 @@ but the tank loses the Fast special rule.</description>
           </selectionEntryGroups>
           <entryLinks/>
           <costs>
-            <cost name="pts" costTypeId="points" value="0.0"/>
+            <cost name="pts" costTypeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5374,7 +5433,7 @@ but the tank loses the Fast special rule.</description>
       </selectionEntryGroups>
       <entryLinks/>
       <costs>
-        <cost name="pts" costTypeId="points" value="75.0"/>
+        <cost name="pts" costTypeId="points" value="65.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8752-e0a3-19bf-9aca" name="Auxilia Tank Commander" book="HH4: Conquest" page="259" hidden="false" collective="false" categoryEntryId="485123232344415441232323" type="upgrade">
@@ -12534,6 +12593,30 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="5"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="5"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Pistol, Deflagrate"/>
+      </characteristics>
+    </profile>
+    <profile id="6563-97c5-620f-69bb" name="Quad Mortar (Frag)" book="HH5: Tempest" page="179" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="12&quot; - 60&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="5"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="5"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 4, Barrage, Blast, Shell Shock"/>
+      </characteristics>
+    </profile>
+    <profile id="61cf-0c48-9a9a-9562" name="Quad Mortar (Shatter)" book="HH:CIAL" page="29" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 4, Sunder"/>
       </characteristics>
     </profile>
   </sharedProfiles>
