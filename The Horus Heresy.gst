@@ -16501,6 +16501,20 @@ Shooting attack against the shield facing is reduced by -1, the effect increasin
       <modifiers/>
       <description>When destroyed, the Cerastus Knight-Atrapos adds +2 to the result rolled on the Catastrophic Damage table.</description>
     </rule>
+    <rule id="841f-9119-9f9d-5058" name="Sunder" book="HH:LAICL" page="47" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Attacks with this rule may re-roll failed Armour Penetration rolls. </description>
+    </rule>
+    <rule id="40ea-f002-47cb-4e4e" name="Shell Shock" book="HH:LACAL" page="83" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Pinning tests taken because of a weapon with this special rule suffer a -1 Leadership penalty.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="09fd-8af1-a6b1-51f7" name="Boltgun" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
