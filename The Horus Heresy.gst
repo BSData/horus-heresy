@@ -3791,7 +3791,7 @@ D6    Result		S	AP
                     <cost name="pts" costTypeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="4ed8-630f-8684-ebe1" name="Maulter Bolt Cannon" book="" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="4ed8-630f-8684-ebe1" name="Mauler Bolt Cannon" book="" hidden="false" collective="false" type="upgrade">
                   <profiles/>
                   <rules/>
                   <infoLinks>
@@ -3889,7 +3889,7 @@ D6    Result		S	AP
               <selectionEntryGroups/>
               <entryLinks/>
             </selectionEntryGroup>
-            <selectionEntryGroup id="c022-8531-3529-fe49" name="May Exchange Stock Chargers for:" hidden="false" collective="false">
+            <selectionEntryGroup id="c022-8531-3529-fe49" name="May Exchange Shock Chargers for:" book="" hidden="false" collective="false">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -3979,7 +3979,7 @@ D6    Result		S	AP
                     <cost name="pts" costTypeId="points" value="20.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="4894-9e9e-82e5-b213" name="Stock Chargers" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="4894-9e9e-82e5-b213" name="Shock Chargers" hidden="false" collective="false" type="upgrade">
                   <profiles/>
                   <rules/>
                   <infoLinks>
@@ -16791,13 +16791,13 @@ Shooting attack against the shield facing is reduced by -1, the effect increasin
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3, Pinning"/>
       </characteristics>
     </profile>
-    <profile id="3428-cbe9-fba3-955b" name="Stock Chargers" book="HH:MT" page="107" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+    <profile id="3428-cbe9-fba3-955b" name="Shock Chargers" book="HH:MT" page="107" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="- Model equipped with Stock Chargers gains the Concussive special rule added to all their close combat attacks regardless of type (to include Hammer of Wrath).  - Stock Chargers are not a weapon and do not have a profile, nor do they add additional attacks in conjunction with other weapons. "/>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="- Model equipped with Shock Chargers gains the Concussive special rule added to all their close combat attacks regardless of type (to include Hammer of Wrath).  - Stock Chargers are not a weapon and do not have a profile, nor do they add additional attacks in conjunction with other weapons. "/>
       </characteristics>
     </profile>
     <profile id="d667-17ba-5f95-065a" name="Power Blades" book="HH:MT" page="115" hidden="false" profileTypeId="576561706f6e23232344415441232323">
