@@ -2,13 +2,13 @@ Horus Heresy
 ============
 
 
-##Important
+## Important
 
 [![Join the chat at https://gitter.im/BSData/horus-heresy](https://badges.gitter.im/BSData/horus-heresy.svg)](https://gitter.im/BSData/horus-heresy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 __BattleScribe v1.15 users Notice__: _However we don't support BattleScribe v1.15 any longer, all the files in their last revisions for that BattleScribe are available [here](https://github.com/BSData/horus-heresy/releases/tag/6.9.3). Downloading `.bsr` file(one of the Downloads) and importing it in BattleScribe v1.15 will allow you to use these no-longer-maintained datafiles._
 
-####Contents####
+#### Contents
 
 * [Overview][]
 * [Links][]
@@ -18,7 +18,7 @@ __BattleScribe v1.15 users Notice__: _However we don't support BattleScribe v1.1
 [Links]: #links
 
 
-##Overview##
+## Overview
 
 __What's this?__
 
@@ -28,8 +28,8 @@ __Okay, nice project. Is it actually working?__ _I just want those files..._
 
 Yeah! We have it hosted on AppSpot. Take a look: [The Horus Heresy at BattleScribe Data on Appspot](http://battlescribedata.appspot.com/#/repo/horus-heresy)
 
-##Standards##
-###References###
+## Standards
+### References  
 * Base Rulebook (7th Edition) = BRB 7th (I'm using the digital in order to copy/paste so no pages)
 * Legiones Astartes: Age of Darkness Army List = LA:AODAL
 * Legiones Astartes: Age of Darkness Legions = LA:ADL
@@ -37,7 +37,7 @@ Yeah! We have it hosted on AppSpot. Take a look: [The Horus Heresy at BattleScri
 * Crusade Imperialis: Army List = CI:AL
 * Horus Heresy 1: Betrayal = HH1: Betrayal (and so on)
 
-##Links##
+## Links
 
 * [BattleScribe homepage][]
 * [BattleScribe Data on Appspot][]
