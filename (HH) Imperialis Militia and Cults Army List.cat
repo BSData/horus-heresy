@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" book="HH5: Tempest" revision="43" battleScribeVersion="2.00" authorName="Alphalas" authorContact="Gitter: @Alphalas, twitter: @kingoverlord" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" book="HH5: Tempest" revision="45" battleScribeVersion="2.00" authorName="Alphalas" authorContact="Gitter: @Alphalas, twitter: @kingoverlord" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules>
     <rule id="0f6d-7554-f6a7-f825" name="Warmaster&apos;s Due" hidden="false">
@@ -1560,7 +1560,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -6823,15 +6825,15 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
     </selectionEntry>
     <selectionEntry id="0ed3-b2fd-0ca7-588b" name="Imperialis Auxilia Rapier Battery" hidden="false" collective="false" categoryEntryId="486561767920537570706f727423232344415441232323" type="unit">
       <profiles/>
-      <rules>
-        <rule id="ead4-d4e9-abcc-8f05" name="Extremely Bulky" hidden="false">
+      <rules/>
+      <infoLinks>
+        <infoLink id="30a1-b7a8-870f-708c" name="New InfoLink" hidden="false" targetId="2834-307f-1830-df9a" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-        </rule>
-      </rules>
-      <infoLinks/>
+        </infoLink>
+      </infoLinks>
       <modifiers/>
       <constraints/>
       <selectionEntries>
@@ -6968,40 +6970,49 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                     <cost name="pts" costTypeId="points" value="15.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="14d6-39f9-fcf3-44cb" name="Quad Mortar (&quot;Thudd Gun&quot;)" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-                  <profiles>
-                    <profile id="12c6-aef5-06d9-bf09" name="Quad Mortar (Frag)" book="HH5: Tempest" page="179" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                      <characteristics>
-                        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="12&quot; - 60&quot;"/>
-                        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="5"/>
-                        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="5"/>
-                        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 4, Barrage, Blast, Shell Shock"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <rules>
-                    <rule id="6f56-2f0f-79ca-ae07" name="Shell Shock" book="HH5: Tempest" page="179" hidden="false">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                      <description>Pinning tests are made at -1 leadership.  </description>
-                    </rule>
-                  </rules>
+                <selectionEntry id="14d6-39f9-fcf3-44cb" name="Quad Mortar" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+                  <profiles/>
+                  <rules/>
                   <infoLinks/>
                   <modifiers/>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4a05-b69c-a9d3-5b32" type="max"/>
                   </constraints>
-                  <selectionEntries/>
+                  <selectionEntries>
+                    <selectionEntry id="6e56-3117-d9b7-2d3e" name="Frag Shells" hidden="false" collective="false" type="upgrade">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks>
+                        <infoLink id="70bd-da34-e020-0609" name="New InfoLink" hidden="false" targetId="40ea-f002-47cb-4e4e" type="rule">
+                          <profiles/>
+                          <rules/>
+                          <infoLinks/>
+                          <modifiers/>
+                        </infoLink>
+                        <infoLink id="18cb-7c39-d13b-6268" name="New InfoLink" hidden="false" targetId="1b7d-61e2-261f-f902" type="profile">
+                          <profiles/>
+                          <rules/>
+                          <infoLinks/>
+                          <modifiers/>
+                        </infoLink>
+                      </infoLinks>
+                      <modifiers/>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e2dc-42dc-1f46-0c37" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="015d-ca7f-e49d-4d00" type="min"/>
+                      </constraints>
+                      <selectionEntries/>
+                      <selectionEntryGroups/>
+                      <entryLinks/>
+                      <costs>
+                        <cost name="pts" costTypeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
                   <selectionEntryGroups/>
                   <entryLinks/>
                   <costs>
-                    <cost name="pts" costTypeId="points" value="25.0"/>
+                    <cost name="pts" costTypeId="points" value="35.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -10190,7 +10201,9 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
           <repeats>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4014-7d86-22e9-5d96" repeats="1" roundUp="false"/>
           </repeats>
-          <conditions/>
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="80a2-7d5f-396f-352e" type="instanceOf"/>
+          </conditions>
           <conditionGroups/>
         </modifier>
       </modifiers>
@@ -11143,6 +11156,30 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       <modifiers/>
       <characteristics>
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Counts as scoring an additional wound for combat resolution and may use normal leadership even when below 25%.  "/>
+      </characteristics>
+    </profile>
+    <profile id="1b7d-61e2-261f-f902" name="Quad Mortar (Frag)" book="HH5: Tempest" page="179" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="12&quot; - 60&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="5"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="5"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 4, Barrage, Blast, Shell Shock"/>
+      </characteristics>
+    </profile>
+    <profile id="4045-efdd-76a2-f228" name="Quad Mortar (Shatter)" book="HH:CIAL" page="29" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 4, Sunder"/>
       </characteristics>
     </profile>
   </sharedProfiles>
