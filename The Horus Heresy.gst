@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="69" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="70" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -3713,7 +3713,7 @@ D6    Result		S	AP
           </constraints>
           <selectionEntries/>
           <selectionEntryGroups>
-            <selectionEntryGroup id="6564-7afd-3cef-078a" name="May exchange its Mauler bolt cannon for:" hidden="false" collective="false">
+            <selectionEntryGroup id="6564-7afd-3cef-078a" name="May exchange its Mauler bolt cannon for:" hidden="false" collective="false" defaultSelectionEntryId="4ed8-630f-8684-ebe1">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -3823,7 +3823,7 @@ D6    Result		S	AP
               <selectionEntryGroups/>
               <entryLinks/>
             </selectionEntryGroup>
-            <selectionEntryGroup id="c204-c9c9-9110-ca90" name="May Exchange one or both bolters for:" hidden="false" collective="false">
+            <selectionEntryGroup id="c204-c9c9-9110-ca90" name="May Exchange one or both bolters for:" hidden="false" collective="false" defaultSelectionEntryId="9f45-90b4-1220-dd2b">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -3889,7 +3889,7 @@ D6    Result		S	AP
               <selectionEntryGroups/>
               <entryLinks/>
             </selectionEntryGroup>
-            <selectionEntryGroup id="c022-8531-3529-fe49" name="May Exchange Shock Chargers for:" book="" hidden="false" collective="false">
+            <selectionEntryGroup id="c022-8531-3529-fe49" name="May Exchange Shock Chargers for:" book="" hidden="false" collective="false" defaultSelectionEntryId="4894-9e9e-82e5-b213">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -14921,97 +14921,6 @@ Command Benefits:
       </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks/>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="dcd9f954-73a9-25ad-b7db-1a8591d65d10" name="Knight Armour" hidden="false" collective="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-      </constraints>
-      <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks>
-        <entryLink id="b563-34dc-db2b-bf1f" name="Acheron" hidden="false" targetId="b4ddbe68-7095-397e-dec4-162170dbdbcd" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-        <entryLink id="eec7-2072-1387-7077" name="Atrapos" hidden="false" targetId="baad-77d0-04c2-e05f" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-        <entryLink id="1fef-06dd-f23a-52b9" name="Castigator" hidden="false" targetId="b1cf8528-c9d0-2c2a-3f19-522e5532f273" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-        <entryLink id="19c8-584e-212b-78e5" name="Lancer" hidden="false" targetId="ca45ca55-eae1-1a81-8afc-1330611055a6" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-        <entryLink id="f824-695c-4082-6faa" name="Crusader" hidden="false" targetId="09ee-4370-1462-2cb5" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-        <entryLink id="2b8e-e34f-3672-729d" name="Errant" hidden="false" targetId="4b70feb1-a2e7-2f93-8320-1d6775bf5a59" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-        <entryLink id="cc5d-8ff3-27ad-ce11" name="Gallant" hidden="false" targetId="74b8-f485-4b58-0071" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-        <entryLink id="5428-2403-1e57-555a" name="Magaera" hidden="false" targetId="fb7cd031-7573-eb28-4446-d709eb5acdbc" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-        <entryLink id="2f16-1cb5-386b-c561" name="Paladin" hidden="false" targetId="02eb28bb-1883-8603-0af7-b8bf2b7b69c8" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-        <entryLink id="cf05-e5fb-f76e-0228" name="Styrix" hidden="false" targetId="a5b350ff-895e-4557-70a6-d24a936919c2" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-        <entryLink id="65c8-631a-a57d-6b58" name="Warden" hidden="false" targetId="f4f1-dad6-0596-ca5a" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </entryLink>
-      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
