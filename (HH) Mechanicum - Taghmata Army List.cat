@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" book="Horus Heresy: Taghmata Army List" revision="47" battleScribeVersion="2.00" authorName="CapitalDot and Zopha" authorContact="Submit &quot;New Issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" book="Horus Heresy: Taghmata Army List" revision="48" battleScribeVersion="2.00" authorName="CapitalDot and Zopha" authorContact="Submit &quot;New Issue&quot; on website" authorUrl="https://github.com/BSData/horus-heresy/issues" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -10868,8 +10868,18 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
-      <constraints/>
+      <modifiers>
+        <modifier type="set" field="e843-7829-fef6-1c20" value="2">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b88e-5d48-41ab-6422" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e843-7829-fef6-1c20" type="min"/>
+      </constraints>
     </entryLink>
     <entryLink id="a6da-fabe-6b98-c46e" name="New EntryLink" hidden="false" targetId="8190-e779-2c49-c564" type="selectionEntry" categoryEntryId="54726f6f707323232344415441232323">
       <profiles/>
