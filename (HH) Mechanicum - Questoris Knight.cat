@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="32d1ddc6-3187-cf6f-3bf8-9891e527a002" name="Questoris Knight Crusade Army" book="HH4: Conquest" revision="34" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="32d1ddc6-3187-cf6f-3bf8-9891e527a002" name="Questoris Knight Crusade Army" book="HH4: Conquest" revision="37" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -69,7 +69,7 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2531-6b7f-4f4e-975a" type="max"/>
           </constraints>
         </categoryEntry>
-        <categoryEntry id="d27d-9e9b-d8c7-afe6" name="No Force Org" hidden="false">
+        <categoryEntry id="5297-7e0f-fa0b-3537" name="Allegiance" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -552,7 +552,7 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
       </modifiers>
       <constraints/>
     </entryLink>
-    <entryLink id="02c6-f507-ac2e-504c" name="New EntryLink" hidden="false" targetId="3d9b-2be2-e926-9a55" type="selectionEntry" categoryEntryId="d27d-9e9b-d8c7-afe6">
+    <entryLink id="02c6-f507-ac2e-504c" name="New EntryLink" hidden="false" targetId="7719-aa4f-3366-84f2" type="selectionEntry" categoryEntryId="5297-7e0f-fa0b-3537">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -581,7 +581,7 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
         <modifier type="set" field="hidden" value="true">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="db21-11c2-dbe1-4180" type="equalTo"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="513f-ab95-ad10-b2ec" type="equalTo"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -763,7 +763,7 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
       <modifiers/>
       <constraints/>
     </entryLink>
-    <entryLink id="a345-9df0-fecd-5263" name="New EntryLink" hidden="false" targetId="33f8-e6da-89a3-01d5" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+    <entryLink id="a345-9df0-fecd-5263" name="New EntryLink" hidden="false" targetId="33f8-e6da-89a3-01d5" type="selectionEntry" categoryEntryId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -793,35 +793,34 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="3d9b-2be2-e926-9a55" name="Allegiance" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="7719-aa4f-3366-84f2" name="Allegiance" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7278-1485-1d80-e4b9" type="min"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ae6f-3de0-9682-079d" type="min"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="11d8-c5ea-fa7f-276b" name="Allegiance" hidden="false" collective="false">
+        <selectionEntryGroup id="860a-fa24-8724-0a29" name="Allegiance" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1c0-1294-1bb0-bd58" type="max"/>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8be7-af18-58ff-7bd7" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ded1-fe2c-4251-305c" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="17b6-684a-1bd8-5dac" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6568-7e81-94f8-7946" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="afb3-8086-6edb-3f3a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6951-01f7-7675-d69b" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="38e1-d167-7a66-aa27" name="Traitor" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="44a9-d907-13fa-4fc4" name="Traitor" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cf5e-0606-924d-bde1" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b4b3-8e17-78f3-c89c" type="max"/>
               </constraints>
               <selectionEntries/>
               <selectionEntryGroups/>
@@ -830,13 +829,13 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
                 <cost name="pts" costTypeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="db21-11c2-dbe1-4180" name="Loyalist" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="513f-ab95-ad10-b2ec" name="Loyalist" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1ea6-0765-4809-0352" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f654-63fb-6b90-b7c8" type="max"/>
               </constraints>
               <selectionEntries/>
               <selectionEntryGroups/>
@@ -851,7 +850,9 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

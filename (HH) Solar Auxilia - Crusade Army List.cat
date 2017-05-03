@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" book="HH4: Conquest" revision="37" battleScribeVersion="2.00" authorName="Alphalas" authorContact="Gitter: @Alphalas, twitter: @kingoverlord" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" book="HH4: Conquest" revision="41" battleScribeVersion="2.00" authorName="Alphalas" authorContact="Gitter: @Alphalas, twitter: @kingoverlord" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -341,10 +341,18 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca2a-4940-90bf-1a80" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints/>
     </entryLink>
-    <entryLink id="9f23-23d5-fed5-1474" name="New EntryLink" hidden="false" targetId="deb3-22c3-967b-155e" type="selectionEntry" categoryEntryId="d27d-9e9b-d8c7-afe6">
+    <entryLink id="9f23-23d5-fed5-1474" name="New EntryLink" hidden="false" targetId="221e-c435-df50-4f56" type="selectionEntry" categoryEntryId="5297-7e0f-fa0b-3537">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -491,7 +499,7 @@
       <modifiers/>
       <constraints/>
     </entryLink>
-    <entryLink id="4bf3-f4cb-20bc-6594" name="New EntryLink" hidden="false" targetId="33f8-e6da-89a3-01d5" type="selectionEntry" categoryEntryId="466f7274696669636174696f6e23232344415441232323">
+    <entryLink id="4bf3-f4cb-20bc-6594" name="New EntryLink" hidden="false" targetId="33f8-e6da-89a3-01d5" type="selectionEntry" categoryEntryId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -11581,35 +11589,34 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
         <cost name="pts" costTypeId="points" value="115.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="deb3-22c3-967b-155e" name="Allegiance" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="221e-c435-df50-4f56" name="Allegiance" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f7c3-e184-419c-a025" type="min"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5cc5-4b8d-4893-f409" type="min"/>
       </constraints>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="5e51-df1b-f762-c9a7" name="Allegiance" hidden="false" collective="false">
+        <selectionEntryGroup id="d90d-111f-49a6-181e" name="Allegiance" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49ac-eba1-8a57-7980" type="max"/>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c08-f33d-715e-f98c" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7669-0c39-a062-4b5d" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="38cf-c239-0117-a0f5" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6917-fb62-11a3-5899" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3015-accd-ce07-2c2e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="54df-1bff-e201-5454" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="e0a7-d401-4d39-33ae" name="Traitor" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="9f00-9895-b511-2c81" name="Traitor" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb54-2fb3-bf69-77a8" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5114-ee68-47eb-a03c" type="max"/>
               </constraints>
               <selectionEntries/>
               <selectionEntryGroups/>
@@ -11618,13 +11625,13 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 <cost name="pts" costTypeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0b69-a614-56e3-371a" name="Loyalist" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="ca2a-4940-90bf-1a80" name="Loyalist" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="35ef-3094-ff16-b248" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3ec2-bbcc-5211-78c9" type="max"/>
               </constraints>
               <selectionEntries/>
               <selectionEntryGroups/>
@@ -11639,7 +11646,9 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

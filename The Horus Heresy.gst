@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="76" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="81" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -183,7 +183,7 @@
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e116-a824-3a5e-9c94" type="max"/>
           </constraints>
         </categoryEntry>
-        <categoryEntry id="258478de-d031-8a7e-dcb0-7d56bee86952" name="Legion" hidden="false">
+        <categoryEntry id="5297-7e0f-fa0b-3537" name="Allegiance" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -208,13 +208,6 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a448-1827-d3b4-aa38" type="max"/>
           </constraints>
-        </categoryEntry>
-        <categoryEntry id="d27d-9e9b-d8c7-afe6" name="No Force Org" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
         </categoryEntry>
       </categoryEntries>
       <forceEntries/>
@@ -246,13 +239,6 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ebf6-27ec-4116-7a8e" type="min"/>
           </constraints>
         </categoryEntry>
-        <categoryEntry id="258478de-d031-8a7e-dcb0-7d56bee86952" name="Legion" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryEntry>
         <categoryEntry id="456c6974657323232344415441232323" name="Elites" hidden="false">
           <profiles/>
           <rules/>
@@ -279,6 +265,13 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="696d-d0b5-9a81-bcb9" type="max"/>
           </constraints>
+        </categoryEntry>
+        <categoryEntry id="5297-7e0f-fa0b-3537" name="Allegiance" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
         </categoryEntry>
       </categoryEntries>
       <forceEntries/>
@@ -310,13 +303,6 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="4995-5484-126b-ee9f" type="max"/>
           </constraints>
         </categoryEntry>
-        <categoryEntry id="258478de-d031-8a7e-dcb0-7d56bee86952" name="Legion" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryEntry>
         <categoryEntry id="466173742041747461636b23232344415441232323" name="Fast Attack" hidden="false">
           <profiles/>
           <rules/>
@@ -343,6 +329,13 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="a908-e2ef-de24-fb58" type="max"/>
           </constraints>
+        </categoryEntry>
+        <categoryEntry id="5297-7e0f-fa0b-3537" name="Allegiance" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
         </categoryEntry>
       </categoryEntries>
       <forceEntries/>
@@ -373,13 +366,6 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="f62c-4adf-8bdb-8993" type="max"/>
           </constraints>
         </categoryEntry>
-        <categoryEntry id="258478de-d031-8a7e-dcb0-7d56bee86952" name="Legion" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryEntry>
         <categoryEntry id="466173742041747461636b23232344415441232323" name="Fast Attack" hidden="false">
           <profiles/>
           <rules/>
@@ -400,6 +386,13 @@
           </constraints>
         </categoryEntry>
         <categoryEntry id="486561767920537570706f727423232344415441232323" name="Heavy Support" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryEntry>
+        <categoryEntry id="5297-7e0f-fa0b-3537" name="Allegiance" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -435,13 +428,6 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="6178-cdc3-642a-6951" type="max"/>
           </constraints>
         </categoryEntry>
-        <categoryEntry id="258478de-d031-8a7e-dcb0-7d56bee86952" name="Legion" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryEntry>
         <categoryEntry id="466173742041747461636b23232344415441232323" name="Fast Attack" hidden="false">
           <profiles/>
           <rules/>
@@ -469,6 +455,13 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="true" id="6791-6c2e-b2ba-e22c" type="max"/>
           </constraints>
+        </categoryEntry>
+        <categoryEntry id="5297-7e0f-fa0b-3537" name="Allegiance" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
         </categoryEntry>
       </categoryEntries>
       <forceEntries/>
@@ -509,13 +502,6 @@
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ac7-f020-34c0-013c" type="max"/>
           </constraints>
         </categoryEntry>
-        <categoryEntry id="258478de-d031-8a7e-dcb0-7d56bee86952" name="Legion" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryEntry>
         <categoryEntry id="466173742041747461636b23232344415441232323" name="Fast Attack" hidden="false">
           <profiles/>
           <rules/>
@@ -544,6 +530,13 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8113-abb6-fd0c-2077" type="max"/>
             <constraint field="limit::points" scope="roster" value="25.0" percentValue="true" shared="true" includeChildSelections="false" includeChildForces="true" id="5231-3e8d-57cb-fcf5" type="max"/>
           </constraints>
+        </categoryEntry>
+        <categoryEntry id="5297-7e0f-fa0b-3537" name="Allegiance" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
         </categoryEntry>
       </categoryEntries>
       <forceEntries/>
@@ -584,13 +577,6 @@
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36e0-d6b3-6a9b-0d98" type="min"/>
           </constraints>
         </categoryEntry>
-        <categoryEntry id="258478de-d031-8a7e-dcb0-7d56bee86952" name="Legion" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryEntry>
         <categoryEntry id="466173742041747461636b23232344415441232323" name="Fast Attack" hidden="false">
           <profiles/>
           <rules/>
@@ -629,6 +615,13 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2da9-adca-c45f-31d7" type="min"/>
           </constraints>
         </categoryEntry>
+        <categoryEntry id="5297-7e0f-fa0b-3537" name="Allegiance" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryEntry>
       </categoryEntries>
       <forceEntries/>
     </forceEntry>
@@ -648,6 +641,13 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13fd-8baa-143b-71cb" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f84e-2a12-fea2-8e79" type="max"/>
           </constraints>
+        </categoryEntry>
+        <categoryEntry id="5297-7e0f-fa0b-3537" name="Allegiance" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
         </categoryEntry>
       </categoryEntries>
       <forceEntries/>
