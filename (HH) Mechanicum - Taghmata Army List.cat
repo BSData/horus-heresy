@@ -16127,21 +16127,90 @@ Buildings and Fortifications                                          D
               <modifiers/>
               <constraints/>
             </entryLink>
-            <entryLink id="6dcf-5839-fd32-fe48" name="New EntryLink" hidden="false" targetId="2089-a4b7-cbfd-e448" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </entryLink>
-            <entryLink id="2604-9283-b35a-87a9" name="New EntryLink" hidden="false" targetId="6951-c813-b83f-d5a4" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </entryLink>
             <entryLink id="735b-72ad-301e-3cf7" name="New EntryLink" hidden="false" targetId="8833-9c4e-e34c-e9be" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="6ed4-0168-eeb1-5d28" name="May exchange:" hidden="false" collective="false" defaultSelectionEntryId="cdda-8303-d8fd-ee21">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="cdda-8303-d8fd-ee21" name="New EntryLink" hidden="false" targetId="2089-a4b7-cbfd-e448" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="points" value="0.0">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+            <entryLink id="6154-ca99-8e23-4312" name="New EntryLink" hidden="false" targetId="fc08-3275-0e79-6421" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="points" value="5">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+            <entryLink id="1222-51b1-0367-cde3" name="New EntryLink" hidden="false" targetId="a7ac402a-2804-0342-d16a-23c3098a57ef" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="d963-c0d4-a190-407e" name="New EntryLink" hidden="false" targetId="544a-70f1-4560-482b" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="19fe-40c1-d067-3062" name="New EntryLink" hidden="false" targetId="e884-dd64-6171-4c9a" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="75b8-cb06-9283-833d" name="May exchange:" hidden="false" collective="false" defaultSelectionEntryId="b959-741a-2340-5228">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="b959-741a-2340-5228" name="New EntryLink" hidden="false" targetId="6951-c813-b83f-d5a4" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="7939-0e9d-51b1-f383" name="New EntryLink" hidden="false" targetId="5123-2580-422c-33f8" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -16153,7 +16222,7 @@ Buildings and Fortifications                                          D
       </selectionEntryGroups>
       <entryLinks/>
       <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
+        <cost name="pts" costTypeId="points" value="60.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8833-9c4e-e34c-e9be" name="Titanshard Armour" book="HH7:Inferno" hidden="false" collective="false" type="upgrade">
@@ -16174,7 +16243,10 @@ Buildings and Fortifications                                          D
         </infoLink>
       </infoLinks>
       <modifiers/>
-      <constraints/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="246e-a559-beed-e028" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28b9-2580-aa9a-1cc6" type="min"/>
+      </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -17151,6 +17223,73 @@ Buildings and Fortifications                                          D
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="544a-70f1-4560-482b" name="Photon Gauntlet" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="0f75-938c-b004-fae2" name="Photon Gauntlet" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="12&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="5"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Gets Hot!, Blind, Assault 2"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="8a0c-704a-9d06-2b39" name="New InfoLink" hidden="false" targetId="f4fd-d519-4769-5510" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="f0cb-d2f7-b891-c687" name="New InfoLink" hidden="false" targetId="7dae-4d12-baba-e529" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e884-dd64-6171-4c9a" name="Archaeotech Pistol" page="0" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="ec73-99b6-4ea4-b281" hidden="false" targetId="9045e242-71f8-6029-fc57-2b7cbedcc398" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="53ee-f674-f92c-b40b" name="New InfoLink" hidden="false" targetId="f899-8f9d-fc7e-d855" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e8df-ff5d-e2e3-1a12" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="5.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -19469,6 +19608,18 @@ Extinction Interlock: The unit gains Preferred Enemy (infantry) special rule.</d
         <characteristic name="A" characteristicTypeId="4123232344415441232323" value="3"/>
         <characteristic name="LD" characteristicTypeId="4c4423232344415441232323" value="9"/>
         <characteristic name="Save" characteristicTypeId="5361766523232344415441232323" value="3+/5++"/>
+      </characteristics>
+    </profile>
+    <profile id="9045e242-71f8-6029-fc57-2b7cbedcc398" name="Archaeotech Pistol" book="HH:LACAL" page="82" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="12&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="6"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Pistol, Master-crafted"/>
       </characteristics>
     </profile>
   </sharedProfiles>
