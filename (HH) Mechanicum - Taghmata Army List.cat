@@ -14459,32 +14459,6 @@ Reduces transport capacity to 8.  </description>
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2089-a4b7-cbfd-e448" name="Radium pistol" book="Codex: Skitarii" page="56" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
-      <profiles/>
-      <rules/>
-      <infoLinks>
-        <infoLink id="bcbb-dfe5-a7c9-7525" hidden="false" targetId="efa7-66c5-4b5f-a799" type="profile">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="c25c-674a-5a07-bdd2" hidden="false" targetId="a5ba-753a-58f6-81cc" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-      </infoLinks>
-      <modifiers/>
-      <constraints/>
-      <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="5.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="73c4-584c-c927-3cbd" name="Omnispex" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules/>
@@ -14717,7 +14691,9 @@ Reduces transport capacity to 8.  </description>
         </infoLink>
       </infoLinks>
       <modifiers/>
-      <constraints/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4be5-0d56-f060-58ae" type="max"/>
+      </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -14743,7 +14719,9 @@ Reduces transport capacity to 8.  </description>
         </infoLink>
       </infoLinks>
       <modifiers/>
-      <constraints/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="191e-059d-a03f-cb1d" type="max"/>
+      </constraints>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -15004,7 +14982,7 @@ Reduces transport capacity to 8.  </description>
               <modifiers/>
               <constraints/>
             </entryLink>
-            <entryLink id="b332-72a8-030d-1496" hidden="false" targetId="c968-115e-0e8b-7836" type="selectionEntry">
+            <entryLink id="b332-72a8-030d-1496" name="" hidden="false" targetId="c968-115e-0e8b-7836" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -16102,7 +16080,67 @@ Buildings and Fortifications                                          D
       </infoLinks>
       <modifiers/>
       <constraints/>
-      <selectionEntries/>
+      <selectionEntries>
+        <selectionEntry id="6461-6b48-a0ef-5384" name="May be equipped with any of the following" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5e0-708e-c5ae-d9d1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edc3-a384-0190-b631" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="cd54-fdde-91fe-9b2e" name="Exchange Power Maul and Radium Pistol for:" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fa44-2971-943b-ab5f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a24e-896f-31ea-e73d" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c09f-c802-eaa0-ba50" name="Arc lance and Mag-inverter shield" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b703-2aa7-ce87-5445" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="a2a6-4055-e6b8-4ec5" name="New EntryLink" hidden="false" targetId="c968-115e-0e8b-7836" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+                <entryLink id="d9de-c686-18b8-7f29" name="New EntryLink" hidden="false" targetId="7811-c16f-d263-419c" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" costTypeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="981b-7373-a54b-6a89" name="Standard Wargear" hidden="false" collective="false">
           <profiles/>
@@ -16112,36 +16150,24 @@ Buildings and Fortifications                                          D
           <constraints/>
           <selectionEntries/>
           <selectionEntryGroups/>
-          <entryLinks>
-            <entryLink id="0cdf-baae-58ce-08f2" hidden="false" targetId="5cd6-814b-5784-13f5" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </entryLink>
-            <entryLink id="6ff5-4166-14db-0d1d" name="New EntryLink" hidden="false" targetId="40e37f6e-a984-4232-4dc4-807ed9028f62" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </entryLink>
-            <entryLink id="735b-72ad-301e-3cf7" name="New EntryLink" hidden="false" targetId="8833-9c4e-e34c-e9be" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-            </entryLink>
-          </entryLinks>
+          <entryLinks/>
         </selectionEntryGroup>
-        <selectionEntryGroup id="6ed4-0168-eeb1-5d28" name="May exchange:" hidden="false" collective="false" defaultSelectionEntryId="cdda-8303-d8fd-ee21">
+        <selectionEntryGroup id="6ed4-0168-eeb1-5d28" name="May exchange Radium Pistol for:" hidden="false" collective="false" defaultSelectionEntryId="cdda-8303-d8fd-ee21">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
-          <constraints/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="bd94-0269-4234-4a81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c09f-c802-eaa0-ba50" type="greaterThan"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b656-2164-2d04-acb6" type="max"/>
+          </constraints>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -16194,20 +16220,36 @@ Buildings and Fortifications                                          D
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="75b8-cb06-9283-833d" name="May exchange:" hidden="false" collective="false" defaultSelectionEntryId="b959-741a-2340-5228">
+        <selectionEntryGroup id="75b8-cb06-9283-833d" name="May exchange Arc Maul for:" hidden="false" collective="false" defaultSelectionEntryId="b959-741a-2340-5228">
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
-          <constraints/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="bd94-0269-4234-4a81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c09f-c802-eaa0-ba50" type="greaterThan"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="61a9-b6fa-0795-353a" type="max"/>
+          </constraints>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="b959-741a-2340-5228" name="New EntryLink" hidden="false" targetId="6951-c813-b83f-d5a4" type="selectionEntry">
+            <entryLink id="b959-741a-2340-5228" name="Arc Maul" hidden="false" targetId="6951-c813-b83f-d5a4" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="points" value="0.0">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <constraints/>
             </entryLink>
             <entryLink id="7939-0e9d-51b1-f383" name="New EntryLink" hidden="false" targetId="5123-2580-422c-33f8" type="selectionEntry">
@@ -16217,10 +16259,98 @@ Buildings and Fortifications                                          D
               <modifiers/>
               <constraints/>
             </entryLink>
+            <entryLink id="1918-ac32-6f1e-db59" name="New EntryLink" hidden="false" targetId="4327-a78f-a2cf-17f7" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="41fb-c977-848b-df05" name="New EntryLink" hidden="false" targetId="fcef-f5ac-16a3-9401" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="points" value="5">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c6f5-7057-4fd3-1567" name="May be equipped with any of the following" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="eb6f-55cf-9696-1371" name="New EntryLink" hidden="false" targetId="73c4-584c-c927-3cbd" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="e7f2-db5c-093a-84c9" name="New EntryLink" hidden="false" targetId="2645-2048-de94-299c" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </entryLink>
+            <entryLink id="3bcc-7921-cabb-d78e" name="New EntryLink" hidden="false" targetId="e672-6b87-a1d3-24db" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="points" value="5">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="c753-12f0-5089-61c6" name="" hidden="false" targetId="5cd6-814b-5784-13f5" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+        <entryLink id="7800-0915-0910-b934" name="New EntryLink" hidden="false" targetId="40e37f6e-a984-4232-4dc4-807ed9028f62" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a257-6f30-7b83-2756" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="faa6-e158-dba7-c69d" name="New EntryLink" hidden="false" targetId="8833-9c4e-e34c-e9be" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="60.0"/>
       </costs>
@@ -17285,6 +17415,75 @@ Buildings and Fortifications                                          D
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e8df-ff5d-e2e3-1a12" type="max"/>
       </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4327-a78f-a2cf-17f7" name="Corposant stave" book="" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="e66d-235b-8b70-5638" name="Corposant stave" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="User +1"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Two-Handed, Concussive, Haywire"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="3f0a-d2e6-032c-c905" name="New InfoLink" hidden="false" targetId="9d85-46f7-f5e6-a5f7" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="b9d4-f34a-c5aa-4ece" name="New InfoLink" hidden="false" targetId="6970-1bf3-b33e-5dce" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="37e8-e555-6ad2-ba39" name="New InfoLink" hidden="false" targetId="b11c-0ef4-af6b-d96f" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="2089-a4b7-cbfd-e448" name="Radium pistol" book="Codex: Skitarii" page="56" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="bcbb-dfe5-a7c9-7525" name="" hidden="false" targetId="efa7-66c5-4b5f-a799" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="c25c-674a-5a07-bdd2" hidden="false" targetId="a5ba-753a-58f6-81cc" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
