@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="75" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="76" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -6120,7 +6120,7 @@ D6    Result		S	AP
       <constraints/>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="3e84-4ddb-fdbd-d70a" name="Aquila Stongpoints" hidden="false" collective="false">
+        <selectionEntryGroup id="3e84-4ddb-fdbd-d70a" name="Aquila Stongpoints" hidden="false" collective="false" defaultSelectionEntryId="d18a-2df7-3d71-c4cb">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6141,7 +6141,7 @@ D6    Result		S	AP
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="0993-ae53-0c7f-006c" name="Firestorm Redoubt" hidden="false" collective="false">
+        <selectionEntryGroup id="0993-ae53-0c7f-006c" name="Firestorm Redoubt" hidden="false" collective="false" defaultSelectionEntryId="028a-d0de-f315-2419">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6162,7 +6162,7 @@ D6    Result		S	AP
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="b30a-c032-c3db-be19" name="Vengeance Weapons Battery" hidden="false" collective="false">
+        <selectionEntryGroup id="b30a-c032-c3db-be19" name="Vengeance Weapons Battery" hidden="false" collective="false" defaultSelectionEntryId="4f9a-6bba-19e4-00ca">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6182,7 +6182,7 @@ D6    Result		S	AP
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="d432-412f-5b94-3104" name="Imperial Defence Lines" hidden="false" collective="false">
+        <selectionEntryGroup id="d432-412f-5b94-3104" name="Imperial Defence Lines" hidden="false" collective="false" defaultSelectionEntryId="8e1e-558c-79e1-d9a4">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6256,7 +6256,7 @@ D6    Result		S	AP
       <constraints/>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="fbaf-59c3-719c-495f" name="Emplaced Weapons" hidden="false" collective="false">
+        <selectionEntryGroup id="fbaf-59c3-719c-495f" name="Emplaced Weapons" hidden="false" collective="false" defaultSelectionEntryId="45a5-cc8a-1b48-0114">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6406,7 +6406,7 @@ D6    Result		S	AP
       <constraints/>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="b5fd-935c-f68f-0c1a" name="Emplaced Weapons" hidden="false" collective="false">
+        <selectionEntryGroup id="b5fd-935c-f68f-0c1a" name="Emplaced Weapons" hidden="false" collective="false" defaultSelectionEntryId="8c32-30a7-713f-6e2d">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6524,7 +6524,7 @@ D6    Result		S	AP
       <constraints/>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="4b96-620a-ba93-d365" name="Imperial Bunkers" hidden="false" collective="false">
+        <selectionEntryGroup id="4b96-620a-ba93-d365" name="Imperial Bunkers" hidden="false" collective="false" defaultSelectionEntryId="b691-dd8f-47db-ffc9">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6545,7 +6545,7 @@ D6    Result		S	AP
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="233a-2c52-e38a-fc9a" name="Imperial Defence Lines" hidden="false" collective="false">
+        <selectionEntryGroup id="233a-2c52-e38a-fc9a" name="Imperial Defence Lines" hidden="false" collective="false" defaultSelectionEntryId="459b-0f97-ea39-fdcf">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6566,7 +6566,7 @@ D6    Result		S	AP
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="b092-c6f6-9126-ac72" name="Imperial Defence Emplacements" hidden="false" collective="false">
+        <selectionEntryGroup id="b092-c6f6-9126-ac72" name="Imperial Defence Emplacements" hidden="false" collective="false" defaultSelectionEntryId="f427-e43b-6ed7-e5e3">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6904,7 +6904,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="13b7-ee19-7e88-928a" name="Void Shield Generators" hidden="false" collective="false">
+        <selectionEntryGroup id="13b7-ee19-7e88-928a" name="Void Shield Generators" hidden="false" collective="false" defaultSelectionEntryId="3a6c-1f4b-57e9-47f9">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6925,7 +6925,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="c879-4ad7-6dce-092d" name="Promethium Relay Pipes" hidden="false" collective="false">
+        <selectionEntryGroup id="c879-4ad7-6dce-092d" name="Promethium Relay Pipes" hidden="false" collective="false" defaultSelectionEntryId="5575-1a19-edf8-40d1">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -7101,7 +7101,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
       <constraints/>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f292-bb41-59a1-8b0c" name="Firestorm Redoubt" hidden="false" collective="false">
+        <selectionEntryGroup id="f292-bb41-59a1-8b0c" name="Firestorm Redoubt" hidden="false" collective="false" defaultSelectionEntryId="3916-9ea0-909d-6b2c">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -7747,7 +7747,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="0feb-7c7f-9b90-9a53" name="Aquila Stongpoints" hidden="false" collective="false">
+            <selectionEntryGroup id="0feb-7c7f-9b90-9a53" name="Aquila Stongpoints" hidden="false" collective="false" defaultSelectionEntryId="d846-aed4-2dc3-5cd1">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -8689,7 +8689,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <constraints/>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="65de-14fb-542f-6d4c" name="Aegis Defense Line" hidden="false" collective="false">
+        <selectionEntryGroup id="65de-14fb-542f-6d4c" name="Aegis Defense Line" hidden="false" collective="false" defaultSelectionEntryId="e735-065d-d687-5b65">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -8710,7 +8710,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="8e7d-2128-250c-cdaa" name="Imperial Bastions" hidden="false" collective="false">
+        <selectionEntryGroup id="8e7d-2128-250c-cdaa" name="Imperial Bastions" hidden="false" collective="false" defaultSelectionEntryId="daf6-5ca2-4cea-91dd">
           <profiles/>
           <rules/>
           <infoLinks/>
