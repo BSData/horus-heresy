@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="81" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="82" battleScribeVersion="2.00" authorName="Millicant" authorContact="Please submit any bugs to the website below" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -12879,33 +12879,18 @@ D6    Result		S	AP
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
+                <infoLink id="f669-179a-8790-c71d" name="New InfoLink" hidden="false" targetId="3b45-b564-4fce-e3d8" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
               </infoLinks>
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e673-831c-f572-4f48" type="max"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry id="2729-e445-1322-7da7" name="Integral Vulcan Mega-bolter" book="" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="fb25-cd18-19fa-a898" name="New InfoLink" hidden="false" targetId="3b45-b564-4fce-e3d8" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints/>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="75.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
+              <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
@@ -12995,7 +12980,7 @@ D6    Result		S	AP
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" costTypeId="points" value="2750.0"/>
+        <cost name="pts" costTypeId="points" value="3250.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9f5b-eccc-689a-2948" name="Aquila Strongpoint" book="Planetary Onslaught" page="" hidden="false" collective="false" categoryEntryId="d713cda3-5d0f-40d8-b621-69233263ec2a" type="model">
