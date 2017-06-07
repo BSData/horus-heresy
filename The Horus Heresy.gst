@@ -1,13 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" battleScribeVersion="2.01" id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="85" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy">
-<categoryEntries>
-<categoryEntry id="bedc-6602-002c-79af" name="New CategoryEntry" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          
-          
-        </categoryEntry>
-</categoryEntries>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="85" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -136,24 +128,32 @@
       </characteristicTypes>
     </profileType>
   </profileTypes>
+  <categoryEntries>
+    <categoryEntry id="bedc-6602-002c-79af" name="New CategoryEntry" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+  </categoryEntries>
   <forceEntries>
     <forceEntry id="61f7-09c7-326c-8c49" name="New ForceEntry" hidden="true">
-<categoryLinks>
-<categoryLink id="61f7-09c7-326c-8c49-bedc-6602-002c-79af" targetId="bedc-6602-002c-79af" name="New CategoryEntry" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <forceEntries/>
+      <categoryLinks>
+        <categoryLink id="61f7-09c7-326c-8c49-bedc-6602-002c-79af" name="New CategoryEntry" hidden="false" targetId="bedc-6602-002c-79af" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints/>
         </categoryLink>
-</categoryLinks>
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-      
-      <forceEntries/>
+      </categoryLinks>
     </forceEntry>
   </forceEntries>
   <selectionEntries/>
@@ -172,6 +172,7 @@
         </modifier>
       </modifiers>
       <constraints/>
+      <categoryLinks/>
     </entryLink>
     <entryLink id="daf0-4297-3944-3593" name="New EntryLink" hidden="true" targetId="48db-84ca-2bad-520f" type="selectionEntry">
       <profiles/>
@@ -187,6 +188,7 @@
         </modifier>
       </modifiers>
       <constraints/>
+      <categoryLinks/>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -199,6 +201,7 @@
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a6f3-d8d1-7cc3-e82c" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a6e7-9e79-eb68-1eab" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -223,6 +226,7 @@
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3275-666f-eb26-58d8" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c353-e83d-213f-7440" type="min"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -247,6 +251,7 @@
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="67db-8cbd-ae76-b897" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="13c3-1f2b-4540-5421" type="min"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -271,6 +276,7 @@
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="667f-4554-1748-549b" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3bed-73d5-318a-fbc5" type="min"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -295,6 +301,7 @@
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9965-225f-4b82-73b1" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5c09-bd34-51f5-3848" type="min"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -310,12 +317,13 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>May not be taken as a Compulsory HQ choice or serve as the army's Warlord.  </description>
+          <description>May not be taken as a Compulsory HQ choice or serve as the army&apos;s Warlord.  </description>
         </rule>
       </rules>
       <infoLinks/>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -332,6 +340,7 @@
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="993d-90f7-3e4c-d598" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f52f-834c-a899-9d4d" type="min"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -407,6 +416,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ba5-1c40-9f77-7d76" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="ecdf-eeee-18f4-5ab7" name="May take any of the following:" hidden="false" collective="false">
@@ -415,6 +425,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="ef9a-362f-b5ff-e5b4" name="Cyber Familiar" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -431,6 +442,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="391c-0a15-c424-2adf" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -453,6 +465,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e79-de2b-c4a9-c788" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -475,6 +488,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8838-7948-34ac-d347" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -518,7 +532,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Each hit scored against the Titan will instead hit a Void Shield (whilst one remains active). Close Combat attacks come from within the shield and are not stopped.  Void Shields have an armour value of 12.  A Glancing or Penetrating hit or any hit from a Destroyer weapon causes it to collapse.  After all void shields have collapsed, further hits strike the Titan instead. At the end of each of the Titan's turns, roll a D6 for each collapsed Void Shield.  Each roll of a 5+ restores one collapsed shield.  "/>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Each hit scored against the Titan will instead hit a Void Shield (whilst one remains active). Close Combat attacks come from within the shield and are not stopped.  Void Shields have an armour value of 12.  A Glancing or Penetrating hit or any hit from a Destroyer weapon causes it to collapse.  After all void shields have collapsed, further hits strike the Titan instead. At the end of each of the Titan&apos;s turns, roll a D6 for each collapsed Void Shield.  Each roll of a 5+ restores one collapsed shield.  "/>
           </characteristics>
         </profile>
       </profiles>
@@ -530,8 +544,8 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
           <modifiers/>
           <description>May choose to:
 - Fire all weapons as normal
-- Fire one weapon and move an extra D6"
-- Fire no weapons and move an extra 2D6"</description>
+- Fire one weapon and move an extra D6&quot;
+- Fire no weapons and move an extra 2D6&quot;</description>
         </rule>
         <rule id="3853-4f8a-29a2-0005" name="Towering Monstrosity (Warhound)" book="HH5: Tempest" page="260" hidden="false">
           <profiles/>
@@ -571,6 +585,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="0707-e414-13d3-eae6" name="Primary Weapon Right Arm" hidden="false" collective="false">
@@ -582,6 +597,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6382-b065-a4a1-1d2f" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f82e-d6ad-5595-46ff" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="6697-a23b-69a3-3fcc" name="Vulcan Mega-bolter" page="0" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -604,6 +620,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0659-d635-bb6d-415c" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -638,6 +655,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1c21-eb1b-1758-b429" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -666,6 +684,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="45c1-f14c-a1fd-6276" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -694,6 +713,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="62cd-d54d-7b6a-f0af" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -714,6 +734,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="33ad-58ad-a7fe-984a" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="80fb-0f24-7633-7b7f" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="d1c3-3006-46f7-26e0" name="Vulcan Mega-bolter" page="0" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -736,6 +757,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8930-508f-1c36-bcaf" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -770,6 +792,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="43ed-d6b8-b4b6-bc11" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -798,6 +821,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1fb1-8bb9-fda1-b8d5" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -826,6 +850,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb4b-6bda-428f-19c8" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -845,6 +870,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -877,7 +903,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Each hit scored against the Titan will instead hit a Void Shield (whilst one remains active). Close Combat attacks come from within the shield and are not stopped.  Void Shields have an armour value of 12.  A Glancing or Penetrating hit or any hit from a Destroyer weapon causes it to collapse.  After all void shields have collapsed, further hits strike the Titan instead. At the end of each of the Titan's turns, roll a D6 for each collapsed Void Shield.  Each roll of a 5+ restores one collapsed shield.  "/>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Each hit scored against the Titan will instead hit a Void Shield (whilst one remains active). Close Combat attacks come from within the shield and are not stopped.  Void Shields have an armour value of 12.  A Glancing or Penetrating hit or any hit from a Destroyer weapon causes it to collapse.  After all void shields have collapsed, further hits strike the Titan instead. At the end of each of the Titan&apos;s turns, roll a D6 for each collapsed Void Shield.  Each roll of a 5+ restores one collapsed shield.  "/>
           </characteristics>
         </profile>
       </profiles>
@@ -890,7 +916,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
           <description>- May never be locked in an assault
 - Completely immune to the effects of Haywire attacks, dangerous terrain, and psychic attacks other than Witchfire powers
 - May only be hit on a 6 by Infantry and Monsterous Creatures in any type of assault, or on a 5 or 6 by Super-Heavy walkers and Gargantuan Creatures
-- Carapace-mounted weapons may not target models closer than 18" from its hull, unless they are flyers, flying monsterous creatures or other super-heavy vehicles or gargantuan monsterous creatures</description>
+- Carapace-mounted weapons may not target models closer than 18&quot; from its hull, unless they are flyers, flying monsterous creatures or other super-heavy vehicles or gargantuan monsterous creatures</description>
         </rule>
       </rules>
       <infoLinks>
@@ -915,6 +941,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="74d3-2cbb-bd1e-6bf6" name="Carapace-mounted Weapon" hidden="false" collective="false" defaultSelectionEntryId="f13b-e244-f40b-5cce">
@@ -926,6 +953,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9483-1d77-ddb2-22c2" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fadf-018f-7320-739b" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="f13b-e244-f40b-5cce" name="Apocalypse Launcher" page="0" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -948,6 +976,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3738-4277-ed59-97c8" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -983,6 +1012,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd9c-bcc8-7b7a-f0e8" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -1011,6 +1041,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fb13-b28a-9116-8d3a" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -1039,6 +1070,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4b7b-d9b8-60a6-437c" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -1073,6 +1105,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="54f1-e2e6-9a3b-9e3d" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -1101,6 +1134,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d61e-a209-8d99-059d" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -1121,6 +1155,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9b4d-f9ab-55d5-8423" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5286-c0b3-cb3a-d975" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="9fa5-327a-e080-4e48" name="Gatling Blaster" page="0" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -1149,6 +1184,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ad79-0cfe-b867-c329" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -1177,6 +1213,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f2a4-ae11-4456-5f03" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -1205,6 +1242,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c0db-122d-573b-b4a2" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -1233,6 +1271,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b64f-c48f-a04c-c416" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -1255,6 +1294,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ad81-e327-adc7-b20b" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -1283,6 +1323,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c852-993e-04bd-a87e" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -1303,6 +1344,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e642-5f2a-aaf8-5374" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8efc-a28f-32d5-dee1" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="cb1e-ebf9-f327-5f0a" name="Gatling Blaster" page="0" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -1331,6 +1373,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="62c0-47af-ff9d-142c" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -1359,6 +1402,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d3c-7061-69a4-9b56" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -1387,6 +1431,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="77bf-bd66-789e-dea3" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -1415,6 +1460,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4560-cb01-bd7a-339e" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -1437,6 +1483,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="480c-2ffa-ee25-e8ba" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -1465,6 +1512,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="462c-b53a-cc07-b84d" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -1484,6 +1532,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -1516,7 +1565,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Each hit scored against the Titan will instead hit a Void Shield (whilst one remains active). Close Combat attacks come from within the shield and are not stopped.  Void Shields have an armour value of 12.  A Glancing or Penetrating hit or any hit from a Destroyer weapon causes it to collapse.  After all void shields have collapsed, further hits strike the Titan instead. At the end of each of the Titan's turns, roll a D6 for each collapsed Void Shield.  Each roll of a 5+ restores one collapsed shield.  "/>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Each hit scored against the Titan will instead hit a Void Shield (whilst one remains active). Close Combat attacks come from within the shield and are not stopped.  Void Shields have an armour value of 12.  A Glancing or Penetrating hit or any hit from a Destroyer weapon causes it to collapse.  After all void shields have collapsed, further hits strike the Titan instead. At the end of each of the Titan&apos;s turns, roll a D6 for each collapsed Void Shield.  Each roll of a 5+ restores one collapsed shield.  "/>
           </characteristics>
         </profile>
         <profile id="03f7-49d7-3ae8-47b5" name="Ardex-defensor Mauler bolt cannon turret" book="HH5: Tempest" page="264" hidden="false" profileTypeId="576561706f6e23232344415441232323">
@@ -1553,15 +1602,15 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
           <description>- May never be locked in an assault
 - Completely immune to the effects of Haywire attacks, dangerous terrain, and psychic attacks other than Witchfire powers
 - May only be hit on a 6 by Infantry and Monsterous Creatures in any type of assault, or on a 5 or 6 by Super-Heavy walkers and Gargantuan Creatures
-- Carapace-mounted weapons may not target models closer than 24" from its hull, unless they are flyers, flying monsterous creatures or other super-heavy vehicles or gargantuan monsterous creatures
-- Warlord's stomp attacks use the Large Blast template</description>
+- Carapace-mounted weapons may not target models closer than 24&quot; from its hull, unless they are flyers, flying monsterous creatures or other super-heavy vehicles or gargantuan monsterous creatures
+- Warlord&apos;s stomp attacks use the Large Blast template</description>
         </rule>
         <rule id="d563-996b-fe87-68ef" name="Reactor Meltdown" book="HH5: Tempest" page="263" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>Use the table below isntead of the usual Catastrophic Damage table and in all cases the Warlord remains on the table as dangerous terrain.  Instead of using the Apocalyptic Blast marker, measure from the center of the Warlord's hull using 12"/24"36" respectively. 
+          <description>Use the table below isntead of the usual Catastrophic Damage table and in all cases the Warlord remains on the table as dangerous terrain.  Instead of using the Apocalyptic Blast marker, measure from the center of the Warlord&apos;s hull using 12&quot;/24&quot;36&quot; respectively. 
 
 D6    Result		S	AP
 1      Explosion		D/8/4	2/3/5
@@ -1594,6 +1643,7 @@ D6    Result		S	AP
       <infoLinks/>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="a893-70e8-8c4d-57de" name="Primary Weapon Left Arm" hidden="false" collective="false">
@@ -1605,6 +1655,7 @@ D6    Result		S	AP
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bf42-ff0c-1b93-9142" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c4a0-6f0b-e06f-10c6" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="f796-2c32-09bf-e760" name="Sunfury Plasma Annihilator" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -1627,6 +1678,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fd22-e598-eaf9-0613" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -1673,6 +1725,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d289-c0d5-eec4-ac92" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -1713,6 +1766,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6850-71a1-6e9b-5c3a" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -1741,6 +1795,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c160-e110-d10b-b3bb" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="5125-ecf8-1cf1-4760" name="Integral Vulcan Mega-bolter" book="" hidden="false" collective="false" type="upgrade">
                   <profiles/>
@@ -1755,6 +1810,7 @@ D6    Result		S	AP
                   </infoLinks>
                   <modifiers/>
                   <constraints/>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -1796,6 +1852,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ae93-e839-9905-af51" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -1830,6 +1887,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0dce-7ef0-ffdc-5536" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -1850,6 +1908,7 @@ D6    Result		S	AP
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9415-7977-8446-5d35" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ece7-30ff-6d54-310b" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="a5b7-a13f-d7e7-53c9" name="Two Double-barrelled Turbo-laser Destructors" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -1872,6 +1931,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2aa4-7647-68fd-9e1e" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -1900,6 +1960,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5aa2-afd4-0a66-607d" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -1934,6 +1995,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b56e-bf99-0563-ab0f" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -1962,6 +2024,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="546e-82dd-58ee-be84" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -1996,6 +2059,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ef0-cb87-750e-5508" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -2030,6 +2094,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b3a8-1091-2b2d-535c" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -2065,6 +2130,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b045-3f9c-2cff-7a71" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -2100,6 +2166,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e247-69d1-1ce3-4f09" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -2128,6 +2195,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1734-f2be-40f6-a474" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -2148,6 +2216,7 @@ D6    Result		S	AP
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="03ce-60ef-6154-53b1" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6421-185f-5ad6-161d" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="5464-b4f4-fcf6-b1ba" name="Sunfury Plasma Annihilator" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -2170,6 +2239,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4159-6e4e-6d2c-7734" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -2216,6 +2286,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3541-d32a-4c01-ee3c" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -2256,6 +2327,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bb3d-87a9-294b-39f9" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -2284,6 +2356,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e45a-2e60-288d-6e63" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="b6d5-9bab-d80c-783f" name="Integral Vulcan Mega-bolter" book="" hidden="false" collective="false" type="upgrade">
                   <profiles/>
@@ -2298,6 +2371,7 @@ D6    Result		S	AP
                   </infoLinks>
                   <modifiers/>
                   <constraints/>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -2339,6 +2413,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c513-f39f-69d7-593c" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -2373,6 +2448,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="de54-8ea6-4ab7-f405" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -2392,6 +2468,7 @@ D6    Result		S	AP
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -2415,6 +2492,7 @@ D6    Result		S	AP
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3272-f43a-2efd-59c9" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b0dc-cc60-79e4-e984" type="min"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -2438,6 +2516,7 @@ D6    Result		S	AP
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dea9-3c0d-7fce-0992" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5fcd-8d20-283b-70fb" type="min"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -2464,6 +2543,7 @@ D6    Result		S	AP
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -2484,6 +2564,7 @@ D6    Result		S	AP
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -2504,6 +2585,7 @@ D6    Result		S	AP
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -2524,6 +2606,7 @@ D6    Result		S	AP
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -2556,6 +2639,7 @@ D6    Result		S	AP
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries>
         <selectionEntry id="efb2-67e0-c8a5-9d43" name="Vorax Class Battle-automata" page="0" hidden="false" collective="false" type="model">
           <profiles>
@@ -2585,6 +2669,7 @@ D6    Result		S	AP
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f557-1a16-8c37-f307" type="min"/>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="867d-a720-a911-50dc" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="1b52-8c7c-83a4-64a9" name="Two Rotor Cannons" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -2624,6 +2709,7 @@ D6    Result		S	AP
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="78a2-15ad-9505-6d4f" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d184-3263-bd4e-5f9b" type="min"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -2665,6 +2751,7 @@ D6    Result		S	AP
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="140d-0980-edb7-af3f" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b7b9-1b6f-217a-af03" type="min"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -2683,6 +2770,7 @@ D6    Result		S	AP
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a565-730f-b042-5f27" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="344b-2ce3-cd66-cd7c" type="min"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="4aae-cbed-3fbf-8d18" name="Irad-cleanser" page="0" hidden="false" collective="false" type="upgrade">
                   <profiles/>
@@ -2711,6 +2799,7 @@ D6    Result		S	AP
                   <constraints>
                     <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8c27-a396-9ad7-84b8" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -2745,6 +2834,7 @@ D6    Result		S	AP
                   <constraints>
                     <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b106-e238-5f3d-1195" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -2778,6 +2868,7 @@ D6    Result		S	AP
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="34ee-b342-1b97-aa4f" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="92ab-f743-a8d0-44ef" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -2793,6 +2884,7 @@ D6    Result		S	AP
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="62e7-2ed4-0f7a-d02b" name="Searchlights" page="0" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -2817,6 +2909,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1d2c-2486-c746-fc56" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -2853,6 +2946,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3f13-5a83-a1cd-e777" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -2883,6 +2977,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6aef-379f-4351-5f0b" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -2900,6 +2995,7 @@ D6    Result		S	AP
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="3c66-f02d-af81-ecfe" name="Bio-corrosive ammunition" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -2917,6 +3013,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f98c-58d9-798c-4d3f" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -2944,6 +3041,7 @@ D6    Result		S	AP
             </modifier>
           </modifiers>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
         <entryLink id="d0b8-a41e-6b2b-baa7" name="New EntryLink" hidden="false" targetId="0c9d-9eaa-d513-caa3" type="selectionEntry">
           <profiles/>
@@ -2951,6 +3049,7 @@ D6    Result		S	AP
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -2976,6 +3075,7 @@ D6    Result		S	AP
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries>
         <selectionEntry id="09ad-ef83-4a62-46fe" name="Castellax class Battle-automata" book="" page="" hidden="false" collective="false" type="model">
           <profiles>
@@ -3005,6 +3105,7 @@ D6    Result		S	AP
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2514-b4ae-39f4-093e" type="min"/>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="38db-7bf2-0694-b3f4" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups>
             <selectionEntryGroup id="6564-7afd-3cef-078a" name="May exchange its Mauler bolt cannon for:" hidden="false" collective="false" defaultSelectionEntryId="4ed8-630f-8684-ebe1">
@@ -3016,6 +3117,7 @@ D6    Result		S	AP
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="84b2-b418-e7d8-4052" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9947-1981-7c77-5638" type="min"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="9ecb-8606-a575-1ff1" name="Darkfire Cannon" page="0" hidden="false" collective="false" type="upgrade">
                   <profiles/>
@@ -3050,6 +3152,7 @@ D6    Result		S	AP
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f3ce-e636-1d57-9a53" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -3078,6 +3181,7 @@ D6    Result		S	AP
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7305-9e27-a1aa-b216" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -3106,6 +3210,7 @@ D6    Result		S	AP
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="af97-7a77-a66b-da26" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -3141,6 +3246,7 @@ D6    Result		S	AP
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="813e-6a3e-bd63-d89a" type="max"/>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5d2a-e961-7953-6b83" type="min"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="48d3-a65a-239b-289c" name="Flamer" page="0" hidden="false" collective="false" type="upgrade">
                   <profiles/>
@@ -3150,6 +3256,7 @@ D6    Result		S	AP
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c06b-9c84-5a9a-743a" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -3172,6 +3279,7 @@ D6    Result		S	AP
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f241-287b-5881-e9d6" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -3192,6 +3300,7 @@ D6    Result		S	AP
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="314f-0125-9b5d-03fb" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="321e-e0ed-e440-d5e5" type="min"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="e927-193b-8cf1-70fd" name="Two Power Blades" page="0" hidden="false" collective="false" type="upgrade">
                   <profiles/>
@@ -3226,6 +3335,7 @@ D6    Result		S	AP
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c5d0-644c-e051-03f1" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -3266,6 +3376,7 @@ D6    Result		S	AP
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="56a0-fb06-e473-31a1" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -3288,6 +3399,7 @@ D6    Result		S	AP
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b895-e509-7063-3f17" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -3313,6 +3425,7 @@ D6    Result		S	AP
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="6801-cbdd-fb6a-761c" name="Searchlights" page="0" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -3337,6 +3450,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1293-ff66-8471-ab12" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -3373,6 +3487,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b035-1076-7002-6b84" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -3409,6 +3524,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d061-a3b5-611e-1ca1" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -3439,6 +3555,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9b1f-5c95-889b-967e" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -3458,6 +3575,7 @@ D6    Result		S	AP
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
         <entryLink id="9e93-5e2f-d21c-63bf" name="New EntryLink" hidden="false" targetId="dff8-d7b6-960a-aa5b" type="selectionEntryGroup">
           <profiles/>
@@ -3473,6 +3591,7 @@ D6    Result		S	AP
             </modifier>
           </modifiers>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
         <entryLink id="b6c3-b1be-9ce6-cb2f" name="New EntryLink" hidden="false" targetId="0c9d-9eaa-d513-caa3" type="selectionEntry">
           <profiles/>
@@ -3480,6 +3599,7 @@ D6    Result		S	AP
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -3538,6 +3658,7 @@ D6    Result		S	AP
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ec53-300d-e494-68e1" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5d30-b417-0bce-7916" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -3561,6 +3682,7 @@ D6    Result		S	AP
       <infoLinks/>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
@@ -3570,6 +3692,7 @@ D6    Result		S	AP
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
         <entryLink id="72f7-b924-082c-60be" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
           <profiles/>
@@ -3577,6 +3700,7 @@ D6    Result		S	AP
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -3614,6 +3738,7 @@ D6    Result		S	AP
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries>
         <selectionEntry id="76ca-0813-d9e4-c2a4" name="Heavy Bolter" page="" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -3630,6 +3755,7 @@ D6    Result		S	AP
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="68d5-86cf-8273-7d82" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -3661,6 +3787,7 @@ D6    Result		S	AP
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51a9-bfff-8893-0aef" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b99-5548-8125-dc29" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -3676,6 +3803,7 @@ D6    Result		S	AP
                 </modifier>
               </modifiers>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
             <entryLink id="465b-a892-3ebb-0093" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
               <profiles/>
@@ -3683,6 +3811,7 @@ D6    Result		S	AP
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
           <costs>
@@ -3713,6 +3842,7 @@ D6    Result		S	AP
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be1d-15dc-a700-bc3a" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf57-1a7b-be42-f8cd" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -3728,6 +3858,7 @@ D6    Result		S	AP
                 </modifier>
               </modifiers>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
             <entryLink id="c959-3008-3f8f-1a3c" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
               <profiles/>
@@ -3735,6 +3866,7 @@ D6    Result		S	AP
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
           <costs>
@@ -3752,6 +3884,7 @@ D6    Result		S	AP
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7d40-ca27-97b9-6acc" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="de1d-1fb1-4bd6-17f4" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="6af0-ed0f-f128-458c" name="Vortex Missle Battery" book="Planetary Onslaught" page="90" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -3761,7 +3894,7 @@ D6    Result		S	AP
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <description>If the main strongpoint suffers a Total Collapse or Detonation! result, roll one dice for each remaining vortex missile.  On a roll of 1-2, the missile explodes.  Place the vortex's blast marker on the center of the main strongpoint, then scatter 2D6"</description>
+                  <description>If the main strongpoint suffers a Total Collapse or Detonation! result, roll one dice for each remaining vortex missile.  On a roll of 1-2, the missile explodes.  Place the vortex&apos;s blast marker on the center of the main strongpoint, then scatter 2D6&quot;</description>
                 </rule>
               </rules>
               <infoLinks>
@@ -3782,6 +3915,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5378-3e03-608c-ff94" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -3824,6 +3958,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8c7d-6a0f-0388-0e29" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -3872,6 +4007,7 @@ D6    Result		S	AP
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -3947,6 +4083,7 @@ D6    Result		S	AP
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -4052,6 +4189,7 @@ D6    Result		S	AP
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -4103,7 +4241,7 @@ D6    Result		S	AP
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="At the start of your opponent's first turn, pick 3 units in the enemy army.  Each of these units must take a Pinning test."/>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="At the start of your opponent&apos;s first turn, pick 3 units in the enemy army.  Each of these units must take a Pinning test."/>
           </characteristics>
         </profile>
         <profile id="ead1-056f-4340-b428" name="Warlord Trait: Divide to Conquer" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
@@ -4157,6 +4295,7 @@ D6    Result		S	AP
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -4181,7 +4320,7 @@ D6    Result		S	AP
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Any 'Secure Objective X' Tactical Objective, where X is a number between 1 and 6, that is scored because your Warlord or his unit controls that Objective Marker, scores 1 additional Victory Point."/>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Any &apos;Secure Objective X&apos; Tactical Objective, where X is a number between 1 and 6, that is scored because your Warlord or his unit controls that Objective Marker, scores 1 additional Victory Point."/>
           </characteristics>
         </profile>
         <profile id="a3f8-ddb5-78c6-dd90" name="Warlord Trait: Master of Fate" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
@@ -4225,6 +4364,7 @@ D6    Result		S	AP
       <infoLinks/>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -4360,6 +4500,7 @@ D6    Result		S	AP
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -4489,6 +4630,7 @@ D6    Result		S	AP
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -4519,7 +4661,7 @@ D6    Result		S	AP
             <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
             <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Malediction"/>
             <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst this power is in effect, all models in the target Daemon unit suffer a -1 penalty to their invulnerable save (normally reducing it to a 6+). This is cumulative with any other modifiers to a Daemon's invulnerable save, but cannot make it worse than 6+."/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst this power is in effect, all models in the target Daemon unit suffer a -1 penalty to their invulnerable save (normally reducing it to a 6+). This is cumulative with any other modifiers to a Daemon&apos;s invulnerable save, but cannot make it worse than 6+."/>
           </characteristics>
         </profile>
         <profile id="3843-43d4-0fb8-3875" name="Gate of Infinity" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
@@ -4612,6 +4754,7 @@ D6    Result		S	AP
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -4630,7 +4773,7 @@ D6    Result		S	AP
             <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
             <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
             <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst this power is in effect, the Psyker and his unit's weapons ahve the Ignores Cover special rule."/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst this power is in effect, the Psyker and his unit&apos;s weapons ahve the Ignores Cover special rule."/>
           </characteristics>
         </profile>
         <profile id="1b8f-06fb-82f8-9f6c" name="Precognition" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
@@ -4657,7 +4800,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, all attacks that hit the target unit have the Rending special rule."/>
           </characteristics>
         </profile>
-        <profile id="5954-4cb9-4bdd-6d18" name="Scrier's Gaze" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="5954-4cb9-4bdd-6d18" name="Scrier&apos;s Gaze" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4723,6 +4866,7 @@ D6    Result		S	AP
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -4798,7 +4942,7 @@ D6    Result		S	AP
             <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
             <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
             <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Remove all models in the target unit except one, then swap the position of the Psyker with that model. Then, set up all models from the Psyker's unit (if any) within 6&quot; and unit coherency of the Psyker, and set up all remaining models from the swapped model's unit within 6&quot; and unit coherency of that model. If either unit was locked in combat, the displaced unit is now locked in combat with that enemy; models cannot otherwise be placed within 1&quot; of an enemy model. Unless locked in close combat, these units can charge in the same turn."/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Remove all models in the target unit except one, then swap the position of the Psyker with that model. Then, set up all models from the Psyker&apos;s unit (if any) within 6&quot; and unit coherency of the Psyker, and set up all remaining models from the swapped model&apos;s unit within 6&quot; and unit coherency of that model. If either unit was locked in combat, the displaced unit is now locked in combat with that enemy; models cannot otherwise be placed within 1&quot; of an enemy model. Unless locked in close combat, these units can charge in the same turn."/>
           </characteristics>
         </profile>
         <profile id="6c1a-b929-548d-b25a" name="Fists of Lightning" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
@@ -4837,6 +4981,7 @@ D6    Result		S	AP
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -4954,6 +5099,7 @@ D6    Result		S	AP
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -4963,7 +5109,7 @@ D6    Result		S	AP
     </selectionEntry>
     <selectionEntry id="821b-f228-d2c4-3061" name="Discipline: Librarius" book="" hidden="false" collective="false" type="upgrade">
       <profiles>
-        <profile id="6f7a-214f-fec3-5881" name="(Primaris) The Emporer's Wrath" book="Angels of Death" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Witchfire)">
+        <profile id="6f7a-214f-fec3-5881" name="(Primaris) The Emporer&apos;s Wrath" book="Angels of Death" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Witchfire)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5014,7 +5160,7 @@ D6    Result		S	AP
             <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
             <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Malediction"/>
             <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="The Psyker manifesting this power rolls two dice and adds their Mastery Level to the highest result. The target Psykerrolls a single dice and adds their Mastery Level to the result. If the enemy Psyker's result is higher, there is no effect. If the scores are drawn, or your result is higher than the enemy Psyker's, the target suffers a Wound with no saves of any kind allowed and, whilst this power is in effect, can only successfully manifest Warp Charge points on the roll of a 6. Finally, if your result is at least 3 points higher than that of the enemy Psyker's, then they also lose a randomly chosen psychic power; they cannot use it for the rest of the battle."/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="The Psyker manifesting this power rolls two dice and adds their Mastery Level to the highest result. The target Psykerrolls a single dice and adds their Mastery Level to the result. If the enemy Psyker&apos;s result is higher, there is no effect. If the scores are drawn, or your result is higher than the enemy Psyker&apos;s, the target suffers a Wound with no saves of any kind allowed and, whilst this power is in effect, can only successfully manifest Warp Charge points on the roll of a 6. Finally, if your result is at least 3 points higher than that of the enemy Psyker&apos;s, then they also lose a randomly chosen psychic power; they cannot use it for the rest of the battle."/>
           </characteristics>
         </profile>
         <profile id="10d4-cfee-9f88-031f" name="Psychic Fortress" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
@@ -5038,7 +5184,7 @@ D6    Result		S	AP
             <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
             <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Malediction"/>
             <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, all models in the target unit suffer a -2 penalty to any invulnerable saves they have. This is cumulative with any other modifiers to a model's invulnerable save, but cannot make it worse than 6+."/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, all models in the target unit suffer a -2 penalty to any invulnerable saves they have. This is cumulative with any other modifiers to a model&apos;s invulnerable save, but cannot make it worse than 6+."/>
           </characteristics>
         </profile>
         <profile id="c524-2b78-b44d-8caa" name="Might of Heroes" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
@@ -5050,7 +5196,7 @@ D6    Result		S	AP
             <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
             <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
             <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, add 2 to the Psyker's Strength, Toughness, Initiative and Attacks. "/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, add 2 to the Psyker&apos;s Strength, Toughness, Initiative and Attacks. "/>
           </characteristics>
         </profile>
       </profiles>
@@ -5077,6 +5223,7 @@ D6    Result		S	AP
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -5206,6 +5353,7 @@ D6    Result		S	AP
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -5224,7 +5372,7 @@ D6    Result		S	AP
             <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
             <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Malediction"/>
             <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="18&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="If this power is successfully manifested, randomly select one of the vehicle's weapons (do not include Bombs, weapons with the One Use Only/One Shot Only special rule that have already fired, and weapons that have been destroyed). Then, you and your opponent each roll a dice and look up the result below: If your opponent rolls higher, nothing happens. If the results are drawn, then that weapon can only fire Snap Shots whilst this power is in effect. If you roll higher, you can immediately shoot with that weapon at another enemy unit; the weapon fires using the vehicle's Ballistic Skill, unless the vehicle is Crew Stunned or Shaken, in which case the weapon can only fire Snap Shts. "/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="If this power is successfully manifested, randomly select one of the vehicle&apos;s weapons (do not include Bombs, weapons with the One Use Only/One Shot Only special rule that have already fired, and weapons that have been destroyed). Then, you and your opponent each roll a dice and look up the result below: If your opponent rolls higher, nothing happens. If the results are drawn, then that weapon can only fire Snap Shots whilst this power is in effect. If you roll higher, you can immediately shoot with that weapon at another enemy unit; the weapon fires using the vehicle&apos;s Ballistic Skill, unless the vehicle is Crew Stunned or Shaken, in which case the weapon can only fire Snap Shts. "/>
           </characteristics>
         </profile>
         <profile id="b29d-04ed-2f8f-7133" name="Blessing of the Machine" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
@@ -5320,6 +5468,7 @@ D6    Result		S	AP
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -5452,6 +5601,7 @@ D6    Result		S	AP
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -5575,6 +5725,7 @@ D6    Result		S	AP
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -5601,6 +5752,7 @@ D6    Result		S	AP
       <infoLinks/>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="3e84-4ddb-fdbd-d70a" name="Aquila Stongpoints" hidden="false" collective="false" defaultSelectionEntryId="d18a-2df7-3d71-c4cb">
@@ -5612,6 +5764,7 @@ D6    Result		S	AP
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e9b3-a112-f160-b39a" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bcee-b81b-df8b-e41f" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -5621,6 +5774,7 @@ D6    Result		S	AP
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -5633,6 +5787,7 @@ D6    Result		S	AP
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3691-f5bb-c9f1-1f0a" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c454-cc19-7c80-2090" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -5642,6 +5797,7 @@ D6    Result		S	AP
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -5653,6 +5809,7 @@ D6    Result		S	AP
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="33e0-7033-d6ec-3206" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -5662,6 +5819,7 @@ D6    Result		S	AP
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -5673,6 +5831,7 @@ D6    Result		S	AP
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="adcf-45e1-9f7d-02a3" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -5682,6 +5841,7 @@ D6    Result		S	AP
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -5737,6 +5897,7 @@ D6    Result		S	AP
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="fbaf-59c3-719c-495f" name="Emplaced Weapons" hidden="false" collective="false" defaultSelectionEntryId="45a5-cc8a-1b48-0114">
@@ -5748,6 +5909,7 @@ D6    Result		S	AP
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b1b1-b3d9-e146-83d7" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0835-e963-a243-dc99" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="45a5-cc8a-1b48-0114" name="Quad Icarus lascannon" page="" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -5764,6 +5926,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a9fd-f4f3-6f97-c70a" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -5786,6 +5949,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cab0-a144-930f-8eae" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -5808,6 +5972,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="948f-e308-f953-1c3e" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -5827,6 +5992,7 @@ D6    Result		S	AP
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
         <entryLink id="4007-3ea1-8e21-4a94" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
           <profiles/>
@@ -5834,6 +6000,7 @@ D6    Result		S	AP
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
         <entryLink id="4693-4442-c63f-6ab6" hidden="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
           <profiles/>
@@ -5847,6 +6014,7 @@ D6    Result		S	AP
             </modifier>
           </modifiers>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -5887,6 +6055,7 @@ D6    Result		S	AP
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="b5fd-935c-f68f-0c1a" name="Emplaced Weapons" hidden="false" collective="false" defaultSelectionEntryId="8c32-30a7-713f-6e2d">
@@ -5898,6 +6067,7 @@ D6    Result		S	AP
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e9e1-b866-f069-f07b" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c848-ee1c-56f5-3df0" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="8c32-30a7-713f-6e2d" name="Punisher Gatling Cannon" page="" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -5914,6 +6084,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="00b9-bfd1-f36d-2385" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks>
@@ -5923,6 +6094,7 @@ D6    Result		S	AP
                   <infoLinks/>
                   <modifiers/>
                   <constraints/>
+                  <categoryLinks/>
                 </entryLink>
               </entryLinks>
               <costs>
@@ -5944,6 +6116,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="89f7-7df8-88d7-5d5c" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks>
@@ -5953,6 +6126,7 @@ D6    Result		S	AP
                   <infoLinks/>
                   <modifiers/>
                   <constraints/>
+                  <categoryLinks/>
                 </entryLink>
               </entryLinks>
               <costs>
@@ -5974,6 +6148,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="60fb-b7d0-a5f9-3e7b" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks>
@@ -5983,6 +6158,7 @@ D6    Result		S	AP
                   <infoLinks/>
                   <modifiers/>
                   <constraints/>
+                  <categoryLinks/>
                 </entryLink>
               </entryLinks>
               <costs>
@@ -6005,6 +6181,7 @@ D6    Result		S	AP
       <infoLinks/>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="4b96-620a-ba93-d365" name="Imperial Bunkers" hidden="false" collective="false" defaultSelectionEntryId="b691-dd8f-47db-ffc9">
@@ -6016,6 +6193,7 @@ D6    Result		S	AP
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3b28-edb3-88e8-fd0c" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="65c4-b288-1ffb-3a51" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -6025,6 +6203,7 @@ D6    Result		S	AP
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -6037,6 +6216,7 @@ D6    Result		S	AP
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c436-0aec-471c-e096" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="45d6-6b29-d5c9-dbdd" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -6046,6 +6226,7 @@ D6    Result		S	AP
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -6058,6 +6239,7 @@ D6    Result		S	AP
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a480-50fb-7fb2-427b" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="26a2-0f3f-bdae-7e07" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -6067,6 +6249,7 @@ D6    Result		S	AP
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -6078,6 +6261,7 @@ D6    Result		S	AP
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fa53-d388-6251-f052" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -6087,6 +6271,7 @@ D6    Result		S	AP
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -6098,6 +6283,7 @@ D6    Result		S	AP
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5ddb-be30-d143-aae1" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -6107,6 +6293,7 @@ D6    Result		S	AP
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -6151,6 +6338,7 @@ D6    Result		S	AP
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
@@ -6160,6 +6348,7 @@ D6    Result		S	AP
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -6201,6 +6390,7 @@ D6    Result		S	AP
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
@@ -6210,6 +6400,7 @@ D6    Result		S	AP
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -6252,6 +6443,7 @@ D6    Result		S	AP
       <constraints>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4182-0810-4294-5cbc" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
@@ -6261,6 +6453,7 @@ D6    Result		S	AP
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
         <entryLink id="d9b6-a781-f202-e799" hidden="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
           <profiles/>
@@ -6274,6 +6467,7 @@ D6    Result		S	AP
             </modifier>
           </modifiers>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
         <entryLink id="e92d-7662-17ce-3761" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
           <profiles/>
@@ -6281,6 +6475,7 @@ D6    Result		S	AP
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -6308,6 +6503,7 @@ D6    Result		S	AP
       <infoLinks/>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries>
         <selectionEntry id="80d4-aaa3-01d3-e97b" name="Projected Void Shields" page="" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -6317,11 +6513,11 @@ D6    Result		S	AP
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <description>Each projected void shield has a 12" area of effect (measured from any point on the Void Shield Generator building) known as a Void Shield Zone. Any shooting attack that originates from outside a Void Shield Zone and hits a unit that is wholly within the Void Shield Zone instead his the projected void shield. If a unit is wholly within 12" of multiple Void Shield Generators, and so within more than one Void Shield Zone when it is hit, randomly determine which of the buildings' projected void shields is hit.
+              <description>Each projected void shield has a 12&quot; area of effect (measured from any point on the Void Shield Generator building) known as a Void Shield Zone. Any shooting attack that originates from outside a Void Shield Zone and hits a unit that is wholly within the Void Shield Zone instead his the projected void shield. If a unit is wholly within 12&quot; of multiple Void Shield Generators, and so within more than one Void Shield Zone when it is hit, randomly determine which of the buildings&apos; projected void shields is hit.
 
 Projected void shields have no effect against witchfire powers that do not ave a S value (Psychic Shriek, Haemorrhage, Purge Soul, etc).
 
-Each projected void shield has an Armour Value of 12. A glancing or penetrating hit (or any hit from a D weapon) scored against a projected void shield causes it to collapse. If all the projected void shields have collapsed, further hits strike the original target instead. At the end of each of the controlling player's turns, roll a die for each projected void shield that has collapsed; each roll of 5+ instantly restores one shield.</description>
+Each projected void shield has an Armour Value of 12. A glancing or penetrating hit (or any hit from a D weapon) scored against a projected void shield causes it to collapse. If all the projected void shields have collapsed, further hits strike the original target instead. At the end of each of the controlling player&apos;s turns, roll a die for each projected void shield that has collapsed; each roll of 5+ instantly restores one shield.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -6337,6 +6533,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c237-c971-aa16-87a5" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="678c-4530-e08a-e457" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -6353,6 +6550,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -6365,6 +6563,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
       <infoLinks/>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="2ad5-a816-de59-da8c" name="Honored Imperium" hidden="false" collective="false">
@@ -6375,6 +6574,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="00a4-2141-ed1f-022c" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -6384,6 +6584,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -6396,6 +6597,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8b0b-e88f-62fd-4b39" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ea3a-249e-d403-0626" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -6405,6 +6607,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -6417,6 +6620,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2d65-217c-d527-7ddc" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="706a-770e-a715-d2a1" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -6426,6 +6630,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -6459,6 +6664,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
       <infoLinks/>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -6495,6 +6701,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
@@ -6504,6 +6711,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -6541,6 +6749,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
@@ -6550,6 +6759,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -6582,6 +6792,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
       <infoLinks/>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="f292-bb41-59a1-8b0c" name="Firestorm Redoubt" hidden="false" collective="false" defaultSelectionEntryId="3916-9ea0-909d-6b2c">
@@ -6593,6 +6804,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6aa4-624c-385d-e1c6" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1a07-9676-dcf2-55f8" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -6602,6 +6814,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -6624,6 +6837,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries>
         <selectionEntry id="4ddc-8f00-c620-2e55" name="Heavy Bolters" page="" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -6640,6 +6854,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cacc-41cf-e8bb-d2fc" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -6663,6 +6878,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d3b4-e962-8638-b17b" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="54ab-62b4-e1cc-d7e8" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -6685,6 +6901,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="76cd-259a-a006-48c7" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -6716,6 +6933,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90a3-6e05-2ae4-1920" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="683f-e93f-c40c-f941" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -6731,6 +6949,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
                 </modifier>
               </modifiers>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
           <costs>
@@ -6761,6 +6980,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="991d-d088-9721-7318" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77a0-8cb3-1211-bb4e" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -6770,6 +6990,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
           <costs>
@@ -6800,6 +7021,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d00-8ff3-036d-3ef9" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed23-889e-d903-1553" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -6809,6 +7031,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
           <costs>
@@ -6826,6 +7049,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d44e-3f00-7802-9c3f" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ee50-bffe-6cbb-8b38" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="6b8c-54c9-fdda-c3a9" name="Fragstorm missiles" page="" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -6843,6 +7067,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e472-b9a6-36c4-6745" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d18a-86b4-14be-19eb" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -6865,6 +7090,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ad33-bab0-50c4-736f" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -6884,6 +7110,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -6918,6 +7145,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries>
         <selectionEntry id="f8c9-8047-e3cc-b2c2" name="Heavy Bolters" page="" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -6935,6 +7163,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e750-7362-530b-53f4" type="min"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ae5c-63f3-0067-e60d" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -6951,6 +7180,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
         <entryLink id="4288-fee0-9a5d-60ba" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
           <profiles/>
@@ -6958,6 +7188,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
         <entryLink id="e3f5-954e-ed7a-0510" hidden="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
           <profiles/>
@@ -6971,6 +7202,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
             </modifier>
           </modifiers>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -7014,6 +7246,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
       <infoLinks/>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
@@ -7023,6 +7256,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -7042,7 +7276,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
         </profile>
       </profiles>
       <rules>
-        <rule id="b27c-0dbd-e299-41b3" name="The Eagle's Gaze" hidden="false">
+        <rule id="b27c-0dbd-e299-41b3" name="The Eagle&apos;s Gaze" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -7060,6 +7294,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -7086,6 +7321,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
       <infoLinks/>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="493a-c7f5-0da7-eb12" name="Structures" hidden="false" collective="false">
@@ -7096,6 +7332,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
           <constraints>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="01cc-d104-961b-2dc8" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups>
             <selectionEntryGroup id="00be-4366-f00e-b069" name="Firestorm Redoubt" hidden="false" collective="false">
@@ -7106,6 +7343,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f9f6-ae87-cf89-3b3e" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks>
@@ -7115,6 +7353,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
                   <infoLinks/>
                   <modifiers/>
                   <constraints/>
+                  <categoryLinks/>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -7124,6 +7363,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks>
@@ -7133,6 +7373,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
                   <infoLinks/>
                   <modifiers/>
                   <constraints/>
+                  <categoryLinks/>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -7142,6 +7383,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks>
@@ -7151,6 +7393,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
                   <infoLinks/>
                   <modifiers/>
                   <constraints/>
+                  <categoryLinks/>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -7160,6 +7403,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks>
@@ -7169,6 +7413,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
                   <infoLinks/>
                   <modifiers/>
                   <constraints/>
+                  <categoryLinks/>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -7178,6 +7423,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks>
@@ -7187,6 +7433,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
                   <infoLinks/>
                   <modifiers/>
                   <constraints/>
+                  <categoryLinks/>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -7198,6 +7445,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a993-8314-c070-1bc4" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks>
@@ -7207,6 +7455,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
                   <infoLinks/>
                   <modifiers/>
                   <constraints/>
+                  <categoryLinks/>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -7218,6 +7467,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="14da-b94c-8766-1367" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks>
@@ -7227,6 +7477,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
                   <infoLinks/>
                   <modifiers/>
                   <constraints/>
+                  <categoryLinks/>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -7238,6 +7489,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b21b-af47-3fea-9cfe" type="min"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks>
@@ -7247,6 +7499,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
                   <infoLinks/>
                   <modifiers/>
                   <constraints/>
+                  <categoryLinks/>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -7258,6 +7511,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c10e-dbcd-c312-7ba0" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks>
@@ -7267,6 +7521,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
                   <infoLinks/>
                   <modifiers/>
                   <constraints/>
+                  <categoryLinks/>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -7287,7 +7542,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>Any plasma weapon (as defined in BRB) fired by a non-vehicle model within 2" of a Haemotrop Reactor in the Shooting phase may use the extra power to supercharge their weapon. If they do then until the end of the phase their plasma weapon gains the Blast special rule (weapons that already have the Blast special rule gain the Large Blast special rule instead), however, their weapon also Gets Hot! on rolls of a 1 or 2, instead of just 2. </description>
+          <description>Any plasma weapon (as defined in BRB) fired by a non-vehicle model within 2&quot; of a Haemotrop Reactor in the Shooting phase may use the extra power to supercharge their weapon. If they do then until the end of the phase their plasma weapon gains the Blast special rule (weapons that already have the Blast special rule gain the Large Blast special rule instead), however, their weapon also Gets Hot! on rolls of a 1 or 2, instead of just 2. </description>
         </rule>
         <rule id="c0b1-638c-4f25-4a0e" name="Power Supply" hidden="false">
           <profiles/>
@@ -7296,14 +7551,15 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
           <modifiers/>
           <description>Haemotrope Reactors can bolster the effectiveness of Void Shield Generators and Plasma Obliterators as follows:
 
-If at least two Haemotrope Reactors are either within 6" of a Void Shield Generator, or are connected to the Void Shield Generator via Promethium Relay Pipes, you can re-rollt he dice when attempting to restore collapsed shields.
+If at least two Haemotrope Reactors are either within 6&quot; of a Void Shield Generator, or are connected to the Void Shield Generator via Promethium Relay Pipes, you can re-rollt he dice when attempting to restore collapsed shields.
 
-If at least two Haemotrope Reactors are within 6" of a Plasma Obliterator, or are connected to the Plasma Obliterator via Promethium Relay Pipes, increase the Strength of the weapon to S 8.</description>
+If at least two Haemotrope Reactors are within 6&quot; of a Plasma Obliterator, or are connected to the Plasma Obliterator via Promethium Relay Pipes, increase the Strength of the weapon to S 8.</description>
         </rule>
       </rules>
       <infoLinks/>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries>
         <selectionEntry id="8e71-28fc-b5b7-69e1" name="Pair of Haemotrope Reactors" hidden="false" collective="false" type="upgrade">
           <profiles>
@@ -7352,6 +7608,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="185d-3642-acc5-b3ff" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3899-ce19-7d3d-dd3b" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -7379,7 +7636,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
         </profile>
       </profiles>
       <rules>
-        <rule id="139f-39f2-d453-9968" name="The Omnissiah's Benediction" hidden="false">
+        <rule id="139f-39f2-d453-9968" name="The Omnissiah&apos;s Benediction" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -7397,6 +7654,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -7410,6 +7668,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <infoLinks/>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries>
         <selectionEntry id="91db-0420-d420-0f55" name="Munitorum Armoured Container Cache" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -7421,11 +7680,11 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
               <modifiers/>
               <description>The first time a unit moves or deploys in base contact with a Munitorum Armoured Container, roll a D6 and consult the following table to discover its contents. If you are using the Munitorum Armoured Containers to represent Objective Markers, this table replaces the Mysterious Objectives in BRB. 
 
-1 - Xenos Creature: The container was transporting a rare and deadly xenos creature that immediately lashes out in anger as it escapes. All units within 6" of the armoured container take D6 S 4 AP 6 hits with the Ignores Cover special rule. Wounds are randomly allocated.
+1 - Xenos Creature: The container was transporting a rare and deadly xenos creature that immediately lashes out in anger as it escapes. All units within 6&quot; of the armoured container take D6 S 4 AP 6 hits with the Ignores Cover special rule. Wounds are randomly allocated.
 2 - Nothing of Note: The container contains vital supplies of red berets en route to an Astra Militarum regiment, but has no additional effect on the game.
-3 - Uplifting Primers: The container was transporting boxes of the Imperial Infantryman's Uplifting Primer. All units from the Armies of the Imperium add +1 Ld whilst they are within 6" of this armoured container.
-4 - Archeotech Ammunition: The container was shipping crates of rare and powerful ammunition. Add +1 S of all Assault and Rapid Fire weapons fired by models that are within 6" of this armoured container.
-5 - Shield Generator: A shield generator hums to life once the container is opened. All models have a 4+ invulnerable save whilst they are within 6" of this armoured container.
+3 - Uplifting Primers: The container was transporting boxes of the Imperial Infantryman&apos;s Uplifting Primer. All units from the Armies of the Imperium add +1 Ld whilst they are within 6&quot; of this armoured container.
+4 - Archeotech Ammunition: The container was shipping crates of rare and powerful ammunition. Add +1 S of all Assault and Rapid Fire weapons fired by models that are within 6&quot; of this armoured container.
+5 - Shield Generator: A shield generator hums to life once the container is opened. All models have a 4+ invulnerable save whilst they are within 6&quot; of this armoured container.
 6 - Orbital Comms Array: Inside the container is simply a nav-map and a flashing red button. The player who identified this container can immedicately call down an orbital strike anywhere on the battlefield, after which the armoured container has no additional effect on the game.</description>
             </rule>
             <rule id="ac53-60af-0fdf-f348" name="Munitorum Armoured Container Cache" book="Datasheet: Munitorium Armoured Container Cache" hidden="false">
@@ -7433,14 +7692,14 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <description>Munitorum Armoured Containers are Battlefield Debris (Armoured Container). Munitorum Supply Crates are Battlefield Debris (Ammunition Dump). Munitorum Promethium Barrels are Battlefield Debris (Fuel Drums). All parts of a Munitorum Armoured Container Cache must be placed wholly within 12" of each other. </description>
+              <description>Munitorum Armoured Containers are Battlefield Debris (Armoured Container). Munitorum Supply Crates are Battlefield Debris (Ammunition Dump). Munitorum Promethium Barrels are Battlefield Debris (Fuel Drums). All parts of a Munitorum Armoured Container Cache must be placed wholly within 12&quot; of each other. </description>
             </rule>
             <rule id="b1db-963f-816d-bc16" name="Orbital Comms" book="Datasheet: Munitorium Armoured Container Cache" hidden="false">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <description>If an arrow is rolled on the scatter dice when firing a weapon that has this special rule, the shot always scatters 4D6" regardless of the firing model's Ballistic Skill.</description>
+              <description>If an arrow is rolled on the scatter dice when firing a weapon that has this special rule, the shot always scatters 4D6&quot; regardless of the firing model&apos;s Ballistic Skill.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -7456,6 +7715,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9881-7950-be0a-b316" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2ef5-15f0-f91c-5086" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="b46d-4c0c-d509-19ad" name="Munitorum Armoured Container" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -7484,7 +7744,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <description>A model in cover behind an armoured container has a 4+ cover save. One non-vehicle model in base contact with an armoured container can fire all of the container's storm bolters instead of firing their own weapon, following the normal rules for shooting. The armoured container can be shot at and attacked in close combat. it is hit automatically in close combat.</description>
+                  <description>A model in cover behind an armoured container has a 4+ cover save. One non-vehicle model in base contact with an armoured container can fire all of the container&apos;s storm bolters instead of firing their own weapon, following the normal rules for shooting. The armoured container can be shot at and attacked in close combat. it is hit automatically in close combat.</description>
                 </rule>
               </rules>
               <infoLinks/>
@@ -7493,6 +7753,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9192-e995-a8d5-a3b1" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2877-99c1-1629-8de9" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="cc68-d1d0-2b01-b23a" name="Storm Bolters" hidden="false" collective="false" type="upgrade">
                   <profiles/>
@@ -7509,6 +7770,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5dca-d8b4-52e2-80e0" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -7539,6 +7801,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ade3-528f-a897-344b" type="min"/>
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="81fb-39be-8d91-65dd" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -7565,6 +7828,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e9a3-498f-293c-c000" type="min"/>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ac78-71ae-d23f-d93f" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -7621,12 +7885,13 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>If this building suffers a glancing hit as a result of the plasma obliterator's Gets Hot special rule then, in addition to any other effects, any unit embarked in the building suffers D3 Wounds. These Wounds are Randomly Allocated.</description>
+          <description>If this building suffers a glancing hit as a result of the plasma obliterator&apos;s Gets Hot special rule then, in addition to any other effects, any unit embarked in the building suffers D3 Wounds. These Wounds are Randomly Allocated.</description>
         </rule>
       </rules>
       <infoLinks/>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
@@ -7642,6 +7907,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
             </modifier>
           </modifiers>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
         <entryLink id="8c4c-4101-a673-e5ac" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
           <profiles/>
@@ -7649,6 +7915,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -7712,6 +7979,7 @@ Redoubt. Multiple units may enter or exit the building each turn, so long as eac
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries>
         <selectionEntry id="5690-431a-06a3-4a59" name="Double-barrelled Turbo Laser Destructor Turret" hidden="false" collective="false" type="upgrade">
           <profiles>
@@ -7745,6 +8013,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f56d-1de8-d853-5163" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c021-d6b8-90c2-f5c2" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -7762,6 +8031,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1403-a7f1-2053-252c" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="6a60-a800-19ca-49de" name="Twin-linked Heavy Bolter" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -7778,6 +8048,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ca81-6349-acfe-3ac7" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -7806,6 +8077,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ac56-9185-b9b1-4136" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -7834,6 +8106,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5f83-563f-341d-d556" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -7869,6 +8142,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a245-8367-e848-9054" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -7884,6 +8158,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="67a3-fa95-a80a-807b" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -7906,6 +8181,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="590f-d3a7-a418-e879" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -7928,6 +8204,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="70a9-9041-73c0-5b82" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -7943,6 +8220,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f64e-2266-9649-520b" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -7965,6 +8243,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b9db-6718-ca1c-c14b" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -7980,6 +8259,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="1e0f-5586-68fe-1c18" name="Vengeance &amp; Castellan Missles" hidden="false" collective="false" type="upgrade">
                   <profiles>
@@ -8012,6 +8292,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
                   <infoLinks/>
                   <modifiers/>
                   <constraints/>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -8038,6 +8319,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
                   <infoLinks/>
                   <modifiers/>
                   <constraints/>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -8060,6 +8342,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fa41-6025-c7d9-c109" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="d3ef-993f-c985-128c" name="Heavy Bolter" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -8076,6 +8359,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <constraints>
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6544-dc46-1d46-2f67" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -8095,6 +8379,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
         <entryLink id="55a3-fe1e-d2ec-bddf" hidden="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
           <profiles/>
@@ -8108,6 +8393,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             </modifier>
           </modifiers>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -8157,6 +8443,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -8170,6 +8457,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <infoLinks/>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="65de-14fb-542f-6d4c" name="Aegis Defense Line" hidden="false" collective="false" defaultSelectionEntryId="e735-065d-d687-5b65">
@@ -8181,6 +8469,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fc1b-c54a-bc57-cd04" type="min"/>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2302-b7cc-5f1c-d5de" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -8190,6 +8479,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -8202,6 +8492,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3699-d39f-fbac-0860" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9f91-557d-188d-8cc2" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -8211,6 +8502,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -8223,6 +8515,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="04af-5ce8-377c-4c92" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6173-3fc9-18d5-0d26" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -8232,6 +8525,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -8244,6 +8538,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="adce-4f8e-953b-bc0c" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="762f-972e-a38d-25c9" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -8253,6 +8548,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -8290,6 +8586,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <infoLinks/>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries>
         <selectionEntry id="9fd8-1585-2b65-0e2a" name="Tacticus Bunker" page="0" hidden="false" collective="false" type="model">
           <profiles/>
@@ -8300,6 +8597,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5e74-a42a-080f-9d06" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9f7e-9630-f985-0c86" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups>
             <selectionEntryGroup id="a5dd-3344-d1c5-7afc" name="May take two of the following:" hidden="false" collective="false">
@@ -8310,6 +8608,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ec1f-04ff-cd0e-c2bd" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="e1c8-83db-124c-1c0e" name="Twin-linked Heavy Bolter" page="0" hidden="false" collective="false" type="upgrade">
                   <profiles/>
@@ -8326,6 +8625,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f9e5-5e55-7d1e-9fc8" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -8341,6 +8641,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a7f9-cbb1-6f75-3b27" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -8356,6 +8657,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="330a-ab08-c06d-d26e" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -8371,6 +8673,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d4fa-41f8-5452-a610" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -8393,6 +8696,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bc51-9ca5-cbe7-f3d3" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -8408,6 +8712,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="abe4-25be-8a39-ace8" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -8430,6 +8735,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d82a-d650-1f6e-f4a7" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -8452,6 +8758,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="01e3-59af-7424-b0d7" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -8467,6 +8774,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a511-1994-5f38-15a5" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -8482,6 +8790,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a0c8-986d-53b8-ccbb" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -8504,6 +8813,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="37a0-74f0-ff9b-f17b" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -8521,6 +8831,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="2c3e-d985-da3a-1a99" name="Comms Relay" page="0" hidden="false" collective="false" type="upgrade">
                   <profiles/>
@@ -8530,6 +8841,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="660b-3775-396f-8716" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -8545,6 +8857,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1299-e322-c69d-b2f1" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -8571,6 +8884,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9903-5946-5433-4cf2" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f7a6-68a6-d747-843a" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups>
             <selectionEntryGroup id="2201-45e8-4691-75e9" name="May each take one of the following:" hidden="false" collective="false">
@@ -8581,6 +8895,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fc66-4146-1f18-0e91" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="e367-b725-f4ff-1097" name="Twin-linked Heavy Bolter" page="0" hidden="false" collective="false" type="upgrade">
                   <profiles/>
@@ -8590,6 +8905,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                   <constraints>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ae1a-ccab-c93b-3516" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -8605,6 +8921,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                   <constraints>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="afb4-d84f-92fb-c583" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -8620,6 +8937,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                   <constraints>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b1ca-63d8-c59f-3180" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -8635,6 +8953,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                   <constraints>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e48b-4354-4e23-4c39" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -8657,6 +8976,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                   <constraints>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7149-cdad-18b8-eeb1" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -8672,6 +8992,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                   <constraints>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1bee-4ff8-5f32-da69" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -8694,6 +9015,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                   <constraints>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="54ee-3dab-11db-c8f7" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -8716,6 +9038,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                   <constraints>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5d91-e162-aef0-aa7f" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -8748,6 +9071,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d067-2c16-7364-7f4f" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -8763,6 +9087,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d9b-f69c-7128-f477" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -8778,6 +9103,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8750-274e-793e-8858" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -8793,6 +9119,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0066-a00e-87fe-2ab2" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -8808,6 +9135,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3415-9251-b927-133e" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -8823,6 +9151,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2b8-f133-ab64-c0b7" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -8848,6 +9177,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9d6-adae-28c0-2c91" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edc3-4e6b-3713-c070" type="min"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -8863,6 +9193,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc19-7d28-66fb-fa66" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -8936,6 +9267,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="f89283d8-d9d1-7f20-b630-4ad158e12292" name="May exchange Questoris battlecannon for:" hidden="false" collective="false">
@@ -8944,6 +9276,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="c7e655d1-24ba-0f3c-b15e-3874f6ee954c" name="Rapid-fire battlecannon" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -8966,6 +9299,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -8983,6 +9317,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="a0fe2e7e-0934-d570-9b21-ffd094742e42" name="Bio-corrosive rounds for its heavy stubbers" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -9005,6 +9340,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -9021,6 +9357,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -9032,6 +9369,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="fd9e-6e9b-8b90-94ff" name="Ironstorm missile pod" book="FAQ" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -9048,6 +9386,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -9070,6 +9409,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -9092,6 +9432,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -9111,6 +9452,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
         <entryLink id="6fd6-0678-7777-d0b9" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
           <profiles/>
@@ -9118,6 +9460,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -9182,6 +9525,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="423c1873-c56d-8ca1-b01f-a2660b0b0198" name="May be upgraded with:" hidden="false" collective="false">
@@ -9190,6 +9534,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="24f0bce9-4d48-7761-798a-06d983bc9e09" name="Bio-corrosive rounds for its heavy stubbers" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -9212,6 +9557,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -9228,6 +9574,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -9239,6 +9586,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="e776-6427-6f58-cc8d" name="Ironstorm missile pod" book="FAQ" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -9255,6 +9603,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -9277,6 +9626,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -9299,6 +9649,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -9318,6 +9669,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
         <entryLink id="3869-5b07-27b6-2018" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
           <profiles/>
@@ -9325,6 +9677,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -9395,6 +9748,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="f1816b2d-d7ad-435b-6862-843f885c8ecc" name="May exchange its Reaper Chainsword for:" hidden="false" collective="false">
@@ -9403,6 +9757,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="f3c0c540-1e73-89b8-46c3-2aca29c79009" name="Hekaton Siege Claw with twin-linked Rad Cleanser" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -9444,6 +9799,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -9461,6 +9817,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -9470,6 +9827,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -9481,6 +9839,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
         <entryLink id="7914-ad8c-7a1e-e6c7" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
           <profiles/>
@@ -9488,6 +9847,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -9569,6 +9929,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="f6462c55-4eef-3565-2a00-b18b8444bd20" name="May be upgraded with:" hidden="false" collective="false">
@@ -9577,6 +9938,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -9586,6 +9948,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -9597,6 +9960,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
         <entryLink id="d7fd-bb6e-dc51-f8ed" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
           <profiles/>
@@ -9604,6 +9968,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -9686,6 +10051,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="24723cac-66f3-e231-9092-1333de8d98c1" name="May exchange its Reaper Chainsword for:" hidden="false" collective="false">
@@ -9694,6 +10060,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="5be171c3-5c43-333c-e1b8-5b98516f8c0b" name="Hekaton Siege Claw with twin-linked Rad Cleanser" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -9735,6 +10102,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -9752,6 +10120,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -9761,6 +10130,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -9772,6 +10142,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
         <entryLink id="3bec-dc40-8e56-a8d7" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
           <profiles/>
@@ -9779,6 +10150,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -9863,6 +10235,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="5e3a6b4f-0c5e-5b29-cc54-cf20f5668eb3" name="May be upgraded with:" hidden="false" collective="false">
@@ -9871,6 +10244,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -9880,6 +10254,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -9891,6 +10266,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
         <entryLink id="ae87-4f6a-c839-010a" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
           <profiles/>
@@ -9898,6 +10274,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -9976,6 +10353,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="97a1af42-3800-4b30-9e22-d8955e00394e" name="May be upgraded with:" hidden="false" collective="false">
@@ -9984,6 +10362,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -9993,6 +10372,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -10004,6 +10384,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
         <entryLink id="1d72-a337-b4a1-c67b" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
           <profiles/>
@@ -10011,6 +10392,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -10083,6 +10465,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="c89a-2e7e-cc89-dfc4" name="May be upgraded with:" hidden="false" collective="false">
@@ -10091,6 +10474,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="7b07-791a-2a51-34d2" name="Bio-corrosive rounds for its heavy stubbers" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -10122,6 +10506,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -10138,6 +10523,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -10149,6 +10535,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="afec-cc37-37b7-8074" name="Ironstorm missile pod" book="FAQ" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -10165,6 +10552,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -10187,6 +10575,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -10209,6 +10598,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -10226,6 +10616,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="4578-c708-d057-a240" name="Thunderstrike Gauntlet" book="C:IK" page="117" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -10256,6 +10647,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -10273,6 +10665,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="e244-6d45-c2f5-61a7" name="Meltagun" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -10282,6 +10675,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -10301,6 +10695,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
         <entryLink id="f723-f484-1830-89d6" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
           <profiles/>
@@ -10308,6 +10703,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -10380,6 +10776,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="c12e-0c88-5050-819f" name="May be upgraded with:" hidden="false" collective="false">
@@ -10388,6 +10785,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="566f-f1ce-0901-fc99" name="Bio-corrosive rounds for its heavy stubbers" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -10419,6 +10817,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -10435,6 +10834,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -10446,6 +10846,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="7a8b-9722-8b68-ceec" name="Ironstorm missile pod" book="FAQ" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -10462,6 +10863,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -10484,6 +10886,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -10506,6 +10909,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -10523,6 +10927,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="f7e1-9700-a27d-b2f7" name="Meltagun" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -10532,6 +10937,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -10551,6 +10957,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
         <entryLink id="f3c2-a76b-fad8-0cd0" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
           <profiles/>
@@ -10558,6 +10965,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -10628,6 +11036,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="ee0a-75b3-4033-d106" name="May be upgraded with:" hidden="false" collective="false">
@@ -10636,6 +11045,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="7472-d17f-5dd2-d902" name="Bio-corrosive rounds for its heavy stubbers" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -10673,6 +11083,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -10689,6 +11100,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -10700,6 +11112,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="891a-3a0e-4430-9259" name="Ironstorm missile pod" book="FAQ" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -10716,6 +11129,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -10738,6 +11152,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -10760,6 +11175,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -10777,6 +11193,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="75f8-4e76-795a-4f09" name="Meltagun" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -10794,6 +11211,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -10811,6 +11229,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="4e60-ef5b-d3df-669d" name="Rapid-fire battlecannon and Heavy Stubber" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -10833,6 +11252,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -10852,6 +11272,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
         <entryLink id="da6b-9be6-897e-c0c9" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
           <profiles/>
@@ -10859,6 +11280,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -10925,6 +11347,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8f86-62fb-dba4-afc4" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="797b-8685-04c6-72f4" name="May be upgraded with:" hidden="false" collective="false">
@@ -10933,6 +11356,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -10942,6 +11366,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -10954,6 +11379,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1f91-871d-6bef-5216" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8477-2187-7951-fdb3" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="c6cf-46ab-5358-3771" name="Singularity Cannon" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -10995,6 +11421,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               </infoLinks>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -11015,6 +11442,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2044-af1a-9add-b6dc" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2225-b3bc-9b72-de91" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="5b2d-434f-7a2d-7ad3" name="Lascutter" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -11054,6 +11482,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               </infoLinks>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -11073,6 +11502,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
         <entryLink id="d35c-930d-b252-9eb3" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
           <profiles/>
@@ -11080,6 +11510,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -11126,6 +11557,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f38-2f45-a1a8-1aab" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries>
         <selectionEntry id="eb2c-a7c7-2c3f-fc1d" name="Exchange Ironstorm missiles for:" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -11151,6 +11583,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a5de-b150-3eab-e8bf" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ffb3-9b68-982e-edd2" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -11160,6 +11593,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
           <costs>
@@ -11182,6 +11616,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc07-151b-0f26-b610" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="71ac-a51f-a723-8636" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -11194,6 +11629,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69f0-135a-1afd-05e1" type="max"/>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0a1-8432-8b6a-d8e6" type="min"/>
               </constraints>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
           <costs>
@@ -11208,6 +11644,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -11217,6 +11654,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -11228,6 +11666,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6db0-3d88-9ff3-fbf9" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -11243,6 +11682,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 </modifier>
               </modifiers>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
             <entryLink id="52ce-4c33-8f3e-e9bf" name="New EntryLink" hidden="false" targetId="32e0-80f7-982d-b29a" type="selectionEntry">
               <profiles/>
@@ -11250,6 +11690,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -11261,6 +11702,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
         <entryLink id="de8d-df3c-f1e5-eae0" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
           <profiles/>
@@ -11268,6 +11710,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -11290,6 +11733,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -11312,6 +11756,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20e9-5be0-6d88-afd5" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -11371,6 +11816,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da95-f77a-2e96-2fae" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1240-ab1a-2701-5b08" type="min"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -11394,6 +11840,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbaa-3884-f2e0-c413" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ce4-a31a-c6f1-a702" type="min"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -11417,6 +11864,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01c3-e1c0-617e-150c" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="caa1-a92a-403a-af71" type="min"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -11449,6 +11897,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -11483,6 +11932,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="81af-e96f-4a06-239f" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -11503,6 +11953,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -11625,6 +12076,7 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="fcafb9d2-c4d7-16eb-4d77-21a93c2e6b8c" name="May take up to four:" hidden="false" collective="false">
@@ -11635,6 +12087,7 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="10035625-80f1-4b62-0eab-047edbecd95f" name="Cyber-occularis" page="0" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -11675,6 +12128,7 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
               <constraints>
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -11692,6 +12146,7 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="dafd12dc-ac4d-911c-a15d-bae8a9a7604e" name="Abeyant" page="0" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -11701,6 +12156,7 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -11744,7 +12200,7 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Each hit scored against the Titan will instead hit a Void Shield (whilst one remains active). Close Combat attacks come from within the shield and are not stopped.  Void Shields have an armour value of 12.  A Glancing or Penetrating hit or any hit from a Destroyer weapon causes it to collapse.  After all void shields have collapsed, further hits strike the Titan instead. At the end of each of the Titan's turns, roll a D6 for each collapsed Void Shield.  Each roll of a 5+ restores one collapsed shield.  "/>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Each hit scored against the Titan will instead hit a Void Shield (whilst one remains active). Close Combat attacks come from within the shield and are not stopped.  Void Shields have an armour value of 12.  A Glancing or Penetrating hit or any hit from a Destroyer weapon causes it to collapse.  After all void shields have collapsed, further hits strike the Titan instead. At the end of each of the Titan&apos;s turns, roll a D6 for each collapsed Void Shield.  Each roll of a 5+ restores one collapsed shield.  "/>
           </characteristics>
         </profile>
         <profile id="0e49-b34a-a66f-19a6" name="Ardex-defensor Mauler bolt cannon turret" book="HH5: Tempest" page="264" hidden="false" profileTypeId="576561706f6e23232344415441232323">
@@ -11838,15 +12294,15 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
           <description>- May never be locked in an assault
 - Completely immune to the effects of Haywire attacks, dangerous terrain, and psychic attacks other than Witchfire powers
 - May only be hit on a 6 by Infantry and Monsterous Creatures in any type of assault, or on a 5 or 6 by Super-Heavy walkers and Gargantuan Creatures
-- Carapace-mounted weapons may not target models closer than 24" from its hull, unless they are flyers, flying monsterous creatures or other super-heavy vehicles or gargantuan monsterous creatures
-- Warlord's stomp attacks use the Large Blast template</description>
+- Carapace-mounted weapons may not target models closer than 24&quot; from its hull, unless they are flyers, flying monsterous creatures or other super-heavy vehicles or gargantuan monsterous creatures
+- Warlord&apos;s stomp attacks use the Large Blast template</description>
         </rule>
         <rule id="98cb-0e00-ae08-145e" name="Reactor Meltdown" book="HH5: Tempest" page="263" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>Use the table below isntead of the usual Catastrophic Damage table and in all cases the Warlord remains on the table as dangerous terrain.  Instead of using the Apocalyptic Blast marker, measure from the center of the Warlord's hull using 12"/24"36" respectively. 
+          <description>Use the table below isntead of the usual Catastrophic Damage table and in all cases the Warlord remains on the table as dangerous terrain.  Instead of using the Apocalyptic Blast marker, measure from the center of the Warlord&apos;s hull using 12&quot;/24&quot;36&quot; respectively. 
 
 D6    Result		S	AP
 1      Explosion		D/8/4	2/3/5
@@ -11880,12 +12336,13 @@ D6    Result		S	AP
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>Unless it is immune to Fear, any unit within 12" of the Psi-Titan at the start of their controlling players turn must take a morale check. In addition, unless immune to fear, any unit attempting to charge a Psi-Titan must pass a Leadership test at -3 first before doing so.If the test is failed, the unit must Fall Back instead as it it had failed a Morale Check.</description>
+          <description>Unless it is immune to Fear, any unit within 12&quot; of the Psi-Titan at the start of their controlling players turn must take a morale check. In addition, unless immune to fear, any unit attempting to charge a Psi-Titan must pass a Leadership test at -3 first before doing so.If the test is failed, the unit must Fall Back instead as it it had failed a Morale Check.</description>
         </rule>
       </rules>
       <infoLinks/>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries>
         <selectionEntry id="82a1-5e48-0536-3451" name="The Ciricrux Anima" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -11915,6 +12372,7 @@ D6    Result		S	AP
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acaf-7e25-d19a-1ee5" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b89e-ea20-e5f3-fce3" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -11933,6 +12391,7 @@ D6    Result		S	AP
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d886-a8e5-8b3c-852a" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9208-9dbe-a5bc-cbbd" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="4559-ba3b-1804-2bf6" name="Two Double-barrelled Turbo-laser Destructors" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -11955,6 +12414,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="26ec-d7f2-d9a9-69ea" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -11983,6 +12443,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c640-f12c-c564-a4f6" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -12017,6 +12478,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1301-c351-e545-9dbb" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -12045,6 +12507,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3ee3-b809-5813-5d08" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -12079,6 +12542,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="519f-77d6-c070-d686" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -12113,6 +12577,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bedb-8e49-9b45-5254" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -12148,6 +12613,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7999-3c7f-edb5-b80c" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -12183,6 +12649,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="81d2-1141-9100-2d7e" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -12211,6 +12678,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6c28-9537-90ea-a957" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -12231,6 +12699,7 @@ D6    Result		S	AP
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="874a-3494-4aaa-8135" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c946-d120-a820-ed54" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="0254-669c-7368-0b4c" name="Sunfury Plasma Annihilator" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -12253,6 +12722,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a9a9-3f3a-492f-388d" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -12299,6 +12769,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fa82-a97d-8af7-7f26" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -12339,6 +12810,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ef8b-8e57-611a-11ac" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -12373,6 +12845,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e673-831c-f572-4f48" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -12407,6 +12880,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b01f-fe33-f866-9ed0" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -12441,6 +12915,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ad36-0f10-4cda-cb15" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -12460,6 +12935,7 @@ D6    Result		S	AP
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
         </entryLink>
       </entryLinks>
       <costs>
@@ -12497,6 +12973,7 @@ D6    Result		S	AP
       </infoLinks>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries>
         <selectionEntry id="9810-1a28-b780-19d6" name="Heavy Bolter" page="" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -12513,6 +12990,7 @@ D6    Result		S	AP
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="834d-6613-f85f-5dc5" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -12544,6 +13022,7 @@ D6    Result		S	AP
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8008-9f92-c810-a0ea" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91b4-dd72-0e1b-e0d7" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -12559,6 +13038,7 @@ D6    Result		S	AP
                 </modifier>
               </modifiers>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
             <entryLink id="cddc-de95-c149-f5f8" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
               <profiles/>
@@ -12566,6 +13046,7 @@ D6    Result		S	AP
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
           <costs>
@@ -12596,6 +13077,7 @@ D6    Result		S	AP
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18ec-9c4c-d0b0-b76d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ed1-8d5d-d61b-2196" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
@@ -12611,6 +13093,7 @@ D6    Result		S	AP
                 </modifier>
               </modifiers>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
             <entryLink id="9685-536e-120b-21de" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
               <profiles/>
@@ -12618,6 +13101,7 @@ D6    Result		S	AP
               <infoLinks/>
               <modifiers/>
               <constraints/>
+              <categoryLinks/>
             </entryLink>
           </entryLinks>
           <costs>
@@ -12635,6 +13119,7 @@ D6    Result		S	AP
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dff4-2a94-9933-5968" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="673e-8389-902c-fa98" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="6cb6-c6a0-3e5a-b148" name="Plasma Obliterator" hidden="false" collective="false" type="upgrade">
               <profiles>
@@ -12657,6 +13142,7 @@ D6    Result		S	AP
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fb2c-0e70-2bc0-ef9e" type="max"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
@@ -12685,6 +13171,7 @@ D6    Result		S	AP
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2f37-7517-c908-edb1" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="618a-5732-e525-55ba" type="min"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries>
         <selectionEntry id="9b47-1e07-98eb-1a50" name="Strategic Raid" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -12708,6 +13195,7 @@ D6    Result		S	AP
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0a6c-1af3-708c-8ad2" type="max"/>
             <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="665f-6735-42bf-f614" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups>
             <selectionEntryGroup id="931a-7ef6-812e-9e31" name="Detachments" hidden="false" collective="false" defaultSelectionEntryId="e16c-6219-cacc-ad8f">
@@ -12719,6 +13207,7 @@ D6    Result		S	AP
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7568-430f-9544-a290" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2c02-08fa-6a10-f515" type="min"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="e16c-6219-cacc-ad8f" name=" Raider Primary Detachment" hidden="false" collective="false" type="upgrade">
                   <profiles/>
@@ -12737,7 +13226,7 @@ In addition, any Lords of war must fulfil one of the following criteria:
 
 The Element of Surprise: Prior to any rolls for for first turn or units are deployed.  The player using the Raider Detachment chooses one fo the following options, informing their opponent before beginning play.  
 - Night Fighting rules are automatically in effect for the first turn, and the second turn on a 4+
-- Grant D3+2 of the Raider player's units the Infiltrate and Outflank special rules
+- Grant D3+2 of the Raider player&apos;s units the Infiltrate and Outflank special rules
 - The Raider player may re-roll any dice rolled to determine which player takes the first turn, and Siezes the Initiative on a 4+ instead of the usually required score.  </description>
                     </rule>
                   </rules>
@@ -12747,6 +13236,7 @@ The Element of Surprise: Prior to any rolls for for first turn or units are depl
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0077-08a8-cc13-52d6" type="max"/>
                     <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="628a-be9a-2a03-ed82" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -12762,7 +13252,7 @@ The Element of Surprise: Prior to any rolls for for first turn or units are depl
                       <rules/>
                       <infoLinks/>
                       <modifiers/>
-                      <description>Prepared Ground: In games where objectives are in use, the player using a Garrison Detachment may reposition all placed objectives by 6" in any direction before beginning the first turn, as long as this does not place them outside the play area, within impassable terrain, or within a vehicle, building, or fortification.  
+                      <description>Prepared Ground: In games where objectives are in use, the player using a Garrison Detachment may reposition all placed objectives by 6&quot; in any direction before beginning the first turn, as long as this does not place them outside the play area, within impassable terrain, or within a vehicle, building, or fortification.  
 
 Fortress-bound: Each fortification deployed on the table must be occupied by at least one Infantry unit from the same detachment if it has either Battlements or a Transport Capacity.  </description>
                     </rule>
@@ -12773,6 +13263,7 @@ Fortress-bound: Each fortification deployed on the table must be occupied by at 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1a94-1ab0-1307-4604" type="max"/>
                     <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eac5-3e2e-a441-2834" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -12797,6 +13288,7 @@ Fortress-bound: Each fortification deployed on the table must be occupied by at 
                     </modifier>
                   </modifiers>
                   <constraints/>
+                  <categoryLinks/>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -12828,6 +13320,7 @@ Fortress-bound: Each fortification deployed on the table must be occupied by at 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="08ed-d724-e3b7-f598" type="max"/>
             <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="ecdb-74bf-6ff5-0ebc" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups>
             <selectionEntryGroup id="4bd9-86ba-e5d7-ba36" name="Detachments" hidden="false" collective="false" defaultSelectionEntryId="dc72-082d-808e-dd2f">
@@ -12839,6 +13332,7 @@ Fortress-bound: Each fortification deployed on the table must be occupied by at 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aa9e-eb76-1c9c-395d" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e829-09e5-5020-b258" type="min"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="dc72-082d-808e-dd2f" name=" Incursion Force Primary Detachment" hidden="false" collective="false" type="upgrade">
                   <profiles/>
@@ -12852,7 +13346,7 @@ Fortress-bound: Each fortification deployed on the table must be occupied by at 
 
 Command Benefits:
 - Objective Secured: All Troops units from this detatchment have the Objective Secured special rule.  A unit with this rule controls objectives and occupies a ruin, even if an enemy scoring unit is within range of the objective or within the ruin, unless the enemy unit also has this rule.
-- Close Coordination: Infantry units from this detachment gain the Interceptor rule when within 6" of any vehicle from the same sub-detachment, but only when firing at enemy infantry models.  </description>
+- Close Coordination: Infantry units from this detachment gain the Interceptor rule when within 6&quot; of any vehicle from the same sub-detachment, but only when firing at enemy infantry models.  </description>
                     </rule>
                   </rules>
                   <infoLinks/>
@@ -12869,6 +13363,7 @@ Command Benefits:
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3c19-9c63-de90-08cb" type="max"/>
                     <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="970b-5a6a-6f88-5ffc" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -12905,6 +13400,7 @@ Command Benefits:
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9756-13d4-2adf-e24b" type="max"/>
                     <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8e13-a4f3-ae37-b5fd" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -12924,7 +13420,7 @@ Command Benefits:
 
 Command Benefits:
 - Objective Secured: All Troops units from this detatchment have the Objective Secured special rule.  A unit with this rule controls objectives and occupies a ruin, even if an enemy scoring unit is within range of the objective or within the ruin, unless the enemy unit also has this rule.
-- Close Coordination: Infantry units from this detachment gain the Interceptor rule when within 6" of any vehicle from the same sub-detachment, but only when firing at enemy infantry models.  </description>
+- Close Coordination: Infantry units from this detachment gain the Interceptor rule when within 6&quot; of any vehicle from the same sub-detachment, but only when firing at enemy infantry models.  </description>
                     </rule>
                   </rules>
                   <infoLinks/>
@@ -12941,6 +13437,7 @@ Command Benefits:
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0d8e-0da1-5211-550e" type="max"/>
                     <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="a762-3ed5-8aab-50ee" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -12965,6 +13462,7 @@ Command Benefits:
                     </modifier>
                   </modifiers>
                   <constraints/>
+                  <categoryLinks/>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -12984,6 +13482,7 @@ Command Benefits:
       <infoLinks/>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries>
         <selectionEntry id="26db-484d-3757-03c8" name="Lightning Claw" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -13013,6 +13512,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b2ab-5b47-b382-d02f" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a9e5-a5ea-e60f-8cc7" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -13036,6 +13536,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2adf-e0a8-708b-592c" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="959a-1ceb-61ef-849d" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -13070,6 +13571,7 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0957-2766-a673-37ba" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -13093,6 +13595,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="475f-95c0-81a4-64ba" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="addb-df93-241e-9490" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -13122,6 +13625,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="190e-3e42-ee0a-f3e6" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7961-051b-bb8e-f818" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -13138,6 +13642,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3a04-e090-d22b-785f" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c0f0-1aa7-ddec-bb40" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups>
             <selectionEntryGroup id="9afb-d454-465a-e2eb" name="Combi-weapon" hidden="false" collective="false" defaultSelectionEntryId="9baf-74fc-7e86-f9d7">
@@ -13149,6 +13654,7 @@ Command Benefits:
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c135-76d4-c353-598e" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1321-58ef-ab8b-a4ab" type="min"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="9baf-74fc-7e86-f9d7" name="Combi-weapon: Flamer" hidden="false" collective="false" type="upgrade">
                   <profiles/>
@@ -13169,6 +13675,7 @@ Command Benefits:
                   </infoLinks>
                   <modifiers/>
                   <constraints/>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -13201,6 +13708,7 @@ Command Benefits:
                   </infoLinks>
                   <modifiers/>
                   <constraints/>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -13233,6 +13741,7 @@ Command Benefits:
                   </infoLinks>
                   <modifiers/>
                   <constraints/>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -13265,6 +13774,7 @@ Command Benefits:
                   </infoLinks>
                   <modifiers/>
                   <constraints/>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -13297,6 +13807,7 @@ Command Benefits:
                   </infoLinks>
                   <modifiers/>
                   <constraints/>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -13330,6 +13841,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6998-99c8-4e3d-578d" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="67e1-fedb-6a33-d64a" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -13353,6 +13865,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6111-e880-a0df-36fa" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d3c-4f23-1a69-6717" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -13382,6 +13895,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e51d-cf89-f58a-6004" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6cee-d919-d130-3e75" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -13423,6 +13937,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3b7c-befb-5795-6b6e" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6cf0-88b0-fff6-961c" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -13464,6 +13979,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b12c-09c9-fd19-2a1d" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0f2c-c897-e533-4474" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -13479,6 +13995,7 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0783-9ec4-693a-3532" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups>
             <selectionEntryGroup id="ba28-2b8a-5cea-6ec0" name="Power Weapon" hidden="false" collective="false" defaultSelectionEntryId="d3f5-8be5-8678-266b">
@@ -13490,6 +14007,7 @@ Command Benefits:
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb68-c272-9fe6-827b" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0518-adfc-eb51-38f1" type="min"/>
               </constraints>
+              <categoryLinks/>
               <selectionEntries>
                 <selectionEntry id="d3f5-8be5-8678-266b" name="Power Sword" hidden="false" collective="false" type="upgrade">
                   <profiles/>
@@ -13506,6 +14024,7 @@ Command Benefits:
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8425-32fe-08fe-359d" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -13534,6 +14053,7 @@ Command Benefits:
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fe0c-fb18-2398-cf3a" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -13562,6 +14082,7 @@ Command Benefits:
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8531-2295-463b-c9f3" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -13584,6 +14105,7 @@ Command Benefits:
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ebfa-5d42-42ed-5eb3" type="max"/>
                   </constraints>
+                  <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
                   <entryLinks/>
@@ -13617,6 +14139,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="370c-bef4-57de-012c" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d959-13c5-ea05-7984" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -13645,6 +14168,7 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1823-e312-2e06-58c9" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -13673,6 +14197,7 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c23b-b876-e683-4f04" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -13701,6 +14226,7 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5f3e-444b-2315-5e66" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -13723,6 +14249,7 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ea99-b473-04e2-ed0e" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -13751,6 +14278,7 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="158e-f59d-c9bf-b870" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -13773,6 +14301,7 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3084-84ae-fa24-4036" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -13788,6 +14317,7 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="49dd-cdc4-b1c3-800d" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -13829,6 +14359,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="09d3-f257-408b-f1aa" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="71af-2e00-d2f7-87c7" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -13864,6 +14395,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="95c1-bc99-f4e4-e1dd" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ec3f-b81d-66e6-1155" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -13877,6 +14409,7 @@ Command Benefits:
           <infoLinks/>
           <modifiers/>
           <constraints/>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -13900,6 +14433,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4bba-3258-3c50-11a3" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5373-f7e8-a8b3-abc5" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -13917,6 +14451,7 @@ Command Benefits:
       <infoLinks/>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries>
         <selectionEntry id="b4ea-a586-86a9-02eb" name="Nuncio-vox" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -13933,6 +14468,7 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ccf-07cb-9064-9762" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -13955,6 +14491,7 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a592-1d66-c299-b987" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -13980,6 +14517,7 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="535d-a0a7-ce4e-6ab5" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14005,6 +14543,7 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8e0d-f89e-8c8d-2d29" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14027,6 +14566,7 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4f5f-b5eb-eb91-d212" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14068,6 +14608,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bb9a-1adf-8c3d-0560" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c90e-f674-9793-926a" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14121,6 +14662,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d441-c235-b1b9-eb8f" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8c45-d376-3ee9-a6f7" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14138,6 +14680,7 @@ Command Benefits:
       <infoLinks/>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries>
         <selectionEntry id="1087-66c1-c342-9cdc" name="Chainswords/Combat Blades" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -14155,6 +14698,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="faf6-af13-1b26-b564" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e90f-f90c-c522-955a" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14178,6 +14722,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0319-1d67-55e9-f6b6" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fb7c-f30f-705b-5a92" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14219,6 +14764,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7128-471b-8a5a-7e28" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="28e0-a554-ff25-23bd" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14245,6 +14791,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dc94-642f-394e-463d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ceed-2412-dfeb-bceb" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14280,6 +14827,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f610-4a8f-a2ea-f874" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1e5b-5f34-1886-673c" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14303,6 +14851,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0b76-a294-9e00-123a" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="15fa-e779-fdd7-37df" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14326,6 +14875,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8271-1c9f-64e5-e453" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c778-3da5-322d-714f" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14349,6 +14899,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dc34-4030-62a0-ddc4" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8a8c-15f3-2875-b314" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14372,6 +14923,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0b52-b119-5521-4267" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cf63-c545-8fbb-0457" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14401,6 +14953,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="125a-4acf-2ca2-90e5" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f91e-a871-567b-f40d" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14424,6 +14977,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20a3-6d34-a27c-36ee" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e126-a876-27ab-1181" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14447,6 +15001,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e6f-3983-0fb3-983f" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0563-ac8e-0a63-4eff" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14464,6 +15019,7 @@ Command Benefits:
       <infoLinks/>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries>
         <selectionEntry id="4cd1-d102-88dd-9b38" name="Infantry" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -14474,6 +15030,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="43e3-1eeb-62b7-b5b0" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6580-9c11-e898-3f55" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14490,6 +15047,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="67ea-2c00-a56f-d635" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="028c-5309-50c9-ac5d" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14507,6 +15065,7 @@ Command Benefits:
       <infoLinks/>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries>
         <selectionEntry id="eef6-a613-e479-7274" name="Armoured Ceramite" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -14524,6 +15083,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19a6-04bf-902e-faff" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a78-ae84-ef7c-c81b" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14547,6 +15107,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc98-69df-fbda-61b2" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95be-bfe6-c04c-fab4" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14570,6 +15131,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b17f-93b8-0d8c-a7db" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="131b-e239-1cea-ac3d" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14593,6 +15155,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e4e-1afa-1f33-9202" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e0a-b412-ec2c-d2ac" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14622,6 +15185,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d7b-db6d-0d90-5944" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3955-2494-4430-729d" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14639,6 +15203,7 @@ Command Benefits:
       <infoLinks/>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries>
         <selectionEntry id="ca5e-98e3-dff7-fa49" name="Armoured Ceramite" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -14656,6 +15221,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb80-42a2-aa2d-5e3a" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6be5-dd8e-96da-604f" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14679,6 +15245,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0694-665e-e4ed-7e37" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13ec-a328-f762-6b4d" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14702,6 +15269,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8702-8242-0b63-3471" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c55-d80f-7f28-0ec6" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14731,6 +15299,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a31-6dc0-a544-fdd7" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="680e-4bd9-603f-949f" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14754,6 +15323,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac16-3527-3d5d-4db4" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="822a-6a29-e1ea-ae68" type="min"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14771,6 +15341,7 @@ Command Benefits:
       <infoLinks/>
       <modifiers/>
       <constraints/>
+      <categoryLinks/>
       <selectionEntries>
         <selectionEntry id="2949-16a3-071b-d0b9" name="Paragon of Metal" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -14800,6 +15371,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0716-a566-b315-297d" type="max"/>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="81dd-8b1b-7229-0636" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14819,6 +15391,7 @@ Command Benefits:
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="531f-b464-7260-61c0" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries>
         <selectionEntry id="1ab6-0259-78c2-2859" name="Ammunition Dump" page="" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -14835,6 +15408,7 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="adc4-6993-7e9b-72dc" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14857,6 +15431,7 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8995-bdf2-3d31-1950" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14891,6 +15466,7 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="55f8-49ae-4459-4580" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14925,6 +15501,7 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7139-092c-bb08-430f" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14944,6 +15521,7 @@ Command Benefits:
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cd03-be61-f336-ac4c" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries>
         <selectionEntry id="3594-c9bd-9bfc-fa77" name="Ammo Store" page="" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -14960,6 +15538,7 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="77bb-8c11-9da3-94db" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -14982,6 +15561,7 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c8b9-254d-7843-7edd" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -15004,6 +15584,7 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3c7e-a0eb-4461-00af" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -15026,6 +15607,7 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a896-e708-1f96-ea24" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -15048,6 +15630,7 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f252-366f-7696-f687" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -15070,6 +15653,7 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2f40-dcf0-8f9b-4b12" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -15089,6 +15673,7 @@ Command Benefits:
       <constraints>
         <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e8d1-a4f4-3a6c-1878" type="max"/>
       </constraints>
+      <categoryLinks/>
       <selectionEntries>
         <selectionEntry id="bf1d-555b-a16e-8d29" name="Tanglewire" page="" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -15105,6 +15690,7 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c01c-615a-ea39-45e3" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -15127,6 +15713,7 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c39f-64e0-0897-1fad" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -15149,6 +15736,7 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7b5f-e5d3-b643-5081" type="max"/>
           </constraints>
+          <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -15171,9 +15759,9 @@ Command Benefits:
 
 If the test is failed, nothing happens and the models remain locked in the fight.
 
-If the test is passed, choose a direction – then roll 3D6. As long as the distance rolled, in inches, is sufficient to allow the entire unit to move over 1" away from all of the enemy units they are locked in combat with, the unit breaks away from combat and must immediately move a number of inches in the chosen direction equal to the 3D6 result, ignoring the models they were locked in combat with. No Sweeping Advance rolls are made. Enemy units that are no longer locked in combat immediately Consolidate D6".
+If the test is passed, choose a direction – then roll 3D6. As long as the distance rolled, in inches, is sufficient to allow the entire unit to move over 1&quot; away from all of the enemy units they are locked in combat with, the unit breaks away from combat and must immediately move a number of inches in the chosen direction equal to the 3D6 result, ignoring the models they were locked in combat with. No Sweeping Advance rolls are made. Enemy units that are no longer locked in combat immediately Consolidate D6&quot;.
 
-A Hit &amp; Run move is not slowed by difficult terrain, but takes Dangerous Terrain tests as normal. It may not be used to move into base or hull contact with enemy units, and models instead stop 1" away. If there are units with this rule on both sides who wish to disengage, roll-off to determine who goes first and then alternate disengaging them. If the last of these ends up no longer in combat, it Consolidates instead.</description>
+A Hit &amp; Run move is not slowed by difficult terrain, but takes Dangerous Terrain tests as normal. It may not be used to move into base or hull contact with enemy units, and models instead stop 1&quot; away. If there are units with this rule on both sides who wish to disengage, roll-off to determine who goes first and then alternate disengaging them. If the last of these ends up no longer in combat, it Consolidates instead.</description>
     </rule>
     <rule id="d219-2314-4834-c054" name="Deep Strike" book="BRB 7th" hidden="false">
       <profiles/>
@@ -15196,7 +15784,7 @@ Deep Strike and Transports
 Units do not confer the Deep Strike special rule onto a Transport vehicle they are embarked inside. A Transport vehicle with Deep Strike may Deep Strike regardless of whether its passengers have Deep Strike or not.
 
 Deep Strike Mishaps
-Deep Striking onto a crowded battlefield can be dangerous, as one may miss the intended objective or even materialise inside solid rock! If any of the models in a Deep Striking unit cannot be deployed, because at least one model would land partially or fully off the table, in impassable terrain, on top of a friendly model, or on top of or within 1" of an enemy model, something has gone wrong. The controlling player must roll on the Deep Strike Mishap table and apply the results. If the unfortunate unit is also a Transport, the Deep Strike Mishap result applies to both the unit and anything embarked within it.
+Deep Striking onto a crowded battlefield can be dangerous, as one may miss the intended objective or even materialise inside solid rock! If any of the models in a Deep Striking unit cannot be deployed, because at least one model would land partially or fully off the table, in impassable terrain, on top of a friendly model, or on top of or within 1&quot; of an enemy model, something has gone wrong. The controlling player must roll on the Deep Strike Mishap table and apply the results. If the unfortunate unit is also a Transport, the Deep Strike Mishap result applies to both the unit and anything embarked within it.
 
 
 Deep Strike Mishap Table
@@ -15292,7 +15880,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
       <modifiers/>
       <description>Units that contain at least one model with this special rule are deployed last, after all other units (friend and foe) have been deployed. If both sides have Infiltrators, the players roll-off and the winner decides who goes first, then alternate deploying these units.
 
-Infiltrators can be set up anywhere on the table that is more than 12" from any enemy unit, as long as no deployed enemy unit can draw line of sight to them. This includes in a building, as long as the building is more than 12" from any enemy unit. Alternatively, they can be set up anywhere on the table more than 18" from any enemy unit, even in plain sight.
+Infiltrators can be set up anywhere on the table that is more than 12&quot; from any enemy unit, as long as no deployed enemy unit can draw line of sight to them. This includes in a building, as long as the building is more than 12&quot; from any enemy unit. Alternatively, they can be set up anywhere on the table more than 18&quot; from any enemy unit, even in plain sight.
 
 If a unit with Infiltrate deploys inside a Dedicated Transport, they may Infiltrate along with their Transport. 
 
@@ -15460,7 +16048,7 @@ If, when charged, the unit was already locked in combat, the Counter-attack spec
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>All friendly Mechanicum units within 24" are Fearless</description>
+      <description>All friendly Mechanicum units within 24&quot; are Fearless</description>
     </rule>
     <rule id="e64b-54b8-34df-2f13" name="Primary Weapon" book="BRB 7th" hidden="false">
       <profiles/>
@@ -15543,7 +16131,7 @@ If a weapon has both the Melta and Blast special rules, measure the distance to 
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>Succesful cover saves against this weapon's attacks must be re-rolled.  </description>
+      <description>Succesful cover saves against this weapon&apos;s attacks must be re-rolled.  </description>
     </rule>
     <rule id="f4f1-8772-1a1b-4f50" name="Fast" book="BRB 7th" hidden="false">
       <profiles/>
@@ -15551,7 +16139,7 @@ If a weapon has both the Melta and Blast special rules, measure the distance to 
       <infoLinks/>
       <modifiers/>
       <description>MOVING FAST VEHICLES
-Fast vehicles are swifter than the norm so, to represent this, can move up to 12" when moving Flat Out.
+Fast vehicles are swifter than the norm so, to represent this, can move up to 12&quot; when moving Flat Out.
 
 SHOOTING WITH FAST VEHICLES
 Fast vehicles that moved at Combat Speed in the preceding Movement phase can fire all of their weapons, just like other types of vehicles that have remained Stationary. Fast vehicles that moved at Cruising Speed can fire up to two weapons using their full Ballistic Skill – other weapons can only make Snap Shots.</description>
@@ -15603,11 +16191,11 @@ Fast vehicles that moved at Combat Speed in the preceding Movement phase can fir
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>Unless within range of a friendly model from the same detachment equipped with a Cortex Controller at the start of the controlling player's turn, the following restrictions are placed on the unit's use in that game turn.  These do not apply if the chosen model is already locked in assault.  
+      <description>Unless within range of a friendly model from the same detachment equipped with a Cortex Controller at the start of the controlling player&apos;s turn, the following restrictions are placed on the unit&apos;s use in that game turn.  These do not apply if the chosen model is already locked in assault.  
 
 - Methodical: May not make Sweeping Advances or Run moves
-- Target Priority: If enemy models are within 12" and line of sight during their shooting phase, the unit must fire all its weapons against the closest enemy unit it is able to harm.  If this is not the case, they are free to select targets as normal.
-- Onslaught: If enemy units are within 12" during their Assault phase, they must attempt to charge the closest enemy unit if able.  May still only charge a unit fired upon.  If consolidating, must consolidate towards the closest enemy if within 12"</description>
+- Target Priority: If enemy models are within 12&quot; and line of sight during their shooting phase, the unit must fire all its weapons against the closest enemy unit it is able to harm.  If this is not the case, they are free to select targets as normal.
+- Onslaught: If enemy units are within 12&quot; during their Assault phase, they must attempt to charge the closest enemy unit if able.  May still only charge a unit fired upon.  If consolidating, must consolidate towards the closest enemy if within 12&quot;</description>
     </rule>
     <rule id="7dae-4d12-baba-e529" name="Blind" book="BRB 7th" hidden="false">
       <profiles/>
@@ -15641,7 +16229,7 @@ If a model has the ability to re-roll its rolls To Hit (including because of BS6
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>Adds +1 to the model's attacks and count as being Twin-linked. </description>
+      <description>Adds +1 to the model&apos;s attacks and count as being Twin-linked. </description>
     </rule>
     <rule id="10a8-8d89-0bec-3e21" name="Twin-linked" book="BRB 7th" hidden="false">
       <profiles/>
@@ -15677,14 +16265,14 @@ In either case, against vehicles, each armour penetration roll of 6 allows a fur
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>When losing its final wound, roll a D6.  On the result of a 6, the model explodes, inflicting a Str 4 AP - hit on all models within D6"</description>
+      <description>When losing its final wound, roll a D6.  On the result of a 6, the model explodes, inflicting a Str 4 AP - hit on all models within D6&quot;</description>
     </rule>
     <rule id="9b30-1da3-eb8d-ce7a" name="Scout" book="BRB 7th" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>After both sides have deployed (including Infiltrators), but before the first player begins his first turn, a unit containing at least one model with this special rule can choose to redeploy. If the unit is Infantry, Artillery, a Walker or a Monstrous Creature, each model can redeploy anywhere entirely within 6" of its current position. If it is any other unit type, each model can instead redeploy anywhere entirely within 12" of its current position. During this redeployment, Scouts can move outside the owning player’s deployment zone, but must remain more than 12" away from any enemy unit. A unit that makes a Scout redeployment cannot charge in the first game turn. A unit cannot embark or disembark as part of a Scout redeployment.
+      <description>After both sides have deployed (including Infiltrators), but before the first player begins his first turn, a unit containing at least one model with this special rule can choose to redeploy. If the unit is Infantry, Artillery, a Walker or a Monstrous Creature, each model can redeploy anywhere entirely within 6&quot; of its current position. If it is any other unit type, each model can instead redeploy anywhere entirely within 12&quot; of its current position. During this redeployment, Scouts can move outside the owning player’s deployment zone, but must remain more than 12&quot; away from any enemy unit. A unit that makes a Scout redeployment cannot charge in the first game turn. A unit cannot embark or disembark as part of a Scout redeployment.
 If both sides have Scouts, roll-off; the winner decides who redeploys first. Then alternate redeploying Scout units.
 If a unit with this special rule is deployed inside a Dedicated Transport, it confers the Scout special rule to the Transport (though a disembarkation cannot be performed as part of the redeployment). Note that a Transport with this special rule does not lose it if a unit without this special rule is embarked upon it. Having Scout also confers the Outflank special rule to units of Scouts that are kept as Reserves.
 
@@ -15856,14 +16444,14 @@ When using its jump pack (whether moving, charging or Falling Back, as we’ll d
 Jump models cannot end their move on top of other models and can only end their move on top of impassable terrain if it is actually possible to place the models on top of it. If they do this, however, they treat the impassable terrain as dangerous terrain.
 
 MOVEMENT PHASE
-If a Jump model uses its jump pack (or equivalent) in the Movement phase, it can move up to 12".
+If a Jump model uses its jump pack (or equivalent) in the Movement phase, it can move up to 12&quot;.
 
 ASSAULT PHASE
 If a Jump model uses its jump pack to charge into assault, it can re-roll its charge distance.
 Furthermore, to represent the crushing impact of such a charge, a model that uses its jump pack to charge gains the Hammer of Wrath special rule for the remainder of the turn.
 
 FALL BACK MOVES
-Jump units always use their jump packs when Falling Back, and their Fall Back moves are 3D6", even if they already used their jump pack to move that turn.
+Jump units always use their jump packs when Falling Back, and their Fall Back moves are 3D6&quot;, even if they already used their jump pack to move that turn.
 
 SPECIAL RULES
 Jump units have the Bulky and Deep Strike special rules.</description>
@@ -15955,7 +16543,7 @@ D6 - Result
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>A flare shield operates against shooting attacks that strike the vehicle's front arc.  It reduces the strength of attacks by weapons with the Templae or Blast type by -2, and other shooting attacks by -1.  A flare shield has no effect on attacks from close combat or with the Destroyer rule.</description>
+      <description>A flare shield operates against shooting attacks that strike the vehicle&apos;s front arc.  It reduces the strength of attacks by weapons with the Templae or Blast type by -2, and other shooting attacks by -1.  A flare shield has no effect on attacks from close combat or with the Destroyer rule.</description>
     </rule>
     <rule id="a080-af1b-fb2e-4860" name="Precision Strikes" book="BRB 7th" hidden="false">
       <profiles/>
@@ -16032,7 +16620,7 @@ Cover save bonuses from the Shrouded and Stealth special rules are cumulative (t
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>A Supersonic vehicle that moves Flat Out must move at least 18" and can move up to 36".</description>
+      <description>A Supersonic vehicle that moves Flat Out must move at least 18&quot; and can move up to 36&quot;.</description>
     </rule>
     <rule id="3e0b-be9f-b7eb-8c5e" name="Eternal Warrior" book="BRB 7th" hidden="false">
       <profiles/>
@@ -16061,7 +16649,7 @@ Cover save bonuses from the Shrouded and Stealth special rules are cumulative (t
       <infoLinks/>
       <modifiers/>
       <description>If enemy inflicts a Penetrating hit against the Sicarian Venator, they may re-roll a result of a 1 on the Vehicle Damage table.
-Explodes results add D3" to radius.  </description>
+Explodes results add D3&quot; to radius.  </description>
     </rule>
     <rule id="e15d-1437-cfb2-b8dd" name="Acute Senses" book="BRB" hidden="false">
       <profiles/>
@@ -16121,7 +16709,7 @@ If this unit suffers Perils of the Warp, or is hit by an attack that specificall
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>If a weapon has a D instead of a Strength value in its profile, it is a Destroyer weapon. To resolve a Destroyer weapon's attack, roll To Hit as you would for a standard attack. If the attack hits, roll on the table instead of rolling To Wound or for armour penetration. Most Destroyer Weapons have AP1 or AP2, so armour saves are not typically allowed. Cover saves and invulnerable saves can be taken against hits from a Destroyer weapon as normal, unless a Devastating Hit or Deathblow result is rolled. For the purposes of determining if a Destroyer hit has the Instant Death special rule, assume it has Strength 10. Multiple Wounds/Hull Points inflicted by a Destroyer hit do not carry over to other models in the unit (any excess are lost).
+      <description>If a weapon has a D instead of a Strength value in its profile, it is a Destroyer weapon. To resolve a Destroyer weapon&apos;s attack, roll To Hit as you would for a standard attack. If the attack hits, roll on the table instead of rolling To Wound or for armour penetration. Most Destroyer Weapons have AP1 or AP2, so armour saves are not typically allowed. Cover saves and invulnerable saves can be taken against hits from a Destroyer weapon as normal, unless a Devastating Hit or Deathblow result is rolled. For the purposes of determining if a Destroyer hit has the Instant Death special rule, assume it has Strength 10. Multiple Wounds/Hull Points inflicted by a Destroyer hit do not carry over to other models in the unit (any excess are lost).
 
 D Weapon Attack Table: D6 Roll
 
@@ -16138,7 +16726,7 @@ D Weapon Attack Table: D6 Roll
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>The range of any ranged weapons fired by this model is increased by half. For example, this model could fire a boltgun (Range 24") up to 36" instead. This increased range also affects Rapid Fire and Melta distances, but has no effect on Template weapons.</description>
+      <description>The range of any ranged weapons fired by this model is increased by half. For example, this model could fire a boltgun (Range 24&quot;) up to 36&quot; instead. This increased range also affects Rapid Fire and Melta distances, but has no effect on Template weapons.</description>
     </rule>
     <rule id="2053-118c-c2b7-c8ac" name="Executioner" hidden="false">
       <profiles/>
@@ -16169,14 +16757,14 @@ D Weapon Attack Table: D6 Roll
       <description>Any Psyker that has one or more weapons with this special rule knows the Force psychic power in addition to any other powers they know.
 
 Force - Warp Charge 1
-Force is a blessing psychic power that targets the Psyker and his unit. All of the targets' weapons that have the Force special rule gain the Instant Death special rule until the start of your next Psychic phase.</description>
+Force is a blessing psychic power that targets the Psyker and his unit. All of the targets&apos; weapons that have the Force special rule gain the Instant Death special rule until the start of your next Psychic phase.</description>
     </rule>
     <rule id="57a3-2add-b379-0bb5" name="Fuel Siphon" book="Stronghold Assault" page="" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>Any flamer weapon fired by a non-vehicle model within 2" of a Promethium Relay Pipe in the shooting phase can change its weapon type from Assault to Heavy, or from Pistol to Heavy. If it does so, the weapon gains the Torrent special rule until the end of that phase.</description>
+      <description>Any flamer weapon fired by a non-vehicle model within 2&quot; of a Promethium Relay Pipe in the shooting phase can change its weapon type from Assault to Heavy, or from Pistol to Heavy. If it does so, the weapon gains the Torrent special rule until the end of that phase.</description>
     </rule>
     <rule id="8c62-54ee-2b8d-bdce" name="Fully Automated" book="Stronghold Assault" page="" hidden="false">
       <profiles/>
@@ -16273,7 +16861,7 @@ D6 Result
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>A model with this special rule re-rolls failed To Hit rolls when shooting any weapon that has the One Use Only special rule. If a model with this special rule is shooting a weapon that has both the One Use Only and Blast special rules, that shot will instead scatter D6" rather than 2D6".</description>
+      <description>A model with this special rule re-rolls failed To Hit rolls when shooting any weapon that has the One Use Only special rule. If a model with this special rule is shooting a weapon that has both the One Use Only and Blast special rules, that shot will instead scatter D6&quot; rather than 2D6&quot;.</description>
     </rule>
     <rule id="93c5-dcdd-af20-413e" name="Monster Hunter" book="BRB" hidden="false">
       <profiles/>
@@ -16308,7 +16896,7 @@ D6 Result
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>If an arrow is rolled on the scatter dice when firing a weapon that has this special rule, the shot always scatters the full 2D6" regardless of the firing model's Ballistic Skill.  In addition, firing an Ordnance weapon that has this special rule does not prevent the firing model from declaring a charge against the target unit in the same turn.</description>
+      <description>If an arrow is rolled on the scatter dice when firing a weapon that has this special rule, the shot always scatters the full 2D6&quot; regardless of the firing model&apos;s Ballistic Skill.  In addition, firing an Ordnance weapon that has this special rule does not prevent the firing model from declaring a charge against the target unit in the same turn.</description>
     </rule>
     <rule id="a5ff-1cb1-bee4-d809" name="Poisoned" book="BRB" hidden="false">
       <profiles/>
@@ -16364,7 +16952,7 @@ D6 Result
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>All models from the armies of the Imerium (e.g. Imperial Guard, Sisters of Battle, all Chapters of Space Marines etc.) have the Stubborn special rule whist within 2" of Imperial Rubble</description>
+      <description>All models from the armies of the Imerium (e.g. Imperial Guard, Sisters of Battle, all Chapters of Space Marines etc.) have the Stubborn special rule whist within 2&quot; of Imperial Rubble</description>
     </rule>
     <rule id="dfe1-2bfb-7c50-092f" name="Sharpshooter" hidden="false">
       <profiles/>
@@ -16408,7 +16996,7 @@ At the end of each turn, roll a D6 for each unit with a Soul Blaze counter on it
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>Super-heavy walkers or Gargantuan Creatures engageed in combat may make a special type of attack called a Stomp attack.  The Stomp attack is made in addition to the Super-heavy Walker's normal attacks. Stomp attacks are resolved during the Fight sub-phase at the Initiative 1 step.  This does not grant the model an additional Pile In move at the Initiative 1 step.
+      <description>Super-heavy walkers or Gargantuan Creatures engageed in combat may make a special type of attack called a Stomp attack.  The Stomp attack is made in addition to the Super-heavy Walker&apos;s normal attacks. Stomp attacks are resolved during the Fight sub-phase at the Initiative 1 step.  This does not grant the model an additional Pile In move at the Initiative 1 step.
 
 A Stomp attack consists of D3 Stomps.  Buildings, Flyers, Swooping Flying Monstrous Creatures, Gargantuan Creatures, Flying Gargantuan Creatures, Super-heavy Vehicles, Super-heavy Walkers, and Super-heavy Flyers cannot be stomped; do not roll on the Stomp table for them if they fall under the blast marker.  Any other units with models under the blast marker are stomped as normal.</description>
     </rule>
@@ -16424,8 +17012,8 @@ A Stomp attack consists of D3 Stomps.  Buildings, Flyers, Swooping Flying Monstr
 
 Vehicle: 
 1: No Effect
-2-5: One vehicle in the unit being stomped that is even partially under the blast marker (stomping model's choice) suffers a penetrating hit.
-6: One vehicle in the unit being stomped that is even partially under the blast marker (stomping model's choice) scatters D6" and then suffers an Explodes! result.</description>
+2-5: One vehicle in the unit being stomped that is even partially under the blast marker (stomping model&apos;s choice) suffers a penetrating hit.
+6: One vehicle in the unit being stomped that is even partially under the blast marker (stomping model&apos;s choice) scatters D6&quot; and then suffers an Explodes! result.</description>
     </rule>
     <rule id="f14f-8413-de9b-ed19" name="Super-Heavy Vehicle" book="BRB" hidden="false">
       <profiles/>
@@ -16483,14 +17071,14 @@ Do not roll on the Thunderblitz table when Tank Shocking a Gargantuan Creature o
 Ram: 
 1: No Effect. Then, Carry on with the Ram as normal.
 2-5:  The Super-heavy vehicle adds D6 to the armour penetration roll for the Ram. Then, Carry on with the Ram as normal.
-6: The vehicle being rammed scatters D6" and then suffers an Explodes! result from the Vehicle Damage Table.</description>
+6: The vehicle being rammed scatters D6&quot; and then suffers an Explodes! result from the Vehicle Damage Table.</description>
     </rule>
     <rule id="5039-18f0-a9ed-0938" name="Torrent" book="BRB" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>A weapon with this special rule is treated like any other Template weapon, but when firing it in the Shooting phase, place the template so that the narrow end is within 12" of the weaon and the wide end is no closer to the weapon than the narrow end.</description>
+      <description>A weapon with this special rule is treated like any other Template weapon, but when firing it in the Shooting phase, place the template so that the narrow end is within 12&quot; of the weaon and the wide end is no closer to the weapon than the narrow end.</description>
     </rule>
     <rule id="b11c-0ef4-af6b-d96f" name="Two-Handed" book="BRB" hidden="false">
       <profiles/>
@@ -16506,7 +17094,7 @@ Ram:
       <modifiers/>
       <description>Any attack that normally inflicts Instant Death or says that the target model is removed from play inflicts D3 Wounds on a Gargantuan Creature of Flying Gargantuan Creature instead.
 
-In addition, attacks with the Sniper special rule only cause a Wound on a roll of a 6.  Attacks with the Poisoned special rule only cause a Wound on a roll of a 6 (unless the attack's Strength would cause a Wound on a lower result)</description>
+In addition, attacks with the Sniper special rule only cause a Wound on a roll of a 6.  Attacks with the Poisoned special rule only cause a Wound on a roll of a 6 (unless the attack&apos;s Strength would cause a Wound on a lower result)</description>
     </rule>
     <rule id="78a5-e7d1-89b3-2fb5" name="Vector Dancer" book="BRB" hidden="false">
       <profiles/>
@@ -16520,7 +17108,7 @@ In addition, attacks with the Sniper special rule only cause a Wound on a roll o
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>When Swooping or Zooming, this model may savage its prey. At the end of the Movement phase, nominate one enemy unit not locked in combat that the model has moved over that turn. That unit takes 1 hit (if the unit is an enemy Flyer in Zoom mode, or an enemy Swooping Flying Monstrous Creature, it instead takes D3 hits). Unless stated otherwise, Vector Strike hits are resolved at the model’s unmodified Strength and AP2, using Random Allocation. These hits have the Ignores Cover special rule. These hits do not benefit from any of the model’s special rules, such as Furious Charge, Poisoned, Rending etc. Against vehicles, these hits are resolved against the target's side armour.
+      <description>When Swooping or Zooming, this model may savage its prey. At the end of the Movement phase, nominate one enemy unit not locked in combat that the model has moved over that turn. That unit takes 1 hit (if the unit is an enemy Flyer in Zoom mode, or an enemy Swooping Flying Monstrous Creature, it instead takes D3 hits). Unless stated otherwise, Vector Strike hits are resolved at the model’s unmodified Strength and AP2, using Random Allocation. These hits have the Ignores Cover special rule. These hits do not benefit from any of the model’s special rules, such as Furious Charge, Poisoned, Rending etc. Against vehicles, these hits are resolved against the target&apos;s side armour.
 
 A model that made a Vector Strike in its Movement phase counts as having already fired one weapon in its following Shooting phase. However, any additional weapons it fires that turn can choose a different target to that of the Vector Strike.</description>
     </rule>
@@ -16529,7 +17117,7 @@ A model that made a Vector Strike in its Movement phase counts as having already
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>Up to six occupying models can fire out of each of this building's fire points.</description>
+      <description>Up to six occupying models can fire out of each of this building&apos;s fire points.</description>
     </rule>
     <rule id="3d3c-398b-775d-72ff" name="Vortex" book="BRB" hidden="false">
       <profiles/>
@@ -16540,7 +17128,7 @@ A model that made a Vector Strike in its Movement phase counts as having already
 
 The marker for a Vortex weapon is not removed from play after damage has been resolved. Leave it in play on the tabletop. The marker is impassable terrain as long as it remains in play.
 
-At the beginning of every subsequent player turn, the marker scatters 2D6" (use the little arrow if you roll a Hit!). If a double is rolled, the marker is removed from play instead. Any unit under the marker’s new location is hit. Apply damage as described above.</description>
+At the beginning of every subsequent player turn, the marker scatters 2D6&quot; (use the little arrow if you roll a Hit!). If a double is rolled, the marker is removed from play instead. Any unit under the marker’s new location is hit. Apply damage as described above.</description>
     </rule>
     <rule id="146b-5651-feff-cf72" name="Warrior Adept" hidden="false">
       <profiles/>
@@ -16554,7 +17142,7 @@ At the beginning of every subsequent player turn, the marker scatters 2D6" (use 
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>Up to four occupying models can fire out of each of this building's fire points.</description>
+      <description>Up to four occupying models can fire out of each of this building&apos;s fire points.</description>
     </rule>
     <rule id="8914-9219-49de-f92b" name="Wing Leader" book="Death from the Skies" hidden="false">
       <profiles/>
@@ -16568,7 +17156,7 @@ At the beginning of every subsequent player turn, the marker scatters 2D6" (use 
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>Any of the fortification's emplaced weapons can be fired (using either automated or manual fire) by models occupying the main tower, even if the building housing the emplaced weapons itself is unoccupied.  This rule cannot be used to fire emplaced weapons on any part of the fortification occupied by an enemy unit.</description>
+      <description>Any of the fortification&apos;s emplaced weapons can be fired (using either automated or manual fire) by models occupying the main tower, even if the building housing the emplaced weapons itself is unoccupied.  This rule cannot be used to fire emplaced weapons on any part of the fortification occupied by an enemy unit.</description>
     </rule>
     <rule id="c49d-a848-144a-14d6" name="Battle-automata power blades" hidden="false">
       <profiles/>
@@ -16582,7 +17170,7 @@ At the beginning of every subsequent player turn, the marker scatters 2D6" (use 
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>Enemy units within 12" reduce their cover saves by -1 when fired at by units in the same detachment as the Cyber-occularis</description>
+      <description>Enemy units within 12&quot; reduce their cover saves by -1 when fired at by units in the same detachment as the Cyber-occularis</description>
     </rule>
     <rule id="9edbc777-7d2b-011b-7488-335b14870be5" name="Battlesmith" book="HH:LACAL" page="81" hidden="false">
       <profiles/>
@@ -16602,7 +17190,7 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>If the Knight chooses to Run instead of firing a weapon in the shooting phase, may move 3D6"</description>
+      <description>If the Knight chooses to Run instead of firing a weapon in the shooting phase, may move 3D6&quot;</description>
     </rule>
     <rule id="d169-a0dc-6155-c754" name="Household Rank" book="HH4: Conquest" page="301" hidden="false">
       <profiles/>
@@ -16623,7 +17211,7 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>Confers Interceptor to all friendly models within the same detachment 3"</description>
+      <description>Confers Interceptor to all friendly models within the same detachment 3&quot;</description>
     </rule>
     <rule id="333c-a3b2-4353-f484" name="Macro-extinction Targeting Protocols" book="HH6: Retibution" page="279" hidden="false">
       <profiles/>
@@ -16637,8 +17225,8 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>When a Cerastus Knight-Atrapos is deployed, and subsequently at the start of each of the opposing side's Shooting phases, the Cerastus
-Knight-Atrapos' controlling player must declare which facing each Cerastus Knight-Atrapos' ion flare shield is covering. The choices are front, left side, right side or rear. The Knight has a 4+ invulnerable save against all hits against the shield facing and the strength of any 
+      <description>When a Cerastus Knight-Atrapos is deployed, and subsequently at the start of each of the opposing side&apos;s Shooting phases, the Cerastus
+Knight-Atrapos&apos; controlling player must declare which facing each Cerastus Knight-Atrapos&apos; ion flare shield is covering. The choices are front, left side, right side or rear. The Knight has a 4+ invulnerable save against all hits against the shield facing and the strength of any 
 Shooting attack against the shield facing is reduced by -1, the effect increasing to -2 if the weapon has the Blast or Template special rules (note however that this strength reduction has no effect on Destroyer or Haywire attacks). Ionic flare shields are repositioned before any attacks are carried out in the Shooting phase and may not be used to make 	saving throws against close combat attacks.</description>
     </rule>
     <rule id="81fe-8580-34f6-28ae" name="Catastrophic Destruction" book="HH6: Retibution" page="279" hidden="false">
@@ -17798,7 +18386,7 @@ Shooting attack against the shield facing is reduced by -1, the effect increasin
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="A vehicle with an auxiliary drive may repair Immobilised results it suffers on a D6 roll of 4+ at the start of the controlling player's Movement phase."/>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="A vehicle with an auxiliary drive may repair Immobilised results it suffers on a D6 roll of 4+ at the start of the controlling player&apos;s Movement phase."/>
       </characteristics>
     </profile>
     <profile id="35a2-2083-1522-cd61" name="Dozer Blade" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
@@ -18293,7 +18881,7 @@ Shooting attack against the shield facing is reduced by -1, the effect increasin
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Each hit scored against the model will instead hit a void shield (whilst they remain). Close combat attacks come from inside the shield and therefore are not stopped. Void shields have an Armour Value of 12. A glancing or penetrating hit (or any hit from a Destroyer weapon) scored against a void shield causes it to collapse. After all the void shields have collapsed, further hits strike the model instead. At the end of each of the controlling player's turns, roll one dice for each collapsed void  shield: each roll of 5+ instantly restores one collapsed shield.  If a weapon uses a template or blast marker and it hits one or more units protected by a Void Shield Zone, ignore the number of hits it would normally cause to the units &amp; instead roll to pen the void shield once using the weapons normal rules &amp; profile for each template or blast marker that hits."/>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Each hit scored against the model will instead hit a void shield (whilst they remain). Close combat attacks come from inside the shield and therefore are not stopped. Void shields have an Armour Value of 12. A glancing or penetrating hit (or any hit from a Destroyer weapon) scored against a void shield causes it to collapse. After all the void shields have collapsed, further hits strike the model instead. At the end of each of the controlling player&apos;s turns, roll one dice for each collapsed void  shield: each roll of 5+ instantly restores one collapsed shield.  If a weapon uses a template or blast marker and it hits one or more units protected by a Void Shield Zone, ignore the number of hits it would normally cause to the units &amp; instead roll to pen the void shield once using the weapons normal rules &amp; profile for each template or blast marker that hits."/>
       </characteristics>
     </profile>
     <profile id="57e2-2b5e-5b21-32e8" name="Vortex Missile Battery" book="Planetary Onslaught" page="111" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
@@ -18458,7 +19046,7 @@ Shooting attack against the shield facing is reduced by -1, the effect increasin
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="When deployed, and at the start of each subsequent opposing side's shooting phase, the Knight's controlling player must declare a facing for the ion shield.  Choices are front, left, right, or rear.    The Knight has a 4+ invulnerable save  against all hits on that facing until the start of the opposing side's next shooting phase.  Ion shields are repositioned before any attacks are carried out and may not protect against close combat attacks.  "/>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="When deployed, and at the start of each subsequent opposing side&apos;s shooting phase, the Knight&apos;s controlling player must declare a facing for the ion shield.  Choices are front, left, right, or rear.    The Knight has a 4+ invulnerable save  against all hits on that facing until the start of the opposing side&apos;s next shooting phase.  Ion shields are repositioned before any attacks are carried out and may not protect against close combat attacks.  "/>
       </characteristics>
     </profile>
     <profile id="76f43c9f-9d2b-e019-63db-3ac3082ee07c" name="Ionic Flare Shield" book="HH4: Conquest" page="303" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
@@ -18467,7 +19055,7 @@ Shooting attack against the shield facing is reduced by -1, the effect increasin
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="When deployed, and at the start of each subsequent opposing side's shooting phase, the Knight's controlling player must declare a facing for the ionic flare shield.  Choices are front, left, right, or rear.    The Knight has a 4+ invulnerable save  against all hits on that facing until the start of the opposing side's next shooting phase.  The strength of any shooting attack is reduced by -1, increasing to -2 if the weapon has the blast or template rule.  This does not effect Destroyer or Haywire attacks.  Ionic flare shields are repositioned before any attacks are carried out and may not protect against close combat attacks.  "/>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="When deployed, and at the start of each subsequent opposing side&apos;s shooting phase, the Knight&apos;s controlling player must declare a facing for the ionic flare shield.  Choices are front, left, right, or rear.    The Knight has a 4+ invulnerable save  against all hits on that facing until the start of the opposing side&apos;s next shooting phase.  The strength of any shooting attack is reduced by -1, increasing to -2 if the weapon has the blast or template rule.  This does not effect Destroyer or Haywire attacks.  Ionic flare shields are repositioned before any attacks are carried out and may not protect against close combat attacks.  "/>
       </characteristics>
     </profile>
     <profile id="7d03914a-f940-12e5-590b-822083dff647" name="Irad-cleanser" book="HH1: Betrayal" page="240" hidden="false" profileTypeId="576561706f6e23232344415441232323">
