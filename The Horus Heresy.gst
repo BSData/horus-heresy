@@ -8134,32 +8134,6 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4014-7d86-22e9-5d96" name="Legiones Astartes" hidden="false" collective="false" type="upgrade">
-      <profiles/>
-      <rules>
-        <rule id="31b1-4bb2-e8c5-8fe8" name="Legiones Astartes" book="HH:LACAL" page="80" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>- Units with this special rules may always attempt to regroup regardless of casualties.
-- Additional rules conferred by Legiones Astartes (____)</description>
-        </rule>
-      </rules>
-      <infoLinks/>
-      <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9d6-adae-28c0-2c91" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edc3-4e6b-3713-c070" type="min"/>
-      </constraints>
-      <categoryLinks/>
-      <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="fe1a-7320-4d5b-c910" name="Praetor/Cent" hidden="true" collective="false" type="upgrade">
       <profiles/>
       <rules/>
