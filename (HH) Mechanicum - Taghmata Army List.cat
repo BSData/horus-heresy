@@ -233,6 +233,27 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
+    <categoryEntry id="896b-3586-a126-d985" name="Super Heavy Walker" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="8d56-b8fc-9b94-9cc9" name="Super Heavy Tank" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="121d-dc17-273c-40d0" name="Titan" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="0cb5-a583-e14f-2231" name="Matrix of Ruin" hidden="false">
@@ -2749,6 +2770,22 @@
       <constraints/>
       <categoryLinks>
         <categoryLink id="5f48-7dcb-c1cc-402a" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5b71-fda2-1726-b263" name="Engines of Destruction" hidden="false" targetId="91f0-3f18-50b7-ed4e" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="3bab-4c28-ca34-3ff3" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -8269,6 +8306,13 @@
       <constraints/>
       <categoryLinks>
         <categoryLink id="7cdb-8db0-bfd6-ce3c-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="c289-ed7e-c4ea-bfe0" name="New CategoryLink" hidden="false" targetId="8d56-b8fc-9b94-9cc9" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -21596,12 +21640,14 @@
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="91f0-3f18-50b7-ed4e" name="Engines of Destruction" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="91f0-3f18-50b7-ed4e" name="Engines of Destruction" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <constraints/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0cd3-e53a-514d-b271" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="944d-490d-4369-623c" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true">
           <profiles/>
@@ -21620,7 +21666,22 @@
           <infoLinks/>
           <modifiers/>
           <constraints/>
-          <categoryLinks/>
+          <categoryLinks>
+            <categoryLink id="0544-ff69-00fc-4359" name="New CategoryLink" hidden="false" targetId="896b-3586-a126-d985" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="f0ed-ffd9-1a34-da10" name="New CategoryLink" hidden="false" targetId="121d-dc17-273c-40d0" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
         </entryLink>
         <entryLink id="be60-2292-b519-4e32" name="Legio Titanicus Warlord Battle Titan" hidden="false" targetId="ab80-0fef-3e93-8e64" type="selectionEntry">
           <profiles/>
@@ -21628,7 +21689,22 @@
           <infoLinks/>
           <modifiers/>
           <constraints/>
-          <categoryLinks/>
+          <categoryLinks>
+            <categoryLink id="c4fd-b09c-a062-ed96" name="New CategoryLink" hidden="false" targetId="896b-3586-a126-d985" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="2c25-807a-6871-d41d" name="New CategoryLink" hidden="false" targetId="121d-dc17-273c-40d0" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
         </entryLink>
         <entryLink id="fa43-23b8-15ad-aec4" name="Legio Titanicus Warhound Scout Titan" hidden="false" targetId="b894-adfc-6d3d-fde4" type="selectionEntry">
           <profiles/>
@@ -21636,7 +21712,22 @@
           <infoLinks/>
           <modifiers/>
           <constraints/>
-          <categoryLinks/>
+          <categoryLinks>
+            <categoryLink id="784b-a14b-ae8a-6d61" name="New CategoryLink" hidden="false" targetId="896b-3586-a126-d985" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="e95d-2121-ca81-5424" name="New CategoryLink" hidden="false" targetId="121d-dc17-273c-40d0" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
         </entryLink>
         <entryLink id="7eb7-52d9-e828-45ea" name="Warlord-Sinister Pattern Battle Psi-Titan" hidden="true" targetId="fb92-d215-2011-f911" type="selectionEntry">
           <profiles/>
@@ -21651,6 +21742,29 @@
               <conditionGroups/>
             </modifier>
           </modifiers>
+          <constraints/>
+          <categoryLinks>
+            <categoryLink id="dacc-ebb0-2825-c5af" name="New CategoryLink" hidden="false" targetId="896b-3586-a126-d985" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+            <categoryLink id="168f-6e40-6319-c30e" name="New CategoryLink" hidden="false" targetId="121d-dc17-273c-40d0" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="6bde-f954-83f2-5a12" name="Ordinatus Minoris Macro Engine" hidden="false" targetId="7cdb-8db0-bfd6-ce3c" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
           <constraints/>
           <categoryLinks/>
         </entryLink>
