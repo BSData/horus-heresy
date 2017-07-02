@@ -2292,11 +2292,19 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="e755-bf80-490e-2022" name="Navigator" hidden="false" targetId="00f3-1eed-88ff-5c46" type="selectionEntry">
+    <entryLink id="e755-bf80-490e-2022" name="Navigator" hidden="true" targetId="00f3-1eed-88ff-5c46" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a735-9091-b1d2-02d8" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints/>
       <categoryLinks>
         <categoryLink id="8326-e279-77d4-64d0" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true">
@@ -2656,11 +2664,19 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="2e8651d2-f46c-04ae-9a4a-c9de33605496" name="Magos Reductor Calleb Decima" hidden="false" targetId="a087-30ae-b858-1c8e" type="selectionEntry">
+    <entryLink id="2e8651d2-f46c-04ae-9a4a-c9de33605496" name="Magos Reductor Calleb Decima" hidden="true" targetId="a087-30ae-b858-1c8e" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a735-9091-b1d2-02d8" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints/>
       <categoryLinks>
         <categoryLink id="96c4-8f3e-5c61-53d1" name="New CategoryLink" hidden="false" targetId="becd-7a6d-e80f-878e" primary="false">
@@ -16099,44 +16115,24 @@
                 <cost name="pts" costTypeId="points" value="25.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9d44-5977-43ea-9c65" name="Conversion Beamer" book="HH:LACAL" page="0" hidden="false" collective="false" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks>
-                <infoLink id="1414-eff5-688c-39cd" hidden="false" targetId="0ae81fbd-a9d1-4327-f3df-1fc26dce2ab1" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-                <infoLink id="6965-fc8e-7ed1-c026" hidden="false" targetId="bf49e57d-4c20-456e-40fc-2325493da257" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-                <infoLink id="dc14-ea1f-ad8e-d66c" hidden="false" targetId="b2930d75-e708-3443-a9ba-fbba33fdf5a7" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="626d-ad12-d742-360f" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="25.0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
-          <entryLinks/>
+          <entryLinks>
+            <entryLink id="9d44-5977-43ea-9c65" name="Conversion Beamer" hidden="false" targetId="56fc88c5-200c-7d1b-dc29-64471bbf63bf" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="points" value="25">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="d70a-ccf8-c7eb-0a4a" name="May take any of the following:" hidden="false" collective="false">
           <profiles/>
@@ -18342,41 +18338,6 @@
                 <cost name="pts" costTypeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="dbf2-a20c-2c5a-f821" name="Conversion Beamer" book="HH:LACAL" page="0" hidden="false" collective="false" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks>
-                <infoLink id="e7bf-e49d-d085-5bdf" hidden="false" targetId="0ae81fbd-a9d1-4327-f3df-1fc26dce2ab1" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-                <infoLink id="55fc-f03d-3985-eea1" hidden="false" targetId="bf49e57d-4c20-456e-40fc-2325493da257" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-                <infoLink id="6e1b-bd01-1609-4468" hidden="false" targetId="b2930d75-e708-3443-a9ba-fbba33fdf5a7" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="15d8-7e53-6157-6fe8" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="25.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="0300-1e0d-d30d-bed1" name="Graviton Imploder" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
@@ -18431,6 +18392,20 @@
               <rules/>
               <infoLinks/>
               <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="dbf2-a20c-2c5a-f821" name="Conversion Beamer" hidden="false" targetId="56fc88c5-200c-7d1b-dc29-64471bbf63bf" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="points" value="25">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <constraints/>
               <categoryLinks/>
             </entryLink>
