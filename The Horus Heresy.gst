@@ -136,6 +136,13 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
+    <categoryEntry id="121d-dc17-273c-40d0" name="Titan" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="61f7-09c7-326c-8c49" name="New ForceEntry" hidden="true">
@@ -552,7 +559,15 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
       </infoLinks>
       <modifiers/>
       <constraints/>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="a766-3aa2-33d3-1d63" name="New CategoryLink" hidden="false" targetId="121d-dc17-273c-40d0" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="0707-e414-13d3-eae6" name="Primary Weapon Right Arm" hidden="false" collective="false">
@@ -908,7 +923,15 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
       </infoLinks>
       <modifiers/>
       <constraints/>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="828c-23dc-f6ce-ae53" name="New CategoryLink" hidden="false" targetId="121d-dc17-273c-40d0" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="74d3-2cbb-bd1e-6bf6" name="Carapace-mounted Weapon" hidden="false" collective="false" defaultSelectionEntryId="f13b-e244-f40b-5cce">
@@ -1609,7 +1632,15 @@ D6    Result		S	AP
       <infoLinks/>
       <modifiers/>
       <constraints/>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="d9ec-347a-bc64-96be" name="New CategoryLink" hidden="false" targetId="121d-dc17-273c-40d0" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="a893-70e8-8c4d-57de" name="Primary Weapon Left Arm" hidden="false" collective="false">
@@ -11289,7 +11320,15 @@ D6    Result		S	AP
       <infoLinks/>
       <modifiers/>
       <constraints/>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="fb62-2108-207b-6a3a" name="New CategoryLink" hidden="false" targetId="121d-dc17-273c-40d0" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="82a1-5e48-0536-3451" name="The Ciricrux Anima" hidden="false" collective="false" type="upgrade">
           <profiles/>
