@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="87" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="88" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -17131,7 +17131,7 @@ Shooting attack against the shield facing is reduced by -1, the effect increasin
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="96&quot;"/>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot;"/>
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="9"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1"/>
