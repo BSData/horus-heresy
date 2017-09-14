@@ -254,6 +254,13 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
+    <categoryEntry id="78ea-eea8-0ac5-b7de" name="Automata" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="0cb5-a583-e14f-2231" name="Matrix of Ruin" hidden="false">
@@ -1372,20 +1379,6 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="138b-b94e-5015-aa95" name="New CategoryLink" hidden="false" targetId="7fdd-2a97-d0e9-6524" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-        <categoryLink id="b34e-55da-c12f-2013" name="New CategoryLink" hidden="false" targetId="8ec4-17b5-7fea-c682" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
       </categoryLinks>
     </entryLink>
     <entryLink id="a6da-fabe-6b98-c46e" name="Secutarii Peltast Phalanx" hidden="false" targetId="8190-e779-2c49-c564" type="selectionEntry">
@@ -2218,20 +2211,6 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="b3d8-c864-7ae6-3b68" name="New CategoryLink" hidden="false" targetId="7fdd-2a97-d0e9-6524" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-        <categoryLink id="0696-29af-1dac-acb7" name="New CategoryLink" hidden="false" targetId="8ec4-17b5-7fea-c682" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
         <categoryLink id="97c9-d370-5bb8-b00b" name="New CategoryLink" hidden="false" targetId="54726f6f707323232344415441232323" primary="true">
           <profiles/>
           <rules/>
@@ -2308,13 +2287,6 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="a3e5-b2a2-845e-4474" name="New CategoryLink" hidden="false" targetId="f74d-4679-75a6-1252" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
         <categoryLink id="3447-df86-ebd9-0702" name="New CategoryLink" hidden="false" targetId="54726f6f707323232344415441232323" primary="true">
           <profiles/>
           <rules/>
@@ -2346,13 +2318,6 @@
       </modifiers>
       <constraints/>
       <categoryLinks>
-        <categoryLink id="6d75-0a32-1e17-67aa" name="New CategoryLink" hidden="false" targetId="f74d-4679-75a6-1252" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
         <categoryLink id="7c09-c1a3-0a5a-ca8d" name="New CategoryLink" hidden="false" targetId="54726f6f707323232344415441232323" primary="true">
           <profiles/>
           <rules/>
@@ -2486,13 +2451,6 @@
       <modifiers/>
       <constraints/>
       <categoryLinks>
-        <categoryLink id="c4ae-49e2-db00-0c24" name="New CategoryLink" hidden="false" targetId="7fdd-2a97-d0e9-6524" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
         <categoryLink id="bf75-a7b5-f983-ed04" name="New CategoryLink" hidden="false" targetId="466173742041747461636b23232344415441232323" primary="true">
           <profiles/>
           <rules/>
@@ -2573,11 +2531,19 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="7bc3-4c9b-a14c-d3c2" name="Archmagos Dominus" hidden="false" targetId="e35b-b300-7fb2-e063" type="selectionEntry">
+    <entryLink id="7bc3-4c9b-a14c-d3c2" name="Archmagos Dominus" hidden="true" targetId="e35b-b300-7fb2-e063" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="greaterThan"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints/>
       <categoryLinks>
         <categoryLink id="871b-30a5-e327-fe36" name="New CategoryLink" hidden="false" targetId="becd-7a6d-e80f-878e" primary="false">
@@ -2665,11 +2631,19 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="fc87-1477-dc2f-53bf" name="Archmagos Draykavac" hidden="false" targetId="2ff2-0526-3cea-acb2" type="selectionEntry">
+    <entryLink id="fc87-1477-dc2f-53bf" name="Archmagos Draykavac" hidden="true" targetId="2ff2-0526-3cea-acb2" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7441-34c0-5e21-eeaa" type="greaterThan"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints/>
       <categoryLinks>
         <categoryLink id="76df-7ed4-f748-ab4d" name="New CategoryLink" hidden="false" targetId="becd-7a6d-e80f-878e" primary="false">
@@ -3364,7 +3338,14 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="5db5-3c17-5fd9-714d" name="New CategoryLink" hidden="false" targetId="54726f6f707323232344415441232323" primary="false">
+        <categoryLink id="0378-e235-c8cd-0cb8" name="New CategoryLink" hidden="false" targetId="8ec4-17b5-7fea-c682" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="2372-4a90-f4b4-78c2" name="New CategoryLink" hidden="false" targetId="78ea-eea8-0ac5-b7de" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4442,7 +4423,7 @@
             <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Shred"/>
           </characteristics>
         </profile>
-        <profile id="b63e-172e-2f5c-7fc2" name="Inbuilt Cannon" book="HH6: Retribution" page="274" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+        <profile id="b63e-172e-2f5c-7fc2" name="Arlatax Power Claw Inbuilt Cannon" book="HH6: Retribution" page="274" hidden="false" profileTypeId="576561706f6e23232344415441232323">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4457,7 +4438,7 @@
       </profiles>
       <rules/>
       <infoLinks>
-        <infoLink id="9fa8-2486-a5ad-e522" hidden="false" targetId="6eb5b812-8b8b-9e7c-279e-c9e9c93fefe9" type="profile">
+        <infoLink id="9fa8-2486-a5ad-e522" name="Atomantic Shielding" hidden="false" targetId="6eb5b812-8b8b-9e7c-279e-c9e9c93fefe9" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4493,7 +4474,29 @@
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="9268-6e04-9f15-9a32" name="New CategoryLink" hidden="false" targetId="7fdd-2a97-d0e9-6524" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="6e40-5da5-bb74-c2b3" name="New CategoryLink" hidden="false" targetId="8ec4-17b5-7fea-c682" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="d115-15ed-f2d3-34bc" name="New CategoryLink" hidden="false" targetId="78ea-eea8-0ac5-b7de" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="0e70-6b1b-6528-5cb7" name="May replace one of its Power Claws with:" hidden="false" collective="false">
@@ -7472,7 +7475,7 @@
         <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8ca6-c4ee-0f61-effa" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="76b6-ba96-b535-c37a" name="New CategoryLink" hidden="false" targetId="54726f6f707323232344415441232323" primary="false">
+        <categoryLink id="c63e-9be3-05b4-db86" name="New CategoryLink" hidden="false" targetId="f74d-4679-75a6-1252" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -8233,7 +8236,7 @@
         <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6fb1-d527-17a7-2ba0" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="d098-f777-047e-3edc" name="New CategoryLink" hidden="false" targetId="54726f6f707323232344415441232323" primary="false">
+        <categoryLink id="d19b-30dc-4650-0c80" name="New CategoryLink" hidden="false" targetId="f74d-4679-75a6-1252" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -8485,7 +8488,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="6ea9-d8b5-696c-9158" name="New InfoLink" hidden="false" targetId="a7069849-cdd7-ffb1-8088-8300704afcae" type="profile">
+        <infoLink id="6ea9-d8b5-696c-9158" name="Flare Shield" hidden="false" targetId="a7069849-cdd7-ffb1-8088-8300704afcae" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -9941,10 +9944,21 @@
             <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Flyer (Hover)"/>
           </characteristics>
         </profile>
+        <profile id="d3ea-304f-fae5-1dfe" name="Arvus Lighter Orbital Shuttle (Transport)" book="HH:MT" page="50" hidden="false" profileTypeId="307d-047f-ca13-706b" profileTypeName="Transport">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Capacity" characteristicTypeId="8285-4205-b6cd-8473" value="12"/>
+            <characteristic name="Fire Points" characteristicTypeId="b270-a7f9-22b2-3702" value="None"/>
+            <characteristic name="Access Points" characteristicTypeId="d17b-0342-b1dc-b8e7" value="Single Access hatch at the rear"/>
+          </characteristics>
+        </profile>
       </profiles>
       <rules/>
       <infoLinks>
-        <infoLink id="d37e-768b-11f0-2a52" name="New InfoLink" hidden="false" targetId="d219-2314-4834-c054" type="rule">
+        <infoLink id="d37e-768b-11f0-2a52" name="Deep Strike" hidden="false" targetId="d219-2314-4834-c054" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -9954,7 +9968,28 @@
       <modifiers/>
       <constraints/>
       <categoryLinks>
-        <categoryLink id="7b0f-7bfb-ca1f-e761-466173742041747461636b23232344415441232323" hidden="false" targetId="466173742041747461636b23232344415441232323" primary="true">
+        <categoryLink id="37c1-e61b-1e94-7da8" name="New CategoryLink" hidden="false" targetId="df44-81ea-e2ee-9849" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="20cf-d8f1-f96c-530c" name="New CategoryLink" hidden="false" targetId="2d6f-e613-ab10-e55a" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="9ac2-d03c-a520-d659" name="New CategoryLink" hidden="false" targetId="e4e0-c5d1-3430-f101" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="24ef-6fd9-6ed6-e5d1" name="New CategoryLink" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -9970,7 +10005,7 @@
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e42e-6e0a-e91c-9090" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e42e-6e0a-e91c-9090" type="max"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries>
@@ -9978,7 +10013,7 @@
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="4af4-18f5-946b-0625" hidden="false" targetId="c812-a8fe-2b49-75a5" type="profile">
+                <infoLink id="4af4-18f5-946b-0625" name="Multi-laser" hidden="false" targetId="c812-a8fe-2b49-75a5" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -9986,9 +10021,7 @@
                 </infoLink>
               </infoLinks>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="40fc-ca9f-c53d-92aa" type="max"/>
-              </constraints>
+              <constraints/>
               <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
@@ -10000,11 +10033,16 @@
             <selectionEntry id="8a60-4b61-343b-2089" name="Autocannon" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
-              <infoLinks/>
+              <infoLinks>
+                <infoLink id="83a5-9a5d-2de7-4270" name="Autocannon" hidden="false" targetId="d55f-eed0-800f-5789" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5eef-b141-6620-2f34" type="max"/>
-              </constraints>
+              <constraints/>
               <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
@@ -10013,37 +10051,25 @@
                 <cost name="pts" costTypeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="c6aa-acfa-4986-7818" name="Lascannon" hidden="false" collective="false" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c428-b32a-4925-8bd7" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="20.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="f835-7925-5e93-fd6e" name="Twin-linked Multi-laser" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="ca3a-db81-b97f-f9a4" hidden="false" targetId="c812-a8fe-2b49-75a5" type="profile">
+                <infoLink id="ca3a-db81-b97f-f9a4" name="Multi-laser" hidden="false" targetId="c812-a8fe-2b49-75a5" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
-                  <modifiers/>
+                  <modifiers>
+                    <modifier type="append" field="5479706523232344415441232323" value="Twin-Linked">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
                 </infoLink>
               </infoLinks>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d624-5d0d-8464-1908" type="max"/>
-              </constraints>
+              <constraints/>
               <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
@@ -10055,11 +10081,22 @@
             <selectionEntry id="15fb-87cf-554f-0132" name="Twin-linked Lascannon" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
-              <infoLinks/>
+              <infoLinks>
+                <infoLink id="dea8-7e67-50a2-bc63" name="Lascannon" hidden="false" targetId="1cce-972c-022a-2590" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="append" field="5479706523232344415441232323" value="Twin-Linked">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="15b1-acad-7ca5-3eb0" type="max"/>
-              </constraints>
+              <constraints/>
               <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
@@ -10071,11 +10108,22 @@
             <selectionEntry id="80ac-f243-b45a-0e9f" name="Twin-linked Autocannon" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
-              <infoLinks/>
+              <infoLinks>
+                <infoLink id="4aa0-cfe6-ae9e-1faf" name="Autocannon" hidden="false" targetId="d55f-eed0-800f-5789" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="append" field="5479706523232344415441232323" value="Twin-Linked">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="acc4-d5ce-8470-7538" type="max"/>
-              </constraints>
+              <constraints/>
               <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
@@ -10086,7 +10134,22 @@
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
-          <entryLinks/>
+          <entryLinks>
+            <entryLink id="c650-3d4d-41ff-c62b" name="Lascannon" hidden="false" targetId="8036-b730-d533-e31f" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="points" value="20">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="fc2a-42d9-ddfd-9063" name="May take any of the following:" hidden="false" collective="false">
           <profiles/>
@@ -10212,8 +10275,7 @@
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <description>May carry 1 Castellax or two Voray, but is no longer able to transport
-                                        other troops</description>
+                  <description>May carry 1 Castellax or two Voray, but is no longer able to transport other troops</description>
                 </rule>
               </rules>
               <infoLinks/>
@@ -10232,7 +10294,7 @@
           </selectionEntries>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="868a-9c49-7340-0d35" name="New EntryLink" hidden="false" targetId="d00f-81d6-1749-9499" type="selectionEntry">
+            <entryLink id="868a-9c49-7340-0d35" name="Extra Armour" hidden="false" targetId="d00f-81d6-1749-9499" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -10281,21 +10343,16 @@
         </profile>
       </profiles>
       <rules>
-        <rule id="aad0-8e73-2eee-57b4" name="Agile" page="0" hidden="false">
+        <rule id="aad0-8e73-2eee-57b4" name="Agile" book="HH:MTAL" page="49" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-        </rule>
-        <rule id="f562-81c1-83cb-ffd2" name="Missile Barrage" page="0" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
+          <description>A unit with this special rule increases any cover saves granted by the Jink special rule by +1.</description>
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="427f-b465-db63-00cc" hidden="false" targetId="06710a9d-a2a8-638f-91b0-2af2fb3e95c2" type="profile">
+        <infoLink id="427f-b465-db63-00cc" name="Armoured Cockpit" hidden="false" targetId="06710a9d-a2a8-638f-91b0-2af2fb3e95c2" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -10307,7 +10364,7 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="689f-54a5-99b3-78a6" name="New InfoLink" hidden="false" targetId="2e96-21ae-353e-8742" type="rule">
+        <infoLink id="689f-54a5-99b3-78a6" name="Supersonic" hidden="false" targetId="2e96-21ae-353e-8742" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -10317,7 +10374,21 @@
       <modifiers/>
       <constraints/>
       <categoryLinks>
-        <categoryLink id="5d68-1fb8-1f66-af3a-466173742041747461636b23232344415441232323" hidden="false" targetId="466173742041747461636b23232344415441232323" primary="true">
+        <categoryLink id="4c44-fd47-f116-6aba" name="New CategoryLink" hidden="false" targetId="df44-81ea-e2ee-9849" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="d216-54db-0359-3acc" name="New CategoryLink" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="0744-a35e-1ec4-92cb" name="New CategoryLink" hidden="false" targetId="2d6f-e613-ab10-e55a" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -10332,9 +10403,7 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cab8-871b-8c83-90f3" type="max"/>
-          </constraints>
+          <constraints/>
           <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="ce59-f93f-70ae-31ba" name="Ramjet Diffraction Grid" book="HH:LACAL" page="43" hidden="false" collective="false" type="upgrade">
@@ -10419,14 +10488,27 @@
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6157-0b0f-9d25-96b6" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6157-0b0f-9d25-96b6" type="max"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="f705-0db7-d791-4dc1" name="Twin-linked Autocannon" page="0" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
-              <infoLinks/>
+              <infoLinks>
+                <infoLink id="2a15-b5f4-51a9-233f" name="Autocannon" hidden="false" targetId="d55f-eed0-800f-5789" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="append" field="5479706523232344415441232323" value="Twin-Linked">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="49c2-519f-5c4c-7e30" type="max"/>
@@ -10442,7 +10524,20 @@
             <selectionEntry id="13f8-7378-f624-40e0" name="Twin-linked Multi-laser" page="0" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
-              <infoLinks/>
+              <infoLinks>
+                <infoLink id="162d-9285-11e0-9548" name="Multi-laser" hidden="false" targetId="c812-a8fe-2b49-75a5" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="append" field="5479706523232344415441232323" value="Twin-Linked">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a54c-2bd9-f1a5-8519" type="max"/>
@@ -10458,7 +10553,20 @@
             <selectionEntry id="29f8-3dd3-515d-3316" name="Twin-linked Missile Launcher" page="0" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
-              <infoLinks/>
+              <infoLinks>
+                <infoLink id="ba0d-dff3-c468-1f8b" name="Frag Missile" hidden="false" targetId="40e6-c95c-7c8d-cf02" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="5ee6-c9b0-b22c-c37d" name="Krak Missile" hidden="false" targetId="1e33-d8ec-f833-b584" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b729-f2a6-8e29-7154" type="max"/>
@@ -10487,7 +10595,20 @@
                 </profile>
               </profiles>
               <rules/>
-              <infoLinks/>
+              <infoLinks>
+                <infoLink id="4144-ea01-3005-454f" name="Blind" hidden="false" targetId="7dae-4d12-baba-e529" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="cbc3-11a5-2b5c-a822" name="Gets Hot" hidden="false" targetId="f4fd-d519-4769-5510" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6027-8c03-8225-3aaa" type="max"/>
@@ -10516,7 +10637,14 @@
                 </profile>
               </profiles>
               <rules/>
-              <infoLinks/>
+              <infoLinks>
+                <infoLink id="5031-f5ef-aa22-1ee7" name="Armourbane" hidden="false" targetId="e182-50cd-0867-9a8d" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="81e7-ce06-4c69-2be7" type="max"/>
@@ -10596,7 +10724,20 @@
                 </profile>
               </profiles>
               <rules/>
-              <infoLinks/>
+              <infoLinks>
+                <infoLink id="6687-415d-e079-d3c6" name="Haywire" hidden="false" targetId="6970-1bf3-b33e-5dce" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="680a-525d-b8eb-390b" name="Concussive" hidden="false" targetId="9d85-46f7-f5e6-a5f7" type="rule">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8db3-18f7-c901-1b85" type="max"/>
@@ -10690,7 +10831,21 @@
       <modifiers/>
       <constraints/>
       <categoryLinks>
-        <categoryLink id="11c8-2e78-8328-31e4-466173742041747461636b23232344415441232323" hidden="false" targetId="466173742041747461636b23232344415441232323" primary="true">
+        <categoryLink id="22bd-5e71-4294-eb77" name="New CategoryLink" hidden="false" targetId="2d6f-e613-ab10-e55a" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="8d3a-a583-71b1-4721" name="New CategoryLink" hidden="false" targetId="df44-81ea-e2ee-9849" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="9326-fd1a-4e07-f1a2" name="New CategoryLink" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -10794,7 +10949,14 @@
             <selectionEntry id="93c1-770a-6f9f-4863" name="Two Autocannons" page="0" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
-              <infoLinks/>
+              <infoLinks>
+                <infoLink id="17ce-e468-2040-b56b" name="Autocannon" hidden="false" targetId="d55f-eed0-800f-5789" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="06e6-42e9-b59a-6d02" type="max"/>
@@ -10810,7 +10972,14 @@
             <selectionEntry id="d563-bc4b-df21-bafb" name="Two Multi-lasers" page="0" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
-              <infoLinks/>
+              <infoLinks>
+                <infoLink id="808f-3d7c-5e48-b696" name="Multi-laser" hidden="false" targetId="c812-a8fe-2b49-75a5" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="527e-483e-7b4a-4cc8" type="max"/>
@@ -10826,7 +10995,20 @@
             <selectionEntry id="094c-f80e-963c-315d" name="Two Missile Launchers" page="0" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
-              <infoLinks/>
+              <infoLinks>
+                <infoLink id="31a5-e676-7eeb-89b5" name="Krak Missile" hidden="false" targetId="1e33-d8ec-f833-b584" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+                <infoLink id="8551-7965-e498-e58f" name="Frag Missile" hidden="false" targetId="40e6-c95c-7c8d-cf02" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7229-b13f-c945-c3c4" type="max"/>
@@ -11595,13 +11777,6 @@
         <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="86e5-0663-2fde-0bc1" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="aa6d-719e-aedb-2975" hidden="false" targetId="54726f6f707323232344415441232323" primary="true">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
         <categoryLink id="8f1e-f00d-a6c1-7301" name="New CategoryLink" hidden="false" targetId="f74d-4679-75a6-1252" primary="false">
           <profiles/>
           <rules/>
@@ -11617,7 +11792,15 @@
               <profiles/>
               <rules/>
               <infoLinks/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="5361766523232344415441232323" value="4+">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="457c-cdd9-a458-baa9" type="greaterThan"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" characteristicTypeId="556e6974205479706523232344415441232323" value="Infantry"/>
                 <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="2"/>
@@ -11640,7 +11823,9 @@
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <repeats/>
-                  <conditions/>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="445a-8be0-c3ac-f45c" type="greaterThan"/>
+                  </conditions>
                   <conditionGroups/>
                 </modifier>
               </modifiers>
@@ -11893,8 +12078,7 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>All Mechanicum vehicles in the same detachment gain It Will Not Die
-                                        special rule. This replaces Blessed Autosimulacra where present.</description>
+          <description>All Mechanicum vehicles in the same detachment gain It Will Not Die special rule. This replaces Blessed Autosimulacra where present.</description>
         </rule>
         <rule id="904b-3a30-986f-a74d" name="Unmatched Resources" book="HH3: Extermination" page="215" hidden="false">
           <profiles/>
@@ -12140,7 +12324,22 @@
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="5723232344415441232323" value="5">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7036-e2e2-8907-a43e" type="greaterThan"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="4123232344415441232323" value="4">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7036-e2e2-8907-a43e" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Unit Type" characteristicTypeId="556e6974205479706523232344415441232323" value="Infantry (Character)"/>
             <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="5"/>
@@ -12179,18 +12378,14 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>Any successful hit with this weapon inflicts D3 wounds automatically on the targeted
-                        unit or model, or causes 1 Hull Point of damage per hit. Invulnerable saves may be taken as
-                        normal against these wounds but Feel No Pain or It Will Not Die rolls may not.</description>
+          <description>Any successful hit with this weapon inflicts D3 wounds automatically on the targeted unit or model, or causes 1 Hull Point of damage per hit. Invulnerable saves may be taken as normal against these wounds but Feel No Pain or It Will Not Die rolls may not.</description>
         </rule>
         <rule id="3aea-1caa-ba90-5a65" name="Patris Cybernetica" book="HH6: Retribution" page="273" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>May join a unit of Monstrous Creatures so long as they have the Cybernetica Cortex
-                        special rule. May not Go to Ground, voluntary or otherwise, and enemy shooting may opt to ignore
-                        the fact that the character is the closest model if they wish.</description>
+          <description>May join a unit of Monstrous Creatures so long as they have the Cybernetica Cortex special rule. May not Go to Ground, voluntary or otherwise, and enemy shooting may opt to ignore the fact that the character is the closest model if they wish.</description>
         </rule>
         <rule id="817d-c7c6-9566-9d88" name="Rite of the Beast" book="HH6: Retribution" page="273" hidden="false">
           <profiles/>
@@ -12205,6 +12400,15 @@
           <infoLinks/>
           <modifiers/>
           <description>May take a single Arlatax Battle Automata.</description>
+        </rule>
+        <rule id="d9ea-eb51-189e-e98a" name="Warlord: Forbidden Protcols" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>If Anacharis Scoria is your army&apos;s Warlord then all cybernetica cortex-equipped models in the same detachment as him have the following special rules applied to them:
+• They may make Sweeping Advance and Run moves contrary to the normal rules for such units.
+• If outside the cortex controller range of a model from the same detachment, the model/unit must move towards the nearest enemy unit (other than Flyers) in the Movement phase and must make charges and Sweeping Advance moves if they are able to do so. This rule does not apply to models that have been given the Paragon of Metal special rule.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -12240,7 +12444,7 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="ecff-6ab4-3a5f-506d" hidden="false" targetId="67e9d995-de3f-f033-9026-c1faa0a9433a" type="profile">
+        <infoLink id="ecff-6ab4-3a5f-506d" name="" hidden="false" targetId="67e9d995-de3f-f033-9026-c1faa0a9433a" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -12304,21 +12508,14 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2771-37b9-f1c4-793c" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="8d0d-bd7e-963a-9ac7" hidden="false" targetId="485123232344415441232323" primary="true">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-        <categoryLink id="02d4-3426-7744-4a15" name="New CategoryLink" hidden="false" targetId="becd-7a6d-e80f-878e" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
         <categoryLink id="de18-afa3-2cb0-dd32" name="New CategoryLink" hidden="false" targetId="00fd-d5c9-e55d-c236" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="25c3-3e90-03e6-1fb5" name="New CategoryLink" hidden="false" targetId="f74d-4679-75a6-1252" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -12362,13 +12559,13 @@
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="a807-b1a2-17f5-9631" name="New InfoLink" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule">
+                <infoLink id="a807-b1a2-17f5-9631" name="Move Through Cover" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="afbb-e014-158b-b072" name="New InfoLink" hidden="false" targetId="abc9-8566-bb61-4b7c" type="rule">
+                <infoLink id="afbb-e014-158b-b072" name="Very Bulky" hidden="false" targetId="abc9-8566-bb61-4b7c" type="rule">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -12753,7 +12950,7 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
-        <entryLink id="bdf2-b46d-0e0b-8062" name="Legio" hidden="false" targetId="8ea4-951b-6a14-f20c" type="selectionEntryGroup">
+        <entryLink id="bdf2-b46d-0e0b-8062" name="Legio/Ordo" hidden="false" targetId="8ea4-951b-6a14-f20c" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -13185,22 +13382,7 @@
       <infoLinks/>
       <modifiers/>
       <constraints/>
-      <categoryLinks>
-        <categoryLink id="d8ef-3413-2540-4fc7" hidden="false" targetId="466173742041747461636b23232344415441232323" primary="true">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-        <categoryLink id="4d19-c4fd-cfed-9899" name="New CategoryLink" hidden="false" targetId="7fdd-2a97-d0e9-6524" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="9d1b-8ca5-c405-616a" name="A single Maniple take:" hidden="false" collective="false">
@@ -14928,19 +15110,19 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="af68-7e84-622e-7307" hidden="false" targetId="7be5-30af-1a02-0a89" type="rule">
+        <infoLink id="af68-7e84-622e-7307" name="" hidden="false" targetId="7be5-30af-1a02-0a89" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="f7d1-9450-16b4-97c4" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule">
+        <infoLink id="f7d1-9450-16b4-97c4" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="ad88-5430-67f4-88da" hidden="false" targetId="a41e-00bb-2ace-734f" type="rule">
+        <infoLink id="ad88-5430-67f4-88da" name="Patris Cybernetica" hidden="false" targetId="a41e-00bb-2ace-734f" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -14960,21 +15142,14 @@
         <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="28e7-3147-1161-5deb" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="a1d1-8646-51a9-a5b2" hidden="false" targetId="485123232344415441232323" primary="true">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-        <categoryLink id="47d2-b1ec-cf76-80ec" name="New CategoryLink" hidden="false" targetId="becd-7a6d-e80f-878e" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
         <categoryLink id="c4d5-adfa-42d6-3677" name="New CategoryLink" hidden="false" targetId="00fd-d5c9-e55d-c236" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="5982-947c-b361-68bf" name="New CategoryLink" hidden="false" targetId="f74d-4679-75a6-1252" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -16101,6 +16276,13 @@
           <modifiers/>
           <description>All units with the Walker, Super-heavy Walker, or Monstrous Creature types in the same detachment as the Warlord gain +1 to their charge distances and sweeping advance rolls.</description>
         </rule>
+        <rule id="e052-16b6-4084-0a91" name="Warlord: Death of the Flesh" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>All units within the detachment have the special rule Preferred Enemy (Infantry – all types) when within 3&quot; of an objective.</description>
+        </rule>
       </rules>
       <infoLinks>
         <infoLink id="db0f-e9d8-6b2e-5b89" hidden="false" targetId="3ffc1f76-719b-bc95-a3c9-15614a8c94bc" type="profile">
@@ -16147,7 +16329,7 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="8109-ed60-0643-3a5a" name="New InfoLink" hidden="false" targetId="7be5-30af-1a02-0a89" type="rule">
+        <infoLink id="8109-ed60-0643-3a5a" name="Stubborn" hidden="false" targetId="7be5-30af-1a02-0a89" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -16166,21 +16348,14 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="045d-777e-67ae-c597" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="6801-f294-05c3-fcf5" hidden="false" targetId="485123232344415441232323" primary="true">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-        <categoryLink id="8f38-1dec-899b-c336" name="New CategoryLink" hidden="false" targetId="becd-7a6d-e80f-878e" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
         <categoryLink id="0637-4917-9ce7-71c1" name="New CategoryLink" hidden="false" targetId="00fd-d5c9-e55d-c236" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="6ee1-5fe7-b652-3a44" name="New CategoryLink" hidden="false" targetId="f74d-4679-75a6-1252" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -16261,7 +16436,7 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
-        <entryLink id="bf87-03a2-476e-4512" hidden="false" targetId="00cf-20ab-1b17-aad1" type="selectionEntry">
+        <entryLink id="bf87-03a2-476e-4512" name="Archmagos" hidden="false" targetId="00cf-20ab-1b17-aad1" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -16300,7 +16475,7 @@
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Provides Feel no Pain and Very Bulky rules.  "/>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Provides Feel no Pain 5 and Extremely Bulky rules. Although Satarael is otherwise a character, he may not be joined by other models to form a unit or join another unit himself unless via the Patris Cybernetica special rule. He may, however, be transported alongside other units inside Mechanicum vehicles so long as there is room."/>
           </characteristics>
         </profile>
         <profile id="156a-451b-ae26-a0d6" name="Djinn-skein" book="HH3: Extermination" page="215" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
@@ -16328,8 +16503,7 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>All friendly units from the Taghmata Omnissiah roll an addition D6 and keep the two
-                        lowest dice when making Morale checks while within 12&quot; of the Archmagos</description>
+          <description>All friendly units from the Taghmata Omnissiah roll an addition D6 and keep the two lowest dice when making Morale checks while within 12&quot; of the Archmagos</description>
         </rule>
         <rule id="b472-9268-3948-d74f" name="The Orders of High Techno-Arcana (Archimandrite)" book="HH3: Extermination" page="216" hidden="false">
           <profiles/>
@@ -16342,8 +16516,7 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>All Mechanicum vehicles in the same detachment gain It Will Not Die special rule. This
-                        replaces Blessed Autosimulacra where present.</description>
+          <description>All Mechanicum vehicles in the same detachment gain It Will Not Die special rule. This replaces Blessed Autosimulacra where present.</description>
         </rule>
         <rule id="e13f-d838-eed1-3c1c" name="Unmatched Resources" book="HH3: Extermination" page="215" hidden="false">
           <profiles/>
@@ -16357,19 +16530,17 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>After losing his last wound, roll a D6. On a 3+ the enemy gains no victory points for
-                        destroying Satarael (including Slay the Warlord). Additionally, roll for an explosion as if he
-                        were a vehicle suffering an Explodes result.</description>
+          <description>After losing his last wound, roll a D6. On a 3+ the enemy gains no victory points for destroying Satarael (including Slay the Warlord). Additionally, roll for an explosion as if he were a vehicle suffering an Explodes result.</description>
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="6b43-2791-3148-a9a1" hidden="false" targetId="5aad03df-0fd0-5920-0aec-2aefbe5bcf5b" type="rule">
+        <infoLink id="6b43-2791-3148-a9a1" name="" hidden="false" targetId="5aad03df-0fd0-5920-0aec-2aefbe5bcf5b" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="f9e1-807c-7a13-8473" hidden="false" targetId="c73d6a53-afb0-ccb6-8977-c5eb88576611" type="profile">
+        <infoLink id="f9e1-807c-7a13-8473" name="" hidden="false" targetId="c73d6a53-afb0-ccb6-8977-c5eb88576611" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -16395,13 +16566,13 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="9a7d-c1e0-c458-90cc" name="New InfoLink" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule">
+        <infoLink id="9a7d-c1e0-c458-90cc" name="Fear" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="7cd0-de55-e0a0-4c30" name="Very Bulky" hidden="false" targetId="abc9-8566-bb61-4b7c" type="rule">
+        <infoLink id="7cd0-de55-e0a0-4c30" name="Extremely Bulky" hidden="false" targetId="2834-307f-1830-df9a" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -16413,7 +16584,19 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="4310-4610-861c-2bd2" name="New InfoLink" hidden="false" targetId="9bdd-5ec7-8dd6-63c0" type="rule">
+        <infoLink id="4310-4610-861c-2bd2" name="Feel No Pain" hidden="false" targetId="9bdd-5ec7-8dd6-63c0" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="append" field="name" value="5+">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="1604-6eeb-6caa-95b6" name="Patris Cybernetica" hidden="false" targetId="a41e-00bb-2ace-734f" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -16423,21 +16606,14 @@
       <modifiers/>
       <constraints/>
       <categoryLinks>
-        <categoryLink id="6bad-c937-e1e3-2656" hidden="false" targetId="485123232344415441232323" primary="true">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-        <categoryLink id="ce5a-bf63-a8cb-f610" name="New CategoryLink" hidden="false" targetId="becd-7a6d-e80f-878e" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
         <categoryLink id="6b59-7762-27cc-e53c" name="New CategoryLink" hidden="false" targetId="00fd-d5c9-e55d-c236" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="7ae8-37ec-363d-05bb" name="New CategoryLink" hidden="false" targetId="8ec4-17b5-7fea-c682" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -24460,12 +24636,7 @@
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>A character with this special rule may join a unit of Monstrous creatures so long as they have
-                the Cybernetica Cortex special rule, even thought this would not normally be allowed. while it is part
-                of a unit of Monstrous Creatures, a model with this special rule may not Go To Ground, voluntarily or
-                otherwise, and enemy shooting at the unit may opt to ignore the fact that the character is the closest
-                model in the unit for the purposes of shooting attacks if they wish and instead target the closest
-                Monstrous Creature in the unit, if they have attacks in range.</description>
+      <description>A character with this special rule may join a unit of Monstrous creatures so long as they have the Cybernetica Cortex special rule, even thought this would not normally be allowed. while it is part of a unit of Monstrous Creatures, a model with this special rule may not Go To Ground, voluntarily or otherwise, and enemy shooting at the unit may opt to ignore the fact that the character is the closest model in the unit for the purposes of shooting attacks if they wish and instead target the closest Monstrous Creature in the unit, if they have attacks in range.</description>
     </rule>
     <rule id="bf2972af-bb29-328c-6554-3e2130bd731a" name="Programmed Behaviour" book="HH3: Extermination" page="206" hidden="false">
       <profiles/>
