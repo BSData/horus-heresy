@@ -2510,7 +2510,15 @@
       <infoLinks/>
       <modifiers/>
       <constraints/>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="0e0a-7503-6af7-ad7b" name="New CategoryLink" hidden="false" targetId="486561767920537570706f727423232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
     </entryLink>
     <entryLink id="d374-6127-ba36-07d0" name="Tarantula Sentry Gun Battery" hidden="false" targetId="29c7-a5ff-4521-f4f3" type="selectionEntry">
       <profiles/>
@@ -13977,15 +13985,15 @@ Buildings and Fortifications D</description>
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="de9f-f10c-c0a9-789b" name="Ordo Reductor Artillery Tank Battery" book="HH:MT" page="84" hidden="false" collective="false" type="unit">
+    <selectionEntry id="de9f-f10c-c0a9-789b" name="Ordo Reductor Artillery Tank Battery" book="HH:MT" page="84" hidden="true" collective="false" type="unit">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="hidden" value="false">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0199-0faf-34c8-fbee" type="equalTo"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0199-0faf-34c8-fbee" type="greaterThan"/>
           </conditions>
           <conditionGroups/>
         </modifier>
