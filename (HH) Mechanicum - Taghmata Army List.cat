@@ -1362,15 +1362,17 @@
           </conditions>
           <conditionGroups/>
         </modifier>
-        <modifier type="set" field="b558-4d66-9ea8-a966" value="-1">
+        <modifier type="set" field="5a4a-2d6f-43f6-f2b6" value="-1">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d266-0416-a5a6-881e" type="equalTo"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="equalTo"/>
           </conditions>
           <conditionGroups/>
         </modifier>
       </modifiers>
-      <constraints/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a4a-2d6f-43f6-f2b6" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="ec8a-2676-2661-296e-54726f6f707323232344415441232323" hidden="false" targetId="54726f6f707323232344415441232323" primary="true">
           <profiles/>
@@ -2194,7 +2196,7 @@
           </conditions>
           <conditionGroups/>
         </modifier>
-        <modifier type="set" field="b558-4d66-9ea8-a966" value="-1">
+        <modifier type="set" field="2a04-7e5c-6738-99bd" value="-1">
           <repeats/>
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d266-0416-a5a6-881e" type="equalTo"/>
@@ -2202,7 +2204,9 @@
           <conditionGroups/>
         </modifier>
       </modifiers>
-      <constraints/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a04-7e5c-6738-99bd" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="995d-2c1e-9f27-11e5" name="New CategoryLink" hidden="false" targetId="219d-aefa-dfa5-44db" primary="false">
           <profiles/>
@@ -3320,9 +3324,7 @@
         </infoLink>
       </infoLinks>
       <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b558-4d66-9ea8-a966" type="max"/>
-      </constraints>
+      <constraints/>
       <categoryLinks>
         <categoryLink id="a3cf-4fd0-76a0-b47b" name="New CategoryLink" hidden="false" targetId="7fdd-2a97-d0e9-6524" primary="false">
           <profiles/>
@@ -13796,7 +13798,9 @@ Buildings and Fortifications D</description>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -14417,7 +14421,9 @@ Buildings and Fortifications D</description>
                   </selectionEntries>
                   <selectionEntryGroups/>
                   <entryLinks/>
-                  <costs/>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <selectionEntryGroups/>
