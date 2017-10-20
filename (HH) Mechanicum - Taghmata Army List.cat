@@ -19111,9 +19111,7 @@ Buildings and Fortifications D</description>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a3af-8b11-c9e4-1019" type="max"/>
-          </constraints>
+          <constraints/>
           <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups>
@@ -19124,6 +19122,7 @@ Buildings and Fortifications D</description>
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d0b0-11c9-9060-6251" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="35c4-4205-aab5-693e" type="min"/>
               </constraints>
               <categoryLinks/>
               <selectionEntries/>
@@ -19219,33 +19218,17 @@ Buildings and Fortifications D</description>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="6b38-ab10-fd94-4917" name="Exchange Power axe for:" hidden="false" collective="false">
+            <selectionEntryGroup id="6b38-ab10-fd94-4917" name="Exchange Power axe for:" hidden="false" collective="false" defaultSelectionEntryId="d42a-fbda-1c76-f129">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b997-a833-d9e6-fa3f" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8e50-6c7b-963f-2ff8" type="min"/>
               </constraints>
               <categoryLinks/>
-              <selectionEntries>
-                <selectionEntry id="67ea-4368-3e51-9879" name="Power Fist" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f73a-6427-761b-4975" type="max"/>
-                  </constraints>
-                  <categoryLinks/>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="15.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
+              <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks>
                 <entryLink id="e95e-2930-b537-29eb" name="Archaeotech Pistol" hidden="false" targetId="e884-dd64-6171-4c9a" type="selectionEntry">
@@ -19319,6 +19302,14 @@ Buildings and Fortifications D</description>
                       <conditionGroups/>
                     </modifier>
                   </modifiers>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+                <entryLink id="d42a-fbda-1c76-f129" name="Power Axe" hidden="false" targetId="1695-a895-5233-71db" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
                   <constraints/>
                   <categoryLinks/>
                 </entryLink>
@@ -23347,6 +23338,31 @@ Buildings and Fortifications D</description>
       <costs>
         <cost name="pts" costTypeId="points" value="20.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="1695-a895-5233-71db" name="Power Axe" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="0c53-5ae7-dcbd-5dfb" name="Power Axe" hidden="false" targetId="b3af-1eca-6629-4894" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="fc65-bd43-92fc-5da2" name="Unwieldy" hidden="false" targetId="5eea-958c-d623-c3c9" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
