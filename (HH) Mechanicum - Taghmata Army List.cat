@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" book="Horus Heresy: Taghmata Army List" revision="61" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" book="Horus Heresy: Taghmata Army List" revision="62" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -1362,15 +1362,17 @@
           </conditions>
           <conditionGroups/>
         </modifier>
-        <modifier type="set" field="b558-4d66-9ea8-a966" value="-1">
+        <modifier type="set" field="5a4a-2d6f-43f6-f2b6" value="-1">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d266-0416-a5a6-881e" type="equalTo"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="equalTo"/>
           </conditions>
           <conditionGroups/>
         </modifier>
       </modifiers>
-      <constraints/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a4a-2d6f-43f6-f2b6" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="ec8a-2676-2661-296e-54726f6f707323232344415441232323" hidden="false" targetId="54726f6f707323232344415441232323" primary="true">
           <profiles/>
@@ -2194,7 +2196,7 @@
           </conditions>
           <conditionGroups/>
         </modifier>
-        <modifier type="set" field="b558-4d66-9ea8-a966" value="-1">
+        <modifier type="set" field="2a04-7e5c-6738-99bd" value="-1">
           <repeats/>
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d266-0416-a5a6-881e" type="equalTo"/>
@@ -2202,7 +2204,9 @@
           <conditionGroups/>
         </modifier>
       </modifiers>
-      <constraints/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a04-7e5c-6738-99bd" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="995d-2c1e-9f27-11e5" name="New CategoryLink" hidden="false" targetId="219d-aefa-dfa5-44db" primary="false">
           <profiles/>
@@ -2506,7 +2510,15 @@
       <infoLinks/>
       <modifiers/>
       <constraints/>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="0e0a-7503-6af7-ad7b" name="New CategoryLink" hidden="false" targetId="486561767920537570706f727423232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
     </entryLink>
     <entryLink id="d374-6127-ba36-07d0" name="Tarantula Sentry Gun Battery" hidden="false" targetId="29c7-a5ff-4521-f4f3" type="selectionEntry">
       <profiles/>
@@ -3320,9 +3332,7 @@
         </infoLink>
       </infoLinks>
       <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b558-4d66-9ea8-a966" type="max"/>
-      </constraints>
+      <constraints/>
       <categoryLinks>
         <categoryLink id="a3cf-4fd0-76a0-b47b" name="New CategoryLink" hidden="false" targetId="7fdd-2a97-d0e9-6524" primary="false">
           <profiles/>
@@ -13796,7 +13806,9 @@ Buildings and Fortifications D</description>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -13973,15 +13985,15 @@ Buildings and Fortifications D</description>
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="de9f-f10c-c0a9-789b" name="Ordo Reductor Artillery Tank Battery" book="HH:MT" page="84" hidden="false" collective="false" type="unit">
+    <selectionEntry id="de9f-f10c-c0a9-789b" name="Ordo Reductor Artillery Tank Battery" book="HH:MT" page="84" hidden="true" collective="false" type="unit">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="hidden" value="false">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0199-0faf-34c8-fbee" type="equalTo"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0199-0faf-34c8-fbee" type="greaterThan"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -14417,7 +14429,9 @@ Buildings and Fortifications D</description>
                   </selectionEntries>
                   <selectionEntryGroups/>
                   <entryLinks/>
-                  <costs/>
+                  <costs>
+                    <cost name="pts" costTypeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <selectionEntryGroups/>
@@ -18475,7 +18489,17 @@ Buildings and Fortifications D</description>
           </characteristics>
         </profile>
       </profiles>
-      <rules/>
+      <rules>
+        <rule id="bbac-9e94-552b-65b7" name="Master of Destruction" book="HH:Taghmata Army List" page="83" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>All of a Magos/Archmagos Reductor’s attacks count as having the Sunder special rule, and in addition rolls made by their attacks on the Vehicle Damage and Building Damage table where is this used have a +1 bonus, which is cumulative with any bonus for the attack’s AP value, etc.
+
+Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Archmagos Reductor may confer their Master of Destruction special rule’s benefits on a single Heavy or Ordnance weapon fired by a friendly vehicle or unit within 6&quot;. This may be a vehicle in which the Magos Reductor is being transported.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="35ca-b8a0-89c9-7710" hidden="false" targetId="5aad03df-0fd0-5920-0aec-2aefbe5bcf5b" type="rule">
           <profiles/>
@@ -18495,7 +18519,7 @@ Buildings and Fortifications D</description>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="cdca-b9f8-3815-7c14" hidden="false" targetId="c2e6-597c-db69-3685" type="rule">
+        <infoLink id="cdca-b9f8-3815-7c14" name="Sunder" hidden="false" targetId="c2e6-597c-db69-3685" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -19105,9 +19129,7 @@ Buildings and Fortifications D</description>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a3af-8b11-c9e4-1019" type="max"/>
-          </constraints>
+          <constraints/>
           <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups>
@@ -19118,6 +19140,7 @@ Buildings and Fortifications D</description>
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d0b0-11c9-9060-6251" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="35c4-4205-aab5-693e" type="min"/>
               </constraints>
               <categoryLinks/>
               <selectionEntries/>
@@ -19213,33 +19236,17 @@ Buildings and Fortifications D</description>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="6b38-ab10-fd94-4917" name="Exchange Power axe for:" hidden="false" collective="false">
+            <selectionEntryGroup id="6b38-ab10-fd94-4917" name="Exchange Power axe for:" hidden="false" collective="false" defaultSelectionEntryId="d42a-fbda-1c76-f129">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b997-a833-d9e6-fa3f" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8e50-6c7b-963f-2ff8" type="min"/>
               </constraints>
               <categoryLinks/>
-              <selectionEntries>
-                <selectionEntry id="67ea-4368-3e51-9879" name="Power Fist" page="0" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f73a-6427-761b-4975" type="max"/>
-                  </constraints>
-                  <categoryLinks/>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="15.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
+              <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks>
                 <entryLink id="e95e-2930-b537-29eb" name="Archaeotech Pistol" hidden="false" targetId="e884-dd64-6171-4c9a" type="selectionEntry">
@@ -19313,6 +19320,14 @@ Buildings and Fortifications D</description>
                       <conditionGroups/>
                     </modifier>
                   </modifiers>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+                <entryLink id="d42a-fbda-1c76-f129" name="Power Axe" hidden="false" targetId="1695-a895-5233-71db" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
                   <constraints/>
                   <categoryLinks/>
                 </entryLink>
@@ -23341,6 +23356,31 @@ Buildings and Fortifications D</description>
       <costs>
         <cost name="pts" costTypeId="points" value="20.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="1695-a895-5233-71db" name="Power Axe" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="0c53-5ae7-dcbd-5dfb" name="Power Axe" hidden="false" targetId="b3af-1eca-6629-4894" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="fc65-bd43-92fc-5da2" name="Unwieldy" hidden="false" targetId="5eea-958c-d623-c3c9" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
