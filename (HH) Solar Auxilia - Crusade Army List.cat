@@ -1398,7 +1398,7 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="acb2-c9d3-955a-d67c" name="New EntryLink" hidden="false" targetId="dec5-7c44-9557-c50f" type="selectionEntry">
+    <entryLink id="acb2-c9d3-955a-d67c" name="Auxilia Leman Russ Strike Squadron" hidden="false" targetId="dec5-7c44-9557-c50f" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1606,7 +1606,7 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="de56-2141-e0ec-9e91" name="New EntryLink" hidden="false" targetId="b362-7a87-7cb5-b4d6" type="selectionEntry">
+    <entryLink id="de56-2141-e0ec-9e91" name="Legate Commander" hidden="false" targetId="b362-7a87-7cb5-b4d6" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -10205,7 +10205,7 @@ Precision Shots</description>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="77d8-573c-6ff8-d968" hidden="false" targetId="aa451588-557c-7f81-2b3f-d17583985f38" type="rule">
+        <infoLink id="77d8-573c-6ff8-d968" name="Close Formation Fighting" hidden="false" targetId="aa451588-557c-7f81-2b3f-d17583985f38" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -10223,20 +10223,16 @@ Precision Shots</description>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="e775-2895-3349-3de8" hidden="false" targetId="4845-0bfe-2c22-883f" type="profile">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="9358-ae41-46cb-f3bf" hidden="false" targetId="86f51528-f2ce-a3eb-15d1-9396cf0548c7" type="profile">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
       </infoLinks>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="name" value="Lord Marshal">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a5d6-115c-ca50-b42e" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints/>
       <categoryLinks>
         <categoryLink id="b362-7a87-7cb5-b4d6-485123232344415441232323" hidden="false" targetId="485123232344415441232323" primary="true">
@@ -10319,7 +10315,7 @@ Precision Shots</description>
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="b715-38b5-5618-5412" hidden="false" targetId="d729d4dd-ac32-9a68-777e-c6f7626a0e7b" type="rule">
+                <infoLink id="b715-38b5-5618-5412" name="Forged in War" hidden="false" targetId="d729d4dd-ac32-9a68-777e-c6f7626a0e7b" type="rule">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -10344,7 +10340,7 @@ Precision Shots</description>
           <selectionEntryGroups/>
           <entryLinks/>
         </selectionEntryGroup>
-        <selectionEntryGroup id="7024-cbb2-ef90-5ce8" name="May exchange Refractor Field for:" hidden="false" collective="false">
+        <selectionEntryGroup id="7024-cbb2-ef90-5ce8" name="May exchange Refractor Field for:" hidden="false" collective="false" defaultSelectionEntryId="1c09-c80b-1f80-14ff">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -10409,6 +10405,25 @@ Precision Shots</description>
                 <cost name="pts" costTypeId="points" value="15.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="1c09-c80b-1f80-14ff" name="Refractor Field" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="832e-a8e7-76b9-c995" name="Refractor Field" hidden="false" targetId="4845-0bfe-2c22-883f" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -10424,7 +10439,14 @@ Precision Shots</description>
             <selectionEntry id="0aab-079c-2cf0-7eac" name="Melta Bombs" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
-              <infoLinks/>
+              <infoLinks>
+                <infoLink id="6eae-8ca4-350f-e2a8" name="Melta Bombs" hidden="false" targetId="a1d8-f9f3-865a-9faf" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a8d7-1fa7-dbd6-d7bc" type="max"/>
@@ -10440,7 +10462,14 @@ Precision Shots</description>
             <selectionEntry id="751a-910a-831e-3995" name="Digital Lasers" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
-              <infoLinks/>
+              <infoLinks>
+                <infoLink id="1089-d4c0-f245-b4a9" name="Digital Lasers" hidden="false" targetId="1a12-3c84-f5a6-1c48" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="75f6-bc88-10b9-3d75" type="max"/>
@@ -10558,22 +10587,30 @@ Precision Shots</description>
           <selectionEntryGroups/>
           <entryLinks/>
         </selectionEntryGroup>
-        <selectionEntryGroup id="d85a-f3ba-468d-fe85" name="May exchange void armour for:" hidden="false" collective="false">
+        <selectionEntryGroup id="d85a-f3ba-468d-fe85" name="May exchange void armour for:" hidden="false" collective="false" defaultSelectionEntryId="06d0-067f-4e15-f872">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2065-61ec-f847-a8c1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4e55-3bf7-179d-bc5b" type="min"/>
+          </constraints>
           <categoryLinks/>
           <selectionEntries>
             <selectionEntry id="384d-3959-88b6-a1f5" name="Artificer Armour" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
-              <infoLinks/>
+              <infoLinks>
+                <infoLink id="902a-ad3c-fd17-55a2" name="Artificer Armour" hidden="false" targetId="4b6b-08cb-a956-0eb3" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d482-3548-88f8-9b91" type="max"/>
-              </constraints>
+              <constraints/>
               <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
@@ -10581,6 +10618,25 @@ Precision Shots</description>
               <costs>
                 <cost name="pts" costTypeId="points" value="20.0"/>
               </costs>
+            </selectionEntry>
+            <selectionEntry id="06d0-067f-4e15-f872" name="Void Armour" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="205f-60c8-5fcb-3d38" name="Void Armour" hidden="false" targetId="86f51528-f2ce-a3eb-15d1-9396cf0548c7" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -10625,13 +10681,14 @@ Precision Shots</description>
           <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups>
-            <selectionEntryGroup id="2004-8630-93cd-f750" name="Exchange laspistol for:" hidden="false" collective="false">
+            <selectionEntryGroup id="2004-8630-93cd-f750" name="Exchange laspistol for:" hidden="false" collective="false" defaultSelectionEntryId="52f3-282f-961e-aa87">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3403-133e-12c3-9c6b" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3403-133e-12c3-9c6b" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="286a-3243-4602-44f3" type="min"/>
               </constraints>
               <categoryLinks/>
               <selectionEntries>
@@ -10639,7 +10696,7 @@ Precision Shots</description>
                   <profiles/>
                   <rules/>
                   <infoLinks>
-                    <infoLink id="3ed1-bc7e-71a1-2868" hidden="false" targetId="bf51be2a-da2c-b722-f0f4-d8be6779710e" type="profile">
+                    <infoLink id="3ed1-bc7e-71a1-2868" name="" hidden="false" targetId="bf51be2a-da2c-b722-f0f4-d8be6779710e" type="profile">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
@@ -10647,9 +10704,7 @@ Precision Shots</description>
                     </infoLink>
                   </infoLinks>
                   <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6b70-150b-41d9-e851" type="max"/>
-                  </constraints>
+                  <constraints/>
                   <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
@@ -10662,7 +10717,7 @@ Precision Shots</description>
                   <profiles/>
                   <rules/>
                   <infoLinks>
-                    <infoLink id="0e9a-33f9-c79f-928b" hidden="false" targetId="9c538d14-da32-654d-21a0-ee4f0a3354f4" type="profile">
+                    <infoLink id="0e9a-33f9-c79f-928b" name="" hidden="false" targetId="9c538d14-da32-654d-21a0-ee4f0a3354f4" type="profile">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
@@ -10670,9 +10725,7 @@ Precision Shots</description>
                     </infoLink>
                   </infoLinks>
                   <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6709-12f3-3d52-9225" type="max"/>
-                  </constraints>
+                  <constraints/>
                   <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
@@ -10685,7 +10738,7 @@ Precision Shots</description>
                   <profiles/>
                   <rules/>
                   <infoLinks>
-                    <infoLink id="6f4c-0d36-6b70-e75c" hidden="false" targetId="269c4711-8561-1d7b-0150-bbba32072f39" type="profile">
+                    <infoLink id="6f4c-0d36-6b70-e75c" name="" hidden="false" targetId="269c4711-8561-1d7b-0150-bbba32072f39" type="profile">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
@@ -10693,9 +10746,7 @@ Precision Shots</description>
                     </infoLink>
                   </infoLinks>
                   <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b602-3216-69eb-5620" type="max"/>
-                  </constraints>
+                  <constraints/>
                   <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
@@ -10708,7 +10759,13 @@ Precision Shots</description>
                   <profiles/>
                   <rules/>
                   <infoLinks>
-                    <infoLink id="b7c6-21cd-b33d-253c" hidden="false" targetId="7564129d-dc84-e237-d452-211f002e1e8e" type="profile">
+                    <infoLink id="b7c6-21cd-b33d-253c" name="Volkite Serpenta" hidden="false" targetId="7564129d-dc84-e237-d452-211f002e1e8e" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                    <infoLink id="4f87-e0a5-a4f1-1c64" name="Deflagrate" hidden="false" targetId="cbcf-5f25-f8ea-7cfd" type="rule">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
@@ -10716,9 +10773,7 @@ Precision Shots</description>
                     </infoLink>
                   </infoLinks>
                   <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7f9b-9fed-4052-b3d9" type="max"/>
-                  </constraints>
+                  <constraints/>
                   <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
@@ -10730,11 +10785,16 @@ Precision Shots</description>
                 <selectionEntry id="4109-7056-6884-ba7a" name="Hand flamer" hidden="false" collective="false" type="upgrade">
                   <profiles/>
                   <rules/>
-                  <infoLinks/>
+                  <infoLinks>
+                    <infoLink id="874f-f59c-40fe-5d2e" name="Hand Flamer" hidden="false" targetId="21b6-668e-d5ef-a8da" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
                   <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dee3-2f8c-f242-7fef" type="max"/>
-                  </constraints>
+                  <constraints/>
                   <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
@@ -10746,11 +10806,16 @@ Precision Shots</description>
                 <selectionEntry id="e94c-efb8-c767-e4b9" name="Plasma pistol" hidden="false" collective="false" type="upgrade">
                   <profiles/>
                   <rules/>
-                  <infoLinks/>
+                  <infoLinks>
+                    <infoLink id="2219-a176-6091-ab44" name="Plasma Pistol" hidden="false" targetId="f9fd-36be-dc19-401f" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
                   <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3832-a517-4341-66bf" type="max"/>
-                  </constraints>
+                  <constraints/>
                   <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
@@ -10764,9 +10829,7 @@ Precision Shots</description>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3c0a-494b-3528-b67b" type="max"/>
-                  </constraints>
+                  <constraints/>
                   <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
@@ -10778,11 +10841,16 @@ Precision Shots</description>
                 <selectionEntry id="63ee-0ae9-f642-d894" name="Power Fist" hidden="false" collective="false" type="upgrade">
                   <profiles/>
                   <rules/>
-                  <infoLinks/>
+                  <infoLinks>
+                    <infoLink id="7ad2-07d8-fb73-6d90" name="Power Fist" hidden="false" targetId="4ddd-399c-d71c-4ac1" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
                   <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8e02-3fed-7b65-dd7b" type="max"/>
-                  </constraints>
+                  <constraints/>
                   <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
@@ -10794,11 +10862,16 @@ Precision Shots</description>
                 <selectionEntry id="cf91-1ace-76b1-5a3d" name="Inferno pistol" hidden="false" collective="false" type="upgrade">
                   <profiles/>
                   <rules/>
-                  <infoLinks/>
+                  <infoLinks>
+                    <infoLink id="fbe1-3364-61b9-e82a" name="Inferno Pistol" hidden="false" targetId="a733-2f33-1e47-8359" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
                   <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5e57-0851-0369-2ebd" type="max"/>
-                  </constraints>
+                  <constraints/>
                   <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
@@ -10811,7 +10884,7 @@ Precision Shots</description>
                   <profiles/>
                   <rules/>
                   <infoLinks>
-                    <infoLink id="4ec3-a33a-bbc0-38c9" hidden="false" targetId="cf65-5d4c-24a3-92d2" type="profile">
+                    <infoLink id="4ec3-a33a-bbc0-38c9" name="" hidden="false" targetId="cf65-5d4c-24a3-92d2" type="profile">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
@@ -10827,10 +10900,7 @@ Precision Shots</description>
                       <conditionGroups/>
                     </modifier>
                   </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f291-2a46-3e0a-9508" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="471e-9c48-cdbc-d23f" type="max"/>
-                  </constraints>
+                  <constraints/>
                   <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
@@ -10843,7 +10913,7 @@ Precision Shots</description>
                   <profiles/>
                   <rules/>
                   <infoLinks>
-                    <infoLink id="1ea0-1059-57c7-6c89" hidden="false" targetId="534a368d-08c3-0ed9-71a3-870e4ab5e7e3" type="profile">
+                    <infoLink id="1ea0-1059-57c7-6c89" name="" hidden="false" targetId="534a368d-08c3-0ed9-71a3-870e4ab5e7e3" type="profile">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
@@ -10865,10 +10935,7 @@ Precision Shots</description>
                       <conditionGroups/>
                     </modifier>
                   </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="06d7-cd85-98cd-1260" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1b4a-ed71-e32d-edcf" type="max"/>
-                  </constraints>
+                  <constraints/>
                   <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
@@ -10876,6 +10943,25 @@ Precision Shots</description>
                   <costs>
                     <cost name="pts" costTypeId="points" value="25.0"/>
                   </costs>
+                </selectionEntry>
+                <selectionEntry id="52f3-282f-961e-aa87" name="Laspistol" hidden="false" collective="false" type="upgrade">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks>
+                    <infoLink id="2905-edf2-edcf-0281" name="Laspistol" hidden="false" targetId="f2b7-768f-a270-de64" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs/>
                 </selectionEntry>
               </selectionEntries>
               <selectionEntryGroups/>
@@ -10887,7 +10973,8 @@ Precision Shots</description>
               <infoLinks/>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="44da-6b01-a86f-ef83" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="44da-6b01-a86f-ef83" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="30c7-decc-165d-52c3" type="min"/>
               </constraints>
               <categoryLinks/>
               <selectionEntries>
@@ -10895,7 +10982,7 @@ Precision Shots</description>
                   <profiles/>
                   <rules/>
                   <infoLinks>
-                    <infoLink id="9e9c-0193-022f-c0dc" hidden="false" targetId="bf51be2a-da2c-b722-f0f4-d8be6779710e" type="profile">
+                    <infoLink id="9e9c-0193-022f-c0dc" name="" hidden="false" targetId="bf51be2a-da2c-b722-f0f4-d8be6779710e" type="profile">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
@@ -10903,9 +10990,7 @@ Precision Shots</description>
                     </infoLink>
                   </infoLinks>
                   <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="15ed-ca70-3b1a-7fb7" type="max"/>
-                  </constraints>
+                  <constraints/>
                   <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
@@ -10918,7 +11003,7 @@ Precision Shots</description>
                   <profiles/>
                   <rules/>
                   <infoLinks>
-                    <infoLink id="ce05-41c1-18ad-7cd5" hidden="false" targetId="9c538d14-da32-654d-21a0-ee4f0a3354f4" type="profile">
+                    <infoLink id="ce05-41c1-18ad-7cd5" name="" hidden="false" targetId="9c538d14-da32-654d-21a0-ee4f0a3354f4" type="profile">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
@@ -10926,9 +11011,7 @@ Precision Shots</description>
                     </infoLink>
                   </infoLinks>
                   <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4ab1-b2b3-23a1-db9f" type="max"/>
-                  </constraints>
+                  <constraints/>
                   <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
@@ -10941,7 +11024,7 @@ Precision Shots</description>
                   <profiles/>
                   <rules/>
                   <infoLinks>
-                    <infoLink id="5ed8-1e62-9fd3-f05c" hidden="false" targetId="269c4711-8561-1d7b-0150-bbba32072f39" type="profile">
+                    <infoLink id="5ed8-1e62-9fd3-f05c" name="" hidden="false" targetId="269c4711-8561-1d7b-0150-bbba32072f39" type="profile">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
@@ -10949,9 +11032,7 @@ Precision Shots</description>
                     </infoLink>
                   </infoLinks>
                   <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f993-1a7d-5c5e-854f" type="max"/>
-                  </constraints>
+                  <constraints/>
                   <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
@@ -10964,7 +11045,7 @@ Precision Shots</description>
                   <profiles/>
                   <rules/>
                   <infoLinks>
-                    <infoLink id="c7b1-79be-e29a-7b6d" hidden="false" targetId="7564129d-dc84-e237-d452-211f002e1e8e" type="profile">
+                    <infoLink id="c7b1-79be-e29a-7b6d" name="" hidden="false" targetId="7564129d-dc84-e237-d452-211f002e1e8e" type="profile">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
@@ -10972,9 +11053,7 @@ Precision Shots</description>
                     </infoLink>
                   </infoLinks>
                   <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4609-cca2-790e-00af" type="max"/>
-                  </constraints>
+                  <constraints/>
                   <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
@@ -10986,11 +11065,16 @@ Precision Shots</description>
                 <selectionEntry id="b7fc-3adb-471d-a243" name="Hand flamer" hidden="false" collective="false" type="upgrade">
                   <profiles/>
                   <rules/>
-                  <infoLinks/>
+                  <infoLinks>
+                    <infoLink id="6086-4067-f576-ead5" name="Hand Flamer" hidden="false" targetId="21b6-668e-d5ef-a8da" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
                   <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9705-20cd-6060-b1a9" type="max"/>
-                  </constraints>
+                  <constraints/>
                   <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
@@ -11002,11 +11086,22 @@ Precision Shots</description>
                 <selectionEntry id="c646-84e6-8446-a98b" name="Plasma pistol" hidden="false" collective="false" type="upgrade">
                   <profiles/>
                   <rules/>
-                  <infoLinks/>
+                  <infoLinks>
+                    <infoLink id="a7f1-d9d1-efdc-d2b1" name="Plasma Pistol" hidden="false" targetId="f9fd-36be-dc19-401f" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                    <infoLink id="dfce-7faa-5a26-bd94" name="Gets Hot" hidden="false" targetId="f4fd-d519-4769-5510" type="rule">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
                   <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="959c-0aaf-b0b0-89b4" type="max"/>
-                  </constraints>
+                  <constraints/>
                   <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
@@ -11020,9 +11115,7 @@ Precision Shots</description>
                   <rules/>
                   <infoLinks/>
                   <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b496-dafa-1d52-9dfa" type="max"/>
-                  </constraints>
+                  <constraints/>
                   <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
@@ -11034,11 +11127,16 @@ Precision Shots</description>
                 <selectionEntry id="3218-cec7-5178-957f" name="Power Fist" hidden="false" collective="false" type="upgrade">
                   <profiles/>
                   <rules/>
-                  <infoLinks/>
+                  <infoLinks>
+                    <infoLink id="f026-0d44-5f08-e879" name="Power Fist" hidden="false" targetId="4ddd-399c-d71c-4ac1" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
                   <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f50a-d726-98fb-caab" type="max"/>
-                  </constraints>
+                  <constraints/>
                   <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
@@ -11050,11 +11148,16 @@ Precision Shots</description>
                 <selectionEntry id="a2ac-dfd5-deae-21f5" name="Inferno pistol" hidden="false" collective="false" type="upgrade">
                   <profiles/>
                   <rules/>
-                  <infoLinks/>
+                  <infoLinks>
+                    <infoLink id="17c1-c035-3003-c410" name="Inferno Pistol" hidden="false" targetId="a733-2f33-1e47-8359" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
                   <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fd84-1781-0b96-4a4d" type="max"/>
-                  </constraints>
+                  <constraints/>
                   <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
@@ -11067,7 +11170,7 @@ Precision Shots</description>
                   <profiles/>
                   <rules/>
                   <infoLinks>
-                    <infoLink id="d248-c16b-4a09-db96" hidden="false" targetId="cf65-5d4c-24a3-92d2" type="profile">
+                    <infoLink id="d248-c16b-4a09-db96" name="" hidden="false" targetId="cf65-5d4c-24a3-92d2" type="profile">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
@@ -11083,10 +11186,7 @@ Precision Shots</description>
                       <conditionGroups/>
                     </modifier>
                   </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d481-7d98-e040-11c0" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4e6c-0886-43fa-2696" type="max"/>
-                  </constraints>
+                  <constraints/>
                   <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
@@ -11099,7 +11199,7 @@ Precision Shots</description>
                   <profiles/>
                   <rules/>
                   <infoLinks>
-                    <infoLink id="01a8-30ec-19c1-9361" hidden="false" targetId="534a368d-08c3-0ed9-71a3-870e4ab5e7e3" type="profile">
+                    <infoLink id="01a8-30ec-19c1-9361" name="" hidden="false" targetId="534a368d-08c3-0ed9-71a3-870e4ab5e7e3" type="profile">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
@@ -11121,10 +11221,7 @@ Precision Shots</description>
                       <conditionGroups/>
                     </modifier>
                   </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e32b-43ac-131f-2d80" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f7b0-80ea-21cc-fca6" type="max"/>
-                  </constraints>
+                  <constraints/>
                   <categoryLinks/>
                   <selectionEntries/>
                   <selectionEntryGroups/>
@@ -11241,7 +11338,15 @@ Precision Shots</description>
           <modifiers/>
         </infoLink>
       </infoLinks>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca2a-4940-90bf-1a80" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="5f40-ddbe-981f-070e" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0a4c-49a0-d2a8-dfed" type="max"/>
