@@ -4761,18 +4761,6 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="If the target is falling back, it immediately Regroups. In addition, whilst the power is in effect, the target gains the Fearless special rule."/>
           </characteristics>
         </profile>
-        <profile id="51d1-3742-104e-1569" name="Invisibility" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
-            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
-            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, enemy units can only fire Snap Shots at the target unit and in close combat will only hit models in it on To Hit rolls of a 6."/>
-          </characteristics>
-        </profile>
         <profile id="66f8-2849-5db1-34bb" name="Shrouding" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
@@ -4783,6 +4771,18 @@ D6    Result		S	AP
             <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
             <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst this power is in effect, the Psyker,and all friendly models within 6&quot; of the Psyker, have the Shrouded special rule."/>
+          </characteristics>
+        </profile>
+        <profile id="a306-03eb-e597-52b1" name="Mind Howl" book="HH: Core Rule book" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="malediction"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="12&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Targets a single enemy unit. Whilst this power is in effect, all models in the target unit reduce their Ballastic Skill and Weapon Skill to 1."/>
           </characteristics>
         </profile>
       </profiles>
