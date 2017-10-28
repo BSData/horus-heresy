@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="89" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="90" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -4761,18 +4761,6 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="If the target is falling back, it immediately Regroups. In addition, whilst the power is in effect, the target gains the Fearless special rule."/>
           </characteristics>
         </profile>
-        <profile id="51d1-3742-104e-1569" name="Invisibility" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
-            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
-            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, enemy units can only fire Snap Shots at the target unit and in close combat will only hit models in it on To Hit rolls of a 6."/>
-          </characteristics>
-        </profile>
         <profile id="66f8-2849-5db1-34bb" name="Shrouding" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
@@ -4783,6 +4771,18 @@ D6    Result		S	AP
             <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
             <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst this power is in effect, the Psyker,and all friendly models within 6&quot; of the Psyker, have the Shrouded special rule."/>
+          </characteristics>
+        </profile>
+        <profile id="a306-03eb-e597-52b1" name="Mind Howl" book="HH: Core Rule book" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="malediction"/>
+            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="12&quot;"/>
+            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Targets a single enemy unit. Whilst this power is in effect, all models in the target unit reduce their Ballastic Skill and Weapon Skill to 1."/>
           </characteristics>
         </profile>
       </profiles>
@@ -15246,12 +15246,14 @@ In addition, units containing one or more models with the Zealot special rule re
       <description>If a model has this special rule, or is attacking with a Melee weapon that has this special rule, it rolls an additional D6 for armour penetration in close combat.
 If a model makes a shooting attack with a weapon that has this special rule, it rolls an additional D6 for armour penetration. In either case, this special rule has no effect against non-vehicle models.</description>
     </rule>
-    <rule id="9430-a4d5-6f01-57e2" name="Assault Grenades" book="BRB 7th" hidden="false">
+    <rule id="9430-a4d5-6f01-57e2" name="Assault Grenades" book="HH: Core Rule Book" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>Models equipped with assault grenades don’t suffer the penalty to their Initiative for charging enemies through difficult terrain, but fight at their normal Initiative in the ensuing combat.</description>
+      <description>Shooting: When a unit equiped with Assualt Greandes makes a shooting attack, one model can choose to throw a Grenade, rather than using another shooting weapon.e
+
+Assualt: Models equipped with assault grenades don’t suffer the penalty to their Initiative for charging enemies through difficult terrain, but fight at their normal Initiative in the ensuing combat.</description>
     </rule>
     <rule id="38d5-b6eb-bda8-2497" name="Bulky" book="BRB 7th" hidden="false">
       <profiles/>
