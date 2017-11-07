@@ -16470,15 +16470,6 @@ Buildings and Fortifications D</description>
             <characteristic name="Save" characteristicTypeId="5361766523232344415441232323" value="2+"/>
           </characteristics>
         </profile>
-        <profile id="3dc1-5e7c-4c81-20ef" name="Djinn-skein" book="HH3: Extermination" page="215" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Provides the following:   - At the start of his shooting phase, the Archmagos Prime may nominate a single unit from his primary detachment (including himself) within 6&quot; of him or any Cyber-occularis purchased as a part of his wargear to benefit from +1 BS.  - Friendly units from the primary detachment including the Archmagos who deep strike within 6&quot; do not scatter - Barrage weapons in the same detachment may draw line of sight from the Archmagos or any of his Cyrber-occularis"/>
-          </characteristics>
-        </profile>
         <profile id="9d4a-7e0f-d9cd-f6aa" name="Paragon Blade" book="" hidden="false" profileTypeId="576561706f6e23232344415441232323">
           <profiles/>
           <rules/>
@@ -16567,6 +16558,12 @@ Buildings and Fortifications D</description>
           <modifiers/>
         </infoLink>
         <infoLink id="5b8a-f69d-5c79-207f" name="New InfoLink" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="a9fd-bf54-37f6-69af" name="Djinn-skein" hidden="false" targetId="c96b-c345-a620-5b2b" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -16709,15 +16706,6 @@ Buildings and Fortifications D</description>
             <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Provides Feel no Pain 5 and Extremely Bulky rules. Although Satarael is otherwise a character, he may not be joined by other models to form a unit or join another unit himself unless via the Patris Cybernetica special rule. He may, however, be transported alongside other units inside Mechanicum vehicles so long as there is room."/>
           </characteristics>
         </profile>
-        <profile id="156a-451b-ae26-a0d6" name="Djinn-skein" book="HH3: Extermination" page="215" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Provides the following:   - At the start of his shooting phase, the Archmagos Prime may nominate a single unit from his primary detachment (including himself) within 6&quot; of him or any Cyber-occularis purchased as a part of his wargear to benefit from +1 BS.  - Friendly units from the primary detachment including the Archmagos who deep strike within 6&quot; do not scatter - Barrage weapons in the same detachment may draw line of sight from the Archmagos or any of his Cyrber-occularis"/>
-          </characteristics>
-        </profile>
         <profile id="8898-786c-cc59-0816" name="Repulsion Shield" book="HH3: Extermination" page="217" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
           <profiles/>
           <rules/>
@@ -16828,6 +16816,12 @@ Buildings and Fortifications D</description>
           </modifiers>
         </infoLink>
         <infoLink id="1604-6eeb-6caa-95b6" name="Patris Cybernetica" hidden="false" targetId="a41e-00bb-2ace-734f" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="8335-ff17-a8ca-4a4f" name="Djinn-skein" hidden="false" targetId="c96b-c345-a620-5b2b" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -18429,6 +18423,22 @@ Buildings and Fortifications D</description>
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="114e-84fe-b970-0289" name="Djinn-skein (Warlord-Only)" hidden="true" targetId="91ea-9aa8-13dd-7775" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="076b-2276-b456-9d6f" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="95.0"/>
@@ -19385,6 +19395,22 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
           <rules/>
           <infoLinks/>
           <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="5132-18be-4d0c-2cda" name="Djinn-skein (Warlord-Only)" hidden="true" targetId="91ea-9aa8-13dd-7775" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8e5-ca43-91cf-e219" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
           <categoryLinks/>
         </entryLink>
@@ -23380,7 +23406,32 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="91ea-9aa8-13dd-7775" name="Djinn-skein (Warlord-Only)" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="b0d2-d906-6f7d-e5ef" name="Djinn-skein" hidden="false" targetId="c96b-c345-a620-5b2b" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cf6d-81ee-ff43-0b38" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="25.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -26354,6 +26405,20 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="5"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Barrage, Large Blast"/>
+      </characteristics>
+    </profile>
+    <profile id="c96b-c345-a620-5b2b" name="Djinn-skein" book="HH3: Extermination" page="215" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="
+
+Provides the following:   
+- At the start of his shooting phase, the Archmagos Prime may nominate a single unit from his primary detachment (including himself) within 6&quot; of him or any Cyber-occularis purchased as a part of his wargear to benefit from +1 BS.  
+- Friendly units from the primary detachment including the Archmagos who deep strike within 6&quot; do not scatter 
+- Barrage weapons in the same detachment may draw line of sight from the Archmagos and any Cyber-occularis purchased as part of their wargear."/>
       </characteristics>
     </profile>
   </sharedProfiles>
