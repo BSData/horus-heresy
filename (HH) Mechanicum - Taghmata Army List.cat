@@ -17517,7 +17517,7 @@ Buildings and Fortifications D</description>
         <cost name="pts" costTypeId="points" value="75.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="aa74-77f4-7266-36b6" name="Magos Prime" book="Taghmata Army List" page="26-27" hidden="false" collective="false" type="unit">
+    <selectionEntry id="aa74-77f4-7266-36b6" name="Magos Prime" book="Taghmata Army List" page="26-27" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="494b-f6c5-1304-ab14" name="Magos Prime" book="HH3: Extermination" page="214" hidden="false" profileTypeId="556e697423232344415441232323">
           <profiles/>
@@ -18192,13 +18192,13 @@ Buildings and Fortifications D</description>
               <infoLinks/>
               <modifiers/>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="66f4-5ed2-a6f6-9e26" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9522-65d2-0d7d-97b3" type="max"/>
               </constraints>
               <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks>
-                <entryLink id="6da6-a620-f3f1-73e3" name="Power Weapon" hidden="false" targetId="9d3d-aef5-6635-b0c6" type="selectionEntryGroup">
+                <entryLink id="6da6-a620-f3f1-73e3" name="Power Weapon" hidden="false" targetId="5123-2580-422c-33f8" type="selectionEntry">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -18252,7 +18252,7 @@ Buildings and Fortifications D</description>
                     <modifier type="set" field="hidden" value="true">
                       <repeats/>
                       <conditions>
-                        <condition field="selections" scope="aa74-77f4-7266-36b6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="076b-2276-b456-9d6f" type="equalTo"/>
+                        <condition field="selections" scope="aa74-77f4-7266-36b6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="00cf-20ab-1b17-aad1" type="equalTo"/>
                       </conditions>
                       <conditionGroups/>
                     </modifier>
@@ -18360,7 +18360,7 @@ Buildings and Fortifications D</description>
                     <modifier type="set" field="hidden" value="true">
                       <repeats/>
                       <conditions>
-                        <condition field="selections" scope="aa74-77f4-7266-36b6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="076b-2276-b456-9d6f" type="equalTo"/>
+                        <condition field="selections" scope="aa74-77f4-7266-36b6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="00cf-20ab-1b17-aad1" type="equalTo"/>
                       </conditions>
                       <conditionGroups/>
                     </modifier>
@@ -18702,7 +18702,15 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
               <profiles/>
               <rules/>
               <infoLinks/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="04e8-11de-2eb4-67e0" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="00cf-20ab-1b17-aad1" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <constraints/>
               <categoryLinks/>
             </entryLink>
@@ -23005,7 +23013,7 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
         <cost name="pts" costTypeId="points" value="5.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b4b1-1973-4aa3-bbd2" name="Paragon Blade" page="0" hidden="true" collective="false" type="upgrade">
+    <selectionEntry id="b4b1-1973-4aa3-bbd2" name="Paragon Blade" page="0" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules/>
       <infoLinks>
@@ -26413,12 +26421,7 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="
-
-Provides the following:   
-- At the start of his shooting phase, the Archmagos Prime may nominate a single unit from his primary detachment (including himself) within 6&quot; of him or any Cyber-occularis purchased as a part of his wargear to benefit from +1 BS.  
-- Friendly units from the primary detachment including the Archmagos who deep strike within 6&quot; do not scatter 
-- Barrage weapons in the same detachment may draw line of sight from the Archmagos and any Cyber-occularis purchased as part of their wargear."/>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="  Provides the following:    - At the start of his shooting phase, the Archmagos Prime may nominate a single unit from his primary detachment (including himself) within 6&quot; of him or any Cyber-occularis purchased as a part of his wargear to benefit from +1 BS.   - Friendly units from the primary detachment including the Archmagos who deep strike within 6&quot; do not scatter  - Barrage weapons in the same detachment may draw line of sight from the Archmagos and any Cyber-occularis purchased as part of their wargear."/>
       </characteristics>
     </profile>
   </sharedProfiles>
