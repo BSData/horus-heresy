@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" book="Crusade Imperialis" revision="57" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" book="Crusade Imperialis" revision="58" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -945,7 +945,7 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="a4ea-2697-ec1a-2e14" name="New EntryLink" hidden="false" targetId="837d-73be-55e0-e5d1" type="selectionEntry">
+    <entryLink id="a4ea-2697-ec1a-2e14" name="Militia Auxiliary Battle Tank Attack Squadron" hidden="false" targetId="837d-73be-55e0-e5d1" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1160,7 +1160,7 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="e257-2315-b28f-51d5" name="New EntryLink" hidden="false" targetId="6de2-2bf3-3277-afab" type="selectionEntry">
+    <entryLink id="e257-2315-b28f-51d5" name="Imperialis Auxilia Sentinel Scout Squadron" hidden="false" targetId="6de2-2bf3-3277-afab" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -3868,8 +3868,8 @@ D3     Mutation
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ad03-acc9-027a-06c7" type="min"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="834c-ee41-50bd-d121" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ad03-acc9-027a-06c7" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="834c-ee41-50bd-d121" type="max"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries>
@@ -3897,10 +3897,39 @@ D3     Mutation
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d6ba-6158-5adf-617b" type="max"/>
               </constraints>
               <categoryLinks/>
-              <selectionEntries/>
+              <selectionEntries>
+                <selectionEntry id="0ae0-007d-e949-8cc6" name="Twin-linked lascannon" hidden="false" collective="false" type="upgrade">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks>
+                    <infoLink id="31ae-269b-9af1-c83b" name="Lascannon" book="HH: CIAL" page="63" hidden="false" targetId="1cce-972c-022a-2590" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="append" field="5479706523232344415441232323" value="Twin-linked">
+                          <repeats/>
+                          <conditions/>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a97c-d892-b574-80a8" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb86-413a-db82-63ea" type="min"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs/>
+                </selectionEntry>
+              </selectionEntries>
               <selectionEntryGroups/>
               <entryLinks>
-                <entryLink id="7026-5eda-86af-181e" hidden="false" targetId="4be5-eee6-ab84-8558" type="selectionEntryGroup">
+                <entryLink id="7026-5eda-86af-181e" name="May exchange heavy bolter for:" book="" hidden="false" targetId="4be5-eee6-ab84-8558" type="selectionEntryGroup">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -3924,7 +3953,7 @@ D3     Mutation
                   <constraints/>
                   <categoryLinks/>
                 </entryLink>
-                <entryLink id="8809-a6d1-512a-49a3" hidden="false" targetId="525c-a63f-e928-d7d5" type="selectionEntryGroup">
+                <entryLink id="8809-a6d1-512a-49a3" name="May take a pair of sponsons:" hidden="false" targetId="525c-a63f-e928-d7d5" type="selectionEntryGroup">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -3961,10 +3990,39 @@ D3     Mutation
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2576-ae4f-5b82-dcce" type="max"/>
               </constraints>
               <categoryLinks/>
-              <selectionEntries/>
+              <selectionEntries>
+                <selectionEntry id="c643-8ea4-35f9-f522" name="Exterminator autocannon" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="6410-0b2b-1ce1-cf90" name="Exterminator autocannon" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot;"/>
+                        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
+                        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+                        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 4, Twin-linked"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c05-7c14-1971-844f" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81cf-678f-58ec-b0a3" type="min"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs/>
+                </selectionEntry>
+              </selectionEntries>
               <selectionEntryGroups/>
               <entryLinks>
-                <entryLink id="b6d0-caa9-7637-7c64" hidden="false" targetId="4be5-eee6-ab84-8558" type="selectionEntryGroup">
+                <entryLink id="b6d0-caa9-7637-7c64" name="May exchange heavy bolter for:" hidden="false" targetId="4be5-eee6-ab84-8558" type="selectionEntryGroup">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -4025,10 +4083,39 @@ D3     Mutation
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1cd6-fa68-dd4a-a71a" type="max"/>
               </constraints>
               <categoryLinks/>
-              <selectionEntries/>
+              <selectionEntries>
+                <selectionEntry id="9a41-d614-c6c2-be6a" name="Demolisher Cannon" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="baa7-8c9f-ea3e-2c90" name="Demolisher Cannon" book="HH: CIAL" page="63" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="24&quot;"/>
+                        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="10"/>
+                        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+                        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Large Blast"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f427-81b1-7dc9-ced0" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b17d-28d6-e3f1-bfbe" type="min"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs/>
+                </selectionEntry>
+              </selectionEntries>
               <selectionEntryGroups/>
               <entryLinks>
-                <entryLink id="19da-a7e0-a156-90b3" hidden="false" targetId="4be5-eee6-ab84-8558" type="selectionEntryGroup">
+                <entryLink id="19da-a7e0-a156-90b3" name="May exchange heavy bolter for:" hidden="false" targetId="4be5-eee6-ab84-8558" type="selectionEntryGroup">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -4089,10 +4176,46 @@ D3     Mutation
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="538b-19e5-fe76-2187" type="max"/>
               </constraints>
               <categoryLinks/>
-              <selectionEntries/>
+              <selectionEntries>
+                <selectionEntry id="fa36-7bf8-3d7f-071c" name="Vanquisher battlecannon" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="2350-d0fa-fe3c-d767" name="Vanquisher battlecannon" book="HH: CIAL" page="63" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="72&quot;"/>
+                        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
+                        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+                        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Armourbane"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules/>
+                  <infoLinks>
+                    <infoLink id="0951-4aaa-729e-59cd" name="Armourbane" hidden="false" targetId="e182-50cd-0867-9a8d" type="rule">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38f4-c3b3-b03e-5263" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d93e-3ce4-34a2-82e0" type="min"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs/>
+                </selectionEntry>
+              </selectionEntries>
               <selectionEntryGroups/>
               <entryLinks>
-                <entryLink id="fade-aba7-bcc6-ee94" hidden="false" targetId="4be5-eee6-ab84-8558" type="selectionEntryGroup">
+                <entryLink id="fade-aba7-bcc6-ee94" name="May exchange heavy bolter for:" hidden="false" targetId="4be5-eee6-ab84-8558" type="selectionEntryGroup">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -4116,7 +4239,7 @@ D3     Mutation
                   <constraints/>
                   <categoryLinks/>
                 </entryLink>
-                <entryLink id="a185-22bf-c09d-5d88" hidden="false" targetId="525c-a63f-e928-d7d5" type="selectionEntryGroup">
+                <entryLink id="a185-22bf-c09d-5d88" name="May take a pair of sponsons:" hidden="false" targetId="525c-a63f-e928-d7d5" type="selectionEntryGroup">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -4153,10 +4276,33 @@ D3     Mutation
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2b12-e3ab-323b-4da4" type="max"/>
               </constraints>
               <categoryLinks/>
-              <selectionEntries/>
+              <selectionEntries>
+                <selectionEntry id="ff3d-7968-ed23-b378" name="Battlecannon" hidden="false" collective="false" type="upgrade">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks>
+                    <infoLink id="c4fd-8615-35f6-c492" name="Battle cannon" book="HH: CIAL" page="63" hidden="false" targetId="94da-501b-a2f5-6c61" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2171-4b6a-34bb-493b" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a43-88c4-3cb3-3357" type="min"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs/>
+                </selectionEntry>
+              </selectionEntries>
               <selectionEntryGroups/>
               <entryLinks>
-                <entryLink id="ca26-a3e9-8733-c72e" hidden="false" targetId="4be5-eee6-ab84-8558" type="selectionEntryGroup">
+                <entryLink id="ca26-a3e9-8733-c72e" name="May exchange heavy bolter for:" hidden="false" targetId="4be5-eee6-ab84-8558" type="selectionEntryGroup">
                   <profiles/>
                   <rules/>
                   <infoLinks/>

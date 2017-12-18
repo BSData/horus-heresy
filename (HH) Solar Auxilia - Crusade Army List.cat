@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" book="Crusade Imperialis" revision="44" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" book="Crusade Imperialis" revision="45" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -4542,8 +4542,8 @@
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="99c3-e400-a8f0-3c2d" type="min"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bce7-d34c-caa9-acd9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="99c3-e400-a8f0-3c2d" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bce7-d34c-caa9-acd9" type="max"/>
           </constraints>
           <categoryLinks>
             <categoryLink id="2868-e5b1-e0c3-00d4" name="New CategoryLink" hidden="false" targetId="e59c-462e-9d9c-66dd" primary="false">
@@ -4578,22 +4578,10 @@
                     <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Tank"/>
                   </characteristics>
                 </profile>
-                <profile id="c659-b03d-2c08-fcbe" name="Demolisher Cannon" book="HH4: Conquest" page="278" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <characteristics>
-                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="24&quot;"/>
-                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="10"/>
-                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
-                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Large Blast"/>
-                  </characteristics>
-                </profile>
               </profiles>
               <rules/>
               <infoLinks>
-                <infoLink id="c206-368e-32fb-0f1b" hidden="false" targetId="b17f-2d29-e5e1-93ba" type="profile">
+                <infoLink id="c206-368e-32fb-0f1b" name="Auxiliary Drive" hidden="false" targetId="b17f-2d29-e5e1-93ba" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -4616,8 +4604,52 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8921-fc87-0462-6be4" type="max"/>
               </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
+              <categoryLinks>
+                <categoryLink id="b76f-0089-b25d-893d" name="New CategoryLink" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+                <categoryLink id="0a24-b022-72a2-e5ab" name="New CategoryLink" hidden="false" targetId="e59c-462e-9d9c-66dd" primary="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                </categoryLink>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry id="8d9e-0209-3795-15aa" name="Demolisher Cannon" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="861e-3de4-6c5b-dd11" name="Demolisher Cannon" book="HH: CIAL" page="63" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="24&quot;"/>
+                        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="10"/>
+                        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+                        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Large Blast"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6189-5aac-1eb4-96e6" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="232f-8376-d00b-2ddf" type="min"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs/>
+                </selectionEntry>
+              </selectionEntries>
               <selectionEntryGroups/>
               <entryLinks>
                 <entryLink id="09a4-8242-3f56-6015" hidden="false" targetId="728b0618-438e-2698-33e7-2230ecd7bb2e" type="selectionEntryGroup">
@@ -4657,22 +4689,10 @@
                     <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Tank"/>
                   </characteristics>
                 </profile>
-                <profile id="1d15-598d-1c99-fd4e" name="Volkite Demi-culverin" book="HH4: Conquest" page="278" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <characteristics>
-                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="45&quot;"/>
-                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
-                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="5"/>
-                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 5, Deflagrate"/>
-                  </characteristics>
-                </profile>
               </profiles>
               <rules/>
               <infoLinks>
-                <infoLink id="029b-f164-b79f-cfe8" hidden="false" targetId="b17f-2d29-e5e1-93ba" type="profile">
+                <infoLink id="029b-f164-b79f-cfe8" name="Auxiliary Drive" hidden="false" targetId="b17f-2d29-e5e1-93ba" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -4702,10 +4722,46 @@
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="70d8-aa2f-27d2-fa7c" type="max"/>
               </constraints>
               <categoryLinks/>
-              <selectionEntries/>
+              <selectionEntries>
+                <selectionEntry id="5451-96ed-55fb-de67" name="Volkite Demi-culverin" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="60e6-47b8-e353-69fc" name="Volkite Demi-culverin" book="HH: CIAL" page="63" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="45&quot;"/>
+                        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
+                        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="5"/>
+                        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 5, Deflagrate"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules/>
+                  <infoLinks>
+                    <infoLink id="d01d-7458-2f85-6a1b" name="Deflagrate" hidden="false" targetId="cbcf-5f25-f8ea-7cfd" type="rule">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c82-7947-36fe-4585" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e79-0734-188b-22ac" type="min"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs/>
+                </selectionEntry>
+              </selectionEntries>
               <selectionEntryGroups/>
               <entryLinks>
-                <entryLink id="283b-d408-ee88-cc82" hidden="false" targetId="728b0618-438e-2698-33e7-2230ecd7bb2e" type="selectionEntryGroup">
+                <entryLink id="283b-d408-ee88-cc82" name="May exchange heavy bolter for:" hidden="false" targetId="728b0618-438e-2698-33e7-2230ecd7bb2e" type="selectionEntryGroup">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -4742,22 +4798,10 @@
                     <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Tank"/>
                   </characteristics>
                 </profile>
-                <profile id="0695-cd1c-50b8-8c9d" name="Executioner Cannon" book="HH4: Conquest" page="278" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <characteristics>
-                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
-                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
-                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
-                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3, Blast"/>
-                  </characteristics>
-                </profile>
               </profiles>
               <rules/>
               <infoLinks>
-                <infoLink id="e7bf-4430-8cb4-c2d7" hidden="false" targetId="b17f-2d29-e5e1-93ba" type="profile">
+                <infoLink id="e7bf-4430-8cb4-c2d7" name="Auxiliary Drive" hidden="false" targetId="b17f-2d29-e5e1-93ba" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -4781,7 +4825,36 @@
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f87f-3ae7-cdd8-b87d" type="max"/>
               </constraints>
               <categoryLinks/>
-              <selectionEntries/>
+              <selectionEntries>
+                <selectionEntry id="323f-8a9a-282a-cd48" name="Executioner Cannon" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="f8e8-23d0-b4d0-e0dc" name="Executioner Cannon" book="HH: CIAL" page="63" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
+                        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
+                        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+                        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3, Blast"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b193-2598-c980-780b" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="396d-5627-1648-a270" type="min"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs/>
+                </selectionEntry>
+              </selectionEntries>
               <selectionEntryGroups/>
               <entryLinks>
                 <entryLink id="cc6a-75ba-eb07-37b1" hidden="false" targetId="728b0618-438e-2698-33e7-2230ecd7bb2e" type="selectionEntryGroup">
@@ -4907,7 +4980,30 @@
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a71-361c-2cab-0552" type="max"/>
               </constraints>
               <categoryLinks/>
-              <selectionEntries/>
+              <selectionEntries>
+                <selectionEntry id="1152-a557-3773-6384" name="Battlecannon" hidden="false" collective="false" type="upgrade">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks>
+                    <infoLink id="9e7b-0226-70c1-2c71" name="Battle cannon" book="HH: CIAL" page="63" hidden="false" targetId="94da-501b-a2f5-6c61" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d0c-7027-4d9a-7f34" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbb0-c269-8eaf-31d3" type="min"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs/>
+                </selectionEntry>
+              </selectionEntries>
               <selectionEntryGroups/>
               <entryLinks>
                 <entryLink id="5425-db45-039b-4089" hidden="false" targetId="728b0618-438e-2698-33e7-2230ecd7bb2e" type="selectionEntryGroup">
@@ -4947,7 +5043,7 @@
                     <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Tank"/>
                   </characteristics>
                 </profile>
-                <profile id="58d2-172f-f0a5-40f5" name="Exterminator Autocannon" book="" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                <profile id="58d2-172f-f0a5-40f5" name="Exterminator Autocannon" book="HH: CIAL" page="63" hidden="false" profileTypeId="576561706f6e23232344415441232323">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -4992,7 +5088,36 @@
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6774-1d77-565f-8b49" type="max"/>
               </constraints>
               <categoryLinks/>
-              <selectionEntries/>
+              <selectionEntries>
+                <selectionEntry id="06f0-a620-c2be-b46e" name="Exterminator autocannon" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="8984-7c01-b89d-91ee" name="Exterminator autocannon" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot;"/>
+                        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
+                        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+                        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 4, Twin-linked"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb6b-d560-d037-c31c" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01f2-9edd-5a4c-e5cf" type="min"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs/>
+                </selectionEntry>
+              </selectionEntries>
               <selectionEntryGroups/>
               <entryLinks>
                 <entryLink id="e7c1-1569-b36c-28b2" hidden="false" targetId="728b0618-438e-2698-33e7-2230ecd7bb2e" type="selectionEntryGroup">
@@ -5065,7 +5190,36 @@
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="da77-ffbe-eee6-377d" type="max"/>
               </constraints>
               <categoryLinks/>
-              <selectionEntries/>
+              <selectionEntries>
+                <selectionEntry id="5baf-7f35-dc25-3ab2" name="Twin-linked lascannon" hidden="false" collective="false" type="upgrade">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks>
+                    <infoLink id="28b5-506b-e15e-0d43" name="Lascannon" book="HH: CIAL" page="63" hidden="false" targetId="1cce-972c-022a-2590" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="append" field="5479706523232344415441232323" value="Twin-linked">
+                          <repeats/>
+                          <conditions/>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e02-e2e6-d024-77f3" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2557-9eca-0bba-59b6" type="min"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs/>
+                </selectionEntry>
+              </selectionEntries>
               <selectionEntryGroups/>
               <entryLinks>
                 <entryLink id="3a4e-fb57-1764-1c8f" hidden="false" targetId="728b0618-438e-2698-33e7-2230ecd7bb2e" type="selectionEntryGroup">
@@ -5076,7 +5230,7 @@
                   <constraints/>
                   <categoryLinks/>
                 </entryLink>
-                <entryLink id="3dac-35a7-1a2c-65ec" hidden="false" targetId="e2c18037-76a2-67ad-2abc-cdf9bdf62e01" type="selectionEntryGroup">
+                <entryLink id="3dac-35a7-1a2c-65ec" name="May take any of the following:" hidden="false" targetId="e2c18037-76a2-67ad-2abc-cdf9bdf62e01" type="selectionEntryGroup">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -5105,22 +5259,10 @@
                     <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Tank"/>
                   </characteristics>
                 </profile>
-                <profile id="0a10-3b3f-49be-d398" name="Vanquisher battlecannon" book="HH4: Conquest" page="274" hidden="false" profileTypeId="576561706f6e23232344415441232323">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <characteristics>
-                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="72&quot;"/>
-                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
-                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
-                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Armourbane"/>
-                  </characteristics>
-                </profile>
               </profiles>
               <rules/>
               <infoLinks>
-                <infoLink id="0ec9-6a0b-6cc2-da10" hidden="false" targetId="b17f-2d29-e5e1-93ba" type="profile">
+                <infoLink id="0ec9-6a0b-6cc2-da10" name="Auxiliary Drive" hidden="false" targetId="b17f-2d29-e5e1-93ba" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -5150,7 +5292,43 @@
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3198-e575-44d9-e194" type="max"/>
               </constraints>
               <categoryLinks/>
-              <selectionEntries/>
+              <selectionEntries>
+                <selectionEntry id="df7b-6baa-c935-cc06" name="Vanquisher battlecannon" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="56b2-a5e7-0309-f687" name="Vanquisher battlecannon" book="HH: CIAL" page="63" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="72&quot;"/>
+                        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
+                        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+                        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Armourbane"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules/>
+                  <infoLinks>
+                    <infoLink id="3159-c797-09ea-ba75" name="Armourbane" hidden="false" targetId="e182-50cd-0867-9a8d" type="rule">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                  </infoLinks>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0f2-df46-780b-cdfb" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b19d-8daf-4441-6e8a" type="min"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs/>
+                </selectionEntry>
+              </selectionEntries>
               <selectionEntryGroups/>
               <entryLinks>
                 <entryLink id="bbf8-b519-b385-f40c" hidden="false" targetId="728b0618-438e-2698-33e7-2230ecd7bb2e" type="selectionEntryGroup">
