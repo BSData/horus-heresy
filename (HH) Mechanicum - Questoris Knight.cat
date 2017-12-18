@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="32d1ddc6-3187-cf6f-3bf8-9891e527a002" name="Questoris Knight Crusade Army" book="HH4: Conquest" revision="39" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="32d1ddc6-3187-cf6f-3bf8-9891e527a002" name="Questoris Knight Crusade Army" book="HH4: Conquest" revision="40" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -930,7 +930,7 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="02c6-f507-ac2e-504c" name="New EntryLink" hidden="false" targetId="7719-aa4f-3366-84f2" type="selectionEntry">
+    <entryLink id="02c6-f507-ac2e-504c" name="Allegiance" hidden="false" targetId="7719-aa4f-3366-84f2" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1434,7 +1434,7 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="af0b-35c7-e928-7476" name="New EntryLink" hidden="false" targetId="9f5b-eccc-689a-2948" type="selectionEntry">
+    <entryLink id="af0b-35c7-e928-7476" name="Aquila Strongpoint" hidden="false" targetId="9f5b-eccc-689a-2948" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -2479,9 +2479,17 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
               <profiles/>
               <rules/>
               <infoLinks/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="18ef-3206-400c-0b5a" value="1">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27575b75-5e1e-26ab-1074-fa91b73e2216" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b4b3-8e17-78f3-c89c" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18ef-3206-400c-0b5a" type="min"/>
               </constraints>
               <categoryLinks/>
               <selectionEntries/>
@@ -2496,9 +2504,7 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f654-63fb-6b90-b7c8" type="max"/>
-              </constraints>
+              <constraints/>
               <categoryLinks/>
               <selectionEntries/>
               <selectionEntryGroups/>
