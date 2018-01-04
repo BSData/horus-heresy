@@ -183,6 +183,56 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
+    <categoryEntry id="59f5-766f-b21c-d584" name="Super-Heavy Walker" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="4e5c-7262-1cd9-00f1" name="Fear" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="6bcd-9993-c0fd-a525" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="879c-d7c7-0001-f24a" name="Invincible Behemoth" hidden="false" targetId="b5c1-4b08-5ddc-1504" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="563c-e6f2-55f0-3ef5" name="Move Through Cover" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="fb3a-87cf-fce5-e245" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="c9d2-90ee-6269-3498" name="Smash" hidden="false" targetId="4284-18a1-9844-a0bd" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="2289-9f03-fb22-829f" name="Strikedown" hidden="false" targetId="dd83-7fb9-6f58-0c96" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="61f7-09c7-326c-8c49" name="New ForceEntry" hidden="true">
@@ -649,6 +699,13 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="43b9-b232-7fec-1d8b" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
@@ -927,16 +984,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
           <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="1f6b-92d2-799f-d6df" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-      </entryLinks>
+      <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="750.0"/>
       </costs>
@@ -1007,6 +1055,13 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
       <constraints/>
       <categoryLinks>
         <categoryLink id="828c-23dc-f6ce-ae53" name="New CategoryLink" hidden="false" targetId="121d-dc17-273c-40d0" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="5ac2-32e1-7558-6658" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1597,16 +1652,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
           <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="1394-e2e8-78da-7418" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-      </entryLinks>
+      <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="1475.0"/>
       </costs>
@@ -1716,6 +1762,13 @@ D6    Result		S	AP
       <constraints/>
       <categoryLinks>
         <categoryLink id="d9ec-347a-bc64-96be" name="New CategoryLink" hidden="false" targetId="121d-dc17-273c-40d0" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="b301-08d2-000d-4922" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2540,16 +2593,7 @@ D6    Result		S	AP
           <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="e1e5-dafc-6dba-6446" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-      </entryLinks>
+      <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="2750.0"/>
       </costs>
@@ -8357,7 +8401,15 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="72c0-7541-7366-f087" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="f89283d8-d9d1-7f20-b630-4ad158e12292" name="May exchange Questoris battlecannon for:" hidden="false" collective="false">
@@ -8536,15 +8588,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="1ea6-838e-2df3-78a9" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="6fd6-0678-7777-d0b9" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
+        <entryLink id="6fd6-0678-7777-d0b9" name="Household Rank" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -8615,7 +8659,15 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="43bd-faba-e8e2-e68f" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="423c1873-c56d-8ca1-b01f-a2660b0b0198" name="May be upgraded with:" hidden="false" collective="false">
@@ -8753,15 +8805,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="9560-ca69-210a-f115" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="3869-5b07-27b6-2018" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
+        <entryLink id="3869-5b07-27b6-2018" name="Household Rank" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -8838,7 +8882,15 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="293e-427f-069c-7d4f" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="f1816b2d-d7ad-435b-6862-843f885c8ecc" name="May exchange its Reaper Chainsword for:" hidden="false" collective="false">
@@ -8923,15 +8975,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="d55c-9631-4112-7b42" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="7914-ad8c-7a1e-e6c7" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
+        <entryLink id="7914-ad8c-7a1e-e6c7" name="Household Rank" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -9019,7 +9063,15 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="e478-9e72-b824-c91d" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="f6462c55-4eef-3565-2a00-b18b8444bd20" name="May be upgraded with:" hidden="false" collective="false">
@@ -9044,15 +9096,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="b8dc-d97f-ec91-05d6" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="d7fd-bb6e-dc51-f8ed" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
+        <entryLink id="d7fd-bb6e-dc51-f8ed" name="Household Rank" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -9141,7 +9185,15 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="93bc-c38f-4c2b-19ac" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="24723cac-66f3-e231-9092-1333de8d98c1" name="May exchange its Reaper Chainsword for:" hidden="false" collective="false">
@@ -9226,15 +9278,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="92e5-c97f-9080-d4ee" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="3bec-dc40-8e56-a8d7" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
+        <entryLink id="3bec-dc40-8e56-a8d7" name="Household Rank" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -9325,7 +9369,15 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="3557-5237-79f2-d4e4" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="5e3a6b4f-0c5e-5b29-cc54-cf20f5668eb3" name="May be upgraded with:" hidden="false" collective="false">
@@ -9350,15 +9402,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="6282-af01-e0d6-6150" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="ae87-4f6a-c839-010a" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
+        <entryLink id="ae87-4f6a-c839-010a" name="Household Rank" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -9432,7 +9476,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="ed03ee31-8955-4ab8-3285-09590bfed45e" hidden="false" targetId="53c751ef-105f-b2a8-7a17-7812d605b9f2" type="rule">
+        <infoLink id="ed03ee31-8955-4ab8-3285-09590bfed45e" name="Flank Speed" hidden="false" targetId="53c751ef-105f-b2a8-7a17-7812d605b9f2" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -9443,7 +9487,15 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="c52e-9a0d-21e9-8cfe" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="97a1af42-3800-4b30-9e22-d8955e00394e" name="May be upgraded with:" hidden="false" collective="false">
@@ -9468,15 +9520,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="2e49-d06f-a396-8652" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="1d72-a337-b4a1-c67b" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
+        <entryLink id="1d72-a337-b4a1-c67b" name="Household Rank" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -9555,7 +9599,15 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="0c2f-1672-9805-106a" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="c89a-2e7e-cc89-dfc4" name="May be upgraded with:" hidden="false" collective="false">
@@ -9779,15 +9831,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="6ebe-2ff7-97c1-5d25" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="f723-f484-1830-89d6" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
+        <entryLink id="f723-f484-1830-89d6" name="Household Rank" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -9866,7 +9910,15 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="65ee-4b04-f8fa-4b00" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="c12e-0c88-5050-819f" name="May be upgraded with:" hidden="false" collective="false">
@@ -10041,15 +10093,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="c7a3-44ad-ebdd-70ce" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="f3c2-a76b-fad8-0cd0" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
+        <entryLink id="f3c2-a76b-fad8-0cd0" name="Household Rank" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -10126,7 +10170,15 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="0b8b-cd22-4fda-0d63" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="ee0a-75b3-4033-d106" name="May be upgraded with:" hidden="false" collective="false">
@@ -10356,15 +10408,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="d4d6-a3ee-62d7-0215" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="da6b-9be6-897e-c0c9" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
+        <entryLink id="da6b-9be6-897e-c0c9" name="Household Rank" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -10437,7 +10481,15 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8f86-62fb-dba4-afc4" type="max"/>
       </constraints>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="4478-ce8b-e825-fdff" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="797b-8685-04c6-72f4" name="May be upgraded with:" hidden="false" collective="false">
@@ -10586,15 +10638,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="5265-a680-959d-e648" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="d35c-930d-b252-9eb3" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
+        <entryLink id="d35c-930d-b252-9eb3" name="Household Rank" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -10647,7 +10691,15 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f38-2f45-a1a8-1aab" type="max"/>
       </constraints>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="efda-c9db-7e79-002c" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="eb2c-a7c7-2c3f-fc1d" name="Exchange Ironstorm missiles for:" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -10786,15 +10838,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="5f03-c1a8-c7c1-f1a5" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="de8d-df3c-f1e5-eae0" name="New EntryLink" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
+        <entryLink id="de8d-df3c-f1e5-eae0" name="Household Rank" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -10852,66 +10896,6 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="10.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="1782-c86b-a434-19d8" name="Super Heavy Walker" book="" hidden="false" collective="false" type="upgrade">
-      <profiles/>
-      <rules/>
-      <infoLinks>
-        <infoLink id="665d-6e62-aa12-926c" name="New InfoLink" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="e543-687d-3cb8-e079" name="New InfoLink" hidden="false" targetId="6f66-b417-6004-0916" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="d75f-66f2-a649-e93b" name="New InfoLink" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="14fa-b27e-0740-6663" name="New InfoLink" hidden="false" targetId="b5c1-4b08-5ddc-1504" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="5946-1e49-b9d9-de14" name="New InfoLink" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="879b-ed11-c2f4-5782" name="New InfoLink" hidden="false" targetId="4284-18a1-9844-a0bd" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="f8f7-7026-fd60-a7ee" name="New InfoLink" hidden="false" targetId="dd83-7fb9-6f58-0c96" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-      </infoLinks>
-      <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da95-f77a-2e96-2fae" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1240-ab1a-2701-5b08" type="min"/>
-      </constraints>
-      <categoryLinks/>
-      <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2f28-c5f0-6110-c614" name="Household Rank" book="CI:AL" page="99" hidden="false" collective="false" type="upgrade">
@@ -11433,6 +11417,13 @@ D6    Result		S	AP
       <constraints/>
       <categoryLinks>
         <categoryLink id="fb62-2108-207b-6a3a" name="New CategoryLink" hidden="false" targetId="121d-dc17-273c-40d0" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="231c-798c-a82f-1881" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -12025,16 +12016,7 @@ D6    Result		S	AP
           <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="7d99-bc44-c392-c6ca" name="New EntryLink" hidden="false" targetId="1782-c86b-a434-19d8" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-      </entryLinks>
+      <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="3250.0"/>
       </costs>
