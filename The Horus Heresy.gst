@@ -9771,7 +9771,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" costTypeId="points" value="375.0"/>
+        <cost name="pts" costTypeId="points" value="385.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="74b8-f485-4b58-0071" name="Questoris Knight Gallant" book="C:IK" page="105" hidden="false" collective="false" type="model">
@@ -10033,7 +10033,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" costTypeId="points" value="325.0"/>
+        <cost name="pts" costTypeId="points" value="335.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="09ee-4370-1462-2cb5" name="Questoris Knight Crusader" book="C:IK" page="106" hidden="false" collective="false" type="model">
@@ -10348,7 +10348,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" costTypeId="points" value="425.0"/>
+        <cost name="pts" costTypeId="points" value="435.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="baad-77d0-04c2-e05f" name="Cerastus Knight-Atrapos" book="HH6: Retribution" page="278" hidden="false" collective="false" type="model">
