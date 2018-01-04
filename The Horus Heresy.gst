@@ -157,6 +157,32 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
+    <categoryEntry id="85b9-e0e8-56b9-2bd3" name="Super-Heavy Vehicle" book="" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="19b3-cb6d-3c93-0d54" name="Fear" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="b4a0-a2ba-4d32-b8f6" name="Move Through Cover" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="db67-3554-9745-99b5" name="Invincible Behemoth" hidden="false" targetId="b5c1-4b08-5ddc-1504" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="61f7-09c7-326c-8c49" name="New ForceEntry" hidden="true">
