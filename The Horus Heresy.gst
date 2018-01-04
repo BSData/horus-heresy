@@ -129,10 +129,65 @@
     </profileType>
   </profileTypes>
   <categoryEntries>
-    <categoryEntry id="bedc-6602-002c-79af" name="New CategoryEntry" hidden="false">
+    <categoryEntry id="bedc-6602-002c-79af" name="Gargantuan Flying Creature" hidden="false">
       <profiles/>
       <rules/>
-      <infoLinks/>
+      <infoLinks>
+        <infoLink id="0627-2980-5926-ce72" name="Fear" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="cfb1-e0ac-a059-d025" name="Fearless" hidden="false" targetId="dc70-e199-5525-e78c" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="8662-0243-2d24-7047" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="557a-9a6f-7aef-005e" name="Move Through Cover" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="e17f-311a-4fac-a683" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="e11b-2f88-1661-1568" name="Smash" hidden="false" targetId="4284-18a1-9844-a0bd" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="03e6-2655-2c03-8fd9" name="Strikedown" hidden="false" targetId="dd83-7fb9-6f58-0c96" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="e480-735f-6415-79e0" name="Vector Strike" hidden="false" targetId="5341-7110-d8d4-171a" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="92fe-6f1a-8df9-5338" name="Feel No Pain" hidden="false" targetId="9bdd-5ec7-8dd6-63c0" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
       <modifiers/>
       <constraints/>
     </categoryEntry>
@@ -224,6 +279,62 @@
           <modifiers/>
         </infoLink>
         <infoLink id="2289-9f03-fb22-829f" name="Strikedown" hidden="false" targetId="dd83-7fb9-6f58-0c96" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="7ba3-1f62-b66a-75d8" name="Gargantuan Creature" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="5075-04a5-dfb5-4277" name="Fear" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="f93c-aafc-6647-4f2d" name="Fearless" hidden="false" targetId="dc70-e199-5525-e78c" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="5782-e825-8dc4-25cb" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="7911-bf39-40db-0444" name="Move Through Cover" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="a883-cf79-7fc9-f6d2" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="33fb-06c2-2da5-e6cf" name="Smash" hidden="false" targetId="4284-18a1-9844-a0bd" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="8c2c-2954-4343-ed0a" name="Strikedown" hidden="false" targetId="dd83-7fb9-6f58-0c96" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="ddd7-d6d1-f35b-9109" name="Feel No Pain" hidden="false" targetId="9bdd-5ec7-8dd6-63c0" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
