@@ -129,7 +129,7 @@
     </profileType>
   </profileTypes>
   <categoryEntries>
-    <categoryEntry id="bedc-6602-002c-79af" name="Gargantuan Flying Creature" hidden="false">
+    <categoryEntry id="bedc-6602-002c-79af" name="Flying Gargantuan Creature" book="HH: Rulebook" page="69" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks>
@@ -212,9 +212,17 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
-    <categoryEntry id="85b9-e0e8-56b9-2bd3" name="Super-Heavy Vehicle" book="" hidden="false">
+    <categoryEntry id="85b9-e0e8-56b9-2bd3" name="Super-Heavy Vehicle" book="HH: Rulebook" page="90" hidden="false">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="3f70-0816-8f4d-8b7a" name="Thunderblitz" book="HH: Rulebook" page="91" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Super-heavy Vehicles may Tank Shock or Ram. When they do so, roll once on the Thunderblitz table immediatley before taking the morale check for the unit being Tank Shocked or immediatley before rolling for armour penetration when preforming a Ram.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="19b3-cb6d-3c93-0d54" name="Fear" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule">
           <profiles/>
@@ -238,9 +246,17 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
-    <categoryEntry id="59f5-766f-b21c-d584" name="Super-Heavy Walker" hidden="false">
+    <categoryEntry id="59f5-766f-b21c-d584" name="Super-Heavy Walker" book="HH: Rulebook" page="92" hidden="false">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="78aa-b371-405b-de13" name="Stomp" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Super-heavy Walkers engaged in combat may make a special type of attack called a Stomp Attack. This is made in addition to the Super-heavy walkers normal attacks. Stomp attacks are resolved during the Fight sub-phase at Initiative step1.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="4e5c-7262-1cd9-00f1" name="Fear" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule">
           <profiles/>
@@ -288,7 +304,7 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
-    <categoryEntry id="7ba3-1f62-b66a-75d8" name="Gargantuan Creature" hidden="false">
+    <categoryEntry id="7ba3-1f62-b66a-75d8" name="Gargantuan Creature" book="HH: Rulebook" page="68" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks>
@@ -335,6 +351,345 @@
           <modifiers/>
         </infoLink>
         <infoLink id="ddd7-d6d1-f35b-9109" name="Feel No Pain" hidden="false" targetId="9bdd-5ec7-8dd6-63c0" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="070e-4392-e330-38ff" name="Bike" book="HH: Rulebook" page="64" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="ba61-8f3f-8080-b2c1" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="cafb-d6a5-6184-4e40" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="2b31-1744-3707-d19e" name="Jink" hidden="false" targetId="d3e5-b43d-a89c-3bd8" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="b19a-0b5c-7f35-394c" name="Very Bulky" hidden="false" targetId="abc9-8566-bb61-4b7c" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="d4d1-3371-784f-6bc5" name="Jetbike" book="HH: Rulebook" page="64" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="0a37-9e5c-6fbc-b145" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="e569-ebb7-ee0a-e28a" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="9ca3-d053-56f8-2866" name="Jink" hidden="false" targetId="d3e5-b43d-a89c-3bd8" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="90bb-2c5a-27b7-ab65" name="Very Bulky" hidden="false" targetId="abc9-8566-bb61-4b7c" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="9c5e-1393-264d-b3db" name="Jump Units" book="HH: Rulebook" page="66" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="6ae7-20ae-e826-6532" name="Very Bulky" hidden="false" targetId="abc9-8566-bb61-4b7c" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="72f8-b58e-8360-cfc7" name="Deep Strike" hidden="false" targetId="d219-2314-4834-c054" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="84e8-6136-d246-3b26" name="Jet Pack Units" book="HH: Rulebook" page="66" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="4b68-9262-23c6-fb72" name="Very Bulky" hidden="false" targetId="abc9-8566-bb61-4b7c" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="c6cc-f441-0873-0951" name="Deep Strike" hidden="false" targetId="d219-2314-4834-c054" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="e40d-0be5-aaef-3729" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="2682-26e4-ea54-d490" name="Beasts" book="HH: Rulebook" page="67" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="6d8d-4383-9175-0646" name="Fleet" hidden="false" targetId="69e5-fc02-1f9d-63c2" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="2112-9f21-28b0-ebdd" name="Cavalry" book="HH: Rulebook" page="67" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="83cf-ea73-d68e-27db" name="Fleet" hidden="false" targetId="69e5-fc02-1f9d-63c2" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="8921-8b19-774f-549f" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="7f05-b8f0-c167-f377" name="Monstrous Creature" book="HH: Rulebook" page="67" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="c539-f9ed-c6b5-0c69" name="Fear" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="c398-9141-8999-1fed" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="2630-9e6c-233f-246f" name="Move Through Cover" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="18a4-70c0-6b1c-ff43" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="68ea-45a6-cc52-fb0f" name="Smash" hidden="false" targetId="4284-18a1-9844-a0bd" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="1964-e9c0-cfd1-3401" name="Flying Monstrous Creature" book="HH: Rulebook" page="67" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="e6d1-c0bd-1ab5-8758" name="Fear" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="ab5e-490f-b69e-2307" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="93e9-234f-bc9f-be81" name="Move Through Cover" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="71bb-b453-0c7a-2f4a" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="a37f-b719-9e53-8d03" name="Smash" hidden="false" targetId="4284-18a1-9844-a0bd" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="ed2e-f4f7-82fe-df42" name="Vector Strike" hidden="false" targetId="5341-7110-d8d4-171a" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="3710-a935-5295-8103" name="Jink" hidden="false" targetId="d3e5-b43d-a89c-3bd8" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="b55b-f1fd-e5ac-10e8" name="Vehicle" book="HH: Rulebook" page="70" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="9eab-1097-b74d-d71b" name="Transport" book="HH: Rulebook" page="77" hidden="false">
+      <profiles/>
+      <rules>
+        <rule id="df8b-3546-2da6-a1fa" name="Unshakeable Nerve" book="HH: Rulebook" page="77" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Units embarked upon transports have the Fearless special rule while they are embarked.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="df36-613c-927b-9d71" name="Flyer" hidden="false">
+      <profiles/>
+      <rules>
+        <rule id="1456-1dcd-c05c-3654" name="Zooming Flyer" book="HH: Rulebook" page="81" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Zooming Flyers can choose whether or not to use the Skyfire special rule at the start of each Shooting phase. If they do, all weapons they fire that phase are treated as having the Skyfire special rule.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="9d4b-29da-9bfb-ff1c" name="Jink" hidden="false" targetId="d3e5-b43d-a89c-3bd8" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="b939-5cb1-f2f0-d428" name="Chariots" book="HH: Rulebook" page="82" hidden="false">
+      <profiles/>
+      <rules>
+        <rule id="2ee4-e762-f69d-87c2" name="Chariot Hammer of Wrath" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>A Chariot has the Hammer of Warth special rule but gains D6 attacks rather than one, resolved at Strenght 6 AP- unless otherwise stated. </description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="578e-f7c5-d7da-5038" name="Skimmer" book="HH: Rulebook" page="85" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="0425-9d3f-e5ee-a194" name="Jink" hidden="false" targetId="d3e5-b43d-a89c-3bd8" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="c736-2564-4061-7049" name="Walker" book="HH: Rulebook" page="86" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="3d1a-d8b1-b063-6832" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="1d4d-797e-ae2c-ec41" name="Super-Heavy Flyer" book="HH: Rulebook" page="93" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="9395-d115-0276-9a2c" name="Fear" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="c6d6-89ad-9604-97f7" name="Invincible Behemoth" hidden="false" targetId="b5c1-4b08-5ddc-1504" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
