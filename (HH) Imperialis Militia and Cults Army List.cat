@@ -2740,9 +2740,35 @@
             <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Tank"/>
           </characteristics>
         </profile>
+        <profile id="5749-8581-2678-3b9a" name="Land Raider Proteus (Transport)" book="HH:LACAL" page="52" hidden="false" profileTypeId="307d-047f-ca13-706b" profileTypeName="Transport">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="8285-4205-b6cd-8473" value="8">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb97-4e0b-bc32-987b" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Capacity" characteristicTypeId="8285-4205-b6cd-8473" value="10."/>
+            <characteristic name="Fire Points" characteristicTypeId="b270-a7f9-22b2-3702" value="None."/>
+            <characteristic name="Access Points" characteristicTypeId="d17b-0342-b1dc-b8e7" value="2. One on each side of the hull."/>
+          </characteristics>
+        </profile>
       </profiles>
       <rules/>
-      <infoLinks/>
+      <infoLinks>
+        <infoLink id="abcb-58eb-63ae-4c6b" name="Machine Spirit" hidden="false" targetId="1578-d22a-060c-4700" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -2780,6 +2806,36 @@
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="50.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6db7-b5b9-2204-f31c" name="Twin-linked Lascannon Sponsons" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="0990-708c-00f9-1d37" name="New InfoLink" hidden="false" targetId="1cce-972c-022a-2590" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="079d-630c-77c8-1571" name="Twin-linked" hidden="false" targetId="10a8-8d89-0bec-3e21" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0c0e-dee5-41c6-62d4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a3b8-93ed-704f-4309" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2823,7 +2879,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="points" value="10.0"/>
+                <cost name="pts" costTypeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7716-0dbe-9bb6-d68e" name="Heavy Bolter" page="0" hidden="false" collective="false" type="upgrade">
@@ -2839,7 +2895,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="points" value="15.0"/>
+                <cost name="pts" costTypeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="d7ce-3f89-b829-7fc3" name="Heavy Flamer" page="0" hidden="false" collective="false" type="upgrade">
@@ -2855,7 +2911,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="points" value="15.0"/>
+                <cost name="pts" costTypeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="285f-c758-9744-7866" name="Havoc Launcher" page="0" hidden="false" collective="false" type="upgrade">
@@ -2887,7 +2943,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="points" value="20.0"/>
+                <cost name="pts" costTypeId="points" value="15.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2915,7 +2971,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="points" value="10.0"/>
+                <cost name="pts" costTypeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1417-c9e3-66f5-3127" name="Dozer Blade" page="0" hidden="false" collective="false" type="upgrade">
@@ -2963,7 +3019,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="points" value="10.0"/>
+                <cost name="pts" costTypeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="8440-48f6-00a0-cd49" name="Armoured Ceramite" page="0" hidden="false" collective="false" type="upgrade">
@@ -2999,7 +3055,14 @@
             <selectionEntry id="fd19-62d6-951a-0f5b" name="Twin-linked Heavy Bolter" page="0" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
-              <infoLinks/>
+              <infoLinks>
+                <infoLink id="512b-70dd-6396-d385" name="Heavy Bolter" hidden="false" targetId="271e-6286-86cc-06dd" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -3015,10 +3078,40 @@
             <selectionEntry id="9085-c1b4-125c-9ce3" name="Twin-linked Heavy Flamer" page="0" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
-              <infoLinks/>
+              <infoLinks>
+                <infoLink id="14c0-7fb1-0749-b99f" name="Heavy Flamer" hidden="false" targetId="c554-a05e-607c-5831" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="20.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="04cb-111b-d786-4546" name="Twin-linked Lascannon" page="0" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="f2f8-2206-9faa-ee97" name="Lascannon" hidden="false" targetId="1cce-972c-022a-2590" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a44e-e24f-6aec-582f" type="max"/>
               </constraints>
               <categoryLinks/>
               <selectionEntries/>
@@ -3035,7 +3128,7 @@
       </selectionEntryGroups>
       <entryLinks/>
       <costs>
-        <cost name="pts" costTypeId="points" value="200.0"/>
+        <cost name="pts" costTypeId="points" value="180.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="11ce-7e74-239c-fee7" name="Rhino Armoured Carrier" book="HH:LACAL" page="35" hidden="false" collective="false" type="upgrade">
@@ -3131,7 +3224,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="points" value="10.0"/>
+                <cost name="pts" costTypeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c161-c1b6-13bf-31cf" name="Heavy Bolter" page="0" hidden="false" collective="false" type="upgrade">
@@ -3154,7 +3247,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="points" value="15.0"/>
+                <cost name="pts" costTypeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2f5a-aa54-593c-f638" name="Heavy Flamer" page="0" hidden="false" collective="false" type="upgrade">
@@ -3177,7 +3270,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="points" value="15.0"/>
+                <cost name="pts" costTypeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="eece-4cc4-2c98-5d58" name="Havoc Launcher" page="0" hidden="false" collective="false" type="upgrade">
@@ -3216,7 +3309,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="points" value="0.0"/>
+                <cost name="pts" costTypeId="points" value="15.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3276,7 +3369,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="points" value="10.0"/>
+                <cost name="pts" costTypeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="5402-f780-1ae8-cbc5" name="Hunter-Killer Missile" page="0" hidden="false" collective="false" type="upgrade">
@@ -3292,7 +3385,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="pts" costTypeId="points" value="10.0"/>
+                <cost name="pts" costTypeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
