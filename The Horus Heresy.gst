@@ -16872,7 +16872,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Shred, Specialist Weapon"/>
       </characteristics>
     </profile>
-    <profile id="f9fd-36be-dc19-401f" name="Plasma Pistol" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="f9fd-36be-dc19-401f" name="Plasma Pistol" book="HH: AoD Rulebook" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17187,7 +17187,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 1, Melta"/>
       </characteristics>
     </profile>
-    <profile id="87c7-bd37-70f7-1933" name="Plasma Gun" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="87c7-bd37-70f7-1933" name="Plasma Gun" book="HH: AoD Rulebook" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17418,7 +17418,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="A vehicle equipped with a Machine Spirit gains the Power of the Machine Spirit special rule."/>
       </characteristics>
     </profile>
-    <profile id="e97c-a368-88a3-3fb0" name="Executioner Plasma Cannon" book="" page="" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+    <profile id="e97c-a368-88a3-3fb0" name="Executioner Plasma Destroyer" book="HH: AoD Rulebook" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17427,7 +17427,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
-        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3, 3&quot; Blast"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3, Blast (3&quot;)"/>
       </characteristics>
     </profile>
     <profile id="7861-701e-b6d5-be87" name="Predator Cannon" book="HH:LACAL" page="93" hidden="false" profileTypeId="576561706f6e23232344415441232323">
@@ -17586,7 +17586,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1"/>
       </characteristics>
     </profile>
-    <profile id="13df-d6b0-3f33-bf9b" name="Plasma Cannon" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="13df-d6b0-3f33-bf9b" name="Plasma Cannon" book="HH: AoD Rulebook" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17595,7 +17595,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
-        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Blast, Gets Hot"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Blast (3&quot;), Gets Hot"/>
       </characteristics>
     </profile>
     <profile id="c9ab-e5ee-05cd-da3e" name="Plasma Executioner" book="LA:AoDL" page="127" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
@@ -18279,7 +18279,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Has Night Vision special rule, and may re-roll results of a 1 on the Vehicle Damage table and Destroyer Weapon Attack table which are inflicted by their shooting attacks at a range of 12&quot; or less.  "/>
       </characteristics>
     </profile>
-    <profile id="306adc93-713f-8c18-71d3-6956c376e9e2" name="Phased-Plasma Fusil" book="HH4: Conquest" page="308" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+    <profile id="306adc93-713f-8c18-71d3-6956c376e9e2" name="Phased-Plasma Fusil" book="HH: AoD Rulebook" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323">
       <profiles/>
       <rules/>
       <infoLinks/>
