@@ -3643,7 +3643,7 @@ D6    Result		S	AP
     </selectionEntry>
     <selectionEntry id="7b11-22c7-16af-3bd4" name="BRB: Command Traits" hidden="false" collective="false" type="upgrade">
       <profiles>
-        <profile id="cfe2-9cdd-5a7f-c824" name="Warlord Trait: Inspiring Presence" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+        <profile id="cfe2-9cdd-5a7f-c824" name="Warlord Trait: Inspiring Presence" book="HH: AoD Rulebook" page="137" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3652,7 +3652,7 @@ D6    Result		S	AP
             <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Friendly units within 12&quot; of the Warlord can use his Leadership rather than their own."/>
           </characteristics>
         </profile>
-        <profile id="b0c9-26c9-a259-9acf" name="Warlord Trait: Coordinated Assault" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+        <profile id="b0c9-26c9-a259-9acf" name="Warlord Trait: Coordinated Assault" book="HH: AoD Rulebook" page="137" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3661,7 +3661,7 @@ D6    Result		S	AP
             <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="In the Assault phase, your Warlord and all friendly units within 12&quot; of him re-roll To Hit rolls of 1."/>
           </characteristics>
         </profile>
-        <profile id="faee-6ac9-e1e9-2475" name="Warlord Trait: Target Priority" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+        <profile id="faee-6ac9-e1e9-2475" name="Warlord Trait: Target Priority" book="HH: AoD Rulebook" page="137" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3670,7 +3670,7 @@ D6    Result		S	AP
             <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="In the Shooting phase, your Warlord and all friendly units within 12&quot; of him re-roll To Hit rolls of 1."/>
           </characteristics>
         </profile>
-        <profile id="a578-9a31-6f36-26da" name="Warlord Trait: Master of the Vanguard" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+        <profile id="a578-9a31-6f36-26da" name="Warlord Trait: Master of the Vanguard" book="HH: AoD Rulebook" page="137" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3679,7 +3679,7 @@ D6    Result		S	AP
             <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Your Warlord, and all friendly units within 12&quot;, add 1&quot; to the distance that they can move when they Run or Charge."/>
           </characteristics>
         </profile>
-        <profile id="e2fd-c583-0688-4738" name="Warlord Trait: Intimidating Presence" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+        <profile id="e2fd-c583-0688-4738" name="Warlord Trait: Intimidating Presence" book="HH: AoD Rulebook" page="137" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3688,7 +3688,7 @@ D6    Result		S	AP
             <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Enemy units within 12&quot; of the Warlord must use their Lowest Leadership value, not the highest."/>
           </characteristics>
         </profile>
-        <profile id="2123-b3b6-de4b-0db5" name="Warlord Trait: The Dust of a Thousand Worlds" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+        <profile id="2123-b3b6-de4b-0db5" name="Warlord Trait: The Dust of a Thousand Worlds" book="HH: AoD Rulebook" page="137" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3719,7 +3719,7 @@ D6    Result		S	AP
     </selectionEntry>
     <selectionEntry id="6d89-6ae9-05ea-0579" name="BRB: Personal Traits" hidden="false" collective="false" type="upgrade">
       <profiles>
-        <profile id="5814-8698-8309-5c7a" name="Warlord Trait: Master of Defence" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+        <profile id="5814-8698-8309-5c7a" name="Warlord Trait: Master of Defence" book="HH: AoD Rulebook" page="137" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3728,7 +3728,7 @@ D6    Result		S	AP
             <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Your Warlord has the Counter-attack special rule."/>
           </characteristics>
         </profile>
-        <profile id="8b51-c91b-bd55-2d71" name="Warlord Trait: Immovable Object" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+        <profile id="8b51-c91b-bd55-2d71" name="Warlord Trait: Immovable Object" book="HH: AoD Rulebook" page="137" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3737,7 +3737,7 @@ D6    Result		S	AP
             <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Your Warlord has the Fearless and It Will Not Die special rules."/>
           </characteristics>
         </profile>
-        <profile id="9828-d73e-e464-4daa" name="Warlord Trait: Tenacity" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+        <profile id="9828-d73e-e464-4daa" name="Warlord Trait: Tenacity" book="HH: AoD Rulebook" page="137" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3746,7 +3746,7 @@ D6    Result		S	AP
             <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Your Warlord has the Feel No Pain special rule."/>
           </characteristics>
         </profile>
-        <profile id="ffa3-f6d9-cd71-beb0" name="Warlord Trait: Master of Manoeuvre" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+        <profile id="ffa3-f6d9-cd71-beb0" name="Warlord Trait: Master of Manoeuvre" book="HH: AoD Rulebook" page="137" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3755,7 +3755,7 @@ D6    Result		S	AP
             <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Your Warlord has the Outflank special rule."/>
           </characteristics>
         </profile>
-        <profile id="5621-6e23-64e7-642d" name="Warlord Trait: Legendary Fighter" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+        <profile id="5621-6e23-64e7-642d" name="Warlord Trait: Legendary Fighter" book="HH: AoD Rulebook" page="137" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3764,7 +3764,7 @@ D6    Result		S	AP
             <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Your army gains 1 Victory Point for each enemy character slain by your Warlord in a challenge."/>
           </characteristics>
         </profile>
-        <profile id="ecf1-07e8-857f-2c3a" name="Warlord Trait: Master of Offence" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+        <profile id="ecf1-07e8-857f-2c3a" name="Warlord Trait: Master of Offence" book="HH: AoD Rulebook" page="137" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3825,7 +3825,7 @@ D6    Result		S	AP
     </selectionEntry>
     <selectionEntry id="fd25-8750-1716-cff8" name="BRB: Strategic Traits" hidden="false" collective="false" type="upgrade">
       <profiles>
-        <profile id="fb07-ddb8-23f5-7eda" name="Warlord Trait: Conqueror of Cities" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+        <profile id="fb07-ddb8-23f5-7eda" name="Warlord Trait: Conqueror of Cities" book="HH: AoD Rulebook" page="137" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3834,7 +3834,7 @@ D6    Result		S	AP
             <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Your units have the Move Through Cover special rule if moving through Ruins, and the Stealth (Ruins) Special rule."/>
           </characteristics>
         </profile>
-        <profile id="90ee-2233-de3f-e122" name="Warlord Trait: Night Attacker" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+        <profile id="90ee-2233-de3f-e122" name="Warlord Trait: Night Attacker" book="HH: AoD Rulebook" page="137" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3843,7 +3843,7 @@ D6    Result		S	AP
             <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="If you choose to use the Night Fighting rules in your game, there is no need to roll - it is Night on the first turn, and all models in your army have the Night Vision special rule."/>
           </characteristics>
         </profile>
-        <profile id="c745-d7b2-68f7-9d92" name="Warlord Trait: Master of Ambush" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+        <profile id="c745-d7b2-68f7-9d92" name="Warlord Trait: Master of Ambush" book="HH: AoD Rulebook" page="137" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3852,7 +3852,7 @@ D6    Result		S	AP
             <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Your Warlord and three non-vehicle units of your choice have the Infiltrate special rule."/>
           </characteristics>
         </profile>
-        <profile id="312e-33bf-d4e0-36ba" name="Warlord Trait: Strategic Genius" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+        <profile id="312e-33bf-d4e0-36ba" name="Warlord Trait: Strategic Genius" book="HH: AoD Rulebook" page="137" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3861,7 +3861,7 @@ D6    Result		S	AP
             <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="You add +1 to any Seize the Initiative roll.  In addition, whilst your Warlord is alive, you can re-roll any Reserve Rolls (failed or successful)."/>
           </characteristics>
         </profile>
-        <profile id="cde5-6744-ed87-eaa7" name="Warlord Trait: Princeps of Deceit" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+        <profile id="cde5-6744-ed87-eaa7" name="Warlord Trait: Princeps of Deceit" book="HH: AoD Rulebook" page="137" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3870,7 +3870,7 @@ D6    Result		S	AP
             <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="At the start of your opponent&apos;s first turn, pick 3 units in the enemy army.  Each of these units must take a Pinning test."/>
           </characteristics>
         </profile>
-        <profile id="ead1-056f-4340-b428" name="Warlord Trait: Divide to Conquer" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+        <profile id="ead1-056f-4340-b428" name="Warlord Trait: Divide to Conquer" book="HH: AoD Rulebook" page="137" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3919,75 +3919,6 @@ D6    Result		S	AP
           <modifiers/>
         </infoLink>
       </infoLinks>
-      <modifiers/>
-      <constraints/>
-      <categoryLinks/>
-      <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="4085-3b11-ff4b-20e2" name="BRB: Tactical Traits" hidden="false" collective="false" type="upgrade">
-      <profiles>
-        <profile id="a459-ad6c-f621-7580" name="Warlord Trait: Tactical Genius" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Whilst your Warlord is alive, you can discard up to 2 Active Tactical Objectives at the end of your turn instead of only 1."/>
-          </characteristics>
-        </profile>
-        <profile id="a716-d616-8725-8b9d" name="Warlord Trait: Lead by Example" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Any &apos;Secure Objective X&apos; Tactical Objective, where X is a number between 1 and 6, that is scored because your Warlord or his unit controls that Objective Marker, scores 1 additional Victory Point."/>
-          </characteristics>
-        </profile>
-        <profile id="a3f8-ddb5-78c6-dd90" name="Warlord Trait: Master of Fate" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Whilst your Warlord is alive, you can re-roll the dice when determining how many Victory Points are awarded for Tactical Objectives that award a random number of Victory Points when scored."/>
-          </characteristics>
-        </profile>
-        <profile id="bb2d-d233-0b43-a368" name="Warlord Trait: Well Prepared" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Generate one additional Tactical Objective on your First Turn."/>
-          </characteristics>
-        </profile>
-        <profile id="d8cd-7140-e6d2-4986" name="Warlord Trait: Forward Planning" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="After generating Tactical Objectives on your First Turn, you can immediately choose to use this Warlord Trait.  If you do so, discard all your Active Tactical Objectives; generate new Tactical Objectives for each one that was discarded."/>
-          </characteristics>
-        </profile>
-        <profile id="fb08-31ad-17b4-ed84" name="Warlord Trait: Master of Interference" book="BRB" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="One use only.  Declare your Warlord is using this ability at the end of one of your turns.  Your opponent must randomly select one of his Active Tactical Objectives and immediately discard it."/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules/>
-      <infoLinks/>
       <modifiers/>
       <constraints/>
       <categoryLinks/>
@@ -16740,7 +16671,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="A model with this upgrade increases its BS by +1 and the cover saves of enemy targets are reduced by -1. "/>
       </characteristics>
     </profile>
-    <profile id="1f34-d20c-aa56-4f1a" name="Assault Grenade" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="1f34-d20c-aa56-4f1a" name="Assault Grenade" book="HH: AoD Rulebook" page="182" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -16749,7 +16680,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="8&quot;"/>
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="3"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="-"/>
-        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 1, Blast"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 1, Blast (3&quot;)"/>
       </characteristics>
     </profile>
     <profile id="d1ac-3bb0-0a9d-e48f" name="Rotor Cannon (Bio-corrosive rounds)" book="HH:MT" page="115" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
@@ -17211,7 +17142,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 1"/>
       </characteristics>
     </profile>
-    <profile id="a1d8-f9f3-865a-9faf" name="Melta Bombs" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="a1d8-f9f3-865a-9faf" name="Melta Bombs" book="HH: AoD Rulebook" page="183" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17232,7 +17163,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Power Armour confers a 3+ Armour save.  "/>
       </characteristics>
     </profile>
-    <profile id="d890-1b84-bbd9-12d3" name="Frag Grenades" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="d890-1b84-bbd9-12d3" name="Frag Grenades" book="HH: AoD Rulebook" page="182" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17244,7 +17175,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 1, Blast"/>
       </characteristics>
     </profile>
-    <profile id="d9f7-775b-1047-f335" name="Krak Grenade" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="d9f7-775b-1047-f335" name="Krak Grenade (Shooting)" book="HH: AoD Rulebook" page="183" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -18793,6 +18724,73 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="User"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="-"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Rending, Duelist&apos;s Edge"/>
+      </characteristics>
+    </profile>
+    <profile id="3dc7-8af1-aa26-df58" name="Defensive Grenades" book="HH: AoD Rulebook" page="183" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="8&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="1"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="-"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 1, Blast (3&quot;), Blind"/>
+      </characteristics>
+    </profile>
+    <profile id="17f3-89d3-0f42-1c09" name="Shroud Bomb" book="HH: AoD Rulebook" page="183" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Shroud bombs count as defensive grenades in combat. In addition, with the exception of vehicles, Daemons, Gargantuan Creatures and units which have the Night Vision special rule, units must pass a Leadership test in order to charge a unit equipped with shroud bombs."/>
+      </characteristics>
+    </profile>
+    <profile id="959f-9200-4602-e027" name="Haywire Greande (Shooting)" book="HH: AoD Rulebook" page="183" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="8&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="2"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="-"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assualt 1, Haywire"/>
+      </characteristics>
+    </profile>
+    <profile id="e67b-9540-9dd2-bf36" name="Haywire Greande (Assault)" book="HH: AoD Rulebook" page="183" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="2"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="-"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assualt 1, Haywire"/>
+      </characteristics>
+    </profile>
+    <profile id="ba14-6731-7c9d-ef15" name="Krak Grenade (Assault)" book="HH: AoD Rulebook" page="183" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="6"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="6176-c8fa-7b50-26a2" name="Rad Grenades" book="HH: AoD Rulebook" page="183" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="During a turn in which a unit equipped with rad grenades launches an assault, or is themselves assaulted, the enemy unit(s) suffers a -1 penalty to their Toughness until the end of the Assault phase.
+Note: This does affect the victims’ Instant Death thresholds."/>
       </characteristics>
     </profile>
   </sharedProfiles>
