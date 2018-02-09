@@ -16836,7 +16836,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1"/>
       </characteristics>
     </profile>
-    <profile id="730c-b70b-1e8f-f2e9" name="Chainsword/Combat Blade" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="730c-b70b-1e8f-f2e9" name="Chainsword/Combat Blade" book="HH: AoD Rulebook" page="180" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -16848,7 +16848,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee"/>
       </characteristics>
     </profile>
-    <profile id="b514-a3d8-7223-e73b" name="Chainaxe" book="LA:AODAL" page="129" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="b514-a3d8-7223-e73b" name="Chainaxe" book="HH: AoD Rulebook" page="180" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17163,7 +17163,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 1"/>
       </characteristics>
     </profile>
-    <profile id="0fef-f304-fdfe-b082" name="Heavy Chainsword" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="0fef-f304-fdfe-b082" name="Heavy Chainsword" book="HH: AoD Rulebook" page="180" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17718,7 +17718,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323"/>
       </characteristics>
     </profile>
-    <profile id="8194-4688-65b3-f996" name="Chainfist" book="BRB" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="8194-4688-65b3-f996" name="Chainfist" book="HH: AoD Rulebook" page="180" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
