@@ -18201,7 +18201,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="When deployed, and at the start of each subsequent opposing side&apos;s shooting phase, the Knight&apos;s controlling player must declare a facing for the ionic flare shield.  Choices are front, left, right, or rear.    The Knight has a 4+ invulnerable save  against all hits on that facing until the start of the opposing side&apos;s next shooting phase.  The strength of any shooting attack is reduced by -1, increasing to -2 if the weapon has the blast or template rule.  This does not effect Destroyer or Haywire attacks.  Ionic flare shields are repositioned before any attacks are carried out and may not protect against close combat attacks.  "/>
       </characteristics>
     </profile>
-    <profile id="7d03914a-f940-12e5-590b-822083dff647" name="Irad-cleanser" book="HH1: Betrayal" page="240" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+    <profile id="7d03914a-f940-12e5-590b-822083dff647" name="Irad-cleanser" book="HH: AoD Rulebook" page="177" hidden="false" profileTypeId="576561706f6e23232344415441232323">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -18315,7 +18315,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Primary Weapon 2, Massive Blast (7&quot;)"/>
       </characteristics>
     </profile>
-    <profile id="3c77a0e2-2b38-0fff-5d7d-8f63f811bbdf" name="Rad cleanser" book="HH4: Conquest" page="308" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+    <profile id="3c77a0e2-2b38-0fff-5d7d-8f63f811bbdf" name="Rad/Irad-cleanser" book="HH: AoD Rulebook" page="177" hidden="false" profileTypeId="576561706f6e23232344415441232323">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -18565,6 +18565,18 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="**"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Salvo 2/4, Concussive, Graviton Implosion**"/>
+      </characteristics>
+    </profile>
+    <profile id="ffe1-35b1-65a5-cd5c" name="Irradiation Engine" book="HH: AoD Rulebook" page="177" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="Template"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="4"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Fleshbane, Rad-phage, Torrent"/>
       </characteristics>
     </profile>
   </sharedProfiles>
