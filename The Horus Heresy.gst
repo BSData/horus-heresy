@@ -17670,7 +17670,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 4, Interceptor, Skyfire, Twin-linked"/>
       </characteristics>
     </profile>
-    <profile id="94da-501b-a2f5-6c61" name="Battle cannon" book="HH: AoD Rulebook" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="94da-501b-a2f5-6c61" name="Battlecannon" book="HH: AoD Rulebook" page="176" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -18481,6 +18481,42 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="6"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 6, Rending"/>
+      </characteristics>
+    </profile>
+    <profile id="d827-6062-b77e-a697" name="Earthshakern Cannon" book="HH: AoD Rulebook" page="176" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;-240&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="9"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Barrage, Large Blast (5&quot;)"/>
+      </characteristics>
+    </profile>
+    <profile id="431c-d4dc-7243-5e8f" name="Demonlisher Cannon" book="HH: AoD Rulebook" page="176" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="24&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="10"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Large Blast (5&quot;)"/>
+      </characteristics>
+    </profile>
+    <profile id="5597-07a5-e1e8-c462" name="Medusa Siege Gun" book="HH: AoD Rulebook" page="176" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="10"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Barrage, Large Blast (5&quot;)"/>
       </characteristics>
     </profile>
   </sharedProfiles>
