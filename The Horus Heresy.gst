@@ -16647,7 +16647,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Presence of a Cortex Controller within 12&quot; of a unit of friendly models with the Programmed Behaviour special rule at the start of any phase means that special rule is negated for that phase and their controlling player is free to use them as any other unit.  "/>
       </characteristics>
     </profile>
-    <profile id="4fc7-8b16-afe4-dad3" name="Multi-Melta" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+    <profile id="4fc7-8b16-afe4-dad3" name="Multi-Melta" book="HH: AoD Rulebook" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17049,7 +17049,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Pistol"/>
       </characteristics>
     </profile>
-    <profile id="a733-2f33-1e47-8359" name="Inferno Pistol" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="a733-2f33-1e47-8359" name="Inferno Pistol" book="HH: AoD Rulebook" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17175,7 +17175,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Two-handed"/>
       </characteristics>
     </profile>
-    <profile id="8ae4-74e5-7700-3804" name="Meltagun" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="8ae4-74e5-7700-3804" name="Meltagun" book="HH: AoD Rulebook" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17442,7 +17442,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 4"/>
       </characteristics>
     </profile>
-    <profile id="890c-3cfe-af38-b022" name="Magna-Melta Cannon" book="HH:LACAL" page="92" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+    <profile id="890c-3cfe-af38-b022" name="Magna-Melta" book="HH: AoD Rulebook" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -18613,6 +18613,18 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="9"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="1"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Twin-linked"/>
+      </characteristics>
+    </profile>
+    <profile id="9cf0-9b9f-c292-328f" name="Cyclonic Melta Lance" book="HH: AoD Rulebook" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="18&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="9"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="1"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3, Melta"/>
       </characteristics>
     </profile>
   </sharedProfiles>
