@@ -17037,7 +17037,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Artificer Armour confers a 2+ Armour save.  "/>
       </characteristics>
     </profile>
-    <profile id="21b6-668e-d5ef-a8da" name="Hand Flamer" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="21b6-668e-d5ef-a8da" name="Hand Flamer" book="HH: AoD Rulebook" page="177" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17151,7 +17151,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="A unit with a Legion Vexilla may re-roll failed Morale checks."/>
       </characteristics>
     </profile>
-    <profile id="3a71-7de1-1948-3655" name="Flamer" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="3a71-7de1-1948-3655" name="Flamer" book="HH: AoD Rulebook" page="177" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17199,7 +17199,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Rapid Fire, Gets Hot"/>
       </characteristics>
     </profile>
-    <profile id="c554-a05e-607c-5831" name="Heavy Flamer" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="c554-a05e-607c-5831" name="Heavy Flamer" book="HH: AoD Rulebook" page="177" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17454,7 +17454,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Large Blast, Melta"/>
       </characteristics>
     </profile>
-    <profile id="c2dc-5db9-b18b-d360" name="Flamestorm Cannon" book="BRB" page="Ranged Weapons" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="c2dc-5db9-b18b-d360" name="Flamestorm Cannon" book="HH: AoD Rulebook" page="177" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
