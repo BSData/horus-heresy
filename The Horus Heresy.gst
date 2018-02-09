@@ -16788,7 +16788,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 1, Fleshbane, Rad-phage"/>
       </characteristics>
     </profile>
-    <profile id="1182-02a7-3325-8c51" name="Flakk Missile" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="1182-02a7-3325-8c51" name="Flakk Missile" book="HH: AoD Rulebook" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17562,7 +17562,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="A vehicle with this wargear is not subject to the additional D6 armour penetration caused by weapons with the Melta special rule.  "/>
       </characteristics>
     </profile>
-    <profile id="40e6-c95c-7c8d-cf02" name="Frag Missile" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="40e6-c95c-7c8d-cf02" name="Frag Missile" book="HH: AoD Rulebook" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17574,7 +17574,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Blast"/>
       </characteristics>
     </profile>
-    <profile id="e2f7-5bdf-479c-8107" name="Krak Missile" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="e2f7-5bdf-479c-8107" name="Krak Missile" book="HH: AoD Rulebook" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -18625,6 +18625,18 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="9"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="1"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3, Melta"/>
+      </characteristics>
+    </profile>
+    <profile id="fd99-1d8e-87fa-e8e8" name="Rad Missile" book="HH: AoD Rulebook" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="4"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Blast (3&quot;), Fleshbane, Rad-phage"/>
       </characteristics>
     </profile>
   </sharedProfiles>
