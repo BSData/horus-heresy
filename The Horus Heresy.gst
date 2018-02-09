@@ -3931,7 +3931,7 @@ D6    Result		S	AP
     </selectionEntry>
     <selectionEntry id="0fab-78b0-0708-7329" name="Discipline: Biomancy" hidden="false" collective="false" type="upgrade">
       <profiles>
-        <profile id="4cda-87d2-694c-73f7" name="Enfeeble" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="4cda-87d2-694c-73f7" name="2. Enfeeble" book="HH: AoD Rulebook" page="184" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3943,7 +3943,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the target unit suffers a -1 penalty to both Strength and Toughness, and treats all terrain (even open ground) as difficult terrain."/>
           </characteristics>
         </profile>
-        <profile id="315b-628b-d4b1-b075" name="Iron Arm" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power (Witchfire)">
+        <profile id="315b-628b-d4b1-b075" name="1. Iron Arm" book="HH: AoD Rulebook" page="184" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power (Witchfire)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3955,7 +3955,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the Psyker has +3 to his Strength and Toughness and he gains the Smash special rule."/>
           </characteristics>
         </profile>
-        <profile id="aabd-a6cf-defb-ac34" name="Life Leech" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Witchfire)">
+        <profile id="aabd-a6cf-defb-ac34" name="3. Life Leech" book="HH: AoD Rulebook" page="184" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Witchfire)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3970,7 +3970,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value="If Life Leech causes at least one unsaved Wound, the Psyker, or one friendly model within 6&quot; of the Psyker, immediately regains a Wound lost earlier in the battle."/>
           </characteristics>
         </profile>
-        <profile id="0af8-456a-2fc4-f974" name="Warp Speed" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="0af8-456a-2fc4-f974" name="4. Warp Speed" book="HH: AoD Rulebook" page="184" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3982,7 +3982,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the Psyker has +3 to his Initiative and Attacks and he gains the Fleet special rule."/>
           </characteristics>
         </profile>
-        <profile id="1048-ccd5-2e5d-4111" name="Endurance" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="1048-ccd5-2e5d-4111" name="5. Endurance" book="HH: AoD Rulebook" page="184" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3994,7 +3994,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, all models in the target unit gain the Eternal Warrior, Feel No Pain (4+) and Relentless special rules."/>
           </characteristics>
         </profile>
-        <profile id="e140-e6e5-cc6d-ebb3" name="Haemorrhage" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="e140-e6e5-cc6d-ebb3" name="6. Haemorrhage" book="HH: AoD Rulebook" page="184" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4006,7 +4006,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="The target must pass two separate Toughness tests or suffer a Wound with no armour or cover saves allowed for each test that was failed.  If the target is removed as a casualty, randomly select another model (friend or foe) within 2&quot; of him.  That model must pass a single Toughness test or suffer a Wound with no armour or cover saves allowed.  If that model is removed as a casualty, continue the process of selecting anothe rmodel and taking a single Toughness test until either a model survives or there are no more suitable targets within range."/>
           </characteristics>
         </profile>
-        <profile id="6061-064d-3e6e-33f4" name="(Primaris) Smite" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Witchfire)">
+        <profile id="6061-064d-3e6e-33f4" name="(Primaris) Smite" book="HH: AoD Rulebook" page="184" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Witchfire)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4024,7 +4024,7 @@ D6    Result		S	AP
       </profiles>
       <rules/>
       <infoLinks>
-        <infoLink id="fe8f-87a9-3326-62cb" name="New InfoLink" hidden="false" targetId="3e0b-be9f-b7eb-8c5e" type="rule">
+        <infoLink id="fe8f-87a9-3326-62cb" name="Eternal Warrior" hidden="false" targetId="3e0b-be9f-b7eb-8c5e" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4048,7 +4048,7 @@ D6    Result		S	AP
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="73c0-c686-ff9a-ae31" name="New InfoLink" hidden="false" targetId="9bdd-5ec7-8dd6-63c0" type="rule">
+        <infoLink id="73c0-c686-ff9a-ae31" name="Feel No Pain" hidden="false" targetId="9bdd-5ec7-8dd6-63c0" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4067,7 +4067,7 @@ D6    Result		S	AP
     </selectionEntry>
     <selectionEntry id="5d8d-02d9-88cf-965f" name="Discipline: Daemonology (Malefic)" book="" hidden="false" collective="false" type="upgrade">
       <profiles>
-        <profile id="2bd4-22b0-173e-277f" name="Possession" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="2bd4-22b0-173e-277f" name="6. Possession" book="HH: AoD Rulebook" page="190" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4079,7 +4079,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Possession creates one of the following new units (your choice): 1 Bloodthirster, 1 Lord of Change, 1 Great Unclean One or 1 Keeper of Secrets. If this power is successfully manifested, the Psyker is immediately removed as a casualty (if the Psyker was part of a unit with the Brotherhood of Psykers/Sorcerers special rule, remove the entire unit as casualties). If, when using this power, the Psyker fails his Psychic test, he automatically suffers Perils of the Warp."/>
           </characteristics>
         </profile>
-        <profile id="9bc0-7e8d-d0cf-d07c" name="Infernal Gaze" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+        <profile id="9bc0-7e8d-d0cf-d07c" name="3. Infernal Gaze" book="HH: AoD Rulebook" page="190" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4094,7 +4094,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
           </characteristics>
         </profile>
-        <profile id="b705-3eca-463f-898c" name="Cursed Earth" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="b705-3eca-463f-898c" name="1. Cursed Earth" book="HH: AoD Rulebook" page="190" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4106,7 +4106,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, all models with the Daemon special rule (friend or foe) within 12&quot; of the Psyker have a +1 bonus to their invulnerable save (normally increasing it to 4+). This is cumulative withany other modifiers to a Daemon’s invulnerable save. In addition, whilst the power is in effect, friendly units with the Daemon special rule will not scatter when arriving from Deep Strike Reserve so long as the first model is placed within 12&quot; of the Psyker."/>
           </characteristics>
         </profile>
-        <profile id="f8f2-4b8b-644b-6f06" name="(Primaris) Summoning" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="f8f2-4b8b-644b-6f06" name="(Primaris) Summoning" book="HH: AoD Rulebook" page="190" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4118,7 +4118,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Summoning creates one of the following units (your choice): 10 Bloodletters of Khorne, 10 Pink Horrors of Tzeentch, 10 Plaguebearers of Nurgle, 10 Daemonettes of Slaanesh, 5 Flesh Hounds of Khorne, 3 Flamers ofTzeentch, 3 Nurgling swarms or 5 Seekers of Slaanesh."/>
           </characteristics>
         </profile>
-        <profile id="1825-f3d6-e904-f999" name="Dark Flame" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+        <profile id="1825-f3d6-e904-f999" name="2. Dark Flame" book="HH: AoD Rulebook" page="190" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4133,7 +4133,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
           </characteristics>
         </profile>
-        <profile id="98f0-c12b-2fb2-56f8" name="Sacrifice" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="98f0-c12b-2fb2-56f8" name="4. Sacrifice" book="HH: AoD Rulebook" page="190" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4145,7 +4145,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Sacrifice creates one of the following units (your choice): 1 Herald of Khorne, 1 Herald of Tzeentch, 1 Herald of Nurgle or 1 Herald of Slaanesh, with up to 30 points’ worth of options. If this power is successfully manifested, one friendly model within 6&quot; of the Psyker (or the Psyker himself) immediately suffers a single Wound with no saves of any kind allowed."/>
           </characteristics>
         </profile>
-        <profile id="724f-ebc5-d6c3-3172" name="Incursion" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="724f-ebc5-d6c3-3172" name="5. Incursion" book="HH: AoD Rulebook" page="190" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4197,7 +4197,7 @@ D6    Result		S	AP
     </selectionEntry>
     <selectionEntry id="a6ef-b870-fa86-f44a" name="Discipline: Daemonology (Sanctic)" hidden="false" collective="false" type="upgrade">
       <profiles>
-        <profile id="e231-5912-1606-7f3b" name="Hammerhand" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="e231-5912-1606-7f3b" name="2. Hammerhand" book="HH: AoD Rulebook" page="189" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4209,7 +4209,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the Psyker and his unit have +2 Strength"/>
           </characteristics>
         </profile>
-        <profile id="ae82-4bd3-bff9-24e9" name="(Primaris) Banishment" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="ae82-4bd3-bff9-24e9" name="(Primaris) Banishment" book="HH: AoD Rulebook" page="189" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4221,7 +4221,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst this power is in effect, all models in the target Daemon unit suffer a -1 penalty to their invulnerable save (normally reducing it to a 6+). This is cumulative with any other modifiers to a Daemon&apos;s invulnerable save, but cannot make it worse than 6+."/>
           </characteristics>
         </profile>
-        <profile id="3843-43d4-0fb8-3875" name="Gate of Infinity" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="3843-43d4-0fb8-3875" name="1. Gate of Infinity" book="HH: AoD Rulebook" page="189" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4233,7 +4233,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Unless the target is Zooming or Swooping, remove the target and his unit from the board. It then immediately arrives anywhere on the board using the rules for Deep Strike."/>
           </characteristics>
         </profile>
-        <profile id="2751-d13c-bcee-b421" name="Sanctuary" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="2751-d13c-bcee-b421" name="3. Sanctuary" book="HH: AoD Rulebook" page="189" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4245,7 +4245,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect the Psyker and all models in his unit receive a +1 bonus to their invulnerable save (models that do not have an invulnerable save gain a 6+ invulnerable save whilst this power is in effect instead). In addition, all units with the Daemon special rule (friend or foe) treat allterrain, including open ground, within 12&quot; of the Psyker as dangerous terrain."/>
           </characteristics>
         </profile>
-        <profile id="04a8-89e7-3f89-6c7f" name="Purge Soul" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="04a8-89e7-3f89-6c7f" name="4. Purge Soul" book="HH: AoD Rulebook" page="189" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4257,7 +4257,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Both the Psyker and thetarget model roll a D6 and add their respective Leadership values. If the target’s total isgreater than the Psyker’s total, nothing happens. If the Psyker’s total is greater than orequal to the target’s total, the target model suffers an automatic Wound with no armouror cover saves allowed. Purge Soul has no effect on vehicles."/>
           </characteristics>
         </profile>
-        <profile id="c11c-1dac-e496-181e" name="Cleansing Flame" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+        <profile id="c11c-1dac-e496-181e" name="5. Cleansing Flame" book="HH: AoD Rulebook" page="189" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4272,7 +4272,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
           </characteristics>
         </profile>
-        <profile id="97a4-4be5-6664-da68" name="Vortex of Doom" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+        <profile id="97a4-4be5-6664-da68" name="6. Vortex of Doom" book="HH: AoD Rulebook" page="189" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4321,7 +4321,7 @@ D6    Result		S	AP
     </selectionEntry>
     <selectionEntry id="236f-417a-9ed3-8d3a" name="Discipline: Divination" hidden="false" collective="false" type="upgrade">
       <profiles>
-        <profile id="3a7d-921d-9950-73ed" name="Perfect Timing" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="3a7d-921d-9950-73ed" name="3. Perfect Timing" book="HH: AoD Rulebook" page="185" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4333,7 +4333,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst this power is in effect, the Psyker and his unit&apos;s weapons ahve the Ignores Cover special rule."/>
           </characteristics>
         </profile>
-        <profile id="1b8f-06fb-82f8-9f6c" name="Precognition" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="1b8f-06fb-82f8-9f6c" name="4. Precognition" book="HH: AoD Rulebook" page="185" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4345,19 +4345,19 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the Psyker re-rolls all failed To Hit and To Wound rolls. In addition, while the power is in effect, the Psyker re-rolls failed saving throws."/>
           </characteristics>
         </profile>
-        <profile id="d4bf-ea83-3a84-8535" name="Misfortunre" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="d4bf-ea83-3a84-8535" name="5. Misfortune" book="HH: AoD Rulebook" page="185" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <characteristics>
             <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
-            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Maledictio"/>
+            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Malediction"/>
             <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, all attacks that hit the target unit have the Rending special rule."/>
           </characteristics>
         </profile>
-        <profile id="5954-4cb9-4bdd-6d18" name="Scrier&apos;s Gaze" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="5954-4cb9-4bdd-6d18" name="6. Scrier&apos;s Gaze" book="HH: AoD Rulebook" page="185" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4369,7 +4369,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, you can re-roll the dice when rolling for Reserves, Outflank, and when any of your units identifies a Mysterious Objective.  In addition, if the mission has the Tactical Objectives special rule, you can immediately choose to discard one of your active Tactical Objectives and generate a new one."/>
           </characteristics>
         </profile>
-        <profile id="c4cb-2e4d-fda7-bb26" name="Foreboding" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="c4cb-2e4d-fda7-bb26" name="1. Foreboding" book="HH: AoD Rulebook" page="185" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4381,7 +4381,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst this power is in effect, the Psyker and his unit have the Counter-attack special rule and fire Overwatch using their full Ballistic Skill, rather than Ballistic Skill 1."/>
           </characteristics>
         </profile>
-        <profile id="dcf4-8194-115c-45cc" name="Forewarning" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="dcf4-8194-115c-45cc" name="2. Forewarning" book="HH: AoD Rulebook" page="185" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4393,7 +4393,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the target unit has a 4+ invulnerable save."/>
           </characteristics>
         </profile>
-        <profile id="e7a3-0f73-f77d-ffdc" name="(Primaris) Prescience" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="e7a3-0f73-f77d-ffdc" name="(Primaris) Prescience" book="HH: AoD Rulebook" page="185" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4408,7 +4408,7 @@ D6    Result		S	AP
       </profiles>
       <rules/>
       <infoLinks>
-        <infoLink id="fd68-78c4-d930-c8c7" name="New InfoLink" hidden="false" targetId="acf2-681d-4188-94d7" type="rule">
+        <infoLink id="fd68-78c4-d930-c8c7" name="Ignores Cover" hidden="false" targetId="acf2-681d-4188-94d7" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4420,358 +4420,7 @@ D6    Result		S	AP
           <infoLinks/>
           <modifiers/>
         </infoLink>
-      </infoLinks>
-      <modifiers/>
-      <constraints/>
-      <categoryLinks/>
-      <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="7488-e159-40ca-095e" name="Discipline: Fulmination" book="" hidden="false" collective="false" type="upgrade">
-      <profiles>
-        <profile id="c69b-83ff-beac-4195" name="(Primaris) Electrosurge" book="Angels of Death" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="1"/>
-            <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Witchfire"/>
-            <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="18&quot;"/>
-            <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="5"/>
-            <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="4"/>
-            <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Assault 6"/>
-            <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd"/>
-          </characteristics>
-        </profile>
-        <profile id="b6ca-65b9-76e9-1c81" name="Electroshield" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
-            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
-            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the Psyker has a 3+ invulnerable save."/>
-          </characteristics>
-        </profile>
-        <profile id="0bac-032b-a001-543b" name="Electropulse" book="Angels of Death" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="1"/>
-            <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Nova"/>
-            <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="9&quot;"/>
-            <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="1"/>
-            <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="Assault 1"/>
-            <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Haywire"/>
-            <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
-          </characteristics>
-        </profile>
-        <profile id="63a8-efb7-5534-d51f" name="Lightning Arc" book="Angels of Death" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="2"/>
-            <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Witchfire"/>
-            <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="18&quot;"/>
-            <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="5"/>
-            <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="4"/>
-            <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Assault D6"/>
-            <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value="After this attack has been resolved against the target, roll a dice for every other enemy unit within 6&quot; of the target. On the roll of a 4 or more, that unit suffers D6 Strength 5 AP4 hits that are Randomly Allocated"/>
-          </characteristics>
-        </profile>
-        <profile id="a67c-30c6-e5c8-60cc" name="Electrodisplacement" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
-            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
-            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Remove all models in the target unit except one, then swap the position of the Psyker with that model. Then, set up all models from the Psyker&apos;s unit (if any) within 6&quot; and unit coherency of the Psyker, and set up all remaining models from the swapped model&apos;s unit within 6&quot; and unit coherency of that model. If either unit was locked in combat, the displaced unit is now locked in combat with that enemy; models cannot otherwise be placed within 1&quot; of an enemy model. Unless locked in close combat, these units can charge in the same turn."/>
-          </characteristics>
-        </profile>
-        <profile id="6c1a-b929-548d-b25a" name="Fists of Lightning" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
-            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
-            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst this power is in effect, the Psyker adds I to both his Strength and Attacks. In addition, each time the Psyker hits an enemy unit in close combat, that unit suffers two additional Strength 5 AP- Hits."/>
-          </characteristics>
-        </profile>
-        <profile id="a2d0-4d08-57d8-f262" name="Magnetokinesis" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
-            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
-            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="18&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Unless the target is Zooming, Swooping or is locked in combat, it can immediately make a move of up to 18&quot;. The unit can move over all other models and terrain as if they were open ground, but it cannot end its move on top of other models or impassable terrain. Any model that starts or ends this move in difficult terrain must take a Dangerous Terrain test. The unit cannot charge in the same turn that it was moved using this power, and all models in the unit count as having moved in the Movement phase for the purposes of shooting weapons in the Shooting phase."/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules/>
-      <infoLinks>
-        <infoLink id="249c-2442-0901-a7c9" name="New InfoLink" hidden="false" targetId="6970-1bf3-b33e-5dce" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-      </infoLinks>
-      <modifiers/>
-      <constraints/>
-      <categoryLinks/>
-      <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="dfa5-5964-52f7-568d" name="Discipline: Geokinesis" book="" hidden="false" collective="false" type="upgrade">
-      <profiles>
-        <profile id="d8a4-d1f7-cc62-7546" name="(Primaris) Chasm" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
-            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="N/A"/>
-            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="18&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="All models in the enemy unit must immediately take a Dangerous Terrain test with no armour saves allowed (invulnerable saves can be taken normally). This psychic power has no effect on Swooping or Zooming units."/>
-          </characteristics>
-        </profile>
-        <profile id="8350-80df-20e7-ae87" name="Earth Blood" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
-            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
-            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="18&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="The target immediately regains D3 wounds lost earlier during the battle. In addition, whilst the power is in effect, the target and all models in their unit have the It Will Not Die special rule."/>
-          </characteristics>
-        </profile>
-        <profile id="9d8e-1034-4103-b8fa" name="Phase Form" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
-            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
-            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the unit has the Move Through Cover special rule and all of its weapons have the Ignores Cover special rule. In addition, the unit does not need line of sight in order to attack an enemy unit in the Shooting phase; as long as the target is in range, it can be shot at."/>
-          </characteristics>
-        </profile>
-        <profile id="11ad-7cb7-e698-ba7b" name="Shifting Worldscape" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="3"/>
-            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="N/A"/>
-            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="The targetted terrain feature must be one that can be physically picked up and placed in a different location on battlefield. Move the terrain to an area of open ground anywhere on the battlefield within 24&quot; of its starting position, so long as it is more than 1&quot; away from any other models or other terrain features after the relocation is complete. Any units that have all of their models on the piece of terrain are moved with it. If a unit has only a portion of its models on the terrain feature, then the models that occupy the terrain piece are immediately moved off it by their player, in the same manner as a model disembarking from a vehicle (treating the edge of the terrain as an Access Point and ending this move wholly within 6&quot; of the terrain and in coherency). Models moved in this way must then take a Dangerous Terrain test."/>
-          </characteristics>
-        </profile>
-        <profile id="135a-84bc-6032-c3a8" name="Warp Quake" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
-            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Witchfire"/>
-            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="If you targeted a building, roll a dice; on a roll of 1-3, the building suffers a glancing hit, and on a roll of 4-6, it suffers a penetrating hit. If you targeted a piece of Ruins terrain, roll a dice for each unit that is even partially within those ruins: on a 4 or more, that unit suffers D6 Strength 6 AP-hits as they are struck by falling debris. These hits are Randomly Allocated."/>
-          </characteristics>
-        </profile>
-        <profile id="25ee-fee8-343c-ac80" name="Scorched Earth" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
-            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Malediction"/>
-            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Choose the point on the battlefield when the power is manifested. Each unit within 6&quot; of that point immediately suffers a single Strength 5 AP4 hit with the Ignores Cover special rule (hits are Randomly Allocated). In addition, whilst the power is in effect, all terrain (including open ground) within 6&quot; of the point chosen is treated as being dangerous terrain."/>
-          </characteristics>
-        </profile>
-        <profile id="79c4-ece3-da45-7c70" name="Landquake" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
-            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Malediction"/>
-            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="18&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst this power in effect, the targets move as though they were in difficult terrain. Furthermore, whilst this power is in effect, the targets cannot Run, Turbo-boost, or move Flat Out. This psychic power has no effect on Swooping or Zooming units."/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules/>
-      <infoLinks>
-        <infoLink id="cd95-1359-393e-aa1f" name="New InfoLink" hidden="false" targetId="acf2-681d-4188-94d7" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="0091-e590-a873-4e7d" name="New InfoLink" hidden="false" targetId="72d9-7041-9d30-d150" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="c6b1-f7b7-1c6d-e47b" name="" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-      </infoLinks>
-      <modifiers/>
-      <constraints/>
-      <categoryLinks/>
-      <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="821b-f228-d2c4-3061" name="Discipline: Librarius" book="" hidden="false" collective="false" type="upgrade">
-      <profiles>
-        <profile id="6f7a-214f-fec3-5881" name="(Primaris) The Emporer&apos;s Wrath" book="Angels of Death" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Witchfire)">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="1"/>
-            <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Witchfire"/>
-            <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="18&quot;"/>
-            <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="5"/>
-            <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="3"/>
-            <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Assault 1, Blast"/>
-            <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
-          </characteristics>
-        </profile>
-        <profile id="e779-6451-96cc-5215" name="Veil of Time" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
-            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
-            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the Psyker and his unit can re-roll all failed saving throws."/>
-          </characteristics>
-        </profile>
-        <profile id="09bb-0768-bda5-59a6" name="Fury of the Ancients" book="Angels of Death" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Witchfire)">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="1"/>
-            <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Beam"/>
-            <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="20&quot;"/>
-            <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="6"/>
-            <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="4"/>
-            <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Assault 1, Pinning"/>
-            <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
-          </characteristics>
-        </profile>
-        <profile id="4dc6-59bd-4e08-e3d9" name="Psychic Scourge" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
-            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Malediction"/>
-            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="The Psyker manifesting this power rolls two dice and adds their Mastery Level to the highest result. The target Psykerrolls a single dice and adds their Mastery Level to the result. If the enemy Psyker&apos;s result is higher, there is no effect. If the scores are drawn, or your result is higher than the enemy Psyker&apos;s, the target suffers a Wound with no saves of any kind allowed and, whilst this power is in effect, can only successfully manifest Warp Charge points on the roll of a 6. Finally, if your result is at least 3 points higher than that of the enemy Psyker&apos;s, then they also lose a randomly chosen psychic power; they cannot use it for the rest of the battle."/>
-          </characteristics>
-        </profile>
-        <profile id="10d4-cfee-9f88-031f" name="Psychic Fortress" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
-            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
-            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Psychic Fortress is a blessing that targets the Psyker. Whilst the power is in effect, all friendly units within 12&quot; of the Psyker have the Fearless and Adamantium Will special rules. ln addition, whilst this power is in effect, all friendly units within 12&quot; of the Psyker have a 4+ invulnerable save against any Wounds caused by witchfire powers."/>
-          </characteristics>
-        </profile>
-        <profile id="a466-c059-ad04-b567" name="Null Zone" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
-            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Malediction"/>
-            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, all models in the target unit suffer a -2 penalty to any invulnerable saves they have. This is cumulative with any other modifiers to a model&apos;s invulnerable save, but cannot make it worse than 6+."/>
-          </characteristics>
-        </profile>
-        <profile id="c524-2b78-b44d-8caa" name="Might of Heroes" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
-            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
-            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="Self"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, add 2 to the Psyker&apos;s Strength, Toughness, Initiative and Attacks. "/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules/>
-      <infoLinks>
-        <infoLink id="e454-3493-36a7-223c" name="New InfoLink" hidden="false" targetId="df87-e991-2d30-dc38" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="bc2f-84ec-d8d0-4932" name="New InfoLink" hidden="false" targetId="dc70-e199-5525-e78c" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="30d2-98a8-0953-dcef" name="New InfoLink" hidden="false" targetId="f624-f475-e5ec-0dfa" type="rule">
+        <infoLink id="e3a8-0342-179f-2119" name="Counter-attack" hidden="false" targetId="0900-71d5-1937-aa96" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4790,7 +4439,7 @@ D6    Result		S	AP
     </selectionEntry>
     <selectionEntry id="38d9-2855-fb63-c702" name="Discipline: Pyromancy" book="" hidden="false" collective="false" type="upgrade">
       <profiles>
-        <profile id="29fc-7711-7da6-b0cb" name="(Primaris) Flame Breath" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+        <profile id="29fc-7711-7da6-b0cb" name="(Primaris) Flame Breath" book="HH: AoD Rulebook" page="186" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4805,7 +4454,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value="Soul Blaze"/>
           </characteristics>
         </profile>
-        <profile id="4b72-2bad-754b-2249" name="Fiery Form" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="4b72-2bad-754b-2249" name="1. Fiery Form" book="HH: AoD Rulebook" page="186" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4817,7 +4466,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the Psyker gains a 4+ invulnerable save and his close combat attacks have the Soul Blaze special rule. Whilst the power is in effect, the Psyker re-rolls failed To Wound rolls inflicted by any further Pyromancy powers he manifests."/>
           </characteristics>
         </profile>
-        <profile id="7a2b-9d87-6916-3e2b" name="Fire Shield" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="7a2b-9d87-6916-3e2b" name="2. Fire Shield" book="HH: AoD Rulebook" page="186" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4829,7 +4478,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the target unit has a 4+ cover save and all enemy units treat all terrain within 6&quot; of the target as Dangerous Terrain."/>
           </characteristics>
         </profile>
-        <profile id="3d84-b3a6-0b6c-1c1b" name="Sunburst" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+        <profile id="3d84-b3a6-0b6c-1c1b" name="4. Sunburst" book="HH: AoD Rulebook" page="186" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4844,7 +4493,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
           </characteristics>
         </profile>
-        <profile id="2f21-e14e-38bc-0b4e" name="Inferno" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+        <profile id="2f21-e14e-38bc-0b4e" name="5. Inferno" book="HH: AoD Rulebook" page="186" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4859,7 +4508,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
           </characteristics>
         </profile>
-        <profile id="999c-a5c3-6eb7-f139" name="Spontaneous Combustion" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="999c-a5c3-6eb7-f139" name="3. Spontaneous Combustion" book="HH: AoD Rulebook" page="186" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4871,7 +4520,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="The target model suffers a Strength 6 AP3 hit with the Soul Blaze special rule. If the model is slainby this hit in the Psychic phase, centre the small blast marker over the target before removing him as a casualty. All other models under the marker suffer a Strength 5 AP4 hit with the Ignores Cover and Soul Blaze special rules."/>
           </characteristics>
         </profile>
-        <profile id="c05f-a898-82eb-00a4" name="Molten Beam" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+        <profile id="c05f-a898-82eb-00a4" name="6. Molten Beam" book="HH: AoD Rulebook" page="186" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4918,130 +4567,15 @@ D6    Result		S	AP
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f531-405d-592a-3991" name="Discipline: Technomancy" book="" hidden="false" collective="false" type="upgrade">
-      <profiles>
-        <profile id="ba6a-48d1-aa59-7da7" name="(Primaris) Subvert Machine" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
-            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Malediction"/>
-            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="18&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="If this power is successfully manifested, randomly select one of the vehicle&apos;s weapons (do not include Bombs, weapons with the One Use Only/One Shot Only special rule that have already fired, and weapons that have been destroyed). Then, you and your opponent each roll a dice and look up the result below: If your opponent rolls higher, nothing happens. If the results are drawn, then that weapon can only fire Snap Shots whilst this power is in effect. If you roll higher, you can immediately shoot with that weapon at another enemy unit; the weapon fires using the vehicle&apos;s Ballistic Skill, unless the vehicle is Crew Stunned or Shaken, in which case the weapon can only fire Snap Shts. "/>
-          </characteristics>
-        </profile>
-        <profile id="b29d-04ed-2f8f-7133" name="Blessing of the Machine" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
-            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
-            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the target vehicle ignores the effects of Crew Shaken and/or Crew Stunned damage results and has the Power of the Machine Spirit special rule. If the vehicle already has this special rule, it instead increases its Ballistic Skill by 1 whilst this power is in effect. "/>
-          </characteristics>
-        </profile>
-        <profile id="df7c-066f-bca6-742f" name="Machine Curse" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
-            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Focussed Witchfire"/>
-            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="18&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Machine Curse is a focussed witchfire power that targets a single enemy vehicle unit within 18&quot;. The target model immediately surfers D3 Strength 1 AP- hits with the Haywire special rule. "/>
-          </characteristics>
-        </profile>
-        <profile id="d54c-4c36-65c8-8f05" name="Reforge" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="1"/>
-            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessing"/>
-            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="The controlling player can choose for the target vehicle either to immediately recover one Hull Point lost earlier in the battle, or repair a Weapon Destroyed or Immobilised result suffered earlier in the battle. In addition, the target vehicle has the It Will Not Die special rule whilst this power is in effect. If the Psyker is embarked on a Transport vehicle, he may still attempt to manifest this psychic power, but may only target the vehicle he is embarked upon."/>
-          </characteristics>
-        </profile>
-        <profile id="7bcf-1646-e192-a297" name="Warpmetal Armour" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
-            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Blessin"/>
-            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="24&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="If this power targets a vehicle unit, then whilst it is in effect add 1 to all the Armour Values (Front, Sides and Rear) of models in that unit. If this power targets a non-vehicle unit, then whilst it is in effect add 1 to the Toughness of all models in the target unit. If the Psyker is embarked on a Transport vehicle, he may still attempt to manifest this psychic power, but may only target the vehicle he is embarked upon."/>
-          </characteristics>
-        </profile>
-        <profile id="1c5e-0e55-6342-1d7d" name="Machine Flense" book="Angels of Death" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="5ffd-b800-c317-532a" value="2"/>
-            <characteristic name="Power Category" characteristicTypeId="f04c-a782-d794-ddad" value="Focussed Witchfire"/>
-            <characteristic name="Range" characteristicTypeId="fd64-cbc4-94de-24cc" value="18&quot;"/>
-            <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="The target immediately loses D3 Hull Points. For each Hull Point that the vehicle loses, the Psyker inflicts D6 Strength 4 AP6 hits with the Rending special rule on a single enemy unit within 12&quot; of the target vehicle. You can choose a different target for each Hull Point lost in this way if you wish."/>
-          </characteristics>
-        </profile>
-        <profile id="d7f0-7c4e-f2de-c134" name="Fury of Mars" book="Angels of Death" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="1"/>
-            <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Beam"/>
-            <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="18&quot;"/>
-            <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="1"/>
-            <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="-"/>
-            <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Assault 1, Haywire"/>
-            <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules/>
-      <infoLinks>
-        <infoLink id="b422-fdd0-c09d-4fbc" name="New InfoLink" hidden="false" targetId="6970-1bf3-b33e-5dce" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="8f5d-7edc-4cd0-5e55" name="New InfoLink" hidden="false" targetId="72d9-7041-9d30-d150" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-      </infoLinks>
-      <modifiers/>
-      <constraints/>
-      <categoryLinks/>
-      <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="0268-83ac-dfc9-5a58" name="Discipline: Telekinesis" book="" hidden="false" collective="false" type="upgrade">
       <profiles>
-        <profile id="4cef-a77b-fcbe-7238" name="Psychic Maelstrom" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+        <profile id="4cef-a77b-fcbe-7238" name="6. Psychic Maelstrom" book="HH: AoD Rulebook" page="187" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="2"/>
+            <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="3"/>
             <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Witchfire"/>
             <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="12&quot;"/>
             <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="10"/>
@@ -5050,7 +4584,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
           </characteristics>
         </profile>
-        <profile id="3386-3504-a10c-4c75" name="Shockwave" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+        <profile id="3386-3504-a10c-4c75" name="3. Shockwave" book="HH: AoD Rulebook" page="187" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5065,7 +4599,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd" value=""/>
           </characteristics>
         </profile>
-        <profile id="443f-0ae5-0d1c-9131" name="(Primaris) Assail" book="BRB" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+        <profile id="443f-0ae5-0d1c-9131" name="(Primaris) Assail" book="HH: AoD Rulebook" page="187" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5080,7 +4614,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd"/>
           </characteristics>
         </profile>
-        <profile id="63a1-6b3a-f7c1-6f54" name="Crush" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="63a1-6b3a-f7c1-6f54" name="1. Crush" book="HH: AoD Rulebook" page="187" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5092,7 +4626,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Roll 2D6. The target model suffers a hit with a Strength equal to the result (a result of an 11 or 12 wounds automatically or, in the case of a vehicle, causes an automatic penetrating hit) with APD6."/>
           </characteristics>
         </profile>
-        <profile id="2aac-a9e8-be23-abe4" name="Telekine Dome" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="2aac-a9e8-be23-abe4" name="5. Telekine Dome" book="HH: AoD Rulebook" page="187" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5104,7 +4638,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the Psyker, and all friendly models within 12&quot; of the Psyker, have a 5+ invulnerable save against any shooting attack."/>
           </characteristics>
         </profile>
-        <profile id="6013-e336-dc0f-ffe1" name="Objuration Mechanicum" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="6013-e336-dc0f-ffe1" name="2. Objuration Mechanicum" book="HH: AoD Rulebook" page="187" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5116,7 +4650,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, all of the target’s ranged weapons have the Gets Hot special rule. In addition, if the target is a vehicle (or vehicle squadron), each vehicle in the unit suffers a single Strength 1 hit with the Haywire special rule."/>
           </characteristics>
         </profile>
-        <profile id="5702-6c49-983f-aeaf" name="Levitation" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="5702-6c49-983f-aeaf" name="4. Levitation" book="HH: AoD Rulebook" page="187" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5168,7 +4702,7 @@ D6    Result		S	AP
     </selectionEntry>
     <selectionEntry id="13eb-0252-de5d-24d4" name="Discipline: Telepathy" book="" hidden="false" collective="false" type="upgrade">
       <profiles>
-        <profile id="3b62-952d-e950-f7d0" name="Hallucination" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="3b62-952d-e950-f7d0" name="6. Hallucination" book="HH: AoD Rulebook" page="188" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5180,7 +4714,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Roll once this power has been successfully manifested to determine the manner of hallucinations the target is suffering from (roll once for the whole unit).  1-2: The unit must take a Pinning Test. 3-4: Whilst the power is in effect, all models in the unit suffer a -1 penalty to their Weapon Skill, Ballistic Skill, Initiative and Attacks (to a minimum of 1). 5-6: Randomly select one character in the target unit. That model suffers a single Strength 3 hit for every other model in the target unit. Cover saves cannot be taken against these hits, and they can never be allocated to another model. If there are no character models in the target unit, or if there are no other modelsapart from the character model, treat this result as 3-4 instead."/>
           </characteristics>
         </profile>
-        <profile id="7c98-79ed-ecc1-8507" name="Dominate" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="7c98-79ed-ecc1-8507" name="1. Dominate" book="HH: AoD Rulebook" page="188" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5192,7 +4726,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the target unit must pass a Leadership test each time it attempts to move, manifest a psychic power, shoot, Run or declare a charge – if the test is failed, the action is forfeit and the unit can do nothing else that phase. A unit that fails this test when attempting to fire Overwatch does not fire any shots, but acts normally in the ensuing Fight sub-phase."/>
           </characteristics>
         </profile>
-        <profile id="7251-be85-3b42-d921" name="Terrify" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="7251-be85-3b42-d921" name="3. Terrify" book="HH: AoD Rulebook" page="188" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5204,7 +4738,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst the power is in effect, the target has a -1 penalty to their Leadership and treats all enemy units ashaving the Fear special rule. Furthermore, the target must take a Morale check at the end of the Psychic phase."/>
           </characteristics>
         </profile>
-        <profile id="53fe-023d-ca90-46fd" name="(Primaris) Psychic Shriek" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="53fe-023d-ca90-46fd" name="(Primaris) Psychic Shriek" book="HH: AoD Rulebook" page="188" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5216,7 +4750,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Roll 3D6 and subtract the target’s Leadership – the target unit suffers a number of Wounds equal to the result. Armour and cover saves cannot be taken against Wounds caused by Psychic Shriek."/>
           </characteristics>
         </profile>
-        <profile id="2fa6-56c5-974f-9368" name="Mental Fortitude" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="2fa6-56c5-974f-9368" name="2. Mental Fortitude" book="HH: AoD Rulebook" page="188" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5228,7 +4762,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="If the target is falling back, it immediately Regroups. In addition, whilst the power is in effect, the target gains the Fearless special rule."/>
           </characteristics>
         </profile>
-        <profile id="66f8-2849-5db1-34bb" name="Shrouding" book="BRB" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="66f8-2849-5db1-34bb" name="4. Shrouding" book="HH: AoD Rulebook" page="188" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5240,7 +4774,7 @@ D6    Result		S	AP
             <characteristic name="Details" characteristicTypeId="ad96-dfa4-b4ed-656d" value="Whilst this power is in effect, the Psyker,and all friendly models within 6&quot; of the Psyker, have the Shrouded special rule."/>
           </characteristics>
         </profile>
-        <profile id="a306-03eb-e597-52b1" name="Mind Howl" book="HH: Core Rule book" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
+        <profile id="a306-03eb-e597-52b1" name="5. Mind Howl" book="HH: AoD Rulebook" page="188" hidden="false" profileTypeId="ae70-4738-0161-bec0" profileTypeName="Psychic Power">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -18791,6 +18325,18 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
       <characteristics>
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="During a turn in which a unit equipped with rad grenades launches an assault, or is themselves assaulted, the enemy unit(s) suffers a -1 penalty to their Toughness until the end of the Assault phase.
 Note: This does affect the victims’ Instant Death thresholds."/>
+      </characteristics>
+    </profile>
+    <profile id="0466-931b-dd0b-34e9" name="Close Combat Weapon" book="HH: AoD Rulebook" page="42" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="User"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="-"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee"/>
       </characteristics>
     </profile>
   </sharedProfiles>
