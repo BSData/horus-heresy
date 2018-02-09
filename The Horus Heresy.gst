@@ -16860,7 +16860,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee"/>
       </characteristics>
     </profile>
-    <profile id="3cec-4483-3f2e-fbc2" name="Lightning Claw" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="3cec-4483-3f2e-fbc2" name="Lightning Claw" book="HH: AoD Rulebook" page="181" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17061,7 +17061,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Pistol, Melta"/>
       </characteristics>
     </profile>
-    <profile id="4ddd-399c-d71c-4ac1" name="Power Fist" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="4ddd-399c-d71c-4ac1" name="Power Fist" book="HH: AoD Rulebook" page="181" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17073,7 +17073,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Specialist Weapon, Unwieldy"/>
       </characteristics>
     </profile>
-    <profile id="e672-ae99-88e6-cfd8" name="Thunder Hammer" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="e672-ae99-88e6-cfd8" name="Thunder Hammer" book="HH: AoD Rulebook" page="181" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17085,7 +17085,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Concussive, Specialist Weapon, Unwieldy"/>
       </characteristics>
     </profile>
-    <profile id="038e-23ec-4886-8b00" name="Power Sword" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="038e-23ec-4886-8b00" name="Power Sword" book="HH: AoD Rulebook" page="181" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17097,7 +17097,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee"/>
       </characteristics>
     </profile>
-    <profile id="b3af-1eca-6629-4894" name="Power Axe" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="b3af-1eca-6629-4894" name="Power Axe" book="HH: AoD Rulebook" page="181" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17109,7 +17109,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Unwieldy"/>
       </characteristics>
     </profile>
-    <profile id="6bbe-f2c1-78e2-da59" name="Power Maul" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="6bbe-f2c1-78e2-da59" name="Power Maul" book="HH: AoD Rulebook" page="181" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17121,7 +17121,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Concussive"/>
       </characteristics>
     </profile>
-    <profile id="fdd4-9bf3-da9d-5479" name="Power Lance" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="fdd4-9bf3-da9d-5479" name="Power Lance" book="HH: AoD Rulebook" page="181" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
