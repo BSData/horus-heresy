@@ -16980,7 +16980,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Pistol"/>
       </characteristics>
     </profile>
-    <profile id="477d-c630-7e79-8cf9" name="Volkite Serpenta" book="LA:AODAL" page="135" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+    <profile id="477d-c630-7e79-8cf9" name="Volkite Serpenta" book="HH: AoD Rulebook" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -16992,7 +16992,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Pistol, Deflagrate"/>
       </characteristics>
     </profile>
-    <profile id="34d1-b4db-3e75-ccce" name="Volkite Culverin" book="LA:AODAL" page="135" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+    <profile id="34d1-b4db-3e75-ccce" name="Volkite Culverin" book="HH: AoD Rulebook" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17004,7 +17004,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 4, Deflagrate"/>
       </characteristics>
     </profile>
-    <profile id="626c-d79c-9bb7-3407" name="Volkite Caliver" book="LA:AODAL" page="135" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+    <profile id="626c-d79c-9bb7-3407" name="Volkite Caliver" book="HH: AoD Rulebook" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17016,7 +17016,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 2, Deflagrate"/>
       </characteristics>
     </profile>
-    <profile id="c440-1f53-4d20-5cab" name="Volkite Charger" book="LA:AODAL" page="135" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+    <profile id="c440-1f53-4d20-5cab" name="Volkite Charger" book="HH: AoD Rulebook" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -18637,6 +18637,18 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="4"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Blast (3&quot;), Fleshbane, Rad-phage"/>
+      </characteristics>
+    </profile>
+    <profile id="31d0-8553-1e7c-28e6" name="Volktie Demi-Culverin" book="HH: AoD Rulebook" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="45&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="5"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 4, Deflagrate"/>
       </characteristics>
     </profile>
   </sharedProfiles>
