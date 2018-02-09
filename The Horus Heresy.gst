@@ -17610,7 +17610,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3, Blast (3&quot;)"/>
       </characteristics>
     </profile>
-    <profile id="d55f-eed0-800f-5789" name="Autocannon" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="d55f-eed0-800f-5789" name="Autocannon" book="HH: AoD Rulebook" page="176" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17622,7 +17622,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 2"/>
       </characteristics>
     </profile>
-    <profile id="d660-38fe-9058-a1b9" name="Autopistol" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="d660-38fe-9058-a1b9" name="Autopistol" book="HH: AoD Rulebook" page="176" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17658,7 +17658,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 4, Rending"/>
       </characteristics>
     </profile>
-    <profile id="1f7d-9765-ed8e-f6e5" name="Quad Gun" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="1f7d-9765-ed8e-f6e5" name="Quad Gun" book="HH: AoD Rulebook" page="176" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17670,7 +17670,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 4, Interceptor, Skyfire, Twin-linked"/>
       </characteristics>
     </profile>
-    <profile id="94da-501b-a2f5-6c61" name="Battle cannon" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="94da-501b-a2f5-6c61" name="Battle cannon" book="HH: AoD Rulebook" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -18159,7 +18159,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Blast, Concussion, Graviton Pulse, Haywire"/>
       </characteristics>
     </profile>
-    <profile id="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" name="Heavy Stubber" book="HH4: Conquest" page="308" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+    <profile id="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" name="Heavy Stubber" book="HH: AoD Rulebook" page="176" hidden="false" profileTypeId="576561706f6e23232344415441232323">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -18339,7 +18339,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee"/>
       </characteristics>
     </profile>
-    <profile id="871025a3-7729-f97d-378d-804c3571cdf3" name="Rotor Cannon" book="HH:LACAL" page="85" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+    <profile id="871025a3-7729-f97d-378d-804c3571cdf3" name="Rotor Cannon" book="HH: AoD 1st" page="176" hidden="false" profileTypeId="576561706f6e23232344415441232323">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -18445,6 +18445,42 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="10"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 2, Large Blast (5&quot;)"/>
+      </characteristics>
+    </profile>
+    <profile id="01e2-722b-da0c-9ccd" name="Autogun" book="HH: AoD Rulebook" page="176" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="24&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="3"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="-"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Rapid Fire"/>
+      </characteristics>
+    </profile>
+    <profile id="354e-ccd5-bde4-726a" name="Reaper Autocannon" book="HH: AoD Rulebook" page="176" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 2, Twin-linked"/>
+      </characteristics>
+    </profile>
+    <profile id="4ffe-bba3-82e3-987b" name="Kheres Assault Cannon" book="HH: AoD Rulebook" page="176" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="24&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="6"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 6, Rending"/>
       </characteristics>
     </profile>
   </sharedProfiles>
