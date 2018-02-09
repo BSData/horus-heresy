@@ -16395,7 +16395,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
     </rule>
   </sharedRules>
   <sharedProfiles>
-    <profile id="09fd-8af1-a6b1-51f7" name="Boltgun" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="09fd-8af1-a6b1-51f7" name="Boltgun" book="HH: AoD Rulebook" page="177" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -16671,7 +16671,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 2, Lance, Blind, Gets Hot"/>
       </characteristics>
     </profile>
-    <profile id="0225-fc80-29f1-09db" name="Mauler Bolt Cannon" book="HH:MT" page="115" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+    <profile id="0225-fc80-29f1-09db" name="Mauler Bolt Cannon" book="HH: AoD Rulebook" page="177" hidden="false" profileTypeId="576561706f6e23232344415441232323">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -16932,7 +16932,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 1, Melta, One Use Only"/>
       </characteristics>
     </profile>
-    <profile id="8546-d0ac-17ab-252a" name="Combi-bolter" book="LA:AODAL" page="134" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="8546-d0ac-17ab-252a" name="Combi-bolter" book="HH: AoD Rulebook" page="177" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -16968,7 +16968,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 2, Deflagrate, One Use Only"/>
       </characteristics>
     </profile>
-    <profile id="ec83-0776-ef74-9cc2" name="Bolt Pistol" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="ec83-0776-ef74-9cc2" name="Bolt Pistol" book="HH: AoD Rulebook" page="177" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17274,7 +17274,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Combat shields and boarding shields confer a 6+ invulnerable save, increasing to 5+ in close combat. A model equipped with a boarding shield also counts as being equipped with defensive grenades and cannot claim the extra attack for being armed with an additional close combat weapon."/>
       </characteristics>
     </profile>
-    <profile id="271e-6286-86cc-06dd" name="Heavy Bolter" book="BRB 7th" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="271e-6286-86cc-06dd" name="Heavy Bolter" book="HH: AoD Rulebook" page="177" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -18517,6 +18517,30 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="10"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Barrage, Large Blast (5&quot;)"/>
+      </characteristics>
+    </profile>
+    <profile id="107c-1b9d-758e-4e8d" name="Quad Heavy Bolter" book="HH: AoD Rulebook" page="177" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="5"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 6, Twin-linked"/>
+      </characteristics>
+    </profile>
+    <profile id="3614-1820-1d91-b2f2" name="Avenger bolt cannon" book="HH: AoD Rulebook" page="177" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="6"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 7"/>
       </characteristics>
     </profile>
   </sharedProfiles>
