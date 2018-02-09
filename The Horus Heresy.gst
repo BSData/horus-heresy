@@ -17286,7 +17286,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3"/>
       </characteristics>
     </profile>
-    <profile id="97a5-0583-4a2b-c44e" name="Graviton Gun" book="LA:AODAL" page="134" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="97a5-0583-4a2b-c44e" name="Graviton Gun" book="HH: AoD Rulebook" page="177" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17295,7 +17295,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="18&quot;"/>
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="Special"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
-        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Blast, Concussive, Graviton Pulse, Haywire"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Blast, Concussive, Graviton Pulse*, Haywire"/>
       </characteristics>
     </profile>
     <profile id="c1d3-0c64-3702-f5f9" name="Lascutter" book="LA:AODAL" page="135" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
@@ -18147,7 +18147,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 2, Lance, Blind, Gets Hot"/>
       </characteristics>
     </profile>
-    <profile id="481b32ee-2904-c9e0-8612-35ff2bcab65a" name="Graviton Gun" book="HH4: Conquest" page="308" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+    <profile id="481b32ee-2904-c9e0-8612-35ff2bcab65a" name="Graviton Gun" book="HH: AoD Rulebook" page="177" hidden="false" profileTypeId="576561706f6e23232344415441232323">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -18156,7 +18156,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="18&quot;"/>
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="*"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
-        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Blast, Concussion, Graviton Pulse, Haywire"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Blast (3&quot;), Concussive, Graviton Pulse, Haywire"/>
       </characteristics>
     </profile>
     <profile id="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" name="Heavy Stubber" book="HH: AoD Rulebook" page="176" hidden="false" profileTypeId="576561706f6e23232344415441232323">
@@ -18541,6 +18541,30 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="6"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 7"/>
+      </characteristics>
+    </profile>
+    <profile id="dd7a-9167-2cf7-278b" name="Graviton Cannon" book="HH: AoD Rulebook" page="177" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="*"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Large Blast (5&quot;), Concussive, Graviton Pulse*, Haywire"/>
+      </characteristics>
+    </profile>
+    <profile id="1af3-ce61-21e7-f65f" name="Graviton Imploder" book="HH: AoD Rulebook" page="177" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="18&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="**"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Salvo 2/4, Concussive, Graviton Implosion**"/>
       </characteristics>
     </profile>
   </sharedProfiles>
