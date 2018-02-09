@@ -18687,5 +18687,41 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 2, Lance, Blind, Gets Hot"/>
       </characteristics>
     </profile>
+    <profile id="62c4-32da-84f2-5033" name="Phosphex Bomb" book="HH: AoD Rulebook" page="179" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="6&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="5"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assualt 1, One Use, Blast (3&quot;), Crawling Fire, Lingering Death"/>
+      </characteristics>
+    </profile>
+    <profile id="62fb-7314-f3cf-f6ab" name="Phosphex Shell" book="HH: AoD Rulebook" page="179" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="5"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Large Blast (5&quot;), Poisoned (3+), Crawling Fire, Lingering Death"/>
+      </characteristics>
+    </profile>
+    <profile id="5d04-1774-0dbe-3d49" name="Phosphex Discharger" book="HH: AoD Rulebook" page="179" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="6&quot;-18&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="5"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3, Barrage,  One Use, Blast (3&quot;), Poisoned (3+), Crawling Fire, Lingering Death"/>
+      </characteristics>
+    </profile>
   </sharedProfiles>
 </gameSystem>
