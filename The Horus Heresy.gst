@@ -17511,7 +17511,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Once per game, instead of shooting or flat out movements/running, the vehicle can activate smoke launchers. May not fire its weapons that turn but recieves a 5+ cover save until next player turn. Unaffected by weapon destroyed, crew shaken and crew stunned results."/>
       </characteristics>
     </profile>
-    <profile id="1cce-972c-022a-2590" name="Lascannon" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="1cce-972c-022a-2590" name="Lascannon" book="HH: AoD Rulebook" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17838,7 +17838,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3"/>
       </characteristics>
     </profile>
-    <profile id="cb26-27b4-9393-a768" name="Icarus Lascannon" book="BRB" page="" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="cb26-27b4-9393-a768" name="Icarus Lascannon" book="HH: AoD Rulebook" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17871,7 +17871,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Torrent"/>
       </characteristics>
     </profile>
-    <profile id="d174-eb55-aaa6-d032" name="Lasgun" book="BRB" page="" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="d174-eb55-aaa6-d032" name="Lasgun" book="HH: AoD Rulebook" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17883,13 +17883,13 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Rapid Fire"/>
       </characteristics>
     </profile>
-    <profile id="f2b7-768f-a270-de64" name="Laspistol" book="BRB" page="" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="f2b7-768f-a270-de64" name="Laspistol" book="HH: AoD Rulebook" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="12"/>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="12&quot;"/>
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="3"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="-"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Pistol"/>
@@ -17916,7 +17916,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="This building’s automated fire is resolved using BS3."/>
       </characteristics>
     </profile>
-    <profile id="92be-1bfc-f355-f214" name="Multi-laser" book="BRB" page="" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="92be-1bfc-f355-f214" name="Multi-laser" book="HH: AoD Rulebook" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -18577,6 +18577,42 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="4"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Fleshbane, Rad-phage, Torrent"/>
+      </characteristics>
+    </profile>
+    <profile id="92b2-bceb-53de-8dbc" name="Blast Pistol" book="HH: AoD Rulebook" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="6&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="5"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="-"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Pistol, Twin-linked, Gets Hot"/>
+      </characteristics>
+    </profile>
+    <profile id="8a2b-1d90-4a97-9f39" name="Mitrlock" book="HH: AoD Rulebook" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="8&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="4"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="6"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 1, Shred"/>
+      </characteristics>
+    </profile>
+    <profile id="aee7-812f-7924-09e5" name="Laser Destroyer" book="HH: AoD Rulebook" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="9"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="1"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Twin-linked"/>
       </characteristics>
     </profile>
   </sharedProfiles>
