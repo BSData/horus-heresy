@@ -18249,7 +18249,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Shred, Rending"/>
       </characteristics>
     </profile>
-    <profile id="f4750e31-0624-912a-bf07-7a1febca222e" name="Machinator Array" book="HH3: Extermination" page="240" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+    <profile id="f4750e31-0624-912a-bf07-7a1febca222e" name="Machinator Array" book="HH: AoD Rulebook" page="181" hidden="false" profileTypeId="576561706f6e23232344415441232323">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -18351,7 +18351,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Salvo 3/4"/>
       </characteristics>
     </profile>
-    <profile id="51100eb8-f6e6-7048-df0a-84f0163a38bd" name="Siege Wrecker" book="HH:LACAL" page="87" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+    <profile id="51100eb8-f6e6-7048-df0a-84f0163a38bd" name="Siege Wrecker" book="HH: AoD Rulebook" page="181" hidden="false" profileTypeId="576561706f6e23232344415441232323">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -18759,16 +18759,40 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Armourbane"/>
       </characteristics>
     </profile>
-    <profile id="0088-0fd2-5bdc-1b87" name="Siege Wrecker" book="HH: AoD Rulebook" page="180" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="c3a5-c40c-b493-5cf6" name="Servo Arm" book="HH: AoD Rulebook" page="181" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <characteristics>
         <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
-        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="10"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
-        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Concussive, Wrecker, Specialist Weapon"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Unwieldy"/>
+      </characteristics>
+    </profile>
+    <profile id="54c0-193a-65c8-03b3" name="Paragon Blade" book="HH: AoD Rulebook" page="181" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="+1"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Murderous Strike, Specialist Weapon"/>
+      </characteristics>
+    </profile>
+    <profile id="d2b5-89d1-10e2-f3f0" name="Charnabal Sabre" book="HH: AoD Rulebook" page="181" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="User"/>
+        <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="-"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Rending, Duelist&apos;s Edge"/>
       </characteristics>
     </profile>
   </sharedProfiles>
