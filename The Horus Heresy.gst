@@ -14339,7 +14339,7 @@ Command Benefits:
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule id="5342-bf92-d6c0-ebb9" name="Hit and Run" book="BRB 7th" hidden="false">
+    <rule id="5342-bf92-d6c0-ebb9" name="Hit and Run" book="HH: AoD Rulebook" page="164" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14352,7 +14352,7 @@ If the test is passed, choose a direction – then roll 3D6. As long as the dist
 
 A Hit &amp; Run move is not slowed by difficult terrain, but takes Dangerous Terrain tests as normal. It may not be used to move into base or hull contact with enemy units, and models instead stop 1&quot; away. If there are units with this rule on both sides who wish to disengage, roll-off to determine who goes first and then alternate disengaging them. If the last of these ends up no longer in combat, it Consolidates instead.</description>
     </rule>
-    <rule id="d219-2314-4834-c054" name="Deep Strike" book="BRB 7th" hidden="false">
+    <rule id="d219-2314-4834-c054" name="Deep Strike" book="HH: AoD Rulebook" page="162" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14387,42 +14387,42 @@ Your opponent may deploy the unit anywhere on the table (excluding impassable te
 4-6 - Delayed. Because of mechanical failure or enemy action, the reinforcements are delayed.
 The unit is placed in Ongoing Reserves.</description>
     </rule>
-    <rule id="988c-d4d0-9418-1165" name="Rage" book="BRB 7th" hidden="false">
+    <rule id="988c-d4d0-9418-1165" name="Rage" book="HH: AoD Rulebook" page="170" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>In a turn in which a model with this special rule charges into combat, it gains +2 Attacks for charging, rather than +1. A model that has made a disordered charge that turn receives no benefit from Rage.</description>
     </rule>
-    <rule id="e6e1-afb0-377d-27a8" name="Skilled Rider" book="BRB 7th" hidden="false">
+    <rule id="e6e1-afb0-377d-27a8" name="Skilled Rider" book="HH: AoD Rulebook" page="171" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A unit that contains at least one model with this special rule automatically passes Dangerous Terrain tests, and receives +1 to its Jink cover saves (other cover saves are unaffected).</description>
     </rule>
-    <rule id="fe2f-3220-3fef-b177" name="Wrecker" book="HH:LACAL" page="87" hidden="false">
+    <rule id="fe2f-3220-3fef-b177" name="Wrecker" book="HH: AoD Rulebook" page="175" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>Attacks with this special rule may re-roll failed armour penetration rolls against fortifications and immobile structures and add +1 to any result rolled on the Building Damage chart.  If this attack damages a bulkhead or wall section of terrain and destroys it, remove that section of terrain from play if possible.</description>
     </rule>
-    <rule id="5d88-bcf6-e410-6e01" name="Tank Hunters" book="BRB 7th" hidden="false">
+    <rule id="5d88-bcf6-e410-6e01" name="Tank Hunters" book="HH: AoD Rulebook" page="173" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A unit that contains at least one model with this special rule re-rolls failed armour penetration rolls against vehicles (both with shooting and in close combat) and can choose to re-roll glancing hits, in an attempt to instead get a penetrating hit – but the second result must be kept.</description>
     </rule>
-    <rule id="a225-e39b-3699-c8f8" name="Night Vision" book="BRB 7th" hidden="false">
+    <rule id="a225-e39b-3699-c8f8" name="Night Vision" book="HH: AoD Rulebook" page="168" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A unit that contains at least one model with this special rule ignores the effects of Night Fighting.</description>
     </rule>
-    <rule id="9bdd-5ec7-8dd6-63c0" name="Feel No Pain" book="BRB 7th" hidden="false">
+    <rule id="9bdd-5ec7-8dd6-63c0" name="Feel No Pain" book="HH: AoD Rulebook" page="164" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14432,7 +14432,7 @@ Feel No Pain saves may not be taken against Destroyer attacks or against unsaved
 Roll a D6 each time an unsaved Wound is suffered. On a 4 or less, you must take the Wound as normal. On a 5+, the unsaved Wound is discounted – treat it as having been saved.
 If a unit has the Feel No Pain special rule with a number in brackets afterwards – Feel No Pain (6+), for example – then the number in brackets is the D6 result needed to discount the Wound.</description>
     </rule>
-    <rule id="5862-0794-3d86-5788" name="Feel No Pain (4+)" book="BRB 7th" hidden="false">
+    <rule id="5862-0794-3d86-5788" name="Feel No Pain (4+)" book="HH: AoD Rulebook" page="164" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14442,7 +14442,7 @@ Feel No Pain saves may not be taken against Destroyer attacks or against unsaved
 Roll a D6 each time an unsaved Wound is suffered. On a 4 or less, you must take the Wound as normal. On a 5+, the unsaved Wound is discounted – treat it as having been saved.
 If a unit has the Feel No Pain special rule with a number in brackets afterwards – Feel No Pain (6+), for example – then the number in brackets is the D6 result needed to discount the Wound.</description>
     </rule>
-    <rule id="85da-2f19-3756-44de" name="Feel No Pain (6+)" book="BRB 7th" hidden="false">
+    <rule id="85da-2f19-3756-44de" name="Feel No Pain (6+)" book="HH: AoD Rulebook" page="164" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14452,7 +14452,7 @@ Feel No Pain saves may not be taken against Destroyer attacks or against unsaved
 Roll a D6 each time an unsaved Wound is suffered. On a 4 or less, you must take the Wound as normal. On a 5+, the unsaved Wound is discounted – treat it as having been saved.
 If a unit has the Feel No Pain special rule with a number in brackets afterwards – Feel No Pain (6+), for example – then the number in brackets is the D6 result needed to discount the Wound.</description>
     </rule>
-    <rule id="56df-3f23-0abe-e04b" name="Feel No Pain (3+)" book="BRB 7th" hidden="false">
+    <rule id="56df-3f23-0abe-e04b" name="Feel No Pain (3+)" book="HH: AoD Rulebook" page="164" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14462,7 +14462,7 @@ Feel No Pain saves may not be taken against Destroyer attacks or against unsaved
 Roll a D6 each time an unsaved Wound is suffered. On a 4 or less, you must take the Wound as normal. On a 5+, the unsaved Wound is discounted – treat it as having been saved.
 If a unit has the Feel No Pain special rule with a number in brackets afterwards – Feel No Pain (6+), for example – then the number in brackets is the D6 result needed to discount the Wound.</description>
     </rule>
-    <rule id="34c7-8b61-a5b8-a301" name="Infiltrate" book="BRB 7th" hidden="false">
+    <rule id="34c7-8b61-a5b8-a301" name="Infiltrate" book="HH: AoD Rulebook" page="167" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14477,14 +14477,14 @@ A unit that deploys using these rules cannot charge in their first turn. Having 
 
 If a unit has both the Infiltrate and Scout special rule, that unit can deploy as per the Infiltrate special rule and then redeploy as per the Scout special rule.</description>
     </rule>
-    <rule id="3aa7-9a8f-1e0d-921d" name="Furious Charge" book="BRB 7th" hidden="false">
+    <rule id="3aa7-9a8f-1e0d-921d" name="Furious Charge" book="HH: AoD Rulebook" page="164" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>In a turn in which a model with this special rule charges into combat, it adds +1 to its Strength characteristic until the end of the Assault phase. A model that has made a disordered charge that turn receives no benefit from Furious Charge.</description>
     </rule>
-    <rule id="de18-25a0-504b-74be" name="Outflank" book="BRB 7th" hidden="false">
+    <rule id="de18-25a0-504b-74be" name="Outflank" book="HH: AoD Rulebook" page="168" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14499,14 +14499,14 @@ When an Outflanking unit arrives from Reserves, but not Ongoing Reserve, the con
       <modifiers/>
       <description>Vehicles equipped with extra armour count Crew Stunned results from the Vehicle Damage table as Crew Shaken results instead.</description>
     </rule>
-    <rule id="7be5-30af-1a02-0a89" name="Stubborn" book="BRB 7th" hidden="false">
+    <rule id="7be5-30af-1a02-0a89" name="Stubborn" book="HH: AoD Rulebook" page="173" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>When a unit that contains at least one model with this special rule takes Morale checks or Pinning tests, they ignore any negative Leadership modifiers. If a unit is both Fearless and Stubborn, it uses the rules for Fearless instead.</description>
     </rule>
-    <rule id="3ad4-1c37-d60b-1a4e" name="Independent Character" book="BRB 7th" hidden="false">
+    <rule id="3ad4-1c37-d60b-1a4e" name="Independent Character" book="HH: AoD Rulebook" page="165" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14515,14 +14515,14 @@ When an Outflanking unit arrives from Reserves, but not Ongoing Reserve, the con
 
 Full details in BRB. Rule too long to copy verbatim.</description>
     </rule>
-    <rule id="52ff-4074-570b-4ea1" name="Fear" book="BRB 7th" hidden="false">
+    <rule id="52ff-4074-570b-4ea1" name="Fear" book="HH: AoD Rulebook" page="163" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>At the start of each Fight sub-phase, a unit in base contact with one or more enemy models that cause Fear must take a Leadership test (called a Fear test) before any blows are struck. If the test is passed, all is well and there is no effect. If the test is failed, the unit succumbs to fear – all models in the unit have their Weapon Skill reduced to 1 for the remainder of that Fight sub-phase. Note that a model that causes Fear is not itself immune to Fear, and will still need to take a Fear test if it is base contact with any enemy models that cause Fear.</description>
     </rule>
-    <rule id="7c6c-4e25-e4d4-9728" name="Hatred" book="BRB 7th" hidden="false">
+    <rule id="7c6c-4e25-e4d4-9728" name="Hatred" book="HH: AoD Rulebook" page="164" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14544,7 +14544,7 @@ Full details in BRB. Rule too long to copy verbatim.</description>
       <description>If a mission has the Night Fighting special rule, either player can declare that they wish to fight the battle at night. If either player does so, roll a D6 before deployment: on a roll of 4+, the Night Fighting special rule is in effect during game turn 1.
 While the Night Fighting mission special rule is in effect, all units have the Stealth special rule.</description>
     </rule>
-    <rule id="6f66-b417-6004-0916" name="Hammer of Wrath" book="BRB 7th" hidden="false">
+    <rule id="6f66-b417-6004-0916" name="Hammer of Wrath" book="HH: AoD Rulebook" page="164" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14552,7 +14552,7 @@ While the Night Fighting mission special rule is in effect, all units have the S
       <description>If a model with this special rule ends its charge move in base or hull contact with an enemy model, it makes one additional Attack that hits automatically and is resolved at the model’s unmodified Strength with AP-. This Attack does not benefit from any of the model’s special rules (such as Furious Charge, Rending etc.). This Attack is resolved during the Fight sub-phase at the Initiative 10 step, but does not grant the model an additional Pile In move.
 If a model with this special rule charges a building or vehicle, the hit is resolved against the Armour Value of the facing the charging model is touching. If a model with this special rule charges a building or vehicle that is a Transport or a Chariot, the hit is resolved against the building or vehicle, not the occupants or the rider.</description>
     </rule>
-    <rule id="0900-71d5-1937-aa96" name="Counter-attack" book="BRB 7th" hidden="false">
+    <rule id="0900-71d5-1937-aa96" name="Counter-attack" book="HH: AoD Rulebook" page="161" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14560,56 +14560,56 @@ If a model with this special rule charges a building or vehicle, the hit is reso
       <description>If a unit contains at least one model with this special rule, and that unit is charged, every model with the Counter-attack special rule in the unit gets +1 Attack until the end of the phase.
 If, when charged, the unit was already locked in combat, the Counter-attack special rule has no effect.</description>
     </rule>
-    <rule id="6d06-5ea0-9a17-ca97" name="Move Through Cover" book="BRB 7th" hidden="false">
+    <rule id="6d06-5ea0-9a17-ca97" name="Move Through Cover" book="HH: AoD Rulebook" page="168" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A unit that contains at least one model with this special rule rolls an extra D6 when rolling to move through difficult terrain and is not slowed by charging through difficult terrain. In most circumstances, this will mean that, when moving, the unit rolls 3D6 and picks the highest roll. Furthermore, a model with the Move Through Cover special rule automatically passes Dangerous Terrain tests.</description>
     </rule>
-    <rule id="69e5-fc02-1f9d-63c2" name="Fleet" book="BRB 7th" hidden="false">
+    <rule id="69e5-fc02-1f9d-63c2" name="Fleet" book="HH: AoD Rulebook" page="164" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A unit composed entirely of models with this special rule can re-roll one or more of the dice when determining Run moves and charge ranges (such as a single D6 from a charge range roll, for example).</description>
     </rule>
-    <rule id="4dd2-fcb0-de6a-5b70" name="Preferred Enemy" book="BRB 7th" hidden="false">
+    <rule id="4dd2-fcb0-de6a-5b70" name="Preferred Enemy" book="HH: AoD Rulebook" page="169" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>This rule is often presented as Preferred Enemy (X) where X identifies a specific type of foe. If the special rule does not specify a type of foe, then everyone is a Preferred Enemy of the unit. A unit that contains at least one model with this special rule re-rolls failed To Hit and To Wound rolls of 1 if attacking its Preferred Enemy. This applies both to shooting and close combat attacks.</description>
     </rule>
-    <rule id="fbf1-6913-ff9f-5a4f" name="Instant Death" book="BRB 7th" hidden="false">
+    <rule id="fbf1-6913-ff9f-5a4f" name="Instant Death" book="HH: AoD Rulebook" page="167" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>If a model suffers an unsaved Wound from an attack with this special rule, it is reduced to 0 Wounds and is removed as a casualty.</description>
     </rule>
-    <rule id="f899-8f9d-fc7e-d855" name="Master-crafted" book="BRB 7th" hidden="false">
+    <rule id="f899-8f9d-fc7e-d855" name="Master-crafted" book="HH: AoD Rulebook" page="168" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>Weapons with the Master-crafted special rule allow the bearer to re-roll one failed roll To Hit per turn with that weapon.</description>
     </rule>
-    <rule id="0ba8-83bc-74c1-43c2" name="Rampage" book="BRB 7th" hidden="false">
+    <rule id="0ba8-83bc-74c1-43c2" name="Rampage" book="HH: AoD Rulebook" page="170" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>At the start of any Fight sub-phase, models with the Rampage special rule gain +D3 attacks if the combat they are in contains more enemy models than friendly models – count all models locked in the combat, not just those models that are engaged. Roll once to determine the number of bonus Attacks all Rampaging models involved in that combat receive that phase. A model that has made a disordered charge that turn receives no benefit from Rampage.</description>
     </rule>
-    <rule id="9d85-46f7-f5e6-a5f7" name="Concussive" book="BRB 7th" hidden="false">
+    <rule id="9d85-46f7-f5e6-a5f7" name="Concussive" book="HH: AoD Rulebook" page="161" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A model that suffers one or more unsaved Wounds from a weapon with this special rule is reduced to Initiative 1 until the end of the following Assault phase.</description>
     </rule>
-    <rule id="89da-0cb5-bee4-8ec2" name="Shred" book="BRB 7th" hidden="false">
+    <rule id="89da-0cb5-bee4-8ec2" name="Shred" book="HH: AoD Rulebook" page="171" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14625,7 +14625,7 @@ If, when charged, the unit was already locked in combat, the Counter-attack spec
 - Never counts as scoring regardless of mission type
 - In the case of a failed Cybertheurgy attempt, always apply Malifica result instead of rolling</description>
     </rule>
-    <rule id="72d9-7041-9d30-d150" name="It Will Not Die" book="BRB 7th" hidden="false">
+    <rule id="72d9-7041-9d30-d150" name="It Will Not Die" book="HH: AoD Rulebook" page="167" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14653,28 +14653,28 @@ If, when charged, the unit was already locked in combat, the Counter-attack spec
       <modifiers/>
       <description>If the Titan suffers a Titanic Explosion result on the Catastrophic Damage table, its reactor goes nuclear!  This is the same as a Titanic Explosion except that all hits are resolved as Destroyer hits.</description>
     </rule>
-    <rule id="4284-18a1-9844-a0bd" name="Smash" book="BRB 7th" hidden="false">
+    <rule id="4284-18a1-9844-a0bd" name="Smash" book="HH: AoD Rulebook" page="172" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>All of the close combat attacks, except Hammer of Wrath attacks, of a model with this special rule are resolved at AP2 (unless it’s attacking with an AP1 weapon). Additionally, when it makes its close combat attacks, it can choose instead to make a single Smash Attack. If it does so, roll To Hit as normal, but resolve the Attack at double the model’s Strength (to a maximum of 10). Furthermore, a model making a Smash Attack can re-roll its armour penetration rolls, but must abide by the second result.</description>
     </rule>
-    <rule id="3c7d-a1fa-c68b-caad" name="Relentless" book="BRB 7th" hidden="false">
+    <rule id="3c7d-a1fa-c68b-caad" name="Relentless" book="HH: AoD Rulebook" page="170" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>Relentless models can shoot with Heavy, Salvo or Ordnance weapons, counting as stationary, even if they moved in the previous Movement phase. They are also allowed to charge in the same turn they fire Heavy, Ordnance, Rapid Fire or Salvo weapons.</description>
     </rule>
-    <rule id="dd83-7fb9-6f58-0c96" name="Strikedown" book="BRB 7th" hidden="false">
+    <rule id="dd83-7fb9-6f58-0c96" name="Strikedown" book="HH: AoD Rulebook" page="173" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>Any non-vehicle model that suffers one or more unsaved Wounds or passes one or more saving throws against an attack with the Strikedown special rule moves as if it is in difficult terrain until the end of its next turn. It is a good idea to mark affected models with counters or coins so that you remember.</description>
     </rule>
-    <rule id="b5c1-4b08-5ddc-1504" name="Invincible Behemoth" book="BRB 7th" hidden="false">
+    <rule id="b5c1-4b08-5ddc-1504" name="Invincible Behemoth" book="HH: AoD Rulebook" page="90" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14690,7 +14690,7 @@ In addition, any attacks or special abilities that permanently lower the Armour 
       <modifiers/>
       <description>When attacking any target with an armour value, rolls of 1 on the Destroyer Damage table may be re-rolled.</description>
     </rule>
-    <rule id="f624-f475-e5ec-0dfa" name="Pinning" book="BRB 7th" hidden="false">
+    <rule id="f624-f475-e5ec-0dfa" name="Pinning" book="HH: AoD Rulebook" page="168" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14700,7 +14700,7 @@ If the unit fails the test, it is Pinned and must immediately Go to Ground. As t
 As long as the test is passed, a unit can be called upon to take multiple Pinning tests in a single turn, but only once for each unit shooting at them. If a unit has already Gone to Ground, no further Pinning tests are taken.
 If the special rules of a unit specify that the unit can never be Pinned, the unit automatically passes Pinning tests. Such units can still Go to Ground voluntarily if they wish.</description>
     </rule>
-    <rule id="21c0-62ff-3ed2-17a7" name="Melta" book="BRB 7th" hidden="false">
+    <rule id="21c0-62ff-3ed2-17a7" name="Melta" book="HH: AoD Rulebook" page="168" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14740,14 +14740,14 @@ Fast vehicles that moved at Combat Speed in the preceding Movement phase can fir
       <modifiers/>
       <description>Models the have Programmed Behaviour, Fearless, Cybernetic Resiliance, Fire Protocols, Machine Creature, and Adamantium Will special rules.</description>
     </rule>
-    <rule id="dc70-e199-5525-e78c" name="Fearless" book="BRB 7th" hidden="false">
+    <rule id="dc70-e199-5525-e78c" name="Fearless" book="HH: AoD Rulebook" page="164" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>Units containing one or more models with the Fearless special rule automatically pass Pinning, Fear and Regroup tests and Morale checks, but cannot Go to Ground and cannot choose to fail a Morale check due to the Our Weapons are Useless rule. If a unit has Gone to Ground and then gains the Fearless special rule, all the effects of Going to Ground are immediately cancelled.</description>
     </rule>
-    <rule id="df87-e991-2d30-dc38" name="Adamantium Will" book="BRB 7th" hidden="false">
+    <rule id="df87-e991-2d30-dc38" name="Adamantium Will" book="HH: AoD Rulebook" page="157" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14786,21 +14786,21 @@ Fast vehicles that moved at Combat Speed in the preceding Movement phase can fir
 - Target Priority: If enemy models are within 12&quot; and line of sight during their shooting phase, the unit must fire all its weapons against the closest enemy unit it is able to harm.  If this is not the case, they are free to select targets as normal.
 - Onslaught: If enemy units are within 12&quot; during their Assault phase, they must attempt to charge the closest enemy unit if able.  May still only charge a unit fired upon.  If consolidating, must consolidate towards the closest enemy if within 12&quot;</description>
     </rule>
-    <rule id="7dae-4d12-baba-e529" name="Blind" book="BRB 7th" hidden="false">
+    <rule id="7dae-4d12-baba-e529" name="Blind" book="HH: AoD Rulebook" page="159" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>Any unit hit by one or more models or weapons with this special rule must take an Initiative test at the end of the current phase. If the test is passed, all is well – a shouted warning has caused the warriors to avert their gaze. If the Initiative test is failed, all models in the unit are reduced to Weapon Skill and Ballistic Skill 1 until the end of their next turn. Should the attacking unit hit themselves, we assume they are prepared and they automatically pass the test. Any model that does not have an Initiative characteristic (for example, non-Walker vehicles, buildings etc.) is unaffected by this special rule.</description>
     </rule>
-    <rule id="98ed-3a29-c86b-455d" name="Lance" book="BRB 7th" hidden="false">
+    <rule id="98ed-3a29-c86b-455d" name="Lance" book="HH: AoD Rulebook" page="167" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>Weapons with the Lance special rule count vehicle Armour Values that are higher than 12 as 12.</description>
     </rule>
-    <rule id="f4fd-d519-4769-5510" name="Gets Hot" book="BRB 7th" hidden="false">
+    <rule id="f4fd-d519-4769-5510" name="Gets Hot" book="HH: AoD Rulebook" page="164" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14820,7 +14820,7 @@ If a model has the ability to re-roll its rolls To Hit (including because of BS6
       <modifiers/>
       <description>Adds +1 to the model&apos;s attacks and count as being Twin-linked.</description>
     </rule>
-    <rule id="10a8-8d89-0bec-3e21" name="Twin-linked" book="BRB 7th" hidden="false">
+    <rule id="10a8-8d89-0bec-3e21" name="Twin-linked" book="HH: AoD Rulebook" page="175" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14833,14 +14833,14 @@ If the scatter dice does not roll a hit, you can choose to re-roll the dice with
 Twin-linked Template Weapons
 Twin-linked Template weapons are fired just like a single weapon, but must re-roll failed To Wound rolls and armour penetration rolls.</description>
     </rule>
-    <rule id="7ee3-d437-bc44-3630" name="Specialist Weapon" book="BRB 7th" hidden="false">
+    <rule id="7ee3-d437-bc44-3630" name="Specialist Weapon" book="HH: AoD Rulebook" page="172" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A model fighting with this weapon does not receive +1 Attack for fighting with two weapons unless it is armed with two or more Melee weapons with the Specialist Weapon rule.</description>
     </rule>
-    <rule id="8269-2cd6-9236-16e7" name="Rending" book="BRB 7th" hidden="false">
+    <rule id="8269-2cd6-9236-16e7" name="Rending" book="HH: AoD Rulebook" page="170" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14856,7 +14856,7 @@ In either case, against vehicles, each armour penetration roll of 6 allows a fur
       <modifiers/>
       <description>When losing its final wound, roll a D6.  On the result of a 6, the model explodes, inflicting a Str 4 AP - hit on all models within D6&quot;</description>
     </rule>
-    <rule id="9b30-1da3-eb8d-ce7a" name="Scout" book="BRB 7th" hidden="false">
+    <rule id="9b30-1da3-eb8d-ce7a" name="Scout" book="HH: AoD Rulebook" page="171" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14872,28 +14872,28 @@ If a unit with Scouts is deployed inside a Dedicated Transport, they may Outflan
 Iinfiltrate and Scout
 If a unit has both the Infiltrate and Scout special rule, that unit can deploy as per the Infiltrate special rule and then redeploy as per the Scout special rule.</description>
     </rule>
-    <rule id="4575-0a0a-caaf-e4bf" name="Fleshbane" book="BRB 7th" hidden="false">
+    <rule id="4575-0a0a-caaf-e4bf" name="Fleshbane" book="HH: AoD Rulebook" page="164" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>If a model has this special rule, or is attacking with a Melee weapon that has this special rule, they always Wound on a 2+ in close combat.  Similarly, if a model makes a shooting attack with a weapon that has this special rule, they always Wound on a 2+.  In either case, this special rule has no effect against vehicles or buildings.</description>
     </rule>
-    <rule id="eefe-09e4-17aa-deb2" name="Rad-phage" book="HH:MT" page="116" hidden="false">
+    <rule id="eefe-09e4-17aa-deb2" name="Rad-phage" book="HH: AoD Rulebook" page="170" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A model which loses one or more wounds to an attack with this rule and survives suffers a -1 penalty to its Toughness value for the rest of the battle.</description>
     </rule>
-    <rule id="2b06-29a6-641a-b22e" name="Crusader" book="BRB 7th" hidden="false">
+    <rule id="2b06-29a6-641a-b22e" name="Crusader" book="HH: AoD Rulebook" page="163" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A unit that contains at least one model with this special rule rolls an extra dice when making Run moves, and uses the highest result rolled. In addition, a unit that contains at least one model with this special rule adds D3 to its Sweeping Advance totals (roll each time).</description>
     </rule>
-    <rule id="be7f-8146-6cb8-9a53" name="Skyfire" book="BRB 7th" hidden="false">
+    <rule id="be7f-8146-6cb8-9a53" name="Skyfire" book="HH: AoD Rulebook1" page="171" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14921,7 +14921,7 @@ If a unit has both the Infiltrate and Scout special rule, that unit can deploy a
       <modifiers/>
       <description>In addition to its weapon attacks, units assaulting a model or unit with a Graviton Hammer always count as making a Disordered Charge when doing so.</description>
     </rule>
-    <rule id="9c80-5c1a-3b9d-971e" name="Shrouded" book="BRB 7th" hidden="false">
+    <rule id="9c80-5c1a-3b9d-971e" name="Shrouded" book="HH: AoD Rulebook" page="171" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14930,7 +14930,7 @@ If a unit has both the Infiltrate and Scout special rule, that unit can deploy a
 
 Cover save bonuses from the Shrouded and Stealth special rules are cumulative (to a maximum of a 2+ cover save).</description>
     </rule>
-    <rule id="3919-29f5-0c68-3ecb" name="Sniper" book="BRB 7th" hidden="false">
+    <rule id="3919-29f5-0c68-3ecb" name="Sniper" book="HH: AoD Rulebook" page="172" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14939,14 +14939,20 @@ Cover save bonuses from the Shrouded and Stealth special rules are cumulative (t
 
 If a weapon has the Sniper special rule, or is fired by a model with the Sniper special rule, its shooting attacks always wound on a To Wound roll of 4+, regardless of the victim’s Toughness. In addition, any To Wound roll of a 6 is resolved at AP2.
 
-Against vehicles, shooting attacks from weapons and models with the Sniper special rule count as Strength 4.</description>
+Against vehicles, shooting attacks from weapons and models with the Sniper special rule count as Strength 4.
+
+Attacks with the Blast or Template rules may never benefit from the effects of the Sniper special rule.</description>
     </rule>
-    <rule id="23a4-a37f-e8e8-c756" name="Legiones Astartes" hidden="false">
+    <rule id="23a4-a37f-e8e8-c756" name="Legiones Astartes" book="HH: AoD Rulebook" page="168" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>Units with this special rule may always attempt to Regroup at their normal Leadership value, regardless of casualties.</description>
+      <description>Units with this special rule may always attempt to Regroup at their normal Leadership value, regardless of casualties.
+
+In addition to these benefits, units  will also have a number of additional special rules and abilities specific to their ‘named’ Legion, all of which will be defined in the Legiones Astartes Army List and other future Forge World publications.
+
+If an army represents a Legion which does not yet have its own unique Legiones Astartes rule, the controlling player may instead add either the Stubborn or Furious Charge special rule to the standard provisions of this rule in the interim.</description>
     </rule>
     <rule id="5ecb-551d-0f68-3a79" name="Implacable Advance" book="LA:AOD" page="30" hidden="false">
       <profiles/>
@@ -14955,7 +14961,7 @@ Against vehicles, shooting attacks from weapons and models with the Sniper speci
       <modifiers/>
       <description>These units are used to assail the most heavily defended objectives and secure them for the advance of allied forces. They are always counted as scoring units in any mission where Troops are also counted as scoring units</description>
     </rule>
-    <rule id="e300-69f2-111a-ed55" name="Zealot" book="BRB 7th" hidden="false">
+    <rule id="e300-69f2-111a-ed55" name="Zealot" book="HH: AoD Rulebook" page="175" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -14978,14 +14984,14 @@ In addition, units containing one or more models with the Zealot special rule re
       <modifiers/>
       <description>After normal attacks by this weapon have been resolved, count the number of unsaved wounds caused on the target unit. Immediately resolve a number of additional automatic hits on the same unit using the weapon’s profile equal to the number of unsaved wounds – these can then be saved normally. Models in the targeted unit must still be in range in order for these additional hits to take effect. These additional hits do not themselves inflict more hits!</description>
     </rule>
-    <rule id="5eea-958c-d623-c3c9" name="Unwieldy" book="BRB 7th" hidden="false">
+    <rule id="5eea-958c-d623-c3c9" name="Unwieldy" book="HH: AoD Rulebook" page="175" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A model attacking with this weapon Piles In and fights at Initiative step 1, unless it is a Monstrous Creature or a Walker.</description>
     </rule>
-    <rule id="e182-50cd-0867-9a8d" name="Armourbane" book="BRB 7th" hidden="false">
+    <rule id="e182-50cd-0867-9a8d" name="Armourbane" book="HH: AoD Rulebook" page="157" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15002,7 +15008,7 @@ If a model makes a shooting attack with a weapon that has this special rule, it 
 
 Assualt: Models equipped with assault grenades don’t suffer the penalty to their Initiative for charging enemies through difficult terrain, but fight at their normal Initiative in the ensuing combat.</description>
     </rule>
-    <rule id="38d5-b6eb-bda8-2497" name="Bulky" book="BRB 7th" hidden="false">
+    <rule id="38d5-b6eb-bda8-2497" name="Bulky" book="HH: AoD Rulebook" page="161" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15047,14 +15053,14 @@ Jump units always use their jump packs when Falling Back, and their Fall Back mo
 SPECIAL RULES
 Jump units have the Bulky and Deep Strike special rules.</description>
     </rule>
-    <rule id="2d57-8425-0ec0-a9cf" name="Graviton Pulse" book="LA:AODAL" page="125" hidden="false">
+    <rule id="2d57-8425-0ec0-a9cf" name="Graviton Pulse" book="HH: AoD Rulebook" page="164" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>Instead of rolling To Wound normally with this weapon, any model caught in its blast must instead roll equal to or under their Strength on a D6 or suffer a wound (a roll of ‘6’ always counts as a failure). After the graviton pulse weapon has been fired, leave the Blast marker in place. This area now counts as both difficult terrain and dangerous terrain for the next turn.</description>
+      <description>Instead of rolling To Wound normally with this weapon, any model caught in its blast must instead roll equal to or under their Strength on a D6 or suffer a wound (a roll of a ‘6’ always counts as a failure). After a Graviton Pulse weapon has been fired, leave the Blast marker in place. This area now counts as both difficult terrain and dangerous terrain for the next turn thanks to the gravity flux.</description>
     </rule>
-    <rule id="6970-1bf3-b33e-5dce" name="Haywire" book="BRB 7th" hidden="false">
+    <rule id="6970-1bf3-b33e-5dce" name="Haywire" book="HH: AoD Rulebook" page="164" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15066,7 +15072,7 @@ D6 - Result
 2-5 - Glancing hit
 6 - Penetrating hit</description>
     </rule>
-    <rule id="c2af-0e00-294d-8d82" name="Cumbersome" book="LA:AODAL" page="130" hidden="false">
+    <rule id="c2af-0e00-294d-8d82" name="Cumbersome" book="HH: AoD Rulebook" page="162" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15087,7 +15093,7 @@ D6 - Result
       <modifiers/>
       <description>Models equipped with plasma grenades don’t suffer the penalty to their Initiative for charging enemies through difficult terrain, but fight at their normal Initiative step in the ensuing combat.</description>
     </rule>
-    <rule id="0ac1-dfc1-295b-50a6" name="Power of the Machine Spirit" book="BRB 7th" hidden="false">
+    <rule id="0ac1-dfc1-295b-50a6" name="Power of the Machine Spirit" book="HH: AoD Rulebook" page="169" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15108,14 +15114,14 @@ D6 - Result
       <modifiers/>
       <description>Targets may not take Jink saves against damage from this weapon.</description>
     </rule>
-    <rule id="45cf-653a-4ff6-f22d" name="Assault Vehicle" book="BRB 7th" hidden="false">
+    <rule id="45cf-653a-4ff6-f22d" name="Assault Vehicle" book="HH: AoD Rulebook" page="157" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>Passengers disembarking from Access Points on a vehicle with this special rule can charge on the turn they do so (even in a turn that the vehicle was destroyed, or in the following turn) unless the vehicle arrived from Reserve that turn.</description>
     </rule>
-    <rule id="ca3e-e94e-58f6-75d9" name="Interceptor" book="BRB 7th" page="" hidden="false">
+    <rule id="ca3e-e94e-58f6-75d9" name="Interceptor" book="HH: AoD Rulebook" page="167" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15136,7 +15142,7 @@ D6 - Result
       <modifiers/>
       <description>A flare shield operates against shooting attacks that strike the vehicle&apos;s front arc.  It reduces the strength of attacks by weapons with the Templae or Blast type by -2, and other shooting attacks by -1.  A flare shield has no effect on attacks from close combat or with the Destroyer rule.</description>
     </rule>
-    <rule id="a080-af1b-fb2e-4860" name="Precision Strikes" book="BRB 7th" hidden="false">
+    <rule id="a080-af1b-fb2e-4860" name="Precision Strikes" book="HH: AoD Rulebook" page="169" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15145,7 +15151,7 @@ D6 - Result
 
 Wounds from Precision Strikes are allocated against an engaged model (or models) of your choice in the unit you are attacking, rather than following the normal rules for Wound allocation. If a Precision Strike Wound is allocated to a character, they can still make their Look Out, Sir roll.</description>
     </rule>
-    <rule id="4771-b711-0e74-3aee" name="Precision Shots" book="BRB 7th" hidden="false">
+    <rule id="4771-b711-0e74-3aee" name="Precision Shots" book="HH: AoD Rulebook" page="169" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15156,42 +15162,44 @@ Wounds from Precision Shots are allocated against a model (or models) of your ch
 
 Note that Snap Shots and shots from weapons that scatter, or do not roll To Hit, can never be Precision Shots.</description>
     </rule>
-    <rule id="0122-421f-88f2-9c68" name="Psyker" book="BRB 7th" hidden="false">
+    <rule id="0122-421f-88f2-9c68" name="Psyker" book="HH: AoD Rulebook" page="170" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A model with this special rule is a Psyker. This rule is typically presented with a Mastery Level, shown in brackets – if no Mastery Level is shown then that model has a Mastery Level of 1.</description>
     </rule>
-    <rule id="cf90-39d9-c923-f6bf" name="Repel the Enemy" hidden="false">
+    <rule id="cf90-39d9-c923-f6bf" name="Repel the Enemy" book="HH: AoD Rulebook" page="170" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>Models disembarking from Access Points on a building can charge on the turn they do so, even on a turn the building was destroyed.</description>
+      <description>Models disembarking from Access Points on a building can charge on the turn they do so, even on a turn the building was destroyed.
+
+Models using an escape hatch (see page 106) may not make use of this special rule.</description>
     </rule>
-    <rule id="9f71-25a6-08e5-f088" name="Sentry Defence System" book="BRB 7th" hidden="false">
+    <rule id="9f71-25a6-08e5-f088" name="Sentry Defence System" book="HH: AoD Rulebook" page="171" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>A building with this special rule can use automated fire against enemy units, even if it is unoccupied. The weapons are emplaced and cannot be used as gun emplacements - another model may not fire them. In addition, enemy units can shoot at and charge a building with this special rule, even if it is unoccupied.</description>
+      <description>A building with this special rule can use automated fire against enemy units, even if it is unoccupied. In addition, enemy units can shoot at and charge a building with this special rule, even if it is unoccupied.</description>
     </rule>
-    <rule id="4608-a89f-8d54-2fe4" name="Slow and Purposeful" book="BRB 7th" hidden="false">
+    <rule id="4608-a89f-8d54-2fe4" name="Slow and Purposeful" book="HH: AoD Rulebook" page="172" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A unit that contains at least one model with this special rule cannot Run, Turbo-boost, move Flat Out, perform Sweeping Advances or fire Overwatch. However, they can shoot with Heavy, Salvo and Ordnance weapons, counting as stationary even if they moved in the previous Movement phase. They are also allowed to charge in the same turn they fire Heavy, Ordnance, Rapid Fire or Salvo weapons.</description>
     </rule>
-    <rule id="38ff-a919-70c4-aec4" name="Split Fire" book="BRB 7th" hidden="false">
+    <rule id="38ff-a919-70c4-aec4" name="Split Fire" book="HH: AoD Rulebook" page="172" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>When a unit that contains at least one model with this special rule shoots, one model in the unit can shoot at a different target to the rest of his unit. Once this shooting attack has been resolved, resolve the shooting attacks made by the rest of the unit. These must be at a different target, which cannot be a unit forced to disembark as a result of the Split Firing unit’s initial shooting attack.</description>
     </rule>
-    <rule id="0d66-14c9-d2f4-708b" name="Stealth" book="BRB 7th" hidden="false">
+    <rule id="0d66-14c9-d2f4-708b" name="Stealth" book="HH: AoD Rulebook" page="173" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15199,21 +15207,21 @@ Note that Snap Shots and shots from weapons that scatter, or do not roll To Hit,
       <description>A unit that contains at least one model with this special rule counts its cover saves as being 1 point better than normal. Note that this means that a model with the Stealth special rule always has a cover save of at least 6+, even if it is in the open. This rule is often presented as Stealth (X) where X indicates a specific type of terrain, such as Stealth (Woods) or Stealth (Ruins). If this is the case, the unit only gains the benefit whilst it is in terrain of the specified type.
 Cover save bonuses from the Shrouded and Stealth special rules are cumulative (to a maximum of a 2+ cover save).</description>
     </rule>
-    <rule id="7911-b951-c819-2f4f" name="Strafing Run" book="BRB 7th" hidden="false">
+    <rule id="7911-b951-c819-2f4f" name="Strafing Run" book="HH: AoD Rulebook" page="173" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>When shooting Assault, Heavy, Rapid Fire or Salvo weapons at Artillery, Beasts, Bikes, Cavalry, Infantry, Monstrous Creatures and vehicles without the Flyer or Skimmer type, this vehicle has +1 Ballistic Skill.</description>
     </rule>
-    <rule id="2e96-21ae-353e-8742" name="Supersonic" book="BRB 7th" hidden="false">
+    <rule id="2e96-21ae-353e-8742" name="Supersonic" book="HH: AoD Rulebook" page="173" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A Supersonic vehicle that moves Flat Out must move at least 18&quot; and can move up to 36&quot;.</description>
     </rule>
-    <rule id="3e0b-be9f-b7eb-8c5e" name="Eternal Warrior" book="BRB 7th" hidden="false">
+    <rule id="3e0b-be9f-b7eb-8c5e" name="Eternal Warrior" book="HH: AoD Rulebook" page="163" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15227,7 +15235,7 @@ Cover save bonuses from the Shrouded and Stealth special rules are cumulative (t
       <modifiers/>
       <description>The many rules presented for this unit are experimental rules, still under development, and are not the final version. Experimental rules will change over time before a final version is published.</description>
     </rule>
-    <rule id="c0a6-5a38-2ea5-e740" name="Shock Pulse" book="HH:LACAL" page="60" hidden="false">
+    <rule id="c0a6-5a38-2ea5-e740" name="Shock Pulse" book="HH: AoD Rulebook" page="171" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15242,7 +15250,7 @@ Cover save bonuses from the Shrouded and Stealth special rules are cumulative (t
       <description>If enemy inflicts a Penetrating hit against the Sicarian Venator, they may re-roll a result of a 1 on the Vehicle Damage table.
 Explodes results add D3&quot; to radius.</description>
     </rule>
-    <rule id="e15d-1437-cfb2-b8dd" name="Acute Senses" book="BRB" hidden="false">
+    <rule id="e15d-1437-cfb2-b8dd" name="Acute Senses" book="HH: AoD Rulebook" page="157" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15270,7 +15278,7 @@ Explodes results add D3&quot; to radius.</description>
       <modifiers/>
       <description>Any target hit in close combat by this model must take an Initiative test at the end of the current phase. If the test is passed, all is well – they have seen through the distraction. If the Initiative test is failed, the target is reduced to Weapon Skill and Ballistic Skill 1 until the end of their next turn. Any model that does not have an Initiative characteristic (for example, non-Walker vehicles, buildings etc.) is unaffected by this special rule.</description>
     </rule>
-    <rule id="8e59-1172-280d-75e8" name="Brotherhood of Psykers/Sorcerers" book="BRB" hidden="false">
+    <rule id="8e59-1172-280d-75e8" name="Brotherhood of Psykers/Sorcerers" book="HH: AoD Rulebook" page="161" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15281,7 +15289,7 @@ When manifesting a psychic power, this unit measures range and line of sight fro
 
 If this unit suffers Perils of the Warp, or is hit by an attack that specifically targets Psykers, the hits are Randomly Allocated amongst models with the Brotherhood of Psykers/Sorcerers special rule. If a model with this special rule gains or loses a psychic power, all other models with this special rule in their unit also gain or lose that power.</description>
     </rule>
-    <rule id="3eda-669d-bd54-e3c0" name="Daemon" book="BRB" page="" hidden="false">
+    <rule id="3eda-669d-bd54-e3c0" name="Daemon" book="HH: AoD Rulebook" page="162" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15295,7 +15303,7 @@ If this unit suffers Perils of the Warp, or is hit by an attack that specificall
       <modifiers/>
       <description>If a target suffers an unsaved Wound from a close combat attack made by this model, the target is reduced to 0 Wounds and is removed as a casualty.</description>
     </rule>
-    <rule id="b1ee-7803-8ddb-cb4e" name="Destroyer Weapon" book="BRB" hidden="false">
+    <rule id="b1ee-7803-8ddb-cb4e" name="Destroyer Weapon" book="HH: AoD Rulebook" page="163" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15340,7 +15348,7 @@ D Weapon Attack Table: D6 Roll
       <modifiers/>
       <description>When this model makes a close combat attack, for each To Wound roll of a 6, the target automatically suffers a Wound, regardless of its Toughness. These Wounds are resolved at AP2. Against vehicles, each armour penetration roll of 6 allows a further D3 to be added to the total. These hits are resolved using their normal AP value.</description>
     </rule>
-    <rule id="f588-4e5a-a032-0aee" name="Force" book="BRB" hidden="false">
+    <rule id="f588-4e5a-a032-0aee" name="Force" book="HH: AoD Rulebook" page="164" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15387,7 +15395,7 @@ Fear, Fearless, Feel No Pain, Hammer of Wrath, Move Through Cover, Relentless, S
       <modifiers/>
       <description>Any model within a Defence Emplacement section re-rolls failed To-Hit rolsl when resolving Overwatch if using a weapon with the Heavy type.</description>
     </rule>
-    <rule id="d3e5-b43d-a89c-3bd8" name="Jink" book="BRB" hidden="false">
+    <rule id="d3e5-b43d-a89c-3bd8" name="Jink" book="HH: AoD Rulebook" page="167" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15433,7 +15441,7 @@ D6 Result
       <modifiers/>
       <description>When selecting this special rule, pick a ranged weapon carried by this model. You can re-roll one failed To Hit roll per turn with that weapon.</description>
     </rule>
-    <rule id="3384-a962-78e5-d13c" name="Mighty Bulwark" book="Stronghold Assault" page="" hidden="false">
+    <rule id="3384-a962-78e5-d13c" name="Mighty Bulwark" book="HH: AoD Rulebook" page="168" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15447,14 +15455,14 @@ D6 Result
       <modifiers/>
       <description>The emplaced vortex missile may fire a maximum of seven vortex missiles over the course of the battle.  No more than one missile may be fired per Shooting phase.</description>
     </rule>
-    <rule id="46ca-9255-0e77-e9f5" name="Missile Lock" book="BRB" hidden="false">
+    <rule id="46ca-9255-0e77-e9f5" name="Missile Lock" book="HH: AoD Rulebook" page="168" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A model with this special rule re-rolls failed To Hit rolls when shooting any weapon that has the One Use Only special rule. If a model with this special rule is shooting a weapon that has both the One Use Only and Blast special rules, that shot will instead scatter D6&quot; rather than 2D6&quot;.</description>
     </rule>
-    <rule id="93c5-dcdd-af20-413e" name="Monster Hunter" book="BRB" hidden="false">
+    <rule id="93c5-dcdd-af20-413e" name="Monster Hunter" book="HH: AoD Rulebook" page="168" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15475,7 +15483,7 @@ D6 Result
       <modifiers/>
       <description>A unit with this special rule controls objectives even if an enemy scoring unit is within range of the objective marker, unless the enemy unit also has this special rule.</description>
     </rule>
-    <rule id="3789-00ab-3f47-eb36" name="One Use Only/One Shot Only" book="BRB" hidden="false">
+    <rule id="3789-00ab-3f47-eb36" name="One Use Only/One Shot Only" book="HH: AoD Rulebook" page="168" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15489,7 +15497,7 @@ D6 Result
       <modifiers/>
       <description>If an arrow is rolled on the scatter dice when firing a weapon that has this special rule, the shot always scatters the full 2D6&quot; regardless of the firing model&apos;s Ballistic Skill.  In addition, firing an Ordnance weapon that has this special rule does not prevent the firing model from declaring a charge against the target unit in the same turn.</description>
     </rule>
-    <rule id="a5ff-1cb1-bee4-d809" name="Poisoned" book="BRB" hidden="false">
+    <rule id="a5ff-1cb1-bee4-d809" name="Poisoned" book="HH: AoD Rulebook" page="169" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15517,7 +15525,7 @@ D6 Result
       <modifiers/>
       <description>This model counts as being equipped with assault grenades (see Warhammer 40,000: The Rules ). However, cover saves cannot be taken against Wounds caused by promethium charges in the Shooting phase.</description>
     </rule>
-    <rule id="2189-13e6-c68c-ab23" name="Psychic Pilot" book="BRB" page="" hidden="false">
+    <rule id="2189-13e6-c68c-ab23" name="Psychic Pilot" book="HH: AoD Rulebook" page="169" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15566,7 +15574,7 @@ D6 Result
       <modifiers/>
       <description>After firing a quake shell, draw a straight line between the Aquila macro-cannon and the central hole of the apocalyptic mega-blast template.  Roll a dice for each Flyer, Flying Monstrous Creature, or Flying Gargantuan Creature model crossed by this line.  On a roll of 1, a Flyer will Crash and Burn, while a Clying Monstrous Creature or Flying Gargantuan Creature will take D3 Wounds with no saving throws allowed.</description>
     </rule>
-    <rule id="acb1-64c4-ef54-3a55" name="Soul Blaze" book="BRB" hidden="false">
+    <rule id="acb1-64c4-ef54-3a55" name="Soul Blaze" book="HH: AoD Rulebook" page="172" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15582,7 +15590,7 @@ At the end of each turn, roll a D6 for each unit with a Soul Blaze counter on it
       <modifiers/>
       <description>Models have the Stubborn special rule whist within a Wall of Martyrs Imperial Defence Line or Defence Emplacement section.</description>
     </rule>
-    <rule id="092c-188d-753d-404e" name="Stomp" book="BRB" page="" hidden="false">
+    <rule id="092c-188d-753d-404e" name="Stomp" book="HH: AoD Rulebook" page="92" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15633,14 +15641,14 @@ Fear, Hammer of Wrath, Invincible Behemoth, Move Through Cover, Relentless, Smas
 If the target fails the test, it must immediately Go to Ground (see Warhammer 40,000: The Rules ). As the target has already taken its saves, Going to Ground does not protect it against the fire of the weapon that caused the test – it’s too late! As long as the test is passed, a target can be called upon to take multiple Pinning tests in a single turn, but only once for each model shooting at them. If a model has already Gone to Ground, no further Pinning tests are taken.
 If the special rules of a model specify that they can never be Pinned, they automatically pass this test. Such models can still Go to Ground voluntarily if they wish.</description>
     </rule>
-    <rule id="9079-7061-f12c-a6ba" name="Swarms" book="BRB" page="" hidden="false">
+    <rule id="9079-7061-f12c-a6ba" name="Swarms" book="HH: AoD Rulebook" page="173" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>If, when allocating Wounds to a unit with the Swarms special rule, two or more models could be chosen as the closest enemy, the closest enemy is always the model with the least number of Wounds. If a model with the Swarm special rule suffers an unsaved Wound from a Blast (any size) or Template weapon, each unsaved Wound is multiplied to two unsaved Wounds unless that Wound has the Instant Death special rule. However, a unit entirely composed of models with the Swarm special rule is not slowed by difficult terrain, but must test for Dangerous Terrain as normal.</description>
     </rule>
-    <rule id="8065-2f17-bb00-d535" name="Thunderblitz" book="BRB" hidden="false">
+    <rule id="8065-2f17-bb00-d535" name="Thunderblitz" book="HH: AoD Rulebook" page="91" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15649,7 +15657,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
 
 Do not roll on the Thunderblitz table when Tank Shocking a Gargantuan Creature or Flying Gargantuan Creature, or when Ramming a Super-heavy vheicle or Super-heavy Walker.  Instead, simply carry out the Tank Shock or Ram as normal.</description>
     </rule>
-    <rule id="5dfe-0b9b-26b3-edb4" name="Thunderblitz Table" book="BRB" hidden="false">
+    <rule id="5dfe-0b9b-26b3-edb4" name="Thunderblitz Table" book="HH: AoD Rulebook" page="91" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15664,21 +15672,23 @@ Ram:
 2-5:  The Super-heavy vehicle adds D6 to the armour penetration roll for the Ram. Then, Carry on with the Ram as normal.
 6: The vehicle being rammed scatters D6&quot; and then suffers an Explodes! result from the Vehicle Damage Table.</description>
     </rule>
-    <rule id="5039-18f0-a9ed-0938" name="Torrent" book="BRB" hidden="false">
+    <rule id="5039-18f0-a9ed-0938" name="Torrent" book="HH: AoD Rulebook" page="174" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>A weapon with this special rule is treated like any other Template weapon, but when firing it in the Shooting phase, place the template so that the narrow end is within 12&quot; of the weaon and the wide end is no closer to the weapon than the narrow end.</description>
+      <description>A weapon with this special rule is treated like any other Template weapon, but when firing it in the Shooting phase, place the template so that the narrow end is within 12&quot; of the weaon and the wide end is no closer to the weapon than the narrow end.
+
+Some versions of this special rule may specify a distance as part of the rule (Torrent (18&quot;) for example), in these cases the template must be placed so that the narrow end is within the specified distance rather than the standard 12&quot;.</description>
     </rule>
-    <rule id="b11c-0ef4-af6b-d96f" name="Two-Handed" book="BRB" hidden="false">
+    <rule id="b11c-0ef4-af6b-d96f" name="Two-Handed" book="HH: AoD Rulebook" page="175" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A model attacking with this weapon never receives +1 Attack for fighting with two Melee weapons.</description>
     </rule>
-    <rule id="288b-7bed-3048-9428" name="Unstoppable" book="BRB" hidden="false">
+    <rule id="288b-7bed-3048-9428" name="Unstoppable" book="HH: AoD Rulebook" page="69" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15687,14 +15697,14 @@ Ram:
 
 In addition, attacks with the Sniper special rule only cause a Wound on a roll of a 6.  Attacks with the Poisoned special rule only cause a Wound on a roll of a 6 (unless the attack&apos;s Strength would cause a Wound on a lower result)</description>
     </rule>
-    <rule id="78a5-e7d1-89b3-2fb5" name="Vector Dancer" book="BRB" hidden="false">
+    <rule id="78a5-e7d1-89b3-2fb5" name="Vector Dancer" book="HH: AoD Rulebook" page="175" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A model with this special rule can make an additional pivot on the spot of up to 90 degrees at the end of its move. A model that uses this extra pivot cannot move Flat Out in the following Shooting phase.</description>
     </rule>
-    <rule id="5341-7110-d8d4-171a" name="Vector Strike" book="BRB" hidden="false">
+    <rule id="5341-7110-d8d4-171a" name="Vector Strike" book="HH: AoD Rulebook" page="175" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15710,7 +15720,7 @@ A model that made a Vector Strike in its Movement phase counts as having already
       <modifiers/>
       <description>Up to six occupying models can fire out of each of this building&apos;s fire points.</description>
     </rule>
-    <rule id="3d3c-398b-775d-72ff" name="Vortex" book="BRB" hidden="false">
+    <rule id="3d3c-398b-775d-72ff" name="Vortex" book="HH: AoD Rulebook" page="175" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15763,7 +15773,7 @@ At the beginning of every subsequent player turn, the marker scatters 2D6&quot; 
       <modifiers/>
       <description>Enemy units within 12&quot; reduce their cover saves by -1 when fired at by units in the same detachment as the Cyber-occularis</description>
     </rule>
-    <rule id="9edbc777-7d2b-011b-7488-335b14870be5" name="Battlesmith" book="HH:LACAL" page="81" hidden="false">
+    <rule id="9edbc777-7d2b-011b-7488-335b14870be5" name="Battlesmith" book="HH: AoD Rulebook" page="157" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15827,28 +15837,28 @@ Shooting attack against the shield facing is reduced by -1, the effect increasin
       <modifiers/>
       <description>When destroyed, the Cerastus Knight-Atrapos adds +2 to the result rolled on the Catastrophic Damage table.</description>
     </rule>
-    <rule id="841f-9119-9f9d-5058" name="Sunder" book="HH:LAICL" page="47" hidden="false">
+    <rule id="841f-9119-9f9d-5058" name="Sunder" book="HH: AoD Rulebook" page="172" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>Attacks with this rule may re-roll failed Armour Penetration rolls.</description>
     </rule>
-    <rule id="40ea-f002-47cb-4e4e" name="Shell Shock" book="HH:LACAL" page="83" hidden="false">
+    <rule id="40ea-f002-47cb-4e4e" name="Shell Shock" book="HH: AoD Rulebook" page="171" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>Pinning tests taken because of a weapon with this special rule suffer a -1 Leadership penalty.</description>
     </rule>
-    <rule id="2c16-3b25-a714-a656" name="Support Squad" book="HH:LACAL" page="34" hidden="false">
+    <rule id="2c16-3b25-a714-a656" name="Support Squad" book="HH: AoD Rulebook" page="173" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>May not fill the compulsory Troops slots on a Force Organization chart.</description>
+      <description>A squad with this special rule may not be chosen as a compulsory choice for the army as part of the Force Organisation chart.</description>
     </rule>
-    <rule id="dbf6-2f12-bb4a-517c" name="Feel No Pain (5+)" book="BRB 7th" hidden="false">
+    <rule id="dbf6-2f12-bb4a-517c" name="Feel No Pain (5+)" book="HH: AoD Rulebook" page="164" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15857,6 +15867,227 @@ Shooting attack against the shield facing is reduced by -1, the effect increasin
 Feel No Pain saves may not be taken against Destroyer attacks or against unsaved Wounds that have the Instant Death special rule.
 Roll a D6 each time an unsaved Wound is suffered. On a 4 or less, you must take the Wound as normal. On a 5+, the unsaved Wound is discounted – treat it as having been saved.
 If a unit has the Feel No Pain special rule with a number in brackets afterwards – Feel No Pain (6+), for example – then the number in brackets is the D6 result needed to discount the Wound.</description>
+    </rule>
+    <rule id="24a2-9868-b6e4-4789" name="Agile (Flyers Only)" book="HH: AoD Rulebook" page="157" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>A unit with this special rule increases any cover saves granted by the Jink special rule by +1.</description>
+    </rule>
+    <rule id="2346-6a18-14c6-11a6" name="Automated Artillery" book="HH: AoD Rulebook" page="157" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Automated Artillery does not require crew in order to function. It is not removed from play due to a lack of crew and each gun must be destroyed normally before it is removed.
+Automated Artillery cannot move and cannot charge. If assaulted, theydo not Pile In and cannot be locked in combat. Their attackers will hitautomatically, but must roll To Wound normally. If a unit of Automated Artillery loses an assault, nothing happens. Thereare no Sweeping Advances, no Pile Ins and no Consolidation moves. The Automated Artillery remains in place and may fire normally in future turns. If the Automated Artillery wins an assault, the enemy must take a Morale check as normal, although the Artillery cannot Consolidate or make a Sweeping Advance.</description>
+    </rule>
+    <rule id="0bd1-9bcc-46e0-5e1e" name="Co-Axial Weapon" book="HH: AoD Rulebook" page="161" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>A weapon with the Co-axial special rule will specify another weapon mounted on the same vehicle. When a target is declared for this weapon, the Co-axial weapon must fire at it first if it is within range. If the Co-axial weapon hits the target, then the other weapon may re-roll its To Hit roll if it misses.</description>
+    </rule>
+    <rule id="91ee-e6c7-272f-49e0" name="Crawling Fire" book="HH: AoD Rulebook" page="161" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>After the Blast marker for a weapon with this special rule is placed, the firer may move the marker up to 2&quot; in any direction so long as this would cover more models than previously.</description>
+    </rule>
+    <rule id="fafd-5bc8-2192-23ff" name="Deadly Cargo" book="HH: AoD Rulebook" page="162" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>If a vehicle with this special rule takes Hull point damage but is not destroyed, roll a D6. On a 6, the vehicle suffers an Explodes! result on the Vehicle Damage chart.</description>
+    </rule>
+    <rule id="b46a-a3ec-91a5-5001" name="Deflagrate" book="HH: AoD Rulebook" page="163" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>After normal attacks by this weapon have been resolved, count the number of unsaved wounds caused on the target unit. Immediately resolve a number of additional automatic hits on the same unit using the weapon’s profile equal to the number of unsaved wounds – these can then be saved normally. Models in the targeted unit must still be in range in order for these additional hits to take effect. These additional hits do not themselves inflict more hits.</description>
+    </rule>
+    <rule id="1a79-befa-05cf-ab0d" name="Duelist&apos;s Edge" book="HH: AoD Rulebook" page="163" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>When fighting in a challenge, the user of this weapon gains a +1 bonus to their Initiative value.</description>
+    </rule>
+    <rule id="adce-5b90-49f6-033c" name="Exoshock" book="HH: AoD Rulebook" page="163" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>If this weapon successfully scores a penetrating hit on a target, roll a D6. On a 4+, a second automatic penetrating hit is inflicted on the same target against which cover saves may not be taken.</description>
+    </rule>
+    <rule id="203b-1db2-c7b2-54ab" name="Heat Seeker" book="HH: AoD Rulebook" page="164" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Jink saves may not be taken against attacks with this special rule.</description>
+    </rule>
+    <rule id="fd81-7423-92cf-01a3" name="Look out sir!" book="HH: AoD Rulebook" page="94" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>When a wound is allocated to one of your non-vehicle characters, and there is another model from the same unit within 6&quot;, they are allowed a Look Out, Sir attempt. Thisrepresents the character falling back into the unit or being pushed aside by an ally. If no model is in range, then you cannot make a Look Our, Sir attempt.
+
+To make a Look Out, Sir attempt, roll a D6.
+On a roll of 3 or less, the Look Out, Sir attempt fails.
+On a roll of 4+, the Look Out, Sir attempt is successful.
+
+Independent Characters pass Look Out, Sir rolls on a 2+.</description>
+    </rule>
+    <rule id="476c-b962-06e5-d12e" name="Ignores Cover" book="HH: AoD Rulebook" page="167" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Cover saves cannot be taken against wounds, glancing hits or penetrating hits caused by weapons with the Ignores Cover special rule.</description>
+    </rule>
+    <rule id="3fb5-89d9-08fe-0312" name="Unlisted Legion" book="HH: AoD Rulebook" page="168" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>If an army represents a Legion which does not yet have its own unique Legiones Astartes rule, the controlling player may instead add either the Stubborn or Furious Charge special rule to the standard provisions of this rule in the interim.</description>
+    </rule>
+    <rule id="3a2e-7a7b-1de3-78c0" name="Lingering Death" book="HH: AoD Rulebook" page="168" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+    </rule>
+    <rule id="b0c5-b980-95e5-b181" name="Murderous Strike" book="HH: AoD Rulebook" page="168" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Attacks with this special rule cause Instant Death on a ToWound roll of 6. Roll any viable saves against this Instant Death-causing wound separately to other wounds the attack inflicts.</description>
+    </rule>
+    <rule id="c546-eaf8-0972-ec24" name="Primarch" book="HH: AoD Rulebook" page="169" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Any model with the Primarch special rule is automatically the army’s Warlord and does not roll randomly for Warlord Traits (these will have been included in their own unique abilities). Unless a mission’s rules specifically state otherwise, no army may ever include more than a single Primarch.</description>
+    </rule>
+    <rule id="ccd0-942c-70fa-1354" name="Squadron Command Tank" book="HH: AoD Rulebook" page="172" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Unless the Squadron Command Tank has been destroyed, all Tanks in the squadron gain the following benefits while they remain in coherency:
+
+Ignore the effects of Crew Shaken results on a roll of a 4+.
+When the entire squadron fires at a single target within 24&quot;, the squadron gains the Tank Hunters and Monster Hunter special rules.</description>
+    </rule>
+    <rule id="aaaf-37f2-e6e0-7a2c" name="Super-heavy Command Tank" book="HH: AoD Rulebook" page="172" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>If a vehicle has been upgraded to a Super-heavy Command Tank, all friendly Infantry units within 24&quot; may re-roll failed Morale Checks.</description>
+    </rule>
+    <rule id="7630-7b4c-ed95-ce92" name="Template" book="HH: AoD Rulebook" page="173" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Template weapons have the Ignores Cover, Wall of Death and No Escape special rules. Wounds inflicted by Template weapons are allocated following the normal rules. Template weapons cannot fire Snap Shots.
+
+Wall of Death
+Template weapons can fire Overwatch, even though they cannot fire Snap Shots. Instead, if a Template weapon fires Overwatch, it automatically inflicts D3 hits on the charging unit, resolved at its normal Strength and AP value.
+
+No Escape
+If a Template weapon hits a building’s Fire Point or an Opentopped vehicle and there is a unit embarked inside that building or vehicle, then in addition to any other effects that unit suffers D6 hits, resolved at the Strength and AP of the weapon. These hits are Randomly Allocated
+
+</description>
+    </rule>
+    <rule id="cd4a-2106-2ed0-dcdb" name="Wall of Death" book="HH: AoD Rulebook" page="174" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Wall of Death Template weapons can fire Overwatch, even though they cannot fire Snap Shots. Instead, if a Template weapon fires Overwatch, it automatically inflicts D3 hits on the charging unit, resolved at its normal Strength and AP value.</description>
+    </rule>
+    <rule id="06a2-c4fd-8d61-c628" name="No Escape" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+    </rule>
+    <rule id="3d29-2076-01a0-7f7d" name="Hellstorm Weapon" book="HH: AoD Rulebook" page="174" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Hellstorm weapons have the word ‘Hellstorm’ instead of a range on their weapon profile. Hellstorm weapons use the Hellstorm template (see page 19), but otherwise obey the rules for other Template weapons.</description>
+    </rule>
+    <rule id="903b-709a-b328-d48d" name="Armoured Steed" book="HH: AoD Rulebook" page="64" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Bikes and Jetbikes cannot Go to Ground and cannot be Pinned.</description>
+    </rule>
+    <rule id="6124-c329-b1b4-a52a" name="Turbo Boost" book="HH: AoD Rulebook" page="64" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Bikes and Jetbikes cannot Run, but can make a special Turbo-boost move instead of firing in their Shooting phase.
+Turbo-boosting Bikes move up to 12&quot; and Turbo-boosting Jetbikes move up to 24&quot;. Bikes or Jetbikes cannot shoot, charge or execute any other voluntary action after Turbo-boosting until the end of their turn.</description>
+    </rule>
+    <rule id="5c8a-63f9-5cdc-b17b" name="Skybourne" book="HH: AoD Rulebook" page="66" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>When using its jump pack (whether moving, charging or Falling Back), a model can move over all other models and terrain freely. However, if the model begins or ends its move in difficult terrain, it must take a Dangerous Terrain test.</description>
+    </rule>
+    <rule id="97c4-1c1c-3727-757f" name="Trust Move" book="HH: AoD Rulebook" page="66" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>A Jet Pack unit that is not locked in combat or charging can move up to 2D6&quot; in the Assault phase, even if they have shot or Run in the preceding Shooting phase or arrived by Deep Strike that turn. When Jet Pack units move in the Assault phase and do not charge, they move just as they would when using their jet packs in the Movement phase.</description>
+    </rule>
+    <rule id="2eaf-7ad1-5fbb-2b94" name="Shooting (Gargantuan Creature)" book="HH: AoD Rulebook" page="69" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>When a Gargantuan Creature or Flying Gargantuan Creature makes a shooting attack, it may fire each of its weapons at a different target if desired. In addition, firing Ordnance weapons has no effect on a Gargantuan Creature’s or Flying Gargantuan Creature’s ability to fire other weapons. Gargantuan Creatures and Flying Gargantuan Creatures cannot fire Overwatch.</description>
+    </rule>
+    <rule id="7d16-10ce-5d05-6166" name="Unshakable Nerve" book="HH: AoD Rulebook" page="77" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Units embarked upon transports have the Fearless special rule while they are embarked.</description>
+    </rule>
+    <rule id="e7c9-bd66-8d3e-8098" name="Zoom" book="HH: AoD Rulebook" page="80" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Flyers can usually only make a special kind of move called Zoom.
+Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme speeds, making it very difficult to shoot down, but limits its manoeuvrability. If a Flyer Zooms, it has a Combat Speed of 18&quot; and a Cruising Speed of up to 36&quot;. However, a Zooming Flyer can never voluntarily move less than 18&quot; in its own Movement phase. If a Zooming Flyer is forced to move less than 18&quot; in its own Movement phase, it is automatically Wrecked.</description>
+    </rule>
+    <rule id="42dd-fe48-ca26-b836" name="Super-heavy Transport" book="HH: AoD Rulebook" page="90" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>If a Super-heavy vehicle has a Transport Capacity, then it may transport any number of Infantry units (plus any characters that have joined the units), so long as the number of models in the transported units do not exceed the vehicle’s Transport Capacity.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -18323,8 +18554,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="During a turn in which a unit equipped with rad grenades launches an assault, or is themselves assaulted, the enemy unit(s) suffers a -1 penalty to their Toughness until the end of the Assault phase.
-Note: This does affect the victims’ Instant Death thresholds."/>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="During a turn in which a unit equipped with rad grenades launches an assault, or is themselves assaulted, the enemy unit(s) suffers a -1 penalty to their Toughness until the end of the Assault phase. Note: This does affect the victims’ Instant Death thresholds."/>
       </characteristics>
     </profile>
     <profile id="0466-931b-dd0b-34e9" name="Close Combat Weapon" book="HH: AoD Rulebook" page="42" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
