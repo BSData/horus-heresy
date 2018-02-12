@@ -14674,7 +14674,7 @@ If, when charged, the unit was already locked in combat, the Counter-attack spec
       <modifiers/>
       <description>Any non-vehicle model that suffers one or more unsaved Wounds or passes one or more saving throws against an attack with the Strikedown special rule moves as if it is in difficult terrain until the end of its next turn. It is a good idea to mark affected models with counters or coins so that you remember.</description>
     </rule>
-    <rule id="b5c1-4b08-5ddc-1504" name="Invincible Behemoth" book="BRB 7th" hidden="false">
+    <rule id="b5c1-4b08-5ddc-1504" name="Invincible Behemoth" book="HH: AoD Rulebook" page="90" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15590,7 +15590,7 @@ At the end of each turn, roll a D6 for each unit with a Soul Blaze counter on it
       <modifiers/>
       <description>Models have the Stubborn special rule whist within a Wall of Martyrs Imperial Defence Line or Defence Emplacement section.</description>
     </rule>
-    <rule id="092c-188d-753d-404e" name="Stomp" book="BRB" page="" hidden="false">
+    <rule id="092c-188d-753d-404e" name="Stomp" book="HH: AoD Rulebook" page="92" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15648,7 +15648,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
       <modifiers/>
       <description>If, when allocating Wounds to a unit with the Swarms special rule, two or more models could be chosen as the closest enemy, the closest enemy is always the model with the least number of Wounds. If a model with the Swarm special rule suffers an unsaved Wound from a Blast (any size) or Template weapon, each unsaved Wound is multiplied to two unsaved Wounds unless that Wound has the Instant Death special rule. However, a unit entirely composed of models with the Swarm special rule is not slowed by difficult terrain, but must test for Dangerous Terrain as normal.</description>
     </rule>
-    <rule id="8065-2f17-bb00-d535" name="Thunderblitz" book="BRB" hidden="false">
+    <rule id="8065-2f17-bb00-d535" name="Thunderblitz" book="HH: AoD Rulebook" page="91" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15657,7 +15657,7 @@ If the special rules of a model specify that they can never be Pinned, they auto
 
 Do not roll on the Thunderblitz table when Tank Shocking a Gargantuan Creature or Flying Gargantuan Creature, or when Ramming a Super-heavy vheicle or Super-heavy Walker.  Instead, simply carry out the Tank Shock or Ram as normal.</description>
     </rule>
-    <rule id="5dfe-0b9b-26b3-edb4" name="Thunderblitz Table" book="BRB" hidden="false">
+    <rule id="5dfe-0b9b-26b3-edb4" name="Thunderblitz Table" book="HH: AoD Rulebook" page="91" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -15688,7 +15688,7 @@ Some versions of this special rule may specify a distance as part of the rule (T
       <modifiers/>
       <description>A model attacking with this weapon never receives +1 Attack for fighting with two Melee weapons.</description>
     </rule>
-    <rule id="288b-7bed-3048-9428" name="Unstoppable" book="BRB" hidden="false">
+    <rule id="288b-7bed-3048-9428" name="Unstoppable" book="HH: AoD Rulebook" page="69" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -16030,6 +16030,64 @@ If a Template weapon hits a building’s Fire Point or an Opentopped vehicle and
       <infoLinks/>
       <modifiers/>
       <description>Hellstorm weapons have the word ‘Hellstorm’ instead of a range on their weapon profile. Hellstorm weapons use the Hellstorm template (see page 19), but otherwise obey the rules for other Template weapons.</description>
+    </rule>
+    <rule id="903b-709a-b328-d48d" name="Armoured Steed" book="HH: AoD Rulebook" page="64" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Bikes and Jetbikes cannot Go to Ground and cannot be Pinned.</description>
+    </rule>
+    <rule id="6124-c329-b1b4-a52a" name="Turbo Boost" book="HH: AoD Rulebook" page="64" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Bikes and Jetbikes cannot Run, but can make a special Turbo-boost move instead of firing in their Shooting phase.
+Turbo-boosting Bikes move up to 12&quot; and Turbo-boosting Jetbikes move up to 24&quot;. Bikes or Jetbikes cannot shoot, charge or execute any other voluntary action after Turbo-boosting until the end of their turn.</description>
+    </rule>
+    <rule id="5c8a-63f9-5cdc-b17b" name="Skybourne" book="HH: AoD Rulebook" page="66" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>When using its jump pack (whether moving, charging or Falling Back), a model can move over all other models and terrain freely. However, if the model begins or ends its move in difficult terrain, it must take a Dangerous Terrain test.</description>
+    </rule>
+    <rule id="97c4-1c1c-3727-757f" name="Trust Move" book="HH: AoD Rulebook" page="66" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>A Jet Pack unit that is not locked in combat or charging can move up to 2D6&quot; in the Assault phase, even if they have shot or Run in the preceding Shooting phase or arrived by Deep Strike that turn. When Jet Pack units move in the Assault phase and do not charge, they move just as they would when using their jet packs in the Movement phase.</description>
+    </rule>
+    <rule id="2eaf-7ad1-5fbb-2b94" name="Shooting (Gargantuan Creature)" book="HH: AoD Rulebook" page="69" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>When a Gargantuan Creature or Flying Gargantuan Creature makes a shooting attack, it may fire each of its weapons at a different target if desired. In addition, firing Ordnance weapons has no effect on a Gargantuan Creature’s or Flying Gargantuan Creature’s ability to fire other weapons. Gargantuan Creatures and Flying Gargantuan Creatures cannot fire Overwatch.</description>
+    </rule>
+    <rule id="7d16-10ce-5d05-6166" name="Unshakable Nerve" book="HH: AoD Rulebook" page="77" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Units embarked upon transports have the Fearless special rule while they are embarked.</description>
+    </rule>
+    <rule id="e7c9-bd66-8d3e-8098" name="Zoom" book="HH: AoD Rulebook" page="80" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Flyers can usually only make a special kind of move called Zoom.
+Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme speeds, making it very difficult to shoot down, but limits its manoeuvrability. If a Flyer Zooms, it has a Combat Speed of 18&quot; and a Cruising Speed of up to 36&quot;. However, a Zooming Flyer can never voluntarily move less than 18&quot; in its own Movement phase. If a Zooming Flyer is forced to move less than 18&quot; in its own Movement phase, it is automatically Wrecked.</description>
+    </rule>
+    <rule id="42dd-fe48-ca26-b836" name="Super-heavy Transport" book="HH: AoD Rulebook" page="90" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>If a Super-heavy vehicle has a Transport Capacity, then it may transport any number of Infantry units (plus any characters that have joined the units), so long as the number of models in the transported units do not exceed the vehicle’s Transport Capacity.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
