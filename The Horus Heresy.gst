@@ -127,6 +127,16 @@
         <characteristicType id="ae34-f5c0-19af-4883" name="Agility"/>
       </characteristicTypes>
     </profileType>
+    <profileType id="c2e2-42f3-9e28-c3fa" name="Fortification/Terrain">
+      <characteristicTypes>
+        <characteristicType id="d34f-9153-d292-adab" name="Composition"/>
+        <characteristicType id="98d6-2143-3017-6d46" name="Terrain type"/>
+        <characteristicType id="beac-711d-f76d-e254" name="Access Points &amp; Fire Points"/>
+        <characteristicType id="0ecb-8865-b3eb-97c9" name="Weapons"/>
+        <characteristicType id="a782-1362-048c-ff45" name="Options"/>
+        <characteristicType id="51b9-8d40-8186-fd23" name="Special Rules"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="bedc-6602-002c-79af" name="Flying Gargantuan Creature" book="HH: Rulebook" page="69" hidden="false">
@@ -696,6 +706,13 @@
           <modifiers/>
         </infoLink>
       </infoLinks>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="d278-7f17-e143-54e1" name="Terrain" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
       <modifiers/>
       <constraints/>
     </categoryEntry>
@@ -3333,11 +3350,11 @@ D6    Result		S	AP
         <cost name="pts" costTypeId="points" value="50.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="16d6-25c4-af92-4329" name="Aquila Strongpoint" book="Planetary Onslaught" page="" hidden="false" collective="false" type="model">
+    <selectionEntry id="16d6-25c4-af92-4329" name="Aquila Strongpoint" book="AoD: Rulebook" page="117" hidden="false" collective="false" type="model">
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="ca07-96ca-ec6d-844b" hidden="false" targetId="cf90-39d9-c923-f6bf" type="rule">
+        <infoLink id="ca07-96ca-ec6d-844b" name="Repel the Enemy" hidden="false" targetId="cf90-39d9-c923-f6bf" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3349,7 +3366,7 @@ D6    Result		S	AP
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="3229-dd8d-f6a0-9cf2" hidden="false" targetId="ad74-698e-d727-4b16" type="rule">
+        <infoLink id="3229-dd8d-f6a0-9cf2" name="Massive Fortification" hidden="false" targetId="ad74-698e-d727-4b16" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3545,15 +3562,13 @@ D6    Result		S	AP
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="110.0"/>
-              </costs>
+              <costs/>
             </selectionEntry>
             <selectionEntry id="9102-7f7e-3d4a-d72e" name="Macro Cannon" book="Planetary Onslaught" page="88" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="0589-671c-0dc5-9af4" hidden="false" targetId="39bf-dff4-053a-7360" type="profile">
+                <infoLink id="0589-671c-0dc5-9af4" name="Macro Shell" hidden="false" targetId="39bf-dff4-053a-7360" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -3565,7 +3580,7 @@ D6    Result		S	AP
                   <infoLinks/>
                   <modifiers/>
                 </infoLink>
-                <infoLink id="efd8-44e3-8192-1efd" hidden="false" targetId="63c3-7047-44b3-6aaa" type="rule">
+                <infoLink id="efd8-44e3-8192-1efd" name="Sonic Boom" hidden="false" targetId="63c3-7047-44b3-6aaa" type="rule">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -3588,9 +3603,7 @@ D6    Result		S	AP
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="110.0"/>
-              </costs>
+              <costs/>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -3599,10 +3612,10 @@ D6    Result		S	AP
       </selectionEntryGroups>
       <entryLinks/>
       <costs>
-        <cost name="pts" costTypeId="points" value="425.0"/>
+        <cost name="pts" costTypeId="points" value="535.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e10f-7b90-ecd3-80a5" name="Basilica Administratum" book="Planetary Onslaught" page="94" hidden="false" collective="false" type="model">
+    <selectionEntry id="e10f-7b90-ecd3-80a5" name="Basilica Administratum" book="AoD: Rulebook" page="120" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="3565-9ece-4ada-e7dc" name="Basilica Administratum" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
@@ -3614,17 +3627,9 @@ D6    Result		S	AP
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="0ae8-898b-912a-2cc7" name="The Eternal Progress to Victory" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>A unit that identifies a Mysterious Objective (see BRB) that is in a Basilica Administratum can choose to re-roll the dice to determine what it is.</description>
-        </rule>
-      </rules>
+      <rules/>
       <infoLinks>
-        <infoLink id="e85c-ddb0-47cd-400c" name="New InfoLink" hidden="false" targetId="12af-0798-6659-e21e" type="rule">
+        <infoLink id="e85c-ddb0-47cd-400c" name="Ruins" hidden="false" targetId="12af-0798-6659-e21e" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3637,9 +3642,7 @@ D6    Result		S	AP
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="20.0"/>
-      </costs>
+      <costs/>
     </selectionEntry>
     <selectionEntry id="7b11-22c7-16af-3bd4" name="BRB: Command Traits" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -4824,7 +4827,7 @@ D6    Result		S	AP
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="053a-fd01-be65-238e" name="Wall of Martyrs Defence Strongpoint" book="Warzone Damnos" page="" hidden="false" collective="false" type="unit">
+    <selectionEntry id="053a-fd01-be65-238e" name="Wall of Martyrs Defence Strongpoint (Legacy)" book="Warzone Damnos" page="" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules>
         <rule id="b315-579b-33ac-b5f3" name="Magos Machine Spirit" book="Warzone Damnos" page="" hidden="false">
@@ -4942,9 +4945,9 @@ D6    Result		S	AP
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a172-78de-aaa6-2201" name="Wall of Martyrs Firestorm Redoubt" book="Planetary Onslaught" page="85" hidden="false" collective="false" type="model">
+    <selectionEntry id="a172-78de-aaa6-2201" name="Firestorm Redoubt" book="AoD: Rulebook" page="114" hidden="false" collective="false" type="model">
       <profiles>
-        <profile id="bab6-1527-ba02-6d52" name="Firestorm Redoubt" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
+        <profile id="bab6-1527-ba02-6d52" name="Firestorm Redoubt" book="AoD: Rulebook" page="114" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -4997,8 +5000,8 @@ D6    Result		S	AP
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b1b1-b3d9-e146-83d7" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0835-e963-a243-dc99" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b1b1-b3d9-e146-83d7" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0835-e963-a243-dc99" type="max"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries>
@@ -5112,9 +5115,9 @@ D6    Result		S	AP
         <cost name="pts" costTypeId="points" value="200.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="04bf-6c22-19fb-4e46" name="Wall of Martyrs Vengeance Weapon Battery" book="Planetary Onslaught" page="86" hidden="false" collective="false" type="model">
+    <selectionEntry id="04bf-6c22-19fb-4e46" name="Vengeance Weapon Battery" book="AoD: Rulebook" page="115" hidden="false" collective="false" type="model">
       <profiles>
-        <profile id="c8cf-d554-7744-259b" name="Vengeance Weapons Battery" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
+        <profile id="c8cf-d554-7744-259b" name="Vengeance Weapon Battery" book="AoD: Rulebook" page="115" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5149,7 +5152,7 @@ D6    Result		S	AP
       <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="b5fd-935c-f68f-0c1a" name="Emplaced Weapons" hidden="false" collective="false" defaultSelectionEntryId="8c32-30a7-713f-6e2d">
+        <selectionEntryGroup id="b5fd-935c-f68f-0c1a" name="Emplaced Weapons" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5160,38 +5163,6 @@ D6    Result		S	AP
           </constraints>
           <categoryLinks/>
           <selectionEntries>
-            <selectionEntry id="8c32-30a7-713f-6e2d" name="Punisher Gatling Cannon" page="" hidden="false" collective="false" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks>
-                <infoLink id="5819-995b-334f-359f" hidden="false" targetId="69ab-ade0-e0b6-f48e" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="00b9-bfd1-f36d-2385" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks>
-                <entryLink id="8aed-888a-214d-26dd" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints/>
-                  <categoryLinks/>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" costTypeId="points" value="75.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="6056-ffd8-14e6-d1b6" name="Battle Cannon" page="" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
@@ -5221,7 +5192,7 @@ D6    Result		S	AP
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="pts" costTypeId="points" value="85.0"/>
+                <cost name="pts" costTypeId="points" value="75.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="975e-85ba-2c90-0f99" name="Quad Icarus lascannon" page="" hidden="false" collective="false" type="upgrade">
@@ -5262,11 +5233,9 @@ D6    Result		S	AP
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
-      </costs>
+      <costs/>
     </selectionEntry>
-    <selectionEntry id="0d50-24ac-a53e-5db7" name="Wall of Martyrs Imperial Defence Network" book="Planetary Onslaught" page="87" hidden="false" collective="false" type="unit">
+    <selectionEntry id="0d50-24ac-a53e-5db7" name="Wall of Martyrs Imperial Defence Network (Legacyy)" book="Planetary Onslaught" page="87" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -5394,9 +5363,9 @@ D6    Result		S	AP
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0f73-97f2-b832-f6d0" name="Wall of Martyrs Imperial Defence Line" book="Planetary Onslaught" page="82" hidden="false" collective="false" type="model">
+    <selectionEntry id="0f73-97f2-b832-f6d0" name="Defence Line" book="AoD: Rulebook" page="110" hidden="false" collective="false" type="model">
       <profiles>
-        <profile id="944e-63e0-c589-b37c" name="Imperial Defence Line" book="Stronghold Assault" page="" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+        <profile id="944e-63e0-c589-b37c" name="Imperial Defence Line" book="AoD: Rulebook" page="111" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5408,19 +5377,19 @@ D6    Result		S	AP
       </profiles>
       <rules/>
       <infoLinks>
-        <infoLink id="9aa7-8601-781e-ead8" hidden="false" targetId="7d5c-1af6-942c-8ca2" type="profile">
+        <infoLink id="9aa7-8601-781e-ead8" name="Wreckage and Rubble" hidden="false" targetId="7d5c-1af6-942c-8ca2" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="52b1-bc21-f8d7-cde9" hidden="false" targetId="afb7-b281-a9ce-4272" type="rule">
+        <infoLink id="52b1-bc21-f8d7-cde9" name="Stalwart Defence" hidden="false" targetId="afb7-b281-a9ce-4272" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="caa1-2762-e454-b1fa" name="" hidden="false" targetId="7be5-30af-1a02-0a89" type="rule">
+        <infoLink id="caa1-2762-e454-b1fa" name="Stubborn" hidden="false" targetId="7be5-30af-1a02-0a89" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5433,7 +5402,7 @@ D6    Result		S	AP
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
-        <entryLink id="d067-83d6-3f88-f98f" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+        <entryLink id="d067-83d6-3f88-f98f" name="Obstacles List" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5446,9 +5415,9 @@ D6    Result		S	AP
         <cost name="pts" costTypeId="points" value="80.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="df05-8179-624e-f8b2" name="Wall of Martyrs Imperial Defence Emplacement" book="Planetary Onslaught" page="83" hidden="false" collective="false" type="model">
+    <selectionEntry id="df05-8179-624e-f8b2" name="Defence Emplacement" book="AoD: Rulebook" page="112" hidden="false" collective="false" type="model">
       <profiles>
-        <profile id="e1cc-0dae-51d0-b061" name="Imperial Defence Emplacement" book="Stronghold Assault" page="" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+        <profile id="e1cc-0dae-51d0-b061" name="Imperial Defence Emplacement" book="AoD: Rulebook" page="112" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5460,19 +5429,19 @@ D6    Result		S	AP
       </profiles>
       <rules/>
       <infoLinks>
-        <infoLink id="9d3f-9ea3-e8ce-8c7c" hidden="false" targetId="afb7-b281-a9ce-4272" type="rule">
+        <infoLink id="9d3f-9ea3-e8ce-8c7c" name="Stalwart Defence" book="AoD: Rulebook" page="112" hidden="false" targetId="afb7-b281-a9ce-4272" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="73fa-1db4-4d85-0daf" name="" hidden="false" targetId="7be5-30af-1a02-0a89" type="rule">
+        <infoLink id="73fa-1db4-4d85-0daf" name="Stubborn" book="AoD: Rulebook" page="112" hidden="false" targetId="7be5-30af-1a02-0a89" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="3f5a-bdfa-c3a9-54a1" name="New InfoLink" hidden="false" targetId="d191-d6ec-e3c8-31f6" type="rule">
+        <infoLink id="3f5a-bdfa-c3a9-54a1" name="Improved Arcs of Fire" hidden="false" targetId="d191-d6ec-e3c8-31f6" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5485,7 +5454,7 @@ D6    Result		S	AP
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
-        <entryLink id="2758-2f92-8d3a-05ae" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+        <entryLink id="2758-2f92-8d3a-05ae" name="Obstacles List" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5498,9 +5467,9 @@ D6    Result		S	AP
         <cost name="pts" costTypeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0116-c81b-1c0f-251c" name="Wall of Martyrs Imperial Bunker" book="Planetary Onslaught" page="84" hidden="false" collective="false" type="model">
+    <selectionEntry id="0116-c81b-1c0f-251c" name="Bunker" book="AoD: Rulebook" page="113" hidden="false" collective="false" type="model">
       <profiles>
-        <profile id="1aa3-6499-e787-5b5d" name="Imperial Bunker" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
+        <profile id="1aa3-6499-e787-5b5d" name="Imperial Bunker" book="AoD: Rulebook" page="113" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5517,13 +5486,13 @@ D6    Result		S	AP
       </profiles>
       <rules/>
       <infoLinks>
-        <infoLink id="e5e1-2b8c-850b-8371" hidden="false" targetId="cf90-39d9-c923-f6bf" type="rule">
+        <infoLink id="e5e1-2b8c-850b-8371" name="Repel the Enemy" hidden="false" targetId="cf90-39d9-c923-f6bf" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="5adf-1a24-8d58-f151" name="New InfoLink" hidden="false" targetId="207b-b21e-68cb-ace0" type="rule">
+        <infoLink id="5adf-1a24-8d58-f151" name="Wide Firing Points" hidden="false" targetId="207b-b21e-68cb-ace0" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5573,7 +5542,7 @@ D6    Result		S	AP
         <cost name="pts" costTypeId="points" value="55.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bbd4-5f41-35d1-6c5f" name="Void Shield Generator" book="Planetary Onslaught" page="92" hidden="false" collective="false" type="model">
+    <selectionEntry id="bbd4-5f41-35d1-6c5f" name="Void Shield Generator (Legacy)" book="Planetary Onslaught" page="92" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="002c-d06c-4447-a02b" name="Void Shield Generator" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
           <profiles/>
@@ -5612,7 +5581,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
             </rule>
           </rules>
           <infoLinks>
-            <infoLink id="95ce-71dc-06d1-6167" hidden="false" targetId="e144-1293-ec28-d3a9" type="profile">
+            <infoLink id="95ce-71dc-06d1-6167" name="Void Shield" hidden="false" targetId="e144-1293-ec28-d3a9" type="profile">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -5731,25 +5700,30 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="474a-96df-3847-a5d8" name="Twisted Copse" book="Planetary Onslaught" page="100" hidden="false" collective="false" type="model">
+    <selectionEntry id="474a-96df-3847-a5d8" name="Twisted Copse" book="AoD: Rulebook " page="123" hidden="false" collective="false" type="model">
       <profiles>
-        <profile id="2cd1-e95c-df57-4840" name="Twisted Copse" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+        <profile id="4cb8-4245-607a-f629" name="Twisted Copse" book="AoD: Rulebook" page="125" hidden="false" profileTypeId="c2e2-42f3-9e28-c3fa" profileTypeName="Fortification/Terrain">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Difficult Terrain"/>
+            <characteristic name="Composition" characteristicTypeId="d34f-9153-d292-adab" value="1 Citadel Wood"/>
+            <characteristic name="Terrain type" characteristicTypeId="98d6-2143-3017-6d46" value="Difficult terrain"/>
+            <characteristic name="Access Points &amp; Fire Points" characteristicTypeId="beac-711d-f76d-e254" value="None"/>
+            <characteristic name="Weapons" characteristicTypeId="0ecb-8865-b3eb-97c9" value="None"/>
+            <characteristic name="Options" characteristicTypeId="a782-1362-048c-ff45" value="None"/>
+            <characteristic name="Special Rules" characteristicTypeId="51b9-8d40-8186-fd23" value="Dense Thicket"/>
           </characteristics>
         </profile>
       </profiles>
       <rules>
-        <rule id="46bb-f210-13f2-b7c1" name="Dense Thicket" hidden="false">
+        <rule id="46bb-f210-13f2-b7c1" name="Dense Thicket" book="AoD: Rulebook" page="124" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>With the exception of vehicles and monstrous creatures, a model on the base of a Citadel Wood model receives a 5+ cover save, regardless of whether or not it is 25% obscured.</description>
+          <description>Models on the base of a Citadel Wood model receive a 5+ cover save, regardless of whether or not they are 25% obscured.</description>
         </rule>
       </rules>
       <infoLinks/>
@@ -5759,9 +5733,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="10.0"/>
-      </costs>
+      <costs/>
     </selectionEntry>
     <selectionEntry id="1a59-dd0f-a7f2-32be" name="Promethium Relay Pipes" book="Planetary Onslaught" page="103" hidden="false" collective="false" type="model">
       <profiles>
@@ -6208,9 +6180,9 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
         <cost name="pts" costTypeId="points" value="220.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="55c6-268b-357f-d070" name="Imperial Bastion" book="Planetary Onslaught" page="80" hidden="false" collective="false" type="model">
+    <selectionEntry id="55c6-268b-357f-d070" name="Bastion" book="AoD: Rulebook" page="110" hidden="false" collective="false" type="model">
       <profiles>
-        <profile id="67c7-0b8b-bba6-e965" name="Imperial Bastion" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
+        <profile id="67c7-0b8b-bba6-e965" name="Imperial Bastion" book="AoD: Rulebook" page="110" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6238,7 +6210,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
       <constraints/>
       <categoryLinks/>
       <selectionEntries>
-        <selectionEntry id="f8c9-8047-e3cc-b2c2" name="Heavy Bolters" page="" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="f8c9-8047-e3cc-b2c2" name="Eemplaced Heavy Bolters" page="" hidden="false" collective="false" type="upgrade">
           <profiles/>
           <rules/>
           <infoLinks>
@@ -6281,7 +6253,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
           <constraints/>
           <categoryLinks/>
         </entryLink>
-        <entryLink id="e3f5-954e-ed7a-0510" hidden="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
+        <entryLink id="e3f5-954e-ed7a-0510" name="Buildings List" hidden="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6354,9 +6326,9 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
         <cost name="pts" costTypeId="points" value="75.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="595a-908e-96a1-f121" name="Shrine of the Aquila" book="Planetary Onslaught" page="97" hidden="false" collective="false" type="model">
+    <selectionEntry id="595a-908e-96a1-f121" name="Shrine of the Aquila" book="AoD: Rulebook" page="118" hidden="false" collective="false" type="model">
       <profiles>
-        <profile id="6cf9-a002-6ee6-5742" name="Shrine of the Aquila" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+        <profile id="6cf9-a002-6ee6-5742" name="Shrine of the Aquila" book="AoD: Rulebook" page="118" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6367,12 +6339,12 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
         </profile>
       </profiles>
       <rules>
-        <rule id="b27c-0dbd-e299-41b3" name="The Eagle&apos;s Gaze" hidden="false">
+        <rule id="b27c-0dbd-e299-41b3" name="The Eagle&apos;s Gaze" book="AoD: Rulebook" page="118" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>If a unit from The Armies of the Imperium (as defined in BRB) has any of its models within a Shrine of the Aquila, it re-rolls failed Morale checks. Any other model that is in a Shrine of the Aquila has the Hatred (Armies of the Imperium) special rule.</description>
+          <description>If a unit with the Loyalist Allegiance has any of its models within a Shrine of the Aquila, it re-rolls failed Morale checks. Any unit with the Traitor Allegiance that is in a Shrine of the Aquila has the Hatred (Loyalist) special rule.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -6389,9 +6361,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="20.0"/>
-      </costs>
+      <costs/>
     </selectionEntry>
     <selectionEntry id="b973-7d7d-754e-b022" name="Grand Redoubt" book="40k Apocalypse 2nd Ed" page="" hidden="false" collective="false" type="unit">
       <profiles/>
@@ -6714,9 +6684,9 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6140-dc64-5896-957f" name="Manufactorum" book="Planetary Onslaught" page="95" hidden="false" collective="false" type="model">
+    <selectionEntry id="6140-dc64-5896-957f" name="Manufactorum" book="AoD: Rulebook" page="119" hidden="false" collective="false" type="model">
       <profiles>
-        <profile id="840b-724f-c215-9cfb" name="Manufactorum" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+        <profile id="840b-724f-c215-9cfb" name="Manufactorum" book="AoD: Rulebook" page="119" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6727,7 +6697,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
         </profile>
       </profiles>
       <rules>
-        <rule id="139f-39f2-d453-9968" name="The Omnissiah&apos;s Benediction" hidden="false">
+        <rule id="139f-39f2-d453-9968" name="The Omnissiah&apos;s Benediction" book="AoD: Rulebook" page="119" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6749,11 +6719,9 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="20.0"/>
-      </costs>
+      <costs/>
     </selectionEntry>
-    <selectionEntry id="63b0-0b66-5eb0-382a" name="Munitorum Armoured Container Cache" book="Planetary Onslaught" page="98" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="63b0-0b66-5eb0-382a" name="Munitorum Armoured Container Cache (Legacy)" book="Planetary Onslaught" page="98" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -7491,9 +7459,9 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
         <cost name="pts" costTypeId="points" value="650.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e0b3-77ca-af76-bd8b" name="Sanctum Imperialis" book="Planetary Onslaught" page="96" hidden="false" collective="false" type="model">
+    <selectionEntry id="e0b3-77ca-af76-bd8b" name="Sanctum Imperialis" book="AoD: Rulebook" page="121" hidden="false" collective="false" type="model">
       <profiles>
-        <profile id="b7b9-5650-b83d-96f3" name="Sanctum Imperialis" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+        <profile id="b7b9-5650-b83d-96f3" name="Sanctum Imperialis" book="AoD: Rulebook" page="121" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -7504,7 +7472,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
         </profile>
       </profiles>
       <rules>
-        <rule id="8c64-b74c-64a9-1c95" name="Benevolent Light" hidden="false">
+        <rule id="8c64-b74c-64a9-1c95" name="Benevolent Light" book="AoD: Rulebook" page="121" hidden="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -7538,9 +7506,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="20.0"/>
-      </costs>
+      <costs/>
     </selectionEntry>
     <selectionEntry id="ed7e-757a-4ced-adff" name="Imperial Strongpoint" book="Planetary Onslaught" page="81" hidden="false" collective="false" type="unit">
       <profiles/>
@@ -11952,7 +11918,7 @@ D6    Result		S	AP
         <cost name="pts" costTypeId="points" value="3250.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9f5b-eccc-689a-2948" name="Aquila Strongpoint" book="Planetary Onslaught" page="" hidden="false" collective="false" type="model">
+    <selectionEntry id="9f5b-eccc-689a-2948" name="Aquila Strongpoint (remove)" book="" page="116" hidden="false" collective="false" type="model">
       <profiles/>
       <rules/>
       <infoLinks>
@@ -12169,6 +12135,121 @@ D6    Result		S	AP
       <costs>
         <cost name="pts" costTypeId="points" value="425.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="31af-e5e2-8167-a480" name="Battlescape" book="AoD: Rulebook" page="122" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="2ae2-373e-7f2e-0dbd" name="Battlescape" book="AoD: Rulebook" page="122" hidden="false" profileTypeId="c2e2-42f3-9e28-c3fa" profileTypeName="Terrain">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Composition" characteristicTypeId="d34f-9153-d292-adab" value="1 Battlescape"/>
+            <characteristic name="Terrain type" characteristicTypeId="98d6-2143-3017-6d46" value="Dangerous Terrain"/>
+            <characteristic name="Access Points &amp; Fire Points" characteristicTypeId="beac-711d-f76d-e254" value="None"/>
+            <characteristic name="Weapons" characteristicTypeId="0ecb-8865-b3eb-97c9" value="None"/>
+            <characteristic name="Options" characteristicTypeId="a782-1362-048c-ff45" value="None"/>
+            <characteristic name="Special Rules" characteristicTypeId="51b9-8d40-8186-fd23" value="Desperate Shelter"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="f9bb-df9c-02e3-fabc" name="Desperate Shelter" book="AoD: Rulebook" page="122" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Models on the base of a Battlescape model receive a 5+ cover save, regardless of whether or not they are 25% obscured.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="7507-ce88-4e5a-ccc2" name="Crashed Imperial Lander" book="AoD: Rulebook" page="123" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="c501-5663-8d53-3f9b" name="Crashed Imperial Lander" hidden="false" profileTypeId="c2e2-42f3-9e28-c3fa" profileTypeName="Fortification/Terrain">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Composition" characteristicTypeId="d34f-9153-d292-adab" value="1 Crashed Imperial Lander."/>
+            <characteristic name="Terrain type" characteristicTypeId="98d6-2143-3017-6d46" value="Difficult terrain"/>
+            <characteristic name="Access Points &amp; Fire Points" characteristicTypeId="beac-711d-f76d-e254" value="None"/>
+            <characteristic name="Weapons" characteristicTypeId="0ecb-8865-b3eb-97c9" value="None"/>
+            <characteristic name="Options" characteristicTypeId="a782-1362-048c-ff45" value="None"/>
+            <characteristic name="Special Rules" characteristicTypeId="51b9-8d40-8186-fd23" value="Mysterious Wreckage"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="0ecc-85fa-880b-5e24" name="Mysterious Wreckage" book="AoD: Rulebook" page="123" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>The first time a unit enters or deploys in base contact with a Crashed Imperial Lander, roll a D6 and consult the following table:
+
+D6 Result
+1 Unstable Fuel Core: 
+The unit that entered or deployed in base contact with the Crashed Imperial Lander immediately suffers D6 Strength 5 AP- hits with the Ignores Cover special rule. Wounds are Randomly Allocated.
+
+2-4 Nothing of Note: 
+The Crashed Imperial Lander has no additional effects this game.
+
+5-6 Archaeotech Cargo: 
+Immediately place an objective marker within 3&quot; of any part of the Crashed Imperial Lander. Whichever side controls this objective marker at the end of the game scores 1 additional Victory point. If the mission does not use Victory points (see page 145), treat this result as Nothing of Note instead.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="3027-0a29-19c0-40f5" name="Moonscape" book="AoD: Rulebook" page="125" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="d61e-492c-cf78-828e" name="Moonscape" book="AoD: Rulebook1" page="125" hidden="false" profileTypeId="c2e2-42f3-9e28-c3fa" profileTypeName="Fortification/Terrain">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Composition" characteristicTypeId="d34f-9153-d292-adab" value="1 Moonscape or Citadel Craters set."/>
+            <characteristic name="Terrain type" characteristicTypeId="98d6-2143-3017-6d46" value="Battlefield debris (craters)"/>
+            <characteristic name="Access Points &amp; Fire Points" characteristicTypeId="beac-711d-f76d-e254" value="None"/>
+            <characteristic name="Weapons" characteristicTypeId="0ecb-8865-b3eb-97c9" value="None"/>
+            <characteristic name="Options" characteristicTypeId="a782-1362-048c-ff45" value="None"/>
+            <characteristic name="Special Rules" characteristicTypeId="51b9-8d40-8186-fd23" value="Foxholes"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="1977-5241-c842-f51a" name="Foxholes" book="AoD: Rulebook" page="125" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Models in Moonscape Craters receive a 6+ cover save, regardless of whether or not they are 25% obscured. If a unit Goes to Ground, models from the unit gain +2 to their cover save if they are in Moonscape Craters rather than +1.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
