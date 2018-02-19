@@ -3337,7 +3337,7 @@ D6    Result		S	AP
           <constraints/>
           <categoryLinks/>
         </entryLink>
-        <entryLink id="72f7-b924-082c-60be" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+        <entryLink id="72f7-b924-082c-60be" name="Obstacles List" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3562,7 +3562,9 @@ D6    Result		S	AP
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="9102-7f7e-3d4a-d72e" name="Macro Cannon" book="Planetary Onslaught" page="88" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -3603,7 +3605,9 @@ D6    Result		S	AP
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -3642,7 +3646,9 @@ D6    Result		S	AP
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="7b11-22c7-16af-3bd4" name="BRB: Command Traits" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -4827,7 +4833,7 @@ D6    Result		S	AP
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="053a-fd01-be65-238e" name="Wall of Martyrs Defence Strongpoint (Legacy)" book="Warzone Damnos" page="" hidden="false" collective="false" type="unit">
+    <selectionEntry id="053a-fd01-be65-238e" name="Wall of Martyrs Defence Strongpoint (remove)" book="Warzone Damnos" page="" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules>
         <rule id="b315-579b-33ac-b5f3" name="Magos Machine Spirit" book="Warzone Damnos" page="" hidden="false">
@@ -4970,7 +4976,7 @@ D6    Result		S	AP
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="b717-b44c-2221-2059" hidden="false" targetId="d04c-20b3-dc49-ea06" type="rule">
+        <infoLink id="b717-b44c-2221-2059" name="Very Wide Fire Point" hidden="false" targetId="d04c-20b3-dc49-ea06" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5233,9 +5239,11 @@ D6    Result		S	AP
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="0d50-24ac-a53e-5db7" name="Wall of Martyrs Imperial Defence Network (Legacyy)" book="Planetary Onslaught" page="87" hidden="false" collective="false" type="unit">
+    <selectionEntry id="0d50-24ac-a53e-5db7" name="Wall of Martyrs Imperial Defence Network (remove)" book="Planetary Onslaught" page="87" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -5542,7 +5550,7 @@ D6    Result		S	AP
         <cost name="pts" costTypeId="points" value="55.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bbd4-5f41-35d1-6c5f" name="Void Shield Generator (Legacy)" book="Planetary Onslaught" page="92" hidden="false" collective="false" type="model">
+    <selectionEntry id="bbd4-5f41-35d1-6c5f" name="Void Shield Generator (remove)" book="Planetary Onslaught" page="92" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="002c-d06c-4447-a02b" name="Void Shield Generator" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
           <profiles/>
@@ -5617,7 +5625,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
         <cost name="pts" costTypeId="points" value="25.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="796a-21c2-7281-17a8" name="Void Relay Network" book="Planetary Onslaught" page="93" hidden="false" collective="false" type="unit">
+    <selectionEntry id="796a-21c2-7281-17a8" name="Void Relay Network (remove)" book="Planetary Onslaught" page="93" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -5684,7 +5692,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="5575-1a19-edf8-40d1" hidden="false" targetId="1a59-dd0f-a7f2-32be" type="selectionEntry">
+            <entryLink id="5575-1a19-edf8-40d1" name="Promethium Relay Pipes" hidden="false" targetId="1a59-dd0f-a7f2-32be" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -5733,9 +5741,11 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="1a59-dd0f-a7f2-32be" name="Promethium Relay Pipes" book="Planetary Onslaught" page="103" hidden="false" collective="false" type="model">
+    <selectionEntry id="1a59-dd0f-a7f2-32be" name="Promethium Relay Pipes (remove)" book="Planetary Onslaught" page="103" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="1c76-1592-2725-da7f" name="Promethium Relay Pipes" book="Stronghold Assault" page="" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
@@ -5781,7 +5791,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
         <cost name="pts" costTypeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0fe6-096b-23ae-1134" name="Honoured Imperium" book="Planetary Onslaught" page="102" hidden="false" collective="false" type="model">
+    <selectionEntry id="0fe6-096b-23ae-1134" name="Honoured Imperium (remove)" book="Planetary Onslaught" page="102" hidden="false" collective="false" type="model">
       <profiles/>
       <rules/>
       <infoLinks>
@@ -5791,7 +5801,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="96ba-2919-deff-2d0a" hidden="false" targetId="7571-d9f2-17b0-c3e0" type="profile">
+        <infoLink id="96ba-2919-deff-2d0a" name="Imperial Statuary" hidden="false" targetId="7571-d9f2-17b0-c3e0" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5829,7 +5839,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
         <cost name="pts" costTypeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="33f8-e6da-89a3-01d5" name="Firestorm Nexus" book="Warzone Armageddon" page="" hidden="false" collective="false" type="unit">
+    <selectionEntry id="33f8-e6da-89a3-01d5" name="Firestorm Nexus (remove)" book="Remove - No longer used" page="" hidden="false" collective="false" type="unit">
       <profiles>
         <profile id="03b2-5174-5847-b78a" name="Firestorm" book="Warzone Armageddon" page="" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
           <profiles/>
@@ -6272,7 +6282,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
         <cost name="pts" costTypeId="points" value="75.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5cdd-edbb-07c3-0ba5" name="Skyshield Landing Pad" book="Planetary Onslaught" page="101" hidden="false" collective="false" type="model">
+    <selectionEntry id="5cdd-edbb-07c3-0ba5" name="Skyshield Landing Pad (remove)" book="Planetary Onslaught" page="101" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="4eff-4ef5-3fae-f3d8" name="Skyshield Landing Pad" book="Stronghold Assault" page="" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
@@ -6361,7 +6371,9 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b973-7d7d-754e-b022" name="Grand Redoubt" book="40k Apocalypse 2nd Ed" page="" hidden="false" collective="false" type="unit">
       <profiles/>
@@ -6719,7 +6731,9 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="63b0-0b66-5eb0-382a" name="Munitorum Armoured Container Cache (Legacy)" book="Planetary Onslaught" page="98" hidden="false" collective="false" type="upgrade">
       <profiles/>
@@ -6981,7 +6995,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
         <cost name="pts" costTypeId="points" value="230.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c05d-2231-2481-4037" name="Imperial Primus Redoubt" hidden="false" collective="false" type="model">
+    <selectionEntry id="c05d-2231-2481-4037" name="Imperial Primus Redoubt (remove)" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="254b-5059-bde3-4eac" name="Primus Redoubt" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
           <profiles/>
@@ -7432,7 +7446,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="b34f-574b-cdc5-2d17" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+        <entryLink id="b34f-574b-cdc5-2d17" name="Obstacles List" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -7506,9 +7520,11 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="ed7e-757a-4ced-adff" name="Imperial Strongpoint" book="Planetary Onslaught" page="81" hidden="false" collective="false" type="unit">
+    <selectionEntry id="ed7e-757a-4ced-adff" name="Imperial Strongpoint (remove)" book="Planetary Onslaught" page="81" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -7553,7 +7569,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="daf6-5ca2-4cea-91dd" hidden="false" targetId="55c6-268b-357f-d070" type="selectionEntry">
+            <entryLink id="daf6-5ca2-4cea-91dd" name="Bastion" hidden="false" targetId="55c6-268b-357f-d070" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -7576,7 +7592,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="8aa0-05da-fdaa-51bd" name="" hidden="false" targetId="5cdd-edbb-07c3-0ba5" type="selectionEntry">
+            <entryLink id="8aa0-05da-fdaa-51bd" name="Skyshield Landing Pad" hidden="false" targetId="5cdd-edbb-07c3-0ba5" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -7599,7 +7615,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="c576-7c0d-8118-d341" hidden="false" targetId="0fe6-096b-23ae-1134" type="selectionEntry">
+            <entryLink id="c576-7c0d-8118-d341" name="Honoured Imperium" hidden="false" targetId="0fe6-096b-23ae-1134" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -10659,7 +10675,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="3f65-ad04-8903-6c6d" name="New EntryLink" hidden="false" targetId="2553-eaa0-d6af-2ec0" type="selectionEntry">
+            <entryLink id="3f65-ad04-8903-6c6d" name="Magna Lascannon" hidden="false" targetId="2553-eaa0-d6af-2ec0" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -10915,7 +10931,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="3b85-56e6-b738-a687" name="New InfoLink" hidden="false" targetId="3e31-9d8c-29ab-2e70" type="profile">
+        <infoLink id="3b85-56e6-b738-a687" name="Magna Lascannon" hidden="false" targetId="3e31-9d8c-29ab-2e70" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -11918,7 +11934,7 @@ D6    Result		S	AP
         <cost name="pts" costTypeId="points" value="3250.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9f5b-eccc-689a-2948" name="Aquila Strongpoint (remove)" book="" page="116" hidden="false" collective="false" type="model">
+    <selectionEntry id="9f5b-eccc-689a-2948" name="Aquila Strongpoint (remove)" book="Remove - No longer in use" page="" hidden="false" collective="false" type="model">
       <profiles/>
       <rules/>
       <infoLinks>
@@ -12169,9 +12185,11 @@ D6    Result		S	AP
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="7507-ce88-4e5a-ccc2" name="Crashed Imperial Lander" book="AoD: Rulebook" page="123" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="7507-ce88-4e5a-ccc2" name="Crashed Imperial Lander" book="AoD: Rulebook" page="123" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="c501-5663-8d53-3f9b" name="Crashed Imperial Lander" hidden="false" profileTypeId="c2e2-42f3-9e28-c3fa" profileTypeName="Fortification/Terrain">
           <profiles/>
@@ -12214,7 +12232,9 @@ Immediately place an objective marker within 3&quot; of any part of the Crashed 
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="3027-0a29-19c0-40f5" name="Moonscape" book="AoD: Rulebook" page="125" hidden="false" collective="false" type="upgrade">
       <profiles>
@@ -12249,7 +12269,9 @@ Immediately place an objective marker within 3&quot; of any part of the Crashed 
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -12365,7 +12387,7 @@ Fortress-bound: Each fortification deployed on the table must be occupied by at 
               </selectionEntries>
               <selectionEntryGroups/>
               <entryLinks>
-                <entryLink id="cd56-c5b6-35fb-b4b3" name="New EntryLink" hidden="false" targetId="66c9-eaa6-a91a-00ed" type="selectionEntry">
+                <entryLink id="cd56-c5b6-35fb-b4b3" name="Fortification" hidden="false" targetId="66c9-eaa6-a91a-00ed" type="selectionEntry">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -14067,7 +14089,7 @@ Command Benefits:
           <profiles/>
           <rules/>
           <infoLinks>
-            <infoLink id="359f-949e-fa6c-f375" hidden="false" targetId="58a2-c92e-57cc-d44c" type="profile">
+            <infoLink id="359f-949e-fa6c-f375" name="Ammunition Dump" hidden="false" targetId="58a2-c92e-57cc-d44c" type="profile">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -14090,7 +14112,7 @@ Command Benefits:
           <profiles/>
           <rules/>
           <infoLinks>
-            <infoLink id="c111-e21c-0718-d8d7" hidden="false" targetId="70aa-366f-15ac-da4d" type="profile">
+            <infoLink id="c111-e21c-0718-d8d7" name="Comms Relay" hidden="false" targetId="70aa-366f-15ac-da4d" type="profile">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -14113,19 +14135,19 @@ Command Benefits:
           <profiles/>
           <rules/>
           <infoLinks>
-            <infoLink id="e451-84da-1115-23cb" hidden="false" targetId="1da7-2e0b-0114-762c" type="profile">
+            <infoLink id="e451-84da-1115-23cb" name="Gun Emplacement" hidden="false" targetId="1da7-2e0b-0114-762c" type="profile">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
             </infoLink>
-            <infoLink id="c4f7-3c4d-38eb-2484" hidden="false" targetId="cb26-27b4-9393-a768" type="profile">
+            <infoLink id="c4f7-3c4d-38eb-2484" name="Icarus Lascannon" hidden="false" targetId="cb26-27b4-9393-a768" type="profile">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
             </infoLink>
-            <infoLink id="ceef-e79c-eddc-37a6" hidden="false" targetId="705c-91aa-6591-507b" type="profile">
+            <infoLink id="ceef-e79c-eddc-37a6" name="Gun Emplacement (Details)" hidden="false" targetId="705c-91aa-6591-507b" type="profile">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -14160,7 +14182,7 @@ Command Benefits:
               <infoLinks/>
               <modifiers/>
             </infoLink>
-            <infoLink id="5712-0be9-2ca9-0aea" hidden="false" targetId="1da7-2e0b-0114-762c" type="profile">
+            <infoLink id="5712-0be9-2ca9-0aea" name="Gun Emplacement" hidden="false" targetId="1da7-2e0b-0114-762c" type="profile">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -14197,7 +14219,7 @@ Command Benefits:
           <profiles/>
           <rules/>
           <infoLinks>
-            <infoLink id="cc9c-2e71-b0cf-2d0d" hidden="false" targetId="d4b6-7a3a-aee5-d293" type="profile">
+            <infoLink id="cc9c-2e71-b0cf-2d0d" name="Ammo Store" hidden="false" targetId="d4b6-7a3a-aee5-d293" type="profile">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -14220,7 +14242,7 @@ Command Benefits:
           <profiles/>
           <rules/>
           <infoLinks>
-            <infoLink id="143c-5441-54cd-c77d" hidden="false" targetId="2a6f-53c2-d2ea-092f" type="profile">
+            <infoLink id="143c-5441-54cd-c77d" name="Booby Traps" hidden="false" targetId="2a6f-53c2-d2ea-092f" type="profile">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -14243,7 +14265,7 @@ Command Benefits:
           <profiles/>
           <rules/>
           <infoLinks>
-            <infoLink id="f515-ed41-f326-62a6" hidden="false" targetId="e144-1293-ec28-d3a9" type="profile">
+            <infoLink id="f515-ed41-f326-62a6" name="Void Shield" hidden="false" targetId="e144-1293-ec28-d3a9" type="profile">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -14266,7 +14288,7 @@ Command Benefits:
           <profiles/>
           <rules/>
           <infoLinks>
-            <infoLink id="be10-ffb2-a8d3-723f" hidden="false" targetId="9bb4-3833-5343-0dd9" type="profile">
+            <infoLink id="be10-ffb2-a8d3-723f" name="Searchlight" hidden="false" targetId="9bb4-3833-5343-0dd9" type="profile">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -14289,7 +14311,7 @@ Command Benefits:
           <profiles/>
           <rules/>
           <infoLinks>
-            <infoLink id="ed19-4a65-da02-1d2e" hidden="false" targetId="4986-b80f-dc78-d02f" type="profile">
+            <infoLink id="ed19-4a65-da02-1d2e" name="Escape Hatch" hidden="false" targetId="4986-b80f-dc78-d02f" type="profile">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -14312,7 +14334,7 @@ Command Benefits:
           <profiles/>
           <rules/>
           <infoLinks>
-            <infoLink id="583c-c3fa-d802-4db1" hidden="false" targetId="31ba-2b94-6600-22f3" type="profile">
+            <infoLink id="583c-c3fa-d802-4db1" name="Magos Machine Spirit" hidden="false" targetId="31ba-2b94-6600-22f3" type="profile">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -14349,7 +14371,7 @@ Command Benefits:
           <profiles/>
           <rules/>
           <infoLinks>
-            <infoLink id="a3f7-2cdf-78f2-f8bf" hidden="false" targetId="e158-7adf-1565-ef08" type="profile">
+            <infoLink id="a3f7-2cdf-78f2-f8bf" name="Tanglewire" book="HH: AoD Rulebook" page="101" hidden="false" targetId="e158-7adf-1565-ef08" type="profile">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -14372,7 +14394,7 @@ Command Benefits:
           <profiles/>
           <rules/>
           <infoLinks>
-            <infoLink id="a149-5d28-9796-309d" hidden="false" targetId="68d8-f686-c260-76db" type="profile">
+            <infoLink id="a149-5d28-9796-309d" name="Barricades" hidden="false" targetId="68d8-f686-c260-76db" type="profile">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -14395,7 +14417,7 @@ Command Benefits:
           <profiles/>
           <rules/>
           <infoLinks>
-            <infoLink id="f133-1126-a49c-52c0" hidden="false" targetId="4a45-65e5-2d8c-8792" type="profile">
+            <infoLink id="f133-1126-a49c-52c0" name="Tank Traps" hidden="false" targetId="4a45-65e5-2d8c-8792" type="profile">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -16490,13 +16512,13 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Model with Atomantic Shielding gains a 5++ Invulnerable save from shooting attacks and explosions, and a 6++ Invulnerable save against attacks suffered in close combat.  In addition, if the model suffers a Reactor Blast explosion, add +1&quot; to the radius of the blast caused. "/>
       </characteristics>
     </profile>
-    <profile id="9bb4-3833-5343-0dd9" name="Searchlight" book="BRB 7th" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+    <profile id="9bb4-3833-5343-0dd9" name="Searchlight" book="HH: AoD Rulebook" page="106" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Night fighting only. It can illuminate a target it has fired at. Illuminates itself in the process (illuminated units lose Night Fighting benefits)"/>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Night fighting only. it can, after firing all of its weapons, choose to illuminate its target with the searchlight. If it does so, it also illuminates itself."/>
       </characteristics>
     </profile>
     <profile id="a8c1-185a-cdd9-b5ce" name="Infravisor" book="HH:MT" page="111" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323">
@@ -17459,7 +17481,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordance 1, Large Blast"/>
       </characteristics>
     </profile>
-    <profile id="d4b6-7a3a-aee5-d293" name="Ammo Store" book="Planetary Onslaught" page="110" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+    <profile id="d4b6-7a3a-aee5-d293" name="Ammo Store" book="HH: AoD Rulebook" page="106" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17468,7 +17490,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="A unit occupying this building re-rolls To Hit rolls of a 1 when firing out of the building’s fire points. Note this does not apply to a model manually firing an emplaced weapon."/>
       </characteristics>
     </profile>
-    <profile id="58a2-c92e-57cc-d44c" name="Ammunition Dump" book="Planetary Onslaught" page="110" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+    <profile id="58a2-c92e-57cc-d44c" name="Ammunition Dump" book="HH: AoD Rulebook" page="101" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17477,22 +17499,23 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="A model in cover behind an ammunition dump has a 5+ cover save. Any model within 2&quot; of an ammunition dump re-rolls failed To Hit rolls of 1 in the Shooting phase."/>
       </characteristics>
     </profile>
-    <profile id="68d8-f686-c260-76db" name="Barricades" book="Stronghold Assault" page="" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+    <profile id="68d8-f686-c260-76db" name="Barricades" book="HH: AoD Rulebook" page="101" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="A model in cover behind a barricade or wall has a 4+ cover save. Models that are in base contact with a barricade or wall are treated as being in base contact with any enemy models who are directly opposite them and in base contact with the other side of that barricade or wall. Units charging an enemy that is behind a barricade or wall count as charging through difficult terrain."/>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="A model in cover behind a barricade or wall has a 4+ cover save.
+For the purposes of charge moves, models that are both in base contact with a barricade and within 2&quot; of each other are treated as being in base contact. Despite the models on either side not literally being in base contact, they may fight in the Fight sub-phase as normal. Units charging an enemy that is behind a barricade or wall count as charging through difficult terrain."/>
       </characteristics>
     </profile>
-    <profile id="2a6f-53c2-d2ea-092f" name="Booby Traps" book="Planetary Onslaught" page="110" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+    <profile id="2a6f-53c2-d2ea-092f" name="Booby Traps" book="HH: AoD Rulebook" page="106" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323"/>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="The first unit to occupy this building (friend or foe) immediately suffers 2D6 Strength 4 AP 5 hits with the Ignores Cover special rule."/>
       </characteristics>
     </profile>
     <profile id="8194-4688-65b3-f996" name="Chainfist" book="HH: AoD Rulebook" page="180" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
@@ -17507,7 +17530,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Armourbane, Specialist Weapon, Unwieldy"/>
       </characteristics>
     </profile>
-    <profile id="70aa-366f-15ac-da4d" name="Comms Relay" book="Stronghold Assault" page="" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+    <profile id="70aa-366f-15ac-da4d" name="Comms Relay" book="HH: AoD Rulebook" page="101" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17528,7 +17551,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee"/>
       </characteristics>
     </profile>
-    <profile id="4986-b80f-dc78-d02f" name="Escape Hatch" book="Stronghold Assault" page="" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+    <profile id="4986-b80f-dc78-d02f" name="Escape Hatch" book="HH: AoD Rulebook" page="106" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17585,16 +17608,25 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Force"/>
       </characteristics>
     </profile>
-    <profile id="1da7-2e0b-0114-762c" name="Gun Emplacement" book="Stronghold Assault" page="" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+    <profile id="1da7-2e0b-0114-762c" name="Gun Emplacement" book="HH: Rulebook" page="101" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323"/>
+        <characteristic name="Unit Type" characteristicTypeId="556e6974205479706523232344415441232323"/>
+        <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="-"/>
+        <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="-"/>
+        <characteristic name="S" characteristicTypeId="5323232344415441232323" value="-"/>
+        <characteristic name="T" characteristicTypeId="5423232344415441232323" value="7"/>
+        <characteristic name="W" characteristicTypeId="5723232344415441232323" value="2"/>
+        <characteristic name="I" characteristicTypeId="4923232344415441232323" value="-"/>
+        <characteristic name="A" characteristicTypeId="4123232344415441232323" value="-"/>
+        <characteristic name="LD" characteristicTypeId="4c4423232344415441232323" value="-"/>
+        <characteristic name="Save" characteristicTypeId="5361766523232344415441232323" value="3+"/>
       </characteristics>
     </profile>
-    <profile id="705c-91aa-6591-507b" name="Gun Emplacement (Details)" book="Stronghold Assault" page="" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+    <profile id="705c-91aa-6591-507b" name="Gun Emplacement (Details)" book="HH: Rulebook" page="101" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17684,7 +17716,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Primary Weapon 2, Large Blast"/>
       </characteristics>
     </profile>
-    <profile id="31ba-2b94-6600-22f3" name="Magos Machine Spirit" book="Stronghold Assault" page="" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+    <profile id="31ba-2b94-6600-22f3" name="Magos Machine Spirit" book="HH: AoD Rulebook" page="106" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17777,7 +17809,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 2"/>
       </characteristics>
     </profile>
-    <profile id="e158-7adf-1565-ef08" name="Tanglewire" book="Stronghold Assault" page="" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+    <profile id="e158-7adf-1565-ef08" name="Tanglewire" book="HH: AoD Rulebook" page="101" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17786,7 +17818,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Dangerous Terrain. A model in cover behind tanglewire has a 6+ cover save."/>
       </characteristics>
     </profile>
-    <profile id="4a45-65e5-2d8c-8792" name="Tank Traps" book="Stronghold Assault" page="" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+    <profile id="4a45-65e5-2d8c-8792" name="Tank Traps" book="HH: AoD Rulebook" page="101" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -17795,7 +17827,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Impassable Terrain to non-Skimmer vehicles, Dangerous Terrain to Bikes, and open ground for all other units. A model in cover behind tank traps hasa 4+ cover save."/>
       </characteristics>
     </profile>
-    <profile id="e144-1293-ec28-d3a9" name="Void Shield" book="Stronghold Assault" page="" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+    <profile id="e144-1293-ec28-d3a9" name="Void Shield" book="HH: AoD Rulebook" page="106" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -18152,7 +18184,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3"/>
       </characteristics>
     </profile>
-    <profile id="d9b3-3506-e372-22e2" name="Turbo-laser Destructor" book="HH:LACAL" page="73" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+    <profile id="d9b3-3506-e372-22e2" name="Turbo Laser Destructor" book="HH:LACAL" page="73" hidden="false" profileTypeId="576561706f6e23232344415441232323">
       <profiles/>
       <rules/>
       <infoLinks/>
