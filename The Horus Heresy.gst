@@ -5373,7 +5373,7 @@ D6    Result		S	AP
     </selectionEntry>
     <selectionEntry id="0f73-97f2-b832-f6d0" name="Defence Line" book="AoD: Rulebook" page="110" hidden="false" collective="false" type="model">
       <profiles>
-        <profile id="944e-63e0-c589-b37c" name="Imperial Defence Line" book="AoD: Rulebook" page="111" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+        <profile id="944e-63e0-c589-b37c" name="Defence Line" book="AoD: Rulebook" page="111" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5425,7 +5425,7 @@ D6    Result		S	AP
     </selectionEntry>
     <selectionEntry id="df05-8179-624e-f8b2" name="Defence Emplacement" book="AoD: Rulebook" page="112" hidden="false" collective="false" type="model">
       <profiles>
-        <profile id="e1cc-0dae-51d0-b061" name="Imperial Defence Emplacement" book="AoD: Rulebook" page="112" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+        <profile id="e1cc-0dae-51d0-b061" name="Defence Emplacement" book="AoD: Rulebook" page="112" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5897,11 +5897,11 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8300-7ced-aafd-2a27" name="Fortress of Redemption" book="Planetary Onslaught" page="91" hidden="false" collective="false" type="model">
+    <selectionEntry id="8300-7ced-aafd-2a27" name="Fortress of Redemption (remove)" book="Planetary Onslaught" page="91" hidden="false" collective="false" type="model">
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="e35c-c2a8-8036-570d" hidden="false" targetId="cf90-39d9-c923-f6bf" type="rule">
+        <infoLink id="e35c-c2a8-8036-570d" name="Repel the Enemy" hidden="false" targetId="cf90-39d9-c923-f6bf" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6177,7 +6177,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="b789-6db3-92d2-ee8a" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
+        <entryLink id="b789-6db3-92d2-ee8a" name="Obstacles List" hidden="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6607,7 +6607,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="06e2-2420-ffc8-13b8" name="Haemotrope Reactors" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="06e2-2420-ffc8-13b8" name="Haemotrope Reactors (remove)" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules>
         <rule id="836f-f195-e6a6-1c83" name="Plasma Feed" hidden="false">
@@ -17505,8 +17505,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="A model in cover behind a barricade or wall has a 4+ cover save.
-For the purposes of charge moves, models that are both in base contact with a barricade and within 2&quot; of each other are treated as being in base contact. Despite the models on either side not literally being in base contact, they may fight in the Fight sub-phase as normal. Units charging an enemy that is behind a barricade or wall count as charging through difficult terrain."/>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="A model in cover behind a barricade or wall has a 4+ cover save. For the purposes of charge moves, models that are both in base contact with a barricade and within 2&quot; of each other are treated as being in base contact. Despite the models on either side not literally being in base contact, they may fight in the Fight sub-phase as normal. Units charging an enemy that is behind a barricade or wall count as charging through difficult terrain."/>
       </characteristics>
     </profile>
     <profile id="2a6f-53c2-d2ea-092f" name="Booby Traps" book="HH: AoD Rulebook" page="106" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
