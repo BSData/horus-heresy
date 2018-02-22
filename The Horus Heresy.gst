@@ -4833,7 +4833,7 @@ D6    Result		S	AP
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="053a-fd01-be65-238e" name="Wall of Martyrs Defence Strongpoint (remove)" book="Warzone Damnos" page="" hidden="false" collective="false" type="unit">
+    <selectionEntry id="053a-fd01-be65-238e" name="π Wall of Martyrs Defence Strongpoint (remove)" book="Warzone Damnos" page="" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules>
         <rule id="b315-579b-33ac-b5f3" name="Magos Machine Spirit" book="Warzone Damnos" page="" hidden="false">
@@ -5243,7 +5243,7 @@ D6    Result		S	AP
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0d50-24ac-a53e-5db7" name="Wall of Martyrs Imperial Defence Network (remove)" book="Planetary Onslaught" page="87" hidden="false" collective="false" type="unit">
+    <selectionEntry id="0d50-24ac-a53e-5db7" name="π Wall of Martyrs Imperial Defence Network (remove)" book="Planetary Onslaught" page="87" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -5550,7 +5550,7 @@ D6    Result		S	AP
         <cost name="pts" costTypeId="points" value="55.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bbd4-5f41-35d1-6c5f" name="Void Shield Generator (remove)" book="Planetary Onslaught" page="92" hidden="false" collective="false" type="model">
+    <selectionEntry id="bbd4-5f41-35d1-6c5f" name="π Void Shield Generator (remove)" book="Planetary Onslaught" page="92" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="002c-d06c-4447-a02b" name="Void Shield Generator" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
           <profiles/>
@@ -5625,7 +5625,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
         <cost name="pts" costTypeId="points" value="25.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="796a-21c2-7281-17a8" name="Void Relay Network (remove)" book="Planetary Onslaught" page="93" hidden="false" collective="false" type="unit">
+    <selectionEntry id="796a-21c2-7281-17a8" name="π Void Relay Network (remove)" book="Planetary Onslaught" page="93" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -5745,7 +5745,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1a59-dd0f-a7f2-32be" name="Promethium Relay Pipes (remove)" book="Planetary Onslaught" page="103" hidden="false" collective="false" type="model">
+    <selectionEntry id="1a59-dd0f-a7f2-32be" name="π Promethium Relay Pipes (remove)" book="Planetary Onslaught" page="103" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="1c76-1592-2725-da7f" name="Promethium Relay Pipes" book="Stronghold Assault" page="" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
@@ -5791,7 +5791,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
         <cost name="pts" costTypeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0fe6-096b-23ae-1134" name="Honoured Imperium (remove)" book="Planetary Onslaught" page="102" hidden="false" collective="false" type="model">
+    <selectionEntry id="0fe6-096b-23ae-1134" name="π Honoured Imperium (remove)" book="Planetary Onslaught" page="102" hidden="false" collective="false" type="model">
       <profiles/>
       <rules/>
       <infoLinks>
@@ -5839,7 +5839,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
         <cost name="pts" costTypeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="33f8-e6da-89a3-01d5" name="Firestorm Nexus (remove)" book="Remove - No longer used" page="" hidden="false" collective="false" type="unit">
+    <selectionEntry id="33f8-e6da-89a3-01d5" name="π Firestorm Nexus (remove)" book="Remove - No longer used" page="" hidden="false" collective="false" type="unit">
       <profiles>
         <profile id="03b2-5174-5847-b78a" name="Firestorm" book="Warzone Armageddon" page="" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
           <profiles/>
@@ -5897,7 +5897,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8300-7ced-aafd-2a27" name="Fortress of Redemption (remove)" book="Planetary Onslaught" page="91" hidden="false" collective="false" type="model">
+    <selectionEntry id="8300-7ced-aafd-2a27" name="π Fortress of Redemption (remove)" book="Planetary Onslaught" page="91" hidden="false" collective="false" type="model">
       <profiles/>
       <rules/>
       <infoLinks>
@@ -6282,7 +6282,7 @@ Each projected void shield has an Armour Value of 12. A glancing or penetrating 
         <cost name="pts" costTypeId="points" value="75.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5cdd-edbb-07c3-0ba5" name="Skyshield Landing Pad (remove)" book="Planetary Onslaught" page="101" hidden="false" collective="false" type="model">
+    <selectionEntry id="5cdd-edbb-07c3-0ba5" name="π Skyshield Landing Pad (remove)" book="Planetary Onslaught" page="101" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="4eff-4ef5-3fae-f3d8" name="Skyshield Landing Pad" book="Stronghold Assault" page="" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
           <profiles/>
@@ -6607,7 +6607,7 @@ Unfurled: If a unit deep strikes on top of an unfurled Skyshield Landing Pad, it
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="06e2-2420-ffc8-13b8" name="Haemotrope Reactors (remove)" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="06e2-2420-ffc8-13b8" name="π Haemotrope Reactors (remove)" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules>
         <rule id="836f-f195-e6a6-1c83" name="Plasma Feed" hidden="false">
@@ -6995,7 +6995,7 @@ A reactor can be shot at and attacked in close combat. If destroyed, the closest
         <cost name="pts" costTypeId="points" value="230.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c05d-2231-2481-4037" name="Imperial Primus Redoubt (remove)" hidden="false" collective="false" type="model">
+    <selectionEntry id="c05d-2231-2481-4037" name="Imperial Primus Redoubt" book="HH: AoDAL" page="93" hidden="false" collective="false" type="model">
       <profiles>
         <profile id="254b-5059-bde3-4eac" name="Primus Redoubt" hidden="false" profileTypeId="286c-0cd4-7630-47d0">
           <profiles/>
@@ -7524,7 +7524,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ed7e-757a-4ced-adff" name="Imperial Strongpoint (remove)" book="Planetary Onslaught" page="81" hidden="false" collective="false" type="unit">
+    <selectionEntry id="ed7e-757a-4ced-adff" name="π Imperial Strongpoint (remove)" book="Planetary Onslaught" page="81" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -11934,7 +11934,7 @@ D6    Result		S	AP
         <cost name="pts" costTypeId="points" value="3250.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9f5b-eccc-689a-2948" name="Aquila Strongpoint (remove)" book="Remove - No longer in use" page="" hidden="false" collective="false" type="model">
+    <selectionEntry id="9f5b-eccc-689a-2948" name="π Aquila Strongpoint (remove)" book="Remove - No longer in use" page="" hidden="false" collective="false" type="model">
       <profiles/>
       <rules/>
       <infoLinks>
