@@ -18283,10 +18283,10 @@ Buildings and Fortifications D</description>
                   <rules/>
                   <infoLinks/>
                   <modifiers>
-                    <modifier type="set" field="hidden" value="true">
+                    <modifier type="set" field="hidden" value="false">
                       <repeats/>
                       <conditions>
-                        <condition field="selections" scope="aa74-77f4-7266-36b6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="00cf-20ab-1b17-aad1" type="equalTo"/>
+                        <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="00cf-20ab-1b17-aad1" type="equalTo"/>
                       </conditions>
                       <conditionGroups/>
                     </modifier>
@@ -18488,7 +18488,7 @@ Buildings and Fortifications D</description>
             <modifier type="set" field="hidden" value="true">
               <repeats/>
               <conditions>
-                <condition field="selections" scope="04e8-11de-2eb4-67e0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8e5-ca43-91cf-e219" type="equalTo"/>
+                <condition field="selections" scope="04e8-11de-2eb4-67e0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8952-ed12-5b98-7de7" type="equalTo"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -18514,7 +18514,7 @@ Buildings and Fortifications D</description>
             <modifier type="set" field="hidden" value="true">
               <repeats/>
               <conditions>
-                <condition field="selections" scope="04e8-11de-2eb4-67e0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8e5-ca43-91cf-e219" type="equalTo"/>
+                <condition field="selections" scope="04e8-11de-2eb4-67e0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8952-ed12-5b98-7de7" type="equalTo"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -18618,15 +18618,48 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
             <cost name="pts" costTypeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="8952-ed12-5b98-7de7" name="Archmagos Reductor" page="0" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="8ea4-2a1d-be98-306e" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="04e8-11de-2eb4-67e0" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6cfc-6f64-906f-012b" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="75c5-daec-c572-06af" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="512c-f321-6951-5960" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="44d7-21e8-c102-b969" name="New CategoryLink" hidden="false" targetId="00fd-d5c9-e55d-c236" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="e3c1-c1dc-a079-b4c5" name="The Magos Reductor may take one of the following options:" hidden="false" collective="false">
+        <selectionEntryGroup id="b2c2-f5cf-3b39-fce0" name="The Magos Reductor may take one of the following options:" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ef05-d664-a0ef-178c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ef05-d664-a0ef-178c" type="max"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries>
@@ -18729,7 +18762,9 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
                   <conditionGroups/>
                 </modifier>
               </modifiers>
-              <constraints/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="31f3-4193-6a09-d3d3" type="max"/>
+              </constraints>
               <categoryLinks/>
             </entryLink>
             <entryLink id="43e2-0180-b576-3124" name="Paragon Blade" hidden="false" targetId="b4b1-1973-4aa3-bbd2" type="selectionEntry">
@@ -18737,12 +18772,17 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
               <rules/>
               <infoLinks/>
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="hidden" value="false">
                   <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="04e8-11de-2eb4-67e0" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="00cf-20ab-1b17-aad1" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="04e8-11de-2eb4-67e0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8952-ed12-5b98-7de7" type="greaterThan"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints/>
@@ -18987,7 +19027,7 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
                 <modifier type="set" field="hidden" value="true">
                   <repeats/>
                   <conditions>
-                    <condition field="selections" scope="04e8-11de-2eb4-67e0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e8e5-ca43-91cf-e219" type="equalTo"/>
+                    <condition field="selections" scope="04e8-11de-2eb4-67e0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8952-ed12-5b98-7de7" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -19025,7 +19065,7 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="b2c2-f5cf-3b39-fce0" name="The Magos Reductor may also take one of the following options:" hidden="false" collective="false">
+        <selectionEntryGroup id="e3c1-c1dc-a079-b4c5" name="The Magos Reductor may also take one of the following options:" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -19130,51 +19170,6 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
               <categoryLinks/>
             </entryLink>
           </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="efa8-cf5b-97c5-f2c5" name="May be upgraded to:" hidden="false" collective="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-          <selectionEntries>
-            <selectionEntry id="e8e5-ca43-91cf-e219" name="Archmagos Reductor" page="0" hidden="false" collective="false" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks>
-                <infoLink id="cd3e-8d89-636f-3e66" name="New InfoLink" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b34b-0c4a-89cc-20fc" type="max"/>
-                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2783-427a-3d88-527c" type="max"/>
-                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0b62-a0eb-49ad-31a9" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="46a7-c89c-ac4a-ea66" name="New CategoryLink" hidden="false" targetId="00fd-d5c9-e55d-c236" primary="false">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints/>
-                </categoryLink>
-              </categoryLinks>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="35.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups/>
-          <entryLinks/>
         </selectionEntryGroup>
         <selectionEntryGroup id="3bae-d3a8-42e6-2797" name="Weapons" hidden="false" collective="false">
           <profiles/>
@@ -19448,7 +19443,7 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
             <modifier type="set" field="hidden" value="false">
               <repeats/>
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8e5-ca43-91cf-e219" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8952-ed12-5b98-7de7" type="equalTo"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -23047,7 +23042,7 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
         <cost name="pts" costTypeId="points" value="5.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b4b1-1973-4aa3-bbd2" name="Paragon Blade" page="0" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="b4b1-1973-4aa3-bbd2" name="Paragon Blade" page="0" hidden="true" collective="false" type="upgrade">
       <profiles/>
       <rules/>
       <infoLinks>
