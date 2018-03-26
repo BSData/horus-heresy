@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" book="Crusade Imperialis" revision="47" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" book="Crusade Imperialis" revision="48" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -13647,7 +13647,7 @@ Precision Shots</description>
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="5278-6635-dc60-2502" hidden="false" targetId="470a38b3-ad69-52de-2996-36fa27f50e04" type="rule">
+        <infoLink id="5278-6635-dc60-2502" name="Disciplined Fire" hidden="false" targetId="470a38b3-ad69-52de-2996-36fa27f50e04" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -13666,12 +13666,6 @@ Precision Shots</description>
           <modifiers/>
         </infoLink>
         <infoLink id="b897-a2dd-f2d5-cb21" hidden="false" targetId="dff0089a-4273-26a0-d96f-b5a36d57a18f" type="profile">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="2e9e-47c1-1014-61ac" hidden="false" targetId="cbcf-5f25-f8ea-7cfd" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -13779,6 +13773,7 @@ Precision Shots</description>
                   <modifiers/>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0ae6-426e-3078-f892" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4987-a5a5-49a2-dcfb" type="min"/>
                   </constraints>
                   <categoryLinks/>
                   <selectionEntries>
@@ -14125,70 +14120,6 @@ Precision Shots</description>
                   <selectionEntryGroups/>
                   <entryLinks/>
                 </selectionEntryGroup>
-                <selectionEntryGroup id="0f20-13a3-aa78-dc8f" name="Exchange Volkite Charger for:" hidden="false" collective="false">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1d48-1509-2e6a-729a" type="max"/>
-                  </constraints>
-                  <categoryLinks/>
-                  <selectionEntries>
-                    <selectionEntry id="1b53-193f-59ee-1bc3" name="Rotor Cannon" hidden="false" collective="false" type="upgrade">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers>
-                        <modifier type="set" field="hidden" value="true">
-                          <repeats/>
-                          <conditions>
-                            <condition field="selections" scope="318c-a42f-a36c-aa30" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8e4e-6d09-6676-4f0c" type="equalTo"/>
-                          </conditions>
-                          <conditionGroups/>
-                        </modifier>
-                      </modifiers>
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="772f-8ca9-9397-134f" type="min"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="962f-2619-af01-1671" type="max"/>
-                      </constraints>
-                      <categoryLinks/>
-                      <selectionEntries/>
-                      <selectionEntryGroups/>
-                      <entryLinks/>
-                      <costs>
-                        <cost name="pts" costTypeId="points" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="8e4e-6d09-6676-4f0c" name="Power Axe" hidden="false" collective="false" type="upgrade">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers>
-                        <modifier type="set" field="hidden" value="true">
-                          <repeats/>
-                          <conditions>
-                            <condition field="selections" scope="318c-a42f-a36c-aa30" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1b53-193f-59ee-1bc3" type="equalTo"/>
-                          </conditions>
-                          <conditionGroups/>
-                        </modifier>
-                      </modifiers>
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5a5b-4e26-4c69-c7c2" type="min"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f2e9-72fe-e989-0331" type="max"/>
-                      </constraints>
-                      <categoryLinks/>
-                      <selectionEntries/>
-                      <selectionEntryGroups/>
-                      <entryLinks/>
-                      <costs>
-                        <cost name="pts" costTypeId="points" value="5.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks/>
             </selectionEntryGroup>
@@ -14372,7 +14303,7 @@ Precision Shots</description>
           <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups>
-            <selectionEntryGroup id="ce05-5103-2aee-32b9" name="Veletarii may exchange their Volkite Chargers for:" hidden="false" collective="true" defaultSelectionEntryId="abca-3ec5-31ad-866a">
+            <selectionEntryGroup id="ce05-5103-2aee-32b9" name="Veletarii may exchange their Volkite Chargers for:" hidden="false" collective="false" defaultSelectionEntryId="abca-3ec5-31ad-866a">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -14422,7 +14353,7 @@ Precision Shots</description>
                   <selectionEntryGroups/>
                   <entryLinks/>
                   <costs>
-                    <cost name="pts" costTypeId="points" value="5.0"/>
+                    <cost name="pts" costTypeId="points" value="45.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="abca-3ec5-31ad-866a" name="Volkite Chargers" hidden="false" collective="false" type="upgrade">
@@ -14430,6 +14361,12 @@ Precision Shots</description>
                   <rules/>
                   <infoLinks>
                     <infoLink id="9c5f-9f41-6aec-2405" name="Volkite Charger" hidden="false" targetId="44d2260d-9431-a6d0-6ba3-de04b559ba5b" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                    <infoLink id="2f11-bfc3-9dc5-f46c" name="Deflagrate" hidden="false" targetId="cbcf-5f25-f8ea-7cfd" type="rule">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
