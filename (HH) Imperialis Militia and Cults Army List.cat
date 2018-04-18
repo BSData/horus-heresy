@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" book="Crusade Imperialis" revision="81" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" book="Crusade Imperialis" revision="82" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -84,6 +84,13 @@
       <constraints/>
     </categoryEntry>
     <categoryEntry id="10e1-230f-ba7f-858d" name="Compulsory HQ" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="8a8c-ed20-7427-ddff" name="Imperialis Cults and Militia" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -182,6 +189,43 @@
           <infoLinks/>
           <modifiers/>
           <constraints/>
+        </categoryLink>
+        <categoryLink id="59bd-1597-d8de-39ae" name="Armies of Dark Compliance" hidden="false" targetId="c1d8-4cbf-e883-4e44" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6229-c410-b830-de1a" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="f9e4-6b5f-fccf-1ef6" name="Imperialis Cults and Militia" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="2b69-8a93-6c14-f6c7" value="1">
+              <repeats>
+                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="unit" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8a8c-ed20-7427-ddff" type="notInstanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="decrement" field="2b69-8a93-6c14-f6c7" value="1">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="unit" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8a8c-ed20-7427-ddff" type="notInstanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b69-8a93-6c14-f6c7" type="min"/>
+          </constraints>
         </categoryLink>
       </categoryLinks>
     </forceEntry>
@@ -889,7 +933,37 @@
       </categoryLinks>
     </forceEntry>
   </forceEntries>
-  <selectionEntries/>
+  <selectionEntries>
+    <selectionEntry id="8063-c1d8-51dc-4795" name="Army of Dark Compliance" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="b9e8-93cb-b89e-24a1" name="New CategoryLink" hidden="false" targetId="5297-7e0f-fa0b-3537" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="9420-adca-b388-9142" name="New CategoryLink" hidden="false" targetId="c1d8-4cbf-e883-4e44" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
   <entryLinks>
     <entryLink id="346e-4f96-da50-f2c4" name="Auxilia Arvus Lighter" hidden="false" targetId="2f44-0ed6-d014-be2f" type="selectionEntry">
       <profiles/>
@@ -911,9 +985,16 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="b00c-f941-d5a4-2f4c" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="2053-cb6b-3b78-bc64" name="New EntryLink" hidden="false" targetId="90d3-fb2c-d7c2-6482" type="selectionEntry">
+    <entryLink id="2053-cb6b-3b78-bc64" name="Rogue Psyker" hidden="false" targetId="90d3-fb2c-d7c2-6482" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -927,9 +1008,16 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="e908-1a7a-1b5a-10e0" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="7ec7-1723-3c29-3726" name="New EntryLink" hidden="false" targetId="0717-c810-5a7f-841d" type="selectionEntry">
+    <entryLink id="7ec7-1723-3c29-3726" name="Mutant Spawn" hidden="false" targetId="0717-c810-5a7f-841d" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -937,6 +1025,13 @@
       <constraints/>
       <categoryLinks>
         <categoryLink id="7ec7-1723-3c29-3726-486561767920537570706f727423232344415441232323" hidden="false" targetId="486561767920537570706f727423232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="1724-767a-1ffd-b323" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -959,6 +1054,13 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="e2f5-b193-9013-6e48" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
     <entryLink id="0dc0-34c1-8aec-964e" name="Imperialis Auxilia Medicae Detachment" hidden="false" targetId="02ca-0436-4d29-a606" type="selectionEntry">
@@ -975,9 +1077,16 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="bb3f-a122-b38b-6881" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="311b-7593-7810-5768" name="New EntryLink" hidden="false" targetId="556e-50e3-2fd0-d12d" type="selectionEntry">
+    <entryLink id="311b-7593-7810-5768" name="Auxilia Baneblade Super-heavy Battle Tank" hidden="false" targetId="556e-50e3-2fd0-d12d" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -985,6 +1094,13 @@
       <constraints/>
       <categoryLinks>
         <categoryLink id="311b-7593-7810-5768-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="b236-ab8c-25c3-6694" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1007,9 +1123,16 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="2b1b-c8ae-f918-f497" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="d314-1e56-8598-2f48" name="New EntryLink" hidden="false" targetId="c564-b56c-977c-64bd" type="selectionEntry">
+    <entryLink id="d314-1e56-8598-2f48" name="Auxilia Malcador Heavy Tank" hidden="false" targetId="c564-b56c-977c-64bd" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1017,6 +1140,13 @@
       <constraints/>
       <categoryLinks>
         <categoryLink id="d314-1e56-8598-2f48-486561767920537570706f727423232344415441232323" hidden="false" targetId="486561767920537570706f727423232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="ffce-c460-f223-44f3" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1039,9 +1169,16 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="3e66-4160-5624-7fef" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="5d41-f9b4-a1c0-253a" name="New EntryLink" hidden="false" targetId="0dd2-3783-8b42-8ea4" type="selectionEntry">
+    <entryLink id="5d41-f9b4-a1c0-253a" name="Auxilia Stormhammer Super-heavy Assault Tank" hidden="false" targetId="0dd2-3783-8b42-8ea4" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1055,9 +1192,16 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="528e-9c01-4106-31c8" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="d11b-5df0-04e8-0742" name="New EntryLink" hidden="false" targetId="ba9a-493a-cf26-21c9" type="selectionEntry">
+    <entryLink id="d11b-5df0-04e8-0742" name="Auxilia Thunderbolt Heavy Fighter" hidden="false" targetId="ba9a-493a-cf26-21c9" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1065,6 +1209,13 @@
       <constraints/>
       <categoryLinks>
         <categoryLink id="d11b-5df0-04e8-0742-466173742041747461636b23232344415441232323" hidden="false" targetId="466173742041747461636b23232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="f01c-95a4-ee59-e1d8" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1087,9 +1238,16 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="fb16-bd5b-98b7-b5b2" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="b77d-0b6c-c241-2e5e" name="New EntryLink" hidden="false" targetId="f2a9-6662-7cb6-8de7" type="selectionEntry">
+    <entryLink id="b77d-0b6c-c241-2e5e" name="Enginseer Auxilia" hidden="false" targetId="f2a9-6662-7cb6-8de7" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1097,6 +1255,13 @@
       <constraints/>
       <categoryLinks>
         <categoryLink id="b77d-0b6c-c241-2e5e-456c6974657323232344415441232323" hidden="false" targetId="456c6974657323232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="c539-f851-10ee-1d08" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1120,6 +1285,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="eafc-ac13-15a4-8dc2" name="New CategoryLink" hidden="false" targetId="10e1-230f-ba7f-858d" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="9030-9c62-f930-57ca" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1156,9 +1328,16 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="84f4-7c94-6dc1-67f3" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="1fa1-cabb-e243-4c37" name="New EntryLink" hidden="false" targetId="0ed3-b2fd-0ca7-588b" type="selectionEntry">
+    <entryLink id="1fa1-cabb-e243-4c37" name="Imperialis Auxilia Rapier Battery" hidden="false" targetId="0ed3-b2fd-0ca7-588b" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1166,6 +1345,13 @@
       <constraints/>
       <categoryLinks>
         <categoryLink id="1fa1-cabb-e243-4c37-486561767920537570706f727423232344415441232323" hidden="false" targetId="486561767920537570706f727423232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="7fea-fb3c-14e4-2701" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1188,6 +1374,13 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="27bf-f871-286c-7ffd" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
     <entryLink id="5aed-133b-01f6-4342" name="Imperialis Militia Fire Support Squad" hidden="false" targetId="43bb-4acf-c78a-8a35" type="selectionEntry">
@@ -1198,6 +1391,13 @@
       <constraints/>
       <categoryLinks>
         <categoryLink id="5aed-133b-01f6-4342-54726f6f707323232344415441232323" hidden="false" targetId="54726f6f707323232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="cea8-0318-73b4-c3a4" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1240,9 +1440,16 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="b8fa-4097-71f7-ea75" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="45d2-5ca3-10d0-9fbf" name="Imperialis Militia Reconaissance Squad" hidden="false" targetId="a05b-1aaf-314c-cbba" type="selectionEntry">
+    <entryLink id="45d2-5ca3-10d0-9fbf" name="Imperialis Militia Reconnaissance Squad" hidden="false" targetId="a05b-1aaf-314c-cbba" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1256,9 +1463,16 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="86e6-4f3e-6904-f0b6" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="450b-1c5e-e369-8ed7" name="Imperialis Militia Squad" hidden="false" targetId="c542-ddd4-6b6b-f761" type="selectionEntry">
+    <entryLink id="450b-1c5e-e369-8ed7" name="Imperialis Militia Infantry Squad" hidden="false" targetId="c542-ddd4-6b6b-f761" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1288,6 +1502,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="5c0c-32c4-f468-ccb0" name="New CategoryLink" hidden="false" targetId="fc8f-a68c-adf6-bfbf" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="a204-a0f7-82f2-2511" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1324,6 +1545,13 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="0c31-b855-5b99-9942" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
     <entryLink id="ad00-33c7-6846-53ac" name="Warlord-Sinister Pattern Battle Psi-Titan" hidden="false" targetId="fb92-d215-2011-f911" type="selectionEntry">
@@ -1348,9 +1576,16 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="4478-7615-a975-25d2" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="9ce8-35cc-0795-6b80" name="New EntryLink" hidden="false" targetId="b973-7d7d-754e-b022" type="selectionEntry">
+    <entryLink id="9ce8-35cc-0795-6b80" name="Grand Redoubt" hidden="false" targetId="b973-7d7d-754e-b022" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1358,6 +1593,13 @@
       <constraints/>
       <categoryLinks>
         <categoryLink id="9ce8-35cc-0795-6b80-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="e8b8-4af5-0d2c-271e" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1380,9 +1622,16 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="5238-9420-eef9-98ef" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="583c-b9a0-047c-4eef" name="All" hidden="false" targetId="d2ea-8129-8088-51de" type="selectionEntry">
+    <entryLink id="583c-b9a0-047c-4eef" name="Allegiance" hidden="false" targetId="d2ea-8129-8088-51de" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1398,7 +1647,7 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="1c99-5c64-d19a-d792" name="New EntryLink" hidden="false" targetId="04bf-6c22-19fb-4e46" type="selectionEntry">
+    <entryLink id="1c99-5c64-d19a-d792" name="Vengeance Weapon Battery" hidden="false" targetId="04bf-6c22-19fb-4e46" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1412,9 +1661,16 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="6e20-85eb-b58a-cd02" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="1e11-fa00-bf5f-0d79" name="New EntryLink" hidden="false" targetId="0f73-97f2-b832-f6d0" type="selectionEntry">
+    <entryLink id="1e11-fa00-bf5f-0d79" name="Defence Line" hidden="false" targetId="0f73-97f2-b832-f6d0" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1428,9 +1684,16 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="736e-81f2-46b5-749e" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="2ad1-c8f0-019d-4ab9" name="New EntryLink" hidden="false" targetId="df05-8179-624e-f8b2" type="selectionEntry">
+    <entryLink id="2ad1-c8f0-019d-4ab9" name="Defence Emplacement" hidden="false" targetId="df05-8179-624e-f8b2" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1444,9 +1707,16 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="14ba-eeb8-4b50-64e5" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="2ba9-f0c1-ce20-c972" name="New EntryLink" hidden="false" targetId="0116-c81b-1c0f-251c" type="selectionEntry">
+    <entryLink id="2ba9-f0c1-ce20-c972" name="Bunker" hidden="false" targetId="0116-c81b-1c0f-251c" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1460,9 +1730,16 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="d02e-6451-5ff8-068a" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="a2de-83bc-ae98-fa7a" name="New EntryLink" hidden="false" targetId="a172-78de-aaa6-2201" type="selectionEntry">
+    <entryLink id="a2de-83bc-ae98-fa7a" name="Firestorm Redoubt" hidden="false" targetId="a172-78de-aaa6-2201" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1476,9 +1753,16 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="9b35-f427-df3e-0fb0" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="b0cb-6dd8-c38b-0f31" name="New EntryLink" hidden="false" targetId="e0b3-77ca-af76-bd8b" type="selectionEntry">
+    <entryLink id="b0cb-6dd8-c38b-0f31" name="Sanctum Imperialis" hidden="false" targetId="e0b3-77ca-af76-bd8b" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1492,9 +1776,16 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="1a2f-f007-a08f-0175" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="bd15-f510-4dbc-94ce" name="New EntryLink" hidden="false" targetId="595a-908e-96a1-f121" type="selectionEntry">
+    <entryLink id="bd15-f510-4dbc-94ce" name="Shrine of the Aquila" hidden="false" targetId="595a-908e-96a1-f121" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1508,9 +1799,16 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="5572-8197-aa22-01a4" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="ce64-e53f-f0bb-b459" name="New EntryLink" hidden="false" targetId="3015-0b77-e848-c0f5" type="selectionEntry">
+    <entryLink id="ce64-e53f-f0bb-b459" name="Plasma Obliterator" hidden="false" targetId="3015-0b77-e848-c0f5" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1518,6 +1816,13 @@
       <constraints/>
       <categoryLinks>
         <categoryLink id="ce64-e53f-f0bb-b459-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="a6d3-0b4d-5a1b-3e34" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1540,6 +1845,13 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="fcce-2b2b-9749-8874" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
     <entryLink id="e6ba-816a-1c46-a20f" name="Manufactorum" hidden="false" targetId="6140-dc64-5896-957f" type="selectionEntry">
@@ -1550,6 +1862,13 @@
       <constraints/>
       <categoryLinks>
         <categoryLink id="e6ba-816a-1c46-a20f-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="d4c0-6a84-ed65-4461" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1572,9 +1891,16 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="da81-d4bc-9003-2ede" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="9305-4cbd-bd86-4b01" name="New EntryLink" hidden="false" targetId="55c6-268b-357f-d070" type="selectionEntry">
+    <entryLink id="9305-4cbd-bd86-4b01" name="Bastion" hidden="false" targetId="55c6-268b-357f-d070" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1588,9 +1914,16 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="4968-90a2-9ea9-300e" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="f936-0463-f665-c2b5" name="New EntryLink" hidden="false" targetId="a505-05af-bd44-56b6" type="selectionEntry">
+    <entryLink id="f936-0463-f665-c2b5" name="Aegis Defense Line" hidden="false" targetId="a505-05af-bd44-56b6" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1604,9 +1937,16 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="5afa-817d-15de-813c" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="ce67-364d-0169-a9d0" name="New EntryLink" hidden="false" targetId="e10f-7b90-ecd3-80a5" type="selectionEntry">
+    <entryLink id="ce67-364d-0169-a9d0" name="Basilica Administratum" hidden="false" targetId="e10f-7b90-ecd3-80a5" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1614,6 +1954,13 @@
       <constraints/>
       <categoryLinks>
         <categoryLink id="ce67-364d-0169-a9d0-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="b9ed-891c-b6d6-aaaa" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1657,9 +2004,16 @@
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="729d-bdfc-01d1-f2be" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="7f35-980b-9183-31f6" name="Imperialis Militia Squad" hidden="true" targetId="c542-ddd4-6b6b-f761" type="selectionEntry">
+    <entryLink id="7f35-980b-9183-31f6" name="Imperialis Militia Infantry Squad" hidden="true" targetId="c542-ddd4-6b6b-f761" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1682,6 +2036,13 @@
       <constraints/>
       <categoryLinks>
         <categoryLink id="7bde-e6d4-b6fe-72d5" hidden="false" targetId="54726f6f707323232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="209c-eaf9-4bf5-08f9" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1711,6 +2072,13 @@
       <constraints/>
       <categoryLinks>
         <categoryLink id="9b8b-dce5-3add-731b" hidden="false" targetId="54726f6f707323232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="8ada-9fa1-429d-2adc" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1830,7 +2198,15 @@
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="48b1-5202-bd58-1ea8" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="5985-12b4-d6b2-a55f" name="May take any of the following:" hidden="false" collective="false">
@@ -2135,7 +2511,15 @@
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="d58b-ef61-875a-07d4" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="bf60-73d2-1b7a-3903" name="May be given the following upgrades:" hidden="false" collective="false">
@@ -3734,7 +4118,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="38c9-a7fa-fa07-e6ef" name="New EntryLink" hidden="true" targetId="428e-4dcc-ace2-999e" type="selectionEntry">
+        <entryLink id="38c9-a7fa-fa07-e6ef" name="HQ" hidden="true" targetId="428e-4dcc-ace2-999e" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3765,14 +4149,6 @@
             <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6147-a395-3c68-3c11" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b0d-8328-0145-8edc" type="min"/>
           </constraints>
-          <categoryLinks/>
-        </entryLink>
-        <entryLink id="64b1-58f7-6a12-48ea" name="New EntryLink" hidden="false" targetId="ff8b-82aa-fa65-b0aa" type="selectionEntry">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
           <categoryLinks/>
         </entryLink>
       </entryLinks>
@@ -4452,6 +4828,13 @@ D3     Mutation
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="1d55-692c-c691-ce42" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="2111-1bc6-317a-5314" name="Medicae Orderly" hidden="false" collective="false" type="model">
@@ -4562,6 +4945,13 @@ D3     Mutation
       <constraints/>
       <categoryLinks>
         <categoryLink id="556e-50e3-2fd0-d12d-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="c575-7a9f-6a86-d074" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5030,6 +5420,13 @@ D3     Mutation
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="5068-1261-8aa0-4087" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="3ea0-2fb5-63f0-c2b8" name="Artillery Carriage Team" hidden="false" collective="false" type="model">
@@ -5298,6 +5695,13 @@ D3     Mutation
       <constraints/>
       <categoryLinks>
         <categoryLink id="c564-b56c-977c-64bd-486561767920537570706f727423232344415441232323" hidden="false" targetId="486561767920537570706f727423232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="c336-61a6-6f47-52c4" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5847,6 +6251,13 @@ D3     Mutation
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="9aa6-4fc8-dff0-2889" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="3348-8f83-3eb6-0aab" name="Ogryn Brutes" hidden="false" collective="false" type="model">
@@ -6163,6 +6574,13 @@ D3     Mutation
       <constraints/>
       <categoryLinks>
         <categoryLink id="0dd2-3783-8b42-8ea4-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="3f8e-9326-df2a-f8fd" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6610,6 +7028,13 @@ D3     Mutation
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="dede-7586-dc68-e605" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="c5d7-549b-f41b-e340" name="Twin-Linked Autocannons" hidden="false" collective="false" type="upgrade">
@@ -6868,6 +7293,13 @@ D3     Mutation
       <constraints/>
       <categoryLinks>
         <categoryLink id="bd53-6efb-ac8d-e3a4-485123232344415441232323" hidden="false" targetId="485123232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="9b2b-f348-29b5-76f0" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -7218,6 +7650,13 @@ D3     Mutation
       <constraints/>
       <categoryLinks>
         <categoryLink id="f2a9-6662-7cb6-8de7-456c6974657323232344415441232323" hidden="false" targetId="456c6974657323232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="d37f-b8a9-d46f-1db8" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -7906,6 +8345,13 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       </constraints>
       <categoryLinks>
         <categoryLink id="343f-b1ae-c962-4f62-485123232344415441232323" hidden="false" targetId="485123232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="5bb2-9ef2-e9af-3df7" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -8762,6 +9208,13 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       <constraints/>
       <categoryLinks>
         <categoryLink id="ee8f-fcde-88df-7261-485123232344415441232323" hidden="false" targetId="485123232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="d07a-7a4d-c270-e223" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -9795,6 +10248,13 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="d106-c40a-f6cb-2cb1" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="15be-bcd3-c530-904f" name="Rapier Team" hidden="false" collective="false" type="unit">
@@ -10105,6 +10565,13 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="9232-87ca-42fa-cdea" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="3aed-63a0-d7f7-81de" name="Auxilia Sentinels" hidden="false" collective="false" type="upgrade">
@@ -10382,6 +10849,13 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       <constraints/>
       <categoryLinks>
         <categoryLink id="43bb-4acf-c78a-8a35-54726f6f707323232344415441232323" hidden="false" targetId="54726f6f707323232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="ae7d-d8e0-b2b6-b00c" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -10756,6 +11230,13 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       <constraints/>
       <categoryLinks>
         <categoryLink id="f299-898a-b637-0aa2-54726f6f707323232344415441232323" hidden="false" targetId="54726f6f707323232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="f15c-6288-da63-0a03" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -11983,6 +12464,13 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="0c29-6662-4f23-3d41" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="3b8d-1a44-5054-bf06" name="Recon Auxiliaries" hidden="false" collective="false" type="upgrade">
@@ -12378,6 +12866,13 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       <constraints/>
       <categoryLinks>
         <categoryLink id="c542-ddd4-6b6b-f761-54726f6f707323232344415441232323" hidden="false" targetId="54726f6f707323232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="28c8-6342-6ce7-b142" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -13099,6 +13594,13 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="caa2-5465-91b0-2400" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="5116-a266-b4b0-fdca" name="Levy Auxiliaries" hidden="false" collective="false" type="model">
@@ -13675,34 +14177,6 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="2.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="ff8b-82aa-fa65-b0aa" name="Militia/Cult" hidden="false" collective="false" type="upgrade">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers>
-        <modifier type="increment" field="8a61-2b27-7b05-26a9" value="1">
-          <repeats>
-            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
-          </repeats>
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="80a2-7d5f-396f-352e" type="instanceOf"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="316c-0fa4-975c-b783" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7da-61bb-844c-6a7c" type="max"/>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8a61-2b27-7b05-26a9" type="min"/>
-      </constraints>
-      <categoryLinks/>
-      <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d2ea-8129-8088-51de" name="Allegiance" hidden="false" collective="false" type="upgrade">
