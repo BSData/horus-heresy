@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" book="Horus Heresy: Taghmata Army List" revision="68" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" book="Horus Heresy: Taghmata Army List" revision="69" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -1402,6 +1402,13 @@
           </conditions>
           <conditionGroups/>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="greaterThan"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
       </modifiers>
       <constraints/>
       <categoryLinks>
@@ -1430,6 +1437,13 @@
           <repeats/>
           <conditions>
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="121d-dc17-273c-40d0" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="greaterThan"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -2895,6 +2909,13 @@
           </conditions>
           <conditionGroups/>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="greaterThan"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
       </modifiers>
       <constraints/>
       <categoryLinks>
@@ -2930,6 +2951,13 @@
           <repeats/>
           <conditions>
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="121d-dc17-273c-40d0" type="greaterThan"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="greaterThan"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -7567,15 +7595,21 @@ Reduces transport capacity to 8.</description>
                   <constraints/>
                   <categoryLinks/>
                 </entryLink>
-                <entryLink id="5295-9090-357a-0512" name="New EntryLink" hidden="false" targetId="6951-c813-b83f-d5a4" type="selectionEntry">
+                <entryLink id="5295-9090-357a-0512" name="Arc Maul" hidden="false" targetId="6951-c813-b83f-d5a4" type="selectionEntry">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
-                  <modifiers/>
+                  <modifiers>
+                    <modifier type="set" field="points" value="0.0">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
                   <constraints/>
                   <categoryLinks/>
                 </entryLink>
-                <entryLink id="061f-2b44-b165-363c" hidden="false" targetId="9663-feec-8ebc-b809" type="selectionEntry">
+                <entryLink id="061f-2b44-b165-363c" name="Arc Rifle" hidden="false" targetId="9663-feec-8ebc-b809" type="selectionEntry">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -7584,6 +7618,14 @@ Reduces transport capacity to 8.</description>
                   <categoryLinks/>
                 </entryLink>
                 <entryLink id="6625-e14c-6627-af17" hidden="false" targetId="7b6e-1246-67b8-f13b" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+                <entryLink id="b688-9bea-1e85-ef6c" name="Radium Carbine" hidden="false" targetId="8f89-db02-97ce-aa1f" type="selectionEntry">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -8328,11 +8370,17 @@ Reduces transport capacity to 8.</description>
                   <constraints/>
                   <categoryLinks/>
                 </entryLink>
-                <entryLink id="328f-35e5-53d9-5463" name="New EntryLink" hidden="false" targetId="6951-c813-b83f-d5a4" type="selectionEntry">
+                <entryLink id="328f-35e5-53d9-5463" name="Arc Maul" hidden="false" targetId="6951-c813-b83f-d5a4" type="selectionEntry">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
-                  <modifiers/>
+                  <modifiers>
+                    <modifier type="set" field="points" value="0.0">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
                   <constraints/>
                   <categoryLinks/>
                 </entryLink>
