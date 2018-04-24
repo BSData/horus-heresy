@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" book="Horus Heresy: Taghmata Army List" revision="69" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" book="Horus Heresy: Taghmata Army List" revision="70" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -2685,7 +2685,15 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0199-0faf-34c8-fbee" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints/>
       <categoryLinks>
         <categoryLink id="6e49-5441-90e6-4ea7" name="New CategoryLink" hidden="false" targetId="becd-7a6d-e80f-878e" primary="false">
@@ -2704,20 +2712,21 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="26e6-4e76-0f8e-29c2" name="Magos Dominus" hidden="false" targetId="f891-cee8-321e-f159" type="selectionEntry">
+    <entryLink id="26e6-4e76-0f8e-29c2" name="Magos Dominus" hidden="true" targetId="f891-cee8-321e-f159" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0199-0faf-34c8-fbee" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints/>
       <categoryLinks>
-        <categoryLink id="ec82-f63c-49ef-ae36" name="New CategoryLink" hidden="false" targetId="becd-7a6d-e80f-878e" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
         <categoryLink id="ceef-3182-c221-51ab" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true">
           <profiles/>
           <rules/>
@@ -2727,20 +2736,21 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="f2b2-170e-52e7-073d" name="Magos Prime" hidden="false" targetId="aa74-77f4-7266-36b6" type="selectionEntry">
+    <entryLink id="f2b2-170e-52e7-073d" name="Magos Prime" hidden="true" targetId="aa74-77f4-7266-36b6" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0199-0faf-34c8-fbee" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
       <constraints/>
       <categoryLinks>
-        <categoryLink id="6158-6a83-67b4-f923" name="New CategoryLink" hidden="false" targetId="becd-7a6d-e80f-878e" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
         <categoryLink id="baab-8987-7c5b-e9b4" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true">
           <profiles/>
           <rules/>
@@ -2750,15 +2760,15 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="53a1-ee52-c81e-d15c" name="Magos Reductor" hidden="false" targetId="04e8-11de-2eb4-67e0" type="selectionEntry">
+    <entryLink id="53a1-ee52-c81e-d15c" name="Magos Reductor" hidden="true" targetId="04e8-11de-2eb4-67e0" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="hidden" value="false">
           <repeats/>
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0199-0faf-34c8-fbee" type="equalTo"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0199-0faf-34c8-fbee" type="equalTo"/>
           </conditions>
           <conditionGroups/>
         </modifier>
@@ -2785,25 +2795,17 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a735-9091-b1d2-02d8" type="equalTo"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
+      <modifiers/>
       <constraints/>
       <categoryLinks>
-        <categoryLink id="96c4-8f3e-5c61-53d1" name="New CategoryLink" hidden="false" targetId="becd-7a6d-e80f-878e" primary="false">
+        <categoryLink id="e1d9-3be5-8a8f-59e8" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="e1d9-3be5-8a8f-59e8" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true">
+        <categoryLink id="f4bf-2a55-8ac2-2d78" name="New CategoryLink" hidden="false" targetId="becd-7a6d-e80f-878e" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3042,6 +3044,92 @@
       <constraints/>
       <categoryLinks>
         <categoryLink id="6a5e-d23e-bb66-24f2" name="New CategoryLink" hidden="false" targetId="466173742041747461636b23232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2446-35f3-3f1b-e153" name="Magos Prime" hidden="false" targetId="aa74-77f4-7266-36b6" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0199-0faf-34c8-fbee" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="be39-4547-c9be-76db" name="New CategoryLink" hidden="false" targetId="becd-7a6d-e80f-878e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="ab45-c8e7-7795-0be2" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5bce-cf03-cea4-be28" name="Magos Dominus" hidden="false" targetId="f891-cee8-321e-f159" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0199-0faf-34c8-fbee" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="60c2-ca0f-93d9-03c9" name="New CategoryLink" hidden="false" targetId="becd-7a6d-e80f-878e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="7fc0-849e-db4a-d096" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5ab4-bb0f-b718-ca9d" name="Archmagos Inar Satarael" hidden="false" targetId="7095-280b-9ccc-b7bc" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0199-0faf-34c8-fbee" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="f6a5-749e-217f-10f1" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -19636,6 +19724,13 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
           <repeats/>
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3a27-636b-b01b-24f8" type="equalTo"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a735-9091-b1d2-02d8" type="equalTo"/>
           </conditions>
           <conditionGroups/>
         </modifier>
