@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" book="Crusade Imperialis" revision="82" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" book="Crusade Imperialis" revision="83" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
   <costTypes/>
   <profileTypes/>
   <categoryEntries>
+    <categoryEntry id="219d-aefa-dfa5-44db" name="Compulsory Troops" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="becd-7a6d-e80f-878e" name="Compulsory HQ" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
     <categoryEntry id="d27d-9e9b-d8c7-afe6" name="No Force Org" hidden="false">
       <profiles/>
       <rules/>
@@ -2079,6 +2093,22 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="8ada-9fa1-429d-2adc" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b7e3-0ac5-2743-f84d" name="Terrax Pattern Termite Assault Drill" hidden="false" targetId="1b44-8c50-86ae-9a67" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="3d0b-5c27-5b63-d56a" name="New CategoryLink" hidden="false" targetId="466173742041747461636b23232344415441232323" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -14458,6 +14488,245 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1b44-8c50-86ae-9a67" name="Terrax Pattern Termite Assault Drill" hidden="false" collective="false" type="unit">
+      <profiles>
+        <profile id="177e-631e-36f5-d4dd" name="Terrax Pattern Termite Assault Drill" hidden="false" profileTypeId="56656869636c6523232344415441232323" profileTypeName="Vehicle">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
+            <characteristic name="Front" characteristicTypeId="46726f6e7423232344415441232323" value="12"/>
+            <characteristic name="Side" characteristicTypeId="5369646523232344415441232323" value="12"/>
+            <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="10"/>
+            <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="3"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Tank, Transport"/>
+          </characteristics>
+        </profile>
+        <profile id="ec21-e085-c763-e48a" name="Terrax Pattern Termite Assault Drill (Transport)" hidden="false" profileTypeId="307d-047f-ca13-706b" profileTypeName="Transport">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Capacity" characteristicTypeId="8285-4205-b6cd-8473" value="12*"/>
+            <characteristic name="Fire Points" characteristicTypeId="b270-a7f9-22b2-3702" value="None"/>
+            <characteristic name="Access Points" characteristicTypeId="d17b-0342-b1dc-b8e7" value="Two access hatches**"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="713e-a9b4-a3ce-d1a6" name="Crawling Advance" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>A Termite Assault Drill may never move faster than Combat Speed or move Flat Out.</description>
+        </rule>
+        <rule id="c9de-425e-bace-6cb3" name="Death From Below" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Instead of the usual rules for Deep Striking, when a Subterranean Assault vehicle enters play via Deep Strike, place a Large Blast (5&quot;)
+marker on the table and scatter this to determine the final position of its arrival as per the Deep Strike special rule.
+
+Should this marker scatter on top of impassable terrain, a building, ruin, fortification, vehicle or any unit engaged in combat, reduce
+the scatter distance by the minimum required to avoid the obstacle. If the marker representing the arrival of the Termite was
+displaced in this way by a vehicle or fortification, the closest vehicle or fortification to the marker immediately suffers a Str 10 AP- hit
+– vehicles are hit on their Side armour. If the arrival of the Termite was instead displaced by any units engaged in close combat, all
+units in that combat suffer D6 Str 6 AP 4 hits. After the final position of the marker is determined, if the marker covers or touches any
+enemy or friendly unit, then that unit also suffers D6 Str 6 AP 4 hits.
+
+After all damage is resolved, the Subterranean Assault vehicle may be placed in any orientation so long as the centre of the Large Blast
+(5&quot;) marker is underneath part of the vehicle’s hull and it remains 1&quot; away from any fortification, vehicle or unit engaged in combat.
+The area under the Large Blast (5&quot;) marker is now difficult terrain for the rest of the game. Players may, should they wish to, instead
+represent this area with a piece of crater terrain.
+
+Should a Subterranean Assault vehicle be placed on top of any unit which does not pose an obstacle to its arrival as described above,
+the Death from Below special rule allows it to be placed as though the unit was not there. If some models in the unit would end up
+underneath the Subterranean Assault vehicle when it reaches its final position (it makes no difference whether the unit is Falling
+Back or not), these models must be moved by the controlling player out of the way by the shortest distance, leaving at least 1&quot; between
+them and the Subterranean Assault vehicle (and indeed any other unit) whilst maintaining unit coherency and staying on the
+tabletop. Any models that cannot manage this are crushed and removed from play as casualties with no saves allowed.</description>
+        </rule>
+        <rule id="255d-2ce6-727e-364b" name="Melta Cutters" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>A Termite Assault Drill ignores difficult terrain and dangerous terrain.
+In addition, it adds +2 to its Strength when making ramming attacks against fortifications.</description>
+        </rule>
+        <rule id="6b3b-8961-6c32-a5d4" name="Subterranean Assault" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Should the Termite Assault Drill, and any unit it transports, enter play using the Deep Strike special rule, they count as being a
+Subterranean Assault vehicle for the wider use of the Subterranean Assault rule for your army. At the beginning of the controlling
+player’s first turn, they must choose half of their Subterranean Assault vehicles held in reserve for the purpose of Deep Striking
+(rounding up) to make a Subterranean Assault. These units arrive on the controlling player’s first player turn. The arrival of any
+remaining Subterranean Assault vehicles in the player’s force is rolled for as usual for the mission.
+
+This rule, while similar in function to the Drop Pod Assault special rule, does not interact with it for the purposes of calculating how
+many units may arrive on the table by Deep Strike. Armies may consist of units with both the Drop Pod Assault and Subterranean
+Assault rules unless otherwise noted.</description>
+        </rule>
+        <rule id="2138-c152-f007-3485" name="Terrax Pattern Termite Assault Drill" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>* May not carry models with the Bulky, Very Bulky or Extremely Bulky special rules
+
+** In practice you may choose to open and embar/disembark from a single hatch on either side of the hull.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="68e5-9288-bd4a-9530" name="Deep Strike" hidden="false" targetId="d219-2314-4834-c054" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="4090-2671-c1d4-1ba6" name="New CategoryLink" hidden="false" targetId="466173742041747461636b23232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b150-f91b-a246-38f2" name="Select 2" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7b2-fd35-49ef-19ad" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0927-9177-9236-f5d7" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="c975-bdb2-de2f-9371" name="Heavy Flamer" hidden="false" targetId="ead9-305c-a7e7-323e" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f59d-726e-dd1d-1224" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4448-0938-fb4a-f3c7" type="min"/>
+              </constraints>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="2277-a1e7-86d5-5d77" name="May take any of the following" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="9c7a-f245-d753-60e9" name="Armoured Ceramite" hidden="false" targetId="699b-fce3-88be-8e7b" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="points" value="20">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="f245-43b3-795f-64f0" name="Extra Armour" hidden="false" targetId="ad5d-6b1a-2708-3616" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="points" value="5">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="85.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ad5d-6b1a-2708-3616" name="Extra Armour" page="0" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="3b37-c847-b26d-8c55" name="New InfoLink" hidden="false" targetId="5283-9b50-3dcd-78e4" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ea99-bb80-8a1b-3e4e" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="699b-fce3-88be-8e7b" name="Armoured Ceramite" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="b6f0-922d-e503-bf7d" name="Armoured Ceramite" hidden="false" targetId="874d-45cf-6007-a1de" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="6c48-1c46-bcee-b44d" name="Armoured Ceramite" hidden="false" targetId="3138-683d-a9a0-570d" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="20.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
