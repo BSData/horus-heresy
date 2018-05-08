@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="95" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="96" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -175,123 +175,6 @@
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a6f3-d8d1-7cc3-e82c" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a6e7-9e79-eb68-1eab" type="max"/>
-      </constraints>
-      <categoryLinks/>
-      <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="04c4-8239-657a-ced2" name="Support Squad" hidden="false" collective="false" type="upgrade">
-      <profiles/>
-      <rules/>
-      <infoLinks>
-        <infoLink id="6acc-348f-1285-739f" name="Support Squad" hidden="false" targetId="2c16-3b25-a714-a656" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-      </infoLinks>
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="219d-aefa-dfa5-44db" type="instanceOf"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-        <modifier type="set" field="3275-666f-eb26-58d8" value="0">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="219d-aefa-dfa5-44db" type="instanceOf"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-        <modifier type="set" field="c353-e83d-213f-7440" value="0">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="219d-aefa-dfa5-44db" type="instanceOf"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3275-666f-eb26-58d8" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c353-e83d-213f-7440" type="min"/>
-      </constraints>
-      <categoryLinks/>
-      <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="fc8c-3f13-02b6-034e" name="Support Officer" hidden="false" collective="false" type="upgrade">
-      <profiles/>
-      <rules>
-        <rule id="6cbb-0977-3f2f-b238" name="Support Officer" book="FAQ" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>A Consul of this type may not be used as a compulsory HQ choice for the army unless specifically exempted by a particular Legiones Astartes special rule or Rite of War.</description>
-        </rule>
-      </rules>
-      <infoLinks/>
-      <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="67db-8cbd-ae76-b897" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="13c3-1f2b-4540-5421" type="min"/>
-      </constraints>
-      <categoryLinks/>
-      <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="9c8f-17f9-f7c0-1324" name="Support Squad" hidden="false" collective="false" type="upgrade">
-      <profiles/>
-      <rules/>
-      <infoLinks>
-        <infoLink id="e179-4244-da53-e24f" name="Support Squad" hidden="false" targetId="2c16-3b25-a714-a656" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-      </infoLinks>
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="219d-aefa-dfa5-44db" type="instanceOf"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-        <modifier type="set" field="667f-4554-1748-549b" value="0">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="219d-aefa-dfa5-44db" type="instanceOf"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-        <modifier type="set" field="3bed-73d5-318a-fbc5" value="0">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="219d-aefa-dfa5-44db" type="instanceOf"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="667f-4554-1748-549b" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3bed-73d5-318a-fbc5" type="min"/>
       </constraints>
       <categoryLinks/>
       <selectionEntries/>
@@ -602,22 +485,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
       </infoLinks>
       <modifiers/>
       <constraints/>
-      <categoryLinks>
-        <categoryLink id="a766-3aa2-33d3-1d63" name="New CategoryLink" hidden="false" targetId="121d-dc17-273c-40d0" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-        <categoryLink id="43b9-b232-7fec-1d8b" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="0707-e414-13d3-eae6" name="Primary Weapon Right Arm" hidden="false" collective="false">
@@ -964,22 +832,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
       </infoLinks>
       <modifiers/>
       <constraints/>
-      <categoryLinks>
-        <categoryLink id="828c-23dc-f6ce-ae53" name="New CategoryLink" hidden="false" targetId="121d-dc17-273c-40d0" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-        <categoryLink id="5ac2-32e1-7558-6658" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="74d3-2cbb-bd1e-6bf6" name="Carapace-mounted Weapon" hidden="false" collective="false" defaultSelectionEntryId="f13b-e244-f40b-5cce">
@@ -1671,22 +1524,7 @@ D6    Result		S	AP
       <infoLinks/>
       <modifiers/>
       <constraints/>
-      <categoryLinks>
-        <categoryLink id="d9ec-347a-bc64-96be" name="New CategoryLink" hidden="false" targetId="121d-dc17-273c-40d0" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-        <categoryLink id="b301-08d2-000d-4922" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="a893-70e8-8c4d-57de" name="Primary Weapon Left Arm" hidden="false" collective="false">
@@ -2507,60 +2345,6 @@ D6    Result		S	AP
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="2750.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="36c5-d6db-7224-1e47" name="Support Unit" hidden="false" collective="false" type="upgrade">
-      <profiles/>
-      <rules>
-        <rule id="3011-cc8f-8dfc-e95c" name="Support Unit" book="HH:MT" page="41" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>This unit type may not be chosen as a compulsory Troops choice for the army.</description>
-        </rule>
-      </rules>
-      <infoLinks/>
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="219d-aefa-dfa5-44db" type="instanceOf"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-        <modifier type="set" field="3272-f43a-2efd-59c9" value="0">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="219d-aefa-dfa5-44db" type="instanceOf"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-        <modifier type="set" field="b0dc-cc60-79e4-e984" value="0">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="219d-aefa-dfa5-44db" type="instanceOf"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <repeats/>
-          <conditions>
-            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="219d-aefa-dfa5-44db" type="instanceOf"/>
-          </conditions>
-          <conditionGroups/>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3272-f43a-2efd-59c9" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b0dc-cc60-79e4-e984" type="min"/>
-      </constraints>
-      <categoryLinks/>
-      <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="edc3-8b73-68c7-6c33" name="Atomantic Shielding" hidden="false" collective="false" type="upgrade">
@@ -7667,8 +7451,6 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc19-7d28-66fb-fa66" type="max"/>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6dcc-54f1-5c52-27b7" type="min"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c0d-15cf-6a81-bfa7" type="min"/>
       </constraints>
       <categoryLinks/>
       <selectionEntries/>
@@ -7744,15 +7526,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
-      <categoryLinks>
-        <categoryLink id="72c0-7541-7366-f087" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="f89283d8-d9d1-7f20-b630-4ad158e12292" name="May exchange Questoris battlecannon for:" hidden="false" collective="false">
@@ -8002,15 +7776,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
-      <categoryLinks>
-        <categoryLink id="43bd-faba-e8e2-e68f" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="423c1873-c56d-8ca1-b01f-a2660b0b0198" name="May be upgraded with:" hidden="false" collective="false">
@@ -8225,15 +7991,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
-      <categoryLinks>
-        <categoryLink id="293e-427f-069c-7d4f" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="f1816b2d-d7ad-435b-6862-843f885c8ecc" name="May exchange its Reaper Chainsword for:" hidden="false" collective="false">
@@ -8406,15 +8164,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
-      <categoryLinks>
-        <categoryLink id="e478-9e72-b824-c91d" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="f6462c55-4eef-3565-2a00-b18b8444bd20" name="May be upgraded with:" hidden="false" collective="false">
@@ -8528,15 +8278,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
-      <categoryLinks>
-        <categoryLink id="93bc-c38f-4c2b-19ac" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="24723cac-66f3-e231-9092-1333de8d98c1" name="May exchange its Reaper Chainsword for:" hidden="false" collective="false">
@@ -8712,15 +8454,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
-      <categoryLinks>
-        <categoryLink id="3557-5237-79f2-d4e4" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="5e3a6b4f-0c5e-5b29-cc54-cf20f5668eb3" name="May be upgraded with:" hidden="false" collective="false">
@@ -8830,15 +8564,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
-      <categoryLinks>
-        <categoryLink id="c52e-9a0d-21e9-8cfe" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="97a1af42-3800-4b30-9e22-d8955e00394e" name="May be upgraded with:" hidden="false" collective="false">
@@ -8942,15 +8668,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
-      <categoryLinks>
-        <categoryLink id="0c2f-1672-9805-106a" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="c89a-2e7e-cc89-dfc4" name="May be upgraded with:" hidden="false" collective="false">
@@ -9253,15 +8971,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
-      <categoryLinks>
-        <categoryLink id="65ee-4b04-f8fa-4b00" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="c12e-0c88-5050-819f" name="May be upgraded with:" hidden="false" collective="false">
@@ -9513,15 +9223,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
-      <categoryLinks>
-        <categoryLink id="0b8b-cd22-4fda-0d63" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="ee0a-75b3-4033-d106" name="May be upgraded with:" hidden="false" collective="false">
@@ -9824,15 +9526,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8f86-62fb-dba4-afc4" type="max"/>
       </constraints>
-      <categoryLinks>
-        <categoryLink id="4478-ce8b-e825-fdff" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
+      <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
         <selectionEntryGroup id="797b-8685-04c6-72f4" name="May be upgraded with:" hidden="false" collective="false">
@@ -10034,15 +9728,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f38-2f45-a1a8-1aab" type="max"/>
       </constraints>
-      <categoryLinks>
-        <categoryLink id="efda-c9db-7e79-002c" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
+      <categoryLinks/>
       <selectionEntries>
         <selectionEntry id="eb2c-a7c7-2c3f-fc1d" name="Exchange Ironstorm missiles for:" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -10758,22 +10444,7 @@ D6    Result		S	AP
       <infoLinks/>
       <modifiers/>
       <constraints/>
-      <categoryLinks>
-        <categoryLink id="fb62-2108-207b-6a3a" name="New CategoryLink" hidden="false" targetId="121d-dc17-273c-40d0" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-        <categoryLink id="231c-798c-a82f-1881" name="New CategoryLink" hidden="false" targetId="59f5-766f-b21c-d584" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
+      <categoryLinks/>
       <selectionEntries>
         <selectionEntry id="82a1-5e48-0536-3451" name="The Ciricrux Anima" hidden="false" collective="false" type="upgrade">
           <profiles/>
