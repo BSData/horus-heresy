@@ -1,11 +1,73 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" book="Crusade Imperialis" revision="48" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" book="Crusade Imperialis" revision="49" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
   <costTypes/>
   <profileTypes/>
   <categoryEntries>
+    <categoryEntry id="ce39-b313-7b57-ee8e" name="Artillery" book="AoDRB" page="65" hidden="false">
+      <profiles/>
+      <rules>
+        <rule id="f2b7-073c-b735-cd2f" name="Artillery" book="AoDRB" page="65" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>ARTILLERY
+
+Some weapons are so large and cumbersome that they are usually mounted on vehicles, but are sometimes utilised by artillery teams on foot, particularly if the battlefield’s terrain is not suitable for vehicles. These weapons are typically mounted on wheeled supports as they are too heavy to be carried across the battlefield.
+
+THE UNIT
+
+Artillery units comprise a number of crew models and the gun models themselves. These units can include several different types of models. The following is an example of a typical Artillery unit:
+
+WS BS S T W I A Ld Sv
+
+- - - 7 2 - - - 3+
+
+If all of the crew models are killed, the guns are immediately removed as well. Sometimes, the player has the choice of adding leaders or additional models to the crew of an Artillery unit. These models are part of the crew in all respects and can operate the guns as normal, even if they are otherwise slightly different from the rest of the crew. Independent Characters who join the unit, however, do not count as crew and cannot operate the guns.
+
+MOVEMENT PHASE
+
+Artillery units need at least one crewman per gun in order for the unit to move. If an Artillery unit does not have at least one crewman per gun, then it may not move.
+
+SHOOTING WITH ARTILLERY
+
+One crewman that is within 2&quot; of a gun in the Shooting phase can fire it. The crewmen firing the gun cannot fire any weapons they are carrying, while the other crew members (and any Independent Characters in the unit) are free to fire their side arms, provided the whole unit shoots at the same target. When firing the guns, there must be a line of sight to the target from both the gun model and the crewman firing it (unless they are firing Barrage weapons). Ranges are measured from the barrel on the gun model.
+
+SHOOTING AT ARTILLERY
+
+If shooting at an Artillery unit, the Toughness of the guns is always used whilst at least one gun remains. Any wounds caused are still allocated to the closest model first. If an Artillery unit chooses to Go to Ground, this does not increase the guns’ cover save – only the crew benefit.
+
+ASSAULT PHASE
+
+Artillery units cannot charge as long as they include any gun models. If an Artillery unit is charged, only the crew models can fire Overwatch. After Overwatch has been resolved, move the charging models into base contact with the crew and Artillery gun models as normal. No wounds can be allocated to the guns. All engaged enemies roll To Hit and To Wound against the crew, even if they are only engaged with the guns. Engaged crew models can fight back, but the Artillery guns cannot.
+
+MORALE AND FALL BACK MOVES
+
+For the purposes of Morale checks and other Leadership tests, and for combat resolution, always ignore the gun models. Because they need at least one crewman per gun in order to move, if an Artillery unit does not have one crewman per gun when it is forced to Fall Back, any gun models without crewmen are abandoned and immediately removed as casualties. The rest of the unit then Falls Back as normal. If an Artillery unit is forced to Fall Back from close combat and the enemy is free to make a Sweeping Advance, then the Artillery unit automatically loses the Initiative test and is caught and destroyed by the victor.
+
+ARTILLERY AND LOOK OUT, SIR
+
+A wound cannot be re-allocated onto a gun model from a successful Look Out, Sir roll (see page 94).</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb79-01fc-4b41-b915" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="218b-fafd-986d-56ba" name="Super-Heavy Vehicle" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cae-4f9a-b9f5-d729" type="max"/>
+      </constraints>
+    </categoryEntry>
     <categoryEntry id="d27d-9e9b-d8c7-afe6" name="No Force Org" hidden="false">
       <profiles/>
       <rules/>
@@ -242,6 +304,270 @@
     </categoryEntry>
   </categoryEntries>
   <forceEntries>
+    <forceEntry id="6329-878c-da3f-aa5e" name="Fan Made - Centurion" page="https://ia801902.us.archive.org/12/items/CENTURION1.1/CENTURION%201.1.pdf" hidden="false">
+      <profiles/>
+      <rules>
+        <rule id="046f-848f-7dfe-36c3" name="Fan Made - Centurion Mode" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>CENTURION – draft ruleset 1.1
+The Centurion Discipline is a middle-ground between Zone Mortalis* and Frontline* games.
+Aesthetically drawing inspiration from Warhammer 40k 2nd Edition, and rules-wise
+providing more narrative games where infantry and characters are the focus of
+the action. Some units are restricted in this discipline, the narrative shaped by
+dense terrain in which tanks and aircraft are not viable, yet the battle is still a
+savage tale of retribution and massacre.
+
+Centurion games are played on a 6x4 with more terrain than Frontline games,
+using Shadow War missions and a points level of 1500-2000 to represent smaller
+actions, insurgency, and tactical skirmishes.
+
+Infantry, Walkers, and Speeders should be the focus of your army and the
+following unit are restricted:
+
+Tanks, Fliers, Drop Pods, Superheavies are not allowed.
+Bikes, Attack Bikes, Jet Bikes, Artillery, Monstrous Creatures, Leviathan
+Siege Dreadnoughts are 0-1 choices.
+
+Note this precludes some Rites of War and Army Lists from Centurion mode.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <forceEntries/>
+      <categoryLinks>
+        <categoryLink id="98db-b4ba-fbcd-3239-485123232344415441232323" name="HQ" hidden="false" targetId="485123232344415441232323" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2b9-40d0-95c5-7e0f" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="98db-b4ba-fbcd-3239-456c6974657323232344415441232323" name="Elites" hidden="false" targetId="456c6974657323232344415441232323" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eefe-ee16-b931-4d55" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="98db-b4ba-fbcd-3239-54726f6f707323232344415441232323" name="Troops" hidden="false" targetId="54726f6f707323232344415441232323" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f266-ee67-dd6a-23b7" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="98db-b4ba-fbcd-3239-466173742041747461636b23232344415441232323" name="Fast Attack" hidden="false" targetId="466173742041747461636b23232344415441232323" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7dc2-6233-f84f-1dd3" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c34e-12d0-b680-df37" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="98db-b4ba-fbcd-3239-486561767920537570706f727423232344415441232323" name="Heavy Support" hidden="false" targetId="486561767920537570706f727423232344415441232323" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e116-a824-3a5e-9c94" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="98db-b4ba-fbcd-3239-5297-7e0f-fa0b-3537" name="Allegiance" hidden="false" targetId="5297-7e0f-fa0b-3537" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="98db-b4ba-fbcd-3239-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" name="Lords of War" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="points" scope="parent" value="25.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="false" id="a9d3-ce10-91f2-17f6" type="max"/>
+            <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ef5-a7b1-2033-83f3" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="98db-b4ba-fbcd-3239-466f7274696669636174696f6e23232344415441232323" name="Fortification" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a448-1827-d3b4-aa38" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="066b-c584-c9d3-af00" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="3a15-91a7-37f8-6fa0" name="Compulsory HQ" hidden="false" targetId="becd-7a6d-e80f-878e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d259-dc7a-8c25-f6e3" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="ef28-4a42-d108-c9ae" name="Compulsory Troops" hidden="false" targetId="219d-aefa-dfa5-44db" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08bd-00bd-8115-9e5c" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="d637-54e1-708a-a34f" name="New CategoryLink" hidden="false" targetId="2d6f-e613-ab10-e55a" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="87a6-193f-3da1-5554" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="f16c-cb36-9332-88eb" name="Flyer" hidden="false" targetId="df44-81ea-e2ee-9849" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ff8d-cc77-8c90-0eb1" type="min"/>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd9e-b140-5b3b-31f0" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="1864-c807-9c00-a6a6" name="New CategoryLink" hidden="false" targetId="18c5-559b-55e0-382e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="013d-ef23-0598-6f25" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="707d-3d45-2775-1871" name="Legiones Astartes" hidden="false" targetId="0c56-27b8-a737-c9fd" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="9ecc-cf33-557a-55a8" name="New CategoryLink" hidden="false" targetId="9480-d3f6-fff1-7b35" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4a04-d10f-dc83-362f" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="cf73-9f98-f23b-6181" name="Drop Pod" hidden="false" targetId="51a3-45ca-ea32-7519" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b745-84d3-35a1-e625" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="5653-2047-1f2c-c101" name="Sentry Gun" hidden="false" targetId="e448-6dab-e008-3247" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="3d70-711c-95f2-4f2e" name="Walker" hidden="false" targetId="264d-166e-36c0-77b7" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="54726f6f707323232344415441232323" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a23-b375-0f08-e95d" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="3995-7e79-dbd3-aa7c" name="Vehicle" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="0018-d246-8267-d548" name="Transport" hidden="false" targetId="e4e0-c5d1-3430-f101" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="03b5-e512-9703-6f6a" type="min"/>
+            <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="586d-32c9-c81a-ec72" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="9eef-b4a3-f6cd-a29a" name="Cybernetica Cortex" hidden="false" targetId="7fdd-2a97-d0e9-6524" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="d857-0462-a5bc-0945" name="Infantry" hidden="false" targetId="f74d-4679-75a6-1252" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="a000-f423-b160-b52c" name="Artillery" hidden="false" targetId="ce39-b313-7b57-ee8e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9519-cf62-d207-4073" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="a365-61ba-7573-60df" name="Tank" hidden="false" targetId="e59c-462e-9d9c-66dd" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ac7e-5698-bd88-7d03" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="20e6-4646-d3ea-7843" name="Monstrous Creature" hidden="false" targetId="8ec4-17b5-7fea-c682" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b4c8-02cb-8498-0e44" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="e9d0-ba63-025e-67ee" name="Super-Heavy Vehicle" hidden="false" targetId="218b-fafd-986d-56ba" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc4f-0412-3089-aee0" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
     <forceEntry id="4e06-f510-5de0-195b" name="Armies of Dark Compliance" hidden="false">
       <profiles/>
       <rules>
@@ -2374,7 +2700,7 @@
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-	<selectionEntry id="04c4-8239-657a-ced2" name="Support Squad" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="04c4-8239-657a-ced2" name="Support Squad" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules/>
       <infoLinks>
@@ -2445,7 +2771,7 @@
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-	<selectionEntry id="48db-84ca-2bad-520f" name="Castellax Class Battle-Automata Maniple" book="" page="" hidden="false" collective="false" type="unit">
+    <selectionEntry id="48db-84ca-2bad-520f" name="Castellax Class Battle-Automata Maniple" book="" page="" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules/>
       <infoLinks>
@@ -5546,7 +5872,21 @@
       <modifiers/>
       <constraints/>
       <categoryLinks>
-        <categoryLink id="bbd0-e64e-b0a8-fa02-486561767920537570706f727423232344415441232323" hidden="false" targetId="486561767920537570706f727423232344415441232323" primary="true">
+        <categoryLink id="9df9-f881-2c7a-e3cd" name="New CategoryLink" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="3523-7c55-42a0-5b7f" name="New CategoryLink" hidden="false" targetId="486561767920537570706f727423232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="d612-a842-97fb-1777" name="New CategoryLink" hidden="false" targetId="218b-fafd-986d-56ba" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -5918,6 +6258,20 @@ but the tank loses the Fast special rule.</description>
       <constraints/>
       <categoryLinks>
         <categoryLink id="c2ec-a4e1-69b4-ff6f-486561767920537570706f727423232344415441232323" hidden="false" targetId="486561767920537570706f727423232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="7c47-9c87-6237-701f" name="New CategoryLink" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="8efa-f217-8c2d-10f7" name="New CategoryLink" hidden="false" targetId="218b-fafd-986d-56ba" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -6784,6 +7138,20 @@ but the tank loses the Fast special rule.</description>
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="3d99-059f-ad16-dc69" name="New CategoryLink" hidden="false" targetId="ce39-b313-7b57-ee8e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="7382-046d-945b-f793" name="New CategoryLink" hidden="false" targetId="f74d-4679-75a6-1252" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="c388-d8dd-eb7d-ebbe" name="Rapier Team" hidden="false" collective="false" type="model">
@@ -6990,6 +7358,13 @@ but the tank loses the Fast special rule.</description>
       <constraints/>
       <categoryLinks>
         <categoryLink id="5b3b-f50e-464b-f52b-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="552e-037b-5f98-e7d6" name="New CategoryLink" hidden="false" targetId="218b-fafd-986d-56ba" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -7203,6 +7578,13 @@ but the tank loses the Fast special rule.</description>
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="8675-50e6-f05f-41b7" name="New CategoryLink" hidden="false" targetId="218b-fafd-986d-56ba" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
@@ -7404,6 +7786,13 @@ but the tank loses the Fast special rule.</description>
       <constraints/>
       <categoryLinks>
         <categoryLink id="be8a-f157-9422-8d07-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="1cf3-835b-ebfa-464a" name="New CategoryLink" hidden="false" targetId="218b-fafd-986d-56ba" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -7644,6 +8033,13 @@ but the tank loses the Fast special rule.</description>
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="a08d-a425-cbff-469e" name="New CategoryLink" hidden="false" targetId="218b-fafd-986d-56ba" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries/>
       <selectionEntryGroups>
@@ -7835,6 +8231,13 @@ but the tank loses the Fast special rule.</description>
       <constraints/>
       <categoryLinks>
         <categoryLink id="21d5-079d-2113-da98-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="6ddd-ad93-774e-62a8" name="New CategoryLink" hidden="false" targetId="218b-fafd-986d-56ba" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -11647,6 +12050,13 @@ Precision Shots</description>
           <modifiers/>
           <constraints/>
         </categoryLink>
+        <categoryLink id="2f34-fb17-e0e0-e016" name="New CategoryLink" hidden="false" targetId="ce39-b313-7b57-ee8e" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="afad-f019-918e-b352" name="Tarantula Sentry Gun" book="HH:LACAL" page="44" hidden="false" collective="false" type="upgrade">
@@ -15209,9 +15619,7 @@ Precision Shots</description>
           <infoLinks/>
           <modifiers/>
           <characteristics>
-            <characteristic name="Capacity" characteristicTypeId="8285-4205-b6cd-8473" value="12* • 12 models (Terrax Pattern Termites may
-not carry models with the Bulky, Very
-Bulky or Extremely Bulky special rules)."/>
+            <characteristic name="Capacity" characteristicTypeId="8285-4205-b6cd-8473" value="12* • 12 models (Terrax Pattern Termites may not carry models with the Bulky, Very Bulky or Extremely Bulky special rules)."/>
             <characteristic name="Fire Points" characteristicTypeId="b270-a7f9-22b2-3702" value="None"/>
             <characteristic name="Access Points" characteristicTypeId="d17b-0342-b1dc-b8e7" value="Two access hatches**"/>
           </characteristics>
