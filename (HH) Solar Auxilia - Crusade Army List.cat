@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" book="Crusade Imperialis" revision="49" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" book="Crusade Imperialis" revision="50" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -859,7 +859,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="028c-b3c3-133e-a4b3" type="max"/>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="028c-b3c3-133e-a4b3" type="max"/>
       </constraints>
       <forceEntries/>
       <categoryLinks>
@@ -4896,7 +4896,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="c9a1-a31f-7d90-e420" name="New EntryLink" hidden="false" targetId="318c-a42f-a36c-aa30" type="selectionEntry">
+            <entryLink id="c9a1-a31f-7d90-e420" name="Veletaris Storm Section" hidden="false" targetId="318c-a42f-a36c-aa30" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -4904,7 +4904,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
               <constraints/>
               <categoryLinks/>
             </entryLink>
-            <entryLink id="f462-a1f4-e1a0-5d84" name="New EntryLink" hidden="false" targetId="db2c-8ebb-4a76-0796" type="selectionEntry">
+            <entryLink id="f462-a1f4-e1a0-5d84" name="Auxilia Lasrifle Section" hidden="false" targetId="db2c-8ebb-4a76-0796" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -11459,7 +11459,7 @@ Precision Shots</description>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="75a4-d4a8-6758-b52d" name="Exchange close combat weapon for:" hidden="false" collective="false">
+            <selectionEntryGroup id="75a4-d4a8-6758-b52d" name="Exchange close combat weapon for:" hidden="false" collective="false" defaultSelectionEntryId="dfe9-4c8b-d3fc-bf67">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -11584,6 +11584,17 @@ Precision Shots</description>
                   <infoLinks/>
                   <modifiers/>
                   <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+                <entryLink id="dfe9-4c8b-d3fc-bf67" name="Close Combat Weapon" hidden="false" targetId="73cf-d12b-72f3-e18a" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db72-5763-eb4f-331c" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5310-2f5d-3c43-fae6" type="max"/>
+                  </constraints>
                   <categoryLinks/>
                 </entryLink>
               </entryLinks>
