@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" book="Crusade Imperialis" revision="85" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" book="Crusade Imperialis" revision="86" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -10625,6 +10625,14 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
               <constraints/>
               <categoryLinks/>
             </entryLink>
+            <entryLink id="324f-004a-2bff-d0a2" name="Aurox Armoured Transport" hidden="false" targetId="5163-ab15-9959-6efd" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="76bf-e7d6-5be2-c21b" name="May Replace Lascarbines with:" hidden="false" collective="false" defaultSelectionEntryId="64c8-60b3-5c9b-4971">
@@ -12664,6 +12672,14 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                   </conditionGroups>
                 </modifier>
               </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="d091-68ef-924d-e41b" name="Aurox Armoured Transport" hidden="false" targetId="5163-ab15-9959-6efd" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
               <constraints/>
               <categoryLinks/>
             </entryLink>
@@ -15334,6 +15350,135 @@ Assault rules unless otherwise noted.</description>
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5163-ab15-9959-6efd" name="Aurox Armoured Transport" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="96d8-cf90-33d8-2542" name="Aurox Armoured Transport" hidden="false" profileTypeId="56656869636c6523232344415441232323" profileTypeName="Vehicle">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="3"/>
+            <characteristic name="Front" characteristicTypeId="46726f6e7423232344415441232323" value="11"/>
+            <characteristic name="Side" characteristicTypeId="5369646523232344415441232323" value="11"/>
+            <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="0"/>
+            <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="3"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Vehicle, Tank, Transport"/>
+          </characteristics>
+        </profile>
+        <profile id="782c-b980-4385-5f84" name="Aurox Armoured Transport (Transport)" hidden="false" profileTypeId="307d-047f-ca13-706b" profileTypeName="Transport">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Capacity" characteristicTypeId="8285-4205-b6cd-8473" value="10; may not carry models with the Bulky, Very Bulky, or Extremely Bulky special rules."/>
+            <characteristic name="Fire Points" characteristicTypeId="b270-a7f9-22b2-3702" value="2"/>
+            <characteristic name="Access Points" characteristicTypeId="d17b-0342-b1dc-b8e7" value="One on each side and one at the rear."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac5a-7586-55ab-0dc3" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="9822-d135-2890-9dc6" name="New CategoryLink" hidden="false" targetId="c407-80ff-568e-3394" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="cfca-c84d-deca-35d9" name="New CategoryLink" hidden="false" targetId="e59c-462e-9d9c-66dd" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="6e37-ae31-b977-aa06" name="New CategoryLink" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="ded3-1e5c-f8fb-d917" name="New CategoryLink" hidden="false" targetId="e4e0-c5d1-3430-f101" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d0f8-40b9-a3c6-1b8f" name="Pintle" hidden="false" collective="false" defaultSelectionEntryId="b75a-2a30-437a-960f">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce69-80ba-83af-0795" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fd3-af65-74b2-e66a" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="b75a-2a30-437a-960f" name="Heavy Stubber" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="8613-5bce-3fa2-4e1d" name="Heavy Stubber" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d78-bad3-1ef8-107c" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3921-662f-c2bc-f533" type="min"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="0f2c-8214-fdcc-a97f" name="Heavy Flamer" hidden="false" targetId="ead9-305c-a7e7-323e" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="points" value="10">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9952-606c-7c67-f5bc" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bed-223b-6122-2f22" type="max"/>
+              </constraints>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="25.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
