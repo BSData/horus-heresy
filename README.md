@@ -38,6 +38,7 @@ Yeah! We have it hosted on AppSpot. Take a look: [The Horus Heresy at BattleScri
 * Mechanicum: Taghmata Army List = M:TAL
 * Crusade Imperialis: Army List = CI:AL
 * Horus Heresy 1: Betrayal = HH1: Betrayal (and so on)
+* Horus Heresy: General Errata and FAQ v1.0 = HH:GEAFAQV1.0
 
 ## Links
 
