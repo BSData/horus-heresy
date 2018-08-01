@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="97" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="98" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -11734,7 +11734,7 @@ Command Benefits:
             <cost name="pts" costTypeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4b1e-680b-1d39-e4f1" name="Chainsword/Combat Blade" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="4b1e-680b-1d39-e4f1" name="Chainsword/Combat Blade" hidden="false" collective="true" type="upgrade">
           <profiles/>
           <rules/>
           <infoLinks>
@@ -12009,7 +12009,7 @@ Command Benefits:
             <cost name="pts" costTypeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e890-52eb-3444-c6c7" name="Power Weapon" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="e890-52eb-3444-c6c7" name="Power Weapon" hidden="false" collective="true" type="upgrade">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -12019,128 +12019,17 @@ Command Benefits:
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="ba28-2b8a-5cea-6ec0" name="Power Weapon" hidden="false" collective="false" defaultSelectionEntryId="d3f5-8be5-8678-266b">
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="8546-b80f-1e54-e78b" name="Power Weapon" hidden="false" targetId="0f0b-0093-d9c8-7c42" type="selectionEntryGroup">
               <profiles/>
               <rules/>
               <infoLinks/>
               <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb68-c272-9fe6-827b" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0518-adfc-eb51-38f1" type="min"/>
-              </constraints>
+              <constraints/>
               <categoryLinks/>
-              <selectionEntries>
-                <selectionEntry id="d3f5-8be5-8678-266b" name="Power Sword" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="a822-0f2a-dbc6-373c" name="New InfoLink" hidden="false" targetId="038e-23ec-4886-8b00" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8425-32fe-08fe-359d" type="max"/>
-                  </constraints>
-                  <categoryLinks/>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="6155-7d88-ab2c-bd97" name="Power Axe" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="0def-2b48-43f0-3989" name="New InfoLink" hidden="false" targetId="b3af-1eca-6629-4894" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                    <infoLink id="dd37-8bb8-db87-ed37" name="New InfoLink" hidden="false" targetId="5eea-958c-d623-c3c9" type="rule">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fe0c-fb18-2398-cf3a" type="max"/>
-                  </constraints>
-                  <categoryLinks/>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="12ba-a5f1-fb0b-17da" name="Power Maul" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="8272-7534-ab13-2547" name="New InfoLink" hidden="false" targetId="6bbe-f2c1-78e2-da59" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                    <infoLink id="7306-d578-6ae7-7ce5" name="New InfoLink" hidden="false" targetId="9d85-46f7-f5e6-a5f7" type="rule">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8531-2295-463b-c9f3" type="max"/>
-                  </constraints>
-                  <categoryLinks/>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="0cc0-fdbf-8b1b-2953" name="Power Lance" hidden="false" collective="false" type="upgrade">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks>
-                    <infoLink id="1bf0-a054-2bc2-0224" name="New InfoLink" hidden="false" targetId="fdd4-9bf3-da9d-5479" type="profile">
-                      <profiles/>
-                      <rules/>
-                      <infoLinks/>
-                      <modifiers/>
-                    </infoLink>
-                  </infoLinks>
-                  <modifiers/>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ebfa-5d42-42ed-5eb3" type="max"/>
-                  </constraints>
-                  <categoryLinks/>
-                  <selectionEntries/>
-                  <selectionEntryGroups/>
-                  <entryLinks/>
-                  <costs>
-                    <cost name="pts" costTypeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups/>
-              <entryLinks/>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks/>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="pts" costTypeId="points" value="10.0"/>
           </costs>
@@ -13535,6 +13424,96 @@ Command Benefits:
           <entryLinks/>
           <costs>
             <cost name="pts" costTypeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="0f0b-0093-d9c8-7c42" name="Power Weapon" hidden="false" collective="true" defaultSelectionEntryId="7b92-ab87-86a1-ab2e">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="90ae-61e8-941e-00ae" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3d94-9aba-a20c-f469" type="min"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry id="3e90-5ca1-8abe-0275" name="Power Sword" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="0b41-7749-7d24-594c" name="Power Sword" hidden="false" targetId="038e-23ec-4886-8b00" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7b92-ab87-86a1-ab2e" name="Power Axe" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="0dbb-945b-935b-9a25" name="Power Axe" hidden="false" targetId="b3af-1eca-6629-4894" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="fae7-3617-3d39-0ae9" name="New InfoLink" hidden="false" targetId="5eea-958c-d623-c3c9" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e8a2-42e8-82a7-8dd9" name="Power Maul" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="59ac-ee08-b8df-12ad" name="Power Maul" hidden="false" targetId="6bbe-f2c1-78e2-da59" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="18f0-e669-8978-ef2d" name="New InfoLink" hidden="false" targetId="9d85-46f7-f5e6-a5f7" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
