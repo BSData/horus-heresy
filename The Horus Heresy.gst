@@ -14137,12 +14137,12 @@ In addition to these benefits, units  will also have a number of additional spec
 
 If an army represents a Legion which does not yet have its own unique Legiones Astartes rule, the controlling player may instead add either the Stubborn or Furious Charge special rule to the standard provisions of this rule in the interim.</description>
     </rule>
-    <rule id="5ecb-551d-0f68-3a79" name="Implacable Advance" book="LA:AOD" page="30" hidden="false">
+    <rule id="5ecb-551d-0f68-3a79" name="Implacable Advance" book="HH:GEAFAQV1.0" page="3" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>These units are used to assail the most heavily defended objectives and secure them for the advance of allied forces. They are always counted as scoring units in any mission where Troops are also counted as scoring units</description>
+      <description>Units with this special rule are always counted as scoring units in any mission where Troops are also counted as scoring units.</description>
     </rule>
     <rule id="e300-69f2-111a-ed55" name="Zealot" book="HH: AoD Rulebook" page="175" hidden="false">
       <profiles/>
