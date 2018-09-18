@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" book="Horus Heresy: Taghmata Army List" revision="74" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" book="Horus Heresy: Taghmata Army List" revision="75" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -5652,7 +5652,6 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db15-f093-8bfc-f242" type="min"/>
       </constraints>
       <categoryLinks/>
       <selectionEntries/>
@@ -7877,7 +7876,6 @@ Reduces transport capacity to 8.</description>
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c43f-ce4e-9b9a-fad5" type="min"/>
       </constraints>
       <categoryLinks/>
       <selectionEntries/>
@@ -13036,9 +13034,9 @@ Buildings and Fortifications D</description>
           <modifiers/>
           <characteristics>
             <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
-            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="*"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="+2"/>
             <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
-            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Two-handed, Entropic Destroyer"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Two-handed, Armourbane, Entropic Destroyer"/>
           </characteristics>
         </profile>
       </profiles>
@@ -13054,7 +13052,8 @@ Buildings and Fortifications D</description>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>Any successful hit with this weapon inflicts D3 wounds automatically on the targeted unit or model, or causes 1 Hull Point of damage per hit. Invulnerable saves may be taken as normal against these wounds but Feel No Pain or It Will Not Die rolls may not.</description>
+          <description> Whenever this weapon causes an unsaved wound or Hull point, it inflicts D3 additional wounds, or, in the case of a target with an
+Armour Value, an additional Hull point, on the same model. Invulnerable saves may be taken against these wounds or Hull points, but they may not be replenished or ignored by any means, including Feel No Pain, It Will Not Die or Blessed Autosimulacra rolls. Players may wish to make a note of how many wounds a model has suffered from this weapon for the purposes of tracking how many wounds they may not recover using such abilities.</description>
         </rule>
         <rule id="3aea-1caa-ba90-5a65" name="Patris Cybernetica" book="HH6: Retribution" page="273" hidden="false">
           <profiles/>
@@ -24185,14 +24184,13 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
           <infoLinks/>
           <modifiers/>
           <description>Instead of the usual rules for Deep Striking, when a Subterranean Assault vehicle enters play via Deep Strike, place a Large Blast (5&quot;)
-marker on the table and scatter this to determine the final position of its arrival as per the Deep Strike special rule.
+marker on the table and scatter this to determine the final position of its arrival as per the Deep Strike special rule. The Blast marker must not be initially placed on top of impassable terrain or within 1&quot; of another model. 
 
 Should this marker scatter on top of impassable terrain, a building, ruin, fortification, vehicle or any unit engaged in combat, reduce
 the scatter distance by the minimum required to avoid the obstacle. If the marker representing the arrival of the Termite was
 displaced in this way by a vehicle or fortification, the closest vehicle or fortification to the marker immediately suffers a Str 10 AP- hit
 – vehicles are hit on their Side armour. If the arrival of the Termite was instead displaced by any units engaged in close combat, all
-units in that combat suffer D6 Str 6 AP 4 hits. After the final position of the marker is determined, if the marker covers or touches any
-enemy or friendly unit, then that unit also suffers D6 Str 6 AP 4 hits.
+units in that combat suffer D6 Str 6 AP 4 hits. After the final position of the marker is determined, if the marker covers or touches any enemy or friendly unit, then that unit also suffers D6 Str 6 AP 4 hits.
 
 After all damage is resolved, the Subterranean Assault vehicle may be placed in any orientation so long as the centre of the Large Blast
 (5&quot;) marker is underneath part of the vehicle’s hull and it remains 1&quot; away from any fortification, vehicle or unit engaged in combat.
@@ -24202,9 +24200,7 @@ represent this area with a piece of crater terrain.
 Should a Subterranean Assault vehicle be placed on top of any unit which does not pose an obstacle to its arrival as described above,
 the Death from Below special rule allows it to be placed as though the unit was not there. If some models in the unit would end up
 underneath the Subterranean Assault vehicle when it reaches its final position (it makes no difference whether the unit is Falling
-Back or not), these models must be moved by the controlling player out of the way by the shortest distance, leaving at least 1&quot; between
-them and the Subterranean Assault vehicle (and indeed any other unit) whilst maintaining unit coherency and staying on the
-tabletop. Any models that cannot manage this are crushed and removed from play as casualties with no saves allowed.</description>
+Back or not), these models must be moved by the controlling player out of the way by the shortest distance, leaving at least 1&quot; between them and the Subterranean Assault vehicle (and indeed any other unit) whilst maintaining unit coherency and staying on the tabletop. Any models that cannot manage this are crushed and removed from play as casualties with no saves allowed.</description>
         </rule>
         <rule id="33a6-e597-6d29-5058" name="Melta Cutters" hidden="false">
           <profiles/>
@@ -24302,20 +24298,20 @@ Assault rules unless otherwise noted.</description>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="a387-3544-5361-ffad" name="Select 2" hidden="false" collective="false">
+        <selectionEntryGroup id="ffe1-2187-577f-5dca" name="Gun 1" hidden="false" collective="false" defaultSelectionEntryId="fec2-709f-6893-a828">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6497-9e86-5464-7fe6" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c353-bb2a-3b88-8153" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dbb6-3829-6d77-e642" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6aac-e43f-16cc-6cb4" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="7411-1a43-21b0-a901" name="Volkite Charger" hidden="false" targetId="2075c6c6-b54d-2d3e-fce9-0543efa392f8" type="selectionEntry">
+            <entryLink id="fec2-709f-6893-a828" name="Volkite Charger" hidden="false" targetId="2075c6c6-b54d-2d3e-fce9-0543efa392f8" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -24325,12 +24321,39 @@ Assault rules unless otherwise noted.</description>
                   <conditions/>
                   <conditionGroups/>
                 </modifier>
-                <modifier type="set" field="maxSelections" value="2">
-                  <repeats/>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-                <modifier type="set" field="c43f-ce4e-9b9a-fad5" value="0.0">
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="e62b-0279-10be-0a46" name="Heavy Flamer" hidden="false" targetId="fc12-daad-3988-3994" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c2d7-c4da-0181-8acc" name="Gun 2" hidden="false" collective="false" defaultSelectionEntryId="423a-1145-96fa-dc9b">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d394-4347-30be-4f43" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b465-2736-c1be-c694" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="423a-1145-96fa-dc9b" name="Volkite Charger" hidden="false" targetId="2075c6c6-b54d-2d3e-fce9-0543efa392f8" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="name" value="Twin-linked Volkite Charger">
                   <repeats/>
                   <conditions/>
                   <conditionGroups/>
@@ -24339,22 +24362,11 @@ Assault rules unless otherwise noted.</description>
               <constraints/>
               <categoryLinks/>
             </entryLink>
-            <entryLink id="63b8-4ab6-ca4f-d8ab" name="Heavy Flamer" hidden="false" targetId="fc12-daad-3988-3994" type="selectionEntry">
+            <entryLink id="40ef-a884-6de4-9092" name="Heavy Flamer" hidden="false" targetId="fc12-daad-3988-3994" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="db15-f093-8bfc-f242" value="0.0">
-                  <repeats/>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-                <modifier type="set" field="maxSelections" value="2">
-                  <repeats/>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
+              <modifiers/>
               <constraints/>
               <categoryLinks/>
             </entryLink>
@@ -24384,7 +24396,9 @@ Assault rules unless otherwise noted.</description>
         </infoLink>
       </infoLinks>
       <modifiers/>
-      <constraints/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4e4f-fc99-55ce-7810" type="max"/>
+      </constraints>
       <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups/>
@@ -26093,9 +26107,9 @@ Assault rules unless otherwise noted.</description>
       <modifiers/>
       <characteristics>
         <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="18&quot;"/>
-        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="*"/>
+        <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="**"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
-        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Salvo 2/4, Concussive, Graviton"/>
+        <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Salvo 2/4, Concussive, Graviton Implosion"/>
       </characteristics>
     </profile>
     <profile id="889ea663-40f5-0ecc-7ba9-4b68e2955022" name="Grenade Harness" book="HH:LACAL" page="83" hidden="false" profileTypeId="576561706f6e23232344415441232323">
