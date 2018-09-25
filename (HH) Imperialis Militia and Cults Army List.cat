@@ -12670,7 +12670,7 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="242c-3d61-da20-502e" hidden="false" targetId="46fa-9f49-315a-2044" type="selectionEntry">
+            <entryLink id="242c-3d61-da20-502e" name="Gorgon Heavy Transporter, Auxilia" hidden="false" targetId="46fa-9f49-315a-2044" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -12692,7 +12692,7 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
               <constraints/>
               <categoryLinks/>
             </entryLink>
-            <entryLink id="0e5d-b516-527b-d68e" hidden="false" targetId="2f44-0ed6-d014-be2f" type="selectionEntry">
+            <entryLink id="0e5d-b516-527b-d68e" name="Arvus Lighter, Auxilia" hidden="false" targetId="2f44-0ed6-d014-be2f" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -12740,7 +12740,7 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
               <constraints/>
               <categoryLinks/>
             </entryLink>
-            <entryLink id="4135-dc82-5700-c587" hidden="false" targetId="3738-7adf-ea3d-8a7e" type="selectionEntry">
+            <entryLink id="4135-dc82-5700-c587" name="Land Raider Proteus" hidden="false" targetId="3738-7adf-ea3d-8a7e" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -12802,7 +12802,64 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
               <profiles/>
               <rules/>
               <infoLinks/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="f299-898a-b637-0aa2" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1dbf-2c4c-f4dd-54ca" type="greaterThan"/>
+                        <condition field="selections" scope="f299-898a-b637-0aa2" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a35f-904e-a79f-eecc" type="greaterThan"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="e924-f45e-dedd-b358" name="Terrax Pattern Termite Assault Drill" hidden="false" targetId="1b44-8c50-86ae-9a67" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="f299-898a-b637-0aa2" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1dbf-2c4c-f4dd-54ca" type="greaterThan"/>
+                        <condition field="selections" scope="f299-898a-b637-0aa2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a35f-904e-a79f-eecc" type="greaterThan"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="f299-898a-b637-0aa2" value="11.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1dbf-2c4c-f4dd-54ca" type="greaterThan"/>
+                        <condition field="selections" scope="f299-898a-b637-0aa2" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a35f-904e-a79f-eecc" type="greaterThan"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="f299-898a-b637-0aa2" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1dbf-2c4c-f4dd-54ca" type="greaterThan"/>
+                        <condition field="selections" scope="f299-898a-b637-0aa2" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a35f-904e-a79f-eecc" type="greaterThan"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints/>
               <categoryLinks/>
             </entryLink>
