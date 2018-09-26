@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" book="Crusade Imperialis" revision="91" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" book="Crusade Imperialis" revision="92" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -2614,9 +2614,17 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1072-a486-548b-2be7" name="Abhuman Helots" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="1072-a486-548b-2be7" name="Abhuman Helots" book="HH:CI" page="73" hidden="false" collective="false" type="upgrade">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="8d0f-72d7-9756-f981" name="Abhuman Helots" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>All eligible units and models receive an increase of +1 to their Toughness value but also lower their Initiative value by -1 (to a minimum of 1).</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints>
@@ -2632,7 +2640,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <cost name="pts" costTypeId="points" value="35.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="93a4-c515-6894-0cda" name="Advanced Weapons" book="" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="93a4-c515-6894-0cda" name="Advanced Weapons" book="HH:CI" page="72" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules>
         <rule id="9066-81bf-e6dd-0afc" name="Advanced Weapons" book="HH5: Tempest" page="188" hidden="false">
@@ -2664,9 +2672,17 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <cost name="pts" costTypeId="points" value="20.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6628-02a8-0a86-1278" name="Alchem-jackers" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="6628-02a8-0a86-1278" name="Alchem-jackers" book="HH:CI" page="72" hidden="false" collective="false" type="upgrade">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="7602-3b1e-cadd-29ce" name="Alchem-jackers" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>All units with this Provenance do not suffer negative modifiers to their Leadership value in the Assault phase and, in addition, if they fail a Morale check owing to casualties in the Shooting phase, they become pinned instead of Falling Back.</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints>
@@ -3440,10 +3456,31 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <cost name="pts" costTypeId="points" value="25.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c9ee-665f-aaee-6ece" name="Cult Horde" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="c9ee-665f-aaee-6ece" name="Cult Horde" book="HH:CI" page="73 (FAQ July 18 update)" hidden="false" collective="false" type="upgrade">
       <profiles/>
-      <rules/>
-      <infoLinks/>
+      <rules>
+        <rule id="4e3d-b549-b1f9-29ba" name="Cult Horde" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>All eligible units and models with this Provenance gain Hatred and Stubborn special rules. However, they must always charge an enemy if they are able, and may even charge if they have fired weapons in the Shooting phase which would make them ineligible to do so (counting as making a disordered charge in this case). Affected models and units with this Provenance may only make Snap Shots with their shooting attacks and cannot voluntarily Go to Ground. Grenadier squads may not be taken in an army which uses this Provenance and this Provenance may not be used in conjunction with the Survivors of the Dark Age Provenance.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="3712-0b2b-48de-f2ba" name="Hatred" hidden="false" targetId="7c6c-4e25-e4d4-9728" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="3314-b4d5-bec4-260f" name="Stubborn" hidden="false" targetId="7be5-30af-1a02-0a89" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
       <modifiers>
         <modifier type="set" field="maxInForce" value="0">
           <repeats/>
@@ -3473,7 +3510,15 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
     </selectionEntry>
     <selectionEntry id="3e9e-38b2-3633-713a" name="Cyber-augmetics" hidden="false" collective="false" type="upgrade">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="1d63-3437-f1af-0c63" name="Cyber-augmetics" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>All eligible units and models receive an invulnerable save of 6+ (or may improve an existing invulnerable save by +1 to a maximum of 3+). Units and models with this Provenance however must reduce any Run and Sweeping Advance rolls they make by -1. This Provenance may not be chosen in conjunction with the Gene-crafted Provenance</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers>
         <modifier type="set" field="maxInForce" value="0">
@@ -3534,9 +3579,17 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <cost name="pts" costTypeId="points" value="20.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8836-1dde-d860-bd88" name="Feral Warriors" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="8836-1dde-d860-bd88" name="Feral Warriors" book="HH:CI" page="73" hidden="false" collective="false" type="upgrade">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="cf7d-6702-f032-9b62" name="Feral Warriors" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>All eligible units and models receive a +1 bonus to their WS (to a maximum of 4) – Ogryns instead receive +1 Attack. A detachment with this Provenance cannot have more units with the Vehicle type in total than it does those with the Infantry type.</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints>
@@ -3584,9 +3637,17 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <cost name="pts" costTypeId="points" value="25.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a77a-bcf8-90fd-d9e5" name="Gene-crafted" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="a77a-bcf8-90fd-d9e5" name="Gene-crafted" book="HH:CI" page="72" hidden="false" collective="false" type="upgrade">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="96ed-605e-e457-8aaf" name="Gene-crafted" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>All eligible units and models receive +1 to their Strength and Initiative values (to a maximum of 4, or 6 in the case of an Ogryn’s Strength). Units and models with this Provenance may not benefit from the Feel No Pain special rule from any source (such as Auxilia Medicae Orderlies, etc).</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers>
         <modifier type="set" field="maxInForce" value="0">
@@ -4340,9 +4401,17 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <cost name="pts" costTypeId="points" value="35.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d18f-6d15-942c-0ac5" name="Survivors of the Dark Age" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="d18f-6d15-942c-0ac5" name="Survivors of the Dark Age" book="HH:CI" page="72" hidden="false" collective="false" type="upgrade">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="a6d8-4810-4371-a881" name="Survivors of the Dark Age" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>All eligible units and models receive an increase of +1 to their basic Armour save (5+ becoming 4+ and so on) to a maximum of 3+. However, the detachment’s compulsory Troops choices must be filled by Grenadier squads, and in addition Inducted Levy squads in an army with this Provenance gain the Support Squad special rule and this Provenance itself may not be used in conjunction with the Cult Horde or Tainted Flesh Provenances.</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers>
         <modifier type="set" field="maxInForce" value="0">
@@ -4372,9 +4441,17 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <cost name="pts" costTypeId="points" value="75.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3cc2-fa8b-3467-7e3a" name="Tainted Flesh" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="3cc2-fa8b-3467-7e3a" name="Tainted Flesh" book="HH:CI" page="73" hidden="false" collective="false" type="upgrade">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="8819-8c68-872a-5d35" name="Tainted Flesh" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>All eligible units and models receive the Fear special rule and the Feel No Pain (6+) special rule, and their close combat attacks gain the Rending special rule. However, the detachment’s compulsory Troops choices must be filled by Inducted Levy squads, and it may not have more Infantry units, excepting HQ choices of other types, than it has Inducted Levy squads in total. For example, if it has three Inducted Levy squads, it can have a maximum of three additional Infantry squads of other kinds. The only HQ choices the detachment can take are the Force Commander and Rogue Psyker entries.</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers>
         <modifier type="set" field="maxInForce" value="0">
@@ -4432,9 +4509,17 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="96b4-3842-f492-d7cb" name="Warrior Elite" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="96b4-3842-f492-d7cb" name="Warrior Elite" book="HH:CI" page="72" hidden="false" collective="false" type="upgrade">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="61d4-6a21-0cf7-4820" name="Warrior Elite" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>All eligible units and models receive +1 to their Leadership value (to a maximum of 9). Militia Levy squads in an army with this Provenance gain the Support Squad special rule.</description>
+        </rule>
+      </rules>
       <infoLinks/>
       <modifiers/>
       <constraints>
@@ -12585,7 +12670,7 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="242c-3d61-da20-502e" hidden="false" targetId="46fa-9f49-315a-2044" type="selectionEntry">
+            <entryLink id="242c-3d61-da20-502e" name="Gorgon Heavy Transporter, Auxilia" hidden="false" targetId="46fa-9f49-315a-2044" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -12607,7 +12692,7 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
               <constraints/>
               <categoryLinks/>
             </entryLink>
-            <entryLink id="0e5d-b516-527b-d68e" hidden="false" targetId="2f44-0ed6-d014-be2f" type="selectionEntry">
+            <entryLink id="0e5d-b516-527b-d68e" name="Arvus Lighter, Auxilia" hidden="false" targetId="2f44-0ed6-d014-be2f" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -12655,7 +12740,7 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
               <constraints/>
               <categoryLinks/>
             </entryLink>
-            <entryLink id="4135-dc82-5700-c587" hidden="false" targetId="3738-7adf-ea3d-8a7e" type="selectionEntry">
+            <entryLink id="4135-dc82-5700-c587" name="Land Raider Proteus" hidden="false" targetId="3738-7adf-ea3d-8a7e" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -12717,7 +12802,64 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
               <profiles/>
               <rules/>
               <infoLinks/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="f299-898a-b637-0aa2" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1dbf-2c4c-f4dd-54ca" type="greaterThan"/>
+                        <condition field="selections" scope="f299-898a-b637-0aa2" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a35f-904e-a79f-eecc" type="greaterThan"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="e924-f45e-dedd-b358" name="Terrax Pattern Termite Assault Drill" hidden="false" targetId="1b44-8c50-86ae-9a67" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="true">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="f299-898a-b637-0aa2" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1dbf-2c4c-f4dd-54ca" type="greaterThan"/>
+                        <condition field="selections" scope="f299-898a-b637-0aa2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a35f-904e-a79f-eecc" type="greaterThan"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="f299-898a-b637-0aa2" value="11.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1dbf-2c4c-f4dd-54ca" type="greaterThan"/>
+                        <condition field="selections" scope="f299-898a-b637-0aa2" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a35f-904e-a79f-eecc" type="greaterThan"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="f299-898a-b637-0aa2" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1dbf-2c4c-f4dd-54ca" type="greaterThan"/>
+                        <condition field="selections" scope="f299-898a-b637-0aa2" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a35f-904e-a79f-eecc" type="greaterThan"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints/>
               <categoryLinks/>
             </entryLink>
