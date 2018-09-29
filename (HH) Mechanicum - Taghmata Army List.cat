@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" book="Horus Heresy: Taghmata Army List" revision="76" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" book="Horus Heresy: Taghmata Army List" revision="77" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -5715,7 +5715,17 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
     </selectionEntry>
     <selectionEntry id="9d9f-63d3-f635-7fd5" name="Machinator Array" page="0" hidden="false" collective="false" type="upgrade">
       <profiles/>
-      <rules/>
+      <rules>
+        <rule id="a41a-3473-ef5f-7a99" name="Machinator Array" book="Mech Taghmata" page="112" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>A machinator array adds +1 to its user’s Toughness value and provides the Night Vision special rule. It also incorporates a flamer and an inferno pistol, and the user can either opt to fire both of these weapons in the Shooting phase, or one of them and another ranged weapon the model is carrying.
+A model with the Battlesmith special rule may add +2 to their Repair roll result if they are also equipped with a machinator array.
+A model equipped with a machinator array may make two additional attacks per turn in close combat as well as any they would normally be eligible to make. This is done using the profile shown below:</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="14b5-eba3-f9ec-d791" name="Machinator Array" hidden="false" targetId="3ffc1f76-719b-bc95-a3c9-15614a8c94bc" type="profile">
           <profiles/>
@@ -5736,6 +5746,24 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
           <modifiers/>
         </infoLink>
         <infoLink id="ac0e-22c1-abc0-3a26" name="Armourbane" hidden="false" targetId="e182-50cd-0867-9a8d" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="4ae8-e7ea-8f45-1b91" name="Flamer" hidden="false" targetId="3a71-7de1-1948-3655" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="3ce4-265a-9322-cf18" name="Inferno Pistol" hidden="false" targetId="a733-2f33-1e47-8359" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="2d8d-253d-2632-d177" name="Night Vision" hidden="false" targetId="a225-e39b-3699-c8f8" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -8769,7 +8797,7 @@ Reduces transport capacity to 8.</description>
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="ba74-7204-9267-020f" hidden="false" targetId="33f9-5be4-027c-99b5" type="profile">
+        <infoLink id="ba74-7204-9267-020f" name="Arc Rifle" hidden="false" targetId="33f9-5be4-027c-99b5" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -15997,7 +16025,7 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
             </modifier>
             <modifier type="increment" field="5423232344415441232323" value="1">
               <repeats>
-                <repeat field="selections" scope="e35b-b300-7fb2-e063" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="9d9f-63d3-f635-7fd5" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="e35b-b300-7fb2-e063" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b12a-8c7a-29c8-6b85" repeats="1" roundUp="false"/>
               </repeats>
               <conditions/>
               <conditionGroups/>
@@ -17637,7 +17665,22 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="increment" field="5423232344415441232323" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="f891-cee8-321e-f159" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd25-794a-04f3-54e0" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="5723232344415441232323" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="f891-cee8-321e-f159" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab7e-c741-1e8e-0b4f" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Unit Type" characteristicTypeId="556e6974205479706523232344415441232323" value="Infantry (Character)"/>
             <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="3"/>
@@ -17809,27 +17852,6 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
                 <cost name="pts" costTypeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="627e-814f-4a82-3ee8" name="Machinator Array" page="0" hidden="false" collective="false" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks>
-                <infoLink id="a219-e128-b130-d03a" name="Machinator Array" hidden="false" targetId="3ffc1f76-719b-bc95-a3c9-15614a8c94bc" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
-              <modifiers/>
-              <constraints/>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="pts" costTypeId="points" value="25.0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
           <entryLinks>
@@ -17844,6 +17866,14 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
                   <conditionGroups/>
                 </modifier>
               </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="fd25-794a-04f3-54e0" name="Machinator Array" hidden="false" targetId="9d9f-63d3-f635-7fd5" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
               <constraints/>
               <categoryLinks/>
             </entryLink>
@@ -18217,7 +18247,7 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="ab7e-c741-1e8e-0b4f" name="" hidden="false" targetId="df18-c724-2a3d-a6e5" type="selectionEntryGroup">
+        <entryLink id="ab7e-c741-1e8e-0b4f" name="May be mounted on:" hidden="false" targetId="df18-c724-2a3d-a6e5" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -18249,6 +18279,20 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
               <repeats/>
               <conditions>
                 <condition field="selections" scope="aa74-77f4-7266-36b6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="076b-2276-b456-9d6f" type="greaterThan"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="5423232344415441232323" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0d7-ca99-c60d-789b" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="5723232344415441232323" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ad6-9042-a001-972b" type="equalTo"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -18312,7 +18356,22 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
               <profiles/>
               <rules/>
               <infoLinks/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0d7-ca99-c60d-789b" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="increment" field="5723232344415441232323" value="1">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ad6-9042-a001-972b" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" characteristicTypeId="556e6974205479706523232344415441232323" value="Infantry (Character)"/>
                 <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="4"/>
@@ -19179,6 +19238,20 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
               </conditions>
               <conditionGroups/>
             </modifier>
+            <modifier type="increment" field="5423232344415441232323" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="04e8-11de-2eb4-67e0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="919a-ac57-084f-a5c5" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="5723232344415441232323" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="04e8-11de-2eb4-67e0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="85b6-d34f-8949-cb91" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Unit Type" characteristicTypeId="556e6974205479706523232344415441232323" value="Infantry (Character)"/>
@@ -19202,6 +19275,20 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
               <repeats/>
               <conditions>
                 <condition field="selections" scope="04e8-11de-2eb4-67e0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8952-ed12-5b98-7de7" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="5423232344415441232323" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="04e8-11de-2eb4-67e0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="919a-ac57-084f-a5c5" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="increment" field="5723232344415441232323" value="1">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="04e8-11de-2eb4-67e0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="85b6-d34f-8949-cb91" type="equalTo"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -19834,7 +19921,7 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
           </selectionEntries>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="919a-ac57-084f-a5c5" hidden="false" targetId="9d9f-63d3-f635-7fd5" type="selectionEntry">
+            <entryLink id="919a-ac57-084f-a5c5" name="Machinator Array" hidden="false" targetId="9d9f-63d3-f635-7fd5" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -20114,7 +20201,7 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="85b6-d34f-8949-cb91" hidden="false" targetId="df18-c724-2a3d-a6e5" type="selectionEntryGroup">
+        <entryLink id="85b6-d34f-8949-cb91" name="May be mounted on:" hidden="false" targetId="df18-c724-2a3d-a6e5" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -24671,7 +24758,9 @@ Assault rules unless otherwise noted.</description>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="8758-0d01-2cf7-3371" name="Storm bolter" hidden="false" collective="false" type="upgrade">
       <profiles/>
@@ -24690,7 +24779,9 @@ Assault rules unless otherwise noted.</description>
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0be5-7f1a-2281-5671" name="Macharius Vulcan" book="Siege of Vraks 2nd Edition" page="230" hidden="false" collective="false" type="model">
       <profiles>
@@ -27894,13 +27985,13 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Pistol, Haywire"/>
       </characteristics>
     </profile>
-    <profile id="33f9-5be4-027c-99b5" name="Arc Rifle" book="Codex: Skitarii" page="72" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+    <profile id="33f9-5be4-027c-99b5" name="Arc Rifle" book="HH7" page="287" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="24&quot;"/>
+        <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="12&quot;"/>
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="6"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="5"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Rapid Fire, Haywire"/>
