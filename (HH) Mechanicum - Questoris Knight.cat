@@ -2549,14 +2549,22 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
                   <infoLinks/>
                   <modifiers/>
                   <characteristics>
-                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323"/>
-                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323"/>
-                    <characteristic name="AP" characteristicTypeId="415023232344415441232323"/>
-                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323"/>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="9"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Shieldbreaker, One Use"/>
                   </characteristics>
                 </profile>
               </profiles>
-              <rules/>
+              <rules>
+                <rule id="1914-6183-4806-e211" name="Shieldbreaker" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>Shieldbreaker: Invulnerable saves may not be taken against Wounds or Hull points inflicted by a weapon with this type.</description>
+                </rule>
+              </rules>
               <infoLinks/>
               <modifiers/>
               <constraints>
@@ -2658,7 +2666,15 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
                   </characteristics>
                 </profile>
               </profiles>
-              <rules/>
+              <rules>
+                <rule id="f7b6-8df9-dbcb-5260" name="Thundercoil Harpoon" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>Harpoon: Once fired, regardless of whether the attack results in a hit or not, this weapon may not be fired again in the controlling player’s next Shooting phase. Effectively, it may only be fired every other turn. In addition, any model that fails a save against a Wound or Hull point of damage inflicted by a weapon with this type suffers D6 Wounds or D6 Hull points of damage instead of just one (these wounds do not carry over to other models in the same unit).</description>
+                </rule>
+              </rules>
               <infoLinks/>
               <modifiers/>
               <constraints>
