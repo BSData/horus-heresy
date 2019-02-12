@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="102" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="103" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -147,6 +147,13 @@
       <constraints/>
     </categoryEntry>
     <categoryEntry id="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" name="Lords of War" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="fdf4-0683-3e84-5a4b" name="Use Playtest Rules" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -309,6 +316,22 @@
       <constraints/>
       <categoryLinks>
         <categoryLink id="1daa-66b3-bbef-8da8" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7d9f-d54b-09db-e954" name="Use Playtest Rules" hidden="false" targetId="dace-8f0f-e696-8179" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="d2d6-3f07-f393-0be4" name="New CategoryLink" hidden="false" targetId="fdf4-0683-3e84-5a4b" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -9009,7 +9032,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" costTypeId="points" value="495.0"/>
+        <cost name="pts" costTypeId="points" value="560.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5ae6ac18-0fd0-ee6d-17e8-9b9354820d04" name="Paragon of Metal" book="" page="0" hidden="false" collective="false" type="upgrade">
@@ -10595,6 +10618,31 @@ Immediately place an objective marker within 3&quot; of any part of the Crashed 
         <cost name="pts" costTypeId="points" value="360.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="dace-8f0f-e696-8179" name="Use Playtest Rules" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules>
+        <rule id="da64-fafa-bd4d-9a75" name="Use Playtest Rules" book="Playtest Rules Errata V1.0 Warhammer Community Download" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>The following rules and profiles are designed to supplement, rather than replace those found in The Horus Heresy: Age of Darkness Campaign books and Rulebooks. While we consider the rules presented in this section of this document to be optional, we would encourage you to use them in your games and provide us with your opinions and feedback. This feedback will then help to inform the final rules in a future publication.
+Please let us know what worked well as a part of these rules and also what could be improved (and how), by sending us an email with the subject line “PLAYTEST” to HeresyFAQ@gwplc.com. We would appreciate if you could please ensure that you only use this subject line when referring to rules presented in this section of the document, and send us a separate email for any other feedback.</description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5689-da9b-d725-fba5" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="64e8-ec7c-e5d8-6767" name="Force Organization Chart" hidden="false" collective="false">
@@ -11553,7 +11601,7 @@ Command Benefits:
           <profiles/>
           <rules/>
           <infoLinks>
-            <infoLink id="bebb-6a55-729a-17f8" name="New InfoLink" hidden="false" targetId="376f-adc9-b9bf-7fc9" type="profile">
+            <infoLink id="bebb-6a55-729a-17f8" name="Augury Scanner" hidden="false" targetId="376f-adc9-b9bf-7fc9" type="profile">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -12832,7 +12880,7 @@ The unit is placed in Ongoing Reserves.</description>
       <infoLinks/>
       <modifiers/>
       <description>When a model with this special rule suffers an unsaved Wound, it can make a special Feel No Pain roll to avoid being wounded (this is not a saving throw and so can be used against attacks that state that ‘no saves of any kind are allowed’, for example those inflicted by Perils of the Warp).
-Feel No Pain saves may not be taken against Destroyer attacks or against unsaved Wounds that have the Instant Death special rule.
+“Feel No Pain rolls may not be taken against Destroyer attacks (see page 163), unsaved wounds which have the Instant Death special rule or in instances which state that no saves (of any kind) may be taken.”
 Roll a D6 each time an unsaved Wound is suffered. On a 4 or less, you must take the Wound as normal. On a 5+, the unsaved Wound is discounted – treat it as having been saved.
 If a unit has the Feel No Pain special rule with a number in brackets afterwards – Feel No Pain (6+), for example – then the number in brackets is the D6 result needed to discount the Wound.</description>
     </rule>
@@ -12842,7 +12890,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
       <infoLinks/>
       <modifiers/>
       <description>When a model with this special rule suffers an unsaved Wound, it can make a special Feel No Pain roll to avoid being wounded (this is not a saving throw and so can be used against attacks that state that ‘no saves of any kind are allowed’, for example those inflicted by Perils of the Warp).
-Feel No Pain saves may not be taken against Destroyer attacks or against unsaved Wounds that have the Instant Death special rule.
+“Feel No Pain rolls may not be taken against Destroyer attacks (see page 163), unsaved wounds which have the Instant Death special rule or in instances which state that no saves (of any kind) may be taken.”
 Roll a D6 each time an unsaved Wound is suffered. On a 4 or less, you must take the Wound as normal. On a 5+, the unsaved Wound is discounted – treat it as having been saved.
 If a unit has the Feel No Pain special rule with a number in brackets afterwards – Feel No Pain (6+), for example – then the number in brackets is the D6 result needed to discount the Wound.</description>
     </rule>
@@ -12852,7 +12900,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
       <infoLinks/>
       <modifiers/>
       <description>When a model with this special rule suffers an unsaved Wound, it can make a special Feel No Pain roll to avoid being wounded (this is not a saving throw and so can be used against attacks that state that ‘no saves of any kind are allowed’, for example those inflicted by Perils of the Warp).
-Feel No Pain saves may not be taken against Destroyer attacks or against unsaved Wounds that have the Instant Death special rule.
+“Feel No Pain rolls may not be taken against Destroyer attacks (see page 163), unsaved wounds which have the Instant Death special rule or in instances which state that no saves (of any kind) may be taken.”
 Roll a D6 each time an unsaved Wound is suffered. On a 4 or less, you must take the Wound as normal. On a 5+, the unsaved Wound is discounted – treat it as having been saved.
 If a unit has the Feel No Pain special rule with a number in brackets afterwards – Feel No Pain (6+), for example – then the number in brackets is the D6 result needed to discount the Wound.</description>
     </rule>
@@ -12862,7 +12910,7 @@ If a unit has the Feel No Pain special rule with a number in brackets afterwards
       <infoLinks/>
       <modifiers/>
       <description>When a model with this special rule suffers an unsaved Wound, it can make a special Feel No Pain roll to avoid being wounded (this is not a saving throw and so can be used against attacks that state that ‘no saves of any kind are allowed’, for example those inflicted by Perils of the Warp).
-Feel No Pain saves may not be taken against Destroyer attacks or against unsaved Wounds that have the Instant Death special rule.
+“Feel No Pain rolls may not be taken against Destroyer attacks (see page 163), unsaved wounds which have the Instant Death special rule or in instances which state that no saves (of any kind) may be taken.”
 Roll a D6 each time an unsaved Wound is suffered. On a 4 or less, you must take the Wound as normal. On a 5+, the unsaved Wound is discounted – treat it as having been saved.
 If a unit has the Feel No Pain special rule with a number in brackets afterwards – Feel No Pain (6+), for example – then the number in brackets is the D6 result needed to discount the Wound.</description>
     </rule>
@@ -14269,7 +14317,7 @@ Shooting attack against the shield facing is reduced by -1, the effect increasin
       <infoLinks/>
       <modifiers/>
       <description>When a model with this special rule suffers an unsaved Wound, it can make a special Feel No Pain roll to avoid being wounded (this is not a saving throw and so can be used against attacks that state that ‘no saves of any kind are allowed’, for example those inflicted by Perils of the Warp).
-Feel No Pain saves may not be taken against Destroyer attacks or against unsaved Wounds that have the Instant Death special rule.
+“Feel No Pain rolls may not be taken against Destroyer attacks (see page 163), unsaved wounds which have the Instant Death special rule or in instances which state that no saves (of any kind) may be taken.”
 Roll a D6 each time an unsaved Wound is suffered. On a 4 or less, you must take the Wound as normal. On a 5+, the unsaved Wound is discounted – treat it as having been saved.
 If a unit has the Feel No Pain special rule with a number in brackets afterwards – Feel No Pain (6+), for example – then the number in brackets is the D6 result needed to discount the Wound.</description>
     </rule>
@@ -15504,7 +15552,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Models cannot be deployed using the Infiltrate special rule within 18&quot; of a model with an augury scanner. Enemy models deployed using Deep Strike within this range can also be attacked by a unit carrying an augury scanner in the Shooting phase as if their Rapid Fire and Heavy weapons (if they have any) had the Interceptor special rule.  "/>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Models cannot be deployed using the Infiltrate special rule within 18&quot; of a model with an augury scanner, regardless of line of sight. At the end of the enemy Movement phase, if a friendly unit contains at least one model equipped with an augury scanner, all of the ranged weapons in that unit can be fired against any one enemy unit that has arrived from reserve within 18&quot; and line of sight as if it were the controlling player’s Shooting phase. If this rule is used, these weapons cannot be fired again until the end of the controlling player’s next turn, but the firing models may shoot different weapons if they have any."/>
       </characteristics>
     </profile>
     <profile id="3e18-0076-38d2-3b23" name="Sentinel Warblade (Warblade)" book="White Dwarf" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
