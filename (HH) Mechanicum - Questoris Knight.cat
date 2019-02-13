@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="32d1ddc6-3187-cf6f-3bf8-9891e527a002" name="Questoris Knight Crusade Army" book="Age of Darkness Crusade Army List" revision="42" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="32d1ddc6-3187-cf6f-3bf8-9891e527a002" name="Questoris Knight Crusade Army" book="Age of Darkness Crusade Army List" revision="44" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -314,6 +314,15 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="300b-b95f-88ba-6bcc" type="min"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="69c9-dc95-1e10-6875" name="Use Playtest Rules" hidden="false" targetId="fdf4-0683-3e84-5a4b" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b9ef-f553-91bf-05d6" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="e16c-65fe-d3da-fb93" name="Allied Detachment" hidden="false">
@@ -372,6 +381,15 @@
           <constraints>
             <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e849-249e-8145-fc85" type="min"/>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="530f-438e-4e79-fcef" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="770a-3261-c605-4150" name="Use Playtest Rules" hidden="false" targetId="fdf4-0683-3e84-5a4b" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ac7f-e6e4-68f0-b12e" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -456,7 +474,7 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
-        <entryLink id="0d826049-6db2-6635-065c-6b6c34faf886" hidden="false" targetId="3fc4-9d7f-969b-35bb" type="selectionEntryGroup">
+        <entryLink id="0d826049-6db2-6635-065c-6b6c34faf886" name="Knight Armour" hidden="false" targetId="3fc4-9d7f-969b-35bb" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -924,6 +942,44 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
         <cost name="pts" costTypeId="points" value="50.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="dbcc-f750-c3cb-2dcf" name="Scion Auxilia" book="HH4: Conquest" page="297" hidden="false" collective="false" type="unit">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="9f59-5499-23fb-9144" name="Objective Secured" hidden="false" targetId="4764-48d9-da41-afaa" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="dc12-2675-4bfb-2b03" hidden="false" targetId="54726f6f707323232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="6592-ed1e-78ca-c6eb" name="Questoris Knight Armiger Talon" hidden="false" targetId="1072-d634-f6c6-b41e" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="25.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <entryLinks>
     <entryLink id="849c-0f60-509d-16d1" name="Archmagos Draykavac" hidden="false" targetId="27575b75-5e1e-26ab-1074-fa91b73e2216" type="selectionEntry">
@@ -1086,22 +1142,6 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="b0e9-ab77-4a71-28bf" name="New EntryLink" hidden="false" targetId="b973-7d7d-754e-b022" type="selectionEntry">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-      <categoryLinks>
-        <categoryLink id="b0e9-ab77-4a71-28bf-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="53b7-53cc-3df0-a8a1" name="New EntryLink" hidden="false" targetId="ab80-0fef-3e93-8e64" type="selectionEntry">
       <profiles/>
       <rules/>
@@ -1150,7 +1190,7 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="3f06-44f6-7e22-ed9a" name="New EntryLink" hidden="false" targetId="a505-05af-bd44-56b6" type="selectionEntry">
+    <entryLink id="3f06-44f6-7e22-ed9a" name="Aegis Defense Line" hidden="false" targetId="a505-05af-bd44-56b6" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1158,22 +1198,6 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
       <constraints/>
       <categoryLinks>
         <categoryLink id="3f06-44f6-7e22-ed9a-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="4ddf-3bf2-60fd-acde" name="New EntryLink" hidden="false" targetId="0d50-24ac-a53e-5db7" type="selectionEntry">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-      <categoryLinks>
-        <categoryLink id="4ddf-3bf2-60fd-acde-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1190,22 +1214,6 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
       <constraints/>
       <categoryLinks>
         <categoryLink id="8e68-7554-29f8-0870-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="7190-7b3a-6f1d-5f9a" name="New EntryLink" hidden="false" targetId="053a-fd01-be65-238e" type="selectionEntry">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-      <categoryLinks>
-        <categoryLink id="7190-7b3a-6f1d-5f9a-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1246,54 +1254,6 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="26ca-4396-c361-760f" name="Void Shield Generator" hidden="false" targetId="bbd4-5f41-35d1-6c5f" type="selectionEntry">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-      <categoryLinks>
-        <categoryLink id="26ca-4396-c361-760f-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="ad41-b005-10af-8422" name="New EntryLink" hidden="false" targetId="796a-21c2-7281-17a8" type="selectionEntry">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-      <categoryLinks>
-        <categoryLink id="ad41-b005-10af-8422-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="bb08-0f30-e857-b6fc" name="New EntryLink" hidden="false" targetId="5cdd-edbb-07c3-0ba5" type="selectionEntry">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-      <categoryLinks>
-        <categoryLink id="bb08-0f30-e857-b6fc-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="25b9-2bfa-a936-84c4" name="New EntryLink" hidden="false" targetId="595a-908e-96a1-f121" type="selectionEntry">
       <profiles/>
       <rules/>
@@ -1318,22 +1278,6 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
       <constraints/>
       <categoryLinks>
         <categoryLink id="2639-13a0-1091-5189-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="584c-4bbb-c37f-7d9a" name="New EntryLink" hidden="false" targetId="1a59-dd0f-a7f2-32be" type="selectionEntry">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-      <categoryLinks>
-        <categoryLink id="584c-4bbb-c37f-7d9a-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1406,22 +1350,6 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="20e9-9cd8-3ecc-7f8b" name="New EntryLink" hidden="false" targetId="ed7e-757a-4ced-adff" type="selectionEntry">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-      <categoryLinks>
-        <categoryLink id="20e9-9cd8-3ecc-7f8b-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="9d3b-652a-8f38-ba48" name="New EntryLink" hidden="false" targetId="e40b-468f-f1d7-d05d" type="selectionEntry">
       <profiles/>
       <rules/>
@@ -1438,86 +1366,6 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="1e22-7150-2f1c-9c1a" name="New EntryLink" hidden="false" targetId="06e2-2420-ffc8-13b8" type="selectionEntry">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-      <categoryLinks>
-        <categoryLink id="1e22-7150-2f1c-9c1a-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="8757-0ab9-6fd5-19b8" name="New EntryLink" hidden="false" targetId="0fe6-096b-23ae-1134" type="selectionEntry">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-      <categoryLinks>
-        <categoryLink id="8757-0ab9-6fd5-19b8-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="a345-9df0-fecd-5263" name="New EntryLink" hidden="false" targetId="33f8-e6da-89a3-01d5" type="selectionEntry">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-      <categoryLinks>
-        <categoryLink id="a345-9df0-fecd-5263-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="1bcb-c525-07af-da24" name="New EntryLink" hidden="false" targetId="8300-7ced-aafd-2a27" type="selectionEntry">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-      <categoryLinks>
-        <categoryLink id="1bcb-c525-07af-da24-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="af0b-35c7-e928-7476" name="Aquila Strongpoint" hidden="false" targetId="9f5b-eccc-689a-2948" type="selectionEntry">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-      <categoryLinks>
-        <categoryLink id="af0b-35c7-e928-7476-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints/>
-        </categoryLink>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="fa5a-7dbb-c0ea-2f53" name="New EntryLink" hidden="false" targetId="e10f-7b90-ecd3-80a5" type="selectionEntry">
       <profiles/>
       <rules/>
@@ -1526,6 +1374,36 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
       <constraints/>
       <categoryLinks>
         <categoryLink id="fa5a-7dbb-c0ea-2f53-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8b9e-027f-f676-d4e0" name="Legio Titanicus Warbringer Nemesis Titan" hidden="false" targetId="ecb3-83b9-4ba7-47a9" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="641f-b7f4-977d-9020" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="4ad3-cc77-6e21-b20b" name="New CategoryLink" hidden="false" targetId="264d-166e-36c0-77b7" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="b096-555b-931a-1164" name="New CategoryLink" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2591,6 +2469,638 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="3902-a5e5-c69e-7a01" name="Questoris Knight Dominus" book="HH-Questoris-Knight-Dominus Download" page="" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="ecb2-e57a-adb8-0ab8" name="Questoris Knight Dominus" book="HH-Questoris-Knight-Dominus Download" page="" hidden="false" profileTypeId="0694-6ddb-9e1d-40bd" profileTypeName="Super-heavy Walker">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="WS" characteristicTypeId="abd6-ed07-8491-eb85" value="4"/>
+            <characteristic name="BS" characteristicTypeId="aabf-e6cf-1929-65fd" value="4"/>
+            <characteristic name="S" characteristicTypeId="8d3d-332e-0576-3813" value="10"/>
+            <characteristic name="Front" characteristicTypeId="a3b5-f395-614e-95dc" value="13"/>
+            <characteristic name="Side" characteristicTypeId="4f2c-13a4-98b7-ff72" value="13"/>
+            <characteristic name="Rear" characteristicTypeId="c45e-7fb0-f4c7-2909" value="12"/>
+            <characteristic name="I" characteristicTypeId="d7de-23c6-aa99-cb87" value="3"/>
+            <characteristic name="A" characteristicTypeId="ec4e-6e09-1493-1867" value="3"/>
+            <characteristic name="HP" characteristicTypeId="36e0-e195-2d91-3e2a" value="7"/>
+            <characteristic name="Type" characteristicTypeId="c887-e846-fa1f-9389" value="Super-Heavy Walker"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="337d-4388-852d-759f" name="Ion Shield" hidden="false" targetId="342d5e83-9f9b-42c0-cecb-e6c9c197ab9d" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry id="164f-e083-7cc9-0038" name="Twin-Linked Meltaguns" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="84f0-bb09-4d41-c863" name="Twin-Linked Meltagun" hidden="false" targetId="3084-edd3-6247-da94" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4759-48d1-f5d5-9bfb" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7054-cd48-fae5-9e66" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="40d2-b432-3a8e-f14b" name="May be upgraded with:" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="a3e5-e508-71d5-268b" name="Occular Augmetics" hidden="false" targetId="348b-40f4-c774-1f9a" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="4754-e94e-cb94-7ed8" name="May take Three of the following carapace weapons:" hidden="false" collective="false" defaultSelectionEntryId="4ce9-ebbc-bc9e-4059">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0869-9c49-3855-d2d9" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3084-6034-6dd7-4295" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="4ce9-ebbc-bc9e-4059" name="Twin-Linked Siegebreaker Cannon" book="HH-Questoris-Knight-Dominus Download" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="49eb-459a-037c-6f71" name="Twin-Linked Siegebreaker Cannon" book="HH-Questoris-Knight-Dominus Download" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 2, Twin-Linked"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6d0-8256-eb24-dc7e" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="de42-1578-e085-e2af" name="Two Shieldbreaker Missiles" book="HH-Questoris-Knight-Dominus Download" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="8a99-ba52-8233-478b" name="Two Shieldbreaker Missiles" book="HH-Questoris-Knight-Dominus Download" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="9"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Shieldbreaker, One Use"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="1914-6183-4806-e211" name="Shieldbreaker" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>Shieldbreaker: Invulnerable saves may not be taken against Wounds or Hull points inflicted by a weapon with this type.</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee86-0ceb-0df8-b3d6" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b586-4020-ddad-4473" name="May take 2 weapons for the following" hidden="false" collective="false" defaultSelectionEntryId="a3a5-cfa9-4075-19c9">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c5c-068e-e051-df61" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd11-c71e-cbe4-c027" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="a3a5-cfa9-4075-19c9" name="Canflagration Cannon" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="7d01-170d-5ad8-1b5d" name="Conflagration Cannon" book="HH-Questoris-Knight-Dominus Download" page="" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="Hellstorm"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="294a-a7e8-0879-4d87" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="30.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2960-54a3-7350-6b2c" name="Plasma Decimator" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="9595-6887-dfe5-2411" name="Plasma Decimator" book="HH-Questoris-Knight-Dominus Download" page="" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="48&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Large Blast 5&quot;, Gets Hot"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7dbe-a6b6-85a0-d624" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="55.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c8a8-c30e-1557-3f15" name="Thundercoil Harpoon" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="7f72-40cb-8212-8ca0" name="Thundercoil Harpoon" book="HH-Questoris-Knight-Dominus Download" page="" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="12&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="10"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="1"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Ordnance 1, Armourbane, Fleshbane, Instant Death, Sunder, Harpoon"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="f7b6-8df9-dbcb-5260" name="Thundercoil Harpoon" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>Harpoon: Once fired, regardless of whether the attack results in a hit or not, this weapon may not be fired again in the controlling player’s next Shooting phase. Effectively, it may only be fired every other turn. In addition, any model that fails a save against a Wound or Hull point of damage inflicted by a weapon with this type suffers D6 Wounds or D6 Hull points of damage instead of just one (these wounds do not carry over to other models in the same unit).</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7ea-2317-0da3-745d" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="50.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8cd2-6b1d-d537-1c8e" name="Volcano Lance" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="8b6e-01c6-02d5-7425" name="Volcano Lance" book="HH-Questoris-Knight-Dominus Download" page="" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="80&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="9"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Blast 3&quot;"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff8a-5756-26a1-09ec" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="45.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e2bc-e4ca-f7b9-bec8" name="Household Rank" hidden="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="7c89-7095-26d0-a6a3" name="Blessed Autosimulacra" hidden="false" targetId="b09a-5d32-464b-4b2d" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="360.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1072-d634-f6c6-b41e" name="Questoris Knight Armiger Talon" book="HH-Questoris-Knight-Dominus Download" page="" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="283a-5c7c-cf45-1d93" name="Questoris Knight Armiger Talon" book="HH-Questoris-Knight-Armiger-Talon Download" page="" hidden="false" profileTypeId="57616c6b657223232344415441232323" profileTypeName="Walker">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="4"/>
+            <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
+            <characteristic name="S" characteristicTypeId="5323232344415441232323" value="7"/>
+            <characteristic name="Front" characteristicTypeId="46726f6e7423232344415441232323" value="12"/>
+            <characteristic name="Side" characteristicTypeId="5369646523232344415441232323" value="12"/>
+            <characteristic name="Rear" characteristicTypeId="5265617223232344415441232323" value="11"/>
+            <characteristic name="I" characteristicTypeId="4923232344415441232323" value="4"/>
+            <characteristic name="A" characteristicTypeId="4123232344415441232323" value="2"/>
+            <characteristic name="HP" characteristicTypeId="485023232344415441232323" value="4"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Vehicle (Walker)"/>
+          </characteristics>
+        </profile>
+        <profile id="82fe-5976-eb52-f87e" name="Ion Buckler" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="An Armiger Knight armour is constructed with a smaller, less power-hungry ion shielding array. This device is capable of switching its defensive alignment both more swiftly and more accurately than the larger ion shield, but provides only a fraction of its larger cousin’s protection. An ion buckler grants the Questoris Knight Armiger a 5+ invulnerable save against all shooting attacks, but grants no benefits against close combat attacks. "/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="71a4-0f4a-6206-ac92" name="Longstride" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>The Questoris Knight Armiger is constructed to keep pace with their larger cousins, roving ahead of the main advance of a Knight Household to identify and neutralise smaller threats. A Questoris Knight Armiger that chooses to Run in the Shooting phase does not roll a dice to determine the distance moved, instead always moving up to 12&quot;. Additionally, on any turn in which a Questoris Knight Armiger chooses to Run in the Shooting phase, it may fire a single weapon as a Snap Shot after completing the Run move.</description>
+        </rule>
+        <rule id="4ccb-02dd-6bfb-64d0" name="Scion Auxilia" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Scions Auxilia may not benefit from Warlord Traits that target other friendly Knights or models.</description>
+        </rule>
+        <rule id="db50-34df-2188-0523" name="Armiger Talon" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>When first deployed on the battlefield (either at the start of the game or when arriving via Reserves), the Knights in a Talon must be placed within 6&quot; of each other, and afterwards are not treated as a vehicle squadron but operate independently as individual units for the purposes of taking any actions, as well for determining Victory points in missions which make use of Victory points for destroying units.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="d093-3802-81a6-8852" name="Implacable Advance" hidden="false" targetId="5ecb-551d-0f68-3a79" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfcf-dc21-205d-ba14" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23f7-3615-4d95-bd73" type="min"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="fcad-4f0f-99fc-0eea" name="May take One weapon for the following" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="be8b-e52b-e3d7-b121" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="451b-cd15-bd45-1bfa" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="1339-4875-1437-b228" name="Heavy Stubber" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="b9b6-e629-bd38-a8bc" name="Heavy Stubber" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="4"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="6"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d53-b2b2-425f-c8ee" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c749-a58d-b86e-1a51" name="Meltagun" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="031b-80c8-50ef-1146" name="Meltagun" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="12&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="1"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assult 1, Melta"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="95d6-6eb0-2d77-36b7" name="Must take Two weapons for the following" hidden="false" collective="false" defaultSelectionEntryId="918d-2398-9da1-5cf6">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0017-ed45-eb5d-3139" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e86-96fc-61b0-dce4" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="918d-2398-9da1-5cf6" name="Dreadnaught Close Combat Weapon" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="83b6-e34b-605e-7080" name="Dreadnaught Close Combat Weapon" book="" page="" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="10"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ca9-9daa-d247-33c8" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0320-28f4-46f7-ca89" name="Armiger Autocannon" book="HH-Questoris-Knight-Armiger-Talon Download" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="8303-fed8-7388-ff02" name="Armiger Autocannon (Armour Piercing Rounds)" book="HH-Questoris-Knight-Dominus Download" page="" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="64&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 2, Sunder"/>
+                  </characteristics>
+                </profile>
+                <profile id="59d2-d3ed-7f5c-740d" name="Armiger Autocannon (Incediary Rounds)" book="HH-Questoris-Knight-Dominus Download" page="" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="64&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 2, Ignores Cover"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a381-df56-7aed-04d4" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2ab8-f653-fb91-e6ae" name="Armiger Thermal Spear" book="HH-Questoris-Knight-Armiger-Talon Download" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="0d5a-6abd-ea6e-9fd9" name="Armiger Thermal Spear" book="HH-Questoris-Knight-Dominus Download" page="" hidden="false" profileTypeId="576561706f6e23232344415441232323">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 1, Melta"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ca8-4645-2a47-9988" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="67ff-11a1-7990-c20e" name="May Take Bio-Corrosive Rounds for Heavy Stubber" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="1072-d634-f6c6-b41e" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1339-4875-1437-b228" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78cd-164a-0769-53df" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="802b-988c-eb01-a502" name="Bio-Corrosive Rounds" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="cfb6-0425-9090-20c2" name="Bio-Corrosive Rounds" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="30&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="2"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="6"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3, Poisoned (4+)"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="150.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="3fc4-9d7f-969b-35bb" name="Knight Armour" hidden="false" collective="false">
@@ -2606,7 +3116,7 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks>
-        <entryLink id="e8e1-c9e9-394d-5fbf" name="Acheron" hidden="false" targetId="b4ddbe68-7095-397e-dec4-162170dbdbcd" type="selectionEntry">
+        <entryLink id="e8e1-c9e9-394d-5fbf" name="Cerastus Knight-Acheron" hidden="false" targetId="b4ddbe68-7095-397e-dec4-162170dbdbcd" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2614,7 +3124,7 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
           <constraints/>
           <categoryLinks/>
         </entryLink>
-        <entryLink id="e499-4dc2-bbfd-53dd" name="Atrapos" hidden="false" targetId="baad-77d0-04c2-e05f" type="selectionEntry">
+        <entryLink id="e499-4dc2-bbfd-53dd" name="Cerastus Knight-Atrapos" hidden="false" targetId="baad-77d0-04c2-e05f" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2622,7 +3132,7 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
           <constraints/>
           <categoryLinks/>
         </entryLink>
-        <entryLink id="2aff-c26b-26b6-fd14" name="Castigator" hidden="false" targetId="b1cf8528-c9d0-2c2a-3f19-522e5532f273" type="selectionEntry">
+        <entryLink id="2aff-c26b-26b6-fd14" name="Cerastus Knight-Castigator" hidden="false" targetId="b1cf8528-c9d0-2c2a-3f19-522e5532f273" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2638,7 +3148,7 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
           <constraints/>
           <categoryLinks/>
         </entryLink>
-        <entryLink id="eae7-2fc9-40d1-3977" name="Crusader" hidden="false" targetId="09ee-4370-1462-2cb5" type="selectionEntry">
+        <entryLink id="eae7-2fc9-40d1-3977" name="Questoris Knight Crusader" hidden="false" targetId="09ee-4370-1462-2cb5" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2654,7 +3164,7 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
           <constraints/>
           <categoryLinks/>
         </entryLink>
-        <entryLink id="a918-71fe-b21c-cbf8" name="Gallant" hidden="false" targetId="74b8-f485-4b58-0071" type="selectionEntry">
+        <entryLink id="a918-71fe-b21c-cbf8" name="Questoris Knight Gallant" hidden="false" targetId="74b8-f485-4b58-0071" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2670,7 +3180,7 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
           <constraints/>
           <categoryLinks/>
         </entryLink>
-        <entryLink id="f4cf-f09c-20a4-b376" name="Paladin" hidden="false" targetId="02eb28bb-1883-8603-0af7-b8bf2b7b69c8" type="selectionEntry">
+        <entryLink id="f4cf-f09c-20a4-b376" name="Questoris Knight Paladin" hidden="false" targetId="02eb28bb-1883-8603-0af7-b8bf2b7b69c8" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2678,7 +3188,7 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
           <constraints/>
           <categoryLinks/>
         </entryLink>
-        <entryLink id="9a04-fad2-e544-64e5" name="Styrix" hidden="false" targetId="a5b350ff-895e-4557-70a6-d24a936919c2" type="selectionEntry">
+        <entryLink id="9a04-fad2-e544-64e5" name="Questoris Knight Styrix" hidden="false" targetId="a5b350ff-895e-4557-70a6-d24a936919c2" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2686,7 +3196,7 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
           <constraints/>
           <categoryLinks/>
         </entryLink>
-        <entryLink id="1b11-f6ea-15eb-3c0f" name="Warden" hidden="false" targetId="f4f1-dad6-0596-ca5a" type="selectionEntry">
+        <entryLink id="1b11-f6ea-15eb-3c0f" name="Questoris Knight Warden" hidden="false" targetId="f4f1-dad6-0596-ca5a" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2694,7 +3204,7 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
           <constraints/>
           <categoryLinks/>
         </entryLink>
-        <entryLink id="d945-aaa8-2751-4c23" name="New EntryLink" hidden="false" targetId="4ded-9de3-f964-33a7" type="selectionEntry">
+        <entryLink id="d945-aaa8-2751-4c23" name="Acastus Knight Porphyrion" hidden="false" targetId="4ded-9de3-f964-33a7" type="selectionEntry">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2713,6 +3223,14 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="38ae-7cc3-463a-a8de" name="Questoris Knight Dominus" hidden="false" targetId="3902-a5e5-c69e-7a01" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
           <constraints/>
           <categoryLinks/>
         </entryLink>
