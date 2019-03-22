@@ -158,7 +158,10 @@
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <constraints/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4de-5e43-b421-43fb" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01d2-0dda-55c9-4e01" type="min"/>
+      </constraints>
     </categoryEntry>
   </categoryEntries>
   <forceEntries>
@@ -324,7 +327,7 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="7d9f-d54b-09db-e954" name="Use Playtest Rules" hidden="false" targetId="dace-8f0f-e696-8179" type="selectionEntry">
+    <entryLink id="7d9f-d54b-09db-e954" name="Use Playtest Rules" hidden="false" targetId="5a90-c53e-42ca-b4ca" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -10618,26 +10621,83 @@ Immediately place an objective marker within 3&quot; of any part of the Crashed 
         <cost name="pts" costTypeId="points" value="360.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dace-8f0f-e696-8179" name="Use Playtest Rules" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="5a90-c53e-42ca-b4ca" name="Use Playtest Rules" hidden="false" collective="false" type="upgrade">
       <profiles/>
-      <rules>
-        <rule id="da64-fafa-bd4d-9a75" name="Use Playtest Rules" book="Playtest Rules Errata V1.0 Warhammer Community Download" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>The following rules and profiles are designed to supplement, rather than replace those found in The Horus Heresy: Age of Darkness Campaign books and Rulebooks. While we consider the rules presented in this section of this document to be optional, we would encourage you to use them in your games and provide us with your opinions and feedback. This feedback will then help to inform the final rules in a future publication.
-Please let us know what worked well as a part of these rules and also what could be improved (and how), by sending us an email with the subject line “PLAYTEST” to HeresyFAQ@gwplc.com. We would appreciate if you could please ensure that you only use this subject line when referring to rules presented in this section of the document, and send us a separate email for any other feedback.</description>
-        </rule>
-      </rules>
+      <rules/>
       <infoLinks/>
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5689-da9b-d725-fba5" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0192-7b62-a073-5de2" type="min"/>
       </constraints>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="f532-0c5d-d976-d1f2" name="Use Playtest Rules" hidden="false" targetId="fdf4-0683-3e84-5a4b" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries/>
-      <selectionEntryGroups/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="07c4-d0fe-fd44-2d95" name="Playtest Rules" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73ac-4862-2458-05c0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02f9-9ad9-d292-4437" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="0343-7621-54c5-6f8a" name="Playtest Rules Off" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bf1-5154-bfdd-d538" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="dace-8f0f-e696-8179" name="Playtest Rules On" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules>
+                <rule id="d94e-4b40-ced0-bd3e" name="Use Playtest Rules" book="Playtest Rules Errata V1.0 Warhammer Community Download" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>The following rules and profiles are designed to supplement, rather than replace those found in The Horus Heresy: Age of Darkness Campaign books and Rulebooks. While we consider the rules presented in this section of this document to be optional, we would encourage you to use them in your games and provide us with your opinions and feedback. This feedback will then help to inform the final rules in a future publication.
+Please let us know what worked well as a part of these rules and also what could be improved (and how), by sending us an email with the subject line “PLAYTEST” to HeresyFAQ@gwplc.com. We would appreciate if you could please ensure that you only use this subject line when referring to rules presented in this section of the document, and send us a separate email for any other feedback.</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb00-f224-a205-fac5" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
@@ -10749,7 +10809,9 @@ or Gargantuan Creatures. </description>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -10826,7 +10888,9 @@ or Gargantuan Creatures. </description>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="16f3-f049-3d19-450a" name="Melta Cannon" page="0" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -10882,7 +10946,9 @@ or Gargantuan Creatures. </description>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -10959,7 +11025,9 @@ or Gargantuan Creatures. </description>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="cd90-1539-da16-bb53" name="Melta Cannon" page="0" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -11015,7 +11083,9 @@ or Gargantuan Creatures. </description>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -11055,7 +11125,9 @@ or Gargantuan Creatures. </description>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -11103,7 +11175,9 @@ or Gargantuan Creatures. </description>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
