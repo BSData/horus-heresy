@@ -19335,6 +19335,34 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
                   <constraints/>
                   <categoryLinks/>
                 </entryLink>
+                <entryLink id="a517-4d10-57dd-7c1c" name="Divining Blades" hidden="false" targetId="3812-6e1b-33c3-9a88" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="aa74-77f4-7266-36b6" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8093-b175-1b06-0915" type="equalTo"/>
+                            <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="00cf-20ab-1b17-aad1" type="equalTo"/>
+                            <condition field="selections" scope="aa74-77f4-7266-36b6" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2387-a7aa-67d7-2589" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" field="points" value="45">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="2939-5889-6c61-caef" name="Ranged Weapon:" hidden="false" collective="false" defaultSelectionEntryId="97f7-35c5-fd82-1c40">
@@ -19443,6 +19471,34 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
                   <constraints/>
                   <categoryLinks/>
                 </entryLink>
+                <entryLink id="2387-a7aa-67d7-2589" name="Divining Blades" hidden="false" targetId="3812-6e1b-33c3-9a88" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="00cf-20ab-1b17-aad1" type="equalTo"/>
+                            <condition field="selections" scope="aa74-77f4-7266-36b6" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8093-b175-1b06-0915" type="equalTo"/>
+                            <condition field="selections" scope="aa74-77f4-7266-36b6" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a517-4d10-57dd-7c1c" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" field="points" value="45">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -19452,7 +19508,34 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="c261-1343-94a0-73f3" value="0.0">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2387-a7aa-67d7-2589" type="equalTo"/>
+                    <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a517-4d10-57dd-7c1c" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2387-a7aa-67d7-2589" type="equalTo"/>
+                    <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a517-4d10-57dd-7c1c" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c261-1343-94a0-73f3" type="max"/>
           </constraints>
@@ -19515,28 +19598,6 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
                   <repeats/>
                   <conditions/>
                   <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-              <categoryLinks/>
-            </entryLink>
-            <entryLink id="9470-5a66-662e-6b63" name="Divining Blades" hidden="false" targetId="84c4-786f-c3c8-a450" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <repeats/>
-                  <conditions/>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="72c7-f4f6-ff3f-8cf0" type="equalTo"/>
-                        <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f32e-7e6c-aba0-840e" type="equalTo"/>
-                      </conditions>
-                      <conditionGroups/>
-                    </conditionGroup>
-                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints/>
@@ -19907,15 +19968,10 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <repeats/>
-                  <conditions/>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="04e8-11de-2eb4-67e0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8952-ed12-5b98-7de7" type="greaterThan"/>
-                      </conditions>
-                      <conditionGroups/>
-                    </conditionGroup>
-                  </conditionGroups>
+                  <conditions>
+                    <condition field="selections" scope="04e8-11de-2eb4-67e0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8952-ed12-5b98-7de7" type="greaterThan"/>
+                  </conditions>
+                  <conditionGroups/>
                 </modifier>
               </modifiers>
               <constraints/>
@@ -19927,6 +19983,28 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
               <infoLinks/>
               <modifiers>
                 <modifier type="set" field="points" value="15">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="b88b-242f-e5f0-460b" name="Divining Blades" hidden="false" targetId="3812-6e1b-33c3-9a88" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="04e8-11de-2eb4-67e0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8952-ed12-5b98-7de7" type="greaterThan"/>
+                    <condition field="selections" scope="04e8-11de-2eb4-67e0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9911-2ef9-e724-b235" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="points" value="45">
                   <repeats/>
                   <conditions/>
                   <conditionGroups/>
@@ -20562,7 +20640,22 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="04e8-11de-2eb4-67e0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b88b-242f-e5f0-460b" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="f462-934a-c045-2f7a" value="0">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="04e8-11de-2eb4-67e0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b88b-242f-e5f0-460b" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f462-934a-c045-2f7a" type="max"/>
           </constraints>
@@ -20609,22 +20702,6 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
                   <repeats/>
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7441-34c0-5e21-eeaa" type="equalTo"/>
-                  </conditions>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-              <categoryLinks/>
-            </entryLink>
-            <entryLink id="fab9-02a8-e209-7421" name="Divining Blades" hidden="false" targetId="84c4-786f-c3c8-a450" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <repeats/>
-                  <conditions>
-                    <condition field="selections" scope="04e8-11de-2eb4-67e0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="43e2-0180-b576-3124" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -26128,6 +26205,31 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3812-6e1b-33c3-9a88" name="Divining Blades" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9ca2-57b1-406b-becc" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="f32c-2f70-139d-52c9" name="Divining Blades" hidden="false" targetId="84c4-786f-c3c8-a450" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

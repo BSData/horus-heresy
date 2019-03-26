@@ -11838,6 +11838,34 @@ Precision Shots</description>
                   <constraints/>
                   <categoryLinks/>
                 </entryLink>
+                <entryLink id="9d96-15b9-0a40-877a" name="Divining Blades" hidden="false" targetId="6aa6-9f16-9e80-5630" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="b362-7a87-7cb5-b4d6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a5d6-115c-ca50-b42e" type="equalTo"/>
+                            <condition field="selections" scope="b362-7a87-7cb5-b4d6" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9284-ff86-6274-3efb" type="equalTo"/>
+                            <condition field="selections" scope="b362-7a87-7cb5-b4d6" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6036-8463-dc91-9773" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" field="points" value="55">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="75a4-d4a8-6758-b52d" name="Exchange close combat weapon for:" hidden="false" collective="false" defaultSelectionEntryId="dfe9-4c8b-d3fc-bf67">
@@ -11978,6 +12006,34 @@ Precision Shots</description>
                   </constraints>
                   <categoryLinks/>
                 </entryLink>
+                <entryLink id="6036-8463-dc91-9773" name="Divining Blades" hidden="false" targetId="6aa6-9f16-9e80-5630" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="b362-7a87-7cb5-b4d6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a5d6-115c-ca50-b42e" type="equalTo"/>
+                            <condition field="selections" scope="b362-7a87-7cb5-b4d6" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9284-ff86-6274-3efb" type="equalTo"/>
+                            <condition field="selections" scope="b362-7a87-7cb5-b4d6" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9d96-15b9-0a40-877a" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" field="points" value="55">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -11987,7 +12043,34 @@ Precision Shots</description>
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="286e-dd2c-e94a-0324" value="0.0">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="b362-7a87-7cb5-b4d6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9d96-15b9-0a40-877a" type="equalTo"/>
+                    <condition field="selections" scope="b362-7a87-7cb5-b4d6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6036-8463-dc91-9773" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="b362-7a87-7cb5-b4d6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6036-8463-dc91-9773" type="equalTo"/>
+                    <condition field="selections" scope="b362-7a87-7cb5-b4d6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9d96-15b9-0a40-877a" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="286e-dd2c-e94a-0324" type="max"/>
           </constraints>
@@ -12071,28 +12154,6 @@ Precision Shots</description>
                     <condition field="selections" scope="b362-7a87-7cb5-b4d6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a5d6-115c-ca50-b42e" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-              <categoryLinks/>
-            </entryLink>
-            <entryLink id="dc54-29c2-15aa-5b9f" name="Divining Blades" hidden="false" targetId="84c4-786f-c3c8-a450" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <repeats/>
-                  <conditions/>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="b362-7a87-7cb5-b4d6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0bce-1ca8-a7ee-6c59" type="equalTo"/>
-                        <condition field="selections" scope="b362-7a87-7cb5-b4d6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="212f-679c-2992-af1c" type="equalTo"/>
-                      </conditions>
-                      <conditionGroups/>
-                    </conditionGroup>
-                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints/>
@@ -17050,6 +17111,29 @@ Assault rules unless otherwise noted.</description>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="6aa6-9f16-9e80-5630" name="Divining Blades" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="fec7-fd15-fe62-7a75" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="827c-bc09-1a17-430f" name="Divining Blades" hidden="false" targetId="84c4-786f-c3c8-a450" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs/>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
