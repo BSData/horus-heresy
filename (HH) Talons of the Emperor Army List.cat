@@ -3202,7 +3202,7 @@
                 <modifier type="set" field="hidden" value="false">
                   <repeats/>
                   <conditions>
-                    <condition field="selections" scope="26dd-4eb2-fe70-ea73" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="56a8-62a7-0270-e718" type="equalTo"/>
+                    <condition field="selections" scope="26dd-4eb2-fe70-ea73" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="56a8-62a7-0270-e718" type="equalTo"/>
                   </conditions>
                   <conditionGroups/>
                 </modifier>
@@ -10241,28 +10241,60 @@ decided.</description>
         <cost name="pts" costTypeId="points" value="640.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7d90-3f3d-50e1-e295" name="Divining Blades" hidden="false" collective="false" type="upgrade">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="aa18-3d76-d619-9546" type="max"/>
-      </constraints>
-      <categoryLinks/>
-      <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks>
-        <entryLink id="8a29-84ab-9461-fd58" name="Divining Blades" hidden="false" targetId="84c4-786f-c3c8-a450" type="selectionEntry">
+    <selectionEntry id="7d90-3f3d-50e1-e295" name="Divining Blades" hidden="true" collective="false" type="upgrade">
+      <profiles>
+        <profile id="8b29-ca65-a6fb-1439" name="Divining Blades" book="HH8" page="306" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-      </entryLinks>
-      <costs/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="Melee"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="+2"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="1"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Instant Death, Master-Crafted, Psy-Lash, Two Handed."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="aed5-5736-9831-3af1" name="Instant Death" hidden="false" targetId="fbf1-6913-ff9f-5a4f" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="0749-f2b5-64f7-a15b" name="Master-crafted" hidden="false" targetId="f899-8f9d-fc7e-d855" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="6853-1967-c819-6181" name="Psy-Lash" hidden="false" targetId="6f38-4691-2eda-8e1b" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="ae1e-574a-9cfe-7508" name="Two-Handed" hidden="false" targetId="b11c-0ef4-af6b-d96f" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="aa18-3d76-d619-9546" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="991e-4b2a-5ebf-ad74" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

@@ -19428,10 +19428,10 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
                   <rules/>
                   <infoLinks/>
                   <modifiers>
-                    <modifier type="set" field="hidden" value="true">
+                    <modifier type="set" field="hidden" value="false">
                       <repeats/>
                       <conditions>
-                        <condition field="selections" scope="aa74-77f4-7266-36b6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="00cf-20ab-1b17-aad1" type="equalTo"/>
+                        <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="00cf-20ab-1b17-aad1" type="equalTo"/>
                       </conditions>
                       <conditionGroups/>
                     </modifier>
@@ -26207,27 +26207,57 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
         <cost name="pts" costTypeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3812-6e1b-33c3-9a88" name="Divining Blades" hidden="false" collective="false" type="upgrade">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9ca2-57b1-406b-becc" type="max"/>
-      </constraints>
-      <categoryLinks/>
-      <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks>
-        <entryLink id="f32c-2f70-139d-52c9" name="Divining Blades" hidden="false" targetId="84c4-786f-c3c8-a450" type="selectionEntry">
+    <selectionEntry id="3812-6e1b-33c3-9a88" name="Divining Blades" hidden="true" collective="false" type="upgrade">
+      <profiles>
+        <profile id="8912-e01c-25c8-4f23" name="Divining Blades" book="HH8" page="306" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-      </entryLinks>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="Melee"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="+2"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="1"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Instant Death, Master-Crafted, Psy-Lash, Two Handed."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="b660-9621-f268-4d80" name="Instant Death" hidden="false" targetId="fbf1-6913-ff9f-5a4f" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="e582-38f7-6ea0-4916" name="Master-crafted" hidden="false" targetId="f899-8f9d-fc7e-d855" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="8371-1bd3-7612-cd54" name="Psy-Lash" hidden="false" targetId="6f38-4691-2eda-8e1b" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="14f6-f39f-d4a6-9fa2" name="Two-Handed" hidden="false" targetId="b11c-0ef4-af6b-d96f" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d96c-d599-5ed9-8998" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7747-cbc1-4591-9720" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>

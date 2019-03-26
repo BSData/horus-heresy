@@ -11851,7 +11851,7 @@ Precision Shots</description>
                           <conditions>
                             <condition field="selections" scope="b362-7a87-7cb5-b4d6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a5d6-115c-ca50-b42e" type="equalTo"/>
                             <condition field="selections" scope="b362-7a87-7cb5-b4d6" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9284-ff86-6274-3efb" type="equalTo"/>
-                            <condition field="selections" scope="b362-7a87-7cb5-b4d6" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6036-8463-dc91-9773" type="equalTo"/>
+                            <condition field="selections" scope="b362-7a87-7cb5-b4d6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6036-8463-dc91-9773" type="equalTo"/>
                           </conditions>
                           <conditionGroups/>
                         </conditionGroup>
@@ -12017,9 +12017,9 @@ Precision Shots</description>
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
+                            <condition field="selections" scope="b362-7a87-7cb5-b4d6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9284-ff86-6274-3efb" type="equalTo"/>
+                            <condition field="selections" scope="b362-7a87-7cb5-b4d6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d96-15b9-0a40-877a" type="equalTo"/>
                             <condition field="selections" scope="b362-7a87-7cb5-b4d6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a5d6-115c-ca50-b42e" type="equalTo"/>
-                            <condition field="selections" scope="b362-7a87-7cb5-b4d6" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9284-ff86-6274-3efb" type="equalTo"/>
-                            <condition field="selections" scope="b362-7a87-7cb5-b4d6" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9d96-15b9-0a40-877a" type="equalTo"/>
                           </conditions>
                           <conditionGroups/>
                         </conditionGroup>
@@ -17112,28 +17112,60 @@ Assault rules unless otherwise noted.</description>
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6aa6-9f16-9e80-5630" name="Divining Blades" hidden="false" collective="false" type="upgrade">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="fec7-fd15-fe62-7a75" type="max"/>
-      </constraints>
-      <categoryLinks/>
-      <selectionEntries/>
-      <selectionEntryGroups/>
-      <entryLinks>
-        <entryLink id="827c-bc09-1a17-430f" name="Divining Blades" hidden="false" targetId="84c4-786f-c3c8-a450" type="selectionEntry">
+    <selectionEntry id="6aa6-9f16-9e80-5630" name="Divining Blades" hidden="true" collective="false" type="upgrade">
+      <profiles>
+        <profile id="09b2-e3a2-1dc7-c73f" name="Divining Blades" book="HH8" page="306" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
-          <categoryLinks/>
-        </entryLink>
-      </entryLinks>
-      <costs/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="Melee"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="+2"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="1"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Instant Death, Master-Crafted, Psy-Lash, Two Handed."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="4067-fb69-0dd0-a9d1" name="Two-Handed" hidden="false" targetId="b11c-0ef4-af6b-d96f" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="ea8e-2539-745a-3869" name="Master-crafted" hidden="false" targetId="f899-8f9d-fc7e-d855" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="42c8-0850-aea7-7036" name="Psy-Lash" hidden="false" targetId="6f38-4691-2eda-8e1b" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="c271-aebc-f497-d353" name="Instant Death" hidden="false" targetId="fbf1-6913-ff9f-5a4f" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="fec7-fd15-fe62-7a75" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ab5-96e4-b1aa-2a81" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
