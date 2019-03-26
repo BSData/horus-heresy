@@ -3173,7 +3173,7 @@
               </constraints>
               <categoryLinks/>
             </entryLink>
-            <entryLink id="5199-e559-8f26-0f02" name="New EntryLink" hidden="false" targetId="99f1-e166-4deb-ab11" type="selectionEntry">
+            <entryLink id="5199-e559-8f26-0f02" name="Paragon Blade" hidden="false" targetId="99f1-e166-4deb-ab11" type="selectionEntry">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -3187,6 +3187,27 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fa9-c8c3-34b2-323a" type="max"/>
               </constraints>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="7539-7e45-e4ac-5e94" name="Divining Blades" hidden="false" targetId="7d90-3f3d-50e1-e295" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="points" value="50">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="hidden" value="false">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="26dd-4eb2-fe70-ea73" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="56a8-62a7-0270-e718" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
               <categoryLinks/>
             </entryLink>
           </entryLinks>
@@ -3335,6 +3356,63 @@
           </selectionEntries>
           <selectionEntryGroups/>
           <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="56a8-62a7-0270-e718" name="Psyarkana" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="26dd-4eb2-fe70-ea73" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7539-7e45-e4ac-5e94" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="a56c-cf7f-db3d-2b83" value="0">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="26dd-4eb2-fe70-ea73" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7539-7e45-e4ac-5e94" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a56c-cf7f-db3d-2b83" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="aa2c-6362-8284-7b85" name="Icon of the Blazing Sun" hidden="false" targetId="b2fe-de24-0c45-9b4d" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="8152-525c-4a64-3ae4" name="Terminal Lucidity Injectors" hidden="false" targetId="66e2-6760-fb6a-edc3" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -10162,6 +10240,29 @@ decided.</description>
       <costs>
         <cost name="pts" costTypeId="points" value="640.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="7d90-3f3d-50e1-e295" name="Divining Blades" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="aa18-3d76-d619-9546" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="8a29-84ab-9461-fd58" name="Divining Blades" hidden="false" targetId="84c4-786f-c3c8-a450" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs/>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
