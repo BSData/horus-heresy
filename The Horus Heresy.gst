@@ -158,7 +158,10 @@
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <constraints/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4de-5e43-b421-43fb" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01d2-0dda-55c9-4e01" type="min"/>
+      </constraints>
     </categoryEntry>
   </categoryEntries>
   <forceEntries>
@@ -324,7 +327,7 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="7d9f-d54b-09db-e954" name="Use Playtest Rules" hidden="false" targetId="dace-8f0f-e696-8179" type="selectionEntry">
+    <entryLink id="7d9f-d54b-09db-e954" name="Use Playtest Rules" hidden="false" targetId="5a90-c53e-42ca-b4ca" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -10618,26 +10621,83 @@ Immediately place an objective marker within 3&quot; of any part of the Crashed 
         <cost name="pts" costTypeId="points" value="360.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dace-8f0f-e696-8179" name="Use Playtest Rules" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="5a90-c53e-42ca-b4ca" name="Use Playtest Rules" hidden="false" collective="false" type="upgrade">
       <profiles/>
-      <rules>
-        <rule id="da64-fafa-bd4d-9a75" name="Use Playtest Rules" book="Playtest Rules Errata V1.0 Warhammer Community Download" hidden="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <description>The following rules and profiles are designed to supplement, rather than replace those found in The Horus Heresy: Age of Darkness Campaign books and Rulebooks. While we consider the rules presented in this section of this document to be optional, we would encourage you to use them in your games and provide us with your opinions and feedback. This feedback will then help to inform the final rules in a future publication.
-Please let us know what worked well as a part of these rules and also what could be improved (and how), by sending us an email with the subject line “PLAYTEST” to HeresyFAQ@gwplc.com. We would appreciate if you could please ensure that you only use this subject line when referring to rules presented in this section of the document, and send us a separate email for any other feedback.</description>
-        </rule>
-      </rules>
+      <rules/>
       <infoLinks/>
       <modifiers/>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5689-da9b-d725-fba5" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0192-7b62-a073-5de2" type="min"/>
       </constraints>
-      <categoryLinks/>
+      <categoryLinks>
+        <categoryLink id="f532-0c5d-d976-d1f2" name="Use Playtest Rules" hidden="false" targetId="fdf4-0683-3e84-5a4b" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
       <selectionEntries/>
-      <selectionEntryGroups/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="07c4-d0fe-fd44-2d95" name="Playtest Rules" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73ac-4862-2458-05c0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02f9-9ad9-d292-4437" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="0343-7621-54c5-6f8a" name="Playtest Rules Off" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bf1-5154-bfdd-d538" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="dace-8f0f-e696-8179" name="Playtest Rules On" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules>
+                <rule id="d94e-4b40-ced0-bd3e" name="Use Playtest Rules" book="Playtest Rules Errata V1.0 Warhammer Community Download" hidden="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <description>The following rules and profiles are designed to supplement, rather than replace those found in The Horus Heresy: Age of Darkness Campaign books and Rulebooks. While we consider the rules presented in this section of this document to be optional, we would encourage you to use them in your games and provide us with your opinions and feedback. This feedback will then help to inform the final rules in a future publication.
+Please let us know what worked well as a part of these rules and also what could be improved (and how), by sending us an email with the subject line “PLAYTEST” to HeresyFAQ@gwplc.com. We would appreciate if you could please ensure that you only use this subject line when referring to rules presented in this section of the document, and send us a separate email for any other feedback.</description>
+                </rule>
+              </rules>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb00-f224-a205-fac5" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="0.0"/>
@@ -10749,7 +10809,9 @@ or Gargantuan Creatures. </description>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -10826,7 +10888,9 @@ or Gargantuan Creatures. </description>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="16f3-f049-3d19-450a" name="Melta Cannon" page="0" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -10882,7 +10946,9 @@ or Gargantuan Creatures. </description>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -10959,7 +11025,9 @@ or Gargantuan Creatures. </description>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="cd90-1539-da16-bb53" name="Melta Cannon" page="0" hidden="false" collective="false" type="upgrade">
               <profiles/>
@@ -11015,7 +11083,9 @@ or Gargantuan Creatures. </description>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -11055,7 +11125,9 @@ or Gargantuan Creatures. </description>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -11103,7 +11175,9 @@ or Gargantuan Creatures. </description>
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -13261,6 +13335,576 @@ Command Benefits:
       <selectionEntryGroups/>
       <entryLinks/>
     </selectionEntryGroup>
+    <selectionEntryGroup id="7680-1e85-7395-a689" name="Psyarkana" book="HH8" page="Malevolence" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries>
+        <selectionEntry id="3d1a-59f3-ca2e-8ded" name="Null-Amp Collars" book="HH8" page="301" hidden="true" collective="false" type="upgrade">
+          <profiles>
+            <profile id="3a40-c23b-38cf-c27d" name="Null-Amp Collars" book="HH8" page="301" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="A Model equipped with a Null-amp Collar may attempt to Deny the Witch whenever either the unit it is part of, or any other friendly or enemy unit within 12&quot; is the target of a Psychic Power of any type (including a Blessing). If the Deny the Witch attempt is failed, the power is resolved as normal, but affects only the initial target, not the bearer of the Nuill-Amp collar. A model equipped with a Null-amp Collar that is embarked within a Transport or Fortification can only use the Null-amp Collar to nullify powers targetting the vehicle or building they are embarked within. Any model equipped with a Null-amp Collar has its Initiative characteristic reduced by -1."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3d7b-b723-fe91-659d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d421-c7f1-edd7-3377" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="81d0-ac34-007e-570b" name="Empyreal Lances" book="HH8" page="301" hidden="true" collective="false" type="upgrade">
+          <profiles>
+            <profile id="bfbd-b3ec-33f8-3d85" name="Empyreal Lances" book="HH8" page="301" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="Melee"/>
+                <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="+1/+2*"/>
+                <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4/2*"/>
+                <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Psy-Lash, Specialist Weapon"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="05d9-b981-147a-d1e9" name="Empyreal Lances" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>*When attacking a unit with the Psyker, Brotherhood of Psykers/Sorcerers, Psychic Pilot, Daemon or Daemon of the Ruinstorm special ruls, use the second set of values, against all other models use the first set.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="1215-1a0f-9ad9-1cc3" name="Psy-Lash" hidden="false" targetId="6f38-4691-2eda-8e1b" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a30b-2040-0ed4-d784" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="82f4-ae22-3d38-823b" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e78c-d1a1-c20f-dae8" name="Armatus Necrotechnica" book="HH8" page="301" hidden="true" collective="false" type="upgrade">
+          <profiles>
+            <profile id="3378-e3fb-d536-04de" name="Armatus Necrotechnica" book="HH8" page="301" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="One vehicle with the Tank type in an army may be upgraded to use the Armatus Necotechnica for 50pts Whenever a unit (friendly or enemy) within 6&quot; of a cehicle with this upgrade loses a model as a casualty, roll a D6. On a 6, the vehicle regains 1 Hull Point. This may not bring it above the number of Hull Points listed on its army list entry. In addition, any unit (friendly or enemy) within 6&quot; of an Armatus Necrotechnica must reduce its Leadership value by -1. Units with the Stubborn special rule may not ignore this modifier."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19d0-486a-81c9-c2c9" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8c14-fc26-4ba9-2c7e" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="50.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d761-15dd-7631-ba0d" name="Corpus Mymir" book="HH8" page="303" hidden="true" collective="false" type="upgrade">
+          <profiles>
+            <profile id="965c-73c8-7913-6ea1" name="Corpus Mymir" book="HH8" page="303" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="One Legion Praetor, Magos Prime or Magos Dominus in an army may take a single Corpus Mymir for 30pts  A Corpus Mymir should be represented by an appropriate model on a 25MM base and must remain within 2&quot; of the model for which it is purchased, and if that model is removed as a casualty so too is the Corpus Mymir. The Corpus Mymir cannot be charged or targeted by shooting or close combat attacks. In any of the controlling player;s Psychic phase the Corpus Mymir may be activated. When activated, roll a D6 and consult the table below:  1: The psychic power Misfortune from the Divination discipline is manifested*, however the power targets the unit contained the model for which the Corpus Mymir was Purchased.   2: The psychic power Foreboding from the Divination discipline is manifested*, however the effects apply to the model for which the Corpus Mymir was Purchased.  3: The psychic power Precognition from the Divination discipline is manifested*, however the effects apply to the model for which the Corpus Mymir was Purchased.  4: The psychic power Perfect Timing from the Divination discipline is manifested*, however the effects apply to the model for which the Corpus Mymir was Purchased.  5: The psychic power Shrouding from the Telepathy discipline is manifested*, however the effects apply to the model for which the Corpus Mymir was Purchased.  6: The Corpus Mymir is overcome by the baleful energies it channels and detonates, causing a Strength 3 AP2 hit with the Fleshbane special rule to all models within 3&quot;. Remove the Corpus Mymir from play after resolving these hits.  *Powers manifested by this rule do not require Warp Charges or a Psychic test, but the opposing player may use Deny the Witch to nullify them. For the purpose of Deny the Witch, these abilities are assumed to have generated exactly enough Warp Charges to manifest the power. Special rules with automatically negate psychic powers negate any power generated by this sale."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8685-10dc-a8bb-ffb4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a864-37d6-f297-89b1" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="199f-821c-598a-c660" name="Psi-resonant Pentacles" book="HH8" page="303" hidden="true" collective="false" type="upgrade">
+          <profiles>
+            <profile id="b628-ce3a-6776-d79b" name="Psi-resonant Pentacles" book="HH8" page="303" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Any Independent Character model may replace their Refractor Field with a Psi-resonant Pentacle for +10pts, or their Iron Halo for +5pts.  The PSi-resonant pentacle grants its weaer a 5+ invulnerable save. Any unit which contains models with the Psyker, Brotherhood of Psykers/Sorcerers, Psychic Pilot, Daemon or Daemon of the Ruinstorm special rule locked in combat with a model equipped with a PSi-Resonant Pentacle at the beginning of any Fight sub-phase has their Initiative reduced to 1 until the end of the Assault phase."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8353-ff1f-41d1-ebbb" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9e0c-bb16-4174-9cae" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f162-9d1e-ca8d-d5f6" name="The Ever-changing Axiom" book="HH8" page="303" hidden="true" collective="false" type="upgrade">
+          <profiles>
+            <profile id="2b6d-93fa-8803-1e4d" name="The Ever-changing Axiom" book="HH8" page="303" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="One Praetor, Archmagos Prime or Lord Marshal in an army may take the Ever-changing Axiom for +60pts  Once per game, a model may use the Ever-changing Axiom by speaking it during the Fight sub-phase at Initiative step 1. To speak the Axiom, the controlling player must roll a D3. If the result is a 1 or 2, place a number of Small Blast (3&quot;) markers equal to the number rolled, such that the centre of each blast is within 6&quot; of the speaker. If the result rolled is a 3, place three Small Blast (3&quot;) markers centred on the speaker. These blast do not scatter. Any model wholly or partially under a marker suffered a Str 8 Ap 2 hit. This ability does not grant the model an additional Pile In move at the Initiative 1 Step, and any wounds caused do not count towards combat resolution."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2687-bd5d-b1c2-f697" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a42-ba40-3f9a-ec6c" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="60.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5476-e8db-b6b0-4a1e" name="Tansvectic Generators" book="HH8" page="304" hidden="true" collective="false" type="upgrade">
+          <profiles>
+            <profile id="4da9-da51-fe7b-73f4" name="Tansvectic Generators" book="HH8" page="304" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Any Libarian, Esoterist, Moritat, Diabolist or Saboteur Consul whoi is not equipped with a Jump Pack, Bike or Jetbike may take a Transvectic Generator for +25pts  A Model with a Transvectic Generator may not join any other unit. A Transvectic Generator allows a model to re-locate through the Warp up to 18&quot; in any direction in lieu of moving in the Movement phase, ignoring intervening models and terrain. For all intents and purposes the model has moved as if using a Jump Pack, and this move has no effect on the model in further phaes. Whenever a model makes use of a Transvectic Generator, they must roll a D6. On the result of a 1, they immediately suffer the Dragged into the Warp result on the Perils of the Warp table, and any units within 3&quot; of the model&apos;s starting location also suffer D6 Strength 6 AP1 hits. For the purposes of wound allocation, assume the attack is coming from the model which suffered Perils of the Warp."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f2a-cae1-800f-f177" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="12a1-7d06-e703-7dc2" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="37fa-ba85-8a35-8977" name="Aetherkine Projectors" book="HH8" page="304" hidden="true" collective="false" type="upgrade">
+          <profiles>
+            <profile id="6c8b-77c5-bd80-08c1" name="Aetherkine Projector (4 Warp Charges)" book="HH8" page="304" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="4"/>
+                <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Aetherkine Projector"/>
+                <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="24&quot;"/>
+                <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="7"/>
+                <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="2"/>
+                <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Assault 4, Aetherkinetic Feedback"/>
+                <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd"/>
+              </characteristics>
+            </profile>
+            <profile id="ee78-80f8-8df9-649d" name="Aetherkine Projector (3 Warp Charges)" book="HH8" page="304" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="3"/>
+                <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Aetherkine Projector"/>
+                <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="18&quot;"/>
+                <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="5"/>
+                <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="2"/>
+                <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Assault 3, Aetherkinetic Feedback"/>
+                <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd"/>
+              </characteristics>
+            </profile>
+            <profile id="4d2b-18a3-0e14-ec08" name="Aetherkine Projector (2 Warp Charges)" book="HH8" page="304" hidden="false" profileTypeId="9c33-b0c8-74bd-e5a7" profileTypeName="Psychic Power (Attack)">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Warp Charge" characteristicTypeId="c1b6-4261-dee4-923a" value="2"/>
+                <characteristic name="Power Category" characteristicTypeId="668e-d504-8244-7422" value="Aetherkine Projector"/>
+                <characteristic name="Range" characteristicTypeId="5bf6-378a-0cb7-b079" value="12&quot;"/>
+                <characteristic name="Strength" characteristicTypeId="12da-9b3e-f37b-bc35" value="3"/>
+                <characteristic name="AP" characteristicTypeId="10b5-aa5b-ccde-79cc" value="2"/>
+                <characteristic name="Type" characteristicTypeId="20e7-cbcb-1781-a732" value="Assault 2, Aetherkinetic Feedback"/>
+                <characteristic name="Details" characteristicTypeId="a812-390d-dff6-dabd"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="ff74-155d-9b44-87cc" name="Aetherkine Projectors" book="HH8" page="304" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>Any Preator who is a Psyker, or a Librarian or Esoteris Consul in an army may take an Aetherkine Projector for +25pts
+
+An Aetherkine Projector is a Whitefire psychic power which is automatically known by the bearer. Instead of attempting to manifest this power normally, simply allocate the appropriate number of dice from the controlling player&apos;s Warp Charge pool during the Psychic pase towards this power. An Aetherkine Projector has three firing, based on the number of Warp Charge points allocated. Once the weapon is fired, the Warp Charge is spent.</description>
+            </rule>
+            <rule id="f663-c113-59c1-7f80" name="Aetherkinetic Feedback" book="hh8" page="304" hidden="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <description>Any roll of a 1 To Hit causes the bearer to suffer Perils of the Warp</description>
+            </rule>
+          </rules>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c395-8b57-0cfa-675b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57ab-22b8-3bb3-7bb1" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="66e2-6760-fb6a-edc3" name="Terminal Lucidity Injectors" book="HH8" page="305" hidden="true" collective="false" type="upgrade">
+          <profiles>
+            <profile id="1556-5e72-9bc8-a170" name="Terminal Lucidity Injectors" book="HH8" page="305" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Any Indepentant Character in an army may take a Terminal Lucidity Injector for +20pts
+
+When a model bearing a Terminal Lucidity Injector loses its last wound but before it is removed from play, it does one of the following:
+
+If the model loses its last wound in the Shooting phase or Psychic phases: The model may immediatly shoot its ranged weapon(s) at the unit which removed its last wound (or if that unit is out of range or line of sight, at the closest enemy unit) as if it was the controlling player&apos;s shooting phase.
+
+If the model loses its last wound in the Fight sub-phase: The model may make a Pile in move and make a single attack, regardless of whether or not it has already fought in that Assault phase, at Initiative Step 1."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="df75-0094-c7b0-3dc7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d005-1cc2-4ec1-c489" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="963d-b106-c967-8ba6" name="Empath Bonds" book="HH8" page="305" hidden="true" collective="false" type="upgrade">
+          <profiles>
+            <profile id="3550-c008-51d0-86d2" name="Empath Bonds" book="HH8" page="305" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Before the game begins, select two Independent Character models who are Psykers, have the Legiones Astares special and are in the same Detachment to form an Empath Bond for 15pts per model. Only one pair of Psykers may share an Empath Bond in an army.
+
+So long as both of the selected models which make make up the Empath Bonb are present on the table they gain the Eternal Warrior special rule. Additionally, if either model in an Empath Bond suffers a Perils of the Warp, both models suffer the same effect on the Perils of the Warp Table.
+
+If at any point during the game a model in an Empath Bond loses a wound (other than from Perils of the Warp), so long as the other model in the Empath Bond can draw line of sight to the wounded model, it may attempt to reach into the aether and transfer the wound to itself. To do this roll a D6.
+If the resulting roll is a 3 or higher, then the original model does not suffer the wound, which is instead transferred to and therefore suffered by its partner in the Empath Bond. Once the wound has been transfered, no further attempts to reallocate it can be made.
+If the result is a 2, the attempt fails and the original model suffers the wound as normal.
+If the resulting roll is a 1, instead of stealing the pain of their bonded partner, the model absorbs the suffering of the wider battle and loses a wound with no saves of any kind allowed. The original model suffers the wound as normal.
+
+Should one of the models within the Empath Bond be slaim by any means other than being Dragged into the Warp, the Empath Bond is broken and has no further effect on the remaining model."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9dc-8bac-5e29-bc4a" type="max"/>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c3f4-04b6-ca1c-f585" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d062-ccde-3885-8157" name="Sacrificial Innervation" book="HH8" page="306" hidden="true" collective="false" type="upgrade">
+          <profiles>
+            <profile id="36a3-f9aa-3b44-ba93" name="Sacrificial Innervation" book="HH8" page="306" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Any Praetor who is a Psyker, Librarian, Esoteris or Diabolist Consul may take Sacrificial Innervation for +20pts
+
+A model which undergoes Sacrificial Innervation addes 1 to their Psychic Mastery Level (to a maximum of 4), and may choose to re-roll the dice when determining their Warp Charge pool. However they also subtract -1 from their Wounds characteristic before the game begins."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7de7-bec5-1f64-f21a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="000d-303a-e0a9-b5b2" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="21a0-14df-d719-e116" name="The Digittalis Arcanis" book="HH8" page="306" hidden="true" collective="false" type="upgrade">
+          <profiles>
+            <profile id="6487-0756-b845-5afe" name="The Digittalis Arcanis" book="HH8" page="306" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="One Libarian, Diabolist, or Esoterist Consul in a Detachment with at least two Psychic Mastery Levels may take the Disittalis Arcanis for +30pts
+
+At the beginning of any of their turns, the controlling player may activate the Digittalis Arcanis. This grants the bearer an increase of D3 to both their Attacks and Initiative characteristics until the end of their following player turn. After the effects of the Digittalis Arcanis have worn off, the bearer&apos;s Attacks and Initiative characteristics are reduced to 1 for the remainder of the game."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2eda-f9d5-4dc1-cefd" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b2c7-a2cf-94ce-227c" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="84c4-786f-c3c8-a450" name="Divining Blades" book="HH8" page="306" hidden="true" collective="false" type="upgrade">
+          <profiles>
+            <profile id="68fe-ea95-fe33-83fa" name="Divining Blades" book="HH8" page="306" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="Melee"/>
+                <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="+2"/>
+                <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="1"/>
+                <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Instant Death, Master-Crafted, Psy-Lash, Two Handed."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks>
+            <infoLink id="8c58-7050-0bcd-18f6" name="Psy-Lash" hidden="false" targetId="6f38-4691-2eda-8e1b" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="0ce6-5e15-405d-5543" name="Two-Handed" hidden="false" targetId="b11c-0ef4-af6b-d96f" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="ac50-6084-7b37-2bb4" name="Instant Death" hidden="false" targetId="fbf1-6913-ff9f-5a4f" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="3971-b954-e333-abca" name="Master-crafted" hidden="false" targetId="f899-8f9d-fc7e-d855" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5cda-25b2-9e6e-f04b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f71e-38b3-811c-076a" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a488-91dd-a866-5fe0" name="Chogorian Dreadplate" book="HH8" page="307" hidden="true" collective="false" type="upgrade">
+          <profiles>
+            <profile id="5343-10ea-8135-8c72" name="Chogorian Dreadplate" book="HH8" page="307" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="One Praetor Centurion or Consul in an army may take Chogorian Dreadplate for +10pts
+
+A model equipped with Chogorian Dreadplate has a 3+ Invulnerable save against any wounds caused by models with the Daemon or Daemon of the Ruinstorm special rules."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c4e7-4ed7-0224-51ef" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22ab-c874-a834-5807" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="49dd-55d6-fa07-8cb5" name="The Liber Magra Veneficarum" book="HH8" page="307" hidden="true" collective="false" type="upgrade">
+          <profiles>
+            <profile id="fa45-6c46-8814-9219" name="The Liber Magra Veneficarum" book="hh8" page="307" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Any Traitor Allegiance Independent Character (which is not a Psyker, Daemon or Daemon of the Ruinstorm) may take the Liber Magra Veneficarum for +25tps.
+
+The Liber Magra Veneficarum grants the bearer one level of Psychic Mastery, but they are granded only the Incursion Malefic Daemonology power."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="74c1-b6c7-45e1-0c70" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0fa-2229-1501-9310" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b2fe-de24-0c45-9b4d" name="Icon of the Blazing Sun" book="HH8" page="307" hidden="true" collective="false" type="upgrade">
+          <profiles>
+            <profile id="7e83-3c59-7f0b-6bb7" name="Icon of the Blazing Sun" book="HH8" page="307" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="One Loyalist Allegiance Independent Character per Detachment may take an Icon of the Blazing Sun for +30pts.
+
+If a Traitor Allegiance Psyker within 12&quot; of the Icon successfully attempts to manifest any psychic power in the current Psychic phase, the bearer of the Icon of the Blazing Sun may attempt to nullify that power. To do so, the bearer of an Icon of the Blazing Sun must take a Leadership test. If the Leadership test is passed, the power does not manifest. If the Leadership test is failed, the power is manifested unaffected, and the bearer of an Icon of the Blazing Sun suffers a wound with no saves of any kind allowed. If the result of the test was a double 6, the bearer&apos;s faith is found wanting, they are consumed by the power they sought to invoke and are immediately removed from play with no saves of any kind allowed.
+
+Additionally, any Daemon or Daemon of the Ruinstorm is reduced to Weapon Skill 1 when locked in combat with the model carrying an Icon of the Blazing Sun."/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d89-4f2d-91dd-5450" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fabb-becc-0d5a-548d" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks/>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="5342-bf92-d6c0-ebb9" name="Hit and Run" book="HH: AoD Rulebook" page="164" hidden="false">
@@ -15013,6 +15657,13 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
       <infoLinks/>
       <modifiers/>
       <description>If a Super-heavy vehicle has a Transport Capacity, then it may transport any number of Infantry units (plus any characters that have joined the units), so long as the number of models in the transported units do not exceed the vehicle’s Transport Capacity.</description>
+    </rule>
+    <rule id="6f38-4691-2eda-8e1b" name="Psy-Lash" book="HH8" page="301" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>When attacking a unit with the Daemon, Psyker, Brotherhood of Psykers/Sorcerers, Psychic Pilot special rule then one randomlyed selected model in the unit with that special rule suffers Perils of the Warp in addition to any other damage.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
