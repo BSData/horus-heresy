@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="103" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" book="Forgeworld Horus Heresy Series" revision="104" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -13359,7 +13359,7 @@ Command Benefits:
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3d7b-b723-fe91-659d" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3d7b-b723-fe91-659d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d421-c7f1-edd7-3377" type="max"/>
           </constraints>
           <categoryLinks/>
@@ -13405,7 +13405,7 @@ Command Benefits:
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a30b-2040-0ed4-d784" type="max"/>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="82f4-ae22-3d38-823b" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="82f4-ae22-3d38-823b" type="max"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -13432,7 +13432,7 @@ Command Benefits:
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19d0-486a-81c9-c2c9" type="max"/>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8c14-fc26-4ba9-2c7e" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8c14-fc26-4ba9-2c7e" type="max"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -13458,7 +13458,7 @@ Command Benefits:
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8685-10dc-a8bb-ffb4" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8685-10dc-a8bb-ffb4" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a864-37d6-f297-89b1" type="max"/>
           </constraints>
           <categoryLinks/>
@@ -13486,7 +13486,7 @@ Command Benefits:
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8353-ff1f-41d1-ebbb" type="max"/>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9e0c-bb16-4174-9cae" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9e0c-bb16-4174-9cae" type="max"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -13512,7 +13512,7 @@ Command Benefits:
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2687-bd5d-b1c2-f697" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2687-bd5d-b1c2-f697" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a42-ba40-3f9a-ec6c" type="max"/>
           </constraints>
           <categoryLinks/>
@@ -13540,7 +13540,7 @@ Command Benefits:
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f2a-cae1-800f-f177" type="max"/>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="12a1-7d06-e703-7dc2" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="12a1-7d06-e703-7dc2" type="max"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -13619,7 +13619,7 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c395-8b57-0cfa-675b" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c395-8b57-0cfa-675b" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57ab-22b8-3bb3-7bb1" type="max"/>
           </constraints>
           <categoryLinks/>
@@ -13638,13 +13638,7 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Any Indepentant Character in an army may take a Terminal Lucidity Injector for +20pts
-
-When a model bearing a Terminal Lucidity Injector loses its last wound but before it is removed from play, it does one of the following:
-
-If the model loses its last wound in the Shooting phase or Psychic phases: The model may immediatly shoot its ranged weapon(s) at the unit which removed its last wound (or if that unit is out of range or line of sight, at the closest enemy unit) as if it was the controlling player&apos;s shooting phase.
-
-If the model loses its last wound in the Fight sub-phase: The model may make a Pile in move and make a single attack, regardless of whether or not it has already fought in that Assault phase, at Initiative Step 1."/>
+                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Any Indepentant Character in an army may take a Terminal Lucidity Injector for +20pts  When a model bearing a Terminal Lucidity Injector loses its last wound but before it is removed from play, it does one of the following:  If the model loses its last wound in the Shooting phase or Psychic phases: The model may immediatly shoot its ranged weapon(s) at the unit which removed its last wound (or if that unit is out of range or line of sight, at the closest enemy unit) as if it was the controlling player&apos;s shooting phase.  If the model loses its last wound in the Fight sub-phase: The model may make a Pile in move and make a single attack, regardless of whether or not it has already fought in that Assault phase, at Initiative Step 1."/>
               </characteristics>
             </profile>
           </profiles>
@@ -13652,7 +13646,7 @@ If the model loses its last wound in the Fight sub-phase: The model may make a P
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="df75-0094-c7b0-3dc7" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="df75-0094-c7b0-3dc7" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d005-1cc2-4ec1-c489" type="max"/>
           </constraints>
           <categoryLinks/>
@@ -13671,16 +13665,7 @@ If the model loses its last wound in the Fight sub-phase: The model may make a P
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Before the game begins, select two Independent Character models who are Psykers, have the Legiones Astares special and are in the same Detachment to form an Empath Bond for 15pts per model. Only one pair of Psykers may share an Empath Bond in an army.
-
-So long as both of the selected models which make make up the Empath Bonb are present on the table they gain the Eternal Warrior special rule. Additionally, if either model in an Empath Bond suffers a Perils of the Warp, both models suffer the same effect on the Perils of the Warp Table.
-
-If at any point during the game a model in an Empath Bond loses a wound (other than from Perils of the Warp), so long as the other model in the Empath Bond can draw line of sight to the wounded model, it may attempt to reach into the aether and transfer the wound to itself. To do this roll a D6.
-If the resulting roll is a 3 or higher, then the original model does not suffer the wound, which is instead transferred to and therefore suffered by its partner in the Empath Bond. Once the wound has been transfered, no further attempts to reallocate it can be made.
-If the result is a 2, the attempt fails and the original model suffers the wound as normal.
-If the resulting roll is a 1, instead of stealing the pain of their bonded partner, the model absorbs the suffering of the wider battle and loses a wound with no saves of any kind allowed. The original model suffers the wound as normal.
-
-Should one of the models within the Empath Bond be slaim by any means other than being Dragged into the Warp, the Empath Bond is broken and has no further effect on the remaining model."/>
+                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Before the game begins, select two Independent Character models who are Psykers, have the Legiones Astares special and are in the same Detachment to form an Empath Bond for 15pts per model. Only one pair of Psykers may share an Empath Bond in an army.  So long as both of the selected models which make make up the Empath Bonb are present on the table they gain the Eternal Warrior special rule. Additionally, if either model in an Empath Bond suffers a Perils of the Warp, both models suffer the same effect on the Perils of the Warp Table.  If at any point during the game a model in an Empath Bond loses a wound (other than from Perils of the Warp), so long as the other model in the Empath Bond can draw line of sight to the wounded model, it may attempt to reach into the aether and transfer the wound to itself. To do this roll a D6. If the resulting roll is a 3 or higher, then the original model does not suffer the wound, which is instead transferred to and therefore suffered by its partner in the Empath Bond. Once the wound has been transfered, no further attempts to reallocate it can be made. If the result is a 2, the attempt fails and the original model suffers the wound as normal. If the resulting roll is a 1, instead of stealing the pain of their bonded partner, the model absorbs the suffering of the wider battle and loses a wound with no saves of any kind allowed. The original model suffers the wound as normal.  Should one of the models within the Empath Bond be slaim by any means other than being Dragged into the Warp, the Empath Bond is broken and has no further effect on the remaining model."/>
               </characteristics>
             </profile>
           </profiles>
@@ -13689,7 +13674,7 @@ Should one of the models within the Empath Bond be slaim by any means other than
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9dc-8bac-5e29-bc4a" type="max"/>
-            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c3f4-04b6-ca1c-f585" type="max"/>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c3f4-04b6-ca1c-f585" type="max"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -13707,9 +13692,7 @@ Should one of the models within the Empath Bond be slaim by any means other than
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Any Praetor who is a Psyker, Librarian, Esoteris or Diabolist Consul may take Sacrificial Innervation for +20pts
-
-A model which undergoes Sacrificial Innervation addes 1 to their Psychic Mastery Level (to a maximum of 4), and may choose to re-roll the dice when determining their Warp Charge pool. However they also subtract -1 from their Wounds characteristic before the game begins."/>
+                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Any Praetor who is a Psyker, Librarian, Esoteris or Diabolist Consul may take Sacrificial Innervation for +20pts  A model which undergoes Sacrificial Innervation addes 1 to their Psychic Mastery Level (to a maximum of 4), and may choose to re-roll the dice when determining their Warp Charge pool. However they also subtract -1 from their Wounds characteristic before the game begins."/>
               </characteristics>
             </profile>
           </profiles>
@@ -13717,7 +13700,7 @@ A model which undergoes Sacrificial Innervation addes 1 to their Psychic Mastery
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7de7-bec5-1f64-f21a" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7de7-bec5-1f64-f21a" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="000d-303a-e0a9-b5b2" type="max"/>
           </constraints>
           <categoryLinks/>
@@ -13736,9 +13719,7 @@ A model which undergoes Sacrificial Innervation addes 1 to their Psychic Mastery
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="One Libarian, Diabolist, or Esoterist Consul in a Detachment with at least two Psychic Mastery Levels may take the Disittalis Arcanis for +30pts
-
-At the beginning of any of their turns, the controlling player may activate the Digittalis Arcanis. This grants the bearer an increase of D3 to both their Attacks and Initiative characteristics until the end of their following player turn. After the effects of the Digittalis Arcanis have worn off, the bearer&apos;s Attacks and Initiative characteristics are reduced to 1 for the remainder of the game."/>
+                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="One Libarian, Diabolist, or Esoterist Consul in a Detachment with at least two Psychic Mastery Levels may take the Disittalis Arcanis for +30pts  At the beginning of any of their turns, the controlling player may activate the Digittalis Arcanis. This grants the bearer an increase of D3 to both their Attacks and Initiative characteristics until the end of their following player turn. After the effects of the Digittalis Arcanis have worn off, the bearer&apos;s Attacks and Initiative characteristics are reduced to 1 for the remainder of the game."/>
               </characteristics>
             </profile>
           </profiles>
@@ -13747,7 +13728,7 @@ At the beginning of any of their turns, the controlling player may activate the 
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2eda-f9d5-4dc1-cefd" type="max"/>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b2c7-a2cf-94ce-227c" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b2c7-a2cf-94ce-227c" type="max"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -13801,7 +13782,7 @@ At the beginning of any of their turns, the controlling player may activate the 
           </infoLinks>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5cda-25b2-9e6e-f04b" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5cda-25b2-9e6e-f04b" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f71e-38b3-811c-076a" type="max"/>
           </constraints>
           <categoryLinks/>
@@ -13820,9 +13801,7 @@ At the beginning of any of their turns, the controlling player may activate the 
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="One Praetor Centurion or Consul in an army may take Chogorian Dreadplate for +10pts
-
-A model equipped with Chogorian Dreadplate has a 3+ Invulnerable save against any wounds caused by models with the Daemon or Daemon of the Ruinstorm special rules."/>
+                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="One Praetor Centurion or Consul in an army may take Chogorian Dreadplate for +10pts  A model equipped with Chogorian Dreadplate has a 3+ Invulnerable save against any wounds caused by models with the Daemon or Daemon of the Ruinstorm special rules."/>
               </characteristics>
             </profile>
           </profiles>
@@ -13849,9 +13828,7 @@ A model equipped with Chogorian Dreadplate has a 3+ Invulnerable save against an
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Any Traitor Allegiance Independent Character (which is not a Psyker, Daemon or Daemon of the Ruinstorm) may take the Liber Magra Veneficarum for +25tps.
-
-The Liber Magra Veneficarum grants the bearer one level of Psychic Mastery, but they are granded only the Incursion Malefic Daemonology power."/>
+                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Any Traitor Allegiance Independent Character (which is not a Psyker, Daemon or Daemon of the Ruinstorm) may take the Liber Magra Veneficarum for +25tps.  The Liber Magra Veneficarum grants the bearer one level of Psychic Mastery, but they are granded only the Incursion Malefic Daemonology power."/>
               </characteristics>
             </profile>
           </profiles>
@@ -13859,7 +13836,7 @@ The Liber Magra Veneficarum grants the bearer one level of Psychic Mastery, but 
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="74c1-b6c7-45e1-0c70" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="74c1-b6c7-45e1-0c70" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0fa-2229-1501-9310" type="max"/>
           </constraints>
           <categoryLinks/>
@@ -13878,11 +13855,7 @@ The Liber Magra Veneficarum grants the bearer one level of Psychic Mastery, but 
               <infoLinks/>
               <modifiers/>
               <characteristics>
-                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="One Loyalist Allegiance Independent Character per Detachment may take an Icon of the Blazing Sun for +30pts.
-
-If a Traitor Allegiance Psyker within 12&quot; of the Icon successfully attempts to manifest any psychic power in the current Psychic phase, the bearer of the Icon of the Blazing Sun may attempt to nullify that power. To do so, the bearer of an Icon of the Blazing Sun must take a Leadership test. If the Leadership test is passed, the power does not manifest. If the Leadership test is failed, the power is manifested unaffected, and the bearer of an Icon of the Blazing Sun suffers a wound with no saves of any kind allowed. If the result of the test was a double 6, the bearer&apos;s faith is found wanting, they are consumed by the power they sought to invoke and are immediately removed from play with no saves of any kind allowed.
-
-Additionally, any Daemon or Daemon of the Ruinstorm is reduced to Weapon Skill 1 when locked in combat with the model carrying an Icon of the Blazing Sun."/>
+                <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="One Loyalist Allegiance Independent Character per Detachment may take an Icon of the Blazing Sun for +30pts.  If a Traitor Allegiance Psyker within 12&quot; of the Icon successfully attempts to manifest any psychic power in the current Psychic phase, the bearer of the Icon of the Blazing Sun may attempt to nullify that power. To do so, the bearer of an Icon of the Blazing Sun must take a Leadership test. If the Leadership test is passed, the power does not manifest. If the Leadership test is failed, the power is manifested unaffected, and the bearer of an Icon of the Blazing Sun suffers a wound with no saves of any kind allowed. If the result of the test was a double 6, the bearer&apos;s faith is found wanting, they are consumed by the power they sought to invoke and are immediately removed from play with no saves of any kind allowed.  Additionally, any Daemon or Daemon of the Ruinstorm is reduced to Weapon Skill 1 when locked in combat with the model carrying an Icon of the Blazing Sun."/>
               </characteristics>
             </profile>
           </profiles>
@@ -13891,7 +13864,7 @@ Additionally, any Daemon or Daemon of the Ruinstorm is reduced to Weapon Skill 1
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d89-4f2d-91dd-5450" type="max"/>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fabb-becc-0d5a-548d" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="fabb-becc-0d5a-548d" type="max"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
