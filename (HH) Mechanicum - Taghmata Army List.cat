@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" book="Horus Heresy: Taghmata Army List" revision="82" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" book="Horus Heresy: Taghmata Army List" revision="83" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -946,15 +946,6 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
           <infoLinks/>
           <modifiers/>
           <constraints/>
-        </categoryLink>
-        <categoryLink id="7796-f887-9a12-b3e2" name="Use Playtest Rules" hidden="false" targetId="fdf4-0683-3e84-5a4b" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="183c-46eb-a1b8-49e6" type="max"/>
-          </constraints>
         </categoryLink>
         <categoryLink id="d847-718b-9cad-ca61" name="Use Playtest Rules" hidden="false" targetId="fdf4-0683-3e84-5a4b" primary="false">
           <profiles/>
@@ -6629,6 +6620,34 @@ Reduces transport capacity to 8.</description>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="e035-4a83-c90f-5c41" name="Psyarkana" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c888-753a-f27c-80ff" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="a42e-1752-2a65-d06b" name="Armatus Necrotechnica" hidden="false" targetId="e78c-d1a1-c20f-dae8" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks/>
       <costs>
@@ -7940,7 +7959,7 @@ Reduces transport capacity to 8.</description>
               <profiles/>
               <rules/>
               <infoLinks>
-                <infoLink id="46c1-465d-0366-a9bc" name="Rotor Cannon" hidden="false" targetId="75683330-6490-c0bf-560c-2e58617425a1" type="profile">
+                <infoLink id="46c1-465d-0366-a9bc" hidden="false" targetId="75683330-6490-c0bf-560c-2e58617425a1" type="profile">
                   <profiles/>
                   <rules/>
                   <infoLinks/>
@@ -7985,14 +8004,7 @@ Reduces transport capacity to 8.</description>
             <selectionEntry id="bfd2-ae59-e713-7ee2" name="Multi-melta" page="0" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
-              <infoLinks>
-                <infoLink id="1014-5c74-5c3a-a4c5" name="Multi-melta" hidden="false" targetId="ed91-7534-4852-fb7a" type="profile">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
+              <infoLinks/>
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -8076,7 +8088,36 @@ Reduces transport capacity to 8.</description>
       </constraints>
       <categoryLinks/>
       <selectionEntries/>
-      <selectionEntryGroups/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6aa5-2f0e-f94f-d297" name="Psyarkana" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="721e-e7eb-9bd4-be6a" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="63e7-773d-871c-40c5" name="Armatus Necrotechnica" hidden="false" targetId="e78c-d1a1-c20f-dae8" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="fbeb-5ea1-c9da-c323" name="Flare Shield" hidden="false" targetId="776e-2ea5-2be8-fee3" type="selectionEntry">
           <profiles/>
@@ -9631,7 +9672,36 @@ Reduces transport capacity to 8.</description>
         </categoryLink>
       </categoryLinks>
       <selectionEntries/>
-      <selectionEntryGroups/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="34f4-7338-6bb9-6938" name="Psyarkana" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f78-93c2-fba8-9f13" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="5905-fb60-5b44-cfa9" name="Armatus Necrotechnica" hidden="false" targetId="e78c-d1a1-c20f-dae8" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="5e35-a71f-5e13-e6dc" name="New EntryLink" hidden="false" targetId="776e-2ea5-2be8-fee3" type="selectionEntry">
           <profiles/>
@@ -9736,7 +9806,7 @@ Reduces transport capacity to 8.</description>
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="d4fa-f51d-b933-45ae" name="New InfoLink" hidden="false" targetId="0345-be6c-3862-1bf7" type="profile">
+        <infoLink id="d4fa-f51d-b933-45ae" name="Karacnos motar battery" hidden="false" targetId="0345-be6c-3862-1bf7" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -13830,6 +13900,34 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
+                <selectionEntryGroup id="5ca9-909f-f4d6-ba5b" name="Psyarkana" hidden="false" collective="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b31-3422-411e-ab96" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks>
+                    <entryLink id="e53b-836e-4f51-2c40" name="Armatus Necrotechnica" hidden="false" targetId="e78c-d1a1-c20f-dae8" type="selectionEntry">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <repeats/>
+                          <conditions/>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
+                      <constraints/>
+                      <categoryLinks/>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="b3df-e16a-d58c-c1fd" name="New EntryLink" hidden="false" targetId="776e-2ea5-2be8-fee3" type="selectionEntry">
@@ -13999,6 +14097,34 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
                       <rules/>
                       <infoLinks/>
                       <modifiers/>
+                      <constraints/>
+                      <categoryLinks/>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="46d1-c305-9946-d34d" name="Psyarkana" hidden="false" collective="false">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16a2-c38d-033f-8df2" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks>
+                    <entryLink id="3c26-21f7-7273-6c9c" name="Armatus Necrotechnica" hidden="false" targetId="e78c-d1a1-c20f-dae8" type="selectionEntry">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <repeats/>
+                          <conditions/>
+                          <conditionGroups/>
+                        </modifier>
+                      </modifiers>
                       <constraints/>
                       <categoryLinks/>
                     </entryLink>
@@ -14648,6 +14774,34 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
               <selectionEntryGroups/>
               <entryLinks/>
             </selectionEntryGroup>
+            <selectionEntryGroup id="7e5b-9d44-b86f-8e9c" name="Psyarkana" hidden="false" collective="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="585b-4d4b-baf8-df5c" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="c8f1-5aeb-4c47-c9fd" name="Armatus Necrotechnica" hidden="false" targetId="e78c-d1a1-c20f-dae8" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks/>
           <costs>
@@ -15112,6 +15266,34 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
               </selectionEntries>
               <selectionEntryGroups/>
               <entryLinks/>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="c376-08d7-3bb5-5a89" name="Psyarkana" hidden="false" collective="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="036d-3dfe-4fc7-2781" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="19f8-616e-40ab-20d2" name="Armatus Necrotechnica" hidden="false" targetId="e78c-d1a1-c20f-dae8" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks/>
@@ -16036,12 +16218,6 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="0b55-38b3-2149-4e41" hidden="false" targetId="4845-0bfe-2c22-883f" type="profile">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
         <infoLink id="65b9-c62c-c25c-6355" hidden="false" targetId="ec8086ee-40ef-30cb-d8ed-2138991ab56b" type="profile">
           <profiles/>
           <rules/>
@@ -16523,6 +16699,80 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
           </selectionEntries>
           <selectionEntryGroups/>
           <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="ccde-3f6f-5488-5d49" name="Psyarkana" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef07-09af-569a-7cc5" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="fd10-f915-d561-6dbd" name="Icon of the Blazing Sun" hidden="false" targetId="b2fe-de24-0c45-9b4d" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a735-9091-b1d2-02d8" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="0c35-6555-ad19-35a4" name="Terminal Lucidity Injectors" hidden="false" targetId="66e2-6760-fb6a-edc3" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="ee3c-cc34-83eb-263a" name="The Liber Magra Veneficarum" hidden="false" targetId="49dd-55d6-fa07-8cb5" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7441-34c0-5e21-eeaa" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="554e-29be-40c6-628d" name="Corpus Mymir" hidden="false" targetId="d761-15dd-7631-ba0d" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -18202,6 +18452,34 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
           <selectionEntryGroups/>
           <entryLinks/>
         </selectionEntryGroup>
+        <selectionEntryGroup id="00e6-8133-3806-7039" name="Psyarkana" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fca9-9310-7191-0fb9" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="4ede-fbb0-9ac9-a1b2" name="Corpus Mymir" hidden="false" targetId="d761-15dd-7631-ba0d" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="ab7e-c741-1e8e-0b4f" name="May be mounted on:" hidden="false" targetId="df18-c724-2a3d-a6e5" type="selectionEntryGroup">
@@ -19057,6 +19335,34 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
                   <constraints/>
                   <categoryLinks/>
                 </entryLink>
+                <entryLink id="a517-4d10-57dd-7c1c" name="Divining Blades" hidden="false" targetId="3812-6e1b-33c3-9a88" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="aa74-77f4-7266-36b6" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8093-b175-1b06-0915" type="equalTo"/>
+                            <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="00cf-20ab-1b17-aad1" type="equalTo"/>
+                            <condition field="selections" scope="aa74-77f4-7266-36b6" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2387-a7aa-67d7-2589" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" field="points" value="45">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="2939-5889-6c61-caef" name="Ranged Weapon:" hidden="false" collective="false" defaultSelectionEntryId="97f7-35c5-fd82-1c40">
@@ -19122,10 +19428,10 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
                   <rules/>
                   <infoLinks/>
                   <modifiers>
-                    <modifier type="set" field="hidden" value="true">
+                    <modifier type="set" field="hidden" value="false">
                       <repeats/>
                       <conditions>
-                        <condition field="selections" scope="aa74-77f4-7266-36b6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="00cf-20ab-1b17-aad1" type="equalTo"/>
+                        <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="00cf-20ab-1b17-aad1" type="equalTo"/>
                       </conditions>
                       <conditionGroups/>
                     </modifier>
@@ -19165,10 +19471,139 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
                   <constraints/>
                   <categoryLinks/>
                 </entryLink>
+                <entryLink id="2387-a7aa-67d7-2589" name="Divining Blades" hidden="false" targetId="3812-6e1b-33c3-9a88" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="00cf-20ab-1b17-aad1" type="equalTo"/>
+                            <condition field="selections" scope="aa74-77f4-7266-36b6" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8093-b175-1b06-0915" type="equalTo"/>
+                            <condition field="selections" scope="aa74-77f4-7266-36b6" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a517-4d10-57dd-7c1c" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups/>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" field="points" value="45">
+                      <repeats/>
+                      <conditions/>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8093-b175-1b06-0915" name="Psyarkana" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="c261-1343-94a0-73f3" value="0.0">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2387-a7aa-67d7-2589" type="equalTo"/>
+                    <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a517-4d10-57dd-7c1c" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2387-a7aa-67d7-2589" type="equalTo"/>
+                    <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a517-4d10-57dd-7c1c" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c261-1343-94a0-73f3" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="f387-91d1-8fe3-a671" name="Icon of the Blazing Sun" hidden="false" targetId="b2fe-de24-0c45-9b4d" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a735-9091-b1d2-02d8" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="af3b-c065-9bd0-39c2" name="Terminal Lucidity Injectors" hidden="false" targetId="66e2-6760-fb6a-edc3" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="6bb1-2832-954d-32a1" name="The Liber Magra Veneficarum" hidden="false" targetId="49dd-55d6-fa07-8cb5" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7441-34c0-5e21-eeaa" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="0788-1510-e40f-77d9" name="Corpus Mymir" hidden="false" targetId="d761-15dd-7631-ba0d" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -19533,15 +19968,10 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <repeats/>
-                  <conditions/>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="04e8-11de-2eb4-67e0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8952-ed12-5b98-7de7" type="greaterThan"/>
-                      </conditions>
-                      <conditionGroups/>
-                    </conditionGroup>
-                  </conditionGroups>
+                  <conditions>
+                    <condition field="selections" scope="04e8-11de-2eb4-67e0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8952-ed12-5b98-7de7" type="greaterThan"/>
+                  </conditions>
+                  <conditionGroups/>
                 </modifier>
               </modifiers>
               <constraints/>
@@ -19553,6 +19983,28 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
               <infoLinks/>
               <modifiers>
                 <modifier type="set" field="points" value="15">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="b88b-242f-e5f0-460b" name="Divining Blades" hidden="false" targetId="3812-6e1b-33c3-9a88" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="04e8-11de-2eb4-67e0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8952-ed12-5b98-7de7" type="greaterThan"/>
+                    <condition field="selections" scope="04e8-11de-2eb4-67e0" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9911-2ef9-e724-b235" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="set" field="points" value="45">
                   <repeats/>
                   <conditions/>
                   <conditionGroups/>
@@ -20176,6 +20628,81 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
                 <modifier type="set" field="maxSelections" value="1">
                   <repeats/>
                   <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="9911-2ef9-e724-b235" name="Psyarkana" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="04e8-11de-2eb4-67e0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b88b-242f-e5f0-460b" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="f462-934a-c045-2f7a" value="0">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="04e8-11de-2eb4-67e0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b88b-242f-e5f0-460b" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f462-934a-c045-2f7a" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="b6c3-2a6f-ef56-6634" name="Icon of the Blazing Sun" hidden="false" targetId="b2fe-de24-0c45-9b4d" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a735-9091-b1d2-02d8" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="3e2f-1bb4-b795-07c4" name="Terminal Lucidity Injectors" hidden="false" targetId="66e2-6760-fb6a-edc3" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="856a-6228-5871-8d41" name="The Liber Magra Veneficarum" hidden="false" targetId="49dd-55d6-fa07-8cb5" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7441-34c0-5e21-eeaa" type="equalTo"/>
+                  </conditions>
                   <conditionGroups/>
                 </modifier>
               </modifiers>
@@ -24497,6 +25024,34 @@ Assault rules unless otherwise noted.</description>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="8084-63c5-8250-2217" name="Psyarkana" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9254-1c72-843d-a44d" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="515c-4a53-510c-7fe9" name="Armatus Necrotechnica" hidden="false" targetId="e78c-d1a1-c20f-dae8" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks/>
       <costs>
@@ -25650,6 +26205,61 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
       </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3812-6e1b-33c3-9a88" name="Divining Blades" hidden="true" collective="false" type="upgrade">
+      <profiles>
+        <profile id="8912-e01c-25c8-4f23" name="Divining Blades" book="HH8" page="306" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="Melee"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="+2"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="1"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Instant Death, Master-Crafted, Psy-Lash, Two Handed."/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="b660-9621-f268-4d80" name="Instant Death" hidden="false" targetId="fbf1-6913-ff9f-5a4f" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="e582-38f7-6ea0-4916" name="Master-crafted" hidden="false" targetId="f899-8f9d-fc7e-d855" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="8371-1bd3-7612-cd54" name="Psy-Lash" hidden="false" targetId="6f38-4691-2eda-8e1b" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="14f6-f39f-d4a6-9fa2" name="Two-Handed" hidden="false" targetId="b11c-0ef4-af6b-d96f" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d96c-d599-5ed9-8998" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7747-cbc1-4591-9720" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
