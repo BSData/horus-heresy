@@ -563,7 +563,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="c7e9-ff04-2095-0c9e" name="Lord of Sorcery" hidden="false" targetId="72b2-44f6-a487-9711" type="rule">
+        <infoLink id="c7e9-ff04-2095-0c9e" name="Lord of Sorcery" hidden="false" targetId="72b2-44f6-a487-9711" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -741,7 +741,9 @@
               <categoryLinks/>
             </entryLink>
           </entryLinks>
-          <costs/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="b9b7-d302-8a3b-1a80" name="Flying Monstrous Creature (Character)" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -822,7 +824,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="a803-3ad0-9158-a42a" name="Daemonic Wings" hidden="false" targetId="45a3-99f6-c011-ef06" type="rule">
+        <infoLink id="a803-3ad0-9158-a42a" name="Daemonic Wings" hidden="false" targetId="45a3-99f6-c011-ef06" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -899,7 +901,7 @@
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="e7c1-3a77-ef39-0f98" value="3">
+            <modifier type="increment" field="e7c1-3a77-ef39-0f98" value="3">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -917,7 +919,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="3eaa-8efa-1970-e06c" name="Crushing Claws" hidden="false" targetId="3ca6-5e4c-f702-b983" type="rule">
+        <infoLink id="3eaa-8efa-1970-e06c" name="Crushing Claws" hidden="false" targetId="3ca6-5e4c-f702-b983" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -946,7 +948,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="ecd8-3244-6a5c-e5c5" name="Flensing Talons" hidden="false" targetId="6956-e790-321e-9bf7" type="rule">
+        <infoLink id="ecd8-3244-6a5c-e5c5" name="Flensing Talons" hidden="false" targetId="6956-e790-321e-9bf7" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1024,7 +1026,28 @@
               <profiles/>
               <rules/>
               <infoLinks/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="5361766523232344415441232323" value="3+">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="5eaf-49f3-f745-fd30" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5759-049f-35eb-37c2" type="atLeast"/>
+                        <condition field="selections" scope="5eaf-49f3-f745-fd30" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da14-1454-058f-f0cd" type="atLeast"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Jump Infantry">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="5eaf-49f3-f745-fd30" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7d02-f800-e124-ea50" type="atLeast"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
             </infoLink>
             <infoLink id="0480-12cb-a92c-9aa1" name="Daemon of the Ruinstorm" hidden="false" targetId="0b0d-9d33-c0a8-06cd" type="rule">
               <profiles/>
@@ -1140,7 +1163,7 @@
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="6444-bd31-dc43-d332" value="3">
+            <modifier type="increment" field="6444-bd31-dc43-d332" value="3">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -1202,7 +1225,7 @@
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="6444-bd31-dc43-d332" value="3">
+            <modifier type="increment" field="6444-bd31-dc43-d332" value="3">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -1282,7 +1305,7 @@
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="e7c1-3a77-ef39-0f98" value="2">
+            <modifier type="increment" field="e7c1-3a77-ef39-0f98" value="2">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -1454,7 +1477,7 @@
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="e7c1-3a77-ef39-0f98" value="1">
+            <modifier type="increment" field="e7c1-3a77-ef39-0f98" value="1">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -1516,7 +1539,7 @@
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="6444-bd31-dc43-d332" value="2">
+            <modifier type="increment" field="6444-bd31-dc43-d332" value="2">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -1584,7 +1607,7 @@
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="fade-e611-e826-a743" value="3">
+            <modifier type="increment" field="fade-e611-e826-a743" value="3">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -1672,7 +1695,7 @@
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="fade-e611-e826-a743" value="3">
+            <modifier type="increment" field="fade-e611-e826-a743" value="3">
               <repeats/>
               <conditions/>
               <conditionGroups/>
@@ -2076,7 +2099,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="7542-2360-27e2-f4e0" name="Shroud of Darkness" hidden="false" targetId="a181-08b7-a898-48ff" type="rule">
+        <infoLink id="7542-2360-27e2-f4e0" name="Shroud of Darkness" hidden="false" targetId="a181-08b7-a898-48ff" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2099,7 +2122,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="ad4f-5302-2845-72f7" name="Molten Blood" hidden="false" targetId="fca2-f660-2768-c79f" type="rule">
+        <infoLink id="ad4f-5302-2845-72f7" name="Molten Blood" hidden="false" targetId="fca2-f660-2768-c79f" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2122,7 +2145,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="d2ca-32f8-02ce-fa7e" name="Ephemeral Terror" hidden="false" targetId="6b1c-472a-a93a-b6f4" type="rule">
+        <infoLink id="d2ca-32f8-02ce-fa7e" name="Ephemeral Terror" hidden="false" targetId="6b1c-472a-a93a-b6f4" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2186,6 +2209,12 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
+        <infoLink id="6fb6-1edf-26a1-d2c6" name="Pinning" hidden="false" targetId="f624-f475-e5ec-0dfa" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
       </infoLinks>
       <modifiers/>
       <constraints>
@@ -2203,7 +2232,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="baa1-82d1-d024-8264" name="Quicksilver Speed" hidden="false" targetId="6aba-8ca3-1515-5f28" type="rule">
+        <infoLink id="baa1-82d1-d024-8264" name="Quicksilver Speed" hidden="false" targetId="6aba-8ca3-1515-5f28" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2238,7 +2267,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="5f7e-9e83-cf08-d59b" name="Warp-scaled Hide" hidden="false" targetId="7343-afbd-e201-8337" type="rule">
+        <infoLink id="5f7e-9e83-cf08-d59b" name="Warp-scaled Hide" hidden="false" targetId="7343-afbd-e201-8337" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2261,7 +2290,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="2d89-f6ec-f61e-5b50" name="Horned Crown" hidden="false" targetId="142a-69c1-0878-c13d" type="rule">
+        <infoLink id="2d89-f6ec-f61e-5b50" name="Horned Crown" hidden="false" targetId="142a-69c1-0878-c13d" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2290,7 +2319,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="7259-a322-2378-0f4b" name="Warp Scions" hidden="false" targetId="5e20-f66e-9d6d-fd06" type="rule">
+        <infoLink id="7259-a322-2378-0f4b" name="Warp Scions" hidden="false" targetId="5e20-f66e-9d6d-fd06" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2343,11 +2372,11 @@
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6c9f-9f45-11f1-1079" name="Stupefying Musk" book="HH8: Malevolence" page="235" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="6c9f-9f45-11f1-1079" name="Stupefying Musk" book="HH8: Malevolence" page="235" hidden="true" collective="false" type="upgrade">
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="bc5a-aa9a-b757-2924" name="Stupefying Musk" hidden="false" targetId="33bf-b97d-5599-b1da" type="rule">
+        <infoLink id="bc5a-aa9a-b757-2924" name="Stupefying Musk" hidden="false" targetId="33bf-b97d-5599-b1da" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2398,7 +2427,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="3377-144b-baf9-4819" name="Brass Collar" hidden="false" targetId="2f6d-7925-8680-4a5f" type="rule">
+        <infoLink id="3377-144b-baf9-4819" name="Brass Collars" hidden="false" targetId="c007-edaa-5e1d-8f24" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2455,7 +2484,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="ac29-5c08-7bef-b9ea" name="Miasma of Rot" hidden="false" targetId="8103-9102-4449-4d89" type="rule">
+        <infoLink id="ac29-5c08-7bef-b9ea" name="Miasma of Rot" hidden="false" targetId="8103-9102-4449-4d89" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2506,7 +2535,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="9380-c7d9-7c32-3e94" name="Sundering Fangs" hidden="false" targetId="2277-6f14-8087-995a" type="rule">
+        <infoLink id="9380-c7d9-7c32-3e94" name="Sundering Fangs" hidden="false" targetId="2277-6f14-8087-995a" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2590,7 +2619,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0946-b1da-a2c7-12f9" name="Lurid Onslaught" book="HH8: Malevolence" hidden="false" collective="false" type="upgrade">
       <profiles/>
@@ -2610,7 +2641,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5a0b-2e45-8c90-360e" name="Creeping Scourge" book="HH8: Malevolence" hidden="false" collective="false" type="upgrade">
       <profiles/>
@@ -2630,7 +2663,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="73dd-f79e-10cf-dc2f" name="Mirror of Hatred" book="HH8: Malevolence" hidden="false" collective="false" type="upgrade">
       <profiles/>
@@ -2650,7 +2685,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="dc24-bd44-bce4-a7f1" name="Presplendend Terror" book="HH8: Malevolence" hidden="false" collective="false" type="upgrade">
       <profiles/>
@@ -2670,7 +2707,9 @@
       <selectionEntries/>
       <selectionEntryGroups/>
       <entryLinks/>
-      <costs/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -2722,6 +2761,20 @@
               <repeats/>
               <conditions>
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="92c6-2146-8ca7-bd35" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="ed53-aaf4-ba7c-445a" value="0.0">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="049d-b9de-3c25-91d5" type="instanceOf"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="049d-b9de-3c25-91d5" type="instanceOf"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -3595,48 +3648,6 @@
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule id="fca2-f660-2768-c79f" name="Molten Blood" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>Whenever a model with this special rule suffers an unsaved wound, any enemy units locked in combat with it suffer a single a single Str (user), AP- hit.</description>
-    </rule>
-    <rule id="72b2-44f6-a487-9711" name="Lord of Sorcery" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>This units gains the Psyker special rule and a single level of Psychic Mastery. Additional levels of Mastery may be purchased at a cost of 25 points per additional level. Only Daemon Lords, Chosen en Greater Daemons may purchase this Emanation and only Daemon Lords may purchase more than two levels of Mastery. Psychic Powers may be selected from any of the disciplines presented in the Horus Heresy: Age of Darkness rulebook, except Malefic or Sanctic Daemonology. </description>
-    </rule>
-    <rule id="45a3-99f6-c011-ef06" name="Daemonic Wings" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>The unit&apos;s type is changed from Infantry to Jump Infantry or from Monstrous Creature to Jump Monstrous Creature.</description>
-    </rule>
-    <rule id="3ca6-5e4c-f702-b983" name="Crushing Claws" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>The units gains the Rending special rules on all close combat attacks it makes.</description>
-    </rule>
-    <rule id="6956-e790-321e-9bf7" name="Flensing Talons" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>The units gains the Shred special rules on all close combat attacks it makes.</description>
-    </rule>
-    <rule id="2277-6f14-8087-995a" name="Sundering Fangs" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>Any model in the unit may chose to make a single attack during the fight phase, at Initiative step 1, instead of their standard number of attacks. The single is made a twice the normal Strength of that model (to a maximum of 10) and gains the Sunder special rule.</description>
-    </rule>
     <rule id="469c-55e3-f888-4d60" name="Corrosive Vomit" hidden="false">
       <profiles/>
       <rules/>
@@ -3710,68 +3721,12 @@ If the unit reamins in Ongoing Reserves, or re-enters Ongoing Reserves, then it 
       <modifiers/>
       <description>Any attack that normally inflicts Instant Death, or says the the target model is removed from play, instead inflicts D3 wounds on a model with this special rule. In addition, attacks made with the Sniper or Poisoned special rules only cause a wound on a roll of 6 (unless the attacker&apos;s Strength would cause a wound on a lower result)</description>
     </rule>
-    <rule id="6b1c-472a-a93a-b6f4" name="Ephemeral Terror" book="HH8: Malevolence" page="235" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>Models with this Emaration do not suffer the penalty to their Initiative for charging enemy units through terrain but instead fight at their normal Initiative in the enuing combat. </description>
-    </rule>
-    <rule id="8103-9102-4449-4d89" name="Miasma of Rot" book="HH8: Malevolence" page="235" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>Any enemy unit locked in combat with a unit with this Emanation reduces its Toughnes by -1, or, if it has an Armour Value instead of a Toughness characteristic, reduce the Armour Value of all facings by -1 while it remains locked in combat or otherwise base-to-base contact. This effect is not cumulative, and is applied only once regardless of the nmber of units with this Emanation in contact with a given unit. In addition, any reduction to a unit&apos;s Toughness characteristic imposed by this Emanation does not affect the victim&apos;s Instant Death threshold. </description>
-    </rule>
-    <rule id="2f6d-7925-8680-4a5f" name="Brass Collar" book="HH8: Malevolence" page="235" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>The unit gains the Adamantium Will special rule and an Armour Save of 3+.</description>
-    </rule>
-    <rule id="33bf-b97d-5599-b1da" name="Stupefying Musk" book="HH8: Malevolence" page="235" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>Any unit charged by, or locked in combat with, a unit with this Emanation must make a Morale check at the beginning of any Fight sub-phase. If the check is failed then that unit must reduce its Initiative by 1 for the duration of that sub-phase.</description>
-    </rule>
-    <rule id="5e20-f66e-9d6d-fd06" name="Warp Scions" book="HH8: Malevolence" page="235" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>The unit gains the Brotherhood of Psykers special rule and a Mastery Level of 1. It may chose to use any of the following powers: Smite, Flame Breath, Assail or Psychic Shriek. This must be chosen at the start of the game before deployment and may not be changed.  </description>
-    </rule>
     <rule id="f935-faf4-1502-0f52" name="Rift Barb" book="HH8: Malevolence" page="235" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <description>A single model in the unit may attack during the Shooting phase using the following profile. The range and line of sight for the attack may be measured from any model in the unit. </description>
-    </rule>
-    <rule id="142a-69c1-0878-c13d" name="Horned Crown" book="HH8: Malevolence" page="235" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>Grands the unit the Hammer of Wrath special rule. If the unit already has this special rule then the number of hits inflicted is increased from 1 to D3 (roll once per unit to determine the number of hits inflicted per model)</description>
-    </rule>
-    <rule id="7343-afbd-e201-8337" name="Warp-scaled Hide" book="HH8: Malevolence" page="235" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>A unit with this Emanation increases its Armour Save to 3+.</description>
-    </rule>
-    <rule id="6aba-8ca3-1515-5f28" name="Quicksilver Speed" book="HH8: Malevolence" page="235" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>The unit gains the Fleet and Move Through Cover special rules.</description>
     </rule>
     <rule id="71a7-fc6a-2806-589c" name="Flaming Ichor" book="HH8: Malevolence" page="235" hidden="false">
       <profiles/>
@@ -3787,19 +3742,12 @@ If the unit reamins in Ongoing Reserves, or re-enters Ongoing Reserves, then it 
       <modifiers/>
       <description>All models in the unit may ayttack during the Shooting phase using the following profile.</description>
     </rule>
-    <rule id="a181-08b7-a898-48ff" name="Shroud of Darkness" book="HH8: Malevolence" page="235" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>Models charging a unit with this Emanation do not gain bonus attacks from charging. </description>
-    </rule>
     <rule id="90fb-4c9f-f9c1-5285" name="Spine Volley" book="HH8: Malevolence" page="235" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <description>All models in the unit may ayttack during the Shooting phase using the following profile.</description>
+      <description>All models in the unit may attack during the Shooting phase using the following profile.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -4113,6 +4061,141 @@ If the unit reamins in Ongoing Reserves, or re-enters Ongoing Reserves, then it 
         <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="User+2"/>
         <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
         <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 1, Armourbane"/>
+      </characteristics>
+    </profile>
+    <profile id="fca2-f660-2768-c79f" name="Molten Blood" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Whenever a model with this special rule suffers an unsaved wound, any enemy units locked in combat with it suffer a single a single Str (user), AP- hit."/>
+      </characteristics>
+    </profile>
+    <profile id="72b2-44f6-a487-9711" name="Lord of Sorcery" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="This units gains the Psyker special rule and a single level of Psychic Mastery. Additional levels of Mastery may be purchased at a cost of 25 points per additional level. Only Daemon Lords, Chosen en Greater Daemons may purchase this Emanation and only Daemon Lords may purchase more than two levels of Mastery. Psychic Powers may be selected from any of the disciplines presented in the Horus Heresy: Age of Darkness rulebook, except Malefic or Sanctic Daemonology. "/>
+      </characteristics>
+    </profile>
+    <profile id="45a3-99f6-c011-ef06" name="Daemonic Wings" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="The unit&apos;s type is changed from Infantry to Jump Infantry or from Monstrous Creature to Jump Monstrous Creature."/>
+      </characteristics>
+    </profile>
+    <profile id="3ca6-5e4c-f702-b983" name="Crushing Claws" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="The units gains the Rending special rules on all close combat attacks it makes."/>
+      </characteristics>
+    </profile>
+    <profile id="6956-e790-321e-9bf7" name="Flensing Talons" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="The units gains the Shred special rules on all close combat attacks it makes."/>
+      </characteristics>
+    </profile>
+    <profile id="2277-6f14-8087-995a" name="Sundering Fangs" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Any model in the unit may chose to make a single attack during the fight phase, at Initiative step 1, instead of their standard number of attacks. The single is made a twice the normal Strength of that model (to a maximum of 10) and gains the Sunder special rule."/>
+      </characteristics>
+    </profile>
+    <profile id="c007-edaa-5e1d-8f24" name="Brass Collar" book="HH8: Malevolence" page="235" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="The unit gains the Adamantium Will special rule and an Armour Save of 3+."/>
+      </characteristics>
+    </profile>
+    <profile id="6b1c-472a-a93a-b6f4" name="Ephemeral Terror" book="HH8: Malevolence" page="235" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Models with this Emaration do not suffer the penalty to their Initiative for charging enemy units through terrain but instead fight at their normal Initiative in the enuing combat."/>
+      </characteristics>
+    </profile>
+    <profile id="8103-9102-4449-4d89" name="Miasma of Rot" book="HH8: Malevolence" page="235" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Any enemy unit locked in combat with a unit with this Emanation reduces its Toughnes by -1, or, if it has an Armour Value instead of a Toughness characteristic, reduce the Armour Value of all facings by -1 while it remains locked in combat or otherwise base-to-base contact. This effect is not cumulative, and is applied only once regardless of the nmber of units with this Emanation in contact with a given unit. In addition, any reduction to a unit&apos;s Toughness characteristic imposed by this Emanation does not affect the victim&apos;s Instant Death threshold."/>
+      </characteristics>
+    </profile>
+    <profile id="33bf-b97d-5599-b1da" name="Stupefying Musk" book="HH8: Malevolence" page="235" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Any unit charged by, or locked in combat with, a unit with this Emanation must make a Morale check at the beginning of any Fight sub-phase. If the check is failed then that unit must reduce its Initiative by 1 for the duration of that sub-phase."/>
+      </characteristics>
+    </profile>
+    <profile id="5e20-f66e-9d6d-fd06" name="Warp Scions" book="HH8: Malevolence" page="235" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="The unit gains the Brotherhood of Psykers special rule and a Mastery Level of 1. It may chose to use any of the following powers: Smite, Flame Breath, Assail or Psychic Shriek. This must be chosen at the start of the game before deployment and may not be changed."/>
+      </characteristics>
+    </profile>
+    <profile id="142a-69c1-0878-c13d" name="Horned Crown" book="HH8: Malevolence" page="235" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Grants the unit the Hammer of Wrath special rule. If the unit already has this special rule then the number of hits inflicted is increased from 1 to D3 (roll once per unit to determine the number of hits inflicted per model)"/>
+      </characteristics>
+    </profile>
+    <profile id="7343-afbd-e201-8337" name="Warp-scaled Hide" book="HH8: Malevolence" page="235" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="A unit with this Emanation increases its Armour Save to 3+."/>
+      </characteristics>
+    </profile>
+    <profile id="6aba-8ca3-1515-5f28" name="Quicksilver Speed" book="HH8: Malevolence" page="235" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="The unit gains the Fleet and Move Through Cover special rules."/>
+      </characteristics>
+    </profile>
+    <profile id="a181-08b7-a898-48ff" name="Shroud of Darkness" book="HH8: Malevolence" page="235" hidden="false" profileTypeId="57617267656172204974656d23232344415441232323" profileTypeName="Wargear Item">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Models charging a unit with this Emanation do not gain bonus attacks from charging."/>
       </characteristics>
     </profile>
   </sharedProfiles>
