@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="640c-568f-af74-400f" name="Daemons of the Ruinstorm" book="HH8: Malevolence" revision="2" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="640c-568f-af74-400f" name="Daemons of the Ruinstorm" book="HH8: Malevolence" revision="3" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -563,6 +563,22 @@
           <constraints/>
         </categoryLink>
       </categoryLinks>
+    </entryLink>
+    <entryLink id="6e88-de55-8f1a-c58f" name="Possessed Legionaries" hidden="false" targetId="308e-c800-4fa9-efde" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+    </entryLink>
+    <entryLink id="ca1d-7026-8e22-46c8" name="Possessed Auxiliaries" hidden="false" targetId="f3d7-3331-372c-a480" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -1207,6 +1223,12 @@
           <modifiers/>
         </infoLink>
         <infoLink id="9dde-d525-739c-d0e0" name="Ruinstorm Daemon Chosen" hidden="false" targetId="9cff-45f7-4b25-9fee" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="2c58-cead-a5b8-1688" name="Shepherd of Malign Intent" hidden="false" targetId="6f54-e6fe-b221-54b8" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3392,6 +3414,932 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
         <cost name="pts" costTypeId="points" value="460.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="308e-c800-4fa9-efde" name="Possessed Legionaries" book="HH8: Malevolence" hidden="false" collective="false" type="unit">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="6349-c3c3-6f07-5e59" name="Support Squad" hidden="false" targetId="2c16-3b25-a714-a656" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="cc8c-ad29-14b4-95cc" name="Slaves to Darkness" hidden="false" targetId="b407-fb29-f206-4ad3" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="e68e-7fa4-829e-48bc" name="Troops" hidden="false" targetId="54726f6f707323232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="c4a1-6f68-d186-1fb8" name="Possessed Legionaries" book="HH8: Malevolence" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="ad3f-690e-bed4-4a8e" name="Possessed Legionary" hidden="false" targetId="6684-7b7a-9c07-6f20" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f5e-0c92-2620-c236" type="min"/>
+            <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7dcb-21fd-89eb-c921" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="568d-aff6-8c8c-cf99" name="Ranged options" book="HH8: Malevolence" hidden="true" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="e272-8d3d-9323-2db5" value="1">
+              <repeats>
+                <repeat field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c4a1-6f68-d186-1fb8" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="308e-c800-4fa9-efde" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ed7-d286-2724-2c47" type="atLeast"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="308e-c800-4fa9-efde" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ed7-d286-2724-2c47" type="greaterThan"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e272-8d3d-9323-2db5" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="7fdc-0309-2fd0-e7eb" name="Flamer" hidden="false" targetId="7867-8570-aa83-08ea" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="392c-18c7-b172-a170" name="Melta Gun" hidden="false" targetId="7bc1-bde8-2057-25dd" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="48ae-fb52-e7d1-7d67" name="Plasma gun" hidden="false" targetId="6732-7335-4e43-ab38" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="26f0-4ab1-f620-23f5" name="Bolt weapons" hidden="false" collective="false" defaultSelectionEntryId="5ed7-d286-2724-2c47">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1f8-64db-d855-c81c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9aa4-e8a4-bc29-a7d7" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="5ed7-d286-2724-2c47" name="Boltguns" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="121e-4ff1-f2c0-8696" name="Boltgun" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="24&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="4"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="5"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Rapid Fire"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+            <selectionEntry id="409b-38b8-04d9-c581" name="Bolt pistols" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="d2c6-4d2d-13ac-dcb6" name="Bolt pistol" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="12&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="4"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="5"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Pistol"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="a21b-bcbd-1253-5ba5" name="Melee option" hidden="false" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df0e-3032-f20e-22fb" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="3cac-146c-a90b-4ebe" name="Lightning Claw" hidden="false" targetId="06b7-61a6-377d-a656" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="e9b4-ecef-2ebc-5d90" name="Power Weapon" hidden="false" targetId="8662-73e2-61f5-5430" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="b7c0-a951-695d-5562" name="Thunder Hammer" hidden="false" targetId="d72d-713f-9aaa-6e7e" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="c0e5-74b0-43a0-2320" name="Power Fist" hidden="false" targetId="87d8-0b67-7ead-0627" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="1597-10e8-37b2-adec" name="Close Combat Weapons" hidden="false" targetId="2b7e-7858-5d4c-2af7" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="06b7-61a6-377d-a656" name="Lightning Claw" book="BRB" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="e344-a83a-ce3c-baa7" name="Lightning Claw" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="Melee"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="User"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Shred"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="da92-5140-6115-dca1" name="Shred" hidden="false" targetId="89da-0cb5-bee4-8ec2" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1804-d94d-f1da-2541" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7ccb-406e-ff1e-7142" name="Power Sword" book="BRB" page="181" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="d079-21c3-81aa-60aa" name="Power Sword" book="BRB" page="181" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="User"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d292-78eb-f8f4-315e" name="Power Maul" book="BRB" page="181" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="02bc-f372-cabe-e962" name="Power Maul" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="+2"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Concussive"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="4bed-2b2d-05e8-21e1" name="Concussive" hidden="false" targetId="9d85-46f7-f5e6-a5f7" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0727-c8e9-ad06-96c2" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="71f1-4f38-4a0c-2a71" name="Power Axe" book="BRB" page="181" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="72d0-34d7-c465-ae72" name="Power Axe" book="BRB" page="181" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="+1"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Unwieldy"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="8fae-033f-84d4-fb91" name="Unwieldy" hidden="false" targetId="5eea-958c-d623-c3c9" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c2c-d5a9-6b1e-f786" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5bd5-b988-5923-3347" name="Power Lance" book="BRB" page="181" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="2d73-892a-8051-a867" name="Power Lance" book="BRB" page="181" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="+1/User"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="3/4"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="a9c0-96e6-a902-a790" name="Power Lance" book="BRB" page="181" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Power lances have two profiles for both Strength and AP. The first is used only on a turn in which a model charges; the second one is used at all other times. </description>
+        </rule>
+      </rules>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9905-8604-fe58-fc8e" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d72d-713f-9aaa-6e7e" name="Thunder Hammer" book="BRB" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="b8c8-64b3-226f-b4ec" name="Thunder Hammer" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="x2"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Concussive, Unwieldy"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="a8b3-1840-47a4-5174" name="Concussive" hidden="false" targetId="9d85-46f7-f5e6-a5f7" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="b1e6-52fb-494c-e3ff" name="Unwieldy" hidden="false" targetId="5eea-958c-d623-c3c9" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6afd-bd2a-9628-959d" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="87d8-0b67-7ead-0627" name="Power Fist" book="BRB" page="181" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="5add-352e-6d2c-cb59" name="Power Fist" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="x2"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee, Specialist Weapon, Unwieldy"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="33ed-0942-d377-a3f0" name="Unwieldy" hidden="false" targetId="5eea-958c-d623-c3c9" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="f363-ea65-5b30-55cc" name="Specialist Weapon" hidden="false" targetId="7ee3-d437-bc44-3630" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c20-0692-4896-4c62" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="aaa2-5fa0-5e9e-bc0d" name="Laspistol" book="BRB" page="178" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="4cce-a9ee-38c2-5d88" name="Laspistol" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="12"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="3"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="-"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Pistol"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="7bc1-bde8-2057-25dd" name="Melta Gun" book="BRB" page="178" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="8a4e-7375-5a41-00c0" name="Melta Gun" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="12&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="8"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="1"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 1, Melta"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="0547-b40c-b2e3-085a" name="Melta" hidden="false" targetId="21c0-62ff-3ed2-17a7" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6732-7335-4e43-ab38" name="Plasma gun" book="BRB" page="178" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="3147-1d75-1afc-8a0e" name="Plasma gun" book="BRB" page="178" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="24"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="7"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="2"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Rapid Fire, Gets Hot"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks>
+        <infoLink id="577e-0837-49b1-15ba" name="Gets Hot" hidden="false" targetId="f4fd-d519-4769-5510" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7867-8570-aa83-08ea" name="Flamer" book="BRB" page="177" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="5a59-705d-7088-30f0" name="Flamer" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="Template"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="4"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="5"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 1"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bb27-c2f2-7d8d-4400" name="Heavy Stubber" book="BRB" page="179" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="c740-8a78-e3f0-739f" name="Heavy Stubber" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="36&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="4"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="-"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Heavy 3"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b865-f161-0f5a-afdd" name="Grenade Launcher" book="BRB" page="177" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="c9a9-0524-224b-bb4b" name="Grenade Launcher (Frag)" book="BRB" page="177" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="24&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="3"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="6"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 1, Blast (3&quot;)"/>
+          </characteristics>
+        </profile>
+        <profile id="0b86-cfdd-f478-c29d" name="Grenade Launcher (Krak)" book="BRB" page="177" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="24&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="6"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="4"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 1"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="68ed-20b5-1aab-f3e4" name="Rotor Cannon" book="BRB" page="177" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="2ff9-234e-e445-e051" name="Rotor Cannon" book="BRB" page="177" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="30&quot;"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="3"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="-"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Salvo 3/4"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2b7e-7858-5d4c-2af7" name="Close Combat Weapons" book="BRB" page="42" hidden="false" collective="false" type="upgrade">
+      <profiles>
+        <profile id="476d-78d4-ba91-abf1" name="Close Combat Weapon" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="-"/>
+            <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="User"/>
+            <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="-"/>
+            <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Melee"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11b5-36e0-fced-c692" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa29-14b9-3a9d-09fc" type="min"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
+    <selectionEntry id="f3d7-3331-372c-a480" name="Possessed Auxiliaries" book="HH8: Malevolence" hidden="false" collective="false" type="unit">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="da2c-f2b1-e48d-385b" name="Support Squad" hidden="false" targetId="2c16-3b25-a714-a656" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="36c5-f6e5-d4de-e737" name="Slaves to Darkness" hidden="false" targetId="b407-fb29-f206-4ad3" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="817f-7291-757f-0ff1" name="Troops" hidden="false" targetId="54726f6f707323232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6778-7a1d-24a3-3ac4" name="Possessed Auxiliaries" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="91e4-449d-dc16-efb4" name="Possessed Auxiliary" hidden="false" targetId="e553-5fe7-2eba-42f2" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cae-1769-89ba-b5e5" type="max"/>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21b1-5cce-b10b-c03d" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="bcfd-619a-c770-3fb0" name="Rifle options" book="HH8: Malevolence" hidden="false" collective="false" defaultSelectionEntryId="9b53-664b-95ce-3a79">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98a3-92b7-4ca3-b398" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c87-4015-bdec-5efc" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries>
+            <selectionEntry id="9b53-664b-95ce-3a79" name="Auxilia Rifles" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="5a2d-7130-8415-47f0" name="Auxilia Rifle" hidden="false" profileTypeId="576561706f6e23232344415441232323" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="Range" characteristicTypeId="52616e676523232344415441232323" value="18&quot;"/>
+                    <characteristic name="Strength" characteristicTypeId="537472656e67746823232344415441232323" value="3"/>
+                    <characteristic name="AP" characteristicTypeId="415023232344415441232323" value="-"/>
+                    <characteristic name="Type" characteristicTypeId="5479706523232344415441232323" value="Assault 1"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+            <selectionEntry id="c79b-7a8f-b4d3-c2b5" name="Laspistols" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks>
+                <infoLink id="b70b-6cad-9a2d-2faa" name="Laspistol" page="" hidden="false" targetId="f2b7-768f-a270-de64" type="profile">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                </infoLink>
+              </infoLinks>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="eaed-2dc9-0395-14fb" name="Ranged options" book="HH8: Malevolence" hidden="true" collective="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="8a35-8f25-6084-cf2f" value="1">
+              <repeats>
+                <repeat field="selections" scope="f3d7-3331-372c-a480" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6778-7a1d-24a3-3ac4" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+            <modifier type="set" field="hidden" value="false">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="f3d7-3331-372c-a480" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b53-664b-95ce-3a79" type="greaterThan"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a35-8f25-6084-cf2f" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="1a26-d078-edb8-8f9b" name="Heavy Stubber" hidden="false" targetId="bb27-c2f2-7d8d-4400" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="80b9-33c0-85e4-aa5f" name="Rotor Cannon" hidden="false" targetId="68ed-20b5-1aab-f3e4" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="f02f-5915-32f3-f01b" name="Flamer" hidden="false" targetId="7867-8570-aa83-08ea" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="8663-007e-8b54-2f70" name="Plasma gun" hidden="false" targetId="6732-7335-4e43-ab38" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="60b6-df89-51fe-32b3" name="Melta Gun" hidden="false" targetId="7bc1-bde8-2057-25dd" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="58c4-e875-956c-8394" name="Grenade Launcher" hidden="false" targetId="b865-f161-0f5a-afdd" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks/>
+      <costs/>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fbff-b318-fc9d-9b88" name="Emanations of Horror [2]" hidden="false" collective="false">
@@ -4049,6 +4997,52 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup id="8662-73e2-61f5-5430" name="Power Weapon" book="BRB" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95b4-828d-a7f7-c3ce" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="d067-a2cc-cde0-d1db" name="Power Sword" hidden="false" targetId="7ccb-406e-ff1e-7142" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="064c-b1f3-4642-7353" name="Power Axe" hidden="false" targetId="71f1-4f38-4a0c-2a71" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="2960-437e-d7f2-a721" name="Power Maul" hidden="false" targetId="d292-78eb-f8f4-315e" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="72c3-28d0-9d44-754b" name="Power Lance" hidden="false" targetId="5bd5-b988-5923-3347" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="469c-55e3-f888-4d60" name="Corrosive Vomit" hidden="false">
@@ -4406,7 +5400,7 @@ If the unit reamins in Ongoing Reserves, or re-enters Ongoing Reserves, then it 
         <characteristic name="Save" characteristicTypeId="5361766523232344415441232323" value="4+"/>
       </characteristics>
     </profile>
-    <profile id="aa91-80fc-4bc0-dac9" name="Greater Ruinstorm Daemon Beast" book="HH8: Malevolence" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
+    <profile id="aa91-80fc-4bc0-dac9" name="Ruinstorm Greater Daemon Beast" book="HH8: Malevolence" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -4605,6 +5599,42 @@ If the unit reamins in Ongoing Reserves, or re-enters Ongoing Reserves, then it 
       <modifiers/>
       <characteristics>
         <characteristic name="Description" characteristicTypeId="4465736372697074696f6e23232344415441232323" value="Models charging a unit with this Emanation do not gain bonus attacks from charging."/>
+      </characteristics>
+    </profile>
+    <profile id="10a2-f07d-47b6-f72a" name="Possessed Legionary" book="HH8: Malevolence" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Unit Type" characteristicTypeId="556e6974205479706523232344415441232323" value="Infantry"/>
+        <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="4"/>
+        <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="4"/>
+        <characteristic name="S" characteristicTypeId="5323232344415441232323" value="4"/>
+        <characteristic name="T" characteristicTypeId="5423232344415441232323" value="4"/>
+        <characteristic name="W" characteristicTypeId="5723232344415441232323" value="1"/>
+        <characteristic name="I" characteristicTypeId="4923232344415441232323" value="3"/>
+        <characteristic name="A" characteristicTypeId="4123232344415441232323" value="2"/>
+        <characteristic name="LD" characteristicTypeId="4c4423232344415441232323" value="9"/>
+        <characteristic name="Save" characteristicTypeId="5361766523232344415441232323" value="3+"/>
+      </characteristics>
+    </profile>
+    <profile id="be04-2882-829c-cba4" name="Possessed Auxilary" book="HH8: Malevolence" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Unit Type" characteristicTypeId="556e6974205479706523232344415441232323" value="Infantry"/>
+        <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="3"/>
+        <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="3"/>
+        <characteristic name="S" characteristicTypeId="5323232344415441232323" value="3"/>
+        <characteristic name="T" characteristicTypeId="5423232344415441232323" value="3"/>
+        <characteristic name="W" characteristicTypeId="5723232344415441232323" value="1"/>
+        <characteristic name="I" characteristicTypeId="4923232344415441232323" value="2"/>
+        <characteristic name="A" characteristicTypeId="4123232344415441232323" value="1"/>
+        <characteristic name="LD" characteristicTypeId="4c4423232344415441232323" value="9"/>
+        <characteristic name="Save" characteristicTypeId="5361766523232344415441232323" value="5+"/>
       </characteristics>
     </profile>
   </sharedProfiles>
