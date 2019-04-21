@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8700-b3bb-a471-a0ad" name="Daemons of the Ruinstorm" book="HH8: Malevolence" revision="4" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8700-b3bb-a471-a0ad" name="Daemons of the Ruinstorm" book="HH8: Malevolence" revision="5" battleScribeVersion="2.01" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -404,7 +404,7 @@
       <constraints/>
       <categoryLinks/>
     </entryLink>
-    <entryLink id="af06-f020-4889-c926" name="Lesser Daemons" hidden="false" targetId="9ad5-5b92-5f1f-e661" type="selectionEntry">
+    <entryLink id="af06-f020-4889-c926" name="Ruinstorm Lesser Daemons" hidden="false" targetId="9ad5-5b92-5f1f-e661" type="selectionEntry">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -580,6 +580,38 @@
       <constraints/>
       <categoryLinks/>
     </entryLink>
+    <entryLink id="f913-e33e-5360-df0f" name="Cor&apos;bax Utterblight Unbound, Daemon Lord Of The Ruinstorm" hidden="false" targetId="5ddb-4a5d-5b2d-c540" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="d499-276f-f4fe-5100" name="HQ" hidden="false" targetId="485123232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d518-5909-d60f-79db" name="Samus Unbound, Daemon Lord of the Ruinstorm" hidden="true" targetId="777d-7ee1-4f6d-9ca8" type="selectionEntry">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks>
+        <categoryLink id="feb9-0a69-7838-340a" name="HQ" hidden="false" targetId="485123232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="092e-7d74-b86e-14a4" name="Lord of Sorcery" hidden="false" collective="false" type="upgrade">
@@ -606,53 +638,37 @@
     <selectionEntry id="92c6-2146-8ca7-bd35" name="Ruinstorm Daemon Lord" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules/>
-      <infoLinks>
-        <infoLink id="b250-ceb2-1ae9-8c19" name="Ruinstorm Daemon Lord" hidden="false" targetId="b7fd-97df-83f6-b2ab" type="profile">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="set" field="556e6974205479706523232344415441232323" value="Flying Monstrous Creature (Character)">
-              <repeats/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="set" field="4571-257a-8d04-03c5" value="0.0">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="92c6-2146-8ca7-bd35" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b9b7-d302-8a3b-1a80" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e2a-e0d1-0561-3872" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ddb-4a5d-5b2d-c540" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="777d-7ee1-4f6d-9ca8" type="equalTo"/>
               </conditions>
               <conditionGroups/>
-            </modifier>
-          </modifiers>
-        </infoLink>
-        <infoLink id="5fc0-1756-8049-e452" name="Daemon of the Ruinstorm" hidden="false" targetId="0b0d-9d33-c0a8-06cd" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="54a2-df9a-0845-4bbe" name="Eternal Warrior" hidden="false" targetId="3e0b-be9f-b7eb-8c5e" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="dcec-08a9-9029-3ad9" name="Parting the Veil" hidden="false" targetId="c828-3e09-a384-735b" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="e541-c9ad-e0cc-b074" name="Tide of Madness" hidden="false" targetId="a2dc-7a16-0067-a4db" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="24b7-0c57-f8bb-2a98" name="Vanguard of Hell" hidden="false" targetId="9340-ceb9-279b-ddbd" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-      </infoLinks>
-      <modifiers/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ddb-4a5d-5b2d-c540" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e2a-e0d1-0561-3872" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="777d-7ee1-4f6d-9ca8" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4571-257a-8d04-03c5" type="max"/>
       </constraints>
@@ -674,14 +690,14 @@
             <modifier type="set" field="hidden" value="true">
               <repeats/>
               <conditions>
-                <condition field="selections" scope="92c6-2146-8ca7-bd35" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b9b7-d302-8a3b-1a80" type="atLeast"/>
+                <condition field="selections" scope="92c6-2146-8ca7-bd35" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a3e-a87e-7efc-0a7a" type="atLeast"/>
               </conditions>
               <conditionGroups/>
             </modifier>
             <modifier type="set" field="b6e4-f425-e952-d617" value="0.0">
               <repeats/>
               <conditions>
-                <condition field="selections" scope="92c6-2146-8ca7-bd35" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b9b7-d302-8a3b-1a80" type="atLeast"/>
+                <condition field="selections" scope="92c6-2146-8ca7-bd35" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a3e-a87e-7efc-0a7a" type="atLeast"/>
               </conditions>
               <conditionGroups/>
             </modifier>
@@ -749,7 +765,7 @@
           </selectionEntries>
           <selectionEntryGroups/>
           <entryLinks>
-            <entryLink id="ef14-1ec4-998b-436b" name="Bracket One" hidden="false" targetId="377a-f74e-00b1-f5f5" type="selectionEntryGroup">
+            <entryLink id="ef14-1ec4-998b-436b" name="Emanations of Horror [1]" hidden="false" targetId="377a-f74e-00b1-f5f5" type="selectionEntryGroup">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -768,7 +784,67 @@
             <cost name="pts" costTypeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b9b7-d302-8a3b-1a80" name="Flying Monstrous Creature (Character)" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="1aa6-e8a8-4288-3545" name="Ruinstorm Daemon Lord" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="735d-7f27-f393-d551" name="Daemon of the Ruinstorm" hidden="false" targetId="0b0d-9d33-c0a8-06cd" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="5884-cf8c-9e1d-90b4" name="Eternal Warrior" hidden="false" targetId="3e0b-be9f-b7eb-8c5e" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="4f8a-3e76-c1eb-c8d4" name="Parting the Veil" hidden="false" targetId="c828-3e09-a384-735b" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="a289-1043-b97d-cb74" name="Tides of Madness" hidden="false" targetId="a2dc-7a16-0067-a4db" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="b0c6-7b78-7a96-ed8a" name="Vanguard of Hell" hidden="false" targetId="9340-ceb9-279b-ddbd" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="a4fa-933f-6bd7-99de" name="Ruinstorm Daemon Lord" hidden="false" targetId="b7fd-97df-83f6-b2ab" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Flying Monstrous Creature (Character)">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4a3e-a87e-7efc-0a7a" type="atLeast"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77dd-9d50-20dc-2179" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b10f-ec48-11ab-db5e" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+        <selectionEntry id="4a3e-a87e-7efc-0a7a" name="Flying Monstrous Creature (Character)" hidden="false" collective="false" type="upgrade">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -776,20 +852,20 @@
             <modifier type="set" field="hidden" value="true">
               <repeats/>
               <conditions>
-                <condition field="selections" scope="92c6-2146-8ca7-bd35" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="12ad-550e-4bd4-a82b" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12ad-550e-4bd4-a82b" type="atLeast"/>
               </conditions>
               <conditionGroups/>
             </modifier>
-            <modifier type="set" field="ec77-c796-3b63-39ae" value="0.0">
+            <modifier type="set" field="728d-7d1b-a527-7a3e" value="0.0">
               <repeats/>
               <conditions>
-                <condition field="selections" scope="92c6-2146-8ca7-bd35" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="12ad-550e-4bd4-a82b" type="atLeast"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12ad-550e-4bd4-a82b" type="atLeast"/>
               </conditions>
               <conditionGroups/>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec77-c796-3b63-39ae" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="728d-7d1b-a527-7a3e" type="max"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -802,7 +878,7 @@
       </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks>
-        <entryLink id="1fb5-4e5f-fee6-50c2" name="Bracket Two" hidden="false" targetId="fbff-b318-fc9d-9b88" type="selectionEntryGroup">
+        <entryLink id="c70a-e7a0-d805-3f8c" name="Emanations of Horror [2]" hidden="false" targetId="fbff-b318-fc9d-9b88" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -896,7 +972,7 @@
               <infoLinks/>
               <modifiers/>
             </infoLink>
-            <infoLink id="05e8-49a5-505f-c663" name="Tide of Madness" hidden="false" targetId="a2dc-7a16-0067-a4db" type="rule">
+            <infoLink id="05e8-49a5-505f-c663" name="Tides of Madness" hidden="false" targetId="a2dc-7a16-0067-a4db" type="rule">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -919,7 +995,7 @@
       </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks>
-        <entryLink id="8ee9-09bc-8039-bb3c" name="Bracket One" hidden="false" targetId="377a-f74e-00b1-f5f5" type="selectionEntryGroup">
+        <entryLink id="8ee9-09bc-8039-bb3c" name="Emanations of Horror [1]" hidden="false" targetId="377a-f74e-00b1-f5f5" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1138,35 +1214,10 @@
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b13b-5247-2078-4daf" name="Ruinstorm Greater Daemon" hidden="false" collective="false" type="model">
+    <selectionEntry id="b13b-5247-2078-4daf" name="Ruinstorm Greater Daemon" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules/>
-      <infoLinks>
-        <infoLink id="1870-0220-1b30-c9b8" name="Daemon of the Ruinstorm" hidden="false" targetId="0b0d-9d33-c0a8-06cd" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="65ad-6073-250b-a207" name="Tide of Madness" hidden="false" targetId="a2dc-7a16-0067-a4db" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="1267-ea29-497c-26e2" name="Parting the Veil" hidden="false" targetId="c828-3e09-a384-735b" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="d5fa-f9b6-ee69-3e6a" name="Ruinstorm Greater Daemon" hidden="false" targetId="1594-7706-9792-d4de" type="profile">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-      </infoLinks>
+      <infoLinks/>
       <modifiers/>
       <constraints/>
       <categoryLinks>
@@ -1178,10 +1229,53 @@
           <constraints/>
         </categoryLink>
       </categoryLinks>
-      <selectionEntries/>
+      <selectionEntries>
+        <selectionEntry id="53c0-0b7b-42e5-0eda" name="Ruinstorm Greater Daemon" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="5153-4fb7-fb67-ab8d" name="Ruinstorm Greater Daemon" hidden="false" targetId="1594-7706-9792-d4de" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="f7cf-defe-6ff2-ad0f" name="Daemon of the Ruinstorm" hidden="false" targetId="0b0d-9d33-c0a8-06cd" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="457d-b0e6-5b62-7959" name="Parting the Veil" hidden="false" targetId="c828-3e09-a384-735b" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="182e-0e1b-2138-80a2" name="Tides of Madness" hidden="false" targetId="a2dc-7a16-0067-a4db" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fccf-db2f-d1a3-333f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2342-0d11-6faa-3e91" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="160.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks>
-        <entryLink id="1355-24cb-c9df-e80c" name="Bracket Two" hidden="false" targetId="fbff-b318-fc9d-9b88" type="selectionEntryGroup">
+        <entryLink id="1355-24cb-c9df-e80c" name="Emanations of Horror [2]" hidden="false" targetId="fbff-b318-fc9d-9b88" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1196,45 +1290,12 @@
           <categoryLinks/>
         </entryLink>
       </entryLinks>
-      <costs>
-        <cost name="pts" costTypeId="points" value="160.0"/>
-      </costs>
+      <costs/>
     </selectionEntry>
-    <selectionEntry id="721a-409b-1ce8-0c50" name="Ruinstorm Daemon Chosen" hidden="false" collective="false" type="model">
+    <selectionEntry id="721a-409b-1ce8-0c50" name="Ruinstorm Daemon Chosen" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules/>
-      <infoLinks>
-        <infoLink id="4dc0-d689-0749-8785" name="Daemon of the Ruinstorm" hidden="false" targetId="0b0d-9d33-c0a8-06cd" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="c8ac-7057-1f63-c901" name="Tide of Madness" hidden="false" targetId="a2dc-7a16-0067-a4db" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="5b3e-dfa5-35b9-44a0" name="Parting the Veil" hidden="false" targetId="c828-3e09-a384-735b" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="9dde-d525-739c-d0e0" name="Ruinstorm Daemon Chosen" hidden="false" targetId="9cff-45f7-4b25-9fee" type="profile">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="2c58-cead-a5b8-1688" name="Shepherd of Malign Intent" hidden="false" targetId="6f54-e6fe-b221-54b8" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-      </infoLinks>
+      <infoLinks/>
       <modifiers/>
       <constraints/>
       <categoryLinks>
@@ -1246,10 +1307,59 @@
           <constraints/>
         </categoryLink>
       </categoryLinks>
-      <selectionEntries/>
+      <selectionEntries>
+        <selectionEntry id="ce79-9255-4834-834b" name="Ruinstorm Daemon Chosen" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="ce25-395d-4219-81ab" name="Ruinstorm Daemon Chosen" hidden="false" targetId="9cff-45f7-4b25-9fee" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="5736-2e83-a199-1289" name="Daemon of the Ruinstorm" hidden="false" targetId="0b0d-9d33-c0a8-06cd" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="ce79-8410-5bda-4e0d" name="Parting the Veil" hidden="false" targetId="c828-3e09-a384-735b" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="bc0e-2fe4-f161-c7c3" name="Shepherd of Malign Intent" hidden="false" targetId="6f54-e6fe-b221-54b8" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="9f8b-1f12-7008-4818" name="Tides of Madness" hidden="false" targetId="a2dc-7a16-0067-a4db" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ac5-fb24-17cb-d205" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5654-a827-1a05-9e93" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="50.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks>
-        <entryLink id="295b-5114-2089-b4dc" name="Bracket Two" hidden="false" targetId="fbff-b318-fc9d-9b88" type="selectionEntryGroup">
+        <entryLink id="295b-5114-2089-b4dc" name="Emanations of Horror [2]" hidden="false" targetId="fbff-b318-fc9d-9b88" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1264,9 +1374,7 @@
           <categoryLinks/>
         </entryLink>
       </entryLinks>
-      <costs>
-        <cost name="pts" costTypeId="points" value="50.0"/>
-      </costs>
+      <costs/>
     </selectionEntry>
     <selectionEntry id="1137-8ddd-d812-1e70" name="Ruinstorm Daemon Cavalry" hidden="false" collective="false" type="unit">
       <profiles/>
@@ -1501,7 +1609,7 @@
       </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks>
-        <entryLink id="414e-2de8-4537-4b03" name="Bracket One" hidden="false" targetId="377a-f74e-00b1-f5f5" type="selectionEntryGroup">
+        <entryLink id="414e-2de8-4537-4b03" name="Emanations of Horror [1]" hidden="false" targetId="377a-f74e-00b1-f5f5" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1520,35 +1628,10 @@
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1f45-4da0-7891-e2cc" name="Ruinstorm Daemon Shrike" hidden="false" collective="false" type="model">
+    <selectionEntry id="1f45-4da0-7891-e2cc" name="Ruinstorm Daemon Shrike" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules/>
-      <infoLinks>
-        <infoLink id="5e6b-facd-3ee7-c9d3" name="Daemon of the Ruinstorm" hidden="false" targetId="0b0d-9d33-c0a8-06cd" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="f43d-3adf-092c-dcfa" name="Tide of Madness" hidden="false" targetId="a2dc-7a16-0067-a4db" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="71f2-2473-f8c5-f5dd" name="Parting the Veil" hidden="false" targetId="c828-3e09-a384-735b" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="d213-b42b-62d1-b591" name="Ruinstorm Daemon Shrike" hidden="false" targetId="767c-effa-9802-5846" type="profile">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-      </infoLinks>
+      <infoLinks/>
       <modifiers/>
       <constraints/>
       <categoryLinks>
@@ -1560,10 +1643,53 @@
           <constraints/>
         </categoryLink>
       </categoryLinks>
-      <selectionEntries/>
+      <selectionEntries>
+        <selectionEntry id="382f-0d1e-6bff-a7a3" name="Ruinstorm Daemon Shrike" hidden="false" collective="false" type="model">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="3885-a039-2b6b-b0f4" name="Ruinstorm Daemon Shrike" hidden="false" targetId="767c-effa-9802-5846" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="e44f-8822-f838-e53d" name="Daemon of the Ruinstorm" hidden="false" targetId="0b0d-9d33-c0a8-06cd" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="00dc-b3fb-0251-fc7d" name="Parting the Veil" hidden="false" targetId="c828-3e09-a384-735b" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="6e5c-f987-dd80-741d" name="Tides of Madness" hidden="false" targetId="a2dc-7a16-0067-a4db" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="063d-6e2a-8b0d-611f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c68e-83b9-8097-6d20" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="160.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks>
-        <entryLink id="8ae3-61ed-31c1-ce55" name="Bracket Two" hidden="false" targetId="fbff-b318-fc9d-9b88" type="selectionEntryGroup">
+        <entryLink id="8ae3-61ed-31c1-ce55" name="Emanations of Horror [2]" hidden="false" targetId="fbff-b318-fc9d-9b88" type="selectionEntryGroup">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1578,45 +1704,12 @@
           <categoryLinks/>
         </entryLink>
       </entryLinks>
-      <costs>
-        <cost name="pts" costTypeId="points" value="160.0"/>
-      </costs>
+      <costs/>
     </selectionEntry>
-    <selectionEntry id="bf7e-0c26-b8b8-758a" name="Ruinstorm Daemon Behemoth" hidden="false" collective="false" type="model">
+    <selectionEntry id="bf7e-0c26-b8b8-758a" name="Ruinstorm Daemon Behemoth" hidden="false" collective="false" type="unit">
       <profiles/>
       <rules/>
-      <infoLinks>
-        <infoLink id="6c8f-06c7-7aba-5cab" name="Daemon of the Ruinstorm" hidden="false" targetId="0b0d-9d33-c0a8-06cd" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="ac70-062c-9d6b-b7f9" name="Parting the Veil" hidden="false" targetId="c828-3e09-a384-735b" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="d70b-2280-eeec-4867" name="Tide of Madness" hidden="false" targetId="a2dc-7a16-0067-a4db" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="1a9c-3d08-c6a4-90f6" name="Unstoppable" hidden="false" targetId="7e4c-02df-f834-6a66" type="rule">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-        <infoLink id="776d-8e42-76c1-fb1f" name="Ruinstorm Daemon Behemoth" hidden="false" targetId="74df-5659-4f1c-ed58" type="profile">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-        </infoLink>
-      </infoLinks>
+      <infoLinks/>
       <modifiers/>
       <constraints/>
       <categoryLinks>
@@ -1628,256 +1721,71 @@
           <constraints/>
         </categoryLink>
       </categoryLinks>
-      <selectionEntries/>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="1f97-8f8d-1757-4560" name="Emanations of Horror [3]" hidden="false" collective="false">
+      <selectionEntries>
+        <selectionEntry id="87b5-6bc7-c8d2-68bf" name="Ruinstorm Daemon Behemoth" hidden="false" collective="false" type="model">
           <profiles/>
           <rules/>
-          <infoLinks/>
-          <modifiers>
-            <modifier type="increment" field="f7c5-abad-68d5-94d3" value="1">
-              <repeats/>
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9463-14b2-5a43-17b0" type="atLeast"/>
-              </conditions>
-              <conditionGroups/>
-            </modifier>
-          </modifiers>
+          <infoLinks>
+            <infoLink id="4f8f-f04a-b81d-7c05" name="Daemon of the Ruinstorm" hidden="false" targetId="0b0d-9d33-c0a8-06cd" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="25d0-8885-7658-761d" name="Parting the Veil" hidden="false" targetId="c828-3e09-a384-735b" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="d32e-3f06-f239-60f6" name="Tides of Madness" hidden="false" targetId="a2dc-7a16-0067-a4db" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="4831-8f48-8753-0e79" name="Unstoppable" hidden="false" targetId="7e4c-02df-f834-6a66" type="rule">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+            <infoLink id="07b7-23ac-cc68-ba70" name="Ruinstorm Daemon Behemoth" hidden="false" targetId="74df-5659-4f1c-ed58" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7c5-abad-68d5-94d3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8c0-ada9-8bc2-6910" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="429d-5b16-7404-845b" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
           <selectionEntryGroups/>
-          <entryLinks>
-            <entryLink id="0973-e9b4-92d1-b97d" name="Flensing Talons" hidden="false" targetId="e4ca-d240-cc12-1709" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="points" value="5">
-                  <repeats/>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-              <categoryLinks/>
-            </entryLink>
-            <entryLink id="e08a-3c59-fa3f-1683" name="Sundering Fangs" hidden="false" targetId="6714-4a30-d5ab-f43b" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="increment" field="points" value="5">
-                  <repeats/>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-              <categoryLinks/>
-            </entryLink>
-            <entryLink id="7d68-6b1c-f3f6-f966" name="Miasma of Rot" hidden="false" targetId="1777-1007-cc23-1481" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="points" value="15">
-                  <repeats/>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-              <categoryLinks/>
-            </entryLink>
-            <entryLink id="c809-7bb6-9b6f-3452" name="Brass Collars" hidden="false" targetId="da14-1454-058f-f0cd" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="points" value="15">
-                  <repeats/>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-              <categoryLinks/>
-            </entryLink>
-            <entryLink id="2f6d-5989-dbf5-f84e" name="Stupefying Musk" hidden="false" targetId="6c9f-9f45-11f1-1079" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="increment" field="points" value="10">
-                  <repeats/>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-              <categoryLinks/>
-            </entryLink>
-            <entryLink id="e8ce-0da4-4a42-3376" name="Corrosive Vomit" hidden="false" targetId="84b2-d1d6-1872-c4ef" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="points" value="15">
-                  <repeats/>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-              <categoryLinks/>
-            </entryLink>
-            <entryLink id="4825-456f-6d33-e1bb" name="Rift Barb" hidden="false" targetId="19f9-a3b4-ae4e-845e" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="points" value="15">
-                  <repeats/>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-              <categoryLinks/>
-            </entryLink>
-            <entryLink id="1ae5-39de-1aa9-7f49" name="Molten Blood" hidden="false" targetId="e001-8e2e-f957-4bb7" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="points" value="5">
-                  <repeats/>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-              <categoryLinks/>
-            </entryLink>
-            <entryLink id="d51a-38c0-8181-4e49" name="Horned Crown" hidden="false" targetId="3f3e-bbfb-732a-9fa8" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="points" value="15">
-                  <repeats/>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-              <categoryLinks/>
-            </entryLink>
-            <entryLink id="dd81-1993-011d-a650" name="Warp-scaled Hide" hidden="false" targetId="5759-049f-35eb-37c2" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="increment" field="points" value="25">
-                  <repeats/>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-              <categoryLinks/>
-            </entryLink>
-            <entryLink id="04c6-78e7-025a-3e6f" name="Quicksilver Speed" hidden="false" targetId="7e9f-dc4a-0fa8-732d" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="points" value="15">
-                  <repeats/>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-              <categoryLinks/>
-            </entryLink>
-            <entryLink id="899e-357d-e1d4-7a49" name="Flaming Ichor" hidden="false" targetId="e531-b96d-ec46-184a" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="points" value="20">
-                  <repeats/>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-              <categoryLinks/>
-            </entryLink>
-            <entryLink id="2cab-f2f9-5f6e-9230" name="Spine Volley" hidden="false" targetId="6a35-94d3-e17d-37b0" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="increment" field="points" value="10">
-                  <repeats/>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-              <categoryLinks/>
-            </entryLink>
-            <entryLink id="1e75-4383-784d-c585" name="Bone Shard Harpoons" hidden="false" targetId="823e-a42d-9475-c2dd" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="points" value="10">
-                  <repeats/>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-              <categoryLinks/>
-            </entryLink>
-            <entryLink id="bdac-0e20-9692-284f" name="Shroud of Darkness" hidden="false" targetId="8600-a910-cd18-0f0a" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="points" value="20">
-                  <repeats/>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-              <categoryLinks/>
-            </entryLink>
-            <entryLink id="8e3f-27b0-6953-80d7" name="Crushing Claws" hidden="false" targetId="a4fc-26a9-cd55-3b4b" type="selectionEntry">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers>
-                <modifier type="set" field="points" value="10">
-                  <repeats/>
-                  <conditions/>
-                  <conditionGroups/>
-                </modifier>
-              </modifiers>
-              <constraints/>
-              <categoryLinks/>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks/>
+          <entryLinks/>
+          <costs/>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="99e0-42d8-03bb-61c2" name="Emanations of Horror [3]" hidden="false" targetId="7eba-bb63-a86c-5b07" type="selectionEntryGroup">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="44fc-ca72-33e4-b530" value="3">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="300.0"/>
       </costs>
@@ -2874,14 +2782,14 @@
         </infoLink>
       </infoLinks>
       <modifiers>
-        <modifier type="set" field="d902-bb68-e8bb-322e" value="-1">
+        <modifier type="set" field="d902-bb68-e8bb-322e" value="1">
           <repeats/>
           <conditions/>
           <conditionGroups>
-            <conditionGroup type="or">
+            <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9463-14b2-5a43-17b0" type="greaterThan"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc24-bd44-bce4-a7f1" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9463-14b2-5a43-17b0" type="equalTo"/>
               </conditions>
               <conditionGroups/>
             </conditionGroup>
@@ -2893,8 +2801,23 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9463-14b2-5a43-17b0" type="greaterThan"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc24-bd44-bce4-a7f1" type="greaterThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9463-14b2-5a43-17b0" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc24-bd44-bce4-a7f1" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="360a-987d-e2e3-6647" value="0">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dd-f79e-10cf-dc2f" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a0b-2e45-8c90-360e" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0946-b1da-a2c7-12f9" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c0c-a8bb-13c6-daea" type="equalTo"/>
               </conditions>
               <conditionGroups/>
             </conditionGroup>
@@ -2903,7 +2826,7 @@
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="360a-987d-e2e3-6647" type="max"/>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d902-bb68-e8bb-322e" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d902-bb68-e8bb-322e" type="min"/>
       </constraints>
       <categoryLinks/>
       <selectionEntries/>
@@ -2931,21 +2854,36 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0946-b1da-a2c7-12f9" type="greaterThan"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc24-bd44-bce4-a7f1" type="greaterThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0946-b1da-a2c7-12f9" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc24-bd44-bce4-a7f1" type="equalTo"/>
               </conditions>
               <conditionGroups/>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="d0b2-a40d-f123-c20b" value="-1">
+        <modifier type="set" field="d0b2-a40d-f123-c20b" value="1">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0946-b1da-a2c7-12f9" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="1e46-f2ee-39e5-58c7" value="0">
           <repeats/>
           <conditions/>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0946-b1da-a2c7-12f9" type="greaterThan"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc24-bd44-bce4-a7f1" type="greaterThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dd-f79e-10cf-dc2f" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a0b-2e45-8c90-360e" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9463-14b2-5a43-17b0" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c0c-a8bb-13c6-daea" type="equalTo"/>
               </conditions>
               <conditionGroups/>
             </conditionGroup>
@@ -2954,7 +2892,7 @@
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e46-f2ee-39e5-58c7" type="max"/>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0b2-a40d-f123-c20b" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0b2-a40d-f123-c20b" type="min"/>
       </constraints>
       <categoryLinks/>
       <selectionEntries/>
@@ -2968,7 +2906,7 @@
       <profiles/>
       <rules/>
       <infoLinks>
-        <infoLink id="3377-144b-baf9-4819" name="Brass Collars" hidden="false" targetId="c007-edaa-5e1d-8f24" type="profile">
+        <infoLink id="3377-144b-baf9-4819" name="Brass Collar" hidden="false" targetId="c007-edaa-5e1d-8f24" type="profile">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -2988,21 +2926,36 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c0c-a8bb-13c6-daea" type="greaterThan"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc24-bd44-bce4-a7f1" type="greaterThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c0c-a8bb-13c6-daea" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc24-bd44-bce4-a7f1" type="equalTo"/>
               </conditions>
               <conditionGroups/>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="be5e-7fb2-e501-c3c0" value="-1">
+        <modifier type="set" field="be5e-7fb2-e501-c3c0" value="1">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c0c-a8bb-13c6-daea" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="1806-3abe-d773-e72c" value="0">
           <repeats/>
           <conditions/>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c0c-a8bb-13c6-daea" type="greaterThan"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc24-bd44-bce4-a7f1" type="greaterThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dd-f79e-10cf-dc2f" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0946-b1da-a2c7-12f9" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9463-14b2-5a43-17b0" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a0b-2e45-8c90-360e" type="equalTo"/>
               </conditions>
               <conditionGroups/>
             </conditionGroup>
@@ -3011,7 +2964,7 @@
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1806-3abe-d773-e72c" type="max"/>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be5e-7fb2-e501-c3c0" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be5e-7fb2-e501-c3c0" type="min"/>
       </constraints>
       <categoryLinks/>
       <selectionEntries/>
@@ -3039,21 +2992,36 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc24-bd44-bce4-a7f1" type="greaterThan"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5a0b-2e45-8c90-360e" type="greaterThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc24-bd44-bce4-a7f1" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5a0b-2e45-8c90-360e" type="equalTo"/>
               </conditions>
               <conditionGroups/>
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="d82d-1795-484d-47cf" value="-1">
+        <modifier type="set" field="d82d-1795-484d-47cf" value="1">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5a0b-2e45-8c90-360e" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="1843-2b7c-949d-e6d7" value="0">
           <repeats/>
           <conditions/>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc24-bd44-bce4-a7f1" type="greaterThan"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5a0b-2e45-8c90-360e" type="greaterThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dd-f79e-10cf-dc2f" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0946-b1da-a2c7-12f9" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9463-14b2-5a43-17b0" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c0c-a8bb-13c6-daea" type="equalTo"/>
               </conditions>
               <conditionGroups/>
             </conditionGroup>
@@ -3062,7 +3030,7 @@
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1843-2b7c-949d-e6d7" type="max"/>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d82d-1795-484d-47cf" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d82d-1795-484d-47cf" type="min"/>
       </constraints>
       <categoryLinks/>
       <selectionEntries/>
@@ -3230,7 +3198,7 @@
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dc24-bd44-bce4-a7f1" name="Presplendend Terror" book="HH8: Malevolence" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="dc24-bd44-bce4-a7f1" name="Resplendent Terror" book="HH8: Malevolence" hidden="false" collective="false" type="upgrade">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -3252,7 +3220,7 @@
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3e2a-e0d1-0561-3872" name="Ka&apos;Bandha, Daemon General of Signus" book="HH8: Malevolence" hidden="false" collective="false" type="model">
+    <selectionEntry id="3e2a-e0d1-0561-3872" name="Ka&apos;Bandha, Daemon General of Signus" book="HH8: Malevolence" hidden="true" collective="false" type="model">
       <profiles>
         <profile id="eb4a-79e6-b1eb-fc66" name="Ka&apos;Bandha, Daemon General of Signus" book="HH8: Malevolence" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
           <profiles/>
@@ -3312,7 +3280,7 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="8d61-8f51-ebfa-c6f2" name="Tide of Madness" hidden="false" targetId="a2dc-7a16-0067-a4db" type="rule">
+        <infoLink id="8d61-8f51-ebfa-c6f2" name="Tides of Madness" hidden="false" targetId="a2dc-7a16-0067-a4db" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -3364,10 +3332,31 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
       <modifiers>
         <modifier type="set" field="33f3-58b0-0dc9-4d8e" value="1">
           <repeats/>
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1f5-228b-2edc-93d5" type="equalTo"/>
-          </conditions>
-          <conditionGroups/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1f5-228b-2edc-93d5" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="92c6-2146-8ca7-bd35" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="777d-7ee1-4f6d-9ca8" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1f5-228b-2edc-93d5" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="92c6-2146-8ca7-bd35" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="777d-7ee1-4f6d-9ca8" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -3390,7 +3379,9 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdb3-9e9d-d9a7-ee66" type="min"/>
+          </constraints>
           <categoryLinks/>
         </entryLink>
         <entryLink id="85b1-cf13-ed21-09b9" name="Brass Collars" hidden="false" targetId="da14-1454-058f-f0cd" type="selectionEntry">
@@ -3398,7 +3389,9 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5285-b87f-d33e-6b1d" type="min"/>
+          </constraints>
           <categoryLinks/>
         </entryLink>
         <entryLink id="ac51-f053-a92c-eaa3" name="Horned Crown" hidden="false" targetId="3f3e-bbfb-732a-9fa8" type="selectionEntry">
@@ -3406,7 +3399,9 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22c6-bc74-50a5-6c7f" type="min"/>
+          </constraints>
           <categoryLinks/>
         </entryLink>
       </entryLinks>
@@ -4356,6 +4351,344 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
         <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="5ddb-4a5d-5b2d-c540" name="Cor&apos;bax Utterblight Unbound, Daemon Lord Of The Ruinstorm" hidden="true" collective="false" type="upgrade">
+      <profiles>
+        <profile id="7098-b32b-e073-843a" name="Cor&apos;bax Utterblight Unbound, Daemon Lord Of The Ruinstorm" book="HH8" page="245" hidden="false" profileTypeId="556e697423232344415441232323">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Unit Type" characteristicTypeId="556e6974205479706523232344415441232323" value="Monstrous Creature (Character)"/>
+            <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="6"/>
+            <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="3"/>
+            <characteristic name="S" characteristicTypeId="5323232344415441232323" value="7"/>
+            <characteristic name="T" characteristicTypeId="5423232344415441232323" value="8"/>
+            <characteristic name="W" characteristicTypeId="5723232344415441232323" value="8"/>
+            <characteristic name="I" characteristicTypeId="4923232344415441232323" value="3"/>
+            <characteristic name="A" characteristicTypeId="4123232344415441232323" value="5"/>
+            <characteristic name="LD" characteristicTypeId="4c4423232344415441232323" value="10"/>
+            <characteristic name="Save" characteristicTypeId="5361766523232344415441232323" value="4+"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="bd0d-d3a9-dfd1-21fc" name="Gaping Maw" book="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Warhammer_40000/Corbax_Utterblight.pdf" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Cor’bax’s vast maw opens wide enough to swallow enemies whole. When fighting against infantry models, any To Hit rolls of 5 or 6 made in the Assault phase by Cor’bax have the Instant Death special rule. Roll to wound and save with these attacks separately.</description>
+        </rule>
+        <rule id="7bfd-9cb4-0f26-d4c4" name="Noisome Tide of Flesh" book="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Warhammer_40000/Corbax_Utterblight.pdf" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Cor’bax Utterblight inflicts D3 Hammer of Wrath hits when charging. He ignores all dangerous terrain and difficult terrain. He counts as being armed with assault grenades when charging. In addition, if he is destroyed replace his model with the Massive Blast (7&quot;) template. All models under the template that do not have the Daemons or Daemons of the Ruinstorm special rule suffer a single Poisoned (4+) AP 4 hit. If this affects a vehicle, treat the strength of any hits inflicted as 2.</description>
+        </rule>
+        <rule id="4702-f348-3dcf-b188" name="Biomancy Psyker (Mastery Level 2)" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>May only select from Biomancy Discipline</description>
+        </rule>
+        <rule id="e299-0fae-4539-90a8" name="Lord of Decay" book="HH8" page="245" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Cor&apos;bax Utterblight Unbound may only be selected as part of an army which uses the Creeping Scourge Aetheric Dominion, and must be the army&apos;s Warlord. Cor&apos;bax Utterblight Unbound uses the Pestilent Cloud Warlord Trait from the Creeping Scourge Aetheric Dominion Warlord Trait table, and gains the Eternal Warrior special rule.</description>
+        </rule>
+        <rule id="588a-11d1-bd2b-fcae" name="Warlord Trait: Pestilent Cloud" book="HH8" page="218" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Pestilent Cloud: All units within 3&quot; of this Warlord at the end of any Fight sub-phase that do not have the Daemon of the Ruinstorm special rule suffer D6 Str 2, AP - hits. These hits and any casualties caused do not count for combat resolution.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="eb4f-7c1b-f5f9-6baa" name="Daemon of the Ruinstorm" hidden="false" targetId="0b0d-9d33-c0a8-06cd" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="1252-2225-15eb-66be" name="Tides of Madness" hidden="false" targetId="a2dc-7a16-0067-a4db" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="353e-1277-1a14-9c97" name="Parting the Veil" hidden="false" targetId="c828-3e09-a384-735b" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="d71a-00d1-7f68-2ff6" name="Eternal Warrior" hidden="false" targetId="3e0b-be9f-b7eb-8c5e" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="92c6-2146-8ca7-bd35" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c40c-cbf9-905c-29e9" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="ca6b-6f29-c512-6a3e" value="1">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c40c-cbf9-905c-29e9" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="92c6-2146-8ca7-bd35" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca6b-6f29-c512-6a3e" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="897d-58ea-7da8-ef46" name="HQ" hidden="false" targetId="485123232344415441232323" primary="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+      </categoryLinks>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="4602-1266-d39b-cf44" name="Shroud of Darkness" book="" hidden="false" targetId="8600-a910-cd18-0f0a" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b23-2f90-3689-90d5" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="b502-f2b5-042c-ecae" name="Miasma of Rot" hidden="false" targetId="1777-1007-cc23-1481" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b08-3d6a-b71d-9c81" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="22be-2ae9-df5c-6ed2" name="Crushing Claws" hidden="false" targetId="a4fc-26a9-cd55-3b4b" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b85-c9a2-db3f-b37a" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="425.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="777d-7ee1-4f6d-9ca8" name="Samus Unbound, Daemon Lord of the Ruinstorm" hidden="false" collective="false" type="model">
+      <profiles>
+        <profile id="f25e-e9dc-2abe-cfa0" name="Samus, Daemon Prince of the Ruinstorm" hidden="false" profileTypeId="556e697423232344415441232323" profileTypeName="Unit">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Unit Type" characteristicTypeId="556e6974205479706523232344415441232323" value="Infantry (Character)"/>
+            <characteristic name="WS" characteristicTypeId="575323232344415441232323" value="9"/>
+            <characteristic name="BS" characteristicTypeId="425323232344415441232323" value="5"/>
+            <characteristic name="S" characteristicTypeId="5323232344415441232323" value="8"/>
+            <characteristic name="T" characteristicTypeId="5423232344415441232323" value="7"/>
+            <characteristic name="W" characteristicTypeId="5723232344415441232323" value="7"/>
+            <characteristic name="I" characteristicTypeId="4923232344415441232323" value="9"/>
+            <characteristic name="A" characteristicTypeId="4123232344415441232323" value="6"/>
+            <characteristic name="LD" characteristicTypeId="4c4423232344415441232323" value="10"/>
+            <characteristic name="Save" characteristicTypeId="5361766523232344415441232323" value="3+"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="3825-c8d9-cc18-3c89" name="Born of Murder" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>If a model with the Character type is killed on any turn before Sam us Unbound is deployed, place a counter or other marker within 3&quot; of where they died. On the controlling player&apos;s next turn, this marker is treated as a Warp Rift marker for this turn only, following all the standard rules for Warp Rifts as detailed in the Parting the Veil rule, with the exception that no Daemons of the Ruinstorm model other than Samus Unbound may be deployed using this Warp Rift marker. After the controlling player&apos;s turn, the Warp Rift marker is removed.
+
+When being deployed in this manner, Samus Unbound does not need to pass a Reserves roll. Instead, Samus Unbound is automatically deployed.
+
+This special rule does not prevent Sam us Unbound being deployed earlier in the game using the
+standard Parting the Veil rule.</description>
+        </rule>
+        <rule id="3d4b-5081-ac25-c0b5" name="Whispers of Madness" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>If Sam us Unbound is part of your army, all enemy Reserves rolls are made at -I, regardless of whether or not Sam us is in play. In addition, enemy models placed in Ongoing Reserves will fail to appear on any particular turn on a D6 roll of 1.
+
+If Sam us Unbound is part of your army, the Warp Charge cost of any blessing type Psychic Power used during the game (by either side) is increased by +1.
+
+Models in combat with Sam us Unbound, as well as those taking Fear tests in order to charge Samus Unbound, have their Leadership value halved unless they have the Stubborn or Fearless special rules.</description>
+        </rule>
+        <rule id="cd34-2bbf-41fd-c11a" name="Lord of Murder" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Samus Unbound may only be selected as part of an army using the Resplendent Terror Aetheric Dominion, and must be the army&apos;s Warlord. Samus Unbound uses the Path of Blood Warlord Trait from the Crimson Fury Aetheric Dominion Warlord Trait table, and gains the Eternal Warrior special rule.</description>
+        </rule>
+        <rule id="b053-dfc2-2a6f-086e" name="Warlord Trait: Path of Blood" hidden="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <description>Whenever this Warlord declares a charge, it may roll a number of dice equal to its Attacks value to determine the distance moved, keeping the two highest results and discarding all other dice.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="069d-f1a7-7932-14bd" name="It Will Not Die" hidden="false" targetId="72d9-7041-9d30-d150" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="0b0a-c6b7-04f7-92a6" name="Eternal Warrior" hidden="false" targetId="3e0b-be9f-b7eb-8c5e" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="682f-9ce2-0c9c-109a" name="Daemon of the Ruinstorm" hidden="false" targetId="0b0d-9d33-c0a8-06cd" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="c4c7-8f03-b9b0-1088" name="Parting the Veil" hidden="false" targetId="c828-3e09-a384-735b" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="609d-46e2-b0a5-9043" name="Tides of Madness" hidden="false" targetId="a2dc-7a16-0067-a4db" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="efd0-5ac6-109b-98ef" name="Armourbane" hidden="false" targetId="e182-50cd-0867-9a8d" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="7501-1e5f-b12f-8bff" name="Murderous Strike" hidden="false" targetId="b0c5-b980-95e5-b181" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1f5-228b-2edc-93d5" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="92c6-2146-8ca7-bd35" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e2a-e0d1-0561-3872" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="47bb-db5c-c3f6-5d14" value="1">
+          <repeats/>
+          <conditions/>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1f5-228b-2edc-93d5" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e2a-e0d1-0561-3872" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="92c6-2146-8ca7-bd35" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47bb-db5c-c3f6-5d14" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="52be-9af4-6d05-1496" name="Brass Collars" hidden="false" targetId="da14-1454-058f-f0cd" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d51-3228-87c8-8665" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="507c-9300-8dc1-d9bf" name="Quicksilver Speed" hidden="false" targetId="7e9f-dc4a-0fa8-732d" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28b0-9142-9736-9eef" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="0c89-f195-9197-1c8c" name="Molten Blood" hidden="false" targetId="e001-8e2e-f957-4bb7" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51ba-cbca-b2a1-3adf" type="min"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" costTypeId="points" value="415.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fbff-b318-fc9d-9b88" name="Emanations of Horror [2]" hidden="false" collective="false">
@@ -4435,7 +4768,9 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
           <infoLinks/>
           <modifiers>
             <modifier type="increment" field="points" value="25">
-              <repeats/>
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -4451,7 +4786,9 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
           <infoLinks/>
           <modifiers>
             <modifier type="increment" field="points" value="10">
-              <repeats/>
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -4467,7 +4804,9 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
           <infoLinks/>
           <modifiers>
             <modifier type="increment" field="points" value="15">
-              <repeats/>
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -4483,7 +4822,9 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
           <infoLinks/>
           <modifiers>
             <modifier type="increment" field="points" value="10">
-              <repeats/>
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -4498,8 +4839,10 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="points" value="10">
-              <repeats/>
+            <modifier type="increment" field="points" value="10">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -4512,8 +4855,10 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="points" value="15">
-              <repeats/>
+            <modifier type="increment" field="points" value="15">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -4526,8 +4871,10 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="points" value="10">
-              <repeats/>
+            <modifier type="increment" field="points" value="10">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -4540,8 +4887,10 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="points" value="10">
-              <repeats/>
+            <modifier type="increment" field="points" value="10">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -4568,8 +4917,10 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="points" value="15">
-              <repeats/>
+            <modifier type="increment" field="points" value="15">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -4582,8 +4933,10 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="points" value="5">
-              <repeats/>
+            <modifier type="increment" field="points" value="5">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -4596,8 +4949,10 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="points" value="10">
-              <repeats/>
+            <modifier type="increment" field="points" value="10">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -4610,8 +4965,10 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="points" value="15">
-              <repeats/>
+            <modifier type="increment" field="points" value="15">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -4624,8 +4981,10 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="points" value="10">
-              <repeats/>
+            <modifier type="increment" field="points" value="10">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -4638,8 +4997,10 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="points" value="5">
-              <repeats/>
+            <modifier type="increment" field="points" value="5">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -4652,8 +5013,10 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="points" value="15">
-              <repeats/>
+            <modifier type="increment" field="points" value="15">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -4666,8 +5029,10 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="points" value="5">
-              <repeats/>
+            <modifier type="increment" field="points" value="5">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -4680,8 +5045,10 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="set" field="points" value="5">
-              <repeats/>
+            <modifier type="increment" field="points" value="5">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -4701,6 +5068,11 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9463-14b2-5a43-17b0" type="equalTo"/>
           </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="set" field="name" value="Emanations of Horror">
+          <repeats/>
+          <conditions/>
           <conditionGroups/>
         </modifier>
       </modifiers>
@@ -4828,10 +5200,8 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
           <rules/>
           <infoLinks/>
           <modifiers>
-            <modifier type="increment" field="points" value="3">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-              </repeats>
+            <modifier type="set" field="points" value="3">
+              <repeats/>
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -4989,7 +5359,9 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
           <infoLinks/>
           <modifiers>
             <modifier type="increment" field="points" value="5">
-              <repeats/>
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -5003,7 +5375,9 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
           <infoLinks/>
           <modifiers>
             <modifier type="increment" field="points" value="3">
-              <repeats/>
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
               <conditions/>
               <conditionGroups/>
             </modifier>
@@ -5054,6 +5428,287 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
           <rules/>
           <infoLinks/>
           <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="7eba-bb63-a86c-5b07" name="Emanations of Horror [3]" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers>
+        <modifier type="increment" field="44fc-ca72-33e4-b530" value="1">
+          <repeats/>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9463-14b2-5a43-17b0" type="atLeast"/>
+          </conditions>
+          <conditionGroups/>
+        </modifier>
+        <modifier type="set" field="name" value="Emanations of Horror">
+          <repeats/>
+          <conditions/>
+          <conditionGroups/>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44fc-ca72-33e4-b530" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="b0f6-6657-7864-dc45" name="Flensing Talons" hidden="false" targetId="e4ca-d240-cc12-1709" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="points" value="5">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="e94d-597f-479b-e5a5" name="Sundering Fangs" hidden="false" targetId="6714-4a30-d5ab-f43b" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="points" value="5">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="2983-7403-7753-e433" name="Miasma of Rot" hidden="false" targetId="1777-1007-cc23-1481" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="points" value="15">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="c761-2ffa-4496-bd0b" name="Brass Collars" hidden="false" targetId="da14-1454-058f-f0cd" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="points" value="15">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="4328-913d-ff08-45ef" name="Stupefying Musk" hidden="false" targetId="6c9f-9f45-11f1-1079" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="points" value="10">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="c51b-f798-ddfc-c615" name="Corrosive Vomit" hidden="false" targetId="84b2-d1d6-1872-c4ef" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="points" value="15">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="18ff-0280-9697-2850" name="Rift Barb" hidden="false" targetId="19f9-a3b4-ae4e-845e" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="points" value="15">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="a424-c1ae-0b63-ae78" name="Molten Blood" hidden="false" targetId="e001-8e2e-f957-4bb7" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="points" value="5">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="2bf8-dcb9-1b6b-29e7" name="Horned Crown" hidden="false" targetId="3f3e-bbfb-732a-9fa8" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="points" value="15">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="6d80-5f13-e680-5024" name="Warp-scaled Hide" hidden="false" targetId="5759-049f-35eb-37c2" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="points" value="25">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="5815-9405-96e1-e5a5" name="Quicksilver Speed" hidden="false" targetId="7e9f-dc4a-0fa8-732d" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="points" value="15">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="4332-219d-036a-1ee2" name="Flaming Ichor" hidden="false" targetId="e531-b96d-ec46-184a" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="points" value="20">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="2ee9-0844-f9eb-bac9" name="Spine Volley" hidden="false" targetId="6a35-94d3-e17d-37b0" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="points" value="10">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="3c1c-a91a-3cb4-341c" name="Bone Shard Harpoons" hidden="false" targetId="823e-a42d-9475-c2dd" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="points" value="10">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="340c-ad66-d1a0-bada" name="Shroud of Darkness" hidden="false" targetId="8600-a910-cd18-0f0a" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="points" value="20">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
+        <entryLink id="897b-f7ee-19dd-f6b1" name="Crushing Claws" hidden="false" targetId="a4fc-26a9-cd55-3b4b" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="points" value="10">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
           <constraints/>
           <categoryLinks/>
         </entryLink>
