@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8700-b3bb-a471-a0ad" name="Daemons of the Ruinstorm" revision="6" battleScribeVersion="2.02" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8700-b3bb-a471-a0ad" name="Daemons of the Ruinstorm" revision="7" battleScribeVersion="2.02" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="8700-b3bb-pubN65537" name="HH8: Malevolence"/>
     <publication id="8700-b3bb-pubN75780" name="BRB"/>
@@ -198,7 +198,7 @@
         <categoryLink id="d499-276f-f4fe-5100" name="HQ" hidden="false" targetId="485123232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="d518-5909-d60f-79db" name="Samus Unbound, Daemon Lord of the Ruinstorm" hidden="true" collective="false" targetId="777d-7ee1-4f6d-9ca8" type="selectionEntry">
+    <entryLink id="d518-5909-d60f-79db" name="Samus Unbound, Daemon Lord of the Ruinstorm" hidden="false" collective="false" targetId="777d-7ee1-4f6d-9ca8" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="feb9-0a69-7838-340a" name="HQ" hidden="false" targetId="485123232344415441232323" primary="true"/>
       </categoryLinks>
@@ -221,17 +221,6 @@
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e2a-e0d1-0561-3872" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ddb-4a5d-5b2d-c540" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="777d-7ee1-4f6d-9ca8" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ddb-4a5d-5b2d-c540" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e2a-e0d1-0561-3872" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="777d-7ee1-4f6d-9ca8" type="equalTo"/>
               </conditions>
             </conditionGroup>
@@ -747,7 +736,7 @@
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bd5-5962-2608-d4b4" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bd5-5962-2608-d4b4" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="07fd-9d5f-ed3e-a352" name="Crushing Claws" hidden="false" collective="false" targetId="a4fc-26a9-cd55-3b4b" type="selectionEntry">
@@ -1426,6 +1415,16 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="1c0c-a8bb-13c6-daea" name="Crimson Fury" hidden="false" collective="false" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="4632-6854-da60-0105" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e2a-e0d1-0561-3872" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4632-6854-da60-0105" type="min"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="91cb-adbc-d386-a574" name="Aetheric Dominion" hidden="false" targetId="5297-7e0f-fa0b-3537" primary="true"/>
       </categoryLinks>
@@ -1442,6 +1441,16 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="5a0b-2e45-8c90-360e" name="Creeping Scourge" publicationId="8700-b3bb-pubN65537" hidden="false" collective="false" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="0715-b682-d447-5c10" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ddb-4a5d-5b2d-c540" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0715-b682-d447-5c10" type="min"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="4ac0-d3ef-0316-6008" name="Aetheric Dominion" hidden="false" targetId="5297-7e0f-fa0b-3537" primary="true"/>
       </categoryLinks>
@@ -1458,6 +1467,16 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="dc24-bd44-bce4-a7f1" name="Resplendent Terror" publicationId="8700-b3bb-pubN65537" hidden="false" collective="false" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="3d92-7ea6-6e8f-7684" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="777d-7ee1-4f6d-9ca8" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d92-7ea6-6e8f-7684" type="min"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="383f-5901-c8a4-33f5" name="Aetheric Dominion" hidden="false" targetId="5297-7e0f-fa0b-3537" primary="true"/>
       </categoryLinks>
@@ -1465,7 +1484,7 @@
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3e2a-e0d1-0561-3872" name="Ka&apos;Bandha, Daemon General of Signus" publicationId="8700-b3bb-pubN65537" hidden="true" collective="false" type="model">
+    <selectionEntry id="3e2a-e0d1-0561-3872" name="Ka&apos;Bandha, Daemon General of Signus" publicationId="8700-b3bb-pubN65537" hidden="false" collective="false" type="model">
       <modifiers>
         <modifier type="set" field="33f3-58b0-0dc9-4d8e" value="1">
           <conditionGroups>
@@ -1473,18 +1492,6 @@
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1f5-228b-2edc-93d5" type="equalTo"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="92c6-2146-8ca7-bd35" type="equalTo"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="777d-7ee1-4f6d-9ca8" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1f5-228b-2edc-93d5" type="equalTo"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="92c6-2146-8ca7-bd35" type="equalTo"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="777d-7ee1-4f6d-9ca8" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2032,18 +2039,8 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5ddb-4a5d-5b2d-c540" name="Cor&apos;bax Utterblight Unbound, Daemon Lord Of The Ruinstorm" hidden="true" collective="false" type="upgrade">
+    <selectionEntry id="5ddb-4a5d-5b2d-c540" name="Cor&apos;bax Utterblight Unbound, Daemon Lord Of The Ruinstorm" hidden="false" collective="false" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="92c6-2146-8ca7-bd35" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c40c-cbf9-905c-29e9" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
         <modifier type="set" field="ca6b-6f29-c512-6a3e" value="1">
           <conditionGroups>
             <conditionGroup type="and">
@@ -2123,23 +2120,11 @@ Eternal Rivalry: If Sanguinius is removed as a casualty while it is fighting in 
     </selectionEntry>
     <selectionEntry id="777d-7ee1-4f6d-9ca8" name="Samus Unbound, Daemon Lord of the Ruinstorm" hidden="false" collective="false" type="model">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1f5-228b-2edc-93d5" type="equalTo"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="92c6-2146-8ca7-bd35" type="equalTo"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e2a-e0d1-0561-3872" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
         <modifier type="set" field="47bb-db5c-c3f6-5d14" value="1">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1f5-228b-2edc-93d5" type="equalTo"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e2a-e0d1-0561-3872" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="394c-38b0-fa5d-0598" type="equalTo"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="92c6-2146-8ca7-bd35" type="equalTo"/>
               </conditions>
             </conditionGroup>
