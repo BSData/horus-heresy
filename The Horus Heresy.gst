@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="108" battleScribeVersion="2.02" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="109" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN66489" name="HH:MT"/>
@@ -207,61 +207,61 @@
     </forceEntry>
   </forceEntries>
   <entryLinks>
-    <entryLink id="eda5-87ee-05e1-fd98" name="Acastus Knight Porphyrion" hidden="false" collective="false" targetId="4ded-9de3-f964-33a7" type="selectionEntry">
+    <entryLink id="eda5-87ee-05e1-fd98" name="Acastus Knight Porphyrion" hidden="false" collective="false" import="true" targetId="4ded-9de3-f964-33a7" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="087e-6cb9-3b34-bd8d" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="f5c0-2dc9-a454-3265" name="Questoris Knight Crusader" hidden="false" collective="false" targetId="09ee-4370-1462-2cb5" type="selectionEntry">
+    <entryLink id="f5c0-2dc9-a454-3265" name="Questoris Knight Crusader" hidden="false" collective="false" import="true" targetId="09ee-4370-1462-2cb5" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="40b7-30a8-e66b-6e88" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="2691-7e0f-9139-5503" name="Questoris Knight Errant" hidden="false" collective="false" targetId="4b70feb1-a2e7-2f93-8320-1d6775bf5a59" type="selectionEntry">
+    <entryLink id="2691-7e0f-9139-5503" name="Questoris Knight Errant" hidden="false" collective="false" import="true" targetId="4b70feb1-a2e7-2f93-8320-1d6775bf5a59" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="1583-91a3-00e9-176a" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="f1ac-cd3f-39fa-a73c" name="Questoris Knight Gallant" hidden="false" collective="false" targetId="74b8-f485-4b58-0071" type="selectionEntry">
+    <entryLink id="f1ac-cd3f-39fa-a73c" name="Questoris Knight Gallant" hidden="false" collective="false" import="true" targetId="74b8-f485-4b58-0071" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="c989-d886-5fd8-f6d5" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="f724-e283-e301-075c" name="Questoris Knight Magaera" hidden="false" collective="false" targetId="fb7cd031-7573-eb28-4446-d709eb5acdbc" type="selectionEntry">
+    <entryLink id="f724-e283-e301-075c" name="Questoris Knight Magaera" hidden="false" collective="false" import="true" targetId="fb7cd031-7573-eb28-4446-d709eb5acdbc" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="c01c-cc1c-2d9c-0fdc" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="62a5-7380-1456-3c95" name="Questoris Knight Paladin" hidden="false" collective="false" targetId="02eb28bb-1883-8603-0af7-b8bf2b7b69c8" type="selectionEntry">
+    <entryLink id="62a5-7380-1456-3c95" name="Questoris Knight Paladin" hidden="false" collective="false" import="true" targetId="02eb28bb-1883-8603-0af7-b8bf2b7b69c8" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="3956-ea6c-808c-767a" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="e357-a8cf-d30f-00af" name="Questoris Knight Styrix" hidden="false" collective="false" targetId="a5b350ff-895e-4557-70a6-d24a936919c2" type="selectionEntry">
+    <entryLink id="e357-a8cf-d30f-00af" name="Questoris Knight Styrix" hidden="false" collective="false" import="true" targetId="a5b350ff-895e-4557-70a6-d24a936919c2" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="05ad-5252-2d84-c8eb" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="a204-0a13-cf14-18d3" name="Questoris Knight Warden" hidden="false" collective="false" targetId="f4f1-dad6-0596-ca5a" type="selectionEntry">
+    <entryLink id="a204-0a13-cf14-18d3" name="Questoris Knight Warden" hidden="false" collective="false" import="true" targetId="f4f1-dad6-0596-ca5a" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="95f6-22fe-84cf-30bb" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="78a9-6f20-6fe6-a0e2" name="Questoris Knight Dominus" hidden="false" collective="false" targetId="6eec-767d-0b14-95ab" type="selectionEntry">
+    <entryLink id="78a9-6f20-6fe6-a0e2" name="Questoris Knight Dominus" hidden="false" collective="false" import="true" targetId="6eec-767d-0b14-95ab" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="1daa-66b3-bbef-8da8" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="7d9f-d54b-09db-e954" name="Use Playtest Rules" hidden="false" collective="false" targetId="5a90-c53e-42ca-b4ca" type="selectionEntry">
+    <entryLink id="7d9f-d54b-09db-e954" name="Use Playtest Rules" hidden="false" collective="false" import="true" targetId="5a90-c53e-42ca-b4ca" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="d2d6-3f07-f393-0be4" name="New CategoryLink" hidden="false" targetId="fdf4-0683-3e84-5a4b" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="11c8-2e78-8328-31e4" name="Crusade Fleet Avenger Strike Fighter" publicationId="ca571888--pubN66489" page="47" hidden="false" collective="false" type="unit">
+    <selectionEntry id="11c8-2e78-8328-31e4" name="Crusade Fleet Avenger Strike Fighter" publicationId="ca571888--pubN66489" page="47" hidden="false" collective="false" import="true" type="unit">
       <profiles>
-        <profile id="341f-27c1-0e88-9c83" name="Avenger Bolt-cannon" publicationId="ca571888--pubN66500" page="272" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+        <profile id="341f-27c1-0e88-9c83" name="Avenger Bolt-cannon" publicationId="ca571888--pubN66500" page="272" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
             <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -269,7 +269,7 @@
             <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 7</characteristic>
           </characteristics>
         </profile>
-        <profile id="1bbc-16a5-2991-4ed6" name="Defensive Heavy Stubber" publicationId="ca571888--pubN66500" page="272" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+        <profile id="1bbc-16a5-2991-4ed6" name="Defensive Heavy Stubber" publicationId="ca571888--pubN66500" page="272" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
             <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
@@ -277,7 +277,7 @@
             <characteristic name="Type" typeId="5479706523232344415441232323">Heavy  3, Skyfire</characteristic>
           </characteristics>
         </profile>
-        <profile id="7b84-f22b-69a7-5547" name="Crusade Fleet Avenger Strike Fighter" publicationId="ca571888--pubN66580" page="47" hidden="false" typeId="56656869636c6523232344415441232323" typeName="">
+        <profile id="7b84-f22b-69a7-5547" name="Crusade Fleet Avenger Strike Fighter" publicationId="ca571888--pubN66580" page="47" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
           <characteristics>
             <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
             <characteristic name="Front" typeId="46726f6e7423232344415441232323">12</characteristic>
@@ -295,9 +295,9 @@
         <infoLink id="033c-ee32-2c36-53fe" name="New InfoLink" hidden="false" targetId="7911-b951-c819-2f4f" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="11ed-18c7-bdf5-2bd4" name="May be equipped with:" hidden="false" collective="false">
+        <selectionEntryGroup id="11ed-18c7-bdf5-2bd4" name="May be equipped with:" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="43e8-9718-76cb-f171" name="Chaff Launcher" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="43e8-9718-76cb-f171" name="Chaff Launcher" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5fa2-bfe5-5219-aa9d" type="max"/>
               </constraints>
@@ -308,7 +308,7 @@
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7145-b013-9f58-13fd" name="Infra-red Targeting" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="7145-b013-9f58-13fd" name="Infra-red Targeting" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="10be-5b46-6d21-6803" type="max"/>
               </constraints>
@@ -319,7 +319,7 @@
                 <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7f2b-783b-7539-d64a" name="Battle Servitor Control" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="7f2b-783b-7539-d64a" name="Battle Servitor Control" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e220-e46d-0c76-aa31" type="max"/>
               </constraints>
@@ -332,12 +332,12 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="9ddc-52b1-2e67-b23c" name="May equip two hardpoints with one choice of:" hidden="false" collective="false">
+        <selectionEntryGroup id="9ddc-52b1-2e67-b23c" name="May equip two hardpoints with one choice of:" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e289-7cb9-8e7e-e3a2" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="93c1-770a-6f9f-4863" name="Two Autocannons" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="93c1-770a-6f9f-4863" name="Two Autocannons" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="06e6-42e9-b59a-6d02" type="max"/>
               </constraints>
@@ -348,7 +348,7 @@
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d563-bc4b-df21-bafb" name="Two Multi-lasers" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="d563-bc4b-df21-bafb" name="Two Multi-lasers" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="527e-483e-7b4a-4cc8" type="max"/>
               </constraints>
@@ -359,7 +359,7 @@
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="094c-f80e-963c-315d" name="Two Missile Launchers" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="094c-f80e-963c-315d" name="Two Missile Launchers" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7229-b13f-c945-c3c4" type="max"/>
               </constraints>
@@ -371,7 +371,7 @@
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e3da-3922-27aa-cb42" name="Six Tactical Bombs" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="e3da-3922-27aa-cb42" name="Six Tactical Bombs" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="10f9-8610-cd1b-ca78" type="max"/>
               </constraints>
@@ -382,12 +382,12 @@
                 <cost name="pts" typeId="points" value="40.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9b03-4fc5-ed9e-ff8b" name="Two Kraken penetrator heavy missiles" publicationId="ca571888--pubN67227" page="43" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="9b03-4fc5-ed9e-ff8b" name="Two Kraken penetrator heavy missiles" publicationId="ca571888--pubN67227" page="43" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9aa3-e313-e912-6f07" type="max"/>
               </constraints>
               <profiles>
-                <profile id="1aea-e38e-108f-bc42" name="Kraken penetrator heavy missile" publicationId="ca571888--pubN67227" page="43" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+                <profile id="1aea-e38e-108f-bc42" name="Kraken penetrator heavy missile" publicationId="ca571888--pubN67227" page="43" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
@@ -404,7 +404,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="d21d-2c05-4827-cf41" name="Lascannon" hidden="false" collective="false" targetId="8036-b730-d533-e31f" type="selectionEntry">
+        <entryLink id="d21d-2c05-4827-cf41" name="Lascannon" hidden="false" collective="false" import="true" targetId="8036-b730-d533-e31f" type="selectionEntry">
           <modifiers>
             <modifier type="append" field="name" value=", wing mounted"/>
           </modifiers>
@@ -418,7 +418,7 @@
         <cost name="pts" typeId="points" value="150.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="66c9-eaa6-a91a-00ed" name="Fortification" hidden="true" collective="false" type="upgrade">
+    <selectionEntry id="66c9-eaa6-a91a-00ed" name="Fortification" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a6f3-d8d1-7cc3-e82c" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a6e7-9e79-eb68-1eab" type="max"/>
@@ -427,7 +427,7 @@
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9caf-d733-ad32-a649" name="Special Deployment" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="9caf-d733-ad32-a649" name="Special Deployment" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9965-225f-4b82-73b1" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5c09-bd34-51f5-3848" type="min"/>
@@ -441,7 +441,7 @@
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c419-45b3-44e8-b390" name="Lone Killer" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="c419-45b3-44e8-b390" name="Lone Killer" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="841d-ffde-c031-2086" name="Lone Killer" publicationId="ca571888--pubN67536" page="17" hidden="false">
           <description>May not be taken as a Compulsory HQ choice or serve as the army&apos;s Warlord.</description>
@@ -451,7 +451,7 @@
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d6ba-3e62-930b-82f7" name="Chaos Daemons" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="d6ba-3e62-930b-82f7" name="Chaos Daemons" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="993d-90f7-3e4c-d598" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f52f-834c-a899-9d4d" type="min"/>
@@ -460,12 +460,12 @@
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7318-5e86-df66-ae6c" name="Navigator" publicationId="ca571888--pubN67636" hidden="false" collective="false" type="model">
+    <selectionEntry id="7318-5e86-df66-ae6c" name="Navigator" publicationId="ca571888--pubN67636" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ba5-1c40-9f77-7d76" type="max"/>
       </constraints>
       <profiles>
-        <profile id="b441-fd74-6d6f-d155" name="Navigator" publicationId="ca571888--pubN67636" hidden="false" typeId="556e697423232344415441232323" typeName="">
+        <profile id="b441-fd74-6d6f-d155" name="Navigator" publicationId="ca571888--pubN67636" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry (Character)</characteristic>
             <characteristic name="WS" typeId="575323232344415441232323">2</characteristic>
@@ -479,7 +479,7 @@
             <characteristic name="Save" typeId="5361766523232344415441232323">6+</characteristic>
           </characteristics>
         </profile>
-        <profile id="45e2-3ee8-5b96-aa28" name="Ætherlabe Staff" publicationId="ca571888--pubN67636" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="">
+        <profile id="45e2-3ee8-5b96-aa28" name="Ætherlabe Staff" publicationId="ca571888--pubN67636" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Should an enemy unit Deep Strike into play within 12&quot; of the Navigator, the Navigator and their unit may make a Snap Shot shooting attack at the arriving unit at the end of that phase, subject to the normal rules for doing so. If the enemy unit enters play by way of a Conjuration psychic power, these Snap Shots are carried out at the firers’ normal BS rather than at BS 1.</characteristic>
           </characteristics>
@@ -506,9 +506,9 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
         <infoLink id="8421-ec3c-1a56-1bc4" name="New InfoLink" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="ecdf-eeee-18f4-5ab7" name="May take any of the following:" hidden="false" collective="false">
+        <selectionEntryGroup id="ecdf-eeee-18f4-5ab7" name="May take any of the following:" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="ef9a-362f-b5ff-e5b4" name="Cyber Familiar" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="ef9a-362f-b5ff-e5b4" name="Cyber Familiar" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="391c-0a15-c424-2adf" type="max"/>
               </constraints>
@@ -519,7 +519,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 <cost name="pts" typeId="points" value="15.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="595a-7e6a-b7c0-d60f" name="Nuncio-vox" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="595a-7e6a-b7c0-d60f" name="Nuncio-vox" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e79-de2b-c4a9-c788" type="max"/>
               </constraints>
@@ -530,7 +530,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="090a-4033-6ae9-30b1" name="Digital Lasers" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="090a-4033-6ae9-30b1" name="Digital Lasers" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8838-7948-34ac-d347" type="max"/>
               </constraints>
@@ -548,9 +548,9 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
         <cost name="pts" typeId="points" value="50.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b894-adfc-6d3d-fde4" name="Legio Titanicus Warhound Scout Titan" publicationId="ca571888--pubN68042" page="260" hidden="false" collective="false" type="model">
+    <selectionEntry id="b894-adfc-6d3d-fde4" name="Legio Titanicus Warhound Scout Titan" publicationId="ca571888--pubN68042" page="260" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="75b5-ba5d-2c7a-123f" name="Warhound Scout Titan" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="57616c6b657223232344415441232323" typeName="">
+        <profile id="75b5-ba5d-2c7a-123f" name="Warhound Scout Titan" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
           <characteristics>
             <characteristic name="WS" typeId="575323232344415441232323">2</characteristic>
             <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
@@ -564,7 +564,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
             <characteristic name="Type" typeId="5479706523232344415441232323">Super-heavy Walker</characteristic>
           </characteristics>
         </profile>
-        <profile id="d000-e664-a60e-b79a" name="Void Shields (2)" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="">
+        <profile id="d000-e664-a60e-b79a" name="Void Shields (2)" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Each hit scored against the Titan will instead hit a Void Shield (whilst one remains active). Close Combat attacks come from within the shield and are not stopped.  Void Shields have an armour value of 12.  A Glancing or Penetrating hit or any hit from a Destroyer weapon causes it to collapse.  After all void shields have collapsed, further hits strike the Titan instead. At the end of each of the Titan&apos;s turns, roll a D6 for each collapsed Void Shield.  Each roll of a 5+ restores one collapsed shield.  </characteristic>
           </characteristics>
@@ -591,13 +591,13 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
         <infoLink id="8ba7-abe2-e06b-26d0" name="New InfoLink" hidden="false" targetId="ca57-5483-64d5-ad52" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="0707-e414-13d3-eae6" name="Primary Weapon Right Arm" hidden="false" collective="false">
+        <selectionEntryGroup id="0707-e414-13d3-eae6" name="Primary Weapon Right Arm" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6382-b065-a4a1-1d2f" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f82e-d6ad-5595-46ff" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="6697-a23b-69a3-3fcc" name="Vulcan Mega-bolter" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="6697-a23b-69a3-3fcc" name="Vulcan Mega-bolter" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0659-d635-bb6d-415c" type="max"/>
               </constraints>
@@ -609,7 +609,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4c84-bcf6-2490-c4ad" name="Titan Plasma Blastgun" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="4c84-bcf6-2490-c4ad" name="Titan Plasma Blastgun" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1c21-eb1b-1758-b429" type="max"/>
               </constraints>
@@ -622,7 +622,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="a9e0-ce37-fc54-b54d" name="Inferno Gun" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="a9e0-ce37-fc54-b54d" name="Inferno Gun" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="45c1-f14c-a1fd-6276" type="max"/>
               </constraints>
@@ -634,7 +634,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e118-997c-fca2-1327" name="Double-barrelled Turbo-laser Destructor" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="e118-997c-fca2-1327" name="Double-barrelled Turbo-laser Destructor" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="62cd-d54d-7b6a-f0af" type="max"/>
               </constraints>
@@ -648,13 +648,13 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="ca51-9fbe-1ea2-bf75" name="Primary Weapon Left Arm" hidden="false" collective="false">
+        <selectionEntryGroup id="ca51-9fbe-1ea2-bf75" name="Primary Weapon Left Arm" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="33ad-58ad-a7fe-984a" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="80fb-0f24-7633-7b7f" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="d1c3-3006-46f7-26e0" name="Vulcan Mega-bolter" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="d1c3-3006-46f7-26e0" name="Vulcan Mega-bolter" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8930-508f-1c36-bcaf" type="max"/>
               </constraints>
@@ -666,7 +666,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="af33-8571-3cb0-ac97" name="Titan Plasma Blastgun" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="af33-8571-3cb0-ac97" name="Titan Plasma Blastgun" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="43ed-d6b8-b4b6-bc11" type="max"/>
               </constraints>
@@ -679,7 +679,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4de9-3d8c-bfdd-55ad" name="Inferno Gun" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="4de9-3d8c-bfdd-55ad" name="Inferno Gun" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1fb1-8bb9-fda1-b8d5" type="max"/>
               </constraints>
@@ -691,7 +691,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8bc0-922f-4ff9-7605" name="Double-barrelled Turbo-laser Destructor" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="8bc0-922f-4ff9-7605" name="Double-barrelled Turbo-laser Destructor" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb4b-6bda-428f-19c8" type="max"/>
               </constraints>
@@ -710,9 +710,9 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
         <cost name="pts" typeId="points" value="750.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1fa3-1f86-94a6-bf48" name="Legio Titanicus Reaver Battle Titan" publicationId="ca571888--pubN69050" page="91" hidden="false" collective="false" type="model">
+    <selectionEntry id="1fa3-1f86-94a6-bf48" name="Legio Titanicus Reaver Battle Titan" publicationId="ca571888--pubN69050" page="91" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="a11d-4866-5a06-3cec" name="Reaver Battle Titan" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="57616c6b657223232344415441232323" typeName="">
+        <profile id="a11d-4866-5a06-3cec" name="Reaver Battle Titan" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
           <characteristics>
             <characteristic name="WS" typeId="575323232344415441232323">2</characteristic>
             <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
@@ -726,7 +726,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
             <characteristic name="Type" typeId="5479706523232344415441232323">Super-heavy Walker</characteristic>
           </characteristics>
         </profile>
-        <profile id="9763-d9aa-f96b-6315" name="Void Shields (4)" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="">
+        <profile id="9763-d9aa-f96b-6315" name="Void Shields (4)" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Each hit scored against the Titan will instead hit a Void Shield (whilst one remains active). Close Combat attacks come from within the shield and are not stopped.  Void Shields have an armour value of 12.  A Glancing or Penetrating hit or any hit from a Destroyer weapon causes it to collapse.  After all void shields have collapsed, further hits strike the Titan instead. At the end of each of the Titan&apos;s turns, roll a D6 for each collapsed Void Shield.  Each roll of a 5+ restores one collapsed shield.  </characteristic>
           </characteristics>
@@ -746,13 +746,13 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
         <infoLink id="03c7-d1dd-6f84-3a4d" name="New InfoLink" hidden="false" targetId="666f-e93b-4f0b-ae40" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="74d3-2cbb-bd1e-6bf6" name="Carapace-mounted Weapon" hidden="false" collective="false" defaultSelectionEntryId="f13b-e244-f40b-5cce">
+        <selectionEntryGroup id="74d3-2cbb-bd1e-6bf6" name="Carapace-mounted Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="f13b-e244-f40b-5cce">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9483-1d77-ddb2-22c2" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fadf-018f-7320-739b" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="f13b-e244-f40b-5cce" name="Apocalypse Launcher" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="f13b-e244-f40b-5cce" name="Apocalypse Launcher" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3738-4277-ed59-97c8" type="max"/>
               </constraints>
@@ -764,12 +764,12 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="07f8-1202-05e0-13cc" name="Vortex Support Missile" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="07f8-1202-05e0-13cc" name="Vortex Support Missile" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd9c-bcc8-7b7a-f0e8" type="max"/>
               </constraints>
               <profiles>
-                <profile id="db93-0805-e29c-90a2" name="Vortex Support Missile" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+                <profile id="db93-0805-e29c-90a2" name="Vortex Support Missile" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot; - 360&quot;</characteristic>
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
@@ -785,7 +785,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3f04-7d64-8099-782b" name="Double-barrelled Turbo-laser Destructor" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="3f04-7d64-8099-782b" name="Double-barrelled Turbo-laser Destructor" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fb13-b28a-9116-8d3a" type="max"/>
               </constraints>
@@ -797,7 +797,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9717-4ec4-94ff-6ce5" name="Inferno Gun" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="9717-4ec4-94ff-6ce5" name="Inferno Gun" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4b7b-d9b8-60a6-437c" type="max"/>
               </constraints>
@@ -809,7 +809,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8ccf-38e2-21ca-4aa8" name="Titan Plasma Blastgun" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="8ccf-38e2-21ca-4aa8" name="Titan Plasma Blastgun" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="54f1-e2e6-9a3b-9e3d" type="max"/>
               </constraints>
@@ -822,7 +822,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7463-e73a-d506-a4ed" name="Vulcan Mega-bolter" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="7463-e73a-d506-a4ed" name="Vulcan Mega-bolter" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d61e-a209-8d99-059d" type="max"/>
               </constraints>
@@ -836,13 +836,13 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="7255-f32b-256d-d8a0" name="Primary Weapon Right Arm" hidden="false" collective="false" defaultSelectionEntryId="42e9-70eb-5684-900f">
+        <selectionEntryGroup id="7255-f32b-256d-d8a0" name="Primary Weapon Right Arm" hidden="false" collective="false" import="true" defaultSelectionEntryId="42e9-70eb-5684-900f">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9b4d-f9ab-55d5-8423" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5286-c0b3-cb3a-d975" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="9fa5-327a-e080-4e48" name="Gatling Blaster" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="9fa5-327a-e080-4e48" name="Gatling Blaster" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ad79-0cfe-b867-c329" type="max"/>
               </constraints>
@@ -855,7 +855,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="42e9-70eb-5684-900f" name="Laser Blaster" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="42e9-70eb-5684-900f" name="Laser Blaster" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f2a4-ae11-4456-5f03" type="max"/>
               </constraints>
@@ -867,7 +867,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="87ea-ea64-fb17-c9cd" name="Volcano Cannon" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="87ea-ea64-fb17-c9cd" name="Volcano Cannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c0db-122d-573b-b4a2" type="max"/>
               </constraints>
@@ -879,7 +879,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 <cost name="pts" typeId="points" value="50.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3707-176d-a1cc-1b6e" name="Melta Cannon" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="3707-176d-a1cc-1b6e" name="Melta Cannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b64f-c48f-a04c-c416" type="max"/>
               </constraints>
@@ -891,7 +891,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="99b8-5d14-5c25-837a" name="Titan Power Fist" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="99b8-5d14-5c25-837a" name="Titan Power Fist" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ad81-e327-adc7-b20b" type="max"/>
               </constraints>
@@ -902,7 +902,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="800f-dc8c-1525-cdfd" name="Titan Chain Fist" publicationId="ca571888--pubN68042" page="264" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="800f-dc8c-1525-cdfd" name="Titan Chain Fist" publicationId="ca571888--pubN68042" page="264" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c852-993e-04bd-a87e" type="max"/>
               </constraints>
@@ -916,13 +916,13 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="b772-8ae9-2f63-136e" name="Primary Weapon Left Arm" hidden="false" collective="false" defaultSelectionEntryId="cb1e-ebf9-f327-5f0a">
+        <selectionEntryGroup id="b772-8ae9-2f63-136e" name="Primary Weapon Left Arm" hidden="false" collective="false" import="true" defaultSelectionEntryId="cb1e-ebf9-f327-5f0a">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e642-5f2a-aaf8-5374" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8efc-a28f-32d5-dee1" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="cb1e-ebf9-f327-5f0a" name="Gatling Blaster" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="cb1e-ebf9-f327-5f0a" name="Gatling Blaster" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="62c0-47af-ff9d-142c" type="max"/>
               </constraints>
@@ -935,7 +935,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6b35-d996-afd0-cf80" name="Laser Blaster" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="6b35-d996-afd0-cf80" name="Laser Blaster" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d3c-7061-69a4-9b56" type="max"/>
               </constraints>
@@ -947,7 +947,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4921-e463-a2fd-374a" name="Volcano Cannon" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="4921-e463-a2fd-374a" name="Volcano Cannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="77bf-bd66-789e-dea3" type="max"/>
               </constraints>
@@ -959,7 +959,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 <cost name="pts" typeId="points" value="50.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ef06-2372-9cd0-c3fd" name="Melta Cannon" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="ef06-2372-9cd0-c3fd" name="Melta Cannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4560-cb01-bd7a-339e" type="max"/>
               </constraints>
@@ -971,7 +971,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3e03-2bfd-555c-2b17" name="Titan Power Fist" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="3e03-2bfd-555c-2b17" name="Titan Power Fist" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="480c-2ffa-ee25-e8ba" type="max"/>
               </constraints>
@@ -982,7 +982,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9911-c76e-c1cf-28ed" name="Titan Chain Fist" publicationId="ca571888--pubN68042" page="264" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="9911-c76e-c1cf-28ed" name="Titan Chain Fist" publicationId="ca571888--pubN68042" page="264" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="462c-b53a-cc07-b84d" type="max"/>
               </constraints>
@@ -1001,9 +1001,9 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
         <cost name="pts" typeId="points" value="1475.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ab80-0fef-3e93-8e64" name="Legio Titanicus Warlord Battle Titan" publicationId="ca571888--pubN68042" page="262" hidden="false" collective="false" type="model">
+    <selectionEntry id="ab80-0fef-3e93-8e64" name="Legio Titanicus Warlord Battle Titan" publicationId="ca571888--pubN68042" page="262" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="fcda-52b9-f8dc-9394" name="Warlord Battle Titan" publicationId="ca571888--pubN68042" page="262" hidden="false" typeId="57616c6b657223232344415441232323" typeName="">
+        <profile id="fcda-52b9-f8dc-9394" name="Warlord Battle Titan" publicationId="ca571888--pubN68042" page="262" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
           <characteristics>
             <characteristic name="WS" typeId="575323232344415441232323">2</characteristic>
             <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
@@ -1017,12 +1017,12 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
             <characteristic name="Type" typeId="5479706523232344415441232323">Super-heavy Walker</characteristic>
           </characteristics>
         </profile>
-        <profile id="d768-a43f-515a-2e63" name="Void Shields (6)" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="">
+        <profile id="d768-a43f-515a-2e63" name="Void Shields (6)" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Each hit scored against the Titan will instead hit a Void Shield (whilst one remains active). Close Combat attacks come from within the shield and are not stopped.  Void Shields have an armour value of 12.  A Glancing or Penetrating hit or any hit from a Destroyer weapon causes it to collapse.  After all void shields have collapsed, further hits strike the Titan instead. At the end of each of the Titan&apos;s turns, roll a D6 for each collapsed Void Shield.  Each roll of a 5+ restores one collapsed shield.  </characteristic>
           </characteristics>
         </profile>
-        <profile id="03f7-49d7-3ae8-47b5" name="Ardex-defensor Mauler bolt cannon turret" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+        <profile id="03f7-49d7-3ae8-47b5" name="Ardex-defensor Mauler bolt cannon turret" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
             <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -1030,7 +1030,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
             <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 6, Twin-linked, Ardex Machina</characteristic>
           </characteristics>
         </profile>
-        <profile id="2352-5409-9866-1b07" name="Ardex-defensor twin-linked lascannon turret" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+        <profile id="2352-5409-9866-1b07" name="Ardex-defensor twin-linked lascannon turret" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
             <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
@@ -1066,13 +1066,13 @@ D6    Result		S	AP
         </rule>
       </rules>
       <selectionEntryGroups>
-        <selectionEntryGroup id="a893-70e8-8c4d-57de" name="Primary Weapon Left Arm" hidden="false" collective="false">
+        <selectionEntryGroup id="a893-70e8-8c4d-57de" name="Primary Weapon Left Arm" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bf42-ff0c-1b93-9142" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c4a0-6f0b-e06f-10c6" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="f796-2c32-09bf-e760" name="Sunfury Plasma Annihilator" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="f796-2c32-09bf-e760" name="Sunfury Plasma Annihilator" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fd22-e598-eaf9-0613" type="max"/>
               </constraints>
@@ -1084,7 +1084,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ba35-5947-bcce-f009" name="Mori Quake Cannon" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="ba35-5947-bcce-f009" name="Mori Quake Cannon" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d289-c0d5-eec4-ac92" type="max"/>
               </constraints>
@@ -1099,7 +1099,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6e87-15f0-ec9c-1131" name="Saturnyne Lascutter" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="6e87-15f0-ec9c-1131" name="Saturnyne Lascutter" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6850-71a1-6e9b-5c3a" type="max"/>
               </constraints>
@@ -1113,7 +1113,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="bac3-5e39-e6da-55bf" name="Arioch Titan Power Claw" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="bac3-5e39-e6da-55bf" name="Arioch Titan Power Claw" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c160-e110-d10b-b3bb" type="max"/>
               </constraints>
@@ -1122,7 +1122,7 @@ D6    Result		S	AP
                 <infoLink id="6eea-f0ad-351b-5433" name="New InfoLink" hidden="false" targetId="51c0-aa14-864a-201d" type="profile"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="5125-ecf8-1cf1-4760" name="Integral Vulcan Mega-bolter" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="5125-ecf8-1cf1-4760" name="Integral Vulcan Mega-bolter" hidden="false" collective="false" import="true" type="upgrade">
                   <infoLinks>
                     <infoLink id="fba5-f004-69e7-8e83" name="New InfoLink" hidden="false" targetId="3b45-b564-4fce-e3d8" type="profile"/>
                   </infoLinks>
@@ -1135,7 +1135,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="84c5-9d99-9a68-83c8" name="Macro-Gatling Blaster" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="84c5-9d99-9a68-83c8" name="Macro-Gatling Blaster" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ae93-e839-9905-af51" type="max"/>
               </constraints>
@@ -1148,7 +1148,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9894-a603-3003-5199" name="Belicosa Pattern Volcano Cannon" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="9894-a603-3003-5199" name="Belicosa Pattern Volcano Cannon" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0dce-7ef0-ffdc-5536" type="max"/>
               </constraints>
@@ -1163,13 +1163,13 @@ D6    Result		S	AP
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="506b-0122-a632-50ce" name="Carapace-Mounted Weapons" hidden="false" collective="false" defaultSelectionEntryId="018b-551a-03d8-5f5a">
+        <selectionEntryGroup id="506b-0122-a632-50ce" name="Carapace-Mounted Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="018b-551a-03d8-5f5a">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9415-7977-8446-5d35" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ece7-30ff-6d54-310b" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="a5b7-a13f-d7e7-53c9" name="Two Double-barrelled Turbo-laser Destructors" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="a5b7-a13f-d7e7-53c9" name="Two Double-barrelled Turbo-laser Destructors" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2aa4-7647-68fd-9e1e" type="max"/>
               </constraints>
@@ -1181,7 +1181,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="c7f3-991f-68b7-c143" name="Two Twin-linked Vulcan Mega-bolters" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="c7f3-991f-68b7-c143" name="Two Twin-linked Vulcan Mega-bolters" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5aa2-afd4-0a66-607d" type="max"/>
               </constraints>
@@ -1193,7 +1193,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7482-4259-85df-37e8" name="Two Titan Plasma Blastguns" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="7482-4259-85df-37e8" name="Two Titan Plasma Blastguns" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b56e-bf99-0563-ab0f" type="max"/>
               </constraints>
@@ -1206,7 +1206,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="16f1-e9ee-d130-debf" name="Two Reaver Laser Blasters" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="16f1-e9ee-d130-debf" name="Two Reaver Laser Blasters" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="546e-82dd-58ee-be84" type="max"/>
               </constraints>
@@ -1218,7 +1218,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="100.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="cbe8-d7a6-24f8-8826" name="Two Reaver Melta-cannons" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="cbe8-d7a6-24f8-8826" name="Two Reaver Melta-cannons" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ef0-cb87-750e-5508" type="max"/>
               </constraints>
@@ -1231,7 +1231,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="100.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="389e-a860-2675-85b6" name="Two Reaver Gatling Blasters" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="389e-a860-2675-85b6" name="Two Reaver Gatling Blasters" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b3a8-1091-2b2d-535c" type="max"/>
               </constraints>
@@ -1244,12 +1244,12 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="100.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e4e4-e0f2-d2ec-445b" name="Two Vortex Missile Banks" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="e4e4-e0f2-d2ec-445b" name="Two Vortex Missile Banks" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b045-3f9c-2cff-7a71" type="max"/>
               </constraints>
               <profiles>
-                <profile id="9708-5e5e-3931-6ffb" name="Vortex Missile Bank" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+                <profile id="9708-5e5e-3931-6ffb" name="Vortex Missile Bank" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot; - 360&quot;</characteristic>
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
@@ -1265,12 +1265,12 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="150.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0bd1-1afc-2306-c753" name="Two Incinerator Missile Banks" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="0bd1-1afc-2306-c753" name="Two Incinerator Missile Banks" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e247-69d1-1ce3-4f09" type="max"/>
               </constraints>
               <profiles>
-                <profile id="e8f9-80ed-f648-edb6" name="Incinerator Missile Bank" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+                <profile id="e8f9-80ed-f648-edb6" name="Incinerator Missile Bank" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot; - 360&quot;</characteristic>
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -1286,7 +1286,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="75.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="018b-551a-03d8-5f5a" name="Two Apocalypse Missile Launchers" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="018b-551a-03d8-5f5a" name="Two Apocalypse Missile Launchers" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1734-f2be-40f6-a474" type="max"/>
               </constraints>
@@ -1300,13 +1300,13 @@ D6    Result		S	AP
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="e1f4-31c1-4995-9fd4" name="Primary Weapon Right Arm" hidden="false" collective="false">
+        <selectionEntryGroup id="e1f4-31c1-4995-9fd4" name="Primary Weapon Right Arm" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="03ce-60ef-6154-53b1" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6421-185f-5ad6-161d" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="5464-b4f4-fcf6-b1ba" name="Sunfury Plasma Annihilator" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="5464-b4f4-fcf6-b1ba" name="Sunfury Plasma Annihilator" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4159-6e4e-6d2c-7734" type="max"/>
               </constraints>
@@ -1318,7 +1318,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="83dd-9750-7485-73c8" name="Mori Quake Cannon" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="83dd-9750-7485-73c8" name="Mori Quake Cannon" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3541-d32a-4c01-ee3c" type="max"/>
               </constraints>
@@ -1333,7 +1333,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0b1a-96d3-f5fb-736e" name="Saturnyne Lascutter" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="0b1a-96d3-f5fb-736e" name="Saturnyne Lascutter" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bb3d-87a9-294b-39f9" type="max"/>
               </constraints>
@@ -1347,7 +1347,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="de16-8118-a437-279d" name="Arioch Titan Power Claw" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="de16-8118-a437-279d" name="Arioch Titan Power Claw" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e45a-2e60-288d-6e63" type="max"/>
               </constraints>
@@ -1356,7 +1356,7 @@ D6    Result		S	AP
                 <infoLink id="8ae7-ab65-9568-81ba" name="New InfoLink" hidden="false" targetId="51c0-aa14-864a-201d" type="profile"/>
               </infoLinks>
               <selectionEntries>
-                <selectionEntry id="b6d5-9bab-d80c-783f" name="Integral Vulcan Mega-bolter" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="b6d5-9bab-d80c-783f" name="Integral Vulcan Mega-bolter" hidden="false" collective="false" import="true" type="upgrade">
                   <infoLinks>
                     <infoLink id="755f-2001-c358-524d" name="New InfoLink" hidden="false" targetId="3b45-b564-4fce-e3d8" type="profile"/>
                   </infoLinks>
@@ -1369,7 +1369,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2c16-a4f1-e76f-148d" name="Macro-Gatling Blaster" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="2c16-a4f1-e76f-148d" name="Macro-Gatling Blaster" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c513-f39f-69d7-593c" type="max"/>
               </constraints>
@@ -1382,7 +1382,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="09cc-3c3b-dc4a-6614" name="Belicosa Pattern Volcano Cannon" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="09cc-3c3b-dc4a-6614" name="Belicosa Pattern Volcano Cannon" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="de54-8ea6-4ab7-f405" type="max"/>
               </constraints>
@@ -1402,7 +1402,7 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="2750.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="edc3-8b73-68c7-6c33" name="Atomantic Shielding" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="edc3-8b73-68c7-6c33" name="Atomantic Shielding" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dea9-3c0d-7fce-0992" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5fcd-8d20-283b-70fb" type="min"/>
@@ -1414,7 +1414,7 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d1c0-746f-2b39-5f17" name="Multi-melta" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="d1c0-746f-2b39-5f17" name="Multi-melta" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="8b2d-39e5-d9e7-016d" name="New InfoLink" hidden="false" targetId="21c0-62ff-3ed2-17a7" type="rule"/>
         <infoLink id="c89f-56ae-a960-7118" name="New InfoLink" hidden="false" targetId="4fc7-8b16-afe4-dad3" type="profile"/>
@@ -1423,7 +1423,7 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a161-76b3-9ef1-da7b" name="Heavy Bolter" page="0" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="a161-76b3-9ef1-da7b" name="Heavy Bolter" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="a609-60ae-713c-6224" name="New InfoLink" hidden="false" targetId="271e-6286-86cc-06dd" type="profile"/>
       </infoLinks>
@@ -1431,7 +1431,7 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ead9-305c-a7e7-323e" name="Heavy Flamer" page="0" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="ead9-305c-a7e7-323e" name="Heavy Flamer" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="1693-f339-fd6c-3104" name="New InfoLink" hidden="false" targetId="c554-a05e-607c-5831" type="profile"/>
       </infoLinks>
@@ -1439,7 +1439,7 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8036-b730-d533-e31f" name="Lascannon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="8036-b730-d533-e31f" name="Lascannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="e46b-0b32-d621-b31c" name="New InfoLink" hidden="false" targetId="1cce-972c-022a-2590" type="profile"/>
       </infoLinks>
@@ -1447,7 +1447,7 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0c9d-9eaa-d513-caa3" name="Cybernetica Cortex" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="0c9d-9eaa-d513-caa3" name="Cybernetica Cortex" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ec53-300d-e494-68e1" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5d30-b417-0bce-7916" type="max"/>
@@ -1465,7 +1465,7 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a505-05af-bd44-56b6" name="Aegis Defense Line" publicationId="ca571888--pubN73893" page="79" hidden="false" collective="false" type="model">
+    <selectionEntry id="a505-05af-bd44-56b6" name="Aegis Defense Line" publicationId="ca571888--pubN73893" page="79" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="acfc-9384-8119-d9d8" name="Aegis Defence Line" publicationId="ca571888--pubN73904" page="" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
@@ -1474,14 +1474,14 @@ D6    Result		S	AP
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink id="0c63-f80e-a87b-c244" hidden="false" collective="false" targetId="8732-6189-cd26-de94" type="selectionEntryGroup"/>
-        <entryLink id="72f7-b924-082c-60be" name="Obstacles List" hidden="false" collective="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup"/>
+        <entryLink id="0c63-f80e-a87b-c244" hidden="false" collective="false" import="true" targetId="8732-6189-cd26-de94" type="selectionEntryGroup"/>
+        <entryLink id="72f7-b924-082c-60be" name="Obstacles List" hidden="false" collective="false" import="true" targetId="ad42-921f-358f-2970" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="50.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="16d6-25c4-af92-4329" name="Aquila Strongpoint" publicationId="ca571888--pubN73996" page="117" hidden="false" collective="false" type="model">
+    <selectionEntry id="16d6-25c4-af92-4329" name="Aquila Strongpoint" publicationId="ca571888--pubN73996" page="117" hidden="false" collective="false" import="true" type="model">
       <infoLinks>
         <infoLink id="ca07-96ca-ec6d-844b" name="Repel the Enemy" hidden="false" targetId="cf90-39d9-c923-f6bf" type="rule"/>
         <infoLink id="559e-a92a-124a-eb4c" hidden="false" targetId="3384-a962-78e5-d13c" type="rule"/>
@@ -1489,7 +1489,7 @@ D6    Result		S	AP
         <infoLink id="8100-49da-bc21-a394" name="New InfoLink" hidden="false" targetId="97df-06a3-356e-02a8" type="rule"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry id="76ca-0813-d9e4-c2a4" name="Heavy Bolter" page="" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="76ca-0813-d9e4-c2a4" name="Heavy Bolter" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="68d5-86cf-8273-7d82" type="max"/>
           </constraints>
@@ -1500,13 +1500,13 @@ D6    Result		S	AP
             <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3c07-10d7-7c84-5e31" name="Main Strongpoint" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="3c07-10d7-7c84-5e31" name="Main Strongpoint" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51a9-bfff-8893-0aef" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b99-5548-8125-dc29" type="min"/>
           </constraints>
           <profiles>
-            <profile id="aee2-4d20-5ebf-92cd" name="Aquila Strongpoint Main Strongpoint" hidden="false" typeId="286c-0cd4-7630-47d0" typeName="">
+            <profile id="aee2-4d20-5ebf-92cd" name="Aquila Strongpoint Main Strongpoint" hidden="false" typeId="286c-0cd4-7630-47d0" typeName="Building">
               <characteristics>
                 <characteristic name="Armour Value" typeId="83f8-a458-93f9-3e46">15</characteristic>
                 <characteristic name="Transport Capacity" typeId="0e9c-76b3-2877-614d">30</characteristic>
@@ -1518,24 +1518,24 @@ D6    Result		S	AP
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink id="2954-0dc0-7db5-8f07" hidden="false" collective="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
+            <entryLink id="2954-0dc0-7db5-8f07" hidden="false" collective="false" import="true" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
               <modifiers>
                 <modifier type="set" field="cd03-be61-f336-ac4c" value="3"/>
               </modifiers>
             </entryLink>
-            <entryLink id="465b-a892-3ebb-0093" hidden="false" collective="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup"/>
+            <entryLink id="465b-a892-3ebb-0093" hidden="false" collective="false" import="true" targetId="ad42-921f-358f-2970" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c697-5d05-1a94-1a02" name="Bunker Annex" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="c697-5d05-1a94-1a02" name="Bunker Annex" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be1d-15dc-a700-bc3a" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf57-1a7b-be42-f8cd" type="min"/>
           </constraints>
           <profiles>
-            <profile id="b6b6-182b-3df9-b79d" name="Aquila Strongpoint Bunker Annex" hidden="false" typeId="286c-0cd4-7630-47d0" typeName="">
+            <profile id="b6b6-182b-3df9-b79d" name="Aquila Strongpoint Bunker Annex" hidden="false" typeId="286c-0cd4-7630-47d0" typeName="Building">
               <characteristics>
                 <characteristic name="Armour Value" typeId="83f8-a458-93f9-3e46">15</characteristic>
                 <characteristic name="Transport Capacity" typeId="0e9c-76b3-2877-614d">20</characteristic>
@@ -1547,12 +1547,12 @@ D6    Result		S	AP
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink id="1497-47ac-6c67-0d4c" hidden="false" collective="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
+            <entryLink id="1497-47ac-6c67-0d4c" hidden="false" collective="false" import="true" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
               <modifiers>
                 <modifier type="set" field="cd03-be61-f336-ac4c" value="2"/>
               </modifiers>
             </entryLink>
-            <entryLink id="c959-3008-3f8f-1a3c" hidden="false" collective="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup"/>
+            <entryLink id="c959-3008-3f8f-1a3c" hidden="false" collective="false" import="true" targetId="ad42-921f-358f-2970" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1560,13 +1560,13 @@ D6    Result		S	AP
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="d0a8-d0b2-65f3-3658" name="Emplaced Weapons" hidden="false" collective="false" defaultSelectionEntryId="9102-7f7e-3d4a-d72e">
+        <selectionEntryGroup id="d0a8-d0b2-65f3-3658" name="Emplaced Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="9102-7f7e-3d4a-d72e">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7d40-ca27-97b9-6acc" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="de1d-1fb1-4bd6-17f4" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="6af0-ed0f-f128-458c" name="Vortex Missle Battery" publicationId="ca571888--pubN73893" page="90" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="6af0-ed0f-f128-458c" name="Vortex Missle Battery" publicationId="ca571888--pubN73893" page="90" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5378-3e03-608c-ff94" type="max"/>
               </constraints>
@@ -1583,7 +1583,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9102-7f7e-3d4a-d72e" name="Macro Cannon" publicationId="ca571888--pubN73893" page="88" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="9102-7f7e-3d4a-d72e" name="Macro Cannon" publicationId="ca571888--pubN73893" page="88" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8c7d-6a0f-0388-0e29" type="max"/>
               </constraints>
@@ -1603,7 +1603,7 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="535.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e10f-7b90-ecd3-80a5" name="Basilica Administratum" publicationId="ca571888--pubN73996" page="120" hidden="false" collective="false" type="model">
+    <selectionEntry id="e10f-7b90-ecd3-80a5" name="Basilica Administratum" publicationId="ca571888--pubN73996" page="120" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="3565-9ece-4ada-e7dc" name="Basilica Administratum" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
@@ -1618,7 +1618,7 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7b11-22c7-16af-3bd4" name="BRB: Command Traits" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="7b11-22c7-16af-3bd4" name="BRB: Command Traits" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="cfe2-9cdd-5a7f-c824" name="Warlord Trait: Inspiring Presence" publicationId="ca571888--pubN74807" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
@@ -1658,7 +1658,7 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6d89-6ae9-05ea-0579" name="BRB: Personal Traits" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="6d89-6ae9-05ea-0579" name="BRB: Personal Traits" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="5814-8698-8309-5c7a" name="Warlord Trait: Master of Defence" publicationId="ca571888--pubN74807" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
@@ -1703,7 +1703,7 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fd25-8750-1716-cff8" name="BRB: Strategic Traits" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="fd25-8750-1716-cff8" name="BRB: Strategic Traits" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="fb07-ddb8-23f5-7eda" name="Warlord Trait: Conqueror of Cities" publicationId="ca571888--pubN74807" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
@@ -1754,7 +1754,7 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0fab-78b0-0708-7329" name="Discipline: Biomancy" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="0fab-78b0-0708-7329" name="Discipline: Biomancy" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="4cda-87d2-694c-73f7" name="2. Enfeeble" publicationId="ca571888--pubN74807" page="184" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
@@ -1764,7 +1764,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Whilst the power is in effect, the target unit suffers a -1 penalty to both Strength and Toughness, and treats all terrain (even open ground) as difficult terrain.</characteristic>
           </characteristics>
         </profile>
-        <profile id="315b-628b-d4b1-b075" name="1. Iron Arm" publicationId="ca571888--pubN74807" page="184" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power (Witchfire)">
+        <profile id="315b-628b-d4b1-b075" name="1. Iron Arm" publicationId="ca571888--pubN74807" page="184" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
@@ -1772,7 +1772,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Whilst the power is in effect, the Psyker has +3 to his Strength and Toughness and he gains the Smash special rule.</characteristic>
           </characteristics>
         </profile>
-        <profile id="aabd-a6cf-defb-ac34" name="3. Life Leech" publicationId="ca571888--pubN74807" page="184" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Witchfire)">
+        <profile id="aabd-a6cf-defb-ac34" name="3. Life Leech" publicationId="ca571888--pubN74807" page="184" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
           <characteristics>
             <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">1</characteristic>
             <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire</characteristic>
@@ -1807,7 +1807,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">The target must pass two separate Toughness tests or suffer a Wound with no armour or cover saves allowed for each test that was failed.  If the target is removed as a casualty, randomly select another model (friend or foe) within 2&quot; of him.  That model must pass a single Toughness test or suffer a Wound with no armour or cover saves allowed.  If that model is removed as a casualty, continue the process of selecting anothe rmodel and taking a single Toughness test until either a model survives or there are no more suitable targets within range.</characteristic>
           </characteristics>
         </profile>
-        <profile id="6061-064d-3e6e-33f4" name="(Primaris) Smite" publicationId="ca571888--pubN74807" page="184" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Witchfire)">
+        <profile id="6061-064d-3e6e-33f4" name="(Primaris) Smite" publicationId="ca571888--pubN74807" page="184" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
           <characteristics>
             <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">1</characteristic>
             <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire</characteristic>
@@ -1830,7 +1830,7 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5d8d-02d9-88cf-965f" name="Discipline: Daemonology (Malefic)" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="5d8d-02d9-88cf-965f" name="Discipline: Daemonology (Malefic)" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="2bd4-22b0-173e-277f" name="6. Possession" publicationId="ca571888--pubN74807" page="190" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
@@ -1905,7 +1905,7 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a6ef-b870-fa86-f44a" name="Discipline: Daemonology (Sanctic)" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="a6ef-b870-fa86-f44a" name="Discipline: Daemonology (Sanctic)" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="e231-5912-1606-7f3b" name="2. Hammerhand" publicationId="ca571888--pubN74807" page="189" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
@@ -1979,7 +1979,7 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="236f-417a-9ed3-8d3a" name="Discipline: Divination" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="236f-417a-9ed3-8d3a" name="Discipline: Divination" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="3a7d-921d-9950-73ed" name="3. Perfect Timing" publicationId="ca571888--pubN74807" page="185" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
@@ -2047,7 +2047,7 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="38d9-2855-fb63-c702" name="Discipline: Pyromancy" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="38d9-2855-fb63-c702" name="Discipline: Pyromancy" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="29fc-7711-7da6-b0cb" name="(Primaris) Flame Breath" publicationId="ca571888--pubN74807" page="186" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
           <characteristics>
@@ -2127,7 +2127,7 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0268-83ac-dfc9-5a58" name="Discipline: Telekinesis" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="0268-83ac-dfc9-5a58" name="Discipline: Telekinesis" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="4cef-a77b-fcbe-7238" name="6. Psychic Maelstrom" publicationId="ca571888--pubN74807" page="187" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
           <characteristics>
@@ -2205,7 +2205,7 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="13eb-0252-de5d-24d4" name="Discipline: Telepathy" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="13eb-0252-de5d-24d4" name="Discipline: Telepathy" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="3b62-952d-e950-f7d0" name="6. Hallucination" publicationId="ca571888--pubN74807" page="188" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
@@ -2274,9 +2274,9 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a172-78de-aaa6-2201" name="Firestorm Redoubt" publicationId="ca571888--pubN73996" page="114" hidden="false" collective="false" type="model">
+    <selectionEntry id="a172-78de-aaa6-2201" name="Firestorm Redoubt" publicationId="ca571888--pubN73996" page="114" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="bab6-1527-ba02-6d52" name="Firestorm Redoubt" publicationId="ca571888--pubN73996" page="114" hidden="false" typeId="286c-0cd4-7630-47d0" typeName="">
+        <profile id="bab6-1527-ba02-6d52" name="Firestorm Redoubt" publicationId="ca571888--pubN73996" page="114" hidden="false" typeId="286c-0cd4-7630-47d0" typeName="Building">
           <characteristics>
             <characteristic name="Armour Value" typeId="83f8-a458-93f9-3e46">14</characteristic>
             <characteristic name="Transport Capacity" typeId="0e9c-76b3-2877-614d">20</characteristic>
@@ -2294,13 +2294,13 @@ D6    Result		S	AP
         <infoLink id="1309-c3d9-310a-61e8" hidden="false" targetId="cf90-39d9-c923-f6bf" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="fbaf-59c3-719c-495f" name="Emplaced Weapons" hidden="false" collective="false" defaultSelectionEntryId="45a5-cc8a-1b48-0114">
+        <selectionEntryGroup id="fbaf-59c3-719c-495f" name="Emplaced Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="45a5-cc8a-1b48-0114">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b1b1-b3d9-e146-83d7" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0835-e963-a243-dc99" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="45a5-cc8a-1b48-0114" name="Quad Icarus lascannon" page="" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="45a5-cc8a-1b48-0114" name="Quad Icarus lascannon" page="" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a9fd-f4f3-6f97-c70a" type="max"/>
               </constraints>
@@ -2311,7 +2311,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="16f6-7972-e4b2-8b9f" name="Punisher Gatling Cannon" page="" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="16f6-7972-e4b2-8b9f" name="Punisher Gatling Cannon" page="" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cab0-a144-930f-8eae" type="max"/>
               </constraints>
@@ -2322,7 +2322,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f28c-280b-6161-6d1b" name="Battle Cannon" page="" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="f28c-280b-6161-6d1b" name="Battle Cannon" page="" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="948f-e308-f953-1c3e" type="max"/>
               </constraints>
@@ -2337,9 +2337,9 @@ D6    Result		S	AP
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="9c62-7f9e-91ec-1d12" hidden="false" collective="false" targetId="8732-6189-cd26-de94" type="selectionEntryGroup"/>
-        <entryLink id="4007-3ea1-8e21-4a94" hidden="false" collective="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup"/>
-        <entryLink id="4693-4442-c63f-6ab6" hidden="false" collective="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
+        <entryLink id="9c62-7f9e-91ec-1d12" hidden="false" collective="false" import="true" targetId="8732-6189-cd26-de94" type="selectionEntryGroup"/>
+        <entryLink id="4007-3ea1-8e21-4a94" hidden="false" collective="false" import="true" targetId="ad42-921f-358f-2970" type="selectionEntryGroup"/>
+        <entryLink id="4693-4442-c63f-6ab6" hidden="false" collective="false" import="true" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="cd03-be61-f336-ac4c" value="2"/>
           </modifiers>
@@ -2349,9 +2349,9 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="200.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="04bf-6c22-19fb-4e46" name="Vengeance Weapon Battery" publicationId="ca571888--pubN73996" page="115" hidden="false" collective="false" type="model">
+    <selectionEntry id="04bf-6c22-19fb-4e46" name="Vengeance Weapon Battery" publicationId="ca571888--pubN73996" page="115" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="c8cf-d554-7744-259b" name="Vengeance Weapon Battery" publicationId="ca571888--pubN73996" page="115" hidden="false" typeId="286c-0cd4-7630-47d0" typeName="">
+        <profile id="c8cf-d554-7744-259b" name="Vengeance Weapon Battery" publicationId="ca571888--pubN73996" page="115" hidden="false" typeId="286c-0cd4-7630-47d0" typeName="Building">
           <characteristics>
             <characteristic name="Armour Value" typeId="83f8-a458-93f9-3e46">14</characteristic>
             <characteristic name="Transport Capacity" typeId="0e9c-76b3-2877-614d">0</characteristic>
@@ -2367,13 +2367,13 @@ D6    Result		S	AP
         <infoLink id="5166-7b3c-5ead-a4cf" hidden="false" targetId="9f71-25a6-08e5-f088" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="b5fd-935c-f68f-0c1a" name="Emplaced Weapons" hidden="false" collective="false">
+        <selectionEntryGroup id="b5fd-935c-f68f-0c1a" name="Emplaced Weapons" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e9e1-b866-f069-f07b" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c848-ee1c-56f5-3df0" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="6056-ffd8-14e6-d1b6" name="Battle Cannon" page="" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="6056-ffd8-14e6-d1b6" name="Battle Cannon" page="" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="89f7-7df8-88d7-5d5c" type="max"/>
               </constraints>
@@ -2381,13 +2381,13 @@ D6    Result		S	AP
                 <infoLink id="255e-7422-cc49-3890" hidden="false" targetId="94da-501b-a2f5-6c61" type="profile"/>
               </infoLinks>
               <entryLinks>
-                <entryLink id="9d45-78df-3ec9-fa0e" hidden="false" collective="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup"/>
+                <entryLink id="9d45-78df-3ec9-fa0e" hidden="false" collective="false" import="true" targetId="ad42-921f-358f-2970" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="75.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="975e-85ba-2c90-0f99" name="Quad Icarus lascannon" page="" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="975e-85ba-2c90-0f99" name="Quad Icarus lascannon" page="" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="60fb-b7d0-a5f9-3e7b" type="max"/>
               </constraints>
@@ -2395,7 +2395,7 @@ D6    Result		S	AP
                 <infoLink id="b3f5-216b-4c35-07f3" hidden="false" targetId="d503-4001-e4b8-c804" type="profile"/>
               </infoLinks>
               <entryLinks>
-                <entryLink id="75ae-272a-7b16-f65b" hidden="false" collective="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup"/>
+                <entryLink id="75ae-272a-7b16-f65b" hidden="false" collective="false" import="true" targetId="ad42-921f-358f-2970" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="75.0"/>
@@ -2408,7 +2408,7 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0f73-97f2-b832-f6d0" name="Defence Line" publicationId="ca571888--pubN73996" page="110" hidden="false" collective="false" type="model">
+    <selectionEntry id="0f73-97f2-b832-f6d0" name="Defence Line" publicationId="ca571888--pubN73996" page="110" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="944e-63e0-c589-b37c" name="Defence Line" publicationId="ca571888--pubN73996" page="111" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
@@ -2422,13 +2422,13 @@ D6    Result		S	AP
         <infoLink id="caa1-2762-e454-b1fa" name="Stubborn" hidden="false" targetId="7be5-30af-1a02-0a89" type="rule"/>
       </infoLinks>
       <entryLinks>
-        <entryLink id="d067-83d6-3f88-f98f" name="Obstacles List" hidden="false" collective="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup"/>
+        <entryLink id="d067-83d6-3f88-f98f" name="Obstacles List" hidden="false" collective="false" import="true" targetId="ad42-921f-358f-2970" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="80.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="df05-8179-624e-f8b2" name="Defence Emplacement" publicationId="ca571888--pubN73996" page="112" hidden="false" collective="false" type="model">
+    <selectionEntry id="df05-8179-624e-f8b2" name="Defence Emplacement" publicationId="ca571888--pubN73996" page="112" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="e1cc-0dae-51d0-b061" name="Defence Emplacement" publicationId="ca571888--pubN73996" page="112" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
@@ -2442,18 +2442,18 @@ D6    Result		S	AP
         <infoLink id="3f5a-bdfa-c3a9-54a1" name="Improved Arcs of Fire" hidden="false" targetId="d191-d6ec-e3c8-31f6" type="rule"/>
       </infoLinks>
       <entryLinks>
-        <entryLink id="2758-2f92-8d3a-05ae" name="Obstacles List" hidden="false" collective="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup"/>
+        <entryLink id="2758-2f92-8d3a-05ae" name="Obstacles List" hidden="false" collective="false" import="true" targetId="ad42-921f-358f-2970" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0116-c81b-1c0f-251c" name="Bunker" publicationId="ca571888--pubN73996" page="113" hidden="false" collective="false" type="model">
+    <selectionEntry id="0116-c81b-1c0f-251c" name="Bunker" publicationId="ca571888--pubN73996" page="113" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4182-0810-4294-5cbc" type="max"/>
       </constraints>
       <profiles>
-        <profile id="1aa3-6499-e787-5b5d" name="Imperial Bunker" publicationId="ca571888--pubN73996" page="113" hidden="false" typeId="286c-0cd4-7630-47d0" typeName="">
+        <profile id="1aa3-6499-e787-5b5d" name="Imperial Bunker" publicationId="ca571888--pubN73996" page="113" hidden="false" typeId="286c-0cd4-7630-47d0" typeName="Building">
           <characteristics>
             <characteristic name="Armour Value" typeId="83f8-a458-93f9-3e46">14</characteristic>
             <characteristic name="Transport Capacity" typeId="0e9c-76b3-2877-614d">20</characteristic>
@@ -2469,19 +2469,19 @@ D6    Result		S	AP
         <infoLink id="5adf-1a24-8d58-f151" name="Wide Firing Points" hidden="false" targetId="207b-b21e-68cb-ace0" type="rule"/>
       </infoLinks>
       <entryLinks>
-        <entryLink id="c8d6-f00f-1435-4b3d" hidden="false" collective="false" targetId="8732-6189-cd26-de94" type="selectionEntryGroup"/>
-        <entryLink id="d9b6-a781-f202-e799" hidden="false" collective="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
+        <entryLink id="c8d6-f00f-1435-4b3d" hidden="false" collective="false" import="true" targetId="8732-6189-cd26-de94" type="selectionEntryGroup"/>
+        <entryLink id="d9b6-a781-f202-e799" hidden="false" collective="false" import="true" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="cd03-be61-f336-ac4c" value="2"/>
           </modifiers>
         </entryLink>
-        <entryLink id="e92d-7662-17ce-3761" hidden="false" collective="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup"/>
+        <entryLink id="e92d-7662-17ce-3761" hidden="false" collective="false" import="true" targetId="ad42-921f-358f-2970" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="55.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="474a-96df-3847-a5d8" name="Twisted Copse" publicationId="ca571888--pubN79717" page="123" hidden="false" collective="false" type="model">
+    <selectionEntry id="474a-96df-3847-a5d8" name="Twisted Copse" publicationId="ca571888--pubN79717" page="123" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="4cb8-4245-607a-f629" name="Twisted Copse" publicationId="ca571888--pubN73996" page="125" hidden="false" typeId="c2e2-42f3-9e28-c3fa" typeName="Fortification/Terrain">
           <characteristics>
@@ -2503,9 +2503,9 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="55c6-268b-357f-d070" name="Bastion" publicationId="ca571888--pubN73996" page="110" hidden="false" collective="false" type="model">
+    <selectionEntry id="55c6-268b-357f-d070" name="Bastion" publicationId="ca571888--pubN73996" page="110" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="67c7-0b8b-bba6-e965" name="Imperial Bastion" publicationId="ca571888--pubN73996" page="110" hidden="false" typeId="286c-0cd4-7630-47d0" typeName="">
+        <profile id="67c7-0b8b-bba6-e965" name="Imperial Bastion" publicationId="ca571888--pubN73996" page="110" hidden="false" typeId="286c-0cd4-7630-47d0" typeName="Building">
           <characteristics>
             <characteristic name="Armour Value" typeId="83f8-a458-93f9-3e46">14</characteristic>
             <characteristic name="Transport Capacity" typeId="0e9c-76b3-2877-614d">20</characteristic>
@@ -2520,7 +2520,7 @@ D6    Result		S	AP
         <infoLink id="236b-b61b-4a07-4ba6" hidden="false" targetId="cf90-39d9-c923-f6bf" type="rule"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry id="f8c9-8047-e3cc-b2c2" name="Eemplaced Heavy Bolters" page="" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="f8c9-8047-e3cc-b2c2" name="Eemplaced Heavy Bolters" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e750-7362-530b-53f4" type="min"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ae5c-63f3-0067-e60d" type="max"/>
@@ -2534,9 +2534,9 @@ D6    Result		S	AP
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="9986-91a1-d559-864d" hidden="false" collective="false" targetId="8732-6189-cd26-de94" type="selectionEntryGroup"/>
-        <entryLink id="4288-fee0-9a5d-60ba" hidden="false" collective="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup"/>
-        <entryLink id="e3f5-954e-ed7a-0510" name="Buildings List" hidden="false" collective="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
+        <entryLink id="9986-91a1-d559-864d" hidden="false" collective="false" import="true" targetId="8732-6189-cd26-de94" type="selectionEntryGroup"/>
+        <entryLink id="4288-fee0-9a5d-60ba" hidden="false" collective="false" import="true" targetId="ad42-921f-358f-2970" type="selectionEntryGroup"/>
+        <entryLink id="e3f5-954e-ed7a-0510" name="Buildings List" hidden="false" collective="false" import="true" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="cd03-be61-f336-ac4c" value="2"/>
           </modifiers>
@@ -2546,7 +2546,7 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="75.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="595a-908e-96a1-f121" name="Shrine of the Aquila" publicationId="ca571888--pubN73996" page="118" hidden="false" collective="false" type="model">
+    <selectionEntry id="595a-908e-96a1-f121" name="Shrine of the Aquila" publicationId="ca571888--pubN73996" page="118" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="6cf9-a002-6ee6-5742" name="Shrine of the Aquila" publicationId="ca571888--pubN73996" page="118" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
@@ -2566,7 +2566,7 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6140-dc64-5896-957f" name="Manufactorum" publicationId="ca571888--pubN73996" page="119" hidden="false" collective="false" type="model">
+    <selectionEntry id="6140-dc64-5896-957f" name="Manufactorum" publicationId="ca571888--pubN73996" page="119" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="840b-724f-c215-9cfb" name="Manufactorum" publicationId="ca571888--pubN73996" page="119" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
@@ -2586,9 +2586,9 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="63b0-0b66-5eb0-382a" name="Munitorum Armoured Container Cache (Legacy)" publicationId="ca571888--pubN73893" page="98" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="63b0-0b66-5eb0-382a" name="Munitorum Armoured Container Cache (Legacy)" publicationId="ca571888--pubN73893" page="98" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntries>
-        <selectionEntry id="91db-0420-d420-0f55" name="Munitorum Armoured Container Cache" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="91db-0420-d420-0f55" name="Munitorum Armoured Container Cache" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9881-7950-be0a-b316" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2ef5-15f0-f91c-5086" type="max"/>
@@ -2615,7 +2615,7 @@ D6    Result		S	AP
             <infoLink id="fbdf-df8e-971f-d8bb" name="New InfoLink" hidden="false" targetId="98ac-5132-9ebd-c355" type="profile"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry id="b46d-4c0c-d509-19ad" name="Munitorum Armoured Container" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="b46d-4c0c-d509-19ad" name="Munitorum Armoured Container" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9192-e995-a8d5-a3b1" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2877-99c1-1629-8de9" type="max"/>
@@ -2642,7 +2642,7 @@ D6    Result		S	AP
                 </rule>
               </rules>
               <selectionEntries>
-                <selectionEntry id="cc68-d1d0-2b01-b23a" name="Storm Bolters" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="cc68-d1d0-2b01-b23a" name="Storm Bolters" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5dca-d8b4-52e2-80e0" type="max"/>
                   </constraints>
@@ -2658,7 +2658,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ffe6-6202-5c1b-b460" name="Munitorum Supply Crates" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="ffe6-6202-5c1b-b460" name="Munitorum Supply Crates" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ade3-528f-a897-344b" type="min"/>
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="81fb-39be-8d91-65dd" type="max"/>
@@ -2670,7 +2670,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8cbe-c272-1d7d-8def" name="Munitorum Promethium Barrels" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="8cbe-c272-1d7d-8def" name="Munitorum Promethium Barrels" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e9a3-498f-293c-c000" type="min"/>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ac78-71ae-d23f-d93f" type="max"/>
@@ -2696,7 +2696,7 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3015-0b77-e848-c0f5" name="Plasma Obliterator" hidden="false" collective="false" type="model">
+    <selectionEntry id="3015-0b77-e848-c0f5" name="Plasma Obliterator" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="c88d-7245-9c24-d9bf" name="Plasma Obliterator" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
           <characteristics>
@@ -2706,7 +2706,7 @@ D6    Result		S	AP
             <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 1, Massive Blast, Gets Hot</characteristic>
           </characteristics>
         </profile>
-        <profile id="6344-4644-fc66-e262" name="Plasma Obliterator" hidden="true" typeId="286c-0cd4-7630-47d0" typeName="">
+        <profile id="6344-4644-fc66-e262" name="Plasma Obliterator" hidden="true" typeId="286c-0cd4-7630-47d0" typeName="Building">
           <characteristics>
             <characteristic name="Armour Value" typeId="83f8-a458-93f9-3e46">14</characteristic>
             <characteristic name="Transport Capacity" typeId="0e9c-76b3-2877-614d">20</characteristic>
@@ -2723,20 +2723,20 @@ D6    Result		S	AP
         </rule>
       </rules>
       <entryLinks>
-        <entryLink id="05db-6f70-6e39-a027" hidden="false" collective="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
+        <entryLink id="05db-6f70-6e39-a027" hidden="false" collective="false" import="true" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="cd03-be61-f336-ac4c" value="2"/>
           </modifiers>
         </entryLink>
-        <entryLink id="8c4c-4101-a673-e5ac" hidden="false" collective="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup"/>
+        <entryLink id="8c4c-4101-a673-e5ac" hidden="false" collective="false" import="true" targetId="ad42-921f-358f-2970" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="230.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c05d-2231-2481-4037" name="Imperial Primus Redoubt" publicationId="ca571888--pubN80998" page="93" hidden="false" collective="false" type="model">
+    <selectionEntry id="c05d-2231-2481-4037" name="Imperial Primus Redoubt" publicationId="ca571888--pubN80998" page="93" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="254b-5059-bde3-4eac" name="Primus Redoubt" hidden="false" typeId="286c-0cd4-7630-47d0" typeName="">
+        <profile id="254b-5059-bde3-4eac" name="Primus Redoubt" hidden="false" typeId="286c-0cd4-7630-47d0" typeName="Building">
           <characteristics>
             <characteristic name="Armour Value" typeId="83f8-a458-93f9-3e46">15</characteristic>
             <characteristic name="Transport Capacity" typeId="0e9c-76b3-2877-614d">30</characteristic>
@@ -2769,7 +2769,7 @@ Redoubt. Multiple units may enter or exit the building each turn, so long as eac
         <infoLink id="922a-192e-a82f-9aa2" hidden="false" targetId="3384-a962-78e5-d13c" type="rule"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry id="5690-431a-06a3-4a59" name="Double-barrelled Turbo Laser Destructor Turret" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="5690-431a-06a3-4a59" name="Double-barrelled Turbo Laser Destructor Turret" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f56d-1de8-d853-5163" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c021-d6b8-90c2-f5c2" type="max"/>
@@ -2797,12 +2797,12 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="9962-3941-754c-3abb" name="May take one of the following" hidden="false" collective="false">
+        <selectionEntryGroup id="9962-3941-754c-3abb" name="May take one of the following" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1403-a7f1-2053-252c" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="6a60-a800-19ca-49de" name="Twin-linked Heavy Bolter" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="6a60-a800-19ca-49de" name="Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ca81-6349-acfe-3ac7" type="max"/>
               </constraints>
@@ -2813,7 +2813,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0d4f-d2be-6c25-9c32" name="Twin-linked Heavy Flamer" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="0d4f-d2be-6c25-9c32" name="Twin-linked Heavy Flamer" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ac56-9185-b9b1-4136" type="max"/>
               </constraints>
@@ -2831,7 +2831,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="a864-d6ef-a0a2-d879" name="Twin-linked Lascannon" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="a864-d6ef-a0a2-d879" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5f83-563f-341d-d556" type="max"/>
               </constraints>
@@ -2849,7 +2849,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9321-0136-c85d-ee06" name="Multi-melta &amp; Searchlight" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="9321-0136-c85d-ee06" name="Multi-melta &amp; Searchlight" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a245-8367-e848-9054" type="max"/>
               </constraints>
@@ -2870,7 +2870,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f212-a525-33ca-fa7d" name="Hyperios missle Launcher" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="f212-a525-33ca-fa7d" name="Hyperios missle Launcher" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="67a3-fa95-a80a-807b" type="max"/>
               </constraints>
@@ -2878,7 +2878,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
                 <cost name="pts" typeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="a9d8-bc78-6e5e-b282" name="Icarus Lascannon" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="a9d8-bc78-6e5e-b282" name="Icarus Lascannon" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="590f-d3a7-a418-e879" type="max"/>
               </constraints>
@@ -2889,7 +2889,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
                 <cost name="pts" typeId="points" value="35.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="678d-b2b6-5fef-481a" name="Quad-gun" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="678d-b2b6-5fef-481a" name="Quad-gun" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="70a9-9041-73c0-5b82" type="max"/>
               </constraints>
@@ -2900,7 +2900,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
                 <cost name="pts" typeId="points" value="50.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4820-a666-af97-ac7e" name="Battle Cannon Turret" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="4820-a666-af97-ac7e" name="Battle Cannon Turret" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f64e-2266-9649-520b" type="max"/>
               </constraints>
@@ -2908,7 +2908,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
                 <cost name="pts" typeId="points" value="50.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7834-20f9-65a7-439d" name="Icarus Quad Lascannon" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="7834-20f9-65a7-439d" name="Icarus Quad Lascannon" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b9db-6718-ca1c-c14b" type="max"/>
               </constraints>
@@ -2921,9 +2921,9 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup id="25df-7f58-2296-8582" name="Whirlwind Launcher" hidden="false" collective="false">
+            <selectionEntryGroup id="25df-7f58-2296-8582" name="Whirlwind Launcher" hidden="false" collective="false" import="true">
               <selectionEntries>
-                <selectionEntry id="1e0f-5586-68fe-1c18" name="Vengeance &amp; Castellan Missles" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="1e0f-5586-68fe-1c18" name="Vengeance &amp; Castellan Missles" hidden="false" collective="false" import="true" type="upgrade">
                   <profiles>
                     <profile id="9f99-6fe5-cc6c-2c18" name="Vengeance Missles" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                       <characteristics>
@@ -2946,7 +2946,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
                     <cost name="pts" typeId="points" value="35.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="cb3c-3c61-96db-ce42" name="Hyperios Air Defense Missles" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="cb3c-3c61-96db-ce42" name="Hyperios Air Defense Missles" hidden="false" collective="false" import="true" type="upgrade">
                   <profiles>
                     <profile id="0b09-5914-6eca-cdc6" name="Hyperios Air Defense Missles" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                       <characteristics>
@@ -2965,12 +2965,12 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup id="df21-624f-8611-5d9a" name="Each Battlement may have up to 2 Heavy Bolters" hidden="false" collective="false">
+        <selectionEntryGroup id="df21-624f-8611-5d9a" name="Each Battlement may have up to 2 Heavy Bolters" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fa41-6025-c7d9-c109" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="d3ef-993f-c985-128c" name="Heavy Bolter" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="d3ef-993f-c985-128c" name="Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6544-dc46-1d46-2f67" type="max"/>
               </constraints>
@@ -2985,8 +2985,8 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="b34f-574b-cdc5-2d17" name="Obstacles List" hidden="false" collective="false" targetId="ad42-921f-358f-2970" type="selectionEntryGroup"/>
-        <entryLink id="55a3-fe1e-d2ec-bddf" hidden="false" collective="false" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
+        <entryLink id="b34f-574b-cdc5-2d17" name="Obstacles List" hidden="false" collective="false" import="true" targetId="ad42-921f-358f-2970" type="selectionEntryGroup"/>
+        <entryLink id="55a3-fe1e-d2ec-bddf" hidden="false" collective="false" import="true" targetId="6bfa-e532-4165-63ce" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="cd03-be61-f336-ac4c" value="3"/>
           </modifiers>
@@ -2996,7 +2996,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
         <cost name="pts" typeId="points" value="650.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e0b3-77ca-af76-bd8b" name="Sanctum Imperialis" publicationId="ca571888--pubN73996" page="121" hidden="false" collective="false" type="model">
+    <selectionEntry id="e0b3-77ca-af76-bd8b" name="Sanctum Imperialis" publicationId="ca571888--pubN73996" page="121" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="b7b9-5650-b83d-96f3" name="Sanctum Imperialis" publicationId="ca571888--pubN73996" page="121" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
@@ -3018,7 +3018,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e40b-468f-f1d7-d05d" name="Imperial Castelum Stronghold" publicationId="ca571888--pubN82424" page="94" hidden="false" collective="false" type="unit">
+    <selectionEntry id="e40b-468f-f1d7-d05d" name="Imperial Castelum Stronghold" publicationId="ca571888--pubN82424" page="94" hidden="false" collective="false" import="true" type="unit">
       <rules>
         <rule id="d307-b16a-5b89-9612" name="Shielded Gate Barriers" publicationId="ca571888--pubN82437" page="75" hidden="false">
           <description>The main entrances of the Castellum Stronghold are covered not by plascrete and adamantium, but crackling barriers of energy that can be raised or lowered at the will of the fortification’s controller.
@@ -3035,18 +3035,18 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         </rule>
       </rules>
       <selectionEntries>
-        <selectionEntry id="9fd8-1585-2b65-0e2a" name="Tacticus Bunker" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="9fd8-1585-2b65-0e2a" name="Tacticus Bunker" page="0" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5e74-a42a-080f-9d06" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9f7e-9630-f985-0c86" type="max"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup id="a5dd-3344-d1c5-7afc" name="May take two of the following:" hidden="false" collective="false">
+            <selectionEntryGroup id="a5dd-3344-d1c5-7afc" name="May take two of the following:" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ec1f-04ff-cd0e-c2bd" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="e1c8-83db-124c-1c0e" name="Twin-linked Heavy Bolter" page="0" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="e1c8-83db-124c-1c0e" name="Twin-linked Heavy Bolter" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f9e5-5e55-7d1e-9fc8" type="max"/>
                   </constraints>
@@ -3057,7 +3057,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                     <cost name="pts" typeId="points" value="10.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="267d-9105-c63b-ddec" name="Twin-linked Heavy Flamer" page="0" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="267d-9105-c63b-ddec" name="Twin-linked Heavy Flamer" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a7f9-cbb1-6f75-3b27" type="max"/>
                   </constraints>
@@ -3065,7 +3065,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                     <cost name="pts" typeId="points" value="10.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="b69f-8c38-123b-e48a" name="Twin-linked Lascannon" page="0" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="b69f-8c38-123b-e48a" name="Twin-linked Lascannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="330a-ab08-c06d-d26e" type="max"/>
                   </constraints>
@@ -3073,7 +3073,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                     <cost name="pts" typeId="points" value="20.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="7139-41b3-a1fa-500c" name="Multi-melta and Searchlight" page="0" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="7139-41b3-a1fa-500c" name="Multi-melta and Searchlight" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d4fa-41f8-5452-a610" type="max"/>
                   </constraints>
@@ -3081,7 +3081,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                     <cost name="pts" typeId="points" value="10.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="55eb-5d57-654e-0850" name="Hyperios Missile Launcher" page="0" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="55eb-5d57-654e-0850" name="Hyperios Missile Launcher" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bc51-9ca5-cbe7-f3d3" type="max"/>
                   </constraints>
@@ -3092,7 +3092,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                     <cost name="pts" typeId="points" value="30.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="7d43-c100-3f5c-b3d6" name="Whirlwind Launcher" page="0" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="7d43-c100-3f5c-b3d6" name="Whirlwind Launcher" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="abe4-25be-8a39-ace8" type="max"/>
                   </constraints>
@@ -3100,7 +3100,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                     <cost name="pts" typeId="points" value="35.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="9bde-10a0-764f-5832" name="Icarus Lascannon" page="0" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="9bde-10a0-764f-5832" name="Icarus Lascannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d82a-d650-1f6e-f4a7" type="max"/>
                   </constraints>
@@ -3111,7 +3111,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                     <cost name="pts" typeId="points" value="35.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="33bb-9acc-76cc-f707" name="Quad Gun" page="0" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="33bb-9acc-76cc-f707" name="Quad Gun" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="01e3-59af-7424-b0d7" type="max"/>
                   </constraints>
@@ -3122,7 +3122,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                     <cost name="pts" typeId="points" value="50.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="2c63-4097-9ada-44fb" name="Hyperios Comman Platform" page="0" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="2c63-4097-9ada-44fb" name="Hyperios Comman Platform" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a511-1994-5f38-15a5" type="max"/>
                   </constraints>
@@ -3130,7 +3130,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                     <cost name="pts" typeId="points" value="20.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="0ed7-6b83-ea28-d01c" name="Battle Cannon Turret" page="0" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="0ed7-6b83-ea28-d01c" name="Battle Cannon Turret" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a0c8-986d-53b8-ccbb" type="max"/>
                   </constraints>
@@ -3138,7 +3138,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                     <cost name="pts" typeId="points" value="50.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="d8b9-eaa1-8fde-8560" name="Icarus Quad Lascannon" page="0" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="d8b9-eaa1-8fde-8560" name="Icarus Quad Lascannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="37a0-74f0-ff9b-f17b" type="max"/>
                   </constraints>
@@ -3151,9 +3151,9 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="c797-289a-0f8b-6224" name="May equip any of the following:" hidden="false" collective="false">
+            <selectionEntryGroup id="c797-289a-0f8b-6224" name="May equip any of the following:" hidden="false" collective="false" import="true">
               <selectionEntries>
-                <selectionEntry id="2c3e-d985-da3a-1a99" name="Comms Relay" page="0" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="2c3e-d985-da3a-1a99" name="Comms Relay" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="660b-3775-396f-8716" type="max"/>
                   </constraints>
@@ -3161,7 +3161,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                     <cost name="pts" typeId="points" value="20.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="7691-d68a-69de-a266" name="Hostile Signal Jammer" page="0" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="7691-d68a-69de-a266" name="Hostile Signal Jammer" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1299-e322-c69d-b2f1" type="max"/>
                   </constraints>
@@ -3176,18 +3176,18 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f706-430d-eeee-f30c" name="Three Bunker Annexes" page="0" hidden="false" collective="false" type="model">
+        <selectionEntry id="f706-430d-eeee-f30c" name="Three Bunker Annexes" page="0" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9903-5946-5433-4cf2" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f7a6-68a6-d747-843a" type="max"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup id="2201-45e8-4691-75e9" name="May each take one of the following:" hidden="false" collective="false">
+            <selectionEntryGroup id="2201-45e8-4691-75e9" name="May each take one of the following:" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fc66-4146-1f18-0e91" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="e367-b725-f4ff-1097" name="Twin-linked Heavy Bolter" page="0" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="e367-b725-f4ff-1097" name="Twin-linked Heavy Bolter" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ae1a-ccab-c93b-3516" type="max"/>
                   </constraints>
@@ -3195,7 +3195,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                     <cost name="pts" typeId="points" value="10.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="fcad-7485-6594-dcc6" name="Twin-linked Heavy Flamer" page="0" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="fcad-7485-6594-dcc6" name="Twin-linked Heavy Flamer" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="afb4-d84f-92fb-c583" type="max"/>
                   </constraints>
@@ -3203,7 +3203,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                     <cost name="pts" typeId="points" value="10.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="58c5-c761-bb57-b9b0" name="Twin-linked Lascannon" page="0" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="58c5-c761-bb57-b9b0" name="Twin-linked Lascannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b1ca-63d8-c59f-3180" type="max"/>
                   </constraints>
@@ -3211,7 +3211,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                     <cost name="pts" typeId="points" value="20.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="f638-350c-db24-7955" name="Multi-melta and Searchlight" page="0" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="f638-350c-db24-7955" name="Multi-melta and Searchlight" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e48b-4354-4e23-4c39" type="max"/>
                   </constraints>
@@ -3219,7 +3219,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                     <cost name="pts" typeId="points" value="10.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="46f5-56a3-35d7-6bc9" name="Hyperios Missile Launcher" page="0" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="46f5-56a3-35d7-6bc9" name="Hyperios Missile Launcher" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7149-cdad-18b8-eeb1" type="max"/>
                   </constraints>
@@ -3230,7 +3230,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                     <cost name="pts" typeId="points" value="30.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="5b9b-bdc1-cdb4-2fc0" name="Whirlwind Launcher" page="0" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="5b9b-bdc1-cdb4-2fc0" name="Whirlwind Launcher" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1bee-4ff8-5f32-da69" type="max"/>
                   </constraints>
@@ -3238,7 +3238,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                     <cost name="pts" typeId="points" value="35.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="90fd-6170-a91f-a1aa" name="Icarus Lascannon" page="0" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="90fd-6170-a91f-a1aa" name="Icarus Lascannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="54ee-3dab-11db-c8f7" type="max"/>
                   </constraints>
@@ -3249,7 +3249,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                     <cost name="pts" typeId="points" value="35.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="a558-d54b-9492-24ca" name="Quad Gun" page="0" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="a558-d54b-9492-24ca" name="Quad Gun" page="0" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5d91-e162-aef0-aa7f" type="max"/>
                   </constraints>
@@ -3272,7 +3272,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="275.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0556-5346-2dda-800e" name="Elite" hidden="true" collective="false" type="upgrade">
+    <selectionEntry id="0556-5346-2dda-800e" name="Elite" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d067-2c16-7364-7f4f" type="max"/>
       </constraints>
@@ -3280,7 +3280,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="72d0-ec83-654c-63a3" name="Fast Attack" hidden="true" collective="false" type="upgrade">
+    <selectionEntry id="72d0-ec83-654c-63a3" name="Fast Attack" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d9b-f69c-7128-f477" type="max"/>
       </constraints>
@@ -3288,7 +3288,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4a29-175c-909e-627c" name="Heavy Support" hidden="true" collective="false" type="upgrade">
+    <selectionEntry id="4a29-175c-909e-627c" name="Heavy Support" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8750-274e-793e-8858" type="max"/>
       </constraints>
@@ -3296,7 +3296,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="428e-4dcc-ace2-999e" name="HQ" hidden="true" collective="false" type="upgrade">
+    <selectionEntry id="428e-4dcc-ace2-999e" name="HQ" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0066-a00e-87fe-2ab2" type="max"/>
       </constraints>
@@ -3304,7 +3304,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9989-c056-80b5-f668" name="Lord of War" hidden="true" collective="false" type="upgrade">
+    <selectionEntry id="9989-c056-80b5-f668" name="Lord of War" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3415-9251-b927-133e" type="max"/>
       </constraints>
@@ -3312,7 +3312,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cbf6-0aec-de33-8dcf" name="Troops" hidden="true" collective="false" type="upgrade">
+    <selectionEntry id="cbf6-0aec-de33-8dcf" name="Troops" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2b8-f133-ab64-c0b7" type="max"/>
       </constraints>
@@ -3320,7 +3320,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fe1a-7320-4d5b-c910" name="The Primary Detachment must contain at least one Legion Praetor or Centurion (including Consuls), who must be the army’s Warlord." hidden="true" collective="false" type="upgrade">
+    <selectionEntry id="fe1a-7320-4d5b-c910" name="The Primary Detachment must contain at least one Legion Praetor or Centurion (including Consuls), who must be the army’s Warlord." hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc19-7d28-66fb-fa66" type="max"/>
       </constraints>
@@ -3328,12 +3328,12 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="02eb28bb-1883-8603-0af7-b8bf2b7b69c8" name="Questoris Knight Paladin" publicationId="ca571888--pubN84158" page="301" hidden="false" collective="false" type="model">
+    <selectionEntry id="02eb28bb-1883-8603-0af7-b8bf2b7b69c8" name="Questoris Knight Paladin" publicationId="ca571888--pubN84158" page="301" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
       <profiles>
-        <profile id="bbc7426f-0a42-4f60-04e5-890db3826ec3" name="Questoris Knight Paladin" publicationId="ca571888--pubN84158" page="301" hidden="false" typeId="57616c6b657223232344415441232323" typeName="">
+        <profile id="bbc7426f-0a42-4f60-04e5-890db3826ec3" name="Questoris Knight Paladin" publicationId="ca571888--pubN84158" page="301" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
           <characteristics>
             <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
             <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
@@ -3347,7 +3347,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <characteristic name="Type" typeId="5479706523232344415441232323">Super-Heavy Walker</characteristic>
           </characteristics>
         </profile>
-        <profile id="4580dd76-7ecd-4c31-c664-d442c492779a" name="Questoris battlecannon" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+        <profile id="4580dd76-7ecd-4c31-c664-d442c492779a" name="Questoris battlecannon" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -3369,14 +3369,14 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <infoLink id="69f8af61-ab69-9f1d-d1b3-cf3ea26ba06d" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f89283d8-d9d1-7f20-b630-4ad158e12292" name="May exchange Questoris battlecannon for:" hidden="false" collective="false">
+        <selectionEntryGroup id="f89283d8-d9d1-7f20-b630-4ad158e12292" name="May exchange Questoris battlecannon for:" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="c7e655d1-24ba-0f3c-b15e-3874f6ee954c" name="Rapid-fire battlecannon" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="c7e655d1-24ba-0f3c-b15e-3874f6ee954c" name="Rapid-fire battlecannon" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <profiles>
-                <profile id="7c3d4d95-4d1d-f3c9-d69e-b36b0b160159" name="Rapid-fire battlecannon" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+                <profile id="7c3d4d95-4d1d-f3c9-d69e-b36b0b160159" name="Rapid-fire battlecannon" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="52616e676523232344415441232323">72&quot;</characteristic>
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
@@ -3391,14 +3391,14 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="eef5e012-fb2a-a50a-34b1-85268e51cadc" name="May be upgraded with:" hidden="false" collective="false">
+        <selectionEntryGroup id="eef5e012-fb2a-a50a-34b1-85268e51cadc" name="May be upgraded with:" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="a0fe2e7e-0934-d570-9b21-ffd094742e42" name="Bio-corrosive rounds for its heavy stubbers" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="a0fe2e7e-0934-d570-9b21-ffd094742e42" name="Bio-corrosive rounds for its heavy stubbers" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <profiles>
-                <profile id="ceeb7d99-c289-77eb-8929-28f66fb2d166" name="Heavy Stubber (Bio-corrosive rounds)" publicationId="ca571888--pubN84158" page="301" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+                <profile id="ceeb7d99-c289-77eb-8929-28f66fb2d166" name="Heavy Stubber (Bio-corrosive rounds)" publicationId="ca571888--pubN84158" page="301" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="52616e676523232344415441232323">30&quot;</characteristic>
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">2</characteristic>
@@ -3413,15 +3413,15 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink id="8650-f3c0-85c2-6ea7" name="New EntryLink" hidden="false" collective="false" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
+            <entryLink id="8650-f3c0-85c2-6ea7" name="New EntryLink" hidden="false" collective="false" import="true" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="b496-156d-b9eb-95f3" name="May take one of the following carapace weapons:" hidden="false" collective="false">
+        <selectionEntryGroup id="b496-156d-b9eb-95f3" name="May take one of the following carapace weapons:" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="fd9e-6e9b-8b90-94ff" name="Ironstorm missile pod" publicationId="ca571888--pubN84656" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="fd9e-6e9b-8b90-94ff" name="Ironstorm missile pod" publicationId="ca571888--pubN84656" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -3432,7 +3432,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <cost name="pts" typeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="a763-1661-0c22-7b87" name="Twin Icarus autocannon" publicationId="ca571888--pubN84656" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="a763-1661-0c22-7b87" name="Twin Icarus autocannon" publicationId="ca571888--pubN84656" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -3443,7 +3443,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <cost name="pts" typeId="points" value="35.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9ffd-1a7c-b311-69e3" name="Stormspear rocket pod" publicationId="ca571888--pubN84656" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="9ffd-1a7c-b311-69e3" name="Stormspear rocket pod" publicationId="ca571888--pubN84656" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -3458,18 +3458,18 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="6fd6-0678-7777-d0b9" name="Household Rank" hidden="false" collective="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
+        <entryLink id="6fd6-0678-7777-d0b9" name="Household Rank" hidden="false" collective="false" import="true" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="375.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4b70feb1-a2e7-2f93-8320-1d6775bf5a59" name="Questoris Knight Errant" publicationId="ca571888--pubN84158" page="302" hidden="false" collective="false" type="model">
+    <selectionEntry id="4b70feb1-a2e7-2f93-8320-1d6775bf5a59" name="Questoris Knight Errant" publicationId="ca571888--pubN84158" page="302" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
       <profiles>
-        <profile id="2bc44173-c43d-b7d0-9ad5-65c0f0c6ff82" name="Questoris Knight Errant" publicationId="ca571888--pubN84158" page="302" hidden="false" typeId="57616c6b657223232344415441232323" typeName="">
+        <profile id="2bc44173-c43d-b7d0-9ad5-65c0f0c6ff82" name="Questoris Knight Errant" publicationId="ca571888--pubN84158" page="302" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
           <characteristics>
             <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
             <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
@@ -3483,7 +3483,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <characteristic name="Type" typeId="5479706523232344415441232323">Super-Heavy Walker</characteristic>
           </characteristics>
         </profile>
-        <profile id="d759c074-6ff7-9f45-c862-50a400f9b12a" name="Thermal Cannon" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+        <profile id="d759c074-6ff7-9f45-c862-50a400f9b12a" name="Thermal Cannon" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
             <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
@@ -3498,14 +3498,14 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <infoLink id="c7aedb4b-3588-ff92-fada-ddd79a43de63" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="423c1873-c56d-8ca1-b01f-a2660b0b0198" name="May be upgraded with:" hidden="false" collective="false">
+        <selectionEntryGroup id="423c1873-c56d-8ca1-b01f-a2660b0b0198" name="May be upgraded with:" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="24f0bce9-4d48-7761-798a-06d983bc9e09" name="Bio-corrosive rounds for its heavy stubbers" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="24f0bce9-4d48-7761-798a-06d983bc9e09" name="Bio-corrosive rounds for its heavy stubbers" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <profiles>
-                <profile id="b76bfe96-595e-e8ec-1aa2-b24d127c6a8c" name="Heavy Stubber (Bio-corrosive rounds)" publicationId="ca571888--pubN84158" page="301" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+                <profile id="b76bfe96-595e-e8ec-1aa2-b24d127c6a8c" name="Heavy Stubber (Bio-corrosive rounds)" publicationId="ca571888--pubN84158" page="301" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="52616e676523232344415441232323">30&quot;</characteristic>
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">2</characteristic>
@@ -3520,15 +3520,15 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink id="daa4-d280-3978-ddee" name="New EntryLink" hidden="false" collective="false" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
+            <entryLink id="daa4-d280-3978-ddee" name="New EntryLink" hidden="false" collective="false" import="true" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="161b-6e36-d2e5-516d" name="May take one of the following carapace weapons:" hidden="false" collective="false">
+        <selectionEntryGroup id="161b-6e36-d2e5-516d" name="May take one of the following carapace weapons:" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="e776-6427-6f58-cc8d" name="Ironstorm missile pod" publicationId="ca571888--pubN84656" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="e776-6427-6f58-cc8d" name="Ironstorm missile pod" publicationId="ca571888--pubN84656" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -3539,7 +3539,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <cost name="pts" typeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e989-298b-b903-ae34" name="Twin Icarus autocannon" publicationId="ca571888--pubN84656" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="e989-298b-b903-ae34" name="Twin Icarus autocannon" publicationId="ca571888--pubN84656" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -3550,7 +3550,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <cost name="pts" typeId="points" value="35.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="5572-200a-f887-3d7a" name="Stormspear rocket pod" publicationId="ca571888--pubN84656" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="5572-200a-f887-3d7a" name="Stormspear rocket pod" publicationId="ca571888--pubN84656" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -3565,18 +3565,18 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="3869-5b07-27b6-2018" name="Household Rank" hidden="false" collective="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
+        <entryLink id="3869-5b07-27b6-2018" name="Household Rank" hidden="false" collective="false" import="true" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="370.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fb7cd031-7573-eb28-4446-d709eb5acdbc" name="Questoris Knight Magaera" publicationId="ca571888--pubN84158" page="303" hidden="false" collective="false" type="model">
+    <selectionEntry id="fb7cd031-7573-eb28-4446-d709eb5acdbc" name="Questoris Knight Magaera" publicationId="ca571888--pubN84158" page="303" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
       <profiles>
-        <profile id="b47bae59-6ba9-18c4-2954-8966bd11beb8" name="Questoris Knight Magaera" publicationId="ca571888--pubN84158" page="303" hidden="false" typeId="57616c6b657223232344415441232323" typeName="">
+        <profile id="b47bae59-6ba9-18c4-2954-8966bd11beb8" name="Questoris Knight Magaera" publicationId="ca571888--pubN84158" page="303" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
           <characteristics>
             <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
             <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
@@ -3600,14 +3600,14 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <infoLink id="959d6be5-d04c-aa61-b1db-a1b93e4b0888" hidden="false" targetId="409ed051-b4d2-fcc4-916d-1f2e7090366f" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f1816b2d-d7ad-435b-6862-843f885c8ecc" name="May exchange its Reaper Chainsword for:" hidden="false" collective="false">
+        <selectionEntryGroup id="f1816b2d-d7ad-435b-6862-843f885c8ecc" name="May exchange its Reaper Chainsword for:" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="f3c0c540-1e73-89b8-46c3-2aca29c79009" name="Hekaton Siege Claw with twin-linked Rad Cleanser" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="f3c0c540-1e73-89b8-46c3-2aca29c79009" name="Hekaton Siege Claw with twin-linked Rad Cleanser" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <profiles>
-                <profile id="0ad2338f-2a48-1121-a3f1-d1d185f0a1f7" name="Hekaton Siege Claw" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+                <profile id="0ad2338f-2a48-1121-a3f1-d1d185f0a1f7" name="Hekaton Siege Claw" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
@@ -3627,30 +3627,30 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="e2e886d2-716d-2139-a5d9-650bae4bc53c" name="May be upgraded with:" hidden="false" collective="false">
+        <selectionEntryGroup id="e2e886d2-716d-2139-a5d9-650bae4bc53c" name="May be upgraded with:" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink id="bcb5-069f-bb42-5343" name="New EntryLink" hidden="false" collective="false" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
+            <entryLink id="bcb5-069f-bb42-5343" name="New EntryLink" hidden="false" collective="false" import="true" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="7914-ad8c-7a1e-e6c7" name="Household Rank" hidden="false" collective="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
+        <entryLink id="7914-ad8c-7a1e-e6c7" name="Household Rank" hidden="false" collective="false" import="true" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="395.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ca45ca55-eae1-1a81-8afc-1330611055a6" name="Cerastus Knight-Lancer" publicationId="ca571888--pubN84158" page="305" hidden="false" collective="false" type="model">
+    <selectionEntry id="ca45ca55-eae1-1a81-8afc-1330611055a6" name="Cerastus Knight-Lancer" publicationId="ca571888--pubN84158" page="305" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
       <profiles>
-        <profile id="629a6c72-2e06-6a7b-1535-6048dd79d15a" name="Ion Gauntlet Shield" publicationId="ca571888--pubN85920" page="2310" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="">
+        <profile id="629a6c72-2e06-6a7b-1535-6048dd79d15a" name="Ion Gauntlet Shield" publicationId="ca571888--pubN85920" page="2310" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Operates as a Knights Ion Shield with the following exceptions:  - May not protect Rear armour - Provides 5++ Invulnerable save in close combat - Forces close combat attacks by other Super-heavy Walkers or Gargantuan Creatures to suffer a -1 to hit. </characteristic>
           </characteristics>
         </profile>
-        <profile id="1d8aa0dc-3399-3aaa-159b-4349b74ba12a" name="Cerastus Shock Lance (Melee)" publicationId="ca571888--pubN85920" page="231" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+        <profile id="1d8aa0dc-3399-3aaa-159b-4349b74ba12a" name="Cerastus Shock Lance (Melee)" publicationId="ca571888--pubN85920" page="231" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
             <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
@@ -3658,7 +3658,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Swift Strike</characteristic>
           </characteristics>
         </profile>
-        <profile id="7953df1c-82af-4a91-20f7-3affb23cf7f2" name="Cerastus Shock Lance (Ranged)" publicationId="ca571888--pubN85920" page="231" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+        <profile id="7953df1c-82af-4a91-20f7-3affb23cf7f2" name="Cerastus Shock Lance (Ranged)" publicationId="ca571888--pubN85920" page="231" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="52616e676523232344415441232323">18&quot;</characteristic>
             <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
@@ -3666,7 +3666,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 6, Concussive</characteristic>
           </characteristics>
         </profile>
-        <profile id="0b8433ff-6e32-e9aa-94e1-16e91997c267" name="Cerastus Knight-Lancer" publicationId="ca571888--pubN84158" page="305" hidden="false" typeId="57616c6b657223232344415441232323" typeName="">
+        <profile id="0b8433ff-6e32-e9aa-94e1-16e91997c267" name="Cerastus Knight-Lancer" publicationId="ca571888--pubN84158" page="305" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
           <characteristics>
             <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
             <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
@@ -3690,25 +3690,25 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <infoLink id="36608ff1-aa5c-22d2-b79f-22e56ccf59da" hidden="false" targetId="53c751ef-105f-b2a8-7a17-7812d605b9f2" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f6462c55-4eef-3565-2a00-b18b8444bd20" name="May be upgraded with:" hidden="false" collective="false">
+        <selectionEntryGroup id="f6462c55-4eef-3565-2a00-b18b8444bd20" name="May be upgraded with:" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink id="11b6-982a-c832-8217" name="New EntryLink" hidden="false" collective="false" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
+            <entryLink id="11b6-982a-c832-8217" name="New EntryLink" hidden="false" collective="false" import="true" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="d7fd-bb6e-dc51-f8ed" name="Household Rank" hidden="false" collective="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
+        <entryLink id="d7fd-bb6e-dc51-f8ed" name="Household Rank" hidden="false" collective="false" import="true" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="400.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a5b350ff-895e-4557-70a6-d24a936919c2" name="Questoris Knight Styrix" publicationId="ca571888--pubN84158" page="304" hidden="false" collective="false" type="model">
+    <selectionEntry id="a5b350ff-895e-4557-70a6-d24a936919c2" name="Questoris Knight Styrix" publicationId="ca571888--pubN84158" page="304" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
       <profiles>
-        <profile id="24d3f37e-1c49-59a1-1263-7240cebb4d02" name="Volkite Chieorovile" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+        <profile id="24d3f37e-1c49-59a1-1263-7240cebb4d02" name="Volkite Chieorovile" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="52616e676523232344415441232323">45&quot;</characteristic>
             <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
@@ -3716,7 +3716,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 5, Deflagrate</characteristic>
           </characteristics>
         </profile>
-        <profile id="8a01-a44f-6d0d-9593" name="Questoris Knight Styrix" publicationId="ca571888--pubN84158" page="304" hidden="false" typeId="57616c6b657223232344415441232323" typeName="">
+        <profile id="8a01-a44f-6d0d-9593" name="Questoris Knight Styrix" publicationId="ca571888--pubN84158" page="304" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
           <characteristics>
             <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
             <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
@@ -3740,14 +3740,14 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <infoLink id="828f4a19-02bb-40b8-0974-6dc4cbf24e62" hidden="false" targetId="2d57-8425-0ec0-a9cf" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="24723cac-66f3-e231-9092-1333de8d98c1" name="May exchange its Reaper Chainsword for:" hidden="false" collective="false">
+        <selectionEntryGroup id="24723cac-66f3-e231-9092-1333de8d98c1" name="May exchange its Reaper Chainsword for:" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="5be171c3-5c43-333c-e1b8-5b98516f8c0b" name="Hekaton Siege Claw with twin-linked Rad Cleanser" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="5be171c3-5c43-333c-e1b8-5b98516f8c0b" name="Hekaton Siege Claw with twin-linked Rad Cleanser" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <profiles>
-                <profile id="9f451766-f78d-facc-1593-86aa2f7228e8" name="Hekaton Siege Claw" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+                <profile id="9f451766-f78d-facc-1593-86aa2f7228e8" name="Hekaton Siege Claw" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
@@ -3767,25 +3767,25 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="b67f479c-7f22-807d-e410-1ea59b1e24d5" name="May be upgraded with:" hidden="false" collective="false">
+        <selectionEntryGroup id="b67f479c-7f22-807d-e410-1ea59b1e24d5" name="May be upgraded with:" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink id="bfc1-c694-67ae-0457" name="New EntryLink" hidden="false" collective="false" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
+            <entryLink id="bfc1-c694-67ae-0457" name="New EntryLink" hidden="false" collective="false" import="true" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="3bec-dc40-8e56-a8d7" name="Household Rank" hidden="false" collective="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
+        <entryLink id="3bec-dc40-8e56-a8d7" name="Household Rank" hidden="false" collective="false" import="true" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="405.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b1cf8528-c9d0-2c2a-3f19-522e5532f273" name="Cerastus Knight-Castigator" publicationId="ca571888--pubN84158" page="306" hidden="false" collective="false" type="model">
+    <selectionEntry id="b1cf8528-c9d0-2c2a-3f19-522e5532f273" name="Cerastus Knight-Castigator" publicationId="ca571888--pubN84158" page="306" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
       <profiles>
-        <profile id="5858fd67-30bf-5157-905b-4f0823ddbae7" name="Cerastus Knight-Castigator" publicationId="ca571888--pubN84158" page="306" hidden="false" typeId="57616c6b657223232344415441232323" typeName="">
+        <profile id="5858fd67-30bf-5157-905b-4f0823ddbae7" name="Cerastus Knight-Castigator" publicationId="ca571888--pubN84158" page="306" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
           <characteristics>
             <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
             <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
@@ -3799,7 +3799,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <characteristic name="Type" typeId="5479706523232344415441232323">Super-heavy Walker</characteristic>
           </characteristics>
         </profile>
-        <profile id="95076c1b-9de6-414b-85e6-b38f167aa205" name="Castigator pattern bolt cannon" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+        <profile id="95076c1b-9de6-414b-85e6-b38f167aa205" name="Castigator pattern bolt cannon" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
             <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
@@ -3807,7 +3807,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 8</characteristic>
           </characteristics>
         </profile>
-        <profile id="77d2abd5-ac92-194e-35d4-a11e170e43a5" name="Tempest Warblade" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+        <profile id="77d2abd5-ac92-194e-35d4-a11e170e43a5" name="Tempest Warblade" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
             <characteristic name="Strength" typeId="537472656e67746823232344415441232323">10</characteristic>
@@ -3827,25 +3827,25 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <infoLink id="05ccc725-4149-bbe0-d1c4-291383f7d189" name="" hidden="false" targetId="cbcf-5f25-f8ea-7cfd" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="5e3a6b4f-0c5e-5b29-cc54-cf20f5668eb3" name="May be upgraded with:" hidden="false" collective="false">
+        <selectionEntryGroup id="5e3a6b4f-0c5e-5b29-cc54-cf20f5668eb3" name="May be upgraded with:" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink id="97b8-c2fb-2978-945e" name="New EntryLink" hidden="false" collective="false" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
+            <entryLink id="97b8-c2fb-2978-945e" name="New EntryLink" hidden="false" collective="false" import="true" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="ae87-4f6a-c839-010a" name="Household Rank" hidden="false" collective="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
+        <entryLink id="ae87-4f6a-c839-010a" name="Household Rank" hidden="false" collective="false" import="true" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="380.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b4ddbe68-7095-397e-dec4-162170dbdbcd" name="Cerastus Knight-Acheron" publicationId="ca571888--pubN84158" page="307" hidden="false" collective="false" type="model">
+    <selectionEntry id="b4ddbe68-7095-397e-dec4-162170dbdbcd" name="Cerastus Knight-Acheron" publicationId="ca571888--pubN84158" page="307" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
       <profiles>
-        <profile id="7b5e9ae8-bdbc-ad55-b137-03e11dce5ede" name="Cerastus Knight-Acheron" publicationId="ca571888--pubN84158" page="307" hidden="false" typeId="57616c6b657223232344415441232323" typeName="">
+        <profile id="7b5e9ae8-bdbc-ad55-b137-03e11dce5ede" name="Cerastus Knight-Acheron" publicationId="ca571888--pubN84158" page="307" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
           <characteristics>
             <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
             <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
@@ -3859,7 +3859,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <characteristic name="Type" typeId="5479706523232344415441232323">Super-heavy Walker</characteristic>
           </characteristics>
         </profile>
-        <profile id="038c1fc5-ebbd-253e-04a0-a5166ab1b99a" name="Acheron pattern flame cannon" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+        <profile id="038c1fc5-ebbd-253e-04a0-a5166ab1b99a" name="Acheron pattern flame cannon" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="52616e676523232344415441232323">Hellstorm</characteristic>
             <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
@@ -3867,7 +3867,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance 1</characteristic>
           </characteristics>
         </profile>
-        <profile id="c6591890-5674-35b3-65ff-bcff5ab1e883" name="Reaper Chainfist" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+        <profile id="c6591890-5674-35b3-65ff-bcff5ab1e883" name="Reaper Chainfist" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
             <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
@@ -3886,25 +3886,25 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <infoLink id="ed03ee31-8955-4ab8-3285-09590bfed45e" name="Flank Speed" hidden="false" targetId="53c751ef-105f-b2a8-7a17-7812d605b9f2" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="97a1af42-3800-4b30-9e22-d8955e00394e" name="May be upgraded with:" hidden="false" collective="false">
+        <selectionEntryGroup id="97a1af42-3800-4b30-9e22-d8955e00394e" name="May be upgraded with:" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink id="d808-e275-8ba5-6f32" name="New EntryLink" hidden="false" collective="false" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
+            <entryLink id="d808-e275-8ba5-6f32" name="New EntryLink" hidden="false" collective="false" import="true" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="1d72-a337-b4a1-c67b" name="Household Rank" hidden="false" collective="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
+        <entryLink id="1d72-a337-b4a1-c67b" name="Household Rank" hidden="false" collective="false" import="true" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="415.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f4f1-dad6-0596-ca5a" name="Questoris Knight Warden" publicationId="ca571888--pubN87368" page="104" hidden="false" collective="false" type="model">
+    <selectionEntry id="f4f1-dad6-0596-ca5a" name="Questoris Knight Warden" publicationId="ca571888--pubN87368" page="104" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
       <profiles>
-        <profile id="472f-d151-1754-59fd" name="Questoris Knight Warden" publicationId="ca571888--pubN87368" page="104" hidden="false" typeId="57616c6b657223232344415441232323" typeName="">
+        <profile id="472f-d151-1754-59fd" name="Questoris Knight Warden" publicationId="ca571888--pubN87368" page="104" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
           <characteristics>
             <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
             <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
@@ -3918,7 +3918,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <characteristic name="Type" typeId="5479706523232344415441232323">Super-Heavy Walker</characteristic>
           </characteristics>
         </profile>
-        <profile id="07d8-8572-88b4-a0e5" name="Avenger Gatling Cannon" publicationId="ca571888--pubN87368" page="115" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+        <profile id="07d8-8572-88b4-a0e5" name="Avenger Gatling Cannon" publicationId="ca571888--pubN87368" page="115" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
             <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -3941,9 +3941,9 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <infoLink id="1904-5043-2469-8b0b" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="c89a-2e7e-cc89-dfc4" name="May be upgraded with:" hidden="false" collective="false">
+        <selectionEntryGroup id="c89a-2e7e-cc89-dfc4" name="May be upgraded with:" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="7b07-791a-2a51-34d2" name="Bio-corrosive rounds for its heavy stubbers" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="7b07-791a-2a51-34d2" name="Bio-corrosive rounds for its heavy stubbers" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -3956,7 +3956,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <profiles>
-                <profile id="92e9-39dc-8cb0-ace3" name="Heavy Stubber (Bio-corrosive rounds)" publicationId="ca571888--pubN84158" page="301" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+                <profile id="92e9-39dc-8cb0-ace3" name="Heavy Stubber (Bio-corrosive rounds)" publicationId="ca571888--pubN84158" page="301" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="52616e676523232344415441232323">30&quot;</characteristic>
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">2</characteristic>
@@ -3971,15 +3971,15 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink id="3b5e-0a97-6a33-f3db" name="New EntryLink" hidden="false" collective="false" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
+            <entryLink id="3b5e-0a97-6a33-f3db" name="New EntryLink" hidden="false" collective="false" import="true" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="7e6c-a072-4bf1-2f4b" name="May take one of the following carapace weapons:" hidden="false" collective="false">
+        <selectionEntryGroup id="7e6c-a072-4bf1-2f4b" name="May take one of the following carapace weapons:" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="afec-cc37-37b7-8074" name="Ironstorm missile pod" publicationId="ca571888--pubN84656" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="afec-cc37-37b7-8074" name="Ironstorm missile pod" publicationId="ca571888--pubN84656" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -3990,7 +3990,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <cost name="pts" typeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="db94-3b91-29b1-6317" name="Twin Icarus autocannon" publicationId="ca571888--pubN84656" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="db94-3b91-29b1-6317" name="Twin Icarus autocannon" publicationId="ca571888--pubN84656" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -4001,7 +4001,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <cost name="pts" typeId="points" value="35.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0f57-b26d-e805-bd83" name="Stormspear rocket pod" publicationId="ca571888--pubN84656" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="0f57-b26d-e805-bd83" name="Stormspear rocket pod" publicationId="ca571888--pubN84656" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -4014,14 +4014,14 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="b490-5f1c-feaf-6394" name="May exchange Reaper Chainsword for:" hidden="false" collective="false">
+        <selectionEntryGroup id="b490-5f1c-feaf-6394" name="May exchange Reaper Chainsword for:" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="4578-c708-d057-a240" name="Thunderstrike Gauntlet" publicationId="ca571888--pubN87368" page="117" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="4578-c708-d057-a240" name="Thunderstrike Gauntlet" publicationId="ca571888--pubN87368" page="117" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <profiles>
-                <profile id="c3f1-19dc-ae18-b4ec" name="Thunderstrike Gauntlet" publicationId="ca571888--pubN87368" page="117" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+                <profile id="c3f1-19dc-ae18-b4ec" name="Thunderstrike Gauntlet" publicationId="ca571888--pubN87368" page="117" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
@@ -4041,9 +4041,9 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="8035-65ed-a788-4c0e" name="May exchange Heavy Stubber for:" hidden="false" collective="false">
+        <selectionEntryGroup id="8035-65ed-a788-4c0e" name="May exchange Heavy Stubber for:" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="e244-6d45-c2f5-61a7" name="Meltagun" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="e244-6d45-c2f5-61a7" name="Meltagun" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -4055,18 +4055,18 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="f723-f484-1830-89d6" name="Household Rank" hidden="false" collective="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
+        <entryLink id="f723-f484-1830-89d6" name="Household Rank" hidden="false" collective="false" import="true" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="385.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="74b8-f485-4b58-0071" name="Questoris Knight Gallant" publicationId="ca571888--pubN87368" page="105" hidden="false" collective="false" type="model">
+    <selectionEntry id="74b8-f485-4b58-0071" name="Questoris Knight Gallant" publicationId="ca571888--pubN87368" page="105" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
       <profiles>
-        <profile id="1f3a-39b8-f98b-a0bd" name="Questoris Knight Gallant" publicationId="ca571888--pubN87368" page="105" hidden="false" typeId="57616c6b657223232344415441232323" typeName="">
+        <profile id="1f3a-39b8-f98b-a0bd" name="Questoris Knight Gallant" publicationId="ca571888--pubN87368" page="105" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
           <characteristics>
             <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
             <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
@@ -4080,7 +4080,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <characteristic name="Type" typeId="5479706523232344415441232323">Super-Heavy Walker</characteristic>
           </characteristics>
         </profile>
-        <profile id="c7a4-c8f2-88e1-3651" name="Thunderstrike Gauntlet" publicationId="ca571888--pubN87368" page="117" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+        <profile id="c7a4-c8f2-88e1-3651" name="Thunderstrike Gauntlet" publicationId="ca571888--pubN87368" page="117" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
             <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
@@ -4100,9 +4100,9 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <infoLink id="d1c7-21da-3aad-a67f" name="Heavy Stubber" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="c12e-0c88-5050-819f" name="May be upgraded with:" hidden="false" collective="false">
+        <selectionEntryGroup id="c12e-0c88-5050-819f" name="May be upgraded with:" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="566f-f1ce-0901-fc99" name="Bio-corrosive rounds for its heavy stubbers" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="566f-f1ce-0901-fc99" name="Bio-corrosive rounds for its heavy stubbers" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -4115,7 +4115,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <profiles>
-                <profile id="7c58-cf04-e2e2-0551" name="Heavy Stubber (Bio-corrosive rounds)" publicationId="ca571888--pubN84158" page="301" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+                <profile id="7c58-cf04-e2e2-0551" name="Heavy Stubber (Bio-corrosive rounds)" publicationId="ca571888--pubN84158" page="301" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="52616e676523232344415441232323">30&quot;</characteristic>
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">2</characteristic>
@@ -4130,15 +4130,15 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink id="5bb8-a7b6-80df-e61f" name="New EntryLink" hidden="false" collective="false" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
+            <entryLink id="5bb8-a7b6-80df-e61f" name="New EntryLink" hidden="false" collective="false" import="true" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="c583-687e-8127-66d2" name="May take one of the following carapace weapons:" hidden="false" collective="false">
+        <selectionEntryGroup id="c583-687e-8127-66d2" name="May take one of the following carapace weapons:" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="7a8b-9722-8b68-ceec" name="Ironstorm missile pod" publicationId="ca571888--pubN84656" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="7a8b-9722-8b68-ceec" name="Ironstorm missile pod" publicationId="ca571888--pubN84656" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -4149,7 +4149,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <cost name="pts" typeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ddc5-3ff7-2159-e724" name="Twin Icarus autocannon" publicationId="ca571888--pubN84656" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="ddc5-3ff7-2159-e724" name="Twin Icarus autocannon" publicationId="ca571888--pubN84656" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -4160,7 +4160,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <cost name="pts" typeId="points" value="35.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="af90-9278-046f-9058" name="Stormspear rocket pod" publicationId="ca571888--pubN84656" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="af90-9278-046f-9058" name="Stormspear rocket pod" publicationId="ca571888--pubN84656" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -4173,9 +4173,9 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="c827-6e76-4d1d-ee3e" name="May exchange Heavy Stubber for:" hidden="false" collective="false">
+        <selectionEntryGroup id="c827-6e76-4d1d-ee3e" name="May exchange Heavy Stubber for:" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="f7e1-9700-a27d-b2f7" name="Meltagun" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="f7e1-9700-a27d-b2f7" name="Meltagun" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -4187,18 +4187,18 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="f3c2-a76b-fad8-0cd0" name="Household Rank" hidden="false" collective="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
+        <entryLink id="f3c2-a76b-fad8-0cd0" name="Household Rank" hidden="false" collective="false" import="true" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="335.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="09ee-4370-1462-2cb5" name="Questoris Knight Crusader" publicationId="ca571888--pubN87368" page="106" hidden="false" collective="false" type="model">
+    <selectionEntry id="09ee-4370-1462-2cb5" name="Questoris Knight Crusader" publicationId="ca571888--pubN87368" page="106" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
       <profiles>
-        <profile id="29b8-80d5-1d6d-5410" name="Questoris Knight Crusader" publicationId="ca571888--pubN87368" page="106" hidden="false" typeId="57616c6b657223232344415441232323" typeName="">
+        <profile id="29b8-80d5-1d6d-5410" name="Questoris Knight Crusader" publicationId="ca571888--pubN87368" page="106" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
           <characteristics>
             <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
             <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
@@ -4212,7 +4212,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <characteristic name="Type" typeId="5479706523232344415441232323">Super-Heavy Walker</characteristic>
           </characteristics>
         </profile>
-        <profile id="619c-3ff0-05a9-fd45" name="Avenger Gatling Cannon" publicationId="ca571888--pubN87368" page="115" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+        <profile id="619c-3ff0-05a9-fd45" name="Avenger Gatling Cannon" publicationId="ca571888--pubN87368" page="115" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
             <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -4220,7 +4220,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 12, Rending</characteristic>
           </characteristics>
         </profile>
-        <profile id="d55c-6657-a3bd-b9ae" name="Thermal Cannon" publicationId="ca571888--pubN87368" page="116" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+        <profile id="d55c-6657-a3bd-b9ae" name="Thermal Cannon" publicationId="ca571888--pubN87368" page="116" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
             <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
@@ -4234,9 +4234,9 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <infoLink id="795f-f849-f959-a875" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="ee0a-75b3-4033-d106" name="May be upgraded with:" hidden="false" collective="false">
+        <selectionEntryGroup id="ee0a-75b3-4033-d106" name="May be upgraded with:" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="7472-d17f-5dd2-d902" name="Bio-corrosive rounds for its heavy stubbers" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="7472-d17f-5dd2-d902" name="Bio-corrosive rounds for its heavy stubbers" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -4254,7 +4254,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <profiles>
-                <profile id="1a38-e593-534a-7e7e" name="Heavy Stubber (Bio-corrosive rounds)" publicationId="ca571888--pubN84158" page="301" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+                <profile id="1a38-e593-534a-7e7e" name="Heavy Stubber (Bio-corrosive rounds)" publicationId="ca571888--pubN84158" page="301" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="52616e676523232344415441232323">30&quot;</characteristic>
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">2</characteristic>
@@ -4269,15 +4269,15 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink id="8451-15e6-de8b-cb69" name="New EntryLink" hidden="false" collective="false" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
+            <entryLink id="8451-15e6-de8b-cb69" name="New EntryLink" hidden="false" collective="false" import="true" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="6a4c-1d50-97f2-fbb0" name="May take one of the following carapace weapons:" hidden="false" collective="false">
+        <selectionEntryGroup id="6a4c-1d50-97f2-fbb0" name="May take one of the following carapace weapons:" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="891a-3a0e-4430-9259" name="Ironstorm missile pod" publicationId="ca571888--pubN84656" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="891a-3a0e-4430-9259" name="Ironstorm missile pod" publicationId="ca571888--pubN84656" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -4288,7 +4288,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <cost name="pts" typeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="5c4e-c76c-4a09-5a44" name="Twin Icarus autocannon" publicationId="ca571888--pubN84656" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="5c4e-c76c-4a09-5a44" name="Twin Icarus autocannon" publicationId="ca571888--pubN84656" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -4299,7 +4299,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <cost name="pts" typeId="points" value="35.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ede7-688a-78de-eb97" name="Stormspear rocket pod" publicationId="ca571888--pubN84656" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="ede7-688a-78de-eb97" name="Stormspear rocket pod" publicationId="ca571888--pubN84656" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -4312,9 +4312,9 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="bf22-efc3-ea2a-769f" name="May exchange Heavy Stubber for:" hidden="false" collective="false">
+        <selectionEntryGroup id="bf22-efc3-ea2a-769f" name="May exchange Heavy Stubber for:" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="75f8-4e76-795a-4f09" name="Meltagun" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="75f8-4e76-795a-4f09" name="Meltagun" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="increment" field="maxSelections" value="1.0">
                   <repeats>
@@ -4331,14 +4331,14 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="493b-2822-4d17-0885" name="May exchange Thermal cannon for:" hidden="false" collective="false">
+        <selectionEntryGroup id="493b-2822-4d17-0885" name="May exchange Thermal cannon for:" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="4e60-ef5b-d3df-669d" name="Rapid-fire battlecannon and Heavy Stubber" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="4e60-ef5b-d3df-669d" name="Rapid-fire battlecannon and Heavy Stubber" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <profiles>
-                <profile id="c82a-9a9a-b00b-aeab" name="Rapid-fire battlecannon" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+                <profile id="c82a-9a9a-b00b-aeab" name="Rapid-fire battlecannon" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="52616e676523232344415441232323">72&quot;</characteristic>
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
@@ -4355,13 +4355,13 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="da6b-9be6-897e-c0c9" name="Household Rank" hidden="false" collective="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
+        <entryLink id="da6b-9be6-897e-c0c9" name="Household Rank" hidden="false" collective="false" import="true" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="435.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="baad-77d0-04c2-e05f" name="Cerastus Knight-Atrapos" publicationId="ca571888--pubN89821" page="278" hidden="false" collective="false" type="model">
+    <selectionEntry id="baad-77d0-04c2-e05f" name="Cerastus Knight-Atrapos" publicationId="ca571888--pubN89821" page="278" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="increment" field="8f86-62fb-dba4-afc4" value="1">
           <repeats>
@@ -4373,7 +4373,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8f86-62fb-dba4-afc4" type="max"/>
       </constraints>
       <profiles>
-        <profile id="95c1-8de7-bef1-6fa1" name="Cerastus Knight-Atrapos" publicationId="ca571888--pubN84158" page="306" hidden="false" typeId="57616c6b657223232344415441232323" typeName="">
+        <profile id="95c1-8de7-bef1-6fa1" name="Cerastus Knight-Atrapos" publicationId="ca571888--pubN84158" page="306" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
           <characteristics>
             <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
             <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
@@ -4395,20 +4395,20 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <infoLink id="1895-e4dd-46a4-3b0a" name="New InfoLink" hidden="false" targetId="81fe-8580-34f6-28ae" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="797b-8685-04c6-72f4" name="May be upgraded with:" hidden="false" collective="false">
+        <selectionEntryGroup id="797b-8685-04c6-72f4" name="May be upgraded with:" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink id="a890-2700-1060-bb32" name="New EntryLink" hidden="false" collective="false" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
+            <entryLink id="a890-2700-1060-bb32" name="New EntryLink" hidden="false" collective="false" import="true" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="ea91-b3c1-b65c-bdaf" name="Singularity Cannon" hidden="false" collective="false" defaultSelectionEntryId="c6cf-46ab-5358-3771">
+        <selectionEntryGroup id="ea91-b3c1-b65c-bdaf" name="Singularity Cannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="c6cf-46ab-5358-3771">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1f91-871d-6bef-5216" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8477-2187-7951-fdb3" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="c6cf-46ab-5358-3771" name="Singularity Cannon" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="c6cf-46ab-5358-3771" name="Singularity Cannon" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="0483-ace3-ca6b-e55e" name="Gravaton Singularity Cannon" publicationId="ca571888--pubN89821" page="279" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+                <profile id="0483-ace3-ca6b-e55e" name="Gravaton Singularity Cannon" publicationId="ca571888--pubN89821" page="279" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
@@ -4432,15 +4432,15 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="d520-383c-95ed-8e5f" name="Lascutter" hidden="false" collective="false" defaultSelectionEntryId="5b2d-434f-7a2d-7ad3">
+        <selectionEntryGroup id="d520-383c-95ed-8e5f" name="Lascutter" hidden="false" collective="false" import="true" defaultSelectionEntryId="5b2d-434f-7a2d-7ad3">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2044-af1a-9add-b6dc" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2225-b3bc-9b72-de91" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="5b2d-434f-7a2d-7ad3" name="Lascutter" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="5b2d-434f-7a2d-7ad3" name="Lascutter" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="3825-cb38-0956-1089" name="Atrapos Lascutter (Beam)" publicationId="ca571888--pubN89821" page="279" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+                <profile id="3825-cb38-0956-1089" name="Atrapos Lascutter (Beam)" publicationId="ca571888--pubN89821" page="279" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="52616e676523232344415441232323">8&quot;</characteristic>
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
@@ -4448,7 +4448,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                     <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, </characteristic>
                   </characteristics>
                 </profile>
-                <profile id="24d7-a4aa-f9ff-d5d0" name="Atrapos Lascutter (Melee)" publicationId="ca571888--pubN89821" page="279" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+                <profile id="24d7-a4aa-f9ff-d5d0" name="Atrapos Lascutter (Melee)" publicationId="ca571888--pubN89821" page="279" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
@@ -4468,13 +4468,13 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="d35c-930d-b252-9eb3" name="Household Rank" hidden="false" collective="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
+        <entryLink id="d35c-930d-b252-9eb3" name="Household Rank" hidden="false" collective="false" import="true" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="435.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4ded-9de3-f964-33a7" name="Acastus Knight Porphyrion" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="4ded-9de3-f964-33a7" name="Acastus Knight Porphyrion" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f38-2f45-a1a8-1aab" type="max"/>
       </constraints>
@@ -4499,7 +4499,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <infoLink id="bc7f-7c35-2dd4-7136" name="New InfoLink" hidden="false" targetId="860d-1c1d-04ef-2829" type="rule"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry id="eb2c-a7c7-2c3f-fc1d" name="Exchange Ironstorm missiles for:" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="eb2c-a7c7-2c3f-fc1d" name="Exchange Ironstorm missiles for:" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a5de-b150-3eab-e8bf" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ffb3-9b68-982e-edd2" type="min"/>
@@ -4516,13 +4516,13 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             </infoLink>
           </infoLinks>
           <entryLinks>
-            <entryLink id="3502-e290-bffb-cdbe" name="New EntryLink" hidden="false" collective="false" targetId="b3f2-333a-7bba-54a8" type="selectionEntry"/>
+            <entryLink id="3502-e290-bffb-cdbe" name="New EntryLink" hidden="false" collective="false" import="true" targetId="b3f2-333a-7bba-54a8" type="selectionEntry"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="688f-fb97-cd9d-72d1" name="Two Twin linked Magna Lascannons" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="688f-fb97-cd9d-72d1" name="Two Twin linked Magna Lascannons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc07-151b-0f26-b610" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="71ac-a51f-a723-8636" type="min"/>
@@ -4531,7 +4531,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <infoLink id="3294-e89f-73ac-a7c3" name="New InfoLink" hidden="false" targetId="10a8-8d89-0bec-3e21" type="rule"/>
           </infoLinks>
           <entryLinks>
-            <entryLink id="3f65-ad04-8903-6c6d" name="Magna Lascannon" hidden="false" collective="false" targetId="2553-eaa0-d6af-2ec0" type="selectionEntry">
+            <entryLink id="3f65-ad04-8903-6c6d" name="Magna Lascannon" hidden="false" collective="false" import="true" targetId="2553-eaa0-d6af-2ec0" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69f0-135a-1afd-05e1" type="max"/>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0a1-8432-8b6a-d8e6" type="min"/>
@@ -4544,33 +4544,33 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="2bb9-e33f-d3e8-0e4e" name="May be upgraded with:" hidden="false" collective="false">
+        <selectionEntryGroup id="2bb9-e33f-d3e8-0e4e" name="May be upgraded with:" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink id="d283-9ab7-d74b-00b1" name="New EntryLink" hidden="false" collective="false" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
+            <entryLink id="d283-9ab7-d74b-00b1" name="New EntryLink" hidden="false" collective="false" import="true" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="71f9-bc5d-f0f0-10ce" name="May exchange any autocannon for:" hidden="false" collective="false">
+        <selectionEntryGroup id="71f9-bc5d-f0f0-10ce" name="May exchange any autocannon for:" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6db0-3d88-9ff3-fbf9" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="ebc5-6e95-3aa1-89b3" name="New EntryLink" hidden="false" collective="false" targetId="8036-b730-d533-e31f" type="selectionEntry">
+            <entryLink id="ebc5-6e95-3aa1-89b3" name="New EntryLink" hidden="false" collective="false" import="true" targetId="8036-b730-d533-e31f" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="points" value="10"/>
               </modifiers>
             </entryLink>
-            <entryLink id="52ce-4c33-8f3e-e9bf" name="New EntryLink" hidden="false" collective="false" targetId="32e0-80f7-982d-b29a" type="selectionEntry"/>
+            <entryLink id="52ce-4c33-8f3e-e9bf" name="New EntryLink" hidden="false" collective="false" import="true" targetId="32e0-80f7-982d-b29a" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="de8d-df3c-f1e5-eae0" name="Household Rank" hidden="false" collective="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
+        <entryLink id="de8d-df3c-f1e5-eae0" name="Household Rank" hidden="false" collective="false" import="true" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="560.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5ae6ac18-0fd0-ee6d-17e8-9b9354820d04" name="Paragon of Metal" page="0" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="5ae6ac18-0fd0-ee6d-17e8-9b9354820d04" name="Paragon of Metal" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
@@ -4582,7 +4582,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="35.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="348b-40f4-c774-1f9a" name="Occular Augmetics" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="348b-40f4-c774-1f9a" name="Occular Augmetics" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20e9-5be0-6d88-afd5" type="max"/>
       </constraints>
@@ -4593,7 +4593,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="10.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2f28-c5f0-6110-c614" name="Household Rank" publicationId="ca571888--pubN91142" page="99" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="2f28-c5f0-6110-c614" name="Household Rank" publicationId="ca571888--pubN91142" page="99" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbaa-3884-f2e0-c413" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ce4-a31a-c6f1-a702" type="min"/>
@@ -4605,7 +4605,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b09a-5d32-464b-4b2d" name="Blessed Autosimulacra" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="b09a-5d32-464b-4b2d" name="Blessed Autosimulacra" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01c3-e1c0-617e-150c" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="caa1-a92a-403a-af71" type="min"/>
@@ -4617,7 +4617,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="32e0-80f7-982d-b29a" name="Irad-Cleanser" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="32e0-80f7-982d-b29a" name="Irad-Cleanser" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="10b6-2766-edca-4dc7" name="New InfoLink" hidden="false" targetId="7d03914a-f940-12e5-590b-822083dff647" type="profile"/>
         <infoLink id="8aab-1812-6f5d-6eff" name="New InfoLink" hidden="false" targetId="4575-0a0a-caaf-e4bf" type="rule"/>
@@ -4627,7 +4627,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b3f2-333a-7bba-54a8" name="Helios defence missiles" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="b3f2-333a-7bba-54a8" name="Helios defence missiles" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="81af-e96f-4a06-239f" type="max"/>
       </constraints>
@@ -4640,7 +4640,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2553-eaa0-d6af-2ec0" name="Magna Lascannon" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="2553-eaa0-d6af-2ec0" name="Magna Lascannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="3b85-56e6-b738-a687" name="Magna Lascannon" hidden="false" targetId="3e31-9d8c-29ab-2e70" type="profile"/>
       </infoLinks>
@@ -4648,13 +4648,13 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="27575b75-5e1e-26ab-1074-fa91b73e2216" name="Archmagos Draykavac" publicationId="ca571888--pubN84158" page="300" hidden="false" collective="false" type="model">
+    <selectionEntry id="27575b75-5e1e-26ab-1074-fa91b73e2216" name="Archmagos Draykavac" publicationId="ca571888--pubN84158" page="300" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
       </constraints>
       <profiles>
-        <profile id="7c187296-f9ed-0293-9bb2-c8071f1a26f5" name="Archmagos Draykavac" publicationId="ca571888--pubN84158" page="300" hidden="false" typeId="556e697423232344415441232323" typeName="">
+        <profile id="7c187296-f9ed-0293-9bb2-c8071f1a26f5" name="Archmagos Draykavac" publicationId="ca571888--pubN84158" page="300" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
             <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry (Character)</characteristic>
             <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
@@ -4668,12 +4668,12 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <characteristic name="Save" typeId="5361766523232344415441232323">2+</characteristic>
           </characteristics>
         </profile>
-        <profile id="8c33e5f7-195b-e4e1-5d67-664011b71ee0" name="Djinn-skein" publicationId="ca571888--pubN85920" page="215" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="">
+        <profile id="8c33e5f7-195b-e4e1-5d67-664011b71ee0" name="Djinn-skein" publicationId="ca571888--pubN85920" page="215" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Provides the following:   - At the start of his shooting phase, the Archmagos Prime may nominate a single unit from his primary detachment (including himself) within 6&quot; of him or any Cyber-occularis purchased as a part of his wargear to benefit from +1 BS.  - Friendly units from the primary detachment including the Archmagos who deep strike within 6&quot; do not scatter - Barrage weapons in the same detachment may draw line of sight from the Archmagos or any of his Cyrber-occularis</characteristic>
           </characteristics>
         </profile>
-        <profile id="102b5105-d646-540a-268d-bd8096c07451" name="Paragon Blade" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+        <profile id="102b5105-d646-540a-268d-bd8096c07451" name="Paragon Blade" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
             <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+1</characteristic>
@@ -4703,12 +4703,12 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
         <infoLink id="7ad7-b50a-ef3b-143f" name="New InfoLink" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="fcafb9d2-c4d7-16eb-4d77-21a93c2e6b8c" name="May take up to four:" hidden="false" collective="false">
+        <selectionEntryGroup id="fcafb9d2-c4d7-16eb-4d77-21a93c2e6b8c" name="May take up to four:" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="10035625-80f1-4b62-0eab-047edbecd95f" name="Cyber-occularis" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="10035625-80f1-4b62-0eab-047edbecd95f" name="Cyber-occularis" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -4725,9 +4725,9 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="26082c4d-85f4-ac7b-a36a-077dde7443f6" name="May be mounted on:" hidden="false" collective="false">
+        <selectionEntryGroup id="26082c4d-85f4-ac7b-a36a-077dde7443f6" name="May be mounted on:" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="dafd12dc-ac4d-911c-a15d-bae8a9a7604e" name="Abeyant" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="dafd12dc-ac4d-911c-a15d-bae8a9a7604e" name="Abeyant" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
@@ -4742,9 +4742,9 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
         <cost name="pts" typeId="points" value="240.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fb92-d215-2011-f911" name="Warlord-Sinister Pattern Battle Psi-Titan" publicationId="ca571888--pubN92115" page="" hidden="false" collective="false" type="model">
+    <selectionEntry id="fb92-d215-2011-f911" name="Warlord-Sinister Pattern Battle Psi-Titan" publicationId="ca571888--pubN92115" page="" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="453d-fead-0bd1-2aa3" name="Warlord Battle Titan" publicationId="ca571888--pubN68042" page="262" hidden="false" typeId="57616c6b657223232344415441232323" typeName="">
+        <profile id="453d-fead-0bd1-2aa3" name="Warlord Battle Titan" publicationId="ca571888--pubN68042" page="262" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
           <characteristics>
             <characteristic name="WS" typeId="575323232344415441232323">2</characteristic>
             <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
@@ -4758,12 +4758,12 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
             <characteristic name="Type" typeId="5479706523232344415441232323">Super-heavy Walker</characteristic>
           </characteristics>
         </profile>
-        <profile id="4ab6-c2e4-384a-402a" name="Void Shields (6)" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="">
+        <profile id="4ab6-c2e4-384a-402a" name="Void Shields (6)" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Each hit scored against the Titan will instead hit a Void Shield (whilst one remains active). Close Combat attacks come from within the shield and are not stopped.  Void Shields have an armour value of 12.  A Glancing or Penetrating hit or any hit from a Destroyer weapon causes it to collapse.  After all void shields have collapsed, further hits strike the Titan instead. At the end of each of the Titan&apos;s turns, roll a D6 for each collapsed Void Shield.  Each roll of a 5+ restores one collapsed shield.  </characteristic>
           </characteristics>
         </profile>
-        <profile id="0e49-b34a-a66f-19a6" name="Ardex-defensor Mauler bolt cannon turret" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+        <profile id="0e49-b34a-a66f-19a6" name="Ardex-defensor Mauler bolt cannon turret" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
             <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -4771,7 +4771,7 @@ Attacking player rolls 2D6.  If the target has a Toughness characteristic, they 
             <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 6, Twin-linked, Ardex Machina</characteristic>
           </characteristics>
         </profile>
-        <profile id="d5f1-8971-ecaf-6bbf" name="Ardex-defensor twin-linked lascannon turret" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+        <profile id="d5f1-8971-ecaf-6bbf" name="Ardex-defensor twin-linked lascannon turret" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
             <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
@@ -4851,7 +4851,7 @@ D6    Result		S	AP
         </rule>
       </rules>
       <selectionEntries>
-        <selectionEntry id="82a1-5e48-0536-3451" name="The Ciricrux Anima" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="82a1-5e48-0536-3451" name="The Ciricrux Anima" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acaf-7e25-d19a-1ee5" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b89e-ea20-e5f3-fce3" type="min"/>
@@ -4870,13 +4870,13 @@ D6    Result		S	AP
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="cc02-03d5-3714-d5de" name="Carapace-Mounted Weapons" hidden="false" collective="false" defaultSelectionEntryId="86cb-fbbc-2800-d131">
+        <selectionEntryGroup id="cc02-03d5-3714-d5de" name="Carapace-Mounted Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="86cb-fbbc-2800-d131">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d886-a8e5-8b3c-852a" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9208-9dbe-a5bc-cbbd" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="4559-ba3b-1804-2bf6" name="Two Double-barrelled Turbo-laser Destructors" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="4559-ba3b-1804-2bf6" name="Two Double-barrelled Turbo-laser Destructors" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="26ec-d7f2-d9a9-69ea" type="max"/>
               </constraints>
@@ -4888,7 +4888,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="a479-411e-b02a-be9a" name="Two Twin-linked Vulcan Mega-bolters" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="a479-411e-b02a-be9a" name="Two Twin-linked Vulcan Mega-bolters" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c640-f12c-c564-a4f6" type="max"/>
               </constraints>
@@ -4900,7 +4900,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7e41-2f10-d52d-ca70" name="Two Titan Plasma Blastguns" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="7e41-2f10-d52d-ca70" name="Two Titan Plasma Blastguns" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1301-c351-e545-9dbb" type="max"/>
               </constraints>
@@ -4913,7 +4913,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7acb-b383-9f2d-e2f3" name="Two Reaver Laser Blasters" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="7acb-b383-9f2d-e2f3" name="Two Reaver Laser Blasters" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3ee3-b809-5813-5d08" type="max"/>
               </constraints>
@@ -4925,7 +4925,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="100.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ec85-65f9-0219-c854" name="Two Reaver Melta-cannons" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="ec85-65f9-0219-c854" name="Two Reaver Melta-cannons" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="519f-77d6-c070-d686" type="max"/>
               </constraints>
@@ -4938,7 +4938,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="100.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e14f-e9c8-a61f-b97a" name="Two Reaver Gatling Blasters" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="e14f-e9c8-a61f-b97a" name="Two Reaver Gatling Blasters" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bedb-8e49-9b45-5254" type="max"/>
               </constraints>
@@ -4951,12 +4951,12 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="100.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f31b-16a6-fe61-9d58" name="Two Vortex Missile Banks" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="f31b-16a6-fe61-9d58" name="Two Vortex Missile Banks" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7999-3c7f-edb5-b80c" type="max"/>
               </constraints>
               <profiles>
-                <profile id="6770-9f7c-b080-af0a" name="Vortex Missile Bank" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+                <profile id="6770-9f7c-b080-af0a" name="Vortex Missile Bank" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot; - 360&quot;</characteristic>
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
@@ -4972,12 +4972,12 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="150.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7340-bc20-8257-1a78" name="Two Incinerator Missile Banks" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="7340-bc20-8257-1a78" name="Two Incinerator Missile Banks" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="81d2-1141-9100-2d7e" type="max"/>
               </constraints>
               <profiles>
-                <profile id="1fac-5e9b-dc19-2a7c" name="Incinerator Missile Bank" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+                <profile id="1fac-5e9b-dc19-2a7c" name="Incinerator Missile Bank" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot; - 360&quot;</characteristic>
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -4993,7 +4993,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="75.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="86cb-fbbc-2800-d131" name="Two Apocalypse Missile Launchers" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="86cb-fbbc-2800-d131" name="Two Apocalypse Missile Launchers" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6c28-9537-90ea-a957" type="max"/>
               </constraints>
@@ -5007,13 +5007,13 @@ D6    Result		S	AP
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="58b4-9101-a9b5-9ff6" name="Primary Weapon Right Arm" hidden="false" collective="false" defaultSelectionEntryId="6590-e9da-8e4b-f44d">
+        <selectionEntryGroup id="58b4-9101-a9b5-9ff6" name="Primary Weapon Right Arm" hidden="false" collective="false" import="true" defaultSelectionEntryId="6590-e9da-8e4b-f44d">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="874a-3494-4aaa-8135" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c946-d120-a820-ed54" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="0254-669c-7368-0b4c" name="Sunfury Plasma Annihilator" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="0254-669c-7368-0b4c" name="Sunfury Plasma Annihilator" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a9a9-3f3a-492f-388d" type="max"/>
               </constraints>
@@ -5025,7 +5025,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="449f-17a2-5c78-509c" name="Mori Quake Cannon" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="449f-17a2-5c78-509c" name="Mori Quake Cannon" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fa82-a97d-8af7-7f26" type="max"/>
               </constraints>
@@ -5040,7 +5040,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="69c7-8c9e-d214-7ee4" name="Saturnyne Lascutter" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="69c7-8c9e-d214-7ee4" name="Saturnyne Lascutter" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ef8b-8e57-611a-11ac" type="max"/>
               </constraints>
@@ -5054,7 +5054,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2607-6d97-aef5-e301" name="Arioch Titan Power Claw" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="2607-6d97-aef5-e301" name="Arioch Titan Power Claw" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e673-831c-f572-4f48" type="max"/>
               </constraints>
@@ -5067,7 +5067,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="cb64-07de-ab14-a93e" name="Macro-Gatling Blaster" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="cb64-07de-ab14-a93e" name="Macro-Gatling Blaster" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b01f-fe33-f866-9ed0" type="max"/>
               </constraints>
@@ -5080,7 +5080,7 @@ D6    Result		S	AP
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6590-e9da-8e4b-f44d" name="Belicosa Pattern Volcano Cannon" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="6590-e9da-8e4b-f44d" name="Belicosa Pattern Volcano Cannon" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ad36-0f10-4cda-cb15" type="max"/>
               </constraints>
@@ -5100,9 +5100,9 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="3250.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="31af-e5e2-8167-a480" name="Battlescape" publicationId="ca571888--pubN73996" page="122" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="31af-e5e2-8167-a480" name="Battlescape" publicationId="ca571888--pubN73996" page="122" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="2ae2-373e-7f2e-0dbd" name="Battlescape" publicationId="ca571888--pubN73996" page="122" hidden="false" typeId="c2e2-42f3-9e28-c3fa" typeName="Terrain">
+        <profile id="2ae2-373e-7f2e-0dbd" name="Battlescape" publicationId="ca571888--pubN73996" page="122" hidden="false" typeId="c2e2-42f3-9e28-c3fa" typeName="Fortification/Terrain">
           <characteristics>
             <characteristic name="Composition" typeId="d34f-9153-d292-adab">1 Battlescape</characteristic>
             <characteristic name="Terrain type" typeId="98d6-2143-3017-6d46">Dangerous Terrain</characteristic>
@@ -5122,7 +5122,7 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7507-ce88-4e5a-ccc2" name="Crashed Imperial Lander" publicationId="ca571888--pubN73996" page="123" hidden="false" collective="false" type="model">
+    <selectionEntry id="7507-ce88-4e5a-ccc2" name="Crashed Imperial Lander" publicationId="ca571888--pubN73996" page="123" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="c501-5663-8d53-3f9b" name="Crashed Imperial Lander" hidden="false" typeId="c2e2-42f3-9e28-c3fa" typeName="Fortification/Terrain">
           <characteristics>
@@ -5154,7 +5154,7 @@ Immediately place an objective marker within 3&quot; of any part of the Crashed 
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3027-0a29-19c0-40f5" name="Moonscape" publicationId="ca571888--pubN73996" page="125" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="3027-0a29-19c0-40f5" name="Moonscape" publicationId="ca571888--pubN73996" page="125" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="d61e-492c-cf78-828e" name="Moonscape" publicationId="ca571888--pubN94477" page="125" hidden="false" typeId="c2e2-42f3-9e28-c3fa" typeName="Fortification/Terrain">
           <characteristics>
@@ -5176,7 +5176,7 @@ Immediately place an objective marker within 3&quot; of any part of the Crashed 
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6eec-767d-0b14-95ab" name="Questoris Knight Dominus" publicationId="ca571888--pubN94574" page="" hidden="false" collective="false" type="model">
+    <selectionEntry id="6eec-767d-0b14-95ab" name="Questoris Knight Dominus" publicationId="ca571888--pubN94574" page="" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="a3b2-1faa-b33e-2e3d" name="Questoris Knight Dominus" publicationId="ca571888--pubN94574" page="" hidden="false" typeId="0694-6ddb-9e1d-40bd" typeName="Super-heavy Walker">
           <characteristics>
@@ -5197,7 +5197,7 @@ Immediately place an objective marker within 3&quot; of any part of the Crashed 
         <infoLink id="8c07-caf0-2bff-3f08" name="Ion Shield" hidden="false" targetId="342d5e83-9f9b-42c0-cecb-e6c9c197ab9d" type="profile"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry id="09cb-c235-3d33-c28d" name="Twin-Linked Meltaguns" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="09cb-c235-3d33-c28d" name="Twin-Linked Meltaguns" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3675-d6da-3a78-3ad0" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0317-e7c9-7800-00ec" type="min"/>
@@ -5211,18 +5211,18 @@ Immediately place an objective marker within 3&quot; of any part of the Crashed 
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="3847-b91a-939b-e57b" name="May be upgraded with:" hidden="false" collective="false">
+        <selectionEntryGroup id="3847-b91a-939b-e57b" name="May be upgraded with:" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink id="fd0e-d219-805e-fdaf" name="Occular Augmetics" hidden="false" collective="false" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
+            <entryLink id="fd0e-d219-805e-fdaf" name="Occular Augmetics" hidden="false" collective="false" import="true" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="47e0-33bf-7ed9-db78" name="May take Three of the following carapace weapons:" hidden="false" collective="false" defaultSelectionEntryId="f687-ee00-9d48-f14d">
+        <selectionEntryGroup id="47e0-33bf-7ed9-db78" name="May take Three of the following carapace weapons:" hidden="false" collective="false" import="true" defaultSelectionEntryId="f687-ee00-9d48-f14d">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b075-2282-b17f-b2b3" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="57f7-1cbf-a142-c87c" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="f687-ee00-9d48-f14d" name="Twin-Linked Siegebreaker Cannon" publicationId="ca571888--pubN94574" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="f687-ee00-9d48-f14d" name="Twin-Linked Siegebreaker Cannon" publicationId="ca571888--pubN94574" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b6f-06d6-d6ec-6715" type="max"/>
               </constraints>
@@ -5240,7 +5240,7 @@ Immediately place an objective marker within 3&quot; of any part of the Crashed 
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="35d2-a3b3-5853-36f6" name="Two Shieldbreaker Missiles" publicationId="ca571888--pubN94574" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="35d2-a3b3-5853-36f6" name="Two Shieldbreaker Missiles" publicationId="ca571888--pubN94574" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8041-348e-4cee-f2ea" type="max"/>
               </constraints>
@@ -5260,18 +5260,18 @@ Immediately place an objective marker within 3&quot; of any part of the Crashed 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="9cd8-0c11-3a8c-a176" name="May take 2 weapons for the following" hidden="false" collective="false" defaultSelectionEntryId="7ce7-0abc-5ee8-7760">
+        <selectionEntryGroup id="9cd8-0c11-3a8c-a176" name="May take 2 weapons for the following" hidden="false" collective="false" import="true" defaultSelectionEntryId="7ce7-0abc-5ee8-7760">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1621-d6c6-49d7-9982" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a901-f6e4-e3b1-5aa5" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="7ce7-0abc-5ee8-7760" name="Canflagration Cannon" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="7ce7-0abc-5ee8-7760" name="Canflagration Cannon" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="938b-92e7-d38d-bf9c" type="max"/>
               </constraints>
               <profiles>
-                <profile id="ff17-70e2-8229-d57f" name="Conflagration Cannon" publicationId="ca571888--pubN94574" page="" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+                <profile id="ff17-70e2-8229-d57f" name="Conflagration Cannon" publicationId="ca571888--pubN94574" page="" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="52616e676523232344415441232323">Hellstorm</characteristic>
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
@@ -5284,12 +5284,12 @@ Immediately place an objective marker within 3&quot; of any part of the Crashed 
                 <cost name="pts" typeId="points" value="30.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8b49-18a1-9b65-1cac" name="Plasma Decimator" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="8b49-18a1-9b65-1cac" name="Plasma Decimator" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="558f-f728-39a9-49d6" type="max"/>
               </constraints>
               <profiles>
-                <profile id="4bf5-2c1d-2e7a-ddd5" name="Plasma Decimator" publicationId="ca571888--pubN94574" page="" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+                <profile id="4bf5-2c1d-2e7a-ddd5" name="Plasma Decimator" publicationId="ca571888--pubN94574" page="" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
@@ -5302,12 +5302,12 @@ Immediately place an objective marker within 3&quot; of any part of the Crashed 
                 <cost name="pts" typeId="points" value="55.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="a5ae-f632-aae1-a99c" name="Thundercoil Harpoon" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="a5ae-f632-aae1-a99c" name="Thundercoil Harpoon" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a84b-0f85-ac03-69db" type="max"/>
               </constraints>
               <profiles>
-                <profile id="2b58-4c2a-dd23-b822" name="Thundercoil Harpoon" publicationId="ca571888--pubN94574" page="" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+                <profile id="2b58-4c2a-dd23-b822" name="Thundercoil Harpoon" publicationId="ca571888--pubN94574" page="" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot;</characteristic>
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">10</characteristic>
@@ -5325,12 +5325,12 @@ Immediately place an objective marker within 3&quot; of any part of the Crashed 
                 <cost name="pts" typeId="points" value="50.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9438-64ab-798b-4ade" name="Volcano Lance" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="9438-64ab-798b-4ade" name="Volcano Lance" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2577-986e-d563-93ea" type="max"/>
               </constraints>
               <profiles>
-                <profile id="b839-ed30-5604-100f" name="Volcano Lance" publicationId="ca571888--pubN94574" page="" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+                <profile id="b839-ed30-5604-100f" name="Volcano Lance" publicationId="ca571888--pubN94574" page="" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="52616e676523232344415441232323">80&quot;</characteristic>
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
@@ -5347,25 +5347,25 @@ Immediately place an objective marker within 3&quot; of any part of the Crashed 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="84e9-a8fd-9156-746f" name="Household Rank" hidden="false" collective="false" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
+        <entryLink id="84e9-a8fd-9156-746f" name="Household Rank" hidden="false" collective="false" import="true" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="360.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5a90-c53e-42ca-b4ca" name="Use Playtest Rules" hidden="false" collective="false" type="upgrade">
+    <selectionEntry id="5a90-c53e-42ca-b4ca" name="Use Playtest Rules" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5689-da9b-d725-fba5" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0192-7b62-a073-5de2" type="min"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup id="07c4-d0fe-fd44-2d95" name="Playtest Rules" hidden="false" collective="false">
+        <selectionEntryGroup id="07c4-d0fe-fd44-2d95" name="Playtest Rules" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73ac-4862-2458-05c0" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02f9-9ad9-d292-4437" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="0343-7621-54c5-6f8a" name="Playtest Rules Off" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="0343-7621-54c5-6f8a" name="Playtest Rules Off" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bf1-5154-bfdd-d538" type="max"/>
               </constraints>
@@ -5373,7 +5373,7 @@ Immediately place an objective marker within 3&quot; of any part of the Crashed 
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="dace-8f0f-e696-8179" name="Playtest Rules On" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="dace-8f0f-e696-8179" name="Playtest Rules On" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb00-f224-a205-fac5" type="max"/>
               </constraints>
@@ -5394,9 +5394,9 @@ Please let us know what worked well as a part of these rules and also what could
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ecb3-83b9-4ba7-47a9" name="Legio Titanicus Warbringer Nemesis Titan" publicationId="ca571888--pubN95721" page="" hidden="false" collective="false" type="model">
+    <selectionEntry id="ecb3-83b9-4ba7-47a9" name="Legio Titanicus Warbringer Nemesis Titan" publicationId="ca571888--pubN95721" page="" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="c6b0-382e-4882-7efa" name="Warbringer Nemesis Titan" page="" hidden="false" typeId="57616c6b657223232344415441232323" typeName="">
+        <profile id="c6b0-382e-4882-7efa" name="Warbringer Nemesis Titan" page="" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
           <characteristics>
             <characteristic name="WS" typeId="575323232344415441232323">2</characteristic>
             <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
@@ -5410,7 +5410,7 @@ Please let us know what worked well as a part of these rules and also what could
             <characteristic name="Type" typeId="5479706523232344415441232323">Super-heavy Walker</characteristic>
           </characteristics>
         </profile>
-        <profile id="31e5-5ce9-aad2-cb6c" name="Void Shields (6)" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="">
+        <profile id="31e5-5ce9-aad2-cb6c" name="Void Shields (6)" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A Legio Titanicus Warbringer Nemesis Titan has six void shields. Each hit scored against a Warbringer Nemesis Titan will instead hit a void shield (whilst at least one remains active). Close combat attacks come from inside the shield and therefore are not stopped. Void shields have an Armour Value of 12. A glancing hit or penetrating hit (or any hit from a Destroyer weapon) scored against a void shield causes it to collapse. After all void shields have collapsed, further hits strike the Warbringer Nemesis Titan instead. At the end of each of the Titan’s turns, roll a D6 for each collapsed void shield; each roll of 5+ instantly restores one collapsed shield. </characteristic>
           </characteristics>
@@ -5437,13 +5437,13 @@ or Gargantuan Creatures. </description>
         <infoLink id="6d81-aecb-7a2a-61fb" name="God-Engine" hidden="false" targetId="666f-e93b-4f0b-ae40" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="9ad3-c30e-19bf-0406" name="Two Carapace-mounted Defence Batteries" hidden="false" collective="false" defaultSelectionEntryId="376b-fc9a-be57-8112">
+        <selectionEntryGroup id="9ad3-c30e-19bf-0406" name="Two Carapace-mounted Defence Batteries" hidden="false" collective="false" import="true" defaultSelectionEntryId="376b-fc9a-be57-8112">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e2b2-1de0-8cdb-e274" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="67d9-a0c6-34ba-a021" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="376b-fc9a-be57-8112" name="Anvillus Pattern Defence Batteries" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="376b-fc9a-be57-8112" name="Anvillus Pattern Defence Batteries" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="2bdb-ab9d-2003-1f5d" name="Anvillus Pattern Defence Batteries" hidden="false" targetId="a168-873e-7e5e-ccc9" type="profile"/>
               </infoLinks>
@@ -5453,13 +5453,13 @@ or Gargantuan Creatures. </description>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="9d1b-5e93-5172-5776" name="Primary Weapon Right Arm" hidden="false" collective="false">
+        <selectionEntryGroup id="9d1b-5e93-5172-5776" name="Primary Weapon Right Arm" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="55a2-127b-d9d1-e650" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cffb-0a62-f9ab-fb48" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="a8f9-1828-5251-f922" name="Gatling Blaster" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="a8f9-1828-5251-f922" name="Gatling Blaster" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fbda-b087-7a51-8592" type="max"/>
               </constraints>
@@ -5472,7 +5472,7 @@ or Gargantuan Creatures. </description>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="40e4-c1b3-b4cd-a82b" name="Volcano Cannon" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="40e4-c1b3-b4cd-a82b" name="Volcano Cannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="15f0-3aee-e908-b040" type="max"/>
               </constraints>
@@ -5484,7 +5484,7 @@ or Gargantuan Creatures. </description>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="16f3-f049-3d19-450a" name="Melta Cannon" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="16f3-f049-3d19-450a" name="Melta Cannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="02bd-d04b-c034-a9a7" type="max"/>
               </constraints>
@@ -5496,7 +5496,7 @@ or Gargantuan Creatures. </description>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f51a-ef5d-f24c-1973" name="Reaver Laser Blasters" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="f51a-ef5d-f24c-1973" name="Reaver Laser Blasters" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1b9c-4da2-9f8e-172e" type="max"/>
               </constraints>
@@ -5510,13 +5510,13 @@ or Gargantuan Creatures. </description>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="1f0d-dc4d-2872-7e74" name="Primary Weapon Left Arm" hidden="false" collective="false">
+        <selectionEntryGroup id="1f0d-dc4d-2872-7e74" name="Primary Weapon Left Arm" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9f27-67a5-f9b6-7012" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a499-a415-eb9e-e8d2" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="c3f7-7c15-b84f-a0c3" name="Gatling Blaster" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="c3f7-7c15-b84f-a0c3" name="Gatling Blaster" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="957f-6d4b-7d44-a375" type="max"/>
               </constraints>
@@ -5529,7 +5529,7 @@ or Gargantuan Creatures. </description>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7c41-9781-002d-5c87" name="Volcano Cannon" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="7c41-9781-002d-5c87" name="Volcano Cannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7311-11d1-bbc0-e050" type="max"/>
               </constraints>
@@ -5541,7 +5541,7 @@ or Gargantuan Creatures. </description>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="cd90-1539-da16-bb53" name="Melta Cannon" page="0" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="cd90-1539-da16-bb53" name="Melta Cannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9840-0c18-7d28-6514" type="max"/>
               </constraints>
@@ -5553,7 +5553,7 @@ or Gargantuan Creatures. </description>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="40d2-31cb-3962-2a8b" name="Reaver Laser Blasters" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="40d2-31cb-3962-2a8b" name="Reaver Laser Blasters" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1ee3-dc32-c49b-bfa2" type="max"/>
               </constraints>
@@ -5567,15 +5567,15 @@ or Gargantuan Creatures. </description>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="3b54-0c6e-30ad-3e27" name="Threee Adrex-Defensor Mauler Bolt Cannon Turrets" hidden="false" collective="false" defaultSelectionEntryId="8a4c-3934-9d2d-e670">
+        <selectionEntryGroup id="3b54-0c6e-30ad-3e27" name="Threee Adrex-Defensor Mauler Bolt Cannon Turrets" hidden="false" collective="false" import="true" defaultSelectionEntryId="8a4c-3934-9d2d-e670">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="572d-eab1-fc8a-3912" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1337-27d5-d779-e147" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="8a4c-3934-9d2d-e670" name="Ardex-defensor Mauler bolt cannon turret" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="8a4c-3934-9d2d-e670" name="Ardex-defensor Mauler bolt cannon turret" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
-                <profile id="8354-9c06-c9d1-b71b" name="Ardex-defensor Mauler bolt cannon turret" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+                <profile id="8354-9c06-c9d1-b71b" name="Ardex-defensor Mauler bolt cannon turret" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -5590,13 +5590,13 @@ or Gargantuan Creatures. </description>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="62a9-3f80-fee9-bfe9" name="Carapace-mounted Nemesis Quake Cannon" hidden="false" collective="false">
+        <selectionEntryGroup id="62a9-3f80-fee9-bfe9" name="Carapace-mounted Nemesis Quake Cannon" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9bb3-21e3-fb5d-7044" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="287e-49c4-b20a-f9e8" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="3ec1-bf53-374d-1fa3" name="Nemesis Quake Cannon" hidden="false" collective="false" type="upgrade">
+            <selectionEntry id="3ec1-bf53-374d-1fa3" name="Nemesis Quake Cannon" hidden="false" collective="false" import="true" type="upgrade">
               <rules>
                 <rule id="5c15-bf8d-bf0d-65f6" name="Seismic Shock" hidden="false">
                   <description>Units which suffer wounds or Hull points lost from this attack may only move at half their usual maximum movement, may not Run, charge or go Flat Out, and count as being in dangerous terrain on their next turn.</description>
@@ -5619,13 +5619,13 @@ or Gargantuan Creatures. </description>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="64e8-ec7c-e5d8-6767" name="Force Organization Chart" hidden="false" collective="false">
+    <selectionEntryGroup id="64e8-ec7c-e5d8-6767" name="Force Organization Chart" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2f37-7517-c908-edb1" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="618a-5732-e525-55ba" type="min"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="9b47-1e07-98eb-1a50" name="Strategic Raid" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="9b47-1e07-98eb-1a50" name="Strategic Raid" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="665f-6735-42bf-f614" value="0">
               <conditionGroups>
@@ -5642,13 +5642,13 @@ or Gargantuan Creatures. </description>
             <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="665f-6735-42bf-f614" type="max"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup id="931a-7ef6-812e-9e31" name="Detachments" hidden="false" collective="false" defaultSelectionEntryId="e16c-6219-cacc-ad8f">
+            <selectionEntryGroup id="931a-7ef6-812e-9e31" name="Detachments" hidden="false" collective="false" import="true" defaultSelectionEntryId="e16c-6219-cacc-ad8f">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7568-430f-9544-a290" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2c02-08fa-6a10-f515" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="e16c-6219-cacc-ad8f" name=" Raider Primary Detachment" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="e16c-6219-cacc-ad8f" name=" Raider Primary Detachment" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0077-08a8-cc13-52d6" type="max"/>
                     <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="628a-be9a-2a03-ed82" type="max"/>
@@ -5672,7 +5672,7 @@ The Element of Surprise: Prior to any rolls for for first turn or units are depl
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="fc71-c60e-a448-4de1" name=" Garrison Primary Detachment" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="fc71-c60e-a448-4de1" name=" Garrison Primary Detachment" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1a94-1ab0-1307-4604" type="max"/>
                     <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eac5-3e2e-a441-2834" type="max"/>
@@ -5690,7 +5690,7 @@ Fortress-bound: Each fortification deployed on the table must be occupied by at 
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="cd56-c5b6-35fb-b4b3" name="Fortification" hidden="false" collective="false" targetId="66c9-eaa6-a91a-00ed" type="selectionEntry">
+                <entryLink id="cd56-c5b6-35fb-b4b3" name="Fortification" hidden="false" collective="false" import="true" targetId="66c9-eaa6-a91a-00ed" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
                       <conditions>
@@ -5706,7 +5706,7 @@ Fortress-bound: Each fortification deployed on the table must be occupied by at 
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="00de-3f7a-714a-0dba" name="City Fight" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="00de-3f7a-714a-0dba" name="City Fight" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="ecdb-74bf-6ff5-0ebc" value="0">
               <conditionGroups>
@@ -5723,13 +5723,13 @@ Fortress-bound: Each fortification deployed on the table must be occupied by at 
             <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="ecdb-74bf-6ff5-0ebc" type="max"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup id="4bd9-86ba-e5d7-ba36" name="Detachments" hidden="false" collective="false" defaultSelectionEntryId="dc72-082d-808e-dd2f">
+            <selectionEntryGroup id="4bd9-86ba-e5d7-ba36" name="Detachments" hidden="false" collective="false" import="true" defaultSelectionEntryId="dc72-082d-808e-dd2f">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aa9e-eb76-1c9c-395d" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e829-09e5-5020-b258" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="dc72-082d-808e-dd2f" name=" Incursion Force Primary Detachment" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="dc72-082d-808e-dd2f" name=" Incursion Force Primary Detachment" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="970b-5a6a-6f88-5ffc" value="0.0">
                       <conditions>
@@ -5754,7 +5754,7 @@ Command Benefits:
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="c9fd-8e3f-eaa7-b788" name=" Entrenched Force Primary Detachment" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="c9fd-8e3f-eaa7-b788" name=" Entrenched Force Primary Detachment" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="8e13-a4f3-ae37-b5fd" value="0.0">
                       <conditions>
@@ -5779,7 +5779,7 @@ Command Benefits:
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="4635-338b-aef0-a2cc" name=" Incursion Force Sub-Detachment" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="4635-338b-aef0-a2cc" name=" Incursion Force Sub-Detachment" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
                       <conditions>
@@ -5806,7 +5806,7 @@ Command Benefits:
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="ad49-fe8d-86f5-d24f" name="New EntryLink" hidden="false" collective="false" targetId="66c9-eaa6-a91a-00ed" type="selectionEntry">
+                <entryLink id="ad49-fe8d-86f5-d24f" name="New EntryLink" hidden="false" collective="false" import="true" targetId="66c9-eaa6-a91a-00ed" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
                       <conditions>
@@ -5824,9 +5824,9 @@ Command Benefits:
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="01af-22d5-fd2f-36cc" name="Weapons" hidden="false" collective="false">
+    <selectionEntryGroup id="01af-22d5-fd2f-36cc" name="Weapons" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="26db-484d-3757-03c8" name="Lightning Claw" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="26db-484d-3757-03c8" name="Lightning Claw" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b2ab-5b47-b382-d02f" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a9e5-a5ea-e60f-8cc7" type="min"/>
@@ -5840,7 +5840,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4b1e-680b-1d39-e4f1" name="Chainsword/Combat Blade" hidden="false" collective="true" type="upgrade">
+        <selectionEntry id="4b1e-680b-1d39-e4f1" name="Chainsword/Combat Blade" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2adf-e0a8-708b-592c" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="959a-1ceb-61ef-849d" type="min"/>
@@ -5852,7 +5852,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="67d0-a3f7-8e19-693b" name="Pair of Lightning Claws" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="67d0-a3f7-8e19-693b" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0957-2766-a673-37ba" type="max"/>
           </constraints>
@@ -5865,7 +5865,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="30.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a3a3-3a90-0c2a-cd81" name="Chainaxe" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="a3a3-3a90-0c2a-cd81" name="Chainaxe" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="475f-95c0-81a4-64ba" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="addb-df93-241e-9490" type="min"/>
@@ -5877,7 +5877,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f832-f4b2-6aaf-ad83" name="Plasma Pistol" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="f832-f4b2-6aaf-ad83" name="Plasma Pistol" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="190e-3e42-ee0a-f3e6" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7961-051b-bb8e-f818" type="min"/>
@@ -5890,7 +5890,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="d6f9-09fd-83af-070d" name="Bolter" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="d6f9-09fd-83af-070d" name="Bolter" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6998-99c8-4e3d-578d" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="67e1-fedb-6a33-d64a" type="max"/>
@@ -5902,7 +5902,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6026-d507-935a-7200" name="Bolt Pistol" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="6026-d507-935a-7200" name="Bolt Pistol" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6111-e880-a0df-36fa" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d3c-4f23-1a69-6717" type="min"/>
@@ -5914,7 +5914,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ae27-c659-fffd-1561" name="Volkite Serpenta" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="ae27-c659-fffd-1561" name="Volkite Serpenta" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e51d-cf89-f58a-6004" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6cee-d919-d130-3e75" type="min"/>
@@ -5927,7 +5927,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="fcef-f5ac-16a3-9401" name="Power Fist" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="fcef-f5ac-16a3-9401" name="Power Fist" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="name" value="Power Fist"/>
           </modifiers>
@@ -5944,7 +5944,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="925c-50d4-0101-e0e7" name="Thunder Hammer" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="925c-50d4-0101-e0e7" name="Thunder Hammer" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b12c-09c9-fd19-2a1d" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0f2c-c897-e533-4474" type="min"/>
@@ -5959,18 +5959,18 @@ Command Benefits:
             <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e890-52eb-3444-c6c7" name="Power Weapon" hidden="false" collective="true" type="upgrade">
+        <selectionEntry id="e890-52eb-3444-c6c7" name="Power Weapon" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0783-9ec4-693a-3532" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="8546-b80f-1e54-e78b" name="Power Weapon" hidden="false" collective="false" targetId="0f0b-0093-d9c8-7c42" type="selectionEntryGroup"/>
+            <entryLink id="8546-b80f-1e54-e78b" name="Power Weapon" hidden="false" collective="false" import="true" targetId="0f0b-0093-d9c8-7c42" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4cc6-e521-dc9a-c117" name="Flamer" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="4cc6-e521-dc9a-c117" name="Flamer" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="370c-bef4-57de-012c" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d959-13c5-ea05-7984" type="min"/>
@@ -5982,7 +5982,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f0c0-384d-440f-c03b" name="Volkite Charger" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="f0c0-384d-440f-c03b" name="Volkite Charger" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1823-e312-2e06-58c9" type="max"/>
           </constraints>
@@ -5994,7 +5994,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a22d-ceac-5063-54e1" name="Meltagun" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="a22d-ceac-5063-54e1" name="Meltagun" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c23b-b876-e683-4f04" type="max"/>
           </constraints>
@@ -6006,7 +6006,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="0f13-bded-1c10-bc38" name="Plasma gun" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="0f13-bded-1c10-bc38" name="Plasma gun" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5f3e-444b-2315-5e66" type="max"/>
           </constraints>
@@ -6018,7 +6018,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e5d6-fa88-86d5-2adc" name="Heavy Flamer" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="e5d6-fa88-86d5-2adc" name="Heavy Flamer" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ea99-b473-04e2-ed0e" type="max"/>
           </constraints>
@@ -6029,7 +6029,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4c62-8983-4a1b-d1c6" name="Melta Bombs" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="4c62-8983-4a1b-d1c6" name="Melta Bombs" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="158e-f59d-c9bf-b870" type="max"/>
           </constraints>
@@ -6041,7 +6041,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="81ad-7f0f-bf68-9139" name="Heavy Chainsword" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="81ad-7f0f-bf68-9139" name="Heavy Chainsword" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3084-84ae-fa24-4036" type="max"/>
           </constraints>
@@ -6052,7 +6052,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="0775-7571-0c0f-ca21" name="Heavy Bolter and Suspensor Web" page="0" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="0775-7571-0c0f-ca21" name="Heavy Bolter and Suspensor Web" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="49dd-cdc4-b1c3-800d" type="max"/>
           </constraints>
@@ -6060,7 +6060,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8447-9662-22bd-5c6c" name="Graviton Gun" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="8447-9662-22bd-5c6c" name="Graviton Gun" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="09d3-f257-408b-f1aa" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="71af-2e00-d2f7-87c7" type="min"/>
@@ -6075,7 +6075,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5fe0-432a-1edf-00a3" name="Lascutter" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="5fe0-432a-1edf-00a3" name="Lascutter" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="95c1-bc99-f4e4-e1dd" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ec3f-b81d-66e6-1155" type="min"/>
@@ -6089,12 +6089,12 @@ Command Benefits:
             <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="0267-083e-86de-3c0f" name="Breaching Charge" publicationId="ca571888--pubN99753" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="0267-083e-86de-3c0f" name="Breaching Charge" publicationId="ca571888--pubN99753" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7e20-c85a-2e04-dd0b" name="Augury Scanner" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="7e20-c85a-2e04-dd0b" name="Augury Scanner" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4bba-3258-3c50-11a3" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5373-f7e8-a8b3-abc5" type="min"/>
@@ -6108,9 +6108,9 @@ Command Benefits:
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="ad79-71e5-7cbe-ec05" name="Weapons and Wargear - Profile" hidden="false" collective="false">
+    <selectionEntryGroup id="ad79-71e5-7cbe-ec05" name="Weapons and Wargear - Profile" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="1087-66c1-c342-9cdc" name="Chainswords/Combat Blades" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="1087-66c1-c342-9cdc" name="Chainswords/Combat Blades" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="faf6-af13-1b26-b564" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e90f-f90c-c522-955a" type="min"/>
@@ -6122,7 +6122,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="fe8d-1baa-d58d-00bc" name="Bolt Pistols" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="fe8d-1baa-d58d-00bc" name="Bolt Pistols" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0319-1d67-55e9-f6b6" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fb7c-f30f-705b-5a92" type="min"/>
@@ -6134,7 +6134,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="bdb7-38c9-5aeb-fc05" name="Jump Packs" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="bdb7-38c9-5aeb-fc05" name="Jump Packs" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7128-471b-8a5a-7e28" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="28e0-a554-ff25-23bd" type="min"/>
@@ -6149,7 +6149,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="0a96-04b6-7340-91a4" name="Power Armour" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="0a96-04b6-7340-91a4" name="Power Armour" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dc94-642f-394e-463d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ceed-2412-dfeb-bceb" type="min"/>
@@ -6165,7 +6165,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="0a53-b471-df87-7b83" name="Frag and Krak Grenades" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="0a53-b471-df87-7b83" name="Frag and Krak Grenades" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f610-4a8f-a2ea-f874" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1e5b-5f34-1886-673c" type="min"/>
@@ -6174,12 +6174,13 @@ Command Benefits:
             <infoLink id="dd55-88e3-9351-e96e" name="New InfoLink" hidden="false" targetId="d890-1b84-bbd9-12d3" type="profile"/>
             <infoLink id="a7b7-4101-28f0-fc1a" name="New InfoLink" hidden="false" targetId="9430-a4d5-6f01-57e2" type="rule"/>
             <infoLink id="2907-df2d-6744-816c" name="New InfoLink" hidden="false" targetId="d9f7-775b-1047-f335" type="profile"/>
+            <infoLink id="5f62-6dea-35f7-c9bb" name="Krak Grenade (Assault)" hidden="false" targetId="ba14-6731-7c9d-ef15" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ac90-ce47-65c6-f5f3" name="Bolters" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="ac90-ce47-65c6-f5f3" name="Bolters" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0b76-a294-9e00-123a" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="15fa-e779-fdd7-37df" type="max"/>
@@ -6191,7 +6192,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8e2a-0525-9100-3264" name="Bolt Pistol" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="8e2a-0525-9100-3264" name="Bolt Pistol" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8271-1c9f-64e5-e453" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c778-3da5-322d-714f" type="min"/>
@@ -6203,7 +6204,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a76d-339e-15a2-0352" name="Chainsword" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="a76d-339e-15a2-0352" name="Chainsword" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dc34-4030-62a0-ddc4" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8a8c-15f3-2875-b314" type="min"/>
@@ -6215,7 +6216,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a594-b698-7f94-627f" name="Narthecium" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="a594-b698-7f94-627f" name="Narthecium" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0b52-b119-5521-4267" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cf63-c545-8fbb-0457" type="min"/>
@@ -6227,7 +6228,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1488-81b8-f0ad-3703" name="Plasma Grenades" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="1488-81b8-f0ad-3703" name="Plasma Grenades" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="125a-4acf-2ca2-90e5" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f91e-a871-567b-f40d" type="min"/>
@@ -6240,19 +6241,20 @@ Command Benefits:
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="9ab7-4eee-d3f0-25a1" name="Krak Grenades" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="9ab7-4eee-d3f0-25a1" name="Krak Grenades" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20a3-6d34-a27c-36ee" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e126-a876-27ab-1181" type="min"/>
           </constraints>
           <infoLinks>
             <infoLink id="e3dd-22fb-41ed-9834" name="New InfoLink" hidden="false" targetId="d9f7-775b-1047-f335" type="profile"/>
+            <infoLink id="5a8b-9413-6f20-4dd3" name="Krak Grenade (Assault)" hidden="false" targetId="ba14-6731-7c9d-ef15" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3060-5ce0-cb9d-3bbd" name="Close Combat Weapon" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="3060-5ce0-cb9d-3bbd" name="Close Combat Weapon" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e6f-3983-0fb3-983f" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0563-ac8e-0a63-4eff" type="min"/>
@@ -6266,9 +6268,9 @@ Command Benefits:
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="7915-7b0d-2b34-118e" name="Descriptors" hidden="false" collective="false">
+    <selectionEntryGroup id="7915-7b0d-2b34-118e" name="Descriptors" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="4cd1-d102-88dd-9b38" name="Infantry" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="4cd1-d102-88dd-9b38" name="Infantry" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="43e3-1eeb-62b7-b5b0" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6580-9c11-e898-3f55" type="max"/>
@@ -6277,7 +6279,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="9e28-1eb9-08cf-c83d" name="Jump Infantry" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="9e28-1eb9-08cf-c83d" name="Jump Infantry" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="67ea-2c00-a56f-d635" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="028c-5309-50c9-ac5d" type="max"/>
@@ -6288,9 +6290,9 @@ Command Benefits:
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="490e-24da-8462-d98c" name="Wargear Vehicles" hidden="false" collective="false">
+    <selectionEntryGroup id="490e-24da-8462-d98c" name="Wargear Vehicles" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="eef6-a613-e479-7274" name="Armoured Ceramite" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="eef6-a613-e479-7274" name="Armoured Ceramite" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19a6-04bf-902e-faff" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a78-ae84-ef7c-c81b" type="min"/>
@@ -6302,7 +6304,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="da87-4ba8-b8cd-bea3" name="Searchlight" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="da87-4ba8-b8cd-bea3" name="Searchlight" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc98-69df-fbda-61b2" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95be-bfe6-c04c-fab4" type="min"/>
@@ -6314,7 +6316,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="1.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a6cd-f04b-711e-c083" name="Extra Armour" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="a6cd-f04b-711e-c083" name="Extra Armour" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b17f-93b8-0d8c-a7db" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="131b-e239-1cea-ac3d" type="min"/>
@@ -6326,7 +6328,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7332-4181-03b9-d402" name="Flare Shield" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="7332-4181-03b9-d402" name="Flare Shield" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e4e-1afa-1f33-9202" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e0a-b412-ec2c-d2ac" type="min"/>
@@ -6338,7 +6340,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f30a-210c-0677-1c83" name="Machine Spirit" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="f30a-210c-0677-1c83" name="Machine Spirit" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d7b-db6d-0d90-5944" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3955-2494-4430-729d" type="min"/>
@@ -6353,9 +6355,9 @@ Command Benefits:
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="148f-80a0-567b-5c87" name="Wargear Vehicles - Profile" hidden="false" collective="false">
+    <selectionEntryGroup id="148f-80a0-567b-5c87" name="Wargear Vehicles - Profile" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="ca5e-98e3-dff7-fa49" name="Armoured Ceramite" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="ca5e-98e3-dff7-fa49" name="Armoured Ceramite" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb80-42a2-aa2d-5e3a" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6be5-dd8e-96da-604f" type="min"/>
@@ -6367,7 +6369,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7b19-0e33-9c8d-e56a" name="Searchlight" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="7b19-0e33-9c8d-e56a" name="Searchlight" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0694-665e-e4ed-7e37" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13ec-a328-f762-6b4d" type="min"/>
@@ -6379,7 +6381,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4167-42c8-42d8-1ce0" name="Extra Armour" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="4167-42c8-42d8-1ce0" name="Extra Armour" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8702-8242-0b63-3471" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c55-d80f-7f28-0ec6" type="min"/>
@@ -6391,7 +6393,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="da74-5542-17da-8a49" name="Machine Spirit" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="da74-5542-17da-8a49" name="Machine Spirit" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a31-6dc0-a544-fdd7" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="680e-4bd9-603f-949f" type="min"/>
@@ -6404,7 +6406,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5627-96b7-0b67-5274" name="Flare Shield" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="5627-96b7-0b67-5274" name="Flare Shield" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac16-3527-3d5d-4db4" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="822a-6a29-e1ea-ae68" type="min"/>
@@ -6418,9 +6420,9 @@ Command Benefits:
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="dff8-d7b6-960a-aa5b" name="A single Maniple may be upgraded with:" hidden="false" collective="false">
+    <selectionEntryGroup id="dff8-d7b6-960a-aa5b" name="A single Maniple may be upgraded with:" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="2949-16a3-071b-d0b9" name="Paragon of Metal" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="2949-16a3-071b-d0b9" name="Paragon of Metal" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0716-a566-b315-297d" type="max"/>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="81dd-8b1b-7229-0636" type="max"/>
@@ -6436,12 +6438,12 @@ Command Benefits:
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="8732-6189-cd26-de94" name="Battlements &amp; Battlefield" hidden="false" collective="false">
+    <selectionEntryGroup id="8732-6189-cd26-de94" name="Battlements &amp; Battlefield" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="531f-b464-7260-61c0" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="1ab6-0259-78c2-2859" name="Ammunition Dump" page="" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="1ab6-0259-78c2-2859" name="Ammunition Dump" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="adc4-6993-7e9b-72dc" type="max"/>
           </constraints>
@@ -6452,7 +6454,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e18f-3135-557c-b555" name="Comms Relay" page="" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="e18f-3135-557c-b555" name="Comms Relay" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8995-bdf2-3d31-1950" type="max"/>
           </constraints>
@@ -6463,7 +6465,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="053b-1e04-02d6-0bcb" name="Gun Emplacement with Icarus Lascannon" page="" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="053b-1e04-02d6-0bcb" name="Gun Emplacement with Icarus Lascannon" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="55f8-49ae-4459-4580" type="max"/>
           </constraints>
@@ -6476,7 +6478,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="35.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e8de-684d-09d2-1f63" name="Gun Emplacement with Quad-gun" page="" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="e8de-684d-09d2-1f63" name="Gun Emplacement with Quad-gun" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7139-092c-bb08-430f" type="max"/>
           </constraints>
@@ -6491,12 +6493,12 @@ Command Benefits:
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="6bfa-e532-4165-63ce" name="Buildings List" hidden="false" collective="false">
+    <selectionEntryGroup id="6bfa-e532-4165-63ce" name="Buildings List" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cd03-be61-f336-ac4c" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="3594-c9bd-9bfc-fa77" name="Ammo Store" page="" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="3594-c9bd-9bfc-fa77" name="Ammo Store" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="77bb-8c11-9da3-94db" type="max"/>
           </constraints>
@@ -6507,7 +6509,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="bbdf-d2cf-bce1-d722" name="Booby Traps" page="" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="bbdf-d2cf-bce1-d722" name="Booby Traps" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c8b9-254d-7843-7edd" type="max"/>
           </constraints>
@@ -6518,7 +6520,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="d587-38f9-16c4-dbb1" name="Void Shield" page="" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="d587-38f9-16c4-dbb1" name="Void Shield" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3c7e-a0eb-4461-00af" type="max"/>
           </constraints>
@@ -6529,7 +6531,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="25.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6471-eb40-56de-ff85" name="Searchlight" page="" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="6471-eb40-56de-ff85" name="Searchlight" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a896-e708-1f96-ea24" type="max"/>
           </constraints>
@@ -6540,7 +6542,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="d9d2-78d6-2927-a8b0" name="Escape Hatch" page="" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="d9d2-78d6-2927-a8b0" name="Escape Hatch" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f252-366f-7696-f687" type="max"/>
           </constraints>
@@ -6551,7 +6553,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="25.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="65a8-4315-d746-af28" name="Magos Machine Spirit" page="" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="65a8-4315-d746-af28" name="Magos Machine Spirit" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2f40-dcf0-8f9b-4b12" type="max"/>
           </constraints>
@@ -6564,12 +6566,12 @@ Command Benefits:
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="ad42-921f-358f-2970" name="Obstacles List" hidden="false" collective="false">
+    <selectionEntryGroup id="ad42-921f-358f-2970" name="Obstacles List" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e8d1-a4f4-3a6c-1878" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="bf1d-555b-a16e-8d29" name="Tanglewire" page="" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="bf1d-555b-a16e-8d29" name="Tanglewire" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c01c-615a-ea39-45e3" type="max"/>
           </constraints>
@@ -6580,7 +6582,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="72be-367c-ce98-20db" name="Barricades" page="" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="72be-367c-ce98-20db" name="Barricades" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c39f-64e0-0897-1fad" type="max"/>
           </constraints>
@@ -6591,7 +6593,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="fe7e-1a9a-5566-5e06" name="Tank Traps" page="" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="fe7e-1a9a-5566-5e06" name="Tank Traps" page="" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7b5f-e5d3-b643-5081" type="max"/>
           </constraints>
@@ -6604,13 +6606,13 @@ Command Benefits:
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="0f0b-0093-d9c8-7c42" name="Power Weapon" hidden="false" collective="true" defaultSelectionEntryId="7b92-ab87-86a1-ab2e">
+    <selectionEntryGroup id="0f0b-0093-d9c8-7c42" name="Power Weapon" hidden="false" collective="true" import="true" defaultSelectionEntryId="7b92-ab87-86a1-ab2e">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="90ae-61e8-941e-00ae" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3d94-9aba-a20c-f469" type="min"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="3e90-5ca1-8abe-0275" name="Power Sword" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="3e90-5ca1-8abe-0275" name="Power Sword" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
             <infoLink id="0b41-7749-7d24-594c" name="Power Sword" hidden="false" targetId="038e-23ec-4886-8b00" type="profile"/>
           </infoLinks>
@@ -6618,7 +6620,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7b92-ab87-86a1-ab2e" name="Power Axe" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="7b92-ab87-86a1-ab2e" name="Power Axe" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
             <infoLink id="0dbb-945b-935b-9a25" name="Power Axe" hidden="false" targetId="b3af-1eca-6629-4894" type="profile"/>
             <infoLink id="fae7-3617-3d39-0ae9" name="New InfoLink" hidden="false" targetId="5eea-958c-d623-c3c9" type="rule"/>
@@ -6627,7 +6629,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e8a2-42e8-82a7-8dd9" name="Power Maul" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="e8a2-42e8-82a7-8dd9" name="Power Maul" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
             <infoLink id="59ac-ee08-b8df-12ad" name="Power Maul" hidden="false" targetId="6bbe-f2c1-78e2-da59" type="profile"/>
             <infoLink id="18f0-e669-8978-ef2d" name="New InfoLink" hidden="false" targetId="9d85-46f7-f5e6-a5f7" type="rule"/>
@@ -6636,7 +6638,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="233d-238b-6940-2740" name="Power Lance" hidden="false" collective="false" type="upgrade">
+        <selectionEntry id="233d-238b-6940-2740" name="Power Lance" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="a6c5-2fd6-d84f-90fa" name="Power Lance" hidden="false">
               <description>Power lances have two profiles for both Strength and AP. The first is used only on a turn in which a model charges; the second is used at all other times.</description>
@@ -6651,9 +6653,9 @@ Command Benefits:
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="7680-1e85-7395-a689" name="Psyarkana" publicationId="ca571888--pubN103311" page="Malevolence" hidden="false" collective="false">
+    <selectionEntryGroup id="7680-1e85-7395-a689" name="Psyarkana" publicationId="ca571888--pubN103311" page="Malevolence" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="3d1a-59f3-ca2e-8ded" name="Null-Amp Collars" publicationId="ca571888--pubN103311" page="301" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="3d1a-59f3-ca2e-8ded" name="Null-Amp Collars" publicationId="ca571888--pubN103311" page="301" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3d7b-b723-fe91-659d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d421-c7f1-edd7-3377" type="max"/>
@@ -6669,7 +6671,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="81d0-ac34-007e-570b" name="Empyreal Lances" publicationId="ca571888--pubN103311" page="301" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="81d0-ac34-007e-570b" name="Empyreal Lances" publicationId="ca571888--pubN103311" page="301" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a30b-2040-0ed4-d784" type="max"/>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="82f4-ae22-3d38-823b" type="max"/>
@@ -6696,7 +6698,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e78c-d1a1-c20f-dae8" name="Armatus Necrotechnica" publicationId="ca571888--pubN103311" page="301" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="e78c-d1a1-c20f-dae8" name="Armatus Necrotechnica" publicationId="ca571888--pubN103311" page="301" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19d0-486a-81c9-c2c9" type="max"/>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8c14-fc26-4ba9-2c7e" type="max"/>
@@ -6712,7 +6714,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="50.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="d761-15dd-7631-ba0d" name="Corpus Mymir" publicationId="ca571888--pubN103311" page="303" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="d761-15dd-7631-ba0d" name="Corpus Mymir" publicationId="ca571888--pubN103311" page="303" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8685-10dc-a8bb-ffb4" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a864-37d6-f297-89b1" type="max"/>
@@ -6728,7 +6730,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="30.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="199f-821c-598a-c660" name="Psi-resonant Pentacles" publicationId="ca571888--pubN103311" page="303" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="199f-821c-598a-c660" name="Psi-resonant Pentacles" publicationId="ca571888--pubN103311" page="303" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8353-ff1f-41d1-ebbb" type="max"/>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9e0c-bb16-4174-9cae" type="max"/>
@@ -6744,7 +6746,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f162-9d1e-ca8d-d5f6" name="The Ever-changing Axiom" publicationId="ca571888--pubN103311" page="303" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="f162-9d1e-ca8d-d5f6" name="The Ever-changing Axiom" publicationId="ca571888--pubN103311" page="303" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2687-bd5d-b1c2-f697" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a42-ba40-3f9a-ec6c" type="max"/>
@@ -6760,7 +6762,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="60.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5476-e8db-b6b0-4a1e" name="Tansvectic Generators" publicationId="ca571888--pubN103311" page="304" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="5476-e8db-b6b0-4a1e" name="Tansvectic Generators" publicationId="ca571888--pubN103311" page="304" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f2a-cae1-800f-f177" type="max"/>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="12a1-7d06-e703-7dc2" type="max"/>
@@ -6776,7 +6778,7 @@ Command Benefits:
             <cost name="pts" typeId="points" value="25.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="37fa-ba85-8a35-8977" name="Aetherkine Projectors" publicationId="ca571888--pubN103311" page="304" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="37fa-ba85-8a35-8977" name="Aetherkine Projectors" publicationId="ca571888--pubN103311" page="304" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c395-8b57-0cfa-675b" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57ab-22b8-3bb3-7bb1" type="max"/>
@@ -6830,7 +6832,7 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
             <cost name="pts" typeId="points" value="35.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="66e2-6760-fb6a-edc3" name="Terminal Lucidity Injectors" publicationId="ca571888--pubN103311" page="305" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="66e2-6760-fb6a-edc3" name="Terminal Lucidity Injectors" publicationId="ca571888--pubN103311" page="305" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="df75-0094-c7b0-3dc7" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d005-1cc2-4ec1-c489" type="max"/>
@@ -6846,7 +6848,7 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
             <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="963d-b106-c967-8ba6" name="Empath Bonds" publicationId="ca571888--pubN103311" page="305" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="963d-b106-c967-8ba6" name="Empath Bonds" publicationId="ca571888--pubN103311" page="305" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9dc-8bac-5e29-bc4a" type="max"/>
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c3f4-04b6-ca1c-f585" type="max"/>
@@ -6862,7 +6864,7 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
             <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="d062-ccde-3885-8157" name="Sacrificial Innervation" publicationId="ca571888--pubN103311" page="306" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="d062-ccde-3885-8157" name="Sacrificial Innervation" publicationId="ca571888--pubN103311" page="306" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7de7-bec5-1f64-f21a" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="000d-303a-e0a9-b5b2" type="max"/>
@@ -6878,7 +6880,7 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
             <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="21a0-14df-d719-e116" name="The Digittalis Arcanis" publicationId="ca571888--pubN103311" page="306" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="21a0-14df-d719-e116" name="The Digittalis Arcanis" publicationId="ca571888--pubN103311" page="306" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2eda-f9d5-4dc1-cefd" type="max"/>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b2c7-a2cf-94ce-227c" type="max"/>
@@ -6894,7 +6896,7 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
             <cost name="pts" typeId="points" value="30.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="84c4-786f-c3c8-a450" name="Divining Blades" publicationId="ca571888--pubN103311" page="306" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="84c4-786f-c3c8-a450" name="Divining Blades" publicationId="ca571888--pubN103311" page="306" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5cda-25b2-9e6e-f04b" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f71e-38b3-811c-076a" type="max"/>
@@ -6919,7 +6921,7 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
             <cost name="pts" typeId="points" value="30.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a488-91dd-a866-5fe0" name="Chogorian Dreadplate" publicationId="ca571888--pubN103311" page="307" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="a488-91dd-a866-5fe0" name="Chogorian Dreadplate" publicationId="ca571888--pubN103311" page="307" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c4e7-4ed7-0224-51ef" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22ab-c874-a834-5807" type="max"/>
@@ -6935,7 +6937,7 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
             <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="49dd-55d6-fa07-8cb5" name="The Liber Magra Veneficarum" publicationId="ca571888--pubN103311" page="307" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="49dd-55d6-fa07-8cb5" name="The Liber Magra Veneficarum" publicationId="ca571888--pubN103311" page="307" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="74c1-b6c7-45e1-0c70" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0fa-2229-1501-9310" type="max"/>
@@ -6951,7 +6953,7 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
             <cost name="pts" typeId="points" value="25.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b2fe-de24-0c45-9b4d" name="Icon of the Blazing Sun" publicationId="ca571888--pubN103311" page="307" hidden="true" collective="false" type="upgrade">
+        <selectionEntry id="b2fe-de24-0c45-9b4d" name="Icon of the Blazing Sun" publicationId="ca571888--pubN103311" page="307" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d89-4f2d-91dd-5450" type="max"/>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="fabb-becc-0d5a-548d" type="max"/>
@@ -7861,7 +7863,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
     </rule>
   </sharedRules>
   <sharedProfiles>
-    <profile id="c812-a8fe-2b49-75a5" name="Multi-laser" publicationId="ca571888--pubN84158" page="247" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="c812-a8fe-2b49-75a5" name="Multi-laser" publicationId="ca571888--pubN84158" page="247" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -7869,17 +7871,17 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 3</characteristic>
       </characteristics>
     </profile>
-    <profile id="74effb54-87f7-8481-9e5f-86d9e3ed37c2" name="Battle Servitor Control" publicationId="ca571888--pubN67227" page="43" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="">
+    <profile id="74effb54-87f7-8481-9e5f-86d9e3ed37c2" name="Battle Servitor Control" publicationId="ca571888--pubN67227" page="43" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Provides Tank Hunters special rule.  </characteristic>
       </characteristics>
     </profile>
-    <profile id="4fedc0e6-5d69-1ecd-9624-441e0ea99565" name="Infra-red Targeting" publicationId="ca571888--pubN66500" page="272" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="">
+    <profile id="4fedc0e6-5d69-1ecd-9624-441e0ea99565" name="Infra-red Targeting" publicationId="ca571888--pubN66500" page="272" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Confers Night Vision special rule</characteristic>
       </characteristics>
     </profile>
-    <profile id="0e9bdcf2-a925-e661-dbb5-755ee50c4967" name="Tactical Bombs" publicationId="ca571888--pubN66500" page="272" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="0e9bdcf2-a925-e661-dbb5-755ee50c4967" name="Tactical Bombs" publicationId="ca571888--pubN66500" page="272" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">Bomb</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -7887,12 +7889,12 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Barrage, Bomb, Blast, One Use</characteristic>
       </characteristics>
     </profile>
-    <profile id="c3bb10b0-0ad1-3d7e-5b6e-20b2f57fbaba" name="Chaff/Flare Launchers" publicationId="ca571888--pubN67227" page="90" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="">
+    <profile id="c3bb10b0-0ad1-3d7e-5b6e-20b2f57fbaba" name="Chaff/Flare Launchers" publicationId="ca571888--pubN67227" page="90" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Gains 4++ invulnerable against damage caused by missile weapons. </characteristic>
       </characteristics>
     </profile>
-    <profile id="06710a9d-a2a8-638f-91b0-2af2fb3e95c2" name="Armoured Cockpit" publicationId="ca571888--pubN67227" page="88" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="">
+    <profile id="06710a9d-a2a8-638f-91b0-2af2fb3e95c2" name="Armoured Cockpit" publicationId="ca571888--pubN67227" page="88" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">May ignore Crew shaken or stunned on a D6 roll of 4+</characteristic>
       </characteristics>
@@ -7905,7 +7907,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Rapid Fire</characteristic>
       </characteristics>
     </profile>
-    <profile id="cf65-5d4c-24a3-92d2" name="Archaeotech Pistol" publicationId="ca571888--pubN67227" page="82" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="cf65-5d4c-24a3-92d2" name="Archaeotech Pistol" publicationId="ca571888--pubN67227" page="82" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -7913,12 +7915,12 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Pistol, Master-crafted</characteristic>
       </characteristics>
     </profile>
-    <profile id="379b-7755-6264-0849" name="Cyber-familiar" publicationId="ca571888--pubN67227" page="89" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="">
+    <profile id="379b-7755-6264-0849" name="Cyber-familiar" publicationId="ca571888--pubN67227" page="89" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A Cyber-familiar adds +1 to its owners Invulnerable save (to a maximum of 3++) or provides an Invulnerable save of a 6++.   In addition they allow the owner to re-roll failed characteristic tests other than Leadership tests and failed Dangerous Terrain tests.  </characteristic>
       </characteristics>
     </profile>
-    <profile id="4845-0bfe-2c22-883f" name="Refractor Field" publicationId="ca571888--pubN67227" page="91" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="">
+    <profile id="4845-0bfe-2c22-883f" name="Refractor Field" publicationId="ca571888--pubN67227" page="91" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Confers 5++ Invulnerable Save</characteristic>
       </characteristics>
@@ -7928,7 +7930,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Provides +1 attack in close combat</characteristic>
       </characteristics>
     </profile>
-    <profile id="c098-edb1-e89e-386d" name="Double-barrelled Turbo-laser Destructor" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="c098-edb1-e89e-386d" name="Double-barrelled Turbo-laser Destructor" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">96&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
@@ -7936,7 +7938,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 2, Large Blast</characteristic>
       </characteristics>
     </profile>
-    <profile id="0fa5-ce01-1a0d-82a1" name="Inferno Gun" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="0fa5-ce01-1a0d-82a1" name="Inferno Gun" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">Hellstorm</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
@@ -7944,7 +7946,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 1</characteristic>
       </characteristics>
     </profile>
-    <profile id="3b45-b564-4fce-e3d8" name="Vulcan Mega-bolter" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="3b45-b564-4fce-e3d8" name="Vulcan Mega-bolter" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">60&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -7952,7 +7954,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon, Heavy 15</characteristic>
       </characteristics>
     </profile>
-    <profile id="042e-a57f-0220-ddc0" name="Apocalypse Launcher" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="042e-a57f-0220-ddc0" name="Apocalypse Launcher" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot; - 360&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
@@ -7960,7 +7962,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 5, Apocalyptic Barrage</characteristic>
       </characteristics>
     </profile>
-    <profile id="5a8d-3869-4d7e-0f27" name="Volcano Cannon" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="5a8d-3869-4d7e-0f27" name="Volcano Cannon" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">180&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
@@ -7968,7 +7970,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 1, Massive Blast</characteristic>
       </characteristics>
     </profile>
-    <profile id="f07a-50bc-0722-71ae" name="Melta Cannon" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="f07a-50bc-0722-71ae" name="Melta Cannon" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">72&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">10</characteristic>
@@ -7976,7 +7978,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 1, Apocalyptic Blast, Melta</characteristic>
       </characteristics>
     </profile>
-    <profile id="0cc3-cd0c-d9e4-003a" name="Laser Blaster" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="0cc3-cd0c-d9e4-003a" name="Laser Blaster" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">96&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
@@ -7984,7 +7986,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 3, Large Blast</characteristic>
       </characteristics>
     </profile>
-    <profile id="3374-3680-c53a-090f" name="Gatling Blaster" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="3374-3680-c53a-090f" name="Gatling Blaster" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">72&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
@@ -7992,7 +7994,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 6, Large Blast, Pinning</characteristic>
       </characteristics>
     </profile>
-    <profile id="6427-1536-1c23-e58e" name="Titan Chain Fist" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="6427-1536-1c23-e58e" name="Titan Chain Fist" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
@@ -8000,7 +8002,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Machine Destroyer</characteristic>
       </characteristics>
     </profile>
-    <profile id="976e-24d7-d89c-03bf" name="Titan Power Fist" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="976e-24d7-d89c-03bf" name="Titan Power Fist" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
@@ -8008,7 +8010,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee</characteristic>
       </characteristics>
     </profile>
-    <profile id="51c0-aa14-864a-201d" name="Arioch Titan Power Claw" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="51c0-aa14-864a-201d" name="Arioch Titan Power Claw" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
@@ -8016,7 +8018,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee, +1 Attack, Machine Destroyer</characteristic>
       </characteristics>
     </profile>
-    <profile id="fa0c-9320-0925-e2f1" name="Belicosa Pattern Volcano Cannon" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="fa0c-9320-0925-e2f1" name="Belicosa Pattern Volcano Cannon" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">180&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
@@ -8024,7 +8026,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 1, Apocalyptic Blast, Machine Destroyer</characteristic>
       </characteristics>
     </profile>
-    <profile id="4896-3f21-799a-b2dc" name="Macro-gatling Blaster" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="4896-3f21-799a-b2dc" name="Macro-gatling Blaster" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">72&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">10</characteristic>
@@ -8032,7 +8034,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 6, Large Blast, Pinning</characteristic>
       </characteristics>
     </profile>
-    <profile id="66ac-1020-2570-4cd4" name="Mori Quake Cannon" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="66ac-1020-2570-4cd4" name="Mori Quake Cannon" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot; - 360&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D/9/6</characteristic>
@@ -8040,7 +8042,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 1, Apocalyptic Blast, Siesmic Shock, Concussive, Strikedown</characteristic>
       </characteristics>
     </profile>
-    <profile id="4389-4e63-c157-52c3" name="Saturnyne Lascutter (Assault)" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="4389-4e63-c157-52c3" name="Saturnyne Lascutter (Assault)" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
@@ -8048,7 +8050,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Machine Destroyer, Instant Death</characteristic>
       </characteristics>
     </profile>
-    <profile id="7db9-4c56-8e6b-55d3" name="Saturnyne Lascutter (Shooting)" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="7db9-4c56-8e6b-55d3" name="Saturnyne Lascutter (Shooting)" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">Hellstorm</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
@@ -8056,12 +8058,12 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 1, Instant Death</characteristic>
       </characteristics>
     </profile>
-    <profile id="e135-8b23-7190-9f2c" name="Cortex Controller" publicationId="ca571888--pubN66489" page="111" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="">
+    <profile id="e135-8b23-7190-9f2c" name="Cortex Controller" publicationId="ca571888--pubN66489" page="111" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Presence of a Cortex Controller within 12&quot; of a unit of friendly models with the Programmed Behaviour special rule at the start of any phase means that special rule is negated for that phase and their controlling player is free to use them as any other unit.  </characteristic>
       </characteristics>
     </profile>
-    <profile id="4fc7-8b16-afe4-dad3" name="Multi-Melta" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="4fc7-8b16-afe4-dad3" name="Multi-Melta" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
@@ -8069,7 +8071,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Melta</characteristic>
       </characteristics>
     </profile>
-    <profile id="8200-3ef2-3ffa-4a76" name="Darkfire Cannon" publicationId="ca571888--pubN66489" page="115" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="8200-3ef2-3ffa-4a76" name="Darkfire Cannon" publicationId="ca571888--pubN66489" page="115" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">60&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
@@ -8077,7 +8079,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 2, Lance, Blind, Gets Hot</characteristic>
       </characteristics>
     </profile>
-    <profile id="0225-fc80-29f1-09db" name="Mauler Bolt Cannon" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="0225-fc80-29f1-09db" name="Mauler Bolt Cannon" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -8090,7 +8092,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">- Model equipped with Shock Chargers gains the Concussive special rule added to all their close combat attacks regardless of type (to include Hammer of Wrath).  - Stock Chargers are not a weapon and do not have a profile, nor do they add additional attacks in conjunction with other weapons. </characteristic>
       </characteristics>
     </profile>
-    <profile id="d667-17ba-5f95-065a" name="Power Blades" publicationId="ca571888--pubN66489" page="115" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="d667-17ba-5f95-065a" name="Power Blades" publicationId="ca571888--pubN66489" page="115" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">User</characteristic>
@@ -8098,7 +8100,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Rending, Paired Weapons</characteristic>
       </characteristics>
     </profile>
-    <profile id="13e0-4939-5232-8d85" name="Atomantic Shielding" publicationId="ca571888--pubN66489" page="110" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="">
+    <profile id="13e0-4939-5232-8d85" name="Atomantic Shielding" publicationId="ca571888--pubN66489" page="110" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Model with Atomantic Shielding gains a 5++ Invulnerable save from shooting attacks and explosions, and a 6++ Invulnerable save against attacks suffered in close combat.  In addition, if the model suffers a Reactor Blast explosion, add +1&quot; to the radius of the blast caused. </characteristic>
       </characteristics>
@@ -8108,12 +8110,12 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Night fighting only. it can, after firing all of its weapons, choose to illuminate its target with the searchlight. If it does so, it also illuminates itself.</characteristic>
       </characteristics>
     </profile>
-    <profile id="a8c1-185a-cdd9-b5ce" name="Infravisor" publicationId="ca571888--pubN66489" page="111" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="">
+    <profile id="a8c1-185a-cdd9-b5ce" name="Infravisor" publicationId="ca571888--pubN66489" page="111" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A model equipped with an Infravisor has the Night Vision special rule.  However, a unit that contains one or more models with an Infravisor count as Initiative 1 for Blind tests.  </characteristic>
       </characteristics>
     </profile>
-    <profile id="c85c-3be5-d699-b6f3" name="Enhanced Targeting Array" publicationId="ca571888--pubN66489" page="111" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="">
+    <profile id="c85c-3be5-d699-b6f3" name="Enhanced Targeting Array" publicationId="ca571888--pubN66489" page="111" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A model with this upgrade increases its BS by +1 and the cover saves of enemy targets are reduced by -1. </characteristic>
       </characteristics>
@@ -8158,7 +8160,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Skyfire</characteristic>
       </characteristics>
     </profile>
-    <profile id="c4d0-7457-ee66-6dde" name="Ignis-frag Missile" publicationId="ca571888--pubN66489" page="35" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="c4d0-7457-ee66-6dde" name="Ignis-frag Missile" publicationId="ca571888--pubN66489" page="35" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
@@ -8166,7 +8168,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Blast, Ignores Cover</characteristic>
       </characteristics>
     </profile>
-    <profile id="df27-6a27-ab6c-071e" name="Graviton Hammer" publicationId="ca571888--pubN66489" page="35" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="df27-6a27-ab6c-071e" name="Graviton Hammer" publicationId="ca571888--pubN66489" page="35" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">10</characteristic>
@@ -8278,7 +8280,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Pistol</characteristic>
       </characteristics>
     </profile>
-    <profile id="477d-c630-7e79-8cf9" name="Volkite Serpenta" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="477d-c630-7e79-8cf9" name="Volkite Serpenta" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">10&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
@@ -8286,7 +8288,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Pistol, Deflagrate</characteristic>
       </characteristics>
     </profile>
-    <profile id="34d1-b4db-3e75-ccce" name="Volkite Culverin" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="34d1-b4db-3e75-ccce" name="Volkite Culverin" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">45&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -8294,7 +8296,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 4, Deflagrate</characteristic>
       </characteristics>
     </profile>
-    <profile id="626c-d79c-9bb7-3407" name="Volkite Caliver" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="626c-d79c-9bb7-3407" name="Volkite Caliver" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">30&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -8302,7 +8304,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 2, Deflagrate</characteristic>
       </characteristics>
     </profile>
-    <profile id="c440-1f53-4d20-5cab" name="Volkite Charger" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="c440-1f53-4d20-5cab" name="Volkite Charger" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">15&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
@@ -8556,7 +8558,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A vehicle equipped with a Machine Spirit gains the Power of the Machine Spirit special rule.</characteristic>
       </characteristics>
     </profile>
-    <profile id="e97c-a368-88a3-3fb0" name="Executioner Plasma Destroyer" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="e97c-a368-88a3-3fb0" name="Executioner Plasma Destroyer" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
@@ -8564,7 +8566,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 3, Blast (3&quot;)</characteristic>
       </characteristics>
     </profile>
-    <profile id="7861-701e-b6d5-be87" name="Predator Cannon" publicationId="ca571888--pubN67227" page="93" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="7861-701e-b6d5-be87" name="Predator Cannon" publicationId="ca571888--pubN67227" page="93" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
@@ -8572,7 +8574,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 4</characteristic>
       </characteristics>
     </profile>
-    <profile id="890c-3cfe-af38-b022" name="Magna-Melta" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="890c-3cfe-af38-b022" name="Magna-Melta" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">18&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
@@ -8596,7 +8598,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 4</characteristic>
       </characteristics>
     </profile>
-    <profile id="c840-52c7-96a1-2917" name="Sunfury Plasma Annihilator" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="c840-52c7-96a1-2917" name="Sunfury Plasma Annihilator" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">72&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
@@ -8643,7 +8645,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, One Use Only</characteristic>
       </characteristics>
     </profile>
-    <profile id="874d-45cf-6007-a1de" name="Armoured Ceramite" publicationId="ca571888--pubN67227" page="88" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="">
+    <profile id="874d-45cf-6007-a1de" name="Armoured Ceramite" publicationId="ca571888--pubN67227" page="88" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A vehicle with this wargear is not subject to the additional D6 armour penetration caused by weapons with the Melta special rule.  </characteristic>
       </characteristics>
@@ -9004,7 +9006,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance 1, Barrage, Large Blast</characteristic>
       </characteristics>
     </profile>
-    <profile id="17c2-b1cc-5312-9664" name="Hyperios Missile Launcher" publicationId="ca571888--pubN67227" page="44" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="17c2-b1cc-5312-9664" name="Hyperios Missile Launcher" publicationId="ca571888--pubN67227" page="44" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
@@ -9012,7 +9014,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Skyfire, Interceptor, Heat Seeker</characteristic>
       </characteristics>
     </profile>
-    <profile id="dd4fa1b2-43b4-75d6-974c-83c1a4115c07" name="Cyber-occularis" publicationId="ca571888--pubN85920" page="207" hidden="false" typeId="556e697423232344415441232323" typeName="">
+    <profile id="dd4fa1b2-43b4-75d6-974c-83c1a4115c07" name="Cyber-occularis" publicationId="ca571888--pubN85920" page="207" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
       <characteristics>
         <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Jet Pack Infantry</characteristic>
         <characteristic name="WS" typeId="575323232344415441232323">2</characteristic>
@@ -9026,7 +9028,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Save" typeId="5361766523232344415441232323">3+</characteristic>
       </characteristics>
     </profile>
-    <profile id="6fbf4c0f-334f-844d-3d75-ce8a1da6c1fa" name="Darkfire Cannon" publicationId="ca571888--pubN85920" page="209" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="6fbf4c0f-334f-844d-3d75-ce8a1da6c1fa" name="Darkfire Cannon" publicationId="ca571888--pubN85920" page="209" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">60&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
@@ -9034,7 +9036,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 2, Lance, Blind, Gets Hot</characteristic>
       </characteristics>
     </profile>
-    <profile id="481b32ee-2904-c9e0-8612-35ff2bcab65a" name="Graviton Gun" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="481b32ee-2904-c9e0-8612-35ff2bcab65a" name="Graviton Gun" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">18&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">*</characteristic>
@@ -9042,7 +9044,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Blast (3&quot;), Concussive, Graviton Pulse, Haywire</characteristic>
       </characteristics>
     </profile>
-    <profile id="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" name="Heavy Stubber" publicationId="ca571888--pubN74807" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" name="Heavy Stubber" publicationId="ca571888--pubN74807" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
@@ -9050,7 +9052,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 3</characteristic>
       </characteristics>
     </profile>
-    <profile id="4133-c843-ebc6-8f33" name="Inferno Cannon" publicationId="ca571888--pubN66500" page="274" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="4133-c843-ebc6-8f33" name="Inferno Cannon" publicationId="ca571888--pubN66500" page="274" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">Hellstorm*</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
@@ -9058,17 +9060,17 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1</characteristic>
       </characteristics>
     </profile>
-    <profile id="342d5e83-9f9b-42c0-cecb-e6c9c197ab9d" name="Ion Shield" publicationId="ca571888--pubN84158" page="301" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="">
+    <profile id="342d5e83-9f9b-42c0-cecb-e6c9c197ab9d" name="Ion Shield" publicationId="ca571888--pubN84158" page="301" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">When deployed, and at the start of each subsequent opposing side&apos;s shooting phase, the Knight&apos;s controlling player must declare a facing for the ion shield.  Choices are front, left, right, or rear.    The Knight has a 4+ invulnerable save  against all hits on that facing until the start of the opposing side&apos;s next shooting phase.  Ion shields are repositioned before any attacks are carried out and may not protect against close combat attacks.  </characteristic>
       </characteristics>
     </profile>
-    <profile id="76f43c9f-9d2b-e019-63db-3ac3082ee07c" name="Ionic Flare Shield" publicationId="ca571888--pubN84158" page="303" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="">
+    <profile id="76f43c9f-9d2b-e019-63db-3ac3082ee07c" name="Ionic Flare Shield" publicationId="ca571888--pubN84158" page="303" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">When deployed, and at the start of each subsequent opposing side&apos;s shooting phase, the Knight&apos;s controlling player must declare a facing for the ionic flare shield.  Choices are front, left, right, or rear.    The Knight has a 4+ invulnerable save  against all hits on that facing until the start of the opposing side&apos;s next shooting phase.  The strength of any shooting attack is reduced by -1, increasing to -2 if the weapon has the blast or template rule.  This does not effect Destroyer or Haywire attacks.  Ionic flare shields are repositioned before any attacks are carried out and may not protect against close combat attacks.  </characteristic>
       </characteristics>
     </profile>
-    <profile id="7d03914a-f940-12e5-590b-822083dff647" name="Irad-cleanser" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="7d03914a-f940-12e5-590b-822083dff647" name="Irad-cleanser" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">Template</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">2</characteristic>
@@ -9076,7 +9078,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1, Fleshbane, Rad-Phage</characteristic>
       </characteristics>
     </profile>
-    <profile id="69b6-e87d-f483-e57a" name="Ironstorm missile pod" publicationId="ca571888--pubN84656" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="69b6-e87d-f483-e57a" name="Ironstorm missile pod" publicationId="ca571888--pubN84656" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">72&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
@@ -9084,7 +9086,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Large Blast, Barrage </characteristic>
       </characteristics>
     </profile>
-    <profile id="418fbfed-277a-7376-dfd3-7d5a95fae9f5" name="Lightning Cannon" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="418fbfed-277a-7376-dfd3-7d5a95fae9f5" name="Lightning Cannon" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
@@ -9092,7 +9094,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Rending, Shred, Large Blast</characteristic>
       </characteristics>
     </profile>
-    <profile id="2850d06c-1eef-bae4-1314-6a3d9635193b" name="Lightning Gun" publicationId="ca571888--pubN66500" page="240" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="2850d06c-1eef-bae4-1314-6a3d9635193b" name="Lightning Gun" publicationId="ca571888--pubN66500" page="240" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">18&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
@@ -9100,7 +9102,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Shred, Rending</characteristic>
       </characteristics>
     </profile>
-    <profile id="f4750e31-0624-912a-bf07-7a1febca222e" name="Machinator Array" publicationId="ca571888--pubN74807" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="f4750e31-0624-912a-bf07-7a1febca222e" name="Machinator Array" publicationId="ca571888--pubN74807" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+1</characteristic>
@@ -9108,17 +9110,17 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Unwieldy, Shred, Armourbane</characteristic>
       </characteristics>
     </profile>
-    <profile id="06291170-198f-6a71-07c8-278feed54e89" name="Mechanicum Protectiva" publicationId="ca571888--pubN85920" page="207" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="">
+    <profile id="06291170-198f-6a71-07c8-278feed54e89" name="Mechanicum Protectiva" publicationId="ca571888--pubN85920" page="207" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Provides 4++ Invulnerable save</characteristic>
       </characteristics>
     </profile>
-    <profile id="faa4ea24-e51b-8663-3e7c-1a791b55aed7" name="Occular Augmetics" publicationId="ca571888--pubN91142" page="109" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="">
+    <profile id="faa4ea24-e51b-8663-3e7c-1a791b55aed7" name="Occular Augmetics" publicationId="ca571888--pubN91142" page="109" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Has Night Vision special rule, and may re-roll results of a 1 on the Vehicle Damage table and Destroyer Weapon Attack table which are inflicted by their shooting attacks at a range of 12&quot; or less.  </characteristic>
       </characteristics>
     </profile>
-    <profile id="306adc93-713f-8c18-71d3-6956c376e9e2" name="Phased-Plasma Fusil" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="306adc93-713f-8c18-71d3-6956c376e9e2" name="Phased-Plasma Fusil" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -9126,7 +9128,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Salvo 2/3</characteristic>
       </characteristics>
     </profile>
-    <profile id="d0f5-09ae-4c91-8764" name="Plasma Blastgun (Overload)" publicationId="ca571888--pubN67227" page="65" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="d0f5-09ae-4c91-8764" name="Plasma Blastgun (Overload)" publicationId="ca571888--pubN67227" page="65" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">96&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">10</characteristic>
@@ -9134,7 +9136,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 1, Apocalyptic Blast (10&quot;)</characteristic>
       </characteristics>
     </profile>
-    <profile id="507b-2215-7be8-61d7" name="Plasma Blastgun (Rapid)" publicationId="ca571888--pubN67227" page="65" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="507b-2215-7be8-61d7" name="Plasma Blastgun (Rapid)" publicationId="ca571888--pubN67227" page="65" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">72&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
@@ -9142,7 +9144,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 2, Massive Blast (7&quot;)</characteristic>
       </characteristics>
     </profile>
-    <profile id="3c77a0e2-2b38-0fff-5d7d-8f63f811bbdf" name="Rad/Irad-cleanser" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="3c77a0e2-2b38-0fff-5d7d-8f63f811bbdf" name="Rad/Irad-cleanser" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">Template</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">2</characteristic>
@@ -9150,7 +9152,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1, Fleshbane, Rad-Phage</characteristic>
       </characteristics>
     </profile>
-    <profile id="76191f60-ba9c-4e52-9faf-24b23e46c7a9" name="Reaper Chainsword" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="76191f60-ba9c-4e52-9faf-24b23e46c7a9" name="Reaper Chainsword" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
@@ -9158,7 +9160,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee</characteristic>
       </characteristics>
     </profile>
-    <profile id="871025a3-7729-f97d-378d-804c3571cdf3" name="Rotor Cannon" publicationId="ca571888--pubN115656" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="871025a3-7729-f97d-378d-804c3571cdf3" name="Rotor Cannon" publicationId="ca571888--pubN115656" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">30&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">3</characteristic>
@@ -9166,7 +9168,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Salvo 3/4</characteristic>
       </characteristics>
     </profile>
-    <profile id="51100eb8-f6e6-7048-df0a-84f0163a38bd" name="Siege Wrecker" publicationId="ca571888--pubN74807" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="51100eb8-f6e6-7048-df0a-84f0163a38bd" name="Siege Wrecker" publicationId="ca571888--pubN74807" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">10</characteristic>
@@ -9174,7 +9176,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Concussive, Wrecker, Specialist Weapon</characteristic>
       </characteristics>
     </profile>
-    <profile id="05cc-32b8-e59e-7dff" name="Stormspear rocket pod" publicationId="ca571888--pubN84656" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="05cc-32b8-e59e-7dff" name="Stormspear rocket pod" publicationId="ca571888--pubN84656" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
@@ -9182,7 +9184,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 3</characteristic>
       </characteristics>
     </profile>
-    <profile id="d9b3-3506-e372-22e2" name="Turbo Laser Destructor" publicationId="ca571888--pubN67227" page="73" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="d9b3-3506-e372-22e2" name="Turbo Laser Destructor" publicationId="ca571888--pubN67227" page="73" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">96&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
@@ -9190,7 +9192,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 1,  Large Blast</characteristic>
       </characteristics>
     </profile>
-    <profile id="534b-67b0-62d7-b977" name="Twin Icarus autocannon" publicationId="ca571888--pubN84656" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="534b-67b0-62d7-b977" name="Twin Icarus autocannon" publicationId="ca571888--pubN84656" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
@@ -9198,7 +9200,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 2, Interceptor, Skyfire, Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="8f57-fa37-5c5c-e7cb" name="Vortex Missile" publicationId="ca571888--pubN66500" page="274" hidden="false" typeId="576561706f6e23232344415441232323" typeName="">
+    <profile id="8f57-fa37-5c5c-e7cb" name="Vortex Missile" publicationId="ca571888--pubN66500" page="274" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot; - 480&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">*</characteristic>
