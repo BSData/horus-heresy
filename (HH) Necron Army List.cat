@@ -16,6 +16,8 @@
     <categoryEntry id="bb83-c3a0-088e-e8a5" name="Allied Fast Attack" publicationId="6fc6-dd7c-7a39-b0c8" hidden="false"/>
     <categoryEntry id="564d-9137-b8e7-1818" name="Allied Heavy Support" hidden="false"/>
     <categoryEntry id="9229-15b5-2638-d977" name="Compulsory Troops" hidden="false"/>
+    <categoryEntry id="0763-1828-491d-5f5f" name="Annihilation Protocol" hidden="false"/>
+    <categoryEntry id="85e9-d065-372b-2d1f" name="Tomb Guardians" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="84bf-6cac-a987-84cd" name="Primary Awakener Force Organsation Chart" publicationId="6fc6-dd7c-7a39-b0c8" page="13" hidden="false">
@@ -213,6 +215,30 @@
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adfb-58d2-f75c-0fae" type="min"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="45e6-49a9-0154-ddf9" name="Annihilation Protocol" hidden="false" targetId="0763-1828-491d-5f5f" primary="false">
+          <modifiers>
+            <modifier type="set" field="1b48-55de-7608-5f33" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ba1-4ae1-b786-0311" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b48-55de-7608-5f33" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="4927-8b10-6f7f-6e95" name="Tomb Guardians" hidden="false" targetId="85e9-d065-372b-2d1f" primary="false">
+          <modifiers>
+            <modifier type="set" field="4f27-e2e7-3207-6ffe" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ba1-4ae1-b786-0311" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f27-e2e7-3207-6ffe" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -232,6 +258,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="b72f-d25b-79a5-82a7" name="New CategoryLink" hidden="false" targetId="a673-7d7e-4e32-171a" primary="true"/>
+        <categoryLink id="cb1a-fa9b-1e8d-82f8" name="Annihilation Protocol" hidden="false" targetId="0763-1828-491d-5f5f" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="65d2-396b-80da-bbf0" name="Annihilation Barge" publicationId="6fc6-dd7c-7a39-b0c8" page="1ea7-73f0-4950-9292" hidden="false" collective="false" import="true" targetId="1ea7-73f0-4950-9292" type="selectionEntry">
@@ -244,6 +271,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="bced-e06b-f146-b51e" name="New CategoryLink" hidden="false" targetId="a740-e34d-c712-38e8" primary="true"/>
+        <categoryLink id="3b55-738e-2756-a8b1" name="Tomb Guardians" hidden="false" targetId="85e9-d065-372b-2d1f" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="de91-e2c1-5a04-b49d" name="Dynastic Warriors" publicationId="6fc6-dd7c-7a39-b0c8" hidden="false" collective="false" import="true" targetId="1479-f6ab-bc91-1c6f" type="selectionEntry">
@@ -332,6 +360,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="6e30-fd5b-0437-4962" name="New CategoryLink" hidden="false" targetId="bb83-c3a0-088e-e8a5" primary="true"/>
+        <categoryLink id="5f42-8a67-ad69-6a95" name="Annihilation Protocol" hidden="false" targetId="0763-1828-491d-5f5f" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="68f2-6de7-c9c2-3f52" name="Heavy Destroyers" hidden="false" collective="false" import="true" targetId="4e2b-6ff3-706e-42f1" type="selectionEntry">
@@ -344,6 +373,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="4af9-6ec0-a690-634c" name="New CategoryLink" hidden="false" targetId="564d-9137-b8e7-1818" primary="true"/>
+        <categoryLink id="e7a0-4b3c-e129-584d" name="Annihilation Protocol" hidden="false" targetId="0763-1828-491d-5f5f" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="2c21-a271-3817-eabc" name="Nemesor" hidden="false" collective="false" import="true" targetId="4a78-01f6-fd9e-6647" type="selectionEntry">
@@ -468,6 +498,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="5ec4-bd04-2839-6885" name="New CategoryLink" hidden="false" targetId="a673-7d7e-4e32-171a" primary="true"/>
+        <categoryLink id="6b27-d1ed-a5d4-6283" name="Tomb Guardians" hidden="false" targetId="85e9-d065-372b-2d1f" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="36f4-dd5a-ea34-63b7" name="Canoptek Tomb Stalker" hidden="false" collective="false" import="true" targetId="4c43-da58-c2ef-3d2f" type="selectionEntry">
@@ -481,6 +512,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="55fd-bf75-1f3c-3136" name="New CategoryLink" hidden="false" targetId="a673-7d7e-4e32-171a" primary="true"/>
+        <categoryLink id="4b13-5793-0b9d-3096" name="Tomb Guardians" hidden="false" targetId="85e9-d065-372b-2d1f" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="0afc-094a-dd01-4ce6" name="Canoptek Wraiths" hidden="false" collective="false" import="true" targetId="51fd-2be9-dc4d-2943" type="selectionEntry">
@@ -518,6 +550,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="4c9c-c430-3e2f-da6b" name="New CategoryLink" hidden="false" targetId="a740-e34d-c712-38e8" primary="true"/>
+        <categoryLink id="2c9d-76d2-ebcf-510f" name="Annihilation Protocol" hidden="false" targetId="0763-1828-491d-5f5f" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="7be1-62d1-367b-8273" name="Monolith" hidden="false" collective="false" import="true" targetId="2bf2-17b6-cc75-cc01" type="selectionEntry">
@@ -542,6 +575,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="3473-8a14-41f3-1dcd" name="New CategoryLink" hidden="false" targetId="a740-e34d-c712-38e8" primary="true"/>
+        <categoryLink id="726d-d7df-8f75-77e9" name="Annihilation Protocol" hidden="false" targetId="0763-1828-491d-5f5f" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="6d3e-35b5-e004-7d08" name="Sentry Pylon" hidden="false" collective="false" import="true" targetId="0c97-bc17-3476-f059" type="selectionEntry">
@@ -643,6 +677,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="e600-1232-0ce1-738e" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
+        <categoryLink id="da57-f437-b788-7d93" name="Annihilation Protocol" hidden="false" targetId="0763-1828-491d-5f5f" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="88cd-d2da-7b20-1780" name="Eternity Gate Portal" hidden="false" collective="false" import="true" targetId="909c-ab80-4ff6-b6d4" type="selectionEntry">
@@ -713,6 +748,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="cc63-2727-a193-9f52" name="New CategoryLink" hidden="false" targetId="c032-96cb-48fb-6615" primary="true"/>
+        <categoryLink id="de00-3ca7-5a7a-ed48" name="Annihilation Protocol" hidden="false" targetId="0763-1828-491d-5f5f" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="543f-ca95-4ee4-49be" name="High Judicator" hidden="false" collective="false" import="true" targetId="c8a0-227b-988f-3379" type="selectionEntry">
@@ -901,16 +937,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="d8ba-ba62-a56e-1314" name="Canoptek Acanthrites" publicationId="6fc6-dd7c-7a39-b0c8" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="edad-a3f7-e2d5-1ad6" value="1.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1ba1-4ae1-b786-0311" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edad-a3f7-e2d5-1ad6" type="max"/>
-      </constraints>
       <infoLinks>
         <infoLink id="206a-ea22-24a8-755a" name="Fear" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule"/>
         <infoLink id="2397-1c13-f605-8739" name="Annihilation Protocol" hidden="false" targetId="e2e6-948a-8cfd-3994" type="rule"/>
@@ -1442,16 +1468,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="1ea7-73f0-4950-9292" name="Annihilation Barge" publicationId="6fc6-dd7c-7a39-b0c8" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="904d-fbfe-f8a8-92d7" value="-1.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1ba1-4ae1-b786-0311" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="904d-fbfe-f8a8-92d7" type="max"/>
-      </constraints>
       <selectionEntries>
         <selectionEntry id="d66f-4a29-7625-8179" name="Annihilation Barge" publicationId="6fc6-dd7c-7a39-b0c8" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -1671,6 +1687,9 @@ If there are three or more models all projecting Nightshrouds between them, they
 • Null Field: No Pyschic Powers can be generated inside the Nodal Grid, no Pyskers generate Warp Charges and all Pyschic effects are nullified. In addition all Daemons or models with the Daemon rule are considered to be Blind and have -2 Strength and -2 Toughness while inside the Nodal Grid.</description>
                 </rule>
               </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -1691,6 +1710,9 @@ If there are three or more models all projecting Nightshrouds between them, they
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="9184-0791-f837-5b04" name="Harbingers of Despair" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntries>
@@ -3216,6 +3238,9 @@ And may contain an additional +1 Troop, +1 Elite, +1 Heavy Support</description>
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="d834-7113-0466-149b" name="Trazyn The Infinate" publicationId="6fc6-dd7c-7a39-b0c8" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -3299,6 +3324,9 @@ Designer Note: If any of these Exhibits are taken as part of a Narrative Campaig
               <description>If a model is killed by an attack with this weapon, roll a D6 for all models in the same combat with exactly the same name on their profile, on a 4+ that model suffers a wound (Saves taken as normal).</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="df03-eb4f-aa25-b097" name="Acquisition Phalanx Lychguard" publicationId="6fc6-dd7c-7a39-b0c8" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -5147,16 +5175,6 @@ In addition, models with this special rule may use the Leadership value of any N
       </costs>
     </selectionEntry>
     <selectionEntry id="6cc1-77e0-d8ca-f8d5" name="Canoptek Tomb Sentinel" publicationId="6fc6-dd7c-7a39-b0c8" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="7a7f-bb3e-9f57-9c20" value="-1.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1ba1-4ae1-b786-0311" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a7f-bb3e-9f57-9c20" type="max"/>
-      </constraints>
       <profiles>
         <profile id="90c0-2bb6-13a9-394a" name="Canoptek Tomb Sentinel" publicationId="6fc6-dd7c-7a39-b0c8" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -5223,16 +5241,6 @@ In addition, models with this special rule may use the Leadership value of any N
       </costs>
     </selectionEntry>
     <selectionEntry id="4c43-da58-c2ef-3d2f" name="Canoptek Tomb Stalker" publicationId="6fc6-dd7c-7a39-b0c8" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="342d-b649-8211-8f9b" value="-1.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1ba1-4ae1-b786-0311" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="342d-b649-8211-8f9b" type="max"/>
-      </constraints>
       <profiles>
         <profile id="2c7b-9b5c-a45c-4cf2" name="Canoptek Tomb Stalker" publicationId="6fc6-dd7c-7a39-b0c8" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -5449,16 +5457,6 @@ In addition, models with this special rule may use the Leadership value of any N
       </costs>
     </selectionEntry>
     <selectionEntry id="701c-494e-f0cf-f8b2" name="Doom Scythe" publicationId="6fc6-dd7c-7a39-b0c8" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="bf8a-c95e-2ace-c59f" value="1.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1ba1-4ae1-b786-0311" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf8a-c95e-2ace-c59f" type="max"/>
-      </constraints>
       <profiles>
         <profile id="3c75-cca7-5bba-a148" name="Doom Scythe" publicationId="6fc6-dd7c-7a39-b0c8" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
           <characteristics>
@@ -5577,18 +5575,11 @@ If there are three or more models all projecting Nightshrouds between them, they
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1aab-33d7-1146-c921" name="Night Shroud Bomber" publicationId="6fc6-dd7c-7a39-b0c8" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="5f1f-3199-2896-89e3" value="1.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1ba1-4ae1-b786-0311" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f1f-3199-2896-89e3" type="max"/>
-      </constraints>
       <profiles>
         <profile id="edff-99e6-c23a-86b7" name="Night Shroud Bomber" publicationId="6fc6-dd7c-7a39-b0c8" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
           <characteristics>
@@ -6010,6 +6001,9 @@ Should the unit be placed on top of any unit which does not pose an obstacle to 
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="5bd4-1014-bd48-a7f8" name="Two Singularity Generators" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -6028,6 +6022,9 @@ Should the unit be placed on top of any unit which does not pose an obstacle to 
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -6378,7 +6375,7 @@ The Transcendant C&apos;tan is no longer under the control of the Necron player.
 Enemy models attempting to Deep Strike onto the Tomb Citadel will suffer a Deep Strike Mishap on any &apos;double&apos; rolled on the Scatter dice in addition to that due to any other cause.</characteristic>
             <characteristic name="Access Points &amp; Fire Points" typeId="beac-711d-f76d-e254">None</characteristic>
             <characteristic name="Weapons" typeId="0ecb-8865-b3eb-97c9">None</characteristic>
-            <characteristic name="Options" typeId="a782-1362-048c-ff45"></characteristic>
+            <characteristic name="Options" typeId="a782-1362-048c-ff45"/>
             <characteristic name="Special Rules" typeId="51b9-8d40-8186-fd23">Phase Shift Generator, Resurrection Amplifier</characteristic>
           </characteristics>
         </profile>
@@ -6508,6 +6505,9 @@ If there are three or more models all projecting Nightshrouds between them, they
 • Null Field: No Pyschic Powers can be generated inside the Nodal Grid, no Pyskers generate Warp Charges and all Pyschic effects are nullified. In addition all Daemons or models with the Daemon rule are considered to be Blind and have -2 Strength and -2 Toughness while inside the Nodal Grid.</description>
                     </rule>
                   </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
@@ -6579,9 +6579,6 @@ A Monolith docked at the Ziggurat cannot use its Eternity Gate but can undock an
       </costs>
     </selectionEntry>
     <selectionEntry id="335c-d56b-e3c1-60d4" name="Destroyer Lord" publicationId="6fc6-dd7c-7a39-b0c8" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6a45-84f9-3cc4-2677" type="max"/>
-      </constraints>
       <profiles>
         <profile id="9416-fafc-9b29-b0cf" name="Destoryer Lord" publicationId="6fc6-dd7c-7a39-b0c8" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -6723,6 +6720,9 @@ A Monolith docked at the Ziggurat cannot use its Eternity Gate but can undock an
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -6815,6 +6815,9 @@ A Monolith docked at the Ziggurat cannot use its Eternity Gate but can undock an
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -6822,16 +6825,6 @@ A Monolith docked at the Ziggurat cannot use its Eternity Gate but can undock an
       </costs>
     </selectionEntry>
     <selectionEntry id="e8c0-3602-c44e-8cb3" name="Destroyers" publicationId="6fc6-dd7c-7a39-b0c8" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="b5aa-67ab-2d1b-d65a" value="1.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1ba1-4ae1-b786-0311" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5aa-67ab-2d1b-d65a" type="max"/>
-      </constraints>
       <rules>
         <rule id="c4cb-6080-3fd1-d76a" name="Hatred of Life" hidden="false">
           <description>Models with this rule may not be part of an army which contains any non-Necron units.</description>
@@ -6879,18 +6872,11 @@ A Monolith docked at the Ziggurat cannot use its Eternity Gate but can undock an
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="4e2b-6ff3-706e-42f1" name="Heavy Destroyers" publicationId="6fc6-dd7c-7a39-b0c8" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="bf3f-5c3e-3c01-0ad4" value="1.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1ba1-4ae1-b786-0311" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf3f-5c3e-3c01-0ad4" type="max"/>
-      </constraints>
       <rules>
         <rule id="c712-8a5a-3314-6a35" name="Hatred of Life" hidden="false">
           <description>Models with this rule may not be part of an army which contains any non-Necron units.</description>
@@ -6938,6 +6924,9 @@ A Monolith docked at the Ziggurat cannot use its Eternity Gate but can undock an
         </entryLink>
         <entryLink id="4e32-d145-b21c-2d19" name="Awakening Protocol: Silver" hidden="false" collective="false" import="true" targetId="8a12-0bb1-a318-215b" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0f3b-d163-7e94-a7a3" name="Triarch Praetorians" publicationId="6fc6-dd7c-7a39-b0c8" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -6999,6 +6988,9 @@ A Monolith docked at the Ziggurat cannot use its Eternity Gate but can undock an
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -7010,6 +7002,9 @@ A Monolith docked at the Ziggurat cannot use its Eternity Gate but can undock an
         <entryLink id="c714-b08b-5f2d-2b0a" name="Awakening Protocol: Silver" hidden="false" collective="false" import="true" targetId="8a12-0bb1-a318-215b" type="selectionEntry"/>
         <entryLink id="b074-437e-d152-38b7" name="Night Scythe" hidden="false" collective="false" import="true" targetId="a535-f89c-4a45-b3e9" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="829e-510c-9657-9e45" name="Triarch Stalker" publicationId="6fc6-dd7c-7a39-b0c8" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
@@ -7095,6 +7090,9 @@ A Monolith docked at the Ziggurat cannot use its Eternity Gate but can undock an
       <entryLinks>
         <entryLink id="6c71-0588-f2c9-7d84" name="Awakening Protocol: Silver" hidden="false" collective="false" import="true" targetId="8a12-0bb1-a318-215b" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
