@@ -3347,29 +3347,30 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <characteristic name="Type" typeId="5479706523232344415441232323">Super-Heavy Walker</characteristic>
           </characteristics>
         </profile>
-        <profile id="4580dd76-7ecd-4c31-c664-d442c492779a" name="Questoris battlecannon" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="02eb28bb-1883-8603-0af7-b8bf2b7b69c8" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f89283d8-d9d1-7f20-b630-4ad158e12292" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">72&quot;</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance 3, Large Blast</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="a9800c8c-4e65-b796-cea4-ddcfa68e7a1b" hidden="false" targetId="342d5e83-9f9b-42c0-cecb-e6c9c197ab9d" type="profile"/>
-        <infoLink id="82ce9879-35ab-49f0-55de-8b8bd9e7d26c" hidden="false" targetId="76191f60-ba9c-4e52-9faf-24b23e46c7a9" type="profile"/>
-        <infoLink id="69f8af61-ab69-9f1d-d1b3-cf3ea26ba06d" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="6dbe-7589-1abb-a1cf" name="Heavy Stubber" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7f3-582f-22dc-f4b4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36f1-ec7d-08a5-c7c4" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="3413-cced-a36f-251e" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f89283d8-d9d1-7f20-b630-4ad158e12292" name="May exchange Questoris battlecannon for:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="f89283d8-d9d1-7f20-b630-4ad158e12292" name="May exchange Questoris battlecannon for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="0f48-46fe-d1cb-df97">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b9f-23dc-aa80-e0bc" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e148-c24d-71da-f5b1" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="c7e655d1-24ba-0f3c-b15e-3874f6ee954c" name="Rapid-fire battlecannon" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -3382,6 +3383,24 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
                     <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
                     <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance 2, Large Blast</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0f48-46fe-d1cb-df97" name="Questoris Battlecannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdd0-25d1-b0d3-8b26" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="2b27-11b0-4ced-338e" name="Questoris battlecannon" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">72&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance 3, Large Blast</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3459,6 +3478,11 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="6fd6-0678-7777-d0b9" name="Household Rank" hidden="false" collective="false" import="true" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
+        <entryLink id="19f6-e986-d848-69c7" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="8ebf-e508-6a0e-94cf" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40f3-4c0b-d6a2-be79" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="375.0"/>
@@ -3483,20 +3507,43 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <characteristic name="Type" typeId="5479706523232344415441232323">Super-Heavy Walker</characteristic>
           </characteristics>
         </profile>
-        <profile id="d759c074-6ff7-9f45-c862-50a400f9b12a" name="Thermal Cannon" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">1</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Melta, Large Blast</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="73815ee7-021e-82ba-5d28-73241105349e" hidden="false" targetId="342d5e83-9f9b-42c0-cecb-e6c9c197ab9d" type="profile"/>
-        <infoLink id="0cd0d538-4c5a-aaa4-ac96-f4f266954d32" hidden="false" targetId="76191f60-ba9c-4e52-9faf-24b23e46c7a9" type="profile"/>
-        <infoLink id="c7aedb4b-3588-ff92-fada-ddd79a43de63" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="ff6b-3e75-9a86-99c5" name="Heavy Stubber" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3365-6777-0bdf-065e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3a4-3d4f-3667-bb46" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="fd6c-d575-e699-54e6" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c01b-8c75-85a4-faa9" name="Thermal Cannon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc9f-422e-17a5-5f13" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc99-d66a-0daf-0cf7" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="dcaa-45ae-5990-dab5" name="Thermal Cannon" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">1</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Melta, Large Blast</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="423c1873-c56d-8ca1-b01f-a2660b0b0198" name="May be upgraded with:" hidden="false" collective="false" import="true">
           <selectionEntries>
@@ -3566,6 +3613,11 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="3869-5b07-27b6-2018" name="Household Rank" hidden="false" collective="false" import="true" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
+        <entryLink id="ae68-d0d6-6758-6357" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="8ebf-e508-6a0e-94cf" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1c7-4137-dffc-8d5d" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="370.0"/>
@@ -3593,39 +3645,45 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       </profiles>
       <infoLinks>
         <infoLink id="a0d42172-1a16-82ae-561a-98218604c374" hidden="false" targetId="6ce7-5e83-a2dd-571e" type="rule"/>
-        <infoLink id="3a6ed8b9-c7b3-0c88-1d4f-acc9422f5bcf" hidden="false" targetId="418fbfed-277a-7376-dfd3-7d5a95fae9f5" type="profile"/>
-        <infoLink id="ced447ea-d7f1-d55d-8d0a-8eba2dabb170" hidden="false" targetId="76191f60-ba9c-4e52-9faf-24b23e46c7a9" type="profile"/>
-        <infoLink id="25585f12-e17b-8fa7-4fab-4c43e8ac9298" hidden="false" targetId="306adc93-713f-8c18-71d3-6956c376e9e2" type="profile"/>
         <infoLink id="7df4e2c0-74dd-c2ef-9341-c4fdc2ac2f89" hidden="false" targetId="76f43c9f-9d2b-e019-63db-3ac3082ee07c" type="profile"/>
         <infoLink id="959d6be5-d04c-aa61-b1db-a1b93e4b0888" hidden="false" targetId="409ed051-b4d2-fcc4-916d-1f2e7090366f" type="rule"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="c660-973f-7dbb-e420" name="Lightning Cannon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3c5-f0cf-a2fc-fcb3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7f1-42b9-bb33-10fb" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="4d59-6445-f646-35f5" hidden="false" targetId="418fbfed-277a-7376-dfd3-7d5a95fae9f5" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ff5a-489d-3c6f-f032" name="Phased-Plasma Fusil" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b63e-9851-6d01-1438" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b3a-012e-3d83-4b24" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="0e4d-2282-12dc-04c6" hidden="false" targetId="306adc93-713f-8c18-71d3-6956c376e9e2" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f1816b2d-d7ad-435b-6862-843f885c8ecc" name="May exchange its Reaper Chainsword for:" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="f3c0c540-1e73-89b8-46c3-2aca29c79009" name="Hekaton Siege Claw with twin-linked Rad Cleanser" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="0ad2338f-2a48-1121-a3f1-d1d185f0a1f7" name="Hekaton Siege Claw" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
-                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
-                    <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
-                    <characteristic name="Type" typeId="5479706523232344415441232323">Melee,  Wrecker</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="d84af9b2-1522-bbaf-1464-9d36c617e3b1" hidden="false" targetId="fe2f-3220-3fef-b177" type="rule"/>
-                <infoLink id="e5e96119-7c5c-d879-ef06-d7e73d89c4b8" hidden="false" targetId="3c77a0e2-2b38-0fff-5d7d-8f63f811bbdf" type="profile"/>
-                <infoLink id="04b39ae6-f0a5-686d-6285-2ac971ef9e08" hidden="false" targetId="eefe-09e4-17aa-deb2" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="25.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+        <selectionEntryGroup id="f1816b2d-d7ad-435b-6862-843f885c8ecc" name="May exchange its Reaper Chainsword for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="7f65-63bd-06d8-29d2">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3811-4323-8888-59c0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e3b-6387-4547-e031" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="7f65-63bd-06d8-29d2" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="8ebf-e508-6a0e-94cf" type="selectionEntry"/>
+            <entryLink id="2404-a7b2-fd9c-63f2" name="Hekaton Siege Claw with twin-linked Rad Cleanser" hidden="false" collective="false" import="true" targetId="b88e-94da-ec10-0278" type="selectionEntry"/>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="e2e886d2-716d-2139-a5d9-650bae4bc53c" name="May be upgraded with:" hidden="false" collective="false" import="true">
           <entryLinks>
@@ -3650,22 +3708,6 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Operates as a Knights Ion Shield with the following exceptions:  - May not protect Rear armour - Provides 5++ Invulnerable save in close combat - Forces close combat attacks by other Super-heavy Walkers or Gargantuan Creatures to suffer a -1 to hit. </characteristic>
           </characteristics>
         </profile>
-        <profile id="1d8aa0dc-3399-3aaa-159b-4349b74ba12a" name="Cerastus Shock Lance (Melee)" publicationId="ca571888--pubN85920" page="231" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Swift Strike</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="7953df1c-82af-4a91-20f7-3affb23cf7f2" name="Cerastus Shock Lance (Ranged)" publicationId="ca571888--pubN85920" page="231" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">18&quot;</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 6, Concussive</characteristic>
-          </characteristics>
-        </profile>
         <profile id="0b8433ff-6e32-e9aa-94e1-16e91997c267" name="Cerastus Knight-Lancer" publicationId="ca571888--pubN84158" page="305" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
           <characteristics>
             <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
@@ -3681,14 +3723,43 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="6dc16208-a28b-cbea-dea9-6bd6885242a4" name="Swift Strike" publicationId="ca571888--pubN85920" page="231" hidden="false">
-          <description>Gains +1 to initiative on any turn that it charges into close combat.</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink id="36608ff1-aa5c-22d2-b79f-22e56ccf59da" hidden="false" targetId="53c751ef-105f-b2a8-7a17-7812d605b9f2" type="rule"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="b3d3-9cf2-6252-018b" name="Cerastus Shock Lance" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d559-c41c-3b0d-18e4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba99-0b03-4bc7-bcbe" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7f12-3c7b-4c84-c722" name="Cerastus Shock Lance (Melee)" publicationId="ca571888--pubN85920" page="231" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Swift Strike</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="9870-14f6-acd2-1d74" name="Cerastus Shock Lance (Ranged)" publicationId="ca571888--pubN85920" page="231" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">18&quot;</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 6, Concussive</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="29d5-fbf1-6227-3fa9" name="Swift Strike" publicationId="ca571888--pubN85920" page="231" hidden="false">
+              <description>Gains +1 to initiative on any turn that it charges into close combat.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="f6462c55-4eef-3565-2a00-b18b8444bd20" name="May be upgraded with:" hidden="false" collective="false" import="true">
           <entryLinks>
@@ -3708,14 +3779,6 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
       <profiles>
-        <profile id="24d3f37e-1c49-59a1-1263-7240cebb4d02" name="Volkite Chieorovile" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">45&quot;</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 5, Deflagrate</characteristic>
-          </characteristics>
-        </profile>
         <profile id="8a01-a44f-6d0d-9593" name="Questoris Knight Styrix" publicationId="ca571888--pubN84158" page="304" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
           <characteristics>
             <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
@@ -3735,37 +3798,54 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <infoLink id="21e2a0b0-d74c-3255-04c6-5a85bf6a3ee7" hidden="false" targetId="76f43c9f-9d2b-e019-63db-3ac3082ee07c" type="profile"/>
         <infoLink id="6b1dd6b7-11fe-89b1-192a-393a50932fbe" hidden="false" targetId="409ed051-b4d2-fcc4-916d-1f2e7090366f" type="rule"/>
         <infoLink id="42d3d4f7-1fbe-6440-1bf2-22ee91ed7d0d" hidden="false" targetId="6ce7-5e83-a2dd-571e" type="rule"/>
-        <infoLink id="cd92a1f0-675d-5c87-28bf-07899bba9995" hidden="false" targetId="481b32ee-2904-c9e0-8612-35ff2bcab65a" type="profile"/>
-        <infoLink id="bc0104e8-2532-0caa-c684-57b5d8186e17" hidden="false" targetId="cbcf-5f25-f8ea-7cfd" type="rule"/>
-        <infoLink id="828f4a19-02bb-40b8-0974-6dc4cbf24e62" hidden="false" targetId="2d57-8425-0ec0-a9cf" type="rule"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="038a-cbc0-29e9-f029" name="Graviton Gun" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11c1-6bb1-5f01-49e0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6018-7a82-acdb-7913" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="ec97-5759-96ee-1db3" hidden="false" targetId="481b32ee-2904-c9e0-8612-35ff2bcab65a" type="profile"/>
+            <infoLink id="1560-a1c7-cc94-c192" hidden="false" targetId="2d57-8425-0ec0-a9cf" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5c49-30b3-36fe-e830" name="Volkite Chieorovile" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d290-83eb-d041-bd36" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb47-12a3-ea9a-60d5" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="beb5-1afb-0f07-90b6" name="Volkite Chieorovile" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">45&quot;</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 5, Deflagrate</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="9495-ffa9-62d6-fcba" hidden="false" targetId="cbcf-5f25-f8ea-7cfd" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="24723cac-66f3-e231-9092-1333de8d98c1" name="May exchange its Reaper Chainsword for:" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="5be171c3-5c43-333c-e1b8-5b98516f8c0b" name="Hekaton Siege Claw with twin-linked Rad Cleanser" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="9f451766-f78d-facc-1593-86aa2f7228e8" name="Hekaton Siege Claw" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
-                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
-                    <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
-                    <characteristic name="Type" typeId="5479706523232344415441232323">Melee,  Wrecker</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="9931306e-824c-db8b-12f2-c58e0e8bf9b9" hidden="false" targetId="fe2f-3220-3fef-b177" type="rule"/>
-                <infoLink id="a99bad4d-7187-389f-ed8b-181443d26503" hidden="false" targetId="3c77a0e2-2b38-0fff-5d7d-8f63f811bbdf" type="profile"/>
-                <infoLink id="3ef43818-d39f-8983-3127-1306854c69f6" hidden="false" targetId="eefe-09e4-17aa-deb2" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="25.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+        <selectionEntryGroup id="24723cac-66f3-e231-9092-1333de8d98c1" name="May exchange its Reaper Chainsword for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="53dc-784a-dba1-67fc">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa15-6301-e73f-dde3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c6d-5b0c-530c-6e67" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="53dc-784a-dba1-67fc" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="8ebf-e508-6a0e-94cf" type="selectionEntry"/>
+            <entryLink id="bf98-d1c0-078b-0613" name="Hekaton Siege Claw with twin-linked Rad Cleanser" hidden="false" collective="false" import="true" targetId="b88e-94da-ec10-0278" type="selectionEntry"/>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="b67f479c-7f22-807d-e410-1ea59b1e24d5" name="May be upgraded with:" hidden="false" collective="false" import="true">
           <entryLinks>
@@ -3799,33 +3879,60 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <characteristic name="Type" typeId="5479706523232344415441232323">Super-heavy Walker</characteristic>
           </characteristics>
         </profile>
-        <profile id="95076c1b-9de6-414b-85e6-b38f167aa205" name="Castigator pattern bolt cannon" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 8</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="77d2abd5-ac92-194e-35d4-a11e170e43a5" name="Tempest Warblade" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">10</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Deflagrate, Tempest Attack, Sunder</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
-      <rules>
-        <rule id="19b83a55-e275-86b2-44db-b2df02bb83ac" name="Tempest Attack" publicationId="ca571888--pubN84158" page="306" hidden="false">
-          <description>Rather than attacking normally, the Knight may make a single special attack at Iniative 2.  This automatically hits each model in base contact.</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink id="2b830653-e0c0-23e2-1b86-8f8210bcfdf5" hidden="false" targetId="342d5e83-9f9b-42c0-cecb-e6c9c197ab9d" type="profile"/>
         <infoLink id="e7442c5f-d262-7f85-0d78-c93561b3301b" hidden="false" targetId="53c751ef-105f-b2a8-7a17-7812d605b9f2" type="rule"/>
-        <infoLink id="05ccc725-4149-bbe0-d1c4-291383f7d189" name="" hidden="false" targetId="cbcf-5f25-f8ea-7cfd" type="rule"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="2669-74f8-2b0f-394e" name="Castigator pattern bolt cannon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e21-8c23-43ea-df97" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24da-5f7f-8da1-e000" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="39da-08ed-d1dd-5657" name="Castigator pattern bolt cannon" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="54f5-32b6-b01f-6f75" name="Tempest Warblade" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3650-9cb7-d875-21bb" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="611f-6897-2e2d-6427" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="f596-2442-a028-3e78" name="Tempest Warblade" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">10</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Deflagrate, Tempest Attack, Sunder</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="02f8-91a9-8e92-6010" name="Tempest Attack" publicationId="ca571888--pubN84158" page="306" hidden="false">
+              <description>Rather than attacking normally, the Knight may make a single special attack at Iniative 2.  This automatically hits each model in base contact.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="95b1-1037-3a73-b91d" name="" hidden="false" targetId="cbcf-5f25-f8ea-7cfd" type="rule"/>
+            <infoLink id="7de0-31b5-95d4-d6c8" name="Sunder" hidden="false" targetId="841f-9119-9f9d-5058" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="5e3a6b4f-0c5e-5b29-cc54-cf20f5668eb3" name="May be upgraded with:" hidden="false" collective="false" import="true">
           <entryLinks>
@@ -3859,32 +3966,56 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <characteristic name="Type" typeId="5479706523232344415441232323">Super-heavy Walker</characteristic>
           </characteristics>
         </profile>
-        <profile id="038c1fc5-ebbd-253e-04a0-a5166ab1b99a" name="Acheron pattern flame cannon" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">Hellstorm</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance 1</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="c6591890-5674-35b3-65ff-bcff5ab1e883" name="Reaper Chainfist" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Machine Destroyer</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
-      <rules>
-        <rule id="ec54ab08-63fb-e288-861f-25e2d0338eaf" name="Machine Destroyer" publicationId="ca571888--pubN84158" page="308" hidden="false">
-          <description>When attacking any target with an Amour Value, rolls of 1 on the destroyer damage table may be re-rolled.</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink id="56a352e5-bd00-e34a-fab2-bddbd2f14d90" name="" hidden="false" targetId="342d5e83-9f9b-42c0-cecb-e6c9c197ab9d" type="profile"/>
         <infoLink id="ed03ee31-8955-4ab8-3285-09590bfed45e" name="Flank Speed" hidden="false" targetId="53c751ef-105f-b2a8-7a17-7812d605b9f2" type="rule"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="d324-1d8d-0bed-e577" name="Acheron pattern flame cannon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b195-03d7-080a-2f4c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9ad-0fc5-0465-88fc" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="1d90-0e17-2039-7ff9" name="Acheron pattern flame cannon" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">Hellstorm</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance 1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4b52-f704-ccde-df7e" name="Reaper Chainfist" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4879-61b9-6207-6b1d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f41a-16f7-2112-b478" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="614c-538b-4901-19da" name="Reaper Chainfist" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Machine Destroyer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="7bce-a203-8a7d-7132" name="Machine Destroyer" publicationId="ca571888--pubN84158" page="308" hidden="false">
+              <description>When attacking any target with an Amour Value, rolls of 1 on the destroyer damage table may be re-rolled.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="97a1af42-3800-4b30-9e22-d8955e00394e" name="May be upgraded with:" hidden="false" collective="false" import="true">
           <entryLinks>
@@ -3918,28 +4049,31 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <characteristic name="Type" typeId="5479706523232344415441232323">Super-Heavy Walker</characteristic>
           </characteristics>
         </profile>
-        <profile id="07d8-8572-88b4-a0e5" name="Avenger Gatling Cannon" publicationId="ca571888--pubN87368" page="115" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 12, Rending</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="78ac-5e2a-fb4a-04c5" hidden="false" targetId="342d5e83-9f9b-42c0-cecb-e6c9c197ab9d" type="profile"/>
-        <infoLink id="21f8-1a26-b4ef-d73a" hidden="false" targetId="76191f60-ba9c-4e52-9faf-24b23e46c7a9" type="profile">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="f4f1-dad6-0596-ca5a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b490-5f1c-feaf-6394" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
-        <infoLink id="1904-5043-2469-8b0b" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="99bd-1939-7f04-5aea" name="Avenger Gatling Cannon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="317e-eaaa-b848-1b89" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3a7-48ed-d6ff-a518" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="32eb-25e3-31a0-1121" name="Avenger Gatling Cannon" publicationId="ca571888--pubN87368" page="115" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 12, Rending</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="c89a-2e7e-cc89-dfc4" name="May be upgraded with:" hidden="false" collective="false" import="true">
           <selectionEntries>
@@ -3947,7 +4081,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="f4f1-dad6-0596-ca5a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8035-65ed-a788-4c0e" type="equalTo"/>
+                    <condition field="selections" scope="f4f1-dad6-0596-ca5a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e244-6d45-c2f5-61a7" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4014,34 +4148,21 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="b490-5f1c-feaf-6394" name="May exchange Reaper Chainsword for:" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="4578-c708-d057-a240" name="Thunderstrike Gauntlet" publicationId="ca571888--pubN87368" page="117" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="c3f1-19dc-ae18-b4ec" name="Thunderstrike Gauntlet" publicationId="ca571888--pubN87368" page="117" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
-                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
-                    <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
-                    <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Colossal, Hurl</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="7ca5-a8d0-e94c-5491" name="Colossal" publicationId="ca571888--pubN87368" page="117" hidden="false">
-                  <description>A model fighting with this weapon Piles In and fights at Initiative 1</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+        <selectionEntryGroup id="b490-5f1c-feaf-6394" name="May exchange Reaper Chainsword for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="a706-b96a-faa9-00e6">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de91-3d47-ee44-d79e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebf9-39db-a536-ec6a" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="a706-b96a-faa9-00e6" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="8ebf-e508-6a0e-94cf" type="selectionEntry"/>
+            <entryLink id="798e-a910-16cb-e832" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" targetId="c922-0345-a2e3-1427" type="selectionEntry"/>
+          </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="8035-65ed-a788-4c0e" name="May exchange Heavy Stubber for:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="8035-65ed-a788-4c0e" name="May exchange Heavy Stubber for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="730c-58e0-4343-22ba">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56dd-276b-7241-4b15" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1559-a699-504a-9f0d" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="e244-6d45-c2f5-61a7" name="Meltagun" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -4049,6 +4170,17 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               </constraints>
               <costs>
                 <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="730c-58e0-4343-22ba" name="Heavy Stubber" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7718-94c9-8108-eb90" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="2db3-a1cb-5288-1cbd" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4080,14 +4212,6 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <characteristic name="Type" typeId="5479706523232344415441232323">Super-Heavy Walker</characteristic>
           </characteristics>
         </profile>
-        <profile id="c7a4-c8f2-88e1-3651" name="Thunderstrike Gauntlet" publicationId="ca571888--pubN87368" page="117" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Colossal, Hurl</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <rules>
         <rule id="64a7-36c9-dac6-0d1f" name="Colossal" publicationId="ca571888--pubN87368" page="117" hidden="false">
@@ -4096,8 +4220,6 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       </rules>
       <infoLinks>
         <infoLink id="cf6e-f66e-6c52-dded" hidden="false" targetId="342d5e83-9f9b-42c0-cecb-e6c9c197ab9d" type="profile"/>
-        <infoLink id="9837-2be3-e4da-22f7" hidden="false" targetId="76191f60-ba9c-4e52-9faf-24b23e46c7a9" type="profile"/>
-        <infoLink id="d1c7-21da-3aad-a67f" name="Heavy Stubber" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="c12e-0c88-5050-819f" name="May be upgraded with:" hidden="false" collective="false" import="true">
@@ -4106,7 +4228,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="74b8-f485-4b58-0071" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c827-6e76-4d1d-ee3e" type="equalTo"/>
+                    <condition field="selections" scope="74b8-f485-4b58-0071" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f7e1-9700-a27d-b2f7" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4173,7 +4295,11 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="c827-6e76-4d1d-ee3e" name="May exchange Heavy Stubber for:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="c827-6e76-4d1d-ee3e" name="May exchange Heavy Stubber for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="d74d-76b2-2afb-53a5">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="331e-e807-bc6b-2a76" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c2d-99bb-9248-1ca7" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="f7e1-9700-a27d-b2f7" name="Meltagun" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -4183,11 +4309,35 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="d74d-76b2-2afb-53a5" name="Heavy Stubber" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd34-f585-0bfc-fda4" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="0222-dec8-44dc-8578" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="f3c2-a76b-fad8-0cd0" name="Household Rank" hidden="false" collective="false" import="true" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
+        <entryLink id="668d-6e8c-0ee0-cc4e" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="8ebf-e508-6a0e-94cf" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1d4-5588-8262-819f" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d828-16e2-e8a9-139c" name="Thunderstrike Gauntlet" hidden="false" collective="false" import="true" targetId="c922-0345-a2e3-1427" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="points" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee4f-16c3-509a-1c02" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="335.0"/>
@@ -4212,27 +4362,31 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <characteristic name="Type" typeId="5479706523232344415441232323">Super-Heavy Walker</characteristic>
           </characteristics>
         </profile>
-        <profile id="619c-3ff0-05a9-fd45" name="Avenger Gatling Cannon" publicationId="ca571888--pubN87368" page="115" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 12, Rending</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="d55c-6657-a3bd-b9ae" name="Thermal Cannon" publicationId="ca571888--pubN87368" page="116" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">1</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Large Blast, Melta</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="a1b7-d5bc-52b1-5954" hidden="false" targetId="342d5e83-9f9b-42c0-cecb-e6c9c197ab9d" type="profile"/>
-        <infoLink id="795f-f849-f959-a875" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="9cc0-d275-568e-05d9" name="Avenger Gatling Cannon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7544-8d04-d419-9034" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5974-baee-7986-9215" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="ba58-9f53-d1d9-7d9d" name="Avenger Gatling Cannon" publicationId="ca571888--pubN87368" page="115" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 12, Rending</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="ee0a-75b3-4033-d106" name="May be upgraded with:" hidden="false" collective="false" import="true">
           <selectionEntries>
@@ -4243,7 +4397,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                     <conditionGroup type="and">
                       <conditions>
                         <condition field="selections" scope="09ee-4370-1462-2cb5" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4e60-ef5b-d3df-669d" type="equalTo"/>
-                        <condition field="selections" scope="09ee-4370-1462-2cb5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bf22-efc3-ea2a-769f" type="equalTo"/>
+                        <condition field="selections" scope="09ee-4370-1462-2cb5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="75f8-4e76-795a-4f09" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -4312,7 +4466,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="bf22-efc3-ea2a-769f" name="May exchange Heavy Stubber for:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="bf22-efc3-ea2a-769f" name="May exchange Heavy Stubber for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="1ecc-02aa-5cad-44b0">
           <selectionEntries>
             <selectionEntry id="75f8-4e76-795a-4f09" name="Meltagun" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -4329,9 +4483,20 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="1ecc-02aa-5cad-44b0" name="Heavy Stubber" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2a2-86f8-c71b-d202" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="efc6-05d8-d773-9a44" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="493b-2822-4d17-0885" name="May exchange Thermal cannon for:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="493b-2822-4d17-0885" name="May exchange Thermal cannon for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="958c-5ced-fbad-38c9">
           <selectionEntries>
             <selectionEntry id="4e60-ef5b-d3df-669d" name="Rapid-fire battlecannon and Heavy Stubber" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -4349,6 +4514,42 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               </profiles>
               <costs>
                 <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="958c-5ced-fbad-38c9" name="Thermal Cannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88f0-a6e5-955d-05aa" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="c2c1-638e-c0e6-9808" name="Thermal Cannon" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">1</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Melta, Large Blast</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0eff-f659-730a-0b99" name="Questoris Battlecannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae37-8308-547f-0670" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="34f2-7ec9-f209-adaf" name="Questoris battlecannon" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">72&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance 3, Large Blast</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5615,6 +5816,63 @@ or Gargantuan Creatures. </description>
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="2100.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8ebf-e508-6a0e-94cf" name="Reaper Chainsword" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fac-87be-a084-5cea" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="90a0-842f-408e-a367" hidden="false" targetId="76191f60-ba9c-4e52-9faf-24b23e46c7a9" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c922-0345-a2e3-1427" name="Thunderstrike Gauntlet" publicationId="ca571888--pubN87368" page="117" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49ee-41e6-df5b-c8ac" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="170a-11b7-2ea7-8777" name="Thunderstrike Gauntlet" publicationId="ca571888--pubN87368" page="117" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
+            <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Colossal, Hurl</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="3ac9-ed08-f3d9-df0c" name="Colossal" publicationId="ca571888--pubN87368" page="117" hidden="false">
+          <description>A model fighting with this weapon Piles In and fights at Initiative 1</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b88e-94da-ec10-0278" name="Hekaton Siege Claw with twin-linked Rad Cleanser" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bb53-0647-b91b-55d1" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="ba82-99cd-302c-a90f" name="Hekaton Siege Claw" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
+            <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Melee,  Wrecker</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3fcb-8563-e0b3-780a" hidden="false" targetId="fe2f-3220-3fef-b177" type="rule"/>
+        <infoLink id="c2a3-d6fc-3e09-afed" hidden="false" targetId="3c77a0e2-2b38-0fff-5d7d-8f63f811bbdf" type="profile"/>
+        <infoLink id="e6ee-84e9-5e11-9b49" hidden="false" targetId="eefe-09e4-17aa-deb2" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="25.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
