@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="109" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="110" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN66489" name="HH:MT"/>
@@ -13,10 +13,7 @@
     <publication id="ca571888--pubN69050" name="HH:MTAL"/>
     <publication id="ca571888--pubN73893" name="Planetary Onslaught"/>
     <publication id="ca571888--pubN73904" name="Warhammer 40k rulebook"/>
-    <publication id="ca571888--pubN73996" name="AoD: Rulebook"/>
     <publication id="ca571888--pubN74520" name="Stronghold Assault"/>
-    <publication id="ca571888--pubN74807" name="HH: AoD Rulebook"/>
-    <publication id="ca571888--pubN79717" name="AoD: Rulebook "/>
     <publication id="ca571888--pubN80309" name="Datasheet: Munitorium Armoured Container Cache"/>
     <publication id="ca571888--pubN80998" name="HH: AoDAL"/>
     <publication id="ca571888--pubN82424" name="HH:AODAL"/>
@@ -28,7 +25,6 @@
     <publication id="ca571888--pubN89821" name="HH6: Retribution"/>
     <publication id="ca571888--pubN91142" name="CI:AL"/>
     <publication id="ca571888--pubN92115" name="HH7: Infeno"/>
-    <publication id="ca571888--pubN94477" name="AoD: Rulebook1"/>
     <publication id="ca571888--pubN94574" name="HH-Questoris-Knight-Dominus Download"/>
     <publication id="ca571888--pubN95649" name="Playtest Rules Errata V1.0 Warhammer Community Download"/>
     <publication id="ca571888--pubN95721" name="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Horus_Heresy/HH-Legio-Titanicus-Warbringer-Nemesis-Titan.pdf?fbclid=IwAR3LyUx_Bhf7-hxpR0uCkbOmVMu5pzHpAqjgwmb_4SStSrjeTILm49XO__c"/>
@@ -37,7 +33,6 @@
     <publication id="ca571888--pubN104183" name="hh8"/>
     <publication id="ca571888--pubN105292" name="BRB 7th"/>
     <publication id="ca571888--pubN105613" name="HH:MAL"/>
-    <publication id="ca571888--pubN106257" name="HH: AoD Rulebook1"/>
     <publication id="ca571888--pubN106389" name="HH:GEAFAQV1.0"/>
     <publication id="ca571888--pubN106502" name="HH: Core Rule Book"/>
     <publication id="ca571888--pubN106650" name="White Dwarf"/>
@@ -45,14 +40,10 @@
     <publication id="ca571888--pubN106780" name="LA:AoDLA"/>
     <publication id="ca571888--pubN107025" name="Web"/>
     <publication id="ca571888--pubN107062" name="AL:AoDAL"/>
-    <publication id="ca571888--pubN107350" name="BRB"/>
     <publication id="ca571888--pubN107368" name="FAQ 2018"/>
     <publication id="ca571888--pubN108209" name="Death from the Skies"/>
-    <publication id="ca571888--pubN108377" name="HH6: Retibution"/>
     <publication id="ca571888--pubN112761" name="LA:AoDAL"/>
     <publication id="ca571888--pubN113187" name="LA:AoDL"/>
-    <publication id="ca571888--pubN113873" name="HH: Rulebook"/>
-    <publication id="ca571888--pubN115656" name="HH: AoD 1st"/>
   </publications>
   <costTypes>
     <costType id="points" name="pts" defaultCostLimit="0.0"/>
@@ -1481,7 +1472,7 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="50.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="16d6-25c4-af92-4329" name="Aquila Strongpoint" publicationId="ca571888--pubN73996" page="117" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="16d6-25c4-af92-4329" name="Aquila Strongpoint" publicationId="ca571888--pubN106502" page="117" hidden="false" collective="false" import="true" type="model">
       <infoLinks>
         <infoLink id="ca07-96ca-ec6d-844b" name="Repel the Enemy" hidden="false" targetId="cf90-39d9-c923-f6bf" type="rule"/>
         <infoLink id="559e-a92a-124a-eb4c" hidden="false" targetId="3384-a962-78e5-d13c" type="rule"/>
@@ -1603,7 +1594,7 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="535.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e10f-7b90-ecd3-80a5" name="Basilica Administratum" publicationId="ca571888--pubN73996" page="120" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="e10f-7b90-ecd3-80a5" name="Basilica Administratum" publicationId="ca571888--pubN106502" page="120" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="3565-9ece-4ada-e7dc" name="Basilica Administratum" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
@@ -1620,32 +1611,32 @@ D6    Result		S	AP
     </selectionEntry>
     <selectionEntry id="7b11-22c7-16af-3bd4" name="BRB: Command Traits" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="cfe2-9cdd-5a7f-c824" name="Warlord Trait: Inspiring Presence" publicationId="ca571888--pubN74807" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+        <profile id="cfe2-9cdd-5a7f-c824" name="Warlord Trait: Inspiring Presence" publicationId="ca571888--pubN106502" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Friendly units within 12&quot; of the Warlord can use his Leadership rather than their own.</characteristic>
           </characteristics>
         </profile>
-        <profile id="b0c9-26c9-a259-9acf" name="Warlord Trait: Coordinated Assault" publicationId="ca571888--pubN74807" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+        <profile id="b0c9-26c9-a259-9acf" name="Warlord Trait: Coordinated Assault" publicationId="ca571888--pubN106502" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">In the Assault phase, your Warlord and all friendly units within 12&quot; of him re-roll To Hit rolls of 1.</characteristic>
           </characteristics>
         </profile>
-        <profile id="faee-6ac9-e1e9-2475" name="Warlord Trait: Target Priority" publicationId="ca571888--pubN74807" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+        <profile id="faee-6ac9-e1e9-2475" name="Warlord Trait: Target Priority" publicationId="ca571888--pubN106502" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">In the Shooting phase, your Warlord and all friendly units within 12&quot; of him re-roll To Hit rolls of 1.</characteristic>
           </characteristics>
         </profile>
-        <profile id="a578-9a31-6f36-26da" name="Warlord Trait: Master of the Vanguard" publicationId="ca571888--pubN74807" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+        <profile id="a578-9a31-6f36-26da" name="Warlord Trait: Master of the Vanguard" publicationId="ca571888--pubN106502" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Your Warlord, and all friendly units within 12&quot;, add 1&quot; to the distance that they can move when they Run or Charge.</characteristic>
           </characteristics>
         </profile>
-        <profile id="e2fd-c583-0688-4738" name="Warlord Trait: Intimidating Presence" publicationId="ca571888--pubN74807" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+        <profile id="e2fd-c583-0688-4738" name="Warlord Trait: Intimidating Presence" publicationId="ca571888--pubN106502" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Enemy units within 12&quot; of the Warlord must use their Lowest Leadership value, not the highest.</characteristic>
           </characteristics>
         </profile>
-        <profile id="2123-b3b6-de4b-0db5" name="Warlord Trait: The Dust of a Thousand Worlds" publicationId="ca571888--pubN74807" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+        <profile id="2123-b3b6-de4b-0db5" name="Warlord Trait: The Dust of a Thousand Worlds" publicationId="ca571888--pubN106502" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Your Warlord, and all friendly units within 12&quot;, have the Move Through Cover special rule.</characteristic>
           </characteristics>
@@ -1660,32 +1651,32 @@ D6    Result		S	AP
     </selectionEntry>
     <selectionEntry id="6d89-6ae9-05ea-0579" name="BRB: Personal Traits" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="5814-8698-8309-5c7a" name="Warlord Trait: Master of Defence" publicationId="ca571888--pubN74807" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+        <profile id="5814-8698-8309-5c7a" name="Warlord Trait: Master of Defence" publicationId="ca571888--pubN106502" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Your Warlord has the Counter-attack special rule.</characteristic>
           </characteristics>
         </profile>
-        <profile id="8b51-c91b-bd55-2d71" name="Warlord Trait: Immovable Object" publicationId="ca571888--pubN74807" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+        <profile id="8b51-c91b-bd55-2d71" name="Warlord Trait: Immovable Object" publicationId="ca571888--pubN106502" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Your Warlord has the Fearless and It Will Not Die special rules.</characteristic>
           </characteristics>
         </profile>
-        <profile id="9828-d73e-e464-4daa" name="Warlord Trait: Tenacity" publicationId="ca571888--pubN74807" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+        <profile id="9828-d73e-e464-4daa" name="Warlord Trait: Tenacity" publicationId="ca571888--pubN106502" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Your Warlord has the Feel No Pain special rule.</characteristic>
           </characteristics>
         </profile>
-        <profile id="ffa3-f6d9-cd71-beb0" name="Warlord Trait: Master of Manoeuvre" publicationId="ca571888--pubN74807" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+        <profile id="ffa3-f6d9-cd71-beb0" name="Warlord Trait: Master of Manoeuvre" publicationId="ca571888--pubN106502" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Your Warlord has the Outflank special rule.</characteristic>
           </characteristics>
         </profile>
-        <profile id="5621-6e23-64e7-642d" name="Warlord Trait: Legendary Fighter" publicationId="ca571888--pubN74807" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+        <profile id="5621-6e23-64e7-642d" name="Warlord Trait: Legendary Fighter" publicationId="ca571888--pubN106502" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Your army gains 1 Victory Point for each enemy character slain by your Warlord in a challenge.</characteristic>
           </characteristics>
         </profile>
-        <profile id="ecf1-07e8-857f-2c3a" name="Warlord Trait: Master of Offence" publicationId="ca571888--pubN74807" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+        <profile id="ecf1-07e8-857f-2c3a" name="Warlord Trait: Master of Offence" publicationId="ca571888--pubN106502" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Your Warlord has the Furious Charge special rule.</characteristic>
           </characteristics>
@@ -1705,32 +1696,32 @@ D6    Result		S	AP
     </selectionEntry>
     <selectionEntry id="fd25-8750-1716-cff8" name="BRB: Strategic Traits" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="fb07-ddb8-23f5-7eda" name="Warlord Trait: Conqueror of Cities" publicationId="ca571888--pubN74807" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+        <profile id="fb07-ddb8-23f5-7eda" name="Warlord Trait: Conqueror of Cities" publicationId="ca571888--pubN106502" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Your units have the Move Through Cover special rule if moving through Ruins, and the Stealth (Ruins) Special rule.</characteristic>
           </characteristics>
         </profile>
-        <profile id="90ee-2233-de3f-e122" name="Warlord Trait: Night Attacker" publicationId="ca571888--pubN74807" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+        <profile id="90ee-2233-de3f-e122" name="Warlord Trait: Night Attacker" publicationId="ca571888--pubN106502" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">If you choose to use the Night Fighting rules in your game, there is no need to roll - it is Night on the first turn, and all models in your army have the Night Vision special rule.</characteristic>
           </characteristics>
         </profile>
-        <profile id="c745-d7b2-68f7-9d92" name="Warlord Trait: Master of Ambush" publicationId="ca571888--pubN74807" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+        <profile id="c745-d7b2-68f7-9d92" name="Warlord Trait: Master of Ambush" publicationId="ca571888--pubN106502" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Your Warlord and three non-vehicle units of your choice have the Infiltrate special rule.</characteristic>
           </characteristics>
         </profile>
-        <profile id="312e-33bf-d4e0-36ba" name="Warlord Trait: Strategic Genius" publicationId="ca571888--pubN74807" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+        <profile id="312e-33bf-d4e0-36ba" name="Warlord Trait: Strategic Genius" publicationId="ca571888--pubN106502" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">You add +1 to any Seize the Initiative roll.  In addition, whilst your Warlord is alive, you can re-roll any Reserve Rolls (failed or successful).</characteristic>
           </characteristics>
         </profile>
-        <profile id="cde5-6744-ed87-eaa7" name="Warlord Trait: Princeps of Deceit" publicationId="ca571888--pubN74807" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+        <profile id="cde5-6744-ed87-eaa7" name="Warlord Trait: Princeps of Deceit" publicationId="ca571888--pubN106502" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">At the start of your opponent&apos;s first turn, pick 3 units in the enemy army.  Each of these units must take a Pinning test.</characteristic>
           </characteristics>
         </profile>
-        <profile id="ead1-056f-4340-b428" name="Warlord Trait: Divide to Conquer" publicationId="ca571888--pubN74807" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+        <profile id="ead1-056f-4340-b428" name="Warlord Trait: Divide to Conquer" publicationId="ca571888--pubN106502" page="137" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Whilst your Warlord is alive, your opponent has a -1 modifier to their Reserve Rolls.</characteristic>
           </characteristics>
@@ -1756,7 +1747,7 @@ D6    Result		S	AP
     </selectionEntry>
     <selectionEntry id="0fab-78b0-0708-7329" name="Discipline: Biomancy" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="4cda-87d2-694c-73f7" name="2. Enfeeble" publicationId="ca571888--pubN74807" page="184" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="4cda-87d2-694c-73f7" name="2. Enfeeble" publicationId="ca571888--pubN106502" page="184" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Malediction</characteristic>
@@ -1764,7 +1755,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Whilst the power is in effect, the target unit suffers a -1 penalty to both Strength and Toughness, and treats all terrain (even open ground) as difficult terrain.</characteristic>
           </characteristics>
         </profile>
-        <profile id="315b-628b-d4b1-b075" name="1. Iron Arm" publicationId="ca571888--pubN74807" page="184" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="315b-628b-d4b1-b075" name="1. Iron Arm" publicationId="ca571888--pubN106502" page="184" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
@@ -1772,7 +1763,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Whilst the power is in effect, the Psyker has +3 to his Strength and Toughness and he gains the Smash special rule.</characteristic>
           </characteristics>
         </profile>
-        <profile id="aabd-a6cf-defb-ac34" name="3. Life Leech" publicationId="ca571888--pubN74807" page="184" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
+        <profile id="aabd-a6cf-defb-ac34" name="3. Life Leech" publicationId="ca571888--pubN106502" page="184" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
           <characteristics>
             <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">1</characteristic>
             <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire</characteristic>
@@ -1783,7 +1774,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="a812-390d-dff6-dabd">If Life Leech causes at least one unsaved Wound, the Psyker, or one friendly model within 6&quot; of the Psyker, immediately regains a Wound lost earlier in the battle.</characteristic>
           </characteristics>
         </profile>
-        <profile id="0af8-456a-2fc4-f974" name="4. Warp Speed" publicationId="ca571888--pubN74807" page="184" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="0af8-456a-2fc4-f974" name="4. Warp Speed" publicationId="ca571888--pubN106502" page="184" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
@@ -1791,7 +1782,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Whilst the power is in effect, the Psyker has +3 to his Initiative and Attacks and he gains the Fleet special rule.</characteristic>
           </characteristics>
         </profile>
-        <profile id="1048-ccd5-2e5d-4111" name="5. Endurance" publicationId="ca571888--pubN74807" page="184" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="1048-ccd5-2e5d-4111" name="5. Endurance" publicationId="ca571888--pubN106502" page="184" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">2</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
@@ -1799,7 +1790,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Whilst the power is in effect, all models in the target unit gain the Eternal Warrior, Feel No Pain (4+) and Relentless special rules.</characteristic>
           </characteristics>
         </profile>
-        <profile id="e140-e6e5-cc6d-ebb3" name="6. Haemorrhage" publicationId="ca571888--pubN74807" page="184" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="e140-e6e5-cc6d-ebb3" name="6. Haemorrhage" publicationId="ca571888--pubN106502" page="184" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Focussed Witchfire</characteristic>
@@ -1807,7 +1798,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">The target must pass two separate Toughness tests or suffer a Wound with no armour or cover saves allowed for each test that was failed.  If the target is removed as a casualty, randomly select another model (friend or foe) within 2&quot; of him.  That model must pass a single Toughness test or suffer a Wound with no armour or cover saves allowed.  If that model is removed as a casualty, continue the process of selecting anothe rmodel and taking a single Toughness test until either a model survives or there are no more suitable targets within range.</characteristic>
           </characteristics>
         </profile>
-        <profile id="6061-064d-3e6e-33f4" name="(Primaris) Smite" publicationId="ca571888--pubN74807" page="184" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
+        <profile id="6061-064d-3e6e-33f4" name="(Primaris) Smite" publicationId="ca571888--pubN106502" page="184" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
           <characteristics>
             <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">1</characteristic>
             <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire</characteristic>
@@ -1832,7 +1823,7 @@ D6    Result		S	AP
     </selectionEntry>
     <selectionEntry id="5d8d-02d9-88cf-965f" name="Discipline: Daemonology (Malefic)" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="2bd4-22b0-173e-277f" name="6. Possession" publicationId="ca571888--pubN74807" page="190" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="2bd4-22b0-173e-277f" name="6. Possession" publicationId="ca571888--pubN106502" page="190" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">3</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Conjuration</characteristic>
@@ -1840,7 +1831,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Possession creates one of the following new units (your choice): 1 Bloodthirster, 1 Lord of Change, 1 Great Unclean One or 1 Keeper of Secrets. If this power is successfully manifested, the Psyker is immediately removed as a casualty (if the Psyker was part of a unit with the Brotherhood of Psykers/Sorcerers special rule, remove the entire unit as casualties). If, when using this power, the Psyker fails his Psychic test, he automatically suffers Perils of the Warp.</characteristic>
           </characteristics>
         </profile>
-        <profile id="9bc0-7e8d-d0cf-d07c" name="3. Infernal Gaze" publicationId="ca571888--pubN74807" page="190" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
+        <profile id="9bc0-7e8d-d0cf-d07c" name="3. Infernal Gaze" publicationId="ca571888--pubN106502" page="190" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
           <characteristics>
             <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">1</characteristic>
             <characteristic name="Power Category" typeId="668e-d504-8244-7422">Beam</characteristic>
@@ -1851,7 +1842,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
           </characteristics>
         </profile>
-        <profile id="b705-3eca-463f-898c" name="1. Cursed Earth" publicationId="ca571888--pubN74807" page="190" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="b705-3eca-463f-898c" name="1. Cursed Earth" publicationId="ca571888--pubN106502" page="190" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
@@ -1859,7 +1850,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Whilst the power is in effect, all models with the Daemon special rule (friend or foe) within 12&quot; of the Psyker have a +1 bonus to their invulnerable save (normally increasing it to 4+). This is cumulative withany other modifiers to a Daemon’s invulnerable save. In addition, whilst the power is in effect, friendly units with the Daemon special rule will not scatter when arriving from Deep Strike Reserve so long as the first model is placed within 12&quot; of the Psyker.</characteristic>
           </characteristics>
         </profile>
-        <profile id="f8f2-4b8b-644b-6f06" name="(Primaris) Summoning" publicationId="ca571888--pubN74807" page="190" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="f8f2-4b8b-644b-6f06" name="(Primaris) Summoning" publicationId="ca571888--pubN106502" page="190" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">3</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Conjuration</characteristic>
@@ -1867,7 +1858,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Summoning creates one of the following units (your choice): 10 Bloodletters of Khorne, 10 Pink Horrors of Tzeentch, 10 Plaguebearers of Nurgle, 10 Daemonettes of Slaanesh, 5 Flesh Hounds of Khorne, 3 Flamers ofTzeentch, 3 Nurgling swarms or 5 Seekers of Slaanesh.</characteristic>
           </characteristics>
         </profile>
-        <profile id="1825-f3d6-e904-f999" name="2. Dark Flame" publicationId="ca571888--pubN74807" page="190" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
+        <profile id="1825-f3d6-e904-f999" name="2. Dark Flame" publicationId="ca571888--pubN106502" page="190" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
           <characteristics>
             <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">1</characteristic>
             <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire</characteristic>
@@ -1878,7 +1869,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
           </characteristics>
         </profile>
-        <profile id="98f0-c12b-2fb2-56f8" name="4. Sacrifice" publicationId="ca571888--pubN74807" page="190" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="98f0-c12b-2fb2-56f8" name="4. Sacrifice" publicationId="ca571888--pubN106502" page="190" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Conjuration</characteristic>
@@ -1886,7 +1877,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Sacrifice creates one of the following units (your choice): 1 Herald of Khorne, 1 Herald of Tzeentch, 1 Herald of Nurgle or 1 Herald of Slaanesh, with up to 30 points’ worth of options. If this power is successfully manifested, one friendly model within 6&quot; of the Psyker (or the Psyker himself) immediately suffers a single Wound with no saves of any kind allowed.</characteristic>
           </characteristics>
         </profile>
-        <profile id="724f-ebc5-d6c3-3172" name="5. Incursion" publicationId="ca571888--pubN74807" page="190" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="724f-ebc5-d6c3-3172" name="5. Incursion" publicationId="ca571888--pubN106502" page="190" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">3</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Conjuration</characteristic>
@@ -1907,7 +1898,7 @@ D6    Result		S	AP
     </selectionEntry>
     <selectionEntry id="a6ef-b870-fa86-f44a" name="Discipline: Daemonology (Sanctic)" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="e231-5912-1606-7f3b" name="2. Hammerhand" publicationId="ca571888--pubN74807" page="189" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="e231-5912-1606-7f3b" name="2. Hammerhand" publicationId="ca571888--pubN106502" page="189" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
@@ -1915,7 +1906,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Whilst the power is in effect, the Psyker and his unit have +2 Strength</characteristic>
           </characteristics>
         </profile>
-        <profile id="ae82-4bd3-bff9-24e9" name="(Primaris) Banishment" publicationId="ca571888--pubN74807" page="189" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="ae82-4bd3-bff9-24e9" name="(Primaris) Banishment" publicationId="ca571888--pubN106502" page="189" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Malediction</characteristic>
@@ -1923,7 +1914,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Whilst this power is in effect, all models in the target Daemon unit suffer a -1 penalty to their invulnerable save (normally reducing it to a 6+). This is cumulative with any other modifiers to a Daemon&apos;s invulnerable save, but cannot make it worse than 6+.</characteristic>
           </characteristics>
         </profile>
-        <profile id="3843-43d4-0fb8-3875" name="1. Gate of Infinity" publicationId="ca571888--pubN74807" page="189" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="3843-43d4-0fb8-3875" name="1. Gate of Infinity" publicationId="ca571888--pubN106502" page="189" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
@@ -1931,7 +1922,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Unless the target is Zooming or Swooping, remove the target and his unit from the board. It then immediately arrives anywhere on the board using the rules for Deep Strike.</characteristic>
           </characteristics>
         </profile>
-        <profile id="2751-d13c-bcee-b421" name="3. Sanctuary" publicationId="ca571888--pubN74807" page="189" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="2751-d13c-bcee-b421" name="3. Sanctuary" publicationId="ca571888--pubN106502" page="189" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
@@ -1939,7 +1930,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Whilst the power is in effect the Psyker and all models in his unit receive a +1 bonus to their invulnerable save (models that do not have an invulnerable save gain a 6+ invulnerable save whilst this power is in effect instead). In addition, all units with the Daemon special rule (friend or foe) treat allterrain, including open ground, within 12&quot; of the Psyker as dangerous terrain.</characteristic>
           </characteristics>
         </profile>
-        <profile id="04a8-89e7-3f89-6c7f" name="4. Purge Soul" publicationId="ca571888--pubN74807" page="189" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="04a8-89e7-3f89-6c7f" name="4. Purge Soul" publicationId="ca571888--pubN106502" page="189" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Focussed Witchfire</characteristic>
@@ -1947,7 +1938,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Both the Psyker and thetarget model roll a D6 and add their respective Leadership values. If the target’s total isgreater than the Psyker’s total, nothing happens. If the Psyker’s total is greater than orequal to the target’s total, the target model suffers an automatic Wound with no armouror cover saves allowed. Purge Soul has no effect on vehicles.</characteristic>
           </characteristics>
         </profile>
-        <profile id="c11c-1dac-e496-181e" name="5. Cleansing Flame" publicationId="ca571888--pubN74807" page="189" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
+        <profile id="c11c-1dac-e496-181e" name="5. Cleansing Flame" publicationId="ca571888--pubN106502" page="189" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
           <characteristics>
             <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">2</characteristic>
             <characteristic name="Power Category" typeId="668e-d504-8244-7422">Nova</characteristic>
@@ -1958,7 +1949,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
           </characteristics>
         </profile>
-        <profile id="97a4-4be5-6664-da68" name="6. Vortex of Doom" publicationId="ca571888--pubN74807" page="189" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
+        <profile id="97a4-4be5-6664-da68" name="6. Vortex of Doom" publicationId="ca571888--pubN106502" page="189" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
           <characteristics>
             <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">3</characteristic>
             <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire</characteristic>
@@ -1981,7 +1972,7 @@ D6    Result		S	AP
     </selectionEntry>
     <selectionEntry id="236f-417a-9ed3-8d3a" name="Discipline: Divination" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="3a7d-921d-9950-73ed" name="3. Perfect Timing" publicationId="ca571888--pubN74807" page="185" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="3a7d-921d-9950-73ed" name="3. Perfect Timing" publicationId="ca571888--pubN106502" page="185" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
@@ -1989,7 +1980,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Whilst this power is in effect, the Psyker and his unit&apos;s weapons ahve the Ignores Cover special rule.</characteristic>
           </characteristics>
         </profile>
-        <profile id="1b8f-06fb-82f8-9f6c" name="4. Precognition" publicationId="ca571888--pubN74807" page="185" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="1b8f-06fb-82f8-9f6c" name="4. Precognition" publicationId="ca571888--pubN106502" page="185" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
@@ -1997,7 +1988,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Whilst the power is in effect, the Psyker re-rolls all failed To Hit and To Wound rolls. In addition, while the power is in effect, the Psyker re-rolls failed saving throws.</characteristic>
           </characteristics>
         </profile>
-        <profile id="d4bf-ea83-3a84-8535" name="5. Misfortune" publicationId="ca571888--pubN74807" page="185" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="d4bf-ea83-3a84-8535" name="5. Misfortune" publicationId="ca571888--pubN106502" page="185" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">2</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Malediction</characteristic>
@@ -2005,7 +1996,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Whilst the power is in effect, all attacks that hit the target unit have the Rending special rule.</characteristic>
           </characteristics>
         </profile>
-        <profile id="5954-4cb9-4bdd-6d18" name="6. Scrier&apos;s Gaze" publicationId="ca571888--pubN74807" page="185" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="5954-4cb9-4bdd-6d18" name="6. Scrier&apos;s Gaze" publicationId="ca571888--pubN106502" page="185" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">2</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
@@ -2013,7 +2004,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Whilst the power is in effect, you can re-roll the dice when rolling for Reserves, Outflank, and when any of your units identifies a Mysterious Objective.  In addition, if the mission has the Tactical Objectives special rule, you can immediately choose to discard one of your active Tactical Objectives and generate a new one.</characteristic>
           </characteristics>
         </profile>
-        <profile id="c4cb-2e4d-fda7-bb26" name="1. Foreboding" publicationId="ca571888--pubN74807" page="185" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="c4cb-2e4d-fda7-bb26" name="1. Foreboding" publicationId="ca571888--pubN106502" page="185" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
@@ -2021,7 +2012,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Whilst this power is in effect, the Psyker and his unit have the Counter-attack special rule and fire Overwatch using their full Ballistic Skill, rather than Ballistic Skill 1.</characteristic>
           </characteristics>
         </profile>
-        <profile id="dcf4-8194-115c-45cc" name="2. Forewarning" publicationId="ca571888--pubN74807" page="185" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="dcf4-8194-115c-45cc" name="2. Forewarning" publicationId="ca571888--pubN106502" page="185" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
@@ -2029,7 +2020,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Whilst the power is in effect, the target unit has a 4+ invulnerable save.</characteristic>
           </characteristics>
         </profile>
-        <profile id="e7a3-0f73-f77d-ffdc" name="(Primaris) Prescience" publicationId="ca571888--pubN74807" page="185" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="e7a3-0f73-f77d-ffdc" name="(Primaris) Prescience" publicationId="ca571888--pubN106502" page="185" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">2</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
@@ -2049,7 +2040,7 @@ D6    Result		S	AP
     </selectionEntry>
     <selectionEntry id="38d9-2855-fb63-c702" name="Discipline: Pyromancy" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="29fc-7711-7da6-b0cb" name="(Primaris) Flame Breath" publicationId="ca571888--pubN74807" page="186" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
+        <profile id="29fc-7711-7da6-b0cb" name="(Primaris) Flame Breath" publicationId="ca571888--pubN106502" page="186" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
           <characteristics>
             <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">1</characteristic>
             <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire</characteristic>
@@ -2060,7 +2051,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="a812-390d-dff6-dabd">Soul Blaze</characteristic>
           </characteristics>
         </profile>
-        <profile id="4b72-2bad-754b-2249" name="1. Fiery Form" publicationId="ca571888--pubN74807" page="186" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="4b72-2bad-754b-2249" name="1. Fiery Form" publicationId="ca571888--pubN106502" page="186" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
@@ -2068,7 +2059,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Whilst the power is in effect, the Psyker gains a 4+ invulnerable save and his close combat attacks have the Soul Blaze special rule. Whilst the power is in effect, the Psyker re-rolls failed To Wound rolls inflicted by any further Pyromancy powers he manifests.</characteristic>
           </characteristics>
         </profile>
-        <profile id="7a2b-9d87-6916-3e2b" name="2. Fire Shield" publicationId="ca571888--pubN74807" page="186" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="7a2b-9d87-6916-3e2b" name="2. Fire Shield" publicationId="ca571888--pubN106502" page="186" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
@@ -2076,7 +2067,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Whilst the power is in effect, the target unit has a 4+ cover save and all enemy units treat all terrain within 6&quot; of the target as Dangerous Terrain.</characteristic>
           </characteristics>
         </profile>
-        <profile id="3d84-b3a6-0b6c-1c1b" name="4. Sunburst" publicationId="ca571888--pubN74807" page="186" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
+        <profile id="3d84-b3a6-0b6c-1c1b" name="4. Sunburst" publicationId="ca571888--pubN106502" page="186" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
           <characteristics>
             <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">1</characteristic>
             <characteristic name="Power Category" typeId="668e-d504-8244-7422">Nova</characteristic>
@@ -2087,7 +2078,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
           </characteristics>
         </profile>
-        <profile id="2f21-e14e-38bc-0b4e" name="5. Inferno" publicationId="ca571888--pubN74807" page="186" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
+        <profile id="2f21-e14e-38bc-0b4e" name="5. Inferno" publicationId="ca571888--pubN106502" page="186" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
           <characteristics>
             <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">2</characteristic>
             <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire</characteristic>
@@ -2098,7 +2089,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
           </characteristics>
         </profile>
-        <profile id="999c-a5c3-6eb7-f139" name="3. Spontaneous Combustion" publicationId="ca571888--pubN74807" page="186" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="999c-a5c3-6eb7-f139" name="3. Spontaneous Combustion" publicationId="ca571888--pubN106502" page="186" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Focussed Witchfire</characteristic>
@@ -2106,7 +2097,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">The target model suffers a Strength 6 AP3 hit with the Soul Blaze special rule. If the model is slainby this hit in the Psychic phase, centre the small blast marker over the target before removing him as a casualty. All other models under the marker suffer a Strength 5 AP4 hit with the Ignores Cover and Soul Blaze special rules.</characteristic>
           </characteristics>
         </profile>
-        <profile id="c05f-a898-82eb-00a4" name="6. Molten Beam" publicationId="ca571888--pubN74807" page="186" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
+        <profile id="c05f-a898-82eb-00a4" name="6. Molten Beam" publicationId="ca571888--pubN106502" page="186" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
           <characteristics>
             <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">2</characteristic>
             <characteristic name="Power Category" typeId="668e-d504-8244-7422">Beam</characteristic>
@@ -2129,7 +2120,7 @@ D6    Result		S	AP
     </selectionEntry>
     <selectionEntry id="0268-83ac-dfc9-5a58" name="Discipline: Telekinesis" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="4cef-a77b-fcbe-7238" name="6. Psychic Maelstrom" publicationId="ca571888--pubN74807" page="187" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
+        <profile id="4cef-a77b-fcbe-7238" name="6. Psychic Maelstrom" publicationId="ca571888--pubN106502" page="187" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
           <characteristics>
             <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">3</characteristic>
             <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire</characteristic>
@@ -2140,7 +2131,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
           </characteristics>
         </profile>
-        <profile id="3386-3504-a10c-4c75" name="3. Shockwave" publicationId="ca571888--pubN74807" page="187" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
+        <profile id="3386-3504-a10c-4c75" name="3. Shockwave" publicationId="ca571888--pubN106502" page="187" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
           <characteristics>
             <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">1</characteristic>
             <characteristic name="Power Category" typeId="668e-d504-8244-7422">Nova</characteristic>
@@ -2151,7 +2142,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
           </characteristics>
         </profile>
-        <profile id="443f-0ae5-0d1c-9131" name="(Primaris) Assail" publicationId="ca571888--pubN74807" page="187" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
+        <profile id="443f-0ae5-0d1c-9131" name="(Primaris) Assail" publicationId="ca571888--pubN106502" page="187" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
           <characteristics>
             <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">1</characteristic>
             <characteristic name="Power Category" typeId="668e-d504-8244-7422">Beam</characteristic>
@@ -2162,7 +2153,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
           </characteristics>
         </profile>
-        <profile id="63a1-6b3a-f7c1-6f54" name="1. Crush" publicationId="ca571888--pubN74807" page="187" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="63a1-6b3a-f7c1-6f54" name="1. Crush" publicationId="ca571888--pubN106502" page="187" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Focussed Witchfire</characteristic>
@@ -2170,7 +2161,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Roll 2D6. The target model suffers a hit with a Strength equal to the result (a result of an 11 or 12 wounds automatically or, in the case of a vehicle, causes an automatic penetrating hit) with APD6.</characteristic>
           </characteristics>
         </profile>
-        <profile id="2aac-a9e8-be23-abe4" name="5. Telekine Dome" publicationId="ca571888--pubN74807" page="187" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="2aac-a9e8-be23-abe4" name="5. Telekine Dome" publicationId="ca571888--pubN106502" page="187" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">2</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
@@ -2178,7 +2169,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Whilst the power is in effect, the Psyker, and all friendly models within 12&quot; of the Psyker, have a 5+ invulnerable save against any shooting attack.</characteristic>
           </characteristics>
         </profile>
-        <profile id="6013-e336-dc0f-ffe1" name="2. Objuration Mechanicum" publicationId="ca571888--pubN74807" page="187" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="6013-e336-dc0f-ffe1" name="2. Objuration Mechanicum" publicationId="ca571888--pubN106502" page="187" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Malediction</characteristic>
@@ -2186,7 +2177,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Whilst the power is in effect, all of the target’s ranged weapons have the Gets Hot special rule. In addition, if the target is a vehicle (or vehicle squadron), each vehicle in the unit suffers a single Strength 1 hit with the Haywire special rule.</characteristic>
           </characteristics>
         </profile>
-        <profile id="5702-6c49-983f-aeaf" name="4. Levitation" publicationId="ca571888--pubN74807" page="187" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="5702-6c49-983f-aeaf" name="4. Levitation" publicationId="ca571888--pubN106502" page="187" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
@@ -2207,7 +2198,7 @@ D6    Result		S	AP
     </selectionEntry>
     <selectionEntry id="13eb-0252-de5d-24d4" name="Discipline: Telepathy" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="3b62-952d-e950-f7d0" name="6. Hallucination" publicationId="ca571888--pubN74807" page="188" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="3b62-952d-e950-f7d0" name="6. Hallucination" publicationId="ca571888--pubN106502" page="188" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">2</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Malediction</characteristic>
@@ -2215,7 +2206,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Roll once this power has been successfully manifested to determine the manner of hallucinations the target is suffering from (roll once for the whole unit).  1-2: The unit must take a Pinning Test. 3-4: Whilst the power is in effect, all models in the unit suffer a -1 penalty to their Weapon Skill, Ballistic Skill, Initiative and Attacks (to a minimum of 1). 5-6: Randomly select one character in the target unit. That model suffers a single Strength 3 hit for every other model in the target unit. Cover saves cannot be taken against these hits, and they can never be allocated to another model. If there are no character models in the target unit, or if there are no other modelsapart from the character model, treat this result as 3-4 instead.</characteristic>
           </characteristics>
         </profile>
-        <profile id="7c98-79ed-ecc1-8507" name="1. Dominate" publicationId="ca571888--pubN74807" page="188" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="7c98-79ed-ecc1-8507" name="1. Dominate" publicationId="ca571888--pubN106502" page="188" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Malediction</characteristic>
@@ -2223,7 +2214,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Whilst the power is in effect, the target unit must pass a Leadership test each time it attempts to move, manifest a psychic power, shoot, Run or declare a charge – if the test is failed, the action is forfeit and the unit can do nothing else that phase. A unit that fails this test when attempting to fire Overwatch does not fire any shots, but acts normally in the ensuing Fight sub-phase.</characteristic>
           </characteristics>
         </profile>
-        <profile id="7251-be85-3b42-d921" name="3. Terrify" publicationId="ca571888--pubN74807" page="188" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="7251-be85-3b42-d921" name="3. Terrify" publicationId="ca571888--pubN106502" page="188" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Malediction</characteristic>
@@ -2231,7 +2222,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Whilst the power is in effect, the target has a -1 penalty to their Leadership and treats all enemy units ashaving the Fear special rule. Furthermore, the target must take a Morale check at the end of the Psychic phase.</characteristic>
           </characteristics>
         </profile>
-        <profile id="53fe-023d-ca90-46fd" name="(Primaris) Psychic Shriek" publicationId="ca571888--pubN74807" page="188" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="53fe-023d-ca90-46fd" name="(Primaris) Psychic Shriek" publicationId="ca571888--pubN106502" page="188" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Witchfire</characteristic>
@@ -2239,7 +2230,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Roll 3D6 and subtract the target’s Leadership – the target unit suffers a number of Wounds equal to the result. Armour and cover saves cannot be taken against Wounds caused by Psychic Shriek.</characteristic>
           </characteristics>
         </profile>
-        <profile id="2fa6-56c5-974f-9368" name="2. Mental Fortitude" publicationId="ca571888--pubN74807" page="188" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="2fa6-56c5-974f-9368" name="2. Mental Fortitude" publicationId="ca571888--pubN106502" page="188" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
@@ -2247,7 +2238,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">If the target is falling back, it immediately Regroups. In addition, whilst the power is in effect, the target gains the Fearless special rule.</characteristic>
           </characteristics>
         </profile>
-        <profile id="66f8-2849-5db1-34bb" name="4. Shrouding" publicationId="ca571888--pubN74807" page="188" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="66f8-2849-5db1-34bb" name="4. Shrouding" publicationId="ca571888--pubN106502" page="188" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
@@ -2255,7 +2246,7 @@ D6    Result		S	AP
             <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Whilst this power is in effect, the Psyker,and all friendly models within 6&quot; of the Psyker, have the Shrouded special rule.</characteristic>
           </characteristics>
         </profile>
-        <profile id="a306-03eb-e597-52b1" name="5. Mind Howl" publicationId="ca571888--pubN74807" page="188" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+        <profile id="a306-03eb-e597-52b1" name="5. Mind Howl" publicationId="ca571888--pubN106502" page="188" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">2</characteristic>
             <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">malediction</characteristic>
@@ -2274,9 +2265,9 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a172-78de-aaa6-2201" name="Firestorm Redoubt" publicationId="ca571888--pubN73996" page="114" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="a172-78de-aaa6-2201" name="Firestorm Redoubt" publicationId="ca571888--pubN106502" page="114" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="bab6-1527-ba02-6d52" name="Firestorm Redoubt" publicationId="ca571888--pubN73996" page="114" hidden="false" typeId="286c-0cd4-7630-47d0" typeName="Building">
+        <profile id="bab6-1527-ba02-6d52" name="Firestorm Redoubt" publicationId="ca571888--pubN106502" page="114" hidden="false" typeId="286c-0cd4-7630-47d0" typeName="Building">
           <characteristics>
             <characteristic name="Armour Value" typeId="83f8-a458-93f9-3e46">14</characteristic>
             <characteristic name="Transport Capacity" typeId="0e9c-76b3-2877-614d">20</characteristic>
@@ -2349,9 +2340,9 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="200.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="04bf-6c22-19fb-4e46" name="Vengeance Weapon Battery" publicationId="ca571888--pubN73996" page="115" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="04bf-6c22-19fb-4e46" name="Vengeance Weapon Battery" publicationId="ca571888--pubN106502" page="115" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="c8cf-d554-7744-259b" name="Vengeance Weapon Battery" publicationId="ca571888--pubN73996" page="115" hidden="false" typeId="286c-0cd4-7630-47d0" typeName="Building">
+        <profile id="c8cf-d554-7744-259b" name="Vengeance Weapon Battery" publicationId="ca571888--pubN106502" page="115" hidden="false" typeId="286c-0cd4-7630-47d0" typeName="Building">
           <characteristics>
             <characteristic name="Armour Value" typeId="83f8-a458-93f9-3e46">14</characteristic>
             <characteristic name="Transport Capacity" typeId="0e9c-76b3-2877-614d">0</characteristic>
@@ -2408,9 +2399,9 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0f73-97f2-b832-f6d0" name="Defence Line" publicationId="ca571888--pubN73996" page="110" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="0f73-97f2-b832-f6d0" name="Defence Line" publicationId="ca571888--pubN106502" page="110" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="944e-63e0-c589-b37c" name="Defence Line" publicationId="ca571888--pubN73996" page="111" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+        <profile id="944e-63e0-c589-b37c" name="Defence Line" publicationId="ca571888--pubN106502" page="111" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A model in cover behind a defence line has a 4+ cover save. If a unit Goes to Ground, then models from the unit gain +2 to the cover save from the defence line rather than +1. Models that are in base contact with a defence line are treated as being in base contact with any enemy models who are directly opposite them and in base contact with the other side of that defence line. Units charging an enemy that is behind a defence line count as charging through difficult terrain.</characteristic>
           </characteristics>
@@ -2428,17 +2419,17 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="80.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="df05-8179-624e-f8b2" name="Defence Emplacement" publicationId="ca571888--pubN73996" page="112" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="df05-8179-624e-f8b2" name="Defence Emplacement" publicationId="ca571888--pubN106502" page="112" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="e1cc-0dae-51d0-b061" name="Defence Emplacement" publicationId="ca571888--pubN73996" page="112" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+        <profile id="e1cc-0dae-51d0-b061" name="Defence Emplacement" publicationId="ca571888--pubN106502" page="112" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Battlefield Debris. Stalwart Defence. Improved Arcs of Fire.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="9d3f-9ea3-e8ce-8c7c" name="Stalwart Defence" publicationId="ca571888--pubN73996" page="112" hidden="false" targetId="afb7-b281-a9ce-4272" type="rule"/>
-        <infoLink id="73fa-1db4-4d85-0daf" name="Stubborn" publicationId="ca571888--pubN73996" page="112" hidden="false" targetId="7be5-30af-1a02-0a89" type="rule"/>
+        <infoLink id="9d3f-9ea3-e8ce-8c7c" name="Stalwart Defence" publicationId="ca571888--pubN106502" page="112" hidden="false" targetId="afb7-b281-a9ce-4272" type="rule"/>
+        <infoLink id="73fa-1db4-4d85-0daf" name="Stubborn" publicationId="ca571888--pubN106502" page="112" hidden="false" targetId="7be5-30af-1a02-0a89" type="rule"/>
         <infoLink id="3f5a-bdfa-c3a9-54a1" name="Improved Arcs of Fire" hidden="false" targetId="d191-d6ec-e3c8-31f6" type="rule"/>
       </infoLinks>
       <entryLinks>
@@ -2448,12 +2439,12 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0116-c81b-1c0f-251c" name="Bunker" publicationId="ca571888--pubN73996" page="113" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="0116-c81b-1c0f-251c" name="Bunker" publicationId="ca571888--pubN106502" page="113" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4182-0810-4294-5cbc" type="max"/>
       </constraints>
       <profiles>
-        <profile id="1aa3-6499-e787-5b5d" name="Imperial Bunker" publicationId="ca571888--pubN73996" page="113" hidden="false" typeId="286c-0cd4-7630-47d0" typeName="Building">
+        <profile id="1aa3-6499-e787-5b5d" name="Imperial Bunker" publicationId="ca571888--pubN106502" page="113" hidden="false" typeId="286c-0cd4-7630-47d0" typeName="Building">
           <characteristics>
             <characteristic name="Armour Value" typeId="83f8-a458-93f9-3e46">14</characteristic>
             <characteristic name="Transport Capacity" typeId="0e9c-76b3-2877-614d">20</characteristic>
@@ -2481,9 +2472,9 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="55.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="474a-96df-3847-a5d8" name="Twisted Copse" publicationId="ca571888--pubN79717" page="123" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="474a-96df-3847-a5d8" name="Twisted Copse" publicationId="ca571888--pubN106502" page="123" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="4cb8-4245-607a-f629" name="Twisted Copse" publicationId="ca571888--pubN73996" page="125" hidden="false" typeId="c2e2-42f3-9e28-c3fa" typeName="Fortification/Terrain">
+        <profile id="4cb8-4245-607a-f629" name="Twisted Copse" publicationId="ca571888--pubN106502" page="125" hidden="false" typeId="c2e2-42f3-9e28-c3fa" typeName="Fortification/Terrain">
           <characteristics>
             <characteristic name="Composition" typeId="d34f-9153-d292-adab">1 Citadel Wood</characteristic>
             <characteristic name="Terrain type" typeId="98d6-2143-3017-6d46">Difficult terrain</characteristic>
@@ -2495,7 +2486,7 @@ D6    Result		S	AP
         </profile>
       </profiles>
       <rules>
-        <rule id="46bb-f210-13f2-b7c1" name="Dense Thicket" publicationId="ca571888--pubN73996" page="124" hidden="false">
+        <rule id="46bb-f210-13f2-b7c1" name="Dense Thicket" publicationId="ca571888--pubN106502" page="124" hidden="false">
           <description>Models on the base of a Citadel Wood model receive a 5+ cover save, regardless of whether or not they are 25% obscured.</description>
         </rule>
       </rules>
@@ -2503,9 +2494,9 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="55c6-268b-357f-d070" name="Bastion" publicationId="ca571888--pubN73996" page="110" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="55c6-268b-357f-d070" name="Bastion" publicationId="ca571888--pubN106502" page="110" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="67c7-0b8b-bba6-e965" name="Imperial Bastion" publicationId="ca571888--pubN73996" page="110" hidden="false" typeId="286c-0cd4-7630-47d0" typeName="Building">
+        <profile id="67c7-0b8b-bba6-e965" name="Imperial Bastion" publicationId="ca571888--pubN106502" page="110" hidden="false" typeId="286c-0cd4-7630-47d0" typeName="Building">
           <characteristics>
             <characteristic name="Armour Value" typeId="83f8-a458-93f9-3e46">14</characteristic>
             <characteristic name="Transport Capacity" typeId="0e9c-76b3-2877-614d">20</characteristic>
@@ -2546,16 +2537,16 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="75.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="595a-908e-96a1-f121" name="Shrine of the Aquila" publicationId="ca571888--pubN73996" page="118" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="595a-908e-96a1-f121" name="Shrine of the Aquila" publicationId="ca571888--pubN106502" page="118" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="6cf9-a002-6ee6-5742" name="Shrine of the Aquila" publicationId="ca571888--pubN73996" page="118" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+        <profile id="6cf9-a002-6ee6-5742" name="Shrine of the Aquila" publicationId="ca571888--pubN106502" page="118" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Ruins</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <rules>
-        <rule id="b27c-0dbd-e299-41b3" name="The Eagle&apos;s Gaze" publicationId="ca571888--pubN73996" page="118" hidden="false">
+        <rule id="b27c-0dbd-e299-41b3" name="The Eagle&apos;s Gaze" publicationId="ca571888--pubN106502" page="118" hidden="false">
           <description>If a unit with the Loyalist Allegiance has any of its models within a Shrine of the Aquila, it re-rolls failed Morale checks. Any unit with the Traitor Allegiance that is in a Shrine of the Aquila has the Hatred (Loyalist) special rule.</description>
         </rule>
       </rules>
@@ -2566,16 +2557,16 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6140-dc64-5896-957f" name="Manufactorum" publicationId="ca571888--pubN73996" page="119" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="6140-dc64-5896-957f" name="Manufactorum" publicationId="ca571888--pubN106502" page="119" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="840b-724f-c215-9cfb" name="Manufactorum" publicationId="ca571888--pubN73996" page="119" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+        <profile id="840b-724f-c215-9cfb" name="Manufactorum" publicationId="ca571888--pubN106502" page="119" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Ruins</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <rules>
-        <rule id="139f-39f2-d453-9968" name="The Omnissiah&apos;s Benediction" publicationId="ca571888--pubN73996" page="119" hidden="false">
+        <rule id="139f-39f2-d453-9968" name="The Omnissiah&apos;s Benediction" publicationId="ca571888--pubN106502" page="119" hidden="false">
           <description>Models in a Manufactorum that are firing weapons with the Gets Hot special rule re-roll failed saving throws for Wounds inflicted upon themselves as a result of the Gets Hot special rule.</description>
         </rule>
       </rules>
@@ -2996,16 +2987,16 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
         <cost name="pts" typeId="points" value="650.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e0b3-77ca-af76-bd8b" name="Sanctum Imperialis" publicationId="ca571888--pubN73996" page="121" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="e0b3-77ca-af76-bd8b" name="Sanctum Imperialis" publicationId="ca571888--pubN106502" page="121" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="b7b9-5650-b83d-96f3" name="Sanctum Imperialis" publicationId="ca571888--pubN73996" page="121" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+        <profile id="b7b9-5650-b83d-96f3" name="Sanctum Imperialis" publicationId="ca571888--pubN106502" page="121" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Ruins</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <rules>
-        <rule id="8c64-b74c-64a9-1c95" name="Benevolent Light" publicationId="ca571888--pubN73996" page="121" hidden="false">
+        <rule id="8c64-b74c-64a9-1c95" name="Benevolent Light" publicationId="ca571888--pubN106502" page="121" hidden="false">
           <description>Models in a Sanctum Imperialis have the Adamantium Will and Night Vision special rules.</description>
         </rule>
       </rules>
@@ -3829,7 +3820,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="9495-ffa9-62d6-fcba" hidden="false" targetId="cbcf-5f25-f8ea-7cfd" type="rule"/>
+            <infoLink id="9495-ffa9-62d6-fcba" name="Deflagrate" hidden="false" targetId="b46a-a3ec-91a5-5001" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -3925,7 +3916,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             </rule>
           </rules>
           <infoLinks>
-            <infoLink id="95b1-1037-3a73-b91d" name="" hidden="false" targetId="cbcf-5f25-f8ea-7cfd" type="rule"/>
+            <infoLink id="95b1-1037-3a73-b91d" name="Deflagrate" hidden="false" targetId="b46a-a3ec-91a5-5001" type="rule"/>
             <infoLink id="7de0-31b5-95d4-d6c8" name="Sunder" hidden="false" targetId="841f-9119-9f9d-5058" type="rule"/>
           </infoLinks>
           <costs>
@@ -5301,9 +5292,9 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="3250.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="31af-e5e2-8167-a480" name="Battlescape" publicationId="ca571888--pubN73996" page="122" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="31af-e5e2-8167-a480" name="Battlescape" publicationId="ca571888--pubN106502" page="122" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="2ae2-373e-7f2e-0dbd" name="Battlescape" publicationId="ca571888--pubN73996" page="122" hidden="false" typeId="c2e2-42f3-9e28-c3fa" typeName="Fortification/Terrain">
+        <profile id="2ae2-373e-7f2e-0dbd" name="Battlescape" publicationId="ca571888--pubN106502" page="122" hidden="false" typeId="c2e2-42f3-9e28-c3fa" typeName="Fortification/Terrain">
           <characteristics>
             <characteristic name="Composition" typeId="d34f-9153-d292-adab">1 Battlescape</characteristic>
             <characteristic name="Terrain type" typeId="98d6-2143-3017-6d46">Dangerous Terrain</characteristic>
@@ -5315,7 +5306,7 @@ D6    Result		S	AP
         </profile>
       </profiles>
       <rules>
-        <rule id="f9bb-df9c-02e3-fabc" name="Desperate Shelter" publicationId="ca571888--pubN73996" page="122" hidden="false">
+        <rule id="f9bb-df9c-02e3-fabc" name="Desperate Shelter" publicationId="ca571888--pubN106502" page="122" hidden="false">
           <description>Models on the base of a Battlescape model receive a 5+ cover save, regardless of whether or not they are 25% obscured.</description>
         </rule>
       </rules>
@@ -5323,7 +5314,7 @@ D6    Result		S	AP
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7507-ce88-4e5a-ccc2" name="Crashed Imperial Lander" publicationId="ca571888--pubN73996" page="123" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="7507-ce88-4e5a-ccc2" name="Crashed Imperial Lander" publicationId="ca571888--pubN106502" page="123" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="c501-5663-8d53-3f9b" name="Crashed Imperial Lander" hidden="false" typeId="c2e2-42f3-9e28-c3fa" typeName="Fortification/Terrain">
           <characteristics>
@@ -5337,7 +5328,7 @@ D6    Result		S	AP
         </profile>
       </profiles>
       <rules>
-        <rule id="0ecc-85fa-880b-5e24" name="Mysterious Wreckage" publicationId="ca571888--pubN73996" page="123" hidden="false">
+        <rule id="0ecc-85fa-880b-5e24" name="Mysterious Wreckage" publicationId="ca571888--pubN106502" page="123" hidden="false">
           <description>The first time a unit enters or deploys in base contact with a Crashed Imperial Lander, roll a D6 and consult the following table:
 
 D6 Result
@@ -5355,9 +5346,9 @@ Immediately place an objective marker within 3&quot; of any part of the Crashed 
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3027-0a29-19c0-40f5" name="Moonscape" publicationId="ca571888--pubN73996" page="125" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="3027-0a29-19c0-40f5" name="Moonscape" publicationId="ca571888--pubN106502" page="125" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="d61e-492c-cf78-828e" name="Moonscape" publicationId="ca571888--pubN94477" page="125" hidden="false" typeId="c2e2-42f3-9e28-c3fa" typeName="Fortification/Terrain">
+        <profile id="d61e-492c-cf78-828e" name="Moonscape" publicationId="ca571888--pubN106502" page="125" hidden="false" typeId="c2e2-42f3-9e28-c3fa" typeName="Fortification/Terrain">
           <characteristics>
             <characteristic name="Composition" typeId="d34f-9153-d292-adab">1 Moonscape or Citadel Craters set.</characteristic>
             <characteristic name="Terrain type" typeId="98d6-2143-3017-6d46">Battlefield debris (craters)</characteristic>
@@ -5369,7 +5360,7 @@ Immediately place an objective marker within 3&quot; of any part of the Crashed 
         </profile>
       </profiles>
       <rules>
-        <rule id="1977-5241-c842-f51a" name="Foxholes" publicationId="ca571888--pubN73996" page="125" hidden="false">
+        <rule id="1977-5241-c842-f51a" name="Foxholes" publicationId="ca571888--pubN106502" page="125" hidden="false">
           <description>Models in Moonscape Craters receive a 6+ cover save, regardless of whether or not they are 25% obscured. If a unit Goes to Ground, models from the unit gain +2 to their cover save if they are in Moonscape Craters rather than +1.</description>
         </rule>
       </rules>
@@ -6179,7 +6170,7 @@ Command Benefits:
           </constraints>
           <infoLinks>
             <infoLink id="6e36-c25a-ea02-4c14" name="New InfoLink" hidden="false" targetId="477d-c630-7e79-8cf9" type="profile"/>
-            <infoLink id="eadb-3b5e-60d4-366b" name="New InfoLink" hidden="false" targetId="cbcf-5f25-f8ea-7cfd" type="rule"/>
+            <infoLink id="eadb-3b5e-60d4-366b" name="Deflagrate" hidden="false" targetId="b46a-a3ec-91a5-5001" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="5.0"/>
@@ -6246,7 +6237,7 @@ Command Benefits:
           </constraints>
           <infoLinks>
             <infoLink id="29bd-e6ce-ee66-e9e4" name="New InfoLink" hidden="false" targetId="c440-1f53-4d20-5cab" type="profile"/>
-            <infoLink id="11df-716e-296a-18e6" name="New InfoLink" hidden="false" targetId="cbcf-5f25-f8ea-7cfd" type="rule"/>
+            <infoLink id="11df-716e-296a-18e6" name="Deflagrate" hidden="false" targetId="b46a-a3ec-91a5-5001" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="10.0"/>
@@ -6834,7 +6825,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c01c-615a-ea39-45e3" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="a3f7-2cdf-78f2-f8bf" name="Tanglewire" publicationId="ca571888--pubN74807" page="101" hidden="false" targetId="e158-7adf-1565-ef08" type="profile"/>
+            <infoLink id="a3f7-2cdf-78f2-f8bf" name="Tanglewire" publicationId="ca571888--pubN106502" page="101" hidden="false" targetId="e158-7adf-1565-ef08" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="5.0"/>
@@ -7231,7 +7222,7 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule id="5342-bf92-d6c0-ebb9" name="Hit and Run" publicationId="ca571888--pubN74807" page="164" hidden="false">
+    <rule id="5342-bf92-d6c0-ebb9" name="Hit and Run" publicationId="ca571888--pubN106502" page="164" hidden="false">
       <description>A unit that contains at least one model with this special rule that is locked in combat can choose to leave close combat at the end of any Assault phase. If the unit wishes to do so, it must take an Initiative test.
 
 If the test is failed, nothing happens and the models remain locked in the fight.
@@ -7240,7 +7231,7 @@ If the test is passed, choose a direction – then roll 3D6. As long as the dist
 
 A Hit &amp; Run move is not slowed by difficult terrain, but takes Dangerous Terrain tests as normal. It may not be used to move into base or hull contact with enemy units, and models instead stop 1&quot; away. If there are units with this rule on both sides who wish to disengage, roll-off to determine who goes first and then alternate disengaging them. If the last of these ends up no longer in combat, it Consolidates instead.</description>
     </rule>
-    <rule id="d219-2314-4834-c054" name="Deep Strike" publicationId="ca571888--pubN74807" page="162" hidden="false">
+    <rule id="d219-2314-4834-c054" name="Deep Strike" publicationId="ca571888--pubN106502" page="162" hidden="false">
       <description>In order for a unit to be able to Deep Strike, all models in the unit must have the Deep Strike special rule and the unit must start the game in Reserve. When placing the unit in Reserve, you must tell your opponent that it will be arriving by Deep Strike (sometimes called Deep Strike Reserve). Some units must arrive by Deep Strike. They always begin the game in Reserve and always arrive by Deep Strike.
 
 Arriving by Deep Strike
@@ -7271,46 +7262,46 @@ Your opponent may deploy the unit anywhere on the table (excluding impassable te
 4-6 - Delayed. Because of mechanical failure or enemy action, the reinforcements are delayed.
 The unit is placed in Ongoing Reserves.</description>
     </rule>
-    <rule id="988c-d4d0-9418-1165" name="Rage" publicationId="ca571888--pubN74807" page="170" hidden="false">
+    <rule id="988c-d4d0-9418-1165" name="Rage" publicationId="ca571888--pubN106502" page="170" hidden="false">
       <description>In a turn in which a model with this special rule charges into combat, it gains +2 Attacks for charging, rather than +1. A model that has made a disordered charge that turn receives no benefit from Rage.</description>
     </rule>
-    <rule id="e6e1-afb0-377d-27a8" name="Skilled Rider" publicationId="ca571888--pubN74807" page="171" hidden="false">
+    <rule id="e6e1-afb0-377d-27a8" name="Skilled Rider" publicationId="ca571888--pubN106502" page="171" hidden="false">
       <description>A unit that contains at least one model with this special rule automatically passes Dangerous Terrain tests, and receives +1 to its Jink cover saves (other cover saves are unaffected).</description>
     </rule>
-    <rule id="fe2f-3220-3fef-b177" name="Wrecker" publicationId="ca571888--pubN74807" page="175" hidden="false">
+    <rule id="fe2f-3220-3fef-b177" name="Wrecker" publicationId="ca571888--pubN106502" page="175" hidden="false">
       <description>Attacks with this special rule may re-roll failed armour penetration rolls against fortifications and immobile structures and add +1 to any result rolled on the Building Damage chart.  If this attack damages a bulkhead or wall section of terrain and destroys it, remove that section of terrain from play if possible.</description>
     </rule>
-    <rule id="5d88-bcf6-e410-6e01" name="Tank Hunters" publicationId="ca571888--pubN74807" page="173" hidden="false">
+    <rule id="5d88-bcf6-e410-6e01" name="Tank Hunters" publicationId="ca571888--pubN106502" page="173" hidden="false">
       <description>A unit that contains at least one model with this special rule re-rolls failed armour penetration rolls against vehicles (both with shooting and in close combat) and can choose to re-roll glancing hits, in an attempt to instead get a penetrating hit – but the second result must be kept.</description>
     </rule>
-    <rule id="a225-e39b-3699-c8f8" name="Night Vision" publicationId="ca571888--pubN74807" page="168" hidden="false">
+    <rule id="a225-e39b-3699-c8f8" name="Night Vision" publicationId="ca571888--pubN106502" page="168" hidden="false">
       <description>A unit that contains at least one model with this special rule ignores the effects of Night Fighting.</description>
     </rule>
-    <rule id="9bdd-5ec7-8dd6-63c0" name="Feel No Pain" publicationId="ca571888--pubN74807" page="164" hidden="false">
+    <rule id="9bdd-5ec7-8dd6-63c0" name="Feel No Pain" publicationId="ca571888--pubN106502" page="164" hidden="false">
       <description>When a model with this special rule suffers an unsaved Wound, it can make a special Feel No Pain roll to avoid being wounded (this is not a saving throw and so can be used against attacks that state that ‘no saves of any kind are allowed’, for example those inflicted by Perils of the Warp).
 “Feel No Pain rolls may not be taken against Destroyer attacks (see page 163), unsaved wounds which have the Instant Death special rule or in instances which state that no saves (of any kind) may be taken.”
 Roll a D6 each time an unsaved Wound is suffered. On a 4 or less, you must take the Wound as normal. On a 5+, the unsaved Wound is discounted – treat it as having been saved.
 If a unit has the Feel No Pain special rule with a number in brackets afterwards – Feel No Pain (6+), for example – then the number in brackets is the D6 result needed to discount the Wound.</description>
     </rule>
-    <rule id="5862-0794-3d86-5788" name="Feel No Pain (4+)" publicationId="ca571888--pubN74807" page="164" hidden="false">
+    <rule id="5862-0794-3d86-5788" name="Feel No Pain (4+)" publicationId="ca571888--pubN106502" page="164" hidden="false">
       <description>When a model with this special rule suffers an unsaved Wound, it can make a special Feel No Pain roll to avoid being wounded (this is not a saving throw and so can be used against attacks that state that ‘no saves of any kind are allowed’, for example those inflicted by Perils of the Warp).
 “Feel No Pain rolls may not be taken against Destroyer attacks (see page 163), unsaved wounds which have the Instant Death special rule or in instances which state that no saves (of any kind) may be taken.”
 Roll a D6 each time an unsaved Wound is suffered. On a 4 or less, you must take the Wound as normal. On a 5+, the unsaved Wound is discounted – treat it as having been saved.
 If a unit has the Feel No Pain special rule with a number in brackets afterwards – Feel No Pain (6+), for example – then the number in brackets is the D6 result needed to discount the Wound.</description>
     </rule>
-    <rule id="85da-2f19-3756-44de" name="Feel No Pain (6+)" publicationId="ca571888--pubN74807" page="164" hidden="false">
+    <rule id="85da-2f19-3756-44de" name="Feel No Pain (6+)" publicationId="ca571888--pubN106502" page="164" hidden="false">
       <description>When a model with this special rule suffers an unsaved Wound, it can make a special Feel No Pain roll to avoid being wounded (this is not a saving throw and so can be used against attacks that state that ‘no saves of any kind are allowed’, for example those inflicted by Perils of the Warp).
 “Feel No Pain rolls may not be taken against Destroyer attacks (see page 163), unsaved wounds which have the Instant Death special rule or in instances which state that no saves (of any kind) may be taken.”
 Roll a D6 each time an unsaved Wound is suffered. On a 4 or less, you must take the Wound as normal. On a 5+, the unsaved Wound is discounted – treat it as having been saved.
 If a unit has the Feel No Pain special rule with a number in brackets afterwards – Feel No Pain (6+), for example – then the number in brackets is the D6 result needed to discount the Wound.</description>
     </rule>
-    <rule id="56df-3f23-0abe-e04b" name="Feel No Pain (3+)" publicationId="ca571888--pubN74807" page="164" hidden="false">
+    <rule id="56df-3f23-0abe-e04b" name="Feel No Pain (3+)" publicationId="ca571888--pubN106502" page="164" hidden="false">
       <description>When a model with this special rule suffers an unsaved Wound, it can make a special Feel No Pain roll to avoid being wounded (this is not a saving throw and so can be used against attacks that state that ‘no saves of any kind are allowed’, for example those inflicted by Perils of the Warp).
 “Feel No Pain rolls may not be taken against Destroyer attacks (see page 163), unsaved wounds which have the Instant Death special rule or in instances which state that no saves (of any kind) may be taken.”
 Roll a D6 each time an unsaved Wound is suffered. On a 4 or less, you must take the Wound as normal. On a 5+, the unsaved Wound is discounted – treat it as having been saved.
 If a unit has the Feel No Pain special rule with a number in brackets afterwards – Feel No Pain (6+), for example – then the number in brackets is the D6 result needed to discount the Wound.</description>
     </rule>
-    <rule id="34c7-8b61-a5b8-a301" name="Infiltrate" publicationId="ca571888--pubN74807" page="167" hidden="false">
+    <rule id="34c7-8b61-a5b8-a301" name="Infiltrate" publicationId="ca571888--pubN106502" page="167" hidden="false">
       <description>Units that contain at least one model with this special rule are deployed last, after all other units (friend and foe) have been deployed. If both sides have Infiltrators, the players roll-off and the winner decides who goes first, then alternate deploying these units.
 
 Infiltrators can be set up anywhere on the table that is more than 12&quot; from any enemy unit, as long as no deployed enemy unit can draw line of sight to them. This includes in a building, as long as the building is more than 12&quot; from any enemy unit. Alternatively, they can be set up anywhere on the table more than 18&quot; from any enemy unit, even in plain sight.
@@ -7321,28 +7312,28 @@ A unit that deploys using these rules cannot charge in their first turn. Having 
 
 If a unit has both the Infiltrate and Scout special rule, that unit can deploy as per the Infiltrate special rule and then redeploy as per the Scout special rule.</description>
     </rule>
-    <rule id="3aa7-9a8f-1e0d-921d" name="Furious Charge" publicationId="ca571888--pubN74807" page="164" hidden="false">
+    <rule id="3aa7-9a8f-1e0d-921d" name="Furious Charge" publicationId="ca571888--pubN106502" page="164" hidden="false">
       <description>In a turn in which a model with this special rule charges into combat, it adds +1 to its Strength characteristic until the end of the Assault phase. A model that has made a disordered charge that turn receives no benefit from Furious Charge.</description>
     </rule>
-    <rule id="de18-25a0-504b-74be" name="Outflank" publicationId="ca571888--pubN74807" page="168" hidden="false">
+    <rule id="de18-25a0-504b-74be" name="Outflank" publicationId="ca571888--pubN106502" page="168" hidden="false">
       <description>During deployment, players can declare that any unit that contains at least one model with this special rule is attempting to Outflank the enemy. This means they are making a wide sweeping move to get behind enemy lines or come at the foe from an unexpected direction.
 When an Outflanking unit arrives from Reserves, but not Ongoing Reserve, the controlling player rolls a D6: on a 1-2, the unit comes in from the table edge to the left of their controlling player’s own table edge; on a 3-4, they come on from the right; on a 5-6, the player can choose left or right. Models move onto the table as described for other Reserves. If such a unit deploys inside a Dedicated Transport, they may Outflank along with their Transport.</description>
     </rule>
     <rule id="5283-9b50-3dcd-78e4" name="Extra Armour" publicationId="ca571888--pubN105292" hidden="false">
       <description>Vehicles equipped with extra armour count Crew Stunned results from the Vehicle Damage table as Crew Shaken results instead.</description>
     </rule>
-    <rule id="7be5-30af-1a02-0a89" name="Stubborn" publicationId="ca571888--pubN74807" page="173" hidden="false">
+    <rule id="7be5-30af-1a02-0a89" name="Stubborn" publicationId="ca571888--pubN106502" page="173" hidden="false">
       <description>When a unit that contains at least one model with this special rule takes Morale checks or Pinning tests, they ignore any negative Leadership modifiers. If a unit is both Fearless and Stubborn, it uses the rules for Fearless instead.</description>
     </rule>
-    <rule id="3ad4-1c37-d60b-1a4e" name="Independent Character" publicationId="ca571888--pubN74807" page="165" hidden="false">
+    <rule id="3ad4-1c37-d60b-1a4e" name="Independent Character" publicationId="ca571888--pubN106502" page="165" hidden="false">
       <description>Independent characters can join other units.  They cannot, however, join units that contain vehicles or Monstrous Creatures.  They can join other Independent Characters, though, to form a powerful multi-character unit!  Independent Characters pass Look Out, Sir rolls on a 2+. A unit that contains one or more Independent Characters does not need a double 1 to Regroup if reduced to below 25% of its starting numbres, but instead tests as if it had at least 25% remaining.
 
 Full details in BRB. Rule too long to copy verbatim.</description>
     </rule>
-    <rule id="52ff-4074-570b-4ea1" name="Fear" publicationId="ca571888--pubN74807" page="163" hidden="false">
+    <rule id="52ff-4074-570b-4ea1" name="Fear" publicationId="ca571888--pubN106502" page="163" hidden="false">
       <description>At the start of each Fight sub-phase, a unit in base contact with one or more enemy models that cause Fear must take a Leadership test (called a Fear test) before any blows are struck. If the test is passed, all is well and there is no effect. If the test is failed, the unit succumbs to fear – all models in the unit have their Weapon Skill reduced to 1 for the remainder of that Fight sub-phase. Note that a model that causes Fear is not itself immune to Fear, and will still need to take a Fear test if it is base contact with any enemy models that cause Fear.</description>
     </rule>
-    <rule id="7c6c-4e25-e4d4-9728" name="Hatred" publicationId="ca571888--pubN74807" page="164" hidden="false">
+    <rule id="7c6c-4e25-e4d4-9728" name="Hatred" publicationId="ca571888--pubN106502" page="164" hidden="false">
       <description>This rule is often presented as Hatred (X) where X identifies a specific type of foe. If the special rule does not specify a type of foe, then the unit has Hatred against everyone. This can refer to a Faction, or a specific unit. For example, Hatred (Orks) means any model with the Ork Faction, whilst Hatred (Big Meks) means only Big Meks. A model striking a hated foe in close combat re-rolls all failed To Hit rolls during the first round of each close combat.</description>
     </rule>
     <rule id="6ce7-5e83-a2dd-571e" name="Blessed Autosimulacra" publicationId="ca571888--pubN69050" page="113" hidden="false">
@@ -7352,36 +7343,36 @@ Full details in BRB. Rule too long to copy verbatim.</description>
       <description>If a mission has the Night Fighting special rule, either player can declare that they wish to fight the battle at night. If either player does so, roll a D6 before deployment: on a roll of 4+, the Night Fighting special rule is in effect during game turn 1.
 While the Night Fighting mission special rule is in effect, all units have the Stealth special rule.</description>
     </rule>
-    <rule id="6f66-b417-6004-0916" name="Hammer of Wrath" publicationId="ca571888--pubN74807" page="164" hidden="false">
+    <rule id="6f66-b417-6004-0916" name="Hammer of Wrath" publicationId="ca571888--pubN106502" page="164" hidden="false">
       <description>If a model with this special rule ends its charge move in base or hull contact with an enemy model, it makes one additional Attack that hits automatically and is resolved at the model’s unmodified Strength with AP-. This Attack does not benefit from any of the model’s special rules (such as Furious Charge, Rending etc.). This Attack is resolved during the Fight sub-phase at the Initiative 10 step, but does not grant the model an additional Pile In move.
 If a model with this special rule charges a building or vehicle, the hit is resolved against the Armour Value of the facing the charging model is touching. If a model with this special rule charges a building or vehicle that is a Transport or a Chariot, the hit is resolved against the building or vehicle, not the occupants or the rider.</description>
     </rule>
-    <rule id="0900-71d5-1937-aa96" name="Counter-attack" publicationId="ca571888--pubN74807" page="161" hidden="false">
+    <rule id="0900-71d5-1937-aa96" name="Counter-attack" publicationId="ca571888--pubN106502" page="161" hidden="false">
       <description>If a unit contains at least one model with this special rule, and that unit is charged, every model with the Counter-attack special rule in the unit gets +1 Attack until the end of the phase.
 If, when charged, the unit was already locked in combat, the Counter-attack special rule has no effect.</description>
     </rule>
-    <rule id="6d06-5ea0-9a17-ca97" name="Move Through Cover" publicationId="ca571888--pubN74807" page="168" hidden="false">
+    <rule id="6d06-5ea0-9a17-ca97" name="Move Through Cover" publicationId="ca571888--pubN106502" page="168" hidden="false">
       <description>A unit that contains at least one model with this special rule rolls an extra D6 when rolling to move through difficult terrain and is not slowed by charging through difficult terrain. In most circumstances, this will mean that, when moving, the unit rolls 3D6 and picks the highest roll. Furthermore, a model with the Move Through Cover special rule automatically passes Dangerous Terrain tests.</description>
     </rule>
-    <rule id="69e5-fc02-1f9d-63c2" name="Fleet" publicationId="ca571888--pubN74807" page="164" hidden="false">
+    <rule id="69e5-fc02-1f9d-63c2" name="Fleet" publicationId="ca571888--pubN106502" page="164" hidden="false">
       <description>A unit composed entirely of models with this special rule can re-roll one or more of the dice when determining Run moves and charge ranges (such as a single D6 from a charge range roll, for example).</description>
     </rule>
-    <rule id="4dd2-fcb0-de6a-5b70" name="Preferred Enemy" publicationId="ca571888--pubN74807" page="169" hidden="false">
+    <rule id="4dd2-fcb0-de6a-5b70" name="Preferred Enemy" publicationId="ca571888--pubN106502" page="169" hidden="false">
       <description>This rule is often presented as Preferred Enemy (X) where X identifies a specific type of foe. If the special rule does not specify a type of foe, then everyone is a Preferred Enemy of the unit. A unit that contains at least one model with this special rule re-rolls failed To Hit and To Wound rolls of 1 if attacking its Preferred Enemy. This applies both to shooting and close combat attacks.</description>
     </rule>
-    <rule id="fbf1-6913-ff9f-5a4f" name="Instant Death" publicationId="ca571888--pubN74807" page="167" hidden="false">
+    <rule id="fbf1-6913-ff9f-5a4f" name="Instant Death" publicationId="ca571888--pubN106502" page="167" hidden="false">
       <description>If a model suffers an unsaved Wound from an attack with this special rule, it is reduced to 0 Wounds and is removed as a casualty.</description>
     </rule>
-    <rule id="f899-8f9d-fc7e-d855" name="Master-crafted" publicationId="ca571888--pubN74807" page="168" hidden="false">
+    <rule id="f899-8f9d-fc7e-d855" name="Master-crafted" publicationId="ca571888--pubN106502" page="168" hidden="false">
       <description>Weapons with the Master-crafted special rule allow the bearer to re-roll one failed roll To Hit per turn with that weapon.</description>
     </rule>
-    <rule id="0ba8-83bc-74c1-43c2" name="Rampage" publicationId="ca571888--pubN74807" page="170" hidden="false">
+    <rule id="0ba8-83bc-74c1-43c2" name="Rampage" publicationId="ca571888--pubN106502" page="170" hidden="false">
       <description>At the start of any Fight sub-phase, models with the Rampage special rule gain +D3 attacks if the combat they are in contains more enemy models than friendly models – count all models locked in the combat, not just those models that are engaged. Roll once to determine the number of bonus Attacks all Rampaging models involved in that combat receive that phase. A model that has made a disordered charge that turn receives no benefit from Rampage.</description>
     </rule>
-    <rule id="9d85-46f7-f5e6-a5f7" name="Concussive" publicationId="ca571888--pubN74807" page="161" hidden="false">
+    <rule id="9d85-46f7-f5e6-a5f7" name="Concussive" publicationId="ca571888--pubN106502" page="161" hidden="false">
       <description>A model that suffers one or more unsaved Wounds from a weapon with this special rule is reduced to Initiative 1 until the end of the following Assault phase.</description>
     </rule>
-    <rule id="89da-0cb5-bee4-8ec2" name="Shred" publicationId="ca571888--pubN74807" page="171" hidden="false">
+    <rule id="89da-0cb5-bee4-8ec2" name="Shred" publicationId="ca571888--pubN106502" page="171" hidden="false">
       <description>If a model has the Shred special rule, or is attacking with a Melee weapon that has the Shred special rule, it re-rolls failed To Wound rolls in close combat.  Similarly, if a model makes a shooting attack with a weapon that has the Shred special rule, it re-rolls its failed To Wound rolls.</description>
     </rule>
     <rule id="cb2c-171e-df0f-2bec" name="Paragon of Metal" publicationId="ca571888--pubN105613" page="113" hidden="false">
@@ -7389,7 +7380,7 @@ If, when charged, the unit was already locked in combat, the Counter-attack spec
 - Never counts as scoring regardless of mission type
 - In the case of a failed Cybertheurgy attempt, always apply Malifica result instead of rolling</description>
     </rule>
-    <rule id="72d9-7041-9d30-d150" name="It Will Not Die" publicationId="ca571888--pubN74807" page="167" hidden="false">
+    <rule id="72d9-7041-9d30-d150" name="It Will Not Die" publicationId="ca571888--pubN106502" page="167" hidden="false">
       <description>At the end of each of your turns, roll a D6 for each of your models with this special rule that has less than its starting number of Wounds or Hull Points, but has not been removed as a casualty or destroyed. On a roll of 5+, that model regains a Wound, or Hull Point, lost earlier in the game.</description>
     </rule>
     <rule id="666f-e93b-4f0b-ae40" name="God-Engine" publicationId="ca571888--pubN69050" page="91" hidden="false">
@@ -7401,16 +7392,16 @@ If, when charged, the unit was already locked in combat, the Counter-attack spec
     <rule id="ca57-5483-64d5-ad52" name="Reactor Meltdown" publicationId="ca571888--pubN69050" page="90" hidden="false">
       <description>If the Titan suffers a Titanic Explosion result on the Catastrophic Damage table, its reactor goes nuclear!  This is the same as a Titanic Explosion except that all hits are resolved as Destroyer hits.</description>
     </rule>
-    <rule id="4284-18a1-9844-a0bd" name="Smash" publicationId="ca571888--pubN74807" page="172" hidden="false">
+    <rule id="4284-18a1-9844-a0bd" name="Smash" publicationId="ca571888--pubN106502" page="172" hidden="false">
       <description>All of the close combat attacks, except Hammer of Wrath attacks, of a model with this special rule are resolved at AP2 (unless it’s attacking with an AP1 weapon). Additionally, when it makes its close combat attacks, it can choose instead to make a single Smash Attack. If it does so, roll To Hit as normal, but resolve the Attack at double the model’s Strength (to a maximum of 10). Furthermore, a model making a Smash Attack can re-roll its armour penetration rolls, but must abide by the second result.</description>
     </rule>
-    <rule id="3c7d-a1fa-c68b-caad" name="Relentless" publicationId="ca571888--pubN74807" page="170" hidden="false">
+    <rule id="3c7d-a1fa-c68b-caad" name="Relentless" publicationId="ca571888--pubN106502" page="170" hidden="false">
       <description>Relentless models can shoot with Heavy, Salvo or Ordnance weapons, counting as stationary, even if they moved in the previous Movement phase. They are also allowed to charge in the same turn they fire Heavy, Ordnance, Rapid Fire or Salvo weapons.</description>
     </rule>
-    <rule id="dd83-7fb9-6f58-0c96" name="Strikedown" publicationId="ca571888--pubN74807" page="173" hidden="false">
+    <rule id="dd83-7fb9-6f58-0c96" name="Strikedown" publicationId="ca571888--pubN106502" page="173" hidden="false">
       <description>Any non-vehicle model that suffers one or more unsaved Wounds or passes one or more saving throws against an attack with the Strikedown special rule moves as if it is in difficult terrain until the end of its next turn. It is a good idea to mark affected models with counters or coins so that you remember.</description>
     </rule>
-    <rule id="b5c1-4b08-5ddc-1504" name="Invincible Behemoth" publicationId="ca571888--pubN74807" page="90" hidden="false">
+    <rule id="b5c1-4b08-5ddc-1504" name="Invincible Behemoth" publicationId="ca571888--pubN106502" page="90" hidden="false">
       <description>A super-heavy vehicle is so large and strongly built that weapons which degrade the armour of smaller vehicles will not effect it.  Because of this, any attack that says that the target model is destroyed, wrecked, Explodes! or is otherwise removed from play inflicts D3 Hull Points of damage on a Super-heavy vehicle instead.
 
 In addition, any attacks or special abilities that permanently lower the Armour Values of a target vehicle do not affect a Super-heavy vehicle.  Note that attacks or abilities that count the Armour Value as being lower, but do not actually change it, work normally.</description>
@@ -7418,13 +7409,13 @@ In addition, any attacks or special abilities that permanently lower the Armour 
     <rule id="c673-4842-28f8-4e39" name="Machine Destroyer" publicationId="ca571888--pubN68042" page="264" hidden="false">
       <description>When attacking any target with an armour value, rolls of 1 on the Destroyer Damage table may be re-rolled.</description>
     </rule>
-    <rule id="f624-f475-e5ec-0dfa" name="Pinning" publicationId="ca571888--pubN74807" page="168" hidden="false">
+    <rule id="f624-f475-e5ec-0dfa" name="Pinning" publicationId="ca571888--pubN106502" page="168" hidden="false">
       <description>If a non-vehicle unit suffers one or more unsaved Wounds from a weapon with the Pinning special rule, it must take a Leadership test once the firing unit has finished its shooting attacks for that phase. This is called a Pinning test.
 If the unit fails the test, it is Pinned and must immediately Go to Ground. As the unit has already taken its saves, Going to Ground does not protect it against the fire of the Pinning weapon that caused the test – it’s too late!
 As long as the test is passed, a unit can be called upon to take multiple Pinning tests in a single turn, but only once for each unit shooting at them. If a unit has already Gone to Ground, no further Pinning tests are taken.
 If the special rules of a unit specify that the unit can never be Pinned, the unit automatically passes Pinning tests. Such units can still Go to Ground voluntarily if they wish.</description>
     </rule>
-    <rule id="21c0-62ff-3ed2-17a7" name="Melta" publicationId="ca571888--pubN74807" page="168" hidden="false">
+    <rule id="21c0-62ff-3ed2-17a7" name="Melta" publicationId="ca571888--pubN106502" page="168" hidden="false">
       <description>Ranged weapons with this special rule roll an additional D6 when rolling to penetrate a vehicle’s armour at half range or less. If the weapon is more than half its maximum range away, it rolls to penetrate as normal.
 If a weapon has both the Melta and Blast special rules, measure the distance to the centre of the blast marker after it has scattered. If this is half the weapon’s range or less, all hits caused by the blast marker roll an addition D6 when rolling to penetrate a vehicle’s armour. If the centre of the blast marker is more than half the weapon’s maximum range away after scatter, roll to penetrate as normal.</description>
     </rule>
@@ -7444,10 +7435,10 @@ Fast vehicles that moved at Combat Speed in the preceding Movement phase can fir
     <rule id="f6c9-cdb7-c695-5b6b" name="Cybernetica Cortex" publicationId="ca571888--pubN66489" page="110" hidden="false">
       <description>Models the have Programmed Behaviour, Fearless, Cybernetic Resiliance, Fire Protocols, Machine Creature, and Adamantium Will special rules.</description>
     </rule>
-    <rule id="dc70-e199-5525-e78c" name="Fearless" publicationId="ca571888--pubN74807" page="164" hidden="false">
+    <rule id="dc70-e199-5525-e78c" name="Fearless" publicationId="ca571888--pubN106502" page="164" hidden="false">
       <description>Units containing one or more models with the Fearless special rule automatically pass Pinning, Fear and Regroup tests and Morale checks, but cannot Go to Ground and cannot choose to fail a Morale check due to the Our Weapons are Useless rule. If a unit has Gone to Ground and then gains the Fearless special rule, all the effects of Going to Ground are immediately cancelled.</description>
     </rule>
-    <rule id="df87-e991-2d30-dc38" name="Adamantium Will" publicationId="ca571888--pubN74807" page="157" hidden="false">
+    <rule id="df87-e991-2d30-dc38" name="Adamantium Will" publicationId="ca571888--pubN106502" page="157" hidden="false">
       <description>A unit that contains at least one model with this special rule receives a +1 bonus to Deny the Witch tests.</description>
     </rule>
     <rule id="2b99-07da-9fa6-48bf" name="Fire Protocols" publicationId="ca571888--pubN66489" page="110" hidden="false">
@@ -7466,13 +7457,13 @@ Fast vehicles that moved at Combat Speed in the preceding Movement phase can fir
 - Target Priority: If enemy models are within 12&quot; and line of sight during their shooting phase, the unit must fire all its weapons against the closest enemy unit it is able to harm.  If this is not the case, they are free to select targets as normal.
 - Onslaught: If enemy units are within 12&quot; during their Assault phase, they must attempt to charge the closest enemy unit if able.  May still only charge a unit fired upon.  If consolidating, must consolidate towards the closest enemy if within 12&quot;</description>
     </rule>
-    <rule id="7dae-4d12-baba-e529" name="Blind" publicationId="ca571888--pubN74807" page="159" hidden="false">
+    <rule id="7dae-4d12-baba-e529" name="Blind" publicationId="ca571888--pubN106502" page="159" hidden="false">
       <description>Any unit hit by one or more models or weapons with this special rule must take an Initiative test at the end of the current phase. If the test is passed, all is well – a shouted warning has caused the warriors to avert their gaze. If the Initiative test is failed, all models in the unit are reduced to Weapon Skill and Ballistic Skill 1 until the end of their next turn. Should the attacking unit hit themselves, we assume they are prepared and they automatically pass the test. Any model that does not have an Initiative characteristic (for example, non-Walker vehicles, buildings etc.) is unaffected by this special rule.</description>
     </rule>
-    <rule id="98ed-3a29-c86b-455d" name="Lance" publicationId="ca571888--pubN74807" page="167" hidden="false">
+    <rule id="98ed-3a29-c86b-455d" name="Lance" publicationId="ca571888--pubN106502" page="167" hidden="false">
       <description>Weapons with the Lance special rule count vehicle Armour Values that are higher than 12 as 12.</description>
     </rule>
-    <rule id="f4fd-d519-4769-5510" name="Gets Hot" publicationId="ca571888--pubN74807" page="164" hidden="false">
+    <rule id="f4fd-d519-4769-5510" name="Gets Hot" publicationId="ca571888--pubN106502" page="164" hidden="false">
       <description>When firing a weapon that Gets Hot, roll To Hit as normal. For each To Hit roll of 1, the firing model immediately suffers a Wound (armour or invulnerable saves can be taken) – this Wound cannot be allocated to any other model in the unit. A character cannot make a Look Out, Sir attempt to avoid a Wound caused by the Gets Hot special rule. A vehicle instead rolls a D6 for each roll of a 1 to hit. On a roll of a 1, 2 or 3 it suffers a glancing hit.
 
 Gets Hot and Weapons that do not roll To Hit
@@ -7484,7 +7475,7 @@ If a model has the ability to re-roll its rolls To Hit (including because of BS6
     <rule id="f495-679e-1976-68d1" name="Paired Weapons" publicationId="ca571888--pubN66489" page="106" hidden="false">
       <description>Adds +1 to the model&apos;s attacks and count as being Twin-linked.</description>
     </rule>
-    <rule id="10a8-8d89-0bec-3e21" name="Twin-linked" publicationId="ca571888--pubN74807" page="175" hidden="false">
+    <rule id="10a8-8d89-0bec-3e21" name="Twin-linked" publicationId="ca571888--pubN106502" page="175" hidden="false">
       <description>Twin-linked weapons don’t get more shots than normal ones, but they give you a better chance of hitting with them. If a shooting weapon has the twin-linked special rule, or is described in a model’s wargear entry as twin-linked, it re-rolls all failed To Hit rolls.
 
 Twin-linked Blast Weapons
@@ -7493,10 +7484,10 @@ If the scatter dice does not roll a hit, you can choose to re-roll the dice with
 Twin-linked Template Weapons
 Twin-linked Template weapons are fired just like a single weapon, but must re-roll failed To Wound rolls and armour penetration rolls.</description>
     </rule>
-    <rule id="7ee3-d437-bc44-3630" name="Specialist Weapon" publicationId="ca571888--pubN74807" page="172" hidden="false">
+    <rule id="7ee3-d437-bc44-3630" name="Specialist Weapon" publicationId="ca571888--pubN106502" page="172" hidden="false">
       <description>A model fighting with this weapon does not receive +1 Attack for fighting with two weapons unless it is armed with two or more Melee weapons with the Specialist Weapon rule.</description>
     </rule>
-    <rule id="8269-2cd6-9236-16e7" name="Rending" publicationId="ca571888--pubN74807" page="170" hidden="false">
+    <rule id="8269-2cd6-9236-16e7" name="Rending" publicationId="ca571888--pubN106502" page="170" hidden="false">
       <description>If a model has the Rending special rule, or is attacking with a Melee weapon that has the Rending special rule, there is a chance that his close combat attacks will strike a critical blow. For each To Wound roll of a 6, the target automatically suffers a Wound, regardless of its Toughness. These Wounds are resolved at AP2.
 Similarly, if a model makes a shooting attack with a weapon that has the Rending special rule, a To Wound roll of 6 Wounds automatically, regardless of Toughness, and is resolved at AP2.
 In either case, against vehicles, each armour penetration roll of 6 allows a further D3 to be rolled, with the result added to the total. These hits are not resolved at AP2, but are instead resolved using the model/weapon’s AP value.</description>
@@ -7504,7 +7495,7 @@ In either case, against vehicles, each armour penetration roll of 6 allows a fur
     <rule id="d5cf-bd98-2854-13cf" name="Reactor Blast" publicationId="ca571888--pubN66489" page="112" hidden="false">
       <description>When losing its final wound, roll a D6.  On the result of a 6, the model explodes, inflicting a Str 4 AP - hit on all models within D6&quot;</description>
     </rule>
-    <rule id="9b30-1da3-eb8d-ce7a" name="Scout" publicationId="ca571888--pubN74807" page="171" hidden="false">
+    <rule id="9b30-1da3-eb8d-ce7a" name="Scout" publicationId="ca571888--pubN106502" page="171" hidden="false">
       <description>After both sides have deployed (including Infiltrators), but before the first player begins his first turn, a unit containing at least one model with this special rule can choose to redeploy. If the unit is Infantry, Artillery, a Walker or a Monstrous Creature, each model can redeploy anywhere entirely within 6&quot; of its current position. If it is any other unit type, each model can instead redeploy anywhere entirely within 12&quot; of its current position. During this redeployment, Scouts can move outside the owning player’s deployment zone, but must remain more than 12&quot; away from any enemy unit. A unit that makes a Scout redeployment cannot charge in the first game turn. A unit cannot embark or disembark as part of a Scout redeployment.
 If both sides have Scouts, roll-off; the winner decides who redeploys first. Then alternate redeploying Scout units.
 If a unit with this special rule is deployed inside a Dedicated Transport, it confers the Scout special rule to the Transport (though a disembarkation cannot be performed as part of the redeployment). Note that a Transport with this special rule does not lose it if a unit without this special rule is embarked upon it. Having Scout also confers the Outflank special rule to units of Scouts that are kept as Reserves.
@@ -7516,16 +7507,16 @@ If a unit with Scouts is deployed inside a Dedicated Transport, they may Outflan
 Iinfiltrate and Scout
 If a unit has both the Infiltrate and Scout special rule, that unit can deploy as per the Infiltrate special rule and then redeploy as per the Scout special rule.</description>
     </rule>
-    <rule id="4575-0a0a-caaf-e4bf" name="Fleshbane" publicationId="ca571888--pubN74807" page="164" hidden="false">
+    <rule id="4575-0a0a-caaf-e4bf" name="Fleshbane" publicationId="ca571888--pubN106502" page="164" hidden="false">
       <description>If a model has this special rule, or is attacking with a Melee weapon that has this special rule, they always Wound on a 2+ in close combat.  Similarly, if a model makes a shooting attack with a weapon that has this special rule, they always Wound on a 2+.  In either case, this special rule has no effect against vehicles or buildings.</description>
     </rule>
-    <rule id="eefe-09e4-17aa-deb2" name="Rad-phage" publicationId="ca571888--pubN74807" page="170" hidden="false">
+    <rule id="eefe-09e4-17aa-deb2" name="Rad-phage" publicationId="ca571888--pubN106502" page="170" hidden="false">
       <description>A model which loses one or more wounds to an attack with this rule and survives suffers a -1 penalty to its Toughness value for the rest of the battle.</description>
     </rule>
-    <rule id="2b06-29a6-641a-b22e" name="Crusader" publicationId="ca571888--pubN74807" page="163" hidden="false">
+    <rule id="2b06-29a6-641a-b22e" name="Crusader" publicationId="ca571888--pubN106502" page="163" hidden="false">
       <description>A unit that contains at least one model with this special rule rolls an extra dice when making Run moves, and uses the highest result rolled. In addition, a unit that contains at least one model with this special rule adds D3 to its Sweeping Advance totals (roll each time).</description>
     </rule>
-    <rule id="be7f-8146-6cb8-9a53" name="Skyfire" publicationId="ca571888--pubN106257" page="171" hidden="false">
+    <rule id="be7f-8146-6cb8-9a53" name="Skyfire" publicationId="ca571888--pubN106502" page="171" hidden="false">
       <description>A model with this special rule, or that is firing a weapon with this special rule, fires using its normal Ballistic Skill when shooting at Flyers, Flying Monstrous Creatures and Skimmers, but it can only fire Snap Shots against other targets.</description>
     </rule>
     <rule id="acf2-681d-4188-94d7" name="Ignores Cover" publicationId="ca571888--pubN105292" hidden="false">
@@ -7537,12 +7528,12 @@ If a unit has both the Infiltrate and Scout special rule, that unit can deploy a
     <rule id="73db-afdc-2c95-993c" name="Graviton Hammer" publicationId="ca571888--pubN66489" page="35" hidden="false">
       <description>In addition to its weapon attacks, units assaulting a model or unit with a Graviton Hammer always count as making a Disordered Charge when doing so.</description>
     </rule>
-    <rule id="9c80-5c1a-3b9d-971e" name="Shrouded" publicationId="ca571888--pubN74807" page="171" hidden="false">
+    <rule id="9c80-5c1a-3b9d-971e" name="Shrouded" publicationId="ca571888--pubN106502" page="171" hidden="false">
       <description>A unit that contains at least one model with this special rule counts its cover save as being 2 points better than normal. Note that this means a model with the Shrouded special rule always has a cover save of at least 5+, even if it’s in the open.
 
 Cover save bonuses from the Shrouded and Stealth special rules are cumulative (to a maximum of a 2+ cover save).</description>
     </rule>
-    <rule id="3919-29f5-0c68-3ecb" name="Sniper" publicationId="ca571888--pubN74807" page="172" hidden="false">
+    <rule id="3919-29f5-0c68-3ecb" name="Sniper" publicationId="ca571888--pubN106502" page="172" hidden="false">
       <description>If a weapon has the Sniper special rule, or is fired by a model with the Sniper special rule, and rolls a 6 To Hit, that shot is a ‘Precision Shot’. Wounds from Precision Shots are allocated against a model (or models) of your choice in the target unit, as long as it is in range and line of sight of the firer, rather than following the normal rules for Wound allocation. A character that has a Precision Shot Wound allocated to it can still make a Look Out, Sir roll. Note that Snap Shots can never be Precision Shots.
 
 If a weapon has the Sniper special rule, or is fired by a model with the Sniper special rule, its shooting attacks always wound on a To Wound roll of 4+, regardless of the victim’s Toughness. In addition, any To Wound roll of a 6 is resolved at AP2.
@@ -7551,7 +7542,7 @@ Against vehicles, shooting attacks from weapons and models with the Sniper speci
 
 Attacks with the Blast or Template rules may never benefit from the effects of the Sniper special rule.</description>
     </rule>
-    <rule id="23a4-a37f-e8e8-c756" name="Legiones Astartes" publicationId="ca571888--pubN74807" page="168" hidden="false">
+    <rule id="23a4-a37f-e8e8-c756" name="Legiones Astartes" publicationId="ca571888--pubN106502" page="168" hidden="false">
       <description>Units with this special rule may always attempt to Regroup at their normal Leadership value, regardless of casualties.
 
 In addition to these benefits, units  will also have a number of additional special rules and abilities specific to their ‘named’ Legion, all of which will be defined in the Legiones Astartes Army List and other future Forge World publications.
@@ -7561,7 +7552,7 @@ If an army represents a Legion which does not yet have its own unique Legiones A
     <rule id="5ecb-551d-0f68-3a79" name="Implacable Advance" publicationId="ca571888--pubN106389" page="3" hidden="false">
       <description>Units with this special rule are always counted as scoring units in any mission where Troops are also counted as scoring units.</description>
     </rule>
-    <rule id="e300-69f2-111a-ed55" name="Zealot" publicationId="ca571888--pubN74807" page="175" hidden="false">
+    <rule id="e300-69f2-111a-ed55" name="Zealot" publicationId="ca571888--pubN106502" page="175" hidden="false">
       <description>A unit containing one or more models with the Zealot special rule automatically passes Pinning, Fear and Regroup tests and Morale checks, but cannot Go to Ground and cannot choose to fail a Morale check due to the Our Weapons Are Useless rule. If a unit gains the Zealot special rule when it has Gone to Ground, all the effects of Go to Ground are immediately cancelled.
 
 In addition, units containing one or more models with the Zealot special rule re-roll all failed To Hit rolls during the first round of each close combat – they do not get to re-roll failed To Hit rolls in subsequent rounds.</description>
@@ -7569,13 +7560,10 @@ In addition, units containing one or more models with the Zealot special rule re
     <rule id="1744-88c6-ac43-76f1" name="Beam" publicationId="ca571888--pubN105292" hidden="false">
       <description>To use a witchfire power with the beam sub-type, target a point within the power’s range and trace a line (about 1mm thick) between the chosen point and the centre of the Psyker’s base – this line cannot be drawn over any unit that is locked in combat. All units under the line (friend and foe) are hit, with the exception of Zooming Flyers, Swooping Flying Monstrous Creatures and the Psyker himself. Each unit hit by the attack takes a number of hits equal to the number of models from that unit that are under the line. Only one unit that has a model under the line can attempt to Deny the Witch.</description>
     </rule>
-    <rule id="cbcf-5f25-f8ea-7cfd" name="Deflagrate" publicationId="ca571888--pubN99753" page="129" hidden="false">
-      <description>After normal attacks by this weapon have been resolved, count the number of unsaved wounds caused on the target unit. Immediately resolve a number of additional automatic hits on the same unit using the weapon’s profile equal to the number of unsaved wounds – these can then be saved normally. Models in the targeted unit must still be in range in order for these additional hits to take effect. These additional hits do not themselves inflict more hits!</description>
-    </rule>
-    <rule id="5eea-958c-d623-c3c9" name="Unwieldy" publicationId="ca571888--pubN74807" page="175" hidden="false">
+    <rule id="5eea-958c-d623-c3c9" name="Unwieldy" publicationId="ca571888--pubN106502" page="175" hidden="false">
       <description>A model attacking with this weapon Piles In and fights at Initiative step 1, unless it is a Monstrous Creature or a Walker.</description>
     </rule>
-    <rule id="e182-50cd-0867-9a8d" name="Armourbane" publicationId="ca571888--pubN74807" page="157" hidden="false">
+    <rule id="e182-50cd-0867-9a8d" name="Armourbane" publicationId="ca571888--pubN106502" page="157" hidden="false">
       <description>If a model has this special rule, or is attacking with a Melee weapon that has this special rule, it rolls an additional D6 for armour penetration in close combat.
 If a model makes a shooting attack with a weapon that has this special rule, it rolls an additional D6 for armour penetration. In either case, this special rule has no effect against non-vehicle models.</description>
     </rule>
@@ -7584,7 +7572,7 @@ If a model makes a shooting attack with a weapon that has this special rule, it 
 
 Assualt: Models equipped with assault grenades don’t suffer the penalty to their Initiative for charging enemies through difficult terrain, but fight at their normal Initiative in the ensuing combat.</description>
     </rule>
-    <rule id="38d5-b6eb-bda8-2497" name="Bulky" publicationId="ca571888--pubN74807" page="161" hidden="false">
+    <rule id="38d5-b6eb-bda8-2497" name="Bulky" publicationId="ca571888--pubN106502" page="161" hidden="false">
       <description>Bulky models count as two models for the purposes of Transport Capacity.</description>
     </rule>
     <rule id="abc9-8566-bb61-4b7c" name="Very Bulky" publicationId="ca571888--pubN105292" hidden="false">
@@ -7613,10 +7601,10 @@ Jump units always use their jump packs when Falling Back, and their Fall Back mo
 SPECIAL RULES
 Jump units have the Bulky and Deep Strike special rules.</description>
     </rule>
-    <rule id="2d57-8425-0ec0-a9cf" name="Graviton Pulse" publicationId="ca571888--pubN74807" page="164" hidden="false">
+    <rule id="2d57-8425-0ec0-a9cf" name="Graviton Pulse" publicationId="ca571888--pubN106502" page="164" hidden="false">
       <description>Instead of rolling To Wound normally with this weapon, any model caught in its blast must instead roll equal to or under their Strength on a D6 or suffer a wound (a roll of a ‘6’ always counts as a failure). After a Graviton Pulse weapon has been fired, leave the Blast marker in place. This area now counts as both difficult terrain and dangerous terrain for the next turn thanks to the gravity flux.</description>
     </rule>
-    <rule id="6970-1bf3-b33e-5dce" name="Haywire" publicationId="ca571888--pubN74807" page="164" hidden="false">
+    <rule id="6970-1bf3-b33e-5dce" name="Haywire" publicationId="ca571888--pubN106502" page="164" hidden="false">
       <description>When a weapon with this special rule hits a vehicle, roll a D6 to determine the effect rather than rolling for armour penetration normally:
 
 D6 - Result
@@ -7624,7 +7612,7 @@ D6 - Result
 2-5 - Glancing hit
 6 - Penetrating hit</description>
     </rule>
-    <rule id="c2af-0e00-294d-8d82" name="Cumbersome" publicationId="ca571888--pubN74807" page="162" hidden="false">
+    <rule id="c2af-0e00-294d-8d82" name="Cumbersome" publicationId="ca571888--pubN106502" page="162" hidden="false">
       <description>A model using a close combat weapon with this special rule can only ever make a single attack at WS 1 in an Assault phase, regardless of their profile or any bonus or other special rule.</description>
     </rule>
     <rule id="eabf-f2b0-71f8-0f72" name="Preternatural Skill" publicationId="ca571888--pubN106650" hidden="false">
@@ -7633,7 +7621,7 @@ D6 - Result
     <rule id="0d78-e15c-74f6-5701" name="Plasma Grenades" publicationId="ca571888--pubN105292" hidden="false">
       <description>Models equipped with plasma grenades don’t suffer the penalty to their Initiative for charging enemies through difficult terrain, but fight at their normal Initiative step in the ensuing combat.</description>
     </rule>
-    <rule id="0ac1-dfc1-295b-50a6" name="Power of the Machine Spirit" publicationId="ca571888--pubN74807" page="169" hidden="false">
+    <rule id="0ac1-dfc1-295b-50a6" name="Power of the Machine Spirit" publicationId="ca571888--pubN106502" page="169" hidden="false">
       <description>In a turn in which the vehicle neither moves Flat Out nor uses smoke launchers, the vehicle can fire one more weapon at its full Ballistic Skill than normally permitted. In addition, this weapon can be fired at a different target unit to any other weapons, subject to the normal rules for shooting.</description>
     </rule>
     <rule id="4af6-46f8-9c3e-cb33" name="Heliothermic Detonation" publicationId="ca571888--pubN106705" hidden="false">
@@ -7642,10 +7630,10 @@ D6 - Result
     <rule id="3bc1-64f3-ed64-6959" name="Rapid Tracking" publicationId="ca571888--pubN99753" page="127" hidden="false">
       <description>Targets may not take Jink saves against damage from this weapon.</description>
     </rule>
-    <rule id="45cf-653a-4ff6-f22d" name="Assault Vehicle" publicationId="ca571888--pubN74807" page="157" hidden="false">
+    <rule id="45cf-653a-4ff6-f22d" name="Assault Vehicle" publicationId="ca571888--pubN106502" page="157" hidden="false">
       <description>Passengers disembarking from Access Points on a vehicle with this special rule can charge on the turn they do so (even in a turn that the vehicle was destroyed, or in the following turn) unless the vehicle arrived from Reserve that turn.</description>
     </rule>
-    <rule id="ca3e-e94e-58f6-75d9" name="Interceptor" publicationId="ca571888--pubN74807" page="167" hidden="false">
+    <rule id="ca3e-e94e-58f6-75d9" name="Interceptor" publicationId="ca571888--pubN106502" page="167" hidden="false">
       <description>At the end of the enemy Movement phase, a weapon with the Interceptor special rule can be fired at any one unit that has arrived from Reserve within its range and line of sight. If this rule is used, the weapon cannot be fired in the next turn, but the firing model can shoot a different weapon if it has one.</description>
     </rule>
     <rule id="3138-683d-a9a0-570d" name="Armoured Ceramite" publicationId="ca571888--pubN106780" page="131" hidden="false">
@@ -7654,59 +7642,59 @@ D6 - Result
     <rule id="d0b7-ed3f-25c8-1e63" name="Flare Shield" hidden="false">
       <description>A flare shield operates against shooting attacks that strike the vehicle&apos;s front arc.  It reduces the strength of attacks by weapons with the Templae or Blast type by -2, and other shooting attacks by -1.  A flare shield has no effect on attacks from close combat or with the Destroyer rule.</description>
     </rule>
-    <rule id="a080-af1b-fb2e-4860" name="Precision Strikes" publicationId="ca571888--pubN74807" page="169" hidden="false">
+    <rule id="a080-af1b-fb2e-4860" name="Precision Strikes" publicationId="ca571888--pubN106502" page="169" hidden="false">
       <description>If a model with this special rule rolls a 6 To Hit with a Melee weapon, that hit is a ‘Precision Strike’.
 
 Wounds from Precision Strikes are allocated against an engaged model (or models) of your choice in the unit you are attacking, rather than following the normal rules for Wound allocation. If a Precision Strike Wound is allocated to a character, they can still make their Look Out, Sir roll.</description>
     </rule>
-    <rule id="4771-b711-0e74-3aee" name="Precision Shots" publicationId="ca571888--pubN74807" page="169" hidden="false">
+    <rule id="4771-b711-0e74-3aee" name="Precision Shots" publicationId="ca571888--pubN106502" page="169" hidden="false">
       <description>If a model with this special rule rolls a 6 To Hit with a shooting weapon, that shot is a ‘Precision Shot’.
 
 Wounds from Precision Shots are allocated against a model (or models) of your choice in the target unit, as long as it is in range and line of sight of the firer, rather than following the normal rules for Wound allocation. A character that has a Precision Shot Wound allocated to it can still make a Look Out, Sir roll.
 
 Note that Snap Shots and shots from weapons that scatter, or do not roll To Hit, can never be Precision Shots.</description>
     </rule>
-    <rule id="0122-421f-88f2-9c68" name="Psyker" publicationId="ca571888--pubN74807" page="170" hidden="false">
+    <rule id="0122-421f-88f2-9c68" name="Psyker" publicationId="ca571888--pubN106502" page="170" hidden="false">
       <description>A model with this special rule is a Psyker. This rule is typically presented with a Mastery Level, shown in brackets – if no Mastery Level is shown then that model has a Mastery Level of 1.</description>
     </rule>
-    <rule id="cf90-39d9-c923-f6bf" name="Repel the Enemy" publicationId="ca571888--pubN74807" page="170" hidden="false">
+    <rule id="cf90-39d9-c923-f6bf" name="Repel the Enemy" publicationId="ca571888--pubN106502" page="170" hidden="false">
       <description>Models disembarking from Access Points on a building can charge on the turn they do so, even on a turn the building was destroyed.
 
 Models using an escape hatch (see page 106) may not make use of this special rule.</description>
     </rule>
-    <rule id="9f71-25a6-08e5-f088" name="Sentry Defence System" publicationId="ca571888--pubN74807" page="171" hidden="false">
+    <rule id="9f71-25a6-08e5-f088" name="Sentry Defence System" publicationId="ca571888--pubN106502" page="171" hidden="false">
       <description>A building with this special rule can use automated fire against enemy units, even if it is unoccupied. In addition, enemy units can shoot at and charge a building with this special rule, even if it is unoccupied.</description>
     </rule>
-    <rule id="4608-a89f-8d54-2fe4" name="Slow and Purposeful" publicationId="ca571888--pubN74807" page="172" hidden="false">
+    <rule id="4608-a89f-8d54-2fe4" name="Slow and Purposeful" publicationId="ca571888--pubN106502" page="172" hidden="false">
       <description>A unit that contains at least one model with this special rule cannot Run, Turbo-boost, move Flat Out, perform Sweeping Advances or fire Overwatch. However, they can shoot with Heavy, Salvo and Ordnance weapons, counting as stationary even if they moved in the previous Movement phase. They are also allowed to charge in the same turn they fire Heavy, Ordnance, Rapid Fire or Salvo weapons.</description>
     </rule>
-    <rule id="38ff-a919-70c4-aec4" name="Split Fire" publicationId="ca571888--pubN74807" page="172" hidden="false">
+    <rule id="38ff-a919-70c4-aec4" name="Split Fire" publicationId="ca571888--pubN106502" page="172" hidden="false">
       <description>When a unit that contains at least one model with this special rule shoots, one model in the unit can shoot at a different target to the rest of his unit. Once this shooting attack has been resolved, resolve the shooting attacks made by the rest of the unit. These must be at a different target, which cannot be a unit forced to disembark as a result of the Split Firing unit’s initial shooting attack.</description>
     </rule>
-    <rule id="0d66-14c9-d2f4-708b" name="Stealth" publicationId="ca571888--pubN74807" page="173" hidden="false">
+    <rule id="0d66-14c9-d2f4-708b" name="Stealth" publicationId="ca571888--pubN106502" page="173" hidden="false">
       <description>A unit that contains at least one model with this special rule counts its cover saves as being 1 point better than normal. Note that this means that a model with the Stealth special rule always has a cover save of at least 6+, even if it is in the open. This rule is often presented as Stealth (X) where X indicates a specific type of terrain, such as Stealth (Woods) or Stealth (Ruins). If this is the case, the unit only gains the benefit whilst it is in terrain of the specified type.
 Cover save bonuses from the Shrouded and Stealth special rules are cumulative (to a maximum of a 2+ cover save).</description>
     </rule>
-    <rule id="7911-b951-c819-2f4f" name="Strafing Run" publicationId="ca571888--pubN74807" page="173" hidden="false">
+    <rule id="7911-b951-c819-2f4f" name="Strafing Run" publicationId="ca571888--pubN106502" page="173" hidden="false">
       <description>When shooting Assault, Heavy, Rapid Fire or Salvo weapons at Artillery, Beasts, Bikes, Cavalry, Infantry, Monstrous Creatures and vehicles without the Flyer or Skimmer type, this vehicle has +1 Ballistic Skill.</description>
     </rule>
-    <rule id="2e96-21ae-353e-8742" name="Supersonic" publicationId="ca571888--pubN74807" page="173" hidden="false">
+    <rule id="2e96-21ae-353e-8742" name="Supersonic" publicationId="ca571888--pubN106502" page="173" hidden="false">
       <description>A Supersonic vehicle that moves Flat Out must move at least 18&quot; and can move up to 36&quot;.</description>
     </rule>
-    <rule id="3e0b-be9f-b7eb-8c5e" name="Eternal Warrior" publicationId="ca571888--pubN74807" page="163" hidden="false">
+    <rule id="3e0b-be9f-b7eb-8c5e" name="Eternal Warrior" publicationId="ca571888--pubN106502" page="163" hidden="false">
       <description>If a model with this special rule suffers an unsaved Wound from an attack that inflicts Instant Death, it only reduces its Wounds by 1, instead of automatically reducing its Wounds to 0.</description>
     </rule>
     <rule id="860d-1c1d-04ef-2829" name="Experimental" publicationId="ca571888--pubN107025" hidden="false">
       <description>The many rules presented for this unit are experimental rules, still under development, and are not the final version. Experimental rules will change over time before a final version is published.</description>
     </rule>
-    <rule id="c0a6-5a38-2ea5-e740" name="Shock Pulse" publicationId="ca571888--pubN74807" page="171" hidden="false">
+    <rule id="c0a6-5a38-2ea5-e740" name="Shock Pulse" publicationId="ca571888--pubN106502" page="171" hidden="false">
       <description>Any vehicle, including super-heavies, that suffers a penetrating hit may only fire snap shots on the following game turn.</description>
     </rule>
     <rule id="1b17-c243-6518-4f8a" name="Dangerous Reactor Core" publicationId="ca571888--pubN107062" page="75" hidden="false">
       <description>If enemy inflicts a Penetrating hit against the Sicarian Venator, they may re-roll a result of a 1 on the Vehicle Damage table.
 Explodes results add D3&quot; to radius.</description>
     </rule>
-    <rule id="e15d-1437-cfb2-b8dd" name="Acute Senses" publicationId="ca571888--pubN74807" page="157" hidden="false">
+    <rule id="e15d-1437-cfb2-b8dd" name="Acute Senses" publicationId="ca571888--pubN106502" page="157" hidden="false">
       <description>If a unit contains at least one model with this special rule, and that unit arrives on a random table edge (due to Outflank, or other special rules), then you can re-roll to see which table edge they arrive from.</description>
     </rule>
     <rule id="c1bc-2d6c-ed91-1a1c" name="Bane of Vehicles" hidden="false">
@@ -7718,20 +7706,20 @@ Explodes results add D3&quot; to radius.</description>
     <rule id="2353-5421-d842-34fb" name="Blinding Distraction" hidden="false">
       <description>Any target hit in close combat by this model must take an Initiative test at the end of the current phase. If the test is passed, all is well – they have seen through the distraction. If the Initiative test is failed, the target is reduced to Weapon Skill and Ballistic Skill 1 until the end of their next turn. Any model that does not have an Initiative characteristic (for example, non-Walker vehicles, buildings etc.) is unaffected by this special rule.</description>
     </rule>
-    <rule id="8e59-1172-280d-75e8" name="Brotherhood of Psykers/Sorcerers" publicationId="ca571888--pubN74807" page="161" hidden="false">
+    <rule id="8e59-1172-280d-75e8" name="Brotherhood of Psykers/Sorcerers" publicationId="ca571888--pubN106502" page="161" hidden="false">
       <description>A unit containing at least one model with this special rule is a Psyker unit – if no Mastery Level is shown, then that unit has a Mastery Level of 1. Rules for generating and manifesting psychic powers can be found in the Psychic phase section. The unit follows all the normal rules for Psykers, with the following clarifications:
 
 When manifesting a psychic power, this unit measures range and line of sight from, and uses the characteristics profile (if required) of, any one model in the unit that has the Brotherhood of Psykers/Sorcerers special rule (controlling player’s choice).
 
 If this unit suffers Perils of the Warp, or is hit by an attack that specifically targets Psykers, the hits are Randomly Allocated amongst models with the Brotherhood of Psykers/Sorcerers special rule. If a model with this special rule gains or loses a psychic power, all other models with this special rule in their unit also gain or lose that power.</description>
     </rule>
-    <rule id="3eda-669d-bd54-e3c0" name="Daemon" publicationId="ca571888--pubN74807" page="162" hidden="false">
+    <rule id="3eda-669d-bd54-e3c0" name="Daemon" publicationId="ca571888--pubN106502" page="162" hidden="false">
       <description>Models with the Daemon special rule have a 5+ invulnerable save, and also have the Fear special rule.</description>
     </rule>
     <rule id="d784-9fdb-622e-32a5" name="Deathblow" hidden="false">
       <description>If a target suffers an unsaved Wound from a close combat attack made by this model, the target is reduced to 0 Wounds and is removed as a casualty.</description>
     </rule>
-    <rule id="b1ee-7803-8ddb-cb4e" name="Destroyer Weapon" publicationId="ca571888--pubN74807" page="163" hidden="false">
+    <rule id="b1ee-7803-8ddb-cb4e" name="Destroyer Weapon" publicationId="ca571888--pubN106502" page="163" hidden="false">
       <description>If a weapon has a D instead of a Strength value in its profile, it is a Destroyer weapon. To resolve a Destroyer weapon&apos;s attack, roll To Hit as you would for a standard attack. If the attack hits, roll on the table instead of rolling To Wound or for armour penetration. Most Destroyer Weapons have AP1 or AP2, so armour saves are not typically allowed. Cover saves and invulnerable saves can be taken against hits from a Destroyer weapon as normal, unless a Devastating Hit or Deathblow result is rolled. For the purposes of determining if a Destroyer hit has the Instant Death special rule, assume it has Strength 10. Multiple Wounds/Hull Points inflicted by a Destroyer hit do not carry over to other models in the unit (any excess are lost).
 
 D Weapon Attack Table: D6 Roll
@@ -7756,7 +7744,7 @@ D Weapon Attack Table: D6 Roll
     <rule id="7ab3-3bf5-f878-42cb" name="Exploit Weakness" hidden="false">
       <description>When this model makes a close combat attack, for each To Wound roll of a 6, the target automatically suffers a Wound, regardless of its Toughness. These Wounds are resolved at AP2. Against vehicles, each armour penetration roll of 6 allows a further D3 to be added to the total. These hits are resolved using their normal AP value.</description>
     </rule>
-    <rule id="f588-4e5a-a032-0aee" name="Force" publicationId="ca571888--pubN74807" page="164" hidden="false">
+    <rule id="f588-4e5a-a032-0aee" name="Force" publicationId="ca571888--pubN106502" page="164" hidden="false">
       <description>Any Psyker that has one or more weapons with this special rule knows the Force psychic power in addition to any other powers they know.
 
 Force - Warp Charge 1
@@ -7768,7 +7756,7 @@ Force is a blessing psychic power that targets the Psyker and his unit. All of t
     <rule id="8c62-54ee-2b8d-bdce" name="Fully Automated" publicationId="ca571888--pubN74520" page="" hidden="false">
       <description>Emplaced weapons on a Firestorm Redoubt can only fire using the automated fire rule: models occupying a Firestorm Redoubt cannot use the manual fire rule to fire any of its emplaced weapons.</description>
     </rule>
-    <rule id="e663-99e0-6b3e-a7ea" name="Gargantuan Creature" publicationId="ca571888--pubN107350" hidden="false">
+    <rule id="e663-99e0-6b3e-a7ea" name="Gargantuan Creature" publicationId="ca571888--pubN106502" hidden="false">
       <description>Gargantuan Creatures and Flying Gargantuan Creatures have the following Special Rules:
 
 Fear, Fearless, Feel No Pain, Hammer of Wrath, Move Through Cover, Relentless, Smash, Strikedown, Vector Strike (Flying Gargantuan Creatures Only)</description>
@@ -7780,7 +7768,7 @@ for each successful hit.</description>
     <rule id="d191-d6ec-e3c8-31f6" name="Improved Arcs of Fire" publicationId="ca571888--pubN74520" page="" hidden="false">
       <description>Any model within a Defence Emplacement section re-rolls failed To-Hit rolsl when resolving Overwatch if using a weapon with the Heavy type.</description>
     </rule>
-    <rule id="d3e5-b43d-a89c-3bd8" name="Jink" publicationId="ca571888--pubN74807" page="167" hidden="false">
+    <rule id="d3e5-b43d-a89c-3bd8" name="Jink" publicationId="ca571888--pubN106502" page="167" hidden="false">
       <description>When a unit with any models with the Jink special rule is selected as a target for a shooting attack, you may declare that it will Jink. The decision must be made before any To Hit rolls have been made. If the unit Jinks, all models in the unit with this special rule gain a 4+ cover save until the start of their next Movement phase, but they can only fire Snap Shots until the end of their next turn.</description>
     </rule>
     <rule id="b66d-46a8-2300-c2ed" name="Killer Instinct" hidden="false">
@@ -7802,31 +7790,31 @@ D6 Result
     <rule id="f1d4-5b05-ff67-81d4" name="Master-Craftsman" hidden="false">
       <description>When selecting this special rule, pick a ranged weapon carried by this model. You can re-roll one failed To Hit roll per turn with that weapon.</description>
     </rule>
-    <rule id="3384-a962-78e5-d13c" name="Mighty Bulwark" publicationId="ca571888--pubN74807" page="168" hidden="false">
+    <rule id="3384-a962-78e5-d13c" name="Mighty Bulwark" publicationId="ca571888--pubN106502" page="168" hidden="false">
       <description>When a building with the Mighty Bulwark special rule suffers a penetrating hit, there is a -1 modifier to the roll on the Building Damage table.</description>
     </rule>
     <rule id="97df-06a3-356e-02a8" name="Missile Battery" publicationId="ca571888--pubN74520" hidden="false">
       <description>The emplaced vortex missile may fire a maximum of seven vortex missiles over the course of the battle.  No more than one missile may be fired per Shooting phase.</description>
     </rule>
-    <rule id="46ca-9255-0e77-e9f5" name="Missile Lock" publicationId="ca571888--pubN74807" page="168" hidden="false">
+    <rule id="46ca-9255-0e77-e9f5" name="Missile Lock" publicationId="ca571888--pubN106502" page="168" hidden="false">
       <description>A model with this special rule re-rolls failed To Hit rolls when shooting any weapon that has the One Use Only special rule. If a model with this special rule is shooting a weapon that has both the One Use Only and Blast special rules, that shot will instead scatter D6&quot; rather than 2D6&quot;.</description>
     </rule>
-    <rule id="93c5-dcdd-af20-413e" name="Monster Hunter" publicationId="ca571888--pubN74807" page="168" hidden="false">
+    <rule id="93c5-dcdd-af20-413e" name="Monster Hunter" publicationId="ca571888--pubN106502" page="168" hidden="false">
       <description>A unit that contains at least one model with this special rule re-rolls all failed To Wound rolls against Monstrous Creatures.</description>
     </rule>
     <rule id="0c2a-421a-69a1-4444" name="Murderous Blows" hidden="false">
       <description>This model re-rolls failed To Wound rolls in close combat.</description>
     </rule>
-    <rule id="4764-48d9-da41-afaa" name="Objective Secured" publicationId="ca571888--pubN107350" hidden="false">
+    <rule id="4764-48d9-da41-afaa" name="Objective Secured" publicationId="ca571888--pubN106502" hidden="false">
       <description>A unit with this special rule controls objectives even if an enemy scoring unit is within range of the objective marker, unless the enemy unit also has this special rule.</description>
     </rule>
-    <rule id="3789-00ab-3f47-eb36" name="One Use Only/One Shot Only" publicationId="ca571888--pubN74807" page="168" hidden="false">
+    <rule id="3789-00ab-3f47-eb36" name="One Use Only/One Shot Only" publicationId="ca571888--pubN106502" page="168" hidden="false">
       <description>A weapon or ability with this special rule can only be used once during the course of a battle.</description>
     </rule>
-    <rule id="0a50-8f46-c9e4-be2a" name="Orbital" publicationId="ca571888--pubN107350" hidden="false">
+    <rule id="0a50-8f46-c9e4-be2a" name="Orbital" publicationId="ca571888--pubN106502" hidden="false">
       <description>If an arrow is rolled on the scatter dice when firing a weapon that has this special rule, the shot always scatters the full 2D6&quot; regardless of the firing model&apos;s Ballistic Skill.  In addition, firing an Ordnance weapon that has this special rule does not prevent the firing model from declaring a charge against the target unit in the same turn.</description>
     </rule>
-    <rule id="a5ff-1cb1-bee4-d809" name="Poisoned" publicationId="ca571888--pubN74807" page="169" hidden="false">
+    <rule id="a5ff-1cb1-bee4-d809" name="Poisoned" publicationId="ca571888--pubN106502" page="169" hidden="false">
       <description>If a model has the Poisoned special rule, or is attacking with a Melee weapon that has the Poisoned special rule, it always wounds on a fixed number (generally shown in brackets), unless a lower result would be required, when attacking in close combat. In addition, if the Strength of the wielder (or the Poisoned weapon) is higher than the Toughness of the victim, the wielder must re-roll failed rolls To Wound in close combat. Similarly, if a model makes a shooting attack with a weapon that has the Poisoned special rule, it always wounds on a fixed number (generally shown in brackets), unless a lower result would be required. If no number is shown in brackets, the rule is Poisoned (4+). Unless otherwise stated, Poisoned weapons are treated as having a Strength of 1. The Poisoned special rule has no effect against vehicles.</description>
     </rule>
     <rule id="1345-b808-628a-f6e1" name="Poisoned Weapons" hidden="false">
@@ -7838,7 +7826,7 @@ D6 Result
     <rule id="92e1-df2b-07ca-179c" name="Prometheum Charges" hidden="false">
       <description>This model counts as being equipped with assault grenades (see Warhammer 40,000: The Rules ). However, cover saves cannot be taken against Wounds caused by promethium charges in the Shooting phase.</description>
     </rule>
-    <rule id="2189-13e6-c68c-ab23" name="Psychic Pilot" publicationId="ca571888--pubN74807" page="169" hidden="false">
+    <rule id="2189-13e6-c68c-ab23" name="Psychic Pilot" publicationId="ca571888--pubN106502" page="169" hidden="false">
       <description>A vehicle with this special rule is a Psyker. This rule is typically presented with a Mastery Level, shown in brackets - if no Mastery Level is shown then that vehicle has a Mastery Level of 1. The unit follows all the normal rules for generating and manifesting psychic powers, with the following clarification: the vehicle is considered to have a Leadership characteristic of 10, should this be needed in order to resolve any psychic power or Perils of the Warp.</description>
     </rule>
     <rule id="9f0c-d4f2-94ee-c3a8" name="Reaping Volley" hidden="false">
@@ -7859,7 +7847,7 @@ D6 Result
     <rule id="63c3-7047-44b3-6aaa" name="Sonic Boom" publicationId="ca571888--pubN74520" page="" hidden="false">
       <description>After firing a quake shell, draw a straight line between the Aquila macro-cannon and the central hole of the apocalyptic mega-blast template.  Roll a dice for each Flyer, Flying Monstrous Creature, or Flying Gargantuan Creature model crossed by this line.  On a roll of 1, a Flyer will Crash and Burn, while a Clying Monstrous Creature or Flying Gargantuan Creature will take D3 Wounds with no saving throws allowed.</description>
     </rule>
-    <rule id="acb1-64c4-ef54-3a55" name="Soul Blaze" publicationId="ca571888--pubN74807" page="172" hidden="false">
+    <rule id="acb1-64c4-ef54-3a55" name="Soul Blaze" publicationId="ca571888--pubN106502" page="172" hidden="false">
       <description>If a unit suffers one or more unsaved Wounds from an attack with this special rule, it is set ablaze and continues to burn – mark it with a coin or counter as a reminder.
 
 At the end of each turn, roll a D6 for each unit with a Soul Blaze counter on it. On a 3 or less, the flames die out and the unit is no longer ablaze – remove your reminder counter. On a 4+, the unit takes D3 Strength 4 AP5 hits with the Ignores Cover special rule. These Wounds are Randomly Allocated. A unit cannot have more than one Soul Blaze counter on it at a time.</description>
@@ -7867,12 +7855,12 @@ At the end of each turn, roll a D6 for each unit with a Soul Blaze counter on it
     <rule id="afb7-b281-a9ce-4272" name="Stalwart Defence" publicationId="ca571888--pubN74520" page="" hidden="false">
       <description>Models have the Stubborn special rule whist within a Wall of Martyrs Imperial Defence Line or Defence Emplacement section.</description>
     </rule>
-    <rule id="092c-188d-753d-404e" name="Stomp" publicationId="ca571888--pubN74807" page="92" hidden="false">
+    <rule id="092c-188d-753d-404e" name="Stomp" publicationId="ca571888--pubN106502" page="92" hidden="false">
       <description>Super-heavy walkers or Gargantuan Creatures engageed in combat may make a special type of attack called a Stomp attack.  The Stomp attack is made in addition to the Super-heavy Walker&apos;s normal attacks. Stomp attacks are resolved during the Fight sub-phase at the Initiative 1 step.  This does not grant the model an additional Pile In move at the Initiative 1 step.
 
 A Stomp attack consists of D3 Stomps.  Buildings, Flyers, Swooping Flying Monstrous Creatures, Gargantuan Creatures, Flying Gargantuan Creatures, Super-heavy Vehicles, Super-heavy Walkers, and Super-heavy Flyers cannot be stomped; do not roll on the Stomp table for them if they fall under the blast marker.  Any other units with models under the blast marker are stomped as normal.</description>
     </rule>
-    <rule id="c6d4-50ae-eef2-e963" name="Stomp Table" publicationId="ca571888--pubN107350" hidden="false">
+    <rule id="c6d4-50ae-eef2-e963" name="Stomp Table" publicationId="ca571888--pubN106502" hidden="false">
       <description>Non Vehicle:
 1: No Effect.
 2-5: Each Model from the unit being stomped that is even partially under the blast marker suffers a S6 AP4 hit.
@@ -7883,30 +7871,30 @@ Vehicle:
 2-5: One vehicle in the unit being stomped that is even partially under the blast marker (stomping model&apos;s choice) suffers a penetrating hit.
 6: One vehicle in the unit being stomped that is even partially under the blast marker (stomping model&apos;s choice) scatters D6&quot; and then suffers an Explodes! result.</description>
     </rule>
-    <rule id="f14f-8413-de9b-ed19" name="Super-Heavy Vehicle" publicationId="ca571888--pubN107350" hidden="false">
+    <rule id="f14f-8413-de9b-ed19" name="Super-Heavy Vehicle" publicationId="ca571888--pubN106502" hidden="false">
       <description>Super-heavy vehicles have the following special rules:
 
 Fear, Move Through Cover, Invincible Behemoth.</description>
     </rule>
-    <rule id="f8b2-c433-0765-f1e7" name="Super-Heavy Walker" publicationId="ca571888--pubN107350" hidden="false">
+    <rule id="f8b2-c433-0765-f1e7" name="Super-Heavy Walker" publicationId="ca571888--pubN106502" hidden="false">
       <description>All Super-Heavy Walkers have the following special rules:
 
 Fear, Hammer of Wrath, Invincible Behemoth, Move Through Cover, Relentless, Smash, Strikedown.</description>
     </rule>
-    <rule id="d4ca-a14b-89b0-9f96" name="Supressing Fire" hidden="false">
+    <rule id="d4ca-a14b-89b0-9f96" name="Supressing Fire" publicationId="ca571888--pubN106502" hidden="false">
       <description>f a non-vehicle model suffers one or more hits from a shooting attack made by this model, the target must take a Leadership test once this model has finished its attacks for that phase. This is called a Pinning test. 
 If the target fails the test, it must immediately Go to Ground (see Warhammer 40,000: The Rules ). As the target has already taken its saves, Going to Ground does not protect it against the fire of the weapon that caused the test – it’s too late! As long as the test is passed, a target can be called upon to take multiple Pinning tests in a single turn, but only once for each model shooting at them. If a model has already Gone to Ground, no further Pinning tests are taken.
 If the special rules of a model specify that they can never be Pinned, they automatically pass this test. Such models can still Go to Ground voluntarily if they wish.</description>
     </rule>
-    <rule id="9079-7061-f12c-a6ba" name="Swarms" publicationId="ca571888--pubN74807" page="173" hidden="false">
+    <rule id="9079-7061-f12c-a6ba" name="Swarms" publicationId="ca571888--pubN106502" page="173" hidden="false">
       <description>If, when allocating Wounds to a unit with the Swarms special rule, two or more models could be chosen as the closest enemy, the closest enemy is always the model with the least number of Wounds. If a model with the Swarm special rule suffers an unsaved Wound from a Blast (any size) or Template weapon, each unsaved Wound is multiplied to two unsaved Wounds unless that Wound has the Instant Death special rule. However, a unit entirely composed of models with the Swarm special rule is not slowed by difficult terrain, but must test for Dangerous Terrain as normal.</description>
     </rule>
-    <rule id="8065-2f17-bb00-d535" name="Thunderblitz" publicationId="ca571888--pubN74807" page="91" hidden="false">
+    <rule id="8065-2f17-bb00-d535" name="Thunderblitz" publicationId="ca571888--pubN106502" page="91" hidden="false">
       <description>Super-heavy vehicles may Tank Shock or Ram.  When they do so, roll once on teh Thunderblitz table immediately before taking the Morale check for the unit being Tank Shocked, or immediately before rolling for armour penetrating when performing a Ram.
 
 Do not roll on the Thunderblitz table when Tank Shocking a Gargantuan Creature or Flying Gargantuan Creature, or when Ramming a Super-heavy vheicle or Super-heavy Walker.  Instead, simply carry out the Tank Shock or Ram as normal.</description>
     </rule>
-    <rule id="5dfe-0b9b-26b3-edb4" name="Thunderblitz Table" publicationId="ca571888--pubN74807" page="91" hidden="false">
+    <rule id="5dfe-0b9b-26b3-edb4" name="Thunderblitz Table" publicationId="ca571888--pubN106502" page="91" hidden="false">
       <description>Tank Shock:
 1: No Effect. Then, Carry on with the Tank Shock as normal.
 2-5: The unit being Tank Shocked suffers D6 S6 AP4 hits. Then, Carry on with the Tank Shock as normal.
@@ -7917,23 +7905,23 @@ Ram:
 2-5:  The Super-heavy vehicle adds D6 to the armour penetration roll for the Ram. Then, Carry on with the Ram as normal.
 6: The vehicle being rammed scatters D6&quot; and then suffers an Explodes! result from the Vehicle Damage Table.</description>
     </rule>
-    <rule id="5039-18f0-a9ed-0938" name="Torrent" publicationId="ca571888--pubN74807" page="174" hidden="false">
+    <rule id="5039-18f0-a9ed-0938" name="Torrent" publicationId="ca571888--pubN106502" page="174" hidden="false">
       <description>A weapon with this special rule is treated like any other Template weapon, but when firing it in the Shooting phase, place the template so that the narrow end is within 12&quot; of the weaon and the wide end is no closer to the weapon than the narrow end.
 
 Some versions of this special rule may specify a distance as part of the rule (Torrent (18&quot;) for example), in these cases the template must be placed so that the narrow end is within the specified distance rather than the standard 12&quot;.</description>
     </rule>
-    <rule id="b11c-0ef4-af6b-d96f" name="Two-Handed" publicationId="ca571888--pubN74807" page="175" hidden="false">
+    <rule id="b11c-0ef4-af6b-d96f" name="Two-Handed" publicationId="ca571888--pubN106502" page="175" hidden="false">
       <description>A model attacking with this weapon never receives +1 Attack for fighting with two Melee weapons.</description>
     </rule>
-    <rule id="288b-7bed-3048-9428" name="Unstoppable" publicationId="ca571888--pubN74807" page="69" hidden="false">
+    <rule id="288b-7bed-3048-9428" name="Unstoppable" publicationId="ca571888--pubN106502" page="69" hidden="false">
       <description>Any attack that normally inflicts Instant Death or says that the target model is removed from play inflicts D3 Wounds on a Gargantuan Creature of Flying Gargantuan Creature instead.
 
 In addition, attacks with the Sniper special rule only cause a Wound on a roll of a 6.  Attacks with the Poisoned special rule only cause a Wound on a roll of a 6 (unless the attack&apos;s Strength would cause a Wound on a lower result)</description>
     </rule>
-    <rule id="78a5-e7d1-89b3-2fb5" name="Vector Dancer" publicationId="ca571888--pubN74807" page="175" hidden="false">
+    <rule id="78a5-e7d1-89b3-2fb5" name="Vector Dancer" publicationId="ca571888--pubN106502" page="175" hidden="false">
       <description>A model with this special rule can make an additional pivot on the spot of up to 90 degrees at the end of its move. A model that uses this extra pivot cannot move Flat Out in the following Shooting phase.</description>
     </rule>
-    <rule id="5341-7110-d8d4-171a" name="Vector Strike" publicationId="ca571888--pubN74807" page="175" hidden="false">
+    <rule id="5341-7110-d8d4-171a" name="Vector Strike" publicationId="ca571888--pubN106502" page="175" hidden="false">
       <description>When Swooping or Zooming, this model may savage its prey. At the end of the Movement phase, nominate one enemy unit not locked in combat that the model has moved over that turn. That unit takes 1 hit (if the unit is an enemy Flyer in Zoom mode, or an enemy Swooping Flying Monstrous Creature, it instead takes D3 hits). Unless stated otherwise, Vector Strike hits are resolved at the model’s unmodified Strength and AP2, using Random Allocation. These hits have the Ignores Cover special rule. These hits do not benefit from any of the model’s special rules, such as Furious Charge, Poisoned, Rending etc. Against vehicles, these hits are resolved against the target&apos;s side armour.
 
 A model that made a Vector Strike in its Movement phase counts as having already fired one weapon in its following Shooting phase. However, any additional weapons it fires that turn can choose a different target to that of the Vector Strike.</description>
@@ -7941,7 +7929,7 @@ A model that made a Vector Strike in its Movement phase counts as having already
     <rule id="d04c-20b3-dc49-ea06" name="Very Wide Fire Point" publicationId="ca571888--pubN74520" page="" hidden="false">
       <description>Up to six occupying models can fire out of each of this building&apos;s fire points.</description>
     </rule>
-    <rule id="3d3c-398b-775d-72ff" name="Vortex" publicationId="ca571888--pubN74807" page="175" hidden="false">
+    <rule id="3d3c-398b-775d-72ff" name="Vortex" publicationId="ca571888--pubN106502" page="175" hidden="false">
       <description>A weapon with this special rule is a Destroyer weapon and uses a blast marker of some type (e.g. blast, large blast, massive blast, etc). Place the appropriate marker, roll for scatter and apply damage. For determining Wound allocation, always assume the shot is coming from the centre of the marker, in the same manner as a Barrage weapon.
 
 The marker for a Vortex weapon is not removed from play after damage has been resolved. Leave it in play on the tabletop. The marker is impassable terrain as long as it remains in play.
@@ -7966,7 +7954,7 @@ At the beginning of every subsequent player turn, the marker scatters 2D6&quot; 
     <rule id="aa779861-a8af-fa95-4150-ba94585d1aff" name="Augur-sweep" publicationId="ca571888--pubN69050" page="111" hidden="false">
       <description>Enemy units within 12&quot; reduce their cover saves by -1 when fired at by units in the same detachment as the Cyber-occularis</description>
     </rule>
-    <rule id="9edbc777-7d2b-011b-7488-335b14870be5" name="Battlesmith" publicationId="ca571888--pubN74807" page="157" hidden="false">
+    <rule id="9edbc777-7d2b-011b-7488-335b14870be5" name="Battlesmith" publicationId="ca571888--pubN106502" page="157" hidden="false">
       <description>If a Battlesmith is embarked on or in base contact with one or more damaged vehicles during the shooting phase, they may attempt to repair one of them instead of firing a weapon.  To attempt, roll a D6.  On a result of 5+ the Battlesmith may do one of the following:
 
 - Restore a lost Hull Point
@@ -7987,61 +7975,61 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
     <rule id="5a6e2a63-286a-a771-587c-6a41724b1e6b" name="Warning Relay" publicationId="ca571888--pubN85920" page="207" hidden="false">
       <description>Confers Interceptor to all friendly models within the same detachment 3&quot;</description>
     </rule>
-    <rule id="333c-a3b2-4353-f484" name="Macro-extinction Targeting Protocols" publicationId="ca571888--pubN108377" page="279" hidden="false">
+    <rule id="333c-a3b2-4353-f484" name="Macro-extinction Targeting Protocols" publicationId="ca571888--pubN89821" page="279" hidden="false">
       <description>When making shooting attacks against targets of the Super-heavy or Gargantuan Creature type, the Cerastus Knight-Atrapos counts its weapons as Twin-linked.</description>
     </rule>
-    <rule id="8fb5-0c46-e8b4-0ef6" name="Ionic Flare Shield" publicationId="ca571888--pubN108377" page="279" hidden="false">
+    <rule id="8fb5-0c46-e8b4-0ef6" name="Ionic Flare Shield" publicationId="ca571888--pubN89821" page="279" hidden="false">
       <description>When a Cerastus Knight-Atrapos is deployed, and subsequently at the start of each of the opposing side&apos;s Shooting phases, the Cerastus
 Knight-Atrapos&apos; controlling player must declare which facing each Cerastus Knight-Atrapos&apos; ion flare shield is covering. The choices are front, left side, right side or rear. The Knight has a 4+ invulnerable save against all hits against the shield facing and the strength of any 
 Shooting attack against the shield facing is reduced by -1, the effect increasing to -2 if the weapon has the Blast or Template special rules (note however that this strength reduction has no effect on Destroyer or Haywire attacks). Ionic flare shields are repositioned before any attacks are carried out in the Shooting phase and may not be used to make 	saving throws against close combat attacks.</description>
     </rule>
-    <rule id="81fe-8580-34f6-28ae" name="Catastrophic Destruction" publicationId="ca571888--pubN108377" page="279" hidden="false">
+    <rule id="81fe-8580-34f6-28ae" name="Catastrophic Destruction" publicationId="ca571888--pubN89821" page="279" hidden="false">
       <description>When destroyed, the Cerastus Knight-Atrapos adds +2 to the result rolled on the Catastrophic Damage table.</description>
     </rule>
-    <rule id="841f-9119-9f9d-5058" name="Sunder" publicationId="ca571888--pubN74807" page="172" hidden="false">
+    <rule id="841f-9119-9f9d-5058" name="Sunder" publicationId="ca571888--pubN106502" page="172" hidden="false">
       <description>Attacks with this rule may re-roll failed Armour Penetration rolls.</description>
     </rule>
-    <rule id="40ea-f002-47cb-4e4e" name="Shell Shock" publicationId="ca571888--pubN74807" page="171" hidden="false">
+    <rule id="40ea-f002-47cb-4e4e" name="Shell Shock" publicationId="ca571888--pubN106502" page="171" hidden="false">
       <description>Pinning tests taken because of a weapon with this special rule suffer a -1 Leadership penalty.</description>
     </rule>
-    <rule id="2c16-3b25-a714-a656" name="Support Squad" publicationId="ca571888--pubN74807" page="173" hidden="false">
+    <rule id="2c16-3b25-a714-a656" name="Support Squad" publicationId="ca571888--pubN106502" page="173" hidden="false">
       <description>A squad with this special rule may not be chosen as a compulsory choice for the army as part of the Force Organisation chart.</description>
     </rule>
-    <rule id="dbf6-2f12-bb4a-517c" name="Feel No Pain (5+)" publicationId="ca571888--pubN74807" page="164" hidden="false">
+    <rule id="dbf6-2f12-bb4a-517c" name="Feel No Pain (5+)" publicationId="ca571888--pubN106502" page="164" hidden="false">
       <description>When a model with this special rule suffers an unsaved Wound, it can make a special Feel No Pain roll to avoid being wounded (this is not a saving throw and so can be used against attacks that state that ‘no saves of any kind are allowed’, for example those inflicted by Perils of the Warp).
 “Feel No Pain rolls may not be taken against Destroyer attacks (see page 163), unsaved wounds which have the Instant Death special rule or in instances which state that no saves (of any kind) may be taken.”
 Roll a D6 each time an unsaved Wound is suffered. On a 4 or less, you must take the Wound as normal. On a 5+, the unsaved Wound is discounted – treat it as having been saved.
 If a unit has the Feel No Pain special rule with a number in brackets afterwards – Feel No Pain (6+), for example – then the number in brackets is the D6 result needed to discount the Wound.</description>
     </rule>
-    <rule id="24a2-9868-b6e4-4789" name="Agile (Flyers Only)" publicationId="ca571888--pubN74807" page="157" hidden="false">
+    <rule id="24a2-9868-b6e4-4789" name="Agile (Flyers Only)" publicationId="ca571888--pubN106502" page="157" hidden="false">
       <description>A unit with this special rule increases any cover saves granted by the Jink special rule by +1.</description>
     </rule>
-    <rule id="2346-6a18-14c6-11a6" name="Automated Artillery" publicationId="ca571888--pubN74807" page="157" hidden="false">
+    <rule id="2346-6a18-14c6-11a6" name="Automated Artillery" publicationId="ca571888--pubN106502" page="157" hidden="false">
       <description>Automated Artillery does not require crew in order to function. It is not removed from play due to a lack of crew and each gun must be destroyed normally before it is removed.
 Automated Artillery cannot move and cannot charge. If assaulted, theydo not Pile In and cannot be locked in combat. Their attackers will hitautomatically, but must roll To Wound normally. If a unit of Automated Artillery loses an assault, nothing happens. Thereare no Sweeping Advances, no Pile Ins and no Consolidation moves. The Automated Artillery remains in place and may fire normally in future turns. If the Automated Artillery wins an assault, the enemy must take a Morale check as normal, although the Artillery cannot Consolidate or make a Sweeping Advance.</description>
     </rule>
-    <rule id="0bd1-9bcc-46e0-5e1e" name="Co-Axial Weapon" publicationId="ca571888--pubN74807" page="161" hidden="false">
+    <rule id="0bd1-9bcc-46e0-5e1e" name="Co-Axial Weapon" publicationId="ca571888--pubN106502" page="161" hidden="false">
       <description>A weapon with the Co-axial special rule will specify another weapon mounted on the same vehicle. When a target is declared for this weapon, the Co-axial weapon must fire at it first if it is within range. If the Co-axial weapon hits the target, then the other weapon may re-roll its To Hit roll if it misses.</description>
     </rule>
-    <rule id="91ee-e6c7-272f-49e0" name="Crawling Fire" publicationId="ca571888--pubN74807" page="161" hidden="false">
+    <rule id="91ee-e6c7-272f-49e0" name="Crawling Fire" publicationId="ca571888--pubN106502" page="161" hidden="false">
       <description>After the Blast marker for a weapon with this special rule is placed, the firer may move the marker up to 2&quot; in any direction so long as this would cover more models than previously.</description>
     </rule>
-    <rule id="fafd-5bc8-2192-23ff" name="Deadly Cargo" publicationId="ca571888--pubN74807" page="162" hidden="false">
+    <rule id="fafd-5bc8-2192-23ff" name="Deadly Cargo" publicationId="ca571888--pubN106502" page="162" hidden="false">
       <description>If a vehicle with this special rule takes Hull point damage but is not destroyed, roll a D6. On a 6, the vehicle suffers an Explodes! result on the Vehicle Damage chart.</description>
     </rule>
-    <rule id="b46a-a3ec-91a5-5001" name="Deflagrate" publicationId="ca571888--pubN74807" page="163" hidden="false">
+    <rule id="b46a-a3ec-91a5-5001" name="Deflagrate" publicationId="ca571888--pubN106502" page="163" hidden="false">
       <description>After normal attacks by this weapon have been resolved, count the number of unsaved wounds caused on the target unit. Immediately resolve a number of additional automatic hits on the same unit using the weapon’s profile equal to the number of unsaved wounds – these can then be saved normally. Models in the targeted unit must still be in range in order for these additional hits to take effect. These additional hits do not themselves inflict more hits.</description>
     </rule>
-    <rule id="1a79-befa-05cf-ab0d" name="Duelist&apos;s Edge" publicationId="ca571888--pubN74807" page="163" hidden="false">
+    <rule id="1a79-befa-05cf-ab0d" name="Duelist&apos;s Edge" publicationId="ca571888--pubN106502" page="163" hidden="false">
       <description>When fighting in a challenge, the user of this weapon gains a +1 bonus to their Initiative value.</description>
     </rule>
-    <rule id="adce-5b90-49f6-033c" name="Exoshock" publicationId="ca571888--pubN74807" page="163" hidden="false">
+    <rule id="adce-5b90-49f6-033c" name="Exoshock" publicationId="ca571888--pubN106502" page="163" hidden="false">
       <description>If this weapon successfully scores a penetrating hit on a target, roll a D6. On a 4+, a second automatic penetrating hit is inflicted on the same target against which cover saves may not be taken.</description>
     </rule>
-    <rule id="203b-1db2-c7b2-54ab" name="Heat Seeker" publicationId="ca571888--pubN74807" page="164" hidden="false">
+    <rule id="203b-1db2-c7b2-54ab" name="Heat Seeker" publicationId="ca571888--pubN106502" page="164" hidden="false">
       <description>Jink saves may not be taken against attacks with this special rule.</description>
     </rule>
-    <rule id="fd81-7423-92cf-01a3" name="Look out sir!" publicationId="ca571888--pubN74807" page="94" hidden="false">
+    <rule id="fd81-7423-92cf-01a3" name="Look out sir!" publicationId="ca571888--pubN106502" page="94" hidden="false">
       <description>When a wound is allocated to one of your non-vehicle characters, and there is another model from the same unit within 6&quot;, they are allowed a Look Out, Sir attempt. Thisrepresents the character falling back into the unit or being pushed aside by an ally. If no model is in range, then you cannot make a Look Our, Sir attempt.
 
 To make a Look Out, Sir attempt, roll a D6.
@@ -8050,29 +8038,29 @@ On a roll of 4+, the Look Out, Sir attempt is successful.
 
 Independent Characters pass Look Out, Sir rolls on a 2+.</description>
     </rule>
-    <rule id="476c-b962-06e5-d12e" name="Ignores Cover" publicationId="ca571888--pubN74807" page="167" hidden="false">
+    <rule id="476c-b962-06e5-d12e" name="Ignores Cover" publicationId="ca571888--pubN106502" page="167" hidden="false">
       <description>Cover saves cannot be taken against wounds, glancing hits or penetrating hits caused by weapons with the Ignores Cover special rule.</description>
     </rule>
-    <rule id="3fb5-89d9-08fe-0312" name="Unlisted Legion" publicationId="ca571888--pubN74807" page="168" hidden="false">
+    <rule id="3fb5-89d9-08fe-0312" name="Unlisted Legion" publicationId="ca571888--pubN106502" page="168" hidden="false">
       <description>If an army represents a Legion which does not yet have its own unique Legiones Astartes rule, the controlling player may instead add either the Stubborn or Furious Charge special rule to the standard provisions of this rule in the interim.</description>
     </rule>
-    <rule id="3a2e-7a7b-1de3-78c0" name="Lingering Death" publicationId="ca571888--pubN74807" page="168" hidden="false"/>
-    <rule id="b0c5-b980-95e5-b181" name="Murderous Strike" publicationId="ca571888--pubN74807" page="168" hidden="false">
+    <rule id="3a2e-7a7b-1de3-78c0" name="Lingering Death" publicationId="ca571888--pubN106502" page="168" hidden="false"/>
+    <rule id="b0c5-b980-95e5-b181" name="Murderous Strike" publicationId="ca571888--pubN106502" page="168" hidden="false">
       <description>Attacks with this special rule cause Instant Death on a ToWound roll of 6. Roll any viable saves against this Instant Death-causing wound separately to other wounds the attack inflicts.</description>
     </rule>
-    <rule id="c546-eaf8-0972-ec24" name="Primarch" publicationId="ca571888--pubN74807" page="169" hidden="false">
+    <rule id="c546-eaf8-0972-ec24" name="Primarch" publicationId="ca571888--pubN106502" page="169" hidden="false">
       <description>Any model with the Primarch special rule is automatically the army’s Warlord and does not roll randomly for Warlord Traits (these will have been included in their own unique abilities). Unless a mission’s rules specifically state otherwise, no army may ever include more than a single Primarch.</description>
     </rule>
-    <rule id="ccd0-942c-70fa-1354" name="Squadron Command Tank" publicationId="ca571888--pubN74807" page="172" hidden="false">
+    <rule id="ccd0-942c-70fa-1354" name="Squadron Command Tank" publicationId="ca571888--pubN106502" page="172" hidden="false">
       <description>Unless the Squadron Command Tank has been destroyed, all Tanks in the squadron gain the following benefits while they remain in coherency:
 
 Ignore the effects of Crew Shaken results on a roll of a 4+.
 When the entire squadron fires at a single target within 24&quot;, the squadron gains the Tank Hunters and Monster Hunter special rules.</description>
     </rule>
-    <rule id="aaaf-37f2-e6e0-7a2c" name="Super-heavy Command Tank" publicationId="ca571888--pubN74807" page="172" hidden="false">
+    <rule id="aaaf-37f2-e6e0-7a2c" name="Super-heavy Command Tank" publicationId="ca571888--pubN106502" page="172" hidden="false">
       <description>If a vehicle has been upgraded to a Super-heavy Command Tank, all friendly Infantry units within 24&quot; may re-roll failed Morale Checks.</description>
     </rule>
-    <rule id="7630-7b4c-ed95-ce92" name="Template" publicationId="ca571888--pubN74807" page="173" hidden="false">
+    <rule id="7630-7b4c-ed95-ce92" name="Template" publicationId="ca571888--pubN106502" page="173" hidden="false">
       <description>Template weapons have the Ignores Cover, Wall of Death and No Escape special rules. Wounds inflicted by Template weapons are allocated following the normal rules. Template weapons cannot fire Snap Shots.
 
 Wall of Death
@@ -8083,37 +8071,37 @@ If a Template weapon hits a building’s Fire Point or an Opentopped vehicle and
 
 </description>
     </rule>
-    <rule id="cd4a-2106-2ed0-dcdb" name="Wall of Death" publicationId="ca571888--pubN74807" page="174" hidden="false">
+    <rule id="cd4a-2106-2ed0-dcdb" name="Wall of Death" publicationId="ca571888--pubN106502" page="174" hidden="false">
       <description>Wall of Death Template weapons can fire Overwatch, even though they cannot fire Snap Shots. Instead, if a Template weapon fires Overwatch, it automatically inflicts D3 hits on the charging unit, resolved at its normal Strength and AP value.</description>
     </rule>
     <rule id="06a2-c4fd-8d61-c628" name="No Escape" hidden="false"/>
-    <rule id="3d29-2076-01a0-7f7d" name="Hellstorm Weapon" publicationId="ca571888--pubN74807" page="174" hidden="false">
+    <rule id="3d29-2076-01a0-7f7d" name="Hellstorm Weapon" publicationId="ca571888--pubN106502" page="174" hidden="false">
       <description>Hellstorm weapons have the word ‘Hellstorm’ instead of a range on their weapon profile. Hellstorm weapons use the Hellstorm template (see page 19), but otherwise obey the rules for other Template weapons.</description>
     </rule>
-    <rule id="903b-709a-b328-d48d" name="Armoured Steed" publicationId="ca571888--pubN74807" page="64" hidden="false">
+    <rule id="903b-709a-b328-d48d" name="Armoured Steed" publicationId="ca571888--pubN106502" page="64" hidden="false">
       <description>Bikes and Jetbikes cannot Go to Ground and cannot be Pinned.</description>
     </rule>
-    <rule id="6124-c329-b1b4-a52a" name="Turbo Boost" publicationId="ca571888--pubN74807" page="64" hidden="false">
+    <rule id="6124-c329-b1b4-a52a" name="Turbo Boost" publicationId="ca571888--pubN106502" page="64" hidden="false">
       <description>Bikes and Jetbikes cannot Run, but can make a special Turbo-boost move instead of firing in their Shooting phase.
 Turbo-boosting Bikes move up to 12&quot; and Turbo-boosting Jetbikes move up to 24&quot;. Bikes or Jetbikes cannot shoot, charge or execute any other voluntary action after Turbo-boosting until the end of their turn.</description>
     </rule>
-    <rule id="5c8a-63f9-5cdc-b17b" name="Skybourne" publicationId="ca571888--pubN74807" page="66" hidden="false">
+    <rule id="5c8a-63f9-5cdc-b17b" name="Skybourne" publicationId="ca571888--pubN106502" page="66" hidden="false">
       <description>When using its jump pack (whether moving, charging or Falling Back), a model can move over all other models and terrain freely. However, if the model begins or ends its move in difficult terrain, it must take a Dangerous Terrain test.</description>
     </rule>
-    <rule id="97c4-1c1c-3727-757f" name="Trust Move" publicationId="ca571888--pubN74807" page="66" hidden="false">
+    <rule id="97c4-1c1c-3727-757f" name="Trust Move" publicationId="ca571888--pubN106502" page="66" hidden="false">
       <description>A Jet Pack unit that is not locked in combat or charging can move up to 2D6&quot; in the Assault phase, even if they have shot or Run in the preceding Shooting phase or arrived by Deep Strike that turn. When Jet Pack units move in the Assault phase and do not charge, they move just as they would when using their jet packs in the Movement phase.</description>
     </rule>
-    <rule id="2eaf-7ad1-5fbb-2b94" name="Shooting (Gargantuan Creature)" publicationId="ca571888--pubN74807" page="69" hidden="false">
+    <rule id="2eaf-7ad1-5fbb-2b94" name="Shooting (Gargantuan Creature)" publicationId="ca571888--pubN106502" page="69" hidden="false">
       <description>When a Gargantuan Creature or Flying Gargantuan Creature makes a shooting attack, it may fire each of its weapons at a different target if desired. In addition, firing Ordnance weapons has no effect on a Gargantuan Creature’s or Flying Gargantuan Creature’s ability to fire other weapons. Gargantuan Creatures and Flying Gargantuan Creatures cannot fire Overwatch.</description>
     </rule>
-    <rule id="7d16-10ce-5d05-6166" name="Unshakable Nerve" publicationId="ca571888--pubN74807" page="77" hidden="false">
+    <rule id="7d16-10ce-5d05-6166" name="Unshakable Nerve" publicationId="ca571888--pubN106502" page="77" hidden="false">
       <description>Units embarked upon transports have the Fearless special rule while they are embarked.</description>
     </rule>
-    <rule id="e7c9-bd66-8d3e-8098" name="Zoom" publicationId="ca571888--pubN74807" page="80" hidden="false">
+    <rule id="e7c9-bd66-8d3e-8098" name="Zoom" publicationId="ca571888--pubN106502" page="80" hidden="false">
       <description>Flyers can usually only make a special kind of move called Zoom.
 Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme speeds, making it very difficult to shoot down, but limits its manoeuvrability. If a Flyer Zooms, it has a Combat Speed of 18&quot; and a Cruising Speed of up to 36&quot;. However, a Zooming Flyer can never voluntarily move less than 18&quot; in its own Movement phase. If a Zooming Flyer is forced to move less than 18&quot; in its own Movement phase, it is automatically Wrecked.</description>
     </rule>
-    <rule id="42dd-fe48-ca26-b836" name="Super-heavy Transport" publicationId="ca571888--pubN74807" page="90" hidden="false">
+    <rule id="42dd-fe48-ca26-b836" name="Super-heavy Transport" publicationId="ca571888--pubN106502" page="90" hidden="false">
       <description>If a Super-heavy vehicle has a Transport Capacity, then it may transport any number of Infantry units (plus any characters that have joined the units), so long as the number of models in the transported units do not exceed the vehicle’s Transport Capacity.</description>
     </rule>
     <rule id="6f38-4691-2eda-8e1b" name="Psy-Lash" publicationId="ca571888--pubN103311" page="301" hidden="false">
@@ -8157,7 +8145,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">May ignore Crew shaken or stunned on a D6 roll of 4+</characteristic>
       </characteristics>
     </profile>
-    <profile id="09fd-8af1-a6b1-51f7" name="Boltgun" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="09fd-8af1-a6b1-51f7" name="Boltgun" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
@@ -8321,7 +8309,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Presence of a Cortex Controller within 12&quot; of a unit of friendly models with the Programmed Behaviour special rule at the start of any phase means that special rule is negated for that phase and their controlling player is free to use them as any other unit.  </characteristic>
       </characteristics>
     </profile>
-    <profile id="4fc7-8b16-afe4-dad3" name="Multi-Melta" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="4fc7-8b16-afe4-dad3" name="Multi-Melta" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
@@ -8337,7 +8325,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 2, Lance, Blind, Gets Hot</characteristic>
       </characteristics>
     </profile>
-    <profile id="0225-fc80-29f1-09db" name="Mauler Bolt Cannon" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="0225-fc80-29f1-09db" name="Mauler Bolt Cannon" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -8363,7 +8351,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Model with Atomantic Shielding gains a 5++ Invulnerable save from shooting attacks and explosions, and a 6++ Invulnerable save against attacks suffered in close combat.  In addition, if the model suffers a Reactor Blast explosion, add +1&quot; to the radius of the blast caused. </characteristic>
       </characteristics>
     </profile>
-    <profile id="9bb4-3833-5343-0dd9" name="Searchlight" publicationId="ca571888--pubN74807" page="106" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+    <profile id="9bb4-3833-5343-0dd9" name="Searchlight" publicationId="ca571888--pubN106502" page="106" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Night fighting only. it can, after firing all of its weapons, choose to illuminate its target with the searchlight. If it does so, it also illuminates itself.</characteristic>
       </characteristics>
@@ -8378,7 +8366,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A model with this upgrade increases its BS by +1 and the cover saves of enemy targets are reduced by -1. </characteristic>
       </characteristics>
     </profile>
-    <profile id="1f34-d20c-aa56-4f1a" name="Assault Grenade" publicationId="ca571888--pubN74807" page="182" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="1f34-d20c-aa56-4f1a" name="Assault Grenade" publicationId="ca571888--pubN106502" page="182" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">8&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">3</characteristic>
@@ -8410,7 +8398,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1, Fleshbane, Rad-phage</characteristic>
       </characteristics>
     </profile>
-    <profile id="1182-02a7-3325-8c51" name="Flakk Missile" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="1182-02a7-3325-8c51" name="Flakk Missile" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
@@ -8442,7 +8430,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1</characteristic>
       </characteristics>
     </profile>
-    <profile id="730c-b70b-1e8f-f2e9" name="Chainsword/Combat Blade" publicationId="ca571888--pubN74807" page="180" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="730c-b70b-1e8f-f2e9" name="Chainsword/Combat Blade" publicationId="ca571888--pubN106502" page="180" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">User</characteristic>
@@ -8450,7 +8438,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee</characteristic>
       </characteristics>
     </profile>
-    <profile id="b514-a3d8-7223-e73b" name="Chainaxe" publicationId="ca571888--pubN74807" page="180" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="b514-a3d8-7223-e73b" name="Chainaxe" publicationId="ca571888--pubN106502" page="180" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+1</characteristic>
@@ -8458,7 +8446,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee</characteristic>
       </characteristics>
     </profile>
-    <profile id="3cec-4483-3f2e-fbc2" name="Lightning Claw" publicationId="ca571888--pubN74807" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="3cec-4483-3f2e-fbc2" name="Lightning Claw" publicationId="ca571888--pubN106502" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">User</characteristic>
@@ -8466,7 +8454,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Shred, Specialist Weapon</characteristic>
       </characteristics>
     </profile>
-    <profile id="f9fd-36be-dc19-401f" name="Plasma Pistol" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="f9fd-36be-dc19-401f" name="Plasma Pistol" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
@@ -8474,7 +8462,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Pistol, Gets Hot</characteristic>
       </characteristics>
     </profile>
-    <profile id="518c-084b-7a8a-949e" name="Combi-weapon: Flamer" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="518c-084b-7a8a-949e" name="Combi-weapon: Flamer" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">Template</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
@@ -8482,7 +8470,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1, One Use Only</characteristic>
       </characteristics>
     </profile>
-    <profile id="fe44-0451-8676-ccfb" name="Combi-weapon: Grenade Launcher (Krak)" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="fe44-0451-8676-ccfb" name="Combi-weapon: Grenade Launcher (Krak)" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -8490,7 +8478,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1</characteristic>
       </characteristics>
     </profile>
-    <profile id="3729-f674-0501-ebeb" name="Combi-weapon: Plasma Gun" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="3729-f674-0501-ebeb" name="Combi-weapon: Plasma Gun" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
@@ -8498,7 +8486,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Rapid Fire, Gets Hot, One Use Only</characteristic>
       </characteristics>
     </profile>
-    <profile id="d30d-adeb-818b-09e3" name="Combi-weapon: Meltagun" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="d30d-adeb-818b-09e3" name="Combi-weapon: Meltagun" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
@@ -8506,7 +8494,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1, Melta, One Use Only</characteristic>
       </characteristics>
     </profile>
-    <profile id="8546-d0ac-17ab-252a" name="Combi-bolter" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="8546-d0ac-17ab-252a" name="Combi-bolter" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
@@ -8514,7 +8502,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Rapid Fire, Twin Linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="aaed-cf64-e81a-0c4f" name="Combi-weapon: Grenade Launcher (Frag)" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="aaed-cf64-e81a-0c4f" name="Combi-weapon: Grenade Launcher (Frag)" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">3</characteristic>
@@ -8522,7 +8510,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Rapid Fire, Blast (3&quot;)</characteristic>
       </characteristics>
     </profile>
-    <profile id="20ab-d2f5-47a5-dbe2" name="Combi-weapon: Volkite Charger" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="20ab-d2f5-47a5-dbe2" name="Combi-weapon: Volkite Charger" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">15&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
@@ -8530,7 +8518,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Assault 2, Deflagrate</characteristic>
       </characteristics>
     </profile>
-    <profile id="ec83-0776-ef74-9cc2" name="Bolt Pistol" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="ec83-0776-ef74-9cc2" name="Bolt Pistol" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
@@ -8538,7 +8526,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Pistol</characteristic>
       </characteristics>
     </profile>
-    <profile id="477d-c630-7e79-8cf9" name="Volkite Serpenta" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="477d-c630-7e79-8cf9" name="Volkite Serpenta" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">10&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
@@ -8546,7 +8534,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Pistol, Deflagrate</characteristic>
       </characteristics>
     </profile>
-    <profile id="34d1-b4db-3e75-ccce" name="Volkite Culverin" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="34d1-b4db-3e75-ccce" name="Volkite Culverin" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">45&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -8554,7 +8542,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 4, Deflagrate</characteristic>
       </characteristics>
     </profile>
-    <profile id="626c-d79c-9bb7-3407" name="Volkite Caliver" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="626c-d79c-9bb7-3407" name="Volkite Caliver" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">30&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -8562,7 +8550,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 2, Deflagrate</characteristic>
       </characteristics>
     </profile>
-    <profile id="c440-1f53-4d20-5cab" name="Volkite Charger" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="c440-1f53-4d20-5cab" name="Volkite Charger" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">15&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
@@ -8575,7 +8563,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Artificer Armour confers a 2+ Armour save.  </characteristic>
       </characteristics>
     </profile>
-    <profile id="21b6-668e-d5ef-a8da" name="Hand Flamer" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="21b6-668e-d5ef-a8da" name="Hand Flamer" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">Template</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">3</characteristic>
@@ -8583,7 +8571,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Pistol</characteristic>
       </characteristics>
     </profile>
-    <profile id="a733-2f33-1e47-8359" name="Inferno Pistol" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="a733-2f33-1e47-8359" name="Inferno Pistol" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">6&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
@@ -8591,7 +8579,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Pistol, Melta</characteristic>
       </characteristics>
     </profile>
-    <profile id="4ddd-399c-d71c-4ac1" name="Power Fist" publicationId="ca571888--pubN74807" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="4ddd-399c-d71c-4ac1" name="Power Fist" publicationId="ca571888--pubN106502" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">x2</characteristic>
@@ -8599,7 +8587,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Specialist Weapon, Unwieldy</characteristic>
       </characteristics>
     </profile>
-    <profile id="e672-ae99-88e6-cfd8" name="Thunder Hammer" publicationId="ca571888--pubN74807" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="e672-ae99-88e6-cfd8" name="Thunder Hammer" publicationId="ca571888--pubN106502" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">x2</characteristic>
@@ -8607,7 +8595,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Concussive, Specialist Weapon, Unwieldy</characteristic>
       </characteristics>
     </profile>
-    <profile id="038e-23ec-4886-8b00" name="Power Sword" publicationId="ca571888--pubN74807" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="038e-23ec-4886-8b00" name="Power Sword" publicationId="ca571888--pubN106502" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">User</characteristic>
@@ -8615,7 +8603,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee</characteristic>
       </characteristics>
     </profile>
-    <profile id="b3af-1eca-6629-4894" name="Power Axe" publicationId="ca571888--pubN74807" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="b3af-1eca-6629-4894" name="Power Axe" publicationId="ca571888--pubN106502" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+1</characteristic>
@@ -8623,7 +8611,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Unwieldy</characteristic>
       </characteristics>
     </profile>
-    <profile id="6bbe-f2c1-78e2-da59" name="Power Maul" publicationId="ca571888--pubN74807" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="6bbe-f2c1-78e2-da59" name="Power Maul" publicationId="ca571888--pubN106502" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+2</characteristic>
@@ -8631,7 +8619,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Concussive</characteristic>
       </characteristics>
     </profile>
-    <profile id="fdd4-9bf3-da9d-5479" name="Power Lance" publicationId="ca571888--pubN74807" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="fdd4-9bf3-da9d-5479" name="Power Lance" publicationId="ca571888--pubN106502" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+1/User*</characteristic>
@@ -8649,7 +8637,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A unit with a Legion Vexilla may re-roll failed Morale checks.</characteristic>
       </characteristics>
     </profile>
-    <profile id="3a71-7de1-1948-3655" name="Flamer" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="3a71-7de1-1948-3655" name="Flamer" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">Template</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
@@ -8657,7 +8645,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1</characteristic>
       </characteristics>
     </profile>
-    <profile id="0fef-f304-fdfe-b082" name="Heavy Chainsword" publicationId="ca571888--pubN74807" page="180" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="0fef-f304-fdfe-b082" name="Heavy Chainsword" publicationId="ca571888--pubN106502" page="180" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+2</characteristic>
@@ -8665,7 +8653,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Two-handed</characteristic>
       </characteristics>
     </profile>
-    <profile id="8ae4-74e5-7700-3804" name="Meltagun" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="8ae4-74e5-7700-3804" name="Meltagun" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
@@ -8673,7 +8661,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1, Melta</characteristic>
       </characteristics>
     </profile>
-    <profile id="87c7-bd37-70f7-1933" name="Plasma Gun" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="87c7-bd37-70f7-1933" name="Plasma Gun" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
@@ -8681,7 +8669,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Rapid Fire, Gets Hot</characteristic>
       </characteristics>
     </profile>
-    <profile id="c554-a05e-607c-5831" name="Heavy Flamer" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="c554-a05e-607c-5831" name="Heavy Flamer" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">Template</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
@@ -8689,7 +8677,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1</characteristic>
       </characteristics>
     </profile>
-    <profile id="a1d8-f9f3-865a-9faf" name="Melta Bombs" publicationId="ca571888--pubN74807" page="183" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="a1d8-f9f3-865a-9faf" name="Melta Bombs" publicationId="ca571888--pubN106502" page="183" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
@@ -8702,7 +8690,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Power Armour confers a 3+ Armour save.  </characteristic>
       </characteristics>
     </profile>
-    <profile id="d890-1b84-bbd9-12d3" name="Frag Grenades" publicationId="ca571888--pubN74807" page="182" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="d890-1b84-bbd9-12d3" name="Frag Grenades" publicationId="ca571888--pubN106502" page="182" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">8&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">3</characteristic>
@@ -8710,7 +8698,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1, Blast</characteristic>
       </characteristics>
     </profile>
-    <profile id="d9f7-775b-1047-f335" name="Krak Grenade (Shooting)" publicationId="ca571888--pubN74807" page="183" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="d9f7-775b-1047-f335" name="Krak Grenade (Shooting)" publicationId="ca571888--pubN106502" page="183" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">8&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -8728,7 +8716,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Combat shields and boarding shields confer a 6+ invulnerable save, increasing to 5+ in close combat. A model equipped with a boarding shield also counts as being equipped with defensive grenades and cannot claim the extra attack for being armed with an additional close combat weapon.</characteristic>
       </characteristics>
     </profile>
-    <profile id="271e-6286-86cc-06dd" name="Heavy Bolter" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="271e-6286-86cc-06dd" name="Heavy Bolter" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
@@ -8736,7 +8724,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 3</characteristic>
       </characteristics>
     </profile>
-    <profile id="97a5-0583-4a2b-c44e" name="Graviton Gun" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="97a5-0583-4a2b-c44e" name="Graviton Gun" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">18&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">Special</characteristic>
@@ -8816,7 +8804,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A vehicle equipped with a Machine Spirit gains the Power of the Machine Spirit special rule.</characteristic>
       </characteristics>
     </profile>
-    <profile id="e97c-a368-88a3-3fb0" name="Executioner Plasma Destroyer" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="e97c-a368-88a3-3fb0" name="Executioner Plasma Destroyer" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
@@ -8832,7 +8820,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 4</characteristic>
       </characteristics>
     </profile>
-    <profile id="890c-3cfe-af38-b022" name="Magna-Melta" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="890c-3cfe-af38-b022" name="Magna-Melta" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">18&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
@@ -8840,7 +8828,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Large Blast, Melta</characteristic>
       </characteristics>
     </profile>
-    <profile id="c2dc-5db9-b18b-d360" name="Flamestorm Cannon" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="c2dc-5db9-b18b-d360" name="Flamestorm Cannon" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">Template</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -8877,7 +8865,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Once per game, instead of shooting or flat out movements/running, the vehicle can activate smoke launchers. May not fire its weapons that turn but recieves a 5+ cover save until next player turn. Unaffected by weapon destroyed, crew shaken and crew stunned results.</characteristic>
       </characteristics>
     </profile>
-    <profile id="1cce-972c-022a-2590" name="Lascannon" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="1cce-972c-022a-2590" name="Lascannon" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
@@ -8908,7 +8896,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A vehicle with this wargear is not subject to the additional D6 armour penetration caused by weapons with the Melta special rule.  </characteristic>
       </characteristics>
     </profile>
-    <profile id="40e6-c95c-7c8d-cf02" name="Frag Missile" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="40e6-c95c-7c8d-cf02" name="Frag Missile" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
@@ -8916,7 +8904,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Blast</characteristic>
       </characteristics>
     </profile>
-    <profile id="e2f7-5bdf-479c-8107" name="Krak Missile" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="e2f7-5bdf-479c-8107" name="Krak Missile" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
@@ -8924,7 +8912,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1</characteristic>
       </characteristics>
     </profile>
-    <profile id="13df-d6b0-3f33-bf9b" name="Plasma Cannon" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="13df-d6b0-3f33-bf9b" name="Plasma Cannon" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
@@ -8940,7 +8928,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 3, Blast (3&quot;)</characteristic>
       </characteristics>
     </profile>
-    <profile id="d55f-eed0-800f-5789" name="Autocannon" publicationId="ca571888--pubN74807" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="d55f-eed0-800f-5789" name="Autocannon" publicationId="ca571888--pubN106502" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
@@ -8948,7 +8936,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 2</characteristic>
       </characteristics>
     </profile>
-    <profile id="d660-38fe-9058-a1b9" name="Autopistol" publicationId="ca571888--pubN74807" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="d660-38fe-9058-a1b9" name="Autopistol" publicationId="ca571888--pubN106502" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">3</characteristic>
@@ -8972,7 +8960,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 4, Rending</characteristic>
       </characteristics>
     </profile>
-    <profile id="1f7d-9765-ed8e-f6e5" name="Quad Gun" publicationId="ca571888--pubN74807" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="1f7d-9765-ed8e-f6e5" name="Quad Gun" publicationId="ca571888--pubN106502" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
@@ -8980,7 +8968,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 4, Interceptor, Skyfire, Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="94da-501b-a2f5-6c61" name="Battlecannon" publicationId="ca571888--pubN74807" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="94da-501b-a2f5-6c61" name="Battlecannon" publicationId="ca571888--pubN106502" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">72&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
@@ -8988,27 +8976,27 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Ordance 1, Large Blast</characteristic>
       </characteristics>
     </profile>
-    <profile id="d4b6-7a3a-aee5-d293" name="Ammo Store" publicationId="ca571888--pubN74807" page="106" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+    <profile id="d4b6-7a3a-aee5-d293" name="Ammo Store" publicationId="ca571888--pubN106502" page="106" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A unit occupying this building re-rolls To Hit rolls of a 1 when firing out of the building’s fire points. Note this does not apply to a model manually firing an emplaced weapon.</characteristic>
       </characteristics>
     </profile>
-    <profile id="58a2-c92e-57cc-d44c" name="Ammunition Dump" publicationId="ca571888--pubN74807" page="101" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+    <profile id="58a2-c92e-57cc-d44c" name="Ammunition Dump" publicationId="ca571888--pubN106502" page="101" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A model in cover behind an ammunition dump has a 5+ cover save. Any model within 2&quot; of an ammunition dump re-rolls failed To Hit rolls of 1 in the Shooting phase.</characteristic>
       </characteristics>
     </profile>
-    <profile id="68d8-f686-c260-76db" name="Barricades" publicationId="ca571888--pubN74807" page="101" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+    <profile id="68d8-f686-c260-76db" name="Barricades" publicationId="ca571888--pubN106502" page="101" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A model in cover behind a barricade or wall has a 4+ cover save. For the purposes of charge moves, models that are both in base contact with a barricade and within 2&quot; of each other are treated as being in base contact. Despite the models on either side not literally being in base contact, they may fight in the Fight sub-phase as normal. Units charging an enemy that is behind a barricade or wall count as charging through difficult terrain.</characteristic>
       </characteristics>
     </profile>
-    <profile id="2a6f-53c2-d2ea-092f" name="Booby Traps" publicationId="ca571888--pubN74807" page="106" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+    <profile id="2a6f-53c2-d2ea-092f" name="Booby Traps" publicationId="ca571888--pubN106502" page="106" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">The first unit to occupy this building (friend or foe) immediately suffers 2D6 Strength 4 AP 5 hits with the Ignores Cover special rule.</characteristic>
       </characteristics>
     </profile>
-    <profile id="8194-4688-65b3-f996" name="Chainfist" publicationId="ca571888--pubN74807" page="180" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="8194-4688-65b3-f996" name="Chainfist" publicationId="ca571888--pubN106502" page="180" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">x2</characteristic>
@@ -9016,12 +9004,12 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Armourbane, Specialist Weapon, Unwieldy</characteristic>
       </characteristics>
     </profile>
-    <profile id="70aa-366f-15ac-da4d" name="Comms Relay" publicationId="ca571888--pubN74807" page="101" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+    <profile id="70aa-366f-15ac-da4d" name="Comms Relay" publicationId="ca571888--pubN106502" page="101" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Any player with an unengaged model within 2&quot; of a comms relay can re-roll Reserves rolls. A model in cover behind a comms relay has a 5+ cover save.</characteristic>
       </characteristics>
     </profile>
-    <profile id="3b26-3098-155f-0e58" name="Dreadnought Close Combat Weapon" publicationId="ca571888--pubN74807" page="180" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="3b26-3098-155f-0e58" name="Dreadnought Close Combat Weapon" publicationId="ca571888--pubN106502" page="180" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">x2</characteristic>
@@ -9029,12 +9017,12 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee</characteristic>
       </characteristics>
     </profile>
-    <profile id="4986-b80f-dc78-d02f" name="Escape Hatch" publicationId="ca571888--pubN74807" page="106" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+    <profile id="4986-b80f-dc78-d02f" name="Escape Hatch" publicationId="ca571888--pubN106502" page="106" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">When this building is first occupied, the owning player can place an escape hatch marker anywhere within 12&quot; of the building that is not impassable terrain or within another building. The escape hatch marker is an additional Access Point for the building, but models using it cannot use the Repel the Enemy special rule.</characteristic>
       </characteristics>
     </profile>
-    <profile id="bb9f-390b-3b92-197c" name="Eviscerator" publicationId="ca571888--pubN107350" page="" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="bb9f-390b-3b92-197c" name="Eviscerator" publicationId="ca571888--pubN106502" page="" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">x2</characteristic>
@@ -9042,7 +9030,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Armourbane, Two-handed, Unwieldy</characteristic>
       </characteristics>
     </profile>
-    <profile id="c019-5c9a-c1f4-4b4f" name="Force Axe" publicationId="ca571888--pubN74807" page="180" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="c019-5c9a-c1f4-4b4f" name="Force Axe" publicationId="ca571888--pubN106502" page="180" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+1</characteristic>
@@ -9050,7 +9038,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Force, Unwieldy</characteristic>
       </characteristics>
     </profile>
-    <profile id="ed69-f85e-5982-9ab8" name="Force Stave" publicationId="ca571888--pubN74807" page="180" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="ed69-f85e-5982-9ab8" name="Force Stave" publicationId="ca571888--pubN106502" page="180" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+2</characteristic>
@@ -9058,7 +9046,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Concussive, Force</characteristic>
       </characteristics>
     </profile>
-    <profile id="29c5-cff6-7f7c-96d6" name="Force Sword" publicationId="ca571888--pubN74807" page="180" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="29c5-cff6-7f7c-96d6" name="Force Sword" publicationId="ca571888--pubN106502" page="180" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">User</characteristic>
@@ -9066,7 +9054,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Force</characteristic>
       </characteristics>
     </profile>
-    <profile id="1da7-2e0b-0114-762c" name="Gun Emplacement" publicationId="ca571888--pubN113873" page="101" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+    <profile id="1da7-2e0b-0114-762c" name="Gun Emplacement" publicationId="ca571888--pubN106502" page="101" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
       <characteristics>
         <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323"/>
         <characteristic name="WS" typeId="575323232344415441232323">-</characteristic>
@@ -9080,20 +9068,12 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Save" typeId="5361766523232344415441232323">3+</characteristic>
       </characteristics>
     </profile>
-    <profile id="705c-91aa-6591-507b" name="Gun Emplacement (Details)" publicationId="ca571888--pubN113873" page="101" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+    <profile id="705c-91aa-6591-507b" name="Gun Emplacement (Details)" publicationId="ca571888--pubN106502" page="101" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A model in cover behind a gun emplacement has a 4+ cover save. One non-vehicle model in base contact with a gun emplacement can fire it instead of firing its own weapons. A model that fires a gun emplacement has the Relentless special rule for that shooting attack. A gun emplacement can be shot at and attacked in close combat. It is hit automatically in close combat.</characteristic>
       </characteristics>
     </profile>
-    <profile id="0031-0314-5b36-a220" name="Heavy Stubber" publicationId="ca571888--pubN74807" page="179" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
-        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
-        <characteristic name="AP" typeId="415023232344415441232323">-</characteristic>
-        <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 3</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="cb26-27b4-9393-a768" name="Icarus Lascannon" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="cb26-27b4-9393-a768" name="Icarus Lascannon" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">96</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
@@ -9106,7 +9086,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A model from the Armies of the Imperium that is within 2&quot; of Imperial Statuary terrain has the Fearless special rule. A model in cover behind Imperial Statuary has a 3+ cover save.</characteristic>
       </characteristics>
     </profile>
-    <profile id="585f-2120-0288-93b5" name="Inferno Cannon" publicationId="ca571888--pubN107350" page="" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="585f-2120-0288-93b5" name="Inferno Cannon" publicationId="ca571888--pubN106502" page="" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">12 + Template</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -9114,7 +9094,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Torrent</characteristic>
       </characteristics>
     </profile>
-    <profile id="d174-eb55-aaa6-d032" name="Lasgun" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="d174-eb55-aaa6-d032" name="Lasgun" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">24</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">3</characteristic>
@@ -9122,7 +9102,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Rapid Fire</characteristic>
       </characteristics>
     </profile>
-    <profile id="f2b7-768f-a270-de64" name="Laspistol" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="f2b7-768f-a270-de64" name="Laspistol" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">3</characteristic>
@@ -9138,12 +9118,12 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 2, Large Blast</characteristic>
       </characteristics>
     </profile>
-    <profile id="31ba-2b94-6600-22f3" name="Magos Machine Spirit" publicationId="ca571888--pubN74807" page="106" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+    <profile id="31ba-2b94-6600-22f3" name="Magos Machine Spirit" publicationId="ca571888--pubN106502" page="106" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">This building’s automated fire is resolved using BS3.</characteristic>
       </characteristics>
     </profile>
-    <profile id="92be-1bfc-f355-f214" name="Multi-laser" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="92be-1bfc-f355-f214" name="Multi-laser" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">36</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -9151,7 +9131,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 3</characteristic>
       </characteristics>
     </profile>
-    <profile id="98ac-5132-9ebd-c355" name="Orbital Strike" publicationId="ca571888--pubN107350" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="98ac-5132-9ebd-c355" name="Orbital Strike" publicationId="ca571888--pubN106502" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">Infinite</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">10</characteristic>
@@ -9175,7 +9155,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 1, Apocalyptic Mega-blast, Sonic Boom</characteristic>
       </characteristics>
     </profile>
-    <profile id="07cb-70d7-15c3-5117" name="Shotgun" publicationId="ca571888--pubN74807" page="179" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="07cb-70d7-15c3-5117" name="Shotgun" publicationId="ca571888--pubN106502" page="179" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">3</characteristic>
@@ -9183,7 +9163,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Assault 2</characteristic>
       </characteristics>
     </profile>
-    <profile id="45a4-5982-7f8b-fb33" name="Sniper Rifle" publicationId="ca571888--pubN74807" page="179" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="45a4-5982-7f8b-fb33" name="Sniper Rifle" publicationId="ca571888--pubN106502" page="179" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">X</characteristic>
@@ -9191,7 +9171,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Sniper</characteristic>
       </characteristics>
     </profile>
-    <profile id="505e-a5aa-edab-6d5b" name="Storm Bolter" publicationId="ca571888--pubN107350" page="" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="505e-a5aa-edab-6d5b" name="Storm Bolter" publicationId="ca571888--pubN106502" page="" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
@@ -9199,17 +9179,17 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Assault 2</characteristic>
       </characteristics>
     </profile>
-    <profile id="e158-7adf-1565-ef08" name="Tanglewire" publicationId="ca571888--pubN74807" page="101" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+    <profile id="e158-7adf-1565-ef08" name="Tanglewire" publicationId="ca571888--pubN106502" page="101" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Dangerous Terrain. A model in cover behind tanglewire has a 6+ cover save.</characteristic>
       </characteristics>
     </profile>
-    <profile id="4a45-65e5-2d8c-8792" name="Tank Traps" publicationId="ca571888--pubN74807" page="101" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+    <profile id="4a45-65e5-2d8c-8792" name="Tank Traps" publicationId="ca571888--pubN106502" page="101" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Impassable Terrain to non-Skimmer vehicles, Dangerous Terrain to Bikes, and open ground for all other units. A model in cover behind tank traps hasa 4+ cover save.</characteristic>
       </characteristics>
     </profile>
-    <profile id="e144-1293-ec28-d3a9" name="Void Shield" publicationId="ca571888--pubN74807" page="106" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+    <profile id="e144-1293-ec28-d3a9" name="Void Shield" publicationId="ca571888--pubN106502" page="106" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Each hit scored against the model will instead hit a void shield (whilst they remain). Close combat attacks come from inside the shield and therefore are not stopped. Void shields have an Armour Value of 12. A glancing or penetrating hit (or any hit from a Destroyer weapon) scored against a void shield causes it to collapse. After all the void shields have collapsed, further hits strike the model instead. At the end of each of the controlling player&apos;s turns, roll one dice for each collapsed void  shield: each roll of 5+ instantly restores one collapsed shield.  If a weapon uses a template or blast marker and it hits one or more units protected by a Void Shield Zone, ignore the number of hits it would normally cause to the units &amp; instead roll to pen the void shield once using the weapons normal rules &amp; profile for each template or blast marker that hits.</characteristic>
       </characteristics>
@@ -9222,7 +9202,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance 1, Large Blast, Vortex</characteristic>
       </characteristics>
     </profile>
-    <profile id="4750-7eb0-ff1e-6257" name="Vulcan Mega-bolter" publicationId="ca571888--pubN107350" page="" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="4750-7eb0-ff1e-6257" name="Vulcan Mega-bolter" publicationId="ca571888--pubN106502" page="" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">60</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -9230,7 +9210,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 15</characteristic>
       </characteristics>
     </profile>
-    <profile id="3a00-c9d9-111e-037f" name="Witchblade" publicationId="ca571888--pubN107350" page="" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="3a00-c9d9-111e-037f" name="Witchblade" publicationId="ca571888--pubN106502" page="" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">User</characteristic>
@@ -9243,7 +9223,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Area Terrain. A model in cover behind wreckage or rubble has a 4+ cover save.</characteristic>
       </characteristics>
     </profile>
-    <profile id="f0ec-023c-4865-fe5a" name="Psychic Hood" publicationId="ca571888--pubN107350" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+    <profile id="f0ec-023c-4865-fe5a" name="Psychic Hood" publicationId="ca571888--pubN106502" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Each time a unit (or model) is targeted by an enemy psycic power and is within 12&quot; of a friendly model with a psychic hood, the wearer of the hood can attempt to Deny the Witch in their stead, as if he were in the target unit.  If the Deny the Witch attempt is failed, the psychic power is resolved as norma, but effects only the initial target, not the wearer of the hood.  If a model with a psychic hood is embarked in a vehicle or building, he can only use the hood to nullify powers targeting the vehicle or buildign he is embarked within.</characteristic>
       </characteristics>
@@ -9294,7 +9274,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 2, Lance, Blind, Gets Hot</characteristic>
       </characteristics>
     </profile>
-    <profile id="481b32ee-2904-c9e0-8612-35ff2bcab65a" name="Graviton Gun" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="481b32ee-2904-c9e0-8612-35ff2bcab65a" name="Graviton Gun" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">18&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">*</characteristic>
@@ -9302,7 +9282,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Blast (3&quot;), Concussive, Graviton Pulse, Haywire</characteristic>
       </characteristics>
     </profile>
-    <profile id="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" name="Heavy Stubber" publicationId="ca571888--pubN74807" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" name="Heavy Stubber" publicationId="ca571888--pubN106502" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
@@ -9328,7 +9308,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">When deployed, and at the start of each subsequent opposing side&apos;s shooting phase, the Knight&apos;s controlling player must declare a facing for the ionic flare shield.  Choices are front, left, right, or rear.    The Knight has a 4+ invulnerable save  against all hits on that facing until the start of the opposing side&apos;s next shooting phase.  The strength of any shooting attack is reduced by -1, increasing to -2 if the weapon has the blast or template rule.  This does not effect Destroyer or Haywire attacks.  Ionic flare shields are repositioned before any attacks are carried out and may not protect against close combat attacks.  </characteristic>
       </characteristics>
     </profile>
-    <profile id="7d03914a-f940-12e5-590b-822083dff647" name="Irad-cleanser" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="7d03914a-f940-12e5-590b-822083dff647" name="Irad-cleanser" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">Template</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">2</characteristic>
@@ -9360,7 +9340,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Shred, Rending</characteristic>
       </characteristics>
     </profile>
-    <profile id="f4750e31-0624-912a-bf07-7a1febca222e" name="Machinator Array" publicationId="ca571888--pubN74807" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="f4750e31-0624-912a-bf07-7a1febca222e" name="Machinator Array" publicationId="ca571888--pubN106502" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+1</characteristic>
@@ -9378,7 +9358,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Has Night Vision special rule, and may re-roll results of a 1 on the Vehicle Damage table and Destroyer Weapon Attack table which are inflicted by their shooting attacks at a range of 12&quot; or less.  </characteristic>
       </characteristics>
     </profile>
-    <profile id="306adc93-713f-8c18-71d3-6956c376e9e2" name="Phased-Plasma Fusil" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="306adc93-713f-8c18-71d3-6956c376e9e2" name="Phased-Plasma Fusil" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -9402,7 +9382,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 2, Massive Blast (7&quot;)</characteristic>
       </characteristics>
     </profile>
-    <profile id="3c77a0e2-2b38-0fff-5d7d-8f63f811bbdf" name="Rad/Irad-cleanser" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="3c77a0e2-2b38-0fff-5d7d-8f63f811bbdf" name="Rad/Irad-cleanser" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">Template</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">2</characteristic>
@@ -9418,7 +9398,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee</characteristic>
       </characteristics>
     </profile>
-    <profile id="871025a3-7729-f97d-378d-804c3571cdf3" name="Rotor Cannon" publicationId="ca571888--pubN115656" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="871025a3-7729-f97d-378d-804c3571cdf3" name="Rotor Cannon" publicationId="ca571888--pubN106502" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">30&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">3</characteristic>
@@ -9426,7 +9406,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Salvo 3/4</characteristic>
       </characteristics>
     </profile>
-    <profile id="51100eb8-f6e6-7048-df0a-84f0163a38bd" name="Siege Wrecker" publicationId="ca571888--pubN74807" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="51100eb8-f6e6-7048-df0a-84f0163a38bd" name="Siege Wrecker" publicationId="ca571888--pubN106502" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">10</characteristic>
@@ -9490,7 +9470,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance 2, Large Blast (5&quot;)</characteristic>
       </characteristics>
     </profile>
-    <profile id="01e2-722b-da0c-9ccd" name="Autogun" publicationId="ca571888--pubN74807" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="01e2-722b-da0c-9ccd" name="Autogun" publicationId="ca571888--pubN106502" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">3</characteristic>
@@ -9498,7 +9478,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Rapid Fire</characteristic>
       </characteristics>
     </profile>
-    <profile id="354e-ccd5-bde4-726a" name="Reaper Autocannon" publicationId="ca571888--pubN74807" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="354e-ccd5-bde4-726a" name="Reaper Autocannon" publicationId="ca571888--pubN106502" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
@@ -9506,7 +9486,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 2, Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="4ffe-bba3-82e3-987b" name="Kheres Assault Cannon" publicationId="ca571888--pubN74807" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="4ffe-bba3-82e3-987b" name="Kheres Assault Cannon" publicationId="ca571888--pubN106502" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -9514,7 +9494,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 6, Rending</characteristic>
       </characteristics>
     </profile>
-    <profile id="d827-6062-b77e-a697" name="Earthshakern Cannon" publicationId="ca571888--pubN74807" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="d827-6062-b77e-a697" name="Earthshakern Cannon" publicationId="ca571888--pubN106502" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;-240&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
@@ -9522,7 +9502,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance 1, Barrage, Large Blast (5&quot;)</characteristic>
       </characteristics>
     </profile>
-    <profile id="431c-d4dc-7243-5e8f" name="Demolisher Cannon" publicationId="ca571888--pubN74807" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="431c-d4dc-7243-5e8f" name="Demolisher Cannon" publicationId="ca571888--pubN106502" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">10</characteristic>
@@ -9530,7 +9510,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance 1, Large Blast (5&quot;)</characteristic>
       </characteristics>
     </profile>
-    <profile id="5597-07a5-e1e8-c462" name="Medusa Siege Gun" publicationId="ca571888--pubN74807" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="5597-07a5-e1e8-c462" name="Medusa Siege Gun" publicationId="ca571888--pubN106502" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">10</characteristic>
@@ -9538,7 +9518,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance 1, Barrage, Large Blast (5&quot;)</characteristic>
       </characteristics>
     </profile>
-    <profile id="107c-1b9d-758e-4e8d" name="Quad Heavy Bolter" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="107c-1b9d-758e-4e8d" name="Quad Heavy Bolter" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
@@ -9546,7 +9526,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 6, Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="3614-1820-1d91-b2f2" name="Avenger bolt cannon" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="3614-1820-1d91-b2f2" name="Avenger bolt cannon" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -9554,7 +9534,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 7</characteristic>
       </characteristics>
     </profile>
-    <profile id="dd7a-9167-2cf7-278b" name="Graviton Cannon" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="dd7a-9167-2cf7-278b" name="Graviton Cannon" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">*</characteristic>
@@ -9562,7 +9542,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Large Blast (5&quot;), Concussive, Graviton Pulse*, Haywire</characteristic>
       </characteristics>
     </profile>
-    <profile id="1af3-ce61-21e7-f65f" name="Graviton Imploder" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="1af3-ce61-21e7-f65f" name="Graviton Imploder" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">18&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">**</characteristic>
@@ -9570,7 +9550,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Salvo 2/4, Concussive, Graviton Implosion**</characteristic>
       </characteristics>
     </profile>
-    <profile id="ffe1-35b1-65a5-cd5c" name="Irradiation Engine" publicationId="ca571888--pubN74807" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="ffe1-35b1-65a5-cd5c" name="Irradiation Engine" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">Template</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
@@ -9578,7 +9558,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Fleshbane, Rad-phage, Torrent</characteristic>
       </characteristics>
     </profile>
-    <profile id="92b2-bceb-53de-8dbc" name="Blast Pistol" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="92b2-bceb-53de-8dbc" name="Blast Pistol" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">6&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
@@ -9586,7 +9566,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Pistol, Twin-linked, Gets Hot</characteristic>
       </characteristics>
     </profile>
-    <profile id="8a2b-1d90-4a97-9f39" name="Mitrlock" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="8a2b-1d90-4a97-9f39" name="Mitrlock" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">8&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
@@ -9594,7 +9574,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1, Shred</characteristic>
       </characteristics>
     </profile>
-    <profile id="aee7-812f-7924-09e5" name="Laser Destroyer" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="aee7-812f-7924-09e5" name="Laser Destroyer" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
@@ -9602,7 +9582,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance 1, Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="9cf0-9b9f-c292-328f" name="Cyclonic Melta Lance" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="9cf0-9b9f-c292-328f" name="Cyclonic Melta Lance" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">18&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
@@ -9610,7 +9590,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 3, Melta</characteristic>
       </characteristics>
     </profile>
-    <profile id="fd99-1d8e-87fa-e8e8" name="Rad Missile" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="fd99-1d8e-87fa-e8e8" name="Rad Missile" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
@@ -9618,7 +9598,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Blast (3&quot;), Fleshbane, Rad-phage</characteristic>
       </characteristics>
     </profile>
-    <profile id="31d0-8553-1e7c-28e6" name="Volktie Demi-Culverin" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="31d0-8553-1e7c-28e6" name="Volktie Demi-Culverin" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">45&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
@@ -9626,7 +9606,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 4, Deflagrate</characteristic>
       </characteristics>
     </profile>
-    <profile id="3718-75b6-34ac-2a19" name="Photon Gauntlet" publicationId="ca571888--pubN74807" page="179" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="3718-75b6-34ac-2a19" name="Photon Gauntlet" publicationId="ca571888--pubN106502" page="179" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
@@ -9634,7 +9614,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Assault 2, Blind, Gets Hot</characteristic>
       </characteristics>
     </profile>
-    <profile id="77a5-6519-70ee-0414" name="Photon Thruster" publicationId="ca571888--pubN74807" page="179" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="77a5-6519-70ee-0414" name="Photon Thruster" publicationId="ca571888--pubN106502" page="179" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -9642,7 +9622,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 2, Lance, Blind, Gets Hot</characteristic>
       </characteristics>
     </profile>
-    <profile id="4893-10c8-2718-bf24" name="Darkfire Cannon" publicationId="ca571888--pubN74807" page="179" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="4893-10c8-2718-bf24" name="Darkfire Cannon" publicationId="ca571888--pubN106502" page="179" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">60&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
@@ -9650,7 +9630,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 2, Lance, Blind, Gets Hot</characteristic>
       </characteristics>
     </profile>
-    <profile id="62c4-32da-84f2-5033" name="Phosphex Bomb" publicationId="ca571888--pubN74807" page="179" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="62c4-32da-84f2-5033" name="Phosphex Bomb" publicationId="ca571888--pubN106502" page="179" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">6&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
@@ -9658,7 +9638,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Assualt 1, One Use, Blast (3&quot;), Crawling Fire, Lingering Death</characteristic>
       </characteristics>
     </profile>
-    <profile id="62fb-7314-f3cf-f6ab" name="Phosphex Shell" publicationId="ca571888--pubN74807" page="179" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="62fb-7314-f3cf-f6ab" name="Phosphex Shell" publicationId="ca571888--pubN106502" page="179" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
@@ -9666,7 +9646,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance 1, Large Blast (5&quot;), Poisoned (3+), Crawling Fire, Lingering Death</characteristic>
       </characteristics>
     </profile>
-    <profile id="5d04-1774-0dbe-3d49" name="Phosphex Discharger" publicationId="ca571888--pubN74807" page="179" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="5d04-1774-0dbe-3d49" name="Phosphex Discharger" publicationId="ca571888--pubN106502" page="179" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">6&quot;-18&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
@@ -9674,7 +9654,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 3, Barrage,  One Use, Blast (3&quot;), Poisoned (3+), Crawling Fire, Lingering Death</characteristic>
       </characteristics>
     </profile>
-    <profile id="30df-d4cc-21cc-949b" name="Stub Gun" publicationId="ca571888--pubN74807" page="179" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="30df-d4cc-21cc-949b" name="Stub Gun" publicationId="ca571888--pubN106502" page="179" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">3</characteristic>
@@ -9682,7 +9662,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Pistol</characteristic>
       </characteristics>
     </profile>
-    <profile id="0638-4e71-e65e-9a04" name="Space Marine Shotgun" publicationId="ca571888--pubN74807" page="179" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="0638-4e71-e65e-9a04" name="Space Marine Shotgun" publicationId="ca571888--pubN106502" page="179" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
@@ -9690,7 +9670,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Assault 2</characteristic>
       </characteristics>
     </profile>
-    <profile id="a657-004f-4150-f1ec" name="Dreadnought Chainfist" publicationId="ca571888--pubN74807" page="180" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="a657-004f-4150-f1ec" name="Dreadnought Chainfist" publicationId="ca571888--pubN106502" page="180" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">x2</characteristic>
@@ -9698,7 +9678,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Armourbane</characteristic>
       </characteristics>
     </profile>
-    <profile id="c3a5-c40c-b493-5cf6" name="Servo Arm" publicationId="ca571888--pubN74807" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="c3a5-c40c-b493-5cf6" name="Servo Arm" publicationId="ca571888--pubN106502" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
@@ -9706,7 +9686,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Unwieldy</characteristic>
       </characteristics>
     </profile>
-    <profile id="54c0-193a-65c8-03b3" name="Paragon Blade" publicationId="ca571888--pubN74807" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="54c0-193a-65c8-03b3" name="Paragon Blade" publicationId="ca571888--pubN106502" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323"/>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+1</characteristic>
@@ -9714,7 +9694,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Murderous Strike, Specialist Weapon</characteristic>
       </characteristics>
     </profile>
-    <profile id="d2b5-89d1-10e2-f3f0" name="Charnabal Sabre" publicationId="ca571888--pubN74807" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="d2b5-89d1-10e2-f3f0" name="Charnabal Sabre" publicationId="ca571888--pubN106502" page="181" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">User</characteristic>
@@ -9722,7 +9702,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Rending, Duelist&apos;s Edge</characteristic>
       </characteristics>
     </profile>
-    <profile id="3dc7-8af1-aa26-df58" name="Defensive Grenades" publicationId="ca571888--pubN74807" page="183" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="3dc7-8af1-aa26-df58" name="Defensive Grenades" publicationId="ca571888--pubN106502" page="183" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">8&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">1</characteristic>
@@ -9730,12 +9710,12 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1, Blast (3&quot;), Blind</characteristic>
       </characteristics>
     </profile>
-    <profile id="17f3-89d3-0f42-1c09" name="Shroud Bomb" publicationId="ca571888--pubN74807" page="183" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+    <profile id="17f3-89d3-0f42-1c09" name="Shroud Bomb" publicationId="ca571888--pubN106502" page="183" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Shroud bombs count as defensive grenades in combat. In addition, with the exception of vehicles, Daemons, Gargantuan Creatures and units which have the Night Vision special rule, units must pass a Leadership test in order to charge a unit equipped with shroud bombs.</characteristic>
       </characteristics>
     </profile>
-    <profile id="959f-9200-4602-e027" name="Haywire Greande (Shooting)" publicationId="ca571888--pubN74807" page="183" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="959f-9200-4602-e027" name="Haywire Greande (Shooting)" publicationId="ca571888--pubN106502" page="183" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">8&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">2</characteristic>
@@ -9743,7 +9723,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Assualt 1, Haywire</characteristic>
       </characteristics>
     </profile>
-    <profile id="e67b-9540-9dd2-bf36" name="Haywire Greande (Assault)" publicationId="ca571888--pubN74807" page="183" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="e67b-9540-9dd2-bf36" name="Haywire Greande (Assault)" publicationId="ca571888--pubN106502" page="183" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">2</characteristic>
@@ -9751,7 +9731,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Assualt 1, Haywire</characteristic>
       </characteristics>
     </profile>
-    <profile id="ba14-6731-7c9d-ef15" name="Krak Grenade (Assault)" publicationId="ca571888--pubN74807" page="183" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="ba14-6731-7c9d-ef15" name="Krak Grenade (Assault)" publicationId="ca571888--pubN106502" page="183" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
@@ -9759,12 +9739,12 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="6176-c8fa-7b50-26a2" name="Rad Grenades" publicationId="ca571888--pubN74807" page="183" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+    <profile id="6176-c8fa-7b50-26a2" name="Rad Grenades" publicationId="ca571888--pubN106502" page="183" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">During a turn in which a unit equipped with rad grenades launches an assault, or is themselves assaulted, the enemy unit(s) suffers a -1 penalty to their Toughness until the end of the Assault phase. Note: This does affect the victims’ Instant Death thresholds.</characteristic>
       </characteristics>
     </profile>
-    <profile id="0466-931b-dd0b-34e9" name="Close Combat Weapon" publicationId="ca571888--pubN74807" page="42" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="0466-931b-dd0b-34e9" name="Close Combat Weapon" publicationId="ca571888--pubN106502" page="42" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">User</characteristic>
@@ -9772,7 +9752,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee</characteristic>
       </characteristics>
     </profile>
-    <profile id="3084-edd3-6247-da94" name="Twin-Linked Meltagun" publicationId="ca571888--pubN74807" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="3084-edd3-6247-da94" name="Twin-Linked Meltagun" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
