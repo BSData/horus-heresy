@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="110" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="111" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN66489" name="HH:MT"/>
@@ -29,10 +29,8 @@
     <publication id="ca571888--pubN95649" name="Playtest Rules Errata V1.0 Warhammer Community Download"/>
     <publication id="ca571888--pubN95721" name="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Horus_Heresy/HH-Legio-Titanicus-Warbringer-Nemesis-Titan.pdf?fbclid=IwAR3LyUx_Bhf7-hxpR0uCkbOmVMu5pzHpAqjgwmb_4SStSrjeTILm49XO__c"/>
     <publication id="ca571888--pubN99753" name="LA:AODAL"/>
-    <publication id="ca571888--pubN103311" name="HH8"/>
-    <publication id="ca571888--pubN104183" name="hh8"/>
+    <publication id="ca571888--pubN103311" name="HH8: Malevolence"/>
     <publication id="ca571888--pubN105292" name="BRB 7th"/>
-    <publication id="ca571888--pubN105613" name="HH:MAL"/>
     <publication id="ca571888--pubN106389" name="HH:GEAFAQV1.0"/>
     <publication id="ca571888--pubN106502" name="HH: Core Rule Book"/>
     <publication id="ca571888--pubN106650" name="White Dwarf"/>
@@ -6296,6 +6294,7 @@ Command Benefits:
           </constraints>
           <infoLinks>
             <infoLink id="7f3c-4a6a-b0d2-0db4" name="New InfoLink" hidden="false" targetId="0fef-f304-fdfe-b082" type="profile"/>
+            <infoLink id="d4a5-ab99-2b67-935d" name="Two-Handed" hidden="false" targetId="b11c-0ef4-af6b-d96f" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="5.0"/>
@@ -7073,7 +7072,7 @@ Command Benefits:
 
 An Aetherkine Projector is a Whitefire psychic power which is automatically known by the bearer. Instead of attempting to manifest this power normally, simply allocate the appropriate number of dice from the controlling player&apos;s Warp Charge pool during the Psychic pase towards this power. An Aetherkine Projector has three firing, based on the number of Warp Charge points allocated. Once the weapon is fired, the Warp Charge is spent.</description>
             </rule>
-            <rule id="f663-c113-59c1-7f80" name="Aetherkinetic Feedback" publicationId="ca571888--pubN104183" page="304" hidden="false">
+            <rule id="f663-c113-59c1-7f80" name="Aetherkinetic Feedback" publicationId="ca571888--pubN103311" page="304" hidden="false">
               <description>Any roll of a 1 To Hit causes the bearer to suffer Perils of the Warp</description>
             </rule>
           </rules>
@@ -7192,7 +7191,7 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0fa-2229-1501-9310" type="max"/>
           </constraints>
           <profiles>
-            <profile id="fa45-6c46-8814-9219" name="The Liber Magra Veneficarum" publicationId="ca571888--pubN104183" page="307" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+            <profile id="fa45-6c46-8814-9219" name="The Liber Magra Veneficarum" publicationId="ca571888--pubN103311" page="307" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
               <characteristics>
                 <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Any Traitor Allegiance Independent Character (which is not a Psyker, Daemon or Daemon of the Ruinstorm) may take the Liber Magra Veneficarum for +25tps.  The Liber Magra Veneficarum grants the bearer one level of Psychic Mastery, but they are granded only the Incursion Malefic Daemonology power.</characteristic>
               </characteristics>
@@ -7216,6 +7215,49 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="8db1-05f7-f5dd-8b9c" name="Power Weapon (Squad)" hidden="false" collective="true" import="true">
+      <selectionEntries>
+        <selectionEntry id="9565-364e-1a80-2212" name="Power Sword" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="a3b3-315f-2742-b926" name="Power Sword" hidden="false" targetId="038e-23ec-4886-8b00" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="52fe-82c9-3335-64c3" name="Power Axe" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="b7b6-3c05-1ce5-b057" name="Power Axe" hidden="false" targetId="b3af-1eca-6629-4894" type="profile"/>
+            <infoLink id="4883-6894-6bfe-8fa0" name="New InfoLink" hidden="false" targetId="5eea-958c-d623-c3c9" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a0b1-502a-a66b-0fc3" name="Power Maul" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="6355-28a8-3cfc-c772" name="Power Maul" hidden="false" targetId="6bbe-f2c1-78e2-da59" type="profile"/>
+            <infoLink id="bf51-c5a8-ef8a-3657" name="New InfoLink" hidden="false" targetId="9d85-46f7-f5e6-a5f7" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c18f-51bd-eaa1-d1a5" name="Power Lance" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="694c-da96-ad70-c909" name="Power Lance" hidden="false">
+              <description>Power lances have two profiles for both Strength and AP. The first is used only on a turn in which a model charges; the second is used at all other times.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="5db7-2c47-844e-45aa" name="Power Lance" hidden="false" targetId="fdd4-9bf3-da9d-5479" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7375,7 +7417,7 @@ If, when charged, the unit was already locked in combat, the Counter-attack spec
     <rule id="89da-0cb5-bee4-8ec2" name="Shred" publicationId="ca571888--pubN106502" page="171" hidden="false">
       <description>If a model has the Shred special rule, or is attacking with a Melee weapon that has the Shred special rule, it re-rolls failed To Wound rolls in close combat.  Similarly, if a model makes a shooting attack with a weapon that has the Shred special rule, it re-rolls its failed To Wound rolls.</description>
     </rule>
-    <rule id="cb2c-171e-df0f-2bec" name="Paragon of Metal" publicationId="ca571888--pubN105613" page="113" hidden="false">
+    <rule id="cb2c-171e-df0f-2bec" name="Paragon of Metal" publicationId="ca571888--pubN103311" page="113" hidden="false">
       <description>- Not subject to the Programmed Behavior special rule and gains It Will Not Die and Rampage special rules
 - Never counts as scoring regardless of mission type
 - In the case of a failed Cybertheurgy attempt, always apply Malifica result instead of rolling</description>
