@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" revision="61" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" revision="62" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="7f243fc5--pubN65537" name="Crusade Imperialis"/>
     <publication id="7f243fc5--pubN65563" name="AoDRB"/>
@@ -1439,6 +1439,16 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <profiles>
+                <profile id="a87f-f6ed-2055-4789" name="Autocannon" publicationId="ca571888--pubN106502" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
@@ -1447,6 +1457,16 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <profiles>
+                <profile id="1d62-533d-fbdb-8246" name="Lascannon" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
@@ -1466,6 +1486,16 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <profiles>
+                <profile id="8ea2-91e7-683f-c591" name="Lascannon" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="points" value="25.0"/>
               </costs>
@@ -1474,6 +1504,16 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <profiles>
+                <profile id="b4a0-d11a-59ea-0b19" name="Autocannon" publicationId="ca571888--pubN106502" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="points" value="15.0"/>
               </costs>
@@ -3459,9 +3499,16 @@ but the tank loses the Fast special rule.</description>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a41d-3123-be90-81f3" type="max"/>
                   </constraints>
-                  <infoLinks>
-                    <infoLink id="629b-5b79-4c6a-f740" name="Multi-laser" hidden="false" targetId="92be-1bfc-f355-f214" type="profile"/>
-                  </infoLinks>
+                  <profiles>
+                    <profile id="1df7-c0ca-474f-e99d" name="Quad Multi-laser" publicationId="7f243fc5--pubN74753" page="247" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
+                        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+                        <characteristic name="AP" typeId="415023232344415441232323">6</characteristic>
+                        <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 6, Twin-linked</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -5941,6 +5988,16 @@ Precision Shots</description>
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="588c-a65f-25cc-f85c" type="max"/>
               </constraints>
+              <profiles>
+                <profile id="a523-cef1-17bd-d865" name="Heavy Flamer" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">Template</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -5960,6 +6017,16 @@ Precision Shots</description>
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e2d3-f0cb-b741-1069" type="max"/>
               </constraints>
+              <profiles>
+                <profile id="6ee7-f565-b1a7-95b5" name="Lascannon" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
@@ -5968,6 +6035,16 @@ Precision Shots</description>
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d070-a58a-6748-0bee" type="max"/>
               </constraints>
+              <profiles>
+                <profile id="9b69-bfb3-cb51-7781" name="Multi-Melta" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">1</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Melta</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="points" value="5.0"/>
               </costs>
