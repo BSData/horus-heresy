@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="89" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="90" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="cf03-f607-pubN65537" name="Horus Heresy: Taghmata Army List"/>
     <publication id="cf03-f607-pubN65563" name="AoDRB"/>
@@ -1776,6 +1776,11 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
       </costs>
     </selectionEntry>
     <selectionEntry id="48db-84ca-2bad-520f" name="Castellax Class Battle-Automata Maniple" page="" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="fff0-5baf-2869-4e6a" name="Atomantic Shielding" publicationId="ca571888--pubN82424" page="26" hidden="false">
+          <description>A model with Atomantic shielding has a 5+ invulnerable save against shooting attacks and explosions, and a 6+ invulnerable save against attacks suffered in close combat. In adition, if the battle automata suffers a reactor blast explosion, add +1 to the radius the blast causes.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="7678-ae60-16f2-e948" name="" hidden="false" targetId="988c-d4d0-9418-1165" type="rule"/>
         <infoLink id="a7f0-6bc1-ed4a-34dc" name="New InfoLink" hidden="false" targetId="d5cf-bd98-2854-13cf" type="rule"/>
@@ -7428,14 +7433,6 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
             <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e714-7e43-a6e5-04b4" name="Power Weapon" publicationId="cf03-f607-pubN76780" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7ec3-da59-1d69-df29" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="954d-f1c5-971f-eba5" name="Relics of the Dark Age of Technology" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="135f-ed77-3978-0385" type="max"/>
@@ -7651,6 +7648,7 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="47a3-6141-b585-da3e" name="May be mounted on:" hidden="false" collective="false" import="true" targetId="df18-c724-2a3d-a6e5" type="selectionEntryGroup"/>
+        <entryLink id="5483-614b-65da-0140" name="Power Weapon" hidden="false" collective="false" import="true" targetId="9d3d-aef5-6635-b0c6" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="155.0"/>
@@ -8363,6 +8361,16 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e21c-8e84-f87f-c0c8" type="max"/>
               </constraints>
+              <profiles>
+                <profile id="39f0-cf31-7bf7-bec9" name="Meltagun" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">1</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1, Melta</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="points" value="15.0"/>
               </costs>
@@ -8703,6 +8711,16 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7da0-e4e8-1bf6-0dc2" type="max"/>
               </constraints>
+              <profiles>
+                <profile id="f074-e239-a3f1-0e25" name="Meltagun" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">1</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1, Melta</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="points" value="15.0"/>
               </costs>
