@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="111" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="112" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN66489" name="HH:MT"/>
@@ -244,6 +244,11 @@
     <entryLink id="7d9f-d54b-09db-e954" name="Use Playtest Rules" hidden="false" collective="false" import="true" targetId="5a90-c53e-42ca-b4ca" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="d2d6-3f07-f393-0be4" name="New CategoryLink" hidden="false" targetId="fdf4-0683-3e84-5a4b" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c35d-3ad4-5d6e-6d1c" name="Acastus Knight Asterius" hidden="false" collective="false" import="true" targetId="72ad-abe8-94d8-5926" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b6de-ab6a-c3b2-8e78" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -4665,9 +4670,6 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       </costs>
     </selectionEntry>
     <selectionEntry id="4ded-9de3-f964-33a7" name="Acastus Knight Porphyrion" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f38-2f45-a1a8-1aab" type="max"/>
-      </constraints>
       <profiles>
         <profile id="208e-17a3-a067-6ea1" name="Acastus Knight Porphyrion" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
           <characteristics>
@@ -5862,6 +5864,133 @@ or Gargantuan Creatures. </description>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="81f0-cd7e-d2fe-e7a0" name="Karacnos Mortar Battery" publicationId="ca571888--pubN92115" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b78f-2be8-e349-3847" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9349-cd95-9b4d-dee9" type="min"/>
+      </constraints>
+      <profiles>
+        <profile id="510a-98be-3d81-65a9" name="Karacnos motar battery" publicationId="ca571888--pubN92115" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="52616e676523232344415441232323">60&quot;</characteristic>
+            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
+            <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 3, Barrage, Blast (3&quot;), Fleshbane, Rad-Phage, Ignores Cover, Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f202-38e1-7dcd-8076" name="New InfoLink" hidden="false" targetId="f624-f475-e5ec-0dfa" type="rule"/>
+        <infoLink id="3807-a9c0-1309-5203" name="New InfoLink" hidden="false" targetId="4575-0a0a-caaf-e4bf" type="rule"/>
+        <infoLink id="51b3-01fb-f89c-f60f" name="New InfoLink" hidden="false" targetId="acf2-681d-4188-94d7" type="rule"/>
+        <infoLink id="0685-7fdf-1831-6c0e" name="New InfoLink" hidden="false" targetId="eefe-09e4-17aa-deb2" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="72ad-abe8-94d8-5926" name="Acastus Knight Asterius" publicationId="ca571888--pubN106705" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d0ee-8407-6d22-b0d3" name="Acastus Knight Asterius" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
+          <characteristics>
+            <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
+            <characteristic name="BS" typeId="425323232344415441232323">5</characteristic>
+            <characteristic name="S" typeId="5323232344415441232323">10</characteristic>
+            <characteristic name="Front" typeId="46726f6e7423232344415441232323">14</characteristic>
+            <characteristic name="Side" typeId="5369646523232344415441232323">13</characteristic>
+            <characteristic name="Rear" typeId="5265617223232344415441232323">12</characteristic>
+            <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
+            <characteristic name="A" typeId="4123232344415441232323">3</characteristic>
+            <characteristic name="HP" typeId="485023232344415441232323">8</characteristic>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Super-heavy Walker</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="bed1-b54d-9881-2978" name="" hidden="false" targetId="342d5e83-9f9b-42c0-cecb-e6c9c197ab9d" type="profile"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="567b-162a-f3e6-3076" name="Two Twin linked Conversion Beam Cannon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6940-8927-51d4-0164" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="832d-36fa-23e1-b81f" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="15b1-830d-e996-944d" name="New InfoLink" hidden="false" targetId="10a8-8d89-0bec-3e21" type="rule"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink id="c25a-7a06-e16d-c0c9" name="Conversion Beam Cannon" hidden="false" collective="false" import="true" targetId="1292-7672-b955-42da" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22e5-aa3a-373a-de57" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9709-4fde-12c4-7e41" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="fbc0-cca8-2aba-9596" name="Vulkite Culverin" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c683-c05d-48ab-936b" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c11e-b833-a38f-a94b" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="85f3-19bf-d67d-6794" name="Volkite Culverin" hidden="false" targetId="34d1-b4db-3e75-ccce" type="profile"/>
+            <infoLink id="8e3f-63f6-e39a-7d4e" name="Deflagrate" hidden="false" targetId="b46a-a3ec-91a5-5001" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="cdcc-ff0c-c151-4cfa" name="May be upgraded with:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="be86-c093-5371-34ae" name="New EntryLink" hidden="false" collective="false" import="true" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="46e4-af77-01ab-dc86" name="Household Rank" hidden="false" collective="false" import="true" targetId="2f28-c5f0-6110-c614" type="selectionEntry"/>
+        <entryLink id="c71f-68e1-66f2-a643" name="Karacnos Mortar Battery" hidden="false" collective="false" import="true" targetId="81f0-cd7e-d2fe-e7a0" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="540.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1292-7672-b955-42da" name="Conversion Beam Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f4bb-8747-e6b9-6566" name="Conversion Beam Cannon (3)" publicationId="ca571888--pubN67636" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="52616e676523232344415441232323">42&quot; - 72&quot;</characteristic>
+            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">10</characteristic>
+            <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance 1, Massive Blast (7&quot;), Wrecker, Sunder</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9af1-3185-a3de-5781" name="Conversion Beam Cannon (2)" publicationId="ca571888--pubN67636" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="52616e676523232344415441232323">18&quot; - 42&quot;</characteristic>
+            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">10</characteristic>
+            <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance 1, Large Blast (5&quot;), Wrecker</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ea62-d627-ee8e-9c5f" name="Conversion Beam Cannon (1)" publicationId="ca571888--pubN67636" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="52616e676523232344415441232323">Up to 18&quot;</characteristic>
+            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">10</characteristic>
+            <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance 1, Blast (3&quot;)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="0415-8fc8-4097-3195" name="Sunder" hidden="false" targetId="841f-9119-9f9d-5058" type="rule"/>
+        <infoLink id="7a81-5dee-82df-f0e0" name="Wrecker" hidden="false" targetId="fe2f-3220-3fef-b177" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

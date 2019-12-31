@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="32d1ddc6-3187-cf6f-3bf8-9891e527a002" name="Questoris Knight Crusade Army" revision="48" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="32d1ddc6-3187-cf6f-3bf8-9891e527a002" name="Questoris Knight Crusade Army" revision="49" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="32d1ddc6--pubN65537" name="Age of Darkness Crusade Army List"/>
     <publication id="32d1ddc6--pubN66650" name="HH4: Conquest"/>
@@ -1681,6 +1681,20 @@ Construct shields have an Armour value of 11. A Glancing or Penetrating hit (or 
           </modifiers>
         </entryLink>
         <entryLink id="38ae-7cc3-463a-a8de" name="Questoris Knight Dominus" hidden="false" collective="false" import="true" targetId="3902-a5e5-c69e-7a01" type="selectionEntry"/>
+        <entryLink id="4e1e-f097-8024-9c0e" name="Acastus Knight Asterius" hidden="false" collective="false" import="true" targetId="72ad-abe8-94d8-5926" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2f44-17e9-3707-22f2" type="instanceOf"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ff61-cf0e-681b-82bb" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="365d-5bf0-6a3b-6253" name="Allegiance" hidden="false" collective="false" import="true">

@@ -4210,6 +4210,7 @@ Reduces transport capacity to 8.</description>
           </modifiers>
         </infoLink>
         <infoLink id="f08e-5bfd-bc98-fabd" name="New InfoLink" hidden="false" targetId="6e59-4afd-8668-f066" type="rule"/>
+        <infoLink id="b89b-ab5f-63e9-11d0" name="Hazardous Munitions" hidden="false" targetId="dc06-a6df-61f8-d030" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6a1d-d4d0-0b1d-7d1f" name="New CategoryLink" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false"/>
@@ -4254,23 +4255,6 @@ Reduces transport capacity to 8.</description>
         <infoLink id="eece-b51d-21eb-7fb3" name="New InfoLink" hidden="false" targetId="8269-2cd6-9236-16e7" type="rule"/>
         <infoLink id="187b-9c0d-a255-47a5" name="New InfoLink" hidden="false" targetId="89da-0cb5-bee4-8ec2" type="rule"/>
         <infoLink id="34f2-d4c2-6479-ae57" name="New InfoLink" hidden="false" targetId="e571-5701-104d-9e3d" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="81f0-cd7e-d2fe-e7a0" name="Karacnos Mortar Battery" publicationId="cf03-f607-pubN92488" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="46ef-e4f2-2515-490c" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bcef-29aa-f05e-cc54" type="min"/>
-      </constraints>
-      <infoLinks>
-        <infoLink id="87da-cec7-d35e-d856" name="New InfoLink" hidden="false" targetId="dc06-a6df-61f8-d030" type="rule"/>
-        <infoLink id="d4fa-f51d-b933-45ae" name="Karacnos motar battery" hidden="false" targetId="0345-be6c-3862-1bf7" type="profile"/>
-        <infoLink id="8f21-00b9-4039-131d" name="New InfoLink" hidden="false" targetId="f624-f475-e5ec-0dfa" type="rule"/>
-        <infoLink id="fe4a-57ec-ac3e-c862" name="New InfoLink" hidden="false" targetId="4575-0a0a-caaf-e4bf" type="rule"/>
-        <infoLink id="c798-cbca-09c4-3f65" name="New InfoLink" hidden="false" targetId="acf2-681d-4188-94d7" type="rule"/>
-        <infoLink id="72b7-04cb-4e70-7262" name="New InfoLink" hidden="false" targetId="eefe-09e4-17aa-deb2" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -4668,7 +4652,7 @@ Buildings and Fortifications D</description>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="cd54-fdde-91fe-9b2e" name="Exchange Power Maul and Radium Pistol for:" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="cd54-fdde-91fe-9b2e" name="Exchange Arc Maul and Radium Pistol for:" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fa44-2971-943b-ab5f" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a24e-896f-31ea-e73d" type="min"/>
@@ -10607,6 +10591,7 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
             <entryLink id="9291-22af-b60c-8f0b" name="Questoris Knight Warden" hidden="false" collective="false" import="true" targetId="f4f1-dad6-0596-ca5a" type="selectionEntry"/>
             <entryLink id="f73d-6c6a-8a8a-9dd9" name="Cerastus Knight-Lancer" hidden="false" collective="false" import="true" targetId="ca45ca55-eae1-1a81-8afc-1330611055a6" type="selectionEntry"/>
             <entryLink id="593f-5de1-07e1-a4cb" name="Acastus Knight Porphyrion" hidden="false" collective="false" import="true" targetId="4ded-9de3-f964-33a7" type="selectionEntry"/>
+            <entryLink id="d060-75e7-6ceb-e4ce" name="Acastus Knight Asterius" hidden="false" collective="false" import="true" targetId="72ad-abe8-94d8-5926" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -12971,8 +12956,7 @@ Construct shields have an Armour value of 11. A Glancing or Penetrating hit (or 
       <description>Must re-roll all failed Dangerous Terrain tests</description>
     </rule>
     <rule id="dc06-a6df-61f8-d030" name="Hazardous Munitions" publicationId="cf03-f607-pubN92488" hidden="false">
-      <description>If the Karacnos explodes due to damage, it has a D6+2 Blast radius and inflicts Str 5, AP 4
-                hits.</description>
+      <description>If the Karacnos explodes due to damage, it has a D6+2 Blast radius and inflicts Str 5, AP 4 hits.</description>
     </rule>
     <rule id="5c81-31f3-2fcb-596d" name="Hardened Armour" hidden="false"/>
     <rule id="9cc7-f83e-f251-4e5c" name="Titanshard Armour" publicationId="cf03-f607-pubN96051" hidden="false">
