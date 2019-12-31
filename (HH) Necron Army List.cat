@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b50f-0671-3aea-cf90" name="Necron Army List (Fanmade)" revision="2" battleScribeVersion="2.03" authorName="Dono Author / Maye Gelt the Battlescribbler" authorContact="Dono (for Content) / Maye Gelt (for Battlescibbling)" authorUrl="http://www.facebook.com/AUS30K" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="108" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b50f-0671-3aea-cf90" name="Necron Army List (Fanmade)" revision="3" battleScribeVersion="2.03" authorName="Dono Author / Maye Gelt the Battlescribbler" authorContact="Dono (for Content) / Maye Gelt (for Battlescibbling)" authorUrl="http://www.facebook.com/AUS30K" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="108" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="6fc6-dd7c-7a39-b0c8" name="30K Necron Army List (Fanmade)"/>
   </publications>
@@ -237,6 +237,12 @@
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f27-e2e7-3207-6ffe" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="2b1a-d16e-e778-d90b" name="Aliens and Daemons" hidden="false" targetId="cd09-c1c6-237a-798e" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c3f-6fc6-c9d7-8db7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="603f-9859-f789-40a4" type="min"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -800,6 +806,15 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="e19f-bddc-5ac1-283d" name="New CategoryLink" hidden="false" targetId="564d-9137-b8e7-1818" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6587-c35e-d1be-af5c" name="Aliens and Daemons" hidden="false" collective="false" import="true" targetId="8221-a45d-16b8-2dcf" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a09-3f48-9b9d-4dc4" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f59-17fd-a40e-7329" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="fabf-a3a2-2963-3a61" name="New CategoryLink" hidden="false" targetId="cd09-c1c6-237a-798e" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
