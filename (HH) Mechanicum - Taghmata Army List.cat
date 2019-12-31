@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="90" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="91" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="cf03-f607-pubN65537" name="Horus Heresy: Taghmata Army List"/>
     <publication id="cf03-f607-pubN65563" name="AoDRB"/>
@@ -1776,9 +1776,13 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
       </costs>
     </selectionEntry>
     <selectionEntry id="48db-84ca-2bad-520f" name="Castellax Class Battle-Automata Maniple" page="" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="768d-afde-5239-0a7c" name="Castellax Class Battle-Automata Maniple" hidden="false"/>
+      </rules>
       <infoLinks>
         <infoLink id="7678-ae60-16f2-e948" name="" hidden="false" targetId="988c-d4d0-9418-1165" type="rule"/>
         <infoLink id="a7f0-6bc1-ed4a-34dc" name="New InfoLink" hidden="false" targetId="d5cf-bd98-2854-13cf" type="rule"/>
+        <infoLink id="df80-2cd7-4107-89cd" name="Atomantic Shielding" hidden="false" targetId="6eb5b812-8b8b-9e7c-279e-c9e9c93fefe9" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a3cf-4fd0-76a0-b47b" name="New CategoryLink" hidden="false" targetId="7fdd-2a97-d0e9-6524" primary="false"/>
@@ -4234,7 +4238,6 @@ Reduces transport capacity to 8.</description>
         </entryLink>
         <entryLink id="8f96-0dba-f6cb-ec83" name="New EntryLink" hidden="false" collective="false" import="true" targetId="0a18-686c-1dfb-4b71" type="selectionEntry"/>
         <entryLink id="f45c-8e8d-bfe0-0dd7" name="New EntryLink" hidden="false" collective="false" import="true" targetId="c36a-4017-0eb5-c8d2" type="selectionEntry"/>
-        <entryLink id="9cd0-475b-7369-3013" name="Karacnos mortar battery" hidden="false" collective="false" import="true" targetId="81f0-cd7e-d2fe-e7a0" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="225.0"/>
@@ -6067,11 +6070,11 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="80b7-5204-19ac-9fbe" name="May exchange Lightning Claws for:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="80b7-5204-19ac-9fbe" name="May exchange Lightning Claws for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="0022-7772-d3c4-da01">
           <selectionEntries>
             <selectionEntry id="5267-8b4e-938c-aabc" name="Power Fist" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="increment" field="6d2f-7ad8-dffd-ef59" value="1">
+                <modifier type="increment" field="6d2f-7ad8-dffd-ef59" value="1.0">
                   <repeats>
                     <repeat field="selections" scope="2f28-034a-ca2c-5b9e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4957-7ef8-5245-25b3" repeats="1" roundUp="false"/>
                   </repeats>
@@ -6086,6 +6089,11 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
+            </selectionEntry>
+            <selectionEntry id="0022-7772-d3c4-da01" name="Lightning Claw" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="ba4a-c32a-f5e7-4d6e" name="Lightning Claw" hidden="false" targetId="3cec-4483-3f2e-fbc2" type="profile"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -7416,6 +7424,9 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7ec3-da59-1d69-df29" type="max"/>
           </constraints>
+          <entryLinks>
+            <entryLink id="df8f-ae1d-9c6b-21df" name="Power Weapon" hidden="false" collective="false" import="true" targetId="9d3d-aef5-6635-b0c6" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -8347,6 +8358,9 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e21c-8e84-f87f-c0c8" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="3217-f6f5-2de6-9397" name="Meltagun" hidden="false" targetId="8ae4-74e5-7700-3804" type="profile"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="15.0"/>
               </costs>
@@ -8687,6 +8701,9 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7da0-e4e8-1bf6-0dc2" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="8a8d-dc3d-5597-eb1d" name="Meltagun" hidden="false" targetId="8ae4-74e5-7700-3804" type="profile"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="15.0"/>
               </costs>
@@ -10573,7 +10590,6 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
             <entryLink id="9291-22af-b60c-8f0b" name="Questoris Knight Warden" hidden="false" collective="false" import="true" targetId="f4f1-dad6-0596-ca5a" type="selectionEntry"/>
             <entryLink id="f73d-6c6a-8a8a-9dd9" name="Cerastus Knight-Lancer" hidden="false" collective="false" import="true" targetId="ca45ca55-eae1-1a81-8afc-1330611055a6" type="selectionEntry"/>
             <entryLink id="593f-5de1-07e1-a4cb" name="Acastus Knight Porphyrion" hidden="false" collective="false" import="true" targetId="4ded-9de3-f964-33a7" type="selectionEntry"/>
-            <entryLink id="d060-75e7-6ceb-e4ce" name="Acastus Knight Asterius" hidden="false" collective="false" import="true" targetId="72ad-abe8-94d8-5926" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
