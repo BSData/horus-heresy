@@ -19,6 +19,13 @@
     </categoryEntry>
     <categoryEntry id="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" name="Lords of War" hidden="false"/>
     <categoryEntry id="466f7274696669636174696f6e23232344415441232323" name="Fortification" hidden="false"/>
+    <categoryEntry id="0547-e031-0d25-4c6c" name="Compulsory Troops" publicationId="8700-b3bb-pubN75780" hidden="false">
+      <rules>
+        <rule id="ecbb-6edb-aed5-4510" name="Compulsory" publicationId="8700-b3bb-pubN75780" page="132" hidden="false">
+          <description>One box on a Force Organisation chart allows you to make one selection from that part of your army list. Dark boxes indicate compulsory selections, which must be included as part of the army, while the lighter boxes indicate optional choices, which are only included as part of the army if the player in question chooses to do so. If constructing an army using the Crusade Force Organisation chart, this would mean that an army would be required to take at least one HQ choice and two Troops choices. These compulsory choices are intended to ensure that the core of each army is illustrative of the force represented by the Army List in use, and that all armies are capable of properly participating in the varied missions available to players in the Age of Darkness.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="657a-bc81-4ae3-8a5b" name="Allied Detachment" hidden="false">
@@ -59,6 +66,11 @@
           </constraints>
         </categoryLink>
         <categoryLink id="7a11-130d-e08e-65be" name="Aetheric Dominion" hidden="false" targetId="2271-1b9a-5c30-9676" primary="false"/>
+        <categoryLink id="63e0-0102-d8af-800e" name="Compulsory Troops" hidden="false" targetId="0547-e031-0d25-4c6c" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7daa-ff7f-f82a-4841" type="min"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="4086-2dd6-c49c-2445" name="Crusade Detachment" hidden="false">
@@ -109,6 +121,11 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e04-3c4a-cd59-824c" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1eea-709b-98c5-af0f" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="6906-8d5c-0003-dead" name="Compulsory Troops" hidden="false" targetId="0547-e031-0d25-4c6c" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6655-db71-2cde-3974" type="min"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -373,6 +390,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="9ad5-5b92-5f1f-e661" name="Ruinstorm Lesser Daemons" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="aec5-dd17-8bf5-d276" name="Compulsory Troops" hidden="false" targetId="0547-e031-0d25-4c6c" primary="false"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="23df-3d35-fc4d-f51a" name="Ruinstorm Lesser Daemons" hidden="false" collective="false" import="true" type="model">
           <constraints>
@@ -589,6 +609,7 @@
     <selectionEntry id="c877-3df6-7393-c32b" name="Ruinstorm Daemon Beasts" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="cf97-4f31-aa52-f7f5" name="Troops" hidden="false" targetId="54726f6f707323232344415441232323" primary="true"/>
+        <categoryLink id="bab4-818a-3e4d-6758" name="Compulsory Troops" hidden="false" targetId="0547-e031-0d25-4c6c" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="6bb2-6321-dfaf-0eda" name="Ruinstorm Daemon Beasts" hidden="false" collective="false" import="true" type="model">
@@ -621,6 +642,7 @@
     <selectionEntry id="ae3c-2429-b663-dcbc" name="Ruinstorm Daemon Swarms" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="7f7f-257b-f4ee-5af8" name="Troops" hidden="false" targetId="54726f6f707323232344415441232323" primary="true"/>
+        <categoryLink id="4821-a907-ea08-8606" name="Compulsory Troops" hidden="false" targetId="0547-e031-0d25-4c6c" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="f757-a9dc-829d-0f07" name="Ruinstorm Daemon Swarms" hidden="false" collective="false" import="true" type="model">
