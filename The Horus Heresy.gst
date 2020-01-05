@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="112" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="113" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN66489" name="HH:MT"/>
@@ -8997,12 +8997,14 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
     </profile>
     <profile id="0434-8c4b-9614-73dd" name="Space Marine Bike" publicationId="ca571888--pubN105292" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
-        <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">+1 Toughness, cannot Go to Ground, and cannot be Pinned, not slowed down by difficult terrain, treat all difficult terrain as dangerous, Move 3D6&quot; when Falling Back, Turbo-boost up to 12&quot;</characteristic>
+        <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">+1 Toughness, cannot Go to Ground, and cannot be Pinned, not slowed down by difficult terrain, treat all difficult terrain as dangerous, Move 3D6&quot; when Falling Back, Turbo-boost up to 12&quot;.  Bikes have the Hammer of Wrath, Jink, Relentless and Very Bulky special rules.
+Each Bike in a unit can fire with one weapon for each rider on the Bike. Thus a Space Marine Attack Bike with a driver and passenger in sidecar can fire two weapons.</characteristic>
       </characteristics>
     </profile>
     <profile id="3c28-4994-00ed-bbe5" name="Space Marine Jetbike" publicationId="ca571888--pubN105292" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
-        <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">ARMOURED STEED Bike and Jetbike riders benefit from an increase to their Toughness characteristic by 1. If the Bike or Jetbike is part of the model’s standard wargear, this bonus is already included on its profile. In addition, Bikes and Jetbikes cannot Go to Ground, and cannot be Pinned.  MOVEMENT Bikes and Jetbikes can move up to 12&quot; in the Movement phase.  BIKES &amp; TERRAIN Bikes and Jetbikes are not slowed down by difficult terrain (even when charging). However, Bikes treat all difficult terrain as dangerous terrain instead.  JETBIKES, MODELS AND TERRAIN Jetbikes can move over all other models and terrain freely. However, if a moving Jetbike begins or ends its move in difficult terrain, it must take a Dangerous Terrain test. Jetbikes cannot end their move over other models or impassable terrain, except that they can end their move on top of impassable terrain if it is actually possible to place the models on top of it. If they do so, they treat the impassable terrain as dangerous terrain.  FALL BACK MOVES Bikes and Jetbikes move 3D6&quot; when Falling Back, rather than 2D6&quot;.  SHOOTING Each Bike or Jetbike in a unit can fire with one weapon for each rider on the Bike. Thus a Space Marine Attack Bike with a driver and passenger in sidecar can fire two weapons.  SPECIAL RULES Bikes and Jetbikes have the Hammer of Wrath, Jink, Relentless and Very Bulky special rules.  TURBO-BOOST Bikes and Jetbikes cannot Run, but can make a special Turbo-boost move instead of firing in their Shooting phase. Turbo-boosting Bikes move up to 12&quot;, Turbo-boosting Jetbikes move up to 24&quot;. Controlling their Bikes at such speeds takes all the riders’ concentration and skill, however. Bikes and Jetbikes therefore cannot shoot, charge or execute any other voluntary action until the end of their turn after Turbo-boosting.</characteristic>
+        <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">+1 Toughness, 2+ Save, cannot Go to Ground, and cannot be Pinned, not slowed down by difficult terrain, treat all difficult terrain as dangerous, Move 3D6&quot; when Falling Back, Turbo-boost up to 24&quot;. Jjetbike have the Hammer of Wrath, Jink, Relentless and Very Bulky special rules.
+Jetbikes can move over all other models and terrain freely. However, if a moving Jetbike begins or ends its move in difficult terrain, it must take a Dangerous Terrain test. Jetbikes cannot end their move over other models or impassable terrain, except that they can end their move on top of impassable terrain if it is actually possible to place the models on top of it. If they do so, they treat the impassable terrain as dangerous terrain.</characteristic>
       </characteristics>
     </profile>
     <profile id="376f-adc9-b9bf-7fc9" name="Augury Scanner" publicationId="ca571888--pubN99753" page="131" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
@@ -9680,7 +9682,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 1,  Large Blast</characteristic>
       </characteristics>
     </profile>
-    <profile id="534b-67b0-62d7-b977" name="Twin Icarus autocannon" publicationId="ca571888--pubN84656" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="534b-67b0-62d7-b977" name="Twin Icarus Autocannon" publicationId="ca571888--pubN84656" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
@@ -10024,6 +10026,118 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D/9/6</characteristic>
         <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
         <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 1, Apocalyptic Blast, Barrage, Seismic Shock. Concussive, Strikedown</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="423f-013f-cb9f-b6bb" name="Twin-Linked Autocannon" publicationId="ca571888--pubN106502" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
+        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
+        <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
+        <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 2, Twin-Linked</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3d27-e5b9-6c14-4302" name="Twin-Linked Avenger Bolt Cannon" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
+        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+        <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
+        <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 7, Twin-Linked</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="37fc-8473-3879-14a4" name="Twin-Linked Boltgun" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
+        <characteristic name="AP" typeId="415023232344415441232323">5</characteristic>
+        <characteristic name="Type" typeId="5479706523232344415441232323">Rapid Fire, Twin-Linked</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3851-298c-cd04-af3f" name="Twin-Linked Flamer" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="52616e676523232344415441232323">Template</characteristic>
+        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
+        <characteristic name="AP" typeId="415023232344415441232323">5</characteristic>
+        <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1, Twin-Linked</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d9ce-23de-9b51-0707" name="Twin-Linked Heavy Bolter" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
+        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
+        <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
+        <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 3, Twin-Linked</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b55d-dcfd-d708-8149" name="Twin-Linked Heavy Flamer" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="52616e676523232344415441232323">Template</characteristic>
+        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
+        <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
+        <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1, Twin-Linked</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2cd1-0fb3-7484-e486" name="Twin-Linked Lascannon" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
+        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
+        <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+        <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Twin-Linked</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d3cd-1872-0568-4f54" name="Twin-Linked Mauler Bolt Cannon" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+        <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
+        <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 3, Pinning, Twin-Linked</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8010-122f-a8d0-0bf7" name="Twin-Linked Multi-laser" publicationId="ca571888--pubN84158" page="247" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
+        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+        <characteristic name="AP" typeId="415023232344415441232323">6</characteristic>
+        <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 3, Twin-Linked</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5ea3-cf60-6994-d707" name="Twin-Linked Multi-Melta" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
+        <characteristic name="AP" typeId="415023232344415441232323">1</characteristic>
+        <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Melta, Twin-Linked</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4e7d-d413-cedc-2891" name="Twin-Linked Plasma Gun" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
+        <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+        <characteristic name="Type" typeId="5479706523232344415441232323">Rapid Fire, Gets Hot, Twin-Linked</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fbe9-124d-f911-2542" name="Twin-Linked Rotor Cannon" publicationId="ca571888--pubN106502" page="176" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="52616e676523232344415441232323">30&quot;</characteristic>
+        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">3</characteristic>
+        <characteristic name="AP" typeId="415023232344415441232323">6</characteristic>
+        <characteristic name="Type" typeId="5479706523232344415441232323">Salvo 3/4, Twin-Linked</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="415c-c849-75db-5064" name="Twin-Linked Volkite Caliver" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="52616e676523232344415441232323">30&quot;</characteristic>
+        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+        <characteristic name="AP" typeId="415023232344415441232323">5</characteristic>
+        <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 2, Deflagrate, Twin-Linked</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="dfaa-aab3-67ce-cd36" name="Twin-Linked Volkite Culverin" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="52616e676523232344415441232323">45&quot;</characteristic>
+        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+        <characteristic name="AP" typeId="415023232344415441232323">5</characteristic>
+        <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 4, Deflagrate, Twin-Linked</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
