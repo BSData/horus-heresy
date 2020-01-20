@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8700-b3bb-a471-a0ad" name="Daemons of the Ruinstorm" revision="12" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8700-b3bb-a471-a0ad" name="Daemons of the Ruinstorm" revision="13" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="8700-b3bb-pubN65537" name="HH8: Malevolence"/>
     <publication id="8700-b3bb-pubN75780" name="BRB"/>
@@ -19,6 +19,13 @@
     </categoryEntry>
     <categoryEntry id="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" name="Lords of War" hidden="false"/>
     <categoryEntry id="466f7274696669636174696f6e23232344415441232323" name="Fortification" hidden="false"/>
+    <categoryEntry id="0547-e031-0d25-4c6c" name="Compulsory Troops" publicationId="8700-b3bb-pubN75780" hidden="false">
+      <rules>
+        <rule id="ecbb-6edb-aed5-4510" name="Compulsory" publicationId="8700-b3bb-pubN75780" page="132" hidden="false">
+          <description>One box on a Force Organisation chart allows you to make one selection from that part of your army list. Dark boxes indicate compulsory selections, which must be included as part of the army, while the lighter boxes indicate optional choices, which are only included as part of the army if the player in question chooses to do so. If constructing an army using the Crusade Force Organisation chart, this would mean that an army would be required to take at least one HQ choice and two Troops choices. These compulsory choices are intended to ensure that the core of each army is illustrative of the force represented by the Army List in use, and that all armies are capable of properly participating in the varied missions available to players in the Age of Darkness.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="657a-bc81-4ae3-8a5b" name="Allied Detachment" hidden="false">
@@ -59,6 +66,11 @@
           </constraints>
         </categoryLink>
         <categoryLink id="7a11-130d-e08e-65be" name="Aetheric Dominion" hidden="false" targetId="2271-1b9a-5c30-9676" primary="false"/>
+        <categoryLink id="63e0-0102-d8af-800e" name="Compulsory Troops" hidden="false" targetId="0547-e031-0d25-4c6c" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7daa-ff7f-f82a-4841" type="min"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="4086-2dd6-c49c-2445" name="Crusade Detachment" hidden="false">
@@ -109,6 +121,11 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e04-3c4a-cd59-824c" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1eea-709b-98c5-af0f" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="6906-8d5c-0003-dead" name="Compulsory Troops" hidden="false" targetId="0547-e031-0d25-4c6c" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6655-db71-2cde-3974" type="min"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -373,6 +390,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="9ad5-5b92-5f1f-e661" name="Ruinstorm Lesser Daemons" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="aec5-dd17-8bf5-d276" name="Compulsory Troops" hidden="false" targetId="0547-e031-0d25-4c6c" primary="false"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="23df-3d35-fc4d-f51a" name="Ruinstorm Lesser Daemons" hidden="false" collective="false" import="true" type="model">
           <constraints>
@@ -589,6 +609,7 @@
     <selectionEntry id="c877-3df6-7393-c32b" name="Ruinstorm Daemon Beasts" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="cf97-4f31-aa52-f7f5" name="Troops" hidden="false" targetId="54726f6f707323232344415441232323" primary="true"/>
+        <categoryLink id="bab4-818a-3e4d-6758" name="Compulsory Troops" hidden="false" targetId="0547-e031-0d25-4c6c" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="6bb2-6321-dfaf-0eda" name="Ruinstorm Daemon Beasts" hidden="false" collective="false" import="true" type="model">
@@ -731,7 +752,7 @@
             <infoLink id="9713-4b6a-0316-2a3c" name="Daemon of the Ruinstorm" hidden="false" targetId="0b0d-9d33-c0a8-06cd" type="rule"/>
             <infoLink id="1567-a34d-94b3-0e09" name="Tide of Madness" hidden="false" targetId="a2dc-7a16-0067-a4db" type="rule"/>
             <infoLink id="bf95-9981-9987-bd93" name="Parting the Veil" hidden="false" targetId="c828-3e09-a384-735b" type="rule"/>
-            <infoLink id="c3e2-b584-1677-74f7" name="Ruinstorm Greater Daemon" hidden="false" targetId="1594-7706-9792-d4de" type="profile"/>
+            <infoLink id="c3e2-b584-1677-74f7" name="Ruinstorm Greater Daemon Beast" hidden="false" targetId="aa91-80fc-4bc0-dac9" type="profile"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="0d64-7058-4063-127e" name="Heavy Support" hidden="false" targetId="486561767920537570706f727423232344415441232323" primary="true"/>
@@ -1223,7 +1244,7 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9463-14b2-5a43-17b0" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c39-d5e2-e0eb-3280" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc24-bd44-bce4-a7f1" type="equalTo"/>
               </conditions>
             </conditionGroup>

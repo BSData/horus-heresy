@@ -1639,6 +1639,13 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
           </constraints>
           <profiles>
             <profile id="1d9f-74bd-40b6-8d34" name="Thanatar Class Siege-automata" publicationId="cf03-f607-pubN76270" page="51" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <modifiers>
+                <modifier type="increment" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d266-0416-a5a6-881e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Monstrous Creature</characteristic>
                 <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
@@ -1672,7 +1679,15 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e533-1ddc-f9a5-c50c" type="max"/>
               </constraints>
               <profiles>
-                <profile id="c198-6c5b-f862-32c7" name="Hellex Plasma Mortar (Stationary)" publicationId="cf03-f607-pubN76979" page="227" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                <profile id="c198-6c5b-f862-32c7" name="Hellex Plasma Mortar (Fired on the move)" publicationId="cf03-f607-pubN76979" page="227" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot; - 24&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance 1, Barrage, Large Blast, Plasma Wave</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="08f8-f3c9-5041-1841" name="Hellex Plasma Mortar (Stationary)" publicationId="cf03-f607-pubN76979" page="227" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot; - 48&quot;</characteristic>
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
@@ -1686,13 +1701,6 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
                   <description>Successful cover saves against this weapon must be re-rolled</description>
                 </rule>
               </rules>
-              <selectionEntries>
-                <selectionEntry id="1b03-f965-d303-67a6" name="Hellex plasma mortar" hidden="false" collective="false" import="true" type="upgrade">
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -2047,6 +2055,13 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
           </constraints>
           <profiles>
             <profile id="712d-49a5-7c53-fbc4" name="Vorax" publicationId="cf03-f607-pubN76270" page="46" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <modifiers>
+                <modifier type="increment" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d266-0416-a5a6-881e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Monstrous Creature</characteristic>
                 <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
@@ -2301,40 +2316,91 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
             <characteristic name="Save" typeId="5361766523232344415441232323">3+</characteristic>
           </characteristics>
         </profile>
-        <profile id="fee7-003f-11f8-d56a" name="Arlatax Power Claw" publicationId="cf03-f607-pubN80487" page="274" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+2</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Shred</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="b63e-172e-2f5c-7fc2" name="Arlatax Power Claw Inbuilt Cannon" publicationId="cf03-f607-pubN80487" page="274" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Assault 3</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="9fa8-2486-a5ad-e522" name="Atomantic Shielding" hidden="false" targetId="6eb5b812-8b8b-9e7c-279e-c9e9c93fefe9" type="profile"/>
-        <infoLink id="b27a-69c0-ae9d-77e8" hidden="false" targetId="2c169963-d356-aa63-60bd-eee2ee1afcc0" type="profile"/>
         <infoLink id="7ba1-5765-e358-4868" name="Cybernetica Cortex" hidden="false" targetId="f6c9-cdb7-c695-5b6b" type="rule"/>
         <infoLink id="fa2e-d78f-3ce6-e409" hidden="false" targetId="d5cf-bd98-2854-13cf" type="rule"/>
         <infoLink id="ba61-4523-1845-8215" name="New InfoLink" hidden="false" targetId="85da-2f19-3756-44de" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="9268-6e04-9f15-9a32" name="New CategoryLink" hidden="false" targetId="7fdd-2a97-d0e9-6524" primary="false"/>
         <categoryLink id="6e40-5da5-bb74-c2b3" name="New CategoryLink" hidden="false" targetId="8ec4-17b5-7fea-c682" primary="false"/>
         <categoryLink id="d115-15ed-f2d3-34bc" name="New CategoryLink" hidden="false" targetId="78ea-eea8-0ac5-b7de" primary="false"/>
+        <categoryLink id="e1b4-f1a3-f823-70e0" name="Cybernetica Cortex" hidden="false" targetId="7fdd-2a97-d0e9-6524" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="c4ff-8b86-a4c4-ad96" name="Automantic Shielding" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4130-9418-cd56-eccd" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bfe4-597b-6752-5116" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="c147-d5f9-3300-2cfa" hidden="false" targetId="6eb5b812-8b8b-9e7c-279e-c9e9c93fefe9" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4480-8194-b757-f83a" name="Plasma Blaster" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="335a-fd33-2b6f-a928" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8155-3a6d-4dfa-f78e" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="516b-3599-158b-fde7" hidden="false" targetId="2c169963-d356-aa63-60bd-eee2ee1afcc0" type="profile"/>
+            <infoLink id="847e-2611-c8c5-5628" name="Gets Hot" hidden="false" targetId="f4fd-d519-4769-5510" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="0e70-6b1b-6528-5cb7" name="May replace one of its Power Claws with:" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="7606-fd5e-dc3f-998f" name="New EntryLink" hidden="false" collective="false" import="true" targetId="07c9-6c73-c97f-cb10" type="selectionEntry"/>
-          </entryLinks>
+        <selectionEntryGroup id="f635-8294-e9fd-f269" name="May replace one of its Power Claws with:" hidden="false" collective="false" import="true" defaultSelectionEntryId="f417-d8e1-4904-7bee">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83d6-088f-030b-f5ff" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f871-3606-59ed-8529" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="61d9-29ff-6254-0d13" name="Arc Scourge" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3f3f-c088-a526-f59e" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="e6ac-7302-9a98-fe1c" name="Arc Scourge" publicationId="cf03-f607-pubN80487" page="274" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">User</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Rampage, Armourbane, Concussive</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f417-d8e1-4904-7bee" name="Arlatax Power Claw With Inbuilt Cannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2029-79ee-6806-57fb" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="635a-2106-8c48-c295" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="199d-d861-0d5c-f68c" name="Arlatax Power Claw" publicationId="cf03-f607-pubN80487" page="274" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+2</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Shred</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="e1d8-2042-2389-7ec7" name="Inbuilt Cannon" publicationId="cf03-f607-pubN80487" page="274" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Assault 3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -4417,6 +4483,13 @@ Buildings and Fortifications D</description>
           </constraints>
           <profiles>
             <profile id="dff2-ef91-c9fb-bcb3" name="Vultarax Stratos-automata" publicationId="cf03-f607-pubN76270" page="46" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <modifiers>
+                <modifier type="increment" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d266-0416-a5a6-881e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Flying Monstrous Creature</characteristic>
                 <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
@@ -6298,6 +6371,9 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
       </costs>
     </selectionEntry>
     <selectionEntry id="eaf8-70d7-0806-b22e" name="Arlatax Class Battle-automata Maniple" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="2310-7ce0-6011-5dcc" name="Cybernetica Cortex" hidden="false" targetId="7fdd-2a97-d0e9-6524" primary="false"/>
+      </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="9d1b-8ca5-c405-616a" name="A single Maniple take:" hidden="false" collective="false" import="true">
           <entryLinks>
@@ -7642,7 +7718,7 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
     </selectionEntry>
     <selectionEntry id="93b9-6dc9-3d02-db32" name="Thanatar-Calix Class Siege-Automata" hidden="false" collective="false" import="true" type="unit">
       <profiles>
-        <profile id="ca31-e06c-7410-8919" name="Thanatar" publicationId="cf03-f607-pubN76270" page="51" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="ca31-e06c-7410-8919" name="Thanatar-Calix Class Siege-Automata" publicationId="cf03-f607-pubN76270" page="52" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <modifiers>
             <modifier type="increment" field="4923232344415441232323" value="1">
               <conditions>
@@ -7663,49 +7739,105 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
             <characteristic name="Save" typeId="5361766523232344415441232323">2+</characteristic>
           </characteristics>
         </profile>
-        <profile id="4163-4746-81ad-b125" name="Sollex Pattern Heavy Lascannon" publicationId="cf03-f607-pubN80965" page="225" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">60&quot;</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">10</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="ee9a-b74e-8569-b115" name="Graviton Ram (Assault)" publicationId="cf03-f607-pubN80965" page="225" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">10</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">1</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Armourbane, Concussive, Structural Collapse</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="1080-c04c-5cb1-c118" name="Graviton Ram (Shooting)" publicationId="cf03-f607-pubN80965" page="225" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">Template</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">*</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Concussive, Graviton Wave*, Haywire</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
-      <rules>
-        <rule id="a5a5-b106-38d1-e349" name="Structural Collapse" publicationId="cf03-f607-pubN80965" page="225" hidden="false">
-          <description>When attacking a building or fortification, this weapon uses the Destroyer Damage
-                        table.</description>
-        </rule>
-      </rules>
       <infoLinks>
-        <infoLink id="9b7c-abce-7bf4-d3c1" hidden="false" targetId="6eb5b812-8b8b-9e7c-279e-c9e9c93fefe9" type="profile"/>
-        <infoLink id="0f38-0e9d-e59e-cfc5" hidden="false" targetId="d94ec38f-20c8-84b8-79e6-6aba811aae26" type="profile"/>
         <infoLink id="c47f-3e59-55fa-307f" hidden="false" targetId="f6c9-cdb7-c695-5b6b" type="rule"/>
         <infoLink id="c526-5c53-5723-88a7" hidden="false" targetId="797e55b1-251e-6606-9cb3-64661b0b18a3" type="rule"/>
-        <infoLink id="2639-fbcf-832f-da39" hidden="false" targetId="2d57-8425-0ec0-a9cf" type="rule"/>
         <infoLink id="7a8c-43b5-5093-5c1c" hidden="false" targetId="d5cf-bd98-2854-13cf" type="rule"/>
-        <infoLink id="27a0-7a64-cbd7-55e2" hidden="false" targetId="0225-fc80-29f1-09db" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="57e5-70a0-f35a-349f" name="New CategoryLink" hidden="false" targetId="7fdd-2a97-d0e9-6524" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="42b7-fe6e-988c-3f8a" name="Automantic Shielding" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7ea7-8e70-c38a-586f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a9cb-4107-6cf1-c8c0" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="c6c1-316e-c233-411c" hidden="false" targetId="6eb5b812-8b8b-9e7c-279e-c9e9c93fefe9" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ac99-d504-e72a-1b17" name="Infravisor" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="578c-4ef8-7551-6472" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e278-5a9c-65ff-8e1f" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="921f-189d-93be-5523" hidden="false" targetId="d94ec38f-20c8-84b8-79e6-6aba811aae26" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a2d4-b6a9-bce9-693a" name="Mauler pattern bolt cannon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9706-e4f5-f700-1779" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1be3-4ef7-baa5-edaa" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="9e7d-dd62-8c2e-309e" name="New InfoLink" hidden="false" targetId="0225-fc80-29f1-09db" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="eac1-c4b7-f877-dbee" name="Sollex Pattern Heavy Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="00e2-085b-65e9-a339" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5821-3f9d-8cc9-863a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9348-3e6d-616e-2722" name="Sollex Pattern Heavy Lascannon" publicationId="cf03-f607-pubN80965" page="225" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">60&quot;</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">10</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="7ce7-0f51-08e6-b8fe" name="Graviton Ram" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f7a0-850d-b8f8-392a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="edb1-3087-1c34-351c" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="5dfa-b8e7-b178-785d" name="Graviton Ram (Assault)" publicationId="cf03-f607-pubN80965" page="225" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">10</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">1</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Armourbane, Concussive, Structural Collapse</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="ff56-495e-b668-8df9" name="Graviton Ram (Shooting)" publicationId="cf03-f607-pubN80965" page="225" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">Template</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">*</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Concussive, Graviton Wave*, Haywire</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="2575-7182-ed6e-f1bb" name="Structural Collapse" publicationId="cf03-f607-pubN80965" page="225" hidden="false">
+              <description>When attacking a building or fortification, this weapon uses the Destroyer Damage table.</description>
+            </rule>
+            <rule id="6dc2-c6d9-3a0e-48a9" name="Graviton Wave" publicationId="cf03-f607-pubN76780" page="53" hidden="false">
+              <description>Instead of rolling To Wound with this weapon, any non-vehicle model caught in its effect must instead roll equal to or under their Strength on a D6 or suffer a wound (a roll of ‘6’ always counts as a failure). In addition, any unit which suffers a Morale check as a result of casualties taken from this attack is subject to a -2 Ld modifier. </description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="4681-9f65-85ff-ee2d" name="Haywire" hidden="false" targetId="6970-1bf3-b33e-5dce" type="rule"/>
+            <infoLink id="e0f1-3126-ee62-1900" name="Concussive" hidden="false" targetId="9d85-46f7-f5e6-a5f7" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="d8c8-128b-ef83-219d" name="The Siege-automata may be given any of the following:" hidden="false" collective="false" import="true">
           <selectionEntries>
@@ -7745,24 +7877,10 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
       </costs>
     </selectionEntry>
     <selectionEntry id="c888-532b-f933-ce1d" name="Thanatar-Cynis Class Siege-Automata Maniple" publicationId="cf03-f607-pubN76780" page="54" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="eb31-58bc-0c7a-67dd" name="Cynis Pattern Plasma Injector" publicationId="cf03-f607-pubN80965" page="226" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">18&quot;</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 2, Blast, Plasma Wave, Gets Hot</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
-        <infoLink id="83f9-7dc1-bc75-4856" hidden="false" targetId="6eb5b812-8b8b-9e7c-279e-c9e9c93fefe9" type="profile"/>
-        <infoLink id="896f-43cb-3716-a574" hidden="false" targetId="d94ec38f-20c8-84b8-79e6-6aba811aae26" type="profile"/>
         <infoLink id="d194-e400-90d7-2889" hidden="false" targetId="f6c9-cdb7-c695-5b6b" type="rule"/>
         <infoLink id="46a9-6200-ac2b-d99c" hidden="false" targetId="797e55b1-251e-6606-9cb3-64661b0b18a3" type="rule"/>
-        <infoLink id="35a6-08bc-2747-c896" hidden="false" targetId="0225-fc80-29f1-09db" type="profile"/>
         <infoLink id="6972-ab5f-1d7d-e476" hidden="false" targetId="d5cf-bd98-2854-13cf" type="rule"/>
-        <infoLink id="9a28-cf6c-3104-15b0" name="New InfoLink" hidden="false" targetId="78af-b5dc-76fa-8d9d" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c2a5-28d9-3312-0a87" name="New CategoryLink" hidden="false" targetId="7fdd-2a97-d0e9-6524" primary="false"/>
@@ -7796,6 +7914,64 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
               </characteristics>
             </profile>
           </profiles>
+          <selectionEntries>
+            <selectionEntry id="6a4b-45b6-033c-0dd7" name="Automantic Shielding" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b68d-4a1c-3ed7-05ac" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="98a2-0ce0-c7c9-bbac" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="5d06-f078-bc80-7892" hidden="false" targetId="6eb5b812-8b8b-9e7c-279e-c9e9c93fefe9" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6dc1-5699-1be0-12f5" name="Infravisor" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="406c-32d5-b54c-3e48" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e7c-93ed-9823-53b9" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="5bdb-255f-ef13-80d5" hidden="false" targetId="d94ec38f-20c8-84b8-79e6-6aba811aae26" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ef9e-0fba-ba79-c814" name="Mauler pattern bolt cannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d0a8-e063-18a9-cef2" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f235-426c-c375-17a8" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="a55e-2699-6c3b-f0cb" name="New InfoLink" hidden="false" targetId="0225-fc80-29f1-09db" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0257-6a83-7b1f-46a6" name="Cynis Pattern Plasma Injector" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f501-6467-ec96-2d9e" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0366-8f8c-f68b-80ac" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="b94c-5adf-ff38-37fd" name="Cynis Pattern Plasma Injector" publicationId="cf03-f607-pubN80965" page="226" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">18&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 2, Blast, Plasma Wave, Gets Hot</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="f835-b577-c875-f273" name="New InfoLink" hidden="false" targetId="78af-b5dc-76fa-8d9d" type="rule"/>
+                <infoLink id="7577-da36-8b6b-7684" name="Gets Hot" hidden="false" targetId="f4fd-d519-4769-5510" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="275.0"/>
           </costs>
@@ -7867,7 +8043,7 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="31cf-e84d-11d3-22fd" type="max"/>
       </constraints>
       <profiles>
-        <profile id="3a6d-c2a2-4a35-88e9" name="Arlatax" publicationId="cf03-f607-pubN80487" page="274" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+        <profile id="3a6d-c2a2-4a35-88e9" name="Homonculex" publicationId="cf03-f607-pubN80487" page="274" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <modifiers>
             <modifier type="increment" field="4923232344415441232323" value="1">
               <conditions>
@@ -7883,31 +8059,18 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
             <characteristic name="T" typeId="5423232344415441232323">6</characteristic>
             <characteristic name="W" typeId="5723232344415441232323">4</characteristic>
             <characteristic name="I" typeId="4923232344415441232323">4</characteristic>
-            <characteristic name="A" typeId="4123232344415441232323">3</characteristic>
+            <characteristic name="A" typeId="4123232344415441232323">3*</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
             <characteristic name="Save" typeId="5361766523232344415441232323">3+</characteristic>
           </characteristics>
         </profile>
-        <profile id="8f29-0543-426a-221b" name="Arlatax Power Claw" publicationId="cf03-f607-pubN80487" page="274" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+2</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Shred</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="b899-5245-ffac-45ea" name="Inbuilt Cannon" publicationId="cf03-f607-pubN80487" page="274" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Assault 3</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
+      <rules>
+        <rule id="2b48-7a51-afac-c9b4" name="* Homonculex" hidden="false">
+          <description>Bonus attack for 2 weapons included in profile</description>
+        </rule>
+      </rules>
       <infoLinks>
-        <infoLink id="5947-b232-8d44-de14" hidden="false" targetId="6eb5b812-8b8b-9e7c-279e-c9e9c93fefe9" type="profile"/>
-        <infoLink id="cbd9-2afb-503f-065d" hidden="false" targetId="2c169963-d356-aa63-60bd-eee2ee1afcc0" type="profile"/>
         <infoLink id="139d-9108-5bf2-96c3" hidden="false" targetId="f6c9-cdb7-c695-5b6b" type="rule"/>
         <infoLink id="1555-2403-b4c2-7779" hidden="false" targetId="d5cf-bd98-2854-13cf" type="rule"/>
         <infoLink id="7126-1103-d1ef-7304" hidden="false" targetId="75aa984a-2f47-df95-bf4d-275da175d220" type="rule"/>
@@ -7918,8 +8081,36 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
         <categoryLink id="02c8-6cbe-00e5-fce6" hidden="false" targetId="466173742041747461636b23232344415441232323" primary="true"/>
         <categoryLink id="1449-68ac-de22-3305" name="New CategoryLink" hidden="false" targetId="7fdd-2a97-d0e9-6524" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="59eb-2bde-5f62-2350" name="Automantic Shielding" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5722-bd86-f3d6-f7b6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ab43-6308-ad87-38ce" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="79d1-2df9-66ce-ff99" hidden="false" targetId="6eb5b812-8b8b-9e7c-279e-c9e9c93fefe9" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9e0b-ccb9-e49d-4383" name="Plasma Blaster" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e16-2b4b-bb99-b36f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84fc-1244-999a-7a60" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="e324-7a48-092a-d6be" hidden="false" targetId="2c169963-d356-aa63-60bd-eee2ee1afcc0" type="profile"/>
+            <infoLink id="6b7d-bf18-5d79-4623" name="Gets Hot" hidden="false" targetId="f4fd-d519-4769-5510" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="08a7-aba0-5e0e-709b" name="May replace one of its Power Claws with:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="08a7-aba0-5e0e-709b" name="May replace one of its Power Claws with:" hidden="false" collective="false" import="true" defaultSelectionEntryId="5ce6-52fe-f0b0-fd72">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da1d-fe95-5cb0-6a14" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2798-2ba0-1c88-8498" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="f746-9fbc-b60c-2f23" name="Arc Scourge" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -7938,6 +8129,30 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
+            </selectionEntry>
+            <selectionEntry id="5ce6-52fe-f0b0-fd72" name="Arlatax Power Claw With Inbuilt Cannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b174-164b-23b2-d317" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="556d-884d-fd3d-3f99" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="34dc-4482-9dd8-355a" name="Arlatax Power Claw" publicationId="cf03-f607-pubN80487" page="274" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+2</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Shred</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="4f4d-822c-cbee-eca5" name="Inbuilt Cannon" publicationId="cf03-f607-pubN80487" page="274" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Assault 3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
