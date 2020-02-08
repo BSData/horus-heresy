@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="90" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="91" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="cf03-f607-pubN65537" name="Horus Heresy: Taghmata Army List"/>
     <publication id="cf03-f607-pubN65563" name="AoDRB"/>
@@ -45,6 +45,7 @@
     <publication id="cf03-f607-pubN145694" name="HH7"/>
     <publication id="cf03-f607-pubN146636" name="Imperial Armour Vol 1, 2nd Editio"/>
     <publication id="ece2-a265-6237-7efa" name="HH Mechanicum Knight Moirax Talon Download"/>
+    <publication id="2369-0496-8060-eda3" name="Imperial Armour Apocalypse 2013"/>
   </publications>
   <categoryEntries>
     <categoryEntry id="ce39-b313-7b57-ee8e" name="Artillery" publicationId="cf03-f607-pubN65563" page="65" hidden="false">
@@ -935,18 +936,18 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
     <entryLink id="a6da-fabe-6b98-c46e" name="Secutarii Peltast Phalanx" hidden="false" collective="false" import="true" targetId="8190-e779-2c49-c564" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="greaterThan"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
-        <modifier type="set" field="8ca6-c4ee-0f61-effa" value="-1">
+        <modifier type="set" field="8ca6-c4ee-0f61-effa" value="-1.0">
           <conditions>
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -957,18 +958,18 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
     <entryLink id="4fe0-ed8d-a28a-d78d" name="Secutarii Hoplite Phalanx" hidden="false" collective="false" import="true" targetId="4ff6-b526-4208-0d33" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="greaterThan"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
-        <modifier type="set" field="6fb1-d527-17a7-2ba0" value="-1">
+        <modifier type="set" field="6fb1-d527-17a7-2ba0" value="-1.0">
           <conditions>
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1038,9 +1039,14 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
           </conditions>
         </modifier>
         <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="greaterThan"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -1417,18 +1423,18 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
     <entryLink id="92bf-c517-a343-1e64" name="Secutarii Hoplite Phalanx" hidden="true" collective="false" import="true" targetId="4ff6-b526-4208-0d33" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="greaterThan"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="set" field="6fb1-d527-17a7-2ba0" value="-1">
           <conditions>
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="greaterThan"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1445,14 +1451,14 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
           </conditions>
         </modifier>
         <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="greaterThan"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="greaterThan"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -1462,15 +1468,20 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
     </entryLink>
     <entryLink id="a4c3-b327-2fbf-5621" name="Secutarii Axiarch" hidden="true" collective="false" import="true" targetId="bd94-0269-4234-4a81" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="f855-004d-6a48-f343" value="-1.0">
           <conditions>
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="greaterThan"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="f855-004d-6a48-f343" value="-1">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="greaterThan"/>
-          </conditions>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -1640,7 +1651,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
           <profiles>
             <profile id="1d9f-74bd-40b6-8d34" name="Thanatar Class Siege-automata" publicationId="cf03-f607-pubN76270" page="51" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
               <modifiers>
-                <modifier type="increment" field="4923232344415441232323" value="1">
+                <modifier type="set" field="4923232344415441232323" value="3*">
                   <conditions>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d266-0416-a5a6-881e" type="equalTo"/>
                   </conditions>
@@ -1802,7 +1813,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
           <profiles>
             <profile id="659d-11d2-faad-4259" name="Castellax" publicationId="cf03-f607-pubN76270" page="41" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
               <modifiers>
-                <modifier type="increment" field="4923232344415441232323" value="1">
+                <modifier type="set" field="4923232344415441232323" value="4*">
                   <conditions>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d266-0416-a5a6-881e" type="equalTo"/>
                   </conditions>
@@ -1822,6 +1833,20 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
               </characteristics>
             </profile>
           </profiles>
+          <selectionEntries>
+            <selectionEntry id="0d5f-1c68-d2cc-52cf" name="Automantic Shielding" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="54c0-0759-0622-9d62" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5bc3-5606-70d8-cf5f" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="ff61-a84d-78e7-c4c0" hidden="false" targetId="6eb5b812-8b8b-9e7c-279e-c9e9c93fefe9" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="6564-7afd-3cef-078a" name="May exchange its Mauler bolt cannon for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="11ea-37df-c659-bc84">
               <constraints>
@@ -2056,7 +2081,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
           <profiles>
             <profile id="712d-49a5-7c53-fbc4" name="Vorax" publicationId="cf03-f607-pubN76270" page="46" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
               <modifiers>
-                <modifier type="increment" field="4923232344415441232323" value="1">
+                <modifier type="set" field="4923232344415441232323" value="5*">
                   <conditions>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d266-0416-a5a6-881e" type="equalTo"/>
                   </conditions>
@@ -2297,7 +2322,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
       <profiles>
         <profile id="6541-820d-ace7-de64" name="Arlatax" publicationId="cf03-f607-pubN80487" page="274" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <modifiers>
-            <modifier type="increment" field="4923232344415441232323" value="1">
+            <modifier type="set" field="4923232344415441232323" value="5*">
               <conditions>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d266-0416-a5a6-881e" type="equalTo"/>
               </conditions>
@@ -2349,6 +2374,9 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
             <infoLink id="516b-3599-158b-fde7" hidden="false" targetId="2c169963-d356-aa63-60bd-eee2ee1afcc0" type="profile"/>
             <infoLink id="847e-2611-c8c5-5628" name="Gets Hot" hidden="false" targetId="f4fd-d519-4769-5510" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -2399,6 +2427,9 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2652,7 +2683,8 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <rule id="a41a-3473-ef5f-7a99" name="Machinator Array" publicationId="cf03-f607-pubN82540" page="112" hidden="false">
           <description>A machinator array adds +1 to its user’s Toughness value and provides the Night Vision special rule. It also incorporates a flamer and an inferno pistol, and the user can either opt to fire both of these weapons in the Shooting phase, or one of them and another ranged weapon the model is carrying.
 A model with the Battlesmith special rule may add +2 to their Repair roll result if they are also equipped with a machinator array.
-A model equipped with a machinator array may make two additional attacks per turn in close combat as well as any they would normally be eligible to make. This is done using the profile shown below:</description>
+A model equipped with a machinator array may make two additional attacks per turn in close combat as well as any they would normally be eligible to make. This is done using the profile shown below:
+*Included in Battlescribe Profiles when taken</description>
         </rule>
       </rules>
       <infoLinks>
@@ -4484,7 +4516,7 @@ Buildings and Fortifications D</description>
           <profiles>
             <profile id="dff2-ef91-c9fb-bcb3" name="Vultarax Stratos-automata" publicationId="cf03-f607-pubN76270" page="46" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
               <modifiers>
-                <modifier type="increment" field="4923232344415441232323" value="1">
+                <modifier type="set" field="4923232344415441232323" value="4*">
                   <conditions>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d266-0416-a5a6-881e" type="equalTo"/>
                   </conditions>
@@ -4877,7 +4909,7 @@ Buildings and Fortifications D</description>
           <selectionEntries>
             <selectionEntry id="b706-2690-0d23-a459" name="Multi-laser" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
-                <infoLink id="4af4-18f5-946b-0625" name="Multi-laser" hidden="false" targetId="c812-a8fe-2b49-75a5" type="profile"/>
+                <infoLink id="4af4-18f5-946b-0625" name="Multi-laser" hidden="false" targetId="92be-1bfc-f355-f214" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
@@ -4893,7 +4925,7 @@ Buildings and Fortifications D</description>
             </selectionEntry>
             <selectionEntry id="f835-7925-5e93-fd6e" name="Twin-linked Multi-laser" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
-                <infoLink id="ca3a-db81-b97f-f9a4" name="Multi-laser" hidden="false" targetId="c812-a8fe-2b49-75a5" type="profile">
+                <infoLink id="ca3a-db81-b97f-f9a4" name="Multi-laser" hidden="false" targetId="92be-1bfc-f355-f214" type="profile">
                   <modifiers>
                     <modifier type="append" field="5479706523232344415441232323" value="Twin-Linked"/>
                   </modifiers>
@@ -5117,7 +5149,7 @@ Buildings and Fortifications D</description>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a54c-2bd9-f1a5-8519" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="162d-9285-11e0-9548" name="Multi-laser" hidden="false" targetId="c812-a8fe-2b49-75a5" type="profile">
+                <infoLink id="162d-9285-11e0-9548" name="Multi-laser" hidden="false" targetId="92be-1bfc-f355-f214" type="profile">
                   <modifiers>
                     <modifier type="append" field="5479706523232344415441232323" value="Twin-Linked"/>
                   </modifiers>
@@ -5337,7 +5369,8 @@ Buildings and Fortifications D</description>
     <selectionEntry id="d266-0416-a5a6-881e" name="Legio Cybernetica" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="63b4-5638-3ee9-3f50" name="Enhanced Cyber Control" publicationId="cf03-f607-pubN93687" page="74" hidden="false">
-          <description>When chosen as a part of a Legio Cybernetica Battle Cohort detachment, all models with a Cybernetica Cortex gain +1 to their Initiative characteristic.</description>
+          <description>When chosen as a part of a Legio Cybernetica Battle Cohort detachment, all models with a Cybernetica Cortex gain +1 to their Initiative characteristic.
+*Iincluded in profiles on Battlescribe</description>
         </rule>
         <rule id="f400-2aae-e7a1-8dd1" name="Rule of the Dominus" publicationId="cf03-f607-pubN93687" page="74" hidden="false">
           <description>If chosen as a Primary Detachment, then if no models with the Cortex Controller wargear survive from the detachment in play at the end of the game, the opposing side gains +D3 additional Victory Points in missions where this is relevant.</description>
@@ -5486,7 +5519,7 @@ Buildings and Fortifications D</description>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="73f2-bae4-8f9e-bcb9" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="271a-4c38-f990-c118" hidden="false" targetId="c812-a8fe-2b49-75a5" type="profile"/>
+                <infoLink id="271a-4c38-f990-c118" name="Multi-laser" hidden="false" targetId="92be-1bfc-f355-f214" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="5.0"/>
@@ -5804,7 +5837,8 @@ Buildings and Fortifications D</description>
       </constraints>
       <rules>
         <rule id="59e8-556e-c520-2259" name="Mech-assassin" publicationId="cf03-f607-pubN76979" page="215" hidden="false">
-          <description>WS and Attacks are increased by +1</description>
+          <description>WS and Attacks are increased by +1
+*Included in profiles on Battlescribe</description>
         </rule>
         <rule id="a682-30d3-5a50-65cb" name="Preferred Enemy (Characters)" page="0" hidden="false"/>
       </rules>
@@ -5877,14 +5911,14 @@ Buildings and Fortifications D</description>
       <profiles>
         <profile id="0a16-d44e-d1c5-294f" name="Anacharis Scoria" publicationId="cf03-f607-pubN80487" page="272" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <modifiers>
-            <modifier type="set" field="5723232344415441232323" value="5">
+            <modifier type="set" field="5723232344415441232323" value="5*">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7036-e2e2-8907-a43e" type="greaterThan"/>
+                <condition field="selections" scope="83ef-4568-5093-61d5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7036-e2e2-8907-a43e" type="equalTo"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="4123232344415441232323" value="4">
+            <modifier type="set" field="4123232344415441232323" value="4*">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7036-e2e2-8907-a43e" type="equalTo"/>
+                <condition field="selections" scope="83ef-4568-5093-61d5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7036-e2e2-8907-a43e" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5893,7 +5927,7 @@ Buildings and Fortifications D</description>
             <characteristic name="WS" typeId="575323232344415441232323">5</characteristic>
             <characteristic name="BS" typeId="425323232344415441232323">5</characteristic>
             <characteristic name="S" typeId="5323232344415441232323">5</characteristic>
-            <characteristic name="T" typeId="5423232344415441232323">5</characteristic>
+            <characteristic name="T" typeId="5423232344415441232323">6*</characteristic>
             <characteristic name="W" typeId="5723232344415441232323">4</characteristic>
             <characteristic name="I" typeId="4923232344415441232323">5</characteristic>
             <characteristic name="A" typeId="4123232344415441232323">3</characteristic>
@@ -5967,7 +6001,8 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
               <profiles>
                 <profile id="b4c8-e5ff-4fe8-1de3" name="Xanathite Abeyant" publicationId="cf03-f607-pubN80487" page="273" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
                   <characteristics>
-                    <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Confers +1 Wound, +1 Attack, Move Through Cover, Very Bulky, Hardened Armour, It Will Not Die, and a Photon Thruster which can be fired in addition to his usual shooting attacks.  </characteristic>
+                    <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Confers +1 Wound, +1 Attack, Move Through Cover, Very Bulky, Hardened Armour, It Will Not Die, and a Photon Thruster which can be fired in addition to his usual shooting attacks.
+*Included in Battlescribe profile if taken</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5985,6 +6020,16 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="1a88-b612-b46f-0ad5" name="Machinator Array" hidden="false" collective="false" import="true" targetId="9d9f-63d3-f635-7fd5" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="points" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9c3-346c-8026-1baf" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="275.0"/>
       </costs>
@@ -6116,6 +6161,11 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
             <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Instant Death, Prisoned</characteristic>
           </characteristics>
         </profile>
+        <profile id="19f5-f425-8098-26d3" name="Lorica Thallax (Ursarax)" publicationId="cf03-f607-pubN123006" page="240" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Provides 4+ Armour and FNP 5+ but may not make Sweeping Advances</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <rules>
         <rule id="4c49-0057-b261-0b66" name="Prisoned" publicationId="cf03-f607-pubN76979" page="225" hidden="false">
@@ -6123,7 +6173,6 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="6597-4778-af85-276b" hidden="false" targetId="405d3ced-c3a6-9f99-2018-9ab90162b6b1" type="profile"/>
         <infoLink id="ddf9-f1a0-2338-56ad" name="New InfoLink" hidden="false" targetId="38d5-b6eb-bda8-2497" type="rule"/>
         <infoLink id="a338-e667-e28c-222a" name="New InfoLink" hidden="false" targetId="9bdd-5ec7-8dd6-63c0" type="rule"/>
         <infoLink id="c9b4-d21b-e862-cae0" name="New InfoLink" hidden="false" targetId="7be5-30af-1a02-0a89" type="rule"/>
@@ -6141,10 +6190,26 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="80b7-5204-19ac-9fbe" name="May exchange Lightning Claws for:" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="increment" field="a61f-706f-fe77-5fac" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="2f28-034a-ca2c-5b9e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4957-7ef8-5245-25b3" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="d5c5-d9f3-94ba-102f" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="2f28-034a-ca2c-5b9e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4957-7ef8-5245-25b3" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5c5-d9f3-94ba-102f" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a61f-706f-fe77-5fac" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="5267-8b4e-938c-aabc" name="Power Fist" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="increment" field="6d2f-7ad8-dffd-ef59" value="1">
+                <modifier type="increment" field="6d2f-7ad8-dffd-ef59" value="1.0">
                   <repeats>
                     <repeat field="selections" scope="2f28-034a-ca2c-5b9e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4957-7ef8-5245-25b3" repeats="1" roundUp="false"/>
                   </repeats>
@@ -6160,6 +6225,24 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="6d45-350f-7bfa-5e49" name="Lightning Claws" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="d0b3-0615-51c8-f4e4" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="2f28-034a-ca2c-5b9e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4957-7ef8-5245-25b3" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d0b3-0615-51c8-f4e4" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="883a-1c0d-4b5a-e86a" name="Lightning Claw" hidden="false" targetId="3cec-4483-3f2e-fbc2" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -6170,6 +6253,7 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
     <selectionEntry id="8352-9d62-82af-9642" name="Legio" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="a31c-5898-b718-da0c" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d840-836e-ac79-65a6" type="min"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="a702-5a7f-6560-9221" name="New CategoryLink" hidden="false" targetId="5297-7e0f-fa0b-3537" primary="true"/>
@@ -6403,7 +6487,7 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
           <profiles>
             <profile id="bfb5-ae03-0ddd-18d3" name="Domitar Class Battle-automata" publicationId="cf03-f607-pubN80965" page="227" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
               <modifiers>
-                <modifier type="increment" field="4923232344415441232323" value="1">
+                <modifier type="set" field="4923232344415441232323" value="4*">
                   <conditions>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d266-0416-a5a6-881e" type="equalTo"/>
                   </conditions>
@@ -7429,15 +7513,15 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
       <profiles>
         <profile id="51d0-31e2-8fa6-8581" name="Archmagos Dominus" publicationId="cf03-f607-pubN76780" page="75" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <modifiers>
-            <modifier type="increment" field="5723232344415441232323" value="1">
-              <repeats>
-                <repeat field="selections" scope="e35b-b300-7fb2-e063" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df18-c724-2a3d-a6e5" repeats="1" roundUp="false"/>
-              </repeats>
+            <modifier type="set" field="5723232344415441232323" value="4*">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df18-c724-2a3d-a6e5" type="equalTo"/>
+              </conditions>
             </modifier>
-            <modifier type="increment" field="5423232344415441232323" value="1">
-              <repeats>
-                <repeat field="selections" scope="e35b-b300-7fb2-e063" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b12a-8c7a-29c8-6b85" repeats="1" roundUp="false"/>
-              </repeats>
+            <modifier type="set" field="5423232344415441232323" value="6*">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d9f-63d3-f635-7fd5" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
           <characteristics>
@@ -7492,6 +7576,9 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7ec3-da59-1d69-df29" type="max"/>
           </constraints>
+          <entryLinks>
+            <entryLink id="df8f-ae1d-9c6b-21df" name="Power Weapon" hidden="false" collective="false" import="true" targetId="9d3d-aef5-6635-b0c6" type="selectionEntryGroup"/>
+          </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -7604,6 +7691,10 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0864-d7ea-3a5a-8d93" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="31db-bbe0-adef-d4dd" name="Plasma Pistol" hidden="false" targetId="f9fd-36be-dc19-401f" type="profile"/>
+                <infoLink id="0d1f-2c8f-7ec7-f8bc" name="Gets Hot" hidden="false" targetId="f4fd-d519-4769-5510" type="rule"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
@@ -7644,6 +7735,10 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6dfd-351d-dc1e-334c" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="8602-560d-15af-1d53" name="Meltagun" hidden="false" targetId="8ae4-74e5-7700-3804" type="profile"/>
+                <infoLink id="3a3a-6669-8883-a23c" name="Melta" hidden="false" targetId="21c0-62ff-3ed2-17a7" type="rule"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
@@ -7666,6 +7761,7 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
               </constraints>
               <infoLinks>
                 <infoLink id="f349-e824-32bc-2aee" hidden="false" targetId="43648289-5a0f-99d3-1cfc-55b689750afa" type="profile"/>
+                <infoLink id="6a6c-8fb2-a772-3c5b" name="Gets Hot" hidden="false" targetId="f4fd-d519-4769-5510" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="30.0"/>
@@ -7720,7 +7816,7 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
       <profiles>
         <profile id="ca31-e06c-7410-8919" name="Thanatar-Calix Class Siege-Automata" publicationId="cf03-f607-pubN76270" page="52" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <modifiers>
-            <modifier type="increment" field="4923232344415441232323" value="1">
+            <modifier type="set" field="4923232344415441232323" value="3*">
               <conditions>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d266-0416-a5a6-881e" type="equalTo"/>
               </conditions>
@@ -7800,6 +7896,9 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="7ce7-0f51-08e6-b8fe" name="Graviton Ram" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -7836,6 +7935,9 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
             <infoLink id="4681-9f65-85ff-ee2d" name="Haywire" hidden="false" targetId="6970-1bf3-b33e-5dce" type="rule"/>
             <infoLink id="e0f1-3126-ee62-1900" name="Concussive" hidden="false" targetId="9d85-46f7-f5e6-a5f7" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -7894,7 +7996,7 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
           <profiles>
             <profile id="1943-9446-88bf-f4ed" name="Thanatar-Cynis Class Siege-Automata" publicationId="cf03-f607-pubN76270" page="54" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
               <modifiers>
-                <modifier type="increment" field="4923232344415441232323" value="1">
+                <modifier type="set" field="4923232344415441232323" value="3*">
                   <conditions>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d266-0416-a5a6-881e" type="equalTo"/>
                   </conditions>
@@ -7970,6 +8072,9 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
                 <infoLink id="f835-b577-c875-f273" name="New InfoLink" hidden="false" targetId="78af-b5dc-76fa-8d9d" type="rule"/>
                 <infoLink id="7577-da36-8b6b-7684" name="Gets Hot" hidden="false" targetId="f4fd-d519-4769-5510" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <costs>
@@ -8045,7 +8150,7 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
       <profiles>
         <profile id="3a6d-c2a2-4a35-88e9" name="Homonculex" publicationId="cf03-f607-pubN80487" page="274" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <modifiers>
-            <modifier type="increment" field="4923232344415441232323" value="1">
+            <modifier type="set" field="4923232344415441232323" value="5*">
               <conditions>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d266-0416-a5a6-881e" type="equalTo"/>
               </conditions>
@@ -8103,6 +8208,9 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
             <infoLink id="e324-7a48-092a-d6be" hidden="false" targetId="2c169963-d356-aa63-60bd-eee2ee1afcc0" type="profile"/>
             <infoLink id="6b7d-bf18-5d79-4623" name="Gets Hot" hidden="false" targetId="f4fd-d519-4769-5510" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -8153,6 +8261,9 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -8168,12 +8279,19 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
       </constraints>
       <profiles>
         <profile id="271a-bd31-7c7b-dbff" name="Archmagos Draykavac" publicationId="cf03-f607-pubN99227" page="300" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <modifiers>
+            <modifier type="set" field="5723232344415441232323" value="4*">
+              <conditions>
+                <condition field="selections" scope="2ff2-0526-3cea-acb2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b64f-0f26-64a5-8298" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry (Character)</characteristic>
             <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
             <characteristic name="BS" typeId="425323232344415441232323">5</characteristic>
             <characteristic name="S" typeId="5323232344415441232323">4</characteristic>
-            <characteristic name="T" typeId="5423232344415441232323">6</characteristic>
+            <characteristic name="T" typeId="5423232344415441232323">6*</characteristic>
             <characteristic name="W" typeId="5723232344415441232323">3</characteristic>
             <characteristic name="I" typeId="4923232344415441232323">4</characteristic>
             <characteristic name="A" typeId="4123232344415441232323">2</characteristic>
@@ -8202,7 +8320,6 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="db0f-e9d8-6b2e-5b89" hidden="false" targetId="3ffc1f76-719b-bc95-a3c9-15614a8c94bc" type="profile"/>
         <infoLink id="4e97-83b5-18a8-fbb5" hidden="false" targetId="ec8086ee-40ef-30cb-d8ed-2138991ab56b" type="profile"/>
         <infoLink id="0418-9e63-463b-8b4e" name="Cortex Controller" hidden="false" targetId="e135-8b23-7190-9f2c" type="profile">
           <modifiers>
@@ -8251,6 +8368,14 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
       <entryLinks>
         <entryLink id="e9ff-c808-888a-3bd8" hidden="false" collective="false" import="true" targetId="df18-c724-2a3d-a6e5" type="selectionEntryGroup"/>
         <entryLink id="bf87-03a2-476e-4512" name="Archmagos" hidden="false" collective="false" import="true" targetId="00cf-20ab-1b17-aad1" type="selectionEntry"/>
+        <entryLink id="178e-d55f-b46f-db6d" name="Machinator Array" hidden="false" collective="false" import="true" targetId="9d9f-63d3-f635-7fd5" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="points" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2ac-5602-cd1e-0955" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="240.0"/>
@@ -8354,12 +8479,12 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
       <profiles>
         <profile id="594a-289b-a120-b0fe" name="Magos Dominus" publicationId="cf03-f607-pubN76979" page="218" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <modifiers>
-            <modifier type="increment" field="5423232344415441232323" value="1">
+            <modifier type="set" field="5423232344415441232323" value="5*">
               <conditions>
                 <condition field="selections" scope="f891-cee8-321e-f159" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd25-794a-04f3-54e0" type="equalTo"/>
               </conditions>
             </modifier>
-            <modifier type="increment" field="5723232344415441232323" value="1">
+            <modifier type="set" field="5723232344415441232323" value="3*">
               <conditions>
                 <condition field="selections" scope="f891-cee8-321e-f159" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab7e-c741-1e8e-0b4f" type="equalTo"/>
               </conditions>
@@ -8507,6 +8632,7 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
             <selectionEntry id="e121-c521-afa8-5c64" name="Plasma Pistol" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="da0f-57a1-6256-9a0a" name="Plasma Pistol" hidden="false" targetId="f4a1-b459-ba82-3789" type="profile"/>
+                <infoLink id="901a-8fcb-1b69-abaa" name="Gets Hot" hidden="false" targetId="f4fd-d519-4769-5510" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
@@ -8562,6 +8688,10 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e21c-8e84-f87f-c0c8" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="3217-f6f5-2de6-9397" name="Meltagun" hidden="false" targetId="8ae4-74e5-7700-3804" type="profile"/>
+                <infoLink id="4d9e-7a03-fa1b-8560" name="Melta" hidden="false" targetId="21c0-62ff-3ed2-17a7" type="rule"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="15.0"/>
               </costs>
@@ -8606,6 +8736,7 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
               </constraints>
               <infoLinks>
                 <infoLink id="1f4b-7df8-1957-c40b" hidden="false" targetId="43648289-5a0f-99d3-1cfc-55b689750afa" type="profile"/>
+                <infoLink id="6454-e329-02d8-3e64" name="Gets Hot" hidden="false" targetId="f4fd-d519-4769-5510" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="30.0"/>
@@ -8643,22 +8774,22 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
                 <condition field="selections" scope="aa74-77f4-7266-36b6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="076b-2276-b456-9d6f" type="greaterThan"/>
               </conditions>
             </modifier>
-            <modifier type="increment" field="5423232344415441232323" value="1">
+            <modifier type="set" field="5423232344415441232323" value="5*">
               <conditions>
                 <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0d7-ca99-c60d-789b" type="equalTo"/>
               </conditions>
             </modifier>
-            <modifier type="increment" field="5723232344415441232323" value="1">
+            <modifier type="set" field="5723232344415441232323" value="3*">
               <conditions>
                 <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ad6-9042-a001-972b" type="equalTo"/>
               </conditions>
             </modifier>
-            <modifier type="increment" field="575323232344415441232323" value="1">
+            <modifier type="set" field="575323232344415441232323" value="4*">
               <conditions>
                 <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c615-024f-f3f7-78e6" type="equalTo"/>
               </conditions>
             </modifier>
-            <modifier type="increment" field="4123232344415441232323" value="1">
+            <modifier type="set" field="4123232344415441232323" value="3*">
               <conditions>
                 <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c615-024f-f3f7-78e6" type="equalTo"/>
               </conditions>
@@ -8696,22 +8827,22 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
           <profiles>
             <profile id="fa6c-41f2-66df-2115" name="Archmagos Prime" publicationId="cf03-f607-pubN76979" page="214" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
               <modifiers>
-                <modifier type="increment" field="5423232344415441232323" value="1">
+                <modifier type="set" field="5423232344415441232323" value="6*">
                   <conditions>
                     <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0d7-ca99-c60d-789b" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" field="5723232344415441232323" value="1">
+                <modifier type="set" field="5723232344415441232323" value="4*">
                   <conditions>
                     <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ad6-9042-a001-972b" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" field="575323232344415441232323" value="1">
+                <modifier type="set" field="575323232344415441232323" value="5*">
                   <conditions>
                     <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c615-024f-f3f7-78e6" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" field="4123232344415441232323" value="1">
+                <modifier type="set" field="4123232344415441232323" value="3*">
                   <conditions>
                     <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c615-024f-f3f7-78e6" type="equalTo"/>
                   </conditions>
@@ -8902,6 +9033,10 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7da0-e4e8-1bf6-0dc2" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="8a8d-dc3d-5597-eb1d" name="Meltagun" hidden="false" targetId="8ae4-74e5-7700-3804" type="profile"/>
+                <infoLink id="0da1-6d72-dc3a-6194" name="Melta" hidden="false" targetId="21c0-62ff-3ed2-17a7" type="rule"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="15.0"/>
               </costs>
@@ -8957,6 +9092,7 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
               </constraints>
               <infoLinks>
                 <infoLink id="d4fa-6ced-5c23-b81e" name="Photon Thruster" hidden="false" targetId="43648289-5a0f-99d3-1cfc-55b689750afa" type="profile"/>
+                <infoLink id="49e8-952c-6e70-e7a6" name="Gets Hot" hidden="false" targetId="f4fd-d519-4769-5510" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="30.0"/>
@@ -9175,12 +9311,12 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
                 <condition field="selections" scope="04e8-11de-2eb4-67e0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8952-ed12-5b98-7de7" type="equalTo"/>
               </conditions>
             </modifier>
-            <modifier type="increment" field="5423232344415441232323" value="1">
+            <modifier type="set" field="5423232344415441232323" value="5*">
               <conditions>
                 <condition field="selections" scope="04e8-11de-2eb4-67e0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="919a-ac57-084f-a5c5" type="equalTo"/>
               </conditions>
             </modifier>
-            <modifier type="increment" field="5723232344415441232323" value="1">
+            <modifier type="set" field="5723232344415441232323" value="3*">
               <conditions>
                 <condition field="selections" scope="04e8-11de-2eb4-67e0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="85b6-d34f-8949-cb91" type="equalTo"/>
               </conditions>
@@ -9206,12 +9342,12 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
                 <condition field="selections" scope="04e8-11de-2eb4-67e0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8952-ed12-5b98-7de7" type="equalTo"/>
               </conditions>
             </modifier>
-            <modifier type="increment" field="5423232344415441232323" value="1">
+            <modifier type="set" field="5423232344415441232323" value="6*">
               <conditions>
                 <condition field="selections" scope="04e8-11de-2eb4-67e0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="919a-ac57-084f-a5c5" type="equalTo"/>
               </conditions>
             </modifier>
-            <modifier type="increment" field="5723232344415441232323" value="1">
+            <modifier type="set" field="5723232344415441232323" value="4*">
               <conditions>
                 <condition field="selections" scope="04e8-11de-2eb4-67e0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="85b6-d34f-8949-cb91" type="equalTo"/>
               </conditions>
@@ -9687,7 +9823,7 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
             <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
             <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
             <characteristic name="S" typeId="5323232344415441232323">5</characteristic>
-            <characteristic name="T" typeId="5423232344415441232323">5</characteristic>
+            <characteristic name="T" typeId="5423232344415441232323">5*</characteristic>
             <characteristic name="W" typeId="5723232344415441232323">3</characteristic>
             <characteristic name="I" typeId="4923232344415441232323">4</characteristic>
             <characteristic name="A" typeId="4123232344415441232323">2</characteristic>
@@ -9821,6 +9957,14 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
       <entryLinks>
         <entryLink id="fc9b-b619-b8cd-bf76" name="Cyber-familiar" hidden="false" collective="false" import="true" targetId="dd09a633-0c59-7ea7-d62e-e978aefb3cff" type="selectionEntry"/>
         <entryLink id="c692-95ee-a268-68e5" hidden="false" collective="false" import="true" targetId="0de5-5b51-907d-e5e2" type="selectionEntry"/>
+        <entryLink id="e253-f716-a506-e14e" name="Machinator Array" hidden="false" collective="false" import="true" targetId="9d9f-63d3-f635-7fd5" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="points" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="133c-a2bf-6bf4-dac2" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="175.0"/>
@@ -10838,6 +10982,7 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
         <entryLink id="e497-8836-3c5b-fdfb" name="Macharius" hidden="false" collective="false" import="true" targetId="48cf-f73d-a3c0-e911" type="selectionEntry"/>
         <entryLink id="d746-1e2e-8c7d-8bf3" name="Macharius Vulcan" publicationId="cf03-f607-pubN130172" page="230" hidden="false" collective="false" import="true" targetId="0be5-7f1a-2281-5671" type="selectionEntry"/>
         <entryLink id="356f-8bd2-3fd7-e983" name="Macharius Vanquisher" hidden="false" collective="false" import="true" targetId="07a7-a3a5-d46e-b873" type="selectionEntry"/>
+        <entryLink id="8f57-6e0a-3189-cb17" name="Macharius Omega" hidden="false" collective="false" import="true" targetId="fe5b-01ec-07b2-48ba" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -11815,9 +11960,9 @@ Assault rules unless otherwise noted.</description>
         <infoLink id="cd6e-3511-9e2c-2cc0" name="Vulcan Mega-bolter" hidden="false" targetId="0725d9e4-9558-7135-8059-379ac7a62e19" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="7fe6-c6cc-15d5-8c12" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
-        <categoryLink id="a13e-2dc1-e4e1-8079" name="New CategoryLink" hidden="false" targetId="8d56-b8fc-9b94-9cc9" primary="false"/>
-        <categoryLink id="8da7-3a1b-9877-1f82" name="New CategoryLink" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false"/>
+        <categoryLink id="f1d7-0989-fdc1-43ba" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
+        <categoryLink id="dab2-4f2d-cd75-754a" name="Super Heavy Tank" hidden="false" targetId="8d56-b8fc-9b94-9cc9" primary="false"/>
+        <categoryLink id="1411-ff78-d2f4-17c2" name="Vehicle" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="42d1-c0d7-c941-1875" name="Sponsons" hidden="false" collective="false" import="true" defaultSelectionEntryId="7c79-ce78-c993-284f">
@@ -12109,7 +12254,7 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a2d1-2d62-35fb-ba48" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="59d7-7fa2-1989-c144" hidden="false" targetId="c812-a8fe-2b49-75a5" type="profile"/>
+                <infoLink id="59d7-7fa2-1989-c144" name="Multi-laser" hidden="false" targetId="92be-1bfc-f355-f214" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="5.0"/>
@@ -12553,6 +12698,113 @@ Construct shields have an Armour value of 11. A Glancing or Penetrating hit (or 
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="150.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fe5b-01ec-07b2-48ba" name="Macharius Omega" publicationId="2369-0496-8060-eda3" page="35" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="2088-be7e-84ab-0097" name="Macharius Omega" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
+            <characteristic name="Front" typeId="46726f6e7423232344415441232323">14</characteristic>
+            <characteristic name="Side" typeId="5369646523232344415441232323">13</characteristic>
+            <characteristic name="Rear" typeId="5265617223232344415441232323">12</characteristic>
+            <characteristic name="HP" typeId="485023232344415441232323">6</characteristic>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Super-heavy Vehicle</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="217b-9534-dc28-0a7e" name="Vehicle" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false"/>
+        <categoryLink id="e677-1352-153a-e030" name="Super Heavy Tank" hidden="false" targetId="8d56-b8fc-9b94-9cc9" primary="false"/>
+        <categoryLink id="c16d-a6d7-aeef-555e" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="b8c4-869f-dcfa-bc6a" name="Omega Pattern Plasma Blastgun" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c3a8-ec97-b841-d955" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="91f7-3bde-fe7c-5279" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="925d-a089-b207-4755" name="Omega Pattern Plasma Blastgun (Maximal)" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">72&quot;</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 1, Massive Blast (7&quot;), Meltdown</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="199e-5fa3-75e5-8f7f" name="Omega Pattern Plasma Blastgun (Pulsed Bolts)" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">60&quot;</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 3, Large Blast</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="46e8-4758-f822-2b41" name="Meltdown" publicationId="2369-0496-8060-eda3" page="135" hidden="false">
+              <description>Roll 1D6 for each shot fired by the weapon with the meltdown rule. on the roll of a 1, the vehicle suffers D3 glancing hits. If the vehicle is permitted to reroll, only a subsequent result of a 1 will cause this damage.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="ad0f-0cbd-23b7-65dc" name="Primary Weapon" hidden="false" targetId="e64b-54b8-34df-2f13" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="cd90-33e8-9153-6fbb" name="May take any of the following:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1813-2081-24bd-3029" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="96a9-ad18-8c53-ee52" name="Hunter-killer Missile" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d4d5-cede-9480-b9b4" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="db54-45bc-097e-91c0" name="Sponson-mounted Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="554d-96ea-815e-bce1" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="7ae6-c5c4-9e3c-774a" name="2x Heavy Bolters" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="21d5-a47d-9869-b35d" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1c3c-a85b-910b-8730" name="2x Heavy Flamers" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b1b3-ebab-ea77-ae3e" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ab67-36ed-bc2a-3a74" name="2x Autocannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e3c0-5339-2f14-ce74" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="355.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

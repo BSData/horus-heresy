@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="113" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="114" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN66489" name="HH:MT"/>
@@ -418,7 +418,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="527e-483e-7b4a-4cc8" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="808f-3d7c-5e48-b696" name="Multi-laser" hidden="false" targetId="c812-a8fe-2b49-75a5" type="profile"/>
+                <infoLink id="808f-3d7c-5e48-b696" name="Multi-laser" hidden="false" targetId="92be-1bfc-f355-f214" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="20.0"/>
@@ -8357,16 +8357,11 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
     <rule id="6f38-4691-2eda-8e1b" name="Psy-Lash" publicationId="ca571888--pubN103311" page="301" hidden="false">
       <description>When attacking a unit with the Daemon, Psyker, Brotherhood of Psykers/Sorcerers, Psychic Pilot special rule then one randomlyed selected model in the unit with that special rule suffers Perils of the Warp in addition to any other damage.</description>
     </rule>
+    <rule id="7439f6fd-4c50-f88a-eb41-81d9b9c9eed8" name="Hardened Armour" publicationId="ca571888--pubN82424" page="32" hidden="false">
+      <description>Hardened Armour counts as being Void Hardened (Cold Void mission special rules from Betrayal)..  Failed armour saves against template and blast weapons may be re-rolled.  Reduces distance rolled for charges, sweeping advances, and run moves by 1&quot;</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
-    <profile id="c812-a8fe-2b49-75a5" name="Multi-laser" publicationId="ca571888--pubN84158" page="247" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
-        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
-        <characteristic name="AP" typeId="415023232344415441232323">6</characteristic>
-        <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 3</characteristic>
-      </characteristics>
-    </profile>
     <profile id="74effb54-87f7-8481-9e5f-86d9e3ed37c2" name="Battle Servitor Control" publicationId="ca571888--pubN67227" page="43" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Provides Tank Hunters special rule.  </characteristic>
@@ -9377,7 +9372,7 @@ Jetbikes can move over all other models and terrain freely. However, if a moving
     </profile>
     <profile id="92be-1bfc-f355-f214" name="Multi-laser" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="52616e676523232344415441232323">36</characteristic>
+        <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
         <characteristic name="AP" typeId="415023232344415441232323">6</characteristic>
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 3</characteristic>

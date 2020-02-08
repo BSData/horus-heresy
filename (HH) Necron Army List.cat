@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b50f-0671-3aea-cf90" name="Necron Army List (Fanmade)" revision="3" battleScribeVersion="2.03" authorName="Dono Author / Maye Gelt the Battlescribbler" authorContact="Dono (for Content) / Maye Gelt (for Battlescibbling)" authorUrl="http://www.facebook.com/AUS30K" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="108" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b50f-0671-3aea-cf90" name="Necron Army List (Fanmade)" revision="4" battleScribeVersion="2.03" authorName="Dono Author / Maye Gelt the Battlescribbler" authorContact="Dono (for Content) / Maye Gelt (for Battlescibbling)" authorUrl="http://www.facebook.com/AUS30K" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="108" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="6fc6-dd7c-7a39-b0c8" name="30K Necron Army List (Fanmade)"/>
   </publications>
@@ -59,6 +59,15 @@
                 <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e77c-6929-efc9-2983" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="decrement" field="d329-3658-29da-4d2a" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d48a-abe8-0b89-51fd" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="38b1-9536-4af6-f327" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="69bf-f8d0-0dea-3708" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b04e-14f3-f749-2279" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="086d-4581-2fd4-0c62" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d329-3658-29da-4d2a" type="min"/>
@@ -97,9 +106,9 @@
         </categoryLink>
         <categoryLink id="e184-7801-3112-33b1" name="Fast Attack" hidden="false" targetId="a673-7d7e-4e32-171a" primary="false">
           <modifiers>
-            <modifier type="increment" field="79f8-9afe-621b-9c87" value="3.0">
+            <modifier type="increment" field="79f8-9afe-621b-9c87" value="1.0">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab10-ea27-64d3-4246" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e77c-6929-efc9-2983" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -831,6 +840,15 @@
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e77c-6929-efc9-2983" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
+        <modifier type="decrement" field="a120-9494-6ad0-07b8" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="69bf-f8d0-0dea-3708" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="086d-4581-2fd4-0c62" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b04e-14f3-f749-2279" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="38b1-9536-4af6-f327" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d48a-abe8-0b89-51fd" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a120-9494-6ad0-07b8" type="min"/>
@@ -1106,22 +1124,20 @@
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ba8-8b9f-b6fb-161a" type="max"/>
       </constraints>
+      <rules>
+        <rule id="08d6-cc63-f773-1952" name="Royal Court" hidden="false">
+          <description>The members of the Conclave may be distributed and attached amongst the armies Dynastic Legion units, except for Tomb Blades, and the armies Lords, Nemesor and/or Overlord. In addition each Cryptek Lord may count as a Bronze Lord for the purposes of the Force Organisational Chart, but may not be Warlord.</description>
+        </rule>
+        <rule id="7c02-e184-03cb-00ba" name="Technomancer" hidden="false">
+          <description>If this model and the unit it is attached to is destroyed, the Technomancer may attempt its Reanimation Protocol first and, if successful, allows for the rest of the unit to also attempt its Reanimation Protocol.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="7c97-88a3-294d-1a0b" name="Reanimation Protocols" hidden="false" targetId="d0e0-b3d2-1273-9e33" type="rule"/>
+      </infoLinks>
       <selectionEntries>
         <selectionEntry id="e95a-f4cd-995e-9234" name="Cryptek" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="points" value="65.0">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1e28-5e09-e179-e876" type="equalTo"/>
-                    <condition field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e51-818f-a343-dcf2" type="equalTo"/>
-                    <condition field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b632-c2db-9a76-2997" type="equalTo"/>
-                    <condition field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="36ea-c1a8-11a0-b47f" type="equalTo"/>
-                    <condition field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="18a3-a2f0-a7e3-6fa1" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
             <modifier type="append" field="name" value="Harbinger of Despair">
               <conditions>
                 <condition field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1e28-5e09-e179-e876" type="equalTo"/>
@@ -1147,6 +1163,28 @@
                 <condition field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="18a3-a2f0-a7e3-6fa1" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="e736-669d-a5d1-f3f3" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="69bf-f8d0-0dea-3708" type="equalTo"/>
+                    <condition field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="38b1-9536-4af6-f327" type="equalTo"/>
+                    <condition field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b04e-14f3-f749-2279" type="equalTo"/>
+                    <condition field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="086d-4581-2fd4-0c62" type="equalTo"/>
+                    <condition field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d48a-abe8-0b89-51fd" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" field="c647-7ba7-b656-1c98" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="38b1-9536-4af6-f327" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="086d-4581-2fd4-0c62" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="69bf-f8d0-0dea-3708" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d48a-abe8-0b89-51fd" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b04e-14f3-f749-2279" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c647-7ba7-b656-1c98" type="max"/>
@@ -1168,14 +1206,6 @@
               </characteristics>
             </profile>
           </profiles>
-          <rules>
-            <rule id="48c8-9239-ffd8-ab5f" name="Royal Court" hidden="false">
-              <description>The members of the Conclave may be distributed and attached amongst the armies Dynastic Legion units, except for Tomb Blades. In addition they may be attached to the armies Lords, Nemesor and/or Overlord.</description>
-            </rule>
-            <rule id="3726-cda0-9e9a-426b" name="Technomancer" hidden="false">
-              <description>If this model and the unit it is attached to is destroyed, the Technomancer may attempt its Reanimation Protocol first and, if successful, allows for the rest of the unit to also attempt its Reanimation Protocol.</description>
-            </rule>
-          </rules>
           <infoLinks>
             <infoLink id="69bb-3844-8e78-7c67" name="Reanimation Protocols" hidden="false" targetId="d0e0-b3d2-1273-9e33" type="rule"/>
           </infoLinks>
@@ -1238,7 +1268,7 @@
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="e860-cffc-d3cd-a883" name="Disciples may take 1 of these if they have no Canoptek Khepri Drones &amp; have upgraded to their disciples weapon. (Only 1 of each per army)" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="e860-cffc-d3cd-a883" name="Disciples may take 1 of these &amp; have upgraded to their disciples weapon. (Only 1 of each per army)" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4473-b010-7ebb-4ada" type="max"/>
               </constraints>
@@ -1250,7 +1280,6 @@
                         <conditionGroup type="and">
                           <conditions>
                             <condition field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="36ea-c1a8-11a0-b47f" type="equalTo"/>
-                            <condition field="selections" scope="e95a-f4cd-995e-9234" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4774-127a-6f12-3b15" type="equalTo"/>
                             <condition field="selections" scope="e95a-f4cd-995e-9234" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd19-a0a1-d9b7-b21e" type="equalTo"/>
                           </conditions>
                         </conditionGroup>
@@ -1265,7 +1294,6 @@
                         <conditionGroup type="and">
                           <conditions>
                             <condition field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="36ea-c1a8-11a0-b47f" type="equalTo"/>
-                            <condition field="selections" scope="e95a-f4cd-995e-9234" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4774-127a-6f12-3b15" type="equalTo"/>
                             <condition field="selections" scope="e95a-f4cd-995e-9234" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd19-a0a1-d9b7-b21e" type="equalTo"/>
                           </conditions>
                         </conditionGroup>
@@ -1280,7 +1308,6 @@
                         <conditionGroup type="and">
                           <conditions>
                             <condition field="selections" scope="e95a-f4cd-995e-9234" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd1c-6375-b144-6f1d" type="equalTo"/>
-                            <condition field="selections" scope="e95a-f4cd-995e-9234" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4774-127a-6f12-3b15" type="equalTo"/>
                             <condition field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1e28-5e09-e179-e876" type="equalTo"/>
                           </conditions>
                         </conditionGroup>
@@ -1295,7 +1322,6 @@
                         <conditionGroup type="and">
                           <conditions>
                             <condition field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1e28-5e09-e179-e876" type="equalTo"/>
-                            <condition field="selections" scope="e95a-f4cd-995e-9234" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4774-127a-6f12-3b15" type="equalTo"/>
                             <condition field="selections" scope="e95a-f4cd-995e-9234" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd1c-6375-b144-6f1d" type="equalTo"/>
                           </conditions>
                         </conditionGroup>
@@ -1310,7 +1336,6 @@
                         <conditionGroup type="and">
                           <conditions>
                             <condition field="selections" scope="e95a-f4cd-995e-9234" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32c0-c740-8cc9-c98c" type="equalTo"/>
-                            <condition field="selections" scope="e95a-f4cd-995e-9234" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4774-127a-6f12-3b15" type="equalTo"/>
                             <condition field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="18a3-a2f0-a7e3-6fa1" type="equalTo"/>
                           </conditions>
                         </conditionGroup>
@@ -1325,7 +1350,6 @@
                         <conditionGroup type="and">
                           <conditions>
                             <condition field="selections" scope="e95a-f4cd-995e-9234" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32c0-c740-8cc9-c98c" type="equalTo"/>
-                            <condition field="selections" scope="e95a-f4cd-995e-9234" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4774-127a-6f12-3b15" type="equalTo"/>
                             <condition field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="18a3-a2f0-a7e3-6fa1" type="equalTo"/>
                           </conditions>
                         </conditionGroup>
@@ -1340,7 +1364,6 @@
                         <conditionGroup type="and">
                           <conditions>
                             <condition field="selections" scope="e95a-f4cd-995e-9234" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4dc4-42f8-0e21-86ac" type="equalTo"/>
-                            <condition field="selections" scope="e95a-f4cd-995e-9234" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4774-127a-6f12-3b15" type="equalTo"/>
                             <condition field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b632-c2db-9a76-2997" type="equalTo"/>
                           </conditions>
                         </conditionGroup>
@@ -1355,7 +1378,6 @@
                         <conditionGroup type="and">
                           <conditions>
                             <condition field="selections" scope="e95a-f4cd-995e-9234" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4dc4-42f8-0e21-86ac" type="equalTo"/>
-                            <condition field="selections" scope="e95a-f4cd-995e-9234" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4774-127a-6f12-3b15" type="equalTo"/>
                             <condition field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b632-c2db-9a76-2997" type="equalTo"/>
                           </conditions>
                         </conditionGroup>
@@ -1370,7 +1392,6 @@
                         <conditionGroup type="and">
                           <conditions>
                             <condition field="selections" scope="e95a-f4cd-995e-9234" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8855-e8b7-ccb4-895f" type="equalTo"/>
-                            <condition field="selections" scope="e95a-f4cd-995e-9234" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4774-127a-6f12-3b15" type="equalTo"/>
                             <condition field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e51-818f-a343-dcf2" type="equalTo"/>
                           </conditions>
                         </conditionGroup>
@@ -1385,7 +1406,6 @@
                         <conditionGroup type="and">
                           <conditions>
                             <condition field="selections" scope="e95a-f4cd-995e-9234" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8855-e8b7-ccb4-895f" type="equalTo"/>
-                            <condition field="selections" scope="e95a-f4cd-995e-9234" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4774-127a-6f12-3b15" type="equalTo"/>
                             <condition field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e51-818f-a343-dcf2" type="equalTo"/>
                           </conditions>
                         </conditionGroup>
@@ -1419,14 +1439,339 @@
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="45.0"/>
+            <cost name="pts" typeId="points" value="55.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="38b1-9536-4af6-f327" name="Cryptek Lord of Transmogrification" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="36ea-c1a8-11a0-b47f" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="9a39-bed4-a90f-ded4" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4562-5082-9ba8-78fc" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f626-f806-e739-cdd5" name="Cryptek Lord of Transmogrification" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry (Character)</characteristic>
+                <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
+                <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
+                <characteristic name="S" typeId="5323232344415441232323">5</characteristic>
+                <characteristic name="T" typeId="5423232344415441232323">5</characteristic>
+                <characteristic name="W" typeId="5723232344415441232323">2</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">1</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
+                <characteristic name="Save" typeId="5361766523232344415441232323">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="a63b-028d-b6f9-a697" name="Lords may take 1 of these upgrades (Only 1 of each per army)" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae63-bedf-de26-a501" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="cc15-0ee5-5070-cf90" name="Harp of Dissonance" hidden="false" collective="false" import="true" targetId="bbd9-1bf5-5c4e-6b09" type="selectionEntry"/>
+                <entryLink id="b90f-fbff-4208-4d8a" name="Seismic Crucible" hidden="false" collective="false" import="true" targetId="1f81-f6bf-42b0-0b0b" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="9748-3b52-a49c-63c9" name="Tremorstave" hidden="false" collective="false" import="true" targetId="94d8-845b-95d1-1421" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bda-dfe7-d633-e2fe" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd7c-04be-53f9-fe50" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="126f-6ce9-a6f1-a2c5" name="Mindshackle Scarabs" hidden="false" collective="false" import="true" targetId="6fd7-2cda-4ba8-ee79" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="f32b-7fd8-45aa-70f7" name="Phylactery" hidden="false" collective="false" import="true" targetId="31ff-2c1b-4442-94e9" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="a29c-9c11-8050-789d" name="Canoptek Khepri Drones" hidden="false" collective="false" import="true" targetId="851d-8247-1e7c-482a" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e70d-e591-879e-9262" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="75.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d48a-abe8-0b89-51fd" name="Cryptek Lord of Storm" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e51-818f-a343-dcf2" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="9a39-bed4-a90f-ded4" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8432-80af-5c26-66ed" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b86a-23e0-fa3d-7a4f" name="Cryptek Lord of Storm" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry (Character)</characteristic>
+                <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
+                <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
+                <characteristic name="S" typeId="5323232344415441232323">5</characteristic>
+                <characteristic name="T" typeId="5423232344415441232323">5</characteristic>
+                <characteristic name="W" typeId="5723232344415441232323">2</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">1</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
+                <characteristic name="Save" typeId="5361766523232344415441232323">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="3d26-0340-4537-2713" name="Lords may take 1 of these upgrades (Only 1 of each per army)" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa42-0072-36a1-27af" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="d79f-3084-db1f-48c8" name="Lightning Field" hidden="false" collective="false" import="true" targetId="faae-1911-e3b2-6797" type="selectionEntry"/>
+                <entryLink id="349a-914f-aa94-fbf8" name="Ether Crystals" hidden="false" collective="false" import="true" targetId="f6a7-23cd-b3cc-3a74" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="f2ba-997b-be33-2405" name="Voltaic Staff" hidden="false" collective="false" import="true" targetId="f76d-5cdc-7152-6a44" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf60-c986-493d-2407" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c3a-0309-5772-164c" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="482b-936d-3da7-4103" name="Mindshackle Scarabs" hidden="false" collective="false" import="true" targetId="6fd7-2cda-4ba8-ee79" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="247d-0c3a-0a5f-7e7d" name="Phylactery" hidden="false" collective="false" import="true" targetId="31ff-2c1b-4442-94e9" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="3584-af5a-1c46-e8b1" name="Canoptek Khepri Drones" hidden="false" collective="false" import="true" targetId="851d-8247-1e7c-482a" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af01-2305-8965-d41c" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="75.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b04e-14f3-f749-2279" name="Cryptek Lord of Eternity" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b632-c2db-9a76-2997" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="9a39-bed4-a90f-ded4" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="1e69-b0cc-5a07-fbc8" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="16d2-f720-2dfe-b557" name="Cryptek Lord of Eternity" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry (Character)</characteristic>
+                <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
+                <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
+                <characteristic name="S" typeId="5323232344415441232323">5</characteristic>
+                <characteristic name="T" typeId="5423232344415441232323">5</characteristic>
+                <characteristic name="W" typeId="5723232344415441232323">2</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">1</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
+                <characteristic name="Save" typeId="5361766523232344415441232323">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="ce12-2385-69a4-1238" name="Lords may take 1 of these upgrades (Only 1 of each per army)" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb16-7ade-9b60-0ff2" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="5bfc-252e-8a7c-f45c" name="Chronometron" hidden="false" collective="false" import="true" targetId="8a08-307a-6dab-2286" type="selectionEntry"/>
+                <entryLink id="f0ed-d82d-da8d-f8ef" name="Timesplinter Cloak" hidden="false" collective="false" import="true" targetId="78cf-a0ac-1c61-4da3" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="3421-8683-338f-b154" name="Aeonstave" hidden="false" collective="false" import="true" targetId="1596-a1ae-f623-fdb0" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b7e-c6a9-4ab6-979b" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d50-48a7-a513-0664" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="b63b-7334-9075-68ec" name="Mindshackle Scarabs" hidden="false" collective="false" import="true" targetId="6fd7-2cda-4ba8-ee79" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="792a-8007-7c16-811f" name="Phylactery" hidden="false" collective="false" import="true" targetId="31ff-2c1b-4442-94e9" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="9758-21a1-edbc-4ade" name="Canoptek Khepri Drones" hidden="false" collective="false" import="true" targetId="851d-8247-1e7c-482a" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c164-d9dc-3e0e-e0ae" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="75.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="086d-4581-2fd4-0c62" name="Cryptek Lord of Destruction" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="18a3-a2f0-a7e3-6fa1" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="9a39-bed4-a90f-ded4" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ef27-c0b5-01d3-c7cc" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c3e6-e8da-cd16-6c08" name="Cryptek Lord of Destruction" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry (Character)</characteristic>
+                <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
+                <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
+                <characteristic name="S" typeId="5323232344415441232323">5</characteristic>
+                <characteristic name="T" typeId="5423232344415441232323">5</characteristic>
+                <characteristic name="W" typeId="5723232344415441232323">2</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">1</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
+                <characteristic name="Save" typeId="5361766523232344415441232323">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="34c8-01e1-62e4-2c53" name="Lords may take 1 of these upgrades (Only 1 of each per army)" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ed6-582b-2c01-6f27" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="33df-d811-08e4-5c14" name="Gaze of Flame" hidden="false" collective="false" import="true" targetId="117b-8f22-fbc5-3ea8" type="selectionEntry"/>
+                <entryLink id="ec8b-ae68-1b52-f4fa" name="Solar Pulse" hidden="false" collective="false" import="true" targetId="ba0e-aee1-d36b-8972" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="a6a9-0f8b-e748-0b29" name="Eldritch Lance" hidden="false" collective="false" import="true" targetId="232c-d79d-4400-1374" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e774-ac79-7060-bf08" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5821-b638-abf0-11b0" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="010c-87a1-3a35-831b" name="Mindshackle Scarabs" hidden="false" collective="false" import="true" targetId="6fd7-2cda-4ba8-ee79" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="d08d-3002-7a2b-aefe" name="Phylactery" hidden="false" collective="false" import="true" targetId="31ff-2c1b-4442-94e9" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="10a6-6ed9-fabe-0bed" name="Canoptek Khepri Drones" hidden="false" collective="false" import="true" targetId="851d-8247-1e7c-482a" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf44-d3bb-9967-7b98" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="75.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="69bf-f8d0-0dea-3708" name="Cryptek Lord of Despair" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="9a39-bed4-a90f-ded4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1e28-5e09-e179-e876" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="9a39-bed4-a90f-ded4" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d0d5-a28a-084c-4a38" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="fca7-79bd-0d19-c216" name="Cryptek Lord of Despair" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry (Character)</characteristic>
+                <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
+                <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
+                <characteristic name="S" typeId="5323232344415441232323">5</characteristic>
+                <characteristic name="T" typeId="5423232344415441232323">5</characteristic>
+                <characteristic name="W" typeId="5723232344415441232323">2</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">1</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
+                <characteristic name="Save" typeId="5361766523232344415441232323">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="f9ef-4524-c54a-8d2a" name="Lords may take 1 of these upgrades (Only 1 of each per army)" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ff9-88b9-7953-a04c" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="03df-aaf8-35ed-e641" name="Nightmare Shroud" hidden="false" collective="false" import="true" targetId="08b6-0917-3799-0b28" type="selectionEntry"/>
+                <entryLink id="e9b2-3466-dc31-5620" name="Veil of Darkness" publicationId="ca571888--pubN89821" hidden="false" collective="false" import="true" targetId="2b5e-2a8d-108c-5587" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="ef75-c220-9d75-ce1a" name="Abyssal Staff" hidden="false" collective="false" import="true" targetId="e80a-7f29-3f2b-ce77" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f54a-4701-6821-d426" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5125-9d27-a8d2-e7aa" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="bed9-e8c4-caaf-5a3c" name="Mindshackle Scarabs" hidden="false" collective="false" import="true" targetId="6fd7-2cda-4ba8-ee79" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="057e-89f7-b1a8-70ae" name="Phylactery" hidden="false" collective="false" import="true" targetId="31ff-2c1b-4442-94e9" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="eabd-605d-4542-da61" name="Canoptek Khepri Drones" hidden="false" collective="false" import="true" targetId="851d-8247-1e7c-482a" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f81-5044-5e41-86b5" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="75.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f730-4ede-4f34-b819" name="Any unit of Cyptek may choose to follow one discipline at 20pts per Cryptek:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="f730-4ede-4f34-b819" name="Any unit of Cyptek may choose to follow one discipline:" hidden="false" collective="false" import="true" defaultSelectionEntryId="8a3c-af0e-27d2-fb16">
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="973c-3238-3488-f6b7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="973c-3238-3488-f6b7" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28bc-f0a3-cd7f-61bd" type="max"/>
           </constraints>
           <rules>
@@ -1474,6 +1819,11 @@
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
+            </selectionEntry>
+            <selectionEntry id="8a3c-af0e-27d2-fb16" name="Unaligned Conclave" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed3f-34c9-9734-f5bf" type="max"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1778,8 +2128,7 @@ If there are three or more models all projecting Nightshrouds between them, they
           <profiles>
             <profile id="038f-9274-3342-e8dd" name="Veil of Darkness" publicationId="6fc6-dd7c-7a39-b0c8" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
               <characteristics>
-                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A Cryptek with a Veil of Darkness can use it in the Movement phase instead of moving normally. The Cryptek and its unit are removed from the tabletop and immediately Deep Strike back onto the
-battlefield. The Veil of Darkness cannot be used if the Cryptek is locked in combat.</characteristic>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A Cryptek with a Veil of Darkness can use it in the Movement phase instead of moving normally. The Cryptek and its unit are removed from the tabletop and immediately Deep Strike back onto the battlefield. The Veil of Darkness cannot be used if the Cryptek is locked in combat.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3954,7 +4303,7 @@ In addition, the controlling may sacrifice any number of drones in their shootin
         <infoLink id="0de2-1783-d5f0-b081" name="Exile Ray" hidden="false" targetId="5787-7bfb-ea91-2792" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="points" value="15.0"/>
+        <cost name="pts" typeId="points" value="10.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e701-5eee-4c8d-00e6" name="C&apos;tan Shard" publicationId="6fc6-dd7c-7a39-b0c8" hidden="false" collective="false" import="true" type="upgrade">
