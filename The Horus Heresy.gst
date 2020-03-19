@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="114" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="115" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN66489" name="HH:MT"/>
@@ -6512,6 +6512,27 @@ Command Benefits:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="49dd-cdc4-b1c3-800d" type="max"/>
           </constraints>
+          <profiles>
+            <profile id="aec2-03ab-c667-1ebe" name="Heavy Bolter" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 3</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="797f-f28f-121b-2bd7" name="Heavy Bolter (Suspensor)" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">18&quot;</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Assault 3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="7675-6dcc-5dc8-67f9" name="Suspensor Web" hidden="false" targetId="3d78-f901-8afc-00ff" type="rule"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="20.0"/>
           </costs>
@@ -8359,6 +8380,9 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
     </rule>
     <rule id="7439f6fd-4c50-f88a-eb41-81d9b9c9eed8" name="Hardened Armour" publicationId="ca571888--pubN82424" page="32" hidden="false">
       <description>Hardened Armour counts as being Void Hardened (Cold Void mission special rules from Betrayal)..  Failed armour saves against template and blast weapons may be re-rolled.  Reduces distance rolled for charges, sweeping advances, and run moves by 1&quot;</description>
+    </rule>
+    <rule id="3d78-f901-8afc-00ff" name="Suspensor Web" publicationId="ca571888--pubN82424" page="133" hidden="false">
+      <description>A heavy weapon with a suspensor web effectively allows the firer to treat the weapon as having the type Assault rather than Heavy (meaning that they can move and fire at full WS, etc) when firing in the Shooting phase at targets at up to half the weapon’s usual maximum range. This has no other effect, such as on Snap Shots when charged, etc.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
