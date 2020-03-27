@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="91" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="92" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="92" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="cf03-f607-pubN65537" name="Horus Heresy: Taghmata Army List"/>
     <publication id="cf03-f607-pubN65563" name="AoDRB"/>
@@ -2174,7 +2174,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
                   <infoLinks>
                     <infoLink id="148d-d607-4d94-e0cc" name="New InfoLink" hidden="false" targetId="89da-0cb5-bee4-8ec2" type="rule"/>
                     <infoLink id="6faa-ccc0-0bbf-45b0" name="New InfoLink" hidden="false" targetId="8269-2cd6-9236-16e7" type="rule"/>
-                    <infoLink id="1c2b-501d-9d7d-d281" name="New InfoLink" hidden="false" targetId="1034-50ea-81e7-4af2" type="profile"/>
+                    <infoLink id="1c2b-501d-9d7d-d281" name="Lightning Gun" hidden="false" targetId="2850d06c-1eef-bae4-1314-6a3d9635193b" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -2768,17 +2768,6 @@ A model equipped with a machinator array may make two additional attacks per tur
                 <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="878a-7475-a6eb-be99" name="Armoured Ceramite" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="b8d6-ce22-338e-a444" hidden="false" targetId="874d-45cf-6007-a1de" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="20.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="2662-0251-c4f3-c89b" name="Explorator Augury Web" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -2851,6 +2840,7 @@ Reduces transport capacity to 8.</description>
               </modifiers>
             </entryLink>
             <entryLink id="80dd-50c4-2c9a-83b4" name="Hunter-killer Missile" hidden="false" collective="false" import="true" targetId="287b-b205-0926-5822" type="selectionEntry"/>
+            <entryLink id="a4eb-cff9-81ef-697a" name="Armoured Ceramite" hidden="false" collective="false" import="true" targetId="eef6-a613-e479-7274" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="0a83-cb55-702b-a71e" name="Sponson-mounted:" hidden="false" collective="false" import="true" defaultSelectionEntryId="7694-41a5-0a3d-8864">
@@ -4274,22 +4264,12 @@ Reduces transport capacity to 8.</description>
           </characteristics>
         </profile>
       </profiles>
-      <selectionEntries>
-        <selectionEntry id="6544-0741-204b-45f5" name="Volkite Charger" page="0" hidden="false" collective="true" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e64-c17c-e1fb-31c6" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="ffd5-3aa7-420a-dfd6" hidden="false" targetId="9c9de857-ac5e-11ff-ead6-1df8480d3f28" type="profile"/>
-            <infoLink id="2529-9e94-a276-c052" name="Deflagrate" hidden="false" targetId="b46a-a3ec-91a5-5001" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
-        <entryLink id="4837-d363-41ea-9338" name="New EntryLink" hidden="false" collective="false" import="true" targetId="2075c6c6-b54d-2d3e-fce9-0543efa392f8" type="selectionEntry"/>
+        <entryLink id="4837-d363-41ea-9338" name="New EntryLink" hidden="false" collective="false" import="true" targetId="2075c6c6-b54d-2d3e-fce9-0543efa392f8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cdc-2b79-c9cf-b9f5" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -4376,7 +4356,6 @@ D6 Result 1-2 Explosion
       <infoLinks>
         <infoLink id="b68f-83b1-8704-5a34" name="Blessed Autosimulacra" hidden="false" targetId="2904feff-37ef-ffc4-89b7-340b250746a3" type="rule"/>
         <infoLink id="1fdc-e374-4f80-5750" hidden="false" targetId="2db60061-47bc-2922-17b3-88cd261bac40" type="profile"/>
-        <infoLink id="730b-60f2-1ae6-a9f2" hidden="false" targetId="874d-45cf-6007-a1de" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c289-ed7e-c4ea-bfe0" name="New CategoryLink" hidden="false" targetId="8d56-b8fc-9b94-9cc9" primary="false"/>
@@ -4476,6 +4455,11 @@ Buildings and Fortifications D</description>
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1ff9-2951-2fa5-c522" type="min"/>
           </constraints>
+        </entryLink>
+        <entryLink id="167f-45e1-e9d5-0db4" name="Armoured Ceramite" hidden="false" collective="false" import="true" targetId="eef6-a613-e479-7274" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="points" value="0.0"/>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <costs>
@@ -6746,18 +6730,14 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
                     <cost name="pts" typeId="points" value="15.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="4f4e-f559-9c40-d602" name="Armoured Ceramite" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e2b3-5193-48f2-66e4" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="5e0a-4b7b-b3d6-4b53" hidden="false" targetId="874d-45cf-6007-a1de" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="10.0"/>
-                  </costs>
-                </selectionEntry>
               </selectionEntries>
+              <entryLinks>
+                <entryLink id="6049-3c33-4449-47fb" name="Armoured Ceramite" hidden="false" collective="false" import="true" targetId="eef6-a613-e479-7274" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="points" value="10.0"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="7e5b-9d44-b86f-8e9c" name="Psyarkana" hidden="false" collective="false" import="true">
               <constraints>
@@ -11762,7 +11742,7 @@ Assault rules unless otherwise noted.</description>
       <selectionEntryGroups>
         <selectionEntryGroup id="ddda-a37a-0bff-45df" name="May take any of the following" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink id="8d05-7716-ed12-a8da" name="Armoured Ceramite" hidden="false" collective="false" import="true" targetId="7da5-088b-4d9e-66b6" type="selectionEntry"/>
+            <entryLink id="8d05-7716-ed12-a8da" name="Armoured Ceramite" hidden="false" collective="false" import="true" targetId="eef6-a613-e479-7274" type="selectionEntry"/>
             <entryLink id="8626-a780-90db-9508" name="Blessed Autosimulacra" hidden="false" collective="false" import="true" targetId="fb66-11c0-3cb4-aac3" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="points" value="5"/>
@@ -11814,18 +11794,6 @@ Assault rules unless otherwise noted.</description>
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="85.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="7da5-088b-4d9e-66b6" name="Armoured Ceramite" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4e4f-fc99-55ce-7810" type="max"/>
-      </constraints>
-      <infoLinks>
-        <infoLink id="4555-be89-4145-29bf" name="Armoured Ceramite" hidden="false" targetId="874d-45cf-6007-a1de" type="profile"/>
-        <infoLink id="1b2e-4da8-6745-27c1" name="Armoured Ceramite" hidden="false" targetId="3138-683d-a9a0-570d" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="20.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="48cf-f73d-a3c0-e911" name="Macharius" publicationId="cf03-f607-pubN134767" page="229" hidden="false" collective="false" import="true" type="model">

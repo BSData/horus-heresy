@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="115" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="116" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN66489" name="HH:MT"/>
@@ -6775,7 +6775,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a78-ae84-ef7c-c81b" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="3e26-8893-7b1a-8d5a" name="New InfoLink" hidden="false" targetId="6191-5a5d-0000-7f09" type="profile"/>
+            <infoLink id="3e26-8893-7b1a-8d5a" name="Armoured Ceramite" hidden="false" targetId="3138-683d-a9a0-570d" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="20.0"/>
@@ -6840,7 +6840,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6be5-dd8e-96da-604f" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="5bc4-80c5-f65a-828d" name="New InfoLink" hidden="false" targetId="6191-5a5d-0000-7f09" type="profile"/>
+            <infoLink id="5bc4-80c5-f65a-828d" name="Armoured Ceramite" hidden="false" targetId="3138-683d-a9a0-570d" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -8651,14 +8651,6 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
         <characteristic name="Type" typeId="5479706523232344415441232323">Salvo 3/4, Poison (4+)</characteristic>
       </characteristics>
     </profile>
-    <profile id="1034-50ea-81e7-4af2" name="Lightning Gun" publicationId="ca571888--pubN66489" page="115" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="52616e676523232344415441232323">18&quot;</characteristic>
-        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
-        <characteristic name="AP" typeId="415023232344415441232323">5</characteristic>
-        <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Shred, Rending</characteristic>
-      </characteristics>
-    </profile>
     <profile id="6474-3d3e-de26-3e9f" name="Rad/irad Cleanser" publicationId="ca571888--pubN66489" page="115" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">Template</characteristic>
@@ -9060,11 +9052,6 @@ Jetbikes can move over all other models and terrain freely. However, if a moving
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Vehicles equipped with extra armour count Crew Stunned results from the Vehicle Damage table as Crew Shaken results instead.</characteristic>
       </characteristics>
     </profile>
-    <profile id="6191-5a5d-0000-7f09" name="Armoured Ceramite" publicationId="ca571888--pubN99753" page="131" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A vehicle with this wargear is not subject to the additional D6 armour penetration caused by weapons with the Melta special rule.  </characteristic>
-      </characteristics>
-    </profile>
     <profile id="cb4a-644f-bd8d-7d97" name="Flare Shield" publicationId="ca571888--pubN99753" page="132" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A flare shield operates against shooting attacks that strike the vehicle’s front arc. It reduces the strength of attacks by weapons with the Template or Blast type by -2, and other shooting attacks’ Strength by -1. A flare shield has no effect on close combat attacks or attacks inflicted with the Destroyer special rule.  </characteristic>
@@ -9160,11 +9147,6 @@ Jetbikes can move over all other models and terrain freely. However, if a moving
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
         <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, One Use Only</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="874d-45cf-6007-a1de" name="Armoured Ceramite" publicationId="ca571888--pubN67227" page="88" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A vehicle with this wargear is not subject to the additional D6 armour penetration caused by weapons with the Melta special rule.  </characteristic>
       </characteristics>
     </profile>
     <profile id="40e6-c95c-7c8d-cf02" name="Frag Missile" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
