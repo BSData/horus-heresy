@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="116" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="117" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN66489" name="HH:MT"/>
@@ -197,131 +197,7 @@
     </forceEntry>
   </forceEntries>
   <entryLinks>
-    <entryLink id="eda5-87ee-05e1-fd98" name="Acastus Knight Porphyrion" hidden="false" collective="false" import="true" targetId="4ded-9de3-f964-33a7" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8221-a45d-16b8-2dcf" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="087e-6cb9-3b34-bd8d" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="f5c0-2dc9-a454-3265" name="Questoris Knight Crusader" hidden="false" collective="false" import="true" targetId="09ee-4370-1462-2cb5" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8221-a45d-16b8-2dcf" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="40b7-30a8-e66b-6e88" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="2691-7e0f-9139-5503" name="Questoris Knight Errant" hidden="false" collective="false" import="true" targetId="4b70feb1-a2e7-2f93-8320-1d6775bf5a59" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8221-a45d-16b8-2dcf" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="1583-91a3-00e9-176a" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="f1ac-cd3f-39fa-a73c" name="Questoris Knight Gallant" hidden="false" collective="false" import="true" targetId="74b8-f485-4b58-0071" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8221-a45d-16b8-2dcf" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="c989-d886-5fd8-f6d5" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="f724-e283-e301-075c" name="Questoris Knight Magaera" hidden="false" collective="false" import="true" targetId="fb7cd031-7573-eb28-4446-d709eb5acdbc" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8221-a45d-16b8-2dcf" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="c01c-cc1c-2d9c-0fdc" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="62a5-7380-1456-3c95" name="Questoris Knight Paladin" hidden="false" collective="false" import="true" targetId="02eb28bb-1883-8603-0af7-b8bf2b7b69c8" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8221-a45d-16b8-2dcf" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="3956-ea6c-808c-767a" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="e357-a8cf-d30f-00af" name="Questoris Knight Styrix" hidden="false" collective="false" import="true" targetId="a5b350ff-895e-4557-70a6-d24a936919c2" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8221-a45d-16b8-2dcf" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="05ad-5252-2d84-c8eb" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="a204-0a13-cf14-18d3" name="Questoris Knight Warden" hidden="false" collective="false" import="true" targetId="f4f1-dad6-0596-ca5a" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8221-a45d-16b8-2dcf" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="95f6-22fe-84cf-30bb" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="78a9-6f20-6fe6-a0e2" name="Questoris Knight Dominus" hidden="false" collective="false" import="true" targetId="6eec-767d-0b14-95ab" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8221-a45d-16b8-2dcf" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="1daa-66b3-bbef-8da8" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="7d9f-d54b-09db-e954" name="Use Playtest Rules" hidden="false" collective="false" import="true" targetId="5a90-c53e-42ca-b4ca" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="d2d6-3f07-f393-0be4" name="New CategoryLink" hidden="false" targetId="fdf4-0683-3e84-5a4b" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="c35d-3ad4-5d6e-6d1c" name="Acastus Knight Asterius" hidden="false" collective="false" import="true" targetId="72ad-abe8-94d8-5926" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8221-a45d-16b8-2dcf" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="b6de-ab6a-c3b2-8e78" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
-      </categoryLinks>
-    </entryLink>
+    <entryLink id="7d9f-d54b-09db-e954" name="Use Playtest Rules" hidden="false" collective="false" import="true" targetId="5a90-c53e-42ca-b4ca" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="11c8-2e78-8328-31e4" name="Crusade Fleet Avenger Strike Fighter" publicationId="ca571888--pubN66489" page="47" hidden="false" collective="false" import="true" type="unit">
@@ -5621,6 +5497,9 @@ Immediately place an objective marker within 3&quot; of any part of the Crashed 
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5689-da9b-d725-fba5" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0192-7b62-a073-5de2" type="min"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink id="f35d-727a-b210-2ef9" name="New CategoryLink" hidden="false" targetId="fdf4-0683-3e84-5a4b" primary="true"/>
+      </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="07c4-d0fe-fd44-2d95" name="Playtest Rules" hidden="false" collective="false" import="true">
           <constraints>
