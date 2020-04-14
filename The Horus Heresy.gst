@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="117" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="118" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN66489" name="HH:MT"/>
@@ -6446,6 +6446,21 @@ Command Benefits:
           </costs>
         </selectionEntry>
         <selectionEntry id="0267-083e-86de-3c0f" name="Breaching Charge" publicationId="ca571888--pubN99753" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="e110-b880-2490-0e12" name="Breacher Charge" publicationId="ca571888--pubN82424" page="86" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">Special</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Melee, One Use, Blast, Wrecker</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="1613-e573-baea-c0cf" name="Breacher Charge" publicationId="ca571888--pubN66500" page="233" hidden="false">
+              <description>May be used in assault isntead of the carrying model&apos;s normal attacks or weapons.  The model makes a single attack.  Place the Blast template anywhere in base contact with the attacking model so it covers the enemy.  The template may not cover friendly models.  Roll to hit against the majority Weapon Skill of the enemy (buildings, emplacements, and stationary vehicles are hit automatically).  On a hit, the template remains where it was placed.  On a miss, roll a scatter die and flip the template in the direction indicated (always flips).</description>
+            </rule>
+          </rules>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>

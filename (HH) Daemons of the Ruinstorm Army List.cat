@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8700-b3bb-a471-a0ad" name="Daemons of the Ruinstorm" revision="14" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="85" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8700-b3bb-a471-a0ad" name="Daemons of the Ruinstorm" revision="15" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="8700-b3bb-pubN65537" name="HH8: Malevolence"/>
     <publication id="8700-b3bb-pubN75780" name="BRB"/>
@@ -65,10 +65,20 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="25ba-08c7-f871-f88c" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="7a11-130d-e08e-65be" name="Aetheric Dominion" hidden="false" targetId="2271-1b9a-5c30-9676" primary="false"/>
+        <categoryLink id="7a11-130d-e08e-65be" name="Aetheric Dominion" hidden="false" targetId="2271-1b9a-5c30-9676" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bd9-4ea2-c150-12a5" type="max"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="63e0-0102-d8af-800e" name="Compulsory Troops" hidden="false" targetId="0547-e031-0d25-4c6c" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7daa-ff7f-f82a-4841" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="019f-692f-ccea-cb9d" name="Aliens and Daemons" hidden="false" targetId="cd09-c1c6-237a-798e" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ef4-e2d8-333f-abda" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9e5-f5d6-b58b-311e" type="min"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
