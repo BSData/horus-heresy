@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9f87-b468-2001-5e3b" name="Mornival Units (Fanmade)" revision="4" battleScribeVersion="2.03" authorName="Aus30K / Mourival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9f87-b468-2001-5e3b" name="Mornival Units (Fanmade)" revision="5" battleScribeVersion="2.03" authorName="Aus30K / Mourival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="0e6e-8c19-c436-39c4" name="Mournival Events 3.0 Digital Version"/>
     <publication id="cf75-540e-e446-ecd5" name="Mournival Events FAQ and Experimental Errata v3.1"/>
@@ -21,6 +21,9 @@
         <entryLink id="cb38-ef89-3627-f835" name="Additional Psychic Disciplines" hidden="false" collective="false" import="true" targetId="f5eb-f2a0-c980-a02a" type="selectionEntry"/>
         <entryLink id="b1ab-ab88-4b11-5cbb" name="Exotic Melee Weapns" hidden="false" collective="false" import="true" targetId="d273-e12a-a287-d944" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
@@ -455,6 +458,21 @@ If a Rogue Psyker who is the army’s Warlord becomes possessed, they are still 
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="0032-1a6f-1ed0-4ecd" name="   VI: Space Wolves" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c716-c860-b623-e9cd" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5cf-5109-6793-b98e" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="6cc7-7a07-18a5-11c4" name="Legiones Astartes" hidden="false" targetId="23a4-a37f-e8e8-c756" type="rule"/>
+            <infoLink id="30ed-c446-7e6f-f587" name="New InfoLink" hidden="false" targetId="97fe-8ae3-54d4-dab9" type="rule"/>
+            <infoLink id="abf0-a734-fbd5-762c" name="New InfoLink" hidden="false" targetId="8eda-6f1c-9a20-8ec5" type="rule"/>
+            <infoLink id="78e2-f1da-eef7-3b21" name="Preternatural Senses" hidden="false" targetId="6313-0d9d-ec21-bac1" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="fed2-616d-f8fb-1bc5" name="Dedicated Transport" hidden="false" collective="false" import="true">
@@ -570,11 +588,6 @@ If a Rogue Psyker who is the army’s Warlord becomes possessed, they are still 
         <entryLink id="05ba-6bd1-315a-6c84" name="Power Armour" hidden="false" collective="false" import="true" targetId="0a96-04b6-7340-91a4" type="selectionEntry"/>
         <entryLink id="23a9-0f81-32b1-a3d7" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="8e2a-0525-9100-3264" type="selectionEntry"/>
         <entryLink id="ab5e-7ab0-0343-baa5" name="Bolters" hidden="false" collective="false" import="true" targetId="ac90-ce47-65c6-f5f3" type="selectionEntry"/>
-        <entryLink id="cbe4-c7eb-237a-189b" name="   VI: Space Wolves" hidden="false" collective="false" import="true" targetId="7c91-a83b-8ca5-e5db" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4a0-155c-a0b9-49e7" type="min"/>
-          </constraints>
-        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="85.0"/>
@@ -4520,7 +4533,7 @@ If equipped with a Jump Pack then they may only join eligible squads with the Ju
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c91-a83b-8ca5-e5db" type="equalTo"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c91-a83b-8ca5-e5db" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7808,12 +7821,12 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
     </selectionEntry>
     <selectionEntry id="c74b-38cc-7b44-348c" name="Salamanders Infernus Destroyer Squad" publicationId="0e6e-8c19-c436-39c4" page="" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="add" field="category" value="a787-4801-eb77-f2cf">
+        <modifier type="add" field="category" value="47cf-71bb-d59d-f9de">
           <conditions>
             <condition field="selections" scope="c74b-38cc-7b44-348c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="935f-5b1e-3040-c334" type="equalTo"/>
           </conditions>
         </modifier>
-        <modifier type="add" field="category" value="685b-1231-2899-7552">
+        <modifier type="add" field="category" value="2d6f-e613-ab10-e55a">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
