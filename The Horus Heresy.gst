@@ -188,6 +188,12 @@
       </constraints>
     </categoryEntry>
     <categoryEntry id="cd09-c1c6-237a-798e" name="Aliens and Daemons" hidden="false"/>
+    <categoryEntry id="dbe0-716f-797c-66f7" name="Mournival Rules" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7247-ee03-101e-7845" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd42-e9a9-8fd1-2d3a" type="min"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="61f7-09c7-326c-8c49" name="New ForceEntry" hidden="true">
