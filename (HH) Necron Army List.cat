@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b50f-0671-3aea-cf90" name="Necron Army List (Fanmade)" revision="4" battleScribeVersion="2.03" authorName="Dono Author / Maye Gelt the Battlescribbler" authorContact="Dono (for Content) / Maye Gelt (for Battlescibbling)" authorUrl="http://www.facebook.com/AUS30K" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="108" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b50f-0671-3aea-cf90" name="Necron Army List (Fanmade)" revision="5" battleScribeVersion="2.03" authorName="Dono Author / Maye Gelt the Battlescribbler" authorContact="Dono (for Content) / Maye Gelt (for Battlescibbling)" authorUrl="http://www.facebook.com/AUS30K" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="6fc6-dd7c-7a39-b0c8" name="30K Necron Army List (Fanmade)"/>
   </publications>
@@ -1824,6 +1824,9 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed3f-34c9-9734-f5bf" type="max"/>
               </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3463,7 +3466,7 @@ the Fight subphase.</description>
       <modifiers>
         <modifier type="set" field="b522-2985-8283-65be" value="-1.0">
           <conditions>
-            <condition field="points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="atLeast"/>
+            <condition field="points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4030,9 +4033,14 @@ The bearer can use the Tesseract Labyrinth in lieu of making close combat attack
     <selectionEntry id="c069-f47f-dc78-d350" name="Nodal Command: Silver" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="681c-5363-8afa-3200" value="1.0">
-          <conditions>
-            <condition field="points" scope="roster" value="1500.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="atLeast"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="points" scope="roster" value="1500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab10-ea27-64d3-4246" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -4237,9 +4245,14 @@ The bearer can use the Tesseract Labyrinth in lieu of making close combat attack
     <selectionEntry id="3722-c8e4-34ee-21f1" name="Nodal Command: Gold" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="f99d-03b7-45f1-e39b" value="1.0">
-          <conditions>
-            <condition field="points" scope="roster" value="2000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="atLeast"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="points" scope="roster" value="2000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6bbf-497d-8100-8b1b" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
