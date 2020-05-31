@@ -877,10 +877,10 @@ If a Rogue Psyker who is the army’s Warlord becomes possessed, they are still 
             <categoryLink id="1369-9e1b-4829-f1c5" name="Character" hidden="false" targetId="eb92-48f9-9a1a-7bd1" primary="false"/>
           </categoryLinks>
           <entryLinks>
-            <entryLink id="279d-f102-2ba9-77e5" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="93f9-8aba-be48-907a" type="selectionEntry">
+            <entryLink id="2aae-454d-24fd-8980" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="93f9-8aba-be48-907a" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fc4-4675-3a6c-90e8" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52dd-baf7-e6a3-2070" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a82-fd6e-1d5c-0933" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b00-e0ed-f401-1c04" type="min"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -1020,6 +1020,22 @@ If a Rogue Psyker who is the army’s Warlord becomes possessed, they are still 
         <entryLink id="23a9-0f81-32b1-a3d7" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="8e2a-0525-9100-3264" type="selectionEntry"/>
         <entryLink id="ab5e-7ab0-0343-baa5" name="Bolters" hidden="false" collective="false" import="true" targetId="ac90-ce47-65c6-f5f3" type="selectionEntry"/>
         <entryLink id="d5b1-522e-2a1e-2af1" name="Command Company Nuncio Vox" hidden="false" collective="false" import="true" targetId="7b26-a17d-d8da-c6c5" type="selectionEntry"/>
+        <entryLink id="9747-b044-a3e3-d40b" name="Hardened Armour" hidden="true" collective="false" import="true" targetId="e805-1f7f-7459-3597" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Hardened Armour (Breacher Company)"/>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e34d-ffe8-9f2d-e0bd" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="points" value="2.0">
+              <repeats>
+                <repeat field="selections" scope="f171-3359-26b3-ea3e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="points" value="2.0"/>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="85.0"/>
@@ -1283,6 +1299,26 @@ If a Rogue Psyker who is the army’s Warlord becomes possessed, they are still 
           </modifiers>
         </entryLink>
         <entryLink id="26ce-e94e-9121-6b67" name="Command Company Nuncio Vox" hidden="false" collective="false" import="true" targetId="7b26-a17d-d8da-c6c5" type="selectionEntry"/>
+        <entryLink id="845e-3541-8285-5e55" name="Hardened Armour" hidden="true" collective="false" import="true" targetId="e805-1f7f-7459-3597" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Hardened Armour (Breacher Company)"/>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e34d-ffe8-9f2d-e0bd" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="points" value="2.0">
+              <repeats>
+                <repeat field="selections" scope="5a81-880e-e9ff-b913" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="points" value="2.0">
+              <conditions>
+                <condition field="selections" scope="5a81-880e-e9ff-b913" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93f9-8aba-be48-907a" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="45.0"/>
@@ -1854,6 +1890,21 @@ Heavy Bolter: Splinter: 36” S2 AP4 Heavy 3 Rending</description>
                 <modifier type="set" field="5f3e-444b-2315-5e66" value="2.0"/>
               </modifiers>
             </entryLink>
+            <entryLink id="22c2-ad45-bd5f-56bd" name="Graviton Gun" hidden="true" collective="false" import="true" targetId="0d3c-2b57-247d-548d" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b575-2895-bcaa-9acf" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2373-cff0-025d-6bcd" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="87d0-8bb6-b04f-9526" name="Possessed Sergeant may select the following" hidden="false" collective="false" import="true">
@@ -2119,6 +2170,45 @@ Heavy Bolter: Splinter: 36” S2 AP4 Heavy 3 Rending</description>
         <entryLink id="ddb2-635b-1b9d-d240" name="Frag and Krak Grenades" hidden="false" collective="false" import="true" targetId="0a53-b471-df87-7b83" type="selectionEntry"/>
         <entryLink id="5116-f123-6bdc-3aa2" name="Power Armour" hidden="false" collective="false" import="true" targetId="0a96-04b6-7340-91a4" type="selectionEntry"/>
         <entryLink id="0dac-806d-439b-6914" name="Command Company Nuncio Vox" hidden="false" collective="false" import="true" targetId="7b26-a17d-d8da-c6c5" type="selectionEntry"/>
+        <entryLink id="e7a8-cc8c-c81f-263e" name="Suspensor Webs for Gravition Guns" hidden="false" collective="false" import="true" targetId="9f4c-0d14-d552-efe5" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e34d-ffe8-9f2d-e0bd" type="equalTo"/>
+                    <condition field="selections" scope="491a-9bf1-e9bd-b2f8" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d3c-2b57-247d-548d" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="points" value="5.0">
+              <repeats>
+                <repeat field="selections" scope="491a-9bf1-e9bd-b2f8" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d3c-2b57-247d-548d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="1b29-ffcb-f7db-3e20" name="Hardened Armour" hidden="true" collective="false" import="true" targetId="e805-1f7f-7459-3597" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Hardened Armour (Breacher Company)"/>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e34d-ffe8-9f2d-e0bd" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="points" value="2.0">
+              <repeats>
+                <repeat field="selections" scope="491a-9bf1-e9bd-b2f8" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="points" value="2.0">
+              <conditions>
+                <condition field="selections" scope="491a-9bf1-e9bd-b2f8" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93f9-8aba-be48-907a" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="50.0"/>
@@ -6336,6 +6426,23 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="0538-cf7c-c2de-41dd" name="Hardened Armour" hidden="true" collective="false" import="true" targetId="e805-1f7f-7459-3597" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Hardened Armour (Breacher Company)"/>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e34d-ffe8-9f2d-e0bd" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="points" value="2.0">
+              <repeats>
+                <repeat field="selections" scope="5aa7-c454-3656-3a3f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="40.0"/>
       </costs>
@@ -6475,7 +6582,6 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
       </rules>
       <infoLinks>
         <infoLink id="1664-2d02-88e7-053e" name="Support Squad" hidden="false" targetId="2c16-3b25-a714-a656" type="rule"/>
-        <infoLink id="aed3-df61-3f8c-1ec0" name="Hardened Armour" hidden="false" targetId="7439f6fd-4c50-f88a-eb41-81d9b9c9eed8" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4460-9965-1ff8-14ca" name="Infantry" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
@@ -6566,6 +6672,25 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
                 <modifier type="increment" field="points" value="5.0">
                   <repeats>
                     <repeat field="selections" scope="c5ba-7647-23ba-c728" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5f26-92ce-00a2-fc84" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="92d3-e89c-6e66-2332" name="Suspensor Webs for Gravition Guns" hidden="false" collective="false" import="true" targetId="9f4c-0d14-d552-efe5" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e34d-ffe8-9f2d-e0bd" type="equalTo"/>
+                        <condition field="selections" scope="c5ba-7647-23ba-c728" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8447-9662-22bd-5c6c" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="increment" field="points" value="5.0">
+                  <repeats>
+                    <repeat field="selections" scope="c5ba-7647-23ba-c728" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
@@ -6845,6 +6970,13 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="aa1e-0151-df0f-f196" name="Hardened Armour" hidden="false" collective="false" import="true" targetId="e805-1f7f-7459-3597" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4455-7400-a448-9289" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="65.0"/>
       </costs>
@@ -6867,7 +6999,6 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
       </rules>
       <infoLinks>
         <infoLink id="da4b-c6d6-e0d2-ae86" name="Support Squad" hidden="false" targetId="2c16-3b25-a714-a656" type="rule"/>
-        <infoLink id="fb72-5f02-3f37-8fd5" name="Hardened Armour" hidden="false" targetId="7439f6fd-4c50-f88a-eb41-81d9b9c9eed8" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="1410-3d8e-e19b-c032" name="Infantry" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
@@ -7136,6 +7267,13 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="7e70-dd52-abc5-4b07" name="Hardened Armour" hidden="false" collective="false" import="true" targetId="e805-1f7f-7459-3597" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0c7-7545-ebe4-0473" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="65.0"/>
       </costs>
@@ -8557,7 +8695,6 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="1cad-6790-d93e-5ad2" name="Hardened Armour" hidden="false" targetId="7439f6fd-4c50-f88a-eb41-81d9b9c9eed8" type="rule"/>
         <infoLink id="5034-f6fa-b46d-0aba" name="Counter-attack" hidden="false" targetId="0900-71d5-1937-aa96" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -8970,6 +9107,11 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="1794-8a8d-c298-76c8" name="Command Company Nuncio Vox" hidden="false" collective="false" import="true" targetId="7b26-a17d-d8da-c6c5" type="selectionEntry"/>
+        <entryLink id="25ec-3b6a-5809-3212" name="Hardened Armour" hidden="false" collective="false" import="true" targetId="e805-1f7f-7459-3597" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f5e-60bd-c92a-05d7" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="45.0"/>
@@ -9000,7 +9142,6 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="b79e-298f-3eb9-1f40" name="Hardened Armour" hidden="false" targetId="7439f6fd-4c50-f88a-eb41-81d9b9c9eed8" type="rule"/>
         <infoLink id="89cf-79a0-e41b-0e2d" name="Counter-attack" hidden="false" targetId="0900-71d5-1937-aa96" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -9426,6 +9567,11 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
           <categoryLinks>
             <categoryLink id="14cc-b7cc-8b07-6f2a" name="Deep Strike" hidden="false" targetId="2d6f-e613-ab10-e55a" primary="false"/>
           </categoryLinks>
+        </entryLink>
+        <entryLink id="71e8-a169-595e-9f75" name="Hardened Armour" hidden="false" collective="false" import="true" targetId="e805-1f7f-7459-3597" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c269-3e44-398e-c2b2" type="min"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
