@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9f87-b468-2001-5e3b" name="Mornival Units Legion Astartes (Fanmade)" revision="9" battleScribeVersion="2.03" authorName="Aus30K / Mourival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="120" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9f87-b468-2001-5e3b" name="Mornival Units Legion Astartes (Fanmade)" revision="10" battleScribeVersion="2.03" authorName="Aus30K / Mourival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="120" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="0e6e-8c19-c436-39c4" name="Mournival Events 3.0 Digital Version"/>
     <publication id="cf75-540e-e446-ecd5" name="Mournival Events FAQ and Experimental Errata v3.1"/>
@@ -484,6 +484,7 @@ Example 4: In a 2000 point army, a Daemon Lord is the Warlord (doesn’t count a
       <categoryLinks>
         <categoryLink id="b62d-af68-542f-b062" name="New CategoryLink" hidden="false" targetId="54726f6f707323232344415441232323" primary="true"/>
         <categoryLink id="8ab5-3761-fbbf-e3ab" name="Mournival Centurion Unrestricted" hidden="false" targetId="c00c-5a5c-3d86-f5a5" primary="false"/>
+        <categoryLink id="2182-d293-3ac3-a0f1" name="Breacher Company (Breacher Support, Immortals or Phalanx Warders)" hidden="false" targetId="a2ae-65e7-66fd-466e" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="dfb5-47e0-23e9-e6b3" name="XIIth Legion Triarii Breacher Squad" hidden="false" collective="false" import="true" targetId="34da-0cfb-85e5-1573" type="selectionEntry">
@@ -497,6 +498,7 @@ Example 4: In a 2000 point army, a Daemon Lord is the Warlord (doesn’t count a
       <categoryLinks>
         <categoryLink id="e5de-2864-fb74-d465" name="Fast Attack" hidden="false" targetId="466173742041747461636b23232344415441232323" primary="true"/>
         <categoryLink id="6ea5-2489-d152-6b1f" name="Mournival Centurion Unrestricted" hidden="false" targetId="c00c-5a5c-3d86-f5a5" primary="false"/>
+        <categoryLink id="013b-3ce2-c6e6-0ecd" name="Breacher Company (Breacher Support, Immortals or Phalanx Warders)" hidden="false" targetId="a2ae-65e7-66fd-466e" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="234a-c191-a0a3-7284" name="Sky Stalker Jetbike Squad on Bullock Jetcycles, Legion" hidden="false" collective="false" import="true" targetId="0183-7594-8997-5b90" type="selectionEntry">
@@ -555,6 +557,7 @@ Example 4: In a 2000 point army, a Daemon Lord is the Warlord (doesn’t count a
         <categoryLink id="10ff-1420-45e6-e66c" name="Troops" hidden="false" targetId="54726f6f707323232344415441232323" primary="true"/>
         <categoryLink id="5d54-c56a-cc10-cb13" name="Compulsory Troops" hidden="false" targetId="219d-aefa-dfa5-44db" primary="false"/>
         <categoryLink id="b4b9-f2ad-75aa-66c4" name="Mournival Centurion Unrestricted" hidden="false" targetId="c00c-5a5c-3d86-f5a5" primary="false"/>
+        <categoryLink id="0801-d0e8-342a-e9e2" name="Breacher Company (Breacher Support, Immortals or Phalanx Warders)" hidden="false" targetId="a2ae-65e7-66fd-466e" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="55c2-75ac-ce80-ddcb" name="Salamanders Infernus Destroyer Squad" hidden="false" collective="false" import="true" targetId="c74b-38cc-7b44-348c" type="selectionEntry">
@@ -5262,6 +5265,11 @@ If equipped with a Jump Pack then they may only join eligible squads with the Ju
               </conditionGroups>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="a76a-6edc-4f14-4048">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27a3-0a73-d1c8-63e1" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -11034,7 +11042,6 @@ Void Shield Harness</description>
           <entryLinks>
             <entryLink id="7c50-2646-58c5-1b57" name="Shattered Legion" hidden="false" collective="false" import="true" targetId="c487-be13-ea53-917e" type="selectionEntryGroup"/>
             <entryLink id="76db-65b2-b155-9659" name="Cult Arcana" hidden="false" collective="false" import="true" targetId="e096-a034-c3dc-ea24" type="selectionEntryGroup"/>
-            <entryLink id="368d-cb17-aa9b-4148" name="Mobility: May take one of the following wargear:" hidden="false" collective="false" import="true" targetId="1b5d-a32e-f045-da1a" type="selectionEntryGroup"/>
             <entryLink id="3562-e937-9613-1ca6" name="Rad Grenades (Destroyer Company)" hidden="false" collective="false" import="true" targetId="6b20-1187-bc72-1a45" type="selectionEntry"/>
           </entryLinks>
           <costs>
@@ -11787,7 +11794,6 @@ Void Shield Harness</description>
           <entryLinks>
             <entryLink id="a5a7-1c6f-31ff-6e85" name="Shattered Legion" hidden="false" collective="false" import="true" targetId="c487-be13-ea53-917e" type="selectionEntryGroup"/>
             <entryLink id="b9ac-8603-8317-ba00" name="Cult Arcana" hidden="false" collective="false" import="true" targetId="e096-a034-c3dc-ea24" type="selectionEntryGroup"/>
-            <entryLink id="dc74-8cb3-6407-1647" name="Mobility: May take one of the following wargear:" hidden="false" collective="false" import="true" targetId="1b5d-a32e-f045-da1a" type="selectionEntryGroup"/>
             <entryLink id="74db-2a02-e876-84fe" name="Rad Grenades (Destroyer Company)" hidden="false" collective="false" import="true" targetId="6b20-1187-bc72-1a45" type="selectionEntry"/>
           </entryLinks>
           <costs>
@@ -12426,7 +12432,6 @@ cognis-signum.</description>
           <entryLinks>
             <entryLink id="5a81-37ba-8824-aa02" name="Shattered Legion" hidden="false" collective="false" import="true" targetId="c487-be13-ea53-917e" type="selectionEntryGroup"/>
             <entryLink id="bf7d-eebd-bf9c-4dcf" name="Cult Arcana" hidden="false" collective="false" import="true" targetId="e096-a034-c3dc-ea24" type="selectionEntryGroup"/>
-            <entryLink id="76d4-735e-9935-2bf3" name="Mobility: May take one of the following wargear:" hidden="false" collective="false" import="true" targetId="1b5d-a32e-f045-da1a" type="selectionEntryGroup"/>
             <entryLink id="97c7-a641-2c06-e983" name="Rad Grenades (Destroyer Company)" hidden="false" collective="false" import="true" targetId="6b20-1187-bc72-1a45" type="selectionEntry"/>
           </entryLinks>
           <costs>
