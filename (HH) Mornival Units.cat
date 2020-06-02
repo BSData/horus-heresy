@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9f87-b468-2001-5e3b" name="Mornival Units Legion Astartes (Fanmade)" revision="10" battleScribeVersion="2.03" authorName="Aus30K / Mourival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="120" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9f87-b468-2001-5e3b" name="Mornival Units Legion Astartes (Fanmade)" revision="11" battleScribeVersion="2.03" authorName="Aus30K / Mourival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="120" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="0e6e-8c19-c436-39c4" name="Mournival Events 3.0 Digital Version"/>
     <publication id="cf75-540e-e446-ecd5" name="Mournival Events FAQ and Experimental Errata v3.1"/>
@@ -1677,6 +1677,13 @@ Heavy Bolter: Splinter: 36” S2 AP4 Heavy 3 Rending</description>
               </costs>
             </entryLink>
             <entryLink id="b26c-6acd-6ff7-a69b" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="ae27-c659-fffd-1561" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="points" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cba6-2d9f-b041-e96e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <costs>
                 <cost name="pts" typeId="points" value="2.0"/>
               </costs>
@@ -2166,9 +2173,27 @@ Heavy Bolter: Splinter: 36” S2 AP4 Heavy 3 Rending</description>
             <entryLink id="6ef5-595c-14ef-6a8b" name="Chem-munitions" hidden="false" collective="false" import="true" targetId="86e70545-ed1a-7cf4-5a3d-d60662a6b3be" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="1783-d480-ffee-fdbf" name="Upgrade Bolt Pistol to Volkite Serpenta (DA Unification Only)" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cba6-2d9f-b041-e96e" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink id="c941-ec05-e554-c467" name="Volkite Serpenta" hidden="true" collective="false" import="true" targetId="ae27-c659-fffd-1561" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="e51d-cf89-f58a-6004" value="10.0"/>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="points" value="1.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="d79e-909a-d489-64d2" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="8e2a-0525-9100-3264" type="selectionEntry"/>
         <entryLink id="bb93-95b1-fb14-94e5" name="Bolters" hidden="false" collective="false" import="true" targetId="ac90-ce47-65c6-f5f3" type="selectionEntry"/>
         <entryLink id="ddb2-635b-1b9d-d240" name="Frag and Krak Grenades" hidden="false" collective="false" import="true" targetId="0a53-b471-df87-7b83" type="selectionEntry"/>
         <entryLink id="5116-f123-6bdc-3aa2" name="Power Armour" hidden="false" collective="false" import="true" targetId="0a96-04b6-7340-91a4" type="selectionEntry"/>
@@ -2212,6 +2237,7 @@ Heavy Bolter: Splinter: 36” S2 AP4 Heavy 3 Rending</description>
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink id="fa0f-141b-2705-87d5" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="8e2a-0525-9100-3264" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="50.0"/>
@@ -4839,6 +4865,18 @@ If equipped with a Jump Pack then they may only join eligible squads with the Ju
                     <cost name="pts" typeId="points" value="10.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="c639-d7ec-21b7-938c" name="Volkite Serpenta" hidden="true" collective="false" import="true" targetId="ae27-c659-fffd-1561" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cba6-2d9f-b041-e96e" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="pts" typeId="points" value="1.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="3df4-8573-3686-9584" name="May be equiped with one of the following:" hidden="false" collective="false" import="true">
@@ -5451,8 +5489,19 @@ If equipped with a Jump Pack then they may only join eligible squads with the Ju
                       <repeats>
                         <repeat field="selections" scope="eefe-b2cd-3f41-7c84" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3f5d-64a1-c7b9-b60d" repeats="1" roundUp="false"/>
                       </repeats>
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cba6-2d9f-b041-e96e" type="equalTo"/>
+                      </conditions>
                     </modifier>
                     <modifier type="decrement" field="points" value="3.0"/>
+                    <modifier type="increment" field="points" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="eefe-b2cd-3f41-7c84" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3f5d-64a1-c7b9-b60d" repeats="1" roundUp="false"/>
+                      </repeats>
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cba6-2d9f-b041-e96e" type="equalTo"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                 </entryLink>
                 <entryLink id="910b-50cb-aa8f-14c6" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="5eb2-7950-9270-ceb5" type="selectionEntry">
@@ -5774,6 +5823,13 @@ If equipped with a Jump Pack then they may only join eligible squads with the Ju
               </constraints>
               <entryLinks>
                 <entryLink id="c779-924b-3c0b-2574" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="ae27-c659-fffd-1561" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="points" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cba6-2d9f-b041-e96e" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
@@ -5989,6 +6045,27 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e4f8-126c-5e00-8735" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="20fc-9e50-e241-7e07" type="min"/>
           </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="c2e6-8447-91f5-1573" name="Upgrade Bolt Pistol to Volkite Serpenta (DA Unification Only)" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cba6-2d9f-b041-e96e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <entryLinks>
+                <entryLink id="a016-6ed2-c09b-0509" name="Volkite Serpenta" hidden="true" collective="false" import="true" targetId="ae27-c659-fffd-1561" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="e51d-cf89-f58a-6004" value="9.0"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="pts" typeId="points" value="1.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks>
             <entryLink id="777a-ca4b-1d8a-1e25" name="Frag and Krak Grenades" hidden="false" collective="false" import="true" targetId="0a53-b471-df87-7b83" type="selectionEntry"/>
             <entryLink id="1aed-7368-b78c-115b" name="Bolt Pistols" hidden="false" collective="false" import="true" targetId="fe8d-1baa-d58d-00bc" type="selectionEntry"/>
@@ -6142,6 +6219,13 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
               </constraints>
               <entryLinks>
                 <entryLink id="8e49-fe0b-8400-e79d" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="ae27-c659-fffd-1561" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="points" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cba6-2d9f-b041-e96e" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
@@ -6716,6 +6800,24 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
                 <entryLink id="74c7-6a20-720a-f200" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="6026-d507-935a-7200" type="selectionEntry"/>
                 <entryLink id="bc6a-5e8d-f7cd-f36a" name="Chainsword/Combat Blade" hidden="false" collective="false" import="true" targetId="4b1e-680b-1d39-e4f1" type="selectionEntry"/>
                 <entryLink id="87d2-7c6d-ff4d-afbd" name="Chainaxe" hidden="false" collective="false" import="true" targetId="077b-15a9-4f9c-aae7" type="selectionEntry"/>
+                <entryLink id="be9f-969f-38b9-7550" name="Volkite Serpenta" hidden="true" collective="false" import="true" targetId="ae27-c659-fffd-1561" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="decrement" field="points" value="3.0"/>
+                    <modifier type="increment" field="points" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="c5ba-7647-23ba-c728" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f26-92ce-00a2-fc84" repeats="1" roundUp="false"/>
+                      </repeats>
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cba6-2d9f-b041-e96e" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cba6-2d9f-b041-e96e" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="1530-2344-dc6f-ec85" name="All models may exchange Flamer for" hidden="false" collective="false" import="true" defaultSelectionEntryId="76eb-5ad7-4cb3-a73f">
@@ -6913,6 +7015,13 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
                   </costs>
                 </entryLink>
                 <entryLink id="55d2-9039-632c-f5a0" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="ae27-c659-fffd-1561" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="points" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cba6-2d9f-b041-e96e" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
@@ -7359,6 +7468,27 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="468a-fb39-325b-ea10" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ade-2af0-904d-cde7" type="min"/>
           </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="3a91-15f6-8779-14f1" name="Upgrade Bolt Pistol to Volkite Serpenta (DA Unification Only)" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cba6-2d9f-b041-e96e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <entryLinks>
+                <entryLink id="5c10-4bf5-6049-02a0" name="Volkite Serpenta" hidden="true" collective="false" import="true" targetId="ae27-c659-fffd-1561" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="e51d-cf89-f58a-6004" value="10.0"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="pts" typeId="points" value="1.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks>
             <entryLink id="0df6-f6b4-7491-840c" name="New EntryLink" hidden="false" collective="false" import="true" targetId="0a96-04b6-7340-91a4" type="selectionEntry"/>
             <entryLink id="94f2-1a1a-44e7-6afa" name="New EntryLink" hidden="false" collective="false" import="true" targetId="0a53-b471-df87-7b83" type="selectionEntry"/>
@@ -7865,6 +7995,27 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfe6-492d-945d-f5ac" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46e5-0faa-e783-0761" type="min"/>
           </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="816b-7bb1-ac65-7225" name="Upgrade Bolt Pistol to Volkite Serpenta (DA Unification Only)" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cba6-2d9f-b041-e96e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <entryLinks>
+                <entryLink id="f3d2-99d3-798f-c729" name="Volkite Serpenta" hidden="true" collective="false" import="true" targetId="ae27-c659-fffd-1561" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="e51d-cf89-f58a-6004" value="10.0"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="pts" typeId="points" value="1.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks>
             <entryLink id="5a42-7b28-b1db-6d76" name="New EntryLink" hidden="false" collective="false" import="true" targetId="0a96-04b6-7340-91a4" type="selectionEntry"/>
             <entryLink id="8cf5-c829-a41e-f8f2" name="New EntryLink" hidden="false" collective="false" import="true" targetId="0a53-b471-df87-7b83" type="selectionEntry"/>
@@ -10120,23 +10271,10 @@ The Centurion/Delegatus may take Terminator Armour as normal. If he does then th
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="eacb-6f76-d165-5160" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5198-6a05-e086-bc5a" type="equalTo"/>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5b4-32b9-b141-6e94" type="equalTo"/>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd63-953f-226d-6ae8" type="equalTo"/>
                         <condition field="selections" scope="eacb-6f76-d165-5160" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7582-f288-ad5d-69b2" type="equalTo"/>
                         <condition field="selections" scope="eacb-6f76-d165-5160" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93f9-8aba-be48-907a" type="equalTo"/>
                         <condition field="selections" scope="eacb-6f76-d165-5160" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e48-47c8-48c4-6162" type="equalTo"/>
                         <condition field="selections" scope="eacb-6f76-d165-5160" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8603-ec36-3283-576d" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="increment" field="5423232344415441232323" value="1">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc79-0428-3234-afe4" type="greaterThan"/>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5b4-32b9-b141-6e94" type="greaterThan"/>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd63-953f-226d-6ae8" type="greaterThan"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -11062,22 +11200,9 @@ Void Shield Harness</description>
                       <conditions>
                         <condition field="selections" scope="ea69-747a-a648-daae" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8603-ec36-3283-576d" type="equalTo"/>
                         <condition field="selections" scope="ea69-747a-a648-daae" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93f9-8aba-be48-907a" type="equalTo"/>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5b4-32b9-b141-6e94" type="equalTo"/>
                         <condition field="selections" scope="ea69-747a-a648-daae" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7582-f288-ad5d-69b2" type="equalTo"/>
                         <condition field="selections" scope="ea69-747a-a648-daae" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e48-47c8-48c4-6162" type="equalTo"/>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd63-953f-226d-6ae8" type="equalTo"/>
                         <condition field="selections" scope="ea69-747a-a648-daae" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5198-6a05-e086-bc5a" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="increment" field="5423232344415441232323" value="1">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5b4-32b9-b141-6e94" type="greaterThan"/>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc79-0428-3234-afe4" type="greaterThan"/>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd63-953f-226d-6ae8" type="greaterThan"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -11814,22 +11939,9 @@ Void Shield Harness</description>
                       <conditions>
                         <condition field="selections" scope="6817-44ed-9e65-d5e1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8603-ec36-3283-576d" type="equalTo"/>
                         <condition field="selections" scope="6817-44ed-9e65-d5e1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5198-6a05-e086-bc5a" type="equalTo"/>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5b4-32b9-b141-6e94" type="equalTo"/>
                         <condition field="selections" scope="6817-44ed-9e65-d5e1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7582-f288-ad5d-69b2" type="equalTo"/>
                         <condition field="selections" scope="6817-44ed-9e65-d5e1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93f9-8aba-be48-907a" type="equalTo"/>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd63-953f-226d-6ae8" type="equalTo"/>
                         <condition field="selections" scope="6817-44ed-9e65-d5e1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e48-47c8-48c4-6162" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="increment" field="5423232344415441232323" value="1">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd63-953f-226d-6ae8" type="greaterThan"/>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc79-0428-3234-afe4" type="greaterThan"/>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5b4-32b9-b141-6e94" type="greaterThan"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -12441,18 +12553,6 @@ cognis-signum.</description>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="913e-a015-ea78-d1d7" name="Dedicated Transport" hidden="false" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d26-af9e-eb5c-9712" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="da7e-d24a-eb0d-e14d" value="0.0">
-              <conditions>
-                <condition field="selections" scope="bfae-d4db-e184-7134" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d26-af9e-eb5c-9712" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8419-297d-addf-3381" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="da7e-d24a-eb0d-e14d" type="max"/>
@@ -12627,198 +12727,6 @@ cognis-signum.</description>
               </categoryLinks>
             </entryLink>
           </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="bc0b-af27-2552-2cb6" name="Mobility" hidden="false" collective="false" import="true" defaultSelectionEntryId="8d26-af9e-eb5c-9712">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5732-558c-6a8e-72dc" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cbd-1ea4-452e-9c7c" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="dc79-0428-3234-afe4" name="Bike with Twin-linked Bolter, Space Marine" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="83d0ac63-e1ef-0a67-4171-472bf9f042c0" type="equalTo"/>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="913e-a015-ea78-d1d7" type="greaterThan"/>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fea8-8a3a-65d6-59bd" type="greaterThan"/>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef1d-f7d5-2c48-0bba" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="increment" field="points" value="15.0">
-                  <repeats>
-                    <repeat field="selections" scope="bfae-d4db-e184-7134" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="376c-5334-eba8-d4ec" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="6f9f-373b-b3bb-0a55" name="New InfoLink" hidden="false" targetId="0434-8c4b-9614-73dd" type="profile"/>
-                <infoLink id="6455-e914-d1ba-d361" name="Twin-Linked Boltgun" hidden="false" targetId="37fc-8473-3879-14a4" type="profile"/>
-                <infoLink id="7bcf-e01a-627b-162e" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule"/>
-                <infoLink id="5ada-3713-6643-f9b8" name="New InfoLink" hidden="false" targetId="d3e5-b43d-a89c-3bd8" type="rule"/>
-                <infoLink id="18c1-cfcf-966b-bae2" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule"/>
-                <infoLink id="ae8a-e491-017f-10f5" name="Very Bulky" hidden="false" targetId="abc9-8566-bb61-4b7c" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="a84f-fe60-35ce-ef8a" name="New CategoryLink" hidden="false" targetId="c2ec-0327-8667-0a81" primary="false"/>
-              </categoryLinks>
-              <entryLinks>
-                <entryLink id="39b2-6103-2404-cc9e" name="Legiones Astartes" hidden="false" collective="false" import="true" targetId="4014-7d86-22e9-5d96" type="selectionEntry"/>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="30.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="4106-2958-266d-5129" name="Jump Pack" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fea8-8a3a-65d6-59bd" type="greaterThan"/>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="913e-a015-ea78-d1d7" type="greaterThan"/>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef1d-f7d5-2c48-0bba" type="equalTo"/>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="83d0ac63-e1ef-0a67-4171-472bf9f042c0" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="increment" field="points" value="5.0">
-                  <repeats>
-                    <repeat field="selections" scope="bfae-d4db-e184-7134" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a1e9-aeb0-4976-b82e" type="max"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="b62d-5cd7-1fbd-86c7" name="Jump Units" hidden="false" targetId="47cf-71bb-d59d-f9de" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="45.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8d26-af9e-eb5c-9712" name="On Foot" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="dc09-4bcd-8f74-3aa4" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="bfae-d4db-e184-7134" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="913e-a015-ea78-d1d7" type="greaterThan"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc09-4bcd-8f74-3aa4" type="min"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink id="1055-48ef-accf-0708" name="New CategoryLink" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="fd63-953f-226d-6ae8" name="Scimitar Jetbike with Heavy Bolter, Legion" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fea8-8a3a-65d6-59bd" type="greaterThan"/>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="913e-a015-ea78-d1d7" type="greaterThan"/>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59c90433-589a-8b8c-ae39-6117af908c13" type="greaterThan"/>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef1d-f7d5-2c48-0bba" type="equalTo"/>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="83d0ac63-e1ef-0a67-4171-472bf9f042c0" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="increment" field="points" value="25.0">
-                  <repeats>
-                    <repeat field="selections" scope="bfae-d4db-e184-7134" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5a7b-3e2f-4bf7-a3e9" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="558b-359a-2be6-f77b" name="Very Bulky" hidden="false" targetId="abc9-8566-bb61-4b7c" type="rule"/>
-                <infoLink id="21da-9b36-e27d-0323" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule"/>
-                <infoLink id="c85f-6c91-956a-9de3" name="New InfoLink" hidden="false" targetId="d3e5-b43d-a89c-3bd8" type="rule"/>
-                <infoLink id="e2ab-e0b0-326f-9c74" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule"/>
-                <infoLink id="0017-50fd-39f8-0765" name="Space Marine Jetbike" hidden="false" targetId="3c28-4994-00ed-bbe5" type="profile"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="915b-ec7a-3946-1ca4" name="New CategoryLink" hidden="false" targetId="1640-3081-13eb-b1cf" primary="false"/>
-              </categoryLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="8ed7-25ac-8f42-28c8" name="Exchange Heavy Bolter for:" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fc66-c44c-06fb-ae5a" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b048-433e-4808-f666" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="bc2f-fe6f-e35d-7c40" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="3900-17df-5b2c-7385" type="selectionEntry"/>
-                    <entryLink id="cdc1-1452-2aea-5a6e" name="Heavy Flamer (Salamander)" hidden="false" collective="false" import="true" targetId="f2d4a6e5-edf4-52b2-fa15-13b163113aa5" type="selectionEntry"/>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="3981-817a-2028-0f1a" name="Molecular Acid Shells" hidden="false" collective="false" import="true" targetId="413a-6252-82be-9f41" type="selectionEntry"/>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="60.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="f5b4-32b9-b141-6e94" name="Shamshir Jetbike with Scatterbolt Launcher, Legion" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fea8-8a3a-65d6-59bd" type="greaterThan"/>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="913e-a015-ea78-d1d7" type="greaterThan"/>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59c90433-589a-8b8c-ae39-6117af908c13" type="greaterThan"/>
-                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c66-2306-9285-8809" type="equalTo"/>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef1d-f7d5-2c48-0bba" type="equalTo"/>
-                        <condition field="selections" scope="bfae-d4db-e184-7134" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="83d0ac63-e1ef-0a67-4171-472bf9f042c0" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="increment" field="points" value="25.0">
-                  <repeats>
-                    <repeat field="selections" scope="bfae-d4db-e184-7134" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0597-b94a-9276-317e" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="0d72-2d79-21d7-3583" name="Very Bulky" hidden="false" targetId="abc9-8566-bb61-4b7c" type="rule"/>
-                <infoLink id="78c1-2cb2-9297-b24d" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule"/>
-                <infoLink id="a278-e0b8-c37d-73c6" name="New InfoLink" hidden="false" targetId="d3e5-b43d-a89c-3bd8" type="rule"/>
-                <infoLink id="4f20-94a0-8d69-b62e" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule"/>
-                <infoLink id="e6d8-91f6-73ed-d319" name="Space Marine Jetbike" hidden="false" targetId="3c28-4994-00ed-bbe5" type="profile"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="c507-32ac-a6ba-4792" name="New CategoryLink" hidden="false" targetId="1640-3081-13eb-b1cf" primary="false"/>
-              </categoryLinks>
-              <entryLinks>
-                <entryLink id="926c-3423-676e-2e38" name="Scatterbolt Launcher" hidden="false" collective="false" import="true" targetId="080e-3f21-4626-603f" type="selectionEntry"/>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="60.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="dc48-5884-9716-f108" name="Command Squad" hidden="false" collective="false" import="true" defaultSelectionEntryId="ee05-ee54-63e3-8a64">
           <constraints>
@@ -13724,16 +13632,7 @@ cognis-signum.</description>
                             <cost name="pts" typeId="points" value="10.0"/>
                           </costs>
                         </entryLink>
-                        <entryLink id="ef8a-3e4b-b7dc-4fbe" name="Boarding Shield" hidden="true" collective="false" import="true" targetId="285c-a3f4-c732-9ff8" type="selectionEntry">
-                          <modifiers>
-                            <modifier type="set" field="hidden" value="false">
-                              <conditions>
-                                <condition field="selections" scope="bfae-d4db-e184-7134" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc79-0428-3234-afe4" type="equalTo"/>
-                                <condition field="selections" scope="bfae-d4db-e184-7134" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd63-953f-226d-6ae8" type="equalTo"/>
-                                <condition field="selections" scope="bfae-d4db-e184-7134" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4106-2958-266d-5129" type="equalTo"/>
-                              </conditions>
-                            </modifier>
-                          </modifiers>
+                        <entryLink id="ef8a-3e4b-b7dc-4fbe" name="Boarding Shield" hidden="false" collective="false" import="true" targetId="285c-a3f4-c732-9ff8" type="selectionEntry">
                           <costs>
                             <cost name="pts" typeId="points" value="3.0"/>
                           </costs>
@@ -13886,43 +13785,6 @@ cognis-signum.</description>
               </selectionEntries>
               <selectionEntryGroups>
                 <selectionEntryGroup id="f644-c070-6f91-d924" name="Entire squad may take:" hidden="false" collective="false" import="true">
-                  <selectionEntries>
-                    <selectionEntry id="46aa-fcc9-c473-ba3a" name="Molecular Acid Shells" hidden="false" collective="false" import="true" type="upgrade">
-                      <modifiers>
-                        <modifier type="set" field="hidden" value="true">
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6fb-0e54-0be1-9ed1" type="equalTo"/>
-                                <condition field="selections" scope="bfae-d4db-e184-7134" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd63-953f-226d-6ae8" type="equalTo"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                        <modifier type="increment" field="points" value="5">
-                          <repeats>
-                            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="332a-7028-88e6-7161" repeats="1" roundUp="false"/>
-                          </repeats>
-                        </modifier>
-                      </modifiers>
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8408-120c-a4ee-f6a2" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="6be8-f9e9-43a3-7aee" name="Molecular acid shells" publicationId="ca571888--pubN89821" page="267" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-                          <characteristics>
-                            <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
-                            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">2</characteristic>
-                            <characteristic name="AP" typeId="415023232344415441232323">D6</characteristic>
-                            <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 3, Poison (2)</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name="pts" typeId="points" value="5.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
                   <entryLinks>
                     <entryLink id="c10e-ab96-248b-94c4" name="Sonic Shriekers" hidden="false" collective="false" import="true" targetId="d8f4-1501-66fd-0477" type="selectionEntry">
                       <modifiers>
