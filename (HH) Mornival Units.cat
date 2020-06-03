@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9f87-b468-2001-5e3b" name="Mornival Units Legion Astartes (Fanmade)" revision="11" battleScribeVersion="2.03" authorName="Aus30K / Mourival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="120" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9f87-b468-2001-5e3b" name="Mornival Units Legion Astartes (Fanmade)" revision="12" battleScribeVersion="2.03" authorName="Aus30K / Mourival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="120" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="0e6e-8c19-c436-39c4" name="Mournival Events 3.0 Digital Version"/>
     <publication id="cf75-540e-e446-ecd5" name="Mournival Events FAQ and Experimental Errata v3.1"/>
@@ -9373,6 +9373,9 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
               </constraints>
               <selectionEntries>
                 <selectionEntry id="ec07-47f5-e8d3-d7b2" name="Heavy Flamer with Chem-munitions" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5a0-9342-ec85-82a4" type="max"/>
+                  </constraints>
                   <profiles>
                     <profile id="e5e4-82f0-f465-2fbf" name="Heavy Flamer with Chem-munitions" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
                       <characteristics>
@@ -9453,11 +9456,17 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d448-0bce-a45b-3941" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10.0"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="f98f-c8a4-0a92-f229" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="a161-76b3-9ef1-da7b" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12bb-7d31-2386-41f9" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="7.0"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="7e3e-84e9-944d-cac7" name="Toxiferran Flamer" hidden="false" collective="false" import="true" targetId="4440-dc83-bbd9-2a0f" type="selectionEntry">
                   <constraints>
@@ -9493,7 +9502,7 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
                 </rule>
               </rules>
               <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -9552,10 +9561,35 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0348-a5d4-a80a-ead3" type="min"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0a1f-aecc-b6bb-ebe9" type="max"/>
           </constraints>
+          <selectionEntries>
+            <selectionEntry id="4f29-5467-bf04-5625" name="Heavy Flamer with Chem-munitions" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="18.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cd7-853d-27ee-5d58" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="5124-022a-1992-1797" name="Heavy Flamer with Chem-munitions" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">Template</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1, Shred, Gets Hot</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="3b8f-671d-8715-5a17" name="Shred" hidden="false" targetId="89da-0cb5-bee4-8ec2" type="rule"/>
+                <infoLink id="ecf4-ded2-bbfa-9b90" name="Gets Hot" hidden="false" targetId="f4fd-d519-4769-5510" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <entryLinks>
             <entryLink id="e137-082e-8bb2-46c1" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="f0c0-384d-440f-c03b" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="points" value="0.0"/>
+                <modifier type="set" field="1823-e312-2e06-58c9" value="18.0"/>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="e137-082e-8bb2-46c1" value="18.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fabd-e7fd-dd71-95fc" type="max"/>
@@ -9578,6 +9612,9 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
               <constraints>
                 <constraint field="selections" scope="parent" value="18.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50ed-af30-c4ad-26b8" type="max"/>
               </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
             </entryLink>
             <entryLink id="b3f1-d9ce-cc6d-f5d1" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="26db-484d-3757-03c8" type="selectionEntry">
               <modifiers>
