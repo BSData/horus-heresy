@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" revision="100" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="99" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" revision="101" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="120" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="90aa-c2c8-pubN65537" name="Crusade Imperialis"/>
     <publication id="90aa-c2c8-pubN65563" name="AoDRB"/>
@@ -102,6 +102,23 @@ A wound cannot be re-allocated onto a gun model from a successful Look Out, Sir 
     <categoryEntry id="25d0-388c-dd16-af9a" name="Flying Monstrous Creature" hidden="false"/>
     <categoryEntry id="7fdd-2a97-d0e9-6524" name="Cybernetica Cortex" hidden="false"/>
     <categoryEntry id="37f2-7398-84ee-6fdf" name="Lorica Thallax" hidden="false"/>
+    <categoryEntry id="632b-24e7-f308-28f8" name="Bike" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b725-164a-8f15-6939" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="5e88-a3ee-976d-86e1" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule"/>
+        <infoLink id="234a-a7db-d03a-3adc" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule"/>
+        <infoLink id="9073-f452-dca0-0407" name="Jink" hidden="false" targetId="d3e5-b43d-a89c-3bd8" type="rule"/>
+        <infoLink id="28fd-8dfa-58a4-3aca" name="Very Bulky" hidden="false" targetId="abc9-8566-bb61-4b7c" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="a54c-aa0e-4092-1b9a" name="Cavalry" page="" hidden="false">
+      <infoLinks>
+        <infoLink id="9fd8-3c90-9424-97d3" name="Fleet" hidden="false" targetId="69e5-fc02-1f9d-63c2" type="rule"/>
+        <infoLink id="05df-6769-b04f-fa9e" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="6329-878c-da3f-aa5e" name="Fan Made - Centurion" page="https://ia801902.us.archive.org/12/items/CENTURION1.1/CENTURION%201.1.pdf" hidden="false">
@@ -204,6 +221,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d8b5-c04a-817f-3c7e" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="e35f-1e1c-fc6c-f1fe" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="80a2-7d5f-396f-352e" name="Armies of Dark Compliance" hidden="false">
@@ -255,6 +273,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9bcf-e1db-16a8-8f68" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="4e2c-70ad-4dd1-1c1e" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="98db-b4ba-fbcd-3239" name=" Crusade" hidden="false">
@@ -317,6 +336,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="995f-3c8e-6690-e0be" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="06e0-fd6c-814c-b905" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="657a-bc81-4ae3-8a5b" name="Allied Detachment" hidden="false">
@@ -371,6 +391,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3873-4bf0-2e6e-51de" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="ea32-ebdf-a9e0-1feb" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="089f-7e79-bde1-90dd" name=" Zone Mortalis - Attacker" hidden="false">
@@ -408,6 +429,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1b51-ce52-4d7a-c446" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="6e3c-278f-1fe5-df94" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="7b39-af6b-52e1-b4d7" name=" Zone Mortalis - Defender" hidden="false">
@@ -441,6 +463,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9fcc-124f-4a07-bf97" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="64a7-0135-65c0-7fa2" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="7e48-c376-8ffe-8ae7" name=" Zone Mortalis - Combatant" hidden="false">
@@ -478,6 +501,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="fdc6-f699-aeb3-f756" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="9cdd-504a-8562-88b3" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="d1ef-61e1-3d67-5a19" name="Optional - Onslaught" hidden="false">
@@ -522,6 +546,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="591e-77a0-8c09-b4b5" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="bde2-af12-3fb7-5510" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="3a6f-6d67-a8b2-e911" name="Optional - Castellan" hidden="false">
@@ -571,6 +596,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="13c4-57aa-ad88-303c" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="3754-c399-0058-9cfc" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="f715-cdf4-0c5e-213a" name="Optional - Leviathan" hidden="false">
@@ -628,6 +654,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c25f-1d0e-8826-021c" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="fbdc-d038-8a86-98da" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="8666-c0df-4dfa-08f1" name=" Strategic Raid - Garrison" hidden="false">
@@ -675,6 +702,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b210-4caa-2fae-d5e5" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="39e3-532c-0241-bd1a" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -684,6 +712,27 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <categoryLink id="b9e8-93cb-b89e-24a1" name="New CategoryLink" hidden="false" targetId="5297-7e0f-fa0b-3537" primary="true"/>
         <categoryLink id="9420-adca-b388-9142" name="New CategoryLink" hidden="false" targetId="c1d8-4cbf-e883-4e44" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5a9e-6c6d-c357-0f70" name="Mournival Rules" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6cda-a9c1-63bf-c14d" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6fa5-84ab-120d-eca8" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85d6-b968-20a1-233f" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="a3f8-0cf8-e2af-9f3c" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9e37-8b0c-2c91-602b" name="Mornival Rules Active" hidden="false" collective="false" import="true" targetId="c859-6b16-c533-7e97" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b35e-5cb0-9679-b942" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0dca-fb38-49a3-d4c1" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -803,7 +852,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <categoryLink id="cea8-0318-73b4-c3a4" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="450e-3771-b9c4-d45a" name="Imperialis Militia Grenadier Squad" hidden="false" collective="false" import="true" targetId="f299-898a-b637-0aa2" type="selectionEntry">
+    <entryLink id="450e-3771-b9c4-d45a" name="Grenadier Squad, Imperialis Militia" hidden="false" collective="false" import="true" targetId="f299-898a-b637-0aa2" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -1011,7 +1060,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <categoryLink id="209c-eaf9-4bf5-08f9" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="4e4e-f6f4-33e0-f927" name="Imperialis Militia Grenadier Squad" hidden="true" collective="false" import="true" targetId="f299-898a-b637-0aa2" type="selectionEntry">
+    <entryLink id="4e4e-f6f4-33e0-f927" name="Grenadier Squad, Imperialis Militia" hidden="true" collective="false" import="true" targetId="f299-898a-b637-0aa2" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -1116,6 +1165,30 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
     <entryLink id="20c2-dc1e-b6e8-983b" name="Questoris Knight Warden" hidden="false" collective="false" import="true" targetId="f4f1-dad6-0596-ca5a" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="b8a6-3834-26a1-3780" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bf29-1737-feca-6c29" name="Militia Land Speeder Squadron" hidden="true" collective="false" import="true" targetId="7617-bc44-a31d-b389" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="17a8-5eb7-d15a-9138" name="New CategoryLink" hidden="false" targetId="466173742041747461636b23232344415441232323" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4589-2034-b7aa-dad6" name="Militia Mounted Squadron" hidden="true" collective="false" import="true" targetId="222a-94eb-eda4-afe1" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="fbf2-9e88-52a2-c014" name="New CategoryLink" hidden="false" targetId="466173742041747461636b23232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -2275,6 +2348,26 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
                 <condition field="selections" scope="90d3-fb2c-d7c2-6482" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9a69-a0b1-a2be-9e00" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="556e6974205479706523232344415441232323" value="Bike (Character)">
+              <conditions>
+                <condition field="selections" scope="90d3-fb2c-d7c2-6482" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="556e6974205479706523232344415441232323" value="Cavalry (Character)">
+              <conditions>
+                <condition field="selections" scope="90d3-fb2c-d7c2-6482" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5423232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="90d3-fb2c-d7c2-6482" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5723232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="90d3-fb2c-d7c2-6482" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry (Character)</characteristic>
@@ -2348,6 +2441,28 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
               </constraints>
               <profiles>
                 <profile id="f020-df3c-3ae2-b268" name="Alpha Psyker" publicationId="90aa-c2c8-pubN73486" page="191" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                  <modifiers>
+                    <modifier type="set" field="556e6974205479706523232344415441232323" value="Bike (Character)">
+                      <conditions>
+                        <condition field="selections" scope="90d3-fb2c-d7c2-6482" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="556e6974205479706523232344415441232323" value="Cavalry (Character)">
+                      <conditions>
+                        <condition field="selections" scope="90d3-fb2c-d7c2-6482" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="5423232344415441232323" value="1">
+                      <conditions>
+                        <condition field="selections" scope="90d3-fb2c-d7c2-6482" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="5723232344415441232323" value="1">
+                      <conditions>
+                        <condition field="selections" scope="90d3-fb2c-d7c2-6482" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry (Character)</characteristic>
                     <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
@@ -2404,6 +2519,30 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
               <modifiers>
                 <modifier type="set" field="hidden" value="false"/>
               </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="a9f2-dd1b-aeb3-c22e" name="Mounted Force" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="222a-94eb-eda4-afe1" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb0e-9b64-5cd9-a3f5" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="d5f8-7437-b276-e578" name="Outriders (Bikes)" hidden="false" collective="false" import="true" targetId="7fbb-1bb9-0360-d6e1" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="3b41-b9de-146d-0ce6" name="Riders (Cavalry)" hidden="false" collective="false" import="true" targetId="875a-e56c-84b6-2b18" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="4.0"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -2629,7 +2768,7 @@ D3     Mutation
                 <entryLink id="b6d0-caa9-7637-7c64" name="May exchange heavy bolter for:" hidden="false" collective="false" import="true" targetId="4be5-eee6-ab84-8558" type="selectionEntryGroup"/>
                 <entryLink id="4a38-5b1d-9136-e02e" hidden="false" collective="false" import="true" targetId="bbe6-a89e-c49e-15c6" type="selectionEntryGroup"/>
                 <entryLink id="b6a2-680c-039a-e24d" hidden="false" collective="false" import="true" targetId="e218-c4f7-0220-e158" type="selectionEntryGroup"/>
-                <entryLink id="c829-a856-a5c7-fd50" hidden="false" collective="false" import="true" targetId="525c-a63f-e928-d7d5" type="selectionEntryGroup"/>
+                <entryLink id="c829-a856-a5c7-fd50" name="May take a pair of sponsons:" hidden="false" collective="false" import="true" targetId="525c-a63f-e928-d7d5" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="140.0"/>
@@ -2843,6 +2982,28 @@ D3     Mutation
           </constraints>
           <profiles>
             <profile id="1693-d1f1-afc3-4eb8" name="Medicae Orderly" publicationId="90aa-c2c8-pubN73486" page="199" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <modifiers>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Cavalry (Character)">
+                  <conditions>
+                    <condition field="selections" scope="2111-1bc6-317a-5314" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5723232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="2111-1bc6-317a-5314" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Bike (Character)">
+                  <conditions>
+                    <condition field="selections" scope="2111-1bc6-317a-5314" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="2111-1bc6-317a-5314" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry (Character)</characteristic>
                 <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
@@ -2857,6 +3018,32 @@ D3     Mutation
               </characteristics>
             </profile>
           </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="dec6-e0b8-a173-b08f" name="Mounted Force" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="222a-94eb-eda4-afe1" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8254-a742-1955-b741" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="db32-a6b4-a8ec-b20c" name="Outriders (Bikes)" hidden="false" collective="false" import="true" targetId="7fbb-1bb9-0360-d6e1" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="5688-4e5f-d92a-3956" name="Riders (Cavalry)" hidden="false" collective="false" import="true" targetId="875a-e56c-84b6-2b18" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="points" value="4.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks>
             <entryLink id="8e46-07b0-979b-8a35" name="Laspistol" hidden="false" collective="false" import="true" targetId="8f9a-ab5e-56a1-18d2" type="selectionEntry"/>
             <entryLink id="d926-ace1-0a77-a9c0" name="Medi-Pack" hidden="false" collective="false" import="true" targetId="0c10-40cd-a0d5-f562" type="selectionEntry"/>
@@ -4201,6 +4388,28 @@ D3     Mutation
           </constraints>
           <profiles>
             <profile id="891c-78dd-db0d-659f" name="Discipline Master" publicationId="90aa-c2c8-pubN73486" page="190" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <modifiers>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Bike (Character)">
+                  <conditions>
+                    <condition field="selections" scope="8ef3-b699-2981-1b1a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Cavalry (Character)">
+                  <conditions>
+                    <condition field="selections" scope="8ef3-b699-2981-1b1a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5723232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="8ef3-b699-2981-1b1a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="8ef3-b699-2981-1b1a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry (Character)</characteristic>
                 <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
@@ -4362,6 +4571,30 @@ D3     Mutation
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="a500-24a4-0c58-511b" name="Mounted Force" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="222a-94eb-eda4-afe1" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a84-3857-0448-0182" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="0fed-e571-41e9-c63c" name="Outriders (Bikes)" hidden="false" collective="false" import="true" targetId="7fbb-1bb9-0360-d6e1" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="6da8-74e3-8ffe-eb94" name="Riders (Cavalry)" hidden="false" collective="false" import="true" targetId="875a-e56c-84b6-2b18" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="points" value="4.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
@@ -4724,6 +4957,28 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       </constraints>
       <profiles>
         <profile id="3627-ea71-a4fd-23a6" name="Force Commander" publicationId="90aa-c2c8-pubN73486" page="187" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <modifiers>
+            <modifier type="set" field="556e6974205479706523232344415441232323" value="Cavalry (Character)">
+              <conditions>
+                <condition field="selections" scope="343f-b1ae-c962-4f62" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="556e6974205479706523232344415441232323" value="Bike (Character)">
+              <conditions>
+                <condition field="selections" scope="343f-b1ae-c962-4f62" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5723232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="343f-b1ae-c962-4f62" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5423232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="343f-b1ae-c962-4f62" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry (Character)</characteristic>
             <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
@@ -5170,6 +5425,30 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="b05e-2d3f-3ade-c230" name="Mounted Force" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="222a-94eb-eda4-afe1" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="342a-d6d6-d52b-d1b4" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="0531-1688-d509-97b7" name="Outriders (Bikes)" hidden="false" collective="false" import="true" targetId="7fbb-1bb9-0360-d6e1" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="9fdc-834c-9c54-118b" name="Riders (Cavalry)" hidden="false" collective="false" import="true" targetId="875a-e56c-84b6-2b18" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="4.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="2c60-a021-ccf6-8386" name="The Muster of Worlds" hidden="false" collective="false" import="true" targetId="cbce-55d8-bc66-b3a9" type="selectionEntry"/>
@@ -5197,13 +5476,35 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
         <categoryLink id="d07a-7a4d-c270-e223" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="68a8-a846-69bc-b994" name="Militia Bodyguard" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="68a8-a846-69bc-b994" name="Militia Bodyguard" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2547-9376-5924-2874" type="min"/>
             <constraint field="selections" scope="parent" value="7.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6691-87f3-18ea-53c5" type="max"/>
           </constraints>
           <profiles>
             <profile id="db25-fc9e-26d8-7f82" name="Militia Bodyguard" publicationId="90aa-c2c8-pubN73486" page="192" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <modifiers>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Bike">
+                  <conditions>
+                    <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Cavalry">
+                  <conditions>
+                    <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5723232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
                 <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
@@ -5225,13 +5526,35 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
             <cost name="pts" typeId="points" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="fcf9-e928-e7fc-6a40" name="Platoon Commander" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="fcf9-e928-e7fc-6a40" name="Platoon Commander" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f3bc-b646-ea5d-2bc5" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a0d-3574-a6e2-fa96" type="max"/>
           </constraints>
           <profiles>
             <profile id="f241-1206-39f8-66e3" name="Platoon Commander" publicationId="90aa-c2c8-pubN73486" page="192" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <modifiers>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Bike (Character)">
+                  <conditions>
+                    <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Cavalry (Character)">
+                  <conditions>
+                    <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5723232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry (Character)</characteristic>
                 <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
@@ -5458,13 +5781,35 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a4ec-b949-4938-b0c6" name="Vox Operator" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a4ec-b949-4938-b0c6" name="Vox Operator" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c982-c631-e160-512b" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0559-b275-73a5-97bb" type="min"/>
           </constraints>
           <profiles>
             <profile id="ceb0-3378-6fe7-3533" name="Vox Operator" publicationId="90aa-c2c8-pubN73486" page="192" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <modifiers>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Cavalry">
+                  <conditions>
+                    <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Bike">
+                  <conditions>
+                    <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5723232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
                 <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
@@ -5500,13 +5845,35 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a5be-7900-a68f-5055" name="Platoon Standard Bearer" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a5be-7900-a68f-5055" name="Platoon Standard Bearer" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6478-0c99-4480-47c4" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c917-ed37-e645-dcdd" type="min"/>
           </constraints>
           <profiles>
             <profile id="24be-7aba-151a-17cf" name="Platoon Standard Bearer" publicationId="90aa-c2c8-pubN73486" page="192" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <modifiers>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Bike">
+                  <conditions>
+                    <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Cavalry">
+                  <conditions>
+                    <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5723232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
                 <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
@@ -5575,6 +5942,13 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="8082-5ec3-3bb2-b709" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2917-ac81-176d-3780" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3ef0-bf2a-3454-2e56" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c6ee-1bdb-803c-9609" type="max"/>
@@ -5686,6 +6060,38 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
               </costs>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="2917-ac81-176d-3780" name="Mounted Force" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="222a-94eb-eda4-afe1" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb67-3bd3-b52d-11c9" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="fdbe-a11d-daca-5c6f" name="Outriders (Bikes)" hidden="false" collective="false" import="true" targetId="7fbb-1bb9-0360-d6e1" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="points" value="5.0">
+                  <repeats>
+                    <repeat field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="36ee-03ec-59c3-1bb2" name="Riders (Cavalry)" hidden="false" collective="false" import="true" targetId="875a-e56c-84b6-2b18" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="points" value="4.0">
+                  <repeats>
+                    <repeat field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -6222,6 +6628,28 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
           </constraints>
           <profiles>
             <profile id="7584-1482-cee0-6c48" name="Grenadier" publicationId="90aa-c2c8-pubN73486" page="195" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <modifiers>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Cavalry">
+                  <conditions>
+                    <condition field="selections" scope="f299-898a-b637-0aa2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Bike">
+                  <conditions>
+                    <condition field="selections" scope="f299-898a-b637-0aa2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5723232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="f299-898a-b637-0aa2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="f299-898a-b637-0aa2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
                 <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
@@ -6250,6 +6678,28 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
           </constraints>
           <profiles>
             <profile id="8684-f5f1-6c0f-d399" name="Grenadier Sergeant" publicationId="90aa-c2c8-pubN73486" page="195" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <modifiers>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Bike (Character)">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Cavalry (Character)">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5723232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="f299-898a-b637-0aa2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry (Character)</characteristic>
                 <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
@@ -6550,6 +7000,13 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="7b61-5fdd-cf5c-8c7b" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="f299-898a-b637-0aa2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3976-de26-0726-03aa" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="63de-cef1-4974-861f" type="max"/>
           </constraints>
@@ -6895,6 +7352,38 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="3976-de26-0726-03aa" name="Mounted Force" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="222a-94eb-eda4-afe1" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99d0-920a-47c9-b6d9" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="6d65-40f8-bcd8-b907" name="Outriders (Bikes)" hidden="false" collective="false" import="true" targetId="7fbb-1bb9-0360-d6e1" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="points" value="5.0">
+                  <repeats>
+                    <repeat field="selections" scope="f299-898a-b637-0aa2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="1b54-374c-eb31-eedb" name="Riders (Cavalry)" hidden="false" collective="false" import="true" targetId="875a-e56c-84b6-2b18" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="points" value="4.0">
+                  <repeats>
+                    <repeat field="selections" scope="f299-898a-b637-0aa2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="3d11-0d9d-0dbb-4ae8" name="Provenance" hidden="false" collective="false" import="true" targetId="9d50-7127-dc55-d542" type="selectionEntryGroup"/>
@@ -6933,13 +7422,35 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
         <categoryLink id="0c29-6662-4f23-3d41" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="3b8d-1a44-5054-bf06" name="Recon Auxiliaries" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="3b8d-1a44-5054-bf06" name="Recon Auxiliaries" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4938-8a44-5c91-8dfe" type="min"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b564-0bcb-ec4d-b609" type="max"/>
           </constraints>
           <profiles>
             <profile id="eb2b-06ae-944c-f22f" name="Recon Auxiliary" publicationId="90aa-c2c8-pubN73486" page="197" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <modifiers>
+                <modifier type="increment" field="5723232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="a05b-1aaf-314c-cbba" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Bike">
+                  <conditions>
+                    <condition field="selections" scope="a05b-1aaf-314c-cbba" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="a05b-1aaf-314c-cbba" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Cavalry">
+                  <conditions>
+                    <condition field="selections" scope="a05b-1aaf-314c-cbba" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
                 <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
@@ -6958,13 +7469,35 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6acc-9e13-506e-15d9" name="Recon Sergeant" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="6acc-9e13-506e-15d9" name="Recon Sergeant" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae25-3062-4a99-da55" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c72c-ce19-b260-cf7b" type="max"/>
           </constraints>
           <profiles>
             <profile id="46c2-414b-6147-1608" name="Recon Sergeant" publicationId="90aa-c2c8-pubN73486" page="197" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <modifiers>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Cavalry (Character)">
+                  <conditions>
+                    <condition field="selections" scope="a05b-1aaf-314c-cbba" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Bike (Character)">
+                  <conditions>
+                    <condition field="selections" scope="a05b-1aaf-314c-cbba" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5723232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="a05b-1aaf-314c-cbba" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="a05b-1aaf-314c-cbba" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry (Character)</characteristic>
                 <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
@@ -7093,6 +7626,38 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="cf82-7eac-704a-80e5" name="Mounted Force" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="222a-94eb-eda4-afe1" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1ad-8e60-7461-bad9" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="2e08-be2c-5ed6-2286" name="Outriders (Bikes)" hidden="false" collective="false" import="true" targetId="7fbb-1bb9-0360-d6e1" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="points" value="5.0">
+                  <repeats>
+                    <repeat field="selections" scope="a05b-1aaf-314c-cbba" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="f010-9ce2-87a4-160a" name="Riders (Cavalry)" hidden="false" collective="false" import="true" targetId="875a-e56c-84b6-2b18" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="points" value="4.0">
+                  <repeats>
+                    <repeat field="selections" scope="a05b-1aaf-314c-cbba" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="8435-e675-5e5b-2d48" name="Provenance" hidden="false" collective="false" import="true" targetId="9d50-7127-dc55-d542" type="selectionEntryGroup"/>
@@ -7110,33 +7675,39 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       </costs>
     </selectionEntry>
     <selectionEntry id="c542-ddd4-6b6b-f761" name="Infantry Squad, Imperialis Militia" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="4e87-0dba-72a2-5836" name="Militia Auxiliary" publicationId="90aa-c2c8-pubN73486" page="193" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
-            <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
-            <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
-            <characteristic name="S" typeId="5323232344415441232323">3</characteristic>
-            <characteristic name="T" typeId="5423232344415441232323">3</characteristic>
-            <characteristic name="W" typeId="5723232344415441232323">1</characteristic>
-            <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
-            <characteristic name="A" typeId="4123232344415441232323">1</characteristic>
-            <characteristic name="LD" typeId="4c4423232344415441232323">6</characteristic>
-            <characteristic name="Save" typeId="5361766523232344415441232323">5+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <categoryLinks>
         <categoryLink id="28c8-6342-6ce7-b142" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="3039-df71-608f-a04b" name="Sergeant" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="3039-df71-608f-a04b" name="Sergeant" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c40d-2f89-1068-f0a9" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4be5-9a62-9d82-127e" type="max"/>
           </constraints>
           <profiles>
             <profile id="e91c-bcc4-05cc-efad" name="Sergeant" publicationId="90aa-c2c8-pubN73486" page="193" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <modifiers>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Bike (Character)">
+                  <conditions>
+                    <condition field="selections" scope="c542-ddd4-6b6b-f761" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Cavalry (Character)">
+                  <conditions>
+                    <condition field="selections" scope="c542-ddd4-6b6b-f761" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5723232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="c542-ddd4-6b6b-f761" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="c542-ddd4-6b6b-f761" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry (Character)</characteristic>
                 <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
@@ -7154,7 +7725,7 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
           <selectionEntryGroups>
             <selectionEntryGroup id="2487-e8a8-d774-a32e" name="May take:" hidden="false" collective="false" import="true">
               <entryLinks>
-                <entryLink id="fbeb-1bba-ab7f-d17b" name="New EntryLink" hidden="false" collective="false" import="true" targetId="af29-a6cf-7b05-c362" type="selectionEntry"/>
+                <entryLink id="fbeb-1bba-ab7f-d17b" name="Melta Bombs" hidden="false" collective="false" import="true" targetId="af29-a6cf-7b05-c362" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="f9f4-bf7a-53a3-f794" name="May exchange close combat weapon for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="76a3-6ba8-c225-a219">
@@ -7306,13 +7877,35 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1884-69d1-90e1-0688" name="Militia Auxiliaries" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="1884-69d1-90e1-0688" name="Militia Auxiliaries" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="19.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d408-f627-3be9-2e88" type="min"/>
             <constraint field="selections" scope="parent" value="19.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f78-f6c8-9768-b123" type="max"/>
           </constraints>
           <profiles>
             <profile id="1abd-8245-ddf0-c387" name="Militia Auxiliaries" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <modifiers>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Bike">
+                  <conditions>
+                    <condition field="selections" scope="c542-ddd4-6b6b-f761" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5723232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="c542-ddd4-6b6b-f761" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="c542-ddd4-6b6b-f761" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Cavalry">
+                  <conditions>
+                    <condition field="selections" scope="c542-ddd4-6b6b-f761" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
                 <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
@@ -7440,6 +8033,13 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="2641-cb73-68a9-5d0d" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="c542-ddd4-6b6b-f761" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ecf-1b6e-9bcb-f93b" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bf93-7672-f903-ef68" type="max"/>
           </constraints>
@@ -7461,6 +8061,38 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
               </costs>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="6ecf-1b6e-9bcb-f93b" name="Mounted Force" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="222a-94eb-eda4-afe1" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca5f-aa65-e11c-ec39" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="67f9-a9e3-175e-ef72" name="Outriders (Bikes)" hidden="false" collective="false" import="true" targetId="7fbb-1bb9-0360-d6e1" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="points" value="5.0">
+                  <repeats>
+                    <repeat field="selections" scope="c542-ddd4-6b6b-f761" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="b6ae-aa48-3575-8016" name="Riders (Cavalry)" hidden="false" collective="false" import="true" targetId="875a-e56c-84b6-2b18" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="points" value="4.0">
+                  <repeats>
+                    <repeat field="selections" scope="c542-ddd4-6b6b-f761" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -7904,13 +8536,9 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85bc-31a7-8fb5-fc70" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0c3-2af2-ab9c-4db7" type="min"/>
       </constraints>
-      <profiles>
-        <profile id="7fa8-e34e-1dc4-2b61" name="Carapace Armour" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
-          <characteristics>
-            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">4+ Armor Save</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
+      <infoLinks>
+        <infoLink id="1c02-9e86-42b8-bbd6" name="Carapace Armour" hidden="false" targetId="338e-f7af-1bb7-06bf" type="profile"/>
+      </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -8277,6 +8905,567 @@ This rule, while similar in function to the Drop Pod Assault special rule, does 
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="7617-bc44-a31d-b389" name="Militia Land Speeder Squadron" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="0697-a6b3-7d0f-c2e3" name="Vehicle" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false"/>
+        <categoryLink id="f4f3-25e6-b62d-fab8" name="Skimmer" hidden="false" targetId="9480-d3f6-fff1-7b35" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="e72f-2216-1627-ab26" name="Militia Land Speeder" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4906-a386-840d-56dc" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e22-173c-2ed1-4eef" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="31d1-7c35-afc5-a417" name="Militia Land Speeder" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
+              <characteristics>
+                <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
+                <characteristic name="Front" typeId="46726f6e7423232344415441232323">10</characteristic>
+                <characteristic name="Side" typeId="5369646523232344415441232323">10</characteristic>
+                <characteristic name="Rear" typeId="5265617223232344415441232323">10</characteristic>
+                <characteristic name="HP" typeId="485023232344415441232323">2</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Vehicle (Fast, Skimmer), Open-Topped</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="f380-4b53-5304-cc9e" name="Scout" hidden="false" targetId="9b30-1da3-eb8d-ce7a" type="rule"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="06d1-34fb-fcea-a9e3" name="Any Land Speeder may be equipped with one of the following:" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39be-1bd5-01a1-5fa2" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="2fe3-9edf-8b7d-4fd0" name="Meltagun" hidden="false" collective="false" import="true" targetId="a22d-ceac-5063-54e1" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="points" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="e823-002e-2c82-2ea5" name="Hunter-killer missile" hidden="false" collective="false" import="true" targetId="7aa1-96c8-c1f9-eb05" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="f2c4-e2a2-08a2-c9f3" name="Plasma gun" hidden="false" collective="false" import="true" targetId="0f13-bded-1c10-bc38" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="points" value="15.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="6882-bc40-4350-4f05" name="Any Land Speeder may exchange its Multi-laser for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="ed02-1618-2a40-8420">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1451-f64d-03e7-e3d4" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2f7-0382-2eba-92c0" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="ed02-1618-2a40-8420" name="Multi-Laser" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fd4-c0ca-45a2-a793" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="bb98-0cfd-d872-1212" name="Multi-laser" hidden="false" targetId="92be-1bfc-f355-f214" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2497-6743-26fe-34f1" name="Plasma Cannon" hidden="false" collective="false" import="true" type="upgrade">
+                  <infoLinks>
+                    <infoLink id="2815-bbfa-517f-d132" name="Plasma Cannon" hidden="false" targetId="13df-d6b0-3f33-bf9b" type="profile"/>
+                    <infoLink id="4cea-e55a-f4c0-cbd4" name="Gets Hot" hidden="false" targetId="f4fd-d519-4769-5510" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="15.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="cf33-909f-c7ce-d765" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="ead9-305c-a7e7-323e" type="selectionEntry"/>
+                <entryLink id="eecc-5e7f-b91d-5389" name="Multi-melta" hidden="false" collective="false" import="true" targetId="d1c0-746f-2b39-5f17" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="points" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="fb82-bd41-05e5-5533" name="Lascannon" hidden="false" collective="false" import="true" targetId="8036-b730-d533-e31f" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="points" value="20.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="38c7-bf98-c02c-6d8c" name="Searchlight" hidden="false" collective="false" import="true" targetId="7b19-0e33-9c8d-e56a" type="selectionEntry"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="222a-94eb-eda4-afe1" name="Militia Mounted Squadron" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="49e8-2bd8-6093-8a19" name="Scout" hidden="false" targetId="9b30-1da3-eb8d-ce7a" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="1caa-7aea-4f42-4d5a" name="Rider Sergeant" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="name" value="Outrider Sergeant">
+              <conditions>
+                <condition field="selections" scope="222a-94eb-eda4-afe1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8630-9a32-45c6-6be7" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d23-1f28-9d5d-b1ba" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ef8-1075-f009-41b4" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2eb0-34c4-148f-14a7" name="Rider Sergeant" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <modifiers>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Bike (Character)">
+                  <conditions>
+                    <condition field="selections" scope="222a-94eb-eda4-afe1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8630-9a32-45c6-6be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Outrider Sergeant">
+                  <conditions>
+                    <condition field="selections" scope="222a-94eb-eda4-afe1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8630-9a32-45c6-6be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5361766523232344415441232323" value="4+">
+                  <conditions>
+                    <condition field="selections" scope="222a-94eb-eda4-afe1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59de-2acc-79e5-90f1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Cavalry (Character)</characteristic>
+                <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
+                <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
+                <characteristic name="S" typeId="5323232344415441232323">3</characteristic>
+                <characteristic name="T" typeId="5423232344415441232323">3</characteristic>
+                <characteristic name="W" typeId="5723232344415441232323">2</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">2</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
+                <characteristic name="Save" typeId="5361766523232344415441232323">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="73a0-e777-08a1-5b92" name="Rider/Outrider" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="name" value="Outrider">
+              <conditions>
+                <condition field="selections" scope="222a-94eb-eda4-afe1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8630-9a32-45c6-6be7" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b08-1d0f-ef34-b225" type="min"/>
+            <constraint field="selections" scope="parent" value="14.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d305-bbcc-ef3a-c2cd" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="bc6f-3519-0f50-3986" name="Rider" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <modifiers>
+                <modifier type="set" field="5361766523232344415441232323" value="4+">
+                  <conditions>
+                    <condition field="selections" scope="222a-94eb-eda4-afe1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59de-2acc-79e5-90f1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Outrider">
+                  <conditions>
+                    <condition field="selections" scope="222a-94eb-eda4-afe1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8630-9a32-45c6-6be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="556e6974205479706523232344415441232323" value="Bike">
+                  <conditions>
+                    <condition field="selections" scope="222a-94eb-eda4-afe1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8630-9a32-45c6-6be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Cavalry</characteristic>
+                <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
+                <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
+                <characteristic name="S" typeId="5323232344415441232323">3</characteristic>
+                <characteristic name="T" typeId="5423232344415441232323">3</characteristic>
+                <characteristic name="W" typeId="5723232344415441232323">2</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">1</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">7</characteristic>
+                <characteristic name="Save" typeId="5361766523232344415441232323">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4ca5-c1ef-1574-0bb8" name="Riders on Mounts or Outriders on Bikes" hidden="false" collective="false" import="true" defaultSelectionEntryId="6819-9690-ae5a-84b9">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fea5-d7ab-4f82-a0b7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="303e-bb3f-03ed-186e" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6819-9690-ae5a-84b9" name="Riders (Cavalry)" hidden="false" collective="false" import="true" type="upgrade">
+              <categoryLinks>
+                <categoryLink id="9702-4a39-13e7-38a5" name="Cavalry" hidden="false" targetId="a54c-aa0e-4092-1b9a" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry id="8630-9a32-45c6-6be7" name="Outriders (Bikes)" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="points" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="222a-94eb-eda4-afe1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink id="172e-bda1-e20a-4690" name="Bike" hidden="false" targetId="632b-24e7-f308-28f8" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="d8a9-a369-b8ad-ac74" name="The entire Squadron may take:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9919-e21a-a2ad-68b1" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="59de-2acc-79e5-90f1" name="Carapace Armour" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b2b-c983-2285-d5aa" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="1d22-ae27-528e-d288" name="Carapace Armour" hidden="false" targetId="338e-f7af-1bb7-06bf" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8c65-6959-651a-df09" name="Krak Grenades" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fbf-af50-b12f-4ac1" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="e0bc-999c-64f7-3189" name="Krak Grenade (Assault)" hidden="false" targetId="ba14-6731-7c9d-ef15" type="profile"/>
+                <infoLink id="7bbe-021b-8b26-16e6" name="Krak Grenade (Shooting)" hidden="false" targetId="d9f7-775b-1047-f335" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="1498-8fd3-7a09-8b51" name="The Sergeant may take melta bombs" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a189-9ba7-e0a2-45bf" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="d5b1-0ce8-b7da-9c40" name="Melta Bombs" hidden="false" collective="false" import="true" targetId="af29-a6cf-7b05-c362" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="e4e3-7b2f-b987-5600" name="Unit may take:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95d7-a3c1-6bc8-364e" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="bf90-3dce-07bf-776a" name="Vexilla" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0e23-6a5d-991a-63c3" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="188d-fbe7-1c05-cb5f" hidden="false" targetId="19fd-ec02-c740-1fea" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="0ca5-c925-8b59-b17a" name="Nuncio-vox" hidden="false" collective="false" import="true" targetId="b4ea-a586-86a9-02eb" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="d2a3-6954-2d72-e7ec" name="The entire Squadron may replace its Close Combat Weapons with one of the following:" hidden="false" collective="false" import="true" defaultSelectionEntryId="ca63-8582-f31a-1dc2">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7fc-57c4-8420-8a1c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b794-8ca6-fd20-1f17" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5e6a-e4bc-c10e-3695" name="Augmented Weapons" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="35b5-5653-3c63-443e" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="ae7c-8579-035f-b233" hidden="false" targetId="4c65-b01f-1491-555a" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ca63-8582-f31a-1dc2" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f28e-587e-e329-3a2b" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="c6e2-9fcb-3625-d217" name="Close Combat Weapon" hidden="false" targetId="0466-931b-dd0b-34e9" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5160-afc1-a3e1-9fd3" name="Riding Lances" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="ba0b-6835-c84f-2f29" name="Riding Lances" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+1</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Specialist Weapon, Charge!, One use only</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="9efa-4752-aaca-5dd3" name="Charge!" hidden="false">
+                  <description>Some weapons such as electro-barb tipped lances are used by riders to devastating effect. Such weapons are accurate and deadly on the charge, however in the whirl of ongoing melee such weapons are either broken or too cumbersome to use.
+A model may only use this weapon if it has successfully charged that player turn. When striking with this weapon,</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="870f-99ca-c357-ca0e" name="One Use Only/One Shot Only" hidden="false" targetId="3789-00ab-3f47-eb36" type="rule"/>
+                <infoLink id="989f-bb1c-b75d-0cfa" name="Specialist Weapon" hidden="false" targetId="7ee3-d437-bc44-3630" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="35.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="6e29-e119-80f1-175f" name="The entire squadron may replace its Auxilia Pistols with one of the following:" hidden="false" collective="false" import="true" defaultSelectionEntryId="3ffe-6963-2374-e9cc">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ace-fd29-48de-4e49" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7544-db76-c879-586d" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="3ffe-6963-2374-e9cc" name="Auxilia Pistols" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6be2-fee4-5159-8640" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="c435-cd74-e2d7-1934" hidden="false" targetId="fc06-74ac-5c24-65b8" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="62eb-3178-15d4-719f" name="Auxilia Rifles" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8ce-6a0e-2f84-1523" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="b8bd-6877-a8fa-d9ae" name="Auxilia Rifle" hidden="false" targetId="0055-6283-b0d1-8e41" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="81a5-2634-bff7-8365" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="58d0-205f-817a-d86a" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="a01f-74d1-a30d-7853" name="Close Combat Weapon" hidden="false" targetId="0466-931b-dd0b-34e9" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c35e-181f-149b-d59f" name="Lascarbines" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9581-8591-9130-181d" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="1e9b-eb46-ef61-aa78" hidden="false" targetId="a7ca-04d9-b34d-d8cc" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ddad-2813-04a2-4f55" name="Autoguns" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="82cf-656d-77c3-f584" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="9e3f-d100-605d-1361" hidden="false" targetId="537a-63f4-d939-c7f2" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9c77-0f2a-7173-2182" name="Shotguns" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="166f-bc0d-3716-38e2" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="33e1-7404-8ff7-d289" name="Shotgun" hidden="false" targetId="07cb-70d7-15c3-5117" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d43e-d906-964d-f33c" name="Laspistols" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e604-4848-161f-8672" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="c3c4-0d45-1395-7dc3" name="Laspistol" hidden="false" targetId="f2b7-768f-a270-de64" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0195-81ff-47d1-31ca" name="One model may take one of the following:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a94d-b572-5705-65b4" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5e2a-a5a0-f4b8-96d7" name="Flamer" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3207-ef49-68e2-8801" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="5cf5-8d35-fe15-129e" name="Flamer" hidden="false" targetId="3a71-7de1-1948-3655" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="bfd6-c8ca-3f1e-7894" name="Grenade Launcher" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d54d-0b80-53e0-2dc3" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="29e2-604c-6f73-199a" name="Grenade Launcher (Frag)" hidden="false" targetId="ace0-cde1-8b6a-4357" type="profile"/>
+                <infoLink id="b97e-45d0-a05d-c3b7" name="Grenade Launcher (Krak)" hidden="false" targetId="b42c-34d8-7fda-ffa0" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6020-311d-00ff-9e49" name="Meltagun" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5d6-8045-0a7f-d49b" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="d798-2ee0-ea91-288e" name="Meltagun" hidden="false" targetId="8ae4-74e5-7700-3804" type="profile"/>
+                <infoLink id="07db-5e4a-d03e-6927" name="Melta" hidden="false" targetId="21c0-62ff-3ed2-17a7" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="a41d-34d9-7522-caff" name="The Sergeant may exhange their Auxilia Pistol and/or Close Combat weapon for one of the following:" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="8329-d81e-52c4-287f" name="Blast Pistol" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="508b-fffc-a023-c040" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="0fcc-8aab-5d96-bc21" hidden="false" targetId="035e-17b5-4110-4726" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3915-a985-228e-b31b" name="Bolt Pistol" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="248d-d454-0ba9-f343" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="9bcc-933d-3138-9eb0" name="Bolt Pistol" hidden="false" targetId="ec83-0776-ef74-9cc2" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="2.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="418a-9aa4-732e-8497" name="Hand Flamer" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="60c1-17fc-f21e-a8d9" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="176a-a15a-dd36-85d7" name="Hand Flamer" hidden="false" targetId="ea8a-04f6-ae7c-f351" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="8fc1-1628-a1ad-d477" name="Power Axe" hidden="false" collective="false" import="true" targetId="7b92-ab87-86a1-ab2e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="df2f-d94c-0701-bcb2" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="b674-272e-697e-8a44" name="Power Lance" hidden="false" collective="false" import="true" targetId="233d-238b-6940-2740" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a805-59e7-994c-78e1" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="bc04-8ff3-92be-58db" name="Power Maul" hidden="false" collective="false" import="true" targetId="e8a2-42e8-82a7-8dd9" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7666-6909-5c0c-ca88" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="995a-1911-2478-95bf" name="Power Sword" hidden="false" collective="false" import="true" targetId="3e90-5ca1-8abe-0275" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="76e7-7543-97a3-b9e2" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="1c2f-f0fa-85e0-a5e3" name="Provenance" hidden="false" collective="false" import="true" targetId="9d50-7127-dc55-d542" type="selectionEntryGroup"/>
+        <entryLink id="9f56-6a8b-6885-c801" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="4980-c798-0374-d36c" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7fbb-1bb9-0360-d6e1" name="Outriders (Bikes)" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="8e89-ff43-87d1-c86c" name="Bike" hidden="false" targetId="632b-24e7-f308-28f8" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="875a-e56c-84b6-2b18" name="Riders (Cavalry)" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="4e6d-6e31-390b-23bb" name="Cavalry" hidden="false" targetId="a54c-aa0e-4092-1b9a" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
