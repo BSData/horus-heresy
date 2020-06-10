@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="94" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="120" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="95" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="120" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="cf03-f607-pubN65537" name="Horus Heresy: Taghmata Army List"/>
     <publication id="cf03-f607-pubN65563" name="AoDRB"/>
@@ -899,6 +899,53 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="85df-a58e-ebcc-d33d" name="Sub-Orbital Strike Wing" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="c751-533f-b177-1084" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="da8f-63da-608e-6402" name="Sub-orbital Strike Wing" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a6b1-2f2e-658b-72e0" type="max"/>
+            <constraint field="selections" scope="primary-category" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aaea-df66-1ccb-dc86" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b7f6-d310-2a7f-48ae" name="Crusade Fleet Avenger Strike Fighter" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c76b-ec9b-9468-c337" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="7fde-7a19-be52-714d" name="Crusade Fleet Avenger Strike Fighter" hidden="false" collective="false" import="true" targetId="11c8-2e78-8328-31e4" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="fbcd-1534-502b-8537" name="Thunderbolt Heavy Fighter" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40cc-bc6a-acbb-cb6e" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="ad58-eb8f-ae39-0e7b" name="Thunderbolt Heavy Fighter" hidden="false" collective="false" import="true" targetId="7734-1ff6-9f66-44cd" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="839d-5f00-80cf-95dc" name="Crusade Fleet Arvus Lighter Orbital Shuttle" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1fe-3853-80e3-41eb" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="b74b-b29c-864a-0929" name="Crusade Fleet Arvus Lighter Orbital Shuttle" hidden="false" collective="false" import="true" targetId="7b0f-7bfb-ca1f-e761" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="dd5c-3998-d857-f69a" name="Crusade Fleet Primaris-Lightning Strike Fighter" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55c5-dae4-1799-7e9e" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="41dd-a7e3-9bd3-6e11" name="Crusade Fleet Primaris-Lightning Strike Fighter" hidden="false" collective="false" import="true" targetId="5d68-1fb8-1f66-af3a" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </selectionEntries>
   <entryLinks>
     <entryLink id="6a75-6b49-08b0-c64e" name="Macrocarid Explorator" hidden="false" collective="false" import="true" targetId="0de5-5b51-907d-e5e2" type="selectionEntry">
@@ -1672,6 +1719,36 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
       </modifiers>
       <categoryLinks>
         <categoryLink id="a1f9-199b-9a44-5dcf" name="New CategoryLink" hidden="false" targetId="456c6974657323232344415441232323" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0e81-544c-ec51-b126" name="Crassus Armoured Assault Transport" hidden="false" collective="false" import="true" targetId="2b38-39ba-24ed-a096" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="be13-0b5f-d5ac-7e61" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="cabb-e779-4e31-7070" name="Dominus Armoured Siege Bombard" hidden="false" collective="false" import="true" targetId="79cf-b5c0-232b-9315" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f95e-4903-fb90-bd0d" name="Lords of War" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2598-5bc9-b505-1309" name="Praetor Armoured Assault Launcher" hidden="false" collective="false" import="true" targetId="d41d-ed8d-3629-ab1a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="698b-4188-03d0-8a23" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="aa6d-9722-cf37-cded" name="Minotaur" hidden="false" collective="false" import="true" targetId="cba2-63dc-b536-631e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f019-f308-6b73-562f" name="Lords of War" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d226-218c-dedb-4367" name="Marauder Destroyer" hidden="false" collective="false" import="true" targetId="7b5a-b3c4-05fd-4a42" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="a5ec-ddb2-46e3-7760" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6073-f00b-9f67-8979" name="Marauder Bomber" hidden="false" collective="false" import="true" targetId="d71e-4dae-bd03-d1e9" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="70d5-b3c5-067f-a230" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -11075,523 +11152,15 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
         <entryLink id="5132-e115-57d8-48f2" name="Stormlord" hidden="false" collective="false" import="true" targetId="7d56-481b-6478-681e" type="selectionEntry"/>
         <entryLink id="7cec-ff9c-8216-ae53" name="Shadowsword" hidden="false" collective="false" import="true" targetId="ed2c-8dcf-d0d2-720e" type="selectionEntry"/>
         <entryLink id="5621-ff8f-f192-db16" name="Stormsword" hidden="false" collective="false" import="true" targetId="e5ad-07be-63c1-71e3" type="selectionEntry"/>
-        <entryLink id="dfcc-fd77-694e-f821" name="Banehammer" hidden="false" collective="false" import="true" targetId="3663-a86a-0957-9a6a" type="selectionEntry"/>
+        <entryLink id="dfcc-fd77-694e-f821" name="Banehammer" hidden="false" collective="false" import="true" targetId="27c7-0760-039c-2cd7" type="selectionEntry"/>
         <entryLink id="c32f-ef83-dbc6-ed0d" name="Baneblade" hidden="false" collective="false" import="true" targetId="093f-6472-95d0-553f" type="selectionEntry"/>
-        <entryLink id="e2e5-c4cf-9c48-6bd8" name="Doomhammer" hidden="false" collective="false" import="true" targetId="b04c-44bf-53d8-352c" type="selectionEntry"/>
-        <entryLink id="e497-8836-3c5b-fdfb" name="Macharius" hidden="false" collective="false" import="true" targetId="48cf-f73d-a3c0-e911" type="selectionEntry"/>
-        <entryLink id="d746-1e2e-8c7d-8bf3" name="Macharius Vulcan" publicationId="cf03-f607-pubN130172" page="230" hidden="false" collective="false" import="true" targetId="0be5-7f1a-2281-5671" type="selectionEntry"/>
-        <entryLink id="356f-8bd2-3fd7-e983" name="Macharius Vanquisher" hidden="false" collective="false" import="true" targetId="07a7-a3a5-d46e-b873" type="selectionEntry"/>
-        <entryLink id="8f57-6e0a-3189-cb17" name="Macharius Omega" hidden="false" collective="false" import="true" targetId="fe5b-01ec-07b2-48ba" type="selectionEntry"/>
+        <entryLink id="e497-8836-3c5b-fdfb" name="Macharius" hidden="false" collective="false" import="true" targetId="e786-debb-a21b-d5ee" type="selectionEntry"/>
+        <entryLink id="d746-1e2e-8c7d-8bf3" name="Macharius Vulcan" publicationId="cf03-f607-pubN130172" page="230" hidden="false" collective="false" import="true" targetId="e95a-57cf-a5c3-772f" type="selectionEntry"/>
+        <entryLink id="356f-8bd2-3fd7-e983" name="Macharius Vanquisher" hidden="false" collective="false" import="true" targetId="d4b0-56e7-4f8c-7ea5" type="selectionEntry"/>
+        <entryLink id="8f57-6e0a-3189-cb17" name="Macharius Omega" hidden="false" collective="false" import="true" targetId="cc26-df44-2b56-fd88" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="7d56-481b-6478-681e" name="Stormlord" publicationId="cf03-f607-pubN130224" page="50" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="b5c1-ea37-0dfe-51b0" name="Stormlord" publicationId="cf03-f607-pubN130235" page="50" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
-          <modifiers>
-            <modifier type="increment" field="425323232344415441232323" value="1">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d08-c42e-843d-5e8c" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
-            <characteristic name="Front" typeId="46726f6e7423232344415441232323">14</characteristic>
-            <characteristic name="Side" typeId="5369646523232344415441232323">13</characteristic>
-            <characteristic name="Rear" typeId="5265617223232344415441232323">12</characteristic>
-            <characteristic name="HP" typeId="485023232344415441232323">9</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Super-heavy Vehicle, Transport</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="dac5-81ea-2fe1-adb4" name="All Power to Weapons" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
-          <characteristics>
-            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">All Power to Weapons!: If the Stormlord does not move, it may fire its Vulcan mega-bolter twice in the following Shooting phase (at the same target or at different ones).</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="fc42-a8fd-0943-b821" name="Stormlord (Transport)" hidden="false" typeId="307d-047f-ca13-706b" typeName="Transport">
-          <characteristics>
-            <characteristic name="Capacity" typeId="8285-4205-b6cd-8473">40 Models</characteristic>
-            <characteristic name="Fire Points" typeId="b270-a7f9-22b2-3702">20 Models can fire from Troop Bay</characteristic>
-            <characteristic name="Access Points" typeId="d17b-0342-b1dc-b8e7"> Open-Topped (for the purpose of embarking / disembarking only)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="8df9-950a-10d8-bcfd" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
-        <categoryLink id="e656-eb28-181a-2eee" name="New CategoryLink" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false"/>
-        <categoryLink id="3705-d61f-8f30-45e8" name="New CategoryLink" hidden="false" targetId="8d56-b8fc-9b94-9cc9" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="f723-185a-c2eb-6b58" name="2 Heavy stubbers" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="551c-eb0b-00f0-1366" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b1d9-702f-226b-c705" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="f45a-b7a9-24eb-3ec2" name="Heavy Stubber" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="764d-74e7-b602-16d6" name="Hull-Mounted Twin-Linked Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8a8d-4239-5732-81e5" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9612-4e2c-377d-ead5" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="bab1-967a-a88b-32db" hidden="false" targetId="271e-6286-86cc-06dd" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="fb8a-66b1-f049-f859" name="Vulcan Mega-bolter" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e399-3b8f-0e8c-477a" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55a1-f8c7-ee84-4928" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="f736-87bb-36bf-082f" name="Vulcan Mega-bolter" hidden="false" targetId="3b45-b564-4fce-e3d8" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="4395-c456-436d-0f63" name="May take any of the following:" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="856b-d46e-6a34-046b" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="e3ac-e545-a292-fc04" name="Hunter-killer Missile" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2d43-2a73-6d6e-8ad3" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="0ea8-b29c-1fc7-3c1a" name="Heavy Stubber" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e88d-ea30-8471-3701" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="e291-f940-7f10-d34d" name="Heavy Stubber" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="5.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="5ee3-5493-6377-9a4c" name="Searchlight" hidden="false" collective="false" import="true" targetId="1e27e511-cf75-d55a-6807-b67be6f7474f" type="selectionEntry"/>
-        <entryLink id="81a5-5b07-50d0-f183" name="May take up to two: (Baneblade/Shadowsword Sponsons)" hidden="false" collective="false" import="true" targetId="8ffb-2a32-888b-41ef" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="490.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="ed2c-8dcf-d0d2-720e" name="Shadowsword" publicationId="cf03-f607-pubN130224" page="49" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="579e-ecea-a30c-2d38" name="Shadowsword" publicationId="cf03-f607-pubN99227" page="286" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
-          <modifiers>
-            <modifier type="increment" field="425323232344415441232323" value="1">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d08-c42e-843d-5e8c" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
-            <characteristic name="Front" typeId="46726f6e7423232344415441232323">14</characteristic>
-            <characteristic name="Side" typeId="5369646523232344415441232323">13</characteristic>
-            <characteristic name="Rear" typeId="5265617223232344415441232323">12</characteristic>
-            <characteristic name="HP" typeId="485023232344415441232323">9</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Super-heavy</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="bd25-1d59-7abf-a370" name="Volcano Cannon" publicationId="cf03-f607-pubN99227" page="286" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">120&quot;</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 1, Large Blast</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="00cb-8b63-fe5c-8ed4" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
-        <categoryLink id="d626-b1c7-42af-f933" name="New CategoryLink" hidden="false" targetId="8d56-b8fc-9b94-9cc9" primary="false"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="fb49-74ca-9e7f-6262" name="May take any of the following:" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2f77-3f2c-22bb-21bc" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="adda-e3f4-c046-c782" name="Hunter-killer Missile" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6b73-9920-0755-ea4d" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="ef8c-80f9-2dfe-ef7a" name=" Heavy Stubber" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cf6a-e327-da1a-3b09" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="9002-db5f-051d-1ffc" name="Heavy Stubber" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="5.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="4242-e43b-c304-189d" name="May take up to two: (Baneblade/Shadowsword Sponsons)" hidden="false" collective="false" import="true" targetId="8ffb-2a32-888b-41ef" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="455.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="e5ad-07be-63c1-71e3" name="Stormsword" publicationId="cf03-f607-pubN131159" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="6154-6951-1106-ee9b" name="Legion Stormsword" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
-          <modifiers>
-            <modifier type="increment" field="425323232344415441232323" value="1">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d08-c42e-843d-5e8c" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
-            <characteristic name="Front" typeId="46726f6e7423232344415441232323">14</characteristic>
-            <characteristic name="Side" typeId="5369646523232344415441232323">13</characteristic>
-            <characteristic name="Rear" typeId="5265617223232344415441232323">12</characteristic>
-            <characteristic name="HP" typeId="485023232344415441232323">9</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Super-heavy Vehicle</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="41f2-631a-325a-473d" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
-        <categoryLink id="34b1-f962-ad42-a3b7" name="New CategoryLink" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="5d89-d22f-758a-fc11" name="Stormsword Siege Cannon" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74db-a5d3-bc3c-f1e3" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22f5-65c2-f46d-9f2d" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="59ad-bc9d-f158-f9d7" name="Stormsword Siege Cannon" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
-                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">10</characteristic>
-                <characteristic name="AP" typeId="415023232344415441232323">1</characteristic>
-                <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 1, Apocalyptic Blast (10&quot;), Ignores Cover</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="d2fa-c119-4cca-5263" name="May take any of the following:" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2222-fc29-907e-8876" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="45ae-098e-b951-68a0" name="Hunter-killer Missile" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cec8-ede8-a0dc-45d0" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6510-f356-8556-b70d" name="Heavy Stubber" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3bc9-b5f2-76ca-5d8c" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="cf73-04e1-7d50-1562" name="Heavy Stubber" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="5.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="8a9d-1158-c2b2-516e" name="Searchlight" hidden="false" collective="false" import="true" targetId="1e27e511-cf75-d55a-6807-b67be6f7474f" type="selectionEntry"/>
-        <entryLink id="e78f-a03f-b160-f57a" name="May take up to two: (Baneblade/Shadowsword Sponsons)" hidden="false" collective="false" import="true" targetId="8ffb-2a32-888b-41ef" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="485.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="093f-6472-95d0-553f" name="Baneblade" publicationId="cf03-f607-pubN130224" page="44" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="8db8-1aae-d50b-5f8a" name="Baneblade" publicationId="cf03-f607-pubN99227" page="284" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
-          <modifiers>
-            <modifier type="increment" field="425323232344415441232323" value="1">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d08-c42e-843d-5e8c" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
-            <characteristic name="Front" typeId="46726f6e7423232344415441232323">14</characteristic>
-            <characteristic name="Side" typeId="5369646523232344415441232323">13</characteristic>
-            <characteristic name="Rear" typeId="5265617223232344415441232323">12</characteristic>
-            <characteristic name="HP" typeId="485023232344415441232323">9</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Super-Heavy</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="f7a0-1f54-beff-42d3" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
-        <categoryLink id="f212-3585-5d60-4b1b" name="New CategoryLink" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="814f-54a8-c846-1880" name="Baneblade Cannon" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b68f-d258-fc93-c692" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7d5-3756-57f9-2c6f" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="9622-085f-5d47-c323" name="Baneblade Cannon" publicationId="cf03-f607-pubN99227" page="284" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="52616e676523232344415441232323">72&quot;</characteristic>
-                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
-                <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
-                <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 1, Apocalyptic Blast</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="c51f-2073-5531-2fae" name="May take any of the following:" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5cb3-e8d1-bab9-c89f" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="3da0-d445-f4e7-8a84" name="Hunter-killer Missile" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="18b6-8f13-ffd7-5d3b" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="91b8-088c-acf5-d9db" name=" Heavy Stubber" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="60e3-6425-1a34-f422" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="1c65-f59d-64a1-dcef" name="Heavy Stubber" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="5.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="1691-6e24-9f77-6c7a" name="Searchlight" hidden="false" collective="false" import="true" targetId="1e27e511-cf75-d55a-6807-b67be6f7474f" type="selectionEntry"/>
-        <entryLink id="7ba2-86ab-6924-c571" name="May take up to two: (Baneblade/Shadowsword Sponsons)" hidden="false" collective="false" import="true" targetId="8ffb-2a32-888b-41ef" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="535.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="3663-a86a-0957-9a6a" name="Banehammer" publicationId="cf03-f607-pubN130224" page="45" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="bfb6-7c23-a3c3-bc0e" name="Banehammer" publicationId="cf03-f607-pubN99227" page="284" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
-          <modifiers>
-            <modifier type="increment" field="425323232344415441232323" value="1">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d08-c42e-843d-5e8c" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
-            <characteristic name="Front" typeId="46726f6e7423232344415441232323">14</characteristic>
-            <characteristic name="Side" typeId="5369646523232344415441232323">13</characteristic>
-            <characteristic name="Rear" typeId="5265617223232344415441232323">12</characteristic>
-            <characteristic name="HP" typeId="485023232344415441232323">9</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Super-Heavy, Transport (25 Models)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="8341-f35c-7d0f-011d" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
-        <categoryLink id="ba97-b4c1-ffb1-9730" name="New CategoryLink" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="10b6-4e9a-31e2-c12d" name="Tremor Cannon" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e47-966f-dcaa-294f" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bc6-b259-beeb-b295" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="a6c4-e6f8-b928-73e6" name="Tremor Cannon" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="52616e676523232344415441232323">60&quot;</characteristic>
-                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
-                <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
-                <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 1, Earthshock, Massive Blast</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="0086-7051-7c99-73f6" name="Earthshock" hidden="false">
-              <description>All models under the tremor cannon’s massive blast marker that were not removed from play as a result of that shooting attack must take a Dangerous Terrain test once the hit has been resolved.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="2c35-cd8e-bd11-fa46" name="May take any of the following:" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4310-13b8-92b2-88af" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="45f5-b700-5a5e-9fc7" name="Hunter-killer Missile" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3a3d-84b9-b6d1-a6a5" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="9ef2-0342-14c4-0223" name=" Heavy Stubber" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="32d5-080e-4443-8085" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="ff1b-902a-b9a9-63fc" name="Heavy Stubber" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="5.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="422c-6e30-2762-6330" name="Searchlight" hidden="false" collective="false" import="true" targetId="1e27e511-cf75-d55a-6807-b67be6f7474f" type="selectionEntry"/>
-        <entryLink id="b3f3-7db3-10d8-7144" name="May take up to two: (Baneblade/Shadowsword Sponsons)" hidden="false" collective="false" import="true" targetId="8ffb-2a32-888b-41ef" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="410.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="b04c-44bf-53d8-352c" name="Doomhammer" publicationId="cf03-f607-pubN130224" page="45" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="5256-0080-e7cf-b9cf" name="Doomhammer" publicationId="cf03-f607-pubN99227" page="284" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
-          <modifiers>
-            <modifier type="increment" field="425323232344415441232323" value="1">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d08-c42e-843d-5e8c" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
-            <characteristic name="Front" typeId="46726f6e7423232344415441232323">14</characteristic>
-            <characteristic name="Side" typeId="5369646523232344415441232323">13</characteristic>
-            <characteristic name="Rear" typeId="5265617223232344415441232323">12</characteristic>
-            <characteristic name="HP" typeId="485023232344415441232323">9</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Super-Heavy, Transport (25 Models)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="bf18-c268-d568-fd36" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
-        <categoryLink id="2684-1b30-347e-bd73" name="New CategoryLink" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="a6e2-207b-e769-b39f" name="Magma cannon" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30a9-c486-62a6-6c74" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3bf-38f4-18fa-2109" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="f256-a166-82ed-0284" name="Magma cannon" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="52616e676523232344415441232323">60&quot;</characteristic>
-                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">10</characteristic>
-                <characteristic name="AP" typeId="415023232344415441232323">1</characteristic>
-                <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 1, Large Blast</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="1041-2c19-1195-ca77" name="May take any of the following:" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b95b-1516-092c-bd27" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="30b7-4c94-444e-aed4" name="Hunter-killer Missile" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2462-b158-a483-10d6" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="3fbe-9ec9-1dc5-f9c1" name=" Heavy Stubber" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="830f-c8a6-b223-dada" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="1851-6f93-1348-57e1" name="Heavy Stubber" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="5.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="9a65-a1e0-0064-b1f8" name="Searchlight" hidden="false" collective="false" import="true" targetId="1e27e511-cf75-d55a-6807-b67be6f7474f" type="selectionEntry"/>
-        <entryLink id="91f1-1e22-7eae-9eac" name="May take up to two: (Baneblade/Shadowsword Sponsons)" hidden="false" collective="false" import="true" targetId="8ffb-2a32-888b-41ef" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="420.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f29d-27e9-6fa7-101e" name="Graviton Hammer" hidden="false" collective="false" import="true" type="upgrade">
@@ -11915,95 +11484,6 @@ Assault rules unless otherwise noted.</description>
         <cost name="pts" typeId="points" value="85.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="48cf-f73d-a3c0-e911" name="Macharius" publicationId="cf03-f607-pubN134767" page="229" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="5a78-9752-23ee-6dc2" name="Macharius" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
-          <characteristics>
-            <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
-            <characteristic name="Front" typeId="46726f6e7423232344415441232323">14</characteristic>
-            <characteristic name="Side" typeId="5369646523232344415441232323">13</characteristic>
-            <characteristic name="Rear" typeId="5265617223232344415441232323">12</characteristic>
-            <characteristic name="HP" typeId="485023232344415441232323">6</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Super-heavy Vehicle</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="1017-72af-910a-6ddd" name="Macharius Battle Cannon" hidden="false" targetId="f817-3d5c-3741-6221" type="profile"/>
-        <infoLink id="a17d-eb4b-436d-be92" name="Heavy Stubber" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile">
-          <modifiers>
-            <modifier type="set" field="name" value="Twin-linked Heavy Stubber"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="1dda-ec1b-b35b-2bd1" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
-        <categoryLink id="4f4c-a8dc-f89b-712d" name="New CategoryLink" hidden="false" targetId="8d56-b8fc-9b94-9cc9" primary="false"/>
-        <categoryLink id="f442-93f5-8e8e-dd69" name="New CategoryLink" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="8ad3-f776-e1d1-0f32" name="May take:" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="40b0-a4b8-3f20-9eaa" name="Hunter-killer Missile" hidden="false" collective="false" import="true" targetId="287b-b205-0926-5822" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="points" value="10"/>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d965-79d6-3e82-c5ce" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="120e-ecdd-18c3-4fd2" name="May be given one pintle-mounted" publicationId="cf03-f607-pubN135015" page="120" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="742a-b8b0-388e-e390" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="5ff1-9282-07ba-8ff2" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="0cbc-ea7d-05e7-2d5c" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="points" value="10"/>
-                <modifier type="set" field="name" value="Pintle-mounted Heavy Stubber"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="7735-6748-4ead-6e62" name="Storm bolter" hidden="false" collective="false" import="true" targetId="8758-0d01-2cf7-3371" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="points" value="10"/>
-                <modifier type="set" field="name" value="Pintle-mounted Storm bolter"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="224d-2574-5520-bbed" name="Sponsons" hidden="false" collective="false" import="true" defaultSelectionEntryId="2c1a-eeef-aff7-7682">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22b0-48ad-2dca-1c3b" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3ab-55e0-83f5-fa57" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="2c1a-eeef-aff7-7682" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="0cbc-ea7d-05e7-2d5c" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="points" value="0.0"/>
-                <modifier type="set" field="name" value="Two Sponson-mounted Heavy Stubbers"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="3c66-c7b8-a291-0ba9" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="512b-a9be-50a4-c909" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="points" value="10"/>
-                <modifier type="set" field="name" value="Two Sponson-mounted Heavy Bolters"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="4148-fe7d-32bb-f6de" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="ead9-305c-a7e7-323e" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="name" value="Two Sponson-mounted Heavy Flamers"/>
-                <modifier type="set" field="points" value="10"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="325.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="0cbc-ea7d-05e7-2d5c" name="Heavy Stubber" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="9417-d368-6420-29f1" name="Heavy Stubber" hidden="false" targetId="012e-a738-c943-5c1d" type="profile"/>
@@ -12018,210 +11498,6 @@ Assault rules unless otherwise noted.</description>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="0be5-7f1a-2281-5671" name="Macharius Vulcan" publicationId="cf03-f607-pubN134767" page="230" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="845a-a61e-6901-2a84" name="Macharius Vulcan" publicationId="cf03-f607-pubN134767" page="230" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
-          <characteristics>
-            <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
-            <characteristic name="Front" typeId="46726f6e7423232344415441232323">14</characteristic>
-            <characteristic name="Side" typeId="5369646523232344415441232323">13</characteristic>
-            <characteristic name="Rear" typeId="5265617223232344415441232323">12</characteristic>
-            <characteristic name="HP" typeId="485023232344415441232323">6</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Super-heavy Vehicle</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="92b4-0d89-a358-9161" name="Vulcan mega-bolter" publicationId="cf03-f607-pubN135510" page="230" hidden="false">
-          <description>If the Macharius Vulcan remains stationary in its controlling player&apos;s Movement phase, it may fire its Vulcan mega-bolter twice in that turn&apos;s Shooting phase (both shots must be directed at the same target).</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink id="7ae3-7654-694e-6bcd" name="Heavy Stubber" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile">
-          <modifiers>
-            <modifier type="set" field="name" value="Twin-linked Heavy Stubber"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="cd6e-3511-9e2c-2cc0" name="Vulcan Mega-bolter" hidden="false" targetId="0725d9e4-9558-7135-8059-379ac7a62e19" type="profile"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="f1d7-0989-fdc1-43ba" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
-        <categoryLink id="dab2-4f2d-cd75-754a" name="Super Heavy Tank" hidden="false" targetId="8d56-b8fc-9b94-9cc9" primary="false"/>
-        <categoryLink id="1411-ff78-d2f4-17c2" name="Vehicle" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="42d1-c0d7-c941-1875" name="Sponsons" hidden="false" collective="false" import="true" defaultSelectionEntryId="7c79-ce78-c993-284f">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be76-7fea-64e3-7521" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c07-e663-4556-075f" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="7c79-ce78-c993-284f" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="0cbc-ea7d-05e7-2d5c" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="points" value="0.0"/>
-                <modifier type="set" field="name" value="Two Sponson-mounted Heavy Stubbers"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="56ce-91c9-d0ef-dae8" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="512b-a9be-50a4-c909" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="points" value="10"/>
-                <modifier type="set" field="name" value="Two Sponson-mounted Heavy Bolters"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="66df-5ec7-61cd-d0dd" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="ead9-305c-a7e7-323e" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="name" value="Two Sponson-mounted Heavy Flamers"/>
-                <modifier type="set" field="points" value="10"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="e2c1-0695-ac06-5a19" name="May be given one pintle-mounted" publicationId="cf03-f607-pubN135015" page="120" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9c7-3948-5ec8-2055" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="6a36-7bf6-83cf-fdb7" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="0cbc-ea7d-05e7-2d5c" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="points" value="10"/>
-                <modifier type="set" field="name" value="Pintle-mounted Heavy Stubber"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="d40a-781c-ddb2-d15f" name="Storm bolter" hidden="false" collective="false" import="true" targetId="8758-0d01-2cf7-3371" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="points" value="10"/>
-                <modifier type="set" field="name" value="Pintle-mounted Storm bolter"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="7938-3f3c-477c-7163" name="May take:" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="4b85-abee-e013-252b" name="Hunter-killer Missile" hidden="false" collective="false" import="true" targetId="287b-b205-0926-5822" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="points" value="10"/>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86f9-9bc7-2f99-f7a4" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="405.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="07a7-a3a5-d46e-b873" name="Macharius Vanquisher" publicationId="cf03-f607-pubN130172" page="231" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="80e5-06be-b43a-99fd" name="Macharius Vanquisher" publicationId="cf03-f607-pubN130172" page="231" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
-          <characteristics>
-            <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
-            <characteristic name="Front" typeId="46726f6e7423232344415441232323">14</characteristic>
-            <characteristic name="Side" typeId="5369646523232344415441232323">13</characteristic>
-            <characteristic name="Rear" typeId="5265617223232344415441232323">12</characteristic>
-            <characteristic name="HP" typeId="485023232344415441232323">6</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Super-heavy Vehicle</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="7ba3-ecfe-291d-89bc" name="Macharius Vanquisher Battle Cannon (Blast Shells)" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">72&quot;</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance 1, massive blast 7&quot;, Primary weapon</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="ad65-85d9-bad1-475e" name="Macharius Vanquisher Battle Cannon (AP Shells)" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">72&quot;</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Twin-Linked, Armourbane, Primary Weapon</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="3629-df29-0b39-dd2f" name="Macharius Vanquisher Battle Cannon" hidden="false">
-          <description>You must choose the type of shell fired before the dice is rolled and you can only fire one shell type a turn.
-Any abilities that allow the vehicle to fire multiple shots will use the same shell type for all shots fired that turn.</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="ad96-d6b8-0705-d662" name="New CategoryLink" hidden="false" targetId="8d56-b8fc-9b94-9cc9" primary="false"/>
-        <categoryLink id="2ef6-eadf-0217-2214" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
-        <categoryLink id="9510-9461-1622-9ba3" name="New CategoryLink" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="bf11-6a37-9128-d805" name="May be given one pintle-mounted" publicationId="cf03-f607-pubN135015" page="120" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4db-77c0-f319-f3bb" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="d218-e6a8-2c9e-d2ed" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="0cbc-ea7d-05e7-2d5c" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="points" value="10"/>
-                <modifier type="set" field="name" value="Pintle-mounted Heavy Stubber"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="40d0-e391-4044-5f0e" name="Storm bolter" hidden="false" collective="false" import="true" targetId="8758-0d01-2cf7-3371" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="points" value="10"/>
-                <modifier type="set" field="name" value="Pintle-mounted Storm bolter"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="ab2e-b1b6-0b9b-3276" name="May be given one pintle-mounted" publicationId="cf03-f607-pubN135015" page="120" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bad1-d044-5e2e-f157" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="bec8-6c14-ce81-3334" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="0cbc-ea7d-05e7-2d5c" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="points" value="10"/>
-                <modifier type="set" field="name" value="Pintle-mounted Heavy Stubber"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="10fe-e9c7-1cc3-4320" name="Storm bolter" hidden="false" collective="false" import="true" targetId="8758-0d01-2cf7-3371" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="points" value="10"/>
-                <modifier type="set" field="name" value="Pintle-mounted Storm bolter"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="cddf-b360-06cf-6d3c" name="Sponsons" hidden="false" collective="false" import="true" defaultSelectionEntryId="dce1-3df5-e97f-1376">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6d0-39bf-8cb1-0019" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce3e-21a5-0f8d-6e66" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="dce1-3df5-e97f-1376" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="0cbc-ea7d-05e7-2d5c" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="points" value="0.0"/>
-                <modifier type="set" field="name" value="Two Sponson-mounted Heavy Stubbers"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="a76c-6997-0b55-6182" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="512b-a9be-50a4-c909" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="points" value="10"/>
-                <modifier type="set" field="name" value="Two Sponson-mounted Heavy Bolters"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="cc80-b309-77f9-b5b8" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="ead9-305c-a7e7-323e" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="name" value="Two Sponson-mounted Heavy Flamers"/>
-                <modifier type="set" field="points" value="10"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="375.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d893-4871-06f4-d2a9" name="Thallax Cohort (Icarian)" hidden="false" collective="false" import="true" type="unit">
@@ -12787,113 +12063,6 @@ Construct shields have an Armour value of 11. A Glancing or Penetrating hit (or 
         <cost name="pts" typeId="points" value="150.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fe5b-01ec-07b2-48ba" name="Macharius Omega" publicationId="2369-0496-8060-eda3" page="35" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="2088-be7e-84ab-0097" name="Macharius Omega" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
-          <characteristics>
-            <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
-            <characteristic name="Front" typeId="46726f6e7423232344415441232323">14</characteristic>
-            <characteristic name="Side" typeId="5369646523232344415441232323">13</characteristic>
-            <characteristic name="Rear" typeId="5265617223232344415441232323">12</characteristic>
-            <characteristic name="HP" typeId="485023232344415441232323">6</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Super-heavy Vehicle</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="217b-9534-dc28-0a7e" name="Vehicle" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false"/>
-        <categoryLink id="e677-1352-153a-e030" name="Super Heavy Tank" hidden="false" targetId="8d56-b8fc-9b94-9cc9" primary="false"/>
-        <categoryLink id="c16d-a6d7-aeef-555e" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="b8c4-869f-dcfa-bc6a" name="Omega Pattern Plasma Blastgun" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c3a8-ec97-b841-d955" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="91f7-3bde-fe7c-5279" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="925d-a089-b207-4755" name="Omega Pattern Plasma Blastgun (Maximal)" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="52616e676523232344415441232323">72&quot;</characteristic>
-                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
-                <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
-                <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 1, Massive Blast (7&quot;), Meltdown</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="199e-5fa3-75e5-8f7f" name="Omega Pattern Plasma Blastgun (Pulsed Bolts)" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="52616e676523232344415441232323">60&quot;</characteristic>
-                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
-                <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
-                <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 3, Large Blast</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="46e8-4758-f822-2b41" name="Meltdown" publicationId="2369-0496-8060-eda3" page="135" hidden="false">
-              <description>Roll 1D6 for each shot fired by the weapon with the meltdown rule. on the roll of a 1, the vehicle suffers D3 glancing hits. If the vehicle is permitted to reroll, only a subsequent result of a 1 will cause this damage.</description>
-            </rule>
-          </rules>
-          <infoLinks>
-            <infoLink id="ad0f-0cbd-23b7-65dc" name="Primary Weapon" hidden="false" targetId="e64b-54b8-34df-2f13" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="cd90-33e8-9153-6fbb" name="May take any of the following:" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1813-2081-24bd-3029" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="96a9-ad18-8c53-ee52" name="Hunter-killer Missile" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d4d5-cede-9480-b9b4" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="db54-45bc-097e-91c0" name="Sponson-mounted Weapons" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="554d-96ea-815e-bce1" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="7ae6-c5c4-9e3c-774a" name="2x Heavy Bolters" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="21d5-a47d-9869-b35d" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="1c3c-a85b-910b-8730" name="2x Heavy Flamers" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b1b3-ebab-ea77-ae3e" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="ab67-36ed-bc2a-3a74" name="2x Autocannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e3c0-5339-2f14-ce74" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="20.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="355.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="e688-c102-11a4-7271" name="Triaros Guardian" page="" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5cbe-71ff-c07e-445d" type="max"/>
@@ -12927,6 +12096,9 @@ Construct shields have an Armour value of 11. A Glancing or Penetrating hit (or 
               <description>All models within 6” of the vehicle are protected by a Void Shield. Any shooting attacks from outside this area strike the Void Shield before hitting the targeted unit. The Void Shield is AV12 with a single Hull Point. Each additional Void Shield increases the number of Hull Points by one.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -13035,6 +12207,9 @@ Construct shields have an Armour value of 11. A Glancing or Penetrating hit (or 
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="85de-458b-429e-9789" name="Power Fist" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -13046,6 +12221,9 @@ Construct shields have an Armour value of 11. A Glancing or Penetrating hit (or 
             <infoLink id="2a0a-2e23-31f0-3a0e" name="Specialist Weapon" hidden="false" targetId="7ee3-d437-bc44-3630" type="rule"/>
             <infoLink id="b5b3-6e10-e9ef-7a6d" name="Unwieldy" hidden="false" targetId="5eea-958c-d623-c3c9" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -13075,6 +12253,9 @@ Construct shields have an Armour value of 11. A Glancing or Penetrating hit (or 
                 <infoLink id="81e6-4b86-a62e-4a31" name="Krak Missile" hidden="false" targetId="1e33-d8ec-f833-b584" type="profile"/>
                 <infoLink id="ddd2-1998-2fb7-fe32" name="Frag Missile" hidden="false" targetId="40e6-c95c-7c8d-cf02" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -13473,33 +12654,6 @@ Construct shields have an Armour value of 11. A Glancing or Penetrating hit (or 
         <entryLink id="8922-219a-d998-083b" name="Lachrimallus" hidden="false" collective="false" import="true" targetId="02dc-3228-2e92-c3a8" type="selectionEntry"/>
         <entryLink id="933c-6460-8a8d-3416" name="Ordinator" hidden="false" collective="false" import="true" targetId="0065-6fab-1d05-84eb" type="selectionEntry"/>
       </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="8ffb-2a32-888b-41ef" name="May take up to two: (Baneblade/Shadowsword Sponsons)" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6d80-2297-b3f0-5308" type="max"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="1e33-f07d-ed5f-aaa8" name="Pairs of side sponsons, each with one Lascannon and one twin-linked Heavy Bolter" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8f23-a008-52ee-2fff" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="9579-f0b2-d92c-3d64" name="Lascannon" hidden="false" targetId="1cce-972c-022a-2590" type="profile"/>
-            <infoLink id="7797-802a-5681-279c" name="New InfoLink" hidden="false" targetId="271e-6286-86cc-06dd" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="50.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="2d08-c42e-843d-5e8c" name="Targeters" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9944-9fc9-a568-ce49" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="50.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="5527-f4ef-035b-11c2" name="Wargear" hidden="false" collective="false" import="true">
       <selectionEntries>
@@ -14521,14 +13675,6 @@ Construct shields have an Armour value of 11. A Glancing or Penetrating hit (or 
         <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 1, Large Blast, Vortex, 2x One Use</characteristic>
       </characteristics>
     </profile>
-    <profile id="0725d9e4-9558-7135-8059-379ac7a62e19" name="Vulcan Mega-bolter" publicationId="cf03-f607-pubN123006" page="274" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="52616e676523232344415441232323">60&quot;</characteristic>
-        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
-        <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
-        <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 15</characteristic>
-      </characteristics>
-    </profile>
     <profile id="fd55-0814-ae39-764f" name="Shock chargers" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A model equipped with shock chargers gains teh Concussive special rule added to all of their close combat attacks regardless of type (including Hammer of Wrath, Smash, etc.)  Shock chargers are not a weapon as such in themselves and so do not have a profile of their own, nor do they add additional attacks in conjunction with other weapons. </characteristic>
@@ -14780,14 +13926,6 @@ Construct shields have an Armour value of 11. A Glancing or Penetrating hit (or 
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
         <characteristic name="AP" typeId="415023232344415441232323">5</characteristic>
         <characteristic name="Type" typeId="5479706523232344415441232323">Assault 2</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="f817-3d5c-3741-6221" name="Macharius Battle Cannon" publicationId="cf03-f607-pubN146636" page="269" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="52616e676523232344415441232323">72</characteristic>
-        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
-        <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
-        <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance 1, Massive Blast (7&quot;)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
