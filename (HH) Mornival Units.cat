@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9f87-b468-2001-5e3b" name="Mornival Units Legion Astartes (Fanmade)" revision="12" battleScribeVersion="2.03" authorName="Aus30K / Mourival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="120" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9f87-b468-2001-5e3b" name="Mornival Units Legion Astartes (Fanmade)" revision="13" battleScribeVersion="2.03" authorName="Aus30K / Mourival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="120" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="0e6e-8c19-c436-39c4" name="Mournival Events 3.0 Digital Version"/>
     <publication id="cf75-540e-e446-ecd5" name="Mournival Events FAQ and Experimental Errata v3.1"/>
@@ -4927,7 +4927,11 @@ If equipped with a Jump Pack then they may only join eligible squads with the Ju
                     <cost name="pts" typeId="points" value="10.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="cd36-fac4-bdac-5b7f" name="Rad Grenades" hidden="false" collective="false" import="true" targetId="63a55007-3c8c-21ea-41b0-85d8292c868f" type="selectionEntry"/>
+                <entryLink id="cd36-fac4-bdac-5b7f" name="Rad Grenades" hidden="false" collective="false" import="true" targetId="63a55007-3c8c-21ea-41b0-85d8292c868f" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false"/>
+                  </modifiers>
+                </entryLink>
                 <entryLink id="f314-405f-8ca5-d9ae" name="Nuncio-vox" hidden="false" collective="false" import="true" targetId="b4ea-a586-86a9-02eb" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
@@ -5002,7 +5006,7 @@ If equipped with a Jump Pack then they may only join eligible squads with the Ju
                     </rule>
                   </rules>
                   <selectionEntryGroups>
-                    <selectionEntryGroup id="01ab-678c-0f43-37df" name="Servo-automata may exchange bolter for:" hidden="false" collective="false" import="true">
+                    <selectionEntryGroup id="01ab-678c-0f43-37df" name="Servo-automata may exchange bolter for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="99e1-c2bd-2afd-9a33">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b6a6-230c-807e-b2b0" type="max"/>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49ba-7f64-dca9-4bec" type="min"/>
@@ -5068,10 +5072,7 @@ If equipped with a Jump Pack then they may only join eligible squads with the Ju
                             <modifier type="set" field="points" value="0.0"/>
                           </modifiers>
                         </entryLink>
-                        <entryLink id="5d1f-cd31-5198-d5bc" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="3900-17df-5b2c-7385" type="selectionEntry">
-                          <modifiers>
-                            <modifier type="set" field="3171-39d1-190b-41c6" value="0.0"/>
-                          </modifiers>
+                        <entryLink id="5d1f-cd31-5198-d5bc" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="a161-76b3-9ef1-da7b" type="selectionEntry">
                           <costs>
                             <cost name="pts" typeId="points" value="5.0"/>
                           </costs>
@@ -5088,7 +5089,7 @@ If equipped with a Jump Pack then they may only join eligible squads with the Ju
                         </entryLink>
                       </entryLinks>
                     </selectionEntryGroup>
-                    <selectionEntryGroup id="83d8-3c33-17ca-360c" name="Servo-automata may exchange Chainsword for:" hidden="false" collective="false" import="true">
+                    <selectionEntryGroup id="83d8-3c33-17ca-360c" name="Servo-automata may exchange Chainsword for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="2be6-14e4-2d91-4071">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2507-e8c4-981a-a164" type="min"/>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3721-a0ae-6f67-d43a" type="max"/>
@@ -9916,9 +9917,16 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
 ♦ In campaigns Advances can be earned or purchased, as determined by the campaign organiser�</description>
         </rule>
       </rules>
-      <categoryLinks>
-        <categoryLink id="2d94-41a7-0187-bf88" name="Legiones Astartes" hidden="false" targetId="0c56-27b8-a737-c9fd" primary="false"/>
-      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="f374-e95e-892b-2655" name="Warlord" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cfc-f1e9-9378-c331" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="71b9-260d-ea30-577e" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="57d1-0e31-7e47-9f3a">
           <constraints>
@@ -10030,6 +10038,47 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="810e-d028-7a1b-0dcb" name="Mantle of Ultramar" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="34fa-286c-521b-2899" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="067f-4b57-959e-fc53" name="Mantle of Ultramar" publicationId="839b6f2a--pubN142570" page="231" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Provides a +2 armour save and a 5 Feel No Pain save and immunity to Blind for the wearer only. </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="55a6-583b-47fe-91db" name="New CategoryLink" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="25.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4daf-59a4-9046-1bb2" name="Mantle of Ash" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c29-e6cd-2167-ce90" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="b573-0f14-9e17-4ba8" name="Mantle of Ash" publicationId="839b6f2a--pubN94234" page="66" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">The finely wrought artificer plate worn by the Pyroclasts is fashioned with flecks of obsidax crystal from the volcanoes of Nocturne, and draped with the hides of the Damen-Salamanders who dwell in their fiery depths. As a result, Pyroclasts have an invulnerable save of 5+ against all weapons defined as flamers, plasma weapons, melta weapons and volkites.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -10245,6 +10294,2172 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
+        <selectionEntryGroup id="6d93-04c9-c2bd-8973" name="Placeholder costs" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="95d7-0fb0-b922-b8ef" name="Placeholder costs" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="294f-cb9f-53a4-b8ed" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="e954-a474-cb44-9768" name="May Take:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="9b7c-86e9-6bfa-a862" name="Grenade Harness" hidden="true" collective="false" import="true" targetId="d054f965-5059-139b-029b-61b60c1af93d" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b26e-ba33-ff55-3fd6" type="equalTo"/>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ba6-dda6-d587-3da7" type="equalTo"/>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c904-7d1f-f3ce-d04b" type="equalTo"/>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28d4-97c4-3355-1b98" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="4a81-d7d8-3e2c-d784" name="Legion Special Rules" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="0eee-07ba-1a22-b733" name="   I: Dark Angels" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6fb-0e54-0be1-9ed1" type="greaterThan"/>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c99-ce02-9ca0-6a35" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry id="682b-a7bc-2fbd-4561" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc20-4eda-aa5b-6ef6" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d388-64b7-dae9-935a" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5126-d083-fc22-9302" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="32d6-d965-d17c-100e" name="   III: Emperor&apos;s Children" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="74c0-fb49-35d8-28ac" type="greaterThan"/>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5438-9919-bb89-0fe5" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry id="1934-ba23-a906-b960" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5852-8736-03f5-2cd0" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2e63-807b-2674-6269" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f5b-8b79-183e-f9dd" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8593-fbec-e591-97a6" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a681-7e75-29f5-8b1c" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="0a3c-d03d-4795-6030" name="Blackshields" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbf2-d8be-0406-b8d6" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2205-44c5-3a50-abd7" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="0c99-ce02-9ca0-6a35" name="   I: Dark Angels" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4111-69de-bb35-349a" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5438-9919-bb89-0fe5" name="   III: Emperor&apos;s Children" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f691-3b2a-5be3-bfc7" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a87a-093d-afbc-e193" name="   IV: Iron Warriors" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69c4-9985-5f3b-e993" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="10e0-328d-99bd-ce30" name="   V: White Scars" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edc9-d65c-5f6a-b0a2" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="ce4c-c546-5e15-ac1d" name="   VI: Space Wolves" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e76-6268-0704-6622" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0905-5e6d-ff72-4d7f" name="   VII: Imperial Fists" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b33-7a4f-b161-35a2" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9cbd-19fc-b760-398a" name="   VIII: Night Lords" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83be-67e7-a131-6102" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8b3a-8545-321e-3c32" name="  IX: Blood Angels" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6df9-60df-a176-a949" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="654d-6696-8b84-de34" name="  X: Iron Hands" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c73c-8609-726c-013b" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6940-ad5d-cbfb-7f6e" name="  XII: World Eaters" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16c7-089e-5914-92ed" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2cf1-444f-adf2-3ded" name="  XIII: Ultramarines" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e24b-0517-8558-55ce" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6927-6d53-6567-0c35" name="  XIV: Death Guard" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28a2-358a-c806-eec6" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e2f4-c537-fc50-599b" name="  XV: Thousand Sons" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2238-37a3-3f1c-586f" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7f21-0b67-981a-77c5" name="  XVI: Sons of Horus" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9b2-c4a1-3420-dd8a" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="42fe-5033-a576-7898" name="  XVII: Word Bearers" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ae0-e3f2-657b-4434" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="650c-3a62-792e-9836" name="  XVIII: Salamanders" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08fd-d35c-590d-a47e" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="975e-ab12-6dc3-66d0" name=" XIX: Raven Guard" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68cc-19c6-2387-4959" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="64ad-2527-e6fd-ce61" name=" XX: Alpha Legion" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e1c-fc11-4524-271c" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="e7b8-5595-d9e3-e6fa" name="   IV: Iron Warriors" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a5b8-cb5e-952f-3d3e" type="greaterThan"/>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a87a-093d-afbc-e193" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry id="58ea-e548-f994-9c92" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c71e-8ba5-70ea-8349" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="b5c7-eeb4-adea-320e" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a09f-6854-218d-14ef" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a64f-2e7f-5568-1275" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1b7-2e42-1b88-a2de" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="69a2-b9e0-47ce-d205" name="   V: White Scars" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c66-2306-9285-8809" type="greaterThan"/>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10e0-328d-99bd-ce30" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry id="4863-4177-90eb-d5e1" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d562-26b6-b3c9-2aa8" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a609-18d1-6004-47de" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f131-969a-9090-e1d2" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3c22-cebc-724a-4f10" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69e5-0c4b-dc15-d0d1" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="b591-69b1-2f01-9059" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e567-572b-18be-ecfe" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="17da-a834-6057-4331" name="   VI: Space Wolves" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c91-a83b-8ca5-e5db" type="greaterThan"/>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce4c-c546-5e15-ac1d" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry id="6e70-29f3-a7cc-5ca6" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e5a-d856-1d39-c1fb" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5e45-46dc-c87a-6cdf" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cce1-8a5b-7018-b2f7" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3b6a-53d0-9b0c-2ba0" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f59-53dc-d3cb-9cc0" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="a676-09fa-0827-45bb" name="   VII: Imperial Fists" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9f2f-6f6f-1978-5623" type="greaterThan"/>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0905-5e6d-ff72-4d7f" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry id="04fd-df0a-6482-d0bc" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd14-f773-550c-299e" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a417-3e93-b421-5eae" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e460-394a-971e-7856" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0025-ea0e-3c2f-a675" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="545e-a134-6a6f-cfea" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="e295-1217-c79d-73d8" name="   VIII: Night Lords" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf56-aabc-9977-728d" type="greaterThan"/>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9cbd-19fc-b760-398a" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry id="b596-323a-7056-d281" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a82-9643-f385-f9da" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9942-a14c-733a-9db3" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4aae-6f1c-c944-8503" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="563d-d185-d1ed-4792" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="104f-7891-7aea-a36e" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="beee-119e-e937-8b33" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5e8-e240-df60-8d98" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="b003-65da-9661-1938" name="  IX: Blood Angels" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d97b-d19f-4972-8e7f" type="greaterThan"/>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b3a-8545-321e-3c32" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry id="ddb0-c0f5-9603-5a7c" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37ef-f734-68b7-5611" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6c47-e798-ff54-e3bd" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06f7-06d7-77e1-e07b" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="0ed6-b97e-4a34-b880" name="  X: Iron Hands" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="83c2-692c-6560-3d68" type="greaterThan"/>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="654d-6696-8b84-de34" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry id="1cec-3098-dd81-73cc" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d470-e8a1-5617-3f3d" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0ad0-1732-9fbe-1b16" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4497-1363-0a70-1381" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="ba23-6935-141b-6b21" name="  XII: World Eaters" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a511-1645-ac77-af33" type="greaterThan"/>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6940-ad5d-cbfb-7f6e" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry id="bb40-c9cc-361e-985a" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6747-d717-bb8a-ab48" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="53cf-ffd1-138c-effe" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8d0-6682-ae65-81aa" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0d41-c1db-307c-432b" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c307-0427-3cc6-758f" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="01fb-2944-d898-9f20" name="  XIII: Ultramarines" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="34fa-286c-521b-2899" type="greaterThan"/>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cf1-444f-adf2-3ded" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry id="760f-edc0-7443-ee30" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a627-d458-4eb5-8384" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="cab2-127d-f056-b1ce" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f84b-8c4f-fbfa-0f5d" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="a4be-b2fa-d93e-3414" name="  XIV: Death Guard" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9311-3c42-349a-b51a" type="greaterThan"/>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6927-6d53-6567-0c35" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry id="8528-19fd-c5ef-af66" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5983-74ae-fbb3-d2dd" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4856-1941-63c1-4c44" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91d7-fbcb-7154-5699" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="772d-8975-06ce-a460" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edc2-62a6-77b1-72b2" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1ac5-1ed9-0e7f-1169" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54e6-e578-83ed-b53c" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="b10a-0af8-7bfe-84f0" name="  XV: Thousand Sons" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fc29-3cdf-838d-e6b7" type="greaterThan"/>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e2f4-c537-fc50-599b" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry id="35d4-6ca5-c190-6eee" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="760b-1f1f-5b65-b460" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="e9ff-35ec-78e1-a6c8" name="  XVI: Sons of Horus" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf2e-9aed-ccc5-5696" type="greaterThan"/>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f21-0b67-981a-77c5" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry id="4729-8746-9670-30e4" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fab4-4cef-e0f7-4285" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8814-e094-ef2c-1601" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3c9-86ae-6f2f-3322" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="fe12-a5af-268a-f239" name="  XVII: Word Bearers" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="edd3-79ac-eb75-34b7" type="greaterThan"/>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="42fe-5033-a576-7898" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry id="66f2-abeb-7e08-3b92" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9835-f4ad-ce4e-def5" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d931-323c-3547-9cc0" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd62-8c4e-162a-deca" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6387-a088-b9e4-9383" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a906-e175-f555-840c" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2241-0555-ce2d-c59d" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba9f-29a3-e819-6ec3" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="aed8-6412-0e73-046e" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f28f-a3c6-e328-40cb" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7b24-ff7d-a765-0a72" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bc7-35ed-d71f-d654" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="cca2-77e0-61ec-b5ad" name="  XVIII: Salamanders" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c29-e6cd-2167-ce90" type="greaterThan"/>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="650c-3a62-792e-9836" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry id="1df8-3e73-62ab-adb4" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b458-387d-3b24-9bff" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="17ed-d8ce-83d5-129f" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f072-1494-7e53-932b" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="5b4b-8aec-dbd2-de38" name=" XIX: Raven Guard" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="09b8-26b3-b27d-621a" type="greaterThan"/>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="975e-ab12-6dc3-66d0" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry id="caa1-4c2d-74d7-a6dc" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da94-919c-d8bf-5546" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="b7c4-f2cf-2e76-3031" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8309-6c64-7626-ef29" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a0a8-78de-9e7d-079b" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27e0-182b-5dbc-bde1" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="ca37-d6cf-0aa1-ad05" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e04-5866-cb98-8e6e" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="5083-1d1f-b7cd-2c57" name=" XX: Alpha Legion" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cbb-1638-186f-49ba" type="greaterThan"/>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64ad-2527-e6fd-ce61" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry id="7c73-69b2-9450-3c5e" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b32-b84c-e9a9-2245" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d002-3ca3-8ef1-f0f6" name="New SelectionEntry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fd2-c35b-f746-e2b5" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="85cb-acb3-e445-7f58" name="Warlord Traits (0-1)" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f374-e95e-892b-2655" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ead0-eb97-7207-8212" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="0efe-4ceb-9dfe-c119" name="Strategic Traits" hidden="false" collective="false" import="true">
+              <selectionEntries>
+                <selectionEntry id="f266-11d1-bb66-a670" name="Unrelenting/Strategic Withdrawal" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f003-68de-322e-9483" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="95ef-3aa9-11de-411e" name="Unrelenting/Strategic Withdrawal" hidden="false">
+                      <description>Any dice roll for random game length may be re-rolled</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="331c-89b8-d983-624f" name="Strategic Genius" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5704-6e25-5b58-1e7e" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="fa48-4f52-e1ac-9311" name="Strategic Genius" hidden="false">
+                      <description>+1 to Seize the Initiative. While the Warlord is alive, Reserve rolls may be re-rolled</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1eea-8eb3-f68f-be02" name="Princeps of Deceit" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0013-400b-b974-5c5a" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="5583-a9ae-afce-4927" name="Princeps of Deceit" hidden="false">
+                      <description>At the start of each of your opponent’s turns, choose 1 unit to take a Pinning Test</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3dcc-c93e-2959-8dfd" name="Night Attacker" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="46ce-50a0-2ada-e3ed" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="ed84-b238-f4ca-9a18" name="Night Attacker" hidden="false">
+                      <description>Automatically Night Fighting during first game turn and all models gain Night Vision</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="27c6-3ce4-92ea-3a27" name="Master Tactician" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ebd7-b5f9-f029-5b0e" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="b54e-b403-046e-abc7" name="Master Tactician" hidden="false">
+                      <description>Immediately before the start of the first turn, X units can be redeployed</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="34d8-7e41-40f2-aaac" name="Divide to Conquer" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="531a-cd7f-2197-cea6" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="969f-48a2-0e91-361a" name="Divide to Conquer" hidden="false">
+                      <description>Enemy suffers -1 to all Reserve rolls</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="a3b3-6cd7-a7dd-986f" name="Space Wolf Traits" hidden="false" collective="false" import="true">
+              <selectionEntries>
+                <selectionEntry id="bb41-14ae-63db-1a62" name="Get of the Wyrm" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c0d7-455f-7aaf-422a" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="3b98-c9a7-07fd-f914" name="Get of the Wyrm" hidden="false">
+                      <description>Choose up to 1 unit per 1000 points in the army rounding up Infantry units to gain Fear</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink id="c874-c73a-6a19-fba2" name="Fear" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="ce0c-7d01-a9ff-67ac" name="Howl of the Death Wolf" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0a89-23a3-aa0f-f8d2" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="a57f-3153-fbc8-eaab" name="Howl of the Death Wolf" hidden="false">
+                      <description>Once per game for one turn, all Space Wolves Run and Charge rolls can be re-rolled</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5b4b-5868-6224-bda7" name="Hunger of the Void" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6a79-0fbc-9b83-80fb" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="212c-9e01-78a1-73b8" name="Hunger of the Void" hidden="false">
+                      <description>The Warlord gains the Rage special rule</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink id="9bce-73d6-616c-1f58" name="Rage" hidden="false" targetId="988c-d4d0-9418-1165" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="084c-bc9d-4735-4f17" name="Waster of the Land" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b468-20bc-3121-1e99" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="ec45-1452-d759-88b0" name="Waster of the Land" hidden="false">
+                      <description>Warlord + attached Infantry unit gain Move Through Cover and Ignores Cover (12” and less)</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink id="f8a8-bff1-9093-6230" name="Move Through Cover" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule"/>
+                    <infoLink id="ab77-108f-9f87-36c3" name="Ignores Cover" hidden="false" targetId="acf2-681d-4188-94d7" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="c0f3-de90-3064-0953" name="Crown Breaker" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="60d9-e396-6070-17aa" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="9aae-396e-e6ea-c904" name="Crown Breaker" hidden="false">
+                      <description>Warlord gains Preferred Enemy (Independent Characters) and Feel No Pain (5+) in Challenges</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink id="f85f-f841-3cda-09fe" name="Feel No Pain (5+)" hidden="false" targetId="dbf6-2f12-bb4a-517c" type="rule"/>
+                    <infoLink id="b98b-43b6-1960-b78f" name="Preferred Enemy" hidden="false" targetId="4dd2-fcb0-de6a-5b70" type="rule">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Preferred Enemy (Independant Characters)"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8ab5-34a6-558d-7aac" name="The Shield of the Wolf King" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="79aa-0195-cd15-089a" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="5da6-e5b4-a536-3f44" name="The Shield of the Wolf King" hidden="false">
+                      <description>Warlord + attached unit gain Stubborn and have defensive grenades when charged</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink id="3407-f2c8-faaf-b002" name="Stubborn" hidden="false" targetId="7be5-30af-1a02-0a89" type="rule"/>
+                    <infoLink id="bccd-6436-2a88-a05a" name="Defensive Grenades" hidden="false" targetId="3dc7-8af1-aa26-df58" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="e03c-4558-c92a-0f62" name="Personal Traits" hidden="false" collective="false" import="true">
+              <selectionEntries>
+                <selectionEntry id="fd86-0fc0-eb62-9a0a" name="Tenacity" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="88e9-0ff9-705c-b423" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="60f4-d408-ff5f-fc7c" name="Tenacity" hidden="false">
+                      <description>Warlord and unit gains +1 to Feel No Pain rolls (maximum 3+, minimum 6+)</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink id="de89-b18c-155f-bcab" name="Feel No Pain" hidden="false" targetId="9bdd-5ec7-8dd6-63c0" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="49d7-0577-b7c7-1cbe" name="Master of Defence" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c605-3278-2c8c-1ea5" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="00cb-314f-16d5-bba5" name="Master of Defence" hidden="false">
+                      <description>Warlord and 1 unit per 1000 points in the army rounding up gain Counter-attack</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink id="8b58-b70c-3428-3d01" name="Counter-attack" hidden="false" targetId="0900-71d5-1937-aa96" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="60c5-0fe5-2a80-003d" name="Legendary Fighter" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ebf3-8a28-3107-1311" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="11b4-27fa-921e-037a" name="Legendary Fighter" hidden="false">
+                      <description>Warlord gains +1VP for each enemy character killed in a Challenge</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6673-3848-3246-a564" name="Master of Ambush#" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2b1f-6580-aecd-ce11" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="406f-9585-fe72-7206" name="Master of Ambush" hidden="false">
+                      <description>Warlord and 1 unit per 1000 points in the army rounding up non-vehicle units gain Infiltrate (# Restrictions on which units can take infiltrate).</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2459-97bc-bfcf-b525" name="Master of Offence" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="676e-4d41-3aab-55d4" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="e2d0-9306-36eb-7c29" name="Master of Offence" hidden="false">
+                      <description>Warlord and 1 unit per 1000 points in the army rounding up gain Furious Charge</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink id="8e52-1a6c-b178-5511" name="Furious Charge" hidden="false" targetId="3aa7-9a8f-1e0d-921d" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8efb-afab-d18c-013b" name="Immovable Object" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1fa5-cc21-eb10-2912" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="5b01-2c8c-e715-976d" name="Immovable Object" hidden="false">
+                      <description>Warlord gains Fearless and It Will Not Die (+1 to the roll if they already have this rule)</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="8613-bf2c-dfd3-35db" name="Legiones Astartes Traits" hidden="false" collective="false" import="true">
+              <selectionEntries>
+                <selectionEntry id="3e79-f3bf-32cb-b3bf" name="Child of Terra" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="05cb-7826-d9b9-2ff1" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="a637-4973-3613-dd47" name="Child of Terra" hidden="false">
+                      <description>Warlord and friendly units within 6” may re-roll to wound rolls of 1 in Assault Phase</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="c283-64a2-0ef3-b8cb" name="Void Walker" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="47b7-bb76-8397-7fa0" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="a3d6-ba85-b86d-baf3" name="Void Walker" hidden="false">
+                      <description>Warlord and one attached Infantry unit gain Deep Strike (Teleport)</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink id="4947-8312-28d9-bf3d" name="Deep Strike" hidden="false" targetId="d219-2314-4834-c054" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a448-e246-bca8-c217" name="Bloody Handed" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="90f1-0340-1d2f-16e7" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="bda6-effe-bbd0-280c" name="Bloody Handed" hidden="false">
+                      <description>Warlord causes Fear. If the Warlord already has this, the Fear test has a -1 penalty</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink id="b269-e5f0-0fb6-30b4" name="Fear" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7034-ccc9-be99-2916" name="Witch Bane" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ef9d-a4e0-2ec3-23b6" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="023c-0f6b-0ba2-4994" name="Witch Bane" hidden="false">
+                      <description>Warlord gains Stubborn and +1 to all Deny the Witch rolls</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink id="a4d9-6f31-2200-7a7a" name="Stubborn" hidden="false" targetId="7be5-30af-1a02-0a89" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8b20-cb1c-0c23-e834" name="World Burner" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="33dd-0ed7-d02a-232c" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="2dc0-18a0-3300-9e98" name="World Burner" hidden="false">
+                      <description>Two units in the primary detachment gain Shred for their Blast and Template weapons</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink id="1ce3-c361-beff-529a" name="Shred" hidden="false" targetId="89da-0cb5-bee4-8ec2" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="75b4-b649-a3cb-8639" name="Paladin of Glory" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e1ea-5278-b4fb-61d2" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="3200-0935-e5a8-fa76" name="Paladin of Glory" hidden="false">
+                      <description>Warlord is Fearless and friendly units within 6” add +1 to combat resolution</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink id="4dfb-6002-16a3-29d3" name="Fearless" hidden="false" targetId="dc70-e199-5525-e78c" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="16f3-138c-11a1-eab1" name="Command Traits" hidden="false" collective="false" import="true">
+              <selectionEntries>
+                <selectionEntry id="1457-208b-65ab-2f81" name="Inspiring Presence" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e18b-5798-83f2-6dbd" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="fd3f-dc6b-6215-eebe" name="Inspiring Presence" hidden="false">
+                      <description>Friendly units within 12” can use the Warlord’s Ld value</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7328-3df1-0fa4-fa75" name="Intimidating Presence" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d265-5319-19b1-ca09" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="4e17-4eba-87b2-8c39" name="Intimidating Presence" hidden="false">
+                      <description>Enemy units within 12” use their lowest Ld value</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6665-7ebb-0e74-9529" name="Dust of a Thousand Worlds" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8b4c-6bce-79a5-9b97" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="0074-e938-c14c-e7d2" name="Dust of a Thousand Worlds" hidden="false">
+                      <description>Friendly units within 12” gain Move Through Cover and Stealth</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink id="f67d-79f8-271b-3920" name="Stealth" hidden="false" targetId="0d66-14c9-d2f4-708b" type="rule"/>
+                    <infoLink id="ca0b-064a-1808-1c68" name="Move Through Cover" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="876b-50aa-5766-0416" name="Master of the Vanguard" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="491c-5295-43bd-f0ce" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="a538-c9a5-de03-9fd8" name="Master of the Vanguard" hidden="false">
+                      <description>Friendly units within 9” add 1” to Run and Charge distances</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="83b4-6a3f-27d1-b119" name="Target Priority" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f082-038c-412a-3a55" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="5ccd-3f07-6093-320d" name="Target Priority" hidden="false">
+                      <description>Friendly units within 9” re-roll to hit rolls of 1 during the Shooting phase</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4bd5-e14a-ddad-fe78" name="Coordinated Assault" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="348f-b3ab-a276-bf73" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="6a4d-0051-c146-c764" name="Coordinated Assault" hidden="false">
+                      <description>Friendly units within 9” re-roll to hit rolls of 1 during the Assault phase</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="e4b5-4ce2-88b8-69f5" name="Skill Advances (0+)" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="a11f-4329-72b3-0455" name="Morale" hidden="false" collective="false" import="true">
+              <selectionEntries>
+                <selectionEntry id="7de9-52d9-30cc-3584" name="Here I Stand" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c942-c0e9-4ae4-4d6d" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="92f1-fcde-5628-e861" name="Here I Stand" hidden="false">
+                      <description>Units in the army gain +1 to Ld tests taken in their own deployment zone (max. 10)</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9d22-dc2d-03b1-bc48" name="Intractable" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d75-fc40-799a-3c98" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="412a-4e6f-b787-7d49" name="Intractable" hidden="false">
+                      <description>Units with a Line of Sight to the Character gain Stubborn</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink id="ae23-2c32-3d9c-3b8c" name="Stubborn" hidden="false" targetId="7be5-30af-1a02-0a89" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="eac2-ad59-4e6b-c69e" name="Rallying Cry" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f0d-59a5-32fb-6243" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="1e5e-0554-c7da-1ac4" name="Rallying Cry" hidden="false">
+                      <description>While the Character is on the board, units automatically regroup</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="bf5b-0ba5-72a2-0c01" name="Forward!" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e10-c9f5-531f-f281" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="c6c8-3fb5-2642-7f70" name="Forward!" hidden="false">
+                      <description>Units in the army gain +1 to Ld tests taken in the enemy deployment zone (max. 10)</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="dbd7-b01d-6302-f21d" name="Paladin of Glory" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c67-1b22-bac0-7e48" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="f51a-4ad5-a02d-e74c" name="Paladin of Glory" hidden="false">
+                      <description>Add +1 to Combat Resolution for any assaults within 12” of the Character</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="21ef-49ec-1f81-f298" name="Melee" hidden="false" collective="false" import="true">
+              <selectionEntries>
+                <selectionEntry id="c812-303b-2c49-2fe8" name="Rapid Strike" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3288-3fec-e418-7d56" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="62b4-21dd-b018-3698" name="Rapid Strike" hidden="false">
+                      <description>Character gains +1 Initiative when charging</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="aec2-f57e-dd70-a848" name="Overrun" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6437-4a48-6ed6-c3fb" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="5981-0aad-adce-318b" name="Overrun" hidden="false">
+                      <description>The Character adds +1 to Sweeping Advance rolls when victorious in a combat</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e806-aced-bde0-d549" name="Headlong Charge" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af9c-4c2c-98b3-878c" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="d70b-bba8-69b5-bc3c" name="Headlong Charge" hidden="false">
+                      <description>Character and unit add +1 to Charge distances</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a4bc-feea-2b04-a277" name="Ferocious Escalade" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="546a-cae2-6e79-2aab" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="2999-3f3c-78ca-c36b" name="Ferocious Escalade" hidden="false">
+                      <description>Character causes Fear. If they already cause Fear, the test is taken at -1Ld</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink id="3522-b5aa-ff38-53d0" name="Fear" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5055-1f5f-917d-3fe9" name="Headsman" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14ae-65fb-1d15-4fd1" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="5b60-8c04-29ce-df43" name="Headsman" hidden="false">
+                      <description>Once per game, one of the Character&apos;s melee attacks that has both hit and wounded gains Instant Death. Declare this after rolling to wound but before any saves are made.</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink id="da16-b743-4a5c-d5e6" name="Instant Death" hidden="false" targetId="fbf1-6913-ff9f-5a4f" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="309b-8dc6-8a96-1fe7" name="Movement" hidden="false" collective="false" import="true">
+              <selectionEntries>
+                <selectionEntry id="cdfa-695c-4726-b6a3" name="Hunger for Victory" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b83e-a139-b4a5-e5dc" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="5323-e498-11b3-b273" name="Hunger for Victory" hidden="false">
+                      <description>Character and unit roll 2d6&quot; for Consolidation moves</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e233-23d3-4902-7531" name="Leap back" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b767-860d-6fb2-91b1" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="dc71-01df-d511-8612" name="Leap back" hidden="false">
+                      <description>Character and unit gain Hit and Run (2d6&quot;)</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2b2e-a8fc-e89e-bc75" name="Swift stride" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e32-3b45-d4cb-587b" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="4e1a-3e33-fd5b-d362" name="Swift stride" hidden="false">
+                      <description>Character and unit add +1 to Run distances</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="fe13-a641-aecc-5142" name="Ruin-strider" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b77-cda1-59b6-b88c" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="f421-d565-4e8d-55e3" name="Ruin-strider" hidden="false">
+                      <description>Character and unit ignores Difficult Terrain</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5b04-5017-5d18-75bb" name="Ever Onwards!" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8df4-5c1d-11f7-7bbf" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="8edc-921b-2a59-68cd" name="Ever Onwards!" hidden="false">
+                      <description>At the start of the turn, roll for Difficult Terrain and Run moves for the Warlord&apos;s units. All other units in the army can choose to use these distances for the remainder of the turn</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="8d93-2c99-92f8-f729" name="Ranged" hidden="false" collective="false" import="true">
+              <selectionEntries>
+                <selectionEntry id="4816-8f32-4d75-caaa" name="Waster of the Land" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e76b-a471-612b-1544" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="6680-3703-639b-2812" name="Waster of the Land" hidden="false">
+                      <description>The Character and unit Ignore Cover on to hit rolls of 6. This cannot be used with Snap Shots</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink id="ed74-3b90-1438-152d" name="Ignores Cover" hidden="false" targetId="acf2-681d-4188-94d7" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="505c-4b08-30a6-6945" name="Ruin-shield" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f85-36e7-415b-d709" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="8cd6-db87-23d3-87c2" name="Ruin-shield" hidden="false">
+                      <description>Character and Infantry unit add +1 to cover saves (max. 2+)</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7c53-7033-ac10-a8c9" name="Preternatural Senses" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76b5-573b-dfd8-ce3c" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="0258-e444-4532-c518" name="Preternatural Senses" hidden="false">
+                      <description>The Character and Infantry unit gain Reaction Fire. If this is already in play (e.g. Zone Mortalis), the Reaction Fire test is automatically passed. Cannot be used by models that cannot use Reaction Fire.</description>
+                    </rule>
+                    <rule id="7ea0-65a2-a3e4-cccc" name="Reaction Fire" hidden="false">
+                      <description>Only pistol, assault and rapid fire weapons may be used for Reaction Fire attacks. Heavy weapons may only be used for Reaction Fire attacks if the model carrying them has the Relentless special rule. Note that other weapons in the squad may still make normal Overwatch snap fire attampts as if they are eligible alongside the rest of the unit&apos;s Reaction Fire.
+Blast weapons may not be used to make Reaction Fire attacks.
+Template weapons may be used in Reaction Fire attacks, if the Reaction Fire roll is successful (see below) rather than placing the template, D3 hits are inflicted upon the charging unit by each template weapon fired by the unit.
+A unit may only make a single Reaction Fire attack against the first unit they are assaulted by in any given turn.
+A Reaction Fire attack is made after a Charge is declared, but before the charing models have moved. Casualties resulting from Reaction Fire may cause an assault to fail.
+
+A Reaction fire attack is carried out exactly like an Overwatch attack except that the unit must first make a roll equal to or under the majority Initiative score on a D6. If successful they may use their full Ballistic Skill. If unsuccessful they may make a normal Overwatch attack instead.
+A Unit may not use Counter Attack special rule if it used Reaction Fire.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0426-8115-fff3-ad6f" name="Hail of Fire" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c746-162c-6638-b304" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="edd7-221d-9735-925d" name="Hail of Fire" hidden="false">
+                      <description>The Character and unit gain Pinning to attacks made in their Shooting Phase</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink id="7c0f-7de9-6196-cc52" name="Pinning" hidden="false" targetId="f624-f475-e5ec-0dfa" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="31f7-359e-3346-2994" name="No Escape" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bc4-a11b-87cd-e410" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="5ec8-2fd1-53dc-5bf9" name="No Escape" hidden="false">
+                      <description>-1 to Look Out Sir against the Character’s attacks with ranged weapons</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="4094-5424-0d06-437c" name="Ranged (Warlord Only)" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f374-e95e-892b-2655" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry id="e244-325c-ab7c-f6c6" name="Night Stalker" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dce4-cebc-486d-6a43" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="c851-2e6e-d187-67b5" name="Night Stalker" hidden="false">
+                      <description>+1 to Night Fight rolls, Night Fight persists each turn on a 6+</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7562-997f-5239-6f22" name="Rapid Assault" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d45-d983-f804-226c" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="8918-7ae0-fd9f-2128" name="Rapid Assault" hidden="false">
+                      <description>May re-roll to Seize the Initiative</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f685-f854-c9fe-d000" name="Flank March" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4179-e064-0761-514b" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="54f4-6b26-15c4-3d01" name="Flank March" hidden="false">
+                      <description>Confers Acute Senses to Outflanking units</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink id="6079-d929-b6e3-ee52" name="Acute Senses" hidden="false" targetId="e15d-1437-cfb2-b8dd" type="rule"/>
+                    <infoLink id="bec1-b51f-eef5-6e5c" name="Outflank" hidden="false" targetId="de18-25a0-504b-74be" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8de0-4b47-dad5-c9df" name="Coordinated Reserves" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8417-781c-d302-0bd6" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="dc4f-ac06-de74-11c6" name="Coordinated Reserves" hidden="false">
+                      <description>May add +1 to any Reserve rolls</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="cb99-d7d3-69ff-9706" name="Coordinated Strike" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="883e-e86b-ef34-3874" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="d41a-0711-4414-a8f7" name="Coordinated Strike" hidden="false">
+                      <description>One Deep Striking unit may re-roll the scatter dice upon deployment each turn</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="3ac9-d33a-bd99-2ed3" name="Specialisations (0+)" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edb9-a8e6-63a6-7468" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="d2a8-fe6d-b793-225b" name="Delegatus" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbf3-c953-970b-bc62" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="9058-210e-7313-1e07" name="Primary Specialisation" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9b53-3dae-c7a4-443a" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="7336-2cf5-3705-2ee2" name="Champion" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a10d-11f1-76b8-5e3a" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4131-d89f-489f-2f48" name="Chaplain" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c91-a83b-8ca5-e5db" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d25-b22e-3505-6097" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2832-4cb2-3a2c-5683" name="Siege Breaker" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31f4-41e6-167e-e3b7" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a2d0-d202-f0ce-d081" name="Vigilator#" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e24-a9b4-07cb-f871" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="631d-c6b6-1f7d-a4b7" name="Saboteur# " hidden="true" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cbb-1638-186f-49ba" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="867e-b770-ac62-2ed2" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8fc1-75d3-7414-71ff" name="Hunter Claw Leader" hidden="true" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c91-a83b-8ca5-e5db" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa00-8233-2ce5-b1ba" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="c047-529a-8d98-b5ba" name="Berserker Claw Leader" hidden="true" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c91-a83b-8ca5-e5db" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74a4-b42c-cdd5-4792" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="fcb3-10fd-341f-986e" name="Iron Father" hidden="true" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="83c2-692c-6560-3d68" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94ae-435b-705f-7def" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="26a6-7250-f7b3-d0cd" name="Warsmith#" hidden="true" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a5b8-cb5e-952f-3d3e" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2578-806c-c068-6e27" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d5cb-9f8a-d0fe-9a56" name="Gunnery Centurion*#" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa17-492f-5c39-793b" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7c74-f4c8-3bb2-7108" name="Primus Nullificator" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5160-9a7b-b34e-119f" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9c94-33f2-87e2-3fd0" name="Moritat*#" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c29-e6cd-2167-ce90" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="640b-b377-b339-29ae" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f077-2e90-ccd2-f3ad" name="Mortificator#" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d0f-7a84-9aad-25e8" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="aded-1955-fced-f1b8" name="Forge Lord" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e375-da5d-73ff-423d" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="75c9-e5dd-17e0-c27e" name="Primus Medicae*" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c91-a83b-8ca5-e5db" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c2d-5c19-c9cc-320b" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="14e5-3198-5d18-6169" name="Esoterist*" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1bb-5923-2182-6285" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f70f-92fd-ae0e-031a" name="Librarian*" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="feb1-be61-a90c-afb5" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0f8d-5060-0530-d1f9" name="Speaker of the Dead*" hidden="true" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c91-a83b-8ca5-e5db" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f55-8009-4dd1-8c4f" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0623-d621-0351-145c" name="Reaver Lord" hidden="true" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbf2-d8be-0406-b8d6" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adf0-8bf0-24be-94fc" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="aabc-93f7-1ae0-6bfe" name="Master of Signal*#" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d496-3e4c-a42d-47df" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0d32-4399-cd60-62be" name="Armistos*" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be69-1b34-b1be-2170" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="19c7-fd12-c4d6-44ce" name="Warmonger" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69ad-d551-ef7e-affe" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4652-e768-5037-5cc4" name="Diabolist" hidden="true" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="edd3-79ac-eb75-34b7" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b32-7897-04f8-4766" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="af34-c67e-eef6-024d" name="Herald*" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ad4-e5f0-da0e-ded0" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="fe8b-2145-2541-9062" name="Praevian*" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d02e-ab38-daa9-4a8f" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="e94b-b9f7-4a02-3a6f" name="Special Rules (0+)" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="d5db-1d2e-6326-3bfe" name="Character" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e849-6c0c-9ba4-8649" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a40f-1f09-a25e-87a3" type="min"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="07d0-dfda-2e3a-6c26" name="Character" hidden="false" targetId="eb92-48f9-9a1a-7bd1" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5d16-6364-4af6-3024" name="Independent Character" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="081e-14b8-37cd-4792" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="be85-086e-205e-89ff" name="Independent Character" hidden="false" targetId="f371-30b5-0610-e37a" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="895d-531f-8366-d119" name="Split Attacks" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e72-3a93-2fcf-d774" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="d3fc-1869-8494-6e81" name="Split Attacks" hidden="false">
+                  <description>Attacks can be split between Melee weapons, declared before rolling to hit</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d770-a9fa-3210-1c04" name="Legiones Astartes" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f448-9260-6299-525c" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7529-a8e9-7878-5f7a" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="df83-68cf-e754-d5cd" name="Legiones Astartes" hidden="false" targetId="0c56-27b8-a737-c9fd" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="35b0-4b9f-034f-ed58" name="Basic Weapon (0-1)" hidden="false" collective="false" import="true"/>
+        <selectionEntryGroup id="f97b-8940-4fb2-8336" name="Shields and Fields (0-1)" hidden="false" collective="false" import="true"/>
+        <selectionEntryGroup id="465b-d664-accc-9ac9" name="Melee Weapon Options (Select 1)" hidden="false" collective="false" import="true"/>
+        <selectionEntryGroup id="cb47-a51a-9399-b049" name="Unit Type (0-1)" hidden="false" collective="false" import="true"/>
+        <selectionEntryGroup id="1b81-08f9-5de7-4c41" name="Pistol Option (Select 1)" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b26e-ba33-ff55-3fd6" type="equalTo"/>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ba6-dda6-d587-3da7" type="equalTo"/>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c904-7d1f-f3ce-d04b" type="equalTo"/>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28d4-97c4-3355-1b98" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="e5a0-4bc8-b3a4-4c4a" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b26e-ba33-ff55-3fd6" type="equalTo"/>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ba6-dda6-d587-3da7" type="equalTo"/>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c904-7d1f-f3ce-d04b" type="equalTo"/>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28d4-97c4-3355-1b98" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="a1f2-b45b-1691-7360" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b26e-ba33-ff55-3fd6" type="equalTo"/>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ba6-dda6-d587-3da7" type="equalTo"/>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c904-7d1f-f3ce-d04b" type="equalTo"/>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28d4-97c4-3355-1b98" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5a0-4bc8-b3a4-4c4a" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1f2-b45b-1691-7360" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="9a4c-f949-7205-e5cf" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="6026-d507-935a-7200" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="dcbf-c7f3-7217-68a1" name="Grenades (0+)" hidden="false" collective="false" import="true"/>
+        <selectionEntryGroup id="4eb4-2eeb-0a76-dd81" name="Psyarkana^" hidden="false" collective="false" import="true"/>
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
