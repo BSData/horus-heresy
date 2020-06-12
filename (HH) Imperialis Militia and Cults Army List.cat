@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" revision="102" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="120" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" revision="103" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="120" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="90aa-c2c8-pubN65537" name="Crusade Imperialis"/>
     <publication id="90aa-c2c8-pubN65563" name="AoDRB"/>
@@ -777,6 +777,9 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
               <entryLinks>
                 <entryLink id="14dc-00da-3db8-0bee" name="Arvus Lighter, Auxilia" hidden="false" collective="false" import="true" targetId="2f44-0ed6-d014-be2f" type="selectionEntry"/>
               </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1830,14 +1833,10 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
     </selectionEntry>
     <selectionEntry id="c9ee-665f-aaee-6ece" name="Cult Horde" publicationId="90aa-c2c8-pubN73385" page="73 (FAQ July 18 update)" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="maxInForce" value="0">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="set" field="maxInForce" value="0.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -1860,15 +1859,10 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
     </selectionEntry>
     <selectionEntry id="3e9e-38b2-3633-713a" name="Cyber-augmetics" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="maxInForce" value="0">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1872-76c7-64c2-9185" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="set" field="maxInForce" value="0.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -9314,7 +9308,6 @@ A model may only use this weapon if it has successfully charged that player turn
         <entryLink id="7549-e16b-27e6-27c2" name="Stormsword" hidden="false" collective="false" import="true" targetId="e5ad-07be-63c1-71e3" type="selectionEntry"/>
         <entryLink id="6c59-933c-588a-94d3" name="Baneblade" hidden="false" collective="false" import="true" targetId="093f-6472-95d0-553f" type="selectionEntry"/>
         <entryLink id="37ea-18d3-1bb0-86d3" name="Banehammer" hidden="false" collective="false" import="true" targetId="27c7-0760-039c-2cd7" type="selectionEntry"/>
-        <entryLink id="8e4f-991e-1727-9838" name="Doomhammer" hidden="false" collective="false" import="true" targetId="b04c-44bf-53d8-352c" type="selectionEntry"/>
         <entryLink id="fe2c-089a-1269-81d4" name="Macharius" hidden="false" collective="false" import="true" targetId="e786-debb-a21b-d5ee" type="selectionEntry"/>
         <entryLink id="2e7e-c2bd-5e8a-297b" name="Macharius Omega" hidden="false" collective="false" import="true" targetId="cc26-df44-2b56-fd88" type="selectionEntry"/>
         <entryLink id="7942-a5ca-8541-0112" name="Macharius Vanquisher" hidden="false" collective="false" import="true" targetId="d4b0-56e7-4f8c-7ea5" type="selectionEntry"/>
@@ -9538,12 +9531,12 @@ A model may only use this weapon if it has successfully charged that player turn
       <entryLinks>
         <entryLink id="0d48-56d3-060c-0d9e" hidden="false" collective="false" import="true" targetId="96b4-3842-f492-d7cb" type="selectionEntry"/>
         <entryLink id="6636-115c-2785-e3b3" hidden="false" collective="false" import="true" targetId="a77a-bcf8-90fd-d9e5" type="selectionEntry"/>
-        <entryLink id="48e4-e391-0738-9043" hidden="false" collective="false" import="true" targetId="3e9e-38b2-3633-713a" type="selectionEntry"/>
+        <entryLink id="48e4-e391-0738-9043" name="Cyber-augmetics" hidden="false" collective="false" import="true" targetId="3e9e-38b2-3633-713a" type="selectionEntry"/>
         <entryLink id="b90e-452f-beb8-dac2" hidden="false" collective="false" import="true" targetId="6628-02a8-0a86-1278" type="selectionEntry"/>
-        <entryLink id="f449-b458-8db9-8cb7" hidden="false" collective="false" import="true" targetId="d18f-6d15-942c-0ac5" type="selectionEntry"/>
+        <entryLink id="f449-b458-8db9-8cb7" name="Survivors of the Dark Age" hidden="false" collective="false" import="true" targetId="d18f-6d15-942c-0ac5" type="selectionEntry"/>
         <entryLink id="47eb-36c0-6fae-1a20" hidden="false" collective="false" import="true" targetId="8836-1dde-d860-bd88" type="selectionEntry"/>
         <entryLink id="f878-08e1-b8a0-1b26" name="Abhuman Helots" hidden="false" collective="false" import="true" targetId="1072-a486-548b-2be7" type="selectionEntry"/>
-        <entryLink id="864a-d893-dd0b-fd55" hidden="false" collective="false" import="true" targetId="c9ee-665f-aaee-6ece" type="selectionEntry"/>
+        <entryLink id="864a-d893-dd0b-fd55" name="Cult Horde" hidden="false" collective="false" import="true" targetId="c9ee-665f-aaee-6ece" type="selectionEntry"/>
         <entryLink id="4a06-7162-96b8-e9ec" name="Tainted Flesh" hidden="false" collective="false" import="true" targetId="3cc2-fa8b-3467-7e3a" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
