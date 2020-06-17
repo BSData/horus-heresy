@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="96" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="120" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="97" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="121" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="cf03-f607-pubN65537" name="Horus Heresy: Taghmata Army List"/>
     <publication id="cf03-f607-pubN65563" name="AoDRB"/>
@@ -5044,6 +5044,11 @@ Buildings and Fortifications D</description>
                 <modifier type="set" field="points" value="5"/>
               </modifiers>
             </entryLink>
+            <entryLink id="20a5-4b0b-3757-501d" name="Exotic Melee Weapons" hidden="false" collective="false" import="true" targetId="0e71-f51b-ee6f-4861" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="c6f5-7057-4fd3-1567" name="May be equipped with any of the following" hidden="false" collective="false" import="true">
@@ -5069,6 +5074,20 @@ Buildings and Fortifications D</description>
           </constraints>
         </entryLink>
         <entryLink id="faa6-e158-dba7-c69d" name="New EntryLink" hidden="false" collective="false" import="true" targetId="8833-9c4e-e34c-e9be" type="selectionEntry"/>
+        <entryLink id="8ea5-c2b0-0ac4-e51e" name="Exotic Melee Weapons" hidden="true" collective="false" import="true" targetId="befa-6205-342b-50d0" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="bd94-0269-4234-4a81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e71-f51b-ee6f-4861" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="7bc1-b1dd-75fe-ca7e" value="1.0">
+              <conditions>
+                <condition field="selections" scope="bd94-0269-4234-4a81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e71-f51b-ee6f-4861" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="60.0"/>
@@ -9382,6 +9401,11 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
                     <modifier type="set" field="points" value="45"/>
                   </modifiers>
                 </entryLink>
+                <entryLink id="7f97-151e-75ac-2822" name="Exotic Melee Weapons" hidden="false" collective="false" import="true" targetId="0e71-f51b-ee6f-4861" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="2939-5889-6c61-caef" name="Ranged Weapon:" hidden="false" collective="false" import="true" defaultSelectionEntryId="97f7-35c5-fd82-1c40">
@@ -9426,6 +9450,11 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
                     </modifier>
                     <modifier type="set" field="points" value="45"/>
                   </modifiers>
+                </entryLink>
+                <entryLink id="6f9b-cdf2-8b47-4433" name="Exotic Melee Weapons" hidden="false" collective="false" import="true" targetId="0e71-f51b-ee6f-4861" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -9497,6 +9526,20 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
             <modifier type="set" field="hidden" value="false">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="076b-2276-b456-9d6f" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="e70e-d7d7-f458-7d8e" name="Exotic Melee Weapons" hidden="true" collective="false" import="true" targetId="befa-6205-342b-50d0" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="aa74-77f4-7266-36b6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e71-f51b-ee6f-4861" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="7bc1-b1dd-75fe-ca7e" value="1.0">
+              <conditions>
+                <condition field="selections" scope="aa74-77f4-7266-36b6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e71-f51b-ee6f-4861" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -9906,6 +9949,11 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
                     <modifier type="set" field="points" value="15"/>
                   </modifiers>
                 </entryLink>
+                <entryLink id="2231-993b-9861-d2e6" name="Exotic Melee Weapons" hidden="false" collective="false" import="true" targetId="0e71-f51b-ee6f-4861" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="points" value="15.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="6b38-ab10-fd94-4917" name="Exchange Power axe for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="d42a-fbda-1c76-f129">
@@ -9934,6 +9982,11 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
                   </modifiers>
                 </entryLink>
                 <entryLink id="d42a-fbda-1c76-f129" name="Power Axe" hidden="false" collective="false" import="true" targetId="1695-a895-5233-71db" type="selectionEntry"/>
+                <entryLink id="9d40-d4cd-0a6d-b1f5" name="Exotic Melee Weapons" hidden="false" collective="false" import="true" targetId="0e71-f51b-ee6f-4861" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="points" value="15.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -10005,6 +10058,20 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
             <modifier type="set" field="hidden" value="false">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8952-ed12-5b98-7de7" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="10b6-844e-c383-d556" name="Exotic Melee Weapons" hidden="true" collective="false" import="true" targetId="befa-6205-342b-50d0" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="04e8-11de-2eb4-67e0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e71-f51b-ee6f-4861" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="7bc1-b1dd-75fe-ca7e" value="1.0">
+              <conditions>
+                <condition field="selections" scope="04e8-11de-2eb4-67e0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e71-f51b-ee6f-4861" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -12367,6 +12434,18 @@ Construct shields have an Armour value of 11. A Glancing or Penetrating hit (or 
       <costs>
         <cost name="pts" typeId="points" value="55.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="0e71-f51b-ee6f-4861" name="Exotic Melee Weapons" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="eabf-e7a1-77f2-bb01" type="max"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

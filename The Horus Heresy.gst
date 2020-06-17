@@ -8426,6 +8426,528 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
         <cost name="pts" typeId="points" value="200.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="be86-7cb9-6f78-eb14" name="Additional Psychic Disciplines" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="fe0b-d19a-249b-725c" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe0b-d19a-249b-725c" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="c932-d68a-fc33-802e" name="Additional Psychic Disciplines" hidden="false">
+          <description>Any Psyker may choose to replace their Primaris power (if they have selected one) a power from one of the following additional Psychic Disciplines.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="2088-400f-8560-075b" name="Ectomancy" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fde3-89dd-e876-e2ea" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="8e97-b931-8edb-9b48" name="Electrosurge" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48df-d148-99cd-9757" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="6df9-8f7c-8f37-fb2a" name="Electrosurge" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">1</characteristic>
+                    <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire</characteristic>
+                    <characteristic name="Range" typeId="5bf6-378a-0cb7-b079">18&quot;</characteristic>
+                    <characteristic name="Strength" typeId="12da-9b3e-f37b-bc35">5</characteristic>
+                    <characteristic name="AP" typeId="10b5-aa5b-ccde-79cc">4</characteristic>
+                    <characteristic name="Type" typeId="20e7-cbcb-1781-a732">Assault 6, Target models are automatically hit</characteristic>
+                    <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="78af-4299-5e00-1232" name="Electropulse" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7c9-8dd1-c715-d6f7" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="faa4-875c-de6d-dda8" name="Electropulse" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">1</characteristic>
+                    <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire (Nova)</characteristic>
+                    <characteristic name="Range" typeId="5bf6-378a-0cb7-b079">9&quot;</characteristic>
+                    <characteristic name="Strength" typeId="12da-9b3e-f37b-bc35">1</characteristic>
+                    <characteristic name="AP" typeId="10b5-aa5b-ccde-79cc">-</characteristic>
+                    <characteristic name="Type" typeId="20e7-cbcb-1781-a732">Haywire, All models are automatically hit once</characteristic>
+                    <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="9b27-d048-a1b5-d959" name="Haywire" hidden="false" targetId="6970-1bf3-b33e-5dce" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="118d-fea3-9a04-293d" name="Magnetokinesis" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e77-d2e7-6ec1-4a40" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="7c8d-1e47-0a57-de12" name="Magnetokinesis" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">2</characteristic>
+                    <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Malediction</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Magnetokinesis is a Malediction with range 18”. The target unit is immediately moved by the caster up to 6” as though they were Jump Infantry. In the following player turn, the unit counts as having moved and cannot Charge. Cannot be used on a unit that is Zooming Swooping or Locked in combat.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7ee6-3679-0964-d17f" name="Tempestas" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2e3-264e-3b4d-5ca3" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6d11-1dd1-db74-672b" name="Living Lightning" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efa0-b23a-3d57-c476" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="fffb-52d3-0f8b-aee4" name="Living Lightning" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">1</characteristic>
+                    <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire</characteristic>
+                    <characteristic name="Range" typeId="5bf6-378a-0cb7-b079">18&quot;</characteristic>
+                    <characteristic name="Strength" typeId="12da-9b3e-f37b-bc35">7</characteristic>
+                    <characteristic name="AP" typeId="10b5-aa5b-ccde-79cc">-</characteristic>
+                    <characteristic name="Type" typeId="20e7-cbcb-1781-a732">Assault 2</characteristic>
+                    <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="668c-956a-4227-895f" name="Virumancy" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39a6-1821-715a-d230" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="21bf-38e2-6448-2545" name="Plague Wind" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2f7-a944-6f8c-6d91" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="f5ad-6213-1227-e88f" name="Plague Wind" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">1</characteristic>
+                    <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire</characteristic>
+                    <characteristic name="Range" typeId="5bf6-378a-0cb7-b079">Template</characteristic>
+                    <characteristic name="Strength" typeId="12da-9b3e-f37b-bc35">1</characteristic>
+                    <characteristic name="AP" typeId="10b5-aa5b-ccde-79cc">4</characteristic>
+                    <characteristic name="Type" typeId="20e7-cbcb-1781-a732">Poisoned (4+), Torrent</characteristic>
+                    <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="c6cd-f0a9-ef01-4b05" name="Poisoned" hidden="false" targetId="a5ff-1cb1-bee4-d809" type="rule"/>
+                <infoLink id="2fac-e37f-d55b-46a7" name="Torrent" hidden="false" targetId="5039-18f0-a9ed-0938" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2e63-e7d5-234a-7413" name="Geomancy" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e12b-3955-b73c-7f35" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a366-6b9a-6c97-9c99" name="Warp Quake" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f02f-7d56-d429-300c" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="265e-0b3b-4f8e-06f5" name="Warp Quake" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
+                    <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Witchfire</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">24&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Warp Quake is a Witchfire power with range 24” that may only target buildings or ruins. Roll a d6; on a 1-3, the terrain suffers a glancing hit, on a 4+, a penetrating hit. Units in the targeted terrain suffer d6 Str6 AP- hits.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c3c1-6ea8-c6fb-2ede" name="Scorched Earth" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a4b-7ebf-f7b7-c949" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="b964-836e-7686-0533" name="Scorched Earth" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">2</characteristic>
+                    <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Witchfire</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">24&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Scorced Earth is a Witchfire with range 24” Choose a point on the board and scatter it 2d6”. All units within 6” of this point are hit by a S5 AP4, Assault 1, Ignores Cover, Soul Blaze hit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="209a-fdf3-5974-caeb" name="Technomancy" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ec3-1b38-7736-8c45" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="22d9-a6c3-f4b6-e844" name="Blessing of the Machine" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="512a-f2ae-a314-71a7" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="71bb-7ef9-6ddc-6ab1" name="Blessing of the Machine" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
+                    <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">24&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing of the Machine is a Blessing that can be targeted on vehicles. The model ignore Crew Shaken and Crew Stunned results, and gains Power of the Machine Spirit, or, if it already has this rule, +1BS instead.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="d27d-ea0b-c2d3-e0ea" name="Power of the Machine Spirit" hidden="false" targetId="0ac1-dfc1-295b-50a6" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3367-628f-ae77-6925" name="Fury of Mars" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19b8-0943-22a2-29aa" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="f51c-5d0d-03db-b5a2" name="Fury of Mars" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">2</characteristic>
+                    <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire (Beam)</characteristic>
+                    <characteristic name="Range" typeId="5bf6-378a-0cb7-b079">18&quot;</characteristic>
+                    <characteristic name="Strength" typeId="12da-9b3e-f37b-bc35">1</characteristic>
+                    <characteristic name="AP" typeId="10b5-aa5b-ccde-79cc">-</characteristic>
+                    <characteristic name="Type" typeId="20e7-cbcb-1781-a732">Assault 1, Haywire</characteristic>
+                    <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="0339-6df1-b5ec-fc9a" name="Haywire" hidden="false" targetId="6970-1bf3-b33e-5dce" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="569d-81bd-bdbb-b2c5" name="Machine Curse" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb54-7861-fd46-c59d" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="6ffc-5392-2333-cc00" name="Machine Curse" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">1</characteristic>
+                    <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire</characteristic>
+                    <characteristic name="Range" typeId="5bf6-378a-0cb7-b079">18&quot;</characteristic>
+                    <characteristic name="Strength" typeId="12da-9b3e-f37b-bc35">1</characteristic>
+                    <characteristic name="AP" typeId="10b5-aa5b-ccde-79cc">-</characteristic>
+                    <characteristic name="Type" typeId="20e7-cbcb-1781-a732">Assault d3, Haywire, Target unit is automatically hit</characteristic>
+                    <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="cbed-1e52-3a2a-bbec" name="Haywire" hidden="false" targetId="6970-1bf3-b33e-5dce" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e4ad-331e-3100-523a" name="Receptomancy" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c2f-c354-9c43-7cd7" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5105-15f8-77d0-2dee" name="Shockwave" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f83-57c6-fc6e-68b3" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="8175-0054-9ddc-2f0d" name="Shockwave" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">2</characteristic>
+                    <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire (Nova)</characteristic>
+                    <characteristic name="Range" typeId="5bf6-378a-0cb7-b079">9&quot;</characteristic>
+                    <characteristic name="Strength" typeId="12da-9b3e-f37b-bc35">5</characteristic>
+                    <characteristic name="AP" typeId="10b5-aa5b-ccde-79cc"/>
+                    <characteristic name="Type" typeId="20e7-cbcb-1781-a732">Assault 1, Pinning</characteristic>
+                    <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="7767-c8e9-69af-84ed" name="Pinning" hidden="false" targetId="f624-f475-e5ec-0dfa" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ad42-56c9-7b45-c224" name="Sensory Overload" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9d0-fd88-44b9-5962" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="c07e-237e-84de-79a7" name="Sensory Overload" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">2</characteristic>
+                    <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire</characteristic>
+                    <characteristic name="Range" typeId="5bf6-378a-0cb7-b079">9&quot;</characteristic>
+                    <characteristic name="Strength" typeId="12da-9b3e-f37b-bc35">4</characteristic>
+                    <characteristic name="AP" typeId="10b5-aa5b-ccde-79cc">4</characteristic>
+                    <characteristic name="Type" typeId="20e7-cbcb-1781-a732">Assault 4, Blind, Concussive, Pinning</characteristic>
+                    <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="e429-b426-e6db-1a72" name="Blind" hidden="false" targetId="7dae-4d12-baba-e529" type="rule"/>
+                <infoLink id="9b73-d737-3d54-294f" name="Concussive" hidden="false" targetId="9d85-46f7-f5e6-a5f7" type="rule"/>
+                <infoLink id="0127-98bb-d957-7468" name="Pinning" hidden="false" targetId="f624-f475-e5ec-0dfa" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0fe6-e3fa-b0f5-48ed" name="Sanguinary" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdf9-d15e-7286-7830" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4ec5-cc4e-9471-f32c" name="Fear of the Darkness" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7995-1281-4650-7c7b" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="6b2c-e73f-7b5a-1c14" name="Fear of the Darkness" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
+                    <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Malediction</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Fear of the Darkness is a Malediction with range 18”. If the power is successfully manifested, The target unit must take a Morale test at -2Ld.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ff21-048b-37cb-41c5" name="Sinistrum" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91ed-26b4-bf4f-8a54" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1abe-65ed-221c-4ad9" name="Veil of Time" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96dc-a2c0-1cfc-b5a4" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="9e3b-de10-fedc-26c9" name="Veil of Time" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">2</characteristic>
+                    <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">Psyker</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Veil of Time is a Blessing that targets the Psyker. Whilst the power is in effect, all models in the unit may re-roll failed saves, however the unit will only pass the test on a re-roll of 4+.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="83ae-89f7-c071-ebbd" name="Fires of Wrath" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9960-e6bb-28a0-5c80" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="e624-5bef-7672-04b9" name="Fires of Wrath" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">1</characteristic>
+                    <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire</characteristic>
+                    <characteristic name="Range" typeId="5bf6-378a-0cb7-b079">18&quot;</characteristic>
+                    <characteristic name="Strength" typeId="12da-9b3e-f37b-bc35">5</characteristic>
+                    <characteristic name="AP" typeId="10b5-aa5b-ccde-79cc">3</characteristic>
+                    <characteristic name="Type" typeId="20e7-cbcb-1781-a732">Assault 1, Blast</characteristic>
+                    <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7fed-8ab9-d877-c356" name="Ancient Fury" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5bc-007c-fcbd-7eeb" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="7578-f9ee-4562-5755" name="Ancient Fury" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">1</characteristic>
+                    <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire (Beam)</characteristic>
+                    <characteristic name="Range" typeId="5bf6-378a-0cb7-b079">18&quot;</characteristic>
+                    <characteristic name="Strength" typeId="12da-9b3e-f37b-bc35">6</characteristic>
+                    <characteristic name="AP" typeId="10b5-aa5b-ccde-79cc">4</characteristic>
+                    <characteristic name="Type" typeId="20e7-cbcb-1781-a732">Assault 1, Pinning</characteristic>
+                    <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="cb49-634e-f771-1169" name="Pinning" hidden="false" targetId="f624-f475-e5ec-0dfa" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="bdbb-1c22-dd2a-030f" name="Interromancy" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f03-b8f7-e610-a3de" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="de0c-5d32-e613-6c40" name="Seed of Fear" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b407-7791-8ec4-216d" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="1305-e665-7954-8b94" name="Seed of Fear" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
+                    <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Witchfire (Nova)</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">9&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Seed of Fear is a Witchfire (Nova) with range 9” If this power is successfully manifested, all affected units take Morale, Pinning and Fear tests on 3d6 whilst it is in effect.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1256-5a7a-bae1-cba9" name="Repugnance" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b9b-5a1d-2e4d-bb43" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="f2c9-7ddf-cbce-89f3" name="Repugnance" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
+                    <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">24&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Repugnance is a Blessing with range 24” that targets a friendly unit. Whilst this power is in effect, the target unit gains Rage.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="8128-f023-fee8-f372" name="Rage" hidden="false" targetId="988c-d4d0-9418-1165" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6a81-bc1c-a3d8-30c3" name="Frenzy (Traitor only)" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="322c-823e-e59d-1e78" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="b5d3-fc19-9a85-e3aa" name="Frenzy" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
+                  <characteristics>
+                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
+                    <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
+                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">12&quot;</characteristic>
+                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Frenzy is a Blessing with range 12”. Whilst this power is in effect, the target units gains a random bonus (roll a d6):
+♦ 1-2: +1 Initiative
+♦ 3-4: +1 Strength
+♦ 5-6: +1 Attack</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="64e8-ec7c-e5d8-6767" name="Force Organization Chart" hidden="false" collective="false" import="true">
@@ -10045,6 +10567,228 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="befa-6205-342b-50d0" name="Exotic Melee Weapons" hidden="true" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6f2c-a221-7fcd-0081" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bc1-b1dd-75fe-ca7e" type="min"/>
+      </constraints>
+      <rules>
+        <rule id="f282-aa46-1f1a-9a2b" name="Exotic Melee Weapns" hidden="false">
+          <description>Any Independent Character may exchange a power fist for an Exotic Melee Weapon:
+</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry id="e513-35eb-42d6-b685" name="Accelerator Hammer" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8c9-edb1-827e-f1bd" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f492-516c-3e7b-0310" name="Accelerator Hammer" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+3</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">1</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Two-handed, Sunder, Delayed Strike</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="01df-981e-e795-9955" name="Delayed Strike" hidden="false">
+              <description>The bearer of this weapon halves their Initiative and Attack value when using this weapon, rounding up.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="13ac-9615-177e-6319" name="Two-Handed" hidden="false" targetId="b11c-0ef4-af6b-d96f" type="rule"/>
+            <infoLink id="bc59-5789-4551-2bf8" name="Sunder" hidden="false" targetId="841f-9119-9f9d-5058" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="4dcf-3bd9-4e30-4fd6" name="Aetheric Shredder Knife" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b411-6c18-5760-9464" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8ed0-e237-38ce-453b" name="Aetheric Shredder Knife" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">User</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Dimensional Edge</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="3d59-0a30-692e-464a" name="Dimensional Edge" hidden="false">
+              <description>Attacks from this weapon only ever cause wounds on a roll of 6, however no invulnerable saves or Feel No Pain rolls may be taken</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry id="d729-1516-184f-764e" name="Arcanite Shock Maul" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d43-f455-ccc4-e728" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="32d6-4ade-0845-0f13" name="Arcanite Shock Maul" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+3</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Two-handed, Arcing Discharge</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="d9a1-6fee-7de6-8369" name="Arcing Discharge" hidden="false">
+              <description>Any model wounded by attacks from this weapon suffers the effects of the Concussive rule, whether the wound is saved or not.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="9587-7447-9f4d-1f24" name="Concussive" hidden="false" targetId="9d85-46f7-f5e6-a5f7" type="rule"/>
+            <infoLink id="4d8f-5d11-4e2a-b370" name="Two-Handed" hidden="false" targetId="b11c-0ef4-af6b-d96f" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="9537-efdd-75e7-c362" name="Artificer Mirrorswords" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99c2-46cf-1afd-03bb" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5a62-5435-f1d2-c872" name="Artificer Mirrorswords" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">User</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Riposte, Paired Weapons (+1 Attack)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="e9e8-b6d3-fac2-8a52" name="Riposte" hidden="false">
+              <description>Attacks directed at the wielder of these weapons suffer -1 to hit.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="035c-0d42-a42d-cae1" name="Paired Weapons" hidden="false" targetId="f495-679e-1976-68d1" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="12c5-f430-027c-d311" name="Bioceramic Razorglaive" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="268c-3a52-40f8-cd2f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="def0-9aa9-41bd-33a2" name="Bioceramic Razorglaive" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">User</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Grants +1 Initiative, Brittle</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="1593-93a2-b6c8-570d" name="Brittle" hidden="false">
+              <description>If a user of this weapon hits with all of their attacks during a single round of combat, after resolving those attacks its AP value is reduced to (-) for the remainder of the battle.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry id="7a4e-24ec-d6c3-271d" name="Charnabal Longsword" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0192-5f8b-35c1-749b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9eaf-9977-88fe-88a7" name="Charnabal Longsword" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+1</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">5</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Two-handed, Shred, Rending, Duellist&apos;s Edge</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="2727-a8b9-051b-576c" name="Shred" hidden="false" targetId="89da-0cb5-bee4-8ec2" type="rule"/>
+            <infoLink id="4e2c-0719-2c62-639b" name="Two-Handed" hidden="false" targetId="b11c-0ef4-af6b-d96f" type="rule"/>
+            <infoLink id="b6c8-f7f2-dedb-ee9c" name="Duelist&apos;s Edge" hidden="false" targetId="1a79-befa-05cf-ab0d" type="rule"/>
+            <infoLink id="1a2f-6360-2c53-96f8" name="Rending" hidden="false" targetId="8269-2cd6-9236-16e7" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="449c-cd5a-297c-8645" name="Gyrocyclic Reaver Blade" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="303e-aa52-00f3-b92e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="28f7-f63a-cfa6-6210" name="Gyrocyclic Reaver Blade" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+1</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Grants +1 Attack</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="a7f7-d43f-fe35-8091" name="Hurricane Talons" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6110-a5b8-a641-51c8" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d7ca-53a0-dffa-73ef" name="Hurricane Talons" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">User</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Shred, Paired Weapons (+1 Attack), Storm of Claws</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="2dad-e809-4979-7210" name="Storm of Claws" hidden="false">
+              <description>The bearer fights with an additional D3 extra attacks, rolled each round of combat. However, all attacks are made with a WS penalty equal to the number of bonus attacks.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="c873-5235-b309-ce25" name="Paired Weapons" hidden="false" targetId="f495-679e-1976-68d1" type="rule"/>
+            <infoLink id="e3be-a101-1983-a6b3" name="Shred" hidden="false" targetId="89da-0cb5-bee4-8ec2" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="392f-d1ef-3ec8-4eb2" name="Hydragyros Executioner Blade" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2137-c81b-8830-df2d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0937-2b49-dfe4-2893" name="Hydragyros Executioner Blade" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+2</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Two-handed, Grants –2 Initiative</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="dea4-fd4a-38b1-e160" name="Two-Handed" hidden="false" targetId="b11c-0ef4-af6b-d96f" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="44fe-201d-d864-5ffb" name="Nanofractal Falchion" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a436-e33c-8aff-2998" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="882e-df21-75d5-ae9f" name="Nanofractal Falchion" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">User</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Rending, Fleshbane</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="7f53-e4d6-0ce2-6a4e" name="Rending" hidden="false" targetId="8269-2cd6-9236-16e7" type="rule"/>
+            <infoLink id="df7a-e195-1278-75b2" name="Fleshbane" hidden="false" targetId="4575-0a0a-caaf-e4bf" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
