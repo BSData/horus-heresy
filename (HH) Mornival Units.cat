@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9f87-b468-2001-5e3b" name="Mornival Units Legion Astartes (Fanmade)" revision="13" battleScribeVersion="2.03" authorName="Aus30K / Mourival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="120" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9f87-b468-2001-5e3b" name="Mornival Units Legion Astartes (Fanmade)" revision="14" battleScribeVersion="2.03" authorName="Aus30K / Mourival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="121" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="0e6e-8c19-c436-39c4" name="Mournival Events 3.0 Digital Version"/>
     <publication id="cf75-540e-e446-ecd5" name="Mournival Events FAQ and Experimental Errata v3.1"/>
@@ -383,18 +383,30 @@ Example 4: In a 2000 point army, a Daemon Lord is the Warlord (doesn’t count a
     </forceEntry>
   </forceEntries>
   <selectionEntries>
-    <selectionEntry id="c030-0168-b5ac-0d9c" name="Additional Ammo, Weapons, Psychic Disciplines" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="eee6-afda-09e8-053e" name="Mornival Rules" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46ad-d0da-489e-95c1" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbc5-932a-4b56-6bf9" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a20-2700-4e88-21e9" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1461-57bb-af1f-d005" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cab-1ca5-8f4e-5c4d" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="24d8-f704-1bad-c713" name="New CategoryLink" hidden="false" targetId="dbe0-716f-797c-66f7" primary="true"/>
+        <categoryLink id="e01f-a11c-e359-2b82" name="New CategoryLink" hidden="false" targetId="dbe0-716f-797c-66f7" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="446f-3294-a0a3-1d13" name="Additional Ammunition Types" hidden="false" collective="false" import="true" targetId="984d-5135-e1be-f8e8" type="selectionEntry"/>
-        <entryLink id="cb38-ef89-3627-f835" name="Additional Psychic Disciplines" hidden="false" collective="false" import="true" targetId="f5eb-f2a0-c980-a02a" type="selectionEntry"/>
-        <entryLink id="b1ab-ab88-4b11-5cbb" name="Exotic Melee Weapns" hidden="false" collective="false" import="true" targetId="d273-e12a-a287-d944" type="selectionEntry"/>
+        <entryLink id="45fc-8bbd-8336-8ab6" name="Mornival Rules Active" hidden="false" collective="false" import="true" targetId="c859-6b16-c533-7e97" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5685-aafb-1898-43c6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2091-b9d7-8292-a025" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="6a52-8849-e6a9-09b2" name="New CategoryLink" hidden="false" targetId="dbe0-716f-797c-66f7" primary="true"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="b780-fecf-a9d1-27b2" name="Additional Psychic Disciplines" hidden="false" collective="false" import="true" targetId="be86-7cb9-6f78-eb14" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f40-25d6-5055-63b0" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -599,15 +611,6 @@ Example 4: In a 2000 point army, a Daemon Lord is the Warlord (doesn’t count a
       <categoryLinks>
         <categoryLink id="a548-a297-ac7b-0c7f" name="New CategoryLink" hidden="false" targetId="486561767920537570706f727423232344415441232323" primary="true"/>
         <categoryLink id="6550-1146-f7e1-7828" name="Mournival Centurion Unrestricted" hidden="false" targetId="c00c-5a5c-3d86-f5a5" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="098e-de02-3e3c-7be6" name="Mornival Rules Active" hidden="false" collective="false" import="true" targetId="c859-6b16-c533-7e97" type="selectionEntry">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba81-00da-ddd3-042b" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf3b-27ae-4e04-91d3" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="22cf-b814-8c61-26e8" name="New CategoryLink" hidden="false" targetId="dbe0-716f-797c-66f7" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="91b9-249b-bd21-22f4" name="Custom Legiones Astartes Character (unfniished)" hidden="false" collective="false" import="true" targetId="238b-3768-7dd7-7f81" type="selectionEntry">
@@ -1016,6 +1019,21 @@ If a Rogue Psyker who is the army’s Warlord becomes possessed, they are still 
             <entryLink id="41f5-4ffe-7b47-9f43" name="Rad Grenades (Destroyer Company)" hidden="false" collective="false" import="true" targetId="6b20-1187-bc72-1a45" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="cf17-1db7-ea75-7299" name="Additional Bolter Ammunition Types" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="faac-291c-2b19-1da9" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="e8db-1a4a-d00d-1bee" name="Alpha Legion: Banestrike" hidden="false" collective="false" import="true" targetId="ba94-773c-bf08-b5a7" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="e42c-ad6b-0f7b-d46c" name="Frag and Krak Grenades" hidden="false" collective="false" import="true" targetId="0a53-b471-df87-7b83" type="selectionEntry"/>
@@ -1275,6 +1293,21 @@ If a Rogue Psyker who is the army’s Warlord becomes possessed, they are still 
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="90e6-2d0d-01d2-a0be" name="Additional Bolter Ammunition Types" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6494-930e-9969-c933" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="ddf0-fb41-5294-8a94" name="Alpha Legion: Banestrike" hidden="false" collective="false" import="true" targetId="ba94-773c-bf08-b5a7" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -2112,12 +2145,12 @@ Heavy Bolter: Splinter: 36” S2 AP4 Heavy 3 Rending</description>
                 <cost name="pts" typeId="points" value="15.0"/>
               </costs>
             </entryLink>
-            <entryLink id="f8b7-5e7b-9546-6b12" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="1b80-5b44-0e03-b9e4" type="selectionEntry">
+            <entryLink id="f8b7-5e7b-9546-6b12" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="7dca-ef48-006c-a248" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="points" value="15.0"/>
               </costs>
             </entryLink>
-            <entryLink id="0d49-a83a-24ce-6f6e" name="Cthonian Culling Blade" hidden="false" collective="false" import="true" targetId="270a-0bb6-b354-6b75" type="selectionEntry">
+            <entryLink id="0d49-a83a-24ce-6f6e" name="Cthonian Culling Blade" hidden="false" collective="false" import="true" targetId="e3f4-e57f-f343-a42a" type="selectionEntry">
               <costs>
                 <cost name="pts" typeId="points" value="15.0"/>
               </costs>
@@ -2190,6 +2223,28 @@ Heavy Bolter: Splinter: 36” S2 AP4 Heavy 3 Rending</description>
                 <cost name="pts" typeId="points" value="1.0"/>
               </costs>
             </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="fd9e-3431-429f-9175" name="Additional Bolter Ammunition Types" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ccd7-abdb-2496-a02a" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="2a0b-03a9-1812-f69b" name="Alpha Legion: Banestrike" hidden="false" collective="false" import="true" targetId="ba94-773c-bf08-b5a7" type="selectionEntry"/>
+            <entryLink id="a74f-d641-a72c-9104" name="Iron Warriors: Shrapnel Bolts" hidden="false" collective="false" import="true" targetId="1f83-fc1b-6a63-d1c4" type="selectionEntry"/>
+            <entryLink id="383c-3bf2-9f02-da8c" name="White Scars: Hyper Velocity Bolts" hidden="false" collective="false" import="true" targetId="d3fe-f8d5-271f-8fdc" type="selectionEntry"/>
+            <entryLink id="7bd2-eda6-c3c2-2e2f" name="Iron Hands: Splinter Bolts" hidden="false" collective="false" import="true" targetId="70dc-bb19-6bf5-ade4" type="selectionEntry"/>
+            <entryLink id="43b3-252d-fa10-33e1" name="Death Guard: Toxin Bolts" hidden="false" collective="false" import="true" targetId="608e-55e6-821d-4587" type="selectionEntry"/>
+            <entryLink id="9e96-de2d-14b9-5bbb" name="Thousand Sons: Asphyx Light Shells" hidden="false" collective="false" import="true" targetId="63f3-9b22-bb21-7f18" type="selectionEntry"/>
+            <entryLink id="3c34-5877-dfdc-9598" name="Sons of Horus: Banestrike" hidden="false" collective="false" import="true" targetId="413e-0bb7-815e-c3be" type="selectionEntry"/>
+            <entryLink id="e9a3-4490-23cd-5dcf" name="Word Bearers: Hex-bolts" hidden="false" collective="false" import="true" targetId="e63d-3a4b-c2d9-6d0f" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -2394,1196 +2449,6 @@ Heavy Bolter: Splinter: 36” S2 AP4 Heavy 3 Rending</description>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="100.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="984d-5135-e1be-f8e8" name="Additional Ammunition Types" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f09-f343-6ca9-6776" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca9a-5e32-2d16-4e8e" type="min"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="bfc2-ff01-435a-949b" name="New CategoryLink" hidden="false" targetId="1fb0-1499-5637-4715" primary="true"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="7bff-6c80-faa4-66b3" name="Dark Angels: Acid Bolts" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6fb-0e54-0be1-9ed1" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile id="0b07-4a78-8314-1581" name="Dark Angels: Acid Bolts" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
-              <characteristics>
-                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Bolt Pistols and Bolters of Command, Destroyer and Veteran Squads gain AP D3+2 (roll for each wound)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="c2ed-e63b-b05a-9884" name="Emperors Children: Rapture Bolts" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="74c0-fb49-35d8-28ac" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile id="b80d-dbd4-9246-d3e3" name="Emperors Children: Rapture Bolts" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
-              <characteristics>
-                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Bolt Pistols and Bolters of Command, Veteran and Tactical Squads gain Fleshbane on to hit rolls of 6 (excluding Snap Shots).</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="8a0d-7ed1-bc1a-3f49" name="Fleshbane" hidden="false" targetId="4575-0a0a-caaf-e4bf" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="4d0c-3350-9f50-958d" name="Iron Warriors: Shrapnel Bolts" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a5b8-cb5e-952f-3d3e" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile id="c888-debc-746c-b133" name="Iron Warriors: Shrapnel Bolts" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
-              <characteristics>
-                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Bolters of Legiones Astartes (Iron Warriors) gain Pinning.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="e7f2-8101-d121-1a11" name="Pinning" hidden="false" targetId="f624-f475-e5ec-0dfa" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="526d-69a5-9c5c-3ff3" name="White Scars: Hyper Velocity Bolts" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c66-2306-9285-8809" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile id="6f6a-4630-7f81-2603" name="White Scars: Hyper Velocity Bolts" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
-              <characteristics>
-                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Bolters of Infantry units increase range to 30”</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="1766-0ae0-05b9-d6b9" name="Imperial Fists: Artisan Bolts" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9f2f-6f6f-1978-5623" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile id="3af8-ea52-27d1-589f" name="Imperial Fists: Artisan Bolts" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
-              <characteristics>
-                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Bolters of Command, Veteran and Terminator Squads gain Master-crafted.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="811d-ce48-3a41-cd9e" name="Master-crafted" hidden="false" targetId="f899-8f9d-fc7e-d855" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="5033-09d6-d460-b0d6" name="Thousand Sons: Asphyx Light Shells" page="" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fc29-3cdf-838d-e6b7" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile id="a604-edff-e958-d693" name="Thousand Sons: Asphyx Light Shells" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
-              <characteristics>
-                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Bolters of Infantry units rolls of 6 to hit (excluding Snap Shots) gain Shred.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="4a70-0b47-95b3-772d" name="Shred" hidden="false" targetId="89da-0cb5-bee4-8ec2" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="305c-e78f-1562-7c69" name="Word Bearers: Hex-bolts" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="edd3-79ac-eb75-34b7" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile id="a157-d598-7e51-d9ee" name="Word Bearers: Hex-bolts" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
-              <characteristics>
-                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Bolt Pistols and Bolters of all Legiones Astartes (Word Bearers) gain Soul Blaze</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="2cb6-1d6e-a0e1-8881" name="Soul Blaze" hidden="false" targetId="acb1-64c4-ef54-3a55" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="4a46-587e-4afa-e979" name="Salamanders: Pyre bolts" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c29-e6cd-2167-ce90" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile id="6e4c-83f5-e8df-c82f" name="Salamanders: Pyre bolts" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
-              <characteristics>
-                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Bolters of Tactical, Breacher and Veteran Squads gain Deflagrate.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="9f6d-f63d-8251-cae2" name="Deflagrate" hidden="false" targetId="b46a-a3ec-91a5-5001" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="dae3-db2d-8f5a-16f7" name="Raven Guard: Scorpius Light" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="09b8-26b3-b27d-621a" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile id="0f08-c445-6069-e70c" name="Raven Guard: Scorpius Light" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
-              <characteristics>
-                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Bolters of Veteran, Tactical and Recon squads gain: If the remained stationary in the preceding movement phase, they may choose to fire their bolters with the following profile type: Heavy 1, To hit rolls of 6 gain AP2, excluding Snap Shots</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="bb14-011f-75ae-4715" name="Alpha Legion: Banestrike" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cbb-1638-186f-49ba" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile id="5433-0684-53b9-94ee" name="Alpha Legion: Banestrike" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
-              <characteristics>
-                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Bolt Pistols and Bolters of Infantry units gain AP3 on rolls of 6 to wound.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="b9c4-ac44-4fce-4231" name="Sons of Horus: Banestrike" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf2e-9aed-ccc5-5696" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile id="27e8-4f42-314e-e9f1" name="Sons of Horus: Banestrike" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
-              <characteristics>
-                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Bolters of Legiones Astartes: gain AP3 on rolls of 6 to wound.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="193f-0e89-a431-f7f3" name="Death Guard: Toxin Bolts" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9311-3c42-349a-b51a" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile id="e38f-16d1-4f55-c7c4" name="Death Guard: Toxin Bolts" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
-              <characteristics>
-                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Bolters of Infantry units gain Poisoned (3+), Gets Hot.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="5381-2b3e-882f-ef2a" name="Gets Hot" hidden="false" targetId="f4fd-d519-4769-5510" type="rule"/>
-            <infoLink id="ff9d-298a-b13d-ddec" name="Poisoned" hidden="false" targetId="a5ff-1cb1-bee4-d809" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="a606-871a-b0e0-4f95" name="Ultramarines: Banestrike" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="34fa-286c-521b-2899" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile id="22e1-7567-365c-6091" name="Ultramarines: Banestrike" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
-              <characteristics>
-                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Bolters of Tactical, Breacher and Veteran Squads: gain AP3 on rolls of 6 to wound.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="11aa-7e82-390f-8582" name="Iron Hands: Splinter Bolts" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="83c2-692c-6560-3d68" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile id="6cb3-9da0-4261-4cd1" name="Iron Hands: Splinter Bolts" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
-              <characteristics>
-                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Bolters of Infantry units ignore Feel No Pain.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="12d8-0181-2e21-a6e5" name="Blood Angels: Hammer Bolts" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d97b-d19f-4972-8e7f" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile id="cfa6-d19a-fcc6-25c3" name="Blood Angels: Hammer Bolts" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
-              <characteristics>
-                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Bolters of Tactical and Veteran Squads gain Strikedown.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="94b1-e988-8845-f110" name="Strikedown" hidden="false" targetId="dd83-7fb9-6f58-0c96" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="f72a-9a47-ac49-0c09" name="Night Lords: Kraken Light Bolts" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf56-aabc-9977-728d" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile id="a1e3-14d7-16b4-8000" name="Night Lords: Kraken Light Bolts" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
-              <characteristics>
-                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Bolters of Tactical, Veteran and Terror Squads become AP4.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="5d7f-4810-2ae6-4be9" name="Manstopper Rounds (Indepentant Characters Only)" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="2540-31e5-6a33-e828" name="Manstopper Rounds" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
-              <characteristics>
-                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Archaeotech Pistols gain a One Use S8 AP2 attack</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="baa4-0db8-c40c-4a14" name="Splintex rounds (Indepentant Characters Only)" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="8363-6b3d-3118-ac31" name="Splintex rounds" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
-              <characteristics>
-                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Archaeotech Pistols gain the option to make S2 AP4 Blast, Rending attacks.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="a034-3ecd-8c03-cb93" name="Rending" hidden="false" targetId="8269-2cd6-9236-16e7" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="f5eb-f2a0-c980-a02a" name="Additional Psychic Disciplines" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e94f-9a92-64c3-f193" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="580f-c060-0787-2c00" type="min"/>
-      </constraints>
-      <rules>
-        <rule id="a101-067a-71b5-e5f4" name="Additional Psychic Disciplines" hidden="false">
-          <description>Any Psyker may choose to replace their Primaris power (if they have selected one) a power from one of the following additional Psychic Disciplines.</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="83a2-ba38-4e9e-0758" name="New CategoryLink" hidden="false" targetId="1fb0-1499-5637-4715" primary="true"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="24cb-9da6-b111-21d7" name="Ectomancy" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74c4-db30-2654-790b" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="9448-84fa-cedc-6b99" name="Electrosurge" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29d1-e43f-6434-5ced" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="11fb-85ac-0abf-25f2" name="Electrosurge" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
-                  <characteristics>
-                    <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">1</characteristic>
-                    <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire</characteristic>
-                    <characteristic name="Range" typeId="5bf6-378a-0cb7-b079">18&quot;</characteristic>
-                    <characteristic name="Strength" typeId="12da-9b3e-f37b-bc35">5</characteristic>
-                    <characteristic name="AP" typeId="10b5-aa5b-ccde-79cc">4</characteristic>
-                    <characteristic name="Type" typeId="20e7-cbcb-1781-a732">Assault 6, Target models are automatically hit</characteristic>
-                    <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="9c5c-93b2-dd90-329e" name="Electropulse" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4cc-0a79-3726-4e1b" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="3f32-5fa4-554c-407c" name="Electropulse" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
-                  <characteristics>
-                    <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">1</characteristic>
-                    <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire (Nova)</characteristic>
-                    <characteristic name="Range" typeId="5bf6-378a-0cb7-b079">9&quot;</characteristic>
-                    <characteristic name="Strength" typeId="12da-9b3e-f37b-bc35">1</characteristic>
-                    <characteristic name="AP" typeId="10b5-aa5b-ccde-79cc">-</characteristic>
-                    <characteristic name="Type" typeId="20e7-cbcb-1781-a732">Haywire, All models are automatically hit once</characteristic>
-                    <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="ccd0-bdd7-6d71-934a" name="Haywire" hidden="false" targetId="6970-1bf3-b33e-5dce" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="24bf-35f6-030d-6615" name="Magnetokinesis" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="094a-b1cf-1029-45d3" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="5055-d29c-a25e-918f" name="Magnetokinesis" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
-                  <characteristics>
-                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">2</characteristic>
-                    <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Malediction</characteristic>
-                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Magnetokinesis is a Malediction with range 18”. The target unit is immediately moved by the caster up to 6” as though they were Jump Infantry. In the following player turn, the unit counts as having moved and cannot Charge. Cannot be used on a unit that is Zooming Swooping or Locked in combat.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="2108-ac55-196b-78b9" name="Tempestas" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc21-d335-71ae-ebfc" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="5995-ed51-8118-949a" name="Living Lightning" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cde-cd30-ea30-b88a" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="acdb-85aa-bb6a-c723" name="Living Lightning" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
-                  <characteristics>
-                    <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">1</characteristic>
-                    <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire</characteristic>
-                    <characteristic name="Range" typeId="5bf6-378a-0cb7-b079">18&quot;</characteristic>
-                    <characteristic name="Strength" typeId="12da-9b3e-f37b-bc35">7</characteristic>
-                    <characteristic name="AP" typeId="10b5-aa5b-ccde-79cc">-</characteristic>
-                    <characteristic name="Type" typeId="20e7-cbcb-1781-a732">Assault 2</characteristic>
-                    <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="437f-520f-430f-92f8" name="Virumancy" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d824-2100-ee02-2e85" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="bc76-fb70-037f-31d7" name="Plague Wind" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52a7-f5f3-7e91-5c9b" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="7343-4ef5-0081-116e" name="Plague Wind" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
-                  <characteristics>
-                    <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">1</characteristic>
-                    <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire</characteristic>
-                    <characteristic name="Range" typeId="5bf6-378a-0cb7-b079">Template</characteristic>
-                    <characteristic name="Strength" typeId="12da-9b3e-f37b-bc35">1</characteristic>
-                    <characteristic name="AP" typeId="10b5-aa5b-ccde-79cc">4</characteristic>
-                    <characteristic name="Type" typeId="20e7-cbcb-1781-a732">Poisoned (4+), Torrent</characteristic>
-                    <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="c50a-6b1c-0bab-d1ac" name="Poisoned" hidden="false" targetId="a5ff-1cb1-bee4-d809" type="rule"/>
-                <infoLink id="506e-8846-248c-744f" name="Torrent" hidden="false" targetId="5039-18f0-a9ed-0938" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="9e81-e111-b56c-5b0a" name="Geomancy" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f25-1da8-4856-f6f3" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="8f71-fc22-d8f9-d5ef" name="Warp Quake" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6716-21f4-3571-8bed" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="04ca-baae-0708-b356" name="Warp Quake" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
-                  <characteristics>
-                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
-                    <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Witchfire</characteristic>
-                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">24&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Warp Quake is a Witchfire power with range 24” that may only target buildings or ruins. Roll a d6; on a 1-3, the terrain suffers a glancing hit, on a 4+, a penetrating hit. Units in the targeted terrain suffer d6 Str6 AP- hits.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="2e3e-7cec-a485-1683" name="Scorched Earth" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a7c-9f26-0af5-bdc1" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="55cb-5131-aa4d-01c4" name="Scorched Earth" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
-                  <characteristics>
-                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">2</characteristic>
-                    <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Witchfire</characteristic>
-                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">24&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Scorced Earth is a Witchfire with range 24” Choose a point on the board and scatter it 2d6”. All units within 6” of this point are hit by a S5 AP4, Assault 1, Ignores Cover, Soul Blaze hit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="1eac-3732-4d19-0e13" name="Technomancy" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c4c-cd57-8fa3-226f" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="0aa4-5392-b85a-d0fd" name="Blessing of the Machine" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8eba-13e8-8247-ea31" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="498f-5694-9038-7aae" name="Blessing of the Machine" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
-                  <characteristics>
-                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
-                    <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
-                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">24&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Blessing of the Machine is a Blessing that can be targeted on vehicles. The model ignore Crew Shaken and Crew Stunned results, and gains Power of the Machine Spirit, or, if it already has this rule, +1BS instead.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="1930-dc41-e52a-731e" name="Power of the Machine Spirit" hidden="false" targetId="0ac1-dfc1-295b-50a6" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8088-1952-51c1-4ab0" name="Fury of Mars" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f74d-eca3-4861-3261" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="4e86-0a0f-cf38-8e2a" name="Fury of Mars" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
-                  <characteristics>
-                    <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">2</characteristic>
-                    <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire (Beam)</characteristic>
-                    <characteristic name="Range" typeId="5bf6-378a-0cb7-b079">18&quot;</characteristic>
-                    <characteristic name="Strength" typeId="12da-9b3e-f37b-bc35">1</characteristic>
-                    <characteristic name="AP" typeId="10b5-aa5b-ccde-79cc">-</characteristic>
-                    <characteristic name="Type" typeId="20e7-cbcb-1781-a732">Assault 1, Haywire</characteristic>
-                    <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="5b97-93e2-3a1b-318b" name="Haywire" hidden="false" targetId="6970-1bf3-b33e-5dce" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="e630-5055-335b-e2fa" name="Machine Curse" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="045b-d790-3324-8608" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="f6a7-f5be-7e8a-da56" name="Machine Curse" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
-                  <characteristics>
-                    <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">1</characteristic>
-                    <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire</characteristic>
-                    <characteristic name="Range" typeId="5bf6-378a-0cb7-b079">18&quot;</characteristic>
-                    <characteristic name="Strength" typeId="12da-9b3e-f37b-bc35">1</characteristic>
-                    <characteristic name="AP" typeId="10b5-aa5b-ccde-79cc">-</characteristic>
-                    <characteristic name="Type" typeId="20e7-cbcb-1781-a732">Assault d3, Haywire, Target unit is automatically hit</characteristic>
-                    <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="7be3-2189-daee-5e85" name="Haywire" hidden="false" targetId="6970-1bf3-b33e-5dce" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="f3c4-4c7f-5d43-bde5" name="Receptomancy" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7100-d635-c017-666d" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="b162-0f1f-ecb6-e68a" name="Shockwave" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c3b-62ff-6bde-6fb8" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="50b6-fef9-1f5f-0844" name="Shockwave" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
-                  <characteristics>
-                    <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">2</characteristic>
-                    <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire (Nova)</characteristic>
-                    <characteristic name="Range" typeId="5bf6-378a-0cb7-b079">9&quot;</characteristic>
-                    <characteristic name="Strength" typeId="12da-9b3e-f37b-bc35">5</characteristic>
-                    <characteristic name="AP" typeId="10b5-aa5b-ccde-79cc"/>
-                    <characteristic name="Type" typeId="20e7-cbcb-1781-a732">Assault 1, Pinning</characteristic>
-                    <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="a52e-02bc-6817-4bb0" name="Pinning" hidden="false" targetId="f624-f475-e5ec-0dfa" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b1c3-196f-f8ea-12e9" name="Sensory Overload" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2d8-ac0a-687c-7b75" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="f666-d5e5-c5d9-cb98" name="Sensory Overload" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
-                  <characteristics>
-                    <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">2</characteristic>
-                    <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire</characteristic>
-                    <characteristic name="Range" typeId="5bf6-378a-0cb7-b079">9&quot;</characteristic>
-                    <characteristic name="Strength" typeId="12da-9b3e-f37b-bc35">4</characteristic>
-                    <characteristic name="AP" typeId="10b5-aa5b-ccde-79cc">4</characteristic>
-                    <characteristic name="Type" typeId="20e7-cbcb-1781-a732">Assault 4, Blind, Concussive, Pinning</characteristic>
-                    <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="20f2-5beb-4973-e954" name="Blind" hidden="false" targetId="7dae-4d12-baba-e529" type="rule"/>
-                <infoLink id="27a9-40f7-c89c-0f28" name="Concussive" hidden="false" targetId="9d85-46f7-f5e6-a5f7" type="rule"/>
-                <infoLink id="2b86-3514-ffa4-2c42" name="Pinning" hidden="false" targetId="f624-f475-e5ec-0dfa" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="b92e-3379-932a-c1f8" name="Sanguinary" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="816b-bac1-e4f0-ef12" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="79fa-5635-693e-cdd8" name="Fear of the Darkness" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9550-c3fc-08bd-f52f" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="7cf0-1d7a-94be-32fc" name="Fear of the Darkness" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
-                  <characteristics>
-                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
-                    <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Malediction</characteristic>
-                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">18&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Fear of the Darkness is a Malediction with range 18”. If the power is successfully manifested, The target unit must take a Morale test at -2Ld.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="f479-a2b1-4a8c-def1" name="Sinistrum" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6be-69e9-8b09-1d2e" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="f16d-5ffe-0f52-3fe7" name="Veil of Time" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da0e-061e-1f20-22ab" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="301b-dd85-5322-d196" name="Veil of Time" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
-                  <characteristics>
-                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">2</characteristic>
-                    <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
-                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">Psyker</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Veil of Time is a Blessing that targets the Psyker. Whilst the power is in effect, all models in the unit may re-roll failed saves, however the unit will only pass the test on a re-roll of 4+.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="2e39-cb0e-c1dd-4e5d" name="Fires of Wrath" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d854-21cd-b1fb-8d90" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="37da-cf52-fec9-5b71" name="Fires of Wrath" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
-                  <characteristics>
-                    <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">1</characteristic>
-                    <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire</characteristic>
-                    <characteristic name="Range" typeId="5bf6-378a-0cb7-b079">18&quot;</characteristic>
-                    <characteristic name="Strength" typeId="12da-9b3e-f37b-bc35">5</characteristic>
-                    <characteristic name="AP" typeId="10b5-aa5b-ccde-79cc">3</characteristic>
-                    <characteristic name="Type" typeId="20e7-cbcb-1781-a732">Assault 1, Blast</characteristic>
-                    <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="4284-13e4-c3e2-41e9" name="Ancient Fury" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2df0-a7a8-f92e-9465" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="aa11-70cc-d19b-c367" name="Ancient Fury" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Psychic Power (Attack)">
-                  <characteristics>
-                    <characteristic name="Warp Charge" typeId="c1b6-4261-dee4-923a">1</characteristic>
-                    <characteristic name="Power Category" typeId="668e-d504-8244-7422">Witchfire (Beam)</characteristic>
-                    <characteristic name="Range" typeId="5bf6-378a-0cb7-b079">18&quot;</characteristic>
-                    <characteristic name="Strength" typeId="12da-9b3e-f37b-bc35">6</characteristic>
-                    <characteristic name="AP" typeId="10b5-aa5b-ccde-79cc">4</characteristic>
-                    <characteristic name="Type" typeId="20e7-cbcb-1781-a732">Assault 1, Pinning</characteristic>
-                    <characteristic name="Details" typeId="a812-390d-dff6-dabd"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="a178-6961-aa79-1c16" name="Pinning" hidden="false" targetId="f624-f475-e5ec-0dfa" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="cfe1-d37b-7896-38f1" name="Interromancy" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90a9-d189-080f-0370" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="7ec3-3e63-4df5-1c21" name="Seed of Fear" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da38-ae03-0426-72b9" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="92db-b3cd-f1be-72f8" name="Seed of Fear" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
-                  <characteristics>
-                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
-                    <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Witchfire (Nova)</characteristic>
-                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">9&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Seed of Fear is a Witchfire (Nova) with range 9” If this power is successfully manifested, all affected units take Morale, Pinning and Fear tests on 3d6 whilst it is in effect.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="785c-67e7-9246-59ac" name="Repugnance" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c51-1087-4c92-7716" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="7661-58cd-7581-8dce" name="Repugnance" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
-                  <characteristics>
-                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
-                    <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
-                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">24&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Repugnance is a Blessing with range 24” that targets a friendly unit. Whilst this power is in effect, the target unit gains Rage.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="34c2-8aa5-e387-56f8" name="Rage" hidden="false" targetId="988c-d4d0-9418-1165" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="4717-66e6-a381-fab2" name="Frenzy (Traitor only)" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4658-ec5a-46fc-fe27" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="fd6b-3e07-750d-8c25" name="Frenzy" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Psychic Power">
-                  <characteristics>
-                    <characteristic name="Warp Charge" typeId="5ffd-b800-c317-532a">1</characteristic>
-                    <characteristic name="Power Category" typeId="f04c-a782-d794-ddad">Blessing</characteristic>
-                    <characteristic name="Range" typeId="fd64-cbc4-94de-24cc">12&quot;</characteristic>
-                    <characteristic name="Details" typeId="ad96-dfa4-b4ed-656d">Frenzy is a Blessing with range 12”. Whilst this power is in effect, the target units gains a random bonus (roll a d6):
-♦ 1-2: +1 Initiative
-♦ 3-4: +1 Strength
-♦ 5-6: +1 Attack</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="d273-e12a-a287-d944" name="Exotic Melee Weapns" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebdc-5dfd-b192-c666" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d49-71f3-5d4b-5b6f" type="min"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="5abc-20e2-c0cd-94ef" name="New CategoryLink" hidden="false" targetId="1fb0-1499-5637-4715" primary="true"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="c2f2-1a9a-8b5e-a277" name="Independant Characters Only" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5865-ce3d-f2c5-b466" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81b8-ba4b-aa0c-f7b6" type="min"/>
-          </constraints>
-          <rules>
-            <rule id="21c5-ca1b-db81-40cb" name="Exotic Melee Weapns" hidden="false">
-              <description>Any Independent Character may exchange a power fist for an Exotic Melee Weapon:
-</description>
-            </rule>
-          </rules>
-          <selectionEntries>
-            <selectionEntry id="74b1-fda9-c21d-13ae" name="Nanofractal Falchion" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="44f0-f186-354f-5cf2" name="Nanofractal Falchion" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
-                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">User</characteristic>
-                    <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
-                    <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Rending, Fleshbane</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="f0e6-c84e-9472-faa7" name="Rending" hidden="false" targetId="8269-2cd6-9236-16e7" type="rule"/>
-                <infoLink id="6aa6-3ff5-997b-9cd4" name="Fleshbane" hidden="false" targetId="4575-0a0a-caaf-e4bf" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="769a-9182-e68b-00fb" name="Hydragyros Executioner Blade" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="a6ed-eb98-a4c6-d860" name="Hydragyros Executioner Blade" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
-                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+2</characteristic>
-                    <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
-                    <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Two-handed, Grants –2 Initiative</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="8f79-9e0c-5de5-05c7" name="Two-Handed" hidden="false" targetId="b11c-0ef4-af6b-d96f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="4c36-40a5-ca06-50b7" name="Hurricane Talons" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="01b8-7f6f-9a35-3b26" name="Hurricane Talons" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
-                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">User</characteristic>
-                    <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
-                    <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Shred, Paired Weapons (+1 Attack), Storm of Claws</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="7fa9-a608-2ab6-9e15" name="Storm of Claws" hidden="false">
-                  <description>The bearer fights with an additional D3 extra attacks, rolled each round of combat. However, all attacks are made with a WS penalty equal to the number of bonus attacks.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="976b-4715-67e2-e33b" name="Paired Weapons" hidden="false" targetId="f495-679e-1976-68d1" type="rule"/>
-                <infoLink id="388c-6014-4a64-b0c8" name="Shred" hidden="false" targetId="89da-0cb5-bee4-8ec2" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="98a7-6a1f-f55d-41aa" name="Gyrocyclic Reaver Blade" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="e7ed-d81d-5746-4bf8" name="Gyrocyclic Reaver Blade" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
-                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+1</characteristic>
-                    <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
-                    <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Grants +1 Attack</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="9e2d-68f0-ef28-a143" name="Charnabal Longsword" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="c0f4-6a14-0f5c-c51e" name="Charnabal Longsword" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
-                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+1</characteristic>
-                    <characteristic name="AP" typeId="415023232344415441232323">5</characteristic>
-                    <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Two-handed, Shred, Rending, Duellist&apos;s Edge</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="91af-eb99-47b0-b5fc" name="Shred" hidden="false" targetId="89da-0cb5-bee4-8ec2" type="rule"/>
-                <infoLink id="7d8e-fb90-fef1-7f73" name="Two-Handed" hidden="false" targetId="b11c-0ef4-af6b-d96f" type="rule"/>
-                <infoLink id="87fb-2ac3-3945-d385" name="Duelist&apos;s Edge" hidden="false" targetId="1a79-befa-05cf-ab0d" type="rule"/>
-                <infoLink id="8659-e9e7-f25e-8eb4" name="Rending" hidden="false" targetId="8269-2cd6-9236-16e7" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="a091-2aca-c1de-6912" name="Bioceramic Razorglaive" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="97f4-2f2c-fa57-28f8" name="Bioceramic Razorglaive" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
-                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">User</characteristic>
-                    <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
-                    <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Grants +1 Initiative, Brittle</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="3d6b-850e-716e-f319" name="Brittle" hidden="false">
-                  <description>If a user of this weapon hits with all of their attacks during a single round of combat, after resolving those attacks its AP value is reduced to (-) for the remainder of the battle.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="5b28-f840-4f3a-138c" name="Artificer Mirrorswords" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="b50f-39bd-e4f8-1c31" name="Artificer Mirrorswords" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
-                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">User</characteristic>
-                    <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
-                    <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Riposte, Paired Weapons (+1 Attack)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="e88e-4858-b518-02ff" name="Riposte" hidden="false">
-                  <description>Attacks directed at the wielder of these weapons suffer -1 to hit.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="1825-4a98-b1ac-1650" name="Paired Weapons" hidden="false" targetId="f495-679e-1976-68d1" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="db9e-b092-bf6f-fad5" name="Arcanite Shock Maul" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="c324-ad74-d4ae-4dfd" name="Arcanite Shock Maul" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
-                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+3</characteristic>
-                    <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
-                    <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Two-handed, Arcing Discharge</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="6c48-9481-78d4-1595" name="Arcing Discharge" hidden="false">
-                  <description>Any model wounded by attacks from this weapon suffers the effects of the Concussive rule, whether the wound is saved or not.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="3bdc-7b7b-f562-7951" name="Concussive" hidden="false" targetId="9d85-46f7-f5e6-a5f7" type="rule"/>
-                <infoLink id="0195-eed2-8007-c21a" name="Two-Handed" hidden="false" targetId="b11c-0ef4-af6b-d96f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="49ed-206a-e958-accd" name="Aetheric Shredder Knife" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="d2e3-0b68-a12a-6f69" name="Aetheric Shredder Knife" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
-                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">User</characteristic>
-                    <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
-                    <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Dimensional Edge</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="506d-b355-f224-9065" name="Dimensional Edge" hidden="false">
-                  <description>Attacks from this weapon only ever cause wounds on a roll of 6, however no invulnerable saves or Feel No Pain rolls may be taken</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="78bb-3696-4f0d-d46d" name="Accelerator Hammer" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="ae4d-90af-1ed9-0742" name="Accelerator Hammer" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
-                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+3</characteristic>
-                    <characteristic name="AP" typeId="415023232344415441232323">1</characteristic>
-                    <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Two-handed, Sunder, Delayed Strike</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="c153-f356-25dd-7d5b" name="Delayed Strike" hidden="false">
-                  <description>The bearer of this weapon halves their Initiative and Attack value when using this weapon, rounding up.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="5241-c397-13df-9d1b" name="Two-Handed" hidden="false" targetId="b11c-0ef4-af6b-d96f" type="rule"/>
-                <infoLink id="b843-e49e-cd94-0c9f" name="Sunder" hidden="false" targetId="841f-9119-9f9d-5058" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="be3f-cab1-3d55-d42a" name="Characters (Including Independent Characters)" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93ff-3836-2804-a995" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6dd5-cb03-1958-ff20" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="270a-0bb6-b354-6b75" name="Cthonian Culling Blade" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf2e-9aed-ccc5-5696" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6780-81e2-601f-a7bd" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="f1e1-51a7-d8b7-aa97" name="Cthonian Culling Blade" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
-                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">User</characteristic>
-                    <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
-                    <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Rending (5+)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="860a-f688-6f4e-2b23" name="Rending" hidden="false" targetId="8269-2cd6-9236-16e7" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="1b80-5b44-0e03-b9e4" name="Albian Power Gladius" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="83c2-692c-6560-3d68" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccfb-6afc-2a35-2498" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="cf2b-9e0c-60d8-0ae2" name="Albian Power Gladius" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
-                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">User</characteristic>
-                    <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
-                    <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Rending (5+)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="3f2d-769e-840d-434c" name="Rending" hidden="false" targetId="8269-2cd6-9236-16e7" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6277-fb4b-0461-2f0e" name="Vanus Assassin" publicationId="0e6e-8c19-c436-39c4" hidden="false" collective="false" import="true" type="unit">
@@ -5788,12 +4653,12 @@ If equipped with a Jump Pack then they may only join eligible squads with the Ju
                     <cost name="pts" typeId="points" value="15.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="efe5-5499-8c3e-16d9" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="1b80-5b44-0e03-b9e4" type="selectionEntry">
+                <entryLink id="efe5-5499-8c3e-16d9" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="7dca-ef48-006c-a248" type="selectionEntry">
                   <costs>
                     <cost name="pts" typeId="points" value="15.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="f9f7-7fa1-5147-7914" name="Cthonian Culling Blade" hidden="false" collective="false" import="true" targetId="270a-0bb6-b354-6b75" type="selectionEntry">
+                <entryLink id="f9f7-7fa1-5147-7914" name="Cthonian Culling Blade" hidden="false" collective="false" import="true" targetId="e3f4-e57f-f343-a42a" type="selectionEntry">
                   <costs>
                     <cost name="pts" typeId="points" value="15.0"/>
                   </costs>
@@ -5960,6 +4825,22 @@ If equipped with a Jump Pack then they may only join eligible squads with the Ju
             </entryLink>
             <entryLink id="1857-723a-c767-599e" name="Dark Channelling" hidden="false" collective="false" import="true" targetId="8e9aa9ef-7863-9522-7741-f7a3ebec8585" type="selectionEntry"/>
             <entryLink id="b6b3-f593-d5ba-fa5e" name="Chem-munitions" hidden="false" collective="false" import="true" targetId="86e70545-ed1a-7cf4-5a3d-d60662a6b3be" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="7393-d14b-4211-7505" name="Additional Bolter Ammunition Types" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="01e8-e964-1cd7-bd8d" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="b596-893a-be2e-7d28" name="Alpha Legion: Banestrike" hidden="false" collective="false" import="true" targetId="ba94-773c-bf08-b5a7" type="selectionEntry"/>
+            <entryLink id="7dff-e470-3fd2-7558" name="Word Bearers: Hex-bolts" hidden="false" collective="false" import="true" targetId="e63d-3a4b-c2d9-6d0f" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -6199,12 +5080,12 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
                     <cost name="pts" typeId="points" value="20.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="894b-eaf8-115f-d389" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="1b80-5b44-0e03-b9e4" type="selectionEntry">
+                <entryLink id="894b-eaf8-115f-d389" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="7dca-ef48-006c-a248" type="selectionEntry">
                   <costs>
                     <cost name="pts" typeId="points" value="15.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="6226-d7a2-2ea7-db0b" name="Cthonian Culling Blade" hidden="false" collective="false" import="true" targetId="270a-0bb6-b354-6b75" type="selectionEntry">
+                <entryLink id="6226-d7a2-2ea7-db0b" name="Cthonian Culling Blade" hidden="false" collective="false" import="true" targetId="e3f4-e57f-f343-a42a" type="selectionEntry">
                   <costs>
                     <cost name="pts" typeId="points" value="15.0"/>
                   </costs>
@@ -6516,6 +5397,29 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
           <entryLinks>
             <entryLink id="5859-2eeb-f1d2-f954" name="Legion-specific upgrade:" hidden="false" collective="false" import="true" targetId="8b059b74-0029-efeb-ecc0-98a21dded43a" type="selectionEntryGroup"/>
             <entryLink id="08dd-b54b-f758-a354" name="Rad Grenades (Destroyer Company)" hidden="false" collective="false" import="true" targetId="6b20-1187-bc72-1a45" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8979-7c9b-97fb-cefb" name="Additional Bolter Ammunition Types" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="003e-0d25-532b-c3cd" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="6e99-9242-5614-9255" name="Alpha Legion: Banestrike" hidden="false" collective="false" import="true" targetId="ba94-773c-bf08-b5a7" type="selectionEntry"/>
+            <entryLink id="d3c6-4c2b-98d6-b924" name="Death Guard: Toxin Bolts" hidden="false" collective="false" import="true" targetId="608e-55e6-821d-4587" type="selectionEntry"/>
+            <entryLink id="8a2d-5c9f-c2d2-2e84" name="Iron Hands: Splinter Bolts" hidden="false" collective="false" import="true" targetId="70dc-bb19-6bf5-ade4" type="selectionEntry"/>
+            <entryLink id="5911-eb85-178c-fe76" name="Iron Warriors: Shrapnel Bolts" hidden="false" collective="false" import="true" targetId="1f83-fc1b-6a63-d1c4" type="selectionEntry"/>
+            <entryLink id="2c7e-a1a4-7d95-5dd7" name="Raven Guard: Scorpius Light" hidden="false" collective="false" import="true" targetId="422a-7ab4-ff43-7e2d" type="selectionEntry"/>
+            <entryLink id="2d45-b868-8c4b-6020" name="Sons of Horus: Banestrike" hidden="false" collective="false" import="true" targetId="413e-0bb7-815e-c3be" type="selectionEntry"/>
+            <entryLink id="dc35-02e0-89a0-1d8d" name="Thousand Sons: Asphyx Light Shells" hidden="false" collective="false" import="true" targetId="63f3-9b22-bb21-7f18" type="selectionEntry"/>
+            <entryLink id="c875-2904-9027-dcba" name="White Scars: Hyper Velocity Bolts" hidden="false" collective="false" import="true" targetId="d3fe-f8d5-271f-8fdc" type="selectionEntry"/>
+            <entryLink id="95b8-c6a8-37c4-6b84" name="Word Bearers: Hex-bolts" hidden="false" collective="false" import="true" targetId="e63d-3a4b-c2d9-6d0f" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -6974,12 +5878,12 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
                     <cost name="pts" typeId="points" value="20.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="897e-a1ba-bdd7-15a6" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="1b80-5b44-0e03-b9e4" type="selectionEntry">
+                <entryLink id="897e-a1ba-bdd7-15a6" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="7dca-ef48-006c-a248" type="selectionEntry">
                   <costs>
                     <cost name="pts" typeId="points" value="15.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="0f2d-f7be-5cd8-f00d" name="Cthonian Culling Blade" hidden="false" collective="false" import="true" targetId="270a-0bb6-b354-6b75" type="selectionEntry">
+                <entryLink id="0f2d-f7be-5cd8-f00d" name="Cthonian Culling Blade" hidden="false" collective="false" import="true" targetId="e3f4-e57f-f343-a42a" type="selectionEntry">
                   <costs>
                     <cost name="pts" typeId="points" value="15.0"/>
                   </costs>
@@ -7085,6 +5989,22 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
               </costs>
             </entryLink>
             <entryLink id="9359-b4c0-c0e8-34d3" name="Cult Arcana" hidden="false" collective="false" import="true" targetId="e096-a034-c3dc-ea24" type="selectionEntryGroup"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="605c-b5a0-2d2a-ca62" name="Additional Bolter Ammunition Types" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3c56-752f-5c7a-4cd8" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="c8a5-4d4b-7902-de7d" name="Alpha Legion: Banestrike" hidden="false" collective="false" import="true" targetId="ba94-773c-bf08-b5a7" type="selectionEntry"/>
+            <entryLink id="852d-9bcf-a5b3-a9b9" name="Word Bearers: Hex-bolts" hidden="false" collective="false" import="true" targetId="e63d-3a4b-c2d9-6d0f" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -7382,6 +6302,21 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
                 <modifier type="set" field="5f3e-444b-2315-5e66" value="4.0"/>
               </modifiers>
             </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="158c-7ae1-5014-e56f" name="Additional Bolter Ammunition Types" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d7ee-169a-5736-db52" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="1f45-658f-6443-0404" name="Alpha Legion: Banestrike" hidden="false" collective="false" import="true" targetId="ba94-773c-bf08-b5a7" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -7752,9 +6687,9 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
                 <cost name="pts" typeId="points" value="2.0"/>
               </costs>
             </entryLink>
-            <entryLink id="6c3a-ac72-057e-bfb9" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="1b80-5b44-0e03-b9e4" type="selectionEntry">
+            <entryLink id="6c3a-ac72-057e-bfb9" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="7dca-ef48-006c-a248" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="ccfb-6afc-2a35-2498" value="2.0"/>
+                <modifier type="set" field="69a3-3336-04c4-7da3" value="2.0"/>
               </modifiers>
               <costs>
                 <cost name="pts" typeId="points" value="15.0"/>
@@ -7768,9 +6703,9 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </entryLink>
-            <entryLink id="b212-8cde-63f3-5e19" name="Cthonian Culling Blade" hidden="false" collective="false" import="true" targetId="270a-0bb6-b354-6b75" type="selectionEntry">
+            <entryLink id="b212-8cde-63f3-5e19" name="Cthonian Culling Blade" hidden="false" collective="false" import="true" targetId="e3f4-e57f-f343-a42a" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="6780-81e2-601f-a7bd" value="2.0"/>
+                <modifier type="set" field="c241-33e6-9114-0834" value="2.0"/>
               </modifiers>
               <costs>
                 <cost name="pts" typeId="points" value="15.0"/>
@@ -8176,9 +7111,9 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
                 <cost name="pts" typeId="points" value="2.0"/>
               </costs>
             </entryLink>
-            <entryLink id="68d1-054a-edc0-945c" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="1b80-5b44-0e03-b9e4" type="selectionEntry">
+            <entryLink id="68d1-054a-edc0-945c" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="7dca-ef48-006c-a248" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="ccfb-6afc-2a35-2498" value="2.0"/>
+                <modifier type="set" field="69a3-3336-04c4-7da3" value="2.0"/>
               </modifiers>
               <costs>
                 <cost name="pts" typeId="points" value="15.0"/>
@@ -8192,9 +7127,9 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </entryLink>
-            <entryLink id="13ab-9552-655e-4406" name="Cthonian Culling Blade" hidden="false" collective="false" import="true" targetId="270a-0bb6-b354-6b75" type="selectionEntry">
+            <entryLink id="13ab-9552-655e-4406" name="Cthonian Culling Blade" hidden="false" collective="false" import="true" targetId="e3f4-e57f-f343-a42a" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="6780-81e2-601f-a7bd" value="2.0"/>
+                <modifier type="set" field="c241-33e6-9114-0834" value="2.0"/>
               </modifiers>
               <costs>
                 <cost name="pts" typeId="points" value="15.0"/>
@@ -9667,7 +8602,7 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="3d74-48ce-7c5b-2332" name="For every 5 models in the squad, once may replace a Hand Flamer for a:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="3d74-48ce-7c5b-2332" name="For every 5 models in the squad, once may replace a Volkite Charger for a:" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="increment" field="317e-8f97-9820-a39b" value="1.0">
               <repeats>
