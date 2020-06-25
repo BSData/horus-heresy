@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="121" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="123" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN66489" name="HH:MT"/>
@@ -7644,7 +7644,7 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
             <entryLink id="2bee-27d8-3b93-be54" name="Searchlight and Smoke Launchers" hidden="false" collective="false" import="true" targetId="1ecc-b3b6-1fe1-8bd5" type="selectionEntry"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="pts" typeId="points" value="280.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -8426,21 +8426,21 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
         <cost name="pts" typeId="points" value="200.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="be86-7cb9-6f78-eb14" name="Additional Psychic Disciplines" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="be86-7cb9-6f78-eb14" name="Additional Psychic Disciplines" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="set" field="1fef-57fa-2040-546d" value="0.0">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="greaterThan"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="fe0b-d19a-249b-725c" value="1.0">
+        <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="greaterThan"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c859-6b16-c533-7e97" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe0b-d19a-249b-725c" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1fef-57fa-2040-546d" type="max"/>
       </constraints>
       <rules>
         <rule id="c932-d68a-fc33-802e" name="Additional Psychic Disciplines" hidden="false">
@@ -10603,6 +10603,9 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
             <infoLink id="13ac-9615-177e-6319" name="Two-Handed" hidden="false" targetId="b11c-0ef4-af6b-d96f" type="rule"/>
             <infoLink id="bc59-5789-4551-2bf8" name="Sunder" hidden="false" targetId="841f-9119-9f9d-5058" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="4dcf-3bd9-4e30-4fd6" name="Aetheric Shredder Knife" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -10623,6 +10626,9 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
               <description>Attacks from this weapon only ever cause wounds on a roll of 6, however no invulnerable saves or Feel No Pain rolls may be taken</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="d729-1516-184f-764e" name="Arcanite Shock Maul" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -10647,6 +10653,9 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
             <infoLink id="9587-7447-9f4d-1f24" name="Concussive" hidden="false" targetId="9d85-46f7-f5e6-a5f7" type="rule"/>
             <infoLink id="4d8f-5d11-4e2a-b370" name="Two-Handed" hidden="false" targetId="b11c-0ef4-af6b-d96f" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="9537-efdd-75e7-c362" name="Artificer Mirrorswords" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -10670,6 +10679,9 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
           <infoLinks>
             <infoLink id="035c-0d42-a42d-cae1" name="Paired Weapons" hidden="false" targetId="f495-679e-1976-68d1" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="12c5-f430-027c-d311" name="Bioceramic Razorglaive" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -10690,6 +10702,9 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
               <description>If a user of this weapon hits with all of their attacks during a single round of combat, after resolving those attacks its AP value is reduced to (-) for the remainder of the battle.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="7a4e-24ec-d6c3-271d" name="Charnabal Longsword" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -10711,6 +10726,9 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
             <infoLink id="b6c8-f7f2-dedb-ee9c" name="Duelist&apos;s Edge" hidden="false" targetId="1a79-befa-05cf-ab0d" type="rule"/>
             <infoLink id="1a2f-6360-2c53-96f8" name="Rending" hidden="false" targetId="8269-2cd6-9236-16e7" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="449c-cd5a-297c-8645" name="Gyrocyclic Reaver Blade" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -10726,6 +10744,9 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="a7f7-d43f-fe35-8091" name="Hurricane Talons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -10750,6 +10771,9 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
             <infoLink id="c873-5235-b309-ce25" name="Paired Weapons" hidden="false" targetId="f495-679e-1976-68d1" type="rule"/>
             <infoLink id="e3be-a101-1983-a6b3" name="Shred" hidden="false" targetId="89da-0cb5-bee4-8ec2" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="392f-d1ef-3ec8-4eb2" name="Hydragyros Executioner Blade" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -10768,6 +10792,9 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
           <infoLinks>
             <infoLink id="dea4-fd4a-38b1-e160" name="Two-Handed" hidden="false" targetId="b11c-0ef4-af6b-d96f" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="44fe-201d-d864-5ffb" name="Nanofractal Falchion" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -10787,6 +10814,9 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
             <infoLink id="7f53-e4d6-0ce2-6a4e" name="Rending" hidden="false" targetId="8269-2cd6-9236-16e7" type="rule"/>
             <infoLink id="df7a-e195-1278-75b2" name="Fleshbane" hidden="false" targetId="4575-0a0a-caaf-e4bf" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
