@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9f87-b468-2001-5e3b" name="Mornival Units Legion Astartes (Fanmade)" revision="18" battleScribeVersion="2.03" authorName="Aus30K / Mourival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="123" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9f87-b468-2001-5e3b" name="Mornival Units Legion Astartes (Fanmade)" revision="19" battleScribeVersion="2.03" authorName="Aus30K / Mourival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="123" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="0e6e-8c19-c436-39c4" name="Mournival Events 3.0 Digital Version"/>
     <publication id="cf75-540e-e446-ecd5" name="Mournival Events FAQ and Experimental Errata v3.1"/>
@@ -10877,6 +10877,104 @@ A Unit may not use Counter Attack special rule if it used Reaction Fire.</descri
                     <cost name="pts" typeId="points" value="10.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="4b93-5209-638f-f215" name="Warrior’s Mettle" hidden="true" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c047-529a-8d98-b5ba" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7442-0fdd-ea91-f486" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="9fd3-5176-95bd-a033" name="Warriors Mettle" hidden="false" targetId="3646-4a68-2be9-970b" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="15.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="00cf-de58-1648-1321" name="Howl of the Death Wolf" hidden="true" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c047-529a-8d98-b5ba" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1aea-3cab-9d39-a543" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="76c9-657b-2025-c71f" name="Howl of the Death Wolf" hidden="false" targetId="a57f-3153-fbc8-eaab" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="30.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6b06-cfdb-31d0-2a68" name="Infiltrate (model + attached unit)" hidden="true" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="b613-f1bb-2e01-05a2" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fc1-75d3-7414-71ff" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fc1-75d3-7414-71ff" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c6b-9640-c409-fe94" type="max"/>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b613-f1bb-2e01-05a2" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="adc2-4e3c-24ae-9e1b" name="Infiltrate" hidden="false" targetId="34c7-8b61-a5b8-a301" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="395b-d567-d3ae-6c08" name="Shrouded" hidden="true" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fc1-75d3-7414-71ff" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9437-71ce-bb12-f43e" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="81af-bf8e-bb11-da49" name="Shrouded" hidden="false" targetId="9c80-5c1a-3b9d-971e" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="cd2b-c826-3495-4fc0" name="Blood Scent" hidden="true" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fc1-75d3-7414-71ff" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75ee-52d1-102b-3641" type="max"/>
+                  </constraints>
+                  <rules>
+                    <rule id="1948-8c8d-d783-ce78" name="Blood Scent" page="" hidden="false">
+                      <description>After deployment, you may specify a single enemy unit or Independent Character that the character has the &apos;Blood Scent&apos; of.  The character now counts as having the Preferred Enemy special rule against its chosen target.</description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
               <selectionEntryGroups>
                 <selectionEntryGroup id="ed55-b08c-3024-f8bd" name="Blackshields" hidden="true" collective="false" import="true">
@@ -11068,6 +11166,45 @@ A Unit may not use Counter Attack special rule if it used Reaction Fire.</descri
                   <costs>
                     <cost name="pts" typeId="points" value="10.0"/>
                   </costs>
+                </entryLink>
+                <entryLink id="a094-8058-146e-8b4b" name="Veteran Tactic: Warrior’s Mettle" hidden="false" collective="false" import="true" targetId="95f4-6fa5-0631-ded8" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c047-529a-8d98-b5ba" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="3afc-0e11-4fe8-8bf8" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c047-529a-8d98-b5ba" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc95-2f4e-2627-3127" type="max"/>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3afc-0e11-4fe8-8bf8" type="min"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="cff0-379b-0948-8db6" name="+1 Grey Slayers Required (Mourn)" hidden="true" collective="false" import="true" targetId="604f-8f2f-e11c-af0f" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c047-529a-8d98-b5ba" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="8060-b524-5bfe-9f03" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c047-529a-8d98-b5ba" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8060-b524-5bfe-9f03" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fad1-76e2-72b4-0721" type="max"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -13741,6 +13878,7 @@ Owing to the massive expenditure of ammunition involved, once a squad has made a
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f3ce-93fe-445b-b5aa" type="equalTo"/>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e77c-43f9-71c0-a632" type="equalTo"/>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fc1-75d3-7414-71ff" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -13768,6 +13906,7 @@ Owing to the massive expenditure of ammunition involved, once a squad has made a
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f3ce-93fe-445b-b5aa" type="equalTo"/>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e77c-43f9-71c0-a632" type="equalTo"/>
+                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fc1-75d3-7414-71ff" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -14007,7 +14146,7 @@ Owing to the massive expenditure of ammunition involved, once a squad has made a
                   </constraints>
                   <rules>
                     <rule id="a57f-3153-fbc8-eaab" name="Howl of the Death Wolf" hidden="false">
-                      <description>Once per game for one turn, all Space Wolves Run and Charge rolls can be re-rolled</description>
+                      <description>Once per game at the start of their player turn. For the duration of that player turn only, all Run and Charge distances made for models in the army with the Legiones Astartes (Space Wolves) special rule may be re-rolled.</description>
                     </rule>
                   </rules>
                   <costs>
@@ -14919,6 +15058,20 @@ Owing to the massive expenditure of ammunition involved, once a squad has made a
                             </conditionGroup>
                           </conditionGroups>
                         </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fc1-75d3-7414-71ff" type="equalTo"/>
+                            <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="395b-d567-d3ae-6c08" type="equalTo"/>
+                            <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd2b-c826-3495-4fc0" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c047-529a-8d98-b5ba" type="equalTo"/>
+                            <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b93-5209-638f-f215" type="equalTo"/>
+                            <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="00cf-de58-1648-1321" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
                       </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
@@ -15094,12 +15247,13 @@ Sniper Rifle + Expert Marksman (Location: Basic, Cost 5pts, Not Mandatory)</desc
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa00-8233-2ce5-b1ba" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="8b90-f39d-87fe-71b1" name="Custom " hidden="false">
-                      <description>Custom 
- (Location: Specialisation &amp; Legion Special Rules, Cost pts, Mandatory)
- (Location: Wargear, Cost pts, Not Mandatory)
- (Location: Melee, Cost pts each, Not Mandatory)
- (Location: Basic, Cost pts each, Not Mandatory)</description>
+                    <rule id="8b90-f39d-87fe-71b1" name="Custom Hunter Claw Leader" hidden="false">
+                      <description>Custom Hunter Claw Leader
+Unlocks Pale Hunters Rite of War
+Terminator Armour is Tartaros only
+Infiltrate (model + attached unit)  (Location: Specialisation &amp; Legion Special Rules, Cost 10pts, Mandatory)
+Shrouded (Location: Specialisation &amp; Legion Special Rules, Cost 10pts, Non-Mandatory)
+Blood Scent (Marked for Death) (Location: Specialisation &amp; Legion Special Rules, Cost 10pts, Non-Mandatory)</description>
                     </rule>
                   </rules>
                   <categoryLinks>
@@ -15122,9 +15276,14 @@ Sniper Rifle + Expert Marksman (Location: Basic, Cost 5pts, Not Mandatory)</desc
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74a4-b42c-cdd5-4792" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="2baf-29f1-14b7-c3a3" name="Custom " hidden="false">
-                      <description>Custom 
- (Location: Specialisation &amp; Legion Special Rules, Cost pts, Mandatory)
+                    <rule id="2baf-29f1-14b7-c3a3" name="Custom Berserker Claw Leader" hidden="false">
+                      <description>Custom Berserker Claw Leader
+Unlocks Bloodied Claws Rite of War
+Must have +1 Grey Slayer squad  (Location: Specialisation &amp; Legion Special Rules, Cost 0pts, Mandatory)
+Veteran Tactic: Warrior’s Mettle  (Location: Specialisation &amp; Legion Special Rules, Cost 5pts, Mandatory)
+Warrior’s Mettle  (Location: Specialisation &amp; Legion Special Rules, Cost 15pts, Non-Mandatory)
+Howl of the Death Wolf  (Location: Specialisation &amp; Legion Special Rules, Cost 30pts, Non-Mandatory)
+
  (Location: Wargear, Cost pts, Not Mandatory)
  (Location: Melee, Cost pts each, Not Mandatory)
  (Location: Basic, Cost pts each, Not Mandatory)</description>
