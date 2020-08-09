@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="98" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="123" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="99" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="124" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="cf03-f607-pubN65537" name="Horus Heresy: Taghmata Army List"/>
     <publication id="cf03-f607-pubN65563" name="AoDRB"/>
@@ -523,6 +523,11 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
           </constraints>
         </categoryLink>
         <categoryLink id="f918-5041-51eb-d541" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
+        <categoryLink id="80b5-9d75-e882-4e80" name="Compulsory Troops" hidden="false" targetId="219d-aefa-dfa5-44db" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c495-b617-c344-baa4" type="min"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="089f-7e79-bde1-90dd" name=" Zone Mortalis - Attacker" hidden="false">
@@ -989,16 +994,15 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
     </entryLink>
     <entryLink id="c7ac-9d02-c011-f222" name="Scyllax Guardian-Automata Covenant" hidden="false" collective="false" import="true" targetId="314b-bec3-5501-a0aa" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="add" field="category" value="219d-aefa-dfa5-44db">
           <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d266-0416-a5a6-881e" type="greaterThan"/>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d76d-0097-d56b-e6bf" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="c7ac-9d02-c011-f222-54726f6f707323232344415441232323" hidden="false" targetId="54726f6f707323232344415441232323" primary="true"/>
         <categoryLink id="6eb7-7a01-a987-89f9" name="New CategoryLink" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
-        <categoryLink id="3981-00cb-75e5-2790" name="New CategoryLink" hidden="false" targetId="219d-aefa-dfa5-44db" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="9a0a-e41a-013b-c48f" name="Vorax Class Battle-automata Maniple" hidden="false" collective="false" import="true" targetId="deb3-68a3-5d36-eb3d" type="selectionEntry">
@@ -1009,20 +1013,12 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
     </entryLink>
     <entryLink id="ec8a-2676-2661-296e" name="Castellax Class Battle-Automata Maniple" hidden="false" collective="false" import="true" targetId="48db-84ca-2bad-520f" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="add" field="category" value="219d-aefa-dfa5-44db">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d266-0416-a5a6-881e" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="5a4a-2d6f-43f6-f2b6" value="-1">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="equalTo"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a4a-2d6f-43f6-f2b6" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="ec8a-2676-2661-296e-54726f6f707323232344415441232323" hidden="false" targetId="54726f6f707323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -1030,18 +1026,13 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
     <entryLink id="a6da-fabe-6b98-c46e" name="Secutarii Peltast Phalanx" hidden="false" collective="false" import="true" targetId="8190-e779-2c49-c564" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="greaterThan"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="greaterThan"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" field="8ca6-c4ee-0f61-effa" value="-1.0">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="equalTo"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="219d-aefa-dfa5-44db">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1052,18 +1043,13 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
     <entryLink id="4fe0-ed8d-a28a-d78d" name="Secutarii Hoplite Phalanx" hidden="false" collective="false" import="true" targetId="4ff6-b526-4208-0d33" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="greaterThan"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="greaterThan"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" field="6fb1-d527-17a7-2ba0" value="-1.0">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="equalTo"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="219d-aefa-dfa5-44db">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1127,20 +1113,15 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
     </entryLink>
     <entryLink id="62b4-53bc-36ca-57d2" name="Secutarii Axiarch" hidden="false" collective="false" import="true" targetId="bd94-0269-4234-4a81" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="f855-004d-6a48-f343" value="-1">
+        <modifier type="add" field="category" value="becd-7a6d-e80f-878e">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="equalTo"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="equalTo"/>
           </conditions>
         </modifier>
         <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="greaterThan"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="greaterThan"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="greaterThan"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -1232,48 +1213,17 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <categoryLink id="54f6-9b6b-c64c-753a-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="7f94-d779-b55e-3e78" name="Thallax Cohort" hidden="false" collective="false" import="true" targetId="b39b-9817-025c-62da" type="selectionEntry">
+    <entryLink id="bcdc-d06d-a499-5b39" name="Thallax Cohort" hidden="false" collective="false" import="true" targetId="b39b-9817-025c-62da" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d266-0416-a5a6-881e" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="027d-b136-9e3e-6cfc" name="New CategoryLink" hidden="false" targetId="219d-aefa-dfa5-44db" primary="false"/>
-        <categoryLink id="e214-ad4b-20c0-d4d8" name="New CategoryLink" hidden="false" targetId="54726f6f707323232344415441232323" primary="true"/>
-        <categoryLink id="1498-98d9-6843-f8eb" name="New CategoryLink" hidden="false" targetId="afa3-c43a-c8c1-d8b6" primary="false"/>
-        <categoryLink id="1e4f-1949-0021-72ef" name="New CategoryLink" hidden="false" targetId="37f2-7398-84ee-6fdf" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="ea1f-fb78-d2de-4a0c" name="Castellax Class Battle-Automata Maniple" hidden="true" collective="false" import="true" targetId="48db-84ca-2bad-520f" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d266-0416-a5a6-881e" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="2a04-7e5c-6738-99bd" value="-1">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d266-0416-a5a6-881e" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a04-7e5c-6738-99bd" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="995d-2c1e-9f27-11e5" name="New CategoryLink" hidden="false" targetId="219d-aefa-dfa5-44db" primary="false"/>
-        <categoryLink id="97c9-d370-5bb8-b00b" name="New CategoryLink" hidden="false" targetId="54726f6f707323232344415441232323" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="bcdc-d06d-a499-5b39" name="Thallax Cohort" hidden="true" collective="false" import="true" targetId="b39b-9817-025c-62da" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d266-0416-a5a6-881e" type="greaterThan"/>
-          </conditions>
+        <modifier type="add" field="category" value="219d-aefa-dfa5-44db">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0199-0faf-34c8-fbee" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d76d-0097-d56b-e6bf" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -1282,52 +1232,16 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <categoryLink id="9d75-6e8e-d457-0cbe" name="New CategoryLink" hidden="false" targetId="54726f6f707323232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="c113-055f-0a53-5b42" name="Adsecularis Covenant" hidden="true" collective="false" import="true" targetId="7e54-a6b2-1982-0706" type="selectionEntry">
+    <entryLink id="c113-055f-0a53-5b42" name="Adsecularis Covenant" hidden="false" collective="false" import="true" targetId="7e54-a6b2-1982-0706" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
+        <modifier type="add" field="category" value="219d-aefa-dfa5-44db">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d76d-0097-d56b-e6bf" type="equalTo"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="86e5-0663-2fde-0bc1" value="-1">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d76d-0097-d56b-e6bf" type="equalTo"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e53d-bfcb-2db7-b11e" name="New CategoryLink" hidden="false" targetId="219d-aefa-dfa5-44db" primary="false"/>
         <categoryLink id="3447-df86-ebd9-0702" name="New CategoryLink" hidden="false" targetId="54726f6f707323232344415441232323" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="b4f3-3ee3-c867-b2c0" name="Adsecularis Covenant" hidden="true" collective="false" import="true" targetId="7e54-a6b2-1982-0706" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d76d-0097-d56b-e6bf" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="86e5-0663-2fde-0bc1" value="-1">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d76d-0097-d56b-e6bf" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="7c09-c1a3-0a5a-ca8d" name="New CategoryLink" hidden="false" targetId="54726f6f707323232344415441232323" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="cfd6-6c7a-c47e-6d65" name="Scyllax Guardian-Automata Covenant" hidden="true" collective="false" import="true" targetId="314b-bec3-5501-a0aa" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d266-0416-a5a6-881e" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="0703-5aed-0f4f-7518" hidden="false" targetId="54726f6f707323232344415441232323" primary="true"/>
-        <categoryLink id="ef5f-e29a-274c-1854" name="New CategoryLink" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="b36e-b70d-53a0-2b7c" name="Anacharis Scoria" hidden="false" collective="false" import="true" targetId="83ef-4568-5093-61d5" type="selectionEntry">
@@ -1449,30 +1363,6 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <categoryLink id="fe90-cb89-8899-bc3e" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="26e6-4e76-0f8e-29c2" name="Magos Dominus" hidden="true" collective="false" import="true" targetId="f891-cee8-321e-f159" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0199-0faf-34c8-fbee" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="ceef-3182-c221-51ab" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="f2b2-170e-52e7-073d" name="Magos Prime" hidden="true" collective="false" import="true" targetId="aa74-77f4-7266-36b6" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0199-0faf-34c8-fbee" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="baab-8987-7c5b-e9b4" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="53a1-ee52-c81e-d15c" name="Magos Reductor" hidden="true" collective="false" import="true" targetId="04e8-11de-2eb4-67e0" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -1514,75 +1404,6 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <categoryLink id="3bab-4c28-ca34-3ff3" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="92bf-c517-a343-1e64" name="Secutarii Hoplite Phalanx" hidden="true" collective="false" import="true" targetId="4ff6-b526-4208-0d33" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="greaterThan"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" field="6fb1-d527-17a7-2ba0" value="-1">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="4547-cf9c-cfb7-55e7" hidden="false" targetId="54726f6f707323232344415441232323" primary="true"/>
-        <categoryLink id="e63a-d105-14dd-62bb" name="New CategoryLink" hidden="false" targetId="219d-aefa-dfa5-44db" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="4c62-b68e-e8fe-ac62" name="Secutarii Peltast Phalanx" hidden="true" collective="false" import="true" targetId="8190-e779-2c49-c564" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="8ca6-c4ee-0f61-effa" value="-1">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="greaterThan"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="greaterThan"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="87ea-0f6d-af66-9965" hidden="false" targetId="54726f6f707323232344415441232323" primary="true"/>
-        <categoryLink id="5087-f9dc-01ba-5039" name="New CategoryLink" hidden="false" targetId="219d-aefa-dfa5-44db" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="a4c3-b327-2fbf-5621" name="Secutarii Axiarch" hidden="true" collective="false" import="true" targetId="bd94-0269-4234-4a81" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="f855-004d-6a48-f343" value="-1.0">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="greaterThan"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f7c-939a-f2de-413a" type="greaterThan"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="3e1b-44fb-6601-2a16" hidden="false" targetId="485123232344415441232323" primary="true"/>
-        <categoryLink id="3ab7-7380-3aa8-309a" name="New CategoryLink" hidden="false" targetId="becd-7a6d-e80f-878e" primary="false"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="41aa-d9dd-4085-db6d" name="Thanatar Class Siege-automata Maniple" hidden="false" collective="false" import="true" targetId="d7c6-3866-37eb-af76" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="5939-d1f2-d54d-b51a" name="New CategoryLink" hidden="false" targetId="486561767920537570706f727423232344415441232323" primary="true"/>
@@ -1595,27 +1416,35 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
     </entryLink>
     <entryLink id="2446-35f3-3f1b-e153" name="Magos Prime" hidden="false" collective="false" import="true" targetId="aa74-77f4-7266-36b6" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0199-0faf-34c8-fbee" type="equalTo"/>
-          </conditions>
+        <modifier type="add" field="category" value="becd-7a6d-e80f-878e">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d76d-0097-d56b-e6bf" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="be39-4547-c9be-76db" name="New CategoryLink" hidden="false" targetId="becd-7a6d-e80f-878e" primary="false"/>
         <categoryLink id="ab45-c8e7-7795-0be2" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="5bce-cf03-cea4-be28" name="Magos Dominus" hidden="false" collective="false" import="true" targetId="f891-cee8-321e-f159" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0199-0faf-34c8-fbee" type="equalTo"/>
-          </conditions>
+        <modifier type="add" field="category" value="becd-7a6d-e80f-878e">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d76d-0097-d56b-e6bf" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="60c2-ca0f-93d9-03c9" name="New CategoryLink" hidden="false" targetId="becd-7a6d-e80f-878e" primary="false"/>
         <categoryLink id="7fc0-849e-db4a-d096" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
@@ -4049,9 +3878,6 @@ Reduces transport capacity to 8.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="8190-e779-2c49-c564" name="Secutarii Peltast Phalanx" publicationId="cf03-f607-pubN89244" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8ca6-c4ee-0f61-effa" type="max"/>
-      </constraints>
       <infoLinks>
         <infoLink id="1918-cfef-52f5-3b04" hidden="false" targetId="85da-2f19-3756-44de" type="rule"/>
         <infoLink id="a4e8-10c8-92cf-2b75" hidden="false" targetId="a878-4168-e49f-1d06" type="rule"/>
@@ -4352,9 +4178,6 @@ Reduces transport capacity to 8.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="4ff6-b526-4208-0d33" name="Secutarii Hoplite Phalanx" publicationId="cf03-f607-pubN89244" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6fb1-d527-17a7-2ba0" type="max"/>
-      </constraints>
       <infoLinks>
         <infoLink id="07c0-21d2-7a6c-e72e" name="" hidden="false" targetId="85da-2f19-3756-44de" type="rule"/>
         <infoLink id="197d-44b2-c886-348a" hidden="false" targetId="a878-4168-e49f-1d06" type="rule"/>
@@ -4945,9 +4768,6 @@ Buildings and Fortifications D</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="bd94-0269-4234-4a81" name="Secutarii Axiarch" publicationId="cf03-f607-pubN92488" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f855-004d-6a48-f343" type="max"/>
-      </constraints>
       <infoLinks>
         <infoLink id="91ec-6d64-962c-7562" name="New InfoLink" hidden="false" targetId="1afc-05fd-8a16-4567" type="profile"/>
         <infoLink id="74f2-1043-4ccc-a7d1" name="" hidden="false" targetId="85da-2f19-3756-44de" type="rule"/>
@@ -5635,10 +5455,25 @@ Buildings and Fortifications D</description>
     </selectionEntry>
     <selectionEntry id="b39b-9817-025c-62da" name="Thallax Cohort" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="ddd9-4b79-18cf-650b" value="2">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0199-0faf-34c8-fbee" type="equalTo"/>
-          </conditions>
+        <modifier type="set" field="ddd9-4b79-18cf-650b" value="2.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0199-0faf-34c8-fbee" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="657a-bc81-4ae3-8a5b" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="ddd9-4b79-18cf-650b" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0199-0faf-34c8-fbee" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="657a-bc81-4ae3-8a5b" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -5828,14 +5663,14 @@ Buildings and Fortifications D</description>
     </selectionEntry>
     <selectionEntry id="7e54-a6b2-1982-0706" name="Adsecularis Covenant" publicationId="cf03-f607-pubN76780" page="37" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="86e5-0663-2fde-0bc1" value="1">
-          <repeats>
-            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="02dc-3228-2e92-c3a8" repeats="1" roundUp="false"/>
-          </repeats>
+        <modifier type="set" field="fc61-6e04-9569-a6c5" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="02dc-3228-2e92-c3a8" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="86e5-0663-2fde-0bc1" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc61-6e04-9569-a6c5" type="min"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="8f1e-f00d-a6c1-7301" name="New CategoryLink" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
