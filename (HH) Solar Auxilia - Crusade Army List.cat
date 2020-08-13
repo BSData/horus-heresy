@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" revision="68" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="124" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" revision="70" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="124" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="7f243fc5--pubN65537" name="Crusade Imperialis"/>
     <publication id="7f243fc5--pubN65563" name="AoDRB"/>
@@ -71,6 +71,16 @@ A wound cannot be re-allocated onto a gun model from a successful Look Out, Sir 
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cae-4f9a-b9f5-d729" type="max"/>
       </constraints>
+      <rules>
+        <rule id="cba1-fdde-1cd1-a4af" name="Thunderblitz" page="" hidden="false">
+          <description>Super-heavy Vehicles may Tank Shock or Ram. When they do so, roll once on the Thunderblitz table immediatley before taking the morale check for the unit being Tank Shocked or immediatley before rolling for armour penetration when preforming a Ram.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="4fa9-61ad-659d-f25e" name="Fear" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule"/>
+        <infoLink id="85f9-de4c-0338-7d3c" name="Invincible Behemoth" hidden="false" targetId="b5c1-4b08-5ddc-1504" type="rule"/>
+        <infoLink id="c3f5-9620-d8b1-5fe0" name="Move Through Cover" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule"/>
+      </infoLinks>
     </categoryEntry>
     <categoryEntry id="d27d-9e9b-d8c7-afe6" name="No Force Org" hidden="false"/>
     <categoryEntry id="485123232344415441232323" name="HQ" hidden="false"/>
@@ -103,16 +113,56 @@ A wound cannot be re-allocated onto a gun model from a successful Look Out, Sir 
     <categoryEntry id="2d6f-e613-ab10-e55a" name="Deep Strike" hidden="false"/>
     <categoryEntry id="51a3-45ca-ea32-7519" name="Drop Pod" hidden="false"/>
     <categoryEntry id="e448-6dab-e008-3247" name="Sentry Gun" hidden="false"/>
-    <categoryEntry id="e4e0-c5d1-3430-f101" name="Transport" hidden="false"/>
+    <categoryEntry id="e4e0-c5d1-3430-f101" name="Transport" hidden="false">
+      <rules>
+        <rule id="2224-6f76-cdfd-6b11" name="Unshakeable Nerve" page="" hidden="false">
+          <description>Units embarked upon transports have the Fearless special rule while they are embarked.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
     <categoryEntry id="c407-80ff-568e-3394" name="Dedicated Transport" hidden="false"/>
     <categoryEntry id="264d-166e-36c0-77b7" name="Walker" hidden="false"/>
     <categoryEntry id="53bd-99e7-aba0-e79f" name="Vehicle" hidden="false"/>
     <categoryEntry id="37dc-7aa6-8150-41b0" name="Terminators" hidden="false"/>
     <categoryEntry id="f74d-4679-75a6-1252" name="Infantry" hidden="false"/>
-    <categoryEntry id="47cf-71bb-d59d-f9de" name="Jump Infantry" hidden="false"/>
-    <categoryEntry id="8ec4-17b5-7fea-c682" name="Monstrous Creature" hidden="false"/>
-    <categoryEntry id="afa3-c43a-c8c1-d8b6" name="Jetpack Infantry" hidden="false"/>
-    <categoryEntry id="25d0-388c-dd16-af9a" name="Flying Monstrous Creature" hidden="false"/>
+    <categoryEntry id="47cf-71bb-d59d-f9de" name="Jump Infantry" hidden="false">
+      <infoLinks>
+        <infoLink id="2951-ba27-3296-3d76" name="Bulky" hidden="false" targetId="38d5-b6eb-bda8-2497" type="rule"/>
+        <infoLink id="b88e-3ccb-b281-d77f" name="Deep Strike" hidden="false" targetId="d219-2314-4834-c054" type="rule"/>
+        <infoLink id="42c0-a8c1-9f61-c820" name="Jump Unit" hidden="false" targetId="8cb0-ff25-22a2-d480" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="8ec4-17b5-7fea-c682" name="Monstrous Creature" hidden="false">
+      <infoLinks>
+        <infoLink id="4040-9f2e-1b60-fdde" name="Fear" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule"/>
+        <infoLink id="fee1-d000-b987-a8eb" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule"/>
+        <infoLink id="e1f9-2579-6651-17d9" name="Move Through Cover" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule"/>
+        <infoLink id="3a86-0935-beff-cc2f" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule"/>
+        <infoLink id="b88f-376d-5967-4fac" name="Smash" hidden="false" targetId="4284-18a1-9844-a0bd" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="afa3-c43a-c8c1-d8b6" name="Jetpack Infantry" hidden="false">
+      <infoLinks>
+        <infoLink id="c439-a54c-e8f3-424e" name="Bulky" hidden="false" targetId="38d5-b6eb-bda8-2497" type="rule"/>
+        <infoLink id="5a76-70dc-96ba-b20b" name="Deep Strike" hidden="false" targetId="d219-2314-4834-c054" type="rule"/>
+        <infoLink id="c798-e87a-cb3f-71c1" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule"/>
+        <infoLink id="ee28-e6ae-60c0-9a21" name="Skybourne" hidden="false" targetId="5c8a-63f9-5cdc-b17b" type="rule"/>
+        <infoLink id="cf3a-e9e9-355b-5dc8" name="Trust Move" hidden="false" targetId="97c4-1c1c-3727-757f" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="25d0-388c-dd16-af9a" name="Flying Monstrous Creature" hidden="false">
+      <infoLinks>
+        <infoLink id="fa10-542a-0695-881b" name="Fear" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule"/>
+        <infoLink id="4457-4b39-1706-fa2f" name="Fearless" hidden="false" targetId="dc70-e199-5525-e78c" type="rule"/>
+        <infoLink id="de69-2e89-6670-7d9b" name="Feel No Pain" hidden="false" targetId="9bdd-5ec7-8dd6-63c0" type="rule"/>
+        <infoLink id="a1f6-7ce4-66dc-9766" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule"/>
+        <infoLink id="ff66-6b55-881d-8c38" name="Move Through Cover" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule"/>
+        <infoLink id="ec55-416e-ec52-0f73" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule"/>
+        <infoLink id="5c77-b606-e3b4-d35e" name="Smash" hidden="false" targetId="4284-18a1-9844-a0bd" type="rule"/>
+        <infoLink id="1af8-4a32-7960-514f" name="Strikedown" hidden="false" targetId="dd83-7fb9-6f58-0c96" type="rule"/>
+        <infoLink id="ea4e-11ab-3468-2987" name="Vector Strike" hidden="false" targetId="5341-7110-d8d4-171a" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
     <categoryEntry id="7fdd-2a97-d0e9-6524" name="Cybernetica Cortex" hidden="false"/>
     <categoryEntry id="37f2-7398-84ee-6fdf" name="Lorica Thallax" hidden="false"/>
   </categoryEntries>
@@ -1796,6 +1846,20 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
       <infoLinks>
         <infoLink id="eced2478-9e6a-d6ac-95c1-2db0c1f4e7d0" hidden="false" targetId="11bec7a8-6060-53c9-572c-0df68bf9fa78" type="rule"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="5255-78fa-f6d0-ddcf" name="Extra Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b668-697f-74f9-b74c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="105f-09f8-e44e-1612" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="6abb-d6b3-e177-c98a" name="Extra Armour" hidden="false" targetId="5283-9b50-3dcd-78e4" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="6dcaf67f-f39b-11b5-789a-63b9646e07d1" name="May take any of the following:" hidden="false" collective="false" import="true">
           <selectionEntries>
@@ -1833,17 +1897,6 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
                 <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="c4fbd23c-b324-ad1c-b684-1543b9a74a48" name="Extra Armour" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="b24c-bc79-76e3-6e59" name="Extra Armour" hidden="false" targetId="5283-9b50-3dcd-78e4" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="bcd5-babe-992d-a368" name="Pintle-mounted Multi-laser or heavy flamer" hidden="false" collective="false" import="true">
@@ -1876,6 +1929,9 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="127f5b51-18a6-9f7c-5d47-f5c63a7487cd" name="May exchange twin-linked Lascannon for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="44c4-c7b2-5fc7-5f71">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="196b-4f52-1905-d1ad" type="max"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="2edf4c3c-f040-7d26-1736-539724d8ff5f" name="Demolisher Cannon" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1889,10 +1945,16 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
               </costs>
             </selectionEntry>
             <selectionEntry id="44c4-c7b2-5fc7-5f71" name="Twin-Linked Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7150-8e75-30d9-8400" type="max"/>
+              </constraints>
               <infoLinks>
                 <infoLink id="5729-3275-9a54-45fd" name="Twin-Linked Lascannon" hidden="false" targetId="2cd1-0fb3-7484-e486" type="profile"/>
                 <infoLink id="cc37-1d5d-be7c-2947" name="Twin-linked" hidden="false" targetId="10a8-8d89-0bec-3e21" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3453,14 +3515,17 @@ but the tank loses the Fast special rule.</description>
         </profile>
       </profiles>
       <rules>
-        <rule id="0830-dd69-e39d-47e0" name="Agile" page="0" hidden="false"/>
-        <rule id="7a6a-c56d-ebb1-95c3" name="Missile Barrage" page="0" hidden="false"/>
+        <rule id="7a6a-c56d-ebb1-95c3" name="Missile Barrage" publicationId="7f243fc5--pubN93391" page="165" hidden="false">
+          <description>A Flyer with this rule may fire up to four of the missiles in a single turn rather than the normal maximum of two. These still count to the total maximum of four weapons it may fire at once, however, according to the standard rules for Zooming Flyers.
+EDITORS NOTE... I think this rule is now redundant, as I think the rules for how many missiles you can fire in 1 turn has been removed in HH Core Rulebook.</description>
+        </rule>
       </rules>
       <infoLinks>
-        <infoLink id="0890-58f6-ef63-ba43" hidden="false" targetId="a7ee7212-6cb4-fca3-b31c-1bdd460878cf" type="profile"/>
-        <infoLink id="3853-cfc0-5f7b-0835" hidden="false" targetId="10c6f36c-5311-c691-21a7-44286f4fcbbc" type="profile"/>
+        <infoLink id="0890-58f6-ef63-ba43" name="Armoured Cockpit" hidden="false" targetId="a7ee7212-6cb4-fca3-b31c-1bdd460878cf" type="profile"/>
+        <infoLink id="3853-cfc0-5f7b-0835" name="Chaff/Flare Launchers" hidden="false" targetId="10c6f36c-5311-c691-21a7-44286f4fcbbc" type="profile"/>
         <infoLink id="9c37-63a0-7ba4-7c1b" name="New InfoLink" hidden="false" targetId="d219-2314-4834-c054" type="rule"/>
         <infoLink id="b427-c3af-ced4-1310" name="New InfoLink" hidden="false" targetId="2e96-21ae-353e-8742" type="rule"/>
+        <infoLink id="55b9-04a4-c212-bb3b" name="Agile (Flyers Only)" hidden="false" targetId="24a2-9868-b6e4-4789" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="9029-0b9a-54bc-cc88" name="May take any of the following:" hidden="false" collective="false" import="true">
@@ -3488,7 +3553,8 @@ but the tank loses the Fast special rule.</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="beb5-1d28-217b-566b" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="5c16-8285-7c53-3bf0" hidden="false" targetId="648c98ba-d7db-2992-ecc5-0c57f82a638a" type="rule"/>
+                <infoLink id="5c16-8285-7c53-3bf0" name="Battle Servitor Control" hidden="false" targetId="648c98ba-d7db-2992-ecc5-0c57f82a638a" type="rule"/>
+                <infoLink id="de4d-54d0-e189-c019" name="Tank Hunters" hidden="false" targetId="5d88-bcf6-e410-6e01" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="15.0"/>
@@ -3499,7 +3565,8 @@ but the tank loses the Fast special rule.</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5b25-c87b-1c06-4603" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="d7d5-2a12-b92d-a32c" hidden="false" targetId="67be34bf-1e03-7a85-29be-e960ecf6ff1a" type="rule"/>
+                <infoLink id="d7d5-2a12-b92d-a32c" name="Ground-tracking Auguries" hidden="false" targetId="67be34bf-1e03-7a85-29be-e960ecf6ff1a" type="rule"/>
+                <infoLink id="dbd0-df67-9fde-adfa" name="Strafing Run" hidden="false" targetId="7911-b951-c819-2f4f" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
@@ -4000,6 +4067,18 @@ but the tank loses the Fast special rule.</description>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="6459-6d8c-ba67-728b" name="Hull-mounted Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e0d0-df14-4d4e-e94b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="21dc-36f9-e1ff-5aae" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="d48a-94e0-44cf-2521" name="Lascannon" hidden="false" targetId="1cce-972c-022a-2590" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="2839-6259-4fec-5b2b" name="May be upgraded to:" hidden="false" collective="false" import="true">
@@ -4067,9 +4146,10 @@ but the tank loses the Fast special rule.</description>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="a01f-45a7-0754-ee1f" name="May exchange any Multi-laser for:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="a01f-45a7-0754-ee1f" name="May exchange any Multi-laser for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="fb0c-6736-47c4-8966">
           <constraints>
-            <constraint field="selections" scope="parent" value="7.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2aec-14d8-66a1-0cf1" type="max"/>
+            <constraint field="selections" scope="parent" value="7.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2aec-14d8-66a1-0cf1" type="min"/>
+            <constraint field="selections" scope="parent" value="7.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd94-f9c3-53e2-d60d" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="07d0-555d-c56f-c01c" name="Heavy flamer" hidden="false" collective="false" import="true" type="upgrade">
@@ -4103,6 +4183,17 @@ but the tank loses the Fast special rule.</description>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fb0c-6736-47c4-8966" name="Multi-laser" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="7.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d89b-40d5-53d0-a9af" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="a0b4-bc13-1f38-ef34" name="Multi-laser" hidden="false" targetId="9e5daeb2-93d7-cac7-9d23-c85b81e46ea2" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4479,7 +4570,8 @@ Precision Shots</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4697-c854-4c51-8d3c" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="5de5-564e-ee12-a667" hidden="false" targetId="67be34bf-1e03-7a85-29be-e960ecf6ff1a" type="rule"/>
+                <infoLink id="5de5-564e-ee12-a667" name="Ground-tracking Auguries" hidden="false" targetId="67be34bf-1e03-7a85-29be-e960ecf6ff1a" type="rule"/>
+                <infoLink id="0b25-2b17-7d2f-babf" name="Strafing Run" hidden="false" targetId="7911-b951-c819-2f4f" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
@@ -5050,6 +5142,9 @@ Precision Shots</description>
         <infoLink id="cefc-537b-d247-f6c9" name="Volkite Charger" hidden="false" targetId="44d2260d-9431-a6d0-6ba3-de04b559ba5b" type="profile"/>
         <infoLink id="53d8-6694-98c1-ac55" name="Deflagrate" hidden="false" targetId="b46a-a3ec-91a5-5001" type="rule"/>
         <infoLink id="79b8-d67d-5a1c-a4dd" name="New InfoLink" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule"/>
+        <infoLink id="7e48-716a-8c7e-10b5" name="Frag Grenades" hidden="false" targetId="d890-1b84-bbd9-12d3" type="profile"/>
+        <infoLink id="2b70-0101-6043-8af0" name="Krak Grenade (Assault)" hidden="false" targetId="ba14-6731-7c9d-ef15" type="profile"/>
+        <infoLink id="d063-0049-2ce2-ae6b" name="Krak Grenade (Shooting)" hidden="false" targetId="d9f7-775b-1047-f335" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="326e-b466-256d-58e5-456c6974657323232344415441232323" hidden="false" targetId="456c6974657323232344415441232323" primary="true"/>
@@ -5299,21 +5394,21 @@ Precision Shots</description>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup id="f77a-e3d0-21d5-16c1" name="Exchange Volkite Charger for:" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="f77a-e3d0-21d5-16c1" name="Exchange Volkite Charger for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="5176-a116-6c19-5245">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b2ff-b46b-96c8-1b6b" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b2ff-b46b-96c8-1b6b" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="08d1-c6fc-29f5-e610" type="max"/>
                   </constraints>
                   <selectionEntries>
                     <selectionEntry id="0908-ae9b-bb93-e579" name="Rotor Cannon" hidden="false" collective="false" import="true" type="upgrade">
                       <modifiers>
                         <modifier type="set" field="hidden" value="true">
                           <conditions>
-                            <condition field="selections" scope="326e-b466-256d-58e5" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5835-8f3c-eef6-a09d" type="equalTo"/>
+                            <condition field="selections" scope="326e-b466-256d-58e5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43f4-695d-4eaa-84e3" type="equalTo"/>
                           </conditions>
                         </modifier>
                       </modifiers>
                       <constraints>
-                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3381-4978-09ed-139c" type="min"/>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="97c4-52c7-24c2-2716" type="max"/>
                       </constraints>
                       <infoLinks>
@@ -5327,12 +5422,11 @@ Precision Shots</description>
                       <modifiers>
                         <modifier type="set" field="hidden" value="true">
                           <conditions>
-                            <condition field="selections" scope="326e-b466-256d-58e5" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0908-ae9b-bb93-e579" type="equalTo"/>
+                            <condition field="selections" scope="326e-b466-256d-58e5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc8c-c16f-d644-ad56" type="equalTo"/>
                           </conditions>
                         </modifier>
                       </modifiers>
                       <constraints>
-                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e554-b307-12ed-a658" type="min"/>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f9c3-91ad-9885-eea6" type="max"/>
                       </constraints>
                       <infoLinks>
@@ -5341,6 +5435,18 @@ Precision Shots</description>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="5.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="5176-a116-6c19-5245" name="Volkite Charger" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d4ab-ac0c-7c08-74b8" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="ff1b-74e1-da97-4c1a" hidden="false" targetId="44d2260d-9431-a6d0-6ba3-de04b559ba5b" type="profile"/>
+                        <infoLink id="8794-d0c0-f877-c796" name="Deflagrate" hidden="false" targetId="b46a-a3ec-91a5-5001" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -5354,15 +5460,19 @@ Precision Shots</description>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="6c8e-03dd-0065-4992" name="Veletarii may exchange their Volkite Chargers for:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="6c8e-03dd-0065-4992" name="Veletarii may exchange their Volkite Chargers for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="9ffb-6178-aa7a-108f">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e0b2-7133-2569-c5a3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e0b2-7133-2569-c5a3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f7e3-60e7-6ae8-35cc" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="43f4-695d-4eaa-84e3" name="Rotor Cannons" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="028b-374c-7784-2a1a" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="3e65-2745-c6cd-a6f1" name="Rotor Cannon" hidden="false" targetId="871025a3-7729-f97d-378d-804c3571cdf3" type="profile"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -5377,6 +5487,18 @@ Precision Shots</description>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="45.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9ffb-6178-aa7a-108f" name="Volkite Charger" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="10af-1dc8-da3a-ec0f" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="e50a-ac7b-7727-82be" hidden="false" targetId="44d2260d-9431-a6d0-6ba3-de04b559ba5b" type="profile"/>
+                <infoLink id="f93e-83d2-685b-983b" name="Deflagrate" hidden="false" targetId="b46a-a3ec-91a5-5001" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -7586,7 +7708,8 @@ Precision Shots</description>
         <infoLink id="b897-a2dd-f2d5-cb21" hidden="false" targetId="dff0089a-4273-26a0-d96f-b5a36d57a18f" type="profile"/>
         <infoLink id="3a6b-cc58-686f-3037" name="New InfoLink" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule"/>
         <infoLink id="6deb-ee93-bb59-8f92" name="K" hidden="false" targetId="d9f7-775b-1047-f335" type="profile"/>
-        <infoLink id="22e6-5021-8a4b-5b72" name="New InfoLink" hidden="false" targetId="d890-1b84-bbd9-12d3" type="profile"/>
+        <infoLink id="22e6-5021-8a4b-5b72" name="Frag Grenades" hidden="false" targetId="d890-1b84-bbd9-12d3" type="profile"/>
+        <infoLink id="6b27-2e11-2663-cc9d" name="Krak Grenade (Assault)" hidden="false" targetId="ba14-6731-7c9d-ef15" type="profile"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="8851-33e8-b8bd-693e" name="Prime" hidden="false" collective="false" import="true" type="upgrade">
@@ -7962,6 +8085,7 @@ Precision Shots</description>
                   </constraints>
                   <infoLinks>
                     <infoLink id="d822-638e-b2fd-4201" hidden="false" targetId="44d2260d-9431-a6d0-6ba3-de04b559ba5b" type="profile"/>
+                    <infoLink id="11ce-1a53-b183-eac1" name="Deflagrate" hidden="false" targetId="b46a-a3ec-91a5-5001" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -8442,7 +8566,7 @@ Assault rules unless otherwise noted.</description>
             <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
             <characteristic name="Front" typeId="46726f6e7423232344415441232323">11</characteristic>
             <characteristic name="Side" typeId="5369646523232344415441232323">11</characteristic>
-            <characteristic name="Rear" typeId="5265617223232344415441232323">0</characteristic>
+            <characteristic name="Rear" typeId="5265617223232344415441232323">10</characteristic>
             <characteristic name="HP" typeId="485023232344415441232323">3</characteristic>
             <characteristic name="Type" typeId="5479706523232344415441232323">Vehicle, Tank, Transport</characteristic>
           </characteristics>
