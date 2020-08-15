@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" revision="105" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="124" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" revision="106" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="124" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="90aa-c2c8-pubN65537" name="Crusade Imperialis"/>
     <publication id="90aa-c2c8-pubN65563" name="AoDRB"/>
@@ -3420,6 +3420,13 @@ D3     Mutation
     <selectionEntry id="c564-b56c-977c-64bd" name="Malcador Heavy Tank, Auxilia" publicationId="90aa-c2c8-pubN73486" page="206" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="419e-f471-6fe1-5c11" name="Malcador Heavy Tank" publicationId="90aa-c2c8-pubN73486" page="206" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
+          <modifiers>
+            <modifier type="set" field="46726f6e7423232344415441232323" value="14">
+              <conditions>
+                <condition field="selections" scope="c564-b56c-977c-64bd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="67f7-1ec1-e702-b21e" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
             <characteristic name="Front" typeId="46726f6e7423232344415441232323">13</characteristic>
@@ -3431,7 +3438,15 @@ D3     Mutation
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="932d-4781-c054-7148" name="Fast" hidden="false" targetId="f4f1-8772-1a1b-4f50" type="rule"/>
+        <infoLink id="932d-4781-c054-7148" name="Fast" hidden="false" targetId="f4f1-8772-1a1b-4f50" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="c564-b56c-977c-64bd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="67f7-1ec1-e702-b21e" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c336-61a6-6f47-52c4" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false"/>
