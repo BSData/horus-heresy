@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" revision="104" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="121" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" revision="105" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="124" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="90aa-c2c8-pubN65537" name="Crusade Imperialis"/>
     <publication id="90aa-c2c8-pubN65563" name="AoDRB"/>
@@ -1635,6 +1635,13 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
             <characteristic name="Type" typeId="5479706523232344415441232323">Super-heavy Vehicle</characteristic>
           </characteristics>
         </profile>
+        <profile id="db8b-e8af-2466-da5e" name="Gorgon Heavy Transporter, Auxilia" hidden="false" typeId="307d-047f-ca13-706b" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="8285-4205-b6cd-8473">40</characteristic>
+            <characteristic name="Fire Points" typeId="b270-a7f9-22b2-3702">Although it appears Open-topped, passengers may not fire out of the Auxilia Gorgon Heavy Transporter</characteristic>
+            <characteristic name="Access Points" typeId="d17b-0342-b1dc-b8e7">Although it appears Open-topped, passengers may only embark and disembark from the front ramp access hatch. Up to two units may embark or disembark per turn.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <rules>
         <rule id="9590-7442-e99f-755b" name="Heavy Armoured Prow" publicationId="90aa-c2c8-pubN73486" page="198" hidden="false">
@@ -1929,6 +1936,9 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
           <description>Unit gains Rage and must make Sweeping Advances if able.</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink id="fc19-3fde-3350-2226" name="Rage" hidden="false" targetId="988c-d4d0-9418-1165" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="25.0"/>
       </costs>
@@ -3115,6 +3125,46 @@ D3     Mutation
                     <condition field="selections" scope="2111-1bc6-317a-5314" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" field="4c4423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96b4-3842-f492-d7cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5361766523232344415441232323" value="4+">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="575323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8836-1dde-d860-bd88" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4123232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="02ca-0436-4d29-a606" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f36-2a1b-4944-4e59" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry (Character)</characteristic>
@@ -3193,6 +3243,48 @@ D3     Mutation
               </constraints>
               <profiles>
                 <profile id="a3e7-b642-0492-d301" name="Auxilia Crew" publicationId="90aa-c2c8-pubN73486" page="208" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                  <modifiers>
+                    <modifier type="increment" field="4c4423232344415441232323" value="1">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96b4-3842-f492-d7cb" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="5323232344415441232323" value="1">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="4923232344415441232323" value="1">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="5361766523232344415441232323" value="6+">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="575323232344415441232323" value="1">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8836-1dde-d860-bd88" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="4123232344415441232323" value="1">
+                      <conditions>
+                        <condition field="selections" scope="3119-6513-bb98-1a37" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f36-2a1b-4944-4e59" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="5423232344415441232323" value="1">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="4923232344415441232323" value="1">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
                     <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
@@ -3338,6 +3430,9 @@ D3     Mutation
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="932d-4781-c054-7148" name="Fast" hidden="false" targetId="f4f1-8772-1a1b-4f50" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="c336-61a6-6f47-52c4" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false"/>
         <categoryLink id="8fe6-c586-aee6-6fbc" name="New CategoryLink" hidden="false" targetId="218b-fafd-986d-56ba" primary="false"/>
@@ -3617,6 +3712,68 @@ D3     Mutation
           </constraints>
           <profiles>
             <profile id="8101-9496-5d9a-66e8" name="Ogryn Brutes" publicationId="90aa-c2c8-pubN73486" page="200" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <modifiers>
+                <modifier type="increment" field="4c4423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96b4-3842-f492-d7cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5361766523232344415441232323" value="3+">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                        <condition field="selections" scope="0390-b19f-2fd3-a817" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="15f0-640c-1e4a-c4a3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" field="5361766523232344415441232323" value="4+">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                            <condition field="selections" scope="0390-b19f-2fd3-a817" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="15f0-640c-1e4a-c4a3" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                            <condition field="selections" scope="0390-b19f-2fd3-a817" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="15f0-640c-1e4a-c4a3" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="increment" field="4123232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8836-1dde-d860-bd88" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
                 <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
@@ -4225,7 +4382,42 @@ D3     Mutation
                 </modifier>
                 <modifier type="increment" field="5423232344415441232323" value="1">
                   <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5361766523232344415441232323" value="4+">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4c4423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96b4-3842-f492-d7cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4123232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="bd53-6efb-ac8d-e3a4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f36-2a1b-4944-4e59" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
                     <condition field="selections" scope="8ef3-b699-2981-1b1a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4797,6 +4989,86 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                 <condition field="selections" scope="343f-b1ae-c962-4f62" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="increment" field="4c4423232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96b4-3842-f492-d7cb" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5323232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="4923232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="5361766523232344415441232323" value="3+">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3fd-ab0b-5ec7-7679" type="equalTo"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="42e1-0228-b803-0c71" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="5361766523232344415441232323" value="2+">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3fd-ab0b-5ec7-7679" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="5361766523232344415441232323" value="4+">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="42e1-0228-b803-0c71" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="381f-2529-f25c-8258" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="4123232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="343f-b1ae-c962-4f62" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f36-2a1b-4944-4e59" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5423232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="4923232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry (Character)</characteristic>
@@ -5352,6 +5624,71 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                     <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" field="4c4423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96b4-3842-f492-d7cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5361766523232344415441232323" value="4+">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                            <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6230-90a6-5547-3dfc" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                            <condition field="selections" scope="ee8f-fcde-88df-7261" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6230-90a6-5547-3dfc" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" field="5361766523232344415441232323" value="3+">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                        <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6230-90a6-5547-3dfc" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="increment" field="575323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8836-1dde-d860-bd88" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4123232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f36-2a1b-4944-4e59" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
@@ -5400,6 +5737,66 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                 <modifier type="increment" field="5423232344415441232323" value="1">
                   <conditions>
                     <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4c4423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96b4-3842-f492-d7cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5361766523232344415441232323" value="4+">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                            <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6230-90a6-5547-3dfc" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                            <condition field="selections" scope="ee8f-fcde-88df-7261" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6230-90a6-5547-3dfc" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" field="5361766523232344415441232323" value="3+">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                        <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6230-90a6-5547-3dfc" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="increment" field="4123232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f36-2a1b-4944-4e59" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5657,6 +6054,71 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                     <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" field="4c4423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96b4-3842-f492-d7cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5361766523232344415441232323" value="4+">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                            <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6230-90a6-5547-3dfc" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                            <condition field="selections" scope="ee8f-fcde-88df-7261" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6230-90a6-5547-3dfc" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" field="5361766523232344415441232323" value="3+">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                        <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6230-90a6-5547-3dfc" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="increment" field="575323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8836-1dde-d860-bd88" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4123232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f36-2a1b-4944-4e59" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
@@ -5719,6 +6181,71 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                 <modifier type="increment" field="5423232344415441232323" value="1">
                   <conditions>
                     <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4c4423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96b4-3842-f492-d7cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5361766523232344415441232323" value="4+">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                            <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6230-90a6-5547-3dfc" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                            <condition field="selections" scope="ee8f-fcde-88df-7261" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6230-90a6-5547-3dfc" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" field="5361766523232344415441232323" value="3+">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                        <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6230-90a6-5547-3dfc" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="increment" field="575323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8836-1dde-d860-bd88" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4123232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f36-2a1b-4944-4e59" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6102,6 +6629,48 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
               </constraints>
               <profiles>
                 <profile id="b793-6b33-b15b-77ac" name="Auxiliary" publicationId="90aa-c2c8-pubN73486" page="205" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                  <modifiers>
+                    <modifier type="increment" field="4c4423232344415441232323" value="1">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96b4-3842-f492-d7cb" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="5323232344415441232323" value="1">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="4923232344415441232323" value="1">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="5361766523232344415441232323" value="4+">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="575323232344415441232323" value="1">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8836-1dde-d860-bd88" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="4123232344415441232323" value="1">
+                      <conditions>
+                        <condition field="selections" scope="0ed3-b2fd-0ca7-588b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e27e-c832-69b2-1872" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="5423232344415441232323" value="1">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="4923232344415441232323" value="1">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
                     <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
@@ -6294,6 +6863,48 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
           </constraints>
           <profiles>
             <profile id="a32a-8240-1255-b99a" name="Militia Fire Team" publicationId="90aa-c2c8-pubN73486" page="196" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <modifiers>
+                <modifier type="increment" field="4c4423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96b4-3842-f492-d7cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5361766523232344415441232323" value="4+">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="575323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8836-1dde-d860-bd88" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4123232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="43bb-4acf-c78a-8a35" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f36-2a1b-4944-4e59" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
                 <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
@@ -6497,6 +7108,46 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                     <condition field="selections" scope="f299-898a-b637-0aa2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" field="4c4423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96b4-3842-f492-d7cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5361766523232344415441232323" value="3+">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="575323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8836-1dde-d860-bd88" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4123232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="f299-898a-b637-0aa2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f36-2a1b-4944-4e59" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
@@ -6545,6 +7196,46 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                 <modifier type="increment" field="5423232344415441232323" value="1">
                   <conditions>
                     <condition field="selections" scope="f299-898a-b637-0aa2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4c4423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96b4-3842-f492-d7cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5361766523232344415441232323" value="3+">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="575323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8836-1dde-d860-bd88" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4123232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="f299-898a-b637-0aa2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f36-2a1b-4944-4e59" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7327,6 +8018,46 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                     <condition field="selections" scope="a05b-1aaf-314c-cbba" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" field="4c4423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96b4-3842-f492-d7cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5361766523232344415441232323" value="4+">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="575323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8836-1dde-d860-bd88" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4123232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="a05b-1aaf-314c-cbba" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f36-2a1b-4944-4e59" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
@@ -7372,6 +8103,46 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                 <modifier type="increment" field="5423232344415441232323" value="1">
                   <conditions>
                     <condition field="selections" scope="a05b-1aaf-314c-cbba" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4c4423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96b4-3842-f492-d7cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5361766523232344415441232323" value="4+">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="575323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8836-1dde-d860-bd88" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4123232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="a05b-1aaf-314c-cbba" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f36-2a1b-4944-4e59" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7584,6 +8355,46 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                     <condition field="selections" scope="c542-ddd4-6b6b-f761" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fbb-1bb9-0360-d6e1" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" field="4c4423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96b4-3842-f492-d7cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5361766523232344415441232323" value="4+">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="575323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8836-1dde-d860-bd88" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4123232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="c542-ddd4-6b6b-f761" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f36-2a1b-4944-4e59" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry (Character)</characteristic>
@@ -7780,6 +8591,46 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                 <modifier type="set" field="556e6974205479706523232344415441232323" value="Cavalry">
                   <conditions>
                     <condition field="selections" scope="c542-ddd4-6b6b-f761" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="875a-e56c-84b6-2b18" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4c4423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96b4-3842-f492-d7cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5361766523232344415441232323" value="4+">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="575323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8836-1dde-d860-bd88" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4123232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="c542-ddd4-6b6b-f761" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f36-2a1b-4944-4e59" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8012,6 +8863,48 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
           </constraints>
           <profiles>
             <profile id="2c2e-3d03-a308-0c6f" name="Levy Auxiliary" publicationId="90aa-c2c8-pubN73486" page="194" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <modifiers>
+                <modifier type="increment" field="4c4423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96b4-3842-f492-d7cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5361766523232344415441232323" value="5+">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="575323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8836-1dde-d860-bd88" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4123232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="7689-6fdc-260e-d041" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f36-2a1b-4944-4e59" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
                 <characteristic name="WS" typeId="575323232344415441232323">2</characteristic>
@@ -8041,6 +8934,48 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
           </constraints>
           <profiles>
             <profile id="09ac-694a-907b-4d0e" name="Custodian" publicationId="90aa-c2c8-pubN73486" page="194" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <modifiers>
+                <modifier type="increment" field="4c4423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96b4-3842-f492-d7cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5361766523232344415441232323" value="4+">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="575323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8836-1dde-d860-bd88" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4123232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="7689-6fdc-260e-d041" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f36-2a1b-4944-4e59" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry (Character)</characteristic>
                 <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
@@ -8917,8 +9852,68 @@ This rule, while similar in function to the Drop Pod Assault special rule, does 
                   </conditions>
                 </modifier>
                 <modifier type="set" field="5361766523232344415441232323" value="4+">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                            <condition field="selections" scope="222a-94eb-eda4-afe1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59de-2acc-79e5-90f1" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                            <condition field="selections" scope="222a-94eb-eda4-afe1" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59de-2acc-79e5-90f1" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="increment" field="4c4423232344415441232323" value="1">
                   <conditions>
-                    <condition field="selections" scope="222a-94eb-eda4-afe1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59de-2acc-79e5-90f1" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96b4-3842-f492-d7cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5361766523232344415441232323" value="3+">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                        <condition field="selections" scope="222a-94eb-eda4-afe1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59de-2acc-79e5-90f1" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="increment" field="575323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8836-1dde-d860-bd88" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4123232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="222a-94eb-eda4-afe1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f36-2a1b-4944-4e59" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8955,11 +9950,6 @@ This rule, while similar in function to the Drop Pod Assault special rule, does 
           <profiles>
             <profile id="bc6f-3519-0f50-3986" name="Rider" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
               <modifiers>
-                <modifier type="set" field="5361766523232344415441232323" value="4+">
-                  <conditions>
-                    <condition field="selections" scope="222a-94eb-eda4-afe1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59de-2acc-79e5-90f1" type="equalTo"/>
-                  </conditions>
-                </modifier>
                 <modifier type="set" field="name" value="Outrider">
                   <conditions>
                     <condition field="selections" scope="222a-94eb-eda4-afe1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8630-9a32-45c6-6be7" type="equalTo"/>
@@ -8968,6 +9958,71 @@ This rule, while similar in function to the Drop Pod Assault special rule, does 
                 <modifier type="set" field="556e6974205479706523232344415441232323" value="Bike">
                   <conditions>
                     <condition field="selections" scope="222a-94eb-eda4-afe1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8630-9a32-45c6-6be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4c4423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="96b4-3842-f492-d7cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a77a-bcf8-90fd-d9e5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5361766523232344415441232323" value="3+">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                        <condition field="selections" scope="222a-94eb-eda4-afe1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59de-2acc-79e5-90f1" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" field="5361766523232344415441232323" value="4+">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                            <condition field="selections" scope="222a-94eb-eda4-afe1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59de-2acc-79e5-90f1" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
+                            <condition field="selections" scope="222a-94eb-eda4-afe1" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59de-2acc-79e5-90f1" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="increment" field="575323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8836-1dde-d860-bd88" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="4123232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="222a-94eb-eda4-afe1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f36-2a1b-4944-4e59" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="4923232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1072-a486-548b-2be7" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -9552,7 +10607,7 @@ A model may only use this weapon if it has successfully charged that player turn
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9783-04f2-30c3-f02b" type="max"/>
       </constraints>
       <entryLinks>
-        <entryLink id="4460-3009-3f20-d74d" hidden="false" collective="false" import="true" targetId="2512-6bcd-7038-84bd" type="selectionEntry">
+        <entryLink id="4460-3009-3f20-d74d" name="Frenzon Dispensers" hidden="false" collective="false" import="true" targetId="2512-6bcd-7038-84bd" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="points" value="50">
               <conditions>
@@ -9569,7 +10624,7 @@ A model may only use this weapon if it has successfully charged that player turn
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="650a-46f7-d277-df5d" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="2f36-2a1b-4944-4e59" hidden="false" collective="false" import="true" targetId="e27e-c832-69b2-1872" type="selectionEntry">
+        <entryLink id="2f36-2a1b-4944-4e59" name="Blade and Fury" hidden="false" collective="false" import="true" targetId="e27e-c832-69b2-1872" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
