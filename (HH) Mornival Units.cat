@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9f87-b468-2001-5e3b" name="Mornival Units Legion Astartes (Fanmade)" revision="23" battleScribeVersion="2.03" authorName="Aus30K / Mourival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="125" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9f87-b468-2001-5e3b" name="Mornival Units Legion Astartes (Fanmade)" revision="24" battleScribeVersion="2.03" authorName="Aus30K / Mourival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="125" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="0e6e-8c19-c436-39c4" name="Mournival Events 3.0 Digital Version"/>
     <publication id="cf75-540e-e446-ecd5" name="Mournival Events FAQ and Experimental Errata v3.1"/>
@@ -8804,7 +8804,7 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
         <cost name="pts" typeId="points" value="60.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="238b-3768-7dd7-7f81" name="Custom Legiones Astartes Character (unfniished)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="238b-3768-7dd7-7f81" name="Custom Legiones Astartes Character" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="f406-1e57-3ccf-a9f7" name="Custom Legion Character" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <modifiers>
@@ -8947,6 +8947,10 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
 ♦ In campaigns Advances can be earned or purchased, as determined by the campaign organiser�</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink id="6f0d-d1fe-1cb0-6d59" name="Character" hidden="false" targetId="eb92-48f9-9a1a-7bd1" primary="false"/>
+        <categoryLink id="16c1-ea88-42d5-64d9" name="Legiones Astartes" hidden="false" targetId="0c56-27b8-a737-c9fd" primary="false"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="f374-e95e-892b-2655" name="Warlord" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -9558,18 +9562,6 @@ A Unit may not use Counter Attack special rule if it used Reaction Fire.</descri
             </selectionEntryGroup>
             <selectionEntryGroup id="af20-f7f7-aae5-a538" name="Special Rules (0+)" hidden="false" collective="false" import="true">
               <selectionEntries>
-                <selectionEntry id="b6f8-48a5-3fee-2ae9" name="Character" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe43-8c09-2e3e-4a90" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d79-3676-a164-c05e" type="min"/>
-                  </constraints>
-                  <categoryLinks>
-                    <categoryLink id="e72a-4f2e-2e62-6e7a" name="Character" hidden="false" targetId="eb92-48f9-9a1a-7bd1" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="5.0"/>
-                  </costs>
-                </selectionEntry>
                 <selectionEntry id="281f-5224-336f-1fda" name="Independent Character" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3005-2898-23d5-8bc4" type="max"/>
@@ -9590,18 +9582,6 @@ A Unit may not use Counter Attack special rule if it used Reaction Fire.</descri
                       <description>Attacks can be split between Melee weapons, declared before rolling to hit. This also allows the character to replace the option for a basic weapon with an additional melee weapon.</description>
                     </rule>
                   </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="5.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="54be-efc7-759f-eace" name="Legiones Astartes" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7711-ae33-39bb-2d07" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c868-0c22-480b-bef9" type="max"/>
-                  </constraints>
-                  <categoryLinks>
-                    <categoryLink id="5d09-32e0-2389-089a" name="Legiones Astartes" hidden="false" targetId="0c56-27b8-a737-c9fd" primary="false"/>
-                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="5.0"/>
                   </costs>
