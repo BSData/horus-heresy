@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9f87-b468-2001-5e3b" name="Mornival Units Legion Astartes (Fanmade)" revision="22" battleScribeVersion="2.03" authorName="Aus30K / Mourival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="125" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9f87-b468-2001-5e3b" name="Mornival Units Legion Astartes (Fanmade)" revision="23" battleScribeVersion="2.03" authorName="Aus30K / Mourival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="125" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="0e6e-8c19-c436-39c4" name="Mournival Events 3.0 Digital Version"/>
     <publication id="cf75-540e-e446-ecd5" name="Mournival Events FAQ and Experimental Errata v3.1"/>
@@ -9606,7 +9606,9 @@ A Unit may not use Counter Attack special rule if it used Reaction Fire.</descri
                     <cost name="pts" typeId="points" value="5.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="2241-f7c0-d1e3-20cd" name="Master of the Legion" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="4f27-76af-e085-dc17" name="Master of the Legion (Custom Char)" hidden="false" collective="false" import="true" targetId="2241-f7c0-d1e3-20cd" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
                       <conditionGroups>
@@ -9618,7 +9620,7 @@ A Unit may not use Counter Attack special rule if it used Reaction Fire.</descri
                         </conditionGroup>
                       </conditionGroups>
                     </modifier>
-                    <modifier type="set" field="d32c-1e22-8773-1c93" value="1.0">
+                    <modifier type="set" field="3304-affe-c8ea-9d11" value="1.0">
                       <conditionGroups>
                         <conditionGroup type="or">
                           <conditions>
@@ -9628,10 +9630,7 @@ A Unit may not use Counter Attack special rule if it used Reaction Fire.</descri
                         </conditionGroup>
                       </conditionGroups>
                     </modifier>
-                    <modifier type="set" field="14be-d676-6d97-f200" value="1.0">
-                      <conditions>
-                        <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d2a8-fe6d-b793-225b" type="equalTo"/>
-                      </conditions>
+                    <modifier type="set" field="4657-e1d0-2ec8-a203" value="1.0">
                       <conditionGroups>
                         <conditionGroup type="or">
                           <conditions>
@@ -9643,17 +9642,11 @@ A Unit may not use Counter Attack special rule if it used Reaction Fire.</descri
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="14be-d676-6d97-f200" type="max"/>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d32c-1e22-8773-1c93" type="min"/>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4657-e1d0-2ec8-a203" type="max"/>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3304-affe-c8ea-9d11" type="min"/>
                   </constraints>
-                  <categoryLinks>
-                    <categoryLink id="a6e4-8113-791d-9c0a" name="New CategoryLink" hidden="false" targetId="600a-fe5d-71ba-e067" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="5.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="1354-60df-eaba-e752" name="Specialisation &amp; Legion Special Rules" hidden="false" collective="false" import="true">
               <selectionEntries>
@@ -11227,7 +11220,7 @@ A Unit may not use Counter Attack special rule if it used Reaction Fire.</descri
                   </modifiers>
                   <rules>
                     <rule id="ec88-47a2-ee43-0a8f" name="Half Mag Rip" hidden="false">
-                      <description>May make 3 shots with Pistol weapons. (Seeking clarification on this)</description>
+                      <description>May make 3 shots with Pistol weapons instead of the normal amount.</description>
                     </rule>
                   </rules>
                   <costs>
