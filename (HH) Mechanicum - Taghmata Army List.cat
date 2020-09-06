@@ -6317,6 +6317,9 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
                     <infoLink id="9e23-b2fd-1eef-aa9b" name="Gets Hot" hidden="false" targetId="f4fd-d519-4769-5510" type="rule"/>
                     <infoLink id="876a-b1eb-e63f-3a2b" name="Lance" hidden="false" targetId="98ed-3a29-c86b-455d" type="rule"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
@@ -12714,6 +12717,9 @@ Construct shields have an Armour value of 11. A Glancing or Penetrating hit (or 
       </costs>
     </selectionEntry>
     <selectionEntry id="2810-d670-6b11-0e73" name="Custom Mechanicum Character" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3bae-ced0-708d-ede4" type="max"/>
+      </constraints>
       <profiles>
         <profile id="f3d7-6c4f-275d-4f8d" name="Custom Mechanicum Character" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <modifiers>
@@ -14962,6 +14968,9 @@ Construct shields have an Armour value of 11. A Glancing or Penetrating hit (or 
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
