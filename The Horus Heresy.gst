@@ -42,6 +42,7 @@
     <publication id="ca571888--pubN108209" name="Death from the Skies"/>
     <publication id="ca571888--pubN112761" name="LA:AoDAL"/>
     <publication id="ca571888--pubN113187" name="LA:AoDL"/>
+    <publication id="690c-3e82-3080-6bc0" name="HH9: Crusade"/>
   </publications>
   <costTypes>
     <costType id="points" name="pts" defaultCostLimit="0.0" hidden="false"/>
