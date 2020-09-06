@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="125" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="126" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN66489" name="HH:MT"/>
@@ -200,6 +200,7 @@
     <categoryEntry id="a684-3954-1c52-f1a5" name="Mournival Centurion Unavailble" hidden="false"/>
     <categoryEntry id="c00c-5a5c-3d86-f5a5" name="Mournival Centurion Unrestricted" hidden="false"/>
     <categoryEntry id="a660-a665-c4aa-5e82" name="Superheavy Options" hidden="false"/>
+    <categoryEntry id="a7c6-e380-f10f-9798" name="Mechanicum" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="61f7-09c7-326c-8c49" name="New ForceEntry" hidden="true">
@@ -5974,8 +5975,13 @@ or Gargantuan Creatures. </description>
           <modifiers>
             <modifier type="increment" field="425323232344415441232323" value="1">
               <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d08-c42e-843d-5e8c" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="093f-6472-95d0-553f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c095-eda9-2b2e-f241" repeats="1" roundUp="false"/>
               </repeats>
+            </modifier>
+            <modifier type="increment" field="425323232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="093f-6472-95d0-553f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ab7-411d-ca4f-4e9c" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
           <characteristics>
@@ -6084,6 +6090,15 @@ or Gargantuan Creatures. </description>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </entryLink>
+            <entryLink id="04eb-22b1-f5a1-4092" name="Autokrator Control" hidden="true" collective="false" import="true" targetId="8ab7-411d-ca4f-4e9c" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c6-e380-f10f-9798" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="aa98-3e05-bd91-610f" name="May take up to two: (Baneblade/Shadowsword Sponsons)" hidden="false" collective="false" import="true">
@@ -6128,8 +6143,13 @@ or Gargantuan Creatures. </description>
           <modifiers>
             <modifier type="increment" field="425323232344415441232323" value="1">
               <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d08-c42e-843d-5e8c" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="27c7-0760-039c-2cd7" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7075-63d8-db77-0b79" repeats="1" roundUp="false"/>
               </repeats>
+            </modifier>
+            <modifier type="increment" field="425323232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="27c7-0760-039c-2cd7" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ab7-411d-ca4f-4e9c" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
           <characteristics>
@@ -6197,6 +6217,15 @@ or Gargantuan Creatures. </description>
               <costs>
                 <cost name="pts" typeId="points" value="5.0"/>
               </costs>
+            </entryLink>
+            <entryLink id="bfdf-2307-3fbe-a5fd" name="Autokrator Control" hidden="true" collective="false" import="true" targetId="8ab7-411d-ca4f-4e9c" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c6-e380-f10f-9798" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -6352,6 +6381,13 @@ or Gargantuan Creatures. </description>
           </constraints>
           <profiles>
             <profile id="b5a8-ea2a-f13e-444d" name="Macharius" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
+              <modifiers>
+                <modifier type="increment" field="425323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="5721-e2cd-59fe-751b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ab7-411d-ca4f-4e9c" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
                 <characteristic name="Front" typeId="46726f6e7423232344415441232323">14</characteristic>
@@ -6491,6 +6527,17 @@ or Gargantuan Creatures. </description>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="c91d-6ff2-e04c-c2d7" name="Autokrator Control" hidden="true" collective="false" import="true" targetId="8ab7-411d-ca4f-4e9c" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c6-e380-f10f-9798" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -6520,6 +6567,13 @@ or Gargantuan Creatures. </description>
           </constraints>
           <profiles>
             <profile id="a21d-ca72-b918-ea57" name="Macharius Omega" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
+              <modifiers>
+                <modifier type="increment" field="425323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="775e-bddc-018c-70f2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ab7-411d-ca4f-4e9c" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
                 <characteristic name="Front" typeId="46726f6e7423232344415441232323">14</characteristic>
@@ -6656,6 +6710,17 @@ or Gargantuan Creatures. </description>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="7a85-8ec0-da3f-1e7d" name="Autokrator Control" hidden="true" collective="false" import="true" targetId="8ab7-411d-ca4f-4e9c" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c6-e380-f10f-9798" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -6677,6 +6742,13 @@ or Gargantuan Creatures. </description>
           </constraints>
           <profiles>
             <profile id="b076-a786-eede-ce9c" name="Macharius Vanquisher" page="" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
+              <modifiers>
+                <modifier type="increment" field="425323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="90b5-7741-f1ae-0e4d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ab7-411d-ca4f-4e9c" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
                 <characteristic name="Front" typeId="46726f6e7423232344415441232323">14</characteristic>
@@ -6806,6 +6878,17 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="9bc4-7704-fd47-eab4" name="Autokrator Control" hidden="true" collective="false" import="true" targetId="8ab7-411d-ca4f-4e9c" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c6-e380-f10f-9798" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -6827,6 +6910,13 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
           </constraints>
           <profiles>
             <profile id="2a60-6b16-9dee-6aae" name="Macharius Vulcan" page="" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
+              <modifiers>
+                <modifier type="increment" field="425323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="87c0-d55a-fd71-b37d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ab7-411d-ca4f-4e9c" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
                 <characteristic name="Front" typeId="46726f6e7423232344415441232323">14</characteristic>
@@ -6975,6 +7065,17 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="45df-2903-92ad-0bf1" name="Autokrator Control" hidden="true" collective="false" import="true" targetId="8ab7-411d-ca4f-4e9c" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c6-e380-f10f-9798" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -6990,8 +7091,13 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
           <modifiers>
             <modifier type="increment" field="425323232344415441232323" value="1">
               <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d08-c42e-843d-5e8c" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="ed2c-8dcf-d0d2-720e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="920e-357e-5b73-2879" repeats="1" roundUp="false"/>
               </repeats>
+            </modifier>
+            <modifier type="increment" field="425323232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="ed2c-8dcf-d0d2-720e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ab7-411d-ca4f-4e9c" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
           <characteristics>
@@ -7070,6 +7176,15 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
                 <cost name="pts" typeId="points" value="25.0"/>
               </costs>
             </entryLink>
+            <entryLink id="3b41-1e23-12f6-ddd8" name="Autokrator Control" hidden="true" collective="false" import="true" targetId="8ab7-411d-ca4f-4e9c" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c6-e380-f10f-9798" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="6507-482b-b553-2db4" name="May take up to two: (Baneblade/Shadowsword Sponsons)" hidden="false" collective="false" import="true">
@@ -7114,8 +7229,13 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
           <modifiers>
             <modifier type="increment" field="425323232344415441232323" value="1">
               <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d08-c42e-843d-5e8c" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="7d56-481b-6478-681e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7538-61d3-7a6f-ea9f" repeats="1" roundUp="false"/>
               </repeats>
+            </modifier>
+            <modifier type="increment" field="425323232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="7d56-481b-6478-681e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ab7-411d-ca4f-4e9c" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
           <characteristics>
@@ -7229,6 +7349,15 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </entryLink>
+            <entryLink id="7301-93ce-b060-637b" name="Autokrator Control" hidden="true" collective="false" import="true" targetId="8ab7-411d-ca4f-4e9c" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c6-e380-f10f-9798" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="a23a-8d43-cbc8-1dd4" name="May take up to two: (Baneblade/Shadowsword Sponsons)" hidden="false" collective="false" import="true">
@@ -7273,8 +7402,13 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
           <modifiers>
             <modifier type="increment" field="425323232344415441232323" value="1">
               <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d08-c42e-843d-5e8c" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="e5ad-07be-63c1-71e3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d08-c42e-843d-5e8c" repeats="1" roundUp="false"/>
               </repeats>
+            </modifier>
+            <modifier type="increment" field="425323232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="e5ad-07be-63c1-71e3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ab7-411d-ca4f-4e9c" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
           <characteristics>
@@ -7356,6 +7490,15 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </entryLink>
+            <entryLink id="c46d-67e2-b4cb-b245" name="Autokrator Control" hidden="true" collective="false" import="true" targetId="8ab7-411d-ca4f-4e9c" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c6-e380-f10f-9798" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -7419,6 +7562,11 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
                 <modifier type="set" field="5369646523232344415441232323" value="14">
                   <conditions>
                     <condition field="selections" scope="2839-5086-88aa-bda9" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="f751-77fd-07bb-82f2" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="425323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="2839-5086-88aa-bda9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ab7-411d-ca4f-4e9c" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7516,6 +7664,15 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
           </selectionEntryGroups>
           <entryLinks>
             <entryLink id="5d13-b209-f7a1-f22d" name="Searchlight and Smoke Launchers" hidden="false" collective="false" import="true" targetId="1ecc-b3b6-1fe1-8bd5" type="selectionEntry"/>
+            <entryLink id="5b2a-60a3-5daa-57cf" name="Autokrator Control" hidden="true" collective="false" import="true" targetId="8ab7-411d-ca4f-4e9c" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c6-e380-f10f-9798" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="250.0"/>
@@ -7548,6 +7705,13 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
           </constraints>
           <profiles>
             <profile id="50cd-1bcf-8bcf-8583" name="Dominus" page="" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
+              <modifiers>
+                <modifier type="increment" field="425323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="299b-dbf1-2826-392e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ab7-411d-ca4f-4e9c" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
                 <characteristic name="Front" typeId="46726f6e7423232344415441232323">14</characteristic>
@@ -7643,6 +7807,15 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
           </selectionEntryGroups>
           <entryLinks>
             <entryLink id="2bee-27d8-3b93-be54" name="Searchlight and Smoke Launchers" hidden="false" collective="false" import="true" targetId="1ecc-b3b6-1fe1-8bd5" type="selectionEntry"/>
+            <entryLink id="e953-0f78-17d7-4bdf" name="Autokrator Control" hidden="true" collective="false" import="true" targetId="8ab7-411d-ca4f-4e9c" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c6-e380-f10f-9798" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="280.0"/>
@@ -7662,6 +7835,13 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
           </constraints>
           <profiles>
             <profile id="5d0f-1004-82bd-f25f" name="Praetor" page="" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
+              <modifiers>
+                <modifier type="increment" field="425323232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="5ee5-1184-f11b-30a3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ab7-411d-ca4f-4e9c" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
                 <characteristic name="Front" typeId="46726f6e7423232344415441232323">14</characteristic>
@@ -7738,6 +7918,15 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
           </selectionEntryGroups>
           <entryLinks>
             <entryLink id="7dc6-1c54-4c80-b3cf" name="Searchlight and Smoke Launchers" hidden="false" collective="false" import="true" targetId="1ecc-b3b6-1fe1-8bd5" type="selectionEntry"/>
+            <entryLink id="e93f-2d69-d38f-1830" name="Autokrator Control" hidden="true" collective="false" import="true" targetId="8ab7-411d-ca4f-4e9c" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c6-e380-f10f-9798" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -7937,6 +8126,13 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
     <selectionEntry id="d71e-4dae-bd03-d1e9" name="Marauder Bomber" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="ad8f-7fa3-276a-28a1" name="Marauder Bomber" hidden="false" typeId="3a08-ea03-a598-8615" typeName="Flyer">
+          <modifiers>
+            <modifier type="increment" field="9878-e3f6-b7b4-7225" value="1">
+              <conditions>
+                <condition field="selections" scope="d71e-4dae-bd03-d1e9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ab7-411d-ca4f-4e9c" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="BS" typeId="9878-e3f6-b7b4-7225">3</characteristic>
             <characteristic name="Front" typeId="3a4e-bc1d-4a12-7176">11</characteristic>
@@ -8090,6 +8286,17 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink id="be17-06e3-14e4-e729" name="Autokrator Control" hidden="true" collective="false" import="true" targetId="8ab7-411d-ca4f-4e9c" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c6-e380-f10f-9798" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -8102,6 +8309,13 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
       </constraints>
       <profiles>
         <profile id="ae11-bec2-64f9-94b3" name="Marauder Destroyer" hidden="false" typeId="3a08-ea03-a598-8615" typeName="Flyer">
+          <modifiers>
+            <modifier type="increment" field="9878-e3f6-b7b4-7225" value="1">
+              <conditions>
+                <condition field="selections" scope="7b5a-b3c4-05fd-4a42" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ab7-411d-ca4f-4e9c" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="BS" typeId="9878-e3f6-b7b4-7225">3</characteristic>
             <characteristic name="Front" typeId="3a4e-bc1d-4a12-7176">11</characteristic>
@@ -8275,6 +8489,17 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink id="e165-49c1-4156-93b4" name="Autokrator Control" hidden="true" collective="false" import="true" targetId="8ab7-411d-ca4f-4e9c" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c6-e380-f10f-9798" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -8947,6 +9172,22 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8ab7-411d-ca4f-4e9c" name="Autokrator Control" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43ee-ea55-1753-12e6" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="de3a-cf03-7873-a4a8" name="Autokrator Control" publicationId="ca571888--pubN66580" page="21" hidden="false">
+          <description>Representing the skilled Tech-Priest weapon-savants and gun-servitor control systems of the Autokrator, these super-heavy vehicles may be upgraded to BS 4 and have the Blessed Autosimulacra special rule for +20 points.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="5fdc-2cc2-f24b-79ab" name="Blessed Autosimulacra" hidden="false" targetId="6ce7-5e83-a2dd-571e" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="20.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
