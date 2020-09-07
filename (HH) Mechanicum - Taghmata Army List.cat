@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="100" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="126" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="101" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="126" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="cf03-f607-pubN65537" name="Horus Heresy: Taghmata Army List"/>
     <publication id="cf03-f607-pubN65563" name="AoDRB"/>
@@ -6170,7 +6170,7 @@ Buildings and Fortifications D</description>
             <characteristic name="Range" typeId="52616e676523232344415441232323">Unlimited</characteristic>
             <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
             <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance D3, Large Blast, Pinning</characteristic>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance D3, Large Blast, Pinning, Armourbane</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6180,9 +6180,9 @@ Buildings and Fortifications D</description>
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="020c-c286-f978-19ff" hidden="false" targetId="fe2f-3220-3fef-b177" type="rule"/>
-        <infoLink id="e3fb-7daf-a7f7-d115" name="Tank Hunters" hidden="false" targetId="5d88-bcf6-e410-6e01" type="rule"/>
+        <infoLink id="020c-c286-f978-19ff" name="Wrecker" hidden="false" targetId="fe2f-3220-3fef-b177" type="rule"/>
         <infoLink id="c8b9-e223-5fd7-f8f2" name="Pinning" hidden="false" targetId="f624-f475-e5ec-0dfa" type="rule"/>
+        <infoLink id="2bb4-ea50-10d8-d239" name="Armourbane" hidden="false" targetId="e182-50cd-0867-9a8d" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="35.0"/>
@@ -6846,7 +6846,8 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
               <description>Inflicts D3 Hammer of Wrath attacks. Roll once for the entire unit.</description>
             </rule>
             <rule id="22e0-fcfc-79ea-e42d" name="Crusader*" hidden="false">
-              <description>*must be in range of a cortex controller for this rule to take effect.</description>
+              <description>A unit that contains at least one model with this special rule rolls an extra dice when making Run moves, and uses the highest result rolled. In addition, a unit that contains at least one model with this special rule adds D3 to its Sweeping Advance totals (roll each time).
+*must be in range of a cortex controller for this rule to take effect.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -6872,6 +6873,18 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
               <infoLinks>
                 <infoLink id="1990-5e3c-4a8e-b629" name="Krak Missile" hidden="false" targetId="1e33-d8ec-f833-b584" type="profile"/>
                 <infoLink id="e30e-985f-48ca-7629" name="Ignores Cover" hidden="false" targetId="acf2-681d-4188-94d7" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="722c-832e-89e3-e7b6" name="Automantic Shielding" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f8a1-6748-e6a9-bf96" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e10b-9d0f-c48a-27fd" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="4896-10e2-a4ad-9d11" hidden="false" targetId="6eb5b812-8b8b-9e7c-279e-c9e9c93fefe9" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -7893,6 +7906,7 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
         <infoLink id="af68-7e84-622e-7307" name="Stubborn" hidden="false" targetId="7be5-30af-1a02-0a89" type="rule"/>
         <infoLink id="f7d1-9450-16b4-97c4" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule"/>
         <infoLink id="ad88-5430-67f4-88da" name="Patris Cybernetica" hidden="false" targetId="a41e-00bb-2ace-734f" type="rule"/>
+        <infoLink id="6646-ab3d-a6e0-34e6" name="Feel No Pain (5+)" hidden="false" targetId="dbf6-2f12-bb4a-517c" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c4d5-adfa-42d6-3677" name="New CategoryLink" hidden="false" targetId="00fd-d5c9-e55d-c236" primary="false"/>
@@ -15687,6 +15701,8 @@ All models with a Cybernetica Cortex gain +1 to their Initiative characteristic.
               <infoLinks>
                 <infoLink id="b7c2-6875-11d5-e92a" name="Bombardment" hidden="false" targetId="fbb5-204d-7ade-9f91" type="profile"/>
                 <infoLink id="5581-d943-51d9-a8a4" name="Bombardment" hidden="false" targetId="9eb7-96bc-4249-85a5" type="rule"/>
+                <infoLink id="0624-7594-0401-847d" name="Armourbane" hidden="false" targetId="e182-50cd-0867-9a8d" type="rule"/>
+                <infoLink id="1306-3f76-4a1e-2861" name="Pinning" hidden="false" targetId="f624-f475-e5ec-0dfa" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="15.0"/>
