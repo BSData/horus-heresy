@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" revision="106" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="124" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" revision="107" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="127" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="90aa-c2c8-pubN65537" name="Crusade Imperialis"/>
     <publication id="90aa-c2c8-pubN65563" name="AoDRB"/>
@@ -7632,7 +7632,7 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink id="a77f-881e-9fc6-7653" hidden="false" collective="false" import="true" targetId="11ce-7e74-239c-fee7" type="selectionEntry">
+            <entryLink id="a77f-881e-9fc6-7653" name="Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="11ce-7e74-239c-fee7" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -7667,11 +7667,6 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
             </entryLink>
             <entryLink id="e924-f45e-dedd-b358" name="Terrax Pattern Termite Assault Drill" hidden="false" collective="false" import="true" targetId="1b44-8c50-86ae-9a67" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d18f-6d15-942c-0ac5" type="equalTo"/>
-                  </conditions>
-                </modifier>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -9409,57 +9404,15 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       </costs>
     </selectionEntry>
     <selectionEntry id="1b44-8c50-86ae-9a67" name="Terrax Pattern Termite Assault Drill" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="177e-631e-36f5-d4dd" name="Terrax Pattern Termite Assault Drill" publicationId="90aa-c2c8-pubN110519" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
-          <characteristics>
-            <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
-            <characteristic name="Front" typeId="46726f6e7423232344415441232323">12</characteristic>
-            <characteristic name="Side" typeId="5369646523232344415441232323">12</characteristic>
-            <characteristic name="Rear" typeId="5265617223232344415441232323">10</characteristic>
-            <characteristic name="HP" typeId="485023232344415441232323">3</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Tank, Transport</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="ec21-e085-c763-e48a" name="Terrax Pattern Termite Assault Drill (Transport)" hidden="false" typeId="307d-047f-ca13-706b" typeName="Transport">
-          <characteristics>
-            <characteristic name="Capacity" typeId="8285-4205-b6cd-8473">12*</characteristic>
-            <characteristic name="Fire Points" typeId="b270-a7f9-22b2-3702">None</characteristic>
-            <characteristic name="Access Points" typeId="d17b-0342-b1dc-b8e7">Two access hatches**</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="713e-a9b4-a3ce-d1a6" name="Crawling Advance" hidden="false">
-          <description>A Termite Assault Drill may never move faster than Combat Speed or move Flat Out.</description>
-        </rule>
-        <rule id="c9de-425e-bace-6cb3" name="Death From Below" hidden="false">
-          <description>Instead of the usual rules for Deep Striking, when a Subterranean Assault vehicle enters play via Deep Strike, place a Large Blast (5&quot;) marker on the table and scatter this to determine the final position of its arrival as per the Deep Strike special rule.
-
-Should this marker scatter on top of impassable terrain, a building, ruin, fortification, vehicle or any unit engaged in combat, reduce the scatter distance by the minimum required to avoid the obstacle. If the marker representing the arrival of the Termite was displaced in this way by a vehicle or fortification, the closest vehicle or fortification to the marker immediately suffers a Str 10 AP- hit
-– vehicles are hit on their Side armour. If the arrival of the Termite was instead displaced by any units engaged in close combat, all units in that combat suffer D6 Str 6 AP 4 hits. After the final position of the marker is determined, if the marker covers or touches any enemy or friendly unit, then that unit also suffers D6 Str 6 AP 4 hits.
-
-After all damage is resolved, the Subterranean Assault vehicle may be placed in any orientation so long as the centre of the Large Blast (5&quot;) marker is underneath part of the vehicle’s hull and it remains 1&quot; away from any fortification, vehicle or unit engaged in combat. The area under the Large Blast (5&quot;) marker is now difficult terrain for the rest of the game. Players may, should they wish to, instead
-represent this area with a piece of crater terrain. 
-Should a Subterranean Assault vehicle be placed on top of any unit which does not pose an obstacle to its arrival as described above, the Death from Below special rule allows it to be placed as though the unit was not there. If some models in the unit would end up underneath the Subterranean Assault vehicle when it reaches its final position (it makes no difference whether the unit is Falling
-Back or not), these models must be moved by the controlling player out of the way by the shortest distance, leaving at least 1&quot; between them and the Subterranean Assault vehicle (and indeed any other unit) whilst maintaining unit coherency and staying on the tabletop. Any models that cannot manage this are crushed and removed from play as casualties with no saves allowed.</description>
-        </rule>
-        <rule id="255d-2ce6-727e-364b" name="Melta Cutters" hidden="false">
-          <description>A Termite Assault Drill ignores difficult terrain and dangerous terrain. In addition, it adds +2 to its Strength when making ramming attacks against fortifications.</description>
-        </rule>
-        <rule id="6b3b-8961-6c32-a5d4" name="Subterranean Assault" hidden="false">
-          <description>Should the Termite Assault Drill, and any unit it transports, enter play using the Deep Strike special rule, they count as being a Subterranean Assault vehicle for the wider use of the Subterranean Assault rule for your army. At the beginning of the controlling player’s first turn, they must choose half of their Subterranean Assault vehicles held in reserve for the purpose of Deep Striking (rounding up) to make a Subterranean Assault. These units arrive on the controlling player’s first player turn. The arrival of any
-remaining Subterranean Assault vehicles in the player’s force is rolled for as usual for the mission.
-
-This rule, while similar in function to the Drop Pod Assault special rule, does not interact with it for the purposes of calculating how many units may arrive on the table by Deep Strike. Armies may consist of units with both the Drop Pod Assault and Subterranean Assault rules unless otherwise noted.</description>
-        </rule>
-        <rule id="2138-c152-f007-3485" name="Terrax Pattern Termite Assault Drill" hidden="false">
-          <description>* May not carry models with the Bulky, Very Bulky or Extremely Bulky special rules
-
-** In practice you may choose to open and embark/disembark from a single hatch on either side of the hull.</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink id="68e5-9288-bd4a-9530" name="Deep Strike" hidden="false" targetId="d219-2314-4834-c054" type="rule"/>
+        <infoLink id="4a77-3484-4213-7de5" name="Terrax Pattern Termite Assault Drill (Transport)" hidden="false" targetId="9902-1e3c-b99c-f7cf" type="profile"/>
+        <infoLink id="c5d3-df1e-b78c-2130" name="Crawling Advance" hidden="false" targetId="d130-69b4-bcb9-7454" type="rule"/>
+        <infoLink id="3d7a-f7d7-3456-1973" name="Death From Below" hidden="false" targetId="3cd1-bdfb-4585-182c" type="rule"/>
+        <infoLink id="de33-4f9e-da41-d34c" name="Melta Cutters" hidden="false" targetId="1ace-c133-de63-e4f0" type="rule"/>
+        <infoLink id="952f-ff08-a3fa-8685" name="Subterranean Assault" hidden="false" targetId="1679-b036-dc3a-c6a6" type="rule"/>
+        <infoLink id="47af-0b22-f10d-aa43" name="Terrax Pattern Termite Assault Drill" hidden="false" targetId="cb11-e201-f31b-d74e" type="rule"/>
+        <infoLink id="d46d-e5ba-7670-35c6" name="Terrax Pattern Termite Assault Drill" hidden="false" targetId="70c1-f71a-6ceb-0cab" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a041-1473-958f-103f" name="New CategoryLink" hidden="false" targetId="e4e0-c5d1-3430-f101" primary="false"/>
@@ -9482,15 +9435,10 @@ This rule, while similar in function to the Drop Pod Assault special rule, does 
         </selectionEntryGroup>
         <selectionEntryGroup id="2277-a1e7-86d5-5d77" name="May take any of the following" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink id="9c7a-f245-d753-60e9" name="Armoured Ceramite" hidden="false" collective="false" import="true" targetId="eef6-a613-e479-7274" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="points" value="20"/>
-              </modifiers>
-            </entryLink>
             <entryLink id="f245-43b3-795f-64f0" name="Extra Armour" hidden="false" collective="false" import="true" targetId="ad5d-6b1a-2708-3616" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="points" value="5"/>
-              </modifiers>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -9573,13 +9521,13 @@ This rule, while similar in function to the Drop Pod Assault special rule, does 
           </selectionEntries>
           <entryLinks>
             <entryLink id="0f2c-8214-fdcc-a97f" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="ead9-305c-a7e7-323e" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="points" value="10"/>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9952-606c-7c67-f5bc" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bed-223b-6122-2f22" type="max"/>
               </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -9601,24 +9549,24 @@ This rule, while similar in function to the Drop Pod Assault special rule, does 
       </costs>
     </selectionEntry>
     <selectionEntry id="8bbc-b165-3c51-623d" name="Carnodon Strike Squadron" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="dd1b-a652-3da1-5f78" name="Carnodon Strike Squadron" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
-          <characteristics>
-            <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
-            <characteristic name="Front" typeId="46726f6e7423232344415441232323">12</characteristic>
-            <characteristic name="Side" typeId="5369646523232344415441232323">11</characteristic>
-            <characteristic name="Rear" typeId="5265617223232344415441232323">10</characteristic>
-            <characteristic name="HP" typeId="485023232344415441232323">3</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Vehicle (Tank)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <selectionEntries>
         <selectionEntry id="680b-ee72-feeb-5acd" name="Carnodon Tank" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a625-3b6e-4476-b60d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97d9-de32-fa28-f3d7" type="min"/>
           </constraints>
+          <profiles>
+            <profile id="f2f3-6e3f-2702-935f" name="Carnodon Strike Squadron" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
+              <characteristics>
+                <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
+                <characteristic name="Front" typeId="46726f6e7423232344415441232323">12</characteristic>
+                <characteristic name="Side" typeId="5369646523232344415441232323">11</characteristic>
+                <characteristic name="Rear" typeId="5265617223232344415441232323">10</characteristic>
+                <characteristic name="HP" typeId="485023232344415441232323">3</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Vehicle (Tank)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <selectionEntries>
             <selectionEntry id="b892-5200-7994-59c8" name="Heavy Stubber" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -9684,7 +9632,7 @@ This rule, while similar in function to the Drop Pod Assault special rule, does 
                     <infoLink id="8307-7532-c7a2-7e06" name="Autocannon" hidden="false" targetId="d55f-eed0-800f-5789" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="10.0"/>
+                    <cost name="pts" typeId="points" value="5.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="c3e8-a070-abb4-30d1" name="Two Heavy Bolters" hidden="false" collective="false" import="true" type="upgrade">

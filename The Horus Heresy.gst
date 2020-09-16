@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="126" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="127" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN66489" name="HH:MT"/>
@@ -11959,6 +11959,34 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
     <rule id="11bec7a8-6060-53c9-572c-0df68bf9fa78" name="Explorer Adaptation" publicationId="ca571888--pubN84158" page="252" hidden="false">
       <description>Vehicles with this special rule have a 6+ invulnerable save against weapons with the Blast or Template type, count as Void Hardened, and must re-roll failed Dangerous Terrain tests.</description>
     </rule>
+    <rule id="d130-69b4-bcb9-7454" name="Crawling Advance" publicationId="690c-3e82-3080-6bc0" page="198" hidden="false">
+      <description>A Termite Assault Drill may never move faster than Combat Speed or move Flat Out.</description>
+    </rule>
+    <rule id="3cd1-bdfb-4585-182c" name="Death From Below" publicationId="690c-3e82-3080-6bc0" page="198" hidden="false">
+      <description>Instead of the usual rules for Deep Striking, when a Subterranean Assault vehicle enters play via Deep Strike, place a Large Blast (5&quot;) marker on the table and scatter this to determine the final position of its arrival as per the Deep Strike special rule. The initial placement of this marker, before rolling for scatter, may not be on top of impassable terrain or within 1&quot; of any unit.
+
+Should this marker scatter on top of impassable terrain, a building, ruin, fortification, vehicle or any unit engaged in combat, reduce the scatter distance by the minimum required to avoid the obstacle. If the marker representing the arrival of the Termite was displaced in this way by a vehicle or fortification, the closest vehicle or fortification to the marker immediately suffers a Str 10 AP- hit – vehicles are hit on their Side armour. If the arrival of the Termite was instead displaced by any units engaged in close combat, all units in that combat suffer D6 Str 6 AP 4 hits. After the final position of the marker is determined, if the marker covers or touches any
+enemy or friendly unit, then that unit also suffers D6 Str 6 AP 4 hits.
+
+After all damage is resolved, the Subterranean Assault vehicle may be placed in any orientation so long as the centre of the Large Blast (5&quot;) marker is underneath part of the vehicle’s hull and it remains 1&quot; away from any fortification, vehicle or unit engaged in combat. The area under the Large Blast (5&quot;) marker is now difficult terrain for the rest of the game. Players may, should they wish to, instead
+represent this area with a piece of crater terrain.
+
+Should a Subterranean Assault vehicle be placed on top of any unit which does not pose an obstacle to its arrival as described above, the Death from Below special rule allows it to be placed as though the unit was not there. If some models in the unit would end up underneath the Subterranean Assault vehicle when it reaches its final position (it makes no difference whether the unit is Falling Back or not), these models must be moved by the controlling player out of the way by the shortest distance, leaving at least 1&quot; between them and the Subterranean Assault vehicle (and indeed any other unit) whilst maintaining unit coherency and staying on the
+tabletop. Any models that cannot manage this are crushed and removed from play as casualties with no saves allowed.</description>
+    </rule>
+    <rule id="1ace-c133-de63-e4f0" name="Melta Cutters" publicationId="690c-3e82-3080-6bc0" page="198" hidden="false">
+      <description>A Termite Assault Drill ignores difficult terrain and dangerous terrain. In addition, it adds 2 to its Strength when making ramming attacks against fortifications.</description>
+    </rule>
+    <rule id="1679-b036-dc3a-c6a6" name="Subterranean Assault" publicationId="690c-3e82-3080-6bc0" page="198" hidden="false">
+      <description>Should the Termite Assault Drill, and any unit it transports, enter play using the Deep Strike special rule, they count as being a Subterranean Assault vehicle for the wider use of the Subterranean Assault rule for your army. At the beginning of the controlling player’s first turn, they must choose half of their Subterranean Assault vehicles held in reserve for the purpose of Deep Striking (rounding up) to make a Subterranean Assault. These units arrive on the controlling player’s first player turn. The arrival of any remaining Subterranean Assault vehicles in the player’s force is rolled for as usual for the mission.
+
+This rule, while similar in function to the Drop Pod Assault special rule, does not interact with it for the purposes of calculating how many units may arrive on the table by Deep Strike. Armies may consist of units with both the Drop Pod Assault and Subterranean Assault rules unless otherwise noted.</description>
+    </rule>
+    <rule id="cb11-e201-f31b-d74e" name="Terrax Pattern Termite Assault Drill" publicationId="690c-3e82-3080-6bc0" page="198" hidden="false">
+      <description>* May not carry models with the Bulky, Very Bulky or Extremely Bulky special rules
+
+** In practice you may choose to open and embar/disembark from a single hatch on either side of the hull.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="74effb54-87f7-8481-9e5f-86d9e3ed37c2" name="Battle Servitor Control" publicationId="ca571888--pubN67227" page="43" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
@@ -13719,6 +13747,23 @@ Jetbikes can move over all other models and terrain freely. However, if a moving
     <profile id="e1d88320-50a5-edf3-0542-004b2f5c917e" name="Space Marine Legion Crew" publicationId="ca571888--pubN82424" page="65" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A tank with this upgrade increases its Ballistic Skill to 4</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="70c1-f71a-6ceb-0cab" name="Terrax Pattern Termite Assault Drill" publicationId="690c-3e82-3080-6bc0" page="198" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
+      <characteristics>
+        <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
+        <characteristic name="Front" typeId="46726f6e7423232344415441232323">12</characteristic>
+        <characteristic name="Side" typeId="5369646523232344415441232323">12</characteristic>
+        <characteristic name="Rear" typeId="5265617223232344415441232323">10</characteristic>
+        <characteristic name="HP" typeId="485023232344415441232323">3</characteristic>
+        <characteristic name="Type" typeId="5479706523232344415441232323">Tank, Transport</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9902-1e3c-b99c-f7cf" name="Terrax Pattern Termite Assault Drill (Transport)" publicationId="690c-3e82-3080-6bc0" page="198" hidden="false" typeId="307d-047f-ca13-706b" typeName="Transport">
+      <characteristics>
+        <characteristic name="Capacity" typeId="8285-4205-b6cd-8473">12*</characteristic>
+        <characteristic name="Fire Points" typeId="b270-a7f9-22b2-3702">None</characteristic>
+        <characteristic name="Access Points" typeId="d17b-0342-b1dc-b8e7">Two access hatches**</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
