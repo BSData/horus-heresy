@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="103" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="127" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="104" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="127" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="cf03-f607-pubN65537" name="Horus Heresy: Taghmata Army List"/>
     <publication id="cf03-f607-pubN65563" name="AoDRB"/>
@@ -2250,6 +2250,9 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="89d9-f05e-802f-f3bd" name="Monstrous Creature" hidden="false" targetId="8ec4-17b5-7fea-c682" primary="false"/>
+          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="1b52-8c7c-83a4-64a9" name="Two Rotor Cannons" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -3098,6 +3101,8 @@ Reduces transport capacity to 8.</description>
       </constraints>
       <infoLinks>
         <infoLink id="1820e89c-0c65-f0ec-48cf-443c8f480688" name="Paragon of Metal" hidden="false" targetId="cb2c-171e-df0f-2bec" type="rule"/>
+        <infoLink id="322e-5140-fa8f-7cb4" name="It Will Not Die" hidden="false" targetId="72d9-7041-9d30-d150" type="rule"/>
+        <infoLink id="70cc-7cb1-baf7-b996" name="Rampage" hidden="false" targetId="0ba8-83bc-74c1-43c2" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="35.0"/>
@@ -3967,15 +3972,8 @@ Reduces transport capacity to 8.</description>
         <constraint field="selections" scope="parent" value="19.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="159d-4f16-5905-7fb4" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="3621-5c61-4157-e478" hidden="false" targetId="c1bc-dda3-fb87-e016" type="profile">
-          <modifiers>
-            <modifier type="append" field="name" value="Peltast"/>
-          </modifiers>
-        </infoLink>
+        <infoLink id="3621-5c61-4157-e478" name="Secutarii" hidden="false" targetId="c1bc-dda3-fb87-e016" type="profile"/>
       </infoLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="11.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="c968-115e-0e8b-7836" name="Arc Lance" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -4148,8 +4146,15 @@ Reduces transport capacity to 8.</description>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="9cb4-df13-2a96-b366" name="" hidden="false" collective="false" import="true" targetId="5cd6-814b-5784-13f5" type="selectionEntry"/>
-        <entryLink id="3b53-d120-06ae-a40c" hidden="false" collective="false" import="true" targetId="c472-6345-24b3-f952" type="selectionEntry"/>
+        <entryLink id="9cb4-df13-2a96-b366" name="Kyropatris field generator" hidden="false" collective="false" import="true" targetId="5cd6-814b-5784-13f5" type="selectionEntry"/>
+        <entryLink id="3b53-d120-06ae-a40c" name="Secutarii" hidden="false" collective="false" import="true" targetId="c472-6345-24b3-f952" type="selectionEntry">
+          <modifiers>
+            <modifier type="append" field="name" value="Peltast"/>
+          </modifiers>
+          <costs>
+            <cost name="pts" typeId="points" value="11.0"/>
+          </costs>
+        </entryLink>
         <entryLink id="9933-fe28-89b7-4b5b" hidden="false" collective="false" import="true" targetId="ae94-81c7-edf1-b10d" type="selectionEntry"/>
         <entryLink id="d5c3-1c21-5714-e009" hidden="false" collective="false" import="true" targetId="7b6e-1246-67b8-f13b" type="selectionEntry"/>
         <entryLink id="0c3c-5921-cc0e-1ab3" hidden="false" collective="false" import="true" targetId="04fc-9823-28ea-591d" type="selectionEntryGroup"/>
@@ -4426,11 +4431,13 @@ Reduces transport capacity to 8.</description>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="a3b5-07e3-8e3f-416b" name="" hidden="false" collective="false" import="true" targetId="c472-6345-24b3-f952" type="selectionEntry">
+        <entryLink id="a3b5-07e3-8e3f-416b" name="Secutarii" hidden="false" collective="false" import="true" targetId="c472-6345-24b3-f952" type="selectionEntry">
           <modifiers>
             <modifier type="append" field="name" value="Hoplite"/>
-            <modifier type="set" field="points" value="12"/>
           </modifiers>
+          <costs>
+            <cost name="pts" typeId="points" value="12.0"/>
+          </costs>
         </entryLink>
         <entryLink id="bc60-ee64-0ab8-641b" hidden="false" collective="false" import="true" targetId="04fc-9823-28ea-591d" type="selectionEntryGroup"/>
       </entryLinks>
@@ -4748,6 +4755,7 @@ Buildings and Fortifications D</description>
           <infoLinks>
             <infoLink id="b3c4-af74-c849-5319" name="Night Vision" hidden="false" targetId="a225-e39b-3699-c8f8" type="rule"/>
             <infoLink id="108c-2c8f-0691-20c0" name="Reactor Blast" hidden="false" targetId="d5cf-bd98-2854-13cf" type="rule"/>
+            <infoLink id="4f87-aafa-7784-8aef" name="Atomantic Shielding" hidden="false" targetId="13e0-4939-5232-8d85" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="6afd-13e0-1ef7-991d" name="Vultarax arc blaster " hidden="false" collective="false" import="true" type="upgrade">
@@ -5854,11 +5862,7 @@ Buildings and Fortifications D</description>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="4934-4c1a-b0c8-c4b0" name="Triaros Armoured Conveyor" hidden="false" collective="false" import="true" targetId="bb6538b0-0f23-8a43-9752-dd356ba76e46" type="selectionEntry"/>
-        <entryLink id="5c7f-660a-ddf0-5fcf" name="May be upgraded with one of the following augment upgrades:" hidden="false" collective="false" import="true" targetId="be81-6f96-f70e-ec07" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="b39b-9817-025c-62da" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ea20-0077-988a-5fee" type="min"/>
-          </constraints>
-        </entryLink>
+        <entryLink id="34f7-3e65-e199-3c74" name="May be upgraded with one of the following augment upgrades:" hidden="false" collective="false" import="true" targetId="34ef-5d4f-eacc-55f7" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="15.0"/>
@@ -9279,7 +9283,7 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6022-4d73-3523-ad79" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="0c77-9ab0-e472-5840" hidden="false" collective="false" import="true" targetId="e1ca-c072-fd46-7a57" type="selectionEntryGroup"/>
+            <entryLink id="0c77-9ab0-e472-5840" name="Relics of the Dark Age of Technology" hidden="false" collective="false" import="true" targetId="e1ca-c072-fd46-7a57" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -17592,11 +17596,12 @@ A Unit may not use Counter Attack special rule if it used Reaction Fire.</descri
           </profiles>
           <rules>
             <rule id="ec82-1bf7-4662-0944" name="Uncontrolled Replication" publicationId="cf03-f607-pubN99227" page="223" hidden="false">
-              <description>Should a model be slain by the Nanyte Blaster, roll a D6. On a 4+ center a
-                                Large Blast marker on the model&apos;s position and resolve a blast attack at Str 5 AP 2.
-                                Further casualties may themselves trigger futher Uncontrolled Replications.</description>
+              <description>Should a model be slain by the Nanyte Blaster, roll a D6. On a 4+ center a Large Blast marker on the model&apos;s position and resolve a blast attack at Str 5 AP 2. Further casualties may themselves trigger futher Uncontrolled Replications.</description>
             </rule>
           </rules>
+          <infoLinks>
+            <infoLink id="95c6-de49-5ae7-1a08" name="Fleshbane" hidden="false" targetId="4575-0a0a-caaf-e4bf" type="rule"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="40.0"/>
           </costs>
@@ -17607,6 +17612,13 @@ A Unit may not use Counter Attack special rule if it used Reaction Fire.</descri
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
           </constraints>
+          <profiles>
+            <profile id="b62b-c095-fea4-786c" name="Warp Shunt Field" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">The warp shunt field provides the bearer with a 3+ Invulnerable save against Shooting attacks only. In addition, for every 6 rolled when saving against an enemy attack that draws a direct line of sight between shooter and target, the enemy unit that fired the shot takes D6 Str 5 AP- hits. </characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
             <cost name="pts" typeId="points" value="35.0"/>
           </costs>
@@ -17617,6 +17629,13 @@ A Unit may not use Counter Attack special rule if it used Reaction Fire.</descri
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
           </constraints>
+          <profiles>
+            <profile id="9ba8-3404-fc44-7a22" name="Phase-Walker" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Instead of moving normally in the Movement phase, the bearer may be removed and replaced anywhere else on the table, so long as they are not engaged in an assault or inside a transport vehicle or budding.  If the model is to be repositioned in a location that is within their line of sight, they are simply positioned where the player desires. If the target location is outside of the character&apos;s line of sight, make a Dangerous Terrain test for every solid object along the path including all models, vehicles, terrain pieces, buildings, etc) and so long as the character survives, place them in the desired position. Having been moved, the character counts as having deployed via Deep Strike, and so counts as having moved, but may shoot, run, etc, as normal.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
             <cost name="pts" typeId="points" value="45.0"/>
           </costs>
@@ -17627,6 +17646,13 @@ A Unit may not use Counter Attack special rule if it used Reaction Fire.</descri
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
           </constraints>
+          <profiles>
+            <profile id="88fc-f415-cc79-c185" name="Combat Augment Array" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Once per game, declared at the beginning of the controlling plaver&apos;s player turn, the character may count any dice roil as automatically rolling a 6. At the end of that player turn, the model should make a Toughness test for every wound they have remaining. Each failed test results in the character sustaining a wound, with no saves of any kind of Feel No Pain rolls possible.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
             <cost name="pts" typeId="points" value="35.0"/>
           </costs>
@@ -17637,6 +17663,13 @@ A Unit may not use Counter Attack special rule if it used Reaction Fire.</descri
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
           </constraints>
+          <profiles>
+            <profile id="0ce9-2a28-173a-d017" name="Cloaking Array" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Once per game, at the beginning of any game rum. the cloaking array may be activated. For that entire game turn, the bearer may not be targeted by shooring or declared as the subject ot a charge. Enemy models with the Psyker or Daemon rule are not atiected by the cloaking arrav, as thev have other means ot perceiving their foe. Should such a model shoot or assault the bearer, the cloaking array ceases to function immediately. The bearer may not use the array if joined to another unit, or engaged in an assault, and may not move, shoot, charge or declare any other actions while it is in efiect.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
             <cost name="pts" typeId="points" value="40.0"/>
           </costs>
@@ -17647,6 +17680,13 @@ A Unit may not use Counter Attack special rule if it used Reaction Fire.</descri
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
           </constraints>
+          <profiles>
+            <profile id="4838-4bae-d932-9bb5" name="Void Shield Harness" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">The void shield harness has an area of effect equal to a Large Blast (3&quot;) marker,centred on the hearer. Any shooting attack that originates from outside of the protected area and hits a target inside it instead hits the void shield - which has an Armour value of 12. A glancing or penetrating hit (or any hit from a Destroyer weapon) causes it to collapse. Once the shield is collapsed, further hits strike the original target instead. If the shield is collapsed, at the end to each to the controlling player&apos;s player turns roll a Db. On a roll of the shield is instantly restored.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
             <cost name="pts" typeId="points" value="40.0"/>
           </costs>
@@ -17667,19 +17707,26 @@ A Unit may not use Counter Attack special rule if it used Reaction Fire.</descri
               </characteristics>
             </profile>
           </profiles>
-          <rules>
-            <rule id="172b-b755-72a7-c782" name="Contagium Mechanica" publicationId="cf03-f607-pubN99227" page="224" hidden="false"/>
-          </rules>
+          <infoLinks>
+            <infoLink id="02ef-ad1b-af0d-2fb1" name="Haywire" hidden="false" targetId="6970-1bf3-b33e-5dce" type="rule"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="30.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="2c7a-d4dd-d5fe-59a6" name="Cortica Primus" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="2c7a-d4dd-d5fe-59a6" name="Cortica Primus" publicationId="cf03-f607-pubN99227" page="224" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
           </constraints>
+          <profiles>
+            <profile id="07e8-974a-096e-a920" name="Cortica Primus" publicationId="cf03-f607-pubN99227" page="224" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">The cortica Primus counts as a Cortex Controller. In addition, if the bearer uses a Cybertheurgy power to target a friendly unit, the effect of the power used applies not to one model in that unit, but to all eligible models in that unit. If the power is failed however, the subsequent roll on the Cybertheurgy Mishap table is modified by the number of models over the first it was attempted on. For example, if target unit consisted of three Battle-Automata, the roll on the Mishap table would be modified by a +2.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
             <cost name="pts" typeId="points" value="30.0"/>
           </costs>
