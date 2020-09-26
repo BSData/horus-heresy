@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8700-b3bb-a471-a0ad" name="Daemons of the Ruinstorm" revision="15" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8700-b3bb-a471-a0ad" name="Daemons of the Ruinstorm" revision="16" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="128" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="8700-b3bb-pubN65537" name="HH8: Malevolence"/>
     <publication id="8700-b3bb-pubN75780" name="BRB"/>
@@ -79,6 +79,12 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ef4-e2d8-333f-abda" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9e5-f5d6-b58b-311e" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="4952-05a3-05f6-17ef" name="Allied Detachment" hidden="false" targetId="6077-281f-c55d-9bf0" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f22-b83e-5cc7-6a4f" type="min"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0ec3-d1a2-0ee1-9ea8" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -244,6 +250,11 @@
       <categoryLinks>
         <categoryLink id="f556-e8fe-57c3-e682" name="New CategoryLink" hidden="false" targetId="cd09-c1c6-237a-798e" primary="true"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink id="ee71-fb4f-ecd1-4c6f" name="Allied Detachment" hidden="false" collective="false" import="true" targetId="c91a-6e83-93ce-54ac" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="417b-6e99-19c2-0425" type="min"/>
+      </constraints>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
