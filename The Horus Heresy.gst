@@ -5609,7 +5609,7 @@ or Gargantuan Creatures. </description>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="9d1b-5e93-5172-5776" name="Primary Weapon Right Arm" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="9d1b-5e93-5172-5776" name="Primary Weapon Right Arm" hidden="false" collective="false" import="true" defaultSelectionEntryId="f51a-ef5d-f24c-1973">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="55a2-127b-d9d1-e650" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cffb-0a62-f9ab-fb48" type="max"/>
@@ -5666,7 +5666,7 @@ or Gargantuan Creatures. </description>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="1f0d-dc4d-2872-7e74" name="Primary Weapon Left Arm" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="1f0d-dc4d-2872-7e74" name="Primary Weapon Left Arm" hidden="false" collective="false" import="true" defaultSelectionEntryId="40d2-31cb-3962-2a8b">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9f27-67a5-f9b6-7012" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a499-a415-eb9e-e8d2" type="max"/>
@@ -5746,13 +5746,16 @@ or Gargantuan Creatures. </description>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="62a9-3f80-fee9-bfe9" name="Carapace-mounted Nemesis Quake Cannon" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="62a9-3f80-fee9-bfe9" name="Carapace-mounted Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="3ec1-bf53-374d-1fa3">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9bb3-21e3-fb5d-7044" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="287e-49c4-b20a-f9e8" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="3ec1-bf53-374d-1fa3" name="Nemesis Quake Cannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9e1-6d40-ebf1-6086" type="max"/>
+              </constraints>
               <rules>
                 <rule id="5c15-bf8d-bf0d-65f6" name="Seismic Shock" hidden="false">
                   <description>Units which suffer wounds or Hull points lost from this attack may only move at half their usual maximum movement, may not Run, charge or go Flat Out, and count as being in dangerous terrain on their next turn.</description>
@@ -5761,10 +5764,20 @@ or Gargantuan Creatures. </description>
               <infoLinks>
                 <infoLink id="f964-925b-eedd-f137" name="Concussive" hidden="false" targetId="9d85-46f7-f5e6-a5f7" type="rule"/>
                 <infoLink id="10ff-7985-4c6b-2ccd" name="Strikedown" hidden="false" targetId="dd83-7fb9-6f58-0c96" type="rule"/>
+                <infoLink id="e568-c25d-1615-b590" name="Nemesis Quake Cannon" hidden="false" targetId="4807-658a-4855-aa88" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
+            </selectionEntry>
+            <selectionEntry id="111f-e8b8-0721-10ab" name="Nemesis Volcano Cannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a711-b0ed-4720-f7eb" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="080e-e9dd-afb6-7430" name="Nemesis Volcano Cannon" hidden="false" targetId="ccf5-9177-d9c7-e896" type="profile"/>
+                <infoLink id="16d9-936a-5f2c-e7c3" name="Machine Destroyer" hidden="false" targetId="c673-4842-28f8-4e39" type="rule"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -13776,6 +13789,14 @@ Jetbikes can move over all other models and terrain freely. However, if a moving
         <characteristic name="Capacity" typeId="8285-4205-b6cd-8473">12*</characteristic>
         <characteristic name="Fire Points" typeId="b270-a7f9-22b2-3702">None</characteristic>
         <characteristic name="Access Points" typeId="d17b-0342-b1dc-b8e7">Two access hatches**</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ccf5-9177-d9c7-e896" name="Nemesis Volcano Cannon" publicationId="ca571888--pubN95721" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="52616e676523232344415441232323">20-260&quot;</characteristic>
+        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">D</characteristic>
+        <characteristic name="AP" typeId="415023232344415441232323">1</characteristic>
+        <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 1, Massive Blast (7&quot;), Machine Destroyer</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
