@@ -1060,18 +1060,6 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
       </categoryLinks>
     </entryLink>
     <entryLink id="ec8a-2676-2661-296e" name="Castellax Class Battle-Automata Maniple" hidden="false" collective="false" import="true" targetId="48db-84ca-2bad-520f" type="selectionEntry">
-      <modifiers>
-        <modifier type="add" field="category" value="219d-aefa-dfa5-44db">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6549-e272-8b3c-6d6b" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink id="ec8a-2676-2661-296e-54726f6f707323232344415441232323" hidden="false" targetId="54726f6f707323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -1699,42 +1687,6 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="36c5-d6db-7224-1e47" name="Support Unit" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="219d-aefa-dfa5-44db" type="instanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="3272-f43a-2efd-59c9" value="0">
-          <conditions>
-            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="219d-aefa-dfa5-44db" type="instanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="b0dc-cc60-79e4-e984" value="0">
-          <conditions>
-            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="219d-aefa-dfa5-44db" type="instanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="219d-aefa-dfa5-44db" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3272-f43a-2efd-59c9" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b0dc-cc60-79e4-e984" type="min"/>
-      </constraints>
-      <rules>
-        <rule id="3011-cc8f-8dfc-e95c" name="Support Unit" publicationId="cf03-f607-pubN76270" page="41" hidden="false">
-          <description>This unit type may not be chosen as a compulsory Troops choice for the army.</description>
-        </rule>
-      </rules>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="04c4-8239-657a-ced2" name="Support Squad" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
@@ -1946,6 +1898,18 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
       </costs>
     </selectionEntry>
     <selectionEntry id="48db-84ca-2bad-520f" name="Castellax Class Battle-Automata Maniple" page="" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="append" field="name" value="(Compulsory)">
+          <conditions>
+            <condition field="selections" scope="48db-84ca-2bad-520f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0ee-a476-118f-2c11" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="219d-aefa-dfa5-44db">
+          <conditions>
+            <condition field="selections" scope="48db-84ca-2bad-520f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0ee-a476-118f-2c11" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="7678-ae60-16f2-e948" name="" hidden="false" targetId="988c-d4d0-9418-1165" type="rule"/>
         <infoLink id="a7f0-6bc1-ed4a-34dc" name="New InfoLink" hidden="false" targetId="d5cf-bd98-2854-13cf" type="rule"/>
@@ -1957,6 +1921,13 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="09ad-ef83-4a62-46fe" name="Castellax class Battle-automata" page="" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="2514-b4ae-39f4-093e" value="2.0">
+              <conditions>
+                <condition field="selections" scope="48db-84ca-2bad-520f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0ee-a476-118f-2c11" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2514-b4ae-39f4-093e" type="min"/>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="38db-7bf2-0694-b3f4" type="max"/>
@@ -2201,10 +2172,68 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="7dda-f05f-f610-fcd6" name="Support or Compulsory Unit" hidden="false" collective="false" import="true" defaultSelectionEntryId="36c5-d6db-7224-1e47">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fef-9755-dc26-aabf" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6d2-3422-df1a-abff" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="d0ee-a476-118f-2c11" name="Compulsory" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="21c2-25a4-2552-e014" value="1.0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6549-e272-8b3c-6d6b" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6549-e272-8b3c-6d6b" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c24-fdf9-d423-8a3a" type="min"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21c2-25a4-2552-e014" type="max"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry id="36c5-d6db-7224-1e47" name="Support Unit" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="e8eb-1cc7-3401-56d3" value="0.0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d266-0416-a5a6-881e" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6549-e272-8b3c-6d6b" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8eb-1cc7-3401-56d3" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3280-844f-e64c-0f90" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="45b4-2376-9876-1da7" name="Support Unit" publicationId="cf03-f607-pubN76270" page="41" hidden="false">
+                  <description>This unit type may not be chosen as a compulsory Troops choice for the army.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="1351-345f-cd72-e42d" name="Support Unit" hidden="false" collective="false" import="true" targetId="36c5-d6db-7224-1e47" type="selectionEntry"/>
-        <entryLink id="9e93-5e2f-d21c-63bf" name="New EntryLink" hidden="false" collective="false" import="true" targetId="dff8-d7b6-960a-aa5b" type="selectionEntryGroup">
+        <entryLink id="9e93-5e2f-d21c-63bf" name="A single Maniple may be upgraded with:" hidden="false" collective="false" import="true" targetId="dff8-d7b6-960a-aa5b" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -2213,7 +2242,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="b6c3-b1be-9ce6-cb2f" name="New EntryLink" hidden="false" collective="false" import="true" targetId="0c9d-9eaa-d513-caa3" type="selectionEntry"/>
+        <entryLink id="b6c3-b1be-9ce6-cb2f" name="Cybernetica Cortex" hidden="false" collective="false" import="true" targetId="0c9d-9eaa-d513-caa3" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
