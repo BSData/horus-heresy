@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" revision="73" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="127" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" revision="74" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="128" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="7f243fc5--pubN65537" name="Crusade Imperialis"/>
     <publication id="7f243fc5--pubN65563" name="AoDRB"/>
@@ -493,6 +493,12 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
           </constraints>
         </categoryLink>
         <categoryLink id="bd3f-a651-bc5c-ad22" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
+        <categoryLink id="8efd-0cad-67c8-b3c7" name="Allied Detachment" hidden="false" targetId="6077-281f-c55d-9bf0" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2be5-a4f4-38c0-ee92" type="min"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c2b4-b5fc-3e0c-2852" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="089f-7e79-bde1-90dd" name=" Zone Mortalis - Attacker" hidden="false">
@@ -1254,6 +1260,11 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
       <categoryLinks>
         <categoryLink id="4cc1-64b5-ebb0-9b45" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink id="3327-f67c-b5b2-42ea" name="Allied Detachment" hidden="false" collective="false" import="true" targetId="c91a-6e83-93ce-54ac" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9088-dd81-ce0c-df55" type="min"/>
+      </constraints>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -8518,6 +8529,9 @@ Precision Shots</description>
                 <infoLink id="9207-20e6-76d1-48ec" name="Deflagrate" hidden="false" targetId="b46a-a3ec-91a5-5001" type="rule"/>
                 <infoLink id="9361-bf51-2fb5-e990" name="Volkite Charger" hidden="false" targetId="c440-1f53-4d20-5cab" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
