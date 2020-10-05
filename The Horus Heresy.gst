@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="128" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="129" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN66489" name="HH:MT"/>
@@ -5778,6 +5778,9 @@ or Gargantuan Creatures. </description>
                 <infoLink id="080e-e9dd-afb6-7430" name="Nemesis Volcano Cannon" hidden="false" targetId="ccf5-9177-d9c7-e896" type="profile"/>
                 <infoLink id="16d9-936a-5f2c-e7c3" name="Machine Destroyer" hidden="false" targetId="c673-4842-28f8-4e39" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -11912,7 +11915,9 @@ Independent Characters pass Look Out, Sir rolls on a 2+.</description>
     <rule id="3fb5-89d9-08fe-0312" name="Unlisted Legion" publicationId="ca571888--pubN106502" page="168" hidden="false">
       <description>If an army represents a Legion which does not yet have its own unique Legiones Astartes rule, the controlling player may instead add either the Stubborn or Furious Charge special rule to the standard provisions of this rule in the interim.</description>
     </rule>
-    <rule id="3a2e-7a7b-1de3-78c0" name="Lingering Death" publicationId="ca571888--pubN106502" page="168" hidden="false"/>
+    <rule id="3a2e-7a7b-1de3-78c0" name="Lingering Death" publicationId="ca571888--pubN106502" page="168" hidden="false">
+      <description>When a Blast weapon with this rule is used, after the attack is resolved leave the Blast marker in play for the rest of the game and mark it with a counter of some kind. This area is now treated as dangerous terrain for all models with a Toughness value and open-topped vehicles.</description>
+    </rule>
     <rule id="b0c5-b980-95e5-b181" name="Murderous Strike" publicationId="ca571888--pubN106502" page="168" hidden="false">
       <description>Attacks with this special rule cause Instant Death on a ToWound roll of 6. Roll any viable saves against this Instant Death-causing wound separately to other wounds the attack inflicts.</description>
     </rule>
@@ -11953,10 +11958,10 @@ If a Template weapon hits a building’s Fire Point or an Opentopped vehicle and
       <description>Bikes and Jetbikes cannot Run, but can make a special Turbo-boost move instead of firing in their Shooting phase.
 Turbo-boosting Bikes move up to 12&quot; and Turbo-boosting Jetbikes move up to 24&quot;. Bikes or Jetbikes cannot shoot, charge or execute any other voluntary action after Turbo-boosting until the end of their turn.</description>
     </rule>
-    <rule id="5c8a-63f9-5cdc-b17b" name="Skybourne" publicationId="ca571888--pubN106502" page="66" hidden="false">
+    <rule id="5c8a-63f9-5cdc-b17b" name="Skyborne" publicationId="ca571888--pubN106502" page="66" hidden="false">
       <description>When using its jump pack (whether moving, charging or Falling Back), a model can move over all other models and terrain freely. However, if the model begins or ends its move in difficult terrain, it must take a Dangerous Terrain test.</description>
     </rule>
-    <rule id="97c4-1c1c-3727-757f" name="Trust Move" publicationId="ca571888--pubN106502" page="66" hidden="false">
+    <rule id="97c4-1c1c-3727-757f" name="Thrust Move" publicationId="ca571888--pubN106502" page="66" hidden="false">
       <description>A Jet Pack unit that is not locked in combat or charging can move up to 2D6&quot; in the Assault phase, even if they have shot or Run in the preceding Shooting phase or arrived by Deep Strike that turn. When Jet Pack units move in the Assault phase and do not charge, they move just as they would when using their jet packs in the Movement phase.</description>
     </rule>
     <rule id="2eaf-7ad1-5fbb-2b94" name="Shooting (Gargantuan Creature)" publicationId="ca571888--pubN106502" page="69" hidden="false">
@@ -13516,7 +13521,7 @@ Jetbikes can move over all other models and terrain freely. However, if a moving
         <characteristic name="Range" typeId="52616e676523232344415441232323">6&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
         <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
-        <characteristic name="Type" typeId="5479706523232344415441232323">Assualt 1, One Use, Blast (3&quot;), Crawling Fire, Lingering Death</characteristic>
+        <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1, One Use, Blast (3&quot;), Crawling Fire, Lingering Death, Poisined (3+)</characteristic>
       </characteristics>
     </profile>
     <profile id="62fb-7314-f3cf-f6ab" name="Phosphex Shell" publicationId="ca571888--pubN106502" page="179" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
