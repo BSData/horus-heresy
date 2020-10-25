@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="106" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="129" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="107" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="129" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="cf03-f607-pubN65537" name="Horus Heresy: Taghmata Army List"/>
     <publication id="cf03-f607-pubN65563" name="AoDRB"/>
@@ -2908,9 +2908,6 @@ A model equipped with a machinator array may make two additional attacks per tur
       </costs>
     </selectionEntry>
     <selectionEntry id="0de5-5b51-907d-e5e2" name="Macrocarid Explorator" hidden="false" collective="false" import="true" type="model">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-      </constraints>
       <profiles>
         <profile id="1208-f8bb-cf2b-5f30" name="Macrocarid Explorator" publicationId="cf03-f607-pubN76270" page="55" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
           <characteristics>
@@ -10492,7 +10489,11 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="fc9b-b619-b8cd-bf76" name="Cyber-familiar" hidden="false" collective="false" import="true" targetId="dd09a633-0c59-7ea7-d62e-e978aefb3cff" type="selectionEntry"/>
-        <entryLink id="c692-95ee-a268-68e5" hidden="false" collective="false" import="true" targetId="0de5-5b51-907d-e5e2" type="selectionEntry"/>
+        <entryLink id="c692-95ee-a268-68e5" name="Macrocarid Explorator" hidden="false" collective="false" import="true" targetId="0de5-5b51-907d-e5e2" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b7f8-541d-3dc4-4f14" type="max"/>
+          </constraints>
+        </entryLink>
         <entryLink id="e253-f716-a506-e14e" name="Machinator Array" hidden="false" collective="false" import="true" targetId="9d9f-63d3-f635-7fd5" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="points" value="0.0"/>
