@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" revision="108" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="128" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" revision="109" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="130" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="90aa-c2c8-pubN65537" name="Crusade Imperialis"/>
     <publication id="90aa-c2c8-pubN65563" name="AoDRB"/>
@@ -848,7 +848,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <categoryLink id="ffce-c460-f223-44f3" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="6ba7-d9d9-6fc1-b9cc" name="Auxilia Ogryn Brute Squad" hidden="false" collective="false" import="true" targetId="0390-b19f-2fd3-a817" type="selectionEntry">
+    <entryLink id="6ba7-d9d9-6fc1-b9cc" name="Ogryn Brute Squad, Auxilia" hidden="false" collective="false" import="true" targetId="0390-b19f-2fd3-a817" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="6ba7-d9d9-6fc1-b9cc-456c6974657323232344415441232323" hidden="false" targetId="456c6974657323232344415441232323" primary="true"/>
         <categoryLink id="3e66-4160-5624-7fef" name="New CategoryLink" hidden="false" targetId="8a8c-ed20-7427-ddff" primary="false"/>
@@ -1322,6 +1322,45 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eefe-6292-095f-911f" type="min"/>
       </constraints>
+    </entryLink>
+    <entryLink id="7ca5-b5b0-120c-a53a" name="Nathaniel Garro" hidden="false" collective="false" import="true" targetId="f86d-ae13-1d89-f1a1" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8422-428c-7e5d-3fed" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="b8bf-e6e1-d54a-bcb3" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true"/>
+        <categoryLink id="fadd-6025-77a9-dcd2" name="Infantry" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7ccd-f4bf-3af8-500f" name="Tylos Rubio" hidden="false" collective="false" import="true" targetId="7baf-1c2e-6b5d-b865" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8422-428c-7e5d-3fed" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6879-83fe-4728-5bce" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true"/>
+        <categoryLink id="7a3e-e196-a976-d408" name="Infantry" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0a76-3fab-9c5c-d1e0" name="Knight-Errant" hidden="false" collective="false" import="true" targetId="0b3e-7f6d-3556-5446" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8422-428c-7e5d-3fed" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="fb7e-571c-82e1-b79d" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true"/>
+        <categoryLink id="73e4-69a8-937f-5bd4" name="Infantry" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -5208,7 +5247,7 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0f36-0140-1e63-3e26" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="48fb-7ace-f6eb-b96b" hidden="false" targetId="6950-0e85-bb60-2beb" type="profile"/>
+                <infoLink id="48fb-7ace-f6eb-b96b" name="Iron Halo" hidden="false" targetId="10b59cf4-3c97-e3e0-2185-853bcde6d112" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="15.0"/>
@@ -10955,11 +10994,6 @@ A model may only use this weapon if it has successfully charged that player turn
     <profile id="3751-727c-d4e3-9cef" name="Illum Flares" publicationId="90aa-c2c8-pubN76431" page="90" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">May drop a single flare per turn.  Fired just as bombs - flare is placed after scattering.  Leave in place until the end of the turn.  Any unit targeting an enemy within 12&quot; of the flare gains Night Vision for the shooting phase.  Split fire does not apply.  </characteristic>
-      </characteristics>
-    </profile>
-    <profile id="6950-0e85-bb60-2beb" name="Iron Halo" publicationId="90aa-c2c8-pubN73486" page="183" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Provides a 4++ Invulnerable save. </characteristic>
       </characteristics>
     </profile>
     <profile id="bb95-3b87-dcfb-3473" name="Laslock" publicationId="90aa-c2c8-pubN73486" page="179" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">

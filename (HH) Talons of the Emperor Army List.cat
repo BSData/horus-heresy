@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a30a-7522-3343-553a" name="Talons of the Emperor" revision="102" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="128" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a30a-7522-3343-553a" name="Talons of the Emperor" revision="103" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="130" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="a30a-7522-pubN65537" name="HH7 / HH8"/>
     <publication id="a30a-7522-pubN69988" name="Forgeworld.co.uk"/>
@@ -23,6 +23,7 @@
     <categoryEntry id="5297-7e0f-fa0b-3537" name="Allegiance" hidden="false"/>
     <categoryEntry id="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" name="Lords of War" hidden="false"/>
     <categoryEntry id="466f7274696669636174696f6e23232344415441232323" name="Fortification" hidden="false"/>
+    <categoryEntry id="d7ea-8c56-c01f-53b4" name="Compulsory HQ" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="98db-b4ba-fbcd-3239" name=" Crusade" hidden="false">
@@ -72,6 +73,11 @@
           </constraints>
         </categoryLink>
         <categoryLink id="1551-86a0-a987-6cf3" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
+        <categoryLink id="2cb9-13e4-9dc0-085a" name="Compulsory HQ" hidden="false" targetId="d7ea-8c56-c01f-53b4" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="867c-5aa5-a006-9849" type="min"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="657a-bc81-4ae3-8a5b" name="Allied Detachment" hidden="false">
@@ -133,6 +139,11 @@
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bb88-e34a-6159-8441" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="6f7f-0fd3-3f66-8699" name="Compulsory HQ" hidden="false" targetId="d7ea-8c56-c01f-53b4" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc85-1fb5-0d72-b2d2" type="min"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="089f-7e79-bde1-90dd" name=" Zone Mortalis - Attacker" hidden="false">
@@ -171,6 +182,11 @@
           </constraints>
         </categoryLink>
         <categoryLink id="9acb-dbaf-382f-42cd" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
+        <categoryLink id="6bb1-1fa6-012f-3176" name="Compulsory HQ" hidden="false" targetId="d7ea-8c56-c01f-53b4" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f94-f82c-5b66-a2e2" type="min"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="7b39-af6b-52e1-b4d7" name=" Zone Mortalis - Defender" hidden="false">
@@ -205,6 +221,11 @@
           </constraints>
         </categoryLink>
         <categoryLink id="e71d-d101-c736-075c" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
+        <categoryLink id="0893-2a74-6b21-d9cb" name="Compulsory HQ" hidden="false" targetId="d7ea-8c56-c01f-53b4" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df3c-a9c7-b7bb-d415" type="min"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="7e48-c376-8ffe-8ae7" name=" Zone Mortalis - Combatant" hidden="false">
@@ -243,6 +264,11 @@
           </constraints>
         </categoryLink>
         <categoryLink id="7da7-5612-3d00-7202" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
+        <categoryLink id="b8b8-6554-d311-aaf6" name="Compulsory HQ" hidden="false" targetId="d7ea-8c56-c01f-53b4" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b2d-4504-00d3-3ef3" type="min"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="d1ef-61e1-3d67-5a19" name="Optional - Onslaught" hidden="false">
@@ -288,6 +314,11 @@
           </constraints>
         </categoryLink>
         <categoryLink id="642d-98e0-7a4d-29ba" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
+        <categoryLink id="739d-3ece-81bc-ee2d" name="Compulsory HQ" hidden="false" targetId="d7ea-8c56-c01f-53b4" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e020-e636-43c2-21e4" type="min"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="3a6f-6d67-a8b2-e911" name="Optional - Castellan" hidden="false">
@@ -338,6 +369,11 @@
           </constraints>
         </categoryLink>
         <categoryLink id="3c2a-3fcb-1c75-8340" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
+        <categoryLink id="fe63-df8a-ab8f-f8c8" name="Compulsory HQ" hidden="false" targetId="d7ea-8c56-c01f-53b4" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="856d-dd37-1fe0-c772" type="min"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="f715-cdf4-0c5e-213a" name="Optional - Leviathan" hidden="false">
@@ -396,6 +432,11 @@
           </constraints>
         </categoryLink>
         <categoryLink id="4d97-7651-ecd8-68ca" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
+        <categoryLink id="041f-c854-dbc0-1138" name="Compulsory HQ" hidden="false" targetId="d7ea-8c56-c01f-53b4" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2077-9471-5126-e83a" type="min"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="8666-c0df-4dfa-08f1" name=" Strategic Raid - Garrison" hidden="false">
@@ -444,6 +485,11 @@
           </constraints>
         </categoryLink>
         <categoryLink id="defb-6067-82a7-eb34" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
+        <categoryLink id="977e-e521-3071-d1b3" name="Compulsory HQ" hidden="false" targetId="d7ea-8c56-c01f-53b4" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5797-2d83-8c01-0aae" type="min"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -471,7 +517,7 @@
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
-    <entryLink id="55a4-3c7c-28ec-878f" name="New EntryLink" hidden="false" collective="false" import="true" targetId="dab7-cef6-7603-3be2" type="selectionEntry">
+    <entryLink id="55a4-3c7c-28ec-878f" name="Legio Custodes Sentinel Guard Squad" hidden="false" collective="false" import="true" targetId="dab7-cef6-7603-3be2" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="55a4-3c7c-28ec-878f-54726f6f707323232344415441232323" hidden="false" targetId="54726f6f707323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -486,27 +532,29 @@
         <categoryLink id="527b-773b-9fc2-3664-486561767920537570706f727423232344415441232323" hidden="false" targetId="486561767920537570706f727423232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="597e-fb29-b8f0-bca5" name="New EntryLink" hidden="false" collective="false" import="true" targetId="38a5-b278-eb49-3779" type="selectionEntry">
+    <entryLink id="597e-fb29-b8f0-bca5" name="Constantin Valdor" hidden="false" collective="false" import="true" targetId="38a5-b278-eb49-3779" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="597e-fb29-b8f0-bca5-485123232344415441232323" hidden="false" targetId="485123232344415441232323" primary="true"/>
+        <categoryLink id="9a1b-a509-668e-9276" name="Compulsory HQ" hidden="false" targetId="d7ea-8c56-c01f-53b4" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="de59-9a90-c4b5-5469" name="New EntryLink" hidden="false" collective="false" import="true" targetId="cc00-5542-b66c-07ee" type="selectionEntry">
+    <entryLink id="de59-9a90-c4b5-5469" name="Jenetia Krole" hidden="false" collective="false" import="true" targetId="cc00-5542-b66c-07ee" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="de59-9a90-c4b5-5469-485123232344415441232323" hidden="false" targetId="485123232344415441232323" primary="true"/>
+        <categoryLink id="dc2f-9f49-3dfe-270d" name="Compulsory HQ" hidden="false" targetId="d7ea-8c56-c01f-53b4" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="b1fb-32c1-f910-6651" name="New EntryLink" hidden="false" collective="false" import="true" targetId="e5cb-9892-6a0d-9c40" type="selectionEntry">
+    <entryLink id="b1fb-32c1-f910-6651" name="Legio Custodes Agamatus Jetbike Squadron" hidden="false" collective="false" import="true" targetId="e5cb-9892-6a0d-9c40" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="b1fb-32c1-f910-6651-466173742041747461636b23232344415441232323" hidden="false" targetId="466173742041747461636b23232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="00ee-96bc-de42-dc49" name="New EntryLink" hidden="false" collective="false" import="true" targetId="6ced-0f69-b659-41da" type="selectionEntry">
+    <entryLink id="00ee-96bc-de42-dc49" name="Legio Custodes Aquilon Terminator Squad" hidden="false" collective="false" import="true" targetId="6ced-0f69-b659-41da" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="00ee-96bc-de42-dc49-456c6974657323232344415441232323" hidden="false" targetId="456c6974657323232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="433c-9641-fae4-c698" name="New EntryLink" hidden="false" collective="false" import="true" targetId="95b0-bc7c-b477-069b" type="selectionEntry">
+    <entryLink id="433c-9641-fae4-c698" name="Legio Custodes Contemptor-Achillus Dreadnought" hidden="false" collective="false" import="true" targetId="95b0-bc7c-b477-069b" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="433c-9641-fae4-c698-456c6974657323232344415441232323" hidden="false" targetId="456c6974657323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -516,7 +564,7 @@
         <categoryLink id="fe13-642f-90dd-c376-486561767920537570706f727423232344415441232323" hidden="false" targetId="486561767920537570706f727423232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="ce30-2f93-dba9-98c0" name="New EntryLink" hidden="false" collective="false" import="true" targetId="d290-734d-18b9-e387" type="selectionEntry">
+    <entryLink id="ce30-2f93-dba9-98c0" name="Legio Custodes Hetaeron Guard Squad" hidden="false" collective="false" import="true" targetId="d290-734d-18b9-e387" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="ce30-2f93-dba9-98c0-456c6974657323232344415441232323" hidden="false" targetId="456c6974657323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -526,7 +574,7 @@
         <categoryLink id="2e56-bd49-d9f3-9cb5-466173742041747461636b23232344415441232323" hidden="false" targetId="466173742041747461636b23232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="69f7-13e8-abc8-7e8f" name="New EntryLink" hidden="false" collective="false" import="true" targetId="5f2c-6d5f-60a2-c648" type="selectionEntry">
+    <entryLink id="69f7-13e8-abc8-7e8f" name="Legio Custodes Sagittarum Guard Squad" hidden="false" collective="false" import="true" targetId="5f2c-6d5f-60a2-c648" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="69f7-13e8-abc8-7e8f-486561767920537570706f727423232344415441232323" hidden="false" targetId="486561767920537570706f727423232344415441232323" primary="true"/>
       </categoryLinks>
@@ -534,14 +582,16 @@
     <entryLink id="7066-ede9-5077-68d6" name="Legio Custodes Shield Captain" hidden="false" collective="false" import="true" targetId="5e4a-d122-6e76-2634" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="7066-ede9-5077-68d6-485123232344415441232323" hidden="false" targetId="485123232344415441232323" primary="true"/>
+        <categoryLink id="b9b8-ab09-7476-bbc7" name="Compulsory HQ" hidden="false" targetId="d7ea-8c56-c01f-53b4" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="64f9-bed3-1fd6-3379" name="New EntryLink" hidden="false" collective="false" import="true" targetId="1ebb-ff7d-d5f8-ee60" type="selectionEntry">
+    <entryLink id="64f9-bed3-1fd6-3379" name="Sisters of Silence Excruciatus Cadre" hidden="false" collective="false" import="true" targetId="1ebb-ff7d-d5f8-ee60" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="64f9-bed3-1fd6-3379-485123232344415441232323" hidden="false" targetId="485123232344415441232323" primary="true"/>
+        <categoryLink id="ba74-f364-80de-638a" name="Compulsory HQ" hidden="false" targetId="d7ea-8c56-c01f-53b4" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="52cd-55ec-998f-deb6" name="New EntryLink" hidden="false" collective="false" import="true" targetId="80ba-e9bc-4e45-0c8f" type="selectionEntry">
+    <entryLink id="52cd-55ec-998f-deb6" name="Sisters of Silence Oblivion Knight Cadre" hidden="false" collective="false" import="true" targetId="80ba-e9bc-4e45-0c8f" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="52cd-55ec-998f-deb6-456c6974657323232344415441232323" hidden="false" targetId="456c6974657323232344415441232323" primary="true"/>
       </categoryLinks>
@@ -549,59 +599,60 @@
     <entryLink id="b954-9079-02fb-cbf5" name="Sisters of Silence Oblivion Knight-Centura" hidden="false" collective="false" import="true" targetId="26dd-4eb2-fe70-ea73" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="b954-9079-02fb-cbf5-485123232344415441232323" hidden="false" targetId="485123232344415441232323" primary="true"/>
+        <categoryLink id="52f5-4d00-c6e5-94d4" name="Compulsory HQ" hidden="false" targetId="d7ea-8c56-c01f-53b4" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="7d31-27e1-340d-9f3f" name="New EntryLink" hidden="false" collective="false" import="true" targetId="17c2-d576-4704-9d48" type="selectionEntry">
+    <entryLink id="7d31-27e1-340d-9f3f" name="Sisters of Silence Persuer Cadre" hidden="false" collective="false" import="true" targetId="17c2-d576-4704-9d48" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="7d31-27e1-340d-9f3f-466173742041747461636b23232344415441232323" hidden="false" targetId="466173742041747461636b23232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="4cf4-c467-a64c-ed40" name="New EntryLink" hidden="false" collective="false" import="true" targetId="2547-40ab-cb22-90a2" type="selectionEntry">
+    <entryLink id="4cf4-c467-a64c-ed40" name="Sisters of Silence Prosecutor Cadre" hidden="false" collective="false" import="true" targetId="2547-40ab-cb22-90a2" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="4cf4-c467-a64c-ed40-54726f6f707323232344415441232323" hidden="false" targetId="54726f6f707323232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="e31e-ad7b-b162-dcf5" name="New EntryLink" hidden="false" collective="false" import="true" targetId="08a1-0907-5ed0-2a6c" type="selectionEntry">
+    <entryLink id="e31e-ad7b-b162-dcf5" name="Sisters of Silence Seeker Cadre" hidden="false" collective="false" import="true" targetId="08a1-0907-5ed0-2a6c" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="e31e-ad7b-b162-dcf5-486561767920537570706f727423232344415441232323" hidden="false" targetId="486561767920537570706f727423232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="990c-a548-b447-1e9a" name="New EntryLink" hidden="false" collective="false" import="true" targetId="7017-b303-200f-730b" type="selectionEntry">
+    <entryLink id="990c-a548-b447-1e9a" name="Sisters of Silence Vigilator Cadre" hidden="false" collective="false" import="true" targetId="7017-b303-200f-730b" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="990c-a548-b447-1e9a-54726f6f707323232344415441232323" hidden="false" targetId="54726f6f707323232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="df91-2dd1-d3bf-007a" name="New EntryLink" hidden="false" collective="false" import="true" targetId="16d6-25c4-af92-4329" type="selectionEntry">
+    <entryLink id="df91-2dd1-d3bf-007a" name="Aquila Strongpoint" hidden="false" collective="false" import="true" targetId="16d6-25c4-af92-4329" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="df91-2dd1-d3bf-007a-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="ec5b-a27a-4574-fcbb" name="New EntryLink" hidden="false" collective="false" import="true" targetId="fb92-d215-2011-f911" type="selectionEntry">
+    <entryLink id="ec5b-a27a-4574-fcbb" name="Warlord-Sinister Pattern Battle Psi-Titan" hidden="false" collective="false" import="true" targetId="fb92-d215-2011-f911" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="ec5b-a27a-4574-fcbb-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="a6e2-0bf3-51ac-d3e9" name="New EntryLink" hidden="false" collective="false" import="true" targetId="a172-78de-aaa6-2201" type="selectionEntry">
+    <entryLink id="a6e2-0bf3-51ac-d3e9" name="Firestorm Redoubt" hidden="false" collective="false" import="true" targetId="a172-78de-aaa6-2201" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="a6e2-0bf3-51ac-d3e9-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="3e1c-c1d7-5869-99af" name="New EntryLink" hidden="false" collective="false" import="true" targetId="df05-8179-624e-f8b2" type="selectionEntry">
+    <entryLink id="3e1c-c1d7-5869-99af" name="Defence Emplacement" hidden="false" collective="false" import="true" targetId="df05-8179-624e-f8b2" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="3e1c-c1d7-5869-99af-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="6350-dbfb-92aa-1a71" name="New EntryLink" hidden="false" collective="false" import="true" targetId="04bf-6c22-19fb-4e46" type="selectionEntry">
+    <entryLink id="6350-dbfb-92aa-1a71" name="Vengeance Weapon Battery" hidden="false" collective="false" import="true" targetId="04bf-6c22-19fb-4e46" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="6350-dbfb-92aa-1a71-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="8bb3-5432-57ce-d3c6" name="New EntryLink" hidden="false" collective="false" import="true" targetId="0f73-97f2-b832-f6d0" type="selectionEntry">
+    <entryLink id="8bb3-5432-57ce-d3c6" name="Defence Line" hidden="false" collective="false" import="true" targetId="0f73-97f2-b832-f6d0" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="8bb3-5432-57ce-d3c6-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="5e81-c325-81e7-585b" name="New EntryLink" hidden="false" collective="false" import="true" targetId="595a-908e-96a1-f121" type="selectionEntry">
+    <entryLink id="5e81-c325-81e7-585b" name="Shrine of the Aquila" hidden="false" collective="false" import="true" targetId="595a-908e-96a1-f121" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="5e81-c325-81e7-585b-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true"/>
       </categoryLinks>
@@ -611,37 +662,37 @@
         <categoryLink id="1b5c-a6b3-188c-511b-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="bd48-8789-0713-9aba" name="New EntryLink" hidden="false" collective="false" import="true" targetId="e0b3-77ca-af76-bd8b" type="selectionEntry">
+    <entryLink id="bd48-8789-0713-9aba" name="Sanctum Imperialis" hidden="false" collective="false" import="true" targetId="e0b3-77ca-af76-bd8b" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="bd48-8789-0713-9aba-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="84a7-8b67-aa9e-b91b" name="New EntryLink" hidden="false" collective="false" import="true" targetId="0116-c81b-1c0f-251c" type="selectionEntry">
+    <entryLink id="84a7-8b67-aa9e-b91b" name="Bunker" hidden="false" collective="false" import="true" targetId="0116-c81b-1c0f-251c" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="84a7-8b67-aa9e-b91b-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="123f-629b-f3e4-b9e0" name="New EntryLink" hidden="false" collective="false" import="true" targetId="3015-0b77-e848-c0f5" type="selectionEntry">
+    <entryLink id="123f-629b-f3e4-b9e0" name="Plasma Obliterator" hidden="false" collective="false" import="true" targetId="3015-0b77-e848-c0f5" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="123f-629b-f3e4-b9e0-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="d6ad-e26f-6719-568c" name="New EntryLink" hidden="false" collective="false" import="true" targetId="c05d-2231-2481-4037" type="selectionEntry">
+    <entryLink id="d6ad-e26f-6719-568c" name="Imperial Primus Redoubt" hidden="false" collective="false" import="true" targetId="c05d-2231-2481-4037" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="d6ad-e26f-6719-568c-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="7f84-41bd-8d98-965d" name="New EntryLink" hidden="false" collective="false" import="true" targetId="e40b-468f-f1d7-d05d" type="selectionEntry">
+    <entryLink id="7f84-41bd-8d98-965d" name="Imperial Castelum Stronghold" hidden="false" collective="false" import="true" targetId="e40b-468f-f1d7-d05d" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="7f84-41bd-8d98-965d-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="664b-7f0c-e827-a28b" name="New EntryLink" hidden="false" collective="false" import="true" targetId="55c6-268b-357f-d070" type="selectionEntry">
+    <entryLink id="664b-7f0c-e827-a28b" name="Bastion" hidden="false" collective="false" import="true" targetId="55c6-268b-357f-d070" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="664b-7f0c-e827-a28b-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="07bd-ce47-7d2a-3145" name="New EntryLink" hidden="false" collective="false" import="true" targetId="e10f-7b90-ecd3-80a5" type="selectionEntry">
+    <entryLink id="07bd-ce47-7d2a-3145" name="Basilica Administratum" hidden="false" collective="false" import="true" targetId="e10f-7b90-ecd3-80a5" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="07bd-ce47-7d2a-3145-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true"/>
       </categoryLinks>
@@ -651,12 +702,12 @@
         <categoryLink id="c837-6391-c00e-39f3-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="b692-9da3-7f7c-e767" name="New EntryLink" hidden="false" collective="false" import="true" targetId="ab80-0fef-3e93-8e64" type="selectionEntry">
+    <entryLink id="b692-9da3-7f7c-e767" name="Legio Titanicus Warlord Battle Titan" hidden="false" collective="false" import="true" targetId="ab80-0fef-3e93-8e64" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="b692-9da3-7f7c-e767-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="0826-246b-1403-0735" name="New EntryLink" hidden="false" collective="false" import="true" targetId="b894-adfc-6d3d-fde4" type="selectionEntry">
+    <entryLink id="0826-246b-1403-0735" name="Legio Titanicus Warhound Scout Titan" hidden="false" collective="false" import="true" targetId="b894-adfc-6d3d-fde4" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="0826-246b-1403-0735-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
       </categoryLinks>
@@ -747,12 +798,28 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="f535-e7b9-097b-5969" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true"/>
+        <categoryLink id="a6a9-ca33-c44a-c690" name="Compulsory HQ" hidden="false" targetId="d7ea-8c56-c01f-53b4" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="934e-e981-da9e-cdf2" name="Allied Detachment" hidden="false" collective="false" import="true" targetId="c91a-6e83-93ce-54ac" type="selectionEntry">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c242-7ae8-d4a7-ba4e" type="min"/>
       </constraints>
+    </entryLink>
+    <entryLink id="0e9c-e470-b412-174a" name="Nathaniel Garro" hidden="false" collective="false" import="true" targetId="f86d-ae13-1d89-f1a1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="dbbd-5c5d-4d70-d345" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d683-f201-b77f-c9af" name="Tylos Rubio" hidden="false" collective="false" import="true" targetId="7baf-1c2e-6b5d-b865" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8ae1-af94-c2ee-1bb2" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b22a-c4d7-d40e-19f4" name="Knight-Errant" hidden="false" collective="false" import="true" targetId="0b3e-7f6d-3556-5446" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ee88-dc38-fe06-b31b" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -5411,7 +5478,7 @@ decided.</description>
         </selectionEntry>
         <selectionEntry id="c60c-dfd9-c5b8-50d1" name="Iron Halo" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
-            <infoLink id="49b1-6f24-3e38-5397" name="New InfoLink" hidden="false" targetId="e8d9-eb1e-3e42-09b1" type="profile"/>
+            <infoLink id="49b1-6f24-3e38-5397" name="Iron Halo" hidden="false" targetId="10b59cf4-3c97-e3e0-2185-853bcde6d112" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -6537,11 +6604,6 @@ Overawe(+1 to the total score to determine the result of an assault)</descriptio
     <profile id="ccdd-40a2-abb2-09a3" name="Teleportation Transponder" publicationId="a30a-7522-pubN95872" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A unit comprising models that are all equipped with teleportation transponders gains the Deep Strike rule.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="e8d9-eb1e-3e42-09b1" name="Iron Halo" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">4++</characteristic>
       </characteristics>
     </profile>
     <profile id="a660-c6dd-f169-e9f3" name="Refractor Feild" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">

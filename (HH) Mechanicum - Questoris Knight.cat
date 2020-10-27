@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="32d1ddc6-3187-cf6f-3bf8-9891e527a002" name="Questoris Knight Crusade Army" revision="53" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="128" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="32d1ddc6-3187-cf6f-3bf8-9891e527a002" name="Questoris Knight Crusade Army" revision="54" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="130" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="32d1ddc6--pubN65537" name="Age of Darkness Crusade Army List"/>
     <publication id="32d1ddc6--pubN66650" name="HH4: Conquest"/>
@@ -93,6 +93,11 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b9ef-f553-91bf-05d6" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="3b74-a066-7876-2842" name="Compulsory HQ" hidden="false" targetId="becd-7a6d-e80f-878e" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b8c-2e1c-f0d3-dba1" type="min"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="e16c-65fe-d3da-fb93" name="Allied Detachment" hidden="false">
@@ -178,6 +183,7 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
       </rules>
       <categoryLinks>
         <categoryLink id="c9c2bc37-7048-4ed5-80c0-fb13d224f96a-485123232344415441232323" hidden="false" targetId="485123232344415441232323" primary="true"/>
+        <categoryLink id="55c4-b31c-c68f-9cd9" name="Compulsory HQ" hidden="false" targetId="becd-7a6d-e80f-878e" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="0d826049-6db2-6635-065c-6b6c34faf886" name="Knight Armour" hidden="false" collective="false" import="true" targetId="3fc4-9d7f-969b-35bb" type="selectionEntryGroup"/>
@@ -384,6 +390,7 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
       </rules>
       <categoryLinks>
         <categoryLink id="33d55e37-58db-535e-ffb4-0c9136c15e25-485123232344415441232323" hidden="false" targetId="485123232344415441232323" primary="true"/>
+        <categoryLink id="72e0-76e7-3456-b46b" name="Compulsory HQ" hidden="false" targetId="becd-7a6d-e80f-878e" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="d68922c4-1f12-ba8f-c17f-65225738046d" hidden="false" collective="false" import="true" targetId="3fc4-9d7f-969b-35bb" type="selectionEntryGroup"/>
@@ -429,6 +436,7 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
       </modifiers>
       <categoryLinks>
         <categoryLink id="849c-0f60-509d-16d1-485123232344415441232323" hidden="false" targetId="485123232344415441232323" primary="true"/>
+        <categoryLink id="a25f-09bc-594c-e815" name="Compulsory HQ" hidden="false" targetId="becd-7a6d-e80f-878e" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="3135-573f-145d-9803" name="Castellax Class Battle-Automata Maniple" hidden="false" collective="false" import="true" targetId="48db-84ca-2bad-520f" type="selectionEntry">
@@ -460,12 +468,12 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
         <categoryLink id="02c6-f507-ac2e-504c-5297-7e0f-fa0b-3537" hidden="false" targetId="5297-7e0f-fa0b-3537" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="9112-60df-c178-6f7b" name="New EntryLink" hidden="false" collective="false" import="true" targetId="1fa3-1f86-94a6-bf48" type="selectionEntry">
+    <entryLink id="9112-60df-c178-6f7b" name="Legio Titanicus Reaver Battle Titan" hidden="false" collective="false" import="true" targetId="1fa3-1f86-94a6-bf48" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="9112-60df-c178-6f7b-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="4e49-8766-3548-9870" name="New EntryLink" hidden="false" collective="false" import="true" targetId="fb92-d215-2011-f911" type="selectionEntry">
+    <entryLink id="4e49-8766-3548-9870" name="Warlord-Sinister Pattern Battle Psi-Titan" hidden="false" collective="false" import="true" targetId="fb92-d215-2011-f911" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -477,12 +485,12 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
         <categoryLink id="4e49-8766-3548-9870-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="4179-a726-fc3c-addf" name="New EntryLink" hidden="false" collective="false" import="true" targetId="b894-adfc-6d3d-fde4" type="selectionEntry">
+    <entryLink id="4179-a726-fc3c-addf" name="Legio Titanicus Warhound Scout Titan" hidden="false" collective="false" import="true" targetId="b894-adfc-6d3d-fde4" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="4179-a726-fc3c-addf-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="53b7-53cc-3df0-a8a1" name="New EntryLink" hidden="false" collective="false" import="true" targetId="ab80-0fef-3e93-8e64" type="selectionEntry">
+    <entryLink id="53b7-53cc-3df0-a8a1" name="Legio Titanicus Warlord Battle Titan" hidden="false" collective="false" import="true" targetId="ab80-0fef-3e93-8e64" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="53b7-53cc-3df0-a8a1-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
       </categoryLinks>
@@ -492,7 +500,7 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
         <categoryLink id="3f06-44f6-7e22-ed9a-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="fa5a-7dbb-c0ea-2f53" name="New EntryLink" hidden="false" collective="false" import="true" targetId="e10f-7b90-ecd3-80a5" type="selectionEntry">
+    <entryLink id="fa5a-7dbb-c0ea-2f53" name="Basilica Administratum" hidden="false" collective="false" import="true" targetId="e10f-7b90-ecd3-80a5" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="fa5a-7dbb-c0ea-2f53-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true"/>
       </categoryLinks>
@@ -508,6 +516,48 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55b1-94e9-819f-fc99" type="min"/>
       </constraints>
+    </entryLink>
+    <entryLink id="8e7c-1851-8041-e857" name="Tylos Rubio" hidden="false" collective="false" import="true" targetId="7baf-1c2e-6b5d-b865" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="513f-ab95-ad10-b2ec" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="01ac-fa30-3771-cd61" name="HQ" hidden="false" targetId="485123232344415441232323" primary="true"/>
+        <categoryLink id="eba6-99d6-42ac-a505" name="Infantry" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
+        <categoryLink id="b2ce-8c33-ecc5-f88d" name="Legiones Astartes" hidden="false" targetId="0c56-27b8-a737-c9fd" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1547-5656-afe7-b3a2" name="Knight-Errant" hidden="false" collective="false" import="true" targetId="0b3e-7f6d-3556-5446" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="513f-ab95-ad10-b2ec" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c9ba-a0ac-4a8e-1b37" name="HQ" hidden="false" targetId="485123232344415441232323" primary="true"/>
+        <categoryLink id="b2c0-d007-21b6-4379" name="Infantry" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
+        <categoryLink id="7231-77a8-4f25-6f9c" name="Legiones Astartes" hidden="false" targetId="0c56-27b8-a737-c9fd" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e0c9-f09a-f40f-93ea" name="Nathaniel Garro" hidden="false" collective="false" import="true" targetId="f86d-ae13-1d89-f1a1" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="513f-ab95-ad10-b2ec" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="dbf7-3a65-97e9-8c62" name="HQ" hidden="false" targetId="485123232344415441232323" primary="true"/>
+        <categoryLink id="cc22-0396-3020-9e3f" name="Infantry" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
+        <categoryLink id="9b08-3e1a-4b4b-4bbb" name="Legiones Astartes" hidden="false" targetId="0c56-27b8-a737-c9fd" primary="false"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
