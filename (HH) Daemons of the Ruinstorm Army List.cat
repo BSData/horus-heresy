@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8700-b3bb-a471-a0ad" name="Daemons of the Ruinstorm" revision="16" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="128" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8700-b3bb-a471-a0ad" name="Daemons of the Ruinstorm" revision="17" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="130" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="8700-b3bb-pubN65537" name="HH8: Malevolence"/>
     <publication id="8700-b3bb-pubN75780" name="BRB"/>
@@ -329,6 +329,20 @@
                 <modifier type="set" field="e7c1-3a77-ef39-0f98" value="2"/>
               </modifiers>
             </entryLink>
+            <entryLink id="116e-20c0-6e54-b74e" name="Rift Barb Ambiguity" hidden="true" collective="false" import="true" targetId="725c-0c41-7a96-5901" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="points" value="3.0">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="19f9-a3b4-ae4e-845e" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -437,6 +451,20 @@
             <modifier type="increment" field="e7c1-3a77-ef39-0f98" value="3.0"/>
           </modifiers>
         </entryLink>
+        <entryLink id="655b-13a9-7270-0031" name="Rift Barb Ambiguity" hidden="true" collective="false" import="true" targetId="725c-0c41-7a96-5901" type="selectionEntry">
+          <modifiers>
+            <modifier type="increment" field="points" value="3.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="19f9-a3b4-ae4e-845e" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -520,9 +548,23 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="08c5-d695-f9ec-e08b" name="Bracket One" hidden="false" collective="false" import="true" targetId="377a-f74e-00b1-f5f5" type="selectionEntryGroup">
+        <entryLink id="08c5-d695-f9ec-e08b" name="Emanations of Horror [1]" hidden="false" collective="false" import="true" targetId="377a-f74e-00b1-f5f5" type="selectionEntryGroup">
           <modifiers>
             <modifier type="increment" field="e7c1-3a77-ef39-0f98" value="2"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="eee9-092c-9571-567e" name="Rift Barb Ambiguity" hidden="true" collective="false" import="true" targetId="725c-0c41-7a96-5901" type="selectionEntry">
+          <modifiers>
+            <modifier type="increment" field="points" value="3.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="19f9-a3b4-ae4e-845e" type="greaterThan"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </entryLink>
       </entryLinks>
@@ -617,9 +659,23 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="7409-a973-1a0f-c633" name="Bracket One" hidden="false" collective="false" import="true" targetId="377a-f74e-00b1-f5f5" type="selectionEntryGroup">
+        <entryLink id="7409-a973-1a0f-c633" name="Emanations of Horror [1]" hidden="false" collective="false" import="true" targetId="377a-f74e-00b1-f5f5" type="selectionEntryGroup">
           <modifiers>
             <modifier type="increment" field="e7c1-3a77-ef39-0f98" value="2"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="b16a-ace9-f748-24cf" name="Rift Barb Ambiguity" hidden="true" collective="false" import="true" targetId="725c-0c41-7a96-5901" type="selectionEntry">
+          <modifiers>
+            <modifier type="increment" field="points" value="3.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="19f9-a3b4-ae4e-845e" type="greaterThan"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </entryLink>
       </entryLinks>
@@ -650,9 +706,23 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="d13b-f3af-3a38-2dac" name="Bracket One" hidden="false" collective="false" import="true" targetId="377a-f74e-00b1-f5f5" type="selectionEntryGroup">
+        <entryLink id="d13b-f3af-3a38-2dac" name="Emanations of Horror [1]" hidden="false" collective="false" import="true" targetId="377a-f74e-00b1-f5f5" type="selectionEntryGroup">
           <modifiers>
             <modifier type="increment" field="e7c1-3a77-ef39-0f98" value="2"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="c645-359d-485b-a119" name="Rift Barb Ambiguity" hidden="true" collective="false" import="true" targetId="725c-0c41-7a96-5901" type="selectionEntry">
+          <modifiers>
+            <modifier type="increment" field="points" value="3.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="19f9-a3b4-ae4e-845e" type="greaterThan"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </entryLink>
       </entryLinks>
@@ -687,6 +757,20 @@
         <entryLink id="414e-2de8-4537-4b03" name="Emanations of Horror [1]" hidden="false" collective="false" import="true" targetId="377a-f74e-00b1-f5f5" type="selectionEntryGroup">
           <modifiers>
             <modifier type="increment" field="e7c1-3a77-ef39-0f98" value="1"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="46e3-27d9-e577-fb44" name="Rift Barb Ambiguity" hidden="true" collective="false" import="true" targetId="725c-0c41-7a96-5901" type="selectionEntry">
+          <modifiers>
+            <modifier type="increment" field="points" value="3.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="19f9-a3b4-ae4e-845e" type="greaterThan"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </entryLink>
       </entryLinks>
@@ -860,13 +944,9 @@
               </modifiers>
             </entryLink>
             <entryLink id="2802-b8bc-3f75-5fde" name="Rift Barb" hidden="false" collective="false" import="true" targetId="19f9-a3b4-ae4e-845e" type="selectionEntry">
-              <modifiers>
-                <modifier type="increment" field="points" value="15">
-                  <repeats>
-                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
             </entryLink>
             <entryLink id="71bc-10c5-3bd0-c11e" name="Molten Blood" hidden="false" collective="false" import="true" targetId="e001-8e2e-f957-4bb7" type="selectionEntry">
               <modifiers>
@@ -943,6 +1023,25 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b3a4-eecb-39a0-f4bb" name="Rift Barb Ambiguity" hidden="true" collective="false" import="true" targetId="725c-0c41-7a96-5901" type="selectionEntry">
+          <modifiers>
+            <modifier type="increment" field="points" value="15.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="19f9-a3b4-ae4e-845e" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="pts" typeId="points" value="-15.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -2241,6 +2340,19 @@ Models in combat with Sam us Unbound, as well as those taking Fear tests in orde
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="415.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="725c-0c41-7a96-5901" name="Rift Barb Ambiguity" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f9b-813d-6579-41fa" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="35d4-753f-b83a-f24d" name="Rift Barb Ambiguity" hidden="false">
+          <description>The cost of Rift Barb is argued over a bit for if it should be (3/10/15 points) as listed in book 8, or (3/10/15 points per model in the unit) as per all other listed entires for other emanations.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="-3.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
