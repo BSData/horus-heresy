@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" revision="111" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="130" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" revision="112" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="130" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="90aa-c2c8-pubN65537" name="Crusade Imperialis"/>
     <publication id="90aa-c2c8-pubN65563" name="AoDRB"/>
@@ -1477,7 +1477,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
       </constraints>
       <rules>
         <rule id="9066-81bf-e6dd-0afc" name="Advanced Weapons" publicationId="90aa-c2c8-pubN73486" page="188" hidden="false">
-          <description>Strength of las-weapons and rotor cannons increased by +1.  Must be taken by all eligible squads.</description>
+          <description>The strength of laspistols, lascarbines, lasrifles, laslocks and rotor cannon used by Grenadier and Platoon Command Cadre squads with this Provenance may be increased by +1 for +20 points per squad (BS Note: Bonus included in profile). If this option is taken, all such squads in the army must be upgraded. In addition, Grenadier and Platoon Command Cadres with this Provenance may take either a Rhino or Land Raider Proteus as their Dedicated Transports, so long as they number 10 models or less, or a Termite Assault Drill, so long as they number 12 models or less. See the Legiones Astartes: Age of Darkness Army List for details and points costs. Efforts should be made to model this upgrade accordingly with suitably ornate or enhanced weapons.</description>
         </rule>
       </rules>
       <costs>
@@ -5989,7 +5989,15 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a975-bc92-bac9-a453" type="max"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink id="2aa7-b62b-bfab-0a10" name="Laspistol" hidden="false" targetId="f2b7-768f-a270-de64" type="profile"/>
+                        <infoLink id="2aa7-b62b-bfab-0a10" name="Laspistol" hidden="false" targetId="f2b7-768f-a270-de64" type="profile">
+                          <modifiers>
+                            <modifier type="increment" field="537472656e67746823232344415441232323" value="1">
+                              <conditions>
+                                <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93a4-c515-6894-0cda" type="equalTo"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </infoLink>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="0.0"/>
@@ -6454,7 +6462,15 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5ec-54d1-899c-02b0" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="45cc-5a94-48d8-6cad" name="Laslock" hidden="false" targetId="bb95-3b87-dcfb-3473" type="profile"/>
+                <infoLink id="45cc-5a94-48d8-6cad" name="Laslock" hidden="false" targetId="bb95-3b87-dcfb-3473" type="profile">
+                  <modifiers>
+                    <modifier type="increment" field="537472656e67746823232344415441232323" value="1">
+                      <conditions>
+                        <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93a4-c515-6894-0cda" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
@@ -6499,7 +6515,15 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="528c-6a09-e4cc-b915" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="941b-0c4e-b219-7620" name="Lascarbine" hidden="false" targetId="511e-27d3-0c3c-c5ae" type="profile"/>
+                <infoLink id="941b-0c4e-b219-7620" name="Lascarbine" hidden="false" targetId="511e-27d3-0c3c-c5ae" type="profile">
+                  <modifiers>
+                    <modifier type="increment" field="537472656e67746823232344415441232323" value="1">
+                      <conditions>
+                        <condition field="selections" scope="ee8f-fcde-88df-7261" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93a4-c515-6894-0cda" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -6543,7 +6567,7 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
       <entryLinks>
         <entryLink id="1a4f-a11d-9d7a-37d2" name="Advanced Weapons" hidden="false" collective="false" import="true" targetId="93a4-c515-6894-0cda" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="29bc-5c3c-5066-25a9" value="1">
+            <modifier type="set" field="29bc-5c3c-5066-25a9" value="1.0">
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="93a4-c515-6894-0cda" type="equalTo"/>
               </conditions>
@@ -7459,7 +7483,15 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d3f-32b2-e8a0-289e" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="d8f5-b8e9-4758-c36c" name="Laspistol" hidden="false" targetId="f2b7-768f-a270-de64" type="profile"/>
+                    <infoLink id="d8f5-b8e9-4758-c36c" name="Laspistol" hidden="false" targetId="f2b7-768f-a270-de64" type="profile">
+                      <modifiers>
+                        <modifier type="increment" field="537472656e67746823232344415441232323" value="1">
+                          <conditions>
+                            <condition field="selections" scope="f299-898a-b637-0aa2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93a4-c515-6894-0cda" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </infoLink>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -7594,7 +7626,15 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19aa-ca1a-a53d-37f1" type="max"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink id="0550-f7ee-37e7-9659" name="Rotor Cannon" hidden="false" targetId="871025a3-7729-f97d-378d-804c3571cdf3" type="profile"/>
+                        <infoLink id="0550-f7ee-37e7-9659" name="Rotor Cannon" hidden="false" targetId="871025a3-7729-f97d-378d-804c3571cdf3" type="profile">
+                          <modifiers>
+                            <modifier type="increment" field="537472656e67746823232344415441232323" value="1">
+                              <conditions>
+                                <condition field="selections" scope="f299-898a-b637-0aa2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93a4-c515-6894-0cda" type="equalTo"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </infoLink>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="10.0"/>
@@ -7813,7 +7853,7 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="89bb-6fc0-9159-3558" name="Replace Lascarbines with:" hidden="false" collective="false" import="true" defaultSelectionEntryId="f979-f7ca-4358-173c">
+        <selectionEntryGroup id="89bb-6fc0-9159-3558" name="Replace Auxilia Rifles with:" hidden="false" collective="false" import="true" defaultSelectionEntryId="f979-f7ca-4358-173c">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1f35-71d4-1331-e6cd" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef48-3572-f2cd-f5a5" type="min"/>
@@ -7846,7 +7886,15 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0334-5e04-12cb-f32b" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="7079-2836-b4d5-70e6" hidden="false" targetId="bb95-3b87-dcfb-3473" type="profile"/>
+                <infoLink id="7079-2836-b4d5-70e6" name="Laslock" hidden="false" targetId="bb95-3b87-dcfb-3473" type="profile">
+                  <modifiers>
+                    <modifier type="increment" field="537472656e67746823232344415441232323" value="1">
+                      <conditions>
+                        <condition field="selections" scope="f299-898a-b637-0aa2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93a4-c515-6894-0cda" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="15.0"/>
@@ -7857,7 +7905,15 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f62d-8126-7e5f-a2d3" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="8fa6-0e29-d551-a6b6" hidden="false" targetId="a7ca-04d9-b34d-d8cc" type="profile"/>
+                <infoLink id="8fa6-0e29-d551-a6b6" name="Auxilia Lascarbine" hidden="false" targetId="a7ca-04d9-b34d-d8cc" type="profile">
+                  <modifiers>
+                    <modifier type="increment" field="537472656e67746823232344415441232323" value="1">
+                      <conditions>
+                        <condition field="selections" scope="f299-898a-b637-0aa2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93a4-c515-6894-0cda" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
@@ -7890,7 +7946,15 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cca6-cab4-1444-d033" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="c0f6-ec48-c37c-a485" name="Laspistol" hidden="false" targetId="f2b7-768f-a270-de64" type="profile"/>
+                <infoLink id="c0f6-ec48-c37c-a485" name="Laspistol" hidden="false" targetId="f2b7-768f-a270-de64" type="profile">
+                  <modifiers>
+                    <modifier type="increment" field="537472656e67746823232344415441232323" value="1">
+                      <conditions>
+                        <condition field="selections" scope="f299-898a-b637-0aa2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93a4-c515-6894-0cda" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="5.0"/>
@@ -7901,7 +7965,15 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b4e2-33e5-a01e-24aa" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="8f18-4b87-ec0a-929f" hidden="false" targetId="e139-83cc-f919-7fb7" type="profile"/>
+                <infoLink id="8f18-4b87-ec0a-929f" name="Auxilia Lasrifle" hidden="false" targetId="e139-83cc-f919-7fb7" type="profile">
+                  <modifiers>
+                    <modifier type="increment" field="537472656e67746823232344415441232323" value="1">
+                      <conditions>
+                        <condition field="selections" scope="f299-898a-b637-0aa2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93a4-c515-6894-0cda" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="15.0"/>
@@ -8023,7 +8095,7 @@ If a Weapon Destroyed result is repaired, that weapon may be fired in the follow
         <entryLink id="3d11-0d9d-0dbb-4ae8" name="Provenance" hidden="false" collective="false" import="true" targetId="9d50-7127-dc55-d542" type="selectionEntryGroup"/>
         <entryLink id="a0bd-ea47-2442-f8fe" name="Advanced Weapons" hidden="false" collective="false" import="true" targetId="93a4-c515-6894-0cda" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="da54-e592-7e42-40b8" value="1">
+            <modifier type="set" field="da54-e592-7e42-40b8" value="1.0">
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="93a4-c515-6894-0cda" type="equalTo"/>
               </conditions>
