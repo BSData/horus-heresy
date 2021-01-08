@@ -14,7 +14,8 @@
     <categoryEntry id="486561767920537570706f727423232344415441232323" name="Heavy Support" hidden="false"/>
     <categoryEntry id="2271-1b9a-5c30-9676" name="Aetheric Dominion" hidden="false">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9fb-b8e5-20db-b9b9" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c9fb-b8e5-20db-b9b9" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="86b2-5e9b-c913-73e4" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" name="Lords of War" hidden="false"/>
@@ -137,7 +138,8 @@
         </categoryLink>
         <categoryLink id="7a11-130d-e08e-65be" name="Aetheric Dominion" hidden="false" targetId="2271-1b9a-5c30-9676" primary="false">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bd9-4ea2-c150-12a5" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7bd9-4ea2-c150-12a5" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="33f3-f482-c2f8-353c" type="min"/>
           </constraints>
         </categoryLink>
         <categoryLink id="63e0-0102-d8af-800e" name="Compulsory Troops" hidden="false" targetId="0547-e031-0d25-4c6c" primary="false">
@@ -163,7 +165,8 @@
       <categoryLinks>
         <categoryLink id="5936-60c0-10a5-dbd8" name="Aetheric Dominion" hidden="false" targetId="2271-1b9a-5c30-9676" primary="false">
           <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ce0-a2b7-e89c-8cd4" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2ce0-a2b7-e89c-8cd4" type="min"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cd89-542d-b9f3-400c" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="5c6b-3027-0572-11c5" name="HQ" hidden="false" targetId="485123232344415441232323" primary="false">
@@ -269,6 +272,18 @@
             <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="36f4-8de7-1259-005f" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="cf6e-c774-167c-49b8" name="Aliens and Daemons" hidden="false" targetId="cd09-c1c6-237a-798e" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="951e-7bf1-6634-a45d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="feac-bec5-fe39-97ef" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="8fe7-91f0-98b0-8b29" name="Aetheric Dominion" hidden="false" targetId="2271-1b9a-5c30-9676" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ae84-9d85-c1a7-66a1" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fff3-944a-a5a5-697b" type="min"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="a0b6-1a2f-3d64-b9d4" name=" Zone Mortalis - Combatant" hidden="false">
@@ -329,6 +344,18 @@
             <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3cd1-198e-9df7-ab73" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="353d-52f3-65a9-2e14" name="Aliens and Daemons" hidden="false" targetId="cd09-c1c6-237a-798e" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5a4-d7e0-0fbe-1bb4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba9b-9c7b-509a-be03" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="a6cd-e310-59b5-2f63" name="Aetheric Dominion" hidden="false" targetId="2271-1b9a-5c30-9676" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b40f-70e6-69a2-c978" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fad2-7581-5daa-d42e" type="min"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="41d1-3cca-834f-f8e0" name=" Zone Mortalis - Defender" hidden="false">
@@ -382,6 +409,18 @@
         <categoryLink id="76b4-fca6-7d7a-9ca8" name="Flying Gargantuan Creature" hidden="false" targetId="abaf-c4f2-142d-0deb" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4d91-3ec5-d55a-39f2" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="a6cf-39df-1f80-7cc7" name="Aliens and Daemons" hidden="false" targetId="cd09-c1c6-237a-798e" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a6d-6bc0-2dc9-4c58" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e283-f40f-6ef2-7e37" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="2eca-39b9-2df0-04ea" name="Aetheric Dominion" hidden="false" targetId="2271-1b9a-5c30-9676" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bb1c-fe7a-cc70-c1cc" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ee6f-f78a-f1b5-651e" type="min"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
