@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="107" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="130" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="108" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="132" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="cf03-f607-pubN65537" name="Horus Heresy: Taghmata Army List"/>
     <publication id="cf03-f607-pubN65563" name="AoDRB"/>
@@ -145,7 +145,20 @@ A wound cannot be re-allocated onto a gun model from a successful Look Out, Sir 
         <infoLink id="c85f-7d12-3ba1-3f16" name="Trust Move" hidden="false" targetId="97c4-1c1c-3727-757f" type="rule"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="25d0-388c-dd16-af9a" name="Flying Monstrous Creature" hidden="false"/>
+    <categoryEntry id="25d0-388c-dd16-af9a" name="Flying Monstrous Creature" hidden="false">
+      <infoLinks>
+        <infoLink id="f690-4338-67d6-1546" name="Fear" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule"/>
+        <infoLink id="cda4-b713-7790-3e29" name="Fearless" hidden="false" targetId="dc70-e199-5525-e78c" type="rule"/>
+        <infoLink id="8df1-1326-9d28-aaec" name="Feel No Pain" hidden="false" targetId="9bdd-5ec7-8dd6-63c0" type="rule"/>
+        <infoLink id="e118-0e47-9184-d155" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule"/>
+        <infoLink id="cbb9-3d52-7d1d-822f" name="Jink" hidden="false" targetId="d3e5-b43d-a89c-3bd8" type="rule"/>
+        <infoLink id="5d43-b84b-5e65-934b" name="Move Through Cover" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule"/>
+        <infoLink id="6daf-a351-22f2-bf30" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule"/>
+        <infoLink id="f174-7dcd-d9fb-da78" name="Smash" hidden="false" targetId="4284-18a1-9844-a0bd" type="rule"/>
+        <infoLink id="5799-4d21-f00f-5dea" name="Strikedown" hidden="false" targetId="dd83-7fb9-6f58-0c96" type="rule"/>
+        <infoLink id="c3f8-9224-a6a2-1cc9" name="Vector Strike" hidden="false" targetId="5341-7110-d8d4-171a" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
     <categoryEntry id="7fdd-2a97-d0e9-6524" name="Cybernetica Cortex" hidden="false">
       <constraints>
         <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bde-e31b-6025-43ba" type="max"/>
@@ -578,6 +591,9 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
       </categoryLinks>
     </forceEntry>
     <forceEntry id="089f-7e79-bde1-90dd" name=" Zone Mortalis - Attacker" hidden="false">
+      <infoLinks>
+        <infoLink id="5276-05ea-96b5-79d8" name="ZM (Unusable)" hidden="false" targetId="b1da-bb0d-6990-b5c7" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="089f-7e79-bde1-90dd-456c6974657323232344415441232323" name="Elites" hidden="false" targetId="456c6974657323232344415441232323" primary="false">
           <constraints>
@@ -613,9 +629,27 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
           </constraints>
         </categoryLink>
         <categoryLink id="6279-d5af-6cde-41e9" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
+        <categoryLink id="c27f-1272-d0cb-350d" name="Flying Monstrous Creature" hidden="false" targetId="25d0-388c-dd16-af9a" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="af73-b299-9617-aaa0" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="2add-d5d6-949c-f516" name="Dedicated Transport" hidden="false" targetId="c407-80ff-568e-3394" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="29e5-77c6-2bbf-06c1" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="a38a-c045-a79a-27c2" name="ZM (Unusable)" hidden="false" targetId="9335-93c1-6af7-feb0" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="220d-b992-09e4-8204" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="7b39-af6b-52e1-b4d7" name=" Zone Mortalis - Defender" hidden="false">
+      <infoLinks>
+        <infoLink id="2408-3def-5445-35f4" name="ZM (Unusable)" hidden="false" targetId="b1da-bb0d-6990-b5c7" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="7b39-af6b-52e1-b4d7-456c6974657323232344415441232323" name="Elites" hidden="false" targetId="456c6974657323232344415441232323" primary="false">
           <constraints>
@@ -647,9 +681,27 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
           </constraints>
         </categoryLink>
         <categoryLink id="5f45-c44a-9087-4af2" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
+        <categoryLink id="52bc-0420-8b3d-ee40" name="Dedicated Transport" hidden="false" targetId="c407-80ff-568e-3394" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="771d-da3f-c56c-e6e6" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="8911-2625-68c3-3482" name="Flying Monstrous Creature" hidden="false" targetId="25d0-388c-dd16-af9a" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ecd0-2089-c55f-dc91" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="d17f-6957-135c-3279" name="ZM (Unusable)" hidden="false" targetId="9335-93c1-6af7-feb0" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="464c-0b30-d5a5-8a54" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="7e48-c376-8ffe-8ae7" name=" Zone Mortalis - Combatant" hidden="false">
+      <infoLinks>
+        <infoLink id="a61c-0a22-4adf-7316" name="ZM (Unusable)" hidden="false" targetId="b1da-bb0d-6990-b5c7" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="7e48-c376-8ffe-8ae7-456c6974657323232344415441232323" name="Elites" hidden="false" targetId="456c6974657323232344415441232323" primary="false">
           <constraints>
@@ -685,6 +737,21 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
           </constraints>
         </categoryLink>
         <categoryLink id="4eee-7c91-c9b8-c7e7" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
+        <categoryLink id="3e75-4d5c-0389-df7a" name="Dedicated Transport" hidden="false" targetId="c407-80ff-568e-3394" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d4ba-88a1-e335-e4e6" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="7852-2eec-e298-8dd8" name="Flying Monstrous Creature" hidden="false" targetId="25d0-388c-dd16-af9a" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d6e0-55e7-c8c6-9937" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="5d88-a5ce-b0aa-d122" name="ZM (Unusable)" hidden="false" targetId="9335-93c1-6af7-feb0" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a3d8-e5cc-f45c-93f5" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="d1ef-61e1-3d67-5a19" name="Optional - Onslaught" hidden="false">
@@ -1775,6 +1842,19 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
       </costs>
     </selectionEntry>
     <selectionEntry id="d7c6-3866-37eb-af76" name="Thanatar Class Siege-automata Maniple" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="9335-93c1-6af7-feb0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e48-c376-8ffe-8ae7" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7b39-af6b-52e1-b4d7" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="089f-7e79-bde1-90dd" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="67d4-e1ef-588a-47e9" name="Cybernetica Cortex" hidden="false" targetId="f6c9-cdb7-c695-5b6b" type="rule"/>
         <infoLink id="cba2-88ce-8788-ec9b" hidden="false" targetId="d5cf-bd98-2854-13cf" type="rule"/>
@@ -1818,6 +1898,9 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="d141-6521-34a1-7f4c" name="Monstrous Creature" hidden="false" targetId="8ec4-17b5-7fea-c682" primary="false"/>
+          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="98c4-5b80-0e20-b196" name="Automantic Shielding" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -2599,6 +2682,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <categoryLink id="6e40-5da5-bb74-c2b3" name="New CategoryLink" hidden="false" targetId="8ec4-17b5-7fea-c682" primary="false"/>
         <categoryLink id="d115-15ed-f2d3-34bc" name="New CategoryLink" hidden="false" targetId="78ea-eea8-0ac5-b7de" primary="false"/>
         <categoryLink id="e1b4-f1a3-f823-70e0" name="Cybernetica Cortex" hidden="false" targetId="7fdd-2a97-d0e9-6524" primary="false"/>
+        <categoryLink id="1908-5ab0-4a08-c29a" name="Jump Infantry" hidden="false" targetId="47cf-71bb-d59d-f9de" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="c4ff-8b86-a4c4-ad96" name="Automantic Shielding" hidden="false" collective="false" import="true" type="upgrade">
@@ -3256,6 +3340,19 @@ Reduces transport capacity to 8.</description>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="92f0-d2fd-187f-9640" name="Scyllax Guardian-Automata" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="maxSelections" value="15.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e48-c376-8ffe-8ae7" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7b39-af6b-52e1-b4d7" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="089f-7e79-bde1-90dd" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="16.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -3972,6 +4069,9 @@ Reduces transport capacity to 8.</description>
         <infoLink id="5bb9-0cc1-443d-66d1" name="New InfoLink" hidden="false" targetId="6e59-4afd-8668-f066" type="rule"/>
         <infoLink id="a1e7-c5e5-c102-f1d7" name="New InfoLink" hidden="false" targetId="c584-ada8-935d-9ed7" type="profile"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b244-d815-1350-5e74" name="Dedicated Transport" hidden="false" targetId="c407-80ff-568e-3394" primary="false"/>
+      </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="6aa5-2f0e-f94f-d297" name="Psyarkana" hidden="false" collective="false" import="true">
           <constraints>
@@ -4071,6 +4171,19 @@ Reduces transport capacity to 8.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="c472-6345-24b3-f952" name="Secutarii" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="159d-4f16-5905-7fb4" value="14.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e48-c376-8ffe-8ae7" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7b39-af6b-52e1-b4d7" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="089f-7e79-bde1-90dd" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c608-7245-f009-8fef" type="min"/>
         <constraint field="selections" scope="parent" value="19.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="159d-4f16-5905-7fb4" type="max"/>
@@ -4264,7 +4377,7 @@ Reduces transport capacity to 8.</description>
         </entryLink>
         <entryLink id="9933-fe28-89b7-4b5b" hidden="false" collective="false" import="true" targetId="ae94-81c7-edf1-b10d" type="selectionEntry"/>
         <entryLink id="d5c3-1c21-5714-e009" hidden="false" collective="false" import="true" targetId="7b6e-1246-67b8-f13b" type="selectionEntry"/>
-        <entryLink id="0c3c-5921-cc0e-1ab3" hidden="false" collective="false" import="true" targetId="04fc-9823-28ea-591d" type="selectionEntryGroup"/>
+        <entryLink id="0c3c-5921-cc0e-1ab3" name="Dedicated Transport" hidden="false" collective="false" import="true" targetId="04fc-9823-28ea-591d" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -4546,7 +4659,7 @@ Reduces transport capacity to 8.</description>
             <cost name="pts" typeId="points" value="12.0"/>
           </costs>
         </entryLink>
-        <entryLink id="bc60-ee64-0ab8-641b" hidden="false" collective="false" import="true" targetId="04fc-9823-28ea-591d" type="selectionEntryGroup"/>
+        <entryLink id="bc60-ee64-0ab8-641b" name="Dedicated Transport" hidden="false" collective="false" import="true" targetId="04fc-9823-28ea-591d" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -4873,6 +4986,9 @@ Buildings and Fortifications D</description>
             <infoLink id="108c-2c8f-0691-20c0" name="Reactor Blast" hidden="false" targetId="d5cf-bd98-2854-13cf" type="rule"/>
             <infoLink id="4f87-aafa-7784-8aef" name="Atomantic Shielding" hidden="false" targetId="13e0-4939-5232-8d85" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="4fed-4a02-b031-79a9" name="Flying Monstrous Creature" hidden="false" targetId="25d0-388c-dd16-af9a" primary="false"/>
+          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="6afd-13e0-1ef7-991d" name="Vultarax arc blaster " hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -5067,6 +5183,9 @@ Buildings and Fortifications D</description>
         <infoLink id="11e3-434a-8e7d-29cb" name="New InfoLink" hidden="false" targetId="4771-b711-0e74-3aee" type="rule"/>
         <infoLink id="ef03-4124-3221-1bb3" name="Binaric Stratagems" hidden="false" targetId="6595-834d-8a6d-5fc6" type="rule"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="bee3-9da6-5d0a-1a1b" name="Infantry" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="6461-6b48-a0ef-5384" name="May be equipped with any of the following" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -5817,6 +5936,9 @@ Buildings and Fortifications D</description>
             <infoLink id="8eb3-009d-01f0-0de0" name="Stubborn" hidden="false" targetId="7be5-30af-1a02-0a89" type="rule"/>
             <infoLink id="6f9c-a5e6-0654-d020" name="Bulky" hidden="false" targetId="38d5-b6eb-bda8-2497" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="eda5-fe64-2a52-4157" name="Jetpack Infantry" hidden="false" targetId="afa3-c43a-c8c1-d8b6" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="points" value="40.0"/>
           </costs>
@@ -6013,6 +6135,19 @@ Buildings and Fortifications D</description>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="9e7e-232f-e016-6ce8" name="Tech-thrall" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="0cc6-3756-885d-1bc4" value="15.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e48-c376-8ffe-8ae7" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7b39-af6b-52e1-b4d7" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="089f-7e79-bde1-90dd" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3f6c-82d1-e38d-14ba" type="min"/>
             <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0cc6-3756-885d-1bc4" type="max"/>
@@ -6625,6 +6760,9 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2bfd-a995-d2e5-382c" type="min"/>
             <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f4c4-9c60-8443-d81b" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink id="9223-db9f-5f97-f41f" name="Jump Infantry" hidden="false" targetId="47cf-71bb-d59d-f9de" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="points" value="50.0"/>
           </costs>
@@ -8301,6 +8439,19 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
       </costs>
     </selectionEntry>
     <selectionEntry id="93b9-6dc9-3d02-db32" name="Thanatar-Calix Class Siege-Automata" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="9335-93c1-6af7-feb0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e48-c376-8ffe-8ae7" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7b39-af6b-52e1-b4d7" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="089f-7e79-bde1-90dd" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="ca31-e06c-7410-8919" name="Thanatar-Calix Class Siege-Automata" publicationId="cf03-f607-pubN76270" page="52" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <modifiers>
@@ -8336,6 +8487,7 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
       </infoLinks>
       <categoryLinks>
         <categoryLink id="57e5-70a0-f35a-349f" name="New CategoryLink" hidden="false" targetId="7fdd-2a97-d0e9-6524" primary="false"/>
+        <categoryLink id="9085-3583-d3bf-6181" name="Monstrous Creature" hidden="false" targetId="8ec4-17b5-7fea-c682" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="42b7-fe6e-988c-3f8a" name="Automantic Shielding" hidden="false" collective="false" import="true" type="upgrade">
@@ -8472,6 +8624,19 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
       </costs>
     </selectionEntry>
     <selectionEntry id="c888-532b-f933-ce1d" name="Thanatar-Cynis Class Siege-Automata Maniple" publicationId="cf03-f607-pubN76780" page="54" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="9335-93c1-6af7-feb0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e48-c376-8ffe-8ae7" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7b39-af6b-52e1-b4d7" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="089f-7e79-bde1-90dd" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="d194-e400-90d7-2889" hidden="false" targetId="f6c9-cdb7-c695-5b6b" type="rule"/>
         <infoLink id="46a9-6200-ac2b-d99c" hidden="false" targetId="797e55b1-251e-6606-9cb3-64661b0b18a3" type="rule"/>
@@ -8514,6 +8679,9 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="2832-0399-099d-d731" name="Monstrous Creature" hidden="false" targetId="8ec4-17b5-7fea-c682" primary="false"/>
+          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="6a4b-45b6-033c-0dd7" name="Automantic Shielding" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -8688,6 +8856,8 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
       <categoryLinks>
         <categoryLink id="02c8-6cbe-00e5-fce6" hidden="false" targetId="466173742041747461636b23232344415441232323" primary="true"/>
         <categoryLink id="1449-68ac-de22-3305" name="New CategoryLink" hidden="false" targetId="7fdd-2a97-d0e9-6524" primary="false"/>
+        <categoryLink id="45ce-d684-2b54-5f39" name="Monstrous Creature" hidden="false" targetId="8ec4-17b5-7fea-c682" primary="false"/>
+        <categoryLink id="25d5-1c35-5a76-d5a2" name="Jump Infantry" hidden="false" targetId="47cf-71bb-d59d-f9de" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="59eb-2bde-5f62-2350" name="Automantic Shielding" hidden="false" collective="false" import="true" type="upgrade">
@@ -11951,6 +12121,9 @@ In addition to its weapon attacks, units assaulting a model or unit with a gravi
             <infoLink id="9c8f-3606-07d8-f1b7" name="Stubborn" hidden="false" targetId="7be5-30af-1a02-0a89" type="rule"/>
             <infoLink id="659b-8da3-6778-1292" name="Bulky" hidden="false" targetId="38d5-b6eb-bda8-2497" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="ab35-99cc-77cd-3aab" name="Jetpack Infantry" hidden="false" targetId="afa3-c43a-c8c1-d8b6" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="points" value="40.0"/>
           </costs>
@@ -12143,6 +12316,19 @@ In addition to its weapon attacks, units assaulting a model or unit with a gravi
       </costs>
     </selectionEntry>
     <selectionEntry id="6ad8-fbf2-07a8-237c" name="Mechanicum Knight Moirax Talon" publicationId="ece2-a265-6237-7efa" page="" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="9335-93c1-6af7-feb0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e48-c376-8ffe-8ae7" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7b39-af6b-52e1-b4d7" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="089f-7e79-bde1-90dd" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="deb7-d6bb-7e7d-6076" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2ff-3d6f-b15f-722a" type="min"/>
@@ -12327,6 +12513,19 @@ Construct shields have an Armour value of 11. A Glancing or Penetrating hit (or 
       </costs>
     </selectionEntry>
     <selectionEntry id="678d-0533-f5f7-2e43" name="Questoris Knight Armiger Talon" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="add" field="category" value="9335-93c1-6af7-feb0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e48-c376-8ffe-8ae7" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7b39-af6b-52e1-b4d7" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="089f-7e79-bde1-90dd" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f378-f460-6e34-0907" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0a6-77ed-aa3a-1717" type="min"/>
@@ -17894,7 +18093,7 @@ A Unit may not use Counter Attack special rule if it used Reaction Fire.</descri
     </selectionEntryGroup>
     <selectionEntryGroup id="04fc-9823-28ea-591d" name="Dedicated Transport" hidden="false" collective="false" import="true">
       <entryLinks>
-        <entryLink id="5463-6ffb-af3e-757a" name="" hidden="false" collective="false" import="true" targetId="bb6538b0-0f23-8a43-9752-dd356ba76e46" type="selectionEntry"/>
+        <entryLink id="5463-6ffb-af3e-757a" name="Triaros Armoured Conveyor" hidden="false" collective="false" import="true" targetId="bb6538b0-0f23-8a43-9752-dd356ba76e46" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="4e41-e567-a14d-8e3a" name="Triaros/Karacnos optionals:" hidden="false" collective="false" import="true">

@@ -12719,6 +12719,22 @@ King Slayer (3 Victory points): If the opposing army includes a Primarch, this m
 • No model mounted on a base larger than 60mm may be chosen.*
 *Note: The terrain may still confine you, so caveat emptor!</description>
     </rule>
+    <rule id="b53a-eba8-e3f8-4ae8" name="Beasts" hidden="false">
+      <description>MOVEMENT
+Beasts can move up to 12&quot; in the Movement phase. Beasts are not slowed by difficult terrain (even when charging) and automatically pass Dangerous Terrain tests.
+FALL BACK MOVES
+Beasts make Fall Back moves just like Infantry, except that they move 3D6&quot;.
+SPECIAL RULES
+Beasts have the Fleet special rule.</description>
+    </rule>
+    <rule id="d956-6030-d01f-5f3a" name="Cavalry" hidden="false">
+      <description>MOVEMENT
+Cavalry can move up to 12&quot; in the Movement phase. Cavalry are not slowed down by difficult terrain (even when charging). However, Cavalry models treat all difficult terrain as dangerous terrain instead.
+FALL BACK MOVES
+Cavalry make Fall Back moves just like Infantry, except that they move 3D6&quot;.
+SPECIAL RULES
+Cavalry have the Fleet and Hammer of Wrath special rules.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="74effb54-87f7-8481-9e5f-86d9e3ed37c2" name="Battle Servitor Control" publicationId="ca571888--pubN67227" page="43" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a30a-7522-3343-553a" name="Talons of the Emperor" revision="103" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="130" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a30a-7522-3343-553a" name="Talons of the Emperor" revision="104" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="132" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="a30a-7522-pubN65537" name="HH7 / HH8"/>
     <publication id="a30a-7522-pubN69988" name="Forgeworld.co.uk"/>
@@ -24,6 +24,8 @@
     <categoryEntry id="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" name="Lords of War" hidden="false"/>
     <categoryEntry id="466f7274696669636174696f6e23232344415441232323" name="Fortification" hidden="false"/>
     <categoryEntry id="d7ea-8c56-c01f-53b4" name="Compulsory HQ" hidden="false"/>
+    <categoryEntry id="3193-9c47-85a9-d0f9" name="Dedicated Transport" hidden="false"/>
+    <categoryEntry id="1638-5261-fd55-f53b" name="Flyer" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="98db-b4ba-fbcd-3239" name=" Crusade" hidden="false">
@@ -147,6 +149,9 @@
       </categoryLinks>
     </forceEntry>
     <forceEntry id="089f-7e79-bde1-90dd" name=" Zone Mortalis - Attacker" hidden="false">
+      <infoLinks>
+        <infoLink id="2296-256f-2b5c-1dc1" name="ZM (Unusable)" hidden="false" targetId="b1da-bb0d-6990-b5c7" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="089f-7e79-bde1-90dd-456c6974657323232344415441232323" name="Elites" hidden="false" targetId="456c6974657323232344415441232323" primary="false">
           <constraints>
@@ -187,9 +192,27 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f94-f82c-5b66-a2e2" type="min"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="f258-0417-dd4b-ad00" name="ZM (Unusable)" hidden="false" targetId="9335-93c1-6af7-feb0" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cacd-bfef-bbf7-a307" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="fd99-2a41-e69a-d033" name="Dedicated Transport" hidden="false" targetId="3193-9c47-85a9-d0f9" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d1e0-cda1-6924-6c32" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="ba80-443e-96d1-4589" name="Flyer" hidden="false" targetId="1638-5261-fd55-f53b" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d9e1-07f9-cb24-f4e0" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="7b39-af6b-52e1-b4d7" name=" Zone Mortalis - Defender" hidden="false">
+      <infoLinks>
+        <infoLink id="3151-ba35-d847-ba20" name="ZM (Unusable)" hidden="false" targetId="b1da-bb0d-6990-b5c7" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="7b39-af6b-52e1-b4d7-456c6974657323232344415441232323" name="Elites" hidden="false" targetId="456c6974657323232344415441232323" primary="false">
           <constraints>
@@ -226,9 +249,27 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df3c-a9c7-b7bb-d415" type="min"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="b57f-d8fb-fef1-19f7" name="ZM (Unusable)" hidden="false" targetId="9335-93c1-6af7-feb0" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b9ee-2d09-d007-b268" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="5e97-3375-3fe6-f9c4" name="Dedicated Transport" hidden="false" targetId="3193-9c47-85a9-d0f9" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7ae1-5a81-5f0e-053f" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="62ae-0dd2-7763-bf8c" name="Flyer" hidden="false" targetId="1638-5261-fd55-f53b" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="293a-5dea-d555-6232" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="7e48-c376-8ffe-8ae7" name=" Zone Mortalis - Combatant" hidden="false">
+      <infoLinks>
+        <infoLink id="754d-05d8-29fc-9d13" name="ZM (Unusable)" hidden="false" targetId="b1da-bb0d-6990-b5c7" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="7e48-c376-8ffe-8ae7-456c6974657323232344415441232323" name="Elites" hidden="false" targetId="456c6974657323232344415441232323" primary="false">
           <constraints>
@@ -267,6 +308,21 @@
         <categoryLink id="b8b8-6554-d311-aaf6" name="Compulsory HQ" hidden="false" targetId="d7ea-8c56-c01f-53b4" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b2d-4504-00d3-3ef3" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="1f9c-90d6-d56a-d037" name="ZM (Unusable)" hidden="false" targetId="9335-93c1-6af7-feb0" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3fae-80aa-08f4-0cd4" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="0f23-273b-c522-d73a" name="Dedicated Transport" hidden="false" targetId="3193-9c47-85a9-d0f9" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="23ae-3be2-e14c-f4f6" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="5662-4ddb-1b07-c0b4" name="Flyer" hidden="false" targetId="1638-5261-fd55-f53b" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a9ff-a7a1-7d54-4a08" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -1215,7 +1271,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22c1-269e-5afb-b58d" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="b1da-cf75-29de-2197" name="New EntryLink" hidden="false" collective="false" import="true" targetId="c43b-5c09-9eae-27ba" type="selectionEntryGroup">
+        <entryLink id="b1da-cf75-29de-2197" name="Legio Custodes Dedicated Transport" hidden="false" collective="false" import="true" targetId="c43b-5c09-9eae-27ba" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -2748,6 +2804,9 @@
         <infoLink id="f4b0-9572-f331-95b0" name="Coronus Grav-Carrier" hidden="false" targetId="fb44-2178-c180-a450" type="profile"/>
         <infoLink id="34b2-68c4-f7c7-f6af" name="Coronus Grav-Carrier" hidden="false" targetId="e63f-762a-dde4-4c66" type="profile"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8d80-29e7-d8bd-e4ed" name="Dedicated Transport" hidden="false" targetId="3193-9c47-85a9-d0f9" primary="false"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="5be0-5093-ebf4-d943" name="Twin-Linked Lastrum Bolt Cannon" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -2850,6 +2909,9 @@
         <infoLink id="815f-e4ad-3b77-caa9" name="New InfoLink" hidden="false" targetId="0d66-14c9-d2f4-708b" type="rule"/>
         <infoLink id="4944-b4c3-6e1a-9a69" name="New InfoLink" hidden="false" targetId="18d0-fdf0-c554-cb34" type="rule"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="fef1-fd8d-e78d-b7f4" name="Dedicated Transport" hidden="false" targetId="3193-9c47-85a9-d0f9" primary="false"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="d103-ec57-4509-2617" name="Two Twin-Linked Missile Launchers" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -4605,6 +4667,19 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="5804-0f3c-116f-46e2" name="Legio Custodes Telemon Heavy Dreadnought" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="add" field="category" value="9335-93c1-6af7-feb0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7e48-c376-8ffe-8ae7" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7b39-af6b-52e1-b4d7" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="089f-7e79-bde1-90dd" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="0dd1-7b8c-1e91-3fc7" name="Multi-Layer Refractor Field" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
           <characteristics>
@@ -4717,6 +4792,9 @@ decided.</description>
         <infoLink id="b532-2bdc-a230-1aaa" name="Deep Strike" hidden="false" targetId="d219-2314-4834-c054" type="rule"/>
         <infoLink id="d5e4-db8d-4ea2-f1cc" name="Armoured Ceramite" hidden="false" targetId="3138-683d-a9a0-570d" type="rule"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="abc7-60ba-9e6d-0cfd" name="Flyer" hidden="false" targetId="1638-5261-fd55-f53b" primary="false"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="4247-e61e-0be7-5d54" name="Macro Arae-shrike" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
