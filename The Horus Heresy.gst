@@ -202,6 +202,7 @@
     <categoryEntry id="a660-a665-c4aa-5e82" name="Superheavy Options" hidden="false"/>
     <categoryEntry id="a7c6-e380-f10f-9798" name="Mechanicum" hidden="false"/>
     <categoryEntry id="6077-281f-c55d-9bf0" name="Allied Detachment" hidden="false"/>
+    <categoryEntry id="9335-93c1-6af7-feb0" name="ZM (Unusable)" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="61f7-09c7-326c-8c49" name="New ForceEntry" hidden="true">
@@ -12708,6 +12709,31 @@ King Slayer (3 Victory points): If the opposing army includes a Primarch, this m
     </rule>
     <rule id="575f-1255-f276-df91" name="By Falsehood Cloaked" publicationId="ca571888--pubN89821" page="209" hidden="false">
       <description>Knights-Errant may deploy via Deep Strike, and when doing so does not roll to scatter. On the controlling player’s turn that he deploys, and throughout the opposing player’s following player turn, any shots made against a Knight-Errant having deployed in this manner are made as Snap Shots. In addition, any charges made against Garro during this time count as Disordered.</description>
+    </rule>
+    <rule id="b1da-bb0d-6990-b5c7" name="ZM (Unusable)" publicationId="ca571888--pubN106705" page="https://www.warhammer-community.com/wp-content/uploads/2019/11/HHZone_Mortalis_Rules.pdf" hidden="false">
+      <description>Forces selected for fighting in a Zone Mortalis action should be chosen from their army list as normal with the following exceptions:
+• No units may select a Dedicated Transport option.
+• No unit with a starting size greater than 15 models, before being joined by Independent Characters, may be chosen.
+• No vehicles other than Walkers may be chosen, unless their models are no more than 4&quot; wide.*
+• No Flyers or Flying Monstrous Creatures of any kind or size may be chosen.
+• No model mounted on a base larger than 60mm may be chosen.*
+*Note: The terrain may still confine you, so caveat emptor!</description>
+    </rule>
+    <rule id="b53a-eba8-e3f8-4ae8" name="Beasts" hidden="false">
+      <description>MOVEMENT
+Beasts can move up to 12&quot; in the Movement phase. Beasts are not slowed by difficult terrain (even when charging) and automatically pass Dangerous Terrain tests.
+FALL BACK MOVES
+Beasts make Fall Back moves just like Infantry, except that they move 3D6&quot;.
+SPECIAL RULES
+Beasts have the Fleet special rule.</description>
+    </rule>
+    <rule id="d956-6030-d01f-5f3a" name="Cavalry" hidden="false">
+      <description>MOVEMENT
+Cavalry can move up to 12&quot; in the Movement phase. Cavalry are not slowed down by difficult terrain (even when charging). However, Cavalry models treat all difficult terrain as dangerous terrain instead.
+FALL BACK MOVES
+Cavalry make Fall Back moves just like Infantry, except that they move 3D6&quot;.
+SPECIAL RULES
+Cavalry have the Fleet and Hammer of Wrath special rules.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

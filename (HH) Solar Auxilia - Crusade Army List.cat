@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" revision="77" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="130" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" revision="78" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="132" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="7f243fc5--pubN65537" name="Crusade Imperialis"/>
     <publication id="7f243fc5--pubN65563" name="AoDRB"/>
@@ -502,6 +502,9 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
       </categoryLinks>
     </forceEntry>
     <forceEntry id="089f-7e79-bde1-90dd" name=" Zone Mortalis - Attacker" hidden="false">
+      <infoLinks>
+        <infoLink id="9667-f7ef-18c6-37d4" name="ZM (Unusable)" hidden="false" targetId="b1da-bb0d-6990-b5c7" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="089f-7e79-bde1-90dd-456c6974657323232344415441232323" name="Elites" hidden="false" targetId="456c6974657323232344415441232323" primary="false">
           <constraints>
@@ -537,9 +540,32 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
           </constraints>
         </categoryLink>
         <categoryLink id="7c39-1e5e-4eb3-4baa" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
+        <categoryLink id="dfa7-34f2-287a-6dd3" name="Dedicated Transport" hidden="false" targetId="c407-80ff-568e-3394" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2738-264a-7dad-c1df" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="d87c-1389-a1aa-aa3e" name="Flyer" hidden="false" targetId="df44-81ea-e2ee-9849" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="eccd-425c-8166-5595" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="bf56-db96-a2ef-c2f9" name="Flying Monstrous Creature" hidden="false" targetId="25d0-388c-dd16-af9a" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fce7-36b3-2f6b-7272" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="3dd2-86a7-e8d2-6ed3" name="ZM (Unusable)" hidden="false" targetId="9335-93c1-6af7-feb0" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ad2d-40df-6798-2806" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="7b39-af6b-52e1-b4d7" name=" Zone Mortalis - Defender" hidden="false">
+      <infoLinks>
+        <infoLink id="5726-083b-ffbd-2643" name="ZM (Unusable)" hidden="false" targetId="b1da-bb0d-6990-b5c7" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="7b39-af6b-52e1-b4d7-456c6974657323232344415441232323" name="Elites" hidden="false" targetId="456c6974657323232344415441232323" primary="false">
           <constraints>
@@ -571,9 +597,32 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
           </constraints>
         </categoryLink>
         <categoryLink id="d3d6-2093-a20a-04bb" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
+        <categoryLink id="a05c-635d-6088-18b2" name="Dedicated Transport" hidden="false" targetId="c407-80ff-568e-3394" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5947-60f1-a42d-3ca7" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="eb79-a596-4aad-8049" name="Flyer" hidden="false" targetId="df44-81ea-e2ee-9849" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9eb9-e0e6-63b4-8c05" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="4350-c7de-940a-b631" name="Flying Monstrous Creature" hidden="false" targetId="25d0-388c-dd16-af9a" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cc61-dfdc-8122-4e3c" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="6bfc-4b87-8afe-b237" name="ZM (Unusable)" hidden="false" targetId="9335-93c1-6af7-feb0" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0440-b633-e6b8-4eb2" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="7e48-c376-8ffe-8ae7" name=" Zone Mortalis - Combatant" hidden="false">
+      <infoLinks>
+        <infoLink id="2b92-0983-75f9-cdd2" name="ZM (Unusable)" hidden="false" targetId="b1da-bb0d-6990-b5c7" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="7e48-c376-8ffe-8ae7-456c6974657323232344415441232323" name="Elites" hidden="false" targetId="456c6974657323232344415441232323" primary="false">
           <constraints>
@@ -609,6 +658,26 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
           </constraints>
         </categoryLink>
         <categoryLink id="893e-0817-adf1-189f" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
+        <categoryLink id="f822-601e-87fe-28cb" name="Dedicated Transport" hidden="false" targetId="c407-80ff-568e-3394" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fa5f-d3b6-ddd7-f973" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="d65d-deff-f811-d91b" name="Flyer" hidden="false" targetId="df44-81ea-e2ee-9849" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="074e-667c-bdd8-a71d" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="73bb-7be6-2e46-89fd" name="Flying Monstrous Creature" hidden="false" targetId="25d0-388c-dd16-af9a" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="930b-0df4-1bdf-8366" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="f222-c4ea-4613-2016" name="ZM (Unusable)" hidden="false" targetId="9335-93c1-6af7-feb0" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2699-311c-2cd7-274d" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="d1ef-61e1-3d67-5a19" name="Optional - Onslaught" hidden="false">
@@ -1677,6 +1746,9 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
       <rules>
         <rule id="f398bd6b-2e18-1ec7-4551-214479f13698" name="Deep Strike" hidden="false"/>
       </rules>
+      <categoryLinks>
+        <categoryLink id="a2e0-176c-0fc8-7ef0" name="Flyer" hidden="false" targetId="df44-81ea-e2ee-9849" primary="false"/>
+      </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="5e63e341-fb9f-a6e9-49d5-ad07cab4e38d" name="May take one of the following:" hidden="false" collective="false" import="true">
           <constraints>
@@ -2549,10 +2621,13 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0e0e-34b0-7f23-c3c5" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="2572-9259-0efd-b251" hidden="false" collective="false" import="true" targetId="1c41cdb2-f7c8-ea03-d50d-4f68772731f2" type="selectionEntry">
+            <entryLink id="2572-9259-0efd-b251" name="Dracosan Armoured Transport" hidden="false" collective="false" import="true" targetId="1c41cdb2-f7c8-ea03-d50d-4f68772731f2" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="maxSelections" value="3.0"/>
               </modifiers>
+              <categoryLinks>
+                <categoryLink id="6104-9c30-f608-58e6" name="Dedicated Transport" hidden="false" targetId="c407-80ff-568e-3394" primary="false"/>
+              </categoryLinks>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -3591,6 +3666,9 @@ EDITORS NOTE... I think this rule is now redundant, as I think the rules for how
         <infoLink id="b427-c3af-ced4-1310" name="New InfoLink" hidden="false" targetId="2e96-21ae-353e-8742" type="rule"/>
         <infoLink id="55b9-04a4-c212-bb3b" name="Agile (Flyers Only)" hidden="false" targetId="24a2-9868-b6e4-4789" type="rule"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0556-8ab4-e9f4-ae62" name="Flyer" hidden="false" targetId="df44-81ea-e2ee-9849" primary="false"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="d1e6-1c61-fb76-f094" name="Twin-Linked Lascannon" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -3601,6 +3679,9 @@ EDITORS NOTE... I think this rule is now redundant, as I think the rules for how
             <infoLink id="6dca-02d1-52c2-c3c5" name="Twin-Linked Lascannon" hidden="false" targetId="2cd1-0fb3-7484-e486" type="profile"/>
             <infoLink id="d1a3-3c95-1264-c953" name="Twin-linked" hidden="false" targetId="10a8-8d89-0bec-3e21" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -4536,9 +4617,21 @@ EDITORS NOTE... I think this rule is now redundant, as I think the rules for how
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6dc5-b403-0c76-52cc" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="8e7f-b7e3-b631-2e11" name="Dracosan Armoured Transport" hidden="false" collective="false" import="true" targetId="1c41cdb2-f7c8-ea03-d50d-4f68772731f2" type="selectionEntry"/>
-            <entryLink id="15cc-e7a9-f2d2-1775" name="Auxilia Arvus Lighter Orbital Shuttle" hidden="false" collective="false" import="true" targetId="98e057b6-29c7-b240-8a57-a936b45c1299" type="selectionEntry"/>
-            <entryLink id="5c96-4202-04b9-66e1" name="Aurox Armoured Transport" hidden="false" collective="false" import="true" targetId="5163-ab15-9959-6efd" type="selectionEntry"/>
+            <entryLink id="8e7f-b7e3-b631-2e11" name="Dracosan Armoured Transport" hidden="false" collective="false" import="true" targetId="1c41cdb2-f7c8-ea03-d50d-4f68772731f2" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink id="b62e-cb28-9d5a-ebcb" name="Dedicated Transport" hidden="false" targetId="c407-80ff-568e-3394" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink id="15cc-e7a9-f2d2-1775" name="Auxilia Arvus Lighter Orbital Shuttle" hidden="false" collective="false" import="true" targetId="98e057b6-29c7-b240-8a57-a936b45c1299" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink id="f113-3362-e3e8-f79d" name="Dedicated Transport" hidden="false" targetId="c407-80ff-568e-3394" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink id="5c96-4202-04b9-66e1" name="Saturnyne Pattern Aurox Armoured Transport" hidden="false" collective="false" import="true" targetId="5163-ab15-9959-6efd" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink id="bfb3-244a-f7f7-327a" name="Dedicated Transport" hidden="false" targetId="c407-80ff-568e-3394" primary="false"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -4627,6 +4720,9 @@ Precision Shots</description>
           </modifiers>
         </infoLink>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="48c1-b4ae-6856-9baf" name="Flyer" hidden="false" targetId="df44-81ea-e2ee-9849" primary="false"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="cba2-c90f-a958-898e" name="Twin-Linked Autocannons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -5206,44 +5302,13 @@ Precision Shots</description>
       <constraints>
         <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0300-050b-636f-262b" type="max"/>
       </constraints>
-      <profiles>
-        <profile id="eea9-3e7c-ede9-b465" name="Veletarii" publicationId="7f243fc5--pubN74753" page="266" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
-            <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
-            <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
-            <characteristic name="S" typeId="5323232344415441232323">3</characteristic>
-            <characteristic name="T" typeId="5423232344415441232323">3</characteristic>
-            <characteristic name="W" typeId="5723232344415441232323">1</characteristic>
-            <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
-            <characteristic name="A" typeId="4123232344415441232323">1</characteristic>
-            <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
-            <characteristic name="Save" typeId="5361766523232344415441232323">4+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="3315-3f0e-7d2d-851e" name="Prime" publicationId="7f243fc5--pubN74753" page="266" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry (Character)</characteristic>
-            <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
-            <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
-            <characteristic name="S" typeId="5323232344415441232323">3</characteristic>
-            <characteristic name="T" typeId="5423232344415441232323">3</characteristic>
-            <characteristic name="W" typeId="5723232344415441232323">1</characteristic>
-            <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
-            <characteristic name="A" typeId="4123232344415441232323">2</characteristic>
-            <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
-            <characteristic name="Save" typeId="5361766523232344415441232323">4+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <rules>
         <rule id="4e40-a4c5-4933-e0d9" name="Preferred Enemy (Infantry)" hidden="false"/>
       </rules>
       <infoLinks>
         <infoLink id="bd5d-4e2d-568b-d3db" hidden="false" targetId="470a38b3-ad69-52de-2996-36fa27f50e04" type="rule"/>
-        <infoLink id="2d7f-d76c-9d23-2345" hidden="false" targetId="aa451588-557c-7f81-2b3f-d17583985f38" type="rule"/>
+        <infoLink id="2d7f-d76c-9d23-2345" name="Close Formation Fighting" hidden="false" targetId="aa451588-557c-7f81-2b3f-d17583985f38" type="rule"/>
         <infoLink id="1f5c-02e3-491d-d60b" name="" hidden="false" targetId="dff0089a-4273-26a0-d96f-b5a36d57a18f" type="profile"/>
-        <infoLink id="cefc-537b-d247-f6c9" name="Volkite Charger" hidden="false" targetId="44d2260d-9431-a6d0-6ba3-de04b559ba5b" type="profile"/>
         <infoLink id="53d8-6694-98c1-ac55" name="Deflagrate" hidden="false" targetId="b46a-a3ec-91a5-5001" type="rule"/>
         <infoLink id="79b8-d67d-5a1c-a4dd" name="New InfoLink" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule"/>
         <infoLink id="7e48-716a-8c7e-10b5" name="Frag Grenades" hidden="false" targetId="d890-1b84-bbd9-12d3" type="profile"/>
@@ -5259,6 +5324,22 @@ Precision Shots</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bafe-0473-0172-870d" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6090-14d7-2304-50a8" type="max"/>
           </constraints>
+          <profiles>
+            <profile id="dc0c-3d13-16ec-4e63" name="Household Retinue Prime" publicationId="7f243fc5--pubN74753" page="266" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry (Character)</characteristic>
+                <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
+                <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
+                <characteristic name="S" typeId="5323232344415441232323">3</characteristic>
+                <characteristic name="T" typeId="5423232344415441232323">3</characteristic>
+                <characteristic name="W" typeId="5723232344415441232323">1</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">2</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
+                <characteristic name="Save" typeId="5361766523232344415441232323">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <selectionEntryGroups>
             <selectionEntryGroup id="8499-673c-8a97-fd93" name="May take:" hidden="false" collective="false" import="true">
               <entryLinks>
@@ -5562,6 +5643,28 @@ Precision Shots</description>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="3b70-146d-6bd6-d8a6" name="Veletarii" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9a6-02e3-b914-7be9" type="min"/>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="024a-241b-9244-b5cf" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2289-bbed-6ec6-8b73" name="Household Retinue Veletarii" publicationId="7f243fc5--pubN74753" page="266" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
+                <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
+                <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
+                <characteristic name="S" typeId="5323232344415441232323">3</characteristic>
+                <characteristic name="T" typeId="5423232344415441232323">3</characteristic>
+                <characteristic name="W" typeId="5723232344415441232323">1</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">1</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
+                <characteristic name="Save" typeId="5361766523232344415441232323">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="6c8e-03dd-0065-4992" name="Veletarii may exchange their Volkite Chargers for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="9ffb-6178-aa7a-108f">
@@ -5642,12 +5745,23 @@ Precision Shots</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f3ab-8029-40f8-fcf5" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="12a3-b7b8-3193-9e26" hidden="false" collective="false" import="true" targetId="1c41cdb2-f7c8-ea03-d50d-4f68772731f2" type="selectionEntry"/>
-            <entryLink id="bfb1-1015-8611-60bd" hidden="false" collective="false" import="true" targetId="98e057b6-29c7-b240-8a57-a936b45c1299" type="selectionEntry"/>
+            <entryLink id="12a3-b7b8-3193-9e26" name="Dracosan Armoured Transport" hidden="false" collective="false" import="true" targetId="1c41cdb2-f7c8-ea03-d50d-4f68772731f2" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink id="ff49-d4b4-4019-8ec0" name="Dedicated Transport" hidden="false" targetId="c407-80ff-568e-3394" primary="false"/>
+              </categoryLinks>
+            </entryLink>
+            <entryLink id="bfb1-1015-8611-60bd" name="Auxilia Arvus Lighter Orbital Shuttle" hidden="false" collective="false" import="true" targetId="98e057b6-29c7-b240-8a57-a936b45c1299" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink id="b008-2942-2024-eb17" name="Dedicated Transport" hidden="false" targetId="c407-80ff-568e-3394" primary="false"/>
+              </categoryLinks>
+            </entryLink>
             <entryLink id="1134-bd8b-bf24-07d5" name="Terrax Pattern Termite Assault Drill" hidden="false" collective="false" import="true" targetId="3879-9d90-7c4a-5905" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e4e-889e-ab86-8244" type="max"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink id="7a01-061c-5ab4-b42a" name="Dedicated Transport" hidden="false" targetId="c407-80ff-568e-3394" primary="false"/>
+              </categoryLinks>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -7350,7 +7464,7 @@ Precision Shots</description>
         <infoLink id="72ff-ba57-25eb-9e56" hidden="false" targetId="470a38b3-ad69-52de-2996-36fa27f50e04" type="rule"/>
         <infoLink id="cadc-9598-a19e-13e6" hidden="false" targetId="0f466e26-4de9-d53c-5270-4c95dcf6867e" type="rule"/>
         <infoLink id="90aa-c16a-c5ff-b725" name="Void Armour" hidden="false" targetId="86f51528-f2ce-a3eb-15d1-9396cf0548c7" type="profile"/>
-        <infoLink id="7a74-5453-4fc8-58d5" name="New InfoLink" hidden="false" targetId="d890-1b84-bbd9-12d3" type="profile"/>
+        <infoLink id="7a74-5453-4fc8-58d5" name="Frag Grenades" hidden="false" targetId="d890-1b84-bbd9-12d3" type="profile"/>
         <infoLink id="f9e4-da05-424e-ee29" name="Krak Grenade (Shooting)" hidden="false" targetId="d9f7-775b-1047-f335" type="profile"/>
         <infoLink id="d863-3305-9148-7413" name="Krak Grenade (Assault)" hidden="false" targetId="ba14-6731-7c9d-ef15" type="profile"/>
       </infoLinks>
@@ -8329,8 +8443,15 @@ Precision Shots</description>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5915-223c-3206-33fa" type="max"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink id="096b-5448-7048-aa79" name="Dedicated Transport" hidden="false" targetId="c407-80ff-568e-3394" primary="false"/>
+              </categoryLinks>
             </entryLink>
-            <entryLink id="a597-4df8-f2b0-cffa" name="Aurox Armoured Transport" hidden="false" collective="false" import="true" targetId="5163-ab15-9959-6efd" type="selectionEntry"/>
+            <entryLink id="a597-4df8-f2b0-cffa" name="Saturnyne Pattern Aurox Armoured Transport" hidden="false" collective="false" import="true" targetId="5163-ab15-9959-6efd" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink id="0ea9-06a9-2566-a08b" name="Dedicated Transport" hidden="false" targetId="c407-80ff-568e-3394" primary="false"/>
+              </categoryLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
