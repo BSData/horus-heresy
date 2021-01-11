@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="32d1ddc6-3187-cf6f-3bf8-9891e527a002" name="Questoris Knight Crusade Army" revision="54" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="130" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="32d1ddc6-3187-cf6f-3bf8-9891e527a002" name="Questoris Knight Crusade Army" revision="55" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="132" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="32d1ddc6--pubN65537" name="Age of Darkness Crusade Army List"/>
     <publication id="32d1ddc6--pubN66650" name="HH4: Conquest"/>
@@ -96,6 +96,11 @@
         <categoryLink id="3b74-a066-7876-2842" name="Compulsory HQ" hidden="false" targetId="becd-7a6d-e80f-878e" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b8c-2e1c-f0d3-dba1" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="3989-4886-f332-1f7f" name="Warlord Traits" hidden="false" targetId="baa4-80e4-c41d-6875" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ba3a-7226-8d6d-50bc" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -422,6 +427,22 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="30.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7438-09d3-664c-fad5" name="Warlord Traits" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fec-521f-83b0-4efe" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="243e-e541-89f8-7fee" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3239-036c-c750-bb35" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f7d1-d153-61a1-e33b" name="New CategoryLink" hidden="false" targetId="baa4-80e4-c41d-6875" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c7bc-ea23-0639-24f4" name="Warlord Traits (Work in Progress)" hidden="false" collective="false" import="true" targetId="1a1c-c9f1-d6e8-9dc0" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -1816,6 +1837,107 @@ Construct shields have an Armour value of 11. A Glancing or Penetrating hit (or 
           </costs>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="1a1c-c9f1-d6e8-9dc0" name="Warlord Traits (Work in Progress)" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3b35-c129-b123-5bce" name="Questoris Knights Traits (Crusade Imperialis p103)" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="8c5b-2c1e-6501-3b0e" name="1. Hell Rider" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0ca-e68c-eb64-a937" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="a4dc-f85e-a05f-2745" name="1. Hell Rider" hidden="false">
+                  <description>The Knight Warlord and all other Knights in their detachment within 12&quot; gain +1&quot; to their Movement and +1 on any To Wound and Armour Penetration rolls on the first turn of the game.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0e48-e8bb-43dd-e045" name="2. Glorious Renown" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="094a-0c85-c596-3d02" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="5c3a-d253-ab6b-a9b3" name="2. Glorious Renown" hidden="false">
+                  <description>Fear tests taken against the Knight Warlord suffer a -2 penalty to the Leadership value, while allied units within 12&quot; may re-roll failed Morale checks</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c74b-ae7f-8f51-521b" name="3. Favoured of Mars" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5ee-a2a6-97ea-1587" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="6097-158b-9751-0e28" name="3. Favoured of Mars" hidden="false">
+                  <description>One of the Knight Warlord’s weapons, chosen by the owning player, gains the Master-crafted special rule.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="5f34-937e-fbe4-2fd9" name="Master-crafted" hidden="false" targetId="f899-8f9d-fc7e-d855" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4598-f225-c155-9a93" name="4. Lord of the Abyss" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d0f-3fec-38f0-ec27" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="4eb7-d468-1897-773d" name="4. Lord of the Abyss" hidden="false">
+                  <description>The Knight Warlord gains the Monster Hunter and Adamantium Will special rules.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="bd99-6b0a-851a-e5af" name="Monster Hunter" hidden="false" targetId="93c5-dcdd-af20-413e" type="rule"/>
+                <infoLink id="8d18-0975-149c-14e4" name="Adamantium Will" hidden="false" targetId="df87-e991-2d30-dc38" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6e7b-0ff3-b0d1-cbe1" name="5. Puissant Commander" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e983-5d7e-dd1f-31a1" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="2ba3-33a6-629b-7347" name="5. Puissant Commander" hidden="false">
+                  <description>The owning player may add +1 to their Seize the Initiative roll in missions where this is relevant, and while the Knight Warlord is on the table, enemy Reserves rolls suffer a -1 modifier.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="63c3-4f8c-9a69-5df8" name="6. Indomitable" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55cd-9474-2537-8799" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="e8a8-04b4-d01a-7db2" name="6. Indomitable" hidden="false">
+                  <description>The Knight Warlord gains the It Will Not Die special rule.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="478c-4dd5-82fd-72b1" name="It Will Not Die" hidden="false" targetId="72d9-7041-9d30-d150" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="15d8-7fd1-8550-9873" name="Command Traits (HH- Rulebook p137)" hidden="false" collective="false" import="true" targetId="30b6-4212-ea96-9493" type="selectionEntryGroup"/>
+        <entryLink id="8960-07d4-a1f7-a4c5" name="Strategic Traits (HH- Rulebook p137)" hidden="false" collective="false" import="true" targetId="ed77-3335-e812-a296" type="selectionEntryGroup"/>
+        <entryLink id="597b-c976-cf4d-1911" name="Personal Traits (HH- Rulebook p137)" hidden="false" collective="false" import="true" targetId="6bae-c7b5-0bfa-1490" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
