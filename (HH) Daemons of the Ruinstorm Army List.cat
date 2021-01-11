@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8700-b3bb-a471-a0ad" name="Daemons of the Ruinstorm" revision="19" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="132" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8700-b3bb-a471-a0ad" name="Daemons of the Ruinstorm" revision="20" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="132" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="8700-b3bb-pubN65537" name="HH8: Malevolence"/>
     <publication id="8700-b3bb-pubN75780" name="BRB"/>
@@ -217,6 +217,11 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6655-db71-2cde-3974" type="min"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="c899-d971-8fa3-a2fc" name="Warlord Traits" hidden="false" targetId="baa4-80e4-c41d-6875" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f3e8-fed7-4921-ea31" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="f398-6ade-f25f-e336" name=" Zone Mortalis - Attacker" hidden="false">
@@ -282,6 +287,11 @@
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ae84-9d85-c1a7-66a1" type="max"/>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fff3-944a-a5a5-697b" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="2cd3-daac-5ca8-d27c" name="Warlord Traits" hidden="false" targetId="baa4-80e4-c41d-6875" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="45c9-ccee-a0ba-9fcf" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -356,6 +366,11 @@
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fad2-7581-5daa-d42e" type="min"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="ce11-2483-6a1e-aec3" name="Warlord Traits" hidden="false" targetId="baa4-80e4-c41d-6875" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b2c7-3677-2672-7074" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="41d1-3cca-834f-f8e0" name=" Zone Mortalis - Defender" hidden="false">
@@ -423,9 +438,32 @@
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ee6f-f78a-f1b5-651e" type="min"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="5639-bad4-0869-35c0" name="Warlord Traits" hidden="false" targetId="baa4-80e4-c41d-6875" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ccff-4d17-d6a6-a026" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
+  <selectionEntries>
+    <selectionEntry id="5ce6-31f1-4ab2-9607" name="Warlord Traits" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b80-737e-1925-3fb5" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4aad-66cf-7079-d888" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9029-d464-6046-aad6" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="bd51-8af8-900f-1136" name="New CategoryLink" hidden="false" targetId="baa4-80e4-c41d-6875" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="dd90-fc15-44db-2c92" name="Warlord Traits (Work in Progress)" hidden="false" collective="false" import="true" targetId="8b04-5c2c-19a4-be71" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
   <entryLinks>
     <entryLink id="29ef-6d56-9d3f-5c98" name="Imperial Castelum Stronghold" hidden="false" collective="false" import="true" targetId="e40b-468f-f1d7-d05d" type="selectionEntry">
       <categoryLinks>
@@ -726,21 +764,8 @@ Any unit capable of manifesting a psychic power, which does not attempt to do so
 
 Any unit that consists of more than one model may select the Warp Scions Emanation.
 
-A Daemon Lord with this Dominion may choose to generate a Warlord Trait from the following table instead of any of those found in The Horus Heresy: Age of Darkness Rulebook:
-D6	Warlord Trait
-1-2 Font of Madness: In each Psychic phase, this Warlord generates Warp Charge points equal to its Mastery Level +1. If this Warlord does not have the Psyker special rule then it generates D3 Warp Charge points per Psychic phase (this does not allow them to manifest Psychic Powers).
-3-4	Aetheric Lightning Rod: For each unit with the Psyker special rule within 6&quot; of this Warlord during a given Assault phase, it gains an additional attack in close combat 
-5-6	Oracle of Chaos: When making any rolls to determine when friendly Reserves arrive in play or for which table edge friendly Outflanking units arrive on, the dice may be re-rolled while this Warlord is both alive and deployed upon the battlefield.
-
 In addition, an army whose Primary Detachment has this Dominion may choose to replace all other Primary Objectives in any mission with the following Primary Objective (their opponent&apos;s objectives remain unchanged, as do any Secondary Objectives in play):
 Warp Conflagration: Each enemy unit destroyed, removed from play or forced to flee the table by a Psychic Power or by wounds caused by a Psychic Power scores 1 Victory point for the Daemons of the Ruinstorm player. In addition, if 4 or more Warp Charge points were allocated to a power that destroys or otherwise removes from play an enemy unit then it scores I additional Victory point for the Daemons of the Ruinstorm player.</description>
-        </rule>
-        <rule id="0fce-bbc4-7258-a2f6" name="Maddening Swarms Warlord Traits" hidden="false">
-          <description>A Daemon Lord with this Dominion may choose to generate a Warlord Trait from the following table instead of any of those found in The Horus Heresy: Age of Darkness Rulebook:
-D6	Warlord Trait
-1-2 Font of Madness: In each Psychic phase, this Warlord generates Warp Charge points equal to its Mastery Level +1. If this Warlord does not have the Psyker special rule then it generates D3 Warp Charge points per Psychic phase (this does not allow them to manifest Psychic Powers).
-3-4	Aetheric Lightning Rod: For each unit with the Psyker special rule within 6&quot; of this Warlord during a given Assault phase, it gains an additional attack in close combat 
-5-6	Oracle of Chaos: When making any rolls to determine when friendly Reserves arrive in play or for which table edge friendly Outflanking units arrive on, the dice may be re-rolled while this Warlord is both alive and deployed upon the battlefield.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -2033,7 +2058,7 @@ D6	Warlord Trait
     </selectionEntry>
     <selectionEntry id="1c0c-a8bb-13c6-daea" name="Crimson Fury" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="4632-6854-da60-0105" value="1">
+        <modifier type="set" field="4632-6854-da60-0105" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e2a-e0d1-0561-3872" type="equalTo"/>
           </conditions>
@@ -2050,21 +2075,8 @@ All models in the Detachment must declare a charge if able when they begin the A
 
 Any unit in this Detachment may take the Brass Collars Emanation; if the unit consists of multiple models then all models in the unit must take this upgrade. (Battlescribe note: Some think that this rule means that all units containing more than 1 model Must take the Emanation. Others believe that it is Optional.)
 
-A Daemon Lord with this Dominion may choose to generate a Warlord Trait from the following table instead of any of those found in The Horus Heresy: Age of Darkness Rulebook:
-D6	Warlord Trait
-1-2	Skull Keeper: This Warlord and any friendly unit with the Daemon of the Ruinstorm special rule within 6&quot; of the Warlord may add +D3 to the Wounds value calculated to see if they win combat in the Assault phase.
-3-4	Aegis of Rage: Each time this Warlord, or any friendly unit with the Daemon of the Ruinstorm special rule within 12&quot;, is targeted by a Psychic Power, the Warlord may attempt to Deny the Witch as though they were a Psyker of a higher Mastery Level than the Psyker manifesting the power and a part of the unit being targeted (regardless of actual Mastery Levels). If the Deny the Witch attempt is failed, the Psychic Power is resolved as normal and affects only its original target.
-5-6	Path of Blood: Whenever this Warlord declares a charge, it may roll a number of dice equal to its Attacks value to determine the distance moved, keeping the two highest results and discarding all other dice.
-
 In addition, an army whose Primary Detachment has this Dominion may choose to replace all other Primary Objectives in any mission with the following Primary Objective (their opponent&apos;s objectives remain unchanged, as do any Secondary Objectives in play):
 The Blood must Flow: The Daemons of the Ruinstorm player gains 1 Victory point for every unit (friendly or enemy) that has been destroyed either in combat, due to the results of an Overwatch attack or as part of a Sweeping Advance.</description>
-        </rule>
-        <rule id="8f2e-6b7a-7bed-a789" name="Crimson Fury Warlord Traits" hidden="false">
-          <description>A Daemon Lord with this Dominion may choose to generate a Warlord Trait from the following table instead of any of those found in The Horus Heresy: Age of Darkness Rulebook:
-D6	Warlord Trait
-1-2	Skull Keeper: This Warlord and any friendly unit with the Daemon of the Ruinstorm special rule within 6&quot; of the Warlord may add +D3 to the Wounds value calculated to see if they win combat in the Assault phase.
-3-4	Aegis of Rage: Each time this Warlord, or any friendly unit with the Daemon of the Ruinstorm special rule within 12&quot;, is targeted by a Psychic Power, the Warlord may attempt to Deny the Witch as though they were a Psyker of a higher Mastery Level than the Psyker manifesting the power and a part of the unit being targeted (regardless of actual Mastery Levels). If the Deny the Witch attempt is failed, the Psychic Power is resolved as normal and affects only its original target.
-5-6	Path of Blood: Whenever this Warlord declares a charge, it may roll a number of dice equal to its Attacks value to determine the distance moved, keeping the two highest results and discarding all other dice.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -2109,21 +2121,8 @@ No unit included as part of this army may benefit from a cover save, except one 
 
 Any unit in this Detachement may take the Stupefying Must Emanation, if the unit consists of multiple models then all models in the unit must take this upgrade. (Battlescribe note: Some think that this rule means that all units containing more than 1 model Must take the Emanation. Others believe that it is Optional.)
 
-A Daemon Lord with this Domination may choose to generate a Warlord Trait from the following table instead of any of those found in The Horus Heresy: Age of Darkness Rulebook.
-D6	Warlord Trait
-1-2	Inhuman Grave: When fighting in a Challenge against a model with a higher Initiative value, the Initiative value of this Warlord is increased to be equial to that of its oppenent.
-3-4	Flickering Gait: This Warlord, and any friendly unit with the Daemon of the Ruinstorm special rule within 6&quot;, do not roll dice when choosing to Run in the Shooting phase, but instead always move the maximum amount possible for that unit.
-5-6	Loping Charge: This Warlord, and any friendly unit with the Daemon of the Ruinstorm special rule within 6&apos;&apos;, add +r to the distance moved when making a Charge in the Assault phase - this makes the maximum possible Charge distance for these units 13&quot;.
-
 In addition, an army whose Primary Detachment has this Dominion may choose to replace all other Primary Objectives in any mission with the following Primary Objective (their opponent&apos;s objectives remain unchanged, as do any Secondary Objectives in play):
 A Twisted Dream: The Daemons of the Ruinstorm player scores 1 Victory point whenever an enemy unit fails a Morale check (this does not include tests made to Regroup, but does include Pinning tests, Fear tests and checks made due to the Stupefying Musk Emanation). However, any enemy unit that succeeds at any of these checks due to a result oflnsane Heroism (a double 1) reduces the total number of Victory points scored by this army by D3.</description>
-        </rule>
-        <rule id="2a17-7af2-a4f5-ee71" name="Lurid Onslaught Warlord Traits" hidden="false">
-          <description>A Daemon Lord with this Domination may choose to generate a Warlord Trait from the following table instead of any of those found in The Horus Heresy: Age of Darkness Rulebook.
-D6	Warlord Trait
-1-2	Inhuman Grave: When fighting in a Challenge against a model with a higher Initiative value, the Initiative value of this Warlord is increased to be equial to that of its oppenent.
-3-4	Flickering Gait: This Warlord, and any friendly unit with the Daemon of the Ruinstorm special rule within 6&quot;, do not roll dice when choosing to Run in the Shooting phase, but instead always move the maximum amount possible for that unit.
-5-6	Loping Charge: This Warlord, and any friendly unit with the Daemon of the Ruinstorm special rule within 6&apos;&apos;, add +r to the distance moved when making a Charge in the Assault phase - this makes the maximum possible Charge distance for these units 13&quot;.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -2161,7 +2160,7 @@ D6	Warlord Trait
     </selectionEntry>
     <selectionEntry id="5a0b-2e45-8c90-360e" name="Creeping Scourge" publicationId="8700-b3bb-pubN65537" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="0715-b682-d447-5c10" value="1">
+        <modifier type="set" field="0715-b682-d447-5c10" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ddb-4a5d-5b2d-c540" type="equalTo"/>
           </conditions>
@@ -2178,21 +2177,8 @@ Units included as part of this Detachment roll an additional D6 when making Run 
 
 Any unit in this Detachment may take the Miasma of Rot Emanation; if the unit consists of multiple models then all models in the unit must take this upgrade. (Battlescribe note: Some think that this rule means that all units containing more than 1 model Must take the Emanation. Others believe that it is Optional.)
 
-A Daemon Lord with this Dominion may choose to generate a Warlord Trait from the following table instead of any of those found in The Horns Heresy: Age of Darkness Rulebook:
-D6	Warlord Trait
-1-2	Blight Walker: This Warlord and all friendly units with the Daemon of the Ruinstorm special rule within 6&quot; are considered to always roll a 6 when called upon to take Difficult Terrain tests and Dangerous Terrain tests. 
-3-4	Monolith of Rot: This Warlord may re-roll all failed Feel no Pain or It Will Not Die tests.
-5-6	Pestilent Cloud: All units within 3&quot; of this Warlord at the end of any Fight sub-phase that do not have the Daemon of the Ruinstorm special rule suffer D6 Str 2, AP - hits. These hits and any casualties caused do not count for combat resolution.
-
 In addition, an army whose Primary Detachment has this Dominion may choose to replace all other Primary Objectives in any mission with the following Primary Objective (their opponent&apos;s objectives remain unchanged, as do any Secondary Objectives in play):
 Torment without End: At the end of the game, after the final turn has been played, the Daemons of the Ruinstorm player gains 2 Victory points for every table quarter that has a Warp Rift marker in it, no enemy units within 6&quot; of that Warp Rift marker and at least one friendly Daemon of the Ruinstorm unit within 6&quot; of that Rift marker.</description>
-        </rule>
-        <rule id="9e12-7d53-9c60-6694" name="Creeping Scourge Warlord Traits" hidden="false">
-          <description>A Daemon Lord with this Dominion may choose to generate a Warlord Trait from the following table instead of any of those found in The Horns Heresy: Age of Darkness Rulebook:
-D6	Warlord Trait
-1-2	Blight Walker: This Warlord and all friendly units with the Daemon of the Ruinstorm special rule within 6&quot; are considered to always roll a 6 when called upon to take Difficult Terrain tests and Dangerous Terrain tests. 
-3-4	Monolith of Rot: This Warlord may re-roll all failed Feel no Pain or It Will Not Die tests.
-5-6	Pestilent Cloud: All units within 3&quot; of this Warlord at the end of any Fight sub-phase that do not have the Daemon of the Ruinstorm special rule suffer D6 Str 2, AP - hits. These hits and any casualties caused do not count for combat resolution.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -2238,13 +2224,6 @@ An army using this Aetheric Dominion for its Primary Detachment may not include 
 In addition, an army whose Primary Detachment has this Dominion may choose to replace all other Primary Objectives in any mission with the following Primary Objective (their opponent&apos;s objectives remain unchanged):
 The Infinite Cycle: The Daemons of the Ruinstorm player scores 1 Victory point for each enemy unit with any of the Psyker, Daemon or Daemon of the Ruinstorm special rules that is destroyed, removed from play or forced to flee from the battlefield, and loses 1 Victory point for each friendly unit with any of the Psyker, Daemon or Daemon of the Ruinstorm special rules that is destroyed, removed from play or forced to flee from the battlefield. If, at the end of the game, the Daemons of the Ruinstorm player has scored exactly zero Victory points then they are considered to have won, regardless of the number of Victory points scored by their opponent.</description>
         </rule>
-        <rule id="9736-92fb-77f2-ec69" name="Mirror of Hatred Warlord Traits" hidden="false">
-          <description>A Daemon Lord with this Dominion may choose to generate a Warlord Trait from the following table instead of any of those found in The Horus Heresy: Age of Darkness Rulebook:
-D6	Warlord Trait
-1-2	The All is One: When this Warlord is involved in a Challenge against a model with any of the Psyker, Daemon or Daemon of the Ruinstorm special rules, the controlling player may choose to use the Weapon Skill and/or Initiative characteristics of the opposing model for the duration of a given Fight phase. This does not alter the characteristics of the opposing model.
-3-4	Avatar of Hatred: This Warlord gains the effects of Hatred (Daemons, Daemons of the Ruinstorm and Psykers) during any Fight Sub-phase, not just the first. 
-5-6	Inimitable Recursion: When a Warlord with this trait is reduced to o Wounds, roll a D6. On the roll of a 6+, the model is placed into Ongoing Reserves with all of its Wounds returned instead of being removed from play. This Warlord Trait may be used more than once in a given battle, and there is no limit to the number of times a model may be returned to Ongoing Reserves. However, once this roll is failed, the model may·not be returned to play by any other means. If the Slay the Warlord Secondary Objective is in play, then it may be scored each time this Warlord is reduced too Wounds.</description>
-        </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="110d-26a3-c9e8-944c" name="New CategoryLink" hidden="false" targetId="2271-1b9a-5c30-9676" primary="true"/>
@@ -2277,70 +2256,6 @@ End of Days: Each enemy unit destroyed, removed from play or forced to flee from
       <categoryLinks>
         <categoryLink id="d846-6ed5-4f5f-2793" name="New CategoryLink" hidden="false" targetId="2271-1b9a-5c30-9676" primary="true"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="7a90-74eb-f5fa-5b7f" name="Dominion Warlord Traits" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b55-3eb3-c363-cad4" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="c63d-717e-311b-743d" name="Creeping Scourge Warlord Traits" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2436-5253-2cef-626d" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="edfd-3415-6225-0454" name="Creeping Scourge Warlord Traits" hidden="false" targetId="9e12-7d53-9c60-6694" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="9e9c-85ab-4132-2f4e" name="Lurid Onslaught Warlord Traits" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7728-7a64-01cf-697d" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="e864-b432-12a5-e68c" name="Lurid Onslaught Warlord Traits" hidden="false" targetId="2a17-7af2-a4f5-ee71" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="dbac-f6d9-bd19-d058" name="Maddening Swarms Warlord Traits" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e04c-3279-e0d2-65aa" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="e12b-78e6-ecfd-70d7" name="Maddening Swarms Warlord Traits" hidden="false" targetId="0fce-bbc4-7258-a2f6" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8191-bb7d-e276-4c64" name="Mirror of Hatred Warlord Traits" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c143-1af8-2c26-4a3a" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="19e0-c49f-35d4-43ac" name="Mirror of Hatred Warlord Traits" hidden="false" targetId="9736-92fb-77f2-ec69" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c1c3-43d2-696b-d10a" name="Crimson Fury Warlord Traits" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b57-e614-9be9-8996" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="28d4-4f29-cc0b-3533" name="Crimson Fury Warlord Traits" hidden="false" targetId="8f2e-6b7a-7bed-a789" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -3682,6 +3597,241 @@ Models in combat with Sam us Unbound, as well as those taking Fear tests in orde
             </modifier>
           </modifiers>
         </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="8b04-5c2c-19a4-be71" name="Warlord Traits (Work in Progress)" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="de9b-77e7-7c91-9cff" name="Lurid Onslaught Traits (HH8 Malevolence p237-241)" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="dbb6-a9ea-362f-ea21" name="1-2. Inhuman Grace" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ef2-4f20-de63-8e9d" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="fa3c-a294-78cd-b210" name="1-2. Inhuman Grace" hidden="false">
+                  <description>When fighting in a Challenge against a model with a higher Initiative value, the Initiative value of this Warlord is increased to be equial to that of its oppenent.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="21f2-f687-6be2-0cb0" name="3-4. Flickering Gait" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3402-bcc4-0b2a-42f0" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="fc7c-9bf8-ca5c-6864" name="3-4. Flickering Gait" hidden="false">
+                  <description>This Warlord, and any friendly unit with the Daemon of the Ruinstorm special rule within 6&quot;, do not roll dice when choosing to Run in the Shooting phase, but instead always move the maximum amount possible for that unit.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="05fe-b440-96bc-0d1b" name="5-6. Loping Charge" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf43-9a90-8edc-1e75" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="a8d1-f277-4524-6078" name="5-6. Loping Charge" hidden="false">
+                  <description>This Warlord, and any friendly unit with the Daemon of the Ruinstorm special rule within 6&apos;&apos;, add +r to the distance moved when making a Charge in the Assault phase - this makes the maximum possible Charge distance for these units 13&quot;.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="ab80-581b-4560-9b6b" name="Creeping Scourge Traits (HH8 Malevolence p237-241)" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="fc22-f6d5-69b3-bc27" name="1-2. Blight Walker" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5e9-e2fc-16c1-c8aa" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="4ff5-457a-f7aa-6a2e" name="1-2. Blight Walker" hidden="false">
+                  <description>This Warlord and all friendly units with the Daemon of the Ruinstorm special rule within 6&quot; are considered to always roll a 6 when called upon to take Difficult Terrain tests and Dangerous Terrain tests.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1836-4ae4-542f-4688" name="3-4. Monolith of Rot" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a174-13c3-1e62-7994" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="0a9e-0c45-03f7-ae07" name="3-4. Monolith of Rot" hidden="false">
+                  <description>This Warlord may re-roll all failed Feel no Pain or It Will Not Die tests.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="5905-fd2c-61fd-420b" name="It Will Not Die" hidden="false" targetId="72d9-7041-9d30-d150" type="rule"/>
+                <infoLink id="7f1d-f97d-e791-7d6f" name="Feel No Pain" hidden="false" targetId="9bdd-5ec7-8dd6-63c0" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9bd4-6009-c7de-1cda" name="5-6. Pestilent Cloud" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af27-3403-9b1c-31b0" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="3926-3faf-3106-9cb2" name="5-6. Pestilent Cloud" hidden="false">
+                  <description>All units within 3&quot; of this Warlord at the end of any Fight sub-phase that do not have the Daemon of the Ruinstorm special rule suffer D6 Str 2, AP - hits. These hits and any casualties caused do not count for combat resolution.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0f61-2fe9-0272-c2aa" name="Crimson Fury Traits (HH8 Malevolence p237-241)" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="104b-1f89-7e5c-0f5e" name="1-2. Skull Keeper" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38b6-f66a-0df6-e019" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="5669-846c-003c-3106" name="1-2. Skull Keeper" hidden="false">
+                  <description>This Warlord and any friendly unit with the Daemon of the Ruinstorm special rule within 6&quot; of the Warlord may add +D3 to the Wounds value calculated to see if they win combat in the Assault phase.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e009-8799-41dc-4c51" name="3-4. Aegis of Rage" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00aa-bad0-915f-3dc3" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="2901-fb48-f3c4-1f97" name="3-4. Aegis of Rage" hidden="false">
+                  <description>Each time this Warlord, or any friendly unit with the Daemon of the Ruinstorm special rule within 12&quot;, is targeted by a Psychic Power, the Warlord may attempt to Deny the Witch as though they were a Psyker of a higher Mastery Level than the Psyker manifesting the power and a part of the unit being targeted (regardless of actual Mastery Levels). If the Deny the Witch attempt is failed, the Psychic Power is resolved as normal and affects only its original target.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1eaf-493b-3cfa-8387" name="5-6. Path of Blood" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4d9-cb61-c9d4-9572" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="39d0-48b9-d12b-4f11" name="5-6. Path of Blood" hidden="false">
+                  <description>Whenever this Warlord declares a charge, it may roll a number of dice equal to its Attacks value to determine the distance moved, keeping the two highest results and discarding all other dice.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b824-7b9d-20c1-d7fc" name="Maddening Swarms Traits (HH8 Malevolence p237-241)" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="dccb-eda3-7a59-8517" name="1-2. Font of Madness" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9437-c7a4-58d5-7da5" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="6943-d498-a950-4d93" name="1-2. Font of Madness" hidden="false">
+                  <description>In each Psychic phase, this Warlord generates Warp Charge points equal to its Mastery Level +1. If this Warlord does not have the Psyker special rule then it generates D3 Warp Charge points per Psychic phase (this does not allow them to manifest Psychic Powers).</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a2d4-758a-ead4-7b96" name="3-4. Aetheric Lightning Rod" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cd2-ce34-ceee-146d" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="ebee-5086-e9d6-5f9b" name="3-4. Aetheric Lightning Rod" hidden="false">
+                  <description>For each unit with the Psyker special rule within 6&quot; of this Warlord during a given Assault phase, it gains an additional attack in close combat </description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="423f-ae23-827f-0954" name="5-6. Oracle of Chaos" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb40-deda-f58b-bb37" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="3f20-6f11-4406-5270" name="5-6. Oracle of Chaos" hidden="false">
+                  <description>When making any rolls to determine when friendly Reserves arrive in play or for which table edge friendly Outflanking units arrive on, the dice may be re-rolled while this Warlord is both alive and deployed upon the battlefield.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="a5af-fe8f-2548-98a3" name="Mirror of Hatred Traits (HH8 Malevolence p237-241)" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="3b00-04bc-0dff-bf2f" name="1-2. The All is One" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1b8-fe65-3eb9-346d" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="a3ba-12cb-8d55-e0f5" name="1-2. The All is One" hidden="false">
+                  <description>When this Warlord is involved in a Challenge against a model with any of the Psyker, Daemon or Daemon of the Ruinstorm special rules, the controlling player may choose to use the Weapon Skill and/or Initiative characteristics of the opposing model for the duration of a given Fight phase. This does not alter the characteristics of the opposing model.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d5e5-7c1a-5512-51dd" name="3-4. Avatar of Hatred" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a124-3cc4-505a-adc8" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="cf01-e96c-68db-87e0" name="3-4. Avatar of Hatred" hidden="false">
+                  <description>This Warlord gains the effects of Hatred (Daemons, Daemons of the Ruinstorm and Psykers) during any Fight Sub-phase, not just the first. </description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="994a-810b-cdf8-7eb3" name="Hatred" hidden="false" targetId="7c6c-4e25-e4d4-9728" type="rule">
+                  <modifiers>
+                    <modifier type="append" field="name" value="(Daemons, Daemons of the Ruinstorm and Psykers)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8a80-f6c0-20ce-beca" name="5-6. Inimitable Recursion" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a967-d5b1-ecb3-234e" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="562a-7f46-7fd5-9155" name="5-6. Inimitable Recursion" hidden="false">
+                  <description>When a Warlord with this trait is reduced to o Wounds, roll a D6. On the roll of a 6+, the model is placed into Ongoing Reserves with all of its Wounds returned instead of being removed from play. This Warlord Trait may be used more than once in a given battle, and there is no limit to the number of times a model may be returned to Ongoing Reserves. However, once this roll is failed, the model may·not be returned to play by any other means. If the Slay the Warlord Secondary Objective is in play, then it may be scored each time this Warlord is reduced too Wounds.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="6979-d77f-b1e7-f602" name="Command Traits (HH- Rulebook p137)" hidden="false" collective="false" import="true" targetId="30b6-4212-ea96-9493" type="selectionEntryGroup"/>
+        <entryLink id="8151-bcd4-06a1-1578" name="Strategic Traits (HH- Rulebook p137)" hidden="false" collective="false" import="true" targetId="ed77-3335-e812-a296" type="selectionEntryGroup"/>
+        <entryLink id="2729-631a-8145-3764" name="Personal Traits (HH- Rulebook p137)" hidden="false" collective="false" import="true" targetId="6bae-c7b5-0bfa-1490" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
