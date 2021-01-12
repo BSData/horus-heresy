@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="132" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="133" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN66489" name="HH:MT"/>
@@ -6080,7 +6080,7 @@ or Gargantuan Creatures. </description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5bcc-7fa0-1561-e7cb" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="6401-7ff6-388c-0121" name="Armoured Ceramite" hidden="false" targetId="3138-683d-a9a0-570d" type="rule"/>
+                <infoLink id="830b-9ea4-6555-1297" name="Armoured Ceramite" hidden="false" targetId="2e87b8ca-7cd1-78b9-2116-246015e7935e" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="25.0"/>
@@ -7339,7 +7339,7 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8d27-e190-3bc3-d3ba" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="d7f6-b0c8-f679-d0f7" name="Armoured Ceramite" hidden="false" targetId="3138-683d-a9a0-570d" type="rule"/>
+                <infoLink id="ed73-67fa-ea2b-eb37" name="Armoured Ceramite" hidden="false" targetId="2e87b8ca-7cd1-78b9-2116-246015e7935e" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="25.0"/>
@@ -7493,7 +7493,7 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f2cf-47a5-76b2-5bd6" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="6881-ec98-ec95-cbb5" name="Armoured Ceramite" hidden="false" targetId="3138-683d-a9a0-570d" type="rule"/>
+                <infoLink id="4fa2-133a-0e2f-8662" name="Armoured Ceramite" hidden="false" targetId="2e87b8ca-7cd1-78b9-2116-246015e7935e" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="25.0"/>
@@ -10163,6 +10163,9 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -10895,7 +10898,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a78-ae84-ef7c-c81b" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="3e26-8893-7b1a-8d5a" name="Armoured Ceramite" hidden="false" targetId="3138-683d-a9a0-570d" type="rule"/>
+            <infoLink id="3e26-8893-7b1a-8d5a" name="Armoured Ceramite" hidden="false" targetId="2e87b8ca-7cd1-78b9-2116-246015e7935e" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="20.0"/>
@@ -10960,7 +10963,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6be5-dd8e-96da-604f" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="5bc4-80c5-f65a-828d" name="Armoured Ceramite" hidden="false" targetId="3138-683d-a9a0-570d" type="rule"/>
+            <infoLink id="4ddd-9747-a3c9-6433" name="Armoured Ceramite" hidden="false" targetId="2e87b8ca-7cd1-78b9-2116-246015e7935e" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -10996,8 +10999,8 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="680e-4bd9-603f-949f" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="1f26-867f-947b-1d2b" name="New InfoLink" hidden="false" targetId="0ac1-dfc1-295b-50a6" type="rule"/>
-            <infoLink id="119f-6b3b-5d89-aac7" name="New InfoLink" hidden="false" targetId="1578-d22a-060c-4700" type="profile"/>
+            <infoLink id="1f26-867f-947b-1d2b" name="Power of the Machine Spirit" hidden="false" targetId="0ac1-dfc1-295b-50a6" type="rule"/>
+            <infoLink id="119f-6b3b-5d89-aac7" name="Machine Spirit" hidden="false" targetId="1578-d22a-060c-4700" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -12723,9 +12726,6 @@ D6 - Result
     <rule id="ca3e-e94e-58f6-75d9" name="Interceptor" publicationId="ca571888--pubN106502" page="167" hidden="false">
       <description>At the end of the enemy Movement phase, a weapon with the Interceptor special rule can be fired at any one unit that has arrived from Reserve within its range and line of sight. If this rule is used, the weapon cannot be fired in the next turn, but the firing model can shoot a different weapon if it has one.</description>
     </rule>
-    <rule id="3138-683d-a9a0-570d" name="Armoured Ceramite" publicationId="ca571888--pubN106780" page="131" hidden="false">
-      <description>A vehicle with this wargear is not subject to the additional D6 armour penetration caused by weapons with the Melta special rule.</description>
-    </rule>
     <rule id="d0b7-ed3f-25c8-1e63" name="Flare Shield" hidden="false">
       <description>A flare shield operates against shooting attacks that strike the vehicle&apos;s front arc.  It reduces the strength of attacks by weapons with the Templae or Blast type by -2, and other shooting attacks by -1.  A flare shield has no effect on attacks from close combat or with the Destroyer rule.</description>
     </rule>
@@ -14416,14 +14416,6 @@ Jetbikes can move over all other models and terrain freely. However, if a moving
         <characteristic name="Save" typeId="5361766523232344415441232323">3+</characteristic>
       </characteristics>
     </profile>
-    <profile id="6fbf4c0f-334f-844d-3d75-ce8a1da6c1fa" name="Darkfire Cannon" publicationId="ca571888--pubN85920" page="209" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="52616e676523232344415441232323">60&quot;</characteristic>
-        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
-        <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
-        <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 2, Lance, Blind, Gets Hot</characteristic>
-      </characteristics>
-    </profile>
     <profile id="481b32ee-2904-c9e0-8612-35ff2bcab65a" name="Graviton Gun" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">18&quot;</characteristic>
@@ -14772,14 +14764,6 @@ Jetbikes can move over all other models and terrain freely. However, if a moving
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 2, Lance, Blind, Gets Hot</characteristic>
       </characteristics>
     </profile>
-    <profile id="4893-10c8-2718-bf24" name="Darkfire Cannon" publicationId="ca571888--pubN106502" page="179" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="52616e676523232344415441232323">60&quot;</characteristic>
-        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
-        <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
-        <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 2, Lance, Blind, Gets Hot</characteristic>
-      </characteristics>
-    </profile>
     <profile id="62c4-32da-84f2-5033" name="Phosphex Bomb" publicationId="ca571888--pubN106502" page="179" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">6&quot;</characteristic>
@@ -15079,6 +15063,11 @@ Jetbikes can move over all other models and terrain freely. However, if a moving
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
         <characteristic name="AP" typeId="415023232344415441232323">6</characteristic>
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 3, Twin-Linked</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2e87b8ca-7cd1-78b9-2116-246015e7935e" name="Armoured Ceramite" publicationId="ca571888--pubN82424" page="88" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+      <characteristics>
+        <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A vehicle with this wargear is not subject to the additional D6 armour penetration caused by weapons with the Melta special rule.  </characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
