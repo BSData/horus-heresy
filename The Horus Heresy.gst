@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="133" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="134" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN66489" name="HH:MT"/>
@@ -9292,10 +9292,21 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="2367-da4c-a34f-4ed4" name="Master-crafted Bolt Pistol" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f553-cb10-c5f0-23a0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28b5-29c0-54e8-9335" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="c263-101b-2994-8455" name="Master-crafted" hidden="false" targetId="f899-8f9d-fc7e-d855" type="rule"/>
+            <infoLink id="0d0e-0316-cd74-d316" name="Bolt Pistol" hidden="false" targetId="ec83-0776-ef74-9cc2" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="0db8-a258-3874-1f82" name="Paragon Bolter" hidden="false" collective="false" import="true" targetId="ccce-756b-608b-5d8b" type="selectionEntry"/>
         <entryLink id="d9bd-d367-c3d6-b8b3" name="Legiones Astartes" hidden="false" collective="false" import="true" targetId="4014-7d86-22e9-5d96" type="selectionEntry"/>
+        <entryLink id="bdf6-0779-2399-ffd7" name="Frag and Krak Grenades" hidden="false" collective="false" import="true" targetId="0a53-b471-df87-7b83" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="175.0"/>
@@ -9849,19 +9860,6 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
             <characteristic name="Save" typeId="5361766523232344415441232323">2+</characteristic>
           </characteristics>
         </profile>
-        <profile id="7624-baa9-8d1b-bdec" name="Force Sword" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323"/>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323"/>
-            <characteristic name="AP" typeId="415023232344415441232323"/>
-            <characteristic name="Type" typeId="5479706523232344415441232323"/>
-          </characteristics>
-        </profile>
-        <profile id="516e-b9f3-d12e-2be7" name="Psychic Hood" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
-          <characteristics>
-            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323"/>
-          </characteristics>
-        </profile>
       </profiles>
       <rules>
         <rule id="2908-f026-0047-3174" name="Preferred Enemy (Traitors)" hidden="false">
@@ -9878,17 +9876,50 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="7c4c-8d0a-ba8a-31ac" hidden="false" targetId="3ad4-1c37-d60b-1a4e" type="rule"/>
+        <infoLink id="7c4c-8d0a-ba8a-31ac" name="Independent Character" hidden="false" targetId="3ad4-1c37-d60b-1a4e" type="rule"/>
         <infoLink id="7393-9fcd-98f6-a446" name="Implacable Advance" hidden="false" targetId="5ecb-551d-0f68-3a79" type="rule"/>
         <infoLink id="bd18-4816-89b0-70ee" name="By Falsehood Cloaked" hidden="false" targetId="575f-1255-f276-df91" type="rule"/>
-        <infoLink id="f2ae-82d6-e741-a56c" hidden="false" targetId="0d00-d0cd-12d1-d3b0" type="rule"/>
-        <infoLink id="77e3-7128-f6d7-013d" name="New InfoLink" hidden="false" targetId="4771-b711-0e74-3aee" type="rule"/>
+        <infoLink id="f2ae-82d6-e741-a56c" name="Oath of Moment" hidden="false" targetId="0d00-d0cd-12d1-d3b0" type="rule"/>
+        <infoLink id="77e3-7128-f6d7-013d" name="Precision Shots" hidden="false" targetId="4771-b711-0e74-3aee" type="rule"/>
         <infoLink id="57ea-6bd8-8dfc-5893" name="Precision Strikes" hidden="false" targetId="a080-af1b-fb2e-4860" type="rule"/>
         <infoLink id="403a-baf3-5ef2-8ebd" name="Iron Halo" hidden="false" targetId="10b59cf4-3c97-e3e0-2185-853bcde6d112" type="profile"/>
+        <infoLink id="06c5-f4bd-0641-3274" name="Psychic Hood" hidden="false" targetId="f0ec-023c-4865-fe5a" type="profile"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="541b-045e-1c98-71d1" name="Master-crafted Bolt Pistol" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="958d-e0ce-a771-5526" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2817-7dba-090f-a1c5" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="2419-e29f-dc41-2206" name="Master-crafted" hidden="false" targetId="f899-8f9d-fc7e-d855" type="rule"/>
+            <infoLink id="ee5d-527b-8504-6d25" name="Bolt Pistol" hidden="false" targetId="ec83-0776-ef74-9cc2" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="811f-ea3b-0ce4-3893" name="Force Sword" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d86b-46a4-9392-9510" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="514e-d3c6-be74-35f3" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c377-a39b-d63c-ad17" name="Force Sword" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">User</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Force</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="d580-59d7-d8de-9b96" name="Force" hidden="false" targetId="f588-4e5a-a032-0aee" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="1533-2cea-823a-c269" name="Paragon Bolter" hidden="false" collective="false" import="true" targetId="ccce-756b-608b-5d8b" type="selectionEntry"/>
         <entryLink id="1074-0c6c-470d-979c" name="Legiones Astartes" hidden="false" collective="false" import="true" targetId="4014-7d86-22e9-5d96" type="selectionEntry"/>
+        <entryLink id="797e-f659-428d-2ca6" name="Frag and Krak Grenades" hidden="false" collective="false" import="true" targetId="0a53-b471-df87-7b83" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="140.0"/>
@@ -10458,7 +10489,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d3c-4f23-1a69-6717" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="3b73-1b95-d5bb-ca83" name="New InfoLink" hidden="false" targetId="ec83-0776-ef74-9cc2" type="profile"/>
+            <infoLink id="3b73-1b95-d5bb-ca83" name="Bolt Pistol" hidden="false" targetId="ec83-0776-ef74-9cc2" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -10861,6 +10892,19 @@ Command Benefits:
           </constraints>
           <infoLinks>
             <infoLink id="25d2-f77c-25a5-4679" name="New InfoLink" hidden="false" targetId="730c-b70b-1e8f-f2e9" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c14c-2a09-7f13-add7" name="Frag Grenades" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3066-9cf7-3c4e-a451" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2144-7e35-5d07-8b2c" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="79d7-f943-8ad8-9587" name="Frag Grenades" hidden="false" targetId="d890-1b84-bbd9-12d3" type="profile"/>
+            <infoLink id="0cae-06b8-5110-de37" name="Assault Grenades" hidden="false" targetId="9430-a4d5-6f01-57e2" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
