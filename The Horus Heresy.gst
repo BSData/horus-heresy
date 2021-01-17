@@ -5983,7 +5983,7 @@ or Gargantuan Creatures. </description>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c859-6b16-c533-7e97" name="Mornival Rules Active" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c859-6b16-c533-7e97" name="Mournival Rules Active" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -9301,6 +9301,9 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
             <infoLink id="c263-101b-2994-8455" name="Master-crafted" hidden="false" targetId="f899-8f9d-fc7e-d855" type="rule"/>
             <infoLink id="0d0e-0316-cd74-d316" name="Bolt Pistol" hidden="false" targetId="ec83-0776-ef74-9cc2" type="profile"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -9895,6 +9898,9 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
             <infoLink id="2419-e29f-dc41-2206" name="Master-crafted" hidden="false" targetId="f899-8f9d-fc7e-d855" type="rule"/>
             <infoLink id="ee5d-527b-8504-6d25" name="Bolt Pistol" hidden="false" targetId="ec83-0776-ef74-9cc2" type="profile"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="811f-ea3b-0ce4-3893" name="Force Sword" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -9914,6 +9920,9 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
           <infoLinks>
             <infoLink id="d580-59d7-d8de-9b96" name="Force" hidden="false" targetId="f588-4e5a-a032-0aee" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -10194,6 +10203,21 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8d39-af5d-fcc9-9c1f" name="Mournival Experiemental Rules on" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e97-5413-0c38-757d" type="max"/>
+      </constraints>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" revision="80" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="132" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" revision="81" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="134" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="7f243fc5--pubN65537" name="Crusade Imperialis"/>
     <publication id="7f243fc5--pubN65563" name="AoDRB"/>
@@ -975,11 +975,16 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <categoryLink id="1327-2128-5341-3bdf" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="ccc3-e3d8-64e7-4232" name="Mornival Rules Active" hidden="false" collective="false" import="true" targetId="c859-6b16-c533-7e97" type="selectionEntry">
+        <entryLink id="ccc3-e3d8-64e7-4232" name="Mournival Rules Active" hidden="false" collective="false" import="true" targetId="c859-6b16-c533-7e97" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d8bd-db23-bcee-58bd" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d87-6feb-96d2-9473" type="max"/>
           </constraints>
+        </entryLink>
+        <entryLink id="4fd0-3420-d695-063f" name="Mournival Experiemental Rules on" hidden="false" collective="false" import="true" targetId="8d39-af5d-fcc9-9c1f" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink id="8ae4-f128-5d2b-12dd" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <costs>
@@ -1525,9 +1530,16 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
       </costs>
     </selectionEntry>
     <selectionEntry id="48db-84ca-2bad-520f" name="Castellax Class Battle-Automata Maniple" page="" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="increment" field="points" value="25.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c859-6b16-c533-7e97" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="7678-ae60-16f2-e948" name="" hidden="false" targetId="988c-d4d0-9418-1165" type="rule"/>
-        <infoLink id="a7f0-6bc1-ed4a-34dc" name="New InfoLink" hidden="false" targetId="d5cf-bd98-2854-13cf" type="rule"/>
+        <infoLink id="a7f0-6bc1-ed4a-34dc" name="Reactor Blast" hidden="false" targetId="d5cf-bd98-2854-13cf" type="rule"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="09ad-ef83-4a62-46fe" name="Castellax class Battle-automata" page="" hidden="false" collective="false" import="true" type="model">
@@ -3230,6 +3242,18 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="32c5-7e31-c87b-6f30" name="Lumbering Behemoth (Mournival)" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d39-af5d-fcc9-9c1f" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description> If the tank only moves 6” or less it may fire all of its weapons at full BS (ignoring that Ordnance weapons cause snap shots).</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="84d3-6e53-7d8f-cd37" name="Explorer Adaptation" hidden="false" targetId="11bec7a8-6060-53c9-572c-0df68bf9fa78" type="rule"/>
       </infoLinks>
@@ -3424,6 +3448,16 @@ but the tank loses the Fast special rule.</description>
       <rules>
         <rule id="b77d-3ed4-cd64-4a6e" name="Highly Flammable" publicationId="7f243fc5--pubN74753" page="281" hidden="false">
           <description>Adds +1 to any rolls made on the Catastrophic Damage table against it.</description>
+        </rule>
+        <rule id="006f-e356-d3e0-74a7" name="Lumbering Behemoth (Mournival)" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d39-af5d-fcc9-9c1f" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description> If the tank only moves 6” or less it may fire all of its weapons at full BS (ignoring that Ordnance weapons cause snap shots).</description>
         </rule>
       </rules>
       <infoLinks>
