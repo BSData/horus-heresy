@@ -2976,6 +2976,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
       </costs>
     </selectionEntry>
     <selectionEntry id="e40b-468f-f1d7-d05d" name="Imperial Castelum Stronghold" publicationId="ca571888--pubN82424" page="94" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set-primary" field="category" value="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f">
+          <conditions>
+            <condition field="points" scope="e40b-468f-f1d7-d05d" value="500.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="d307-b16a-5b89-9612" name="Shielded Gate Barriers" publicationId="ca571888--pubN82437" page="75" hidden="false">
           <description>The main entrances of the Castellum Stronghold are covered not by plascrete and adamantium, but crackling barriers of energy that can be raised or lowered at the will of the fortification’s controller.
