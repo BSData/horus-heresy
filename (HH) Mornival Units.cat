@@ -3079,7 +3079,7 @@ one Special Rule the unit possesses ceases to have any effect</description>
         <cost name="pts" typeId="points" value="115.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="693c-5450-e295-ce1f" name="Sisters of Silence Oblivion Knight-Centura" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="693c-5450-e295-ce1f" name="Sisters of Silence Oblivion Knight-Centura" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -3495,7 +3495,7 @@ All models with psychic powers suffer a penalty to roll to manifest psychic powe
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1524-ecd3-80b0-453c" name="Cortus Class Dreadnought Talon" publicationId="0e6e-8c19-c436-39c4" page="27" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1524-ecd3-80b0-453c" name="Cortus Class Dreadnought Talon" publicationId="0e6e-8c19-c436-39c4" page="27" hidden="false" collective="false" import="true" type="unit">
       <selectionEntries>
         <selectionEntry id="17cb-be38-c492-d766" name="Cortus Dreadnought" hidden="false" collective="false" import="true" type="model">
           <constraints>
@@ -3743,24 +3743,6 @@ All models with psychic powers suffer a penalty to roll to manifest psychic powe
               </constraints>
             </entryLink>
             <entryLink id="c0f2-c392-ef75-4fcf" name="Extra Armour" hidden="false" collective="false" import="true" targetId="4167-42c8-42d8-1ce0" type="selectionEntry"/>
-            <entryLink id="f492-5717-7714-64d0" name="Dreadnought CCW In-built:" hidden="false" collective="false" import="true" targetId="68cf-68c6-5017-156b" type="selectionEntryGroup">
-              <modifiers>
-                <modifier type="increment" field="c326-04d6-84f6-39f4" value="1.0">
-                  <repeats>
-                    <repeat field="selections" scope="17cb-be38-c492-d766" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28f6-b43f-4914-4a29" repeats="1" roundUp="false"/>
-                    <repeat field="selections" scope="17cb-be38-c492-d766" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e23-90c4-a3bf-030a" repeats="1" roundUp="false"/>
-                    <repeat field="selections" scope="17cb-be38-c492-d766" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e7d3-aa89-fb59-d733" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-                <modifier type="increment" field="a65e-55e7-3db7-acba" value="1.0">
-                  <repeats>
-                    <repeat field="selections" scope="17cb-be38-c492-d766" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28f6-b43f-4914-4a29" repeats="1" roundUp="false"/>
-                    <repeat field="selections" scope="17cb-be38-c492-d766" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e23-90c4-a3bf-030a" repeats="1" roundUp="false"/>
-                    <repeat field="selections" scope="17cb-be38-c492-d766" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e7d3-aa89-fb59-d733" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="115.0"/>
@@ -3783,7 +3765,7 @@ All models with psychic powers suffer a penalty to roll to manifest psychic powe
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7d04-bb7c-cffb-f005" name="Independent Techmarines, Legion" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7d04-bb7c-cffb-f005" name="Independent Techmarines, Legion" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="25d9-7dcc-5792-5567" name="Character" hidden="false" targetId="eb92-48f9-9a1a-7bd1" primary="false"/>
       </categoryLinks>
@@ -5242,6 +5224,40 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="d9cb-4510-3fef-1ded" name="All models may take:" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="c5c1-bd3d-19dd-f8e5" name="Sniper Rifles - Anti-Materiel Rounds" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="points" value="5.0">
+                  <repeats>
+                    <repeat field="selections" scope="5aa7-c454-3656-3a3f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cf5-3801-534a-b7e0" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d39-af5d-fcc9-9c1f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="6bff-7e13-b031-65b2" name="Sniper Rifle - Anti-Materiel Rounds" page="" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">6</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Sniper</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="5653-0fdb-48d2-74fb" name="Sniper Rifles - Anti-Materiel Rounds" hidden="false">
+                  <description>Sniper Rifles may be equipped with anti-materiel rounds for +5 points per model, increasing to Str 7. Due to the large amount of dust and debris kicked up, units containing models using these rounds suffer -1 to cover saves in the next turn.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <entryLinks>
             <entryLink id="61e9-855e-7e07-2cd4" name="Cameleoline" hidden="false" collective="false" import="true" targetId="0d86175b-00bf-8a27-6964-d6eec7f81169" type="selectionEntry">
               <modifiers>
@@ -6909,6 +6925,29 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
                 <modifier type="decrement" field="points" value="2.0"/>
               </modifiers>
             </entryLink>
+            <entryLink id="839c-2ae6-9619-fc07" name="Stasis Shells (grenade launcher)" hidden="false" collective="false" import="true" targetId="f118-45b2-9b94-d7f3" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="points" value="0.0"/>
+                <modifier type="increment" field="points" value="5.0">
+                  <repeats>
+                    <repeat field="selections" scope="0183-7594-8997-5b90" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6fb-0e54-0be1-9ed1" type="equalTo"/>
+                        <condition field="selections" scope="0183-7594-8997-5b90" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a8e-da3f-59da-dc04" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a93e-06db-37ba-9b86" type="min"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="962f-4008-a4e6-e3b1" name="All members of the squad can equip their Bullock Jetcycles with:" hidden="false" collective="false" import="true">
@@ -6980,6 +7019,40 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
                   </repeats>
                 </modifier>
               </modifiers>
+            </entryLink>
+            <entryLink id="cbaf-e835-bcfd-e0e9" name="Plasma Burners" hidden="false" collective="false" import="true" targetId="d650-2238-d718-9798" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6fb-0e54-0be1-9ed1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="points" value="15.0">
+                  <repeats>
+                    <repeat field="selections" scope="0183-7594-8997-5b90" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cdc-effc-4271-45b0" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="ee45-f4b2-79c2-5861" name="Plasma Repeater" hidden="false" collective="false" import="true" targetId="d4e8-6e08-581a-79bd" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6fb-0e54-0be1-9ed1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="points" value="20.0">
+                  <repeats>
+                    <repeat field="selections" scope="0183-7594-8997-5b90" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10b3-987f-d540-b7f7" type="max"/>
+              </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -7240,50 +7313,6 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="50.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="bfa7-fc02-60e9-c200" name="Hurricane Bolter" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="c976-8bb0-93ee-d56a" name="Hurricane Bolter" publicationId="0e6e-8c19-c436-39c4" page="" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">5</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Rapid Fire 3, Twin-linked</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="74ad-2f65-7b84-aaf3" name="Twin-linked" hidden="false" targetId="10a8-8d89-0bec-3e21" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="0a8e-da3f-59da-dc04" name="Twin-linked Grenade Launcher" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="aa61-660a-0704-ec1e" name="Twin-linked Grenade Launcher (Frag)" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">3</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">6</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Rapid Fire, Blast (3&quot;), Twin-linked</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="5432-581f-9d7c-a62f" name="Twin-linked Grenade Launcher (Krak)" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1, Twin-linked</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="de82-43ad-4183-d4ee" name="Twin-linked" hidden="false" targetId="10a8-8d89-0bec-3e21" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fd86-a3a0-adcc-63b5" name="Sky Stalker Jetbike Squad on Corvex Jetbikes, Legion" publicationId="0e6e-8c19-c436-39c4" page="" hidden="false" collective="false" import="true" type="unit">
@@ -7667,7 +7696,7 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
         <cost name="pts" typeId="points" value="50.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2b92-e606-8fb0-3117" name="Mars Pattern Land Speeder" page="0" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2b92-e606-8fb0-3117" name="Mars Pattern Land Speeder" page="0" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="60d9-b50b-45d2-e365" name="Deep Strike" hidden="false" targetId="2d6f-e613-ab10-e55a" primary="false"/>
         <categoryLink id="37f5-0da7-d60f-2349" name="Skimmer" hidden="false" targetId="9480-d3f6-fff1-7b35" primary="false"/>
@@ -7869,7 +7898,7 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="79c3-8891-b0e9-622a" name="Mars Cutter Pattern Land Speeder Squadron" page="0" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="79c3-8891-b0e9-622a" name="Mars Cutter Pattern Land Speeder Squadron" page="0" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="6841-b54f-c299-8be8" name="Transport" hidden="false" targetId="e4e0-c5d1-3430-f101" primary="false"/>
         <categoryLink id="b9e6-8014-c83d-f038" name="Vehicle" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false"/>
@@ -7990,7 +8019,7 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="829f-26e6-6908-aa1f" name="Mars Pattern Javelin Attack Speeder Squadron" page="0" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="829f-26e6-6908-aa1f" name="Mars Pattern Javelin Attack Speeder Squadron" page="0" hidden="false" collective="false" import="true" type="unit">
       <selectionEntries>
         <selectionEntry id="8c5b-654a-d2d2-26d5" name="Mars Pattern Javelin Attack Speeder" page="0" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -9224,7 +9253,7 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
         <cost name="pts" typeId="points" value="60.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="238b-3768-7dd7-7f81" name="Custom Legiones Astartes Character" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="238b-3768-7dd7-7f81" name="Custom Legiones Astartes Character" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="98da-03a8-32c3-317e">
           <conditionGroups>
@@ -19485,7 +19514,7 @@ Master of Cybernetica (Location: Specialisation &amp; Legion Special Rules, Cost
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bfae-d4db-e184-7134" name="Legion Headquaters Company Command" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="bfae-d4db-e184-7134" name="Legion Headquaters Company Command" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="770e-4864-b33d-5955" value="1.0">
           <conditions>
