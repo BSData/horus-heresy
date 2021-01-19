@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="111" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="134" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="112" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="135" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="cf03-f607-pubN65537" name="Horus Heresy: Taghmata Army List"/>
     <publication id="cf03-f607-pubN65563" name="AoDRB"/>
@@ -1865,6 +1865,11 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <categoryLink id="b33b-6833-c797-e37c" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true"/>
         <categoryLink id="8392-b02f-c751-91e6" name="Infantry" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
         <categoryLink id="985c-5091-fd1f-e026" name="Legiones Astartes" hidden="false" targetId="0c56-27b8-a737-c9fd" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a223-d9c8-4193-e4d4" name="Ordinatus Aktaeus" hidden="false" collective="false" import="true" targetId="fde9-8c77-e280-0c30" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="956e-c221-175a-f4bc" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -4917,7 +4922,7 @@ D6 Result 1-2 Explosion
       </rules>
       <infoLinks>
         <infoLink id="b68f-83b1-8704-5a34" name="Blessed Autosimulacra" hidden="false" targetId="6ce7-5e83-a2dd-571e" type="rule"/>
-        <infoLink id="1fdc-e374-4f80-5750" hidden="false" targetId="2db60061-47bc-2922-17b3-88cd261bac40" type="profile"/>
+        <infoLink id="1fdc-e374-4f80-5750" name="Anbaric Claw" hidden="false" targetId="2db60061-47bc-2922-17b3-88cd261bac40" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c289-ed7e-c4ea-bfe0" name="New CategoryLink" hidden="false" targetId="8d56-b8fc-9b94-9cc9" primary="false"/>
@@ -17963,6 +17968,137 @@ A Unit may not use Counter Attack special rule if it used Reaction Fire.</descri
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fde9-8c77-e280-0c30" name="Ordinatus Aktaeus" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="c67f-321d-2396-54f8" name="Ordinatus Aktaeus" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
+            <characteristic name="Front" typeId="46726f6e7423232344415441232323">14</characteristic>
+            <characteristic name="Side" typeId="5369646523232344415441232323">14</characteristic>
+            <characteristic name="Rear" typeId="5265617223232344415441232323">12</characteristic>
+            <characteristic name="HP" typeId="485023232344415441232323">14</characteristic>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Vehicle (Super-heavy)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="379c-e4a0-4929-b0ec" name="Ordinatus Aktaeus" hidden="false" typeId="307d-047f-ca13-706b" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="8285-4205-b6cd-8473">The Ordinatus Aktaeus can carry up to 40 models, and may carry Jump Pack and Jet Pack Infantry. It may also carry up to three Battle-automata as part of its complement (these must be part of a Battleautomata Maniple, such as Castellax, Vorax or Domitar) – each Battle-automata counting as eight models respectively.</characteristic>
+            <characteristic name="Fire Points" typeId="b270-a7f9-22b2-3702">None</characteristic>
+            <characteristic name="Access Points" typeId="d17b-0342-b1dc-b8e7">Two access hatches. In practice, you may choose to open and embark/disembark from a single hatch on either side of the hull.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="8131-6237-4c32-11aa" name="Reinforced Structure" publicationId="cf03-f607-pubN76270" page="63" hidden="false">
+          <description>The Ordinatus has an invulnerable save of 6+.</description>
+        </rule>
+        <rule id="ea91-f107-be46-eba4" name="Aktaeus Class Seismic Excavator Macro-drill" hidden="false">
+          <description>The Ordinatus Aktaeus has two forms of deployment. The first of these is to deploy using the normal deployment rules for Super-heavy vehicles, in which case you should deploy the Aktaeus Earth-breaker with it atop the Ordinatus platform. If this method of deployment is chosen, the Ordinatus Aktaeus gains the Seismic Shockwave and Ordinatus Reactor Meltdown special rules.
+The second method of deployment for the Ordinatus Aktaeus is to deploy via Deep Strike. If you wish it to do so, the unit must be held in Reserve and enter play via Deep Strike. In this case the Aktaeus Earth-breaker is deployed without the Ordinatus platform, which is not used during this game. Should this method of deployment be used, the unit gains the Deep Strike, Subterranean Assault and Terrestrial Disregard special rules. It also loses all wargear and special rules which apply only to the Ordinatus platform and to the Normal Deployment type.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="762f-47ca-2df2-8c83" name="Blessed Autosimulacra" hidden="false" targetId="6ce7-5e83-a2dd-571e" type="rule"/>
+        <infoLink id="4bbc-8566-70d5-b1a1" name="Anbaric Claw" hidden="false" targetId="2db60061-47bc-2922-17b3-88cd261bac40" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="db2d-93f1-e3cd-63b3" name="Super Heavy Tank" hidden="false" targetId="8d56-b8fc-9b94-9cc9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="8243-2a80-4838-7ed8" name="Ordinatus Dispersion Shield" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="740b-0d06-1e74-0811" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0469-1be4-a5c4-cc84" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5a9a-7c95-63b4-95ea" name="Ordinatus Dispersion Shield" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">The protection provided by the dispersion shield affects only shooting attacks originating from its front and side arcs, and against barrage weapons from any arc.
+• On the first turn that the Ordinatus is in play, the Strength of shooting attacks and the roll result on the Destroyer table made against it are at-3.
+• On the second turn that the Ordinatus is in play, the Strength of shooting attacks and the roll result on the Destroyer table made against it are at -2.
+• On the third and subsequent turns that the Ordinatus is in play, the Strength of shooting attacks and the roll result on the Destroyer table made against it are at -1.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="210d-c64a-aae1-8248" name="Terrebrax Rocket Battery" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="af79-247a-f497-dc09" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="94ca-0766-b56d-a98e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f904-2563-8591-47de" name="Terrebrax Rocket Battery" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">5</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 12</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7ec9-e7bb-19f4-e870" name="Two turret-mounted volkite culverins" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="b44a-24df-3238-870e" name="Volkite Culverin" hidden="false" collective="false" import="true" targetId="edadef72-c786-ab75-6888-15d0cc090857" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="maxSelections" value="2.0"/>
+                <modifier type="set" field="name" value="Turret-mounted Volkite Culverins"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce1c-cf2c-a6ec-911e" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="37ab-a05d-359c-f2e0" name="Deployment" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03d0-546e-b387-b786" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19a4-f0d5-834e-49a8" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b4d5-6ff6-51c8-7773" name="Deep Strike Deployment" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="ec2f-3d88-f15c-6ea7" name="Terrestrial Disregard" hidden="false">
+                  <description>Instead of the usual rules for Deep Striking, when a Subterranean Assault vehicle with this special rule enters play via Deep Strike, place an Apocalyptic Blast Marker (10&quot;) on the table and scatter this to determine the final position of its arrival as per the Deep Strike special rule. The initial placement of this marker, before rolling for scatter, may not be on top of impassable terrain or within 1&quot; of any unit.
+Should this marker scatter on top of impassable terrain, a building, ruin, fortification, vehicle or any unit engaged in combat, reduce the scatter distance by the minimum required to avoid the obstacle. If the marker representing the arrival of the Ordinatus Aktaeus was displaced in this manner by a vehicle or fortification, the closest vehicle or fortification to the marker immediately suffers D6 Str 10 AP 2 hits. Vehicles are hit on their side armour. If the arrival of the Ordinatus Aktaeus was instead displaced by any units engaged in close combat, all units in that combat suffer D6 Str 10 AP 2 hits. After the final position of the blast marker is determined, if the marker covers or touches any enemy or friendly unit then that unit also suffers D6 Str 10 AP 2 hits.
+After all damage is resolved, the Subterranean Assault vehicle may be placed in any orientation, so long as the centre of the Apocalyptic Blast marker (10&quot;) is underneath part of the vehicle’s hull and it remains 1&quot; away from any fortification, vehicle or unit engaged in combat. The area under the Apocalyptic Blast marker is now difficult terrain and dangerous terrain for the rest of the game. Players may, should they wish, instead represent this area with a piece of crater terrain.
+Should a Subterranean Assault vehicle be placed on top of any unit which does not pose an obstacle to its arrival as described above, the Terrestrial Disregard special rule allows it to be placed as though the unit was not there. If some models in the unit would end up underneath the vehicle when it reaches its final position (it makes no difference whether the unit is Falling Back or not), these models must be moved by their controlling player out of the way by the shortest distance, leaving at least 1&quot; between them and the vehicle (and indeed any other unit) whilst maintaining unit coherency and staying on the tabletop. Any models that cannot manage this are crushed and removed from play as casualties with no saves allowed.
+After deploying in this manner, the Ordinatus Aktaeus cannot move and counts as a vehicle that has suffered an irreparable Immobilised result on the Vehicle Damage table (although no Hull point loss is suffered).</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="492b-f5f5-b217-9b10" name="Deep Strike" hidden="false" targetId="d219-2314-4834-c054" type="rule"/>
+                <infoLink id="2fa9-da7e-8037-c1bf" name="Subterranean Assault" hidden="false" targetId="1679-b036-dc3a-c6a6" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="bcdb-ea77-ac6d-1023" name="Normal Deployment" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="f3da-7ba8-6b09-099f" name="Ordinatus Reactor Meltdown" publicationId="cf03-f607-pubN76270" page="63" hidden="false">
+                  <description>The potent onboard plasma reactor of the Ordinatus ensures that if this warengine be destroyed, its fiery demise will immolate a sizeable proportion of the battlefield on which it fights. Because of this, instead of using the usual Catastrophic Damage table for Super-heavy vehicles, use the table presented here instead. Note as well, in thh case of the Explosion and Devastating Explosion results, the Orddinatus remains on the table as impassable terrain after it is destroyed. The radius effect of the Ordinatus&apos; explosion does not use the usual Apocalyptic Blast marker either. Instead, measure distances from the hull of the model as a starting point with the blase ranges respectively. ranges of 6&quot;/12&quot;/24&quot; respectively.
+
+D6 Result 1-2 Explosion
+3-5 Devastating Explosion
+6 Titanic Explosion</description>
+                </rule>
+                <rule id="121c-daf0-1f85-4243" name="Seismic Shockwave" hidden="false">
+                  <description>Once per game, at the end of the controlling player’s Movement phase, the Ordinatus Aktaeus may employ its seismic excavator macro-drill to cause a seismic shockwave. When this occurs, the Ordinatus Aktaeus cannot move for the rest of the game and counts as a vehicle that has suffered an irreparable Immobilised result on the Vehicle Damage table (although no Hull point loss is suffered). Units may not choose to embark or disembark in a turn in which the Seismic Shockwave ability is used, but may do so as normal in subsequent turns.
+At the beginning of each of the controlling player’s Shooting phases for the rest of the game after the Ordinatus Aktaeus has employed its seismic excavator macro-drill to cause a Seismic Shockwave, pick a point within 6&quot; of the front of the hull of the Ordinatus Aktaeus (for the purposes of determining this point you should use the front arc of the vehicle). All units, friendly or enemy (excluding the Ordinatus Aktaeus itself), within a distance equal to the current game turn number multiplied by 6&quot; of this point suffer D6 Str 7 AP 4 hits. Vehicles are hit on their weakest armour facing.
+Should a vehicle suffer a penetrating hit from this attack, it immediately suffers from Crew Shaken in addition to any other effect. If a unit suffers any unsaved wounds from this attack, it must immediately make a number of Dangerous Terrain tests equal to the number of wounds suffered (wounds caused as a result of this test are allocated by the controlling player).</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="76c8-060f-08f9-5c5c" name="Armoured Ceramite" hidden="false" collective="false" import="true" targetId="ca5e-98e3-dff7-fa49" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="755.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
