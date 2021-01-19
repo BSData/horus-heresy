@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="110" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="132" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="111" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="134" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="cf03-f607-pubN65537" name="Horus Heresy: Taghmata Army List"/>
     <publication id="cf03-f607-pubN65563" name="AoDRB"/>
@@ -1066,6 +1066,11 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c9b-b61f-d477-0981" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="0d01-7273-5f60-ea93" name="Mournival Experiemental Rules on" hidden="false" collective="false" import="true" targetId="8d39-af5d-fcc9-9c1f" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink id="e018-0bd0-7762-3b8d" name="Mournival Rules" hidden="false" targetId="dbe0-716f-797c-66f7" primary="false"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -1371,7 +1376,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
     </entryLink>
     <entryLink id="2be9-5af0-6412-78d9" name="Imperial Primus Redoubt" hidden="false" collective="false" import="true" targetId="c05d-2231-2481-4037" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="2be9-5af0-6412-78d9-466f7274696669636174696f6e23232344415441232323" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="true"/>
+        <categoryLink id="34d1-bb53-a1aa-ca7a" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="808e-b852-a76b-939f" name="Imperial Castelum Stronghold" hidden="false" collective="false" import="true" targetId="e40b-468f-f1d7-d05d" type="selectionEntry">
@@ -1920,6 +1925,11 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="increment" field="points" value="25.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c859-6b16-c533-7e97" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink id="67d4-e1ef-588a-47e9" name="Cybernetica Cortex" hidden="false" targetId="f6c9-cdb7-c695-5b6b" type="rule"/>
@@ -2100,6 +2110,11 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <modifier type="add" field="category" value="219d-aefa-dfa5-44db">
           <conditions>
             <condition field="selections" scope="48db-84ca-2bad-520f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0ee-a476-118f-2c11" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="points" value="25.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c859-6b16-c533-7e97" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3388,6 +3403,13 @@ Reduces transport capacity to 8.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="314b-bec3-5501-a0aa" name="Scyllax Guardian-Automata Covenant" publicationId="cf03-f607-pubN76780" page="40" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="increment" field="points" value="15.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d39-af5d-fcc9-9c1f" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
@@ -3417,6 +3439,11 @@ Reduces transport capacity to 8.</description>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" field="points" value="25.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d39-af5d-fcc9-9c1f" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -4287,12 +4314,19 @@ Reduces transport capacity to 8.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="8190-e779-2c49-c564" name="Secutarii Peltast Phalanx" publicationId="cf03-f607-pubN89244" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="increment" field="points" value="25.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c859-6b16-c533-7e97" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="1918-cfef-52f5-3b04" hidden="false" targetId="85da-2f19-3756-44de" type="rule"/>
         <infoLink id="a4e8-10c8-92cf-2b75" hidden="false" targetId="a878-4168-e49f-1d06" type="rule"/>
         <infoLink id="b633-3729-d833-bcc5" hidden="false" targetId="7c0b-31e3-daa1-0d3a" type="rule"/>
         <infoLink id="c1a0-a48b-227e-9b98" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule"/>
-        <infoLink id="b575-6604-804e-9991" name="New InfoLink" hidden="false" targetId="bd0a-ad49-6435-587e" type="rule"/>
+        <infoLink id="b575-6604-804e-9991" name="Secutarii Hazard Protocols" hidden="false" targetId="bd0a-ad49-6435-587e" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c63e-9be3-05b4-db86" name="New CategoryLink" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
@@ -4614,6 +4648,13 @@ Reduces transport capacity to 8.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="4ff6-b526-4208-0d33" name="Secutarii Hoplite Phalanx" publicationId="cf03-f607-pubN89244" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="increment" field="points" value="25.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c859-6b16-c533-7e97" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="07c0-21d2-7a6c-e72e" name="" hidden="false" targetId="85da-2f19-3756-44de" type="rule"/>
         <infoLink id="197d-44b2-c886-348a" hidden="false" targetId="a878-4168-e49f-1d06" type="rule"/>
@@ -5005,6 +5046,13 @@ Buildings and Fortifications D</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="972c-91a0-764b-3fe0" name="Vultarax Stratos-automata Maniple" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="increment" field="points" value="25.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c859-6b16-c533-7e97" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="2c87-df97-9d45-cdb9" name="New CategoryLink" hidden="false" targetId="7fdd-2a97-d0e9-6524" primary="false"/>
       </categoryLinks>

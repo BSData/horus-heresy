@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="32d1ddc6-3187-cf6f-3bf8-9891e527a002" name="Questoris Knight Crusade Army" revision="55" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="132" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="32d1ddc6-3187-cf6f-3bf8-9891e527a002" name="Questoris Knight Crusade Army" revision="56" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="134" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="32d1ddc6--pubN65537" name="Age of Darkness Crusade Army List"/>
     <publication id="32d1ddc6--pubN66650" name="HH4: Conquest"/>
@@ -806,6 +806,13 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
       </costs>
     </selectionEntry>
     <selectionEntry id="48db-84ca-2bad-520f" name="Castellax Class Battle-Automata Maniple" page="" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="increment" field="points" value="25.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c859-6b16-c533-7e97" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="7678-ae60-16f2-e948" name="" hidden="false" targetId="988c-d4d0-9418-1165" type="rule"/>
         <infoLink id="a7f0-6bc1-ed4a-34dc" name="New InfoLink" hidden="false" targetId="d5cf-bd98-2854-13cf" type="rule"/>
@@ -832,6 +839,9 @@ If the Sword Enemy still remains in play at the end of the game, its owning play
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="a0cd-d1cd-0e3f-1a6c" name="Atomantic Shielding" hidden="false" targetId="13e0-4939-5232-8d85" type="profile"/>
+          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="6564-7afd-3cef-078a" name="May exchange its Mauler bolt cannon for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="4ed8-630f-8684-ebe1">
               <constraints>
