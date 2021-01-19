@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="134" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="135" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN66489" name="HH:MT"/>
@@ -216,7 +216,7 @@
     <entryLink id="7d9f-d54b-09db-e954" name="Use Playtest Rules" hidden="false" collective="false" import="true" targetId="5a90-c53e-42ca-b4ca" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="11c8-2e78-8328-31e4" name="Crusade Fleet Avenger Strike Fighter" publicationId="ca571888--pubN66489" page="47" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="11c8-2e78-8328-31e4" name="Crusade Fleet Avenger Strike Fighter" publicationId="ca571888--pubN66489" page="47" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="341f-27c1-0e88-9c83" name="Avenger Bolt-cannon" publicationId="ca571888--pubN66500" page="272" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
           <characteristics>
@@ -417,7 +417,7 @@
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7318-5e86-df66-ae6c" name="Navigator" publicationId="ca571888--pubN67636" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="7318-5e86-df66-ae6c" name="Navigator" publicationId="ca571888--pubN67636" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ba5-1c40-9f77-7d76" type="max"/>
       </constraints>
@@ -505,7 +505,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
         <cost name="pts" typeId="points" value="50.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b894-adfc-6d3d-fde4" name="Legio Titanicus Warhound Scout Titan" publicationId="ca571888--pubN68042" page="260" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="b894-adfc-6d3d-fde4" name="Legio Titanicus Warhound Scout Titan" publicationId="ca571888--pubN68042" page="260" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="75b5-ba5d-2c7a-123f" name="Warhound Scout Titan" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
           <characteristics>
@@ -667,7 +667,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
         <cost name="pts" typeId="points" value="750.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1fa3-1f86-94a6-bf48" name="Legio Titanicus Reaver Battle Titan" publicationId="ca571888--pubN69050" page="91" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="1fa3-1f86-94a6-bf48" name="Legio Titanicus Reaver Battle Titan" publicationId="ca571888--pubN69050" page="91" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="a11d-4866-5a06-3cec" name="Reaver Battle Titan" publicationId="ca571888--pubN68042" page="264" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
           <characteristics>
@@ -958,7 +958,7 @@ Use at the start of the controlling player’s turn. Until the beginning of thei
         <cost name="pts" typeId="points" value="1475.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ab80-0fef-3e93-8e64" name="Legio Titanicus Warlord Battle Titan" publicationId="ca571888--pubN68042" page="262" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="ab80-0fef-3e93-8e64" name="Legio Titanicus Warlord Battle Titan" publicationId="ca571888--pubN68042" page="262" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="fcda-52b9-f8dc-9394" name="Warlord Battle Titan" publicationId="ca571888--pubN68042" page="262" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
           <characteristics>
@@ -2975,7 +2975,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e40b-468f-f1d7-d05d" name="Imperial Castelum Stronghold" publicationId="ca571888--pubN82424" page="94" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="e40b-468f-f1d7-d05d" name="Imperial Castelum Stronghold" publicationId="ca571888--pubN82424" page="94" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set-primary" field="category" value="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f">
           <conditions>
@@ -3292,7 +3292,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="02eb28bb-1883-8603-0af7-b8bf2b7b69c8" name="Questoris Knight Paladin" publicationId="ca571888--pubN84158" page="301" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="02eb28bb-1883-8603-0af7-b8bf2b7b69c8" name="Questoris Knight Paladin" publicationId="ca571888--pubN84158" page="301" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
@@ -3452,7 +3452,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="375.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4b70feb1-a2e7-2f93-8320-1d6775bf5a59" name="Questoris Knight Errant" publicationId="ca571888--pubN84158" page="302" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="4b70feb1-a2e7-2f93-8320-1d6775bf5a59" name="Questoris Knight Errant" publicationId="ca571888--pubN84158" page="302" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
@@ -3587,7 +3587,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="370.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fb7cd031-7573-eb28-4446-d709eb5acdbc" name="Questoris Knight Magaera" publicationId="ca571888--pubN84158" page="303" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="fb7cd031-7573-eb28-4446-d709eb5acdbc" name="Questoris Knight Magaera" publicationId="ca571888--pubN84158" page="303" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
@@ -3662,7 +3662,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="395.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ca45ca55-eae1-1a81-8afc-1330611055a6" name="Cerastus Knight-Lancer" publicationId="ca571888--pubN84158" page="305" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="ca45ca55-eae1-1a81-8afc-1330611055a6" name="Cerastus Knight-Lancer" publicationId="ca571888--pubN84158" page="305" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
@@ -3738,7 +3738,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="400.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a5b350ff-895e-4557-70a6-d24a936919c2" name="Questoris Knight Styrix" publicationId="ca571888--pubN84158" page="304" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="a5b350ff-895e-4557-70a6-d24a936919c2" name="Questoris Knight Styrix" publicationId="ca571888--pubN84158" page="304" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
@@ -3824,7 +3824,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="405.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b1cf8528-c9d0-2c2a-3f19-522e5532f273" name="Cerastus Knight-Castigator" publicationId="ca571888--pubN84158" page="306" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="b1cf8528-c9d0-2c2a-3f19-522e5532f273" name="Cerastus Knight-Castigator" publicationId="ca571888--pubN84158" page="306" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
@@ -3911,7 +3911,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="380.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b4ddbe68-7095-397e-dec4-162170dbdbcd" name="Cerastus Knight-Acheron" publicationId="ca571888--pubN84158" page="307" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="b4ddbe68-7095-397e-dec4-162170dbdbcd" name="Cerastus Knight-Acheron" publicationId="ca571888--pubN84158" page="307" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
@@ -3994,7 +3994,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="415.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f4f1-dad6-0596-ca5a" name="Questoris Knight Warden" publicationId="ca571888--pubN87368" page="104" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="f4f1-dad6-0596-ca5a" name="Questoris Knight Warden" publicationId="ca571888--pubN87368" page="104" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
@@ -4157,7 +4157,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="385.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="74b8-f485-4b58-0071" name="Questoris Knight Gallant" publicationId="ca571888--pubN87368" page="105" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="74b8-f485-4b58-0071" name="Questoris Knight Gallant" publicationId="ca571888--pubN87368" page="105" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
@@ -4307,7 +4307,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="335.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="09ee-4370-1462-2cb5" name="Questoris Knight Crusader" publicationId="ca571888--pubN87368" page="106" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="09ee-4370-1462-2cb5" name="Questoris Knight Crusader" publicationId="ca571888--pubN87368" page="106" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
@@ -4526,7 +4526,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="435.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="baad-77d0-04c2-e05f" name="Cerastus Knight-Atrapos" publicationId="ca571888--pubN89821" page="278" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="baad-77d0-04c2-e05f" name="Cerastus Knight-Atrapos" publicationId="ca571888--pubN89821" page="278" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="increment" field="8f86-62fb-dba4-afc4" value="1">
           <repeats>
@@ -4639,7 +4639,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="435.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4ded-9de3-f964-33a7" name="Acastus Knight Porphyrion" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4ded-9de3-f964-33a7" name="Acastus Knight Porphyrion" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="208e-17a3-a067-6ea1" name="Acastus Knight Porphyrion" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
           <characteristics>
@@ -4810,7 +4810,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="27575b75-5e1e-26ab-1074-fa91b73e2216" name="Archmagos Draykavac" publicationId="ca571888--pubN84158" page="300" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="27575b75-5e1e-26ab-1074-fa91b73e2216" name="Archmagos Draykavac" publicationId="ca571888--pubN84158" page="300" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
@@ -5338,7 +5338,7 @@ Immediately place an objective marker within 3&quot; of any part of the Crashed 
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6eec-767d-0b14-95ab" name="Questoris Knight Dominus" publicationId="ca571888--pubN94574" page="" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="6eec-767d-0b14-95ab" name="Questoris Knight Dominus" publicationId="ca571888--pubN94574" page="" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="a3b2-1faa-b33e-2e3d" name="Questoris Knight Dominus" publicationId="ca571888--pubN94574" page="" hidden="false" typeId="0694-6ddb-9e1d-40bd" typeName="Super-heavy Walker">
           <characteristics>
@@ -5559,7 +5559,7 @@ Please let us know what worked well as a part of these rules and also what could
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ecb3-83b9-4ba7-47a9" name="Legio Titanicus Warbringer Nemesis Titan" publicationId="ca571888--pubN95721" page="" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="ecb3-83b9-4ba7-47a9" name="Legio Titanicus Warbringer Nemesis Titan" publicationId="ca571888--pubN95721" page="" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="c6b0-382e-4882-7efa" name="Warbringer Nemesis Titan" page="" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
           <characteristics>
@@ -5880,7 +5880,7 @@ or Gargantuan Creatures. </description>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="72ad-abe8-94d8-5926" name="Acastus Knight Asterius" publicationId="ca571888--pubN106705" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="72ad-abe8-94d8-5926" name="Acastus Knight Asterius" publicationId="ca571888--pubN106705" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="d0ee-8407-6d22-b0d3" name="Acastus Knight Asterius" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
           <characteristics>
@@ -6398,7 +6398,7 @@ or Gargantuan Creatures. </description>
         <cost name="pts" typeId="points" value="420.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e786-debb-a21b-d5ee" name="Macharius" page="" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="e786-debb-a21b-d5ee" name="Macharius" page="" hidden="false" collective="false" import="true" type="unit">
       <selectionEntries>
         <selectionEntry id="5721-e2cd-59fe-751b" name="Macharius" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -6756,7 +6756,7 @@ or Gargantuan Creatures. </description>
         <cost name="pts" typeId="points" value="355.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d4b0-56e7-4f8c-7ea5" name="Macharius Vanquisher" page="" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="d4b0-56e7-4f8c-7ea5" name="Macharius Vanquisher" page="" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="6890-e2d1-c944-f20d" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
       </categoryLinks>
@@ -6924,7 +6924,7 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
         <cost name="pts" typeId="points" value="375.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e95a-57cf-a5c3-772f" name="Macharius Vulcan" page="" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="e95a-57cf-a5c3-772f" name="Macharius Vulcan" page="" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="204e-fe50-c2c8-23ce" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
       </categoryLinks>
@@ -8532,7 +8532,7 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
         <cost name="pts" typeId="points" value="425.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7734-1ff6-9f66-44cd" name="Thunderbolt Heavy Fighter" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="7734-1ff6-9f66-44cd" name="Thunderbolt Heavy Fighter" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="6741-3b6c-e142-5d71" name="Thunderbolt Heavy Fighter" page="" hidden="false" typeId="56656869636c6523232344415441232323" typeName="Vehicle">
           <characteristics>
@@ -9227,7 +9227,7 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f86d-ae13-1d89-f1a1" name="Nathaniel Garro" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="f86d-ae13-1d89-f1a1" name="Nathaniel Garro" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0502-289b-0165-c2ae" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="33f8-4b9e-37b0-3cf4" type="max"/>
@@ -9359,7 +9359,7 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0b3e-7f6d-3556-5446" name="Knight-Errant" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="0b3e-7f6d-3556-5446" name="Knight-Errant" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="85cf-9401-70bd-63fd" name="Knight-Errant" publicationId="ca571888--pubN89821" page="212" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
           <characteristics>
@@ -9850,7 +9850,7 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
         <cost name="pts" typeId="points" value="115.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7baf-1c2e-6b5d-b865" name="Tylos Rubio" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="7baf-1c2e-6b5d-b865" name="Tylos Rubio" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="d4ea-b36f-9ea1-c6a3" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="eb9b-0b6a-3ec6-d7ea" type="max"/>
