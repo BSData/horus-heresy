@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b50f-0671-3aea-cf90" name="Necron Army List (Fanmade)" revision="6" battleScribeVersion="2.03" authorName="Dono Author / Maye Gelt the Battlescribbler" authorContact="Dono (for Content) / Maye Gelt (for Battlescibbling)" authorUrl="http://www.facebook.com/AUS30K" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="120" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b50f-0671-3aea-cf90" name="Necron Army List (Fanmade)" revision="7" battleScribeVersion="2.03" authorName="Dono Author / Maye Gelt the Battlescribbler" authorContact="Dono (for Content) / Maye Gelt (for Battlescibbling)" authorUrl="http://www.facebook.com/AUS30K" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="135" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="6fc6-dd7c-7a39-b0c8" name="30K Necron Army List (Fanmade)"/>
   </publications>
@@ -107,9 +107,9 @@
         <categoryLink id="e184-7801-3112-33b1" name="Fast Attack" hidden="false" targetId="a673-7d7e-4e32-171a" primary="false">
           <modifiers>
             <modifier type="increment" field="79f8-9afe-621b-9c87" value="1.0">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e77c-6929-efc9-2983" type="equalTo"/>
-              </conditions>
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e77c-6929-efc9-2983" repeats="1" roundUp="false"/>
+              </repeats>
             </modifier>
           </modifiers>
           <constraints>
@@ -295,12 +295,12 @@
         <categoryLink id="7473-be2d-b48b-1485" name="Compulsory Troops" hidden="false" targetId="9229-15b5-2638-d977" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="6fe8-cf22-14ab-3883" name="Necrontyr Lord" publicationId="6fc6-dd7c-7a39-b0c8" hidden="false" collective="false" import="true" targetId="4573-1ef1-b799-b84b" type="selectionEntry">
+    <entryLink id="6fe8-cf22-14ab-3883" name="Necron Lord" publicationId="6fc6-dd7c-7a39-b0c8" hidden="false" collective="false" import="true" targetId="4573-1ef1-b799-b84b" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="fc92-4275-3d9e-b07f" name="New CategoryLink" hidden="false" targetId="a369-9929-a547-3fd4" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="6d46-0d2e-6057-06df" name="Cryptek" publicationId="6fc6-dd7c-7a39-b0c8" hidden="false" collective="false" import="true" targetId="9a39-bed4-a90f-ded4" type="selectionEntry">
+    <entryLink id="6d46-0d2e-6057-06df" name="Cryptek Conclave" publicationId="6fc6-dd7c-7a39-b0c8" hidden="false" collective="false" import="true" targetId="9a39-bed4-a90f-ded4" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -336,7 +336,7 @@
         <categoryLink id="6dac-b111-9417-851d" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="7026-bacc-95c9-5e63" name="Necron Line Formations" hidden="false" collective="false" import="true" targetId="cda9-1d85-41a0-a330" type="selectionEntry">
+    <entryLink id="7026-bacc-95c9-5e63" name="Necron Formations" hidden="false" collective="false" import="true" targetId="cda9-1d85-41a0-a330" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="9403-5090-b405-d6cf" name="New CategoryLink" hidden="false" targetId="d072-dc72-6fdf-7e55" primary="true"/>
       </categoryLinks>
@@ -481,7 +481,7 @@
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="84bf-6cac-a987-84cd" type="equalTo"/>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab10-ea27-64d3-4246" type="equalTo"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e77c-6929-efc9-2983" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -494,7 +494,7 @@
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="84bf-6cac-a987-84cd" type="equalTo"/>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab10-ea27-64d3-4246" type="equalTo"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e77c-6929-efc9-2983" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -507,7 +507,7 @@
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="84bf-6cac-a987-84cd" type="equalTo"/>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab10-ea27-64d3-4246" type="equalTo"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e77c-6929-efc9-2983" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -521,7 +521,7 @@
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="84bf-6cac-a987-84cd" type="equalTo"/>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab10-ea27-64d3-4246" type="equalTo"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e77c-6929-efc9-2983" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -535,7 +535,7 @@
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="84bf-6cac-a987-84cd" type="equalTo"/>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab10-ea27-64d3-4246" type="equalTo"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e77c-6929-efc9-2983" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
