@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9f87-b468-2001-5e3b" name="Mornival Units Legion Astartes (Fanmade)" revision="29" battleScribeVersion="2.03" authorName="Aus30K / Mourival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="135" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9f87-b468-2001-5e3b" name="Mornival Units Legion Astartes (Fanmade)" revision="30" battleScribeVersion="2.03" authorName="Aus30K / Mourival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="135" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="0e6e-8c19-c436-39c4" name="Mournival Events 3.3 Digital Version"/>
     <publication id="cf75-540e-e446-ecd5" name="Mournival Events FAQ and Experimental Errata v3.5"/>
@@ -1673,6 +1673,27 @@ If a Rogue Psyker who is the army’s Warlord becomes possessed, they are still 
       </rules>
       <infoLinks>
         <infoLink id="23c4-d783-01fb-1e49" name="Support Officer" hidden="false" targetId="f546-a57f-5c5e-aed8" type="rule"/>
+        <infoLink id="8ed0-b091-e3f9-58a0" name="Hit and Run" hidden="false" targetId="5342-bf92-d6c0-ebb9" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a407-2a45-f198-77ac" type="equalTo"/>
+                    <condition field="selections" scope="a38d-bc4d-7016-cf8d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="03a9-0786-8326-b2d8" type="greaterThan"/>
+                    <condition field="selections" scope="a38d-bc4d-7016-cf8d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9f6e-df6c-a152-2a2a" type="greaterThan"/>
+                    <condition field="selections" scope="a38d-bc4d-7016-cf8d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f28-6fdd-19d1-33bf" type="greaterThan"/>
+                    <condition field="selections" scope="a38d-bc4d-7016-cf8d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2828-29a7-3dc2-9f1b" type="greaterThan"/>
+                    <condition field="selections" scope="a38d-bc4d-7016-cf8d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e500-1db0-6682-8b4a" type="greaterThan"/>
+                    <condition field="selections" scope="a38d-bc4d-7016-cf8d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7dc6-1e1d-cb43-580c" type="greaterThan"/>
+                    <condition field="selections" scope="a38d-bc4d-7016-cf8d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01c7-83e8-29c6-e74d" type="greaterThan"/>
+                    <condition field="selections" scope="a38d-bc4d-7016-cf8d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d305-533a-b47d-240d" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3268-91b1-9782-572b" name="Character" hidden="false" targetId="eb92-48f9-9a1a-7bd1" primary="false"/>
@@ -2156,6 +2177,15 @@ If a Rogue Psyker who is the army’s Warlord becomes possessed, they are still 
           </modifiers>
         </infoLink>
         <infoLink id="ca3c-9986-ae91-6d75" name="Bulky" hidden="false" targetId="38d5-b6eb-bda8-2497" type="rule"/>
+        <infoLink id="d984-3212-ac89-e651" name="Hit and Run" hidden="false" targetId="5342-bf92-d6c0-ebb9" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a407-2a45-f198-77ac" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3405-c7b2-ff93-c7a5" name="Infantry" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
@@ -4029,6 +4059,27 @@ All models with psychic powers suffer a penalty to roll to manifest psychic powe
           </rules>
           <infoLinks>
             <infoLink id="709c-631b-5875-a1ea" name="Battlesmith" hidden="false" targetId="9edbc777-7d2b-011b-7488-335b14870be5" type="rule"/>
+            <infoLink id="4819-3caf-30f0-5827" name="Hit and Run" hidden="false" targetId="5342-bf92-d6c0-ebb9" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="bd53-9cb3-68e0-3f14" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37a5-673c-5b81-c40f" type="greaterThan"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a407-2a45-f198-77ac" type="equalTo"/>
+                        <condition field="selections" scope="bd53-9cb3-68e0-3f14" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a161-76b3-9ef1-da7b" type="greaterThan"/>
+                        <condition field="selections" scope="bd53-9cb3-68e0-3f14" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1c0-746f-2b39-5f17" type="greaterThan"/>
+                        <condition field="selections" scope="bd53-9cb3-68e0-3f14" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8447-9662-22bd-5c6c" type="greaterThan"/>
+                        <condition field="selections" scope="bd53-9cb3-68e0-3f14" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="008f-7052-db2f-f052" type="greaterThan"/>
+                        <condition field="selections" scope="bd53-9cb3-68e0-3f14" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="56fc88c5-200c-7d1b-dc29-64471bbf63bf" type="greaterThan"/>
+                        <condition field="selections" scope="bd53-9cb3-68e0-3f14" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fe75-7b06-f9a5-26bd" type="greaterThan"/>
+                        <condition field="selections" scope="bd53-9cb3-68e0-3f14" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="023e-8d89-f61b-c1b9" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="6ba2-14af-cadf-86b6" name="Character" hidden="false" targetId="eb92-48f9-9a1a-7bd1" primary="false"/>
@@ -4691,6 +4742,15 @@ All models with psychic powers suffer a penalty to roll to manifest psychic powe
       </rules>
       <infoLinks>
         <infoLink id="4bc8-5970-9987-6656" name="Support Squad" hidden="false" targetId="2c16-3b25-a714-a656" type="rule"/>
+        <infoLink id="58f2-8318-b3ac-67fd" name="Hit and Run" hidden="false" targetId="5342-bf92-d6c0-ebb9" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a407-2a45-f198-77ac" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f77f-2dc2-f094-f0b3" name="Infantry" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
@@ -5418,6 +5478,20 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
       <infoLinks>
         <infoLink id="7317-f6dd-8923-3a05" name="Support Squad" hidden="false" targetId="2c16-3b25-a714-a656" type="rule"/>
         <infoLink id="d89b-cdcf-b755-232f" name="Scout" hidden="false" targetId="9b30-1da3-eb8d-ce7a" type="rule"/>
+        <infoLink id="02da-740c-6ead-0f62" name="Hit and Run" hidden="false" targetId="5342-bf92-d6c0-ebb9" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a407-2a45-f198-77ac" type="equalTo"/>
+                    <condition field="selections" scope="5aa7-c454-3656-3a3f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cf5-3801-534a-b7e0" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a8f3-db10-e2f8-697b" name="Infantry" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
@@ -6215,6 +6289,21 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
       </rules>
       <infoLinks>
         <infoLink id="1664-2d02-88e7-053e" name="Support Squad" hidden="false" targetId="2c16-3b25-a714-a656" type="rule"/>
+        <infoLink id="7f84-07ad-0985-f939" name="Hit and Run" hidden="false" targetId="5342-bf92-d6c0-ebb9" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a407-2a45-f198-77ac" type="equalTo"/>
+                    <condition field="selections" scope="c5ba-7647-23ba-c728" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7677dd1e-d159-6a47-ab20-ed0d7e70a0e7" type="greaterThan"/>
+                    <condition field="selections" scope="c5ba-7647-23ba-c728" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8447-9662-22bd-5c6c" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4460-9965-1ff8-14ca" name="Infantry" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
@@ -9148,6 +9237,24 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
       </rules>
       <infoLinks>
         <infoLink id="89cf-79a0-e41b-0e2d" name="Counter-attack" hidden="false" targetId="0900-71d5-1937-aa96" type="rule"/>
+        <infoLink id="17e3-f247-6942-8975" name="Hit and Run" hidden="false" targetId="5342-bf92-d6c0-ebb9" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a407-2a45-f198-77ac" type="equalTo"/>
+                    <condition field="selections" scope="402b-5f71-93f2-d28f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="318a-bf25-51fc-ce1c" type="greaterThan"/>
+                    <condition field="selections" scope="402b-5f71-93f2-d28f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1712-53b1-11f0-00ed" type="greaterThan"/>
+                    <condition field="selections" scope="402b-5f71-93f2-d28f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a161-76b3-9ef1-da7b" type="greaterThan"/>
+                    <condition field="selections" scope="402b-5f71-93f2-d28f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8700-d2ba-d829-3f5f" type="greaterThan"/>
+                    <condition field="selections" scope="402b-5f71-93f2-d28f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cecf-f289-6081-dfd3" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="e4c0-b305-1b1e-2801" name="Infantry" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
@@ -9863,6 +9970,19 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="remove" field="category" value="f74d-4679-75a6-1252">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd54-10f7-c05c-6f4f" type="greaterThan"/>
+                <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6cc-561c-56f9-a051" type="greaterThan"/>
+                <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="84ea-ada4-abe0-f064" type="greaterThan"/>
+                <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="015d-3e99-93a2-83f4" type="greaterThan"/>
+                <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="015d-3e99-93a2-83f4" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="f406-1e57-3ccf-a9f7" name="Custom Legion Character" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
@@ -10006,9 +10126,39 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
 ♦ In campaigns Advances can be earned or purchased, as determined by the campaign organiser�</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink id="2a5f-2d95-cd7f-adf2" name="Hit and Run" hidden="false" targetId="5342-bf92-d6c0-ebb9" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a407-2a45-f198-77ac" type="equalTo"/>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6cc-561c-56f9-a051" type="greaterThan"/>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="84ea-ada4-abe0-f064" type="greaterThan"/>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="015d-3e99-93a2-83f4" type="greaterThan"/>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8036-b730-d533-e31f" type="greaterThan"/>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8700-d2ba-d829-3f5f" type="greaterThan"/>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3aaf-bfa2-35f6-3651" type="greaterThan"/>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0137-bfce-22c9-8f03" type="greaterThan"/>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1cd-7182-1f30-4e29" type="greaterThan"/>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9f1b-7c69-13d6-56b5" type="greaterThan"/>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3a37-6377-c0d2-39ea" type="greaterThan"/>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d3c-2b57-247d-548d" type="greaterThan"/>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7677dd1e-d159-6a47-ab20-ed0d7e70a0e7" type="greaterThan"/>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1c0-746f-2b39-5f17" type="greaterThan"/>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5d2-e10d-1552-c5c6" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="6f0d-d1fe-1cb0-6d59" name="Character" hidden="false" targetId="eb92-48f9-9a1a-7bd1" primary="false"/>
         <categoryLink id="16c1-ea88-42d5-64d9" name="Legiones Astartes" hidden="false" targetId="0c56-27b8-a737-c9fd" primary="false"/>
+        <categoryLink id="0767-4407-5844-5119" name="Infantry" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="c790-b10d-8028-b3df" name="Stat Upgrades" hidden="false" collective="false" import="true" type="upgrade">
@@ -19695,7 +19845,6 @@ Master of Cybernetica (Location: Specialisation &amp; Legion Special Rules, Cost
               <categoryLinks>
                 <categoryLink id="d8c3-2413-4a93-2046" name="# Restiction" hidden="false" targetId="c821-d9f2-5684-64fa" primary="false"/>
                 <categoryLink id="dedd-f0ef-4a49-0378" name="Jump Units" hidden="false" targetId="47cf-71bb-d59d-f9de" primary="false"/>
-                <categoryLink id="575b-8211-f7ee-5eba" name="Infantry" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
@@ -19824,7 +19973,6 @@ Master of Cybernetica (Location: Specialisation &amp; Legion Special Rules, Cost
               </modifiers>
               <categoryLinks>
                 <categoryLink id="7626-582d-4097-94fc" name="Jump Units" hidden="false" targetId="47cf-71bb-d59d-f9de" primary="false"/>
-                <categoryLink id="73cc-5401-be2e-d13b" name="Infantry" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
