@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="135" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="136" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN66489" name="HH:MT"/>
@@ -15143,6 +15143,14 @@ Jetbikes can move over all other models and terrain freely. However, if a moving
     <profile id="2e87b8ca-7cd1-78b9-2116-246015e7935e" name="Armoured Ceramite" publicationId="ca571888--pubN82424" page="88" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A vehicle with this wargear is not subject to the additional D6 armour penetration caused by weapons with the Melta special rule.  </characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4478-5959-bcfd-925d" name="Laser Destroyer Array" publicationId="ca571888--pubN91142" page="15" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
+        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
+        <characteristic name="AP" typeId="415023232344415441232323">1</characteristic>
+        <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance 1, Twin-linked</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
