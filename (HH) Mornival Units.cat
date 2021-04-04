@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9f87-b468-2001-5e3b" name="Mornival Units Legion Astartes (Fanmade)" revision="30" battleScribeVersion="2.03" authorName="Aus30K / Mourival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="135" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9f87-b468-2001-5e3b" name="Mornival Units Legion Astartes (Fanmade)" revision="31" battleScribeVersion="2.03" authorName="Aus30K / Mourival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="136" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="0e6e-8c19-c436-39c4" name="Mournival Events 3.3 Digital Version"/>
     <publication id="cf75-540e-e446-ecd5" name="Mournival Events FAQ and Experimental Errata v3.5"/>
@@ -240,7 +240,7 @@ Example 4: In a 2000 point army, a Daemon Lord is the Warlord (doesn’t count a
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="points" scope="parent" value="25.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="false" id="1afa-92a0-362e-907d" type="max"/>
+            <constraint field="points" scope="roster" value="25.0" percentValue="true" shared="false" includeChildSelections="false" includeChildForces="false" id="1afa-92a0-362e-907d" type="max"/>
             <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1906-7564-22bc-2db4" type="max"/>
           </constraints>
         </categoryLink>
@@ -252,9 +252,21 @@ Example 4: In a 2000 point army, a Daemon Lord is the Warlord (doesn’t count a
         <categoryLink id="8a2e-f45b-145a-ff91" name="Compulsory HQ" hidden="false" targetId="becd-7a6d-e80f-878e" primary="false">
           <modifiers>
             <modifier type="set" field="460b-968b-608f-83be" value="2.0">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e18e-3da1-b6d5-b6dc" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e18e-3da1-b6d5-b6dc" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="edd3-79ac-eb75-34b7" type="equalTo"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fe16-7a9f-5ada-2bd8" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -19126,6 +19138,9 @@ Crozius Arcanum (Location: Melee, Cost 15pts, Not Mandatory)</description>
                   <categoryLinks>
                     <categoryLink id="d399-8738-c16b-c5ad" name="Compulsory HQ" hidden="false" targetId="becd-7a6d-e80f-878e" primary="false"/>
                   </categoryLinks>
+                  <entryLinks>
+                    <entryLink id="271d-e180-2cb8-221c" name="Centurion or Chaplin" hidden="false" collective="false" import="true" targetId="5cac-698f-1ec3-411f" type="selectionEntry"/>
+                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -19758,6 +19773,9 @@ Master of Cybernetica (Location: Specialisation &amp; Legion Special Rules, Cost
                   <categoryLinks>
                     <categoryLink id="64eb-a9be-6599-a421" name="Centurion or Delegatus" hidden="false" targetId="05c9-9e0d-c2e5-d62f" primary="false"/>
                   </categoryLinks>
+                  <entryLinks>
+                    <entryLink id="24f1-fe42-9baa-e940" name="Centurion or Chaplin" hidden="false" collective="false" import="true" targetId="5cac-698f-1ec3-411f" type="selectionEntry"/>
+                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -21769,6 +21787,7 @@ Void Shield Harness</description>
                   </categoryLinks>
                   <entryLinks>
                     <entryLink id="860d-3c3a-7a7b-aecf" name="Wolf Lord/Claw Leader" hidden="false" collective="false" import="true" targetId="9546-c5b3-97d8-b0c1" type="selectionEntry"/>
+                    <entryLink id="cc53-b223-59ec-6f9f" name="Centurion or Chaplin" hidden="false" collective="false" import="true" targetId="5cac-698f-1ec3-411f" type="selectionEntry"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>

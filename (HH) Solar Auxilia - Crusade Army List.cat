@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" revision="81" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="134" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" revision="82" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="136" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="7f243fc5--pubN65537" name="Crusade Imperialis"/>
     <publication id="7f243fc5--pubN65563" name="AoDRB"/>
@@ -222,7 +222,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <categoryLink id="98db-b4ba-fbcd-3239-5297-7e0f-fa0b-3537" name="Allegiance" hidden="false" targetId="5297-7e0f-fa0b-3537" primary="false"/>
         <categoryLink id="98db-b4ba-fbcd-3239-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" name="Lords of War" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="false">
           <constraints>
-            <constraint field="points" scope="parent" value="25.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="false" id="a9d3-ce10-91f2-17f6" type="max"/>
+            <constraint field="points" scope="roster" value="25.0" percentValue="true" shared="false" includeChildSelections="false" includeChildForces="false" id="a9d3-ce10-91f2-17f6" type="max"/>
             <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ef5-a7b1-2033-83f3" type="max"/>
           </constraints>
         </categoryLink>
@@ -333,7 +333,11 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <categoryLink id="4e06-f510-5de0-195b-54726f6f707323232344415441232323" name="Troops" hidden="false" targetId="54726f6f707323232344415441232323" primary="false"/>
         <categoryLink id="4e06-f510-5de0-195b-466173742041747461636b23232344415441232323" name="Fast Attack" hidden="false" targetId="466173742041747461636b23232344415441232323" primary="false"/>
         <categoryLink id="4e06-f510-5de0-195b-486561767920537570706f727423232344415441232323" name="Heavy Support" hidden="false" targetId="486561767920537570706f727423232344415441232323" primary="false"/>
-        <categoryLink id="4e06-f510-5de0-195b-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" name="Lords of War" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="false"/>
+        <categoryLink id="4e06-f510-5de0-195b-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" name="Lords of War" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="25.0" percentValue="true" shared="false" includeChildSelections="false" includeChildForces="false" id="4837-47bb-e52c-f3bc" type="max"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="4e06-f510-5de0-195b-466f7274696669636174696f6e23232344415441232323" name="Fortification" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="false"/>
         <categoryLink id="4e06-f510-5de0-195b-258478de-d031-8a7e-dcb0-7d56bee86952" name="Legion" hidden="false" targetId="258478de-d031-8a7e-dcb0-7d56bee86952" primary="false"/>
         <categoryLink id="4e06-f510-5de0-195b-5297-7e0f-fa0b-3537" name="Allegiance" hidden="false" targetId="5297-7e0f-fa0b-3537" primary="false"/>
@@ -385,7 +389,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <categoryLink id="98db-b4ba-fbcd-3239-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" name="Lords of War" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70a0-1ebc-39cf-f0cc" type="max"/>
-            <constraint field="limit::points" scope="roster" value="25.0" percentValue="true" shared="true" includeChildSelections="false" includeChildForces="true" id="12a1-3a1f-5f6f-b56b" type="max"/>
+            <constraint field="limit::points" scope="roster" value="25.0" percentValue="true" shared="false" includeChildSelections="false" includeChildForces="false" id="12a1-3a1f-5f6f-b56b" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="98db-b4ba-fbcd-3239-466f7274696669636174696f6e23232344415441232323" name="Fortification" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="false">
@@ -743,7 +747,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <categoryLink id="d1ef-61e1-3d67-5a19-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" name="Lords of War" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8113-abb6-fd0c-2077" type="max"/>
-            <constraint field="limit::points" scope="roster" value="25.0" percentValue="true" shared="true" includeChildSelections="false" includeChildForces="true" id="5231-3e8d-57cb-fcf5" type="max"/>
+            <constraint field="limit::points" scope="roster" value="25.0" percentValue="true" shared="false" includeChildSelections="false" includeChildForces="false" id="5231-3e8d-57cb-fcf5" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="d1ef-61e1-3d67-5a19-5297-7e0f-fa0b-3537" name="Allegiance" hidden="false" targetId="5297-7e0f-fa0b-3537" primary="false"/>
@@ -793,7 +797,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <categoryLink id="3a6f-6d67-a8b2-e911-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" name="Lords of War" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b33c-194d-0c8c-45e3" type="max"/>
-            <constraint field="limit::points" scope="roster" value="25.0" percentValue="true" shared="true" includeChildSelections="false" includeChildForces="true" id="cb8f-4568-7b79-aa31" type="max"/>
+            <constraint field="limit::points" scope="roster" value="25.0" percentValue="true" shared="false" includeChildSelections="false" includeChildForces="false" id="cb8f-4568-7b79-aa31" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="3a6f-6d67-a8b2-e911-466f7274696669636174696f6e23232344415441232323" name="Fortification" hidden="false" targetId="466f7274696669636174696f6e23232344415441232323" primary="false">
@@ -866,6 +870,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <categoryLink id="1a2c-902b-cdb9-7640-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" name="Lords of War" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20a1-90d6-fb1d-2730" type="max"/>
+            <constraint field="limit::points" scope="roster" value="25.0" percentValue="true" shared="false" includeChildSelections="false" includeChildForces="false" id="13a5-8a6d-ce2a-71b7" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="68b6-c2b3-6501-d55d" name="Use Playtest Rules" hidden="false" targetId="fdf4-0683-3e84-5a4b" primary="false">
@@ -3259,7 +3264,7 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9df9-f881-2c7a-e3cd" name="New CategoryLink" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false"/>
-        <categoryLink id="d612-a842-97fb-1777" name="New CategoryLink" hidden="false" targetId="218b-fafd-986d-56ba" primary="false"/>
+        <categoryLink id="2d64-0e52-2336-48fb" name="Tank" hidden="false" targetId="e59c-462e-9d9c-66dd" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="aee8-fdad-13bf-a8bd" name="May exchange traverse-mounted battlecannon for:" hidden="false" collective="false" import="true">
@@ -3465,7 +3470,7 @@ but the tank loses the Fast special rule.</description>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7c47-9c87-6237-701f" name="New CategoryLink" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false"/>
-        <categoryLink id="8efa-f217-8c2d-10f7" name="New CategoryLink" hidden="false" targetId="218b-fafd-986d-56ba" primary="false"/>
+        <categoryLink id="0823-4db4-c960-67e1" name="Tank" hidden="false" targetId="e59c-462e-9d9c-66dd" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="10d4-557b-70f6-2d4e" name="Inferno Gun" hidden="false" collective="false" import="true" type="upgrade">
