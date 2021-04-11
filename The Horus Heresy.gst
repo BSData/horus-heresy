@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="136" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="137" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN66489" name="HH:MT"/>
@@ -204,6 +204,13 @@
     <categoryEntry id="6077-281f-c55d-9bf0" name="Allied Detachment" hidden="false"/>
     <categoryEntry id="9335-93c1-6af7-feb0" name="ZM (Unusable)" hidden="false"/>
     <categoryEntry id="baa4-80e4-c41d-6875" name="Warlord Traits" hidden="false"/>
+    <categoryEntry id="974d-7438-c940-914b" name="Jump Units" hidden="false">
+      <infoLinks>
+        <infoLink id="c2d9-f5c8-4cd9-d853" name="Bulky" hidden="false" targetId="38d5-b6eb-bda8-2497" type="rule"/>
+        <infoLink id="0436-90de-7b75-9c53" name="Deep Strike" hidden="false" targetId="d219-2314-4834-c054" type="rule"/>
+        <infoLink id="398e-bbae-1013-3bef" name="Jump Unit" hidden="false" targetId="8cb0-ff25-22a2-d480" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="61f7-09c7-326c-8c49" name="New ForceEntry" hidden="true">
@@ -9451,6 +9458,9 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a055-9b5d-4a54-3a44" type="max"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink id="741c-9131-33b5-9d2d" name="Jump Units" hidden="false" targetId="974d-7438-c940-914b" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
@@ -12780,8 +12790,8 @@ D6 - Result
     <rule id="c2af-0e00-294d-8d82" name="Cumbersome" publicationId="ca571888--pubN106502" page="162" hidden="false">
       <description>A model using a close combat weapon with this special rule can only ever make a single attack at WS 1 in an Assault phase, regardless of their profile or any bonus or other special rule.</description>
     </rule>
-    <rule id="eabf-f2b0-71f8-0f72" name="Preternatural Skill" publicationId="ca571888--pubN106650" hidden="false">
-      <description>Any model with this special rule gains a bonus of +1 to their Initiative in the Assault phase if their Weapon Skill is equal to or greater than the majority Weapon Skill of the unit or units they are fighting.</description>
+    <rule id="eabf-f2b0-71f8-0f72" name="Preternatural Skill" publicationId="ca571888--pubN103311" page="259" hidden="false">
+      <description>Any model with this special rule gains a bonus of +I to their Initiative in the Assault phase if their Weapon Skill is greater than that of the model(s) which they are fighting.</description>
     </rule>
     <rule id="0d78-e15c-74f6-5701" name="Plasma Grenades" publicationId="ca571888--pubN105292" hidden="false">
       <description>Models equipped with plasma grenades don’t suffer the penalty to their Initiative for charging enemies through difficult terrain, but fight at their normal Initiative step in the ensuing combat.</description>
