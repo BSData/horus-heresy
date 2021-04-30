@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9f87-b468-2001-5e3b" name="Mornival Units Legion Astartes (Fanmade)" revision="31" battleScribeVersion="2.03" authorName="Aus30K / Mourival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="136" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9f87-b468-2001-5e3b" name="Mornival Units Legion Astartes (Fanmade)" revision="31" battleScribeVersion="2.03" authorName="Aus30K / Mourival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="137" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="0e6e-8c19-c436-39c4" name="Mournival Events 3.3 Digital Version"/>
     <publication id="cf75-540e-e446-ecd5" name="Mournival Events FAQ and Experimental Errata v3.5"/>
@@ -7069,7 +7069,7 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
         <selectionEntryGroup id="120e-0893-9033-2001" name="Dedicated Transport" hidden="false" collective="false" import="true">
           <entryLinks>
             <entryLink id="c276-5c38-5bf4-de29" name="Land Raider Proteus" hidden="false" collective="false" import="true" targetId="8cc05fec-8274-bea3-5d54-d249b36a3209" type="selectionEntry"/>
-            <entryLink id="06ea-44df-441e-634e" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="a8eda173-f749-cfb6-fd0e-3d6fb35cad3b" type="selectionEntry">
+            <entryLink id="06ea-44df-441e-634e" name="Land Raider Phobos (DT)" hidden="false" collective="false" import="true" targetId="a8eda173-f749-cfb6-fd0e-3d6fb35cad3b" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -7097,6 +7097,20 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
                 <categoryLink id="19b7-3da0-1e5e-433a" name="New CategoryLink" hidden="false" targetId="e59c-462e-9d9c-66dd" primary="false"/>
                 <categoryLink id="87fd-185d-491d-52fb" name="New CategoryLink" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false"/>
               </categoryLinks>
+            </entryLink>
+            <entryLink id="32e1-48ad-820a-6abc" name="Terrax Pattern Termite Assault Drill (DT)" hidden="true" collective="false" import="true" targetId="d3d9-21fc-ec42-270a" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d39-af5d-fcc9-9c1f" type="atLeast"/>
+                        <condition field="selections" scope="34da-0cfb-85e5-1573" value="12.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="atMost"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -19483,6 +19497,7 @@ Cyber Familiar (Location: Wargear, Cost pts, Not Mandatory)
                   </categoryLinks>
                   <entryLinks>
                     <entryLink id="e68a-d397-8c33-41db" name="Father to the Brethren of Iron" hidden="false" collective="false" import="true" targetId="4f3f-57e6-7d2f-16e1" type="selectionEntry"/>
+                    <entryLink id="4173-6141-ae22-034f" name="Forge Lord" hidden="false" collective="false" import="true" targetId="c4f8-76be-dfac-5592" type="selectionEntry"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -19507,6 +19522,9 @@ Narthecium (Location: Wargear, Cost 30pts, Not Mandatory)
 Needle Pistol (Location: Pistol, Cost 5pts each, Not Mandatory)</description>
                     </rule>
                   </rules>
+                  <entryLinks>
+                    <entryLink id="6e39-c690-b3d8-479a" name="Primus Medicae" hidden="false" collective="false" import="true" targetId="4569-f334-56ad-12bd" type="selectionEntry"/>
+                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
