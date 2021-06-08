@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" revision="82" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="136" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" revision="83" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="138" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="7f243fc5--pubN65537" name="Crusade Imperialis"/>
     <publication id="7f243fc5--pubN65563" name="AoDRB"/>
@@ -9368,6 +9368,11 @@ Precision Shots</description>
       </constraints>
       <selectionEntries>
         <selectionEntry id="2d11f068-1f0a-54b2-7310-4210c9414ed4" name="Nanyte Blaster" publicationId="7f243fc5--pubN74753" page="223" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c576-9c36-165a-23cb" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9b10-d650-e828-1d6b" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cd8c-4e30-4d53-de60" type="max"/>
+          </constraints>
           <profiles>
             <profile id="3fd34665-4fe7-8875-77ff-6593b1bff4fb" name="Nanyte Blaster" publicationId="7f243fc5--pubN74753" page="223" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
               <characteristics>
@@ -9391,36 +9396,132 @@ Precision Shots</description>
           </costs>
         </selectionEntry>
         <selectionEntry id="5d062914-e3cd-bfa1-669d-a6c3f25e6008" name="Warp Shunt Field" publicationId="7f243fc5--pubN74753" page="223" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8fc0-1702-b188-d119" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bde3-ca00-d2c7-194c" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d69e-6de4-f26b-f723" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5000-c23c-5956-2b30" name="Warp Shunt Field" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">The warp shunt field provides the bearer with a 3+ Invulnerable save against Shooting attacks only. In addition, for every 6 rolled when saving against an enemy attack that draws a direct line of sight between shooter and target, the enemy unit that fired the shot takes D6 Str 5 AP- hits. </characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
             <cost name="pts" typeId="points" value="35.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="38c42dae-d1c1-94ed-8141-99aa4e0956fa" name="Phase-Walker" publicationId="7f243fc5--pubN74753" page="223" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9b6a-27e5-39a9-cebf" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dff2-d63e-6573-5254" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="551f-e1e8-e8f4-5c8c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5826-b68b-f9b3-8968" name="Phase-Walker" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Instead of moving normally in the Movement phase, the bearer may be removed and replaced anywhere else on the table, so long as they are not engaged in an assault or inside a transport vehicle or budding.  If the model is to be repositioned in a location that is within their line of sight, they are simply positioned where the player desires. If the target location is outside of the character&apos;s line of sight, make a Dangerous Terrain test for every solid object along the path including all models, vehicles, terrain pieces, buildings, etc) and so long as the character survives, place them in the desired position. Having been moved, the character counts as having deployed via Deep Strike, and so counts as having moved, but may shoot, run, etc, as normal.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
             <cost name="pts" typeId="points" value="45.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="83518a18-5ea2-e010-c62b-bfffbd9ff33c" name="Combat Augment Array" publicationId="7f243fc5--pubN74753" page="223" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9636-f8d1-c70f-b280" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2256-8088-7bb1-c61d" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7b76-0f3b-cf96-2ac8" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="65f8-ba0c-270c-2245" name="Combat Augment Array" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Once per game, declared at the beginning of the controlling plaver&apos;s player turn, the character may count any dice roil as automatically rolling a 6. At the end of that player turn, the model should make a Toughness test for every wound they have remaining. Each failed test results in the character sustaining a wound, with no saves of any kind of Feel No Pain rolls possible.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
             <cost name="pts" typeId="points" value="35.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="bb67275b-2ab9-b035-0b48-2228ad6a393d" name="Cloaking Array" publicationId="7f243fc5--pubN74753" page="223" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d7ec-5da9-fed6-de23" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="de80-9321-cd06-5631" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ab98-7e98-d066-b49e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f99b-a575-6962-253d" name="Cloaking Array" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Once per game, at the beginning of any game rum. the cloaking array may be activated. For that entire game turn, the bearer may not be targeted by shooring or declared as the subject ot a charge. Enemy models with the Psyker or Daemon rule are not atiected by the cloaking arrav, as thev have other means ot perceiving their foe. Should such a model shoot or assault the bearer, the cloaking array ceases to function immediately. The bearer may not use the array if joined to another unit, or engaged in an assault, and may not move, shoot, charge or declare any other actions while it is in efiect.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
             <cost name="pts" typeId="points" value="40.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e7638b25-0c0e-0ba1-eb9d-26f60fab6a59" name="Void Shield Harness" publicationId="7f243fc5--pubN74753" page="223" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f2c6-8ed4-897a-6e81" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b377-f816-b8e2-2712" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3f78-eda0-131e-712d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="36ad-a007-faf7-10b0" name="Void Shield Harness" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">The void shield harness has an area of effect equal to a Large Blast (3&quot;) marker,centred on the hearer. Any shooting attack that originates from outside of the protected area and hits a target inside it instead hits the void shield - which has an Armour value of 12. A glancing or penetrating hit (or any hit from a Destroyer weapon) causes it to collapse. Once the shield is collapsed, further hits strike the original target instead. If the shield is collapsed, at the end to each to the controlling player&apos;s player turns roll a Db. On a roll of the shield is instantly restored.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
             <cost name="pts" typeId="points" value="40.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="53fd8eab-99f1-5000-0419-7c45ea2d5ee6" name="Metaphasic Reader" publicationId="7f243fc5--pubN74753" page="224" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="83c8-e158-d4ac-a605" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="15aa-4f2f-810f-6d31" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3b2c-2776-f180-290d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5f91-e2d7-5879-4b23" name="Metaphasic Reader" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">The unit, as well as any Solar Auxilia unit from the same detachment within 12&quot;, gain the Interceptor special rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="b889-4aff-5fde-a193" name="Interceptor" hidden="false" targetId="ca3e-e94e-58f6-75d9" type="rule"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="45.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6441218c-4499-eb35-a3b1-d6454d9ad7c4" name="Apex Digital Weapon" publicationId="7f243fc5--pubN74753" page="224" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7437-6785-7120-9b0e" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1968-5763-a436-a8d7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b9e5-a8b6-d61a-f467" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="12aa-65f5-c9b4-db9a" name="Apex Digital Lasers" publicationId="7f243fc5--pubN74753" page="87" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">The Apex digital weapon counts as a normal digital weapon (Provides +1 attack in close combat). In addition once per game it may be fired as either a Lascannon, Multi-melta, Plasma Cannon or Volkite Caliver.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="77cc-75a6-6c9d-be5b" name="Lascannon" hidden="false" targetId="1cce-972c-022a-2590" type="profile"/>
+            <infoLink id="e55a-2f79-f291-7172" name="Multi-Melta" hidden="false" targetId="4fc7-8b16-afe4-dad3" type="profile"/>
+            <infoLink id="113b-74dc-f926-e3cf" name="Plasma Cannon" hidden="false" targetId="13df-d6b0-3f33-bf9b" type="profile"/>
+            <infoLink id="c26a-ccfb-0fbd-930f" name="Volkite Caliver" hidden="false" targetId="626c-d79c-9bb7-3407" type="profile"/>
+            <infoLink id="ed87-0b89-f84a-4912" name="Melta" hidden="false" targetId="21c0-62ff-3ed2-17a7" type="rule"/>
+            <infoLink id="b84f-5553-668f-5d81" name="Gets Hot" hidden="false" targetId="f4fd-d519-4769-5510" type="rule"/>
+            <infoLink id="7ee2-1c9e-f7ed-bccf" name="Deflagrate" hidden="false" targetId="b46a-a3ec-91a5-5001" type="rule"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="35.0"/>
           </costs>

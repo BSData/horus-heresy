@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" revision="117" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="137" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="90aa-c2c8-ffb0-496e" name="Imperialis Militia and Cults Army List" revision="118" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="138" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="90aa-c2c8-pubN65537" name="Crusade Imperialis"/>
     <publication id="90aa-c2c8-pubN65563" name="AoDRB"/>
@@ -11207,6 +11207,13 @@ A model may only use this weapon if it has successfully charged that player turn
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
           </constraints>
+          <profiles>
+            <profile id="008b-4668-1a56-9f8c" name="Warp Shunt Field" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">The warp shunt field provides the bearer with a 3+ Invulnerable save against Shooting attacks only. In addition, for every 6 rolled when saving against an enemy attack that draws a direct line of sight between shooter and target, the enemy unit that fired the shot takes D6 Str 5 AP- hits. </characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
             <cost name="pts" typeId="points" value="35.0"/>
           </costs>
@@ -11217,6 +11224,13 @@ A model may only use this weapon if it has successfully charged that player turn
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
           </constraints>
+          <profiles>
+            <profile id="95a7-50cf-c9ce-52be" name="Phase-Walker" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Instead of moving normally in the Movement phase, the bearer may be removed and replaced anywhere else on the table, so long as they are not engaged in an assault or inside a transport vehicle or budding.  If the model is to be repositioned in a location that is within their line of sight, they are simply positioned where the player desires. If the target location is outside of the character&apos;s line of sight, make a Dangerous Terrain test for every solid object along the path including all models, vehicles, terrain pieces, buildings, etc) and so long as the character survives, place them in the desired position. Having been moved, the character counts as having deployed via Deep Strike, and so counts as having moved, but may shoot, run, etc, as normal.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
             <cost name="pts" typeId="points" value="45.0"/>
           </costs>
@@ -11227,6 +11241,13 @@ A model may only use this weapon if it has successfully charged that player turn
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
           </constraints>
+          <profiles>
+            <profile id="e774-b8a2-ec17-dabf" name="Combat Augment Array" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Once per game, declared at the beginning of the controlling plaver&apos;s player turn, the character may count any dice roil as automatically rolling a 6. At the end of that player turn, the model should make a Toughness test for every wound they have remaining. Each failed test results in the character sustaining a wound, with no saves of any kind of Feel No Pain rolls possible.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
             <cost name="pts" typeId="points" value="35.0"/>
           </costs>
@@ -11237,6 +11258,13 @@ A model may only use this weapon if it has successfully charged that player turn
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
           </constraints>
+          <profiles>
+            <profile id="3c80-3f9b-b26b-9f75" name="Cloaking Array" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Once per game, at the beginning of any game rum. the cloaking array may be activated. For that entire game turn, the bearer may not be targeted by shooring or declared as the subject ot a charge. Enemy models with the Psyker or Daemon rule are not atiected by the cloaking arrav, as thev have other means ot perceiving their foe. Should such a model shoot or assault the bearer, the cloaking array ceases to function immediately. The bearer may not use the array if joined to another unit, or engaged in an assault, and may not move, shoot, charge or declare any other actions while it is in efiect.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
             <cost name="pts" typeId="points" value="40.0"/>
           </costs>
@@ -11247,6 +11275,13 @@ A model may only use this weapon if it has successfully charged that player turn
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInForce" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="maxInRoster" type="max"/>
           </constraints>
+          <profiles>
+            <profile id="fc5c-b034-0070-62a2" name="Void Shield Harness" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">The void shield harness has an area of effect equal to a Large Blast (3&quot;) marker,centred on the hearer. Any shooting attack that originates from outside of the protected area and hits a target inside it instead hits the void shield - which has an Armour value of 12. A glancing or penetrating hit (or any hit from a Destroyer weapon) causes it to collapse. Once the shield is collapsed, further hits strike the original target instead. If the shield is collapsed, at the end to each to the controlling player&apos;s player turns roll a Db. On a roll of the shield is instantly restored.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
             <cost name="pts" typeId="points" value="40.0"/>
           </costs>
