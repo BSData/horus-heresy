@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9f87-b468-2001-5e3b" name="Mournival Units Legion Astartes (Fanmade)" revision="33" battleScribeVersion="2.03" authorName="Aus30K / Mournival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="140" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9f87-b468-2001-5e3b" name="Mournival Units Legion Astartes (Fanmade)" revision="34" battleScribeVersion="2.03" authorName="Aus30K / Mournival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="141" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="0e6e-8c19-c436-39c4" name="Mournival Events 3.3 Digital Version"/>
     <publication id="cf75-540e-e446-ecd5" name="Mournival Events FAQ and Experimental Errata v3.5"/>
@@ -273,24 +273,6 @@ Example 4: In a 2000 point army, a Daemon Lord is the Warlord (doesn’t count a
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="460b-968b-608f-83be" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="3ca5-d080-ab0e-4c6b" name="Compulsory Troops" hidden="false" targetId="219d-aefa-dfa5-44db" primary="false">
-          <modifiers>
-            <modifier type="set" field="c403-14b3-0b39-9ca4" value="3.0">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90f1-7652-515e-c919" type="equalTo"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e54f-a96e-cbcc-8f8e" type="equalTo"/>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4618-5a5e-08a7-8f19" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c403-14b3-0b39-9ca4" type="min"/>
-          </constraints>
-        </categoryLink>
         <categoryLink id="ec5f-0583-43f6-7162" name="New CategoryLink" hidden="false" targetId="2d6f-e613-ab10-e55a" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="79e7-7c1c-249c-359d" type="max"/>
@@ -353,11 +335,13 @@ Example 4: In a 2000 point army, a Daemon Lord is the Warlord (doesn’t count a
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ee5-3c01-65f0-f9eb" type="equalTo"/>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac49-166d-aea9-5327" type="equalTo"/>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7971-7a57-738e-f752" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="23b2-72dc-7831-43d8" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aaa4-ac11-c309-e651" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b12c-92e3-0561-c0e6" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" field="name" value="0.0"/>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1728-376c-1324-1728" type="min"/>
@@ -3816,6 +3800,7 @@ All models with psychic powers suffer a penalty to roll to manifest psychic powe
             <infoLink id="e0f7-0a92-a09b-6dfd" name="Dreadnought Talon" hidden="false" targetId="fb2f-6a13-3268-d621" type="rule"/>
             <infoLink id="0351-9cf8-2c42-cab1" page="" hidden="false" targetId="69e5-fc02-1f9d-63c2" type="rule"/>
             <infoLink id="472d-4c3a-6145-c412" name="" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule"/>
+            <infoLink id="46a8-1f0e-1ac7-dc46" name="Obsidian Forged" hidden="false" targetId="e508-0571-af75-d25c" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="9a4c-8b28-daf8-0ad8" name="Vehicle" hidden="false" targetId="b2a4-14c8-52b5-41d9" primary="false"/>
@@ -8277,6 +8262,7 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
             <infoLink id="7c61-c99e-a774-b8fc" name="Scout" hidden="false" targetId="9b30-1da3-eb8d-ce7a" type="rule"/>
             <infoLink id="5276-80c3-2e06-43b5" name="Grav-backwash" hidden="false" targetId="0ab8-c3dc-fe69-c2f6" type="rule"/>
             <infoLink id="fdc1-5f43-c2de-254f" name="New InfoLink" hidden="false" targetId="d219-2314-4834-c054" type="rule"/>
+            <infoLink id="6d65-cd93-197a-da5b" name="Obsidian Forged" hidden="false" targetId="e508-0571-af75-d25c" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="1ddf-ec67-26bb-8b6b" name="Vehicle" hidden="false" targetId="b2a4-14c8-52b5-41d9" primary="false"/>
@@ -8496,6 +8482,7 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
           <infoLinks>
             <infoLink id="10fc-6683-72a0-0c3c" name="Grav-backwash" hidden="false" targetId="0ab8-c3dc-fe69-c2f6" type="rule"/>
             <infoLink id="5236-5488-3cb4-ec36" name="New InfoLink" hidden="false" targetId="d219-2314-4834-c054" type="rule"/>
+            <infoLink id="78ed-0efd-44bb-262f" name="Obsidian Forged" hidden="false" targetId="e508-0571-af75-d25c" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="b68c-5820-1a7b-86d5" name="Vehicle" hidden="false" targetId="b2a4-14c8-52b5-41d9" primary="false"/>
@@ -8620,6 +8607,7 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
             <infoLink id="b194-5e42-13f2-b53b" name="Grav-backwash" hidden="false" targetId="0ab8-c3dc-fe69-c2f6" type="rule"/>
             <infoLink id="6f84-85f0-0143-7e74" name="Strafing Run" hidden="false" targetId="7911-b951-c819-2f4f" type="rule"/>
             <infoLink id="d123-7864-88c0-4f54" name="Outflank" hidden="false" targetId="de18-25a0-504b-74be" type="rule"/>
+            <infoLink id="c551-2e76-e94a-2b98" name="Obsidian Forged" hidden="false" targetId="e508-0571-af75-d25c" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="09b2-e285-b0f2-6ee2" name="Vehicle" hidden="false" targetId="b2a4-14c8-52b5-41d9" primary="false"/>
@@ -9200,9 +9188,18 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="9876-6304-ffca-2cbd" name="New InfoLink" hidden="false" targetId="21c0-62ff-3ed2-17a7" type="rule"/>
-                <infoLink id="8609-393f-3c4b-6c33" name="New InfoLink" hidden="false" targetId="4fc7-8b16-afe4-dad3" type="profile"/>
+                <infoLink id="9876-6304-ffca-2cbd" name="Melta" hidden="false" targetId="21c0-62ff-3ed2-17a7" type="rule"/>
+                <infoLink id="8609-393f-3c4b-6c33" name="Multi-Melta" hidden="false" targetId="4fc7-8b16-afe4-dad3" type="profile"/>
                 <infoLink id="2d88-23c0-40dd-0a8e" name="Suspensor Web" hidden="false" targetId="3d78-f901-8afc-00ff" type="rule"/>
+                <infoLink id="eb96-60cb-363d-422a" name="Master-crafted" hidden="false" targetId="f899-8f9d-fc7e-d855" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b8fd-6769-6b2e-40d3" type="lessThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
@@ -13592,6 +13589,15 @@ Owing to the massive expenditure of ammunition involved, once a squad has made a
                       <infoLinks>
                         <infoLink id="4757-2251-c9d7-0933" name="Melta" hidden="false" targetId="21c0-62ff-3ed2-17a7" type="rule"/>
                         <infoLink id="9f47-1975-b53c-e4ad" name="Inferno Pistol" hidden="false" targetId="a733-2f33-1e47-8359" type="profile"/>
+                        <infoLink id="23a0-ee66-e965-570d" name="Master-crafted" hidden="false" targetId="f899-8f9d-fc7e-d855" type="rule">
+                          <modifiers>
+                            <modifier type="set" field="hidden" value="true">
+                              <conditions>
+                                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b8fd-6769-6b2e-40d3" type="lessThan"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </infoLink>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="15.0"/>
