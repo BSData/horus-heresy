@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="140" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="141" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN66489" name="HH:MT"/>
@@ -1388,6 +1388,15 @@ D6    Result		S	AP
       <infoLinks>
         <infoLink id="8b2d-39e5-d9e7-016d" name="New InfoLink" hidden="false" targetId="21c0-62ff-3ed2-17a7" type="rule"/>
         <infoLink id="c89f-56ae-a960-7118" name="New InfoLink" hidden="false" targetId="4fc7-8b16-afe4-dad3" type="profile"/>
+        <infoLink id="b77b-e989-2789-03e8" name="Master-crafted" hidden="false" targetId="f899-8f9d-fc7e-d855" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b8fd-6769-6b2e-40d3" type="lessThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -10660,6 +10669,15 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="b8fd-6769-6b2e-40d3" name="Veneration of Wrath" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f495-f7b6-19de-f7dd" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9555-7788-af47-5670" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="64e8-ec7c-e5d8-6767" name="Force Organization Chart" hidden="false" collective="false" import="true">
@@ -11042,8 +11060,17 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c23b-b876-e683-4f04" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="4bcf-2c64-17b9-05e6" name="New InfoLink" hidden="false" targetId="21c0-62ff-3ed2-17a7" type="rule"/>
-            <infoLink id="cb3c-2c17-d31f-44cd" name="New InfoLink" hidden="false" targetId="8ae4-74e5-7700-3804" type="profile"/>
+            <infoLink id="4bcf-2c64-17b9-05e6" name="Melta" hidden="false" targetId="21c0-62ff-3ed2-17a7" type="rule"/>
+            <infoLink id="cb3c-2c17-d31f-44cd" name="Meltagun" hidden="false" targetId="8ae4-74e5-7700-3804" type="profile"/>
+            <infoLink id="4219-6231-c69c-9efb" name="Master-crafted" hidden="false" targetId="f899-8f9d-fc7e-d855" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b8fd-6769-6b2e-40d3" type="lessThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="15.0"/>
@@ -12204,6 +12231,15 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
           <infoLinks>
             <infoLink id="0156-2854-0e40-e4b9" name="Multi-Melta" hidden="false" targetId="4fc7-8b16-afe4-dad3" type="profile"/>
             <infoLink id="e46e-7551-6cd8-be6a" name="Melta" hidden="false" targetId="21c0-62ff-3ed2-17a7" type="rule"/>
+            <infoLink id="cddb-69c9-708d-de14" name="Master-crafted" hidden="false" targetId="f899-8f9d-fc7e-d855" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b8fd-6769-6b2e-40d3" type="lessThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="20.0"/>
@@ -12262,6 +12298,15 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
               </constraints>
               <infoLinks>
                 <infoLink id="f4f9-c06b-0607-349f" name="Combi-weapon: Meltagun" hidden="false" targetId="d30d-adeb-818b-09e3" type="profile"/>
+                <infoLink id="c21b-9ed2-a4fb-67d0" name="Master-crafted" hidden="false" targetId="f899-8f9d-fc7e-d855" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b8fd-6769-6b2e-40d3" type="lessThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
@@ -13982,6 +14027,13 @@ Assualt: Models charging a unit that includes any models equipped with defensive
       </characteristics>
     </profile>
     <profile id="4fc7-8b16-afe4-dad3" name="Multi-Melta" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+      <modifiers>
+        <modifier type="set" field="5479706523232344415441232323" value="Heavy 1, Melta, Master-Crafted">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b8fd-6769-6b2e-40d3" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
@@ -14151,6 +14203,13 @@ Assualt: Models charging a unit that includes any models equipped with defensive
       </characteristics>
     </profile>
     <profile id="d30d-adeb-818b-09e3" name="Combi-weapon: Meltagun" publicationId="ca571888--pubN106502" page="177" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+      <modifiers>
+        <modifier type="set" field="5479706523232344415441232323" value="Assault 1, Melta, One Use Only, Master-Crafted">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b8fd-6769-6b2e-40d3" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
@@ -14236,6 +14295,13 @@ Assualt: Models charging a unit that includes any models equipped with defensive
       </characteristics>
     </profile>
     <profile id="a733-2f33-1e47-8359" name="Inferno Pistol" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+      <modifiers>
+        <modifier type="set" field="5479706523232344415441232323" value="Pistol, Melta, Master-Crafted">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b8fd-6769-6b2e-40d3" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">6&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
@@ -14318,6 +14384,13 @@ Assualt: Models charging a unit that includes any models equipped with defensive
       </characteristics>
     </profile>
     <profile id="8ae4-74e5-7700-3804" name="Meltagun" publicationId="ca571888--pubN106502" page="178" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+      <modifiers>
+        <modifier type="set" field="5479706523232344415441232323" value="Assault 1, Melta, Master-Crafted">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b8fd-6769-6b2e-40d3" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
