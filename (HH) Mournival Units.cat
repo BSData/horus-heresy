@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9f87-b468-2001-5e3b" name="Mournival Units Legion Astartes (Fanmade)" revision="35" battleScribeVersion="2.03" authorName="Aus30K / Mournival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="141" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9f87-b468-2001-5e3b" name="Mournival Units Legion Astartes (Fanmade)" revision="35" battleScribeVersion="2.03" authorName="Aus30K / Mournival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="142" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="0e6e-8c19-c436-39c4" name="Mournival Events 3.3 Digital Version"/>
     <publication id="cf75-540e-e446-ecd5" name="Mournival Events FAQ and Experimental Errata v3.5"/>
@@ -1034,6 +1034,15 @@ If a Rogue Psyker who is the army’s Warlord becomes possessed, they are still 
         <infoLink id="0d23-9446-c15f-9dcf" name="Stubborn" hidden="false" targetId="7be5-30af-1a02-0a89" type="rule"/>
         <infoLink id="d190-dae1-fa38-37f3" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule"/>
         <infoLink id="c789-6c53-6659-bde5" name="Sniper" hidden="false" targetId="3919-29f5-0c68-3ecb" type="rule"/>
+        <infoLink id="0f06-c706-3ce2-1e15" name="Bleed &amp; Harry" hidden="false" targetId="3950-14f9-8267-c9f2" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcfe-8cf5-449f-9a22" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6a24-9157-4856-0180" name="Infantry" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
@@ -1690,6 +1699,15 @@ If a Rogue Psyker who is the army’s Warlord becomes possessed, they are still 
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink id="c32b-d7cc-7abb-2532" name="Bleed &amp; Harry" hidden="false" targetId="3950-14f9-8267-c9f2" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcfe-8cf5-449f-9a22" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3268-91b1-9782-572b" name="Character" hidden="false" targetId="eb92-48f9-9a1a-7bd1" primary="false"/>
@@ -2178,6 +2196,15 @@ If a Rogue Psyker who is the army’s Warlord becomes possessed, they are still 
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a407-2a45-f198-77ac" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="19e0-6f6d-04e7-4109" name="Bleed &amp; Harry" hidden="false" targetId="3950-14f9-8267-c9f2" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcfe-8cf5-449f-9a22" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4001,16 +4028,6 @@ All models with psychic powers suffer a penalty to roll to manifest psychic powe
       <selectionEntries>
         <selectionEntry id="bd53-9cb3-68e0-3f14" name="Legion Independent Techmarines" publicationId="0e6e-8c19-c436-39c4" hidden="false" collective="false" import="true" type="unit">
           <modifiers>
-            <modifier type="remove" field="category" value="f74d-4679-75a6-1252">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="bd53-9cb3-68e0-3f14" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="db95-0c14-c334-4453" type="equalTo"/>
-                    <condition field="selections" scope="bd53-9cb3-68e0-3f14" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="023e-8d89-f61b-c1b9" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
             <modifier type="increment" field="f139-0622-c255-2d75" value="1.0">
               <repeats>
                 <repeat field="points" scope="roster" value="500.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" repeats="1" roundUp="false"/>
@@ -4077,10 +4094,31 @@ All models with psychic powers suffer a penalty to roll to manifest psychic powe
                 </modifier>
               </modifiers>
             </infoLink>
+            <infoLink id="10de-f3aa-a148-f780" name="Bleed &amp; Harry" hidden="false" targetId="3950-14f9-8267-c9f2" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcfe-8cf5-449f-9a22" type="equalTo"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="bd53-9cb3-68e0-3f14" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f8f5-3edd-9cc4-d0b2" type="equalTo"/>
+                            <condition field="selections" scope="bd53-9cb3-68e0-3f14" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="25e5-7eb1-8938-0d67" type="equalTo"/>
+                            <condition field="selections" scope="bd53-9cb3-68e0-3f14" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2add-5cce-b67d-7269" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="6ba2-14af-cadf-86b6" name="Character" hidden="false" targetId="eb92-48f9-9a1a-7bd1" primary="false"/>
-            <categoryLink id="f6af-a83f-ea75-9efc" name="Infantry" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
             <categoryLink id="c806-2801-7255-3ad2" name="Legiones Astartes" hidden="false" targetId="0c56-27b8-a737-c9fd" primary="false"/>
           </categoryLinks>
           <selectionEntries>
@@ -4122,9 +4160,10 @@ All models with psychic powers suffer a penalty to roll to manifest psychic powe
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="1b37-94cf-0897-aa69" name="May select one of the following:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="1b37-94cf-0897-aa69" name="May select one of the following:" hidden="false" collective="false" import="true" defaultSelectionEntryId="2add-5cce-b67d-7269">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d40-932b-8d80-25eb" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d40-932b-8d80-25eb" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4ed-3666-d614-32e6" type="max"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry id="f8f5-3edd-9cc4-d0b2" name="Servo Arm" hidden="false" collective="false" import="true" type="upgrade">
@@ -4134,6 +4173,9 @@ All models with psychic powers suffer a penalty to roll to manifest psychic powe
                   <infoLinks>
                     <infoLink id="f266-1a37-0028-9a4e" name="Servo Arm" hidden="false" targetId="c3a5-c40c-b493-5cf6" type="profile"/>
                   </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="3b3b-a8c3-c726-d915" name="Infantry" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="10.0"/>
                   </costs>
@@ -4161,6 +4203,14 @@ All models with psychic powers suffer a penalty to roll to manifest psychic powe
                   <costs>
                     <cost name="pts" typeId="points" value="20.0"/>
                   </costs>
+                </selectionEntry>
+                <selectionEntry id="2add-5cce-b67d-7269" name="On Foot" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83ae-a50c-b276-3e68" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="a8c8-c1f0-f9c4-de07" name="Infantry" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
@@ -4593,6 +4643,15 @@ All models with psychic powers suffer a penalty to roll to manifest psychic powe
         <infoLink id="7b9f-3c67-ebd0-7797" name="Fleet" hidden="false" targetId="69e5-fc02-1f9d-63c2" type="rule"/>
         <infoLink id="6956-9002-d801-3c14" name="Furious Charge" hidden="false" targetId="3aa7-9a8f-1e0d-921d" type="rule"/>
         <infoLink id="213c-c146-98a6-25d9" name="Move Through Cover" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule"/>
+        <infoLink id="3c1e-7c65-c992-00dc" name="Bleed &amp; Harry" hidden="false" targetId="3950-14f9-8267-c9f2" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcfe-8cf5-449f-9a22" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="32ad-4785-01cf-96b4" name="Infantry" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
@@ -4744,6 +4803,15 @@ All models with psychic powers suffer a penalty to roll to manifest psychic powe
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a407-2a45-f198-77ac" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="ed7b-d4d9-cd87-4e1e" name="Bleed &amp; Harry" hidden="false" targetId="3950-14f9-8267-c9f2" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcfe-8cf5-449f-9a22" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5486,6 +5554,15 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="c45a-f00a-f229-87ed" name="Bleed &amp; Harry" hidden="false" targetId="3950-14f9-8267-c9f2" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcfe-8cf5-449f-9a22" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
         </infoLink>
@@ -6298,6 +6375,15 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="f5b5-c813-4d97-ce74" name="Bleed &amp; Harry" hidden="false" targetId="3950-14f9-8267-c9f2" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcfe-8cf5-449f-9a22" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
         </infoLink>
@@ -10183,6 +10269,21 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
                     <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7677dd1e-d159-6a47-ab20-ed0d7e70a0e7" type="greaterThan"/>
                     <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1c0-746f-2b39-5f17" type="greaterThan"/>
                     <condition field="selections" scope="238b-3768-7dd7-7f81" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5d2-e10d-1552-c5c6" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="671a-c229-21b3-b943" name="Bleed &amp; Harry" hidden="false" targetId="3950-14f9-8267-c9f2" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcfe-8cf5-449f-9a22" type="equalTo"/>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37dc-7aa6-8150-41b0" type="notInstanceOf"/>
+                    <condition field="selections" scope="238b-3768-7dd7-7f81" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f74d-4679-75a6-1252" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
