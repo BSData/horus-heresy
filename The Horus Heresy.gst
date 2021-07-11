@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="142" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="143" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN66489" name="HH:MT"/>
@@ -204,7 +204,7 @@
     <categoryEntry id="6077-281f-c55d-9bf0" name="Allied Detachment" hidden="false"/>
     <categoryEntry id="9335-93c1-6af7-feb0" name="ZM (Unusable)" hidden="false"/>
     <categoryEntry id="baa4-80e4-c41d-6875" name="Warlord Traits" hidden="false"/>
-    <categoryEntry id="974d-7438-c940-914b" name="Jump Units" hidden="false">
+    <categoryEntry id="974d-7438-c940-914b" name="Jump Units:" hidden="false">
       <infoLinks>
         <infoLink id="c2d9-f5c8-4cd9-d853" name="Bulky" hidden="false" targetId="38d5-b6eb-bda8-2497" type="rule"/>
         <infoLink id="0436-90de-7b75-9c53" name="Deep Strike" hidden="false" targetId="d219-2314-4834-c054" type="rule"/>
@@ -215,6 +215,264 @@
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8a9-b4e7-9518-491c" type="max"/>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fac7-0a52-aa75-4482" type="min"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="a91b-7f8f-d085-e564" name="HQ:" hidden="false"/>
+    <categoryEntry id="7757-4995-3312-d330" name="Elites:" hidden="false"/>
+    <categoryEntry id="220b-7c51-58b3-6ac0" name="Troops:" hidden="false"/>
+    <categoryEntry id="85b6-80c2-d782-96bd" name="Fast Attack:" hidden="false"/>
+    <categoryEntry id="9704-4a93-21b2-be00" name="Heavy Support:" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="072e-ce6b-48cb-776a" type="min"/>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c950-62fd-b61c-bbb5" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="4139-f611-b727-90ef" name="Fortification:" hidden="false"/>
+    <categoryEntry id="3e18-4c14-6f98-44ed" name="Compulsory HQ:" hidden="false">
+      <infoLinks>
+        <infoLink id="bb91-2a20-4411-10ef" name="Compulsory" hidden="false" targetId="adbd-7129-14fe-19bc" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="0615-bc0a-fe41-6e0f" name="Dedicated Transport:" hidden="false"/>
+    <categoryEntry id="cef1-24f3-c9c2-81cc" name="Flyer:" hidden="false"/>
+    <categoryEntry id="d686-9020-9e0e-7902" name="Beasts:" publicationId="ca571888--pubN106502" page="67" hidden="false">
+      <infoLinks>
+        <infoLink id="24a0-4218-569d-e74d" name="Fleet" hidden="false" targetId="69e5-fc02-1f9d-63c2" type="rule"/>
+        <infoLink id="3c25-63dc-4810-f56c" name="Beasts" hidden="false" targetId="b53a-eba8-e3f8-4ae8" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="87ff-586c-3971-be96" name="Bike:" publicationId="ca571888--pubN106502" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31e7-63d2-f9ba-cf48" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="59c2-f43f-eb47-404b" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule"/>
+        <infoLink id="1cba-a258-6d5e-2513" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule"/>
+        <infoLink id="46a5-9ab5-07f4-0e01" name="Jink" hidden="false" targetId="d3e5-b43d-a89c-3bd8" type="rule"/>
+        <infoLink id="4f16-2e66-2c20-d6fd" name="Very Bulky" hidden="false" targetId="abc9-8566-bb61-4b7c" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="daf5-4478-ddda-20e1" name="Cavalry:" publicationId="ca571888--pubN106502" page="67" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a376-e922-d990-f414" type="min"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="d3d5-4481-4637-974b" name="Fleet" hidden="false" targetId="69e5-fc02-1f9d-63c2" type="rule"/>
+        <infoLink id="41ef-0e3c-e293-94f2" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule"/>
+        <infoLink id="597b-9b52-cc01-b554" name="Cavalry" hidden="false" targetId="d956-6030-d01f-5f3a" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="2ae4-5bf5-2a8e-c858" name="Compulsory Elite:" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51e6-6734-899b-1141" type="min"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="fa06-6ecb-1939-293f" name="Compulsory" hidden="false" targetId="adbd-7129-14fe-19bc" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="2ff1-c144-57a5-03dc" name="Compulsory Troops:" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4521-df7e-be88-2419" type="min"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="fe52-5d07-61db-8335" name="Compulsory" hidden="false" targetId="adbd-7129-14fe-19bc" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="29f7-f993-6e8c-0a5d" name="Deep Strike:" hidden="false">
+      <infoLinks>
+        <infoLink id="458d-e3e1-e656-3914" name="Deep Strike" hidden="false" targetId="d219-2314-4834-c054" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="721c-86d6-b27f-1b8b" name="Flying Monstrous Creature:" hidden="false">
+      <infoLinks>
+        <infoLink id="16c5-87f0-f033-b398" name="Fear" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule"/>
+        <infoLink id="e179-a834-f54d-0360" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule"/>
+        <infoLink id="e799-a52a-0144-5568" name="Move Through Cover" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule"/>
+        <infoLink id="0508-562e-9d49-f61c" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule"/>
+        <infoLink id="44d3-5807-cec5-2bfa" name="Smash" hidden="false" targetId="4284-18a1-9844-a0bd" type="rule"/>
+        <infoLink id="ce60-40c1-355f-19e5" name="Vector Strike" hidden="false" targetId="5341-7110-d8d4-171a" type="rule"/>
+        <infoLink id="2d26-68d5-b146-87dc" name="Jink" hidden="false" targetId="d3e5-b43d-a89c-3bd8" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="b0a5-3ca7-229e-9390" name="Gargantuan Creature." publicationId="ca571888--pubN106502" page="68" hidden="false">
+      <infoLinks>
+        <infoLink id="cbea-6e74-0f1e-2a9e" name="Fear" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule"/>
+        <infoLink id="906a-75cc-8a50-357f" name="Fearless" hidden="false" targetId="dc70-e199-5525-e78c" type="rule"/>
+        <infoLink id="bcfa-81fc-1e98-3302" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule"/>
+        <infoLink id="1033-5975-dccf-0285" name="Move Through Cover" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule"/>
+        <infoLink id="22db-cd06-4ca1-f572" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule"/>
+        <infoLink id="9c52-2b01-1478-50de" name="Smash" hidden="false" targetId="4284-18a1-9844-a0bd" type="rule"/>
+        <infoLink id="05c7-0087-a412-ed00" name="Strikedown" hidden="false" targetId="dd83-7fb9-6f58-0c96" type="rule"/>
+        <infoLink id="5a55-fe4a-7b6f-fbb1" name="Feel No Pain" hidden="false" targetId="9bdd-5ec7-8dd6-63c0" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="72c8-d46a-7934-1cf6" name="Independent Character:" hidden="false">
+      <infoLinks>
+        <infoLink id="719b-6476-e388-71d6" name="Independent Character" hidden="false" targetId="3ad4-1c37-d60b-1a4e" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="1b66-02c5-8ff6-bb14" name="Jetbike:" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bec-a1f7-e004-e909" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="3ef0-6ddb-2edd-0710" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule"/>
+        <infoLink id="68db-2b4a-19cd-56a3" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule"/>
+        <infoLink id="e261-a5cb-134f-845f" name="Jink" hidden="false" targetId="d3e5-b43d-a89c-3bd8" type="rule"/>
+        <infoLink id="6b27-7e20-f285-aae0" name="Very Bulky" hidden="false" targetId="abc9-8566-bb61-4b7c" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="1868-78c0-5bc3-9577" name="Jetpack Infantry:" hidden="false">
+      <infoLinks>
+        <infoLink id="84c0-1768-6d03-1a7d" name="Deep Strike" hidden="false" targetId="d219-2314-4834-c054" type="rule"/>
+        <infoLink id="3cf1-56d3-3807-fc5a" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule"/>
+        <infoLink id="e03c-e818-d583-825f" name="Bulky" hidden="false" targetId="38d5-b6eb-bda8-2497" type="rule"/>
+        <infoLink id="a112-d56a-0cd9-850b" name="Trust Move" hidden="false" targetId="97c4-1c1c-3727-757f" type="rule"/>
+        <infoLink id="0d6c-ffe2-c398-92ea" name="Skybourne" hidden="false" targetId="5c8a-63f9-5cdc-b17b" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="76fd-6b81-bded-bb25" name="Monstrous Creature:" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="16a4-16f6-f39e-fa93" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="fa00-1ca1-5c74-50f7" name="Fear" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule"/>
+        <infoLink id="0a29-0882-8182-2e99" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule"/>
+        <infoLink id="80de-cb65-910a-f15c" name="Move Through Cover" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule"/>
+        <infoLink id="bb22-6319-d8e1-a982" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule"/>
+        <infoLink id="e660-19fb-c9ef-1c26" name="Smash" hidden="false" targetId="4284-18a1-9844-a0bd" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="bd44-51c4-55ec-9a43" name="Skimmer:" hidden="false"/>
+    <categoryEntry id="b485-d6f7-226e-90cb" name="Super-Heavy Vehicle:" publicationId="ca571888--pubN106502" page="90" hidden="false">
+      <rules>
+        <rule id="3349-2f16-b0b9-dfc7" name="Thunderblitz" publicationId="ca571888--pubN106502" page="91" hidden="false">
+          <description>Super-heavy Vehicles may Tank Shock or Ram. When they do so, roll once on the Thunderblitz table immediatley before taking the morale check for the unit being Tank Shocked or immediatley before rolling for armour penetration when preforming a Ram.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="efe1-ad00-eb96-dd28" name="Fear" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule"/>
+        <infoLink id="4d4d-1007-33ad-22dd" name="Move Through Cover" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule"/>
+        <infoLink id="ba04-4c2d-d9c3-c08f" name="Invincible Behemoth" hidden="false" targetId="b5c1-4b08-5ddc-1504" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="01a7-d87f-4d21-5ed2" name="The Warlord:" publicationId="ca571888--pubN106502" page="138" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a75-0029-fd9c-c449" type="min"/>
+      </constraints>
+      <rules>
+        <rule id="430e-8c2b-1d89-3569" name="The Warlord" publicationId="ca571888--pubN106502" page="138" hidden="false">
+          <description>When choosing your army, you must nominate one model to be your Warlord. Unless specified otherwise – this must be a character model. If you do not have any character models in your army, then select any other model in your army to be the Warlord. The model you choose as your Warlord must be from the Primary Detachment of the Force Organisation chart in use, unless another rule specifically states otherwise.</description>
+        </rule>
+        <rule id="9fe9-f7c3-437a-2f30" name="Warlord Traits" publicationId="ca571888--pubN106502" page="138" hidden="false">
+          <description>Your Warlord is a potent force upon the battlefield. Not only are they a mighty hero, with all the skills and renown you might expect from the leader of a great army, but over the course of a long career they will also have picked up one or more specialised abilities, which we refer to as ‘Traits’.
+If your Warlord is a character model, then they have one Warlord Trait. Note that if you have had to pick a non-character model as your Warlord, then they do not receive a Warlord Trait, but count as a Warlord for all other rules purposes.
+To determine which trait your Warlord has, you need to choose which Warlord Traits table to roll on. You must roll on this table immediately before you deploy the first unit in your army (see page 137). Sometimes, other publications present alternative Warlord Traits tables that you can choose to roll on instead.</description>
+        </rule>
+        <rule id="abb5-1673-1a04-1e24" name="Warlord Traits and Unique Units" publicationId="ca571888--pubN106502" page="138" hidden="false">
+          <description>Many Unique Independent Characters are listed as having a specific Warlord Trait in their Army List entry. If such a unit is your Warlord, do not roll on a Warlord Trait table – instead, that unit automatically has the listed Warlord Trait. Note that the unit will only gain that Warlord Trait if it is your Warlord. If another model is selected as your Warlord, then the unique unit will not have any Warlord Trait, even if there is a trait listed in its entry.</description>
+        </rule>
+        <rule id="5b00-bf3b-b24d-c76e" name="Death of the Warlord" publicationId="ca571888--pubN106502" page="138" hidden="false">
+          <description>If your Warlord is removed as a casualty during your game, any abilities or special rules granted by their Warlord Trait are immediately lost. If the Warlord Trait in question conferred a special rule that allows an unusual method of deployment from Reserves (such as conferring the Outflank ability on certain units), that special rule is immediately lost and the affected units must instead deploy from Reserves in the normal fashion.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry id="ccbb-6240-fe49-8f91" name="Walker:" hidden="false"/>
+    <categoryEntry id="532a-a2ad-1671-6202" name="Artillery:" publicationId="ca571888--pubN106502" page="65" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="87cc-b6c3-cd56-175e" type="max"/>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4125-f1c6-1b44-71fd" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="1243-5118-d74e-159b" name="Artillery" publicationId="ca571888--pubN106502" page="65" hidden="false">
+          <description>ARTILLERY
+
+Some weapons are so large and cumbersome that they are usually mounted on vehicles, but are sometimes utilised by artillery teams on foot, particularly if the battlefield’s terrain is not suitable for vehicles. These weapons are typically mounted on wheeled supports as they are too heavy to be carried across the battlefield.
+
+THE UNIT
+
+Artillery units comprise a number of crew models and the gun models themselves. These units can include several different types of models. The following is an example of a typical Artillery unit:
+
+WS BS S T W I A Ld Sv
+
+- - - 7 2 - - - 3+
+
+If all of the crew models are killed, the guns are immediately removed as well. Sometimes, the player has the choice of adding leaders or additional models to the crew of an Artillery unit. These models are part of the crew in all respects and can operate the guns as normal, even if they are otherwise slightly different from the rest of the crew. Independent Characters who join the unit, however, do not count as crew and cannot operate the guns.
+
+MOVEMENT PHASE
+
+Artillery units need at least one crewman per gun in order for the unit to move. If an Artillery unit does not have at least one crewman per gun, then it may not move.
+
+SHOOTING WITH ARTILLERY
+
+One crewman that is within 2&quot; of a gun in the Shooting phase can fire it. The crewmen firing the gun cannot fire any weapons they are carrying, while the other crew members (and any Independent Characters in the unit) are free to fire their side arms, provided the whole unit shoots at the same target. When firing the guns, there must be a line of sight to the target from both the gun model and the crewman firing it (unless they are firing Barrage weapons). Ranges are measured from the barrel on the gun model.
+
+SHOOTING AT ARTILLERY
+
+If shooting at an Artillery unit, the Toughness of the guns is always used whilst at least one gun remains. Any wounds caused are still allocated to the closest model first. If an Artillery unit chooses to Go to Ground, this does not increase the guns’ cover save – only the crew benefit.
+
+ASSAULT PHASE
+
+Artillery units cannot charge as long as they include any gun models. If an Artillery unit is charged, only the crew models can fire Overwatch. After Overwatch has been resolved, move the charging models into base contact with the crew and Artillery gun models as normal. No wounds can be allocated to the guns. All engaged enemies roll To Hit and To Wound against the crew, even if they are only engaged with the guns. Engaged crew models can fight back, but the Artillery guns cannot.
+
+MORALE AND FALL BACK MOVES
+
+For the purposes of Morale checks and other Leadership tests, and for combat resolution, always ignore the gun models. Because they need at least one crewman per gun in order to move, if an Artillery unit does not have one crewman per gun when it is forced to Fall Back, any gun models without crewmen are abandoned and immediately removed as casualties. The rest of the unit then Falls Back as normal. If an Artillery unit is forced to Fall Back from close combat and the enemy is free to make a Sweeping Advance, then the Artillery unit automatically loses the Initiative test and is caught and destroyed by the victor.
+
+ARTILLERY AND LOOK OUT, SIR
+
+A wound cannot be re-allocated onto a gun model from a successful Look Out, Sir roll (see page 94).</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry id="8ab2-4493-44a4-b282" name="Character:" hidden="false"/>
+    <categoryEntry id="9bb1-dc3e-d0a3-463f" name="Cybernetica Cortex:" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4fe-c710-350d-06f5" type="min"/>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6365-de3e-0d53-97ee" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="c956-93f2-cb4f-a95d" name="Drop Pod:" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b94-5299-71bb-0588" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="5adb-4a52-7ff5-8fbf" name="Immobile:" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c101-3e98-b4da-3e01" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="a2ba-16b0-8590-b017" name="Infantry:" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8722-f7a6-93da-19d0" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9fcc-09c5-1bbc-7b32" type="min"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="9ad6-ab42-bf1d-7229" name="Lorica Thallax:" hidden="false">
+      <infoLinks>
+        <infoLink id="356b-072c-e4ef-478e" name="Lorica Thallax" hidden="false" targetId="31b1-c957-c740-397c" type="profile"/>
+        <infoLink id="105c-3583-d267-5ca0" name="Feel No Pain (6+)" hidden="false" targetId="85da-2f19-3756-44de" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="5607-db23-333d-bac2" name="Sentry Gun:" hidden="false"/>
+    <categoryEntry id="0ce8-fc59-3828-b226" name="Tank:" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="33de-d916-7fee-c9ef" type="min"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="6193-f23d-d93c-2e99" name="Transport:" hidden="false">
+      <rules>
+        <rule id="13eb-5962-0020-b6ee" name="Unshakeable Nerve" publicationId="ca571888--pubN106502" page="77" hidden="false">
+          <description>Units embarked upon transports have the Fearless special rule while they are embarked.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry id="03d8-3acd-b7ca-5649" name="Vehicle:" hidden="false"/>
+    <categoryEntry id="3a7d-72fe-146e-fe7d" name="Vehicle (Unit):" hidden="false"/>
+    <categoryEntry id="8d71-4445-82e3-3047" name="Tank (Unit):" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3550-c809-e0e3-cc43" type="min"/>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6a67-bc53-089a-3760" type="max"/>
       </constraints>
     </categoryEntry>
   </categoryEntries>
@@ -13832,6 +14090,9 @@ Cavalry have the Fleet and Hammer of Wrath special rules.</description>
 
 Assualt: Models charging a unit that includes any models equipped with defensive grenades do not gain bonus Attacks from charging (see page 51). However, if the charged unit was already locked in combat from a previous turn, or has Gone to Ground, these grenades have no effect and the attackers gain bonus Attacks as normal</description>
     </rule>
+    <rule id="adbd-7129-14fe-19bc" name="Compulsory" page="132" hidden="false">
+      <description>One box on a Force Organisation chart allows you to make one selection from that part of your army list. Dark boxes indicate compulsory selections, which must be included as part of the army, while the lighter boxes indicate optional choices, which are only included as part of the army if the player in question chooses to do so. If constructing an army using the Crusade Force Organisation chart, this would mean that an army would be required to take at least one HQ choice and two Troops choices. These compulsory choices are intended to ensure that the core of each army is illustrative of the force represented by the Army List in use, and that all armies are capable of properly participating in the varied missions available to players in the Age of Darkness.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="74effb54-87f7-8481-9e5f-86d9e3ed37c2" name="Battle Servitor Control" publicationId="ca571888--pubN67227" page="43" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
@@ -15655,6 +15916,11 @@ Jetbikes can move over all other models and terrain freely. However, if a moving
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
         <characteristic name="AP" typeId="415023232344415441232323">1</characteristic>
         <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance 1, Twin-linked</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="31b1-c957-c740-397c" name="Lorica Thallax" publicationId="ca571888--pubN66500" page="240" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+      <characteristics>
+        <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Provides 4 Armour and FNP 6+ but may not make Sweeping Advances</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
