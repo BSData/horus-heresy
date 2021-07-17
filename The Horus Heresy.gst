@@ -1,48 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="142" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="143" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
-    <publication id="ca571888--pubN66489" name="HH:MT"/>
+    <publication id="ca571888--pubN106502" name="HH: Core Rule Book"/>
     <publication id="ca571888--pubN66500" name="HH1: Betrayal"/>
+    <publication id="cf03-f607-pubN86172" name="HH2: Massacre"/>
+    <publication id="ca571888--pubN85920" name="HH3: Extermination"/>
+    <publication id="ca571888--pubN84158" name="HH4: Conquest"/>
+    <publication id="ca571888--pubN68042" name="HH5: Tempest"/>
+    <publication id="ca571888--pubN89821" name="HH6: Retribution"/>
+    <publication id="ca571888--pubN92115" name="HH7: Infeno"/>
+    <publication id="ca571888--pubN103311" name="HH8: Malevolence"/>
+    <publication id="690c-3e82-3080-6bc0" name="HH9: Crusade"/>
+    <publication id="ca571888--pubN80998" name="HH: AoDAL"/>
+    <publication id="ca571888--pubN113187" name="LA:AoDL"/>
     <publication id="ca571888--pubN66580" name="HH: MT"/>
+    <publication id="ca571888--pubN66489" name="HH:MT"/>
     <publication id="ca571888--pubN67227" name="HH:LACAL"/>
     <publication id="ca571888--pubN67459" name="LA:ADL"/>
     <publication id="ca571888--pubN67536" name="LA:CAL"/>
     <publication id="ca571888--pubN67636" name="Forgeworld.co.uk - Downloads"/>
-    <publication id="ca571888--pubN68042" name="HH5: Tempest"/>
     <publication id="ca571888--pubN69050" name="HH:MTAL"/>
-    <publication id="ca571888--pubN73893" name="Planetary Onslaught"/>
     <publication id="ca571888--pubN73904" name="Warhammer 40k rulebook"/>
+    <publication id="ca571888--pubN73893" name="Planetary Onslaught"/>
     <publication id="ca571888--pubN74520" name="Stronghold Assault"/>
+    <publication id="ca571888--pubN108209" name="Death from the Skies"/>
     <publication id="ca571888--pubN80309" name="Datasheet: Munitorium Armoured Container Cache"/>
-    <publication id="ca571888--pubN80998" name="HH: AoDAL"/>
-    <publication id="ca571888--pubN82424" name="HH:AODAL"/>
-    <publication id="ca571888--pubN82437" name="AODAL"/>
-    <publication id="ca571888--pubN84158" name="HH4: Conquest"/>
     <publication id="ca571888--pubN84656" name="FAQ"/>
-    <publication id="ca571888--pubN85920" name="HH3: Extermination"/>
-    <publication id="ca571888--pubN87368" name="C:IK"/>
-    <publication id="ca571888--pubN89821" name="HH6: Retribution"/>
-    <publication id="ca571888--pubN91142" name="CI:AL"/>
-    <publication id="ca571888--pubN92115" name="HH7: Infeno"/>
-    <publication id="ca571888--pubN94574" name="HH-Questoris-Knight-Dominus Download"/>
+    <publication id="ca571888--pubN107368" name="FAQ 2018"/>
     <publication id="ca571888--pubN95649" name="Playtest Rules Errata V1.0 Warhammer Community Download"/>
-    <publication id="ca571888--pubN95721" name="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Horus_Heresy/HH-Legio-Titanicus-Warbringer-Nemesis-Titan.pdf?fbclid=IwAR3LyUx_Bhf7-hxpR0uCkbOmVMu5pzHpAqjgwmb_4SStSrjeTILm49XO__c"/>
-    <publication id="ca571888--pubN99753" name="LA:AODAL"/>
-    <publication id="ca571888--pubN103311" name="HH8: Malevolence"/>
+    <publication id="ca571888--pubN87368" name="C:IK"/>
+    <publication id="ca571888--pubN91142" name="CI:AL"/>
+    <publication id="ca571888--pubN94574" name="HH-Questoris-Knight-Dominus Download"/>
+    <publication id="ca571888--pubN95721" name="HH-Legio-Titanicus-Warbringer-Nemesis-Titan" publisherUrl="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Horus_Heresy/HH-Legio-Titanicus-Warbringer-Nemesis-Titan.pdf?fbclid=IwAR3LyUx_Bhf7-hxpR0uCkbOmVMu5pzHpAqjgwmb_4SStSrjeTILm49XO__c"/>
     <publication id="ca571888--pubN105292" name="BRB 7th"/>
     <publication id="ca571888--pubN106389" name="HH:GEAFAQV1.0"/>
-    <publication id="ca571888--pubN106502" name="HH: Core Rule Book"/>
     <publication id="ca571888--pubN106650" name="White Dwarf"/>
     <publication id="ca571888--pubN106705" name="Forgeworld.co.uk"/>
-    <publication id="ca571888--pubN106780" name="LA:AoDLA"/>
     <publication id="ca571888--pubN107025" name="Web"/>
-    <publication id="ca571888--pubN107062" name="AL:AoDAL"/>
-    <publication id="ca571888--pubN107368" name="FAQ 2018"/>
-    <publication id="ca571888--pubN108209" name="Death from the Skies"/>
-    <publication id="ca571888--pubN112761" name="LA:AoDAL"/>
-    <publication id="ca571888--pubN113187" name="LA:AoDL"/>
-    <publication id="690c-3e82-3080-6bc0" name="HH9: Crusade"/>
+    <publication id="ece2-a265-6237-7efa" name="HH Mechanicum Knight Moirax Talon Download"/>
+    <publication id="cf03-f607-pubN70802" name="HH-Questoris-Knight-Armiger-Talon Download"/>
+    <publication id="8700-b3bb-pubN77868" name="Corbax_Utterblight.pdf" publisherUrl="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Warhammer_40000/Corbax_Utterblight.pdf"/>
   </publications>
   <costTypes>
     <costType id="points" name="pts" defaultCostLimit="0.0" hidden="false"/>
@@ -204,7 +202,7 @@
     <categoryEntry id="6077-281f-c55d-9bf0" name="Allied Detachment" hidden="false"/>
     <categoryEntry id="9335-93c1-6af7-feb0" name="ZM (Unusable)" hidden="false"/>
     <categoryEntry id="baa4-80e4-c41d-6875" name="Warlord Traits" hidden="false"/>
-    <categoryEntry id="974d-7438-c940-914b" name="Jump Units" hidden="false">
+    <categoryEntry id="974d-7438-c940-914b" name="Jump Units:" hidden="false">
       <infoLinks>
         <infoLink id="c2d9-f5c8-4cd9-d853" name="Bulky" hidden="false" targetId="38d5-b6eb-bda8-2497" type="rule"/>
         <infoLink id="0436-90de-7b75-9c53" name="Deep Strike" hidden="false" targetId="d219-2314-4834-c054" type="rule"/>
@@ -215,6 +213,264 @@
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8a9-b4e7-9518-491c" type="max"/>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fac7-0a52-aa75-4482" type="min"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="a91b-7f8f-d085-e564" name="HQ:" hidden="false"/>
+    <categoryEntry id="7757-4995-3312-d330" name="Elites:" hidden="false"/>
+    <categoryEntry id="220b-7c51-58b3-6ac0" name="Troops:" hidden="false"/>
+    <categoryEntry id="85b6-80c2-d782-96bd" name="Fast Attack:" hidden="false"/>
+    <categoryEntry id="9704-4a93-21b2-be00" name="Heavy Support:" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="072e-ce6b-48cb-776a" type="min"/>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c950-62fd-b61c-bbb5" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="4139-f611-b727-90ef" name="Fortification:" hidden="false"/>
+    <categoryEntry id="3e18-4c14-6f98-44ed" name="Compulsory HQ:" hidden="false">
+      <infoLinks>
+        <infoLink id="bb91-2a20-4411-10ef" name="Compulsory" hidden="false" targetId="adbd-7129-14fe-19bc" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="0615-bc0a-fe41-6e0f" name="Dedicated Transport:" hidden="false"/>
+    <categoryEntry id="cef1-24f3-c9c2-81cc" name="Flyer:" hidden="false"/>
+    <categoryEntry id="d686-9020-9e0e-7902" name="Beasts:" publicationId="ca571888--pubN106502" page="67" hidden="false">
+      <infoLinks>
+        <infoLink id="24a0-4218-569d-e74d" name="Fleet" hidden="false" targetId="69e5-fc02-1f9d-63c2" type="rule"/>
+        <infoLink id="3c25-63dc-4810-f56c" name="Beasts" hidden="false" targetId="b53a-eba8-e3f8-4ae8" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="87ff-586c-3971-be96" name="Bike:" publicationId="ca571888--pubN106502" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31e7-63d2-f9ba-cf48" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="59c2-f43f-eb47-404b" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule"/>
+        <infoLink id="1cba-a258-6d5e-2513" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule"/>
+        <infoLink id="46a5-9ab5-07f4-0e01" name="Jink" hidden="false" targetId="d3e5-b43d-a89c-3bd8" type="rule"/>
+        <infoLink id="4f16-2e66-2c20-d6fd" name="Very Bulky" hidden="false" targetId="abc9-8566-bb61-4b7c" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="daf5-4478-ddda-20e1" name="Cavalry:" publicationId="ca571888--pubN106502" page="67" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a376-e922-d990-f414" type="min"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="d3d5-4481-4637-974b" name="Fleet" hidden="false" targetId="69e5-fc02-1f9d-63c2" type="rule"/>
+        <infoLink id="41ef-0e3c-e293-94f2" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule"/>
+        <infoLink id="597b-9b52-cc01-b554" name="Cavalry" hidden="false" targetId="d956-6030-d01f-5f3a" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="2ae4-5bf5-2a8e-c858" name="Compulsory Elite:" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51e6-6734-899b-1141" type="min"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="fa06-6ecb-1939-293f" name="Compulsory" hidden="false" targetId="adbd-7129-14fe-19bc" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="2ff1-c144-57a5-03dc" name="Compulsory Troops:" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4521-df7e-be88-2419" type="min"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="fe52-5d07-61db-8335" name="Compulsory" hidden="false" targetId="adbd-7129-14fe-19bc" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="29f7-f993-6e8c-0a5d" name="Deep Strike:" hidden="false">
+      <infoLinks>
+        <infoLink id="458d-e3e1-e656-3914" name="Deep Strike" hidden="false" targetId="d219-2314-4834-c054" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="721c-86d6-b27f-1b8b" name="Flying Monstrous Creature:" hidden="false">
+      <infoLinks>
+        <infoLink id="16c5-87f0-f033-b398" name="Fear" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule"/>
+        <infoLink id="e179-a834-f54d-0360" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule"/>
+        <infoLink id="e799-a52a-0144-5568" name="Move Through Cover" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule"/>
+        <infoLink id="0508-562e-9d49-f61c" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule"/>
+        <infoLink id="44d3-5807-cec5-2bfa" name="Smash" hidden="false" targetId="4284-18a1-9844-a0bd" type="rule"/>
+        <infoLink id="ce60-40c1-355f-19e5" name="Vector Strike" hidden="false" targetId="5341-7110-d8d4-171a" type="rule"/>
+        <infoLink id="2d26-68d5-b146-87dc" name="Jink" hidden="false" targetId="d3e5-b43d-a89c-3bd8" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="b0a5-3ca7-229e-9390" name="Gargantuan Creature." publicationId="ca571888--pubN106502" page="68" hidden="false">
+      <infoLinks>
+        <infoLink id="cbea-6e74-0f1e-2a9e" name="Fear" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule"/>
+        <infoLink id="906a-75cc-8a50-357f" name="Fearless" hidden="false" targetId="dc70-e199-5525-e78c" type="rule"/>
+        <infoLink id="bcfa-81fc-1e98-3302" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule"/>
+        <infoLink id="1033-5975-dccf-0285" name="Move Through Cover" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule"/>
+        <infoLink id="22db-cd06-4ca1-f572" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule"/>
+        <infoLink id="9c52-2b01-1478-50de" name="Smash" hidden="false" targetId="4284-18a1-9844-a0bd" type="rule"/>
+        <infoLink id="05c7-0087-a412-ed00" name="Strikedown" hidden="false" targetId="dd83-7fb9-6f58-0c96" type="rule"/>
+        <infoLink id="5a55-fe4a-7b6f-fbb1" name="Feel No Pain" hidden="false" targetId="9bdd-5ec7-8dd6-63c0" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="72c8-d46a-7934-1cf6" name="Independent Character:" hidden="false">
+      <infoLinks>
+        <infoLink id="719b-6476-e388-71d6" name="Independent Character" hidden="false" targetId="3ad4-1c37-d60b-1a4e" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="1b66-02c5-8ff6-bb14" name="Jetbike:" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bec-a1f7-e004-e909" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="3ef0-6ddb-2edd-0710" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule"/>
+        <infoLink id="68db-2b4a-19cd-56a3" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule"/>
+        <infoLink id="e261-a5cb-134f-845f" name="Jink" hidden="false" targetId="d3e5-b43d-a89c-3bd8" type="rule"/>
+        <infoLink id="6b27-7e20-f285-aae0" name="Very Bulky" hidden="false" targetId="abc9-8566-bb61-4b7c" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="1868-78c0-5bc3-9577" name="Jetpack Infantry:" hidden="false">
+      <infoLinks>
+        <infoLink id="84c0-1768-6d03-1a7d" name="Deep Strike" hidden="false" targetId="d219-2314-4834-c054" type="rule"/>
+        <infoLink id="3cf1-56d3-3807-fc5a" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule"/>
+        <infoLink id="e03c-e818-d583-825f" name="Bulky" hidden="false" targetId="38d5-b6eb-bda8-2497" type="rule"/>
+        <infoLink id="a112-d56a-0cd9-850b" name="Trust Move" hidden="false" targetId="97c4-1c1c-3727-757f" type="rule"/>
+        <infoLink id="0d6c-ffe2-c398-92ea" name="Skybourne" hidden="false" targetId="5c8a-63f9-5cdc-b17b" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="76fd-6b81-bded-bb25" name="Monstrous Creature:" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="16a4-16f6-f39e-fa93" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="fa00-1ca1-5c74-50f7" name="Fear" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule"/>
+        <infoLink id="0a29-0882-8182-2e99" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule"/>
+        <infoLink id="80de-cb65-910a-f15c" name="Move Through Cover" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule"/>
+        <infoLink id="bb22-6319-d8e1-a982" name="Relentless" hidden="false" targetId="3c7d-a1fa-c68b-caad" type="rule"/>
+        <infoLink id="e660-19fb-c9ef-1c26" name="Smash" hidden="false" targetId="4284-18a1-9844-a0bd" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="bd44-51c4-55ec-9a43" name="Skimmer:" hidden="false"/>
+    <categoryEntry id="b485-d6f7-226e-90cb" name="Super-Heavy Vehicle:" publicationId="ca571888--pubN106502" page="90" hidden="false">
+      <rules>
+        <rule id="3349-2f16-b0b9-dfc7" name="Thunderblitz" publicationId="ca571888--pubN106502" page="91" hidden="false">
+          <description>Super-heavy Vehicles may Tank Shock or Ram. When they do so, roll once on the Thunderblitz table immediatley before taking the morale check for the unit being Tank Shocked or immediatley before rolling for armour penetration when preforming a Ram.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="efe1-ad00-eb96-dd28" name="Fear" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule"/>
+        <infoLink id="4d4d-1007-33ad-22dd" name="Move Through Cover" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule"/>
+        <infoLink id="ba04-4c2d-d9c3-c08f" name="Invincible Behemoth" hidden="false" targetId="b5c1-4b08-5ddc-1504" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="01a7-d87f-4d21-5ed2" name="The Warlord:" publicationId="ca571888--pubN106502" page="138" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a75-0029-fd9c-c449" type="min"/>
+      </constraints>
+      <rules>
+        <rule id="430e-8c2b-1d89-3569" name="The Warlord" publicationId="ca571888--pubN106502" page="138" hidden="false">
+          <description>When choosing your army, you must nominate one model to be your Warlord. Unless specified otherwise – this must be a character model. If you do not have any character models in your army, then select any other model in your army to be the Warlord. The model you choose as your Warlord must be from the Primary Detachment of the Force Organisation chart in use, unless another rule specifically states otherwise.</description>
+        </rule>
+        <rule id="9fe9-f7c3-437a-2f30" name="Warlord Traits" publicationId="ca571888--pubN106502" page="138" hidden="false">
+          <description>Your Warlord is a potent force upon the battlefield. Not only are they a mighty hero, with all the skills and renown you might expect from the leader of a great army, but over the course of a long career they will also have picked up one or more specialised abilities, which we refer to as ‘Traits’.
+If your Warlord is a character model, then they have one Warlord Trait. Note that if you have had to pick a non-character model as your Warlord, then they do not receive a Warlord Trait, but count as a Warlord for all other rules purposes.
+To determine which trait your Warlord has, you need to choose which Warlord Traits table to roll on. You must roll on this table immediately before you deploy the first unit in your army (see page 137). Sometimes, other publications present alternative Warlord Traits tables that you can choose to roll on instead.</description>
+        </rule>
+        <rule id="abb5-1673-1a04-1e24" name="Warlord Traits and Unique Units" publicationId="ca571888--pubN106502" page="138" hidden="false">
+          <description>Many Unique Independent Characters are listed as having a specific Warlord Trait in their Army List entry. If such a unit is your Warlord, do not roll on a Warlord Trait table – instead, that unit automatically has the listed Warlord Trait. Note that the unit will only gain that Warlord Trait if it is your Warlord. If another model is selected as your Warlord, then the unique unit will not have any Warlord Trait, even if there is a trait listed in its entry.</description>
+        </rule>
+        <rule id="5b00-bf3b-b24d-c76e" name="Death of the Warlord" publicationId="ca571888--pubN106502" page="138" hidden="false">
+          <description>If your Warlord is removed as a casualty during your game, any abilities or special rules granted by their Warlord Trait are immediately lost. If the Warlord Trait in question conferred a special rule that allows an unusual method of deployment from Reserves (such as conferring the Outflank ability on certain units), that special rule is immediately lost and the affected units must instead deploy from Reserves in the normal fashion.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry id="ccbb-6240-fe49-8f91" name="Walker:" hidden="false"/>
+    <categoryEntry id="532a-a2ad-1671-6202" name="Artillery:" publicationId="ca571888--pubN106502" page="65" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="87cc-b6c3-cd56-175e" type="max"/>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4125-f1c6-1b44-71fd" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="1243-5118-d74e-159b" name="Artillery" publicationId="ca571888--pubN106502" page="65" hidden="false">
+          <description>ARTILLERY
+
+Some weapons are so large and cumbersome that they are usually mounted on vehicles, but are sometimes utilised by artillery teams on foot, particularly if the battlefield’s terrain is not suitable for vehicles. These weapons are typically mounted on wheeled supports as they are too heavy to be carried across the battlefield.
+
+THE UNIT
+
+Artillery units comprise a number of crew models and the gun models themselves. These units can include several different types of models. The following is an example of a typical Artillery unit:
+
+WS BS S T W I A Ld Sv
+
+- - - 7 2 - - - 3+
+
+If all of the crew models are killed, the guns are immediately removed as well. Sometimes, the player has the choice of adding leaders or additional models to the crew of an Artillery unit. These models are part of the crew in all respects and can operate the guns as normal, even if they are otherwise slightly different from the rest of the crew. Independent Characters who join the unit, however, do not count as crew and cannot operate the guns.
+
+MOVEMENT PHASE
+
+Artillery units need at least one crewman per gun in order for the unit to move. If an Artillery unit does not have at least one crewman per gun, then it may not move.
+
+SHOOTING WITH ARTILLERY
+
+One crewman that is within 2&quot; of a gun in the Shooting phase can fire it. The crewmen firing the gun cannot fire any weapons they are carrying, while the other crew members (and any Independent Characters in the unit) are free to fire their side arms, provided the whole unit shoots at the same target. When firing the guns, there must be a line of sight to the target from both the gun model and the crewman firing it (unless they are firing Barrage weapons). Ranges are measured from the barrel on the gun model.
+
+SHOOTING AT ARTILLERY
+
+If shooting at an Artillery unit, the Toughness of the guns is always used whilst at least one gun remains. Any wounds caused are still allocated to the closest model first. If an Artillery unit chooses to Go to Ground, this does not increase the guns’ cover save – only the crew benefit.
+
+ASSAULT PHASE
+
+Artillery units cannot charge as long as they include any gun models. If an Artillery unit is charged, only the crew models can fire Overwatch. After Overwatch has been resolved, move the charging models into base contact with the crew and Artillery gun models as normal. No wounds can be allocated to the guns. All engaged enemies roll To Hit and To Wound against the crew, even if they are only engaged with the guns. Engaged crew models can fight back, but the Artillery guns cannot.
+
+MORALE AND FALL BACK MOVES
+
+For the purposes of Morale checks and other Leadership tests, and for combat resolution, always ignore the gun models. Because they need at least one crewman per gun in order to move, if an Artillery unit does not have one crewman per gun when it is forced to Fall Back, any gun models without crewmen are abandoned and immediately removed as casualties. The rest of the unit then Falls Back as normal. If an Artillery unit is forced to Fall Back from close combat and the enemy is free to make a Sweeping Advance, then the Artillery unit automatically loses the Initiative test and is caught and destroyed by the victor.
+
+ARTILLERY AND LOOK OUT, SIR
+
+A wound cannot be re-allocated onto a gun model from a successful Look Out, Sir roll (see page 94).</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry id="8ab2-4493-44a4-b282" name="Character:" hidden="false"/>
+    <categoryEntry id="9bb1-dc3e-d0a3-463f" name="Cybernetica Cortex:" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4fe-c710-350d-06f5" type="min"/>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6365-de3e-0d53-97ee" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="c956-93f2-cb4f-a95d" name="Drop Pod:" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b94-5299-71bb-0588" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="5adb-4a52-7ff5-8fbf" name="Immobile:" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c101-3e98-b4da-3e01" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="a2ba-16b0-8590-b017" name="Infantry:" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8722-f7a6-93da-19d0" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9fcc-09c5-1bbc-7b32" type="min"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="9ad6-ab42-bf1d-7229" name="Lorica Thallax:" hidden="false">
+      <infoLinks>
+        <infoLink id="356b-072c-e4ef-478e" name="Lorica Thallax" hidden="false" targetId="31b1-c957-c740-397c" type="profile"/>
+        <infoLink id="105c-3583-d267-5ca0" name="Feel No Pain (6+)" hidden="false" targetId="85da-2f19-3756-44de" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="5607-db23-333d-bac2" name="Sentry Gun:" hidden="false"/>
+    <categoryEntry id="0ce8-fc59-3828-b226" name="Tank:" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="33de-d916-7fee-c9ef" type="min"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="6193-f23d-d93c-2e99" name="Transport:" hidden="false">
+      <rules>
+        <rule id="13eb-5962-0020-b6ee" name="Unshakeable Nerve" publicationId="ca571888--pubN106502" page="77" hidden="false">
+          <description>Units embarked upon transports have the Fearless special rule while they are embarked.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry id="03d8-3acd-b7ca-5649" name="Vehicle:" hidden="false"/>
+    <categoryEntry id="3a7d-72fe-146e-fe7d" name="Vehicle (Unit):" hidden="false"/>
+    <categoryEntry id="8d71-4445-82e3-3047" name="Tank (Unit):" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3550-c809-e0e3-cc43" type="min"/>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6a67-bc53-089a-3760" type="max"/>
       </constraints>
     </categoryEntry>
   </categoryEntries>
@@ -2997,7 +3253,7 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e40b-468f-f1d7-d05d" name="Imperial Castelum Stronghold" publicationId="ca571888--pubN82424" page="94" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="e40b-468f-f1d7-d05d" name="Imperial Castelum Stronghold" publicationId="ca571888--pubN80998" page="94" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set-primary" field="category" value="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f">
           <conditions>
@@ -3006,13 +3262,13 @@ In the event of enemy models embarking inside the Primus Redoubt, the Battle Cre
         </modifier>
       </modifiers>
       <rules>
-        <rule id="d307-b16a-5b89-9612" name="Shielded Gate Barriers" publicationId="ca571888--pubN82437" page="75" hidden="false">
+        <rule id="d307-b16a-5b89-9612" name="Shielded Gate Barriers" publicationId="ca571888--pubN80998" page="75" hidden="false">
           <description>The main entrances of the Castellum Stronghold are covered not by plascrete and adamantium, but crackling barriers of energy that can be raised or lowered at the will of the fortification’s controller.
 At the start of each of the controlling player’s turns, they may declare whether the gate barriers (see the diagram on page 97) are each raised or lowered – consider them to be raised by default at the start of the game.
 Raised barriers are treated as impassable terrain to the height of the adjoining walls, but do not block line of sight. Wounds inflicted by shooting attacks that pass through a raised shield gate barrier benefit from a 3+ invulnerable save.
 Should the Castellum’s Tacticus Bunker be destroyed, the barriers collapse and cannot be raised again.</description>
         </rule>
-        <rule id="38e0-8475-a1bd-49fd" name="Defensive Structure" publicationId="ca571888--pubN82437" page="95" hidden="false">
+        <rule id="38e0-8475-a1bd-49fd" name="Defensive Structure" publicationId="ca571888--pubN80998" page="95" hidden="false">
           <description>The Castellum Stronghold is a paragon of the military architect’s craft, utilising technologies and materials beyond that of mute stone and steel.
 The following rules and conditions apply:
 The Battlements of the Castellum Stronghold confer a 4+ cover save for units on top of them.
@@ -8416,7 +8672,7 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
                 <characteristic name="Type" typeId="5479706523232344415441232323">Tank (Heavy)</characteristic>
               </characteristics>
             </profile>
-            <profile id="fae1-c2b5-73e3-d258" name="Rear facing Flare Shield" publicationId="ca571888--pubN82424" page="89" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+            <profile id="fae1-c2b5-73e3-d258" name="Rear facing Flare Shield" publicationId="ca571888--pubN80998" page="89" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
               <characteristics>
                 <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A flare shield operates against shooting attacks that strike the vehicle&apos;s front arc.  It reduces the strength of attacks by weapons with the Templae or Blast type by -2, and other shooting attacks by -1.  A flare shield has no effect on attacks from close combat or with the Destroyer rule.  Protects rear armour facing rather than front.  </characteristic>
               </characteristics>
@@ -8707,7 +8963,7 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="42ac-c897-9b3c-41cd" type="max"/>
               </constraints>
               <profiles>
-                <profile id="14cc-d161-7843-7ae0" name="Illum Flares" publicationId="ca571888--pubN82424" page="90" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+                <profile id="14cc-d161-7843-7ae0" name="Illum Flares" publicationId="ca571888--pubN80998" page="90" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
                   <characteristics>
                     <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">May drop a single flare per turn.  Fired just as bombs - flare is placed after scattering.  Leave in place until the end of the turn.  Any unit targeting an enemy within 12&quot; of the flare gains Night Vision for the shooting phase.  Split fire does not apply.  </characteristic>
                   </characteristics>
@@ -8892,7 +9148,7 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="14c4-1de7-128d-58c1" type="max"/>
               </constraints>
               <profiles>
-                <profile id="24a8-3277-357e-68c3" name="Illum Flares" publicationId="ca571888--pubN82424" page="90" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+                <profile id="24a8-3277-357e-68c3" name="Illum Flares" publicationId="ca571888--pubN80998" page="90" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
                   <characteristics>
                     <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">May drop a single flare per turn.  Fired just as bombs - flare is placed after scattering.  Leave in place until the end of the turn.  Any unit targeting an enemy within 12&quot; of the flare gains Night Vision for the shooting phase.  Split fire does not apply.  </characteristic>
                   </characteristics>
@@ -9010,7 +9266,7 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="90d9-4365-5f1c-5f91" name="Battle Servitor Control" publicationId="ca571888--pubN82424" page="43" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="90d9-4365-5f1c-5f91" name="Battle Servitor Control" publicationId="ca571888--pubN80998" page="43" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f9bd-d1a7-2d64-d64d" type="max"/>
               </constraints>
@@ -9022,12 +9278,12 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
                 <cost name="pts" typeId="points" value="15.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8fe6-84ff-694a-81ab" name="Ground-tracking Auguries" publicationId="ca571888--pubN82424" page="43" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="8fe6-84ff-694a-81ab" name="Ground-tracking Auguries" publicationId="ca571888--pubN80998" page="43" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9c6a-050a-b10b-9e5f" type="max"/>
               </constraints>
               <profiles>
-                <profile id="99b2-dc77-6cbf-af8b" name="Ground Tracking Auguries" publicationId="ca571888--pubN82424" page="43" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+                <profile id="99b2-dc77-6cbf-af8b" name="Ground Tracking Auguries" publicationId="ca571888--pubN80998" page="43" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
                   <characteristics>
                     <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Provides Strafing Run special rule.  </characteristic>
                   </characteristics>
@@ -11181,9 +11437,9 @@ Command Benefits:
             <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="0267-083e-86de-3c0f" name="Breaching Charge" publicationId="ca571888--pubN99753" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="0267-083e-86de-3c0f" name="Breaching Charge" publicationId="ca571888--pubN80998" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
-            <profile id="e110-b880-2490-0e12" name="Breacher Charge" publicationId="ca571888--pubN82424" page="86" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+            <profile id="e110-b880-2490-0e12" name="Breacher Charge" publicationId="ca571888--pubN80998" page="86" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="52616e676523232344415441232323">Special</characteristic>
                 <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
@@ -11274,7 +11530,7 @@ Command Benefits:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ceed-2412-dfeb-bceb" type="min"/>
           </constraints>
           <profiles>
-            <profile id="0680-4dd1-54b3-1ed8" name="Power Armour" publicationId="ca571888--pubN99753" page="133" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+            <profile id="0680-4dd1-54b3-1ed8" name="Power Armour" publicationId="ca571888--pubN80998" page="133" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
               <characteristics>
                 <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Power armour provides a 3+ Armour save.</characteristic>
               </characteristics>
@@ -13268,7 +13524,7 @@ D6 - Result
     <rule id="4af6-46f8-9c3e-cb33" name="Heliothermic Detonation" publicationId="ca571888--pubN106705" hidden="false">
       <description>If any target suffers one or more unsaved wounds from this weapon and is not slain, they must take an immediate Toughness test. If this test is failed, they suffer Instant Death. If a vehicle suffers a penetrating hit from this weapon, add +1 to the result rolled on the Vehicle Damage table.</description>
     </rule>
-    <rule id="3bc1-64f3-ed64-6959" name="Rapid Tracking" publicationId="ca571888--pubN99753" page="127" hidden="false">
+    <rule id="3bc1-64f3-ed64-6959" name="Rapid Tracking" publicationId="ca571888--pubN80998" page="127" hidden="false">
       <description>Targets may not take Jink saves against damage from this weapon.</description>
     </rule>
     <rule id="45cf-653a-4ff6-f22d" name="Assault Vehicle" publicationId="ca571888--pubN106502" page="157" hidden="false">
@@ -13328,7 +13584,7 @@ Cover save bonuses from the Shrouded and Stealth special rules are cumulative (t
     <rule id="c0a6-5a38-2ea5-e740" name="Shock Pulse" publicationId="ca571888--pubN106502" page="171" hidden="false">
       <description>Any vehicle, including super-heavies, that suffers a penetrating hit may only fire snap shots on the following game turn.</description>
     </rule>
-    <rule id="1b17-c243-6518-4f8a" name="Dangerous Reactor Core" publicationId="ca571888--pubN107062" page="75" hidden="false">
+    <rule id="1b17-c243-6518-4f8a" name="Dangerous Reactor Core" publicationId="ca571888--pubN80998" page="75" hidden="false">
       <description>If enemy inflicts a Penetrating hit against the Sicarian Venator, they may re-roll a result of a 1 on the Vehicle Damage table.
 Explodes results add D3&quot; to radius.</description>
     </rule>
@@ -13747,10 +14003,10 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
     <rule id="6f38-4691-2eda-8e1b" name="Psy-Lash" publicationId="ca571888--pubN103311" page="301" hidden="false">
       <description>When attacking a unit with the Daemon, Psyker, Brotherhood of Psykers/Sorcerers, Psychic Pilot special rule then one randomlyed selected model in the unit with that special rule suffers Perils of the Warp in addition to any other damage.</description>
     </rule>
-    <rule id="7439f6fd-4c50-f88a-eb41-81d9b9c9eed8" name="Hardened Armour" publicationId="ca571888--pubN82424" page="32" hidden="false">
+    <rule id="7439f6fd-4c50-f88a-eb41-81d9b9c9eed8" name="Hardened Armour" publicationId="ca571888--pubN80998" page="32" hidden="false">
       <description>Hardened Armour counts as being Void Hardened (Cold Void mission special rules from Betrayal)..  Failed armour saves against template and blast weapons may be re-rolled.  Reduces distance rolled for charges, sweeping advances, and run moves by 1&quot;</description>
     </rule>
-    <rule id="3d78-f901-8afc-00ff" name="Suspensor Web" publicationId="ca571888--pubN82424" page="133" hidden="false">
+    <rule id="3d78-f901-8afc-00ff" name="Suspensor Web" publicationId="ca571888--pubN80998" page="133" hidden="false">
       <description>A heavy weapon with a suspensor web effectively allows the firer to treat the weapon as having the type Assault rather than Heavy (meaning that they can move and fire at full WS, etc) when firing in the Shooting phase at targets at up to half the weapon’s usual maximum range. This has no other effect, such as on Snap Shots when charged, etc.</description>
     </rule>
     <rule id="11bec7a8-6060-53c9-572c-0df68bf9fa78" name="Explorer Adaptation" publicationId="ca571888--pubN84158" page="252" hidden="false">
@@ -13831,6 +14087,9 @@ Cavalry have the Fleet and Hammer of Wrath special rules.</description>
       <description>Shooting: When a unit armed with defensive grenades makes a shooting attack, one model can choose to throw a grenade, rather than using another shooting weapon.
 
 Assualt: Models charging a unit that includes any models equipped with defensive grenades do not gain bonus Attacks from charging (see page 51). However, if the charged unit was already locked in combat from a previous turn, or has Gone to Ground, these grenades have no effect and the attackers gain bonus Attacks as normal</description>
+    </rule>
+    <rule id="adbd-7129-14fe-19bc" name="Compulsory" page="132" hidden="false">
+      <description>One box on a Force Organisation chart allows you to make one selection from that part of your army list. Dark boxes indicate compulsory selections, which must be included as part of the army, while the lighter boxes indicate optional choices, which are only included as part of the army if the player in question chooses to do so. If constructing an army using the Crusade Force Organisation chart, this would mean that an army would be required to take at least one HQ choice and two Troops choices. These compulsory choices are intended to ensure that the core of each army is illustrative of the force represented by the Army List in use, and that all armies are capable of properly participating in the varied missions available to players in the Age of Darkness.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -14281,7 +14540,7 @@ Assualt: Models charging a unit that includes any models equipped with defensive
         <characteristic name="Type" typeId="5479706523232344415441232323">Assault 2, Deflagrate</characteristic>
       </characteristics>
     </profile>
-    <profile id="4b6b-08cb-a956-0eb3" name="Artificer Armour" publicationId="ca571888--pubN99753" page="131" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+    <profile id="4b6b-08cb-a956-0eb3" name="Artificer Armour" publicationId="ca571888--pubN80998" page="131" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Artificer Armour confers a 2+ Armour save.  </characteristic>
       </characteristics>
@@ -14357,12 +14616,12 @@ Assualt: Models charging a unit that includes any models equipped with defensive
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee</characteristic>
       </characteristics>
     </profile>
-    <profile id="2a0e-e1f0-5ea0-5799" name="Nuncio-vox" publicationId="ca571888--pubN99753" page="133" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+    <profile id="2a0e-e1f0-5ea0-5799" name="Nuncio-vox" publicationId="ca571888--pubN80998" page="133" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">If one of the controlling player’s units wishes to arrive on the battlefield via Deep Strike and chooses to do so within 6&quot; of a unit equipped with a nuncio-vox, then it will not scatter. When barrage weapons are being used by the controlling player, line of sight may be drawn from any model in their force equipped with a nuncio-vox as well as the firing model itself (range is still drawn from the firing model, etc). Note that the nuncio-vox model must already be on the table at the start of the turn for it to be used (and cannot be used from inside a vehicle).  </characteristic>
       </characteristics>
     </profile>
-    <profile id="d187-89fe-0b05-808e" name="Legion Vexilla" publicationId="ca571888--pubN99753" page="132" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+    <profile id="d187-89fe-0b05-808e" name="Legion Vexilla" publicationId="ca571888--pubN80998" page="132" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A unit with a Legion Vexilla may re-roll failed Morale checks.</characteristic>
       </characteristics>
@@ -14422,7 +14681,7 @@ Assualt: Models charging a unit that includes any models equipped with defensive
         <characteristic name="Type" typeId="5479706523232344415441232323">Armourbane, Unwieldy</characteristic>
       </characteristics>
     </profile>
-    <profile id="16b1-5d9f-cc76-f19d" name="Power Armour" publicationId="ca571888--pubN99753" page="133" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+    <profile id="16b1-5d9f-cc76-f19d" name="Power Armour" publicationId="ca571888--pubN80998" page="133" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Power Armour confers a 3+ Armour save.  </characteristic>
       </characteristics>
@@ -14448,7 +14707,7 @@ Assualt: Models charging a unit that includes any models equipped with defensive
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Confers Jump Unit rules.  </characteristic>
       </characteristics>
     </profile>
-    <profile id="d978-1455-09f8-544f" name="Boarding Shield" publicationId="ca571888--pubN99753" page="131" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+    <profile id="d978-1455-09f8-544f" name="Boarding Shield" publicationId="ca571888--pubN80998" page="131" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Combat shields and boarding shields confer a 6+ invulnerable save, increasing to 5+ in close combat. A model equipped with a boarding shield also counts as being equipped with defensive grenades and cannot claim the extra attack for being armed with an additional close combat weapon.</characteristic>
       </characteristics>
@@ -14469,7 +14728,7 @@ Assualt: Models charging a unit that includes any models equipped with defensive
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Blast, Concussive, Graviton Pulse*, Haywire</characteristic>
       </characteristics>
     </profile>
-    <profile id="c1d3-0c64-3702-f5f9" name="Lascutter" publicationId="ca571888--pubN99753" page="135" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="c1d3-0c64-3702-f5f9" name="Lascutter" publicationId="ca571888--pubN80998" page="135" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
@@ -14477,7 +14736,7 @@ Assualt: Models charging a unit that includes any models equipped with defensive
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Unwieldly, Cumbersome</characteristic>
       </characteristics>
     </profile>
-    <profile id="7b47-c268-cdaf-fa1e" name="Narthecium" publicationId="ca571888--pubN99753" page="132" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+    <profile id="7b47-c268-cdaf-fa1e" name="Narthecium" publicationId="ca571888--pubN80998" page="132" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">While the Apothecary who carries this specialised medical and alchemical gear is still alive, all Space Marine models in their squad and any Space Marine Independent Characters that have joined it have the Feel No Pain universal special rule.  </characteristic>
       </characteristics>
@@ -14494,7 +14753,7 @@ Each Bike in a unit can fire with one weapon for each rider on the Bike. Thus a 
 Jetbikes can move over all other models and terrain freely. However, if a moving Jetbike begins or ends its move in difficult terrain, it must take a Dangerous Terrain test. Jetbikes cannot end their move over other models or impassable terrain, except that they can end their move on top of impassable terrain if it is actually possible to place the models on top of it. If they do so, they treat the impassable terrain as dangerous terrain.</characteristic>
       </characteristics>
     </profile>
-    <profile id="376f-adc9-b9bf-7fc9" name="Augury Scanner" publicationId="ca571888--pubN99753" page="131" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+    <profile id="376f-adc9-b9bf-7fc9" name="Augury Scanner" publicationId="ca571888--pubN80998" page="131" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Models cannot be deployed using the Infiltrate special rule within 18&quot; of a model with an augury scanner, regardless of line of sight. At the end of the enemy Movement phase, if a friendly unit contains at least one model equipped with an augury scanner, all of the ranged weapons in that unit can be fired against any one enemy unit that has arrived from reserve within 18&quot; and line of sight as if it were the controlling player’s Shooting phase. If this rule is used, these weapons cannot be fired again until the end of the controlling player’s next turn, but the firing models may shoot different weapons if they have any.</characteristic>
       </characteristics>
@@ -14528,12 +14787,12 @@ Jetbikes can move over all other models and terrain freely. However, if a moving
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Vehicles equipped with extra armour count Crew Stunned results from the Vehicle Damage table as Crew Shaken results instead.</characteristic>
       </characteristics>
     </profile>
-    <profile id="cb4a-644f-bd8d-7d97" name="Flare Shield" publicationId="ca571888--pubN99753" page="132" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+    <profile id="cb4a-644f-bd8d-7d97" name="Flare Shield" publicationId="ca571888--pubN80998" page="132" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A flare shield operates against shooting attacks that strike the vehicle’s front arc. It reduces the strength of attacks by weapons with the Template or Blast type by -2, and other shooting attacks’ Strength by -1. A flare shield has no effect on close combat attacks or attacks inflicted with the Destroyer special rule.  </characteristic>
       </characteristics>
     </profile>
-    <profile id="1578-d22a-060c-4700" name="Machine Spirit" publicationId="ca571888--pubN99753" page="132" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+    <profile id="1578-d22a-060c-4700" name="Machine Spirit" publicationId="ca571888--pubN80998" page="132" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A vehicle equipped with a Machine Spirit gains the Power of the Machine Spirit special rule.</characteristic>
       </characteristics>
@@ -14570,7 +14829,7 @@ Jetbikes can move over all other models and terrain freely. However, if a moving
         <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1</characteristic>
       </characteristics>
     </profile>
-    <profile id="82da-c04f-09bf-302c" name="Predator Cannon" publicationId="ca571888--pubN112761" page="127" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="82da-c04f-09bf-302c" name="Predator Cannon" publicationId="ca571888--pubN80998" page="127" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
@@ -14586,7 +14845,7 @@ Jetbikes can move over all other models and terrain freely. However, if a moving
         <characteristic name="Type" typeId="5479706523232344415441232323">Primary Weapon 4, Apocalyptic Barrage, Plasma Wave</characteristic>
       </characteristics>
     </profile>
-    <profile id="2ffa-a441-e058-7780" name="Magna-Melta" publicationId="ca571888--pubN112761" page="126" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+    <profile id="2ffa-a441-e058-7780" name="Magna-Melta" publicationId="ca571888--pubN80998" page="126" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="52616e676523232344415441232323">18&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
@@ -14607,7 +14866,7 @@ Jetbikes can move over all other models and terrain freely. However, if a moving
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1</characteristic>
       </characteristics>
     </profile>
-    <profile id="c5c3-cf81-76c6-b0c0" name="Auxiliary Drive" publicationId="ca571888--pubN112761" page="131" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+    <profile id="c5c3-cf81-76c6-b0c0" name="Auxiliary Drive" publicationId="ca571888--pubN80998" page="131" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A vehicle with an auxiliary drive may repair Immobilised results it suffers on a D6 roll of 4+ at the start of the controlling player&apos;s Movement phase.</characteristic>
       </characteristics>
@@ -15601,7 +15860,7 @@ Jetbikes can move over all other models and terrain freely. However, if a moving
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 4, Deflagrate, Twin-Linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="e1d88320-50a5-edf3-0542-004b2f5c917e" name="Space Marine Legion Crew" publicationId="ca571888--pubN82424" page="65" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+    <profile id="e1d88320-50a5-edf3-0542-004b2f5c917e" name="Space Marine Legion Crew" publicationId="ca571888--pubN80998" page="65" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A tank with this upgrade increases its Ballistic Skill to 4</characteristic>
       </characteristics>
@@ -15644,7 +15903,7 @@ Jetbikes can move over all other models and terrain freely. However, if a moving
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 3, Twin-Linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="2e87b8ca-7cd1-78b9-2116-246015e7935e" name="Armoured Ceramite" publicationId="ca571888--pubN82424" page="88" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+    <profile id="2e87b8ca-7cd1-78b9-2116-246015e7935e" name="Armoured Ceramite" publicationId="ca571888--pubN80998" page="88" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A vehicle with this wargear is not subject to the additional D6 armour penetration caused by weapons with the Melta special rule.  </characteristic>
       </characteristics>
@@ -15655,6 +15914,11 @@ Jetbikes can move over all other models and terrain freely. However, if a moving
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
         <characteristic name="AP" typeId="415023232344415441232323">1</characteristic>
         <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance 1, Twin-linked</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="31b1-c957-c740-397c" name="Lorica Thallax" publicationId="ca571888--pubN66500" page="240" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+      <characteristics>
+        <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Provides 4 Armour and FNP 6+ but may not make Sweeping Advances</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
