@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="114" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="143" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="115" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="144" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="cf03-f607-pubN70802" name="HH-Questoris-Knight-Armiger-Talon Download"/>
     <publication id="ece2-a265-6237-7efa" name="HH Mechanicum Knight Moirax Talon Download"/>
@@ -3724,6 +3724,26 @@ Reduces transport capacity to 8.</description>
       <constraints>
         <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
+      <infoLinks>
+        <infoLink id="b35b-ba05-3433-1155" name="Tank Hunters" hidden="true" targetId="5d88-bcf6-e410-6e01" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="bcad-45c9-3b27-a7ca" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="04c2-088f-8391-d5fb" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="ba13-fbd3-b6d7-64b5" name="Wrecker" hidden="true" targetId="fe2f-3220-3fef-b177" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="bcad-45c9-3b27-a7ca" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="04c2-088f-8391-d5fb" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <selectionEntries>
         <selectionEntry id="bfe7-f070-15b7-6b31" name="Adept" publicationId="ca571888--pubN66580" page="34" hidden="false" collective="false" import="true" type="model">
           <constraints>
@@ -3832,64 +3852,22 @@ Reduces transport capacity to 8.</description>
                 <entryLink id="ca7e-939a-3b3e-9f46" name="Melta Bombs" hidden="false" collective="false" import="true" targetId="4c62-8983-4a1b-d1c6" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="357d-b90a-64c5-172f" name="Techno-Arcana" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="431d-f992-653c-cb3e" name="Enginseer" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="5e7c-0ad5-bb55-1457" name="Enginseer" publicationId="ca571888--pubN85920" page="219" hidden="false">
-                      <description>Adepts are equipped with Servo-arm. Servo-automata gain the
-                                                Servo-automata Support special rule.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="e16a-40db-b722-dc10" name="Lacyraemarta" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="8796-53dd-1fd6-a46e" name="Lacyraemarta" publicationId="ca571888--pubN85920" page="219" hidden="false">
-                      <description>Adepts gain Feel no Pain (5+) which they confer to
-                                                Servo-automata in the unit while alive. Friendly Adsecularis units
-                                                within 6&quot; of the unit gain +1 to their Feel no Pain while the Adept is
-                                                alive.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="4032-4e2d-46e5-660e" name="Reductor" page="0" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="10d0-7539-4797-3d2e" name="Reductor" publicationId="ca571888--pubN85920" page="219" hidden="false">
-                      <description>Adepts are equipped with Servo-arms. All models gain Tank
-                                                Hunters and Wrecker special rules.</description>
-                    </rule>
-                  </rules>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
             <selectionEntryGroup id="b215-824e-13f9-ef25" name="Exchange Servo-arm for:" hidden="false" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="bfe7-f070-15b7-6b31" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4032-4e2d-46e5-660e" type="equalTo"/>
+                    <condition field="selections" scope="bcad-45c9-3b27-a7ca" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5208-430d-523e-04fe" type="equalTo"/>
                   </conditions>
+                </modifier>
+                <modifier type="set" field="minSelections" value="1.0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="bcad-45c9-3b27-a7ca" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e56-7531-1bcd-9e6a" type="equalTo"/>
+                        <condition field="selections" scope="bcad-45c9-3b27-a7ca" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="04c2-088f-8391-d5fb" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -3898,6 +3876,13 @@ Reduces transport capacity to 8.</description>
               </constraints>
               <selectionEntries>
                 <selectionEntry id="12bc-e6e1-f46a-7fc1" name="Graviton Imploder" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="bcad-45c9-3b27-a7ca" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="04c2-088f-8391-d5fb" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
@@ -3910,6 +3895,13 @@ Reduces transport capacity to 8.</description>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="549e-d730-a418-47fc" name="Conversion Beamer" page="" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="bcad-45c9-3b27-a7ca" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="04c2-088f-8391-d5fb" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
                   </constraints>
@@ -3920,6 +3912,27 @@ Reduces transport capacity to 8.</description>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="25.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="abea-1a89-18c2-affc" name="Servo-arm" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="67c2-5591-861c-1e7e" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="bcad-45c9-3b27-a7ca" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e56-7531-1bcd-9e6a" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="67c2-5591-861c-1e7e" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="37e4-0234-c828-53ed" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="52f9-01c7-5acf-fb01" name="Servo Arm" hidden="false" targetId="c3a5-c40c-b493-5cf6" type="profile"/>
+                    <infoLink id="9936-6caf-6ed7-4b11" name="Unwieldy" hidden="false" targetId="5eea-958c-d623-c3c9" type="rule"/>
+                    <infoLink id="cb33-6165-7fd5-a3ed" name="Servo-arm" hidden="false" targetId="dd50-c987-f28a-1dca" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -3965,15 +3978,9 @@ Reduces transport capacity to 8.</description>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
             <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
           </constraints>
-          <rules>
-            <rule id="4593-5e33-d861-b039" name="Servo-automata Support" publicationId="ca571888--pubN85920" page="219" hidden="false">
-              <description>For each Servo-automata in the unit, an Enginseer gains +1 to Battlesmith
-                                rolls. A 1 will still fail.</description>
-            </rule>
-          </rules>
           <infoLinks>
             <infoLink id="79f8-0718-b233-477f" hidden="false" targetId="7f5dd15d-afce-fb1a-409b-07e41f41227e" type="rule"/>
-            <infoLink id="ac2d-1d31-91cd-bb12" hidden="false" targetId="9458b91c-55d7-ac17-21a3-4235e153b328" type="profile"/>
+            <infoLink id="ac2d-1d31-91cd-bb12" name="Servo-automata" hidden="false" targetId="9458b91c-55d7-ac17-21a3-4235e153b328" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="1c54-cb6a-de58-e42a" name="Close combat weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -4045,6 +4052,8 @@ Reduces transport capacity to 8.</description>
               </constraints>
               <infoLinks>
                 <infoLink id="5e88-d33d-e0ed-5702" name="Servo Arm" hidden="false" targetId="c3a5-c40c-b493-5cf6" type="profile"/>
+                <infoLink id="310d-3be7-065b-fdcc" name="Unwieldy" hidden="false" targetId="5eea-958c-d623-c3c9" type="rule"/>
+                <infoLink id="655d-e8a3-95c3-8fcd" name="Servo-arm" hidden="false" targetId="dd50-c987-f28a-1dca" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="5.0"/>
@@ -4100,6 +4109,60 @@ Reduces transport capacity to 8.</description>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="95d6-970a-14aa-0e3b" name="Techno-Arcana" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="613a-fb3c-3682-fbf1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b79f-f0b0-82e2-5b7a" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6e56-7531-1bcd-9e6a" name="Enginseer" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2051-2848-0119-8cf2" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="94cc-7da2-ca6f-8738" name="Enginseer" publicationId="ca571888--pubN66489" page="34" hidden="false">
+                  <description>Adepts gain +1 to Battlesmith rolls and are each equipped with a servo-arm. Servo-automata in the unit gain the Servo-automata Support special rule</description>
+                </rule>
+                <rule id="6395-c56f-b1bd-27ea" name="Servo-automata Support" publicationId="ca571888--pubN85920" page="219" hidden="false">
+                  <description>For each Servo-automata in the unit, an Enginseer gains +1 to Battlesmith rolls. A 1 will still fail.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5208-430d-523e-04fe" name="Lacyraemarta" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ae29-146b-1630-49f9" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="5083-8ea9-2789-da49" name="Lacyraemarta" publicationId="ca571888--pubN66489" page="34" hidden="false">
+                  <description>Adepts in the unit have the Feel No Pain (5+) special rule which they confer to the Servo-automata in the unit while they are alive. Friendly Adsecularis units within 6&quot; of the unit gain +1 to their Feel No Pain rolls while their Adepts are alive.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="04c2-088f-8391-d5fb" name="Reductor" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7408-5009-cf18-07fe" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="8d66-5f1b-cf3a-7f32" name="Reductor" publicationId="ca571888--pubN66489" page="34" hidden="false">
+                  <description>Adepts are equipped with servo-arms, and all models in the squad have the Tank Hunters and Wrecker special rules. Adepts may exchange their servo-arms for either a conversion beamer or graviton imploder for +25 points each.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="0884-54b5-2146-6b33" name="Tank Hunters" hidden="false" targetId="5d88-bcf6-e410-6e01" type="rule"/>
+                <infoLink id="6736-6929-71f5-1f19" name="Wrecker" hidden="false" targetId="fe2f-3220-3fef-b177" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -8297,6 +8360,8 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
               </constraints>
               <infoLinks>
                 <infoLink id="6672-a89b-3b2a-21a4" name="Servo Arm" hidden="false" targetId="c3a5-c40c-b493-5cf6" type="profile"/>
+                <infoLink id="ee6b-3114-269e-8cbe" name="Unwieldy" hidden="false" targetId="5eea-958c-d623-c3c9" type="rule"/>
+                <infoLink id="07dd-c7d1-c1ee-5c70" name="Servo-arm" hidden="false" targetId="dd50-c987-f28a-1dca" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
@@ -9313,6 +9378,8 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
             <selectionEntry id="8b63-de7c-cc9a-7bb1" name="Servo-arm" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="8faa-be62-ef0b-511b" name="Servo Arm" hidden="false" targetId="c3a5-c40c-b493-5cf6" type="profile"/>
+                <infoLink id="fa2a-9719-b188-7dc3" name="Unwieldy" hidden="false" targetId="5eea-958c-d623-c3c9" type="rule"/>
+                <infoLink id="e2ac-b219-b697-992f" name="Servo-arm" hidden="false" targetId="dd50-c987-f28a-1dca" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
@@ -10426,6 +10493,8 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
               </constraints>
               <infoLinks>
                 <infoLink id="3af5-aace-fce8-6e84" name="Servo Arm" hidden="false" targetId="c3a5-c40c-b493-5cf6" type="profile"/>
+                <infoLink id="b084-2c4c-3637-61a8" name="Battlesmith" hidden="false" targetId="9edbc777-7d2b-011b-7488-335b14870be5" type="rule"/>
+                <infoLink id="ad83-1b8b-1b71-4637" name="Servo-arm" hidden="false" targetId="dd50-c987-f28a-1dca" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
@@ -11992,6 +12061,7 @@ In addition to its weapon attacks, units assaulting a model or unit with a gravi
       <infoLinks>
         <infoLink id="ff2d-6622-772d-06a9" name="Servo Arm" hidden="false" targetId="c3a5-c40c-b493-5cf6" type="profile"/>
         <infoLink id="5dbb-3756-d8b8-6cf2" name="Unwieldy" hidden="false" targetId="5eea-958c-d623-c3c9" type="rule"/>
+        <infoLink id="ad25-a8a7-7e45-447d" name="Servo-arm" hidden="false" targetId="dd50-c987-f28a-1dca" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="10.0"/>
@@ -15502,6 +15572,7 @@ Construct shields have an Armour value of 11. A Glancing or Penetrating hit (or 
                   </modifiers>
                 </infoLink>
                 <infoLink id="303a-2a8a-2555-f58c" name="Unwieldy" hidden="false" targetId="5eea-958c-d623-c3c9" type="rule"/>
+                <infoLink id="4eb3-5199-8e9c-9b06" name="Servo-arm" hidden="false" targetId="dd50-c987-f28a-1dca" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
