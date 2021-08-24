@@ -13658,8 +13658,7 @@ Force is a blessing psychic power that targets the Psyker and his unit. All of t
 Fear, Fearless, Feel No Pain, Hammer of Wrath, Move Through Cover, Relentless, Smash, Strikedown, Vector Strike (Flying Gargantuan Creatures Only)</description>
     </rule>
     <rule id="9cf8-e693-2882-a2ca" name="Graviton Implosion" publicationId="ca571888--pubN107368" hidden="false">
-      <description>Instead of rolling to wound normally with this weapon, any model which is hit by an attack with this special rule must roll equal to or under their Strength or suffer one wound. Roll 3D6 for armour penetration against targets with an Armour Value. Roll separately
-for each successful hit.</description>
+      <description>Instead of rolling to wound normally with this weapon, any model which is hit by an attack with this special rule must roll equal to or under their Strength or suffer one wound. Roll 3D6 for armour penetration against targets with an Armour Value. Roll separately for each successful hit.</description>
     </rule>
     <rule id="d191-d6ec-e3c8-31f6" name="Improved Arcs of Fire" publicationId="ca571888--pubN74520" page="" hidden="false">
       <description>Any model within a Defence Emplacement section re-rolls failed To-Hit rolsl when resolving Overwatch if using a weapon with the Heavy type.</description>
