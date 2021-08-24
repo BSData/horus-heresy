@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="143" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="144" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN106502" name="HH: Core Rule Book"/>
@@ -473,6 +473,7 @@ A wound cannot be re-allocated onto a gun model from a successful Look Out, Sir 
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6a67-bc53-089a-3760" type="max"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry id="8a8c-ed20-7427-ddff" name="Imperialis Cults and Militia" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="61f7-09c7-326c-8c49" name="New ForceEntry" hidden="true">
@@ -10113,6 +10114,7 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
               <infoLinks>
                 <infoLink id="76a3-36fb-18d6-9cd3" name="Battlesmith" hidden="false" targetId="9edbc777-7d2b-011b-7488-335b14870be5" type="rule"/>
                 <infoLink id="8351-59af-61fc-7fab" name="Servo Arm" hidden="false" targetId="c3a5-c40c-b493-5cf6" type="profile"/>
+                <infoLink id="ca0b-f77f-0971-5740" name="Servo-arm" hidden="false" targetId="dd50-c987-f28a-1dca" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="20.0"/>
@@ -14090,6 +14092,9 @@ Assualt: Models charging a unit that includes any models equipped with defensive
     </rule>
     <rule id="adbd-7129-14fe-19bc" name="Compulsory" page="132" hidden="false">
       <description>One box on a Force Organisation chart allows you to make one selection from that part of your army list. Dark boxes indicate compulsory selections, which must be included as part of the army, while the lighter boxes indicate optional choices, which are only included as part of the army if the player in question chooses to do so. If constructing an army using the Crusade Force Organisation chart, this would mean that an army would be required to take at least one HQ choice and two Troops choices. These compulsory choices are intended to ensure that the core of each army is illustrative of the force represented by the Army List in use, and that all armies are capable of properly participating in the varied missions available to players in the Age of Darkness.</description>
+    </rule>
+    <rule id="dd50-c987-f28a-1dca" name="Servo-arm" publicationId="ca571888--pubN106502" page="181" hidden="false">
+      <description>A model equipped with a servo arm may make a single additional attack per turn, using the profile shown below, in addition to their regular attacks. In addition, a model with the Battlesmith special rule that is also equipped with a servo arm may add 1 to any Repair roll results.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
