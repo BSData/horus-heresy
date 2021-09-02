@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="145" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="146" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN106502" name="HH: Core Rule Book"/>
@@ -2206,7 +2206,7 @@ D6    Result		S	AP
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="edd7-3223-10ed-9798" name="New InfoLink" hidden="false" targetId="acf2-681d-4188-94d7" type="rule"/>
+        <infoLink id="edd7-3223-10ed-9798" name="Ignores Cover" hidden="false" targetId="476c-b962-06e5-d12e" type="rule"/>
         <infoLink id="423a-a8b4-2d1c-8ae4" name="New InfoLink" hidden="false" targetId="acb1-64c4-ef54-3a55" type="rule"/>
         <infoLink id="767a-d079-9bcc-d035" name="New InfoLink" hidden="false" targetId="3d3c-398b-775d-72ff" type="rule"/>
       </infoLinks>
@@ -2274,7 +2274,7 @@ D6    Result		S	AP
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="fd68-78c4-d930-c8c7" name="Ignores Cover" hidden="false" targetId="acf2-681d-4188-94d7" type="rule"/>
+        <infoLink id="fd68-78c4-d930-c8c7" name="Ignores Cover" hidden="false" targetId="476c-b962-06e5-d12e" type="rule"/>
         <infoLink id="7f90-fdf9-af75-2cc2" name="New InfoLink" hidden="false" targetId="8269-2cd6-9236-16e7" type="rule"/>
         <infoLink id="e3a8-0342-179f-2119" name="Counter-attack" hidden="false" targetId="0900-71d5-1937-aa96" type="rule"/>
       </infoLinks>
@@ -2355,7 +2355,7 @@ D6    Result		S	AP
       </profiles>
       <infoLinks>
         <infoLink id="336d-f83f-e310-3d4c" name="New InfoLink" hidden="false" targetId="acb1-64c4-ef54-3a55" type="rule"/>
-        <infoLink id="bc2d-a845-2087-8cc5" name="New InfoLink" hidden="false" targetId="acf2-681d-4188-94d7" type="rule"/>
+        <infoLink id="bc2d-a845-2087-8cc5" name="Ignores Cover" hidden="false" targetId="476c-b962-06e5-d12e" type="rule"/>
         <infoLink id="f116-979c-09b2-705c" name="New InfoLink" hidden="false" targetId="21c0-62ff-3ed2-17a7" type="rule"/>
       </infoLinks>
       <costs>
@@ -4945,7 +4945,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ffb3-9b68-982e-edd2" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="c7e2-f145-1551-b1fa" name="New InfoLink" hidden="false" targetId="9170-c4db-7a4c-87fb" type="profile">
+            <infoLink id="c7e2-f145-1551-b1fa" name="Ironstorm Missiles" hidden="false" targetId="9170-c4db-7a4c-87fb" type="profile">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -5644,6 +5644,8 @@ Immediately place an objective marker within 3&quot; of any part of the Crashed 
           </constraints>
           <infoLinks>
             <infoLink id="a9d2-2db0-4ba5-0a41" name="Twin-Linked Meltagun" hidden="false" targetId="3084-edd3-6247-da94" type="profile"/>
+            <infoLink id="d542-26f7-c134-de7f" name="Melta" hidden="false" targetId="21c0-62ff-3ed2-17a7" type="rule"/>
+            <infoLink id="32ba-62b6-b2b9-0fd1" name="Twin-linked" hidden="false" targetId="10a8-8d89-0bec-3e21" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -5738,6 +5740,9 @@ Immediately place an objective marker within 3&quot; of any part of the Crashed 
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="10ef-5821-0374-b47a" name="Gets Hot" hidden="false" targetId="f4fd-d519-4769-5510" type="rule"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="55.0"/>
               </costs>
@@ -5761,6 +5766,12 @@ Immediately place an objective marker within 3&quot; of any part of the Crashed 
                   <description>Once fired, regardless of whether the attack results in a hit or not, this weapon may not be fired again in the controlling player’s next Shooting phase. Effectively, it may only be fired every other turn. In addition, any model that fails a save against a Wound or Hull point of damage inflicted by a weapon with this type suffers D6 Wounds or D6 Hull points of damage instead of just one (these wounds do not carry over to other models in the same unit).</description>
                 </rule>
               </rules>
+              <infoLinks>
+                <infoLink id="d9dd-3d6d-e9db-2460" name="Armourbane" hidden="false" targetId="e182-50cd-0867-9a8d" type="rule"/>
+                <infoLink id="8870-c9f1-f3a5-0d92" name="Fleshbane" hidden="false" targetId="4575-0a0a-caaf-e4bf" type="rule"/>
+                <infoLink id="cd76-fb88-a070-94a2" name="Instant Death" hidden="false" targetId="fbf1-6913-ff9f-5a4f" type="rule"/>
+                <infoLink id="91d0-2e8f-9c04-2f99" name="Sunder" hidden="false" targetId="841f-9119-9f9d-5058" type="rule"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="50.0"/>
               </costs>
@@ -6150,8 +6161,8 @@ or Gargantuan Creatures. </description>
       </profiles>
       <infoLinks>
         <infoLink id="f202-38e1-7dcd-8076" name="New InfoLink" hidden="false" targetId="f624-f475-e5ec-0dfa" type="rule"/>
-        <infoLink id="3807-a9c0-1309-5203" name="New InfoLink" hidden="false" targetId="4575-0a0a-caaf-e4bf" type="rule"/>
-        <infoLink id="51b3-01fb-f89c-f60f" name="New InfoLink" hidden="false" targetId="acf2-681d-4188-94d7" type="rule"/>
+        <infoLink id="3807-a9c0-1309-5203" name="Fleshbane" hidden="false" targetId="4575-0a0a-caaf-e4bf" type="rule"/>
+        <infoLink id="51b3-01fb-f89c-f60f" name="Ignores Cover" hidden="false" targetId="476c-b962-06e5-d12e" type="rule"/>
         <infoLink id="0685-7fdf-1831-6c0e" name="New InfoLink" hidden="false" targetId="eefe-09e4-17aa-deb2" type="rule"/>
       </infoLinks>
       <costs>
@@ -6843,12 +6854,12 @@ or Gargantuan Creatures. </description>
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="pts" typeId="points" value="325.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="325.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0c28-bf1b-2964-f8eb" name="Hunter-killer Missile" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -7027,12 +7038,12 @@ or Gargantuan Creatures. </description>
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="pts" typeId="points" value="355.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="355.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d4b0-56e7-4f8c-7ea5" name="Macharius Vanquisher" page="" hidden="false" collective="false" import="true" type="unit">
@@ -7211,12 +7222,12 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="pts" typeId="points" value="375.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="375.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e95a-57cf-a5c3-772f" name="Macharius Vulcan" page="" hidden="false" collective="false" import="true" type="unit">
@@ -7398,12 +7409,12 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="pts" typeId="points" value="405.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="405.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ed2c-8dcf-d0d2-720e" name="Shadowsword" page="" hidden="false" collective="false" import="true" type="unit">
@@ -8643,12 +8654,12 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="pts" typeId="points" value="300.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="300.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cba2-63dc-b536-631e" name="Minotaur" page="" hidden="false" collective="false" import="true" type="unit">
@@ -12857,7 +12868,9 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86f2-bac1-5249-3f7d" type="max"/>
               </constraints>
               <rules>
-                <rule id="61f9-d517-24fa-e88e" name="1. Inspiring Presence" hidden="false"/>
+                <rule id="61f9-d517-24fa-e88e" name="1. Inspiring Presence" hidden="false">
+                  <description>Friendly units within 12&quot; of the Warlord can use the Warlord’s Leadership rather than their own.</description>
+                </rule>
               </rules>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -12868,7 +12881,9 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87bf-b274-eb67-3b1b" type="max"/>
               </constraints>
               <rules>
-                <rule id="7e5b-ed4b-8b9c-feeb" name="2. Intimidating Presence" hidden="false"/>
+                <rule id="7e5b-ed4b-8b9c-feeb" name="2. Intimidating Presence" hidden="false">
+                  <description>Enemy units within 12&quot; of the Warlord must use their lowest Leadership value, not the highest.</description>
+                </rule>
               </rules>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -12879,7 +12894,9 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9189-412f-bc68-8f2d" type="max"/>
               </constraints>
               <rules>
-                <rule id="c966-58bd-5a8d-71ac" name="3. The Dust of a Thousand Worlds" hidden="false"/>
+                <rule id="c966-58bd-5a8d-71ac" name="3. The Dust of a Thousand Worlds" hidden="false">
+                  <description>Your Warlord, and all friendly units within 12&quot;, have the Move Through Cover special rule.</description>
+                </rule>
               </rules>
               <infoLinks>
                 <infoLink id="fa1f-e6f1-fa69-c263" name="Move Through Cover" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule"/>
@@ -12893,7 +12910,9 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b7a-6c03-7861-b775" type="max"/>
               </constraints>
               <rules>
-                <rule id="717c-b7a7-612a-8455" name="4. Master of the Vanguard" hidden="false"/>
+                <rule id="717c-b7a7-612a-8455" name="4. Master of the Vanguard" hidden="false">
+                  <description>Your Warlord, and all friendly units within 12&quot;, add 1&quot; to the distance that they can move when they Run or Charge</description>
+                </rule>
               </rules>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -12904,7 +12923,9 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3a0-205d-e051-9092" type="max"/>
               </constraints>
               <rules>
-                <rule id="5499-c5d5-154a-119a" name="5. Target Priority" hidden="false"/>
+                <rule id="5499-c5d5-154a-119a" name="5. Target Priority" hidden="false">
+                  <description>In the Shooting phase, your Warlord and all friendly units within 12&quot; of the Warlord re-roll To Hit rolls of 1.</description>
+                </rule>
               </rules>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -12915,7 +12936,9 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="860b-2279-6d8e-a3b7" type="max"/>
               </constraints>
               <rules>
-                <rule id="9d20-9b57-8e60-cd67" name="6. Coordinated Assault" hidden="false"/>
+                <rule id="9d20-9b57-8e60-cd67" name="6. Coordinated Assault" hidden="false">
+                  <description>In the Assault phase, your Warlord and all friendly units within 12&quot; of the Warlord re-roll To Hit rolls of 1.</description>
+                </rule>
               </rules>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -13416,9 +13439,6 @@ If a unit has both the Infiltrate and Scout special rule, that unit can deploy a
     </rule>
     <rule id="be7f-8146-6cb8-9a53" name="Skyfire" publicationId="ca571888--pubN106502" page="171" hidden="false">
       <description>A model with this special rule, or that is firing a weapon with this special rule, fires using its normal Ballistic Skill when shooting at Flyers, Flying Monstrous Creatures and Skimmers, but it can only fire Snap Shots against other targets.</description>
-    </rule>
-    <rule id="acf2-681d-4188-94d7" name="Ignores Cover" publicationId="ca571888--pubN105292" hidden="false">
-      <description>Cover saves cannot be taken against Wounds, glancing hits or penetrating hits caused by weapons with the Ignores Cover special rule.</description>
     </rule>
     <rule id="4927-560b-70be-12ee" name="Brutal Charge" publicationId="ca571888--pubN66489" page="35" hidden="false">
       <description>When charging, the unit inflicts D3 Hammer of Wrath attacks.  In the case of a unit of such models, roll once and multiply the result by the models in the unit to determine the number of hits scored.</description>
