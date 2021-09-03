@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="116" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="146" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="117" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="146" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="cf03-f607-pubN70802" name="HH-Questoris-Knight-Armiger-Talon Download"/>
     <publication id="ece2-a265-6237-7efa" name="HH Mechanicum Knight Moirax Talon Download"/>
@@ -1239,11 +1239,6 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
       <categoryLinks>
         <categoryLink id="a143-d91f-0fd8-4ac5-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
         <categoryLink id="770b-534b-8b1e-2361" name="New CategoryLink" hidden="false" targetId="5f7c-939a-f2de-413a" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="8017-56b9-70cc-39f7" name="Cerastus Knight-Atrapos" hidden="false" collective="false" import="true" targetId="baad-77d0-04c2-e05f" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="8017-56b9-70cc-39f7-1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="62b4-53bc-36ca-57d2" name="Secutarii Axiarch" hidden="false" collective="false" import="true" targetId="bd94-0269-4234-4a81" type="selectionEntry">
@@ -6346,7 +6341,15 @@ Buildings and Fortifications D</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b3d4-80f6-bd97-f9e3" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="39e1-b9a8-2b82-99f8" name="Mitralock" hidden="false" targetId="47b334bb-cad7-a46c-c2eb-95ce7cd7bcd2" type="profile"/>
+                <infoLink id="39e1-b9a8-2b82-99f8" name="Mitralock" hidden="false" targetId="47b334bb-cad7-a46c-c2eb-95ce7cd7bcd2" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="5479706523232344415441232323" value="Assault 2, Shred">
+                      <conditions>
+                        <condition field="selections" scope="7e54-a6b2-1982-0706" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca77-761d-d408-5321" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
                 <infoLink id="cda3-4d7e-81ba-c2ed" name="Shred" hidden="false" targetId="89da-0cb5-bee4-8ec2" type="rule"/>
               </infoLinks>
               <costs>
@@ -6369,7 +6372,15 @@ Buildings and Fortifications D</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="05ef-d598-9407-2881" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="1741-4fa4-53bd-b350" name="Las-lock" hidden="false" targetId="65bf6242-8fa0-55f7-92ac-71f4a8fba433" type="profile"/>
+                <infoLink id="1741-4fa4-53bd-b350" name="Las-lock" hidden="false" targetId="65bf6242-8fa0-55f7-92ac-71f4a8fba433" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="5479706523232344415441232323" value="Assault 2">
+                      <conditions>
+                        <condition field="selections" scope="7e54-a6b2-1982-0706" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca77-761d-d408-5321" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -8978,7 +8989,6 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
       </rules>
       <infoLinks>
         <infoLink id="1555-2403-b4c2-7779" hidden="false" targetId="d5cf-bd98-2854-13cf" type="rule"/>
-        <infoLink id="7126-1103-d1ef-7304" name="Paragon of Metal" hidden="false" targetId="cb2c-171e-df0f-2bec" type="rule"/>
         <infoLink id="0e05-ce27-8910-c4ba" name="Rage" hidden="false" targetId="988c-d4d0-9418-1165" type="rule"/>
         <infoLink id="2edb-24c2-fc35-348a" name="Feel No Pain (6+)" hidden="false" targetId="85da-2f19-3756-44de" type="rule"/>
       </infoLinks>
@@ -9072,6 +9082,14 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="4129-cfee-99c1-2480" name="Cybernetica Cortex" hidden="false" collective="false" import="true" targetId="0c9d-9eaa-d513-caa3" type="selectionEntry"/>
+        <entryLink id="1bee-1336-d49d-2f37" name="Paragon of Metal" hidden="false" collective="false" import="true" targetId="34924deb-f4e5-7739-5606-87600d1740bb" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="points" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2e3-08ca-2d33-30a8" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="175.0"/>
