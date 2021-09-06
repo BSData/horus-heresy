@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="146" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="147" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN106502" name="HH: Core Rule Book"/>
@@ -41,6 +41,7 @@
     <publication id="ece2-a265-6237-7efa" name="HH Mechanicum Knight Moirax Talon Download"/>
     <publication id="cf03-f607-pubN70802" name="HH-Questoris-Knight-Armiger-Talon Download"/>
     <publication id="8700-b3bb-pubN77868" name="Corbax_Utterblight.pdf" publisherUrl="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Warhammer_40000/Corbax_Utterblight.pdf"/>
+    <publication id="688f-de2e-d4f4-882e" name="HH - The Battle of Pluto: Hydra&apos;s Devastation (Exemplary Battles of the Age of Darkness)" shortName="HH = EBotAoD - TBoP: HD" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2021/09/Xwccsydzg8YpDsho.pdf"/>
   </publications>
   <costTypes>
     <costType id="points" name="pts" defaultCostLimit="0.0" hidden="false"/>
@@ -3698,7 +3699,10 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="18c3-ffe1-e610-cbda" hidden="false" targetId="534b-67b0-62d7-b977" type="profile"/>
+                <infoLink id="18c3-ffe1-e610-cbda" name="Twin Icarus Autocannon" hidden="false" targetId="534b-67b0-62d7-b977" type="profile"/>
+                <infoLink id="5ea1-8add-d47f-7dbc" name="Interceptor" hidden="false" targetId="ca3e-e94e-58f6-75d9" type="rule"/>
+                <infoLink id="f880-b8e6-08d6-318e" name="Twin-linked" hidden="false" targetId="10a8-8d89-0bec-3e21" type="rule"/>
+                <infoLink id="85c8-e3e2-c94a-61fb" name="Skyfire" hidden="false" targetId="be7f-8146-6cb8-9a53" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="35.0"/>
@@ -3709,7 +3713,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="8743-eda7-ce9a-90b8" hidden="false" targetId="05cc-32b8-e59e-7dff" type="profile"/>
+                <infoLink id="8743-eda7-ce9a-90b8" name="Stormspear rocket pod" hidden="false" targetId="05cc-32b8-e59e-7dff" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="40.0"/>
@@ -3822,7 +3826,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="0866-bf5f-50cd-3b6f" hidden="false" targetId="69b6-e87d-f483-e57a" type="profile"/>
+                <infoLink id="0866-bf5f-50cd-3b6f" name="Ironstorm missile pod" hidden="false" targetId="69b6-e87d-f483-e57a" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="30.0"/>
@@ -3833,7 +3837,10 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="902b-356c-043f-5324" hidden="false" targetId="534b-67b0-62d7-b977" type="profile"/>
+                <infoLink id="902b-356c-043f-5324" name="Twin Icarus Autocannon" hidden="false" targetId="534b-67b0-62d7-b977" type="profile"/>
+                <infoLink id="1805-5801-fe95-b992" name="Twin-linked" hidden="false" targetId="10a8-8d89-0bec-3e21" type="rule"/>
+                <infoLink id="95e0-3417-674a-bbfe" name="Skyfire" hidden="false" targetId="be7f-8146-6cb8-9a53" type="rule"/>
+                <infoLink id="f05f-80a9-8899-4474" name="Interceptor" hidden="false" targetId="ca3e-e94e-58f6-75d9" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="35.0"/>
@@ -3844,7 +3851,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="9f4b-cdeb-2a2f-c549" hidden="false" targetId="05cc-32b8-e59e-7dff" type="profile"/>
+                <infoLink id="9f4b-cdeb-2a2f-c549" name="Stormspear rocket pod" hidden="false" targetId="05cc-32b8-e59e-7dff" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="40.0"/>
@@ -4371,7 +4378,10 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="10f3-a633-6f7b-4b39" hidden="false" targetId="534b-67b0-62d7-b977" type="profile"/>
+                <infoLink id="10f3-a633-6f7b-4b39" name="Twin Icarus Autocannon" hidden="false" targetId="534b-67b0-62d7-b977" type="profile"/>
+                <infoLink id="669f-26c8-94a4-e88d" name="Interceptor" hidden="false" targetId="ca3e-e94e-58f6-75d9" type="rule"/>
+                <infoLink id="155b-32d5-4c7f-8b58" name="Twin-linked" hidden="false" targetId="10a8-8d89-0bec-3e21" type="rule"/>
+                <infoLink id="52e5-68b0-0fb5-f2c0" name="Skyfire" hidden="false" targetId="be7f-8146-6cb8-9a53" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="35.0"/>
@@ -4518,7 +4528,10 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="a932-23f0-c1ab-2b7c" hidden="false" targetId="534b-67b0-62d7-b977" type="profile"/>
+                <infoLink id="a932-23f0-c1ab-2b7c" name="Twin Icarus Autocannon" hidden="false" targetId="534b-67b0-62d7-b977" type="profile"/>
+                <infoLink id="e7b9-f80c-8501-3abc" name="Skyfire" hidden="false" targetId="be7f-8146-6cb8-9a53" type="rule"/>
+                <infoLink id="a7b5-77a9-685a-fc62" name="Twin-linked" hidden="false" targetId="10a8-8d89-0bec-3e21" type="rule"/>
+                <infoLink id="b362-aea8-7bee-7693" name="Interceptor" hidden="false" targetId="ca3e-e94e-58f6-75d9" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="35.0"/>
@@ -4678,7 +4691,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="8ebd-01d8-f6d2-b8d8" hidden="false" targetId="69b6-e87d-f483-e57a" type="profile"/>
+                <infoLink id="8ebd-01d8-f6d2-b8d8" name="Ironstorm missile pod" hidden="false" targetId="69b6-e87d-f483-e57a" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="30.0"/>
@@ -4689,7 +4702,10 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="21aa-ff29-1d93-bdad" hidden="false" targetId="534b-67b0-62d7-b977" type="profile"/>
+                <infoLink id="21aa-ff29-1d93-bdad" name="Twin Icarus Autocannon" hidden="false" targetId="534b-67b0-62d7-b977" type="profile"/>
+                <infoLink id="5eca-d51a-b68d-bcb5" name="Interceptor" hidden="false" targetId="ca3e-e94e-58f6-75d9" type="rule"/>
+                <infoLink id="e20d-21d4-8d07-a1da" name="Skyfire" hidden="false" targetId="be7f-8146-6cb8-9a53" type="rule"/>
+                <infoLink id="ed8c-2ecf-19e5-4323" name="Twin-linked" hidden="false" targetId="10a8-8d89-0bec-3e21" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="35.0"/>
@@ -4700,7 +4716,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="3242-04e5-5799-a5c3" hidden="false" targetId="05cc-32b8-e59e-7dff" type="profile"/>
+                <infoLink id="3242-04e5-5799-a5c3" name="Stormspear rocket pod" hidden="false" targetId="05cc-32b8-e59e-7dff" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="40.0"/>

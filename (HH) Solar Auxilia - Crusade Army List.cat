@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" revision="85" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="146" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" revision="86" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="146" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="ce39-b313-7b57-ee8e" name="Artillery" publicationId="ca571888--pubN106502" page="65" hidden="false">
       <constraints>
@@ -4751,7 +4751,7 @@ EDITORS NOTE... I think this rule is now redundant, as I think the rules for how
         <rule id="82a4-ee3b-3cb5-ba30" name="Armoured Warfare" publicationId="ca571888--pubN84158" page="259" hidden="false">
           <description>Must be attached to (and canbnot leave): Russ(any), Malcador, Valdor, Baneblade, Stormblade, Stormlord, Stormhammer, or Shadowsword. Tank Commander is attached to gains Command Tank special rule, and uses commander&apos;s BS4.</description>
         </rule>
-        <rule id="d01d-7633-b4de-e310" name="Tank  Ace" publicationId="ca571888--pubN84158" page="259" hidden="false">
+        <rule id="2a09-b7be-0ea4-7675" name="Tank  Ace" publicationId="ca571888--pubN84158" page="259" hidden="false">
           <description>A vehicle commanded by a Tank Commander may fire overwatch with any weapons elegible to do so and, in addition, must chose a single rule from the following list which applies to the tank:
 
 Tank Hunters
@@ -4770,6 +4770,47 @@ Precision Shots</description>
       <infoLinks>
         <infoLink id="5fe8-9898-ff4f-cfe5" name="Disciplined Command" hidden="false" targetId="80c70524-9908-04af-634b-d216772445fe" type="rule"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4245-5769-9589-298e" name="Tank Ace" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9b3-f7a6-720b-dee8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="034a-636b-eb48-1844" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="07fb-40ce-4713-52ac" name="Tank Hunters" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="4659-589a-8af7-50eb" name="Tank Hunters" hidden="false" targetId="5d88-bcf6-e410-6e01" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="6c49-6a0a-d24a-7c25" name="It Will Not Die" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="d1df-deb8-4881-9dfd" name="It Will Not Die" hidden="false" targetId="72d9-7041-9d30-d150" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="8085-bf4c-5c81-2602" name="Scout and Move Through Cover" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="99f3-6587-acdf-4630" name="Scout" hidden="false" targetId="9b30-1da3-eb8d-ce7a" type="rule"/>
+                <infoLink id="d6ad-78df-ef50-0a1d" name="Move Through Cover" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="fb0b-1268-5297-4fd6" name="Preferred Enemy (Infantry)" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="a0f5-67b5-32bb-953b" name="Preferred Enemy" hidden="false" targetId="4dd2-fcb0-de6a-5b70" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="daa1-e829-c7c7-0824" name="Monster Hunter" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="1a8b-1413-98fe-b9f1" name="Monster Hunter" hidden="false" targetId="93c5-dcdd-af20-413e" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="c88e-f92d-6975-8c55" name="Precision Shots" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="1507-0f7b-a51d-9c55" name="Precision Shots" hidden="false" targetId="4771-b711-0e74-3aee" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="55.0"/>
       </costs>
