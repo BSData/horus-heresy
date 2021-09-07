@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9f87-b468-2001-5e3b" name="Mournival Units Legion Astartes (Fanmade)" revision="39" battleScribeVersion="2.03" authorName="Aus30K / Mournival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="146" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9f87-b468-2001-5e3b" name="Mournival Units Legion Astartes (Fanmade)" revision="40" battleScribeVersion="2.03" authorName="Aus30K / Mournival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="148" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="0e6e-8c19-c436-39c4" name="Mournival Events 3.3 Digital Version"/>
     <publication id="cf75-540e-e446-ecd5" name="Mournival Events FAQ and Experimental Errata v3.5"/>
@@ -568,6 +568,15 @@ Example 4: In a 2000 point army, a Daemon Lord is the Warlord (doesn’t count a
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ee5-3c01-65f0-f9eb" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="increment" field="0df5-6387-1fda-0526" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="cef1-24f3-c9c2-81cc" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="0ce8-fc59-3828-b226" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="621f-06a0-d85b-2ccb" type="equalTo"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4eb-a5ee-6807-1e46" type="max"/>
@@ -579,6 +588,15 @@ Example 4: In a 2000 point army, a Daemon Lord is the Warlord (doesn’t count a
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a407-2a45-f198-77ac" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink id="d001-36c2-00db-46e2" name="Fear" hidden="false" targetId="52ff-4074-570b-4ea1" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="916d-646f-1e3f-aae5" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -808,6 +826,20 @@ Example 4: In a 2000 point army, a Daemon Lord is the Warlord (doesn’t count a
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a407-2a45-f198-77ac" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </categoryLink>
+        <categoryLink id="bd3b-c44d-bdcc-05d5" name="Independent Character:" hidden="false" targetId="72c8-d46a-7934-1cf6" primary="false">
+          <infoLinks>
+            <infoLink id="ca59-7159-7fbf-566d" name="Preferred Enemy" hidden="false" targetId="4dd2-fcb0-de6a-5b70" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Preferred Enemy (Loyalist Space Marines)"/>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d81-7da9-2ca0-1b20" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
