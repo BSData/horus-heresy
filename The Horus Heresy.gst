@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="147" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="149" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN106502" name="HH: Core Rule Book"/>
@@ -474,6 +474,11 @@ A wound cannot be re-allocated onto a gun model from a successful Look Out, Sir 
       </constraints>
     </categoryEntry>
     <categoryEntry id="8a8c-ed20-7427-ddff" name="Imperialis Cults and Militia" hidden="false"/>
+    <categoryEntry id="4955-b98c-162a-aec7" name="Compulsory Fast Attack:" hidden="false">
+      <infoLinks>
+        <infoLink id="369b-17ab-6382-4487" name="Compulsory" hidden="false" targetId="adbd-7129-14fe-19bc" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="61f7-09c7-326c-8c49" name="New ForceEntry" hidden="true">
@@ -10660,279 +10665,6 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
         <cost name="pts" typeId="points" value="140.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1b62-264b-d9eb-2545" name="Warlord Traits" hidden="false" collective="false" import="true" type="upgrade">
-      <selectionEntryGroups>
-        <selectionEntryGroup id="30b6-4212-ea96-9493" name="Command Traits (HH- Rulebook p137)" publicationId="ca571888--pubN106502" page="137" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="acdb-756b-1b02-ccdc" name="1. Inspiring Presence" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8dd4-1d1f-430b-8d4e" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="7009-7f69-0192-0bb6" name="1. Inspiring Presence" hidden="false"/>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8034-724e-1bf0-5499" name="2. Intimidating Presence" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31c7-91a3-2934-bb2b" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="34f4-cd2e-27ac-a878" name="2. Intimidating Presence" hidden="false"/>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="887c-eaa9-47e6-1131" name="3. The Dust of a Thousand Worlds" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef06-e3d6-0314-9c2a" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="1b09-da54-3406-974a" name="3. The Dust of a Thousand Worlds" hidden="false"/>
-              </rules>
-              <infoLinks>
-                <infoLink id="38f0-421e-4c0d-e754" name="Move Through Cover" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="19d4-346d-3fc0-370b" name="4. Master of the Vanguard" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b38c-efb4-7e1d-7e0a" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="5a1c-fa83-35bc-1d41" name="4. Master of the Vanguard" hidden="false"/>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="7baf-4eda-935a-00c6" name="5. Target Priority" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9117-45f2-3218-92fc" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="c1cc-99df-0b5a-95bc" name="5. Target Priority" hidden="false"/>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="a193-e747-29f1-d1f8" name="6. Coordinated Assault" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7f0-55a1-c51a-c72c" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="cc0f-e465-330b-4827" name="6. Coordinated Assault" hidden="false"/>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="6bae-c7b5-0bfa-1490" name="Personal Traits (HH- Rulebook p137)" publicationId="ca571888--pubN106502" page="137" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="d692-fb3f-845a-b46d" name="1. Master of Defence" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ad6-fefd-533f-fec4" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="eead-92f1-b789-04b9" name="1. Master of Defence" hidden="false">
-                  <description>Your Warlord has the Counter-attack special rule.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="d313-45ba-5ebd-799d" name="Counter-attack" hidden="false" targetId="0900-71d5-1937-aa96" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="1d65-1188-0aad-e40f" name="2. Master of Offence" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5c6-e484-02a7-d772" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="a20a-60da-40c4-7539" name="2. Master of Offence" hidden="false">
-                  <description>Your Warlord has the Furious Charge special rule.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="4abe-f596-378d-759c" name="Furious Charge" hidden="false" targetId="3aa7-9a8f-1e0d-921d" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6e22-892f-46c7-cd32" name="3. Master of Manoeuvre" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="859d-a85d-fb17-aaf0" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="49f4-ac97-f248-5e73" name="3. Master of Manoeuvre" hidden="false">
-                  <description>Your Warlord has the Outflank special rule.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="0311-bd57-590e-bba8" name="Outflank" hidden="false" targetId="de18-25a0-504b-74be" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="de62-5a38-0602-acba" name="4. Legendary Fighter" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c32-3281-03a4-e05c" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="fe11-24f3-27cb-4f08" name="4. Legendary Fighter" hidden="false">
-                  <description>Your army gains 1 Victory point for each enemy character slain by your Warlord in a challenge.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="9f9d-1101-1528-bfde" name="5. Tenacity" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d13-a51b-9abf-7bd3" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="7934-0cca-f091-1630" name="5. Tenacity" hidden="false">
-                  <description>Your Warlord has the Feel No Pain special rule.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="5399-912f-5fb3-19ac" name="Feel No Pain" hidden="false" targetId="9bdd-5ec7-8dd6-63c0" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="9287-2f54-b97e-a4e6" name="6. Immovable Object" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d56-65c8-d525-94e5" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="df59-16be-87a7-f39a" name="6. Immovable Object" hidden="false">
-                  <description>Your Warlord has the Fearless and It Will Not Die special rules.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="44a0-292b-0f50-88f5" name="Fearless" hidden="false" targetId="dc70-e199-5525-e78c" type="rule"/>
-                <infoLink id="5ac1-6ae0-4cda-d95e" name="It Will Not Die" hidden="false" targetId="72d9-7041-9d30-d150" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="ed77-3335-e812-a296" name="Strategic Traits (HH- Rulebook p137)" publicationId="ca571888--pubN106502" page="137" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="b2dd-0a27-5ff7-423a" name="1. Conqueror of Cities" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1f9-8691-35c4-fde4" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="0216-1856-c28f-262b" name="1. Conqueror of Cities" hidden="false">
-                  <description>Your units have the Move Through Cover special rule if moving through Ruins, and the Stealth (Ruins) special rule.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="76f6-3468-af41-aa01" name="Move Through Cover" hidden="false" targetId="6d06-5ea0-9a17-ca97" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8e60-8964-8218-313f" name="2. Night Attacker" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bca4-7803-c2a7-e9fd" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="780d-fb26-08d1-2ea7" name="2. Night Attacker" hidden="false">
-                  <description>If you choose to use the Night Fighting rules in your game, there is no need to roll – it is night on the first turn, and all models in your army have the Night Vision special rule.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="84a4-b409-0ba6-4105" name="Night Fighting" hidden="false" targetId="33ab-99bc-5c24-3cdf" type="rule"/>
-                <infoLink id="1b08-b085-cdd6-e2f1" name="Night Vision" hidden="false" targetId="a225-e39b-3699-c8f8" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b3db-3f51-2559-5617" name="3. Master of Ambush" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a69a-4956-96f9-a3bd" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="abd6-fb79-4afd-41c3" name="3. Master of Ambush" hidden="false">
-                  <description>Your Warlord and three non-vehicle units of your choice have the Infiltrate special rule.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="1907-622b-6a56-a599" name="Infiltrate" hidden="false" targetId="34c7-8b61-a5b8-a301" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="14ad-03b0-9a0c-e6bd" name="4. Strategic Genius" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dac-9fa7-60c9-aae1" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="b5ac-5e6b-cf89-8c33" name="4. Strategic Genius" hidden="false">
-                  <description>You add +1 to any Seize the Initiative roll. In addition, whilst your Warlord is alive, you can re-roll any Reserve rolls (failed or successful).</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c56a-c92c-c5ad-78cb" name="5. Divide to Conquer" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f82c-80f4-097f-0f41" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="7285-7ef7-5396-39f2" name="5. Divide to Conquer" hidden="false">
-                  <description>Whilst your Warlord is alive, your opponent has a -1 modifier to their Reserve rolls.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="e567-a002-6d0b-a6ea" name="6. Princeps of Deceit" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a41-c7f4-e8e8-c01b" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="0d30-3cd2-906e-646f" name="6. Princeps of Deceit" hidden="false">
-                  <description>At the start of your opponent’s first turn, pick three units in the enemy army. Each of these units must take a Pinning test.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="afed-2be8-c275-68fa" name="Pinning" hidden="false" targetId="f624-f475-e5ec-0dfa" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="8d39-af5d-fcc9-9c1f" name="Mournival Experiemental Rules on" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -15646,7 +15378,7 @@ Jetbikes can move over all other models and terrain freely. However, if a moving
         <characteristic name="Range" typeId="52616e676523232344415441232323">6&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
         <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
-        <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1, One Use, Blast (3&quot;), Crawling Fire, Lingering Death, Poisined (3+)</characteristic>
+        <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1, One Use, Blast (3&quot;), Crawling Fire, Lingering Death, Poisoned (3+)</characteristic>
       </characteristics>
     </profile>
     <profile id="62fb-7314-f3cf-f6ab" name="Phosphex Shell" publicationId="ca571888--pubN106502" page="179" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
