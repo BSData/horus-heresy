@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="149" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="150" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN106502" name="HH: Core Rule Book"/>
@@ -42,6 +42,9 @@
     <publication id="cf03-f607-pubN70802" name="HH-Questoris-Knight-Armiger-Talon Download"/>
     <publication id="8700-b3bb-pubN77868" name="Corbax_Utterblight.pdf" publisherUrl="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Warhammer_40000/Corbax_Utterblight.pdf"/>
     <publication id="688f-de2e-d4f4-882e" name="HH - The Battle of Pluto: Hydra&apos;s Devastation (Exemplary Battles of the Age of Darkness)" shortName="HH = EBotAoD - TBoP: HD" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2021/09/Xwccsydzg8YpDsho.pdf"/>
+    <publication id="931a-ad98-6258-e12a" name="Mournival Events Battle Manual v1.5"/>
+    <publication id="e085-bc29-3c2d-2c49" name="Mournival Events 3.7 Digital Version"/>
+    <publication id="4325-6c62-8f6c-297c" name="Mournival Events FAQ and Experimental Errata v3.7"/>
   </publications>
   <costTypes>
     <costType id="points" name="pts" defaultCostLimit="0.0" hidden="false"/>
@@ -13862,6 +13865,15 @@ Assualt: Models charging a unit that includes any models equipped with defensive
     <rule id="dd50-c987-f28a-1dca" name="Servo-arm" publicationId="ca571888--pubN106502" page="181" hidden="false">
       <description>A model equipped with a servo arm may make a single additional attack per turn, using the profile shown below, in addition to their regular attacks. In addition, a model with the Battlesmith special rule that is also equipped with a servo arm may add 1 to any Repair roll results.</description>
     </rule>
+    <rule id="d54b-4d1d-8464-b92c" name="Agent of the Emperor" hidden="false">
+      <description>Units with Agents of the Emperor apply to the Agents of the Emperor allies martix for how they interact with other units.</description>
+    </rule>
+    <rule id="438f-70e3-53e6-46fe" name="Agent of the Warmaster" hidden="false">
+      <description>Units with Agents of the Warmaster apply to the Agents of the Emperor allies martix for how they interact with other units.</description>
+    </rule>
+    <rule id="36af-029e-d87e-3d53" name="Psy-shock" publicationId="ca571888--pubN103311" page="302" hidden="false">
+      <description>If a unit containing at least one Daemon or Psyker (i.e., a model with the Psyker, Brotherhood of Psykers/Sorcerers, Psychic Pilot, Daemon or Daemon of the Ruinstorm special rule) is hit by a weapon with this Psi-shock special rule, one randomly determinded Psyker or Daemon model in the unit suffered Perils of the Warp in addition to any other damage.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="74effb54-87f7-8481-9e5f-86d9e3ed37c2" name="Battle Servitor Control" publicationId="ca571888--pubN67227" page="43" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
@@ -15690,6 +15702,14 @@ Jetbikes can move over all other models and terrain freely. However, if a moving
     <profile id="31b1-c957-c740-397c" name="Lorica Thallax" publicationId="ca571888--pubN66500" page="240" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Provides 4 Armour and FNP 6+ but may not make Sweeping Advances</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8e95-f696-3e5f-05e2" name="Psyk-Out Grenades" publicationId="ca571888--pubN103311" page="302" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="52616e676523232344415441232323">8&quot;</characteristic>
+        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">2</characteristic>
+        <characteristic name="AP" typeId="415023232344415441232323">-</characteristic>
+        <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1, Blast (3&quot;), Psi-Shock</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
