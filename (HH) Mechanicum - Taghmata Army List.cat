@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="118" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="149" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="118" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="150" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="cf03-f607-pubN70802" name="HH-Questoris-Knight-Armiger-Talon Download"/>
     <publication id="ece2-a265-6237-7efa" name="HH Mechanicum Knight Moirax Talon Download"/>
@@ -1819,6 +1819,71 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
     <entryLink id="a223-d9c8-4193-e4d4" name="Ordinatus Aktaeus" hidden="false" collective="false" import="true" targetId="fde9-8c77-e280-0c30" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="956e-c221-175a-f4bc" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d7fe-79a7-f4d1-90ba" name="Electro Priests" hidden="true" collective="false" import="true" targetId="3761-4021-48d8-d46b" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d76d-0097-d56b-e6bf" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6f4b-73e0-2f3c-90ec" name="New CategoryLink" hidden="false" targetId="456c6974657323232344415441232323" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4773-f54f-a024-1856" name="Kataphron Breachers" hidden="true" collective="false" import="true" targetId="c150-dee2-e040-b405" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0199-0faf-34c8-fbee" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d76d-0097-d56b-e6bf" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6f02-c387-c411-8453" name="New CategoryLink" hidden="false" targetId="456c6974657323232344415441232323" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="83d5-abcc-ddf3-a21d" name="Kataphron Destroyers" hidden="true" collective="false" import="true" targetId="ff98-1b35-b1d7-5680" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0199-0faf-34c8-fbee" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d76d-0097-d56b-e6bf" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="9dd0-7007-f741-a1da" name="New CategoryLink" hidden="false" targetId="456c6974657323232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -18174,6 +18239,531 @@ Should a vehicle suffer a penetrating hit from this attack, it immediately suffe
         <cost name="pts" typeId="points" value="755.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="3761-4021-48d8-d46b" name="Electro Priests" publicationId="931a-ad98-6258-e12a" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="ffdd-6b15-2338-e3c3" name="Infantry:" hidden="false" targetId="a2ba-16b0-8590-b017" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="fc7c-f92d-a273-f620" name="Voltagheist Field" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b18b-9f28-be91-7408" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a6c-ee6d-6738-24e7" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="a95c-86de-1914-8bd8" name="Voltagheist Field" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Confers a 5+ Invulnerable save, Hammer of Wrath (at Strength 4) and ignores penalties to Initiative when charging through difficult terrain.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="ba52-de06-09da-f534" name="Hammer of Wrath" hidden="false" targetId="6f66-b417-6004-0916" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="bf15-7741-0c14-5680" name="Electror Priests" hidden="false" collective="false" import="true" defaultSelectionEntryId="770b-6e7e-5c4e-3a92">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3133-a34c-5d3c-e0bd" type="min"/>
+            <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b208-d6d2-2e23-840e" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="770b-6e7e-5c4e-3a92" name="Corpuscarii" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47f7-fa11-553a-c8be" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="a6dc-c64f-03cb-b07c" name="Corpuscarii" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
+                    <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
+                    <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
+                    <characteristic name="S" typeId="5323232344415441232323">3</characteristic>
+                    <characteristic name="T" typeId="5423232344415441232323">3</characteristic>
+                    <characteristic name="W" typeId="5723232344415441232323">1</characteristic>
+                    <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
+                    <characteristic name="A" typeId="4123232344415441232323">2</characteristic>
+                    <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
+                    <characteristic name="Save" typeId="5361766523232344415441232323">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="fd8d-55b9-e2ce-aaee" name="Shock (Corpuscarii)" hidden="false">
+                  <description>Whenever a model with this special rule makes attacks with its electrostatic gauntlets in the Shooting phase or the Assault phase, each To Hit roll of a 6 causes 2 additional hits on the target. Snap Shots never cause additional hits as a result of this special rule.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="1553-c7aa-27c1-620e" name="Feel No Pain (5+)" hidden="false" targetId="dbf6-2f12-bb4a-517c" type="rule"/>
+                <infoLink id="2f7d-e6a2-0dbf-b9f7" name="Zealot" hidden="false" targetId="e300-69f2-111a-ed55" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="18.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ed51-945d-7331-503d" name="Fulgurite" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61cc-6892-ded6-aae7" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="ffc2-7a73-9897-1bec" name="Fulgurite" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
+                    <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
+                    <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
+                    <characteristic name="S" typeId="5323232344415441232323">3</characteristic>
+                    <characteristic name="T" typeId="5423232344415441232323">3</characteristic>
+                    <characteristic name="W" typeId="5723232344415441232323">1</characteristic>
+                    <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
+                    <characteristic name="A" typeId="4123232344415441232323">2</characteristic>
+                    <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
+                    <characteristic name="Save" typeId="5361766523232344415441232323">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="3a49-6d60-8cf6-b89d" name="Siphoned Vigour" hidden="false">
+                  <description>If a unit that contains one or more models with this special rule causes the last model in an enemy unit to be removed as a casualty in the Assault phase, including in a Sweeping Advance, all voltagheist fields saves improve to 3+ until the end of the battle.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="4911-adb0-b6c1-bc7b" name="Feel No Pain (5+)" hidden="false" targetId="dbf6-2f12-bb4a-517c" type="rule"/>
+                <infoLink id="199d-8f58-c28f-d5c5" name="Zealot" hidden="false" targetId="e300-69f2-111a-ed55" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="18.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c4c9-de64-2874-d0a9" name="Weapons" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="8ea8-04b2-907a-ce74" value="2.0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="770b-6e7e-5c4e-3a92" type="greaterThan"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed51-945d-7331-503d" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="110f-ad7d-ff13-dea3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ea8-04b2-907a-ce74" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="804d-a764-b693-3308" name="Electroleech Stave (Fulgurite only)" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="8764-f553-f603-5dc9" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed51-945d-7331-503d" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be7d-cac2-0746-466a" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8764-f553-f603-5dc9" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="dcfb-c05a-47cd-0499" name="Electroleech Stave" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+2</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Concussive, Two-handed, Electroleech</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="ccab-bfd2-3534-5845" name="Electroleech" hidden="false">
+                  <description>Each to Wound roll of 6 gains Instant Death.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="f084-f5f4-7ba7-92e2" name="Concussive" hidden="false" targetId="9d85-46f7-f5e6-a5f7" type="rule"/>
+                <infoLink id="47d7-56aa-0877-003c" name="Two-Handed" hidden="false" targetId="b11c-0ef4-af6b-d96f" type="rule"/>
+                <infoLink id="d0d0-38b1-bfa9-bb4a" name="Instant Death" hidden="false" targetId="fbf1-6913-ff9f-5a4f" type="rule">
+                  <modifiers>
+                    <modifier type="append" field="name" value="(6+)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e50c-9319-94af-a5b3" name="Electrostatic Gauntlets (Corpuscarii only)" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="7ff9-761f-9863-9b4a" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="770b-6e7e-5c4e-3a92" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ff9-761f-9863-9b4a" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fd1-568e-eca4-22df" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="4dc0-2776-f820-871d" name="Electrostatic Gauntlets" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">-</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Assault 2, Twin-Linked</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="97b0-4f3b-140b-bd12" name="Twin-linked" hidden="false" targetId="10a8-8d89-0bec-3e21" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c150-dee2-e040-b405" name="Kataphron Breachers" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="dd47-8483-633b-f033" name="Infantry" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="63a2-1270-9e05-26ff" name="Kataphron Breachers" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8806-03e9-72a3-0b16" type="min"/>
+            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="626e-b3c1-026b-23f5" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="33a2-8039-57d0-bc03" name="Kataphron Breachers" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
+                <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
+                <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
+                <characteristic name="S" typeId="5323232344415441232323">5</characteristic>
+                <characteristic name="T" typeId="5423232344415441232323">5</characteristic>
+                <characteristic name="W" typeId="5723232344415441232323">2</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">1</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
+                <characteristic name="Save" typeId="5361766523232344415441232323">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="9e42-5f4f-c0e2-d227" name="Heavy Battle Servitor" hidden="false">
+              <description>Models with this rule cannot Run, but can fire twice in the Shooting phase provided the model doesn’t move in the Movement phase. Models with this rule count as stationary when firing Heavy or Salvo weapons and are allowed to Charge in the turn they fire Rapid Fire, Heavy or Salvo weapons.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="8675-8f19-3baa-0a1f" name="Very Bulky" hidden="false" targetId="abc9-8566-bb61-4b7c" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="50.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d0d7-dcb1-57da-143d" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="53cf-9d4a-423d-7ec4">
+          <modifiers>
+            <modifier type="increment" field="d027-b883-8ef4-724b" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="c150-dee2-e040-b405" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="c13d-447a-8dd9-f2c1" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="c150-dee2-e040-b405" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="c13d-447a-8dd9-f2c1" value="3.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c13d-447a-8dd9-f2c1" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d027-b883-8ef4-724b" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="53cf-9d4a-423d-7ec4" name="Heavy Arc Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d81-5b59-1356-87b4" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="8361-5303-5f9a-4f00" name="Heavy Arc Rifle" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">5</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 2, Haywire</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="feff-7646-108c-9894" name="Haywire" hidden="false" targetId="6970-1bf3-b33e-5dce" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="ed7e-9f3d-a0e8-1d0f" name="Torsion Cannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d14-4262-5e13-ce20" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="c60e-2b26-0cb5-9f8a" name="Torsion Cannon" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">1</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Contortion</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="c950-0857-611e-a354" name="Contortion" hidden="false">
+                  <description>Each Wound or Hull Point lost by a model becomes D3 Wounds or Hull Points</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="e6f2-1096-49ab-f866" name="Secondary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="31cd-9067-2cb0-3751">
+          <modifiers>
+            <modifier type="decrement" field="85a6-033b-2a6e-a350" value="3.0"/>
+            <modifier type="increment" field="5af1-0662-91aa-3706" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="c150-dee2-e040-b405" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="85a6-033b-2a6e-a350" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="c150-dee2-e040-b405" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="85a6-033b-2a6e-a350" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5af1-0662-91aa-3706" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="31cd-9067-2cb0-3751" name="Arc Claw" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="966b-533b-74b0-755f" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="a4f3-1dc0-9e4a-1e30" name="Arc Claw" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+1</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">5</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Haywire</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="f8a2-2fe0-592c-067a" name="Haywire" hidden="false" targetId="6970-1bf3-b33e-5dce" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="5b91-efc6-1df0-0e0e" name="Hydraulic Claw" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fe2-42bb-e6f9-4044" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="ba33-b1f7-44c7-e603" name="Hydraulic Claw" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+2</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">-</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Unwieldy, Iron Grasp</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="cf8b-56f1-6af8-7584" name="Iron Grasp" hidden="false">
+                  <description>The model can exchange its normal melee attacks for a single attack that is resolved at S:User x2, AP2</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="d5db-ed47-00d7-2a7e" name="Unwieldy" hidden="false" targetId="5eea-958c-d623-c3c9" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="ff98-1b35-b1d7-5680" name="Kataphron Destroyers" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="8a40-e74d-650f-180e" name="Infantry" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5a57-dff7-525c-fd8b" name="Kataphron Destroyers" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c13-bc42-c746-720f" type="min"/>
+            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d908-095a-2f1e-aeb8" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="bcdc-24a3-88c4-7c8d" name="Kataphron Destroyers" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
+                <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
+                <characteristic name="BS" typeId="425323232344415441232323">3</characteristic>
+                <characteristic name="S" typeId="5323232344415441232323">5</characteristic>
+                <characteristic name="T" typeId="5423232344415441232323">5</characteristic>
+                <characteristic name="W" typeId="5723232344415441232323">2</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">1</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
+                <characteristic name="Save" typeId="5361766523232344415441232323">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="15d0-b2a0-afa0-226c" name="Heavy Battle Servitor" hidden="false">
+              <description>Models with this rule cannot Run, but can fire twice in the Shooting phase provided the model doesn’t move in the Movement phase. Models with this rule count as stationary when firing Heavy or Salvo weapons and are allowed to Charge in the turn they fire Rapid Fire, Heavy or Salvo weapons.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="2dc0-cb47-042c-38f5" name="Very Bulky" hidden="false" targetId="abc9-8566-bb61-4b7c" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="55.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4afc-e993-1fb7-d9ef" name="Primary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="f648-5972-42af-e77f">
+          <modifiers>
+            <modifier type="increment" field="4383-72c6-fdf2-45f1" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="ff98-1b35-b1d7-5680" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="4383-72c6-fdf2-45f1" value="3.0"/>
+            <modifier type="increment" field="a410-940e-4a82-c6cf" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="ff98-1b35-b1d7-5680" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4383-72c6-fdf2-45f1" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a410-940e-4a82-c6cf" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f648-5972-42af-e77f" name="Plasma Culverin" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="094f-791b-2847-7713" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="25aa-f8da-7c9c-9c68" name="Plasma Culverin" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 2, Blast, Gets Hot</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="ab61-d30f-d5f7-2f66" name="Gets Hot" hidden="false" targetId="f4fd-d519-4769-5510" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="9795-3a43-e878-cb5f" name="Heavy Grav Cannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e018-5a3c-6a49-90b6" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="f753-27ed-8389-4a68" name="Heavy Grav Cannon" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">30&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">*</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Salvo 4/6, Concussive, Graviton Pulse</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="fb62-d8a1-4ad3-531d" name="Concussive" hidden="false" targetId="9d85-46f7-f5e6-a5f7" type="rule"/>
+                <infoLink id="b62f-32cf-a852-fae4" name="Graviton Pulse" hidden="false" targetId="2d57-8425-0ec0-a9cf" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b1a1-991f-2582-8346" name="Secondary Weapon" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="decrement" field="32da-7d56-8797-e2c9" value="3.0"/>
+            <modifier type="increment" field="99dd-5536-ba73-c010" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="ff98-1b35-b1d7-5680" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="32da-7d56-8797-e2c9" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="ff98-1b35-b1d7-5680" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="32da-7d56-8797-e2c9" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="99dd-5536-ba73-c010" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a1c8-5e28-58c0-fcd6" name="Phosphor Blaster" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb81-b048-7a16-bb41" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="e626-1548-d785-344d" name="Phosphor Blaster" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Rapid Fire, Luminagen</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="6dc9-a9ae-5af9-951f" name="Luminagen" hidden="false">
+                  <description>Any unit suffering a wound or Hull Point from this weapon suffers -1 to cover saves
+for the remainder of the phase. Units can re-roll charges on such units until the end of the turn.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry id="8d31-10ad-7073-903c" name="Cognis Flamer" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ca9-6df7-fa1f-fde1" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="38b2-b83b-5a90-ce10" name="Cognis Flamer" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">Template</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">5</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1, Flamewall</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="e575-4355-97aa-a5fd" name="Flamewall" hidden="false">
+                  <description>Wall of Death always causes 3 hits, rather than D3.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="4.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="d696-042d-2afa-b026" name="Heavy Bolter or Heavy Flamer" hidden="false" collective="false" import="true">
@@ -18772,12 +19362,8 @@ If an attempt at the Rite of Dread Castigation incurs a roll on the Cybertheurgy
  • Rite of Immolation: Modifier = -3 &gt; By overcoming the safety protocols and self-preservation systems of the automata’s reactor core, the Cybertheurgist forces the machine creature to catastrophically self-destruct. If the power is used successfully, the model is destroyed, immediately removed from play and replaced by a Large Blast (5&quot;) marker. All models under the marker suffer a hit with a Strength value equivalent to the affected model’s Toughness and an AP value equal to the affected model’s armour save.
 Should a failed attempt at Rite of Immolation result in a Cybertheurgy Mishap, the Malifica result occurs automatically and there is no need to roll on the table.</description>
     </rule>
-    <rule id="6c4ed18f-87f3-7a2e-6438-a09892405741" name="Deadly Cargo" page="" hidden="false">
-      <description>If a flyer carring a weapon with this special rule takes hull damage but is not destroyed, roll a D6. On a 6, the flyer suffers and explodes result.</description>
-    </rule>
     <rule id="988c7311-fd57-a973-0678-7545d8d58f48" name="Djinn-sight" publicationId="ca571888--pubN85920" page="222" hidden="false">
-      <description>Reduces enemy benefit from cover by -2. Additionally infiltrators may not be deployed within
-                24&quot;.</description>
+      <description>Reduces enemy benefit from cover by -2. Additionally infiltrators may not be deployed within 24&quot;.</description>
     </rule>
     <rule id="718145e4-0a8e-1007-046b-7d2157a5ea3d" name="Firing Calibration" page="" hidden="false">
       <description>This weapon may not be fired if the model carrying it has moved in the same turn, regardless of the Relentless special rule or if the carrying model is a vehicle, etc...</description>
@@ -18810,19 +19396,13 @@ Should a failed attempt at Rite of Immolation result in a Cybertheurgy Mishap, t
       <description>Each 6 rolled To Wound causes 2 Wounds, no matter target&apos;s Toughness.</description>
     </rule>
     <rule id="7c0b-31e3-daa1-0d3a" name="Blind Barrage" hidden="false">
-      <description>So long as the unit contains at least five models equipped with Galvanic-Casters, once per
-                game, the unit&apos;s controlling player may declare the use of a Blind Barrage by the unit instead of that
-                unit firing its weapons in the Shooting phase. In this case, select a friendly unit within 18&quot; and
-                within line of sight of the Peltasts unit. That friendly unit gains the Shrouded special rule until the
-                beginning of the controlling player&apos;s next player turn. Super-heavy units may not be shrouded unless two
-                Secutarii units simultaneously use their Blind Barrage ability to conceal it.</description>
+      <description>So long as the unit contains at least five models equipped with Galvanic-Casters, once per game, the unit&apos;s controlling player may declare the use of a Blind Barrage by the unit instead of that unit firing its weapons in the Shooting phase. In this case, select a friendly unit within 18&quot; and within line of sight of the Peltasts unit. That friendly unit gains the Shrouded special rule until the beginning of the controlling player&apos;s next player turn. Super-heavy units may not be shrouded unless two Secutarii units simultaneously use their Blind Barrage ability to conceal it.</description>
     </rule>
     <rule id="a878-4168-e49f-1d06" name="Titan Guard" hidden="false">
       <description>When any unit with this special rule is within 24&quot; of an allied Titan of any type, they may re-roll failed Morale checks and Feel No Pain rolls.</description>
     </rule>
     <rule id="f9fd-f0f9-3760-a028" name="Parabolic Shot" hidden="false">
-      <description>Weapons with this special rule can be fired at targets out of the unit&apos;s line of sight, so long
-                as they or their target are not in an enclosed space (such as inside a building).</description>
+      <description>Weapons with this special rule can be fired at targets out of the unit&apos;s line of sight, so long as they or their target are not in an enclosed space (such as inside a building).</description>
     </rule>
     <rule id="bd0a-ad49-6435-587e" name="Secutarii Hazard Protocols" hidden="false">
       <description>At the start of their player turn, a player can declare all of their Secutarii with this  special rule will engage hazard protocols. Standard BS is increased by +1 and they may make Snap Shots at BS2. The units may not make Run moves, and their WS and Initiative are reduced by -1. These effects last until the start of the controlling player&apos;s next turn.</description>
@@ -18837,14 +19417,11 @@ Should a failed attempt at Rite of Immolation result in a Cybertheurgy Mishap, t
       <description>Grants It Will Not Die. Other bonuses are already included in the unit profile.</description>
     </rule>
     <rule id="6595-834d-8a6d-5fc6" name="Binaric Stratagems" publicationId="ca571888--pubN92115" hidden="false">
-      <description>If the detachment contains one or more Secutarii Axiarchs then all units in the detachmentwith
-                the Secutarii Hazard Protocols special rule may be give one of the following bonuses. Only a single
-                bonus may be given to the units, regardless of how many Axiarchs are present in the detachment.
-                Pain Supression Override: Feel No Pain increased to 5+
-                Explorator Synaesthesis: Gain the Move Through Cover special rule.
-                Deconstructive Confluence: Results on the vehicle damage table inflicted by models with this ability are
-                at +1.
-                Extinction Interlock: The unit gains Preferred Enemy (infantry) special rule.</description>
+      <description>If the detachment contains one or more Secutarii Axiarchs then all units in the detachment with the Secutarii Hazard Protocols special rule may be give one of the following bonuses. Only a single bonus may be given to the units, regardless of how many Axiarchs are present in the detachment.
+Pain Supression Override: Feel No Pain increased to 5+
+Explorator Synaesthesis: Gain the Move Through Cover special rule.
+Deconstructive Confluence: Results on the vehicle damage table inflicted by models with this ability are at +1.
+Extinction Interlock: The unit gains Preferred Enemy (infantry) special rule.</description>
     </rule>
     <rule id="6d42-c611-2463-f5ac" name="Luminagen" hidden="false">
       <description>A unit that suffers one of more unsaved Wounds, glancing or penetrating hits caused by a weapon with this special rule counts its cover saves as being 1 point worse than normal until the end of the phase. Furthermore, units can re-roll the dice to determine their charge range against the afflicted unit until the end of the turn.</description>
@@ -18986,14 +19563,6 @@ Should a failed attempt at Rite of Immolation result in a Cybertheurgy Mishap, t
     <profile id="abdf1422-184a-f8f9-9544-621c2e1c646f" name="Ground Tracking Auguries" page="" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Provides Strafing Run special rule.  </characteristic>
-      </characteristics>
-    </profile>
-    <profile id="b3ea1d32-ba66-0585-d7f7-0dc56e707736" name="Havoc Launcher" page="" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
-        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
-        <characteristic name="AP" typeId="415023232344415441232323">5</characteristic>
-        <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Blast, Twin-linked</characteristic>
       </characteristics>
     </profile>
     <profile id="fed8-2dba-f78c-5bcc" name="Heavy Chainblade" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
