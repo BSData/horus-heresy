@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="118" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="150" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="119" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="152" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="cf03-f607-pubN70802" name="HH-Questoris-Knight-Armiger-Talon Download"/>
     <publication id="ece2-a265-6237-7efa" name="HH Mechanicum Knight Moirax Talon Download"/>
@@ -1126,6 +1126,11 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0330-6762-6797-0a42" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="219d-aefa-dfa5-44db">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d76d-0097-d56b-e6bf" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3982,9 +3987,6 @@ Reduces transport capacity to 8.</description>
                     <infoLink id="9936-6caf-6ed7-4b11" name="Unwieldy" hidden="false" targetId="5eea-958c-d623-c3c9" type="rule"/>
                     <infoLink id="cb33-6165-7fd5-a3ed" name="Servo-arm" hidden="false" targetId="dd50-c987-f28a-1dca" type="rule"/>
                   </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="5.0"/>
-                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -10068,9 +10070,9 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition field="selections" scope="aa74-77f4-7266-36b6" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8093-b175-1b06-0915" type="equalTo"/>
+                            <condition field="selections" scope="aa74-77f4-7266-36b6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8093-b175-1b06-0915" type="equalTo"/>
                             <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="00cf-20ab-1b17-aad1" type="equalTo"/>
-                            <condition field="selections" scope="aa74-77f4-7266-36b6" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2387-a7aa-67d7-2589" type="equalTo"/>
+                            <condition field="selections" scope="aa74-77f4-7266-36b6" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="2387-a7aa-67d7-2589" type="equalTo"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -10119,8 +10121,8 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
                         <conditionGroup type="and">
                           <conditions>
                             <condition field="selections" scope="aa74-77f4-7266-36b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="00cf-20ab-1b17-aad1" type="equalTo"/>
-                            <condition field="selections" scope="aa74-77f4-7266-36b6" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8093-b175-1b06-0915" type="equalTo"/>
-                            <condition field="selections" scope="aa74-77f4-7266-36b6" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a517-4d10-57dd-7c1c" type="equalTo"/>
+                            <condition field="selections" scope="aa74-77f4-7266-36b6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8093-b175-1b06-0915" type="equalTo"/>
+                            <condition field="selections" scope="aa74-77f4-7266-36b6" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="a517-4d10-57dd-7c1c" type="equalTo"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -18509,6 +18511,9 @@ Should a vehicle suffer a penetrating hit from this attack, it immediately suffe
               <infoLinks>
                 <infoLink id="feff-7646-108c-9894" name="Haywire" hidden="false" targetId="6970-1bf3-b33e-5dce" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="ed7e-9f3d-a0e8-1d0f" name="Torsion Cannon" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -18529,6 +18534,9 @@ Should a vehicle suffer a penetrating hit from this attack, it immediately suffe
                   <description>Each Wound or Hull Point lost by a model becomes D3 Wounds or Hull Points</description>
                 </rule>
               </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -18568,6 +18576,9 @@ Should a vehicle suffer a penetrating hit from this attack, it immediately suffe
               <infoLinks>
                 <infoLink id="f8a2-2fe0-592c-067a" name="Haywire" hidden="false" targetId="6970-1bf3-b33e-5dce" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="5b91-efc6-1df0-0e0e" name="Hydraulic Claw" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -18598,6 +18609,9 @@ Should a vehicle suffer a penetrating hit from this attack, it immediately suffe
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ff98-1b35-b1d7-5680" name="Kataphron Destroyers" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -18675,6 +18689,9 @@ Should a vehicle suffer a penetrating hit from this attack, it immediately suffe
               <infoLinks>
                 <infoLink id="ab61-d30f-d5f7-2f66" name="Gets Hot" hidden="false" targetId="f4fd-d519-4769-5510" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="9795-3a43-e878-cb5f" name="Heavy Grav Cannon" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -18694,6 +18711,9 @@ Should a vehicle suffer a penetrating hit from this attack, it immediately suffe
                 <infoLink id="fb62-d8a1-4ad3-531d" name="Concussive" hidden="false" targetId="9d85-46f7-f5e6-a5f7" type="rule"/>
                 <infoLink id="b62f-32cf-a852-fae4" name="Graviton Pulse" hidden="false" targetId="2d57-8425-0ec0-a9cf" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -18736,6 +18756,9 @@ Should a vehicle suffer a penetrating hit from this attack, it immediately suffe
 for the remainder of the phase. Units can re-roll charges on such units until the end of the turn.</description>
                 </rule>
               </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="8d31-10ad-7073-903c" name="Cognis Flamer" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -18763,6 +18786,9 @@ for the remainder of the phase. Units can re-roll charges on such units until th
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -19374,9 +19400,6 @@ Should a failed attempt at Rite of Immolation result in a Cybertheurgy Mishap, t
     <rule id="8e53a9a8-1408-23bf-5be8-4601caec5d10" name="Fusillade Attack" publicationId="ca571888--pubN85920" page="220" hidden="false">
       <description>May fire two ranged weapons in the shooting phase as long as they are at the same target</description>
     </rule>
-    <rule id="797e55b1-251e-6606-9cb3-64661b0b18a3" name="Lumbering Advance" publicationId="ca571888--pubN85920" page="220" hidden="false">
-      <description>May not Run or make sweeping advances</description>
-    </rule>
     <rule id="3a93202e-ac23-5508-2dda-248efcc8ff3d" name="Machine Spirit" page="" hidden="false">
       <description>Confers the Power of the Machine Spirit special rule.</description>
     </rule>
@@ -19778,14 +19801,6 @@ Extinction Interlock: The unit gains Preferred Enemy (infantry) special rule.</d
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
         <characteristic name="AP" typeId="415023232344415441232323">5</characteristic>
         <characteristic name="Type" typeId="5479706523232344415441232323">Assault 1, Haywire</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="b766-cfd4-625b-d5da" name="Arc Maul" page="" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
-        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+2</characteristic>
-        <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
-        <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Concussive, Haywire</characteristic>
       </characteristics>
     </profile>
     <profile id="ad5f-2165-8b9a-6bae" name="Arc Pistol" page="" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">

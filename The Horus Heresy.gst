@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="150" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="152" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN106502" name="HH: Core Rule Book"/>
@@ -491,7 +491,7 @@ A wound cannot be re-allocated onto a gun model from a successful Look Out, Sir 
     </forceEntry>
   </forceEntries>
   <entryLinks>
-    <entryLink id="7d9f-d54b-09db-e954" name="Use Playtest Rules" hidden="false" collective="false" import="true" targetId="5a90-c53e-42ca-b4ca" type="selectionEntry"/>
+    <entryLink id="7d9f-d54b-09db-e954" name="Use Playtest Rules Errata 1.0 (From FAQ 1.1 Feb/2019)" hidden="false" collective="false" import="true" targetId="5a90-c53e-42ca-b4ca" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="11c8-2e78-8328-31e4" name="Crusade Fleet Avenger Strike Fighter" publicationId="ca571888--pubN66489" page="47" hidden="false" collective="false" import="true" type="unit">
@@ -3709,7 +3709,6 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <infoLinks>
                 <infoLink id="18c3-ffe1-e610-cbda" name="Twin Icarus Autocannon" hidden="false" targetId="534b-67b0-62d7-b977" type="profile"/>
                 <infoLink id="5ea1-8add-d47f-7dbc" name="Interceptor" hidden="false" targetId="ca3e-e94e-58f6-75d9" type="rule"/>
-                <infoLink id="f880-b8e6-08d6-318e" name="Twin-linked" hidden="false" targetId="10a8-8d89-0bec-3e21" type="rule"/>
                 <infoLink id="85c8-e3e2-c94a-61fb" name="Skyfire" hidden="false" targetId="be7f-8146-6cb8-9a53" type="rule"/>
               </infoLinks>
               <costs>
@@ -3846,7 +3845,6 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               </constraints>
               <infoLinks>
                 <infoLink id="902b-356c-043f-5324" name="Twin Icarus Autocannon" hidden="false" targetId="534b-67b0-62d7-b977" type="profile"/>
-                <infoLink id="1805-5801-fe95-b992" name="Twin-linked" hidden="false" targetId="10a8-8d89-0bec-3e21" type="rule"/>
                 <infoLink id="95e0-3417-674a-bbfe" name="Skyfire" hidden="false" targetId="be7f-8146-6cb8-9a53" type="rule"/>
                 <infoLink id="f05f-80a9-8899-4474" name="Interceptor" hidden="false" targetId="ca3e-e94e-58f6-75d9" type="rule"/>
               </infoLinks>
@@ -4388,7 +4386,6 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <infoLinks>
                 <infoLink id="10f3-a633-6f7b-4b39" name="Twin Icarus Autocannon" hidden="false" targetId="534b-67b0-62d7-b977" type="profile"/>
                 <infoLink id="669f-26c8-94a4-e88d" name="Interceptor" hidden="false" targetId="ca3e-e94e-58f6-75d9" type="rule"/>
-                <infoLink id="155b-32d5-4c7f-8b58" name="Twin-linked" hidden="false" targetId="10a8-8d89-0bec-3e21" type="rule"/>
                 <infoLink id="52e5-68b0-0fb5-f2c0" name="Skyfire" hidden="false" targetId="be7f-8146-6cb8-9a53" type="rule"/>
               </infoLinks>
               <costs>
@@ -4538,7 +4535,6 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <infoLinks>
                 <infoLink id="a932-23f0-c1ab-2b7c" name="Twin Icarus Autocannon" hidden="false" targetId="534b-67b0-62d7-b977" type="profile"/>
                 <infoLink id="e7b9-f80c-8501-3abc" name="Skyfire" hidden="false" targetId="be7f-8146-6cb8-9a53" type="rule"/>
-                <infoLink id="a7b5-77a9-685a-fc62" name="Twin-linked" hidden="false" targetId="10a8-8d89-0bec-3e21" type="rule"/>
                 <infoLink id="b362-aea8-7bee-7693" name="Interceptor" hidden="false" targetId="ca3e-e94e-58f6-75d9" type="rule"/>
               </infoLinks>
               <costs>
@@ -4713,7 +4709,6 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <infoLink id="21aa-ff29-1d93-bdad" name="Twin Icarus Autocannon" hidden="false" targetId="534b-67b0-62d7-b977" type="profile"/>
                 <infoLink id="5eca-d51a-b68d-bcb5" name="Interceptor" hidden="false" targetId="ca3e-e94e-58f6-75d9" type="rule"/>
                 <infoLink id="e20d-21d4-8d07-a1da" name="Skyfire" hidden="false" targetId="be7f-8146-6cb8-9a53" type="rule"/>
-                <infoLink id="ed8c-2ecf-19e5-4323" name="Twin-linked" hidden="false" targetId="10a8-8d89-0bec-3e21" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="35.0"/>
@@ -4959,8 +4954,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="c53b-73a7-8559-d968" name="" hidden="false" targetId="342d5e83-9f9b-42c0-cecb-e6c9c197ab9d" type="profile"/>
-        <infoLink id="bc7f-7c35-2dd4-7136" name="New InfoLink" hidden="false" targetId="860d-1c1d-04ef-2829" type="rule"/>
+        <infoLink id="c53b-73a7-8559-d968" name="Ion Shield" hidden="false" targetId="342d5e83-9f9b-42c0-cecb-e6c9c197ab9d" type="profile"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="eb2c-a7c7-2c3f-fc1d" name="Exchange Ironstorm missiles for:" hidden="false" collective="false" import="true" type="upgrade">
@@ -6211,16 +6205,16 @@ or Gargantuan Creatures. </description>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="bed1-b54d-9881-2978" name="" hidden="false" targetId="342d5e83-9f9b-42c0-cecb-e6c9c197ab9d" type="profile"/>
+        <infoLink id="bed1-b54d-9881-2978" name="Ion Shield" hidden="false" targetId="342d5e83-9f9b-42c0-cecb-e6c9c197ab9d" type="profile"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="567b-162a-f3e6-3076" name="Two Twin linked Conversion Beam Cannon" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6940-8927-51d4-0164" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6940-8927-51d4-0164" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="832d-36fa-23e1-b81f" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="15b1-830d-e996-944d" name="New InfoLink" hidden="false" targetId="10a8-8d89-0bec-3e21" type="rule"/>
+            <infoLink id="15b1-830d-e996-944d" name="Twin-linked" hidden="false" targetId="10a8-8d89-0bec-3e21" type="rule"/>
           </infoLinks>
           <entryLinks>
             <entryLink id="c25a-7a06-e16d-c0c9" name="Conversion Beam Cannon" hidden="false" collective="false" import="true" targetId="1292-7672-b955-42da" type="selectionEntry">
@@ -6251,7 +6245,7 @@ or Gargantuan Creatures. </description>
       <selectionEntryGroups>
         <selectionEntryGroup id="cdcc-ff0c-c151-4cfa" name="May be upgraded with:" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink id="be86-c093-5371-34ae" name="New EntryLink" hidden="false" collective="false" import="true" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
+            <entryLink id="be86-c093-5371-34ae" name="Occular Augmetics" hidden="false" collective="false" import="true" targetId="348b-40f4-c774-1f9a" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -6269,7 +6263,7 @@ or Gargantuan Creatures. </description>
           <characteristics>
             <characteristic name="Range" typeId="52616e676523232344415441232323">42&quot; - 72&quot;</characteristic>
             <characteristic name="Strength" typeId="537472656e67746823232344415441232323">10</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
+            <characteristic name="AP" typeId="415023232344415441232323">1</characteristic>
             <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance 1, Massive Blast (7&quot;), Wrecker, Sunder</characteristic>
           </characteristics>
         </profile>
@@ -10376,7 +10370,7 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ffcc-2bef-01a8-2c7a" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="993c-10ab-fc6f-cd3c" name="New InfoLink" hidden="false" targetId="09fd-8af1-a6b1-51f7" type="profile"/>
+                <infoLink id="993c-10ab-fc6f-cd3c" name="Boltgun" hidden="false" targetId="09fd-8af1-a6b1-51f7" type="profile"/>
                 <infoLink id="7f7a-fb39-66bf-b5af" name="New InfoLink" hidden="false" targetId="20ab-d2f5-47a5-dbe2" type="profile"/>
                 <infoLink id="b605-3f72-c601-ce19" name="Deflagrate" hidden="false" targetId="b46a-a3ec-91a5-5001" type="rule"/>
               </infoLinks>
@@ -11302,7 +11296,7 @@ Command Benefits:
             <infoLink id="0f09-84c7-e224-4a86" name="New InfoLink" hidden="false" targetId="d219-2314-4834-c054" type="rule"/>
             <infoLink id="35e9-6bd8-f762-4692" name="New InfoLink" hidden="false" targetId="38d5-b6eb-bda8-2497" type="rule"/>
             <infoLink id="07d7-4dd2-1484-2f06" name="New InfoLink" hidden="false" targetId="f095-0842-a6b1-5404" type="profile"/>
-            <infoLink id="d52b-0af7-fe19-1ff0" name="New InfoLink" hidden="false" targetId="8cb0-ff25-22a2-d480" type="rule"/>
+            <infoLink id="d52b-0af7-fe19-1ff0" name="Jump Unit" hidden="false" targetId="8cb0-ff25-22a2-d480" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -13762,7 +13756,9 @@ If a Template weapon hits a building’s Fire Point or an Opentopped vehicle and
     <rule id="cd4a-2106-2ed0-dcdb" name="Wall of Death" publicationId="ca571888--pubN106502" page="174" hidden="false">
       <description>Wall of Death Template weapons can fire Overwatch, even though they cannot fire Snap Shots. Instead, if a Template weapon fires Overwatch, it automatically inflicts D3 hits on the charging unit, resolved at its normal Strength and AP value.</description>
     </rule>
-    <rule id="06a2-c4fd-8d61-c628" name="No Escape" hidden="false"/>
+    <rule id="06a2-c4fd-8d61-c628" name="No Escape" hidden="false">
+      <description>Enemy models suffer -2 to Look Out Sir tests against wounds inflicted by this model.</description>
+    </rule>
     <rule id="3d29-2076-01a0-7f7d" name="Hellstorm Weapon" publicationId="ca571888--pubN106502" page="174" hidden="false">
       <description>Hellstorm weapons have the word ‘Hellstorm’ instead of a range on their weapon profile. Hellstorm weapons use the Hellstorm template (see page 19), but otherwise obey the rules for other Template weapons.</description>
     </rule>
@@ -13901,6 +13897,9 @@ common enemy. These Factions cannot be part of the same army.</description>
     </rule>
     <rule id="182f-e29d-30ae-5062" name="Agent of the Imperium" hidden="false">
       <description>These Agents are widespread within the Imperium and are employed by both sides during the Heresy. Both Traitors, Loyalists and other factions of Imperial forces are able to recruit these units and count them as Sworn Brothers.</description>
+    </rule>
+    <rule id="797e55b1-251e-6606-9cb3-64661b0b18a3" name="Lumbering Advance" publicationId="ca571888--pubN85920" page="220" hidden="false">
+      <description>May not Run or make sweeping advances</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -15091,7 +15090,7 @@ Jetbikes can move over all other models and terrain freely. However, if a moving
     </profile>
     <profile id="342d5e83-9f9b-42c0-cecb-e6c9c197ab9d" name="Ion Shield" publicationId="ca571888--pubN84158" page="301" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
       <characteristics>
-        <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">When deployed, and at the start of each subsequent opposing side&apos;s shooting phase, the Knight&apos;s controlling player must declare a facing for the ion shield.  Choices are front, left, right, or rear.    The Knight has a 4+ invulnerable save  against all hits on that facing until the start of the opposing side&apos;s next shooting phase.  Ion shields are repositioned before any attacks are carried out and may not protect against close combat attacks.  </characteristic>
+        <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">When deployed, and at the start of each subsequent opposing side&apos;s shooting phase, the Knight&apos;s controlling player must declare a facing for the ion shield.  Choices are front, left, right, or rear. The Knight has a 4+ invulnerable save  against all hits on that facing until the start of the opposing side&apos;s next shooting phase.  Ion shields are repositioned before any attacks are carried out and may not protect against close combat attacks.  </characteristic>
       </characteristics>
     </profile>
     <profile id="76f43c9f-9d2b-e019-63db-3ac3082ee07c" name="Ionic Flare Shield" publicationId="ca571888--pubN84158" page="303" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
@@ -15226,7 +15225,7 @@ Jetbikes can move over all other models and terrain freely. However, if a moving
         <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
         <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
-        <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 2, Interceptor, Skyfire, Twin-linked</characteristic>
+        <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 2, Interceptor, Skyfire</characteristic>
       </characteristics>
     </profile>
     <profile id="8f57-fa37-5c5c-e7cb" name="Vortex Missile" publicationId="ca571888--pubN66500" page="274" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
@@ -15751,6 +15750,14 @@ Jetbikes can move over all other models and terrain freely. However, if a moving
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
         <characteristic name="AP" typeId="415023232344415441232323">5</characteristic>
         <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Blast (3&quot;), Twin-linked</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b766-cfd4-625b-d5da" name="Arc Maul" page="" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
+        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+2</characteristic>
+        <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
+        <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Concussive, Haywire</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
