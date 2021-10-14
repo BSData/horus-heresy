@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="153" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="154" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN106502" name="HH: Core Rule Book"/>
@@ -12484,6 +12484,7 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
           </rules>
           <infoLinks>
             <infoLink id="035c-0d42-a42d-cae1" name="Paired Weapons" hidden="false" targetId="f495-679e-1976-68d1" type="rule"/>
+            <infoLink id="e0fa-0a2e-fda9-1b16" name="Two-Handed" hidden="false" targetId="b11c-0ef4-af6b-d96f" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -12576,6 +12577,7 @@ An Aetherkine Projector is a Whitefire psychic power which is automatically know
           <infoLinks>
             <infoLink id="c873-5235-b309-ce25" name="Paired Weapons" hidden="false" targetId="f495-679e-1976-68d1" type="rule"/>
             <infoLink id="e3be-a101-1983-a6b3" name="Shred" hidden="false" targetId="89da-0cb5-bee4-8ec2" type="rule"/>
+            <infoLink id="cd97-bec1-222e-8b67" name="Two-Handed" hidden="false" targetId="b11c-0ef4-af6b-d96f" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -13161,7 +13163,7 @@ Gets Hot and Re-rolls
 If a model has the ability to re-roll its rolls To Hit (including because of BS6+ or the Twin-linked special rule), a Wound is only suffered if the To Hit re-roll is also a 1; it may also re-roll Gets Hot results of 1 for weapons that do not roll To Hit.</description>
     </rule>
     <rule id="f495-679e-1976-68d1" name="Paired Weapons" publicationId="ca571888--pubN66489" page="106" hidden="false">
-      <description>Adds +1 to the model&apos;s attacks and count as being Twin-linked.</description>
+      <description>Adds +1 to the model&apos;s attacks and count as being Two-Handed</description>
     </rule>
     <rule id="10a8-8d89-0bec-3e21" name="Twin-linked" publicationId="ca571888--pubN106502" page="175" hidden="false">
       <description>Twin-linked weapons don’t get more shots than normal ones, but they give you a better chance of hitting with them. If a shooting weapon has the twin-linked special rule, or is described in a model’s wargear entry as twin-linked, it re-rolls all failed To Hit rolls.
