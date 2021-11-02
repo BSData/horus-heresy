@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="120" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="153" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="121" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="154" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="cf03-f607-pubN70802" name="HH-Questoris-Knight-Armiger-Talon Download"/>
     <publication id="ece2-a265-6237-7efa" name="HH Mechanicum Knight Moirax Talon Download"/>
@@ -7324,9 +7324,6 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
             </profile>
           </profiles>
           <rules>
-            <rule id="0421-32f0-bf60-a2d1" name="Brutal Charge" publicationId="ca571888--pubN68042" page="227" hidden="false">
-              <description>Inflicts D3 Hammer of Wrath attacks. Roll once for the entire unit.</description>
-            </rule>
             <rule id="22e0-fcfc-79ea-e42d" name="Crusader*" hidden="false">
               <description>A unit that contains at least one model with this special rule rolls an extra dice when making Run moves, and uses the highest result rolled. In addition, a unit that contains at least one model with this special rule adds D3 to its Sweeping Advance totals (roll each time).
 *must be in range of a cortex controller for this rule to take effect.</description>
@@ -7334,6 +7331,7 @@ Armour Value, an additional Hull point, on the same model. Invulnerable saves ma
           </rules>
           <infoLinks>
             <infoLink id="9c68-ab9f-1134-e7be" name="Reactor Blast" hidden="false" targetId="d5cf-bd98-2854-13cf" type="rule"/>
+            <infoLink id="e60b-c535-5e1e-b0e8" name="Brutal Charge" hidden="false" targetId="4927-560b-70be-12ee" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="f9a2-bcd8-4b73-2820" name="Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
@@ -12043,14 +12041,6 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
     </selectionEntry>
     <selectionEntry id="f29d-27e9-6fa7-101e" name="Graviton Hammer" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="3334-7012-0462-eb3d" name="Graviton Hammer (Assault)" publicationId="ca571888--pubN68042" page="227" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="52616e676523232344415441232323">-</characteristic>
-            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">10</characteristic>
-            <characteristic name="AP" typeId="415023232344415441232323">2</characteristic>
-            <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Concussive, Wrecker</characteristic>
-          </characteristics>
-        </profile>
         <profile id="c2b2-91f3-a960-0e48" name="Graviton Hammer (Shooting)" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="52616e676523232344415441232323">Template</characteristic>
@@ -12065,14 +12055,12 @@ Alternatively, instead of firing any weapons in the Shooting phase, the Magos/Ar
           <description>Instead of rolling To Wound with this weapon, any non-vehicle model caught in its effect must instead roll equal to or under their Strength on a D6 or suffer a wound (a roll of a ‘6’ always counts as a failure). In addition, any unit which suffers a Morale check as a result of
 casualties taken from this attack is subject to a -2 Ld modifier.</description>
         </rule>
-        <rule id="1fb3-b3d4-e5d2-4159" name="Graviton Hammer" hidden="false">
-          <description>Note that the Domitar is equipped with two graviton hammers, which have the effect of granting it an additional attack – this is already included in its profile.
-In addition to its weapon attacks, units assaulting a model or unit with a graviton hammer always count as making a Disordered Charge when doing so.</description>
-        </rule>
       </rules>
       <infoLinks>
         <infoLink id="f662-5a5e-91ec-38a1" name="Concussive" hidden="false" targetId="9d85-46f7-f5e6-a5f7" type="rule"/>
         <infoLink id="ba21-af94-b7ba-f55a" name="Wrecker" hidden="false" targetId="fe2f-3220-3fef-b177" type="rule"/>
+        <infoLink id="a09b-8adf-5199-09c1" name="Graviton Hammer" hidden="false" targetId="df27-6a27-ab6c-071e" type="profile"/>
+        <infoLink id="f32e-b1fe-ae21-e33e" name="Graviton Hammer" hidden="false" targetId="73db-afdc-2c95-993c" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
