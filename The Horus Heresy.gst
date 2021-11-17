@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="154" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="155" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN106502" name="HH: Core Rule Book"/>
@@ -46,6 +46,7 @@
     <publication id="e085-bc29-3c2d-2c49" name="Mournival Events 3.7 Digital Version"/>
     <publication id="4325-6c62-8f6c-297c" name="Mournival Events FAQ and Experimental Errata v3.7"/>
     <publication id="a3ac-f7b8-f0a2-6a3a" name="HH - The Defence of Aotha- Aegidas Lament (Exemplary Battles of the Age of Darkness)"/>
+    <publication id="db9a-ae25-9e59-7f3f" name="HH - The Siege of Hydra Cordatus: Sundering of The Cadmean Citadel (Exemplary Battles of the Age of Darkness)"/>
   </publications>
   <costTypes>
     <costType id="points" name="pts" defaultCostLimit="0.0" hidden="false"/>
@@ -13792,7 +13793,7 @@ Some can also Hover – see page 81. Zooming allows the Flyer to move at extreme
       <description>If a Super-heavy vehicle has a Transport Capacity, then it may transport any number of Infantry units (plus any characters that have joined the units), so long as the number of models in the transported units do not exceed the vehicle’s Transport Capacity.</description>
     </rule>
     <rule id="6f38-4691-2eda-8e1b" name="Psy-Lash" publicationId="ca571888--pubN103311" page="301" hidden="false">
-      <description>When attacking a unit with the Daemon, Psyker, Brotherhood of Psykers/Sorcerers, Psychic Pilot special rule then one randomlyed selected model in the unit with that special rule suffers Perils of the Warp in addition to any other damage.</description>
+      <description>If a weapon with this special rule causes an unsaved wound on a model with the Daemon, Psyker, Brotherhood of Psykers or Psychic Pilot special rule then one randomly selected model in the unit with that special rule suffers Perils of the Warp in addition to any other damage.</description>
     </rule>
     <rule id="7439f6fd-4c50-f88a-eb41-81d9b9c9eed8" name="Hardened Armour" publicationId="ca571888--pubN80998" page="32" hidden="false">
       <description>Hardened Armour counts as being Void Hardened (Cold Void mission special rules from Betrayal)..  Failed armour saves against template and blast weapons may be re-rolled.  Reduces distance rolled for charges, sweeping advances, and run moves by 1&quot;</description>
