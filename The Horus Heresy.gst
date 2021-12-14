@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="155" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="156" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN106502" name="HH: Core Rule Book"/>
@@ -47,6 +47,7 @@
     <publication id="4325-6c62-8f6c-297c" name="Mournival Events FAQ and Experimental Errata v3.7"/>
     <publication id="a3ac-f7b8-f0a2-6a3a" name="HH - The Defence of Aotha- Aegidas Lament (Exemplary Battles of the Age of Darkness)"/>
     <publication id="db9a-ae25-9e59-7f3f" name="HH - The Siege of Hydra Cordatus: Sundering of The Cadmean Citadel (Exemplary Battles of the Age of Darkness)"/>
+    <publication id="6490-b351-71df-886d" name="HH - The Battle Of Armatura (Exemplary Battles of the Age of Darkness)"/>
   </publications>
   <costTypes>
     <costType id="points" name="pts" defaultCostLimit="0.0" hidden="false"/>
@@ -11931,13 +11932,13 @@ Command Benefits:
             <cost name="pts" typeId="points" value="60.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5476-e8db-b6b0-4a1e" name="Tansvectic Generators" publicationId="ca571888--pubN103311" page="304" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5476-e8db-b6b0-4a1e" name="Transvectic Generators" publicationId="ca571888--pubN103311" page="304" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f2a-cae1-800f-f177" type="max"/>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="12a1-7d06-e703-7dc2" type="max"/>
           </constraints>
           <profiles>
-            <profile id="4da9-da51-fe7b-73f4" name="Tansvectic Generators" publicationId="ca571888--pubN103311" page="304" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
+            <profile id="4da9-da51-fe7b-73f4" name="Transvectic Generators" publicationId="ca571888--pubN103311" page="304" hidden="false" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear Item">
               <characteristics>
                 <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Any Libarian, Esoterist, Moritat, Diabolist or Saboteur Consul whoi is not equipped with a Jump Pack, Bike or Jetbike may take a Transvectic Generator for +25pts  A Model with a Transvectic Generator may not join any other unit. A Transvectic Generator allows a model to re-locate through the Warp up to 18&quot; in any direction in lieu of moving in the Movement phase, ignoring intervening models and terrain. For all intents and purposes the model has moved as if using a Jump Pack, and this move has no effect on the model in further phaes. Whenever a model makes use of a Transvectic Generator, they must roll a D6. On the result of a 1, they immediately suffer the Dragged into the Warp result on the Perils of the Warp table, and any units within 3&quot; of the model&apos;s starting location also suffer D6 Strength 6 AP1 hits. For the purposes of wound allocation, assume the attack is coming from the model which suffered Perils of the Warp.</characteristic>
               </characteristics>
