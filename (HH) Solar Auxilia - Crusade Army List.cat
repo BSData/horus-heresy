@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" revision="87" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="149" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" revision="88" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="156" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="ce39-b313-7b57-ee8e" name="Artillery" publicationId="ca571888--pubN106502" page="65" hidden="false">
       <constraints>
@@ -1116,6 +1116,13 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
       </categoryLinks>
     </entryLink>
     <entryLink id="b9de-06ad-9915-eaed" name="Navigator" hidden="false" collective="false" import="true" targetId="7318-5e86-df66-ae6c" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="f1cb-6941-2b56-b808" name="HQ" hidden="false" targetId="485123232344415441232323" primary="true"/>
       </categoryLinks>
@@ -1408,9 +1415,14 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
     <entryLink id="2f75-e7f8-b9a2-6e50" name="Knight-Errant" hidden="false" collective="false" import="true" targetId="0b3e-7f6d-3556-5446" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca2a-4940-90bf-1a80" type="equalTo"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca2a-4940-90bf-1a80" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -1431,6 +1443,304 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
         <categoryLink id="f095-1354-8571-ffc5" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true"/>
         <categoryLink id="3cac-a655-47f5-fad1" name="Infantry" hidden="false" targetId="f74d-4679-75a6-1252" primary="false"/>
         <categoryLink id="18c8-59e5-62a0-af4c" name="Legiones Astartes" hidden="false" targetId="0c56-27b8-a737-c9fd" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4f8f-31e8-1458-a46f" name="Arbitrator Suffering Marshal (AoI)" hidden="true" collective="false" import="true" targetId="9ab9-9171-9c0d-b480" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="9b79-e3be-51ab-fb6c" name="New CategoryLink" hidden="false" targetId="456c6974657323232344415441232323" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="052b-09a3-4cba-e7b4" name="Callidus Assassin (AoE)" hidden="true" collective="false" import="true" targetId="68e7-6490-3135-443d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca2a-4940-90bf-1a80" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="2eb6-13a7-f7c6-8612" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bb2f-5850-45df-5986" name="Chosen of Malcador (AoE)" hidden="true" collective="false" import="true" targetId="9560-cfe3-452a-04be" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca2a-4940-90bf-1a80" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="2ee1-8453-9f0c-42c9" name="New CategoryLink" hidden="false" targetId="456c6974657323232344415441232323" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2029-86f0-db80-4222" name="Culexus Assassin (AoE)" hidden="true" collective="false" import="true" targetId="3f4a-8bf9-ab01-7291" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca2a-4940-90bf-1a80" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="ec28-b359-49af-2223" name="New CategoryLink" hidden="false" targetId="456c6974657323232344415441232323" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f89f-7de2-c81a-72f1" name="Eversor Assassin (AoE)" hidden="true" collective="false" import="true" targetId="b653-b562-e1d5-1289" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca2a-4940-90bf-1a80" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="7849-7d64-e250-2631" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6e0a-500e-dec1-7336" name="Iterator (AoI)" hidden="true" collective="false" import="true" targetId="2778-4e9e-f3dd-5187" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="2908-9ce9-850e-257c" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4c56-a111-3f20-5b2f" name="Knight-Errant (Mournival) (AoE)" hidden="true" collective="false" import="true" targetId="3a03-8d12-66b4-9e28" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca2a-4940-90bf-1a80" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="3a37-f4dd-5657-dfda" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ec91-b0ca-5b6b-53dd" name="Myrmidon Biologis (AoI)" hidden="true" collective="false" import="true" targetId="9e93-7018-f09a-d564" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="ace9-77fc-4f62-bff9" name="New CategoryLink" hidden="false" targetId="456c6974657323232344415441232323" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f6b5-20f3-252d-85da" name="Navigator (Mournival) (AoI)" hidden="true" collective="false" import="true" targetId="ab81-b64b-4904-7e3c" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="125d-857f-815b-2f80" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b7ac-bb91-9b39-5dfd" name="Remembrancer (AoI)" hidden="true" collective="false" import="true" targetId="bd93-00f8-0616-3f41" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="5815-1a0a-5242-0c2a" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8407-bb78-4033-72bb" name="Vanus Assassin (AoE)" hidden="true" collective="false" import="true" targetId="e9f9-90b4-c21f-f98d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca2a-4940-90bf-1a80" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="2fc9-3435-e702-e50c" name="New CategoryLink" hidden="false" targetId="456c6974657323232344415441232323" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8305-5a31-b669-016c" name="Vindicare Assassin (AoE)" hidden="true" collective="false" import="true" targetId="5e4a-a3d7-9ffd-dc62" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca2a-4940-90bf-1a80" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c329-5ace-27a8-1cd7" name="New CategoryLink" hidden="false" targetId="456c6974657323232344415441232323" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="48e2-b0f1-dafc-eef2" name="Black Pariah (AoW)" hidden="true" collective="false" import="true" targetId="40e4-e480-7723-0f29" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9f00-9895-b511-2c81" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="d875-8151-ac5f-376c" name="New CategoryLink" hidden="false" targetId="456c6974657323232344415441232323" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="da86-4c7b-3f8b-7374" name="Daemonhost (AoW)" hidden="true" collective="false" import="true" targetId="b47c-1c3f-fbaa-88d6" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9f00-9895-b511-2c81" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="9b55-b1ee-d855-d9d9" name="New CategoryLink" hidden="false" targetId="456c6974657323232344415441232323" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1010-2e0d-cee4-1d14" name="Exodus Assassin (AoW)" hidden="true" collective="false" import="true" targetId="1923-4c29-45f2-7779" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9f00-9895-b511-2c81" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="cea7-6e0e-b936-b800" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ced7-55cb-be66-a1dd" name="Hydra Operative (AoW)" hidden="true" collective="false" import="true" targetId="6fec-b6c1-abdc-f8b9" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9f00-9895-b511-2c81" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="f14f-30df-a090-cbd9" name="New CategoryLink" hidden="false" targetId="456c6974657323232344415441232323" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3edb-5d2e-ab23-0d55" name="Lodge Master (AoW)" hidden="true" collective="false" import="true" targetId="2706-15ce-b969-c256" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9f00-9895-b511-2c81" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="cbe4-385f-c29c-60bf" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f2c5-1a74-e6e8-326d" name="Rogue Psyker (AoW)" hidden="true" collective="false" import="true" targetId="6608-2a61-24a6-0cdc" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9f00-9895-b511-2c81" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="b775-dc90-d9a6-366e" name="New CategoryLink" hidden="false" targetId="485123232344415441232323" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f4da-c026-86b0-eeb2" name="Sister of Cydonia (AoW)" hidden="true" collective="false" import="true" targetId="4b57-f427-9057-30a1" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9f00-9895-b511-2c81" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="2cc6-5a47-b3ab-97af" name="New CategoryLink" hidden="false" targetId="456c6974657323232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -10125,4 +10435,7 @@ If your army contains none of the above, but does contain one or more Auxilia Ta
       </characteristics>
     </profile>
   </sharedProfiles>
+  <catalogueLinks>
+    <catalogueLink id="25dc-2f25-9da6-e878" name="Agents of the Emperor / Warmaster" targetId="98d0-c58c-7bd7-eeaf" type="catalogue" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>
