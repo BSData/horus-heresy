@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="158" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="159" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN106502" name="HH: Core Rule Book"/>
@@ -13907,6 +13907,9 @@ common enemy. These Factions cannot be part of the same army.</description>
     </rule>
     <rule id="797e55b1-251e-6606-9cb3-64661b0b18a3" name="Lumbering Advance" publicationId="ca571888--pubN85920" page="220" hidden="false">
       <description>May not Run or make sweeping advances</description>
+    </rule>
+    <rule id="56fd-77b4-e966-d11e" name="Gunslinger" hidden="false">
+      <description>All models with two pistols can fire both in the Shooting phase. This follows the normal rules for shooting.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
