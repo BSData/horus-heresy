@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="159" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="160" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN106502" name="HH: Core Rule Book"/>
@@ -41,15 +41,16 @@
     <publication id="ece2-a265-6237-7efa" name="HH Mechanicum Knight Moirax Talon Download"/>
     <publication id="cf03-f607-pubN70802" name="HH-Questoris-Knight-Armiger-Talon Download"/>
     <publication id="8700-b3bb-pubN77868" name="Corbax_Utterblight.pdf" publisherUrl="https://www.forgeworld.co.uk/resources/fw_site/fw_pdfs/Warhammer_40000/Corbax_Utterblight.pdf"/>
-    <publication id="688f-de2e-d4f4-882e" name="HH - The Battle of Pluto: Hydra&apos;s Devastation (Exemplary Battles of the Age of Darkness)" shortName="HH = EBotAoD - TBoP: HD" publicationDate="Sept 21" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2021/09/Xwccsydzg8YpDsho.pdf"/>
+    <publication id="688f-de2e-d4f4-882e" name="HH - The Battle Of Pluto: Hydra&apos;s Devastation (Exemplary Battles of the Age of Darkness)" shortName="HH = EBotAoD - TBoP: HD" publicationDate="Sept 21" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2021/09/Xwccsydzg8YpDsho.pdf"/>
     <publication id="931a-ad98-6258-e12a" name="Mournival Events Battle Manual v1.5"/>
     <publication id="e085-bc29-3c2d-2c49" name="Mournival Events 3.7 Digital Version"/>
     <publication id="4325-6c62-8f6c-297c" name="Mournival Events FAQ and Experimental Errata v3.7"/>
-    <publication id="a3ac-f7b8-f0a2-6a3a" name="HH - The Defence of Sotha: Aegidas Lament (Exemplary Battles of the Age of Darkness)" publicationDate="Nov 21" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2021/11/9eA3ZYnzr5tXbxjX.pdf"/>
-    <publication id="db9a-ae25-9e59-7f3f" name="HH - The Siege of Hydra Cordatus: Sundering of The Cadmean Citadel (Exemplary Battles of the Age of Darkness)" publicationDate="Nov 21" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2021/11/NUTJvW4qx8d08Fkr.pdf"/>
-    <publication id="6490-b351-71df-886d" name="HH - The Battle Of Armatura (Exemplary Battles of the Age of Darkness)" publicationDate="Dec 21" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2021/12/fcMVfgBlCyDHmejD.pdf"/>
-    <publication id="e8fe-5cea-8dc9-ec19" name="HH - The Battle Of Perditus - Umbral-51 (Exemplary Battles of the Age of Darkness)" publicationDate="Jan 22" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/01/mouvfePNquxVdprP.pdf"/>
-    <publication id="18fc-e8f3-462f-9e60" name="HH - The Battle Of Calth - Underground War (Exemplary Battles of the Age of Darkness)" publicationDate="Feb 22" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/02/iIVebnZrYRFbaDGH.pdf"/>
+    <publication id="a3ac-f7b8-f0a2-6a3a" name="HH - The Defence Of Sotha: Aegidas Lament (Exemplary Battles of the Age of Darkness)" shortName="HH = EBotAoD - TDOS: AL" publicationDate="Nov 21" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2021/11/9eA3ZYnzr5tXbxjX.pdf"/>
+    <publication id="db9a-ae25-9e59-7f3f" name="HH - The Siege Of Hydra Cordatus: Sundering of The Cadmean Citadel (Exemplary Battles of the Age of Darkness)" shortName="HH = EBotAoD - TSOHC  SOTCC" publicationDate="Nov 21" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2021/11/NUTJvW4qx8d08Fkr.pdf"/>
+    <publication id="6490-b351-71df-886d" name="HH - The Battle Of Armatura (Exemplary Battles of the Age of Darkness)" shortName="HH = EBotAoD - TBoA" publicationDate="Dec 21" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2021/12/fcMVfgBlCyDHmejD.pdf"/>
+    <publication id="e8fe-5cea-8dc9-ec19" name="HH - The Battle Of Perditus - Umbral-51 (Exemplary Battles of the Age of Darkness)" shortName="HH = EBotAoD - TBoP: U51" publicationDate="Jan 22" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/01/mouvfePNquxVdprP.pdf"/>
+    <publication id="18fc-e8f3-462f-9e60" name="HH - The Battle Of Calth - Underground War (Exemplary Battles of the Age of Darkness)" shortName="HH = EBotAoD - TBoC: UW" publicationDate="Feb 22" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/02/iIVebnZrYRFbaDGH.pdf"/>
+    <publication id="19f5-43eb-a30a-3b6c" name="HH - The Battle For Kalium Gate (Exemplary Battles of the Age of Darkness)" shortName="HH = EBotAoD - TBFKG" publicationDate="Mar 22" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/03/V7pz4FAPFUM2apkb.pdf"/>
   </publications>
   <costTypes>
     <costType id="points" name="pts" defaultCostLimit="0.0" hidden="false"/>
@@ -11145,6 +11146,7 @@ Command Benefits:
           <infoLinks>
             <infoLink id="216b-9307-b3ba-e86a" name="New InfoLink" hidden="false" targetId="a1d8-f9f3-865a-9faf" type="profile"/>
             <infoLink id="aa52-fcd3-90ad-72c4" name="New InfoLink" hidden="false" targetId="e182-50cd-0867-9a8d" type="rule"/>
+            <infoLink id="e7b1-3cbc-02aa-a6ff" name="Unwieldy" hidden="false" targetId="5eea-958c-d623-c3c9" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="5.0"/>
