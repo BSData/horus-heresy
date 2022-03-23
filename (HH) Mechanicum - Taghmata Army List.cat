@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="123" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="156" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cf03-f607-41dc-7545" name="Mechanicum: Taghmata Army List" revision="125" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="159" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="cf03-f607-pubN70802" name="HH-Questoris-Knight-Armiger-Talon Download"/>
     <publication id="ece2-a265-6237-7efa" name="HH Mechanicum Knight Moirax Talon Download"/>
@@ -2192,6 +2192,23 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
       </modifiers>
       <categoryLinks>
         <categoryLink id="2da7-ad0a-2464-4210" name="New CategoryLink" hidden="false" targetId="456c6974657323232344415441232323" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f5fa-1244-1cd9-282a" name="Sisters of Silence Oblivion Knight-Centura (AoE)" hidden="true" collective="false" import="true" targetId="b15d-a195-9431-9386" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c859-6b16-c533-7e97" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a735-9091-b1d2-02d8" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="aa1a-9ff4-1242-2ab5" name="New CategoryLink" hidden="false" targetId="456c6974657323232344415441232323" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -5864,6 +5881,21 @@ Buildings and Fortifications D</description>
         <categoryLink id="9ac2-d03c-a520-d659" name="New CategoryLink" hidden="false" targetId="e4e0-c5d1-3430-f101" primary="false"/>
         <categoryLink id="24ef-6fd9-6ed6-e5d1" name="New CategoryLink" hidden="false" targetId="53bd-99e7-aba0-e79f" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="b258-5df4-be5b-2fb5" name="Twin-linked Lascannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8c7a-5bd1-e6e4-00fd" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80aa-e667-61a1-6939" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="4953-1746-190d-c2cd" name="Twin-Linked Lascannon" hidden="false" targetId="2cd1-0fb3-7484-e486" type="profile"/>
+            <infoLink id="99c6-9b0c-0cfa-3fa5" name="Twin-linked" hidden="false" targetId="10a8-8d89-0bec-3e21" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="6ad6-9dd7-4994-60f9" name="May take one of the following:" hidden="false" collective="false" import="true">
           <constraints>

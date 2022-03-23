@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9f87-b468-2001-5e3b" name="Mournival Units Legion Astartes (Fanmade)" revision="48" battleScribeVersion="2.03" authorName="Aus30K / Mournival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="156" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9f87-b468-2001-5e3b" name="Mournival Units Legion Astartes (Fanmade)" revision="49" battleScribeVersion="2.03" authorName="Aus30K / Mournival Events" authorContact="" authorUrl="https://www.facebook.com/groups/190699548351507/" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="160" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="1fb0-1499-5637-4715" name="Additional Ammunition, Weapons, Psychic Disciplines" hidden="false"/>
     <categoryEntry id="c821-d9f2-5684-64fa" name="# Restiction" hidden="false">
@@ -7319,6 +7319,114 @@ Hunter: Shot Gun, Chainblade, +1A and Acute Senses</description>
               <costs>
                 <cost name="pts" typeId="points" value="15.0"/>
               </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="cf56-df4d-b0de-14c5" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f842-f132-4bb6-260e" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="e64a-6177-032d-90d8" name="Rhino Armoured Carrier, Legion" hidden="false" collective="false" import="true" targetId="3215e60a-5c78-9efe-e6d4-ba87f3e74a21" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e2f9-2a17-919d-88b4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8188-a2ce-a2ae-5ac4" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="6e62-4deb-dba1-b823" name="Land Raider Proteus" hidden="true" collective="false" import="true" targetId="8cc05fec-8274-bea3-5d54-d249b36a3209" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e3d5-f5db-db79-4ff9" type="equalTo"/>
+                            <condition field="selections" scope="5aa7-c454-3656-3a3f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="53fa-02f8-8d60-01ba" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b575-2895-bcaa-9acf" type="equalTo"/>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31e9-5295-2bd0-6b1c" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="1036-f694-5e70-7d85" name="Land Raider Phobos (DT)" hidden="true" collective="false" import="true" targetId="a8eda173-f749-cfb6-fd0e-3d6fb35cad3b" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e3d5-f5db-db79-4ff9" type="equalTo"/>
+                            <condition field="selections" scope="5aa7-c454-3656-3a3f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="53fa-02f8-8d60-01ba" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b575-2895-bcaa-9acf" type="equalTo"/>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31e9-5295-2bd0-6b1c" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="5e81-dcd1-ee3b-bb51" name="Drop Pod, Legion" hidden="false" collective="false" import="true" targetId="8a93771a-74ca-98ed-4560-4125176e5193" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06cf-1221-a38b-94d6" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8188-a2ce-a2ae-5ac4" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="3244-691d-99a0-8b3e" name="Storm Eagle Assault Gunship, Legion" hidden="false" collective="false" import="true" targetId="bd2ad8ef-8033-0a45-7ee5-ebcf07f1f117" type="selectionEntry"/>
+            <entryLink id="692c-0827-2b78-1e5f" name="Anvillus Pattern Dreadclaw Drop Pod (DT)" hidden="false" collective="false" import="true" targetId="ba9221f1-7a8a-4d55-0c30-ca4c502fab8d" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8188-a2ce-a2ae-5ac4" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06cf-1221-a38b-94d6" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="24dc-9036-c891-fb70" name="Kharybdis Assault Claw, Legion" hidden="false" collective="false" import="true" targetId="604c-bdd0-25b9-2bed" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e29d-a3c1-5481-9ae8" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="c5ac-0fe4-f915-1a49" name="Mars Cutter Pattern Land Speeder Squadron" hidden="true" collective="false" import="true" targetId="79c3-8891-b0e9-622a" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="5aa7-c454-3656-3a3f" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="lessThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>

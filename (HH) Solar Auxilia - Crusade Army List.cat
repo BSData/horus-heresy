@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" revision="89" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="159" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7f243fc5-c5fd-8b2c-7b07-907bf684bb72" name="Solar Auxilia" revision="90" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" library="false" gameSystemId="ca571888-56a9-c58e-ddaf-54f4713538bc" gameSystemRevision="159" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="ce39-b313-7b57-ee8e" name="Artillery" publicationId="ca571888--pubN106502" page="65" hidden="false">
       <constraints>
@@ -988,6 +988,69 @@ Note this precludes some Rites of War and Army Lists from Centurion mode.</descr
       <entryLinks>
         <entryLink id="49b3-b59e-7a1c-742f" name="Warlord Traits (Work in Progress)" hidden="false" collective="false" import="true" targetId="0819-d539-5107-07d4" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c3bb-4b27-18e7-b1e8" name="Sub-Orbital Strike Wing" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="7f00-da33-3e75-ff10" name="New CategoryLink" hidden="false" targetId="1bcc0dc0-daee-dd60-6d6b-8510ffb8202f" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d6e8-a3e7-7d89-f35d" name="Sub-orbital Strike Wing" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f3dd-24c2-5b48-c668" type="max"/>
+            <constraint field="selections" scope="primary-category" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79d1-09b7-df6a-ffb7" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="530c-5939-b5a6-6664" name="Crusade Fleet Avenger Strike Fighter" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5cc-d226-c8be-e3c5" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="7e79-fc75-1977-d6ba" name="Crusade Fleet Avenger Strike Fighter" hidden="false" collective="false" import="true" targetId="11c8-2e78-8328-31e4" type="selectionEntry">
+                  <categoryLinks>
+                    <categoryLink id="48ec-691b-d75c-33cb" name="Flyer:" hidden="false" targetId="cef1-24f3-c9c2-81cc" primary="false"/>
+                  </categoryLinks>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="101a-8a3e-0e35-1db2" name="Auxilia Thunderbolt Heavy Fighter" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13f0-60e5-52ab-2a2a" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="1c2a-9bf9-4ff5-5477" name="Auxilia Thunderbolt Heavy Fighter" hidden="false" collective="false" import="true" targetId="37e7-47a2-33b3-c00a" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a91a-ba4e-a588-4cee" name="Auxilia Arvus Lighter" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c54c-8415-0491-0dbb" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="c07b-4ea0-e3e3-9dd1" name="Auxilia Arvus Lighter Orbital Shuttle" hidden="false" collective="false" import="true" targetId="98e057b6-29c7-b240-8a57-a936b45c1299" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7748-2387-fc5c-fde2" name="Auxilia Primaris-Lightning Strike Fighter" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef2d-e594-685f-438c" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="9b44-276a-bb80-1954" name="Auxilia Primaris-Lightning Strike Fighter" hidden="false" collective="false" import="true" targetId="c0f1-168d-ee43-1300" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
