@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="160" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="162" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN106502" name="HH: Core Rule Book"/>
@@ -51,6 +51,7 @@
     <publication id="e8fe-5cea-8dc9-ec19" name="HH - The Battle Of Perditus - Umbral-51 (Exemplary Battles of the Age of Darkness)" shortName="HH = EBotAoD - TBoP: U51" publicationDate="Jan 22" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/01/mouvfePNquxVdprP.pdf"/>
     <publication id="18fc-e8f3-462f-9e60" name="HH - The Battle Of Calth - Underground War (Exemplary Battles of the Age of Darkness)" shortName="HH = EBotAoD - TBoC: UW" publicationDate="Feb 22" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/02/iIVebnZrYRFbaDGH.pdf"/>
     <publication id="19f5-43eb-a30a-3b6c" name="HH - The Battle For Kalium Gate (Exemplary Battles of the Age of Darkness)" shortName="HH = EBotAoD - TBFKG" publicationDate="Mar 22" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/03/V7pz4FAPFUM2apkb.pdf"/>
+    <publication id="9f68-4ec6-16ad-1240" name="HH - The Breaking Of The Perfect Fortress (Exemplary Battles of the Age of Darkness)" shortName="HH = EBotAoD - TBOTPF" publicationDate="April 22" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/04/AmPdr3yMZbvggCND.pdf"/>
   </publications>
   <costTypes>
     <costType id="points" name="pts" defaultCostLimit="0.0" hidden="false"/>
@@ -8919,16 +8920,9 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4ad7-02f2-bbc9-af80" type="max"/>
               </constraints>
-              <profiles>
-                <profile id="3fb8-27e6-00a0-3366" name="Four Heavy Bomb Clusters" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="52616e676523232344415441232323">Bomb</characteristic>
-                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
-                    <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
-                    <characteristic name="Type" typeId="5479706523232344415441232323">Apocalyptic Barrage 1, One Shot</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
+              <infoLinks>
+                <infoLink id="12ac-dd18-83d4-e9ff" name="Heavy Bomb Clusters" hidden="false" targetId="3f65-08dc-fbd1-2a99" type="profile"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -8937,21 +8931,14 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="04eb-b6d2-84ff-2988" type="max"/>
               </constraints>
-              <profiles>
-                <profile id="8290-16ae-baae-c019" name="Hellstorm Bomb" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="52616e676523232344415441232323">Bomb</characteristic>
-                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
-                    <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
-                    <characteristic name="Type" typeId="5479706523232344415441232323">Hellstorm, Bomb, One Use Only</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <rules>
                 <rule id="ee13-6ddf-6f9b-126e" name="Hellstorm Bomb" hidden="false">
                   <description>Only 1 Hellstorm bomb can be dropped per bombing run</description>
                 </rule>
               </rules>
+              <infoLinks>
+                <infoLink id="552d-708e-25e9-d67f" name="Hellstorm Bomb" hidden="false" targetId="4a13-bafc-77c9-6c95" type="profile"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -9127,16 +9114,9 @@ Any abilities that allow the vehicle to fire multiple shots will use the same sh
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fda1-f0e7-5bfa-ffe1" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ee20-624b-8594-862d" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="3c00-9eba-0756-b933" name="Three Heavy Bomb Clusters" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="52616e676523232344415441232323">Bomb</characteristic>
-                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
-                <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
-                <characteristic name="Type" typeId="5479706523232344415441232323">Apocalyptic Barrage 1, One Shot</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="d874-f61d-eee4-a745" name="Heavy Bomb Clusters" hidden="false" targetId="3f65-08dc-fbd1-2a99" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -15770,6 +15750,22 @@ Jetbikes can move over all other models and terrain freely. However, if a moving
         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">+2</characteristic>
         <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
         <characteristic name="Type" typeId="5479706523232344415441232323">Melee, Concussive, Haywire</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3f65-08dc-fbd1-2a99" name="Heavy Bomb Clusters" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="52616e676523232344415441232323">Bomb</characteristic>
+        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+        <characteristic name="AP" typeId="415023232344415441232323">4</characteristic>
+        <characteristic name="Type" typeId="5479706523232344415441232323">Apocalyptic Barrage (8), Bomb, One Use Only</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4a13-bafc-77c9-6c95" name="Hellstorm Bomb" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="52616e676523232344415441232323">Bomb</characteristic>
+        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
+        <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
+        <characteristic name="Type" typeId="5479706523232344415441232323">Hellstorm, Bomb, One Use Only</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
