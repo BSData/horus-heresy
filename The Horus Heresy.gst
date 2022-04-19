@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="162" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ca571888-56a9-c58e-ddaf-54f4713538bc" name="Warhammer 30,000 - The Horus Heresy" revision="163" battleScribeVersion="2.03" authorName="https://github.com/BSData/horus-heresy/graphs/contributors" authorContact="Gitter: @BSData/horus-heresy" authorUrl="http://battlescribedata.appspot.com/#/repo/horus-heresy" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="ca571888--pubN65537" name="Forgeworld Horus Heresy Series"/>
     <publication id="ca571888--pubN106502" name="HH: Core Rule Book"/>
@@ -3612,11 +3612,11 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
       <selectionEntries>
         <selectionEntry id="6dbe-7589-1abb-a1cf" name="Heavy Stubber" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7f3-582f-22dc-f4b4" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36f1-ec7d-08a5-c7c4" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7f3-582f-22dc-f4b4" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36f1-ec7d-08a5-c7c4" type="min"/>
           </constraints>
           <infoLinks>
-            <infoLink id="3413-cced-a36f-251e" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile"/>
+            <infoLink id="3413-cced-a36f-251e" name="Heavy Stubber" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -4292,7 +4292,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="415.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f4f1-dad6-0596-ca5a" name="Questoris Knight Warden" publicationId="ca571888--pubN87368" page="104" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="f4f1-dad6-0596-ca5a" name="Questoris Knight Warden" publicationId="ca571888--pubN91142" page="108" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
@@ -4432,6 +4432,10 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="6dbd-cec6-49c4-43fc" name="Meltagun" hidden="false" targetId="8ae4-74e5-7700-3804" type="profile"/>
+                <infoLink id="bb99-6ef0-9095-43f1" name="Melta" hidden="false" targetId="21c0-62ff-3ed2-17a7" type="rule"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="5.0"/>
               </costs>
@@ -4457,7 +4461,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="385.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="74b8-f485-4b58-0071" name="Questoris Knight Gallant" publicationId="ca571888--pubN87368" page="105" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="74b8-f485-4b58-0071" name="Questoris Knight Gallant" publicationId="ca571888--pubN91142" page="110" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
@@ -4571,6 +4575,10 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="c495-d7af-d7c1-3a34" name="Meltagun" hidden="false" targetId="8ae4-74e5-7700-3804" type="profile"/>
+                <infoLink id="ba30-fbb6-aa72-1cfa" name="Melta" hidden="false" targetId="21c0-62ff-3ed2-17a7" type="rule"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="5.0"/>
               </costs>
@@ -4609,7 +4617,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <cost name="pts" typeId="points" value="335.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="09ee-4370-1462-2cb5" name="Questoris Knight Crusader" publicationId="ca571888--pubN87368" page="106" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="09ee-4370-1462-2cb5" name="Questoris Knight Crusader" publicationId="ca571888--pubN91142" page="112" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
       </constraints>
@@ -4645,6 +4653,25 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
                 <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
                 <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 12, Rending</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="57e5-6e78-6ed1-3e4c" name="Thermal Cannon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="155f-6cb4-a631-efbc" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b97-ae08-783f-ff4c" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="78da-82f0-d189-ce26" name="Thermal Cannon" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
+                <characteristic name="AP" typeId="415023232344415441232323">1</characteristic>
+                <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Melta, Large Blast</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4735,28 +4762,36 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="bf22-efc3-ea2a-769f" name="May exchange Heavy Stubber for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="1ecc-02aa-5cad-44b0">
+          <modifiers>
+            <modifier type="increment" field="ead8-2680-e80d-35d4" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="09ee-4370-1462-2cb5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0eff-f659-730a-0b99" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="09ee-4370-1462-2cb5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4e60-ef5b-d3df-669d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ead8-2680-e80d-35d4" type="max"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="75f8-4e76-795a-4f09" name="Meltagun" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="increment" field="maxSelections" value="1.0">
-                  <repeats>
-                    <repeat field="selections" scope="09ee-4370-1462-2cb5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4e60-ef5b-d3df-669d" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="7599-2f9d-efdb-568a" name="Meltagun" hidden="false" targetId="8ae4-74e5-7700-3804" type="profile"/>
+                <infoLink id="361a-e73d-b355-a09d" name="Melta" hidden="false" targetId="21c0-62ff-3ed2-17a7" type="rule"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1ecc-02aa-5cad-44b0" name="Heavy Stubber" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2a2-86f8-c71b-d202" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2a2-86f8-c71b-d202" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="efc6-05d8-d773-9a44" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile"/>
+                <infoLink id="efc6-05d8-d773-9a44" name="Heavy Stubber" hidden="false" targetId="981c9d9e-9866-7245-ed4c-8d5e4f9b17f4" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -4764,7 +4799,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="493b-2822-4d17-0885" name="May exchange Thermal cannon for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="958c-5ced-fbad-38c9">
+        <selectionEntryGroup id="493b-2822-4d17-0885" name="May exchange Avenger Gatling Cannon for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="036e-3b22-6ad7-7717">
           <selectionEntries>
             <selectionEntry id="4e60-ef5b-d3df-669d" name="Rapid-fire battlecannon and Heavy Stubber" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -4784,25 +4819,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                 <cost name="pts" typeId="points" value="5.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="958c-5ced-fbad-38c9" name="Thermal Cannon" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88f0-a6e5-955d-05aa" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="c2c1-638e-c0e6-9808" name="Thermal Cannon" publicationId="ca571888--pubN84158" page="308" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
-                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
-                    <characteristic name="AP" typeId="415023232344415441232323">1</characteristic>
-                    <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 1, Melta, Large Blast</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="0eff-f659-730a-0b99" name="Questoris Battlecannon" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="0eff-f659-730a-0b99" name="Questoris Battlecannon and Heavy Stubber" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae37-8308-547f-0670" type="max"/>
               </constraints>
@@ -4813,6 +4830,24 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
                     <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
                     <characteristic name="Type" typeId="5479706523232344415441232323">Ordnance 3, Large Blast</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="036e-3b22-6ad7-7717" name="Avenger Gatling Cannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc9b-9806-c6c4-1cb6" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="b95f-dc86-248b-1b52" name="Avenger Gatling Cannon" publicationId="ca571888--pubN87368" page="115" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+                    <characteristic name="AP" typeId="415023232344415441232323">3</characteristic>
+                    <characteristic name="Type" typeId="5479706523232344415441232323">Heavy 12, Rending</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
