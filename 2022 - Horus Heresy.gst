@@ -1079,10 +1079,23 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c9af-b8d6-3de0-972b" name="Melta Cutters" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c9af-b8d6-3de0-972b" name="Melta Cutters (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d012-8e1b-0390-eb63" name="Melta Cutters (P3P)" publicationId="a716-c1c4-7b26-8424" page="145" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">When a model with melta cutters makes a Ram Attack targeting a model with the Vehicle Unit Type or a Building, it adds an additional modifier of +2 to the Strength of the attack, to a maximum of Strength 10.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e600-f1a0-60b0-dacf" name="Melta Cutters (Ranged) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">6&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Armourbane (Melta)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <infoLinks>
-        <infoLink id="2ecb-a5c7-6a6a-bce6" name="Melta Cutters (P3P LA)" hidden="false" targetId="27b5-0035-978f-a027" type="profile"/>
-        <infoLink id="25e8-455f-b42a-7e9c" name="Melta Cutters (Ranged) (P3P LA)" hidden="false" targetId="e600-f1a0-60b0-dacf" type="profile"/>
         <infoLink id="2326-5ef8-cdf1-9b31" name="Armourbane (X) (P3P)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule"/>
       </infoLinks>
       <costs>
@@ -1592,41 +1605,62 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="99df-2421-acf7-a5ad" name="Krak Grenades" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="1702-6dee-538e-61ad" name="Krak Grenades (P3P LA)" hidden="false" targetId="102e-3487-6e68-51e2" type="profile"/>
-      </infoLinks>
+      <profiles>
+        <profile id="102e-3487-6e68-51e2" name="Krak Grenades" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The controlling player may choose to have a model with krak grenades that is Engaged or otherwise in base contact during the Assault phase with a Building or Fortification, or a model with the Vehicle, Dreadnought or Automata Unit Type, inflict one automatic Str 6, AP 3 Hit on the target in Initiative Step 1 instead of attacking normally. Any model in a unit that is chosen to inflict Hits using krak grenades may not otherwise attack or make use of any other special rule or item of Wargear that inflicts Hits or Wounds on a model in the same Assault phase (but may participate in Sweeping Advances as normal).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cf9c-327b-3449-00d7" name="Frag Grenades" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="b72b-70e8-3df1-70c2" name="Frag Grenades (P3P LA)" hidden="false" targetId="ccc0-4896-212b-4d53" type="profile"/>
-      </infoLinks>
+    <selectionEntry id="cf9c-327b-3449-00d7" name="Frag Grenades (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ccc0-4896-212b-4d53" name="Frag Grenades (P3P)" publicationId="a716-c1c4-7b26-8424" page="143" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with frag grenades makes attacks at its normal Initiative Step during an Assault after it has successfully Charged through Difficult Terrain or Dangerous Terrain, but still suffers any penalties to Charge rolls imposed by Difficult Terrain or Dangerous Terrain when resolving a Charge through Difficult Terrain or Dangerous Terrain.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b081-bf3c-f43d-4bd5" name="Iron Halo" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="0a86-0906-69c0-0346" name="Iron Halo (P3P LA)" hidden="false" targetId="550c-5f2c-868d-1d73" type="profile"/>
-      </infoLinks>
+    <selectionEntry id="b081-bf3c-f43d-4bd5" name="Iron Halo (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="550c-5f2c-868d-1d73" name="Iron Halo (P3P)" publicationId="a716-c1c4-7b26-8424" page="146" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with an iron halo gains a 4+ Invulnerable Save.
+Invulnerable Saves granted by a refractor field or iron halo do not stack with other Invulnerable Saves, but can benefit from rules (such as cyber-familiar) that specifically increase existing saves. If a model has another Invulnerable Save then the controlling player must choose which one to use.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="583e-62cb-53f1-f952" name="Artificer Armour" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="307a-71c6-0678-1745" name="Artificer Armour (P3P LA)" hidden="false" targetId="4223-a2ef-16c3-bbb9" type="profile"/>
-      </infoLinks>
+      <profiles>
+        <profile id="4223-a2ef-16c3-bbb9" name="Artificer Armour" publicationId="a716-c1c4-7b26-8424" page="140" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Artificer armour confers a 2+ Armour Save.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2d9d-480e-7c14-1a6f" name="Power Armour" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="e6d4-e3b7-9562-3b8a" name="Power Armour (P3P LA)" hidden="false" targetId="6c84-1420-7bb8-1026" type="profile"/>
-      </infoLinks>
+    <selectionEntry id="2d9d-480e-7c14-1a6f" name="Power Armour (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6c84-1420-7bb8-1026" name="Power Armour (P3P)" publicationId="a716-c1c4-7b26-8424" page="146" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Power armour provides a 3+ Armour Save.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
@@ -1644,233 +1678,376 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="67ee-7338-3b74-04b4" name="Augury Scanner" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="797f-bd05-abd2-2a13" name="Augury Scanner" publicationId="a716-c1c4-7b26-8424" page="140" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with an augury scanner gains all of the following benefits:
+• Enemy models cannot be deployed using the Infiltrate special rule within 18&quot; of a model with an augury scanner.
+• A unit that includes at least one model with an augury scanner ignores the 24&quot; limit to line of sight when making Shooting Attacks while the Night Fighting rules are in effect.
+• When any enemy unit is deployed to the battlefield from Reserves, a unit that includes at least one model with an augury scanner may make the Interceptor Advanced Reaction (see the Horus Heresy: Age of Darkness rulebook, page 309) without expending a point of the Reactive player’s Reaction Allotment. This does not allow the unit to make more than one Reaction per Phase, but does allow the controlling player to exceed the normal three Reactions limit in a given Phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0c0f-f751-cc4e-4951" name="Boarding Shield (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="961a-59a2-2fae-a5dd" name="Boarding Shield (P3P)" publicationId="a716-c1c4-7b26-8424" page="141" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Boarding shields confer a 5+ Invulnerable Save. But a model with a boarding shield cannot claim bonus attacks for having more than one melee weapon, or make attacks during the Assault phase using a weapon with the Two-handed special rule.
+Invulnerable saves granted by a combat shield or boarding shield do not stack with other Invulnerable Saves, but can benefit from rules (like cyber-familiar) that specifically increase existing saves. If a model has another Invulnerable Save then the controlling player must choose which one to use.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="93b3-2d66-f7a3-be42" name="Cognis-Signum (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="b449-1ce2-c465-6568" name="Cognis-signum (P3P)" publicationId="a716-c1c4-7b26-8424" page="140" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a cognis-signum gains the Night Vision special rule. In addition, in lieu of the model with the cognis-signum making a Shooting Attack in the Shooting phase, all other models in the same unit gain a bonus of +1 to their BS for that Shooting phase. This benefit is not cumulative, and no unit can benefit from more than one bonus to their BS from cognis-signum.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <infoLinks>
-        <infoLink id="6f63-6262-b059-00d5" name="Augury Scanner (P3P LA)" hidden="false" targetId="797f-bd05-abd2-2a13" type="profile"/>
+        <infoLink id="2bb3-2ee6-352f-d6ee" name="Night Vision (P3P)" hidden="false" targetId="683e-b4f2-f032-d31b" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0c0f-f751-cc4e-4951" name="Boarding Shield" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="22d2-75fc-2d87-c7a4" name="Boarding Shield (P3P LA)" hidden="false" targetId="961a-59a2-2fae-a5dd" type="profile"/>
-      </infoLinks>
+    <selectionEntry id="472a-8297-2c71-3a9c" name="Combat Shield (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="8af0-f3d4-85fb-239a" name="Combat Shield (P3P)" publicationId="a716-c1c4-7b26-8424" page="141" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Combat shields confer a 6+ Invulnerable Save.
+Invulnerable saves granted by a combat shield or boarding shield do not stack with other Invulnerable Saves, but can benefit from rules (like cyber-familiar) that specifically increase existing saves. If a model has another Invulnerable Save then the controlling player must choose which one to use.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="93b3-2d66-f7a3-be42" name="Cognis-Signum" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="c171-a444-92e3-7440" name="Cognis-signum (P3P LA)" hidden="false" targetId="b449-1ce2-c465-6568" type="profile"/>
-      </infoLinks>
+    <selectionEntry id="2fda-455f-d34d-97e0" name="Cortex Controller (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ea6d-fcba-ee59-0400" name="Cortex Controller (P3P)" publicationId="a716-c1c4-7b26-8424" page="141" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Any unit that includes one of more modesl with the Cybernetica Sub-type may ignore the Programmed Behaviour provision described as part of that Sub-type.while within 12&quot; of a model with a cortex controller </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="472a-8297-2c71-3a9c" name="Combat Shield" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="9b70-d329-0538-3c91" name="Combat Shield (P3P LA)" hidden="false" targetId="8af0-f3d4-85fb-239a" type="profile"/>
-      </infoLinks>
+    <selectionEntry id="6c85-4601-cf58-7b35" name="Cyber-Familiar (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3d58-e1f4-f86d-75cc" name="Cyber-Familiar (P3P)" publicationId="a716-c1c4-7b26-8424" page="141" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a cyber-familiar adds +1 to its Invulnerable Save (to a maximum of 3+) or an Invulnerable Save of 6+ if they do not already possess one. In addition, they allow them to re-roll failed Characteristic tests other than Leadership tests, Psychic checks and failed Dangerous Terrain tests.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2fda-455f-d34d-97e0" name="Cortex Controller" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="0521-6b50-1b15-19d0" name="Cortex Controller (P3P LA)" hidden="false" targetId="ea6d-fcba-ee59-0400" type="profile"/>
-      </infoLinks>
+    <selectionEntry id="42e1-f6cf-1f2b-a492" name="Dozer Blade (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c1d4-9259-b8fa-7be7" name="Dozer Blade (P3P LA)" publicationId="a716-c1c4-7b26-8424" page="141" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a dozer blade may re-roll all failed Dangerous Terrain tests made for it.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6c85-4601-cf58-7b35" name="Cyber-Familiar" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="1d7f-8d7a-f863-0eb2" name="Cyber-Familiar (P3P LA)" hidden="false" targetId="3d58-e1f4-f86d-75cc" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="42e1-f6cf-1f2b-a492" name="Dozer Blade" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="5c75-38e7-ecc1-6feb" name="Dozer Blade (P3P LA)" hidden="false" targetId="c1d4-9259-b8fa-7be7" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="dd7a-d404-a96c-1251" name="Narthecium" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="5fab-f98e-e284-f2fc" name="Narthecium (P3P LA)" hidden="false" targetId="3758-1b62-61a7-dcb8" type="profile"/>
-      </infoLinks>
+    <selectionEntry id="dd7a-d404-a96c-1251" name="Narthecium (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3758-1b62-61a7-dcb8" name="Narthecium (P3P)" publicationId="a716-c1c4-7b26-8424" page="145" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">All models with the Infantry or Cavalry Unit Types in a unit that includes at least one model with a narthecium gains the Feel No Pain (5+) special rule. Units that include more than one narthecium do not stack the Feel No Pain (X) special rule and gain no additional benefit. Models with the Artillery Sub-type are not affected by this special rule and do not gain the Feel No Pain (X) special rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="005e-aae6-ddac-bb45" name="Nuncio-Vox (P3P LA)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="33b2-fbf2-bca9-8ffb" name="Nuncio-Vox (P3P LA)" hidden="false" targetId="ab31-bdc5-6153-3d77" type="profile"/>
-      </infoLinks>
+      <profiles>
+        <profile id="ab31-bdc5-6153-3d77" name="Nuncio-Vox (P3P)" publicationId="a716-c1c4-7b26-8424" page="145" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">While at least one model with a nuncio-vox is present on the battlefield and not Embarked in a Vehicle or Building, the controlling player may re-roll any Scatter rolls made (whether as part of a weapon attack or the deployment of a model or unit), as long as the model with the nuncio-vox has line of sight to the unit targeted by the attack or the point chosen as the target of the deployment. In addition, a unit that includes at least one model with a nuncio-vox ignores the -1 penalty to Leadership imposed by the Night Fighting rules.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4df2-d42b-504d-3ec5" name="Psychic Hood" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="1a81-c4ec-128a-e8de" name="Psychic Hood (P3P LA)" hidden="false" targetId="fd98-bba9-e8fe-b91c" type="profile"/>
-      </infoLinks>
+      <profiles>
+        <profile id="fd98-bba9-e8fe-b91c" name="Psychic Hood" publicationId="a716-c1c4-7b26-8424" page="146" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Any enemy model within 18&quot; and line of sight of a model with a psychic hood must reduce its Leadership by -2 when making Psychic checks. This modifier is not cumulative and no model may suffer from penalties from more than one psychic hood.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1b0b-3dfc-9521-b27e" name="Rad Grenades" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="e783-0ece-a31e-75a0" name="Rad Grenades (P3P LA)" hidden="false" targetId="5ecf-40ba-be56-0d11" type="profile"/>
-      </infoLinks>
+    <selectionEntry id="1b0b-3dfc-9521-b27e" name="Rad Grenades (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="5ecf-40ba-be56-0d11" name="Rad Grenades (P3P)" publicationId="a716-c1c4-7b26-8424" page="143" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">During a turn in which a unit with at least one model with rad grenades successfully Charges, or is themselves successfully Charged, all models in the enemy unit(s) suffer a -1 penalty to their Toughness Characteristic until the end of the Fight Sub-phase that follows the successful Charge. Note: This does affect the victims’ Instant Death thresholds.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a884-7de7-32c4-3ef6" name="Ramjet Diffraction Grid" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="21ab-7885-a726-80b3" name="Ramjet Diffraction Grid (P3P LA)" hidden="false" targetId="bab3-77d0-4e80-4d48" type="profile"/>
-      </infoLinks>
+      <profiles>
+        <profile id="bab3-77d0-4e80-4d48" name="Ramjet Diffraction Grid" publicationId="a716-c1c4-7b26-8424" page="146" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a ramjet diffraction grid reduces the Strength of Shooting Attacks made against its Rear or Side armour by -1, or -2 if that attack has the Blast special rule or uses a template to determine its Range. A ramjet diffraction grid has no effect on attacks inflicted with weapons of the Destroyer type.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a06a-55a5-070b-1d0e" name="Refractor Field" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="1237-38dd-dfe1-7c50" name="Refractor Field (P3P LA)" hidden="false" targetId="1bab-d556-c126-4b53" type="profile"/>
-      </infoLinks>
+    <selectionEntry id="a06a-55a5-070b-1d0e" name="Refractor Field (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1bab-d556-c126-4b53" name="Refractor Field (P3P)" publicationId="a716-c1c4-7b26-8424" page="143" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a refractor field gains a 5+ Invulnerable Save.
+Invulnerable Saves granted by a refractor field or iron halo do not stack with other Invulnerable Saves, but can benefit from rules (such as cyber-familiar) that specifically increase existing saves. If a model has another Invulnerable Save then the controlling player must choose which one to use.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b282-55aa-d1e2-ebe7" name="Scout Armour" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="2295-aacd-ec5a-379c" name="Scout Armour (P3P LA)" hidden="false" targetId="268c-b736-7743-67b1" type="profile"/>
-      </infoLinks>
+    <selectionEntry id="b282-55aa-d1e2-ebe7" name="Scout Armour (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="268c-b736-7743-67b1" name="Scout Armour (P3P)" publicationId="a716-c1c4-7b26-8424" page="146" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Scout armour provides a 4+ Armour Save.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4ae3-79b4-6051-505e" name="Searchlights" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="5b31-e77d-db22-7e71" name="Searchlights (P3P LA)" hidden="false" targetId="b966-8137-4e98-e1c2" type="profile"/>
-      </infoLinks>
+    <selectionEntry id="4ae3-79b4-6051-505e" name="Searchlights (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="b966-8137-4e98-e1c2" name="Searchlights (P3P)" publicationId="a716-c1c4-7b26-8424" page="146" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with searchlights ignores the 24&quot; limit to line of sight imposed by the Night Fighting rules when making Shooting Attacks, however enemy units also ignore that same restriction when making Shooting Attacks that target a model with searchlights.
+In addition, any unit that has been the target of a Shooting Attack made by a unit with searchlights (regardless of whether any Hits were inflicted or not) may be freely targeted for Shooting Attacks by any other unit, ignoring the 24&quot; restriction to line of sight imposed by the Night Fighting rules.
+Searchlights do not count as weapons and may not be targeted by the Weapon Destroyed result on the Vehicle Damage table.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5d4d-36b7-6bf5-fc92" name="Shroud Bombs" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="990b-b22b-ecec-6ff9" name="Shroud Bombs (P3P LA)" hidden="false" targetId="fb63-1d83-d992-80a6" type="profile"/>
-      </infoLinks>
+      <profiles>
+        <profile id="fb63-1d83-d992-80a6" name="Shroud Bombs" publicationId="a716-c1c4-7b26-8424" page="143" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Whenever targeted by a Shooting Attack, the range between an attacking unit and a unit that includes at least one model with shroud bombs is considered to be 6&quot; further than the actual range between the two units – enemy models with the Night Vision special rule and models with the Primarch Unit Type ignore this effect. In addition, when attacked by a weapon with the Barrage special rule, a unit that includes at least one model with shroud bombs is always treated as though it was out of line of sight when scattering any attacks.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0873-34dd-e52d-d33c" name="Smoke Launchers" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="1c5a-b11b-0262-815d" name="Smoke Launchers (P3P LA)" hidden="false" targetId="cc6e-ca4b-e9e8-7eb5" type="profile"/>
-      </infoLinks>
+    <selectionEntry id="0873-34dd-e52d-d33c" name="Smoke Launchers (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="cc6e-ca4b-e9e8-7eb5" name="Smoke Launchers (P3P)" publicationId="a716-c1c4-7b26-8424" page="147" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The controlling player may choose to trigger smoke launchers once a model with them has completed its movement in the Movement phase, and may only choose to trigger them if the model has moved no faster than Combat Speed that turn. Once triggered, the model with smoke launchers counts as being more than 25% obscured, regardless of terrain, until the start of the controlling player’s next turn and gains a 6+ Cover Save. A model whose smoke launchers have been triggered may not make any Shooting Attacks, except as part of a Reaction, in the same turn. Smoke launchers may only be used once per battle, and once triggered may not be further used – in addition, they do not count as a weapon and may not be targeted by Weapon Destroyed results on the Vehicle Damage table.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6472-db7f-08b0-d7c7" name="Suspensor Web" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="66a5-4e3e-3e0f-b334" name="Suspensor Web (P3P LA)" hidden="false" targetId="457c-1f2c-ca90-1bf3" type="profile"/>
-      </infoLinks>
+    <selectionEntry id="6472-db7f-08b0-d7c7" name="Suspensor Web (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="457c-1f2c-ca90-1bf3" name="Suspensor Web (P3P)" publicationId="a716-c1c4-7b26-8424" page="147" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A heavy weapon with a suspensor web may be treated as having the type Assault rather than Heavy when used to attack as part of any Shooting Attack at targets at up to half the weapon’s usual maximum range.
+Example: A heavy bolter with a suspensor web, which is usually a Range 36&quot; Heavy 4 weapon, can instead be used as if it were a Range 18&quot; Assault 4 weapon if the controlling player wishes.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f091-857e-21b8-d49a" name="Vox Disruptor Array" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="774c-73dd-49b1-375d" name="Vox Disruptor Array (P3P LA)" hidden="false" targetId="03f2-41e6-4e4b-ec9f" type="profile"/>
-      </infoLinks>
+    <selectionEntry id="f091-857e-21b8-d49a" name="Vox Disruptor Array (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="03f2-41e6-4e4b-ec9f" name="Vox Disruptor Array (P3P)" publicationId="a716-c1c4-7b26-8424" page="147" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">While there is at least one model on the battlefield with a vox disruptor array, regardless of whether that model is enemy or friendly, any attempt to perform a Deep Strike Assault, Drop Pod Assault, Area Denial Drop or Subterranean Assault is Disordered on the roll of a ‘1’, ‘2’ or ‘3’ instead of just on a ‘1’.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="38fb-9a0b-edef-a497" name="Atomantic Deflector" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="0d37-3be3-7bcb-05a2" name="Atomantic Deflector (P3P LA)" hidden="false" targetId="ce1b-884e-2abe-a9a1" type="profile"/>
-      </infoLinks>
+      <profiles>
+        <profile id="ce1b-884e-2abe-a9a1" name="Atomantic Deflector" publicationId="a716-c1c4-7b26-8424" page="140" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with an atomantic deflector gains a 5+ Invulnerable Save and any model with an atomantic deflector and a Wounds Characteristic that suffers an unsaved Wound with the Instant Death special rule is not immediately removed as a casualty, but instead loses D3 Wounds instead of one for each unsaved Wound with the Instant Death special rule inflicted on it. In addition, when a model with an atomantic deflector loses its last Wound or Hull Point, but before it is removed as a casualty or replaced with a Wreck, all models both friendly and enemy within D6&quot; suffer an automatic Hit at Str 8, AP -.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9622-f67e-4afe-09f3" name="Breacher Charge" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="dd39-e064-c9a7-a0b6" name="Breacher Charge (P3P LA)" hidden="false" targetId="d485-964d-e032-8d56" type="profile"/>
-      </infoLinks>
+      <profiles>
+        <profile id="d485-964d-e032-8d56" name="Breacher Charge" publicationId="a716-c1c4-7b26-8424" page="142" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The controlling player may choose to have a model with a breacher charge that is Engaged or otherwise in base contact during the Assault phase with a Building or Fortification model, inflict one automatic Str 10 AP 2 Hit on the target in Initiative Step 1 instead of attacking normally. Any model in a unit that is chosen to inflict Hits using breacher charges may not otherwise attack or make use of any other special rules or item of Wargear that inflicts Hits or Wounds on a model in the same Assault phase (but may participate in Sweeping Advances as normal).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ec12-df00-ad8a-1f59" name="Command Vox Relay" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="a693-d72a-873b-2c1b" name="Command Vox Relay (P3P LA)" hidden="false" targetId="988d-6f67-d24b-0bc7" type="profile"/>
-      </infoLinks>
+    <selectionEntry id="ec12-df00-ad8a-1f59" name="Command Vox Relay (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="988d-6f67-d24b-0bc7" name="Command Vox Relay (P3P)" publicationId="a716-c1c4-7b26-8424" page="141" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">While any model with the Character Sub-type is Embarked upon a model with this special rule, friendly units with the same version of the Legiones Astartes special rule that are within 18&quot; or that include a model with a nuncio-vox may use the Embarked model’s Leadership Characteristic for Morale checks and Pinning tests. If more than one model with the Character Sub-type is Embarked upon a model with this special rule then the controlling player chooses which model’s Leadership Characteristic is used.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f8f8-417b-ed9d-544c" name="Explorator Augury Web" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="08bc-70eb-4d17-6b15" name="Explorator Augury Web (P3P LA)" hidden="false" targetId="b4a1-b551-49a8-73dc" type="profile"/>
-      </infoLinks>
+    <selectionEntry id="f8f8-417b-ed9d-544c" name="Explorator Augury Web (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="b4a1-b551-49a8-73dc" name="Explorator Augury Web (P3P LA)" publicationId="a716-c1c4-7b26-8424" page="142" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">At the start of each of the controlling player’s turns, that player may choose to activate the explorator augury web in either Disruption or Relay mode, the effects of which last until the beginning of the controlling player’s next turn:
+• Disruption Mode: Any Reserves rolls made by an enemy player to bring units into play from Reserve are modified by -1 while this mode is active. This modifier does not stack with any other negative modifiers to Reserves rolls – use the highest single modifier instead. However, once the final negative modifier to a Reserves roll is determined, it can be reduced by any positive modifiers applied to the roll (for example if a Reserves roll was affected by both a -1 and +1 modifier then they would cancel each other and no modifier would be applied).
+• Relay Mode: Any Reserves rolls made by the controlling player to bring units into play from Reserves may be rerolled while this mode is active.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0e77-6285-22bb-1534" name="Flare Shield" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="da2d-515e-07bb-0fdf" name="Flare Shield (P3P LA)" hidden="false" targetId="c245-8517-f7e0-1bd3" type="profile"/>
-      </infoLinks>
+    <selectionEntry id="0e77-6285-22bb-1534" name="Flare Shield (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c245-8517-f7e0-1bd3" name="Flare Shield (P3P LA)" publicationId="a716-c1c4-7b26-8424" page="142" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a flare shield reduces the strength of Shooting Attacks made against its Front Armour by -1, or -2 if that Shooting Attack has the Blast special rule or uses a template to determine its Range. A flare shield has no effect on Shooting Attacks inflicted with weapons of the Destroyer type.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9333-3d3a-1c13-c602" name="Geo-locator Beacon" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="fb3e-8540-8d8f-fc9b" name="Geo-locator Beacon (P3P LA)" hidden="false" targetId="ca02-0f2e-ea7b-ce89" type="profile"/>
-      </infoLinks>
+    <selectionEntry id="9333-3d3a-1c13-c602" name="Geo-locator Beacon (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ca02-0f2e-ea7b-ce89" name="Geo-locator Beacon (P3P)" publicationId="a716-c1c4-7b26-8424" page="142" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Once per battle, at the beginning of any turn from Turn 2 onward and as long as a model with this special rule is deployed on the battlefield, the controlling player may choose to re-roll the first failed Reserves roll they make in each turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="251a-860d-2c4d-62cc" name="Grenade Harness" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="9d8b-44fe-4018-95cc" name="Grenade Harness (P3P LA)" hidden="false" targetId="9a82-2bbb-c64c-ed0a" type="profile"/>
-      </infoLinks>
+      <profiles>
+        <profile id="9a82-2bbb-c64c-ed0a" name="Grenade Harness" publicationId="a716-c1c4-7b26-8424" page="142" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with a grenade harness makes attacks at its normal Initiative Step during an Assault after it has successfully Charged through Difficult Terrain or Dangerous Terrain, but still suffers any penalties to Charge rolls imposed by Difficult Terrain or Dangerous Terrain when resolving a Charge through Difficult Terrain or Dangerous Terrain.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ff29-460e-a589-a376" name="Helical Targeting Array" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="6757-b90b-8c48-7028" name="Helical Targeting Array (P3P LA)" hidden="false" targetId="5097-7577-6026-5969" type="profile"/>
-      </infoLinks>
+    <selectionEntry id="ff29-460e-a589-a376" name="Helical Targeting Array (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="5097-7577-6026-5969" name="Helical Targeting Array (P3P)" publicationId="a716-c1c4-7b26-8424" page="143" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The controlling player of a model with a helical targeting array may activate it at the start of any of their own turns. Once the helical targeting array is activated, the model is affected by the following conditions until the beginning of the controlling player’s next turn:
+• The model may not move, Run or declare or make any Reactions other than the Interceptor or Overwatch Reaction.
+• The controlling player may choose to use the Skyfire special rule when making any Shooting Attacks with the model.
+• No model may make a Damage Mitigation roll provided by the Shrouded special rule against an attack made by a model with a helical targeting array while it is active.
+• When the model makes a Shooting Attack as part of the Interceptor Reaction, the Reaction does not cost the controlling player a point from their Reaction Allotment. This does not allow the unit to make more than one Reaction per phase, but does allow the controlling player to exceed the normal three Reactions limit in a given phase.
+• When a model with the Vehicle Unit Type and a helical targeting array makes a Shooting Attack as part of the Interceptor Reaction, that model may fire all of its weapons, not just Defensive Weapons, as part of the Shooting Attack.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b3b2-817f-8b68-fad0" name="Jet Pack" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="07d6-f9af-13dd-3db8" name="Jet Pack (P3P LA)" hidden="false" targetId="9d71-90b3-c22b-b04b" type="profile"/>
-      </infoLinks>
+    <selectionEntry id="b3b2-817f-8b68-fad0" name="Jet Pack (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="9d71-90b3-c22b-b04b" name="Jet Pack (P3P)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Jet Pack: A unit entirely equipped with Jet Packs may choose to increase its Movement Characteristic by +6, move over friendly and enemy models/units, and ignore terrain while moving during the Movement phase. A unit that ends or begins its movement in Dangerous Terrain will still need to take Dangerous Terrain tests as normal, even when employing Jet Packs and treats Difficult Terrain as Dangerous Terrain. In addition to the bonus to move during the Movement phase, a unit equipped entirely with Jet Packs may make an additional move of 6&quot; during the Shooting phase. This move must be taken after the unit has completed any Shooting, is not limited by the weapons fired by that unit during the Shooting phase and ignores terrain and may move over friendly and enemy models/units in the same manner as moves made using a Jet Pack in the Movement phase.
+
+Any model equipped with a Jet Pack also gains the Bulky (2) and Deep Strike special rules, or if it already has the Bulky (2) special rule it gains the Bulky (3) special rule instead.
+
+During any Reaction that allows a unit equipped entirely with Jet Packs to move, increase the distance of that move by 6. This allows the unit to ignore terrain in the same manner as other Jet Pack moves.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="146a-27f1-259e-214f" name="Jump Pack" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="6d1d-d529-089a-78b3" name="Jump Pack (P3P LA)" hidden="false" targetId="c192-835d-8c77-1424" type="profile"/>
-      </infoLinks>
+    <selectionEntry id="146a-27f1-259e-214f" name="Jump Pack (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c192-835d-8c77-1424" name="Jump Pack (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Jump Pack: A unit composed entirely of models with Jump Packs may set its Movement Characteristic to a value of 12 for the duration of the controlling player’s turn. This allows the unit to move up to 12&quot;, regardless of the Movement Characteristic shown on its profile, and gain any other benefits of a Movement Characteristic of 12 (including the bonus to Charge Distance, see page 181). In addition, if the controlling player chooses to set the unit’s Movement to 12&quot;, the unit ignores terrain while Moving and Charging, and may move over friendly and enemy models units. A unit that ends or begins its Movement or a Charge in Dangerous Terrain will still need to take Dangerous Terrain tests as normal, even when employing Jump Packs, and treats all Difficult Terrain as Dangerous Terrain.
+
+Any model equipped with a Jump Pack also gains the Bulky (2) and Deep Strike special rules, or if it already has the Bulky (2) special rule it gains the Bulky (3) special rule instead. A unit equipped with Jump Packs may not Run.
+
+During Reactions made in any Phase, a unit equipped with Jump Packs may not activate them to gain any bonus to their Movement Characteristic.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
@@ -1886,7 +2063,7 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6865-354c-0880-ee5f" name="Banestrike Bolter" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6865-354c-0880-ee5f" name="Banestrike Bolter (P3P)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="f329-e697-b5c1-e382" name="Banestrike Bolter (P3P ZW)" hidden="false" targetId="421b-2cbd-57bf-9c37" type="profile"/>
         <infoLink id="2cd9-a771-b903-1058" name="Breaching (X) (P3P LA)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule"/>
@@ -1895,7 +2072,7 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d3eb-73ae-7b59-c348" name="Banestrike Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="d3eb-73ae-7b59-c348" name="Banestrike Combi-Bolter (P3P)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="70ad-5b2e-8836-6855" name="Banestrike Combi-Bolter (P3P ZW)" hidden="false" targetId="2c34-eb08-35b3-9ff3" type="profile"/>
         <infoLink id="0a5a-dd30-9daf-a25b" name="Breaching (X) (P3P LA)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule"/>
@@ -2021,7 +2198,7 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4168-fc85-8912-7188" name="Servo-Arm" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4168-fc85-8912-7188" name="Servo-Arm (P3P)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="f147-3ca8-9cb5-c643" name="Servo-Arm (P3P LA)" hidden="false" targetId="71bf-775a-040f-6765" type="profile"/>
         <infoLink id="271c-be14-3872-1989" name="Unwieldy (P3P) (P3P)" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
@@ -2209,11 +2386,8 @@ In either case, against Vehicles each Armour Penetration roll of equal to or gre
 
 For example, a model with the Rending (5+) special rule that rolls To Wound against a non-Vehicle model will wound automatically on the roll of a 5+, and the attacking player has the choice of using an AP value of 2 instead of the AP value of their weapon.</description>
     </rule>
-    <rule id="ed9b-1320-335f-aa10" name="Spite of the Legion" hidden="false">
-      <description>If a Charge is declared for a unit that includes at least one model with this special rule, thargeting an enemy unit that is Pinned, Falling Back, or includes no models with the Character Sub-type then all failed To Wound rolls made for any models in the Charging unit in the same turn as that Charge is resolved may be re-rolled.</description>
-    </rule>
-    <rule id="7bc2-d481-f2af-1e6f" name="Heat of the Legion (P3P)" hidden="false">
-      <description>When a unit that includes at least one model with this special rule has at least half of the models withint 6&quot; of an Objective then all models inthe unit gain the Feel No Pain (6+) and Stuborn special rules. If any model in the unit already has a variant of the Feel No Pain special rule then insteas increase the value in the brackets of one of those rules by +1 while the unit has at least half of the models within 6&quot; of an Objective (for example, a model that already had Feel No Pain (5+) could choose to increase this to Feel No Pain (4+) while it fulfils the conditions of this special rules).</description>
+    <rule id="ed9b-1320-335f-aa10" name="Spite of the Legion" publicationId="a716-c1c4-7b26-8424" page="124" hidden="false">
+      <description>If a Charge is declared for a unit that includes at least one model with this special rule, targetting an enemy unit that is Pinned, Falling Back, or includes no models with the Character Sub-type or the Chosen Warriors special rule, then all models in the Charging unit gain a bonus of +1 Attacks for the duration of the Assault phase in which the Charge is declared.</description>
     </rule>
     <rule id="e02b-5fd3-aa3b-4fc4" name="Skirmish Sub-type" publicationId="817a-6288-e016-7469" page="95" hidden="false">
       <description>A unit that includes only models with the Skirmish Sub-type has a unit coherency range of 3&quot; rather than 2&quot;
@@ -2234,32 +2408,32 @@ During a Reaction made in any Phase, a player may not choose to activate a model
     <rule id="bff3-3548-b2b8-72f1" name="Psychic Focus" hidden="false">
       <description>Before making any To Hit rolls with this weapon, the Psyker must make a Psychic check. If the Check is passed, then the Psyker may attack as normal using the profile shown for this weapon. If the Check is failed, then the Psyker suffers Perils of the Warp, and if the model is not removed as a casualty then it may attack as normal but may not use this weapon.</description>
     </rule>
-    <rule id="24e7-27da-9bf7-f096" name="Heavy Beam (P3P LA)" hidden="false">
+    <rule id="24e7-27da-9bf7-f096" name="Heavy Beam" publicationId="a716-c1c4-7b26-8424" page="121" hidden="false">
       <description>When the weapon with this special rule is used to make a Shooting Attack, draw a 1&quot; wide line from the end of the gun barrel up to the listed range of the weapon – this is the beam area. The initial target for the weapon (the model in the beam area closest to the attacking model) must be an enemy model.
 • All models (friend and enemy) caught in the beam area (excepting the firing model) suffer a Hit with the listed profile of the weapon, except models with the Flyer Sub-type which cannot be affected or targeted.
 • Units with any models in the beam area receive a number of Hits equal to the number of their models caught in the path of the beam; casualties are removed from affected units using the normal rules for removing casualties.
 • If a Terrain piece, Building, model with the Vehicle Unit Type or any model with 6 or more Wounds is in the beam area, the attack is blocked and its line of effect will go no further than that model. The blocking model will, however, suffer 1+D3 separate Hits, rather than just 1.
 • If a model with the Vehicle Unit Type and the Transport Sub-type suffers a Penetrating Hit from a weapon with this special rule, each unit Embarked on it suffers D6 Str 4 AP - Hits with the Deflagrate special rule, in addition to any other effects. Casualties are assigned by the controlling player.</description>
     </rule>
-    <rule id="6c21-dd77-4c93-eeed" name="Impact-reactive Doors (P3P LA)" hidden="false">
+    <rule id="6c21-dd77-4c93-eeed" name="Impact-reactive Doors (P3P)" publicationId="a716-c1c4-7b26-8424" page="121" hidden="false">
       <description>When a model with this special rule is deployed, any doors on the model must be opened to their full extent. All models Embarked within a model with this special rule must then Disembark immediately and no models can thereafter Embark within that model for the remainder of the battle. The physical doors attached to a model with this special rule are not treated as part of the model once opened to their full extent, and cannot be targeted by Shooting Attacks and do not impede Movement in any way.</description>
     </rule>
-    <rule id="0c6b-9cc1-5801-3e83" name="Infantry Transport (P3P LA)" hidden="false">
+    <rule id="0c6b-9cc1-5801-3e83" name="Infantry Transport" publicationId="a716-c1c4-7b26-8424" page="121" hidden="false">
       <description>No model with any versions of the Bulky special rule may Embark on a model that has this special rule.</description>
     </rule>
-    <rule id="f268-05e5-8fc5-be12" name="Legion Artillerists (P3P LA)" hidden="false">
-      <description>A Rapier Battery must have one Legion Gunner per Rapier Carrier in order for all Rapier Carriers to make Shooting Attacks in the Shooting phase. If, at the start of any of the controlling player’s Shooting phases, the Rapier Battery contains fewer Legion Gunners than Rapier Carriers then only a number of Rapier Carriers equal to the number of Legion Gunners may make Shooting Attacks in that Shooting phase. In addition, as long as there are at least as many Legion Gunners in the unit as there are Rapier Carriers then the unit cannot be Pinned, automatically passing any Pinning tests it is called upon to take without any dice being rolled, and all Legion Gunners in the unit gain a bonus of +1 to their Leadership Characteristic (this bonus is lost immediately once the number of Legion Gunners is reduced to less than the number of Rapier Carriers in the unit).</description>
+    <rule id="f268-05e5-8fc5-be12" name="Legion Artillerists" publicationId="a716-c1c4-7b26-8424" page="122" hidden="false">
+      <description>A Legion Rapier Battery must have one Legion Gunner per Rapier Carrier in order for all Rapier Carriers to make Shooting Attacks in the Shooting phase. If, at the start of any of the controlling player’s Shooting phases, the Legion Rapier Battery contains fewer Legion Gunners than Rapier Carriers then only a number of Rapier Carriers equal to the number of Legion Gunners may make Shooting Attacks in that Shooting phase. In addition, as long as there are at least as many Legion Gunners in the unit as there are Rapier Carriers then the unit cannot be Pinned, automatically passing any Pinning tests it is called upon to take without any dice being rolled, and all Legion Gunners in the unit gain a bonus of +1 to their Leadership Characteristic (this bonus is lost immediately once the number of Legion Gunners is reduced to less than the number of Rapier Carriers in the unit).</description>
     </rule>
-    <rule id="5a1d-d2f6-692b-d834" name="Legiones Consularis (P3P LA)" hidden="false">
+    <rule id="5a1d-d2f6-692b-d834" name="Legiones Consularis" publicationId="a716-c1c4-7b26-8424" page="122" hidden="false">
       <description>Any Legion Centurion, Legion Cataphractii Centurion or Legion Tartaros Centurion may select a single Consul upgrade; no model may take more than one such upgrade (note that some upgrades are not available to Legion Cataphractii Centurions or Legion Tartaros Centurions, or Legion Centurions that have selected certain upgrades).</description>
     </rule>
-    <rule id="9f09-5cb8-c3ea-c3f8" name="Limited Ammunition (P3P LA)" hidden="false">
+    <rule id="9f09-5cb8-c3ea-c3f8" name="Limited Ammunition" publicationId="a716-c1c4-7b26-8424" page="122" hidden="false">
       <description>After all Shooting Attacks for a weapon with this special rule have been fully resolved, roll a D6, adding +1 if the weapon has fired before in the same battle. If the total of this roll is 6 or more then the weapon may no longer be used to make Shooting Attacks in this battle. If this weapon is unable to make further Shooting Attacks then it may not be targeted by a Weapon Destroyed result on the Vehicle Damage table, and for the purposes of such a result is treated as though it had already been destroyed.</description>
     </rule>
-    <rule id="4f41-4c04-9cd8-c5a1" name="Marked For Death (P3P LA)" hidden="false">
+    <rule id="4f41-4c04-9cd8-c5a1" name="Marked For Death" publicationId="a716-c1c4-7b26-8424" page="122" hidden="false">
       <description>At the start of the battle, once both armies have set up all their models, including any units with the Infiltrator special rules, a single enemy unit may be chosen by a player that controls any models with this special rule - this unit is considered &apos;marked for death&apos;. When any models with this special rule controlled by that player are used to make an attack of any kind against the eney unit their controlling player has &apos;marked for death&apos;, all failed To Wound rolls of &apos;1&apos; may be re-rolled.</description>
     </rule>
-    <rule id="8eef-f84b-37cb-554b" name="Master of Automata (P3P LA)" hidden="false">
+    <rule id="8eef-f84b-37cb-554b" name="Master of Automata" publicationId="a716-c1c4-7b26-8424" page="122" hidden="false">
       <description>A model with this special rule may join a unit that includes one of more models with the Automata Unit Type. While part of a unit that includes one of more models with this Automata Unit Type, a model with this special rule may not make Reactions and gains the Fearless special rule. If the Automata models in the unit are subject to the Programmed Behavious provision then those rules are not used as long as a model with this special rule is part of the unit.</description>
     </rule>
     <rule id="44d6-09b2-3bd3-b2d6" name="Destroyer (P3P)" hidden="false">
@@ -2334,13 +2508,13 @@ If a model has the ability to re-roll its rolls To Hit (including because of BS 
 
 If a model with this special rule Charges a Vehicle of any kind or a Building, the hits are resolved against the Armour Value of the Facing the charging model is touching. If the model is in contact with two or more Facings, the player controlling the target model chooses a Facing upon which the attacks are resolved. If a model with this special rule Charges a Building or Vehicle that is a Transport, the hits are resolved against the Building or Vehicle, not the unit Embarked within the Building or Vehicle.</description>
     </rule>
-    <rule id="d222-fde9-51b8-8739" name="Inertial Guidance System (P3P LA)" hidden="false">
+    <rule id="d222-fde9-51b8-8739" name="Inertial Guidance System" publicationId="a716-c1c4-7b26-8424" page="121" hidden="false">
       <description>When deployed as the first model placed during a Deep Strike Assault, or other deployment that requires a model with this special rule to scatter, the distance the model scatters is reduced by half and if it scatters into Impassable Terrain or off of the battlefield then it is moved the minimum distance required to avoid such obstacles. In addition, if all units included in a Deep Strike Assault have the Inertial Guidance System special rule or are models Embarked on a model with that special rule then any rolls made to determine if the Deep Strike Assault is Disordered may be re-rolled.</description>
     </rule>
-    <rule id="d863-8a5e-ddb6-d5a4" name="Inexorable (P3P LA)" hidden="false">
+    <rule id="d863-8a5e-ddb6-d5a4" name="Inexorable" publicationId="a716-c1c4-7b26-8424" page="121" hidden="false">
       <description>A unit that contains only models with this special rule ignores modifiers to Leadership when making a Morale check or Pinning test - except those caused by the Fear (X) special rule or the Corrupted and Anathema Sub-types. If a unit has both the Fearless and Inexorable special rules, it uses the rules for Fearless instead of Inexorable.</description>
     </rule>
-    <rule id="d1de-a45d-2b9b-c878" name="Loyalist (P3P LA)" hidden="false">
+    <rule id="d1de-a45d-2b9b-c878" name="Loyalist" publicationId="a716-c1c4-7b26-8424" page="122" hidden="false">
       <description>A model with thisspecial rule may only be included in an army that has the Loyalist Allegiance.</description>
     </rule>
     <rule id="bfbf-e75c-49a2-0285" name="Outflank (P3P)" hidden="false">
@@ -2389,17 +2563,16 @@ If a model with this rule makes an attack against a mixed unit which has one or 
 
 A model that has made a Disordered Charge that turn receives no benefit from Rampage (see page 182).</description>
     </rule>
-    <rule id="bd8c-4f52-d682-1b40" name="Reaping Blow (X) (P3P LA)" hidden="false">
+    <rule id="bd8c-4f52-d682-1b40" name="Reaping Blow (X)" publicationId="a716-c1c4-7b26-8424" page="124" hidden="false">
       <comment>info from Phase 3 play test</comment>
       <description>If a model is in base contact with more than one enemy model in the Initiative step in which they fight, they gain a number of Attacks equal to the value of X as noted in the variant of the special rule (if no value of X is included then count the value of X as 1).</description>
     </rule>
     <rule id="7adf-ac9a-5035-522d" name="Relentless (P3P)" hidden="false">
       <description>Relentless models can shoot with Heavy or Ordnance weapons, counting as Stationary, even if they moved in the previous Movement phase. They are also allowed to Charge in the same turn they fire Heavy, Ordnance, or Rapid Fire weapons.</description>
     </rule>
-    <rule id="58b3-7d84-b92d-1363" name="Sudden Strike (X) (P3P LA)" hidden="false">
+    <rule id="58b3-7d84-b92d-1363" name="Sudden Strike (X)" publicationId="a716-c1c4-7b26-8424" page="124" hidden="false">
       <comment>info from Phase 3 play test</comment>
       <description>In a turn in which a model with this special rule Charges into combat, it adds a bonus to its Initiative Characteristic until the end of the Assault phase. The bonus added to the model’s Initiative is equal to the value in brackets after the special rule; for example, a model with Sudden Strike (2) adds a bonus of +2 to its Initiative.
-
 A model that has made a Disordered Charge that turn receives no benefit from Sudden Strike (X).</description>
     </rule>
     <rule id="4380-44a5-f01a-d964" name="Adamantium Will (X+) (P3P)" hidden="false">
@@ -2704,7 +2877,7 @@ Wounds from Precision Strikes are allocated against a model (or models) of the a
     <rule id="5a93-13e0-809d-782a" name="Power of the Machine Spirit (P3P)" hidden="false">
       <description>A Vehicle with this special rule may attack different targets with each Ranged weapon it is permitted to fire during any Shooting Attack.</description>
     </rule>
-    <rule id="b254-c1a5-ac81-5c49" name="Cavalry Sub-type (P3P Units)" hidden="false">
+    <rule id="b254-c1a5-ac81-5c49" name="Cavalry Sub-type (P3P)" hidden="false">
       <description>As with other Unit Types, the Cavalry type includes a number of sub-types which may be referenced in other Age of Darkness books. The following rules apply to all Cavalry models and any Cavalry sub-types:
 
 • Cavalry models cannot be Pinned.
@@ -2713,22 +2886,22 @@ Terrain, even when Charging. However, Cavalry models treat all Difficult Terrain
 • Cavalry models move 3D6&quot; when Falling Back, rather than 2D6&quot;.
 • No model that is not also of the Cavalry Unit Type may join a unit that includes a Cavalry model.</description>
     </rule>
-    <rule id="cd2a-0a2b-315e-d39a" name="Slow Vehicles (P3P Vehicles)" hidden="false">
+    <rule id="cd2a-0a2b-315e-d39a" name="Slow Vehicles (P3P)" hidden="false">
       <description>When rolling on the Vehicle Damage table to resolve Hits against a Slow Vehicle, roll an additional D6 and before determining the result discard the highest single dice rolled. In addition, when a Slow Vehicle moves, other than to pivot in place, it is always considered to have moved at Cruising Speed regardless of how many inches it moves.</description>
     </rule>
-    <rule id="1570-c21a-881f-8b8a" name="Unwieldy (P3P) (P3P)" hidden="false">
+    <rule id="1570-c21a-881f-8b8a" name="Unwieldy (P3P)" hidden="false">
       <description>A model attacking with this weapon Piles-in and fights at Initiative step 1, unless it has the Dreadnought Unit Type or Monstrous sub-type.</description>
     </rule>
     <rule id="d456-4493-fcc0-ce15" name="Flat-out (P3P)" hidden="false">
       <description>A Vehicle choosing to move Flat-out may move up to twice its Movement Characteristic, but at the end of its move must roll a single D6. If the result of this roll is a ‘1’ then the Vehicle suffers a Glancing Hit and all the effects of the Crew Stunned result on the Vehicle Damage table. Vehicles moving at Flat-out speed may only fire Snap Shots.</description>
     </rule>
-    <rule id="3ec9-276f-e19f-e639" name="Light Sub-type (P3P Units)" hidden="false">
+    <rule id="3ec9-276f-e19f-e639" name="Light Sub-type (P3P)" hidden="false">
       <description>The following rules apply to all models with the Light sub-type:
 • A unit that includes only models with the Light sub-type gains a +1 modifier to its Initiative when determining how far that unit may Run (this bonus stacks with other bonuses to Run distance, such as the Fleet (X) special rule) and when moving as part of a Reaction.
 • A unit that includes only models with the Light sub-type may make Shooting Attacks after having Run, but makes all such attacks as Snap Shots. Models or weapons that cannot attack as Snap Shots may not attack.
 • Models with the Light sub-type may never claim a Cover Save in the same turn that it makes a Run move.</description>
     </rule>
-    <rule id="79ce-8870-0b12-79ab" name="Heavy Sub-type (P3P Units)" hidden="false">
+    <rule id="79ce-8870-0b12-79ab" name="Heavy Sub-type (P3P)" hidden="false">
       <description>The following rules apply to all models with the Heavy sub-type:
 • A unit that includes only models with the Heavy subtype may re-roll failed Armour Saves against Template and Blast weapons.
 • A unit that includes any models with the Heavy subtype may not Run and when making a Movement during a Reaction based on its Initiative Characteristic, reduces the distance moved by -1.</description>
@@ -2759,23 +2932,23 @@ Hellstorm weapons have the word ‘Hellstorm’ instead of a range on their weap
     <rule id="4c23-e863-a569-7617" name="Two-handed (P3P)" hidden="false">
       <description>A model attacking with this weapon never receives +1 Attack for fighting with two Melee weapons (see page 177).</description>
     </rule>
-    <rule id="3322-e589-ba33-b1b7" name="Monstrous Sub-type (P3P Units)" hidden="false">
+    <rule id="3322-e589-ba33-b1b7" name="Monstrous Sub-type (P3P)" hidden="false">
       <description>The following rules apply to models with the Monstrous sub-type:
 • A unit that includes any models with the Monstrous sub-type cannot be Pinned.
 • A model with the Monstrous sub-type may fire all weapons they are equipped with in each Shooting Attack they make, including as part of a Reaction.
 • A model with the Monstrous sub-type may fire Heavy and Ordnance weapons and counts as Stationary even if it moved in the preceding Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn.
 • No model that is not also Monstrous may join a unit that includes a Monstrous model.</description>
     </rule>
-    <rule id="e1d7-0fe8-59f4-af89" name="Antigrav Sub-type (P3P Units)" hidden="false">
+    <rule id="e1d7-0fe8-59f4-af89" name="Antigrav Sub-type (P3P)" hidden="false">
       <description>The following rules apply to all models with the Antigrav sub-type:
 • A unit that includes only models with the Antigrav sub-type may ignore the effects of any and all terrain it passes over during movement, including passing over vertical terrain and Impassable Terrain without penalty or restriction. However, such units may not begin or end their movement in Impassable Terrain, and if beginning or ending their movement in Dangerous Terrain must take Dangerous Terrain tests as normal.
 • Models with the Antigrav sub-type may never benefit from Cover Saves of any kind.</description>
     </rule>
-    <rule id="bc1e-9c95-f971-cd7b" name="Line Sub-type (P3P Units)" hidden="false">
+    <rule id="bc1e-9c95-f971-cd7b" name="Line Sub-type (P3P)" hidden="false">
       <description>The following rules apply to all models with the Line sub-type:
 • A unit that includes at least one model with the Line sub-type counts as both a Scoring and Denial unit.</description>
     </rule>
-    <rule id="df15-2b9e-8437-3295" name="Daemon Sub-type (P3P Units)" hidden="false">
+    <rule id="df15-2b9e-8437-3295" name="Daemon Sub-type (P3P)" hidden="false">
       <description>As with other Unit Types, the Daemon type includes a number of sub-types which may be referenced in other Age of Darkness books. The following rules apply to all Daemon models and any Daemon sub-types:
 • All Daemon models have their Strength and Toughness modified by a value determined by the current Game Turn: +1 on Game Turns 1 &amp; 2, +/-0 on Game Turns 3 &amp; 4, -1 on Game Turns 5 &amp; 6, and -2 on Game Turns 7+.
 • All Daemon models have the Fear special rule.
@@ -2783,14 +2956,14 @@ Hellstorm weapons have the word ‘Hellstorm’ instead of a range on their weap
 • All Daemon models are immune to the effects of the Fear special rule, automatically pass Pinning and Regroup tests and cannot choose to fail a Morale check due to the Our Weapons Are Useless special rule. When a Daemon unit fails a Morale check it does not Fall Back as per the standard rules, but instead suffers D3 automatic Wounds with no Saves of any kind allowed.
 • No model that is not also of the Daemon Unit Type may join a unit that includes a Daemon model.</description>
     </rule>
-    <rule id="a895-3e13-98e4-b67c" name="Primarch Sub-type: (P3P Units)" hidden="false">
+    <rule id="a895-3e13-98e4-b67c" name="Primarch Sub-type: (P3P)" hidden="false">
       <description>The following rules apply to all Primarchs:
 • All Primarchs have the following special rules: Independent Character, Eternal Warrior, Fearless, It Will Not Die (5+), Bulky (4), and Relentless. In addition, all models with the Primarch unit type always count as Character models.
 • Primarchs are not affected by special rules that negatively modify their Characteristics (other than Wounds) and, in addition, Primarchs always resolve Snap Shots at their normal BS.
 • Any Hits inflicted by a Primarch, as part of either Shooting Attacks or in close combat, are allocated by the Primarch’s controlling player and not the controlling player of the target unit. These Hits should form a separate Wound Pool.
 • If an army includes any Primarch models, then one of those models must be chosen as the army’s Warlord.</description>
     </rule>
-    <rule id="ab7d-c74d-a976-2540" name="Dreadnought Sub-type (P3P Units)" hidden="false">
+    <rule id="ab7d-c74d-a976-2540" name="Dreadnought Sub-type (P3P)" hidden="false">
       <description>As with other Unit Types, the Dreadnought type includes a number of sub-types which may be referenced in other Age of Darkness books. The following rules apply to all Dreadnought models and any Dreadnought sub-types:.
 • Successful Wounds scored by attacks with the Poisoned or Fleshbane special rules must be re-rolled against models of the Dreadnought Unit Type.
 • All Dreadnought models have the Fearless special rule.
@@ -2798,46 +2971,42 @@ Hellstorm weapons have the word ‘Hellstorm’ instead of a range on their weap
 • A model of the Dreadnought type may fire Heavy and Ordnance weapons and counts as Stationary even if it moved in the preceding Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn.
 • No model that is not also of the Dreadnought Unit Type may join a unit that includes a Dreadnought model.</description>
     </rule>
-    <rule id="d9e0-baf4-66cb-24cc" name="Automata (P3P Units)" hidden="false">
+    <rule id="d9e0-baf4-66cb-24cc" name="Automata (P3P)" hidden="false">
       <description>As with other Unit Types, the Automata type includes a number of sub-types which may be referenced in other Age of Darkness books. The following rules apply to all Automata models and any Automata sub-types:
 • All Automata models have the Fearless special rule.
 • Successful Wounds inflicted by attacks with the Poisoned or Fleshbane special rules must be re-rolled against models of the Automata Unit Type.
 • A unit that includes one or more models with the Automata Unit Type may not make Reactions.
 • No model that is not also of the Automata Unit Type may join a unit that includes an Automata model.</description>
     </rule>
-    <rule id="8829-d063-2393-1ad2" name="Infantry (P3P Units)" hidden="false">
+    <rule id="8829-d063-2393-1ad2" name="Infantry (P3P)" hidden="false">
       <description>The wider category of Infantry units contains a number of sub-types which may be referenced in other Age of Darkness books. Infantry represent the most basic element of any army and, as such, require no additional rules.
 
 An Infantry unit may only include or be joined by models of the Infantry or Primarch Unit Type, unless a special rule states otherwise.</description>
     </rule>
-    <rule id="cf3c-4951-8835-0aeb" name="Fast Vehicles (P3P Vehicles)" hidden="false">
+    <rule id="cf3c-4951-8835-0aeb" name="Fast Vehicles (P3P)" hidden="false">
       <description>When a Fast Vehicle moves, other than to pivot in place, it is always considered to have moved at Combat Speed regardless of how many inches it moves, unless it chooses to move Flat-out.
 
 In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</description>
     </rule>
-    <rule id="63d3-5fef-7c8e-e881" name="Skimmers (P3P Vehicles)" hidden="false">
+    <rule id="63d3-5fef-7c8e-e881" name="Skimmers (P3P)" hidden="false">
       <description>Unlike most other Vehicles, Skimmers have flying bases under their hull. However, distances are still measured to and from the Skimmer’s hull, with the exception of the Vehicle’s weapons, which all work as normal. The base of a Skimmer is effectively ignored, except for when the Skimmer is being Charged or Rammed, in which case, models may move into contact with the Vehicle’s hull, its base or both.
 
 Skimmers can move over friendly and enemy models, but they cannot end their move on top of either. Skimmers can move over all terrain, ignoring all penalties for Difficult Terrain and Dangerous Terrain tests. However, if a moving Skimmer starts or ends its move in Difficult Terrain or Dangerous Terrain, it must take a Dangerous Terrain test. A Skimmer can even end its move over Impassable Terrain if it is possible to actually place the model on top of it, but if it does so it must take a Dangerous Terrain test. If a Skimmer is forced to end its move over friendly or enemy models, move the Skimmer the minimum distance so that no models are left underneath it.
 
 If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If this is not possible (the base might have been glued in place, for example), then leave the base in place. Note that it is not otherwise permitted to remove the flying base, as Skimmers cannot land in battle conditions.</description>
     </rule>
-    <rule id="cd10-fd66-1eb2-37bb" name="Hover Sub-type (P3P Vehicles)" hidden="false">
+    <rule id="cd10-fd66-1eb2-37bb" name="Hover Sub-type (P3P)" hidden="false">
       <description>A Flyer with the Hover sub-type must declare whether it is going to Zoom or Hover before it moves, and before any Embarked models Disembark, each Movement phase. This means that if the Flyer arrives from Reserves, you must declare which type of Movement it is using before placing it on the board. If a Flyer is in a Squadron, all Vehicles in the Squadron must choose the same type of Movement A Flyer in Hover mode cannot switch to Zoom mode if it is Immobilised.
 
 If a Flyer is Hovering, it is treated exactly as a Skimmer (see page 214).</description>
     </rule>
-    <rule id="c772-87ea-d49c-c7ba" name="Master of the Legion (P3P LA)" hidden="false">
-      <description>Master of the Legion
-The greatest commanders of the Space Marine Legions are all but peerless in their strategic and tactical abilities. The genecraft of the Emperor that created them, honed by individual talent and the experience of countless battles, has sharpened their acumen to a preternatural degree.
-
-The Master of the Legion special rule grants the following benefits:
-
+    <rule id="c772-87ea-d49c-c7ba" name="Master of the Legion" publicationId="a716-c1c4-7b26-8424" page="123" hidden="false">
+      <description>The Master of the Legion special rule grants the following benefits:
 • Rites of War: If a Detachment with the Legiones Astartes Faction includes at least one model with the Master of the Legion special rule then that Detachment may select a single Rite of War. Rites of War are presented in the Appendix: Legiones Astartes Rites of War, found on page 96.
 • The Few and the Proud: An army may only include a maximum of one model with this special rule per 1,000 points. This counts across all Detachments of an army. Thus, an army that totals at least 1,000 points may include only a single model with the Master of the Legion special rule, and an army that includes at least 2,000 points may include up to two models with the Master of the Legion special rule, etc.
 • Retinue: A model with this special rule may also include a Legion Command Squad, Legion Cataphractii Command Squad or Legion Tartaros Command Squad as part of the same Force Organisation slot as the model with the Master of the Legion special rule. The full rules for doing so can be found in the Appendix: Legiones Astartes Special Rules on page 124.</description>
     </rule>
-    <rule id="d2d8-64ff-72f1-87ef" name="Lumbering Sub-type (P3P Vehicles)" hidden="false">
+    <rule id="d2d8-64ff-72f1-87ef" name="Lumbering Sub-type (P3P)" hidden="false">
       <description>Lumbering Flyers have additional rules and exceptions as follows:
 
 Each time a Lumbering Flyer suffers an Explodes result on the Vehicle Damage table, instead of suffering the effects listed, it loses D3 additional Hull Points as well as the Hull Point it loses for the Penetrating Hit.
@@ -2850,12 +3019,12 @@ In addition, a Lumbering Flyer is so large and strongly built that weapons which
       <description>A model with the Reinforced Sub-type ignores the effects of any Crew Shaken result on the Vehicle Damage table
 A model with the Reinforced Sub=type does not have to make Snap Shots due to the effects of the Crew Stunned result on the Vehicle Damaage table (but still cannot move or pivot until the end of its next turn).</description>
     </rule>
-    <rule id="edb9-295b-5d36-8fd7" name="Apothecarion Detachment (MOVE ME)" publicationId="817a-6288-e016-7469" page="116" hidden="false">
+    <rule id="edb9-295b-5d36-8fd7" name="Apothecarion Detachment (MOVE ME)" publicationId="a716-c1c4-7b26-8424" page="116" hidden="false">
       <description>An Apothecarion Detachment is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed to the battlefield, all models in an Apothecarion Detachment must be assigned to another unit from the same Detachment of the army they were selected as part of. Legion Apothecaries that have not selected a Legion Spatha combat bike or Legion Scimitar jetbike may only be assigned to units composed entirely of models with the Infantry Unit Type and the same Legiones Astartes (X) special rule as the Legion Apothecary, and may not join units that have Terminator armour of any kind. Legion Apothecaries that have selected a Legion Spatha combat bike may only be assigned to units composed entirely of models with Legion Spatha combat bikes and the same Legiones Astartes (X) special rule as the Legion Apothecary, and any Legion Apothecaries that have selected a Legion Scimitar jetbike may only be assigned to units composed entirely of models with Legion Scimitar jetbikes and the same Legiones Astartes (X) special rule as the Legion Apothecary. No Apothecary may be assigned to any unit that includes one or more models with the Independent Character special rule or Unique Sub-type (but such models may join a unit that includes an Apothecary as normal during either deployment or any following turn). No more than one Apothecary may be assigned to any given unit.
 
 Once assigned to a unit, the Legion Apothecary is considered part of that unit and may not leave it under any circumstances – if that unit is removed as a casualty when the Legion Apothecary is removed as well. In battles using Victory points, no Victory points are ever scored for removing an Legion Apothecary as a casualty. When assigned to a unit, a Legion Apothecary gains all of the special rules (with the exception of those that specifically forbid it, such as the Bitter Duty special rule) and Unit Sub-types listed for the unit to which it is attached, but does not gain access to any additional Wargear options available to the unit to which it is assigned.</description>
     </rule>
-    <rule id="5cd0-cbd0-6e0a-282a" name="Area Denial Drop" publicationId="817a-6288-e016-7469" page="117" hidden="false">
+    <rule id="5cd0-cbd0-6e0a-282a" name="Area Denial Drop" publicationId="a716-c1c4-7b26-8424" page="116" hidden="false">
       <description>Before the start of the first turn, when placing units into Reserve, a player must assign all Legion Deathstorm Drop Pods in the army to Reserve to perform an Area Denial Drop. At the beginning of the controlling player’s first turn, before any other models are moved or deployed, all of the Area Denial Drop units must enter play using the procedure described below:
 
 Performing an Area Denial Drop
@@ -2871,113 +3040,108 @@ Once all units are deployed, any enemy units within line of sight and range may 
 
 Once all units from the Area Denial Drop have been deployed and any Interceptor Reactions have been resolved, the turn proceeds as normal. Units that have been deployed as part of an Area Denial Drop may not Move or Run in the same Movement phase as they are deployed, but may Shoot and declare Charges as normal (if the models deployed as part of the Area Denial Drop are allowed to make Charges).</description>
     </rule>
-    <rule id="8837-14e8-344a-1f39" name="Auxiliary Vehicle Bay" publicationId="817a-6288-e016-7469" page="117" hidden="false">
+    <rule id="8837-14e8-344a-1f39" name="Auxiliary Vehicle Bay" publicationId="a716-c1c4-7b26-8424" page="117" hidden="false">
       <description>Models with the Vehicle Unit Type may Embark on a model with this special rule, Embarking and Disembarking as per the normal rules for Embarking/Disembarking. A model with this special rule may carry one model with the Vehicle Unit Type whose starting Hull Points Characteristic is 4 or less. A model with the Vehicle Unit Type Embarking or Disembarking from a model with this special rule may do so from any point on the model’s base, or its hull if it has no base.</description>
     </rule>
-    <rule id="d1b8-31da-c53c-4fe2" name="Bitter Duty" hidden="false">
+    <rule id="d1b8-31da-c53c-4fe2" name="Bitter Duty" publicationId="a716-c1c4-7b26-8424" page="117" hidden="false">
       <description>A unit that includes any models with this special rule may not be joined by any model that does not also have this special rule (this includes Legion Techmarines and Legion Apothecaries, which may not be assigned to a unit with this special rule unless they also have this special rule).</description>
     </rule>
-    <rule id="a760-f736-1bf3-fa3c" name="Breaching (X)" publicationId="817a-6288-e016-7469" page="117" hidden="false">
+    <rule id="a760-f736-1bf3-fa3c" name="Breaching (X)" publicationId="a716-c1c4-7b26-8424" page="117" hidden="false">
       <description>When rolling To Wound for a model that has the Breaching (X) special rule, or is attacking with a weapon that has the Breaching (X) special rule, for each To Wound roll equal to or higher than the value listed in brackets, the controlling player must resolve these wounds at AP 2 instead of the weapon’s normal AP value. This rule has no effect on models that do not have Wounds, such as models with the Vehicle Unit Type.
 
 For example, a model with the Breaching (5+) special rule that rolls To Wound and rolls a result of ‘5’ or higher, the Wound inflicted gains an AP of ‘2’ regardless of the AP value listed on the weapon’s profile. Note that a weapon that has both the Breaching (X) and the Gets Hot special rules always uses the base AP of the weapon when rolls of ‘1’ To Hit inflict Wounds on the attacking model.</description>
     </rule>
-    <rule id="5079-1fec-d32b-8b84" name="Brutal (X)" publicationId="817a-6288-e016-7469" page="117" hidden="false">
+    <rule id="5079-1fec-d32b-8b84" name="Brutal (X)" publicationId="a716-c1c4-7b26-8424" page="117" hidden="false">
       <description>When a model is allocated a Wound inflicted by a weapon with this special rule, it does not suffer only one Wound but instead a number of Wounds equal to the number in brackets associated with the specific varient of this special rule, with all of the Wounds inflicted using the same AP and special rules as that of the initial Wound. Roll to save against each Wound inflicted separately, but note that Wounds do not spill over to other models and are lost. This special rule has no effect on models that do not hae a Toughness value.</description>
     </rule>
-    <rule id="2bf6-9fcb-fb98-a11d" name="Containment Breach" publicationId="817a-6288-e016-7469" page="117" hidden="false">
+    <rule id="2bf6-9fcb-fb98-a11d" name="Containment Breach" publicationId="a716-c1c4-7b26-8424" page="117" hidden="false">
       <description>If a model with this special rule suffers an Explodes result on the Vehicle Damage table then when determining the radius of the explosion roll D6+3 instead of D6.</description>
     </rule>
-    <rule id="9eb0-9165-e000-818a" name="Crushing Weight (P3P LA)" hidden="false">
+    <rule id="9eb0-9165-e000-818a" name="Crushing Weight" publicationId="a716-c1c4-7b26-8424" page="118" hidden="false">
       <description>When the controlling player resolves a Ram Attack using a model with this special rule, targeting an enemy model that has the Vehicle Unit Type, then any Hits inflicted are always resolved at Strength 12 (see the rules for Weapon Strengths above 10 on page 128). When resolving a Ram Attack against a model that does not have the Vehicle Unit Type, 6+D6 Str 10 Hits are inflicted instead.</description>
     </rule>
-    <rule id="7208-c178-683e-3e39" name="Deathstorm (P3P LA)" hidden="false">
+    <rule id="7208-c178-683e-3e39" name="Deathstorm" publicationId="a716-c1c4-7b26-8424" page="118" hidden="false">
       <description>When making a Shooting Attack, select up to four enemy units within range and line of sight of the attacking unit and make a Shooting Attack using the weapon’s profile against each unit instead of following the normal procedure (any individual enemy unit may only be selected as a target once, and if there are less than four enemy units within line of sight and range then each viable target may be attacked). Each unit targeted is attacked with the full number of attacks listed as part of the weapon’s profile, for example, a weapon with the Heavy 6 type and the Deathstorm special rule would select up to four enemy units within range and line of sight and roll six dice To Hit against each unit.</description>
     </rule>
-    <rule id="8a47-9fc5-16fb-b46e" name="Detonation (P3P LA)" hidden="false">
+    <rule id="8a47-9fc5-16fb-b46e" name="Detonation (P3P LA)" publicationId="a716-c1c4-7b26-8424" page="118" hidden="false">
       <description>A weapon with this special rule may only be used to attack models of the Vehicle, Dreadnought or Automata Unit Types, any model with a Movement Characteristic of 0 or ‘-’, or Buildings or Fortifications. Furthermore, a model that is chosen to attack with a weapon with this special rule during the Assault phase may only make a single attack in the Fight sub-phase, regardless of its Attacks Characteristic and any bonus attacks from Charging or other special rules.</description>
     </rule>
-    <rule id="a924-2634-73fd-aa96" name="Dreadnought Talon (P3P LA)" hidden="false">
+    <rule id="a924-2634-73fd-aa96" name="Dreadnought Talon" publicationId="a716-c1c4-7b26-8424" page="118" hidden="false">
       <description>When deployed onto the battlefield (either at the start of the battle or when arriving from Reserves), all models with this special rule in a unit must be placed within unit coherency, but afterwards operate independently and are not treated as a unit.</description>
     </rule>
-    <rule id="a0bf-fb7c-a9dc-72f0" name="Dreadnought Transport (P3P LA)" hidden="false">
+    <rule id="a0bf-fb7c-a9dc-72f0" name="Dreadnought Transport" publicationId="a716-c1c4-7b26-8424" page="118" hidden="false">
       <description>A model with this special rule may transport a single model with the Dreadnought Unit Type with no more than 8 Wounds instead of any other models. A Dreadnought model may not Embark upon a model with this special rule if any other models are already Embarked on it, and while a Dreadnought model is Embarked on a model with this special rule then no other models may Embark.</description>
     </rule>
-    <rule id="9790-b14e-48fb-2f5d" name="Feedback (P3P LA)" hidden="false">
+    <rule id="9790-b14e-48fb-2f5d" name="Feedback" publicationId="a716-c1c4-7b26-8424" page="118" hidden="false">
       <description>If a weapon with this special rule fails its Armour Penetration roll against a target with an Armour Value, or fails a To Wound roll against any other model (note that successful Armour Saves or Damage Mitigation rolls do not count for this), roll a D6. If the result is a 1, the attacking model loses 1 Hull Point or Wound.</description>
     </rule>
-    <rule id="56e4-5bbb-91bd-13e0" name="Fury of the Legion (P3P LA)" hidden="false">
+    <rule id="56e4-5bbb-91bd-13e0" name="Fury of the Legion" publicationId="a716-c1c4-7b26-8424" page="119" hidden="false">
       <description>If a model with this special rule has not moved or Run during the Movement phase of its controlling player’s turn then that model may add one to the number of shots fired when making a Shooting Attack with a bolter (this does not include combi-bolters, bolt pistols or other bolt weapons).</description>
     </rule>
-    <rule id="6ab3-174e-0869-da70" name="Harbingers of the Legion (P3P LA)" hidden="false">
+    <rule id="6ab3-174e-0869-da70" name="Harbingers of the Legion" publicationId="a716-c1c4-7b26-8424" page="119" hidden="false">
       <description>A unit that includes any models with this special rule may not join or be joined by any model that does not also have this special rule (this includes Legion Techmarines and Legion Apothecaries, which may not be assigned to a unit that includes any models with this special rule). In addition, a unit that includes any models with this special rule never counts as a Scoring unit or a Denial unit regardless of any other special rules or Mission rules in use – however, a model with this special rule may re-roll all failed Shrouded Damage Mitigation rolls.</description>
     </rule>
-    <rule id="60d8-5964-8671-7f3b" name="Graviton Collapse (P3P LA)" hidden="false">
-      <description>Instead of rolling To Wound normally with a weapon with this special rule, the controlling player of any model Hit by it must roll equal to or under that model’s Strength Characteristic on 2D6 or it suffers a Wound (Armour Saves and Damage Mitigation rolls may be taken as normal – except Shrouded rolls which may not be used). Against targets with an Armour Value, the attacking player rolls 3D6 for armour penetration instead.</description>
+    <rule id="60d8-5964-8671-7f3b" name="Graviton Collapse" publicationId="a716-c1c4-7b26-8424" page="119" hidden="false">
+      <description>Instead of rolling To Wound normally with a weapon with this special rule, the controlling player of any model Hit by it must roll equal to or under that model’s Strength Characteristic on 2D6 or it suffers a Wound (Armour Saves and Damage Mitigation rolls may be taken as normal – except Shrouded rolls which may not be used). Against targets with an Armour Value, the attacking player rolls 4D6 for armour penetration instead.</description>
     </rule>
-    <rule id="c0dd-9002-2ebd-f96d" name="Heart of the Legion (P3P LA)" hidden="false">
+    <rule id="c0dd-9002-2ebd-f96d" name="Heart of the Legion" publicationId="a716-c1c4-7b26-8424" page="119" hidden="false">
       <description>When a unit that includes at least one model with this special rule has at least half of its models within 6&quot; of an Objective then all models in the unit gain the Feel No Pain (6+) and Stubborn special rules. If any model in the unit already has a variant of the Feel No Pain special rule then instead increase the value in brackets of one of those rules by +1 while the unit has at least half of its models within 6&quot; of an Objective (for example, a model that already had Feel No Pain (5+) could choose to increase this to Feel No Pain (4+) while it fulfils the conditions of this special rule).</description>
     </rule>
-    <rule id="67b4-2dad-feb2-bc02" name="Heat Blast (P3P LA)" hidden="false">
+    <rule id="67b4-2dad-feb2-bc02" name="Heat Blast" publicationId="a716-c1c4-7b26-8424" page="119" hidden="false">
       <description>When a model with this special rule is deployed onto the battlefield using the Deep Strike special rule, and once all models arriving from Deep Strike in the same phase have been placed in their final positions, but before any models Embarked on the model with this special rule have Disembarked, any models within 3+D3&quot; (friendly or enemy) suffer a Str 6 AP 5 Hit (models with the Vehicle Unit Type are struck on the Armour facing with the lowest Armour Value, and this attack counts as a Flame attack).
 
 In addition, when moving in Hover mode, the controlling player may choose to inflict D6 Str 6 AP 5 Hits on any unit that a model with this special rule moves over. These Hits are distributed randomly within the target unit and models with the Vehicle Unit Type are struck on the Armour facing with the lowest Armour Value, and this attack counts as a Flame attack. Once the model has finished moving, the controlling player must roll a D6 for each unit it has inflicted Hits upon using this special rule – any results of a ‘1’ inflict a Hull Point of damage on the model with this special rule.</description>
     </rule>
-    <rule id="c6e2-3d5a-b8f9-005c" name="Neutron-flux (P3P LA)" hidden="false">
+    <rule id="c6e2-3d5a-b8f9-005c" name="Neutron-flux" publicationId="a716-c1c4-7b26-8424" page="123" hidden="false">
       <description>A weapon with this special rule gains the Instant Death special rule when targeting models with the Automata Unit Type.</description>
     </rule>
-    <rule id="8c83-e084-bb04-d98c" name="Advanced Reaction:Combat Air Patrol (P3P LA)" hidden="false">
+    <rule id="8c83-e084-bb04-d98c" name="Advanced Reaction:Combat Air Patrol" hidden="false">
       <description>Combat Air Patrol – This Advanced Reaction may be made whenever any enemy model that has the Vehicle Unit Type and the Flyer Sub-type enters the battlefield from Reserves. The Reactive player may nominate any one model that has been assigned to Combat Air Patrol. Once the enemy model with the Vehicle Unit Type and Flyer Sub-type that triggered this Reaction has finished any and all Movement as it is brought into play, the chosen model assigned to Combat Air Patrol is brought into play from any point on the edge of the battlefield, moving into play as if it had entered play from Reserves. Once the Combat Air Patrol model has finished its Movement it may immediately make a Shooting Attack targeting the enemy model that triggered this Reaction – as long as it has finished its Movement with line of sight to that model.
-
 Only models with the Vehicle Unit Type and Flyer Sub-type may make the Combat Air Patrol Reaction.</description>
     </rule>
-    <rule id="93e9-2806-e822-bfaf" name="Techmarine Covenant (P3P LA)" hidden="false">
+    <rule id="93e9-2806-e822-bfaf" name="Techmarine Covenant" publicationId="a716-c1c4-7b26-8424" page="125" hidden="false">
       <description>A Techmarine Covenant is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed to the battlefield, all models in a Techmarine Covenant must be assigned to another unit from the same Detachment of the army they were selected as part of. Legion Techmarines that have not selected a Legion Spatha combat bike or Legion Scimitar jetbike may only be assigned to units composed entirely of models with the Infantry Unit Type and the same Legiones Astartes (X) special rule as the Legion Techmarine, and may not join units with Terminator armour of any kind. Legion Techmarines that have selected a Legion Spatha combat bike may only be assigned to units composed entirely of models with Legion Spatha combat bikes and the same Legiones Astartes (X) special rule as the Legion Techmarine, and any Legion Techmarines that have selected a Legion Scimitar jetbike may only be assigned to units composed entirely of models with Legion Scimitar jetbikes and the same Legiones Astartes (X) special rule as the Legion Techmarine. No Legion Techmarine may be assigned to any unit that includes one or more models with the Independent Character special rule or Unique Sub-type (but such models may join a unit that includes a Legion Techmarine as normal during either deployment or any following turn). No more than one Legion Techmarine may be assigned to any given unit.
-
 Once assigned to a unit, the Legion Techmarine is considered part of that unit and may not leave it under any circumstances – if that unit is removed as a casualty then the Legion Techmarine is removed as well. In battles using Victory points, no Victory points are ever scored for removing a Legion Techmarine as a casualty. When assigned to a unit, a Legion Techmarine gains all of the special rules (with the exception of those that specifically forbid it, such as the Bitter Duty special rule) and Unit Sub-types listed for the unit to which it is attached, but does not gain access to any additional Wargear options available to the unit to which it is assigned.</description>
     </rule>
-    <rule id="c503-f5b8-3da0-16e6" name="Void Shields (P3P LA)" hidden="false">
+    <rule id="c503-f5b8-3da0-16e6" name="Void Shields" publicationId="a716-c1c4-7b26-8424" page="127" hidden="false">
       <description>A model with this special rule has a number of void shields, as listed on its profile. Shooting Attacks which Hit a model with this special rule instead target this model’s void shields while at least one remains active. Void shields have an Armour Value of 12. A successful Glancing Hit, Penetrating Hit or any successful Hit from a Destroyer weapon which targets a void shield causes it to collapse, reducing the number ‘X’ by -1. When the number of void shields is reduced to 0, this special rule has no further effect and subsequent Shooting Attacks target the model instead. Void shields have no effect on close combat attacks, and may not be affected by close combat attacks.</description>
     </rule>
-    <rule id="0662-8b8d-38e8-60f8" name="Transport Bay (P3P LA)" hidden="false">
+    <rule id="0662-8b8d-38e8-60f8" name="Transport Bay" publicationId="a716-c1c4-7b26-8424" page="126" hidden="false">
       <description>A model with this special rule may carry models of the Dreadnought and Automata Unit Types, as well as models with the Cavalry Unit Type but not the Antigrav Sub-type. Each Dreadnought model uses 10 points of Transport Capacity, while each Automata and Cavalry model uses up a number of Transport Capacity points equal to twice its starting Wounds Characteristic.</description>
     </rule>
-    <rule id="564b-25f0-6bae-949e" name="Volatile Plasma Containment (P3P LA)" hidden="false">
+    <rule id="564b-25f0-6bae-949e" name="Volatile Plasma Containment" publicationId="a716-c1c4-7b26-8424" page="127" hidden="false">
       <description>If a model with this special rule loses its last Hull Point due to the Gets Hot special rule then it also suffers the effects of the Explodes result on the Vehicle Damage table. When a model with this special rule suffers an Explodes result (as shown on the Vehicle Damage table), the Strength of any Hits it causes is increased to 10.</description>
     </rule>
-    <rule id="eff2-8b0e-21da-2f0d" name="Traitor (P3P LA)" hidden="false">
+    <rule id="eff2-8b0e-21da-2f0d" name="Traitor" publicationId="a716-c1c4-7b26-8424" page="126" hidden="false">
       <description>A model with this special rule may only be included in an army that has the Traitor Allegiance.</description>
     </rule>
-    <rule id="1703-5d6d-048c-7287" name="Talons of the Legion (P3P LA)" hidden="false">
+    <rule id="1703-5d6d-048c-7287" name="Talons of the Legion" publicationId="a716-c1c4-7b26-8424" page="125" hidden="false">
       <description>A unit or model with this special rule may be placed into Combat Air Patrol at the start of the battle, before any models are deployed onto the battlefield. Models assigned to Combat Air Patrol are not deployed onto the battlefield and remain in Reserves – however, no Reserves rolls are made for these models. Instead, the controlling player gains access to the Combat Air Patrol Advanced Reaction.</description>
     </rule>
-    <rule id="2cef-a40d-97b8-7d4e" name="Torsion Crusher (P3P LA)" hidden="false">
+    <rule id="2cef-a40d-97b8-7d4e" name="Torsion Crusher" publicationId="a716-c1c4-7b26-8424" page="126" hidden="false">
       <description>When a target with an Armour Value is struck by a weapon with this special rule, the amount of Hull Point damage caused by the weapon is doubled.</description>
     </rule>
-    <rule id="bfc1-e589-acd2-1743" name="Spite of the Legion (P3P LA)" hidden="false">
-      <description>If a Charge is declared for a unit that includes at least one model with this special rule, targeting an enemy unit that is Pinned, Falling Back or includes no models with the Character Sub-type then all failed To Wound rolls made for any models in the Charging unit in the same turn as that Charge is resolved may be re-rolled.</description>
-    </rule>
-    <rule id="88df-ea13-cc92-8193" name="Rocket Barrage (P3P LA)" hidden="false">
+    <rule id="88df-ea13-cc92-8193" name="Rocket Barrage (P3P)" publicationId="a716-c1c4-7b26-8424" page="124" hidden="false">
       <description>If a model that has a weapon with this special rule does not move in the Movement phase of a given turn, that weapon may be given the Rending (4+) and Pinning special rules until the start of the controlling player’s next turn.</description>
     </rule>
-    <rule id="6b79-ac44-4d89-2124" name="Retinue (P3P LA)" hidden="false">
+    <rule id="6b79-ac44-4d89-2124" name="Retinue" publicationId="a716-c1c4-7b26-8424" page="124" hidden="false">
       <description>A Legion Command Squad, Legion Cataphractii Terminator Command Squad or Legion Tartaros Command Squad may only be selected as part of a Detachment that includes at least one model with the Master of the Legion special rule. A unit selected in this manner is considered a ‘Retinue Squad’ and the model with the Master of the Legion special rule is referred to as the Retinue Squad’s Leader for the purposes of this special rule (if the Detachment includes more than one model with the Master of the Legion special rule then the controlling player selects one as the unit’s Leader). The Retinue Squad does not use up a Force Organisation slot and is considered part of the same unit as the model selected as its Leader. The Retinue Squad must be deployed with the model selected as its Leader deployed as part of the unit and the Leader may not voluntarily leave the Retinue Squad during play. A Legion Command Squad, Legion Cataphractii Terminator Command Squad or Legion Tartaros Command Squad may not be selected as part of an army without a Leader.</description>
     </rule>
-    <rule id="857b-1adc-8233-6c55" name="Repair (P3P LA)" hidden="false">
+    <rule id="857b-1adc-8233-6c55" name="Repair" publicationId="a716-c1c4-7b26-8424" page="124" hidden="false">
       <description>In any of the controlling player’s Shooting phases, instead of making any Shooting Attacks with a model with this special rule, the controlling player may instead roll a D6. On the roll of a ‘4’ or more, a damage result of Immobilised that has been inflicted on this model may be removed but no Hull Points are returned.</description>
     </rule>
-    <rule id="85c2-d84d-6a4f-ab64" name="Reactor Blast (P3P LA)" hidden="false">
+    <rule id="85c2-d84d-6a4f-ab64" name="Reactor Blast" publicationId="a716-c1c4-7b26-8424" page="124" hidden="false">
       <description>When the controlling player resolves an Explodes result on the Vehicle Damage table for a model with this special rule, the Strength of any Hits inflicted is increased to 10.</description>
     </rule>
-    <rule id="19bf-62a2-5737-890b" name="Reach (X) (P3P LA)" hidden="false">
+    <rule id="19bf-62a2-5737-890b" name="Reach (X)" publicationId="a716-c1c4-7b26-8424" page="123" hidden="false">
       <description>A model making attacks as part of an Assault using a weapon with this special rule, adds the value of (X) that is included as part of this special rule to its Initiative Characteristic. If a model has more than one weapon with this special rule then that model only increases the value of its Initiative by the value of the special rule on the weapon whose profile is used by that model to attack during the Fight Sub-phase. A weapon that is not used to attack does not modify the model’s Initiative Characteristic – models that may attack with more than one weapon, or models claiming the bonus for having a second weapon, may only add the value of the highest variant of this special rule and do not add the values together.
 
 For example, a model attacking as part of an Assault with a weapon that has the Reach (1) special rule increases its Initiative by +1.</description>
     </rule>
-    <rule id="efaa-c932-9788-9ade" name="Plasma Burn (P3P LA)" hidden="false">
-      <description>If the target of a weapon with this special rule is a model with the Vehicle Unit Type and that model loses one or more Hull Points as the result of an attack from this weapon, roll a D6. On a 4+, the target model loses an additional D3 Hull Points with no Cover Saves or Damage Mitigation rolls allowed.</description>
+    <rule id="efaa-c932-9788-9ade" name="Plasma Burn" publicationId="a716-c1c4-7b26-8424" page="123" hidden="false">
+      <description>If the target of a weapon with this special rule is a model with the Vehicle Unit Type and that model loses one or more Hull Points as the result of an attack from this weapon, roll a D6. On a 4+, the target model loses an additional D3 Hull Points with no Cover Saves, Invunlerable saves or Damage Mitigation rolls allowed.</description>
     </rule>
-    <rule id="7fc9-7bcd-b44c-6719" name="Orbital Assault Vehicle (P3P LA)" hidden="false">
+    <rule id="7fc9-7bcd-b44c-6719" name="Orbital Assault Vehicle" publicationId="a716-c1c4-7b26-8424" page="123" hidden="false">
       <description>A model with this special rule must be deployed onto the battlefield as part of a Deep Strike Assault, or other deployment that requires the Deep Strike special rule. It may never be deployed as normal, regardless of any other rule or mission, and if forced to do so it is immediately reduced to 0 Hull Points and replaced with a Wreck (any models Embarked within must make an Emergency Disembarkation). Furthermore, a model with this special rule may never move – and if forced to do so is immediately reduced to 0 Hull Points and replaced with a Wreck (any models Embarked within must make an Emergency Disembarkation).</description>
     </rule>
     <rule id="e441-d934-fee5-990b" name="Corrupted Sub-type" hidden="false">
@@ -3022,222 +3186,12 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
     </rule>
   </sharedRules>
   <sharedProfiles>
-    <profile id="4223-a2ef-16c3-bbb9" name="Artificer Armour (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Artificer armour confers a 2+ Armour Save.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="ce1b-884e-2abe-a9a1" name="Atomantic Deflector (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with an atomantic deflector gains a 5+ Invulnerable Save and any model with an atomantic deflector and a Wounds Characteristic that suffers an unsaved Wound with the Instant Death special rule is not immediately removed as a casualty, but instead loses D3 Wounds instead of one for each unsaved Wound with the Instant Death special rule inflicted on it. In addition, when a model with an atomantic deflector loses its last Wound or Hull Point, but before it is removed as a casualty or replaced with a Wreck, all models both friendly and enemy within D6&quot; suffer an automatic Hit at Str 8, AP -.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="797f-bd05-abd2-2a13" name="Augury Scanner (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with an augury scanner gains all of the following benefits:
-• Enemy models cannot be deployed using the Infiltrate special rule within 18&quot; of a model with an augury scanner.
-• A unit that includes at least one model with an augury scanner ignores the 24&quot; limit to line of sight when making Shooting Attacks while the Night Fighting rules are in effect.
-• When any enemy unit is deployed to the battlefield from Reserves, a unit that includes at least one model with an augury scanner may make the Interceptor Advanced Reaction (see the Horus Heresy: Age of Darkness rulebook, page 309) without expending a point of the Reactive player’s Reaction Allotment. This does not allow the unit to make more than one Reaction per Phase, but does allow the controlling player to exceed the normal three Reactions limit in a given Phase.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="b449-1ce2-c465-6568" name="Cognis-signum (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a cognis-signum gains the Night Vision special rule. In addition, in lieu of the model with the cognis-signum making a Shooting Attack in the Shooting phase, all other models in the same unit gain a bonus of +1 to their BS for that Shooting phase. This benefit is not cumulative, and no unit can benefit from more than one bonus to their BS from cognis-signum.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="988d-6f67-d24b-0bc7" name="Command Vox Relay (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">While any model with the Character Sub-type is Embarked upon a model with this special rule, friendly units with the same version of the Legiones Astartes special rule that are within 18&quot; or that include a model with a nuncio-vox may use the Embarked model’s Leadership Characteristic for Morale checks and Pinning tests. If more than one model with the Character Sub-type is Embarked upon a model with this special rule then the controlling player chooses which model’s Leadership Characteristic is used.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="ea6d-fcba-ee59-0400" name="Cortex Controller (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">At the start of the controlling player’s turn, any friendly models with the Cybernetica Sub-type within 12&quot; of a model with a cortex controller may ignore the Programmed Behaviour provision described as part of that Sub-type.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="3d58-e1f4-f86d-75cc" name="Cyber-Familiar (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a cyber-familiar adds +1 to its Invulnerable Save (to a maximum of 3+) or an Invulnerable Save of 6+ if they do not already possess one. In addition, they allow them to re-roll failed Characteristic tests other than Leadership tests and failed Dangerous Terrain tests.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="c1d4-9259-b8fa-7be7" name="Dozer Blade (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a dozer blade may re-roll all failed Dangerous Terrain tests made for it.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="b4a1-b551-49a8-73dc" name="Explorator Augury Web (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">At the start of each of the controlling player’s turns, that player may choose to activate the explorator augury web in either Disruption or Relay mode, the effects of which last until the beginning of the controlling player’s next turn:
-• Disruption Mode: Any Reserves rolls made by an enemy player to bring units into play from Reserve are modified by -1 while this mode is active. This modifier does not stack with any other negative modifiers to Reserves rolls – use the highest single modifier instead. However, once the final negative modifier to a Reserves roll is determined, it can be reduced by any positive modifiers applied to the roll (for example if a Reserves roll was affected by both a -1 and +1 modifier then they would cancel each other and no modifier would be applied).
-• Relay Mode: Any Reserves rolls made by the controlling player to bring units into play from Reserves may be rerolled while this mode is active.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="ccc0-4896-212b-4d53" name="Frag Grenades (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with frag grenades makes attacks at its normal Initiative Step during an Assault after it has successfully Charged through Difficult Terrain or Dangerous Terrain, but still suffers any penalties to Charge rolls imposed by Difficult Terrain or Dangerous Terrain when resolving a Charge through Difficult Terrain or Dangerous Terrain.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="d485-964d-e032-8d56" name="Breacher Charge (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3"/>
-      </characteristics>
-    </profile>
-    <profile id="c245-8517-f7e0-1bd3" name="Flare Shield (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a flare shield reduces the strength of Shooting Attacks made against its Front Armour by -1, or -2 if that Shooting Attack has the Blast special rule or uses a template to determine its Range. A flare shield has no effect on Shooting Attacks inflicted with weapons of the Destroyer type.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="ca02-0f2e-ea7b-ce89" name="Geo-locator Beacon (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Once per battle, at the beginning of any turn from Turn 2 onward and as long as a model with this special rule is deployed on the battlefield, the controlling player may choose to re-roll the first failed Reserves roll they make in each turn.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="9a82-2bbb-c64c-ed0a" name="Grenade Harness (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with a grenade harness makes attacks at its normal Initiative Step during an Assault after it has successfully Charged through Difficult Terrain or Dangerous Terrain, but still suffers any penalties to Charge rolls imposed by Difficult Terrain or Dangerous Terrain when resolving a Charge through Difficult Terrain or Dangerous Terrain.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="102e-3487-6e68-51e2" name="Krak Grenades (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The controlling player may choose to have a model with krak grenades that is Engaged or otherwise in base contact during the Assault phase with a Building or Fortification, or a model with the Vehicle, Dreadnought or Automata Unit Type, inflict one automatic Str 6, AP 3 Hit on the target in Initiative Step 1 instead of attacking normally any model in a unit that is chosen to inflict hits using krak grenades may not otherwise attack or make use of any other special rule or item of Wargear that inflicts Hits or Wounds on a model in the same Assault phase (but may participate in Sweeping Advances as normal)..</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="5ecf-40ba-be56-0d11" name="Rad Grenades (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">During a turn in which a unit with at least one model with rad grenades successfully Charges, or is themselves successfully Charged, all models in the enemy unit(s) suffer a -1 penalty to their Toughness Characteristic until the end of the Fight Sub-phase that follows the successful Charge. Note: This does affect the victims’ Instant Death thresholds.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="fb63-1d83-d992-80a6" name="Shroud Bombs (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Whenever targeted by a Shooting Attack, the range between an attacking unit and a unit that includes at least one model with shroud bombs is considered to be 6&quot; further than the actual range between the two units – enemy models with the Night Vision special rule and models with the Primarch Unit Type ignore this effect. In addition, when attacked by a weapon with the Barrage special rule, a unit that includes at least one model with shroud bombs is always treated as though it was out of line of sight when scattering any attacks.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="5097-7577-6026-5969" name="Helical Targeting Array (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The controlling player of a model with a helical targeting array may activate it at the start of any of their own turns. Once the helical targeting array is activated, the model is affected by the following conditions until the beginning of the controlling player’s next turn:
-• The model may not move, Run or declare or make any Reactions other than the Interceptor or Overwatch Reaction.
-• The controlling player may choose to use the Skyfire special rule when making any Shooting Attacks with the model.
-• No model may make a Damage Mitigation roll provided by the Shrouded special rule against an attack made by a model with a helical targeting array while it is active.
-• When the model makes a Shooting Attack as part of the Interceptor Reaction, the Reaction does not cost the controlling player a point from their Reaction Allotment. This does not allow the unit to make more than one Reaction per phase, but does allow the controlling player to exceed the normal three Reactions limit in a given phase.
-• When a model with the Vehicle Unit Type and a helical targeting array makes a Shooting Attack as part of the Interceptor Reaction, that model may fire all of its weapons, not just Defensive Weapons, as part of the Shooting Attack.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="c192-835d-8c77-1424" name="Jump Pack (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Jump Pack: A unit composed entirely of models with Jump Packs may set its Movement Characteristic to a value of 12 for the duration of the controlling player’s turn. This allows the unit to move up to 12&quot;, regardless of the Movement Characteristic shown on its profile, and gain any other benefits of a Movement Characteristic of 12 (including the bonus to Charge Distance, see page 181). In addition, if the controlling player chooses to set the unit’s Movement to 12&quot;, the unit ignores terrain while Moving and Charging, and may move over friendly and enemy models units. A unit that ends or begins its Movement or a Charge in Dangerous Terrain will still need to take Dangerous Terrain tests as normal, even when employing Jump Packs, and treats all Difficult Terrain as Dangerous Terrain.
-
-Any model equipped with a Jump Pack also gains the Bulky (2) and Deep Strike special rules, or if it already has the Bulky (2) special rule it gains the Bulky (3) special rule instead. A unit equipped with Jump Packs may not Run.
-
-During Reactions made in any Phase, a unit equipped with Jump Packs may not activate them to gain any bonus to their Movement Characteristic.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="9d71-90b3-c22b-b04b" name="Jet Pack (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Jet Pack: A unit entirely equipped with Jet Packs may choose to increase its Movement Characteristic by +6, move over friendly and enemy models/units, and ignore terrain while moving during the Movement phase. A unit that ends or begins its movement in Dangerous Terrain will still need to take Dangerous Terrain tests as normal, even when employing Jet Packs and treats Difficult Terrain as Dangerous Terrain. In addition to the bonus to move during the Movement phase, a unit equipped entirely with Jet Packs may make an additional move of 6&quot; during the Shooting phase. This move must be taken after the unit has completed any Shooting, is not limited by the weapons fired by that unit during the Shooting phase and ignores terrain and may move over friendly and enemy models/units in the same manner as moves made using a Jet Pack in the Movement phase.
-
-Any model equipped with a Jet Pack also gains the Bulky (2) and Deep Strike special rules, or if it already has the Bulky (2) special rule it gains the Bulky (3) special rule instead.
-
-During any Reaction that allows a unit equipped entirely with Jet Packs to move, increase the distance of that move by 6. This allows the unit to ignore terrain in the same manner as other Jet Pack moves.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="8af0-f3d4-85fb-239a" name="Combat Shield (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Combat shields confer a 6+ Invulnerable Save.
-Invulnerable saves granted by a combat shield or boarding shield do not stack with other Invulnerable Saves, but can benefit from rules (like cyber-familiar) that specifically increase existing saves. If a model has another Invulnerable Save then the controlling player must choose which one to use.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="961a-59a2-2fae-a5dd" name="Boarding Shield (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Boarding shields confer a 5+ Invulnerable Save. But a model with a boarding shield cannot claim bonus attacks for having more than one melee weapon, or make attacks during the Assault phase using a weapon with the Two-handed special rule.
-Invulnerable saves granted by a combat shield or boarding shield do not stack with other Invulnerable Saves, but can benefit from rules (like cyber-familiar) that specifically increase existing saves. If a model has another Invulnerable Save then the controlling player must choose which one to use.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="27b5-0035-978f-a027" name="Melta Cutters (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">When a model with melta cutters makes a Ram Attack targeting a model with the Vehicle Unit Type or a Building, it adds an additional modifier of +2 to the Strength of the attack, to a maximum of Strength 10.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="3758-1b62-61a7-dcb8" name="Narthecium (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">All models with the Infantry or Cavalry Unit Types in a unit that includes at least one model with a narthecium gains the Feel No Pain (5+) special rule. Units that include more than one narthecium do not stack the Feel No Pain (X) special rule and gain no additional benefit. Models with the Artillery Sub-type are not affected by this special rule and do not gain the Feel No Pain (X) special rule.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="ab31-bdc5-6153-3d77" name="Nuncio-Vox (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">While at least one model with a nuncio-vox is present on the battlefield and not Embarked in a Vehicle or Building, the controlling player may re-roll any Scatter rolls made (whether as part of a weapon attack or the deployment of a model or unit), as long as the model with the nuncio-vox has line of sight to the unit targeted by the attack or the point chosen as the target of the deployment. In addition, a unit that includes at least one model with a nuncio-vox ignores the -1 penalty to Leadership imposed by the Night Fighting rules.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="268c-b736-7743-67b1" name="Scout Armour (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Scout armour provides a 4+ Armour Save.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="457c-1f2c-ca90-1bf3" name="Suspensor Web (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A heavy weapon with a suspensor web may be treated as having the type Assault rather than Heavy when used to attack as part of any Shooting Attack at targets at up to half the weapon’s usual maximum range.
-
-Example: A heavy bolter with a suspensor web, which is usually a Range 36&quot; Heavy 4 weapon, can instead be used as if it  were a Range 18&quot; Assault 4 weapon if the controlling player wishes.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="f52c-1f37-acd2-703c" name="Tartaros Terminator Armour (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+    <profile id="f52c-1f37-acd2-703c" name="Tartaros Terminator Armou (P3P)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Legion Tartaros Terminator armour confers a 2+ Armour Save and a 5+ Invulnerable Save.</characteristic>
       </characteristics>
     </profile>
-    <profile id="b966-8137-4e98-e1c2" name="Searchlights (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with searchlights ignores the 24&quot; limit to line of sight imposed by the Night Fighting rules when making Shooting Attacks, however enemy units also ignore that same restriction when making Shooting Attacks that target a model with searchlights.
-
-In addition, any unit that has been the target of a Shooting Attack made by a unit with searchlights (regardless of whether any Hits were inflicted or not) may be freely targeted for Shooting Attacks by any other unit, ignoring the 24&quot; restriction to line of sight imposed by the Night Fighting rules.
-
-Searchlights do not count as weapons and may not be targeted by the Weapon Destroyed result on the Vehicle Damage table.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="cc6e-ca4b-e9e8-7eb5" name="Smoke Launchers (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The controlling player may choose to trigger smoke launchers once a model with them has completed its movement in the Movement phase, and may only choose to trigger them if the model has moved no faster than Combat Speed that turn. Once triggered, the model with smoke launchers counts as being more than 25% obscured, regardless of terrain, until the start of the controlling player’s next turn and gains a 6+ Cover Save. A model whose smoke launchers have been triggered may not make any Shooting Attacks, except as part of a Reaction, in the same turn. Smoke launchers may only be used once per battle, and once triggered may not be further used – in addition, they do not count as a weapon and may not be targeted by Weapon Destroyed results on the Vehicle Damage table.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="7d3b-41e9-887f-7085" name="Cataphractii Terminator Armour (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Legion Cataphractii Terminator armour confers a 2+ Armour Save and a 4+ Invulnerable Save. In addition, a unit that includes any models with Cataphractii Terminator armour may not make Sweeping Advances.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="03f2-41e6-4e4b-ec9f" name="Vox Disruptor Array (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">While there is at least one model on the battlefield with a vox disruptor array, regardless of whether that model is enemy or friendly, any attempt to perform a Deep Strike Assault, Drop Pod Assault, Area Denial Drop or Subterranean Assault is Disordered on the roll of a ‘1’, ‘2’ or ‘3’ instead of just on a ‘1’.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="550c-5f2c-868d-1d73" name="Iron Halo (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with an iron halo gains a 4+ Invulnerable Save.
-
-Invulnerable Saves granted by a iron halo do not stack with other Invulnerable Saves, but can benefit from rules (such as cyber-familiar) that specifically increase existing saves. If a model has another Invulnerable Save then the controlling player must choose which one to use.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="1bab-d556-c126-4b53" name="Refractor Field (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a refractor field gains a 5+ Invulnerable Save.
-
-Invulnerable Saves granted by a refractor field do not stack with other Invulnerable Saves, but can benefit from rules (such as cyber-familiar) that specifically increase existing saves. If a model has another Invulnerable Save then the controlling player must choose which one to use.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="bab3-77d0-4e80-4d48" name="Ramjet Diffraction Grid (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a ramjet diffraction grid reduces the Strength of Shooting Attacks made against its Rear or Side armour by -1, or -2 if that attack has the Blast special rule or uses a template to determine its Range. A ramjet diffraction grid has no effect on attacks inflicted with weapons of the Destroyer type.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="fd98-bba9-e8fe-b91c" name="Psychic Hood (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Any enemy model within 18&quot; and line of sight of a model with a psychic hood must reduce its Leadership by -2 when making Psychic checks. This modifier is not cumulative and no model may suffer from penalties from more than one psychic hood.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="6c84-1420-7bb8-1026" name="Power Armour (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Power armour provides a 3+ Armour Save.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="c0d3-c136-ef6e-3ff7" name="Bolt Pistol (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="c0d3-c136-ef6e-3ff7" name="Bolt Pistol (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -3245,7 +3199,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1</characteristic>
       </characteristics>
     </profile>
-    <profile id="1a2f-c0e3-d736-b91e" name="Bolter (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="1a2f-c0e3-d736-b91e" name="Bolter (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -3253,7 +3207,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire</characteristic>
       </characteristics>
     </profile>
-    <profile id="23bd-0d0d-61a8-52ff" name="Combi-bolter (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="23bd-0d0d-61a8-52ff" name="Combi-bolter (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -3261,7 +3215,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="b134-c4c0-b491-66ae" name="Nemesis Bolter (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="b134-c4c0-b491-66ae" name="Nemesis Bolter (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -3269,7 +3223,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Rending (5+), Sniper, Pinning</characteristic>
       </characteristics>
     </profile>
-    <profile id="d96e-a893-dc91-7f8b" name="Heavy Bolter (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="d96e-a893-dc91-7f8b" name="Heavy Bolter (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -3277,7 +3231,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4</characteristic>
       </characteristics>
     </profile>
-    <profile id="23e9-6b68-8a82-1eb8" name="Gravis Bolt Cannon (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="23e9-6b68-8a82-1eb8" name="Gravis Bolt Cannon (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -3285,7 +3239,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 8, Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="0227-05b9-2ed6-ead9" name="Gravis Heavy Bolter Battery (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="0227-05b9-2ed6-ead9" name="Gravis Heavy Bolter Battery (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -3293,7 +3247,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 8, Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="70fb-94f9-5480-3089" name="Avenger Bolt Cannon (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="70fb-94f9-5480-3089" name="Avenger Bolt Cannon (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
@@ -3317,7 +3271,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 4, Pinning, Shell Shock (1)</characteristic>
       </characteristics>
     </profile>
-    <profile id="8965-52d8-1ba5-d97d" name="Autocannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="8965-52d8-1ba5-d97d" name="Autocannon (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -3365,7 +3319,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 18, Pinning, Shell Shock (1)</characteristic>
       </characteristics>
     </profile>
-    <profile id="944e-b9f4-4bc3-14df" name="Accelerator Autocannon (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="944e-b9f4-4bc3-14df" name="Accelerator Autocannon (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -3413,7 +3367,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Sunder, Rending (5+), Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="19a0-cc18-eedc-a1c6" name="Archaeotech Pistol (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="19a0-cc18-eedc-a1c6" name="Archaeotech Pistol (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
@@ -3421,7 +3375,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Rending (3+), Master-crafted</characteristic>
       </characteristics>
     </profile>
-    <profile id="b581-7729-f3d6-d2fc" name="Paragon Blade (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="b581-7729-f3d6-d2fc" name="Paragon Blade (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
@@ -3429,7 +3383,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Murderous Strike (5+), Specialist Weapon</characteristic>
       </characteristics>
     </profile>
-    <profile id="71bf-775a-040f-6765" name="Servo-Arm (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="71bf-775a-040f-6765" name="Servo-Arm (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -3437,7 +3391,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy</characteristic>
       </characteristics>
     </profile>
-    <profile id="c167-2a55-be49-f4ff" name="Machinator Array (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="c167-2a55-be49-f4ff" name="Machinator Array (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
@@ -3445,7 +3399,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Shred, Armourbane (Melee)</characteristic>
       </characteristics>
     </profile>
-    <profile id="5103-7522-7419-fdc4" name="Power Fist (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="5103-7522-7419-fdc4" name="Power Fist (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
@@ -3453,7 +3407,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Specialist Weapon</characteristic>
       </characteristics>
     </profile>
-    <profile id="241a-1ea4-36bc-b71a" name="Gravis Power Fist (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="241a-1ea4-36bc-b71a" name="Gravis Power Fist (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -3461,7 +3415,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Murderous Strike (6+)</characteristic>
       </characteristics>
     </profile>
-    <profile id="e373-c0c7-27d7-8794" name="Thunder Hammer (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="e373-c0c7-27d7-8794" name="Thunder Hammer (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
@@ -3469,7 +3423,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Sunder, Specialist Weapon</characteristic>
       </characteristics>
     </profile>
-    <profile id="00a9-04d4-17d3-3442" name="Lightning Claw (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="00a9-04d4-17d3-3442" name="Lightning Claw (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
@@ -3477,7 +3431,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred, Rending (6+), Specialist Weapon</characteristic>
       </characteristics>
     </profile>
-    <profile id="e783-1cdd-c9db-5cdf" name="Power Sword (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="e783-1cdd-c9db-5cdf" name="Power Sword (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">user</characteristic>
@@ -3485,7 +3439,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (6+)</characteristic>
       </characteristics>
     </profile>
-    <profile id="aa9e-9dd0-03d6-0acc" name="Power Axe (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="aa9e-9dd0-03d6-0acc" name="Power Axe (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
@@ -3493,7 +3447,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy</characteristic>
       </characteristics>
     </profile>
-    <profile id="dd83-74ff-9703-aceb" name="Power Maul (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="dd83-74ff-9703-aceb" name="Power Maul (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
@@ -3501,7 +3455,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee</characteristic>
       </characteristics>
     </profile>
-    <profile id="b450-f60a-c85e-c9cc" name="Power Lance (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="b450-f60a-c85e-c9cc" name="Power Lance (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
@@ -3509,7 +3463,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Reach (1)</characteristic>
       </characteristics>
     </profile>
-    <profile id="4842-51db-06f9-fab0" name="Lascutter (Melee) (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="4842-51db-06f9-fab0" name="Lascutter (Melee) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -3517,7 +3471,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Cumbersome</characteristic>
       </characteristics>
     </profile>
-    <profile id="ba08-9a32-1e47-6448" name="Meltabombs (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="ba08-9a32-1e47-6448" name="Meltabombs (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -3581,7 +3535,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Large Blast (5&quot;), Rending (4+), Sunder, Brutal (4)</characteristic>
       </characteristics>
     </profile>
-    <profile id="ace5-c6fe-e205-07d1" name="Bolter (Primary) (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="ace5-c6fe-e205-07d1" name="Bolter (Primary) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -3589,7 +3543,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire</characteristic>
       </characteristics>
     </profile>
-    <profile id="9976-abe4-ab53-acdf" name="Flamer (Secondary) (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="9976-abe4-ab53-acdf" name="Flamer (Secondary) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -3597,7 +3551,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
       </characteristics>
     </profile>
-    <profile id="fec9-6a14-0a52-621e" name="Meltagun (Secondary) (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="fec9-6a14-0a52-621e" name="Meltagun (Secondary) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -3605,7 +3559,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Melta), One Shot</characteristic>
       </characteristics>
     </profile>
-    <profile id="48ce-1fac-f9c0-6110" name="Plasma Gun (Secondary) (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="48ce-1fac-f9c0-6110" name="Plasma Gun (Secondary) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -3613,7 +3567,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Breaching (4+), Gets Hot, One Shot</characteristic>
       </characteristics>
     </profile>
-    <profile id="8b69-5a39-5f38-61c7" name="Volkite Charger (Secondary) (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="8b69-5a39-5f38-61c7" name="Volkite Charger (Secondary) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">15&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -3621,7 +3575,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Deflagrate</characteristic>
       </characteristics>
     </profile>
-    <profile id="25f0-61fd-a8da-64e0" name="Grenade launcher - Frag (Secondary) (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="25f0-61fd-a8da-64e0" name="Grenade launcher - Frag (Secondary) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
@@ -3629,7 +3583,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Blast (3&quot;), Pinning</characteristic>
       </characteristics>
     </profile>
-    <profile id="d225-edb4-8ffc-636d" name="Grenade launcher - Krak (Secondary) (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="d225-edb4-8ffc-636d" name="Grenade launcher - Krak (Secondary (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -3637,7 +3591,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
       </characteristics>
     </profile>
-    <profile id="6c9b-2254-dd99-85f7" name="Disintegrator (Secondary) (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="6c9b-2254-dd99-85f7" name="Disintegrator (Secondary) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -3645,7 +3599,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Instant Death, Gets Hot, One Shot</characteristic>
       </characteristics>
     </profile>
-    <profile id="b737-9135-a1c2-4d1d" name="Conversion Beam Cannon (1) (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="b737-9135-a1c2-4d1d" name="Conversion Beam Cannon (1) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">Up to 18&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -3653,7 +3607,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Blind</characteristic>
       </characteristics>
     </profile>
-    <profile id="3ee2-822a-3ff0-f6e0" name="Conversion Beam Cannon (2) (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="3ee2-822a-3ff0-f6e0" name="Conversion Beam Cannon (2) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">More than 18&quot;-42&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
@@ -3661,7 +3615,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Blind</characteristic>
       </characteristics>
     </profile>
-    <profile id="cf36-13a9-5f0b-f0fc" name="Conversion Beam Cannon (3) (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="cf36-13a9-5f0b-f0fc" name="Conversion Beam Cannon (3) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">More than 42&quot;-72&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
@@ -3669,7 +3623,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Blind</characteristic>
       </characteristics>
     </profile>
-    <profile id="1124-c6a3-7bb0-90af" name="Heavy Conversion Beam Cannon (1) (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="1124-c6a3-7bb0-90af" name="Heavy Conversion Beam Cannon (1) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">Up to 18&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -3677,7 +3631,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Blind</characteristic>
       </characteristics>
     </profile>
-    <profile id="fcf4-69a0-a3c7-b5bc" name="Heavy Conversion Beam Cannon (2) (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="fcf4-69a0-a3c7-b5bc" name="Heavy Conversion Beam Cannon (2) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">More than 18&quot;-42&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
@@ -3685,7 +3639,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Blind</characteristic>
       </characteristics>
     </profile>
-    <profile id="981f-5d4d-4f61-e366" name="Heavy Conversion Beam Cannon (3) (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="981f-5d4d-4f61-e366" name="Heavy Conversion Beam Cannon (3) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">More than 42&quot;-72&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
@@ -3693,7 +3647,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Blind</characteristic>
       </characteristics>
     </profile>
-    <profile id="1814-f4ca-beeb-cd9e" name="Disintegrator Pistol (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="1814-f4ca-beeb-cd9e" name="Disintegrator Pistol (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -3701,7 +3655,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Instant Death, Gets Hot</characteristic>
       </characteristics>
     </profile>
-    <profile id="231b-a8ac-da15-ccbc" name="Disintegrator (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="231b-a8ac-da15-ccbc" name="Disintegrator (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -3709,7 +3663,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Instant Death, Gets Hot</characteristic>
       </characteristics>
     </profile>
-    <profile id="cfef-faee-48a6-ae88" name="Graviton Gun (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="cfef-faee-48a6-ae88" name="Graviton Gun (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">†</characteristic>
@@ -3717,7 +3671,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Concussive (1), †Graviton Pulse, Haywire</characteristic>
       </characteristics>
     </profile>
-    <profile id="f624-296d-4165-3565" name="Graviton Cannon (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="f624-296d-4165-3565" name="Graviton Cannon (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">†</characteristic>
@@ -3725,7 +3679,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Concussive (1), †Graviton Pulse, Haywire</characteristic>
       </characteristics>
     </profile>
-    <profile id="2069-c09c-5bbc-fc1a" name="Graviton-Charge Cannon (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="2069-c09c-5bbc-fc1a" name="Graviton-Charge Cannon (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">†</characteristic>
@@ -3733,7 +3687,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Massive Blast (7&quot;), Barrage, Concussive (1), †Graviton Pulse, Haywire</characteristic>
       </characteristics>
     </profile>
-    <profile id="9703-1b92-8083-0b29" name="Grav-Flux Bombard (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="9703-1b92-8083-0b29" name="Grav-Flux Bombard (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">†</characteristic>
@@ -3741,7 +3695,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Pinning, Large Blast (5&quot;), †Graviton Collapse, Torsion Crusher, Ignores Cover</characteristic>
       </characteristics>
     </profile>
-    <profile id="603c-2961-bc8c-ed2d" name="Lascannon (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="603c-2961-bc8c-ed2d" name="Lascannon (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
@@ -3749,7 +3703,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Sunder</characteristic>
       </characteristics>
     </profile>
-    <profile id="1e69-e442-2d5b-8787" name="Gravis Lascannon (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="1e69-e442-2d5b-8787" name="Gravis Lascannon (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
@@ -3757,7 +3711,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Sunder</characteristic>
       </characteristics>
     </profile>
-    <profile id="83f2-b582-e502-0d31" name="Lascannon Array (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="83f2-b582-e502-0d31" name="Lascannon Array (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
@@ -3765,7 +3719,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Twin-linked, Sunder</characteristic>
       </characteristics>
     </profile>
-    <profile id="d569-2bf5-771f-7fb4" name="Arachnus Heavy Lascannon Battery (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="d569-2bf5-771f-7fb4" name="Arachnus Heavy Lascannon Battery (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
@@ -3773,7 +3727,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Sunder, Exoshock (5+), Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="0cce-89b1-ccfd-e7a9" name="Laser Destroyer (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="0cce-89b1-ccfd-e7a9" name="Laser Destroyer (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
@@ -3781,7 +3735,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 2, Twin-linked, Exoshock (6+)</characteristic>
       </characteristics>
     </profile>
-    <profile id="978c-8be1-ebd8-97df" name="Magna Laser Destroyer (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="978c-8be1-ebd8-97df" name="Magna Laser Destroyer (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
@@ -3789,7 +3743,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 3, Twin-linked, Exoshock (6+)</characteristic>
       </characteristics>
     </profile>
-    <profile id="0f12-ac19-f4ea-dd66" name="Neutron Beam Laser (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="0f12-ac19-f4ea-dd66" name="Neutron Beam Laser (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
@@ -3797,7 +3751,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 2, Concussive (3), Shock Pulse, Gets Hot</characteristic>
       </characteristics>
     </profile>
-    <profile id="6a1a-e8c7-e4e6-b8ff" name="Neutron Blaster (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="6a1a-e8c7-e4e6-b8ff" name="Neutron Blaster (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
@@ -3805,7 +3759,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Concussive (3), Shock Pulse, Gets Hot</characteristic>
       </characteristics>
     </profile>
-    <profile id="f75a-c9ae-6e98-fc65" name="Neutron Laser Battery (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="f75a-c9ae-6e98-fc65" name="Neutron Laser Battery (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
@@ -3813,7 +3767,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 4, Concussive (3), Feedback, Shock Pulse, Gets Hot</characteristic>
       </characteristics>
     </profile>
-    <profile id="795a-f0a1-d499-15a0" name="Volcano Cannon (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="795a-f0a1-d499-15a0" name="Volcano Cannon (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">120&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">14</characteristic>
@@ -3821,7 +3775,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Large Blast (5&quot;), Ignores Cover</characteristic>
       </characteristics>
     </profile>
-    <profile id="3af2-a5bc-5e7f-345d" name="Neutron-Wave Cannon (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="3af2-a5bc-5e7f-345d" name="Neutron-Wave Cannon (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">120&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
@@ -3829,7 +3783,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Large Blast (5&quot;), Shock Pulse, Ignores Cover</characteristic>
       </characteristics>
     </profile>
-    <profile id="34f1-b3c4-112d-5f6e" name="Turbo-Laser Destructor (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="34f1-b3c4-112d-5f6e" name="Turbo-Laser Destructor (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">96&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
@@ -3837,7 +3791,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Large Blast (5&quot;), Ignores Cover</characteristic>
       </characteristics>
     </profile>
-    <profile id="eb62-ccfd-b605-ab5e" name="Hand Flamer (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="eb62-ccfd-b605-ab5e" name="Hand Flamer (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
@@ -3845,7 +3799,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1</characteristic>
       </characteristics>
     </profile>
-    <profile id="949d-fd6d-23e3-8c6d" name="Flamer (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="949d-fd6d-23e3-8c6d" name="Flamer (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -3853,7 +3807,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
       </characteristics>
     </profile>
-    <profile id="39a8-44c3-b581-4719" name="Toxiferran Flamer (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="39a8-44c3-b581-4719" name="Toxiferran Flamer (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -3861,7 +3815,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Poisoned (3+), Rending (6+)</characteristic>
       </characteristics>
     </profile>
-    <profile id="a6e9-e2e1-150f-b023" name="Heavy Flamer (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="a6e9-e2e1-150f-b023" name="Heavy Flamer (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -3869,7 +3823,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
       </characteristics>
     </profile>
-    <profile id="51ba-b609-1afc-b8aa" name="Flamestorm Cannon (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="51ba-b609-1afc-b8aa" name="Flamestorm Cannon (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
@@ -3877,7 +3831,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Torrent (18&quot;)</characteristic>
       </characteristics>
     </profile>
-    <profile id="6bb0-fb87-a839-fa31" name="Meltagun (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="6bb0-fb87-a839-fa31" name="Meltagun (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -3885,7 +3839,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Melta)</characteristic>
       </characteristics>
     </profile>
-    <profile id="9b65-0364-c0ea-7a05" name="Multi-Melta (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="9b65-0364-c0ea-7a05" name="Multi-Melta (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -3893,7 +3847,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Armourbane (Melta), Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="a470-d7ab-fdbd-e101" name="Gravis Melta Cannon (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="a470-d7ab-fdbd-e101" name="Gravis Melta Cannon (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -3901,7 +3855,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Armourbane (Melta), Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="5997-502c-d678-354f" name="Magna-Melta Cannon (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="5997-502c-d678-354f" name="Magna-Melta Cannon (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -3909,7 +3863,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Armourbane (Melta), Large Blast (5&quot;)</characteristic>
       </characteristics>
     </profile>
-    <profile id="b4d7-96ca-9982-dc9c" name="Cyclonic Melta Lance (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="b4d7-96ca-9982-dc9c" name="Cyclonic Melta Lance (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -3917,7 +3871,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Armourbane (Melta)</characteristic>
       </characteristics>
     </profile>
-    <profile id="d5a3-3e5e-c909-ffd7" name="Siege Melta Array (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="d5a3-3e5e-c909-ffd7" name="Siege Melta Array (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -3925,15 +3879,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Blast (3&quot;), Armourbane (Melta)</characteristic>
       </characteristics>
     </profile>
-    <profile id="e600-f1a0-60b0-dacf" name="Melta Cutters (Ranged) (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="95ba-cda7-b831-6066">6&quot;</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Armourbane (Melta)</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="c020-900a-6d0b-ab6d" name="Melta Blast-Gun (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="c020-900a-6d0b-ab6d" name="Melta Blast-Gun (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">30&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -3941,7 +3887,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Armourbane (Melta)</characteristic>
       </characteristics>
     </profile>
-    <profile id="5f55-a754-ba8a-c323" name="Missile Launcher - Frag (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="5f55-a754-ba8a-c323" name="Missile Launcher - Frag (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -3949,7 +3895,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Pinning</characteristic>
       </characteristics>
     </profile>
-    <profile id="355a-6849-f24b-3246" name="Missile Launcher - Krak (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="355a-6849-f24b-3246" name="Missile Launcher - Krak (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -3957,7 +3903,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1</characteristic>
       </characteristics>
     </profile>
-    <profile id="effc-0075-a2bf-f664" name="Missile Launcher - Flak (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="effc-0075-a2bf-f664" name="Missile Launcher - Flak (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -3965,7 +3911,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Skyfire�</characteristic>
       </characteristics>
     </profile>
-    <profile id="df87-1f1a-b656-eabe" name="Vengeance Launcher (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="df87-1f1a-b656-eabe" name="Vengeance Launcher (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -3973,7 +3919,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Large Blast (5&quot;)</characteristic>
       </characteristics>
     </profile>
-    <profile id="544f-05ac-25ee-b2a1" name="Havoc Launcher (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="544f-05ac-25ee-b2a1" name="Havoc Launcher (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -3981,7 +3927,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="0535-fa9a-15a6-c18f" name="Hunter-Killer Missile (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="0535-fa9a-15a6-c18f" name="Hunter-Killer Missile (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -3989,7 +3935,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, One Shot</characteristic>
       </characteristics>
     </profile>
-    <profile id="facd-1b53-731d-a9f6" name="Hellstrike Missile (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="facd-1b53-731d-a9f6" name="Hellstrike Missile (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
@@ -3997,7 +3943,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Sunder, One Shot</characteristic>
       </characteristics>
     </profile>
-    <profile id="6c6c-ee57-6769-e784" name="Rotary Missile Launcher (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="6c6c-ee57-6769-e784" name="Rotary Missile Launcher (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">60&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -4005,7 +3951,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Exoshock (6+), Ignores Cover, Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="644e-020d-3b34-5369" name="Tempest Rocket (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="644e-020d-3b34-5369" name="Tempest Rocket (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">60&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -4013,7 +3959,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Sunder, One Shot</characteristic>
       </characteristics>
     </profile>
-    <profile id="99f3-d4aa-bfa7-b51f" name="Aiolos Missile Launcher (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="99f3-d4aa-bfa7-b51f" name="Aiolos Missile Launcher (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">60&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
@@ -4021,7 +3967,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Pinning, Guided Fire</characteristic>
       </characteristics>
     </profile>
-    <profile id="533d-b9e8-c284-c392" name="Boreas Air Defence Missile (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="533d-b9e8-c284-c392" name="Boreas Air Defence Missile (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -4029,7 +3975,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Skyfire, Guided Fire, One Shot</characteristic>
       </characteristics>
     </profile>
-    <profile id="f71e-f26b-94d0-b7b5" name="Cyclone Missile Launcher -  Frag (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="f71e-f26b-94d0-b7b5" name="Cyclone Missile Launcher -  Frag (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -4037,7 +3983,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Pinning</characteristic>
       </characteristics>
     </profile>
-    <profile id="55b2-b652-f43d-b1b6" name="Cyclone Missile Launcher -  Krak (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="55b2-b652-f43d-b1b6" name="Cyclone Missile Launcher -  Krak (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -4045,7 +3991,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2. Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="3691-efa5-98a4-1e9f" name="Cyclone Missile Launcher -  Flak (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="3691-efa5-98a4-1e9f" name="Cyclone Missile Launcher -  Flak (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -4053,7 +3999,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Skyfire, Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="c984-6108-c398-ad1c" name="Macro-Bomb Cluster (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="c984-6108-c398-ad1c" name="Macro-Bomb Cluster (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -4061,7 +4007,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Bomb 1, Apocalyptic Barrage (6), One Shot</characteristic>
       </characteristics>
     </profile>
-    <profile id="473d-9f4e-4d07-6cda" name="Plasma Pistol (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="473d-9f4e-4d07-6cda" name="Plasma Pistol (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -4069,7 +4015,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Breaching (4+), Gets Hot</characteristic>
       </characteristics>
     </profile>
-    <profile id="dc18-d1e8-7d74-9ddb" name="Plasma Gun (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="dc18-d1e8-7d74-9ddb" name="Plasma Gun (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -4077,7 +4023,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Breaching (4+), Gets Hot</characteristic>
       </characteristics>
     </profile>
-    <profile id="9014-82f9-7370-81b7" name="Plasma Cannon (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="9014-82f9-7370-81b7" name="Plasma Cannon (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -4085,7 +4031,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Breaching (4+), Gets Hot</characteristic>
       </characteristics>
     </profile>
-    <profile id="006d-bd7d-469c-bdc0" name="Gravis Plasma Cannon (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="006d-bd7d-469c-bdc0" name="Gravis Plasma Cannon (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -4093,7 +4039,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Breaching (4+), Gets Hot</characteristic>
       </characteristics>
     </profile>
-    <profile id="4c24-5ca5-ac76-b630" name="Plasma Blaster (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="4c24-5ca5-ac76-b630" name="Plasma Blaster (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -4101,7 +4047,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Breaching (4+), Gets Hot</characteristic>
       </characteristics>
     </profile>
-    <profile id="f983-1680-aa95-214f" name="Executioner Plasma Destroyer (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="f983-1680-aa95-214f" name="Executioner Plasma Destroyer (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">60&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -4109,7 +4055,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Rending (4+)</characteristic>
       </characteristics>
     </profile>
-    <profile id="61a6-4517-dcf1-d500" name="Hellfire Plasma Cannonade - (Sustained Fire) (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="61a6-4517-dcf1-d500" name="Hellfire Plasma Cannonade - (Sustained Fire) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -4117,7 +4063,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 6, Breaching (4+)</characteristic>
       </characteristics>
     </profile>
-    <profile id="7406-3f1f-79a3-7106" name="Hellfire Plasma Cannonade - (Maximal Fire) (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="7406-3f1f-79a3-7106" name="Hellfire Plasma Cannonade - (Maximal Fire) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -4125,7 +4071,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Rending (4+), Gets Hot, Large Blast (5&quot;)</characteristic>
       </characteristics>
     </profile>
-    <profile id="497c-f450-0280-4812" name="Omega Plasma Array - (Sustained Fire) (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="497c-f450-0280-4812" name="Omega Plasma Array - (Sustained Fire) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -4133,7 +4079,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 8, Breaching (4+), Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="43c1-54bb-59a5-372c" name="Omega Plasma Array - (Maximal Fire) (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="43c1-54bb-59a5-372c" name="Omega Plasma Array - (Maximal Fire) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
@@ -4141,7 +4087,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Rending (4+), Gets Hot, Plasma Burn, Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="6150-1ce8-ef78-f686" name="Volkite Serpenta (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="6150-1ce8-ef78-f686" name="Volkite Serpenta (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">10&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -4149,7 +4095,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 2, Deflagrate</characteristic>
       </characteristics>
     </profile>
-    <profile id="04db-f611-e09b-aec6" name="Volkite Charger (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="04db-f611-e09b-aec6" name="Volkite Charger (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">15&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -4157,7 +4103,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Deflagrate</characteristic>
       </characteristics>
     </profile>
-    <profile id="00a0-68df-defd-2a3a" name="Volkite Caliver (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="00a0-68df-defd-2a3a" name="Volkite Caliver (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">30&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
@@ -4165,7 +4111,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Deflagrate</characteristic>
       </characteristics>
     </profile>
-    <profile id="1025-15b9-9566-10b7" name="Volkite Culverin (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="1025-15b9-9566-10b7" name="Volkite Culverin (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">45&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
@@ -4173,7 +4119,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 5, Deflagrate</characteristic>
       </characteristics>
     </profile>
-    <profile id="a314-9e78-2607-0f65" name="Volkite Dual-Culverin (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="a314-9e78-2607-0f65" name="Volkite Dual-Culverin (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">45&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
@@ -4181,7 +4127,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 6, Deflagrate, Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="8a13-fe29-65b6-4132" name="Volkite Falconet (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="8a13-fe29-65b6-4132" name="Volkite Falconet (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">45&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -4189,7 +4135,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 8, Deflagrate, Twin-linked, Pinning</characteristic>
       </characteristics>
     </profile>
-    <profile id="96e9-fade-5c5d-5a31" name="Volkite Saker (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="96e9-fade-5c5d-5a31" name="Volkite Saker (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">25&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
@@ -4197,7 +4143,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 6, Deflagrate</characteristic>
       </characteristics>
     </profile>
-    <profile id="f429-67a3-5a34-0d16" name="Volkite Macro-Saker (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="f429-67a3-5a34-0d16" name="Volkite Macro-Saker (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">45&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
@@ -4205,7 +4151,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 8, Deflagrate</characteristic>
       </characteristics>
     </profile>
-    <profile id="024e-ffa5-f6b5-7f54" name="Volkite Carronade (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="024e-ffa5-f6b5-7f54" name="Volkite Carronade (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">45&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -4213,7 +4159,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Heavy Beam, Deflagrate</characteristic>
       </characteristics>
     </profile>
-    <profile id="10f8-63bc-9467-dbca" name="Volkite Cardanelle (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="10f8-63bc-9467-dbca" name="Volkite Cardanelle (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">45&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -4221,7 +4167,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 12, Deflagrate, Pinning</characteristic>
       </characteristics>
     </profile>
-    <profile id="beec-c76b-718e-b61d" name="Phosphex Bomb (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="beec-c76b-718e-b61d" name="Phosphex Bomb (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">6&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -4229,7 +4175,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, One Use, Blast (3&quot;), Poisoned (3+), Crawling Fire, Lingering Death</characteristic>
       </characteristics>
     </profile>
-    <profile id="1af5-ed5b-ebd0-d7b6" name="Phosphex Discharger (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="1af5-ed5b-ebd0-d7b6" name="Phosphex Discharger (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -4237,7 +4183,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Barrage, Blast (3&quot;), Poisoned (3+), Crawling Fire, Lingering Death</characteristic>
       </characteristics>
     </profile>
-    <profile id="46c0-1f69-d246-1471" name="Phosphex Canister Shot (Rapier) (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="46c0-1f69-d246-1471" name="Phosphex Canister Shot (Rapier) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">12-24&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -4245,7 +4191,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Barrage, Blast (3&quot;), Poisoned (3+), Crawling Fire, Lingering Death</characteristic>
       </characteristics>
     </profile>
-    <profile id="ec3c-78ff-bbfa-66d7" name="Rad Missile (Missile Launcher) (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="ec3c-78ff-bbfa-66d7" name="Rad Missile (Missile Launcher) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -4253,7 +4199,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Fleshbane, Rad-phage</characteristic>
       </characteristics>
     </profile>
-    <profile id="49ab-6f93-8196-2742" name="Lascutter (Ranged) (P3P LA)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="49ab-6f93-8196-2742" name="Lascutter (Ranged) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">8&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
@@ -4261,7 +4207,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Ranged)</characteristic>
       </characteristics>
     </profile>
-    <profile id="421b-2cbd-57bf-9c37" name="Banestrike Bolter (P3P ZW)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="421b-2cbd-57bf-9c37" name="Banestrike Bolter (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -4270,7 +4216,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
 </characteristic>
       </characteristics>
     </profile>
-    <profile id="2c34-eb08-35b3-9ff3" name="Banestrike Combi-Bolter (P3P ZW)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="2c34-eb08-35b3-9ff3" name="Banestrike Combi-Bolter (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -4278,7 +4224,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Twin-linked, Breaching (6+) </characteristic>
       </characteristics>
     </profile>
-    <profile id="aa7c-51d8-33d2-644c" name="Power Dagger (P3P ZW)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="aa7c-51d8-33d2-644c" name="Power Dagger (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
@@ -4286,7 +4232,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Sudden Strike (1), Breaching (5+), Specialist Weapon</characteristic>
       </characteristics>
     </profile>
-    <profile id="fb68-1c18-3eab-e2cc" name="Volkite Cavitor (P3P ZW)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="fb68-1c18-3eab-e2cc" name="Volkite Cavitor (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">10&quot;
 </characteristic>
@@ -4295,7 +4241,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Deflagrate</characteristic>
       </characteristics>
     </profile>
-    <profile id="8e13-5653-0a95-4e75" name="Force Sword (P3P ZW)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="8e13-5653-0a95-4e75" name="Force Sword (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
@@ -4303,7 +4249,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (6+), Force</characteristic>
       </characteristics>
     </profile>
-    <profile id="792a-9c33-e5bb-76b2" name="Force Axe (P3P ZW)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="792a-9c33-e5bb-76b2" name="Force Axe (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
@@ -4311,7 +4257,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Force</characteristic>
       </characteristics>
     </profile>
-    <profile id="69f5-5db3-5346-48a8" name="Force Maul (P3P ZW)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="69f5-5db3-5346-48a8" name="Force Maul (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
@@ -4319,7 +4265,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Force</characteristic>
       </characteristics>
     </profile>
-    <profile id="7d00-2ff3-911f-11b9" name="Force Staff (P3P ZW)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="7d00-2ff3-911f-11b9" name="Force Staff (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">.</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
@@ -4359,7 +4305,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Unwieldy</characteristic>
       </characteristics>
     </profile>
-    <profile id="a940-e31d-1dce-50a1" name="Chain Bayonet (P3P ZW)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="a940-e31d-1dce-50a1" name="Chain Bayonet (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
@@ -4367,7 +4313,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Shred</characteristic>
       </characteristics>
     </profile>
-    <profile id="326b-a403-fc39-a57a" name="Bayonet (P3P ZW)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="326b-a403-fc39-a57a" name="Bayonet (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
@@ -4375,7 +4321,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed</characteristic>
       </characteristics>
     </profile>
-    <profile id="fdd9-55a7-66ca-7a7d" name="Corposant Stave (P3P ZW)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="fdd9-55a7-66ca-7a7d" name="Corposant Stave (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
@@ -4383,7 +4329,7 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Haywire</characteristic>
       </characteristics>
     </profile>
-    <profile id="362e-4589-11b9-6517" name="Heavy Chainsword (P3P ZW)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="362e-4589-11b9-6517" name="Heavy Chainsword (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
@@ -4445,6 +4391,11 @@ Invulnerable Saves granted by a refractor field do not stack with other Invulner
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7 </characteristic>
         <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Breaching (4+), Gets Hot, Twin-linked</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7d3b-41e9-887f-7085" name="Cataphractii Terminator Armour (P3P)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Legion Cataphractii Terminator armour confers a 2+ Armour Save and a 4+ Invulnerable Save. In addition, a unit that includes any models with Cataphractii Terminator armour may not make Sweeping Advances.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
