@@ -14148,7 +14148,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
       <infoLinks>
         <infoLink id="b30d-f663-cca3-215e" name="Achean Force" hidden="false" targetId="c56f-80ff-5d8e-1af4" type="rule"/>
         <infoLink id="4da5-8727-81c9-7b91" name="Achea Force Axe" hidden="false" targetId="4a9d-4c4d-afb1-cf78" type="profile"/>
-        <infoLink id="0fb7-a799-6275-d7f8" name="Unwieldy (P3P) (P3P)" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+        <infoLink id="0fb7-a799-6275-d7f8" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -14931,6 +14931,9 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                     <infoLink id="d1a4-6d2b-10f5-dfaf" name="Template Weapons (P3P)" hidden="false" targetId="5e0e-88e6-db81-5a70" type="rule"/>
                     <infoLink id="89d8-67a4-fc0d-6c41" name="Dragon&apos;s Breath" hidden="false" targetId="655c-988f-74b5-7e17" type="rule"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="6e3d-f2ec-cc38-6020" name="Two Sponson Mounted Heavy Alchem Flamers" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
@@ -15177,6 +15180,9 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                     <infoLink id="4b9e-98a7-1d65-f0f5" name="Template Weapons (P3P)" hidden="false" targetId="5e0e-88e6-db81-5a70" type="rule"/>
                     <infoLink id="8529-0c25-4e74-3f05" name="Dragon&apos;s Breath" hidden="false" targetId="655c-988f-74b5-7e17" type="rule"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="d983-4c65-97e8-10a5" name="Two Sponson Mounted Shrapnel Cannons" hidden="false" collective="false" import="true" type="upgrade">
                   <infoLinks>
@@ -16761,8 +16767,8 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                 <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
                 <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
                 <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
-                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547"></characteristic>
-                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e"></characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547"/>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e"/>
               </characteristics>
             </profile>
           </profiles>
@@ -17586,8 +17592,9 @@ If a unit includes more than one model with the Character Unit Sub-tpe then all 
 
 Raptora - When a unit that includes a Psyker with this power is selected to make a Move or Run move during the Controlling player&apos;s Movement phase that ends within 12&quot; of an enemy unit, the controlling player may make a Psychic check for the Psyker with this power before any models in the unit are moved. If the Psychic check is successful then all models in the unit with the Psyker Sub-type and the Legiones Astartes (Thousand Sons) special rule gan a 6+ Invulnerable Save, or if the unit already has an Invulnerable Save that save is increased on step (for example, from 6+ to 5+) up to a maximum of a 4+ Invulnerable Save, Until the start of the Controlling Player&apos;s next Turn. If the Psychic check is failed then the Psyker suffers Perils of the Warp.</description>
     </rule>
-    <rule id="c56f-80ff-5d8e-1af4" name="Achean Force" hidden="false">
-      <description>The controlling player of any unit that includes one or more models with the Psyker Unit Sub-type and a weapon or ability with this special rule, may choose to activate this special rule before making any attacks with that weapon or resolving the ability. To activate this special rule, the controlling player must make a single Psychic check using the Leadership Characteristic of any model in the unit that does not have the Independent character special rule. If the Check is successful, then the Strength value of all attacks made with weapons or abilites with this special rule is increased by +2 (In addition to any Modifiers the attack or weapon may already posses), this benefit is applied only in the Phase in which these attack are made and ends immediately after that phase is resolves. If the check is failed then no benefit is gained, but the models in that unit may attack as normal.</description>
+    <rule id="c56f-80ff-5d8e-1af4" name="Achean Force" publicationId="09c5-eeae-f398-b653" page="259" hidden="false">
+      <comment>validated nsh 2022/06/20</comment>
+      <description>The controlling player of any unit that includes one or more models with the Psyker Unit Sub-type and a weapon or ability with this special rule, may choose to activate this special rule before making any attacks with that weapon or resolving the ability. To activate this special rule, the controlling player must make a single Psychic check using the Leadership Characteristic of any model in the unit that does not have the Independent Character special rule. If the Check is successful, then the Strength value of all attacks made with weapons or abilites with this special rule is increased by +2 (In addition to any Modifiers the attack or weapon may already posses), this benefit is applied only in the Phase in which these attack are made and ends immediately after that phase is resolved. If the check is failed then no benefit is gained, but the models in that unit may attack as normal.</description>
     </rule>
     <rule id="5072-2b33-d062-210f" name="Bloody Murder" hidden="false">
       <description>When a unit composed entirely of models with the special rule declares a Charge targeting a unit that is Pinned or Falling Back, the Charge roll gains an additional +1 modifier, and if the Charge is succesful then all models in the Charging unit gain +1 Attack for the duration of the turn in which that Charge is made.</description>
@@ -18030,7 +18037,8 @@ Sonic Lance</characteristic>
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Breaching (4+), Pinning</characteristic>
       </characteristics>
     </profile>
-    <profile id="f863-eb90-074d-f82a" name="Æther-Fire Blaster " hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="f863-eb90-074d-f82a" name="Æther-Fire Blaster " publicationId="09c5-eeae-f398-b653" page="258" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+      <comment>validated nsh 2022/06/20</comment>
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
@@ -18038,7 +18046,8 @@ Sonic Lance</characteristic>
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Rending (6+), Achean Force</characteristic>
       </characteristics>
     </profile>
-    <profile id="c1b9-fe42-049c-0e89" name="Æther-Fire Cannon " hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="c1b9-fe42-049c-0e89" name="Æther-Fire Cannon " publicationId="09c5-eeae-f398-b653" page="258" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+      <comment>validated nsh 2022/06/20</comment>
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
@@ -18046,7 +18055,8 @@ Sonic Lance</characteristic>
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Rending (6+), Achean Force</characteristic>
       </characteristics>
     </profile>
-    <profile id="5aa5-8d9c-0693-af94" name="Æther-Fire Magna-Cannon " hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="5aa5-8d9c-0693-af94" name="Æther-Fire Magna-Cannon " publicationId="09c5-eeae-f398-b653" page="258" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+      <comment>validated nsh 2022/06/20</comment>
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
@@ -18055,7 +18065,8 @@ Sonic Lance</characteristic>
 </characteristic>
       </characteristics>
     </profile>
-    <profile id="b38e-5dfe-64f2-375d" name="Æther-Fire Pistol " hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="b38e-5dfe-64f2-375d" name="Æther-Fire Pistol " publicationId="09c5-eeae-f398-b653" page="258" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+      <comment>validated nsh 2022/06/20</comment>
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">10&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
@@ -18897,16 +18908,18 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 5, Skyfire, Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="b00f-4913-1765-2d5b" name="Asphyx Bolt Cannon (P3P ZW)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="b00f-4913-1765-2d5b" name="Asphyx Bolt Cannon" publicationId="09c5-eeae-f398-b653" page="258" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+      <comment>validated nsh 2022/06/20</comment>
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
         <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Shred, Pinning
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Shred
 </characteristic>
       </characteristics>
     </profile>
-    <profile id="7a88-ce87-0cb7-6a99" name="Asphyx Bolt Pistol (P3P ZW)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="7a88-ce87-0cb7-6a99" name="Asphyx Bolt Pistol" publicationId="09c5-eeae-f398-b653" page="258" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+      <comment>validated nsh 2022/06/20</comment>
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">8&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -18915,7 +18928,8 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
 </characteristic>
       </characteristics>
     </profile>
-    <profile id="fb5b-a1bb-b3e0-18f4" name="Asphyx Bolter (P3P ZW)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="fb5b-a1bb-b3e0-18f4" name="Asphyx Bolter" publicationId="09c5-eeae-f398-b653" page="258" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+      <comment>validated nsh 2022/06/20</comment>
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -19135,6 +19149,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </characteristics>
     </profile>
     <profile id="7794-a4f2-1f2a-8a5f" name="Achea Force Claw (P3P ZW)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+      <comment>This is not in the Hereticus Book, where did it come from?</comment>
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
@@ -19456,7 +19471,8 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid-fire, Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="1eb5-79ed-ea2b-2f60" name="Achean Force Sword" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="1eb5-79ed-ea2b-2f60" name="Achean Force Sword" publicationId="09c5-eeae-f398-b653" page="259" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+      <comment>validated nsh 2022/06/20</comment>
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
@@ -19464,15 +19480,17 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (6+), Achean Force</characteristic>
       </characteristics>
     </profile>
-    <profile id="4a9d-4c4d-afb1-cf78" name="Achea Force Axe" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="4a9d-4c4d-afb1-cf78" name="Achea Force Axe" publicationId="09c5-eeae-f398-b653" page="259" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+      <comment>validated nsh 2022/06/20</comment>
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
-        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Achean Force</characteristic>
       </characteristics>
     </profile>
-    <profile id="2139-4dc2-df3a-a3cc" name="Achea Force Maul" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="2139-4dc2-df3a-a3cc" name="Achea Force Maul" publicationId="09c5-eeae-f398-b653" page="259" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+      <comment>validated nsh 2022/06/20</comment>
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
