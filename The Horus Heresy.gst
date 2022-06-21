@@ -4877,7 +4877,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8f86-62fb-dba4-afc4" type="max"/>
       </constraints>
       <profiles>
-        <profile id="95c1-8de7-bef1-6fa1" name="Cerastus Knight-Atrapos" publicationId="ca571888--pubN84158" page="306" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
+        <profile id="95c1-8de7-bef1-6fa1" name="Cerastus Knight-Atrapos" publicationId="ca571888--pubN69050" page="114" hidden="false" typeId="57616c6b657223232344415441232323" typeName="Walker">
           <characteristics>
             <characteristic name="WS" typeId="575323232344415441232323">4</characteristic>
             <characteristic name="BS" typeId="425323232344415441232323">4</characteristic>
@@ -4887,7 +4887,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
             <characteristic name="Rear" typeId="5265617223232344415441232323">12</characteristic>
             <characteristic name="I" typeId="4923232344415441232323">4</characteristic>
             <characteristic name="A" typeId="4123232344415441232323">4</characteristic>
-            <characteristic name="HP" typeId="485023232344415441232323">6</characteristic>
+            <characteristic name="HP" typeId="485023232344415441232323">7</characteristic>
             <characteristic name="Type" typeId="5479706523232344415441232323">Super-heavy Walker</characteristic>
           </characteristics>
         </profile>
@@ -4897,6 +4897,7 @@ The Bunkers of the Castellum Stronghold have a 5+ invulnerable save against shoo
         <infoLink id="7629-09d1-79f3-3f7a" name="New InfoLink" hidden="false" targetId="333c-a3b2-4353-f484" type="rule"/>
         <infoLink id="175b-ee67-d5b7-02d8" name="New InfoLink" hidden="false" targetId="8fb5-0c46-e8b4-0ef6" type="rule"/>
         <infoLink id="1895-e4dd-46a4-3b0a" name="New InfoLink" hidden="false" targetId="81fe-8580-34f6-28ae" type="rule"/>
+        <infoLink id="d9eb-fab7-2bd0-26b6" name="Blessed Autosimulacra" hidden="false" targetId="6ce7-5e83-a2dd-571e" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="797b-8685-04c6-72f4" name="May be upgraded with:" hidden="false" collective="false" import="true">
