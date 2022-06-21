@@ -1004,7 +1004,7 @@
     </selectionEntry>
     <selectionEntry id="5507-b432-3b4c-df12" name="Heavy Flamer" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="4420-42fa-ecb2-2207" name="Heavy Flamer (P3P LA)" hidden="false" targetId="a6e9-e2e1-150f-b023" type="profile"/>
+        <infoLink id="4420-42fa-ecb2-2207" name="Heavy Flamer (P3P)" hidden="false" targetId="a6e9-e2e1-150f-b023" type="profile"/>
         <infoLink id="254a-048e-2f8f-6dfc" name="Template Weapons (P3P)" hidden="false" targetId="5e0e-88e6-db81-5a70" type="rule"/>
       </infoLinks>
       <costs>
@@ -3189,7 +3189,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
     </rule>
   </sharedRules>
   <sharedProfiles>
-    <profile id="f52c-1f37-acd2-703c" name="Tartaros Terminator Armou (P3P)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+    <profile id="f52c-1f37-acd2-703c" name="Tartaros Terminator Armour" publicationId="a716-c1c4-7b26-8424" page="147" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Legion Tartaros Terminator armour confers a 2+ Armour Save and a 5+ Invulnerable Save.</characteristic>
       </characteristics>
@@ -3266,7 +3266,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Concussive (1)</characteristic>
       </characteristics>
     </profile>
-    <profile id="911e-cd25-992e-7a74" name="Rotor Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="911e-cd25-992e-7a74" name="Rotor Cannon" publicationId="a716-c1c4-7b26-8424" page="128" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">30&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
@@ -3274,7 +3274,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 4, Pinning, Shell Shock (1)</characteristic>
       </characteristics>
     </profile>
-    <profile id="8965-52d8-1ba5-d97d" name="Autocannon (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="8965-52d8-1ba5-d97d" name="Autocannon" publicationId="a716-c1c4-7b26-8424" page="128" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -3282,7 +3282,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Rending (6+)</characteristic>
       </characteristics>
     </profile>
-    <profile id="d61d-9158-41bb-c3b5" name="Reaper Autocannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="d61d-9158-41bb-c3b5" name="Reaper Autocannon" publicationId="a716-c1c4-7b26-8424" page="128" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -3290,7 +3290,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Rending (6+), Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="5bb0-1cb6-1702-3b8a" name="Kheres Assault Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="5bb0-1cb6-1702-3b8a" name="Kheres Assault Cannon" publicationId="a716-c1c4-7b26-8424" page="128" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
@@ -3298,7 +3298,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 6, Rending (6+)</characteristic>
       </characteristics>
     </profile>
-    <profile id="2935-8d21-f209-1548" name="Gravis Autocannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="2935-8d21-f209-1548" name="Gravis Autocannon" publicationId="a716-c1c4-7b26-8424" page="128" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -3306,7 +3306,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Rending (6+), Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="3555-4d06-242d-092e" name="Gravis Autocannon Battery" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="3555-4d06-242d-092e" name="Gravis Autocannon Battery" publicationId="a716-c1c4-7b26-8424" page="128" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -3322,7 +3322,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 18, Pinning, Shell Shock (1)</characteristic>
       </characteristics>
     </profile>
-    <profile id="944e-b9f4-4bc3-14df" name="Accelerator Autocannon (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="944e-b9f4-4bc3-14df" name="Accelerator Autocannon" publicationId="a716-c1c4-7b26-8424" page="128" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -3330,7 +3330,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 8, Rending (6+), Exoshock (6+)</characteristic>
       </characteristics>
     </profile>
-    <profile id="1c1b-ef61-5306-5dcf" name="Fellblade Accelerator Autocannon - HE Shell" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="1c1b-ef61-5306-5dcf" name="Fellblade Accelerator Autocannon - HE Shell" publicationId="a716-c1c4-7b26-8424" page="128" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">100&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -3338,7 +3338,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Massive Blast (7&quot;)</characteristic>
       </characteristics>
     </profile>
-    <profile id="903d-8174-33b5-3c85" name="Fellblade Accelerator Autocannon - AE Shell" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="903d-8174-33b5-3c85" name="Fellblade Accelerator Autocannon - AE Shell" publicationId="a716-c1c4-7b26-8424" page="128" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">100&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
@@ -3346,7 +3346,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Armourbane (Ranged), Exoshock (4+), Blast (3&quot;)</characteristic>
       </characteristics>
     </profile>
-    <profile id="ffe7-4a27-e998-a41a" name="Skyreaper Battery" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="ffe7-4a27-e998-a41a" name="Skyreaper Battery" publicationId="a716-c1c4-7b26-8424" page="128" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -3354,7 +3354,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 5, Skyfire, Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="99f2-7f9d-db15-a9ad" name="Anvilus Autocannon Battery" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="99f2-7f9d-db15-a9ad" name="Anvilus Autocannon Battery" publicationId="a716-c1c4-7b26-8424" page="128" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -3362,7 +3362,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Rending (5+), Sunder, Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="0a77-0c0a-11e9-046b" name="Anvilus Snub Autocannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="0a77-0c0a-11e9-046b" name="Anvilus Snub Autocannon" publicationId="e77a-823a-da94-16b9" page="128" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -3370,7 +3370,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Sunder, Rending (5+), Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="19a0-cc18-eedc-a1c6" name="Archaeotech Pistol (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="19a0-cc18-eedc-a1c6" name="Archaeotech Pistol" publicationId="a716-c1c4-7b26-8424" page="129" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
@@ -3482,7 +3482,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Detonation, Unwieldy, Armourbane (Melee), Instant Death</characteristic>
       </characteristics>
     </profile>
-    <profile id="f5a9-6aec-67dc-68a8" name="Demolisher Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="f5a9-6aec-67dc-68a8" name="Demolisher Cannon" publicationId="a716-c1c4-7b26-8424" page="129" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
@@ -3490,7 +3490,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Blast (3&quot;), Sunder, Rending (6+), Brutal (3)</characteristic>
       </characteristics>
     </profile>
-    <profile id="e14f-7df5-75a8-3eb4" name="Morbus Bombard" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="e14f-7df5-75a8-3eb4" name="Morbus Bombard" publicationId="a716-c1c4-7b26-8424" page="129" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
@@ -3498,7 +3498,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Large Blast (5&quot;), Pinning, Rending (6+)</characteristic>
       </characteristics>
     </profile>
-    <profile id="a536-0d11-4c0c-204d" name="Quad Launcher - Splinter" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="a536-0d11-4c0c-204d" name="Quad Launcher - Splinter" publicationId="a716-c1c4-7b26-8424" page="129" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;-36&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">2</characteristic>
@@ -3506,7 +3506,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Barrage, Large Blast (5&quot;), Rending (6+), Pinning, Shell Shock (1)</characteristic>
       </characteristics>
     </profile>
-    <profile id="5396-d261-b760-363a" name="Quad Launcher - Frag" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="5396-d261-b760-363a" name="Quad Launcher - Frag" publicationId="a716-c1c4-7b26-8424" page="129" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;-60&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -3514,7 +3514,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Barrage, Large Blast (5&quot;), Shred</characteristic>
       </characteristics>
     </profile>
-    <profile id="dd40-79ec-ef93-9e84" name="Quad Launcher - Shatter" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="dd40-79ec-ef93-9e84" name="Quad Launcher - Shatter" publicationId="a716-c1c4-7b26-8424" page="129" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -3522,7 +3522,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Sunder</characteristic>
       </characteristics>
     </profile>
-    <profile id="8a12-4730-5a29-a846" name="Quad Launcher - Incendiary" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="8a12-4730-5a29-a846" name="Quad Launcher - Incendiary" publicationId="a716-c1c4-7b26-8424" page="129" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;-60&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -3530,7 +3530,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Barrage, Large Blast (5&quot;), Ignores Cover, Pinning, Shred</characteristic>
       </characteristics>
     </profile>
-    <profile id="91ef-b4db-c05f-ffc0" name="Dreadhammer Siege Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="91ef-b4db-c05f-ffc0" name="Dreadhammer Siege Cannon" publicationId="a716-c1c4-7b26-8424" page="129" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
@@ -4340,7 +4340,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred, Two-handed</characteristic>
       </characteristics>
     </profile>
-    <profile id="47d9-345a-2e9f-1a1d" name="Predator Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="47d9-345a-2e9f-1a1d" name="Predator Cannon" publicationId="a716-c1c4-7b26-8424" page="128" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -4396,7 +4396,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Breaching (4+), Gets Hot, Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="7d3b-41e9-887f-7085" name="Cataphractii Terminator Armour (P3P)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+    <profile id="7d3b-41e9-887f-7085" name="Cataphractii Terminator Armour" publicationId="a716-c1c4-7b26-8424" page="147" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Legion Cataphractii Terminator armour confers a 2+ Armour Save and a 4+ Invulnerable Save. In addition, a unit that includes any models with Cataphractii Terminator armour may not make Sweeping Advances.</characteristic>
       </characteristics>
