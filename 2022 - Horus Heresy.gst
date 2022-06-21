@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="1" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="2" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 18th, 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" publicationDate="June 18th, 2022"/>
@@ -73,8 +73,15 @@
     <categoryEntry id="7031-469a-1aeb-eab0" name="Heavy Support:" hidden="false"/>
     <categoryEntry id="a24f-12d8-36c1-f477" name="Fortification:" hidden="false"/>
     <categoryEntry id="ad5f-31db-8bc7-5c46" name="Primarch:" hidden="false">
+      <rules>
+        <rule id="a895-3e13-98e4-b67c" name="Primarch Unit-type" publicationId="e77a-823a-da94-16b9" page="196" hidden="false">
+          <description>• All Primarchs have the following special rules: Independent Character, Eternal Warrior, Fearless, It Will Not Die (5+), Bulky (4), and Relentless. In addition, all models with the Primarch unit type always count as Character models.
+• Primarchs are not affected by special rules that negatively modify their Characteristics (other than Wounds) and, in addition, Primarchs always resolve Snap Shots at their normal BS.
+• Any Hits inflicted by a Primarch, as part of either Shooting Attacks or in close combat, are allocated by the Primarch’s controlling player and not the controlling player of the target unit. These Hits should form a separate Wound Pool.
+• If an army includes any Primarch models, then one of those models must be chosen as the army’s Warlord.</description>
+        </rule>
+      </rules>
       <infoLinks>
-        <infoLink id="3934-447d-489c-8cc7" name="Primarch Sub-type: (P3P Units)" hidden="false" targetId="a895-3e13-98e4-b67c" type="rule"/>
         <infoLink id="0d88-efe0-d7f2-b00a" name="Independent Character (P3P)" hidden="false" targetId="c57d-4820-458a-7ab5" type="rule"/>
         <infoLink id="8234-2d15-6c2f-6062" name="Eternal Warrior (P3P)" hidden="false" targetId="000b-fe96-31f8-c0ad" type="rule"/>
         <infoLink id="d5ca-7903-8a29-f059" name="Fearless (P3P)" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
@@ -94,37 +101,73 @@
     <categoryEntry id="c658-dc6b-727b-c488" name="Lords of War:" hidden="false"/>
     <categoryEntry id="e90d-e5a8-f42d-da84" name="Allegiance:" hidden="false"/>
     <categoryEntry id="36c3-e85e-97cc-c503" name="Unit:" hidden="false"/>
-    <categoryEntry id="eee8-3c7c-2762-e33e" name="Jump Infantry:" hidden="false"/>
+    <categoryEntry id="eee8-3c7c-2762-e33e" name="Jump Infantry:" hidden="false">
+      <rules>
+        <rule id="b420-727a-0d13-33bb" name="Jump Pack" publicationId="e77a-823a-da94-16b9" page="163" hidden="false">
+          <description>A unit composed entirely of models with Jump Packs may set its Movement Characteristic to a value of 12 for the duration of the controlling player&apos;s turn. This allows the unit to move up to 12&quot;, regardless of the Movement Characteristic shown on its profile, and gain any other benefits of a Movement Characterisic of 12 (including the bonus to Charge Distance, see page 181). In addition, if the controlling player chooses to set the unit&apos;s Movement to 12&quot;, the unit ignores terrain while Moving and Charging, and may move over friendly and enemy models/units. A unit that ends of begins its Movement or a Charge in Dangerous Terrain will still need to take Dangerous Terrain tests as normal, even when emplying Jump Packs, and threats all Difficult Terrain as Dangerous Terrain.
+Any model equipped with a Jump Pack also gainst the Bulky (2) and Deep Strike special rules, or if it already has the Bulky (2) special rule it gainst the Bulky (3) special rule instead. A unit equipped with Jump Packs may not Run.
+During Reactions made in any Phase, a unit equipped with Jump PAcks may not activite them to gain any bonuses to their Movement Characteristics.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="2fb2-ff7b-13ff-b31c" name="Deep Strike (P3P)" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
+        <infoLink id="0dcd-416f-c33a-ece0" name="Bulky (X) (P3P)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2 or 3)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </categoryEntry>
     <categoryEntry id="8b4f-bfe2-ce7b-f1b1" name="Infantry:" hidden="false"/>
     <categoryEntry id="6d79-a3e4-381f-7b0f" name="Cavalry Sub-type:" hidden="false">
-      <infoLinks>
-        <infoLink id="c274-a7fc-e4e1-889d" name="Cavalry Sub-type (P3P Units)" hidden="false" targetId="b254-c1a5-ac81-5c49" type="rule"/>
-      </infoLinks>
+      <rules>
+        <rule id="b254-c1a5-ac81-5c49" name="Cavalry Sub-type" publicationId="e77a-823a-da94-16b9" page="195" hidden="false">
+          <description>• Cavalry models cannot be Pinned.
+• Cavalry models are not slowed down by Difficult Terrain, even when Charging. However, Cavalry models treat all Difficult Terrain as Dangerous Terrain instead.
+• Cavalry models move 3D6&quot; when Falling Back, rather than 2D6&quot;.
+• No model that is not also of the Cavalry Unit Type may join a unit that includes a Cavalry model.</description>
+        </rule>
+      </rules>
     </categoryEntry>
     <categoryEntry id="e2b6-b770-784c-9e95" name="Vehicle:" hidden="false"/>
     <categoryEntry id="23eb-0b9e-0857-e965" name="Vehicle Unit:" hidden="false"/>
     <categoryEntry id="bab3-f50d-3e5f-2f78" name="Terminators:" hidden="false"/>
-    <categoryEntry id="d8ab-8e21-e193-63ba" name="Automata Sub-type:" hidden="false">
+    <categoryEntry id="d8ab-8e21-e193-63ba" name="Automata Unit-type:" publicationId="e77a-823a-da94-16b9" page="195" hidden="false">
+      <rules>
+        <rule id="d9e0-baf4-66cb-24cc" name="Automata Unit-type" publicationId="e77a-823a-da94-16b9" page="195" hidden="false">
+          <description>• All Automata models have the Fearless special rule.
+• Successful Wounds inflicted by attacks with the Poisoned or Fleshbane special rules must be re-rolled against models of the Automata Unit Type.
+• A unit that includes one or more models with the Automata Unit Type may not make Reactions.
+• No model that is not also of the Automata Unit Type may join a unit that includes an Automata model.</description>
+        </rule>
+      </rules>
       <infoLinks>
-        <infoLink id="1b0c-4397-39c4-233b" name="Automata (P3P Units)" hidden="false" targetId="d9e0-baf4-66cb-24cc" type="rule"/>
         <infoLink id="453b-86e9-01b1-0a96" name="Fearless (P3P)" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="4171-e276-e90d-b8e5" name="Legion Consularis:" hidden="false"/>
-    <categoryEntry id="59a4-7b61-600a-c457" name="Skirmish:" hidden="false">
-      <infoLinks>
-        <infoLink id="548b-0ff1-45f9-6561" name="Skirmish Sub-type" hidden="false" targetId="e02b-5fd3-aa3b-4fc4" type="rule"/>
-      </infoLinks>
+    <categoryEntry id="59a4-7b61-600a-c457" name="Skirmish Sub-type:" hidden="false">
+      <rules>
+        <rule id="e02b-5fd3-aa3b-4fc4" name="Skirmish Sub-type" publicationId="817a-6288-e016-7469" page="95" hidden="false">
+          <description>• A unit that includes only models with the Skirmish Sub-type has a unit coherency range of 3&quot; rather than 2&quot;
+• A unit that includes only models with the Skirmish Sub-type increases all Cover Saves granted by tarrain by one (i.e, from 6+ to 5+). This only increase existing Cover Saves and does not grant one when in terrain that does not normally grant Cover Saves. This rule cannot increase a Cover Save to better than 2+.</description>
+        </rule>
+      </rules>
     </categoryEntry>
     <categoryEntry id="d5df-57ac-8f3c-097b" name="Bombard Sub-type:" hidden="false">
-      <infoLinks>
-        <infoLink id="d947-5089-71db-16d9" name="Bombard Sub-type (P3P LA)" hidden="false" targetId="6c51-7362-45fb-d084" type="rule"/>
-      </infoLinks>
+      <rules>
+        <rule id="6c51-7362-45fb-d084" name="Bombard Sub-type" publicationId="817a-6288-e016-7469" page="95" hidden="false">
+          <description>• When a model with the Vehicle Unit Type and Bombard Sub-type moves at Combat Speed it may fire any number of Ordnance weapons and may also fire any non-Ordnance weapons normally, ignoring the restrictions of Combat Speed. However, when moving at Cruising Speed it may only fire a single Defensive weapon</description>
+        </rule>
+      </rules>
     </categoryEntry>
     <categoryEntry id="9b0d-738c-10e4-4ec1" name="Reinforced Sub-type:" hidden="false">
-      <infoLinks>
-        <infoLink id="682b-a759-b073-ce58" name="Reinforced Sub-type (P3P LA)" hidden="false" targetId="dbac-669b-298c-868e" type="rule"/>
-      </infoLinks>
+      <rules>
+        <rule id="dbac-669b-298c-868e" name="Reinforced Sub-type" publicationId="817a-6288-e016-7469" page="95" hidden="false">
+          <description>• A model with the Reinforced Sub-type ignores the effects of any Crew Shaken result on the Vehicle Damage table
+• A model with the Reinforced Sub=type does not have to make Snap Shots due to the effects of the Crew Stunned result on the Vehicle Damaage table (but still cannot move or pivot until the end of its next turn).</description>
+        </rule>
+      </rules>
     </categoryEntry>
     <categoryEntry id="1158-146a-d9a0-39ad" name="Warlord Traits:" hidden="false"/>
     <categoryEntry id="5309-9b4c-93e9-c5de" name="Reactions:" hidden="false"/>
@@ -137,19 +180,42 @@
     <categoryEntry id="0a04-abac-c606-2d48" name="Compulsory Lord of War:" hidden="false"/>
     <categoryEntry id="1b67-8d3b-283a-1488" name="Compulsory Fortification:" hidden="false"/>
     <categoryEntry id="9231-183c-b97b-63f9" name="Heavy" hidden="false">
-      <infoLinks>
-        <infoLink id="aa07-cb5a-161f-27c2" name="Heavy Sub-type (P3P Units)" hidden="false" targetId="79ce-8870-0b12-79ab" type="rule"/>
-      </infoLinks>
+      <rules>
+        <rule id="79ce-8870-0b12-79ab" name="Heavy Sub-type" publicationId="e77a-823a-da94-16b9" page="197" hidden="false">
+          <description>• A unit that includes only models with the Heavy subtype may re-roll failed Armour Saves against Template and Blast weapons.
+• A unit that includes any models with the Heavy subtype may not Run and when making a Movement during a Reaction based on its Initiative Characteristic, reduces the distance moved by -1.</description>
+        </rule>
+      </rules>
     </categoryEntry>
     <categoryEntry id="6e0c-29ba-a445-8321" name="Psyker:" hidden="false"/>
     <categoryEntry id="9055-7410-8ffd-b8e7" name="Corrupted Sub-type:" hidden="false">
+      <rules>
+        <rule id="e441-d934-fee5-990b" name="Corrupted Sub-type" publicationId="e77a-823a-da94-16b9" page="307" hidden="false">
+          <description>• Models with the Corrupted Unit Sub-type gain the Fear (1) special rule.
+• Any Hits inflicted on a model with the Corrupted Unit sub-type by a weapon with the Force or Psychic Focus special rules gain the Instant Death special rule.
+• Any unit composed entirely of models with the Corrupted Unit Sub-type is immunte to the effects of the Fear (X) special rule. When a unit composed entirely of models with the Corrupted Unit Sub-type fails a Morale check it does not Fall Back as per the standard rules, but instead suffers D3 automatic wounds with no saves or Damage Mitigation rolls of any kind allowed.
+• No model that does not also have the Corrupted Unit Sub-type or the Daemon Unit Type maj join a unit that includes one or more models with the Corrupted Unit Sub-type</description>
+        </rule>
+      </rules>
       <infoLinks>
-        <infoLink id="841b-55ae-06b7-c297" name="Corrupted Sub-type" hidden="false" targetId="e441-d934-fee5-990b" type="rule"/>
+        <infoLink id="bbcb-0615-829f-4875" name="Fear (X) (P3P)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Fear (1)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="4280-4963-02b5-e31d" name="Dreadnought:" hidden="false">
+    <categoryEntry id="4280-4963-02b5-e31d" name="Dreadnought Unit-type:" hidden="false">
+      <rules>
+        <rule id="ab7d-c74d-a976-2540" name="Dreadnought Unit-type" publicationId="e77a-823a-da94-16b9" page="195" hidden="false">
+          <description>• Successful Wounds scored by attacks with the Poisoned or Fleshbane special rules must be re-rolled against models of the Dreadnought Unit Type.
+• All Dreadnought models have the Fearless special rule.
+• A model with the Dreadnought Unit Type may fire all weapons they are equipped with in each Shooting Attack they make, including as part of a Reaction.
+• A model of the Dreadnought type may fire Heavy and Ordnance weapons and counts as Stationary even if it moved in the preceding Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn.
+• No model that is not also of the Dreadnought Unit Type may join a unit that includes a Dreadnought model.</description>
+        </rule>
+      </rules>
       <infoLinks>
-        <infoLink id="a2da-d117-b75e-b445" name="Dreadnought Sub-type (P3P Units)" hidden="false" targetId="ab7d-c74d-a976-2540" type="rule"/>
         <infoLink id="7163-a73e-7f6d-2357" name="Fearless (P3P)" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
       </infoLinks>
     </categoryEntry>
@@ -159,15 +225,83 @@
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="7d95-f9d1-440a-67bd" name="Monstrous Sub-type:" hidden="false">
+      <rules>
+        <rule id="3322-e589-ba33-b1b7" name="Monstrous Sub-type" publicationId="e77a-823a-da94-16b9" page="197" hidden="false">
+          <description>• A unit that includes any models with the Monstrous sub-type cannot be Pinned.
+• A model with the Monstrous sub-type may fire all weapons they are equipped with in each Shooting Attack they make, including as part of a Reaction.
+• A model with the Monstrous sub-type may fire Heavy and Ordnance weapons and counts as Stationary even if it moved in the preceding Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn.
+• No model that is not also Monstrous may join a unit that includes a Monstrous model.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry id="e699-d9cd-e68e-46d9" name="Daemon Unit-type:" hidden="false">
+      <rules>
+        <rule id="df15-2b9e-8437-3295" name="Daemon Unit-type" hidden="false">
+          <description>• All Daemon models have their Strength and Toughness modified by a value determined by the current Game Turn: +1 on Game Turns 1 &amp; 2, +/-0 on Game Turns 3 &amp; 4, -1 on Game Turns 5 &amp; 6, and -2 on Game Turns 7+.
+• All Daemon models have the Fear special rule.
+• Any Hits inflicted on a model of the Daemon Unit Type by a weapon with the Force special rule gain the Instant Death special rule as well.
+• All Daemon models are immune to the effects of the Fear special rule, automatically pass Pinning and Regroup tests and cannot choose to fail a Morale check due to the Our Weapons Are Useless special rule. When a Daemon unit fails a Morale check it does not Fall Back as per the standard rules, but instead suffers D3 automatic Wounds with no Saves of any kind allowed.
+• No model that is not also of the Daemon Unit Type may join a unit that includes a Daemon model.</description>
+        </rule>
+      </rules>
       <infoLinks>
-        <infoLink id="cb28-9865-1c9c-c264" name="Monstrous Sub-type (P3P Units)" hidden="false" targetId="3322-e589-ba33-b1b7" type="rule"/>
+        <infoLink id="1c25-8c44-6c9f-8d44" name="Fear (X) (P3P)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Fear (1)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="e699-d9cd-e68e-46d9" name="Daemon Sub-type:" hidden="false">
+    <categoryEntry id="0b85-37e7-40ef-7388" name="Jet Infantry:" hidden="false">
+      <rules>
+        <rule id="f3d5-a377-1c7e-5e20" name="Jet Pack" publicationId="e77a-823a-da94-16b9" page="163" hidden="false">
+          <description>A unit composed entirely of models with Jet Packs may choose to increase its Movement Characteristic by +6, move over friendly and enemy models/units, and ignore terrain while moving during the Movement phase. A unit that ends or begins its movement in Dangerous Terrain will still need to take Dangerous Terrain tests as normal, even when employing Jet Packs and treats Difficult Terrain as Dangerous Terrain. In addition to the bonus to move during the Movement phase, a unit equipped entriely with Jet Packts may make an additional move of 6&quot; during the Shooting phase. This move must be taken after the unit has completed any Shooting, is not limited by the weapons fired by that unit during the Shooting phase and ignores terrain and may move over friendly and enemy models/units in the same manner as moves made using a Jet Pack in the Movmeent phase.
+Any model equipped with a Jet Pack also gainst the Bulky (2) and Deep Strike special rules, or if it already has the Bulky (2) special rule it gainst the Bulky (3) special rule instead. A unit equipped with Jump PAcks may not Run.
+During any Reaction that allows a unit equipped entirely with Jet PAcks to move, increase the distance of that move by 6. This allows the unit to Ignore terrain in the same manner as other Jet Pack moves.</description>
+        </rule>
+      </rules>
       <infoLinks>
-        <infoLink id="d132-c265-1811-44c3" name="Daemon Sub-type (P3P Units)" hidden="false" targetId="df15-2b9e-8437-3295" type="rule"/>
-        <infoLink id="1c25-8c44-6c9f-8d44" name="Fear (X) (P3P)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule"/>
+        <infoLink id="e757-190e-9de5-961a" name="Deep Strike (P3P)" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
+        <infoLink id="59ee-4836-c868-3517" name="Bulky (X) (P3P)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2 or 3)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="6399-5c65-7833-1025" name="Line Sub-type:" hidden="false">
+      <rules>
+        <rule id="bc1e-9c95-f971-cd7b" name="Line Sub-type" publicationId="e77a-823a-da94-16b9" page="196" hidden="false">
+          <description>• A unit that includes at least one model with the Line sub-type counts as both a Scoring and Denial unit.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry id="6f99-c178-6f9d-fb63" name="Artillery Sub-type:" hidden="false">
+      <rules>
+        <rule id="a9ea-e2db-2aa3-8a5b" name="Artillery Sub-type" publicationId="e77a-823a-da94-16b9" page="197" hidden="false">
+          <description>If a unit that includes any models with the Artillery sub-type has no models without the Artillery sub-type, then all models in the unit are removed from play as casualties immediately.
+A Unit that includes one or more models with the Artillery sub-type may not Run, declare or otherwise make Charge moves, or make Reactions.
+A nuit that includes one or more models with the Artillery sub-type may never hold or deny Objectives.
+A unit that includes one or more models with the Artillery sub-type may not make Sqeeping Advances and, if targeted by a Sweeping Advance, automatically fails any Sweeping Advance rolls made without rolling any dice and is destroyed.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry id="bff2-ae16-74a8-8712" name="Light Sub-type:" hidden="false">
+      <rules>
+        <rule id="3ec9-276f-e19f-e639" name="Light Sub-type" publicationId="e77a-823a-da94-16b9" page="197" hidden="false">
+          <description>• A unit that includes only models with the Light sub-type gains a +1 modifier to its Initiative when determining how far that unit may Run (this bonus stacks with other bonuses to Run distance, such as the Fleet (X) special rule) and when moving as part of a Reaction.
+• A unit that includes only models with the Light sub-type may make Shooting Attacks after having Run, but makes all such attacks as Snap Shots. Models or weapons that cannot attack as Snap Shots may not attack.
+• Models with the Light sub-type may never claim a Cover Save in the same turn that it makes a Run move.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry id="3a7a-8bb7-b0d3-e2e7" name="Hover Sub-type" hidden="false">
+      <rules>
+        <rule id="cd10-fd66-1eb2-37bb" name="Hover Sub-type" publicationId="e77a-823a-da94-16b9" page="219" hidden="false">
+          <description>A Flyer with the Hover sub-type must declare whether it is going to Zoom or Hover before it moves, and before any Embarked models Disembark, each Movement phase. This means that if the Flyer arrives from Reserves, you must declare which type of Movement it is using before placing it on the board. If a Flyer is in a Squadron, all Vehicles in the Squadron must choose the same type of Movement A Flyer in Hover mode cannot switch to Zoom mode if it is Immobilised.
+If a Flyer is Hovering, it is treated exactly as a Skimmer (see page 214).</description>
+        </rule>
+      </rules>
     </categoryEntry>
   </categoryEntries>
   <forceEntries>
@@ -2375,6 +2509,52 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="5ffe-2820-9b97-99db" name="Gravis Chainfist" publicationId="a716-c1c4-7b26-8424" page="136" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="a551-7596-044d-e37c" name="Gravis Chainfist" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Murderous Strike (5+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b170-6874-069f-302b" name="Armourbane (X) (P3P)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Armourbane (Melee)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="1874-1595-ccca-d907" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Murderous Strike (5+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3adf-7150-9ee6-b2de" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="41da-f30b-814a-a716" name="Twin-linked Lascannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Sunder, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="c161-b5fb-a2b4-0956" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+        <infoLink id="3b30-2367-7733-ebcb" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="0ac9-fab7-aef3-de1d" name="Rending (X)" publicationId="e77a-823a-da94-16b9" page="246" hidden="false">
@@ -2388,13 +2568,6 @@ For example, a model with the Rending (5+) special rule that rolls To Wound agai
     </rule>
     <rule id="ed9b-1320-335f-aa10" name="Spite of the Legion" publicationId="a716-c1c4-7b26-8424" page="124" hidden="false">
       <description>If a Charge is declared for a unit that includes at least one model with this special rule, targetting an enemy unit that is Pinned, Falling Back, or includes no models with the Character Sub-type or the Chosen Warriors special rule, then all models in the Charging unit gain a bonus of +1 Attacks for the duration of the Assault phase in which the Charge is declared.</description>
-    </rule>
-    <rule id="e02b-5fd3-aa3b-4fc4" name="Skirmish Sub-type" publicationId="817a-6288-e016-7469" page="95" hidden="false">
-      <description>A unit that includes only models with the Skirmish Sub-type has a unit coherency range of 3&quot; rather than 2&quot;
-A unit that includes only models with the Skirmish Sub-type increases all Cover Saves granted by tarrain by one (i.e, from 6+ to 5+). This only increase existing Cover Saves and does not grant one when in terrain that does not normally grant Cover Saves. This rule cannot increase a Cover Save to better than 2+.</description>
-    </rule>
-    <rule id="6c51-7362-45fb-d084" name="Bombard Sub-type" publicationId="817a-6288-e016-7469" page="95" hidden="false">
-      <description>When a model with the Vehicle Unit Type and Bombard Sub-type moves at Combat Speed it may fire any number of Ordnance weapons and may also fire any non-Ordnance weapons normally, ignoring the restrictions of Combat Speed. However, when moving at Cruising Speed it may only fire a single Defensive weapon</description>
     </rule>
     <rule id="3a39-4e88-05fb-48ec" name="Legion Warhawk Jump Pack" hidden="false">
       <description>At the start of the controlling player&apos;s Movement phase a model with the Legion Warhawk jump pack may set its Move Characteristic to a value of 12 for the duration of the controlling player&apos;s turn (sometimes referred to as &apos;activating&apos; the jump pack). This allows a model with a Warhawk jump pack to move up to 12&quot;, regardless of the Movement Characteristic shown on its profile and gain any other benefits of a Movement Characteristic of 12 (including the bonus to Charge distance). In addition, all models with a Warhawk jump pack that have been activated ignore terrain while Moving and Charging, but must take Dangerous Terrain test as normal when beginning or ending their Movement in Dangerous Terrain. A model with an activated Legion Warhawk jump pack treats all Difficult Terrain as Dangerous Terrain and may move over both friendly and enemy models or units without penalty - but must end its Movement at least 1&quot; away from any model from another unit.
@@ -2879,15 +3052,6 @@ Wounds from Precision Strikes are allocated against a model (or models) of the a
     <rule id="5a93-13e0-809d-782a" name="Power of the Machine Spirit (P3P)" publicationId="e77a-823a-da94-16b9" page="244" hidden="false">
       <description>A Vehicle with this special rule may attack different targets with each Ranged weapon it is permitted to fire during any Shooting Attack.</description>
     </rule>
-    <rule id="b254-c1a5-ac81-5c49" name="Cavalry Sub-type (P3P)" hidden="false">
-      <description>As with other Unit Types, the Cavalry type includes a number of sub-types which may be referenced in other Age of Darkness books. The following rules apply to all Cavalry models and any Cavalry sub-types:
-
-• Cavalry models cannot be Pinned.
-• Cavalry models are not slowed down by Difficult
-Terrain, even when Charging. However, Cavalry models treat all Difficult Terrain as Dangerous Terrain instead.
-• Cavalry models move 3D6&quot; when Falling Back, rather than 2D6&quot;.
-• No model that is not also of the Cavalry Unit Type may join a unit that includes a Cavalry model.</description>
-    </rule>
     <rule id="cd2a-0a2b-315e-d39a" name="Slow Vehicles (P3P)" hidden="false">
       <description>When rolling on the Vehicle Damage table to resolve Hits against a Slow Vehicle, roll an additional D6 and before determining the result discard the highest single dice rolled. In addition, when a Slow Vehicle moves, other than to pivot in place, it is always considered to have moved at Cruising Speed regardless of how many inches it moves.</description>
     </rule>
@@ -2896,17 +3060,6 @@ Terrain, even when Charging. However, Cavalry models treat all Difficult Terrain
     </rule>
     <rule id="d456-4493-fcc0-ce15" name="Flat-out (P3P)" hidden="false">
       <description>A Vehicle choosing to move Flat-out may move up to twice its Movement Characteristic, but at the end of its move must roll a single D6. If the result of this roll is a ‘1’ then the Vehicle suffers a Glancing Hit and all the effects of the Crew Stunned result on the Vehicle Damage table. Vehicles moving at Flat-out speed may only fire Snap Shots.</description>
-    </rule>
-    <rule id="3ec9-276f-e19f-e639" name="Light Sub-type (P3P)" hidden="false">
-      <description>The following rules apply to all models with the Light sub-type:
-• A unit that includes only models with the Light sub-type gains a +1 modifier to its Initiative when determining how far that unit may Run (this bonus stacks with other bonuses to Run distance, such as the Fleet (X) special rule) and when moving as part of a Reaction.
-• A unit that includes only models with the Light sub-type may make Shooting Attacks after having Run, but makes all such attacks as Snap Shots. Models or weapons that cannot attack as Snap Shots may not attack.
-• Models with the Light sub-type may never claim a Cover Save in the same turn that it makes a Run move.</description>
-    </rule>
-    <rule id="79ce-8870-0b12-79ab" name="Heavy Sub-type (P3P)" hidden="false">
-      <description>The following rules apply to all models with the Heavy sub-type:
-• A unit that includes only models with the Heavy subtype may re-roll failed Armour Saves against Template and Blast weapons.
-• A unit that includes any models with the Heavy subtype may not Run and when making a Movement during a Reaction based on its Initiative Characteristic, reduces the distance moved by -1.</description>
     </rule>
     <rule id="8542-ee9d-e2fa-52fe" name="Twin-linked" publicationId="e77a-823a-da94-16b9" page="249" hidden="false">
       <description>When attacking with a weapon that has this special rule, the controlling player may re-roll all failed To Hit rolls.
@@ -2935,56 +3088,9 @@ Hellstorm weapons have the word ‘Hellstorm’ instead of a range on their weap
     <rule id="4c23-e863-a569-7617" name="Two-handed" publicationId="e77a-823a-da94-16b9" page="249" hidden="false">
       <description>A model attacking with this weapon never receives +1 Attack for fighting with two Melee weapons (see page 177).</description>
     </rule>
-    <rule id="3322-e589-ba33-b1b7" name="Monstrous Sub-type (P3P)" hidden="false">
-      <description>The following rules apply to models with the Monstrous sub-type:
-• A unit that includes any models with the Monstrous sub-type cannot be Pinned.
-• A model with the Monstrous sub-type may fire all weapons they are equipped with in each Shooting Attack they make, including as part of a Reaction.
-• A model with the Monstrous sub-type may fire Heavy and Ordnance weapons and counts as Stationary even if it moved in the preceding Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn.
-• No model that is not also Monstrous may join a unit that includes a Monstrous model.</description>
-    </rule>
-    <rule id="e1d7-0fe8-59f4-af89" name="Antigrav Sub-type (P3P)" hidden="false">
-      <description>The following rules apply to all models with the Antigrav sub-type:
-• A unit that includes only models with the Antigrav sub-type may ignore the effects of any and all terrain it passes over during movement, including passing over vertical terrain and Impassable Terrain without penalty or restriction. However, such units may not begin or end their movement in Impassable Terrain, and if beginning or ending their movement in Dangerous Terrain must take Dangerous Terrain tests as normal.
+    <rule id="e1d7-0fe8-59f4-af89" name="Antigrav Sub-type" publicationId="e77a-823a-da94-16b9" page="196" hidden="false">
+      <description>• A unit that includes only models with the Antigrav sub-type may ignore the effects of any and all terrain it passes over during movement, including passing over vertical terrain and Impassable Terrain without penalty or restriction. However, such units may not begin or end their movement in Impassable Terrain, and if beginning or ending their movement in Dangerous Terrain must take Dangerous Terrain tests as normal.
 • Models with the Antigrav sub-type may never benefit from Cover Saves of any kind.</description>
-    </rule>
-    <rule id="bc1e-9c95-f971-cd7b" name="Line Sub-type (P3P)" hidden="false">
-      <description>The following rules apply to all models with the Line sub-type:
-• A unit that includes at least one model with the Line sub-type counts as both a Scoring and Denial unit.</description>
-    </rule>
-    <rule id="df15-2b9e-8437-3295" name="Daemon Sub-type (P3P)" hidden="false">
-      <description>As with other Unit Types, the Daemon type includes a number of sub-types which may be referenced in other Age of Darkness books. The following rules apply to all Daemon models and any Daemon sub-types:
-• All Daemon models have their Strength and Toughness modified by a value determined by the current Game Turn: +1 on Game Turns 1 &amp; 2, +/-0 on Game Turns 3 &amp; 4, -1 on Game Turns 5 &amp; 6, and -2 on Game Turns 7+.
-• All Daemon models have the Fear special rule.
-• Any Hits inflicted on a model of the Daemon Unit Type by a weapon with the Force special rule gain the Instant Death special rule as well.
-• All Daemon models are immune to the effects of the Fear special rule, automatically pass Pinning and Regroup tests and cannot choose to fail a Morale check due to the Our Weapons Are Useless special rule. When a Daemon unit fails a Morale check it does not Fall Back as per the standard rules, but instead suffers D3 automatic Wounds with no Saves of any kind allowed.
-• No model that is not also of the Daemon Unit Type may join a unit that includes a Daemon model.</description>
-    </rule>
-    <rule id="a895-3e13-98e4-b67c" name="Primarch Sub-type: (P3P)" hidden="false">
-      <description>The following rules apply to all Primarchs:
-• All Primarchs have the following special rules: Independent Character, Eternal Warrior, Fearless, It Will Not Die (5+), Bulky (4), and Relentless. In addition, all models with the Primarch unit type always count as Character models.
-• Primarchs are not affected by special rules that negatively modify their Characteristics (other than Wounds) and, in addition, Primarchs always resolve Snap Shots at their normal BS.
-• Any Hits inflicted by a Primarch, as part of either Shooting Attacks or in close combat, are allocated by the Primarch’s controlling player and not the controlling player of the target unit. These Hits should form a separate Wound Pool.
-• If an army includes any Primarch models, then one of those models must be chosen as the army’s Warlord.</description>
-    </rule>
-    <rule id="ab7d-c74d-a976-2540" name="Dreadnought Sub-type (P3P)" hidden="false">
-      <description>As with other Unit Types, the Dreadnought type includes a number of sub-types which may be referenced in other Age of Darkness books. The following rules apply to all Dreadnought models and any Dreadnought sub-types:.
-• Successful Wounds scored by attacks with the Poisoned or Fleshbane special rules must be re-rolled against models of the Dreadnought Unit Type.
-• All Dreadnought models have the Fearless special rule.
-• A model with the Dreadnought Unit Type may fire all weapons they are equipped with in each Shooting Attack they make, including as part of a Reaction.
-• A model of the Dreadnought type may fire Heavy and Ordnance weapons and counts as Stationary even if it moved in the preceding Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn.
-• No model that is not also of the Dreadnought Unit Type may join a unit that includes a Dreadnought model.</description>
-    </rule>
-    <rule id="d9e0-baf4-66cb-24cc" name="Automata (P3P)" hidden="false">
-      <description>As with other Unit Types, the Automata type includes a number of sub-types which may be referenced in other Age of Darkness books. The following rules apply to all Automata models and any Automata sub-types:
-• All Automata models have the Fearless special rule.
-• Successful Wounds inflicted by attacks with the Poisoned or Fleshbane special rules must be re-rolled against models of the Automata Unit Type.
-• A unit that includes one or more models with the Automata Unit Type may not make Reactions.
-• No model that is not also of the Automata Unit Type may join a unit that includes an Automata model.</description>
-    </rule>
-    <rule id="8829-d063-2393-1ad2" name="Infantry (P3P)" hidden="false">
-      <description>The wider category of Infantry units contains a number of sub-types which may be referenced in other Age of Darkness books. Infantry represent the most basic element of any army and, as such, require no additional rules.
-
-An Infantry unit may only include or be joined by models of the Infantry or Primarch Unit Type, unless a special rule states otherwise.</description>
     </rule>
     <rule id="cf3c-4951-8835-0aeb" name="Fast Vehicles (P3P)" hidden="false">
       <description>When a Fast Vehicle moves, other than to pivot in place, it is always considered to have moved at Combat Speed regardless of how many inches it moves, unless it chooses to move Flat-out.
@@ -2998,29 +3104,11 @@ Skimmers can move over friendly and enemy models, but they cannot end their move
 
 If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If this is not possible (the base might have been glued in place, for example), then leave the base in place. Note that it is not otherwise permitted to remove the flying base, as Skimmers cannot land in battle conditions.</description>
     </rule>
-    <rule id="cd10-fd66-1eb2-37bb" name="Hover Sub-type (P3P)" hidden="false">
-      <description>A Flyer with the Hover sub-type must declare whether it is going to Zoom or Hover before it moves, and before any Embarked models Disembark, each Movement phase. This means that if the Flyer arrives from Reserves, you must declare which type of Movement it is using before placing it on the board. If a Flyer is in a Squadron, all Vehicles in the Squadron must choose the same type of Movement A Flyer in Hover mode cannot switch to Zoom mode if it is Immobilised.
-
-If a Flyer is Hovering, it is treated exactly as a Skimmer (see page 214).</description>
-    </rule>
     <rule id="c772-87ea-d49c-c7ba" name="Master of the Legion" publicationId="a716-c1c4-7b26-8424" page="123" hidden="false">
       <description>The Master of the Legion special rule grants the following benefits:
 • Rites of War: If a Detachment with the Legiones Astartes Faction includes at least one model with the Master of the Legion special rule then that Detachment may select a single Rite of War. Rites of War are presented in the Appendix: Legiones Astartes Rites of War, found on page 96.
 • The Few and the Proud: An army may only include a maximum of one model with this special rule per 1,000 points. This counts across all Detachments of an army. Thus, an army that totals at least 1,000 points may include only a single model with the Master of the Legion special rule, and an army that includes at least 2,000 points may include up to two models with the Master of the Legion special rule, etc.
 • Retinue: A model with this special rule may also include a Legion Command Squad, Legion Cataphractii Command Squad or Legion Tartaros Command Squad as part of the same Force Organisation slot as the model with the Master of the Legion special rule. The full rules for doing so can be found in the Appendix: Legiones Astartes Special Rules on page 124.</description>
-    </rule>
-    <rule id="d2d8-64ff-72f1-87ef" name="Lumbering Sub-type (P3P)" hidden="false">
-      <description>Lumbering Flyers have additional rules and exceptions as follows:
-
-Each time a Lumbering Flyer suffers an Explodes result on the Vehicle Damage table, instead of suffering the effects listed, it loses D3 additional Hull Points as well as the Hull Point it loses for the Penetrating Hit.
-
-Furthermore, a Lumbering Flyer is so large and has so many crew members that the effects of Crew Shaken, Crew Stunned, Immobilised or Weapon Destroyed results are ignored. However, Lumbering Flyers are still subject to losing Hull Points from Glancing Hits and Penetrating Hits as usual, just not the extra damage effects from the Vehicle Damage table.
-
-In addition, a Lumbering Flyer is so large and strongly built that weapons which degrade the armour of smaller Vehicles will not affect it. Due to this, any attack which says that the target model is destroyed, Wrecked, Explodes or is otherwise removed from play inflicts D3 Hull Points of damage on a Lumbering Flyer instead. Any attacks or special abilities which permanently lower the Armour Values of a target Vehicle do not affect a Lumbering Flyer. Note that attacks or abilities that count the Armour Value as being lower, but do not actually change it, work normally.</description>
-    </rule>
-    <rule id="dbac-669b-298c-868e" name="Reinforced Sub-type" publicationId="817a-6288-e016-7469" page="95" hidden="false">
-      <description>A model with the Reinforced Sub-type ignores the effects of any Crew Shaken result on the Vehicle Damage table
-A model with the Reinforced Sub=type does not have to make Snap Shots due to the effects of the Crew Stunned result on the Vehicle Damaage table (but still cannot move or pivot until the end of its next turn).</description>
     </rule>
     <rule id="edb9-295b-5d36-8fd7" name="Apothecarion Detachment (MOVE ME)" publicationId="a716-c1c4-7b26-8424" page="116" hidden="false">
       <description>An Apothecarion Detachment is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed to the battlefield, all models in an Apothecarion Detachment must be assigned to another unit from the same Detachment of the army they were selected as part of. Legion Apothecaries that have not selected a Legion Spatha combat bike or Legion Scimitar jetbike may only be assigned to units composed entirely of models with the Infantry Unit Type and the same Legiones Astartes (X) special rule as the Legion Apothecary, and may not join units that have Terminator armour of any kind. Legion Apothecaries that have selected a Legion Spatha combat bike may only be assigned to units composed entirely of models with Legion Spatha combat bikes and the same Legiones Astartes (X) special rule as the Legion Apothecary, and any Legion Apothecaries that have selected a Legion Scimitar jetbike may only be assigned to units composed entirely of models with Legion Scimitar jetbikes and the same Legiones Astartes (X) special rule as the Legion Apothecary. No Apothecary may be assigned to any unit that includes one or more models with the Independent Character special rule or Unique Sub-type (but such models may join a unit that includes an Apothecary as normal during either deployment or any following turn). No more than one Apothecary may be assigned to any given unit.
@@ -3146,12 +3234,6 @@ For example, a model attacking as part of an Assault with a weapon that has the 
     </rule>
     <rule id="7fc9-7bcd-b44c-6719" name="Orbital Assault Vehicle" publicationId="a716-c1c4-7b26-8424" page="123" hidden="false">
       <description>A model with this special rule must be deployed onto the battlefield as part of a Deep Strike Assault, or other deployment that requires the Deep Strike special rule. It may never be deployed as normal, regardless of any other rule or mission, and if forced to do so it is immediately reduced to 0 Hull Points and replaced with a Wreck (any models Embarked within must make an Emergency Disembarkation). Furthermore, a model with this special rule may never move – and if forced to do so is immediately reduced to 0 Hull Points and replaced with a Wreck (any models Embarked within must make an Emergency Disembarkation).</description>
-    </rule>
-    <rule id="e441-d934-fee5-990b" name="Corrupted Sub-type" hidden="false">
-      <description>• Models with the Corrupted Unit Sub-type gain the Fear (1) special rule.
-• Any Hits inflicted on a model with the Corrupted Unit sub-type by a weapon with the Force or Psychic Focus special rules gain the Instant Death special rule.
-• Any unit composed entirely of models with the Corrupted Unit Sub-type is immunte to the effects of the Fear (X) special rule. When a unit composed entirely of models with the Corrupted Unit Sub-type fails a Morale check it does not Fall Back as per the standard rules, but instead suffers D3 automatic wounds with no saves or Damage Mitigation rolls of any kind allowed.
-• No model that does not also have the Corrupted Unit Sub-type or the Daemon Unit Type maj join a unit that includes one or more models with the Corrupted Unit Sub-type</description>
     </rule>
     <rule id="33d4-d46d-7f47-3ad2" name="Subterranean Assault" publicationId="817a-6288-e016-7469" page="101" hidden="false">
       <description>Before the start of the first turn, when placing units into Reserve, a player must assign all units with the Subterranean Assault special rule and any Infantry units Embarked upon them to perform a Subterranean Assault. All models in a unit assigned to a Subterranean Assault must have the Subterranean Assault special rule, or be Embarked on a model with the Transport Subtype that has the Subterranean Assault special rule itself.
