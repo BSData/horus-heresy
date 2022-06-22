@@ -6784,17 +6784,11 @@ The Harrowing – At the start of the battle, before any models are deployed by 
       </costs>
     </selectionEntry>
     <selectionEntry id="ecf4-e882-7893-5a67" name="Achea Force Claw" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+      <comment>Only on the Castellax-Achea Automata</comment>
       <infoLinks>
-        <infoLink id="62f7-47af-a7dc-d4e2" name="Achea Force Claw (P3P ZW)" hidden="false" targetId="7794-a4f2-1f2a-8a5f" type="profile"/>
-        <infoLink id="c50c-5386-2783-458d" name="Rending (X) (P3P)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule"/>
-        <infoLink id="f84f-825b-77a1-4924" name="Force (P3P)" hidden="false" targetId="f39e-4c3b-38e0-0050" type="rule"/>
+        <infoLink id="62f7-47af-a7dc-d4e2" name="Achea Force Claw" hidden="false" targetId="7794-a4f2-1f2a-8a5f" type="profile"/>
+        <infoLink id="c50c-5386-2783-458d" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule"/>
+        <infoLink id="f84f-825b-77a1-4924" name="Achean Force" hidden="false" targetId="c56f-80ff-5d8e-1af4" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -17911,7 +17905,9 @@ Raptora - When a unit that includes a Psyker with this power is selected to make
     </rule>
     <rule id="c56f-80ff-5d8e-1af4" name="Achean Force" publicationId="09c5-eeae-f398-b653" page="259" hidden="false">
       <comment>validated nsh 2022/06/20</comment>
-      <description>The controlling player of any unit that includes one or more models with the Psyker Unit Sub-type and a weapon or ability with this special rule, may choose to activate this special rule before making any attacks with that weapon or resolving the ability. To activate this special rule, the controlling player must make a single Psychic check using the Leadership Characteristic of any model in the unit that does not have the Independent Character special rule. If the Check is successful, then the Strength value of all attacks made with weapons or abilites with this special rule is increased by +2 (In addition to any Modifiers the attack or weapon may already posses), this benefit is applied only in the Phase in which these attack are made and ends immediately after that phase is resolved. If the check is failed then no benefit is gained, but the models in that unit may attack as normal.</description>
+      <description>The controlling player of any unit that includes one or more models with the Psyker Unit Sub-type and a weapon or ability with this special rule, may choose to activate this special rule before making any attacks with that weapon or resolving the ability. To activate this special rule, the controlling player must make a single Psychic check using the Leadership Characteristic of any model in the unit that does not have the Independent Character special rule. If the Check is successful, then the Strength value of all attacks made with weapons or abilites with this special rule is increased by +2 (In addition to any Modifiers the attack or weapon may already posses), this benefit is applied only in the Phase in which these attack are made and ends immediately after that phase is resolved. If the check is failed then no benefit is gained, but the models in that unit may attack as normal.
+
+All &apos;Achean Force&apos; weapons are counted as &apos;Force&quot; weapons for those rules that affect such weapons</description>
     </rule>
     <rule id="5072-2b33-d062-210f" name="Bloody Murder" hidden="false">
       <description>When a unit composed entirely of models with the special rule declares a Charge targeting a unit that is Pinned or Falling Back, the Charge roll gains an additional +1 modifier, and if the Charge is succesful then all models in the Charging unit gain +1 Attack for the duration of the turn in which that Charge is made.</description>
@@ -19465,13 +19461,13 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 6, Poison (4+), One Use</characteristic>
       </characteristics>
     </profile>
-    <profile id="7794-a4f2-1f2a-8a5f" name="Achea Force Claw (P3P ZW)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-      <comment>This is not in the Hereticus Book, where did it come from?</comment>
+    <profile id="7794-a4f2-1f2a-8a5f" name="Achea Force Claw" publicationId="09c5-eeae-f398-b653" page="267" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+      <comment></comment>
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
         <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (5+), Force</characteristic>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (5+), Achean Force</characteristic>
       </characteristics>
     </profile>
     <profile id="fe3d-5624-1c0d-1908" name="Excoriator Chainaxe (P3P ZW)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
