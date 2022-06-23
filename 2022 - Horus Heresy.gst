@@ -4093,7 +4093,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Bomb 1, Apocalyptic Barrage (6), One Shot</characteristic>
       </characteristics>
     </profile>
-    <profile id="473d-9f4e-4d07-6cda" name="Plasma Pistol (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="473d-9f4e-4d07-6cda" name="Plasma Pistol" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -4101,7 +4101,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Breaching (4+), Gets Hot</characteristic>
       </characteristics>
     </profile>
-    <profile id="dc18-d1e8-7d74-9ddb" name="Plasma Gun (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="dc18-d1e8-7d74-9ddb" name="Plasma Gun" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -4109,7 +4109,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Breaching (4+), Gets Hot</characteristic>
       </characteristics>
     </profile>
-    <profile id="9014-82f9-7370-81b7" name="Plasma Cannon (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="9014-82f9-7370-81b7" name="Plasma Cannon" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -4117,7 +4117,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Breaching (4+), Gets Hot</characteristic>
       </characteristics>
     </profile>
-    <profile id="006d-bd7d-469c-bdc0" name="Gravis Plasma Cannon (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="006d-bd7d-469c-bdc0" name="Gravis Plasma Cannon" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -4125,7 +4125,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Breaching (4+), Gets Hot</characteristic>
       </characteristics>
     </profile>
-    <profile id="4c24-5ca5-ac76-b630" name="Plasma Blaster (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="4c24-5ca5-ac76-b630" name="Plasma Blaster" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -4133,7 +4133,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Breaching (4+), Gets Hot</characteristic>
       </characteristics>
     </profile>
-    <profile id="f983-1680-aa95-214f" name="Executioner Plasma Destroyer (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="f983-1680-aa95-214f" name="Executioner Plasma Destroyer" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">60&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -4141,7 +4141,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Rending (4+)</characteristic>
       </characteristics>
     </profile>
-    <profile id="61a6-4517-dcf1-d500" name="Hellfire Plasma Cannonade - (Sustained Fire) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="61a6-4517-dcf1-d500" name="Hellfire Plasma Cannonade - (Sustained Fire)" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -4149,15 +4149,15 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 6, Breaching (4+)</characteristic>
       </characteristics>
     </profile>
-    <profile id="7406-3f1f-79a3-7106" name="Hellfire Plasma Cannonade - (Maximal Fire) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="7406-3f1f-79a3-7106" name="Hellfire Plasma Cannonade - (Maximal Fire)" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
         <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Rending (4+), Gets Hot, Large Blast (5&quot;)</characteristic>
       </characteristics>
     </profile>
-    <profile id="497c-f450-0280-4812" name="Omega Plasma Array - (Sustained Fire) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="497c-f450-0280-4812" name="Omega Plasma Array - (Sustained Fire)" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -4165,7 +4165,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 8, Breaching (4+), Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="43c1-54bb-59a5-372c" name="Omega Plasma Array - (Maximal Fire) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="43c1-54bb-59a5-372c" name="Omega Plasma Array - (Maximal Fire)" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
@@ -4173,7 +4173,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Rending (4+), Gets Hot, Plasma Burn, Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="6150-1ce8-ef78-f686" name="Volkite Serpenta (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="6150-1ce8-ef78-f686" name="Volkite Serpenta" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">10&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -4181,7 +4181,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 2, Deflagrate</characteristic>
       </characteristics>
     </profile>
-    <profile id="04db-f611-e09b-aec6" name="Volkite Charger (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="04db-f611-e09b-aec6" name="Volkite Charger" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">15&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -4189,7 +4189,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Deflagrate</characteristic>
       </characteristics>
     </profile>
-    <profile id="00a0-68df-defd-2a3a" name="Volkite Caliver (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="00a0-68df-defd-2a3a" name="Volkite Caliver" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">30&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
@@ -4197,7 +4197,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Deflagrate</characteristic>
       </characteristics>
     </profile>
-    <profile id="1025-15b9-9566-10b7" name="Volkite Culverin (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="1025-15b9-9566-10b7" name="Volkite Culverin" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">45&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
@@ -4205,7 +4205,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 5, Deflagrate</characteristic>
       </characteristics>
     </profile>
-    <profile id="a314-9e78-2607-0f65" name="Volkite Dual-Culverin (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="a314-9e78-2607-0f65" name="Volkite Dual-Culverin" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">45&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
@@ -4213,7 +4213,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 6, Deflagrate, Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="8a13-fe29-65b6-4132" name="Volkite Falconet (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="8a13-fe29-65b6-4132" name="Volkite Falconet" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">45&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -4221,7 +4221,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 8, Deflagrate, Twin-linked, Pinning</characteristic>
       </characteristics>
     </profile>
-    <profile id="96e9-fade-5c5d-5a31" name="Volkite Saker (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="96e9-fade-5c5d-5a31" name="Volkite Saker" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">25&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
@@ -4229,7 +4229,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 6, Deflagrate</characteristic>
       </characteristics>
     </profile>
-    <profile id="f429-67a3-5a34-0d16" name="Volkite Macro-Saker (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="f429-67a3-5a34-0d16" name="Volkite Macro-Saker" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">45&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
@@ -4237,7 +4237,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 8, Deflagrate</characteristic>
       </characteristics>
     </profile>
-    <profile id="024e-ffa5-f6b5-7f54" name="Volkite Carronade (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="024e-ffa5-f6b5-7f54" name="Volkite Carronade" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">45&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -4245,7 +4245,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Heavy Beam, Deflagrate</characteristic>
       </characteristics>
     </profile>
-    <profile id="10f8-63bc-9467-dbca" name="Volkite Cardanelle (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="10f8-63bc-9467-dbca" name="Volkite Cardanelle" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">45&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -4253,7 +4253,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 12, Deflagrate, Pinning</characteristic>
       </characteristics>
     </profile>
-    <profile id="beec-c76b-718e-b61d" name="Phosphex Bomb (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="beec-c76b-718e-b61d" name="Phosphex Bomb" publicationId="a716-c1c4-7b26-8424" page="135" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">6&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -4261,7 +4261,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, One Use, Blast (3&quot;), Poisoned (3+), Crawling Fire, Lingering Death</characteristic>
       </characteristics>
     </profile>
-    <profile id="1af5-ed5b-ebd0-d7b6" name="Phosphex Discharger (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="1af5-ed5b-ebd0-d7b6" name="Phosphex Discharger" publicationId="a716-c1c4-7b26-8424" page="135" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -4269,7 +4269,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Barrage, Blast (3&quot;), Poisoned (3+), Crawling Fire, Lingering Death</characteristic>
       </characteristics>
     </profile>
-    <profile id="46c0-1f69-d246-1471" name="Phosphex Canister Shot (Rapier) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="46c0-1f69-d246-1471" name="Phosphex Canister Shot (Rapier)" publicationId="a716-c1c4-7b26-8424" page="135" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">12-24&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -4277,7 +4277,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Barrage, Blast (3&quot;), Poisoned (3+), Crawling Fire, Lingering Death</characteristic>
       </characteristics>
     </profile>
-    <profile id="ec3c-78ff-bbfa-66d7" name="Rad Missile (Missile Launcher) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="ec3c-78ff-bbfa-66d7" name="Rad Missile (Missile Launcher)" publicationId="a716-c1c4-7b26-8424" page="135" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -4285,7 +4285,7 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Fleshbane, Rad-phage</characteristic>
       </characteristics>
     </profile>
-    <profile id="49ab-6f93-8196-2742" name="Lascutter (Ranged) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="49ab-6f93-8196-2742" name="Lascutter (Ranged)" publicationId="a716-c1c4-7b26-8424" page="135" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">8&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
@@ -4578,6 +4578,14 @@ Once all units from the Drop Pod Assault have been deployed and any Interceptor 
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
         <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Barrage, Large Blast (5&quot;), Rocket Barrage</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="76f4-4bd9-42be-2363" name="Phosphex Shell (Arquitor Morbus Bombard)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Blast (3&quot;), Poisoned (3+), Crawling Fire, Lingering Death</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
