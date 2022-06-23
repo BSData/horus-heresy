@@ -1794,15 +1794,6 @@ Conversely, if an Independent Character joins a unit after that unit has been th
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="16b9-f253-209d-7fba" name="Volkite Cavitor" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="b621-9480-1182-dc34" name="Volkite Cavitor (P3P ZW)" hidden="false" targetId="fb68-1c18-3eab-e2cc" type="profile"/>
-        <infoLink id="7dce-1fb1-b4b3-2edc" name="Deflagrate (P3P)" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="99df-2421-acf7-a5ad" name="Krak Grenades" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="102e-3487-6e68-51e2" name="Krak Grenades" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
@@ -2408,10 +2399,14 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
     </selectionEntry>
     <selectionEntry id="838c-4002-713d-d7c6" name="Thunder Hammer" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="0b80-6033-f65d-c225" name="Thunder Hammer (P3P LA)" hidden="false" targetId="e373-c0c7-27d7-8794" type="profile"/>
-        <infoLink id="c9d0-7791-7b0e-2cfe" name="Unwieldy (P3P) (P3P)" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
-        <infoLink id="e440-ab34-01a2-6461" name="Sunder (P3P)" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
-        <infoLink id="a3db-15bc-20fc-8a2a" name="Specialist Weapon (P3P)" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
+        <infoLink id="0b80-6033-f65d-c225" name="Thunder Hammer" hidden="false" targetId="e373-c0c7-27d7-8794" type="profile"/>
+        <infoLink id="c9d0-7791-7b0e-2cfe" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+        <infoLink id="a3db-15bc-20fc-8a2a" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
+        <infoLink id="ec92-fff7-0b2c-271d" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Brutal (2)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -3535,7 +3530,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 7</characteristic>
       </characteristics>
     </profile>
-    <profile id="3c75-7e53-6210-7d3f" name="Astartes Shotgun" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="3c75-7e53-6210-7d3f" name="Astartes Shotgun" publicationId="a716-c1c4-7b26-8424" page="128/" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -3591,7 +3586,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Rending (6+), Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="ec11-5394-eb90-79e6" name="Punisher Rotary Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="ec11-5394-eb90-79e6" name="Punisher Rotary Cannon" publicationId="a716-c1c4-7b26-8424" page="128" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
@@ -3655,7 +3650,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Rending (3+), Master-crafted</characteristic>
       </characteristics>
     </profile>
-    <profile id="b581-7729-f3d6-d2fc" name="Paragon Blade (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="b581-7729-f3d6-d2fc" name="Paragon Blade" publicationId="a716-c1c4-7b26-8424" page="138" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
@@ -3663,7 +3658,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Murderous Strike (5+), Specialist Weapon</characteristic>
       </characteristics>
     </profile>
-    <profile id="71bf-775a-040f-6765" name="Servo-Arm (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="71bf-775a-040f-6765" name="Servo-Arm" publicationId="a716-c1c4-7b26-8424" page="138" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -3671,7 +3666,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy</characteristic>
       </characteristics>
     </profile>
-    <profile id="c167-2a55-be49-f4ff" name="Machinator Array (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="c167-2a55-be49-f4ff" name="Machinator Array" publicationId="a716-c1c4-7b26-8424" page="138" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
@@ -3679,7 +3674,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Shred, Armourbane (Melee)</characteristic>
       </characteristics>
     </profile>
-    <profile id="5103-7522-7419-fdc4" name="Power Fist (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="5103-7522-7419-fdc4" name="Power Fist" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
@@ -3695,15 +3690,15 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Murderous Strike (6+)</characteristic>
       </characteristics>
     </profile>
-    <profile id="e373-c0c7-27d7-8794" name="Thunder Hammer (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="e373-c0c7-27d7-8794" name="Thunder Hammer" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
         <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Sunder, Specialist Weapon</characteristic>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Brutal (2), Specialist Weapon</characteristic>
       </characteristics>
     </profile>
-    <profile id="00a9-04d4-17d3-3442" name="Lightning Claw (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="00a9-04d4-17d3-3442" name="Lightning Claw" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
@@ -3711,15 +3706,15 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred, Rending (6+), Specialist Weapon</characteristic>
       </characteristics>
     </profile>
-    <profile id="e783-1cdd-c9db-5cdf" name="Power Sword (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="e783-1cdd-c9db-5cdf" name="Power Sword" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">user</characteristic>
+        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
         <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (6+)</characteristic>
       </characteristics>
     </profile>
-    <profile id="aa9e-9dd0-03d6-0acc" name="Power Axe (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="aa9e-9dd0-03d6-0acc" name="Power Axe" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
@@ -3727,7 +3722,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy</characteristic>
       </characteristics>
     </profile>
-    <profile id="dd83-74ff-9703-aceb" name="Power Maul (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="dd83-74ff-9703-aceb" name="Power Maul" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
@@ -3735,7 +3730,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee</characteristic>
       </characteristics>
     </profile>
-    <profile id="b450-f60a-c85e-c9cc" name="Power Lance (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="b450-f60a-c85e-c9cc" name="Power Lance" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
@@ -3743,7 +3738,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Reach (1)</characteristic>
       </characteristics>
     </profile>
-    <profile id="4842-51db-06f9-fab0" name="Lascutter (Melee) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="4842-51db-06f9-fab0" name="Lascutter (Melee)" publicationId="a716-c1c4-7b26-8424" page="138" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -3751,7 +3746,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Cumbersome</characteristic>
       </characteristics>
     </profile>
-    <profile id="ba08-9a32-1e47-6448" name="Meltabombs (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="ba08-9a32-1e47-6448" name="Meltabombs" publicationId="a716-c1c4-7b26-8424" page="138" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -4487,7 +4482,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Ranged)</characteristic>
       </characteristics>
     </profile>
-    <profile id="421b-2cbd-57bf-9c37" name="Banestrike Bolter (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="421b-2cbd-57bf-9c37" name="Banestrike Bolter" publicationId="09c5-eeae-f398-b653" page="284" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -4496,7 +4491,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
 </characteristic>
       </characteristics>
     </profile>
-    <profile id="2c34-eb08-35b3-9ff3" name="Banestrike Combi-Bolter (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="2c34-eb08-35b3-9ff3" name="Banestrike Combi-Bolter" publicationId="09c5-eeae-f398-b653" page="284" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -4504,24 +4499,15 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Twin-linked, Breaching (6+) </characteristic>
       </characteristics>
     </profile>
-    <profile id="aa7c-51d8-33d2-644c" name="Power Dagger (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="aa7c-51d8-33d2-644c" name="Power Dagger" publicationId="09c5-eeae-f398-b653" page="334" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
         <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Sudden Strike (1), Breaching (5+), Specialist Weapon</characteristic>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Sudden Strike (1), Breaching (5+)</characteristic>
       </characteristics>
     </profile>
-    <profile id="fb68-1c18-3eab-e2cc" name="Volkite Cavitor (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="95ba-cda7-b831-6066">10&quot;
-</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Deflagrate</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="8e13-5653-0a95-4e75" name="Force Sword (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="8e13-5653-0a95-4e75" name="Force Sword" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
@@ -4529,7 +4515,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (6+), Force</characteristic>
       </characteristics>
     </profile>
-    <profile id="792a-9c33-e5bb-76b2" name="Force Axe (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="792a-9c33-e5bb-76b2" name="Force Axe" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
@@ -4537,7 +4523,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Force</characteristic>
       </characteristics>
     </profile>
-    <profile id="69f5-5db3-5346-48a8" name="Force Maul (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="69f5-5db3-5346-48a8" name="Force Maul" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
@@ -4545,7 +4531,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Force</characteristic>
       </characteristics>
     </profile>
-    <profile id="7d00-2ff3-911f-11b9" name="Force Staff (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="7d00-2ff3-911f-11b9" name="Force Staff" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">.</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
@@ -4553,7 +4539,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Reach (1), Force</characteristic>
       </characteristics>
     </profile>
-    <profile id="475e-7426-55d1-ecc9" name="Charnabal Sabre (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="475e-7426-55d1-ecc9" name="Charnabal Sabre" page="136" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
@@ -4561,7 +4547,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Breaching (5+), Duellist&apos;s Edge (1)</characteristic>
       </characteristics>
     </profile>
-    <profile id="2974-5223-0e78-e6e6" name="Charnabal Tabar (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="2974-5223-0e78-e6e6" name="Charnabal Tabar" page="136" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
@@ -4569,7 +4555,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Breaching (6+), Duellist&apos;s Edge (1)</characteristic>
       </characteristics>
     </profile>
-    <profile id="1c53-f4f0-6637-df31" name="Charnabal Glaive (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="1c53-f4f0-6637-df31" name="Charnabal Glaive" page="136" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
@@ -4585,7 +4571,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Unwieldy</characteristic>
       </characteristics>
     </profile>
-    <profile id="a940-e31d-1dce-50a1" name="Chain Bayonet (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="a940-e31d-1dce-50a1" name="Chain Bayonet" publicationId="a716-c1c4-7b26-8424" page="136" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
@@ -4593,7 +4579,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Shred</characteristic>
       </characteristics>
     </profile>
-    <profile id="326b-a403-fc39-a57a" name="Bayonet (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="326b-a403-fc39-a57a" name="Bayonet" publicationId="a716-c1c4-7b26-8424" page="138" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
@@ -4601,7 +4587,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed</characteristic>
       </characteristics>
     </profile>
-    <profile id="fdd9-55a7-66ca-7a7d" name="Corposant Stave (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="fdd9-55a7-66ca-7a7d" name="Corposant Stave" publicationId="a716-c1c4-7b26-8424" page="138" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
@@ -4609,7 +4595,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Haywire</characteristic>
       </characteristics>
     </profile>
-    <profile id="362e-4589-11b9-6517" name="Heavy Chainsword (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="362e-4589-11b9-6517" name="Heavy Chainsword" publicationId="a716-c1c4-7b26-8424" page="136" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
@@ -4625,7 +4611,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Rending (6+)</characteristic>
       </characteristics>
     </profile>
-    <profile id="ea8a-ff8f-7d82-9e96" name="Twin-linked Bolter" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="ea8a-ff8f-7d82-9e96" name="Twin-linked Bolter" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -4633,7 +4619,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid-fire, Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="3f03-eab2-4701-b3d4" name="Twin-linked Flamer" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="3f03-eab2-4701-b3d4" name="Twin-linked Flamer" publicationId="a716-c1c4-7b26-8424" page="132" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -4641,7 +4627,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="9268-9301-e5ff-4c49" name="Twin-linked Heavy Bolter" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="9268-9301-e5ff-4c49" name="Twin-linked Heavy Bolter" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -4649,7 +4635,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="7f77-a047-7f45-f56a" name="Twin-linked Heavy Flamer" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="7f77-a047-7f45-f56a" name="Twin-linked Heavy Flamer" publicationId="a716-c1c4-7b26-8424" page="132" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -4657,7 +4643,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="356a-0b31-a084-4b78" name="Twin-linked Meltagun" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="356a-0b31-a084-4b78" name="Twin-linked Meltagun" publicationId="a716-c1c4-7b26-8424" page="133" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -4665,7 +4651,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Melta), Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="1fe9-deb7-7c1d-77e9" name="Twin-linked Plasma Gun" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="1fe9-deb7-7c1d-77e9" name="Twin-linked Plasma Gun" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7 </characteristic>
@@ -4774,7 +4760,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Barrage, Large Blast (5&quot;), Rocket Barrage</characteristic>
       </characteristics>
     </profile>
-    <profile id="76f4-4bd9-42be-2363" name="Phosphex Shell (Arquitor Morbus Bombard)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="76f4-4bd9-42be-2363" name="Phosphex Shell (Arquitor Morbus Bombard)" publicationId="e77a-823a-da94-16b9" page="135" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
