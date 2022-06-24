@@ -418,7 +418,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     </selectionEntry>
     <selectionEntry id="6f79-5cf4-a689-7269" name="Astartes Shotgun" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="367e-8433-5065-4875" name="Astartes Shotgun (P3P LA)" hidden="false" targetId="3c75-7e53-6210-7d3f" type="profile"/>
+        <infoLink id="367e-8433-5065-4875" name="Astartes Shotgun" hidden="false" targetId="3c75-7e53-6210-7d3f" type="profile"/>
         <infoLink id="de06-d8c2-5adc-6780" name="Concussive (X) (P3P)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule"/>
       </infoLinks>
       <costs>
@@ -456,8 +456,8 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     </selectionEntry>
     <selectionEntry id="fe77-2e74-160d-c7af" name="Kheres Assault Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="5b6c-0530-9d62-1fd7" name="Kheres Assault Cannon (P3P LA)" hidden="false" targetId="5bb0-1cb6-1702-3b8a" type="profile"/>
-        <infoLink id="eb30-e653-8327-952b" name="Rending (X) (P3P)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule"/>
+        <infoLink id="5b6c-0530-9d62-1fd7" name="Kheres Assault Cannon" hidden="false" targetId="5bb0-1cb6-1702-3b8a" type="profile"/>
+        <infoLink id="eb30-e653-8327-952b" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -466,7 +466,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     <selectionEntry id="8a23-e57d-b4a8-14a9" name="Gravis Autocannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="0e5a-1460-f2f8-c920" name="Gravis Autocannon (P3P LA)" hidden="false" targetId="2935-8d21-f209-1548" type="profile"/>
-        <infoLink id="07c6-ad31-1734-7d71" name="Rending (X) (P3P)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule"/>
+        <infoLink id="07c6-ad31-1734-7d71" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule"/>
         <infoLink id="1fb0-632d-a085-f7e0" name="Twin-linked (P3P)" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
       </infoLinks>
       <costs>
@@ -485,9 +485,9 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     </selectionEntry>
     <selectionEntry id="8120-ae63-17f8-2437" name="Accelerator Autocannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="3904-cd6d-c794-a6aa" name="Accelerator Autocannon (P3P LA)" hidden="false" targetId="944e-b9f4-4bc3-14df" type="profile"/>
-        <infoLink id="f308-b538-0acd-b821" name="Rending (X) (P3P)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule"/>
-        <infoLink id="347a-6673-dfda-cfc9" name="Exoshock (X) (P3P)" hidden="false" targetId="69ca-318a-b47a-7a3c" type="rule"/>
+        <infoLink id="3904-cd6d-c794-a6aa" name="Accelerator Autocannon" hidden="false" targetId="944e-b9f4-4bc3-14df" type="profile"/>
+        <infoLink id="f308-b538-0acd-b821" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule"/>
+        <infoLink id="347a-6673-dfda-cfc9" name="Exoshock (X)" hidden="false" targetId="69ca-318a-b47a-7a3c" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -663,7 +663,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     </selectionEntry>
     <selectionEntry id="c22a-ed4d-af68-bf00" name="Archaeotech Pistol" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="41f2-90ad-8e25-06c1" name="Archaeotech Pistol (P3P LA)" hidden="false" targetId="19a0-cc18-eedc-a1c6" type="profile"/>
+        <infoLink id="41f2-90ad-8e25-06c1" name="Archaeotech Pistol" hidden="false" targetId="19a0-cc18-eedc-a1c6" type="profile"/>
         <infoLink id="69a0-07e0-1915-ddb0" name="Rending (X) (P3P)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule"/>
         <infoLink id="d83a-b3db-6a8e-63c2" name="Master-Crafted (P3P)" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
       </infoLinks>
@@ -1035,11 +1035,12 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     <selectionEntry id="4ab1-ee7c-0ab2-8372" name="Grav-Flux Bombard" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="ac11-f296-86eb-dfa3" name="Grav-Flux Bombard (P3P LA)" hidden="false" targetId="9703-1b92-8083-0b29" type="profile"/>
-        <infoLink id="bbbb-18a8-0f9b-d084" name="Blast (P3P)" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink id="bbbb-18a8-0f9b-d084" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
         <infoLink id="0e9f-cc9d-d76a-0abf" name="Pinning (P3P)" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
         <infoLink id="45cf-4851-7209-02f5" name="Graviton Collapse (P3P LA)" hidden="false" targetId="60d8-5964-8671-7f3b" type="rule"/>
         <infoLink id="d186-5492-2c42-c67f" name="Torsion Crusher (P3P LA)" hidden="false" targetId="2cef-a40d-97b8-7d4e" type="rule"/>
         <infoLink id="1183-84e2-fdd7-3006" name="Ignores Cover (P3P)" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>
+        <infoLink id="250b-9045-2f6e-543a" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -1117,10 +1118,11 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     </selectionEntry>
     <selectionEntry id="86b2-4aad-2947-83a7" name="Neutron Blaster" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="a847-57c8-f39f-b055" name="Neutron Blaster (P3P LA)" hidden="false" targetId="6a1a-e8c7-e4e6-b8ff" type="profile"/>
-        <infoLink id="541f-ca6a-e91f-ee88" name="Concussive (X) (P3P)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule"/>
+        <infoLink id="a847-57c8-f39f-b055" name="Neutron Blaster" hidden="false" targetId="6a1a-e8c7-e4e6-b8ff" type="profile"/>
+        <infoLink id="541f-ca6a-e91f-ee88" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule"/>
         <infoLink id="77c6-7c34-7508-bc88" name="Shock Pulse (P3P)" hidden="false" targetId="9222-f6c5-dc19-905a" type="rule"/>
         <infoLink id="e0c4-2cef-2d05-bc03" name="Gets Hot (P3P)" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+        <infoLink id="b398-8a94-e310-f5c1" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -1253,7 +1255,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
       <infoLinks>
         <infoLink id="d86f-b188-d5dc-94cd" name="Magna-Melta Cannon (P3P LA)" hidden="false" targetId="5997-502c-d678-354f" type="profile"/>
         <infoLink id="60b3-34c5-753f-c759" name="Armourbane (X) (P3P)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule"/>
-        <infoLink id="5548-bc78-e68c-90e3" name="Blast (P3P)" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink id="5548-bc78-e68c-90e3" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -1271,7 +1273,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     <selectionEntry id="1317-9f4e-4820-59f7" name="Siege Melta Array" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="292b-0540-529a-9bfe" name="Siege Melta Array (P3P LA)" hidden="false" targetId="d5a3-3e5e-c909-ffd7" type="profile"/>
-        <infoLink id="ed34-f4b1-44f5-f6bc" name="Blast (P3P)" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink id="ed34-f4b1-44f5-f6bc" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
         <infoLink id="58ac-f6f4-e209-8896" name="Armourbane (X) (P3P)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule"/>
       </infoLinks>
       <costs>
@@ -1295,7 +1297,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="2326-5ef8-cdf1-9b31" name="Armourbane (X) (P3P)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule"/>
+        <infoLink id="2326-5ef8-cdf1-9b31" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -1304,8 +1306,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     <selectionEntry id="b747-d051-0f75-6d4b" name="Melta Blast-Gun" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="61ee-90e3-fc2a-0397" name="Melta Blast-Gun (P3P LA)" hidden="false" targetId="c020-900a-6d0b-ab6d" type="profile"/>
-        <infoLink id="4a74-adbb-61a5-4d8f" name="Blast (P3P)" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
-        <infoLink id="0e92-e25a-17ba-37cf" name="Armourbane (X) (P3P)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule"/>
+        <infoLink id="0e92-e25a-17ba-37cf" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -1366,8 +1367,8 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     </selectionEntry>
     <selectionEntry id="1bf8-72f8-c331-6900" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="80e7-81e5-7b0d-b556" name="Hunter-Killer Missile (P3P LA)" hidden="false" targetId="0535-fa9a-15a6-c18f" type="profile"/>
-        <infoLink id="d5b9-8de1-5d6d-9443" name="One Use/One Shot (P3P)" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
+        <infoLink id="80e7-81e5-7b0d-b556" name="Hunter-Killer Missile" hidden="false" targetId="0535-fa9a-15a6-c18f" type="profile"/>
+        <infoLink id="d5b9-8de1-5d6d-9443" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -1375,9 +1376,9 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     </selectionEntry>
     <selectionEntry id="5e24-bdca-a89c-0f40" name="Hellstrike Missile" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="f075-1062-68a4-274d" name="Hellstrike Missile (P3P LA)" hidden="false" targetId="facd-1b53-731d-a9f6" type="profile"/>
+        <infoLink id="f075-1062-68a4-274d" name="Hellstrike Missile" hidden="false" targetId="facd-1b53-731d-a9f6" type="profile"/>
         <infoLink id="c1c3-03b1-ecfd-9912" name="Sunder (P3P)" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
-        <infoLink id="65f0-03df-5f76-61f9" name="One Use/One Shot (P3P)" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
+        <infoLink id="65f0-03df-5f76-61f9" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -1463,6 +1464,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
       <infoLinks>
         <infoLink id="5bc9-dd2e-59e7-e80b" name="Macro-Bomb Cluster (P3P LA)" hidden="false" targetId="c984-6108-c398-ad1c" type="profile"/>
         <infoLink id="96ae-8ba6-b764-f147" name="One Use/One Shot (P3P)" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
+        <infoLink id="b6d2-7322-a22c-feab" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -1573,7 +1575,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6221-461b-5a33-1d4e" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="6af0-a6d1-f9fb-f31f" name="Omega Plasma Array - (Maximal Fire) (P3P LA)" hidden="false" targetId="43c1-54bb-59a5-372c" type="profile"/>
+            <infoLink id="6af0-a6d1-f9fb-f31f" name="Omega Plasma Array - (Maximal Fire)" hidden="false" targetId="43c1-54bb-59a5-372c" type="profile"/>
             <infoLink id="0b86-88ec-e2d0-8392" name="Rending (X) (P3P)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule"/>
             <infoLink id="e985-435a-56db-ee64" name="Gets Hot (P3P)" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
             <infoLink id="2609-b861-604d-bdfc" name="Plasma Burn (P3P LA)" hidden="false" targetId="efaa-c932-9788-9ade" type="rule"/>
@@ -1748,35 +1750,13 @@ Conversely, if an Independent Character joins a unit after that unit has been th
       </costs>
     </selectionEntry>
     <selectionEntry id="6331-c1b9-bf0e-d0e5" name="Lascutter" hidden="false" collective="false" import="true" type="upgrade">
-      <selectionEntries>
-        <selectionEntry id="936c-ab99-1bea-3f81" name="Lascutter (Melee)" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4274-c6d8-3ec1-f7db" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcfa-2005-f106-2c76" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="b54b-11a1-293d-c9ee" name="Lascutter (Melee) (P3P LA)" hidden="false" targetId="4842-51db-06f9-fab0" type="profile"/>
-            <infoLink id="6f24-c592-1a9e-0dbd" name="Unwieldy (P3P) (P3P)" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
-            <infoLink id="5eb8-95b1-f793-d3c7" name="Cumbersome (P3P)" hidden="false" targetId="d89a-c10e-8a7a-92c3" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="a19d-327e-87d5-330e" name="Lascutter (Ranged)" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b48b-ea78-6890-66f7" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbd1-b1dc-2cc2-aff2" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="0ab4-d3b4-0c0b-5b22" name="Lascutter (Ranged) (P3P LA)" hidden="false" targetId="49ab-6f93-8196-2742" type="profile"/>
-            <infoLink id="1509-64e6-76f1-88e6" name="Armourbane (X) (P3P)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+      <infoLinks>
+        <infoLink id="1fa8-4fba-f01d-c782" name="Lascutter (Melee)" hidden="false" targetId="4842-51db-06f9-fab0" type="profile"/>
+        <infoLink id="f5ef-dca2-d5db-da55" name="Cumbersome" hidden="false" targetId="d89a-c10e-8a7a-92c3" type="rule"/>
+        <infoLink id="9021-907a-39ae-9a79" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+        <infoLink id="4aa2-20e5-5564-02e3" name="Lascutter (Ranged)" hidden="false" targetId="49ab-6f93-8196-2742" type="profile"/>
+        <infoLink id="1278-31e8-99c8-c4f3" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
@@ -2255,8 +2235,8 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
     </selectionEntry>
     <selectionEntry id="6865-354c-0880-ee5f" name="Banestrike Bolter (P3P)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="f329-e697-b5c1-e382" name="Banestrike Bolter (P3P ZW)" hidden="false" targetId="421b-2cbd-57bf-9c37" type="profile"/>
-        <infoLink id="2cd9-a771-b903-1058" name="Breaching (X) (P3P LA)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule"/>
+        <infoLink id="f329-e697-b5c1-e382" name="Banestrike Bolter" hidden="false" targetId="421b-2cbd-57bf-9c37" type="profile"/>
+        <infoLink id="2cd9-a771-b903-1058" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -2414,8 +2394,8 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
     </selectionEntry>
     <selectionEntry id="08be-6994-6a63-6279" name="Gravis Power Fist" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="6a1e-956b-af01-53fd" name="Gravis Power Fist (P3P LA)" hidden="false" targetId="241a-1ea4-36bc-b71a" type="profile"/>
-        <infoLink id="0437-df4b-4d85-5e2b" name="Murderous Strike (X) (P3P)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule"/>
+        <infoLink id="6a1e-956b-af01-53fd" name="Gravis Power Fist" hidden="false" targetId="241a-1ea4-36bc-b71a" type="profile"/>
+        <infoLink id="0884-1374-db93-6a71" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -2570,18 +2550,8 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
       </costs>
     </selectionEntry>
     <selectionEntry id="5ffe-2820-9b97-99db" name="Gravis Chainfist" publicationId="a716-c1c4-7b26-8424" page="136" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="a551-7596-044d-e37c" name="Gravis Chainfist" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Murderous Strike (5+)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
-        <infoLink id="b170-6874-069f-302b" name="Armourbane (X) (P3P)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+        <infoLink id="b170-6874-069f-302b" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Armourbane (Melee)"/>
           </modifiers>
@@ -2591,6 +2561,7 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
             <modifier type="set" field="name" value="Murderous Strike (5+)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="08b1-0811-ea2f-b828" name="Gravis Chainfist" hidden="false" targetId="3646-3ba9-131d-abad" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -2779,6 +2750,54 @@ Four single Blast Shields</characteristic>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="8eb7-8203-5266-f539" name="Arcus Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7328-4570-93c7-032a" name="Arcus Missile Launcher - Arcus Warheads" hidden="false" targetId="e182-db2b-038e-ff14" type="profile"/>
+        <infoLink id="2470-b4fd-b8c3-c4ea" name="Arcus Missile Launcher - Neutron-flux Warheads" hidden="false" targetId="1318-70c4-3db4-df16" type="profile"/>
+        <infoLink id="7c79-d918-84c9-e4b8" name="Arcus Missile Launcher - Pyrax Warheads" hidden="false" targetId="9cc5-50ae-e725-393a" type="profile"/>
+        <infoLink id="d5df-93ce-e83a-19a5" name="Arcus Missile Launcher - Skyspear Warheads" hidden="false" targetId="ae9f-916b-dfa0-be9b" type="profile"/>
+        <infoLink id="1c13-2a3b-a985-87a3" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+        <infoLink id="2bfb-07c1-7fbe-e679" name="Neutron-flux" hidden="false" targetId="c6e2-3d5a-b8f9-005c" type="rule"/>
+        <infoLink id="df8a-8bb5-d350-e35c" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule"/>
+        <infoLink id="efcc-0285-72b0-9139" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink id="5f3c-fc24-39aa-3992" name="Ignores Cover" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>
+        <infoLink id="1247-0187-53bf-216a" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="e22c-e143-69ab-6bcd" name="Skyfire" hidden="false" targetId="f2bf-5daa-9f93-0b01" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="236f-b627-0fca-131d" name="Deathstorm Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="683c-3822-699c-2ca9" name="Deathstorm Missile Launcher" hidden="false" targetId="6924-0b95-d66c-3279" type="profile"/>
+        <infoLink id="8a76-7365-0ae2-599f" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="8832-9233-f5b1-971e" name="Limited Ammunition" hidden="false" targetId="9f09-5cb8-c3ea-c3f8" type="rule"/>
+        <infoLink id="7036-4701-b054-d44b" name="Deathstorm" hidden="false" targetId="7208-c178-683e-3e39" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="0f10-2b63-7d97-e5f4" name="Kracken Bolter" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="68dc-c56d-212a-2f0b" name="Kracken Bolter (Default)" hidden="false" targetId="89fa-8b2e-18d6-2b58" type="profile"/>
+        <infoLink id="d9da-5d90-c392-1d9c" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule"/>
+        <infoLink id="d131-66c9-9827-10e2" name="Kracken Bolter (Scorpius Rounds)" hidden="false" targetId="6bde-dff7-fb20-f911" type="profile"/>
+        <infoLink id="a0e4-2b62-55ed-3e36" name="Kracken Bolter (Tempest Rounds)" hidden="false" targetId="8b90-0051-fc53-67ba" type="profile"/>
+        <infoLink id="a2a9-a086-c657-0d6a" name="Ignores Cover" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="e2de-a469-ae54-3f31" name="Scorpius Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="920e-9abe-e4db-2278" name="Scorpius Missile Launcher" hidden="false" targetId="2c51-20e6-6930-5f51" type="profile"/>
+        <infoLink id="8eed-6343-b75e-cfa6" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
+        <infoLink id="5607-3664-c604-0e6d" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink id="2848-a553-8ba6-6c72" name="Rocket Barrage" hidden="false" targetId="88df-ea13-cc92-8193" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="4e4f-456f-8cee-10a4" name="Spicula Rocket System" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a636-70dc-3104-4a6e" name="Spicula Rocket System" hidden="false" targetId="4e04-6964-0774-0e3f" type="profile"/>
+        <infoLink id="09a4-d9af-5f82-acbd" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink id="7f37-cf10-19fd-1fe7" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule"/>
+        <infoLink id="30b8-5e9e-d525-510d" name="Limited Ammunition" hidden="false" targetId="9f09-5cb8-c3ea-c3f8" type="rule"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -3682,12 +3701,12 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Specialist Weapon</characteristic>
       </characteristics>
     </profile>
-    <profile id="241a-1ea4-36bc-b71a" name="Gravis Power Fist (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="241a-1ea4-36bc-b71a" name="Gravis Power Fist" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
         <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Murderous Strike (6+)</characteristic>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (3)</characteristic>
       </characteristics>
     </profile>
     <profile id="e373-c0c7-27d7-8794" name="Thunder Hammer" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
@@ -4563,7 +4582,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Breaching (5+), Duellist&apos;s Edge (2), Two-handed</characteristic>
       </characteristics>
     </profile>
-    <profile id="e147-61b4-fee1-d9c2" name="Chainfist" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="e147-61b4-fee1-d9c2" name="Chainfist" publicationId="a716-c1c4-7b26-8424" page="136" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">2x</characteristic>
@@ -4766,6 +4785,14 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
         <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Blast (3&quot;), Poisoned (3+), Crawling Fire, Lingering Death</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3646-3ba9-131d-abad" name="Gravis Chainfist" publicationId="a716-c1c4-7b26-8424" page="136" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="95ba-cda7-b831-6066"/>
+        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458"/>
+        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d"/>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9"/>
       </characteristics>
     </profile>
   </sharedProfiles>
