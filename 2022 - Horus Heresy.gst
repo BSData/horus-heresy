@@ -2765,6 +2765,9 @@ Four single Blast Shields</characteristic>
         <infoLink id="1247-0187-53bf-216a" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
         <infoLink id="e22c-e143-69ab-6bcd" name="Skyfire" hidden="false" targetId="f2bf-5daa-9f93-0b01" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="236f-b627-0fca-131d" name="Deathstorm Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -2773,6 +2776,9 @@ Four single Blast Shields</characteristic>
         <infoLink id="8832-9233-f5b1-971e" name="Limited Ammunition" hidden="false" targetId="9f09-5cb8-c3ea-c3f8" type="rule"/>
         <infoLink id="7036-4701-b054-d44b" name="Deathstorm" hidden="false" targetId="7208-c178-683e-3e39" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0f10-2b63-7d97-e5f4" name="Kracken Bolter" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -2782,6 +2788,9 @@ Four single Blast Shields</characteristic>
         <infoLink id="a0e4-2b62-55ed-3e36" name="Kracken Bolter (Tempest Rounds)" hidden="false" targetId="8b90-0051-fc53-67ba" type="profile"/>
         <infoLink id="a2a9-a086-c657-0d6a" name="Ignores Cover" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e2de-a469-ae54-3f31" name="Scorpius Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -2790,6 +2799,9 @@ Four single Blast Shields</characteristic>
         <infoLink id="5607-3664-c604-0e6d" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
         <infoLink id="2848-a553-8ba6-6c72" name="Rocket Barrage" hidden="false" targetId="88df-ea13-cc92-8193" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="4e4f-456f-8cee-10a4" name="Spicula Rocket System" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -2797,6 +2809,16 @@ Four single Blast Shields</characteristic>
         <infoLink id="09a4-d9af-5f82-acbd" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
         <infoLink id="7f37-cf10-19fd-1fe7" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule"/>
         <infoLink id="30b8-5e9e-d525-510d" name="Limited Ammunition" hidden="false" targetId="9f09-5cb8-c3ea-c3f8" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4e85-2388-f28e-f5e5" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7e7f-94d1-cb7e-72eb" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+        <infoLink id="bb44-f852-1140-48ea" name="Twin-linked Lascannon" hidden="false" targetId="38e8-9e52-ec1a-5eed" type="profile"/>
+        <infoLink id="6e43-3133-fcaa-5879" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -4793,6 +4815,14 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458"/>
         <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d"/>
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9"/>
+      </characteristics>
+    </profile>
+    <profile id="38e8-9e52-ec1a-5eed" name="Twin-linked Lascannon" publicationId="a716-c1c4-7b26-8424" page="132" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Sunder, twin-linked</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
