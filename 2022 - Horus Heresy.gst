@@ -1280,24 +1280,17 @@ Conversely, if an Independent Character joins a unit after that unit has been th
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c9af-b8d6-3de0-972b" name="Melta Cutters (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c9af-b8d6-3de0-972b" name="Melta Cutters" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="d012-8e1b-0390-eb63" name="Melta Cutters (P3P)" publicationId="a716-c1c4-7b26-8424" page="145" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="d012-8e1b-0390-eb63" name="Melta Cutters" publicationId="a716-c1c4-7b26-8424" page="145" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">When a model with melta cutters makes a Ram Attack targeting a model with the Vehicle Unit Type or a Building, it adds an additional modifier of +2 to the Strength of the attack, to a maximum of Strength 10.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="e600-f1a0-60b0-dacf" name="Melta Cutters (Ranged) (P3P)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">6&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Armourbane (Melta)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="2326-5ef8-cdf1-9b31" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule"/>
+        <infoLink id="c233-99a4-732f-41a6" name="Melta Cutters (Ranged)" hidden="false" targetId="1f8a-2e6e-eb0e-09ed" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -1776,31 +1769,37 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     </selectionEntry>
     <selectionEntry id="99df-2421-acf7-a5ad" name="Krak Grenades" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="102e-3487-6e68-51e2" name="Krak Grenades" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="102e-3487-6e68-51e2" name="Krak Grenades" publicationId="a716-c1c4-7b26-8424" page="143" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The controlling player may choose to have a model with krak grenades that is Engaged or otherwise in base contact during the Assault phase with a Building or Fortification, or a model with the Vehicle, Dreadnought or Automata Unit Type, inflict one automatic Str 6, AP 3 Hit on the target in Initiative Step 1 instead of attacking normally. Any model in a unit that is chosen to inflict Hits using krak grenades may not otherwise attack or make use of any other special rule or item of Wargear that inflicts Hits or Wounds on a model in the same Assault phase (but may participate in Sweeping Advances as normal).</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="9943-9a11-4ba3-8c40" name="Grenades" hidden="false" targetId="6f5f-8f7c-d18b-cd42" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cf9c-327b-3449-00d7" name="Frag Grenades (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="cf9c-327b-3449-00d7" name="Frag Grenades" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="ccc0-4896-212b-4d53" name="Frag Grenades (P3P)" publicationId="a716-c1c4-7b26-8424" page="143" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="ccc0-4896-212b-4d53" name="Frag Grenades" publicationId="a716-c1c4-7b26-8424" page="143" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with frag grenades makes attacks at its normal Initiative Step during an Assault after it has successfully Charged through Difficult Terrain or Dangerous Terrain, but still suffers any penalties to Charge rolls imposed by Difficult Terrain or Dangerous Terrain when resolving a Charge through Difficult Terrain or Dangerous Terrain.</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="3d51-f148-14e5-8539" name="Grenades" hidden="false" targetId="6f5f-8f7c-d18b-cd42" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b081-bf3c-f43d-4bd5" name="Iron Halo (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="b081-bf3c-f43d-4bd5" name="Iron Halo" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="550c-5f2c-868d-1d73" name="Iron Halo (P3P)" publicationId="a716-c1c4-7b26-8424" page="146" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="550c-5f2c-868d-1d73" name="Iron Halo" publicationId="a716-c1c4-7b26-8424" page="146" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with an iron halo gains a 4+ Invulnerable Save.
 Invulnerable Saves granted by a refractor field or iron halo do not stack with other Invulnerable Saves, but can benefit from rules (such as cyber-familiar) that specifically increase existing saves. If a model has another Invulnerable Save then the controlling player must choose which one to use.</characteristic>
@@ -1823,9 +1822,9 @@ Invulnerable Saves granted by a refractor field or iron halo do not stack with o
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2d9d-480e-7c14-1a6f" name="Power Armour (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2d9d-480e-7c14-1a6f" name="Power Armour" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="6c84-1420-7bb8-1026" name="Power Armour (P3P)" publicationId="a716-c1c4-7b26-8424" page="146" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="6c84-1420-7bb8-1026" name="Power Armour" publicationId="a716-c1c4-7b26-8424" page="146" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Power armour provides a 3+ Armour Save.</characteristic>
           </characteristics>
@@ -1862,11 +1861,11 @@ Invulnerable Saves granted by a refractor field or iron halo do not stack with o
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0c0f-f751-cc4e-4951" name="Boarding Shield (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0c0f-f751-cc4e-4951" name="Boarding Shield" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="961a-59a2-2fae-a5dd" name="Boarding Shield (P3P)" publicationId="a716-c1c4-7b26-8424" page="141" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="961a-59a2-2fae-a5dd" name="Boarding Shield" publicationId="a716-c1c4-7b26-8424" page="141" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Boarding shields confer a 5+ Invulnerable Save. But a model with a boarding shield cannot claim bonus attacks for having more than one melee weapon, or make attacks during the Assault phase using a weapon with the Two-handed special rule.
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Boarding shields confer a 5+ Invulnerable Save, but a model with a boarding shield cannot claim bonus attacks for having more than one melee weapon, or make attacks during the Assault phase using a weapon with the Two-handed special rule.
 Invulnerable saves granted by a combat shield or boarding shield do not stack with other Invulnerable Saves, but can benefit from rules (like cyber-familiar) that specifically increase existing saves. If a model has another Invulnerable Save then the controlling player must choose which one to use.</characteristic>
           </characteristics>
         </profile>
@@ -1875,9 +1874,9 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="93b3-2d66-f7a3-be42" name="Cognis-Signum (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="93b3-2d66-f7a3-be42" name="Cognis-Signum" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="b449-1ce2-c465-6568" name="Cognis-signum (P3P)" publicationId="a716-c1c4-7b26-8424" page="140" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="b449-1ce2-c465-6568" name="Cognis-signum" publicationId="a716-c1c4-7b26-8424" page="140" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a cognis-signum gains the Night Vision special rule. In addition, in lieu of the model with the cognis-signum making a Shooting Attack in the Shooting phase, all other models in the same unit gain a bonus of +1 to their BS for that Shooting phase. This benefit is not cumulative, and no unit can benefit from more than one bonus to their BS from cognis-signum.</characteristic>
           </characteristics>
@@ -1890,9 +1889,9 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="472a-8297-2c71-3a9c" name="Combat Shield (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="472a-8297-2c71-3a9c" name="Combat Shield" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="8af0-f3d4-85fb-239a" name="Combat Shield (P3P)" publicationId="a716-c1c4-7b26-8424" page="141" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="8af0-f3d4-85fb-239a" name="Combat Shield" publicationId="a716-c1c4-7b26-8424" page="141" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Combat shields confer a 6+ Invulnerable Save.
 Invulnerable saves granted by a combat shield or boarding shield do not stack with other Invulnerable Saves, but can benefit from rules (like cyber-familiar) that specifically increase existing saves. If a model has another Invulnerable Save then the controlling player must choose which one to use.</characteristic>
@@ -1903,11 +1902,11 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2fda-455f-d34d-97e0" name="Cortex Controller (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2fda-455f-d34d-97e0" name="Cortex Controller" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="ea6d-fcba-ee59-0400" name="Cortex Controller (P3P)" publicationId="a716-c1c4-7b26-8424" page="141" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="ea6d-fcba-ee59-0400" name="Cortex Controller" publicationId="a716-c1c4-7b26-8424" page="141" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Any unit that includes one of more modesl with the Cybernetica Sub-type may ignore the Programmed Behaviour provision described as part of that Sub-type.while within 12&quot; of a model with a cortex controller </characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Any unit that includes one of more modesl with the Cybernetica Sub-type may ignore the Programmed Behaviour provision described as part of that Sub-type.while within 12&quot; of a model with a cortex controller.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1915,11 +1914,11 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6c85-4601-cf58-7b35" name="Cyber-Familiar (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6c85-4601-cf58-7b35" name="Cyber-Familiar" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="3d58-e1f4-f86d-75cc" name="Cyber-Familiar (P3P)" publicationId="a716-c1c4-7b26-8424" page="141" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="3d58-e1f4-f86d-75cc" name="Cyber-Familiar" publicationId="a716-c1c4-7b26-8424" page="141" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a cyber-familiar adds +1 to its Invulnerable Save (to a maximum of 3+) or an Invulnerable Save of 6+ if they do not already possess one. In addition, they allow them to re-roll failed Characteristic tests other than Leadership tests, Psychic checks and failed Dangerous Terrain tests.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a cyber-familiar adds +1 to its Invulnerable Save (to a maximum of 3+) or an Invulnerable Save of 6+ if they do not already possess one. In addition, they allow them to re-roll failed Characteristic tests other than Leadership tests, Psychic checks or failed Dangerous Terrain tests.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1927,9 +1926,9 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="42e1-f6cf-1f2b-a492" name="Dozer Blade (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="42e1-f6cf-1f2b-a492" name="Dozer Blade" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="c1d4-9259-b8fa-7be7" name="Dozer Blade (P3P LA)" publicationId="a716-c1c4-7b26-8424" page="141" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="c1d4-9259-b8fa-7be7" name="Dozer Blade" publicationId="a716-c1c4-7b26-8424" page="141" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a dozer blade may re-roll all failed Dangerous Terrain tests made for it.</characteristic>
           </characteristics>
@@ -1939,9 +1938,9 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dd7a-d404-a96c-1251" name="Narthecium (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="dd7a-d404-a96c-1251" name="Narthecium" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="3758-1b62-61a7-dcb8" name="Narthecium (P3P)" publicationId="a716-c1c4-7b26-8424" page="145" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="3758-1b62-61a7-dcb8" name="Narthecium" publicationId="a716-c1c4-7b26-8424" page="145" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">All models with the Infantry or Cavalry Unit Types in a unit that includes at least one model with a narthecium gains the Feel No Pain (5+) special rule. Units that include more than one narthecium do not stack the Feel No Pain (X) special rule and gain no additional benefit. Models with the Artillery Sub-type are not affected by this special rule and do not gain the Feel No Pain (X) special rule.</characteristic>
           </characteristics>
@@ -1951,9 +1950,9 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="005e-aae6-ddac-bb45" name="Nuncio-Vox (P3P LA)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="005e-aae6-ddac-bb45" name="Nuncio-Vox" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="ab31-bdc5-6153-3d77" name="Nuncio-Vox (P3P)" publicationId="a716-c1c4-7b26-8424" page="145" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="ab31-bdc5-6153-3d77" name="Nuncio-Vox" publicationId="a716-c1c4-7b26-8424" page="145" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">While at least one model with a nuncio-vox is present on the battlefield and not Embarked in a Vehicle or Building, the controlling player may re-roll any Scatter rolls made (whether as part of a weapon attack or the deployment of a model or unit), as long as the model with the nuncio-vox has line of sight to the unit targeted by the attack or the point chosen as the target of the deployment. In addition, a unit that includes at least one model with a nuncio-vox ignores the -1 penalty to Leadership imposed by the Night Fighting rules.</characteristic>
           </characteristics>
@@ -1975,14 +1974,17 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1b0b-3dfc-9521-b27e" name="Rad Grenades (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1b0b-3dfc-9521-b27e" name="Rad Grenades" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="5ecf-40ba-be56-0d11" name="Rad Grenades (P3P)" publicationId="a716-c1c4-7b26-8424" page="143" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="5ecf-40ba-be56-0d11" name="Rad Grenades" publicationId="a716-c1c4-7b26-8424" page="143" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">During a turn in which a unit with at least one model with rad grenades successfully Charges, or is themselves successfully Charged, all models in the enemy unit(s) suffer a -1 penalty to their Toughness Characteristic until the end of the Fight Sub-phase that follows the successful Charge. Note: This does affect the victims’ Instant Death thresholds.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">During a turn in which a unit with at least one model with rad grenades successfully Charges, or is themselves successfully Charged, all models in the enemy unit(s) suffer a -1 penalty to their Toughness Characteristic (to a minimum of toughness 1) until the end of the Fight Sub-phase that follows the successful Charge. Note: This does affect Instant Death thresholds.</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="287a-ecc6-2759-4e29" name="Grenades" page="" hidden="false" targetId="6f5f-8f7c-d18b-cd42" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
@@ -1999,9 +2001,9 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a06a-55a5-070b-1d0e" name="Refractor Field (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="a06a-55a5-070b-1d0e" name="Refractor Field" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="1bab-d556-c126-4b53" name="Refractor Field (P3P)" publicationId="a716-c1c4-7b26-8424" page="143" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="1bab-d556-c126-4b53" name="Refractor Field" publicationId="a716-c1c4-7b26-8424" page="146" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a refractor field gains a 5+ Invulnerable Save.
 Invulnerable Saves granted by a refractor field or iron halo do not stack with other Invulnerable Saves, but can benefit from rules (such as cyber-familiar) that specifically increase existing saves. If a model has another Invulnerable Save then the controlling player must choose which one to use.</characteristic>
@@ -2012,9 +2014,9 @@ Invulnerable Saves granted by a refractor field or iron halo do not stack with o
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b282-55aa-d1e2-ebe7" name="Scout Armour (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="b282-55aa-d1e2-ebe7" name="Scout Armour" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="268c-b736-7743-67b1" name="Scout Armour (P3P)" publicationId="a716-c1c4-7b26-8424" page="146" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="268c-b736-7743-67b1" name="Scout Armour" publicationId="a716-c1c4-7b26-8424" page="146" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Scout armour provides a 4+ Armour Save.</characteristic>
           </characteristics>
@@ -2024,9 +2026,9 @@ Invulnerable Saves granted by a refractor field or iron halo do not stack with o
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4ae3-79b4-6051-505e" name="Searchlights (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4ae3-79b4-6051-505e" name="Searchlights" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="b966-8137-4e98-e1c2" name="Searchlights (P3P)" publicationId="a716-c1c4-7b26-8424" page="146" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="b966-8137-4e98-e1c2" name="Searchlights" publicationId="a716-c1c4-7b26-8424" page="146" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with searchlights ignores the 24&quot; limit to line of sight imposed by the Night Fighting rules when making Shooting Attacks, however enemy units also ignore that same restriction when making Shooting Attacks that target a model with searchlights.
 In addition, any unit that has been the target of a Shooting Attack made by a unit with searchlights (regardless of whether any Hits were inflicted or not) may be freely targeted for Shooting Attacks by any other unit, ignoring the 24&quot; restriction to line of sight imposed by the Night Fighting rules.
@@ -2046,13 +2048,16 @@ Searchlights do not count as weapons and may not be targeted by the Weapon Destr
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="e493-1f52-eff9-e144" name="Grenades" hidden="false" targetId="6f5f-8f7c-d18b-cd42" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0873-34dd-e52d-d33c" name="Smoke Launchers (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0873-34dd-e52d-d33c" name="Smoke Launchers" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="cc6e-ca4b-e9e8-7eb5" name="Smoke Launchers (P3P)" publicationId="a716-c1c4-7b26-8424" page="147" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="cc6e-ca4b-e9e8-7eb5" name="Smoke Launchers" publicationId="a716-c1c4-7b26-8424" page="147" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The controlling player may choose to trigger smoke launchers once a model with them has completed its movement in the Movement phase, and may only choose to trigger them if the model has moved no faster than Combat Speed that turn. Once triggered, the model with smoke launchers counts as being more than 25% obscured, regardless of terrain, until the start of the controlling player’s next turn and gains a 6+ Cover Save. A model whose smoke launchers have been triggered may not make any Shooting Attacks, except as part of a Reaction, in the same turn. Smoke launchers may only be used once per battle, and once triggered may not be further used – in addition, they do not count as a weapon and may not be targeted by Weapon Destroyed results on the Vehicle Damage table.</characteristic>
           </characteristics>
@@ -2062,9 +2067,9 @@ Searchlights do not count as weapons and may not be targeted by the Weapon Destr
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6472-db7f-08b0-d7c7" name="Suspensor Web (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6472-db7f-08b0-d7c7" name="Suspensor Web" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="457c-1f2c-ca90-1bf3" name="Suspensor Web (P3P)" publicationId="a716-c1c4-7b26-8424" page="147" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="457c-1f2c-ca90-1bf3" name="Suspensor Web" publicationId="a716-c1c4-7b26-8424" page="147" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A heavy weapon with a suspensor web may be treated as having the type Assault rather than Heavy when used to attack as part of any Shooting Attack at targets at up to half the weapon’s usual maximum range.
 Example: A heavy bolter with a suspensor web, which is usually a Range 36&quot; Heavy 4 weapon, can instead be used as if it were a Range 18&quot; Assault 4 weapon if the controlling player wishes.</characteristic>
@@ -2075,9 +2080,9 @@ Example: A heavy bolter with a suspensor web, which is usually a Range 36&quot; 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f091-857e-21b8-d49a" name="Vox Disruptor Array (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f091-857e-21b8-d49a" name="Vox Disruptor Array" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="03f2-41e6-4e4b-ec9f" name="Vox Disruptor Array (P3P)" publicationId="a716-c1c4-7b26-8424" page="147" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="03f2-41e6-4e4b-ec9f" name="Vox Disruptor Array" publicationId="a716-c1c4-7b26-8424" page="147" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">While there is at least one model on the battlefield with a vox disruptor array, regardless of whether that model is enemy or friendly, any attempt to perform a Deep Strike Assault, Drop Pod Assault, Area Denial Drop or Subterranean Assault is Disordered on the roll of a ‘1’, ‘2’ or ‘3’ instead of just on a ‘1’.</characteristic>
           </characteristics>
@@ -2107,13 +2112,16 @@ Example: A heavy bolter with a suspensor web, which is usually a Range 36&quot; 
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="89d2-37fd-1342-7772" name="Grenades" hidden="false" targetId="6f5f-8f7c-d18b-cd42" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ec12-df00-ad8a-1f59" name="Command Vox Relay (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ec12-df00-ad8a-1f59" name="Command Vox Relay" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="988d-6f67-d24b-0bc7" name="Command Vox Relay (P3P)" publicationId="a716-c1c4-7b26-8424" page="141" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="988d-6f67-d24b-0bc7" name="Command Vox Relay" publicationId="a716-c1c4-7b26-8424" page="141" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">While any model with the Character Sub-type is Embarked upon a model with this special rule, friendly units with the same version of the Legiones Astartes special rule that are within 18&quot; or that include a model with a nuncio-vox may use the Embarked model’s Leadership Characteristic for Morale checks and Pinning tests. If more than one model with the Character Sub-type is Embarked upon a model with this special rule then the controlling player chooses which model’s Leadership Characteristic is used.</characteristic>
           </characteristics>
@@ -2123,9 +2131,9 @@ Example: A heavy bolter with a suspensor web, which is usually a Range 36&quot; 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f8f8-417b-ed9d-544c" name="Explorator Augury Web (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f8f8-417b-ed9d-544c" name="Explorator Augury Web" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="b4a1-b551-49a8-73dc" name="Explorator Augury Web (P3P LA)" publicationId="a716-c1c4-7b26-8424" page="142" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="b4a1-b551-49a8-73dc" name="Explorator Augury Web" publicationId="a716-c1c4-7b26-8424" page="142" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">At the start of each of the controlling player’s turns, that player may choose to activate the explorator augury web in either Disruption or Relay mode, the effects of which last until the beginning of the controlling player’s next turn:
 • Disruption Mode: Any Reserves rolls made by an enemy player to bring units into play from Reserve are modified by -1 while this mode is active. This modifier does not stack with any other negative modifiers to Reserves rolls – use the highest single modifier instead. However, once the final negative modifier to a Reserves roll is determined, it can be reduced by any positive modifiers applied to the roll (for example if a Reserves roll was affected by both a -1 and +1 modifier then they would cancel each other and no modifier would be applied).
@@ -2137,9 +2145,9 @@ Example: A heavy bolter with a suspensor web, which is usually a Range 36&quot; 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0e77-6285-22bb-1534" name="Flare Shield (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0e77-6285-22bb-1534" name="Flare Shield" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="c245-8517-f7e0-1bd3" name="Flare Shield (P3P LA)" publicationId="a716-c1c4-7b26-8424" page="142" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="c245-8517-f7e0-1bd3" name="Flare Shield" publicationId="a716-c1c4-7b26-8424" page="142" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a flare shield reduces the strength of Shooting Attacks made against its Front Armour by -1, or -2 if that Shooting Attack has the Blast special rule or uses a template to determine its Range. A flare shield has no effect on Shooting Attacks inflicted with weapons of the Destroyer type.</characteristic>
           </characteristics>
@@ -2149,11 +2157,11 @@ Example: A heavy bolter with a suspensor web, which is usually a Range 36&quot; 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9333-3d3a-1c13-c602" name="Geo-locator Beacon (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9333-3d3a-1c13-c602" name="Geo-locator Beacon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="ca02-0f2e-ea7b-ce89" name="Geo-locator Beacon (P3P)" publicationId="a716-c1c4-7b26-8424" page="142" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="ca02-0f2e-ea7b-ce89" name="Geo-locator Beacon" publicationId="a716-c1c4-7b26-8424" page="142" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Once per battle, at the beginning of any turn from Turn 2 onward and as long as a model with this special rule is deployed on the battlefield, the controlling player may choose to re-roll the first failed Reserves roll they make in each turn.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">As long as a model with this special rule is deployed on the battlefield, the controlling player may choose to re-roll all failed Reserves roll they make.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2173,11 +2181,11 @@ Example: A heavy bolter with a suspensor web, which is usually a Range 36&quot; 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ff29-460e-a589-a376" name="Helical Targeting Array (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ff29-460e-a589-a376" name="Helical Targeting Array" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="5097-7577-6026-5969" name="Helical Targeting Array (P3P)" publicationId="a716-c1c4-7b26-8424" page="143" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="5097-7577-6026-5969" name="Helical Targeting Array" publicationId="a716-c1c4-7b26-8424" page="143" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The controlling player of a model with a helical targeting array may activate it at the start of any of their own turns. Once the helical targeting array is activated, the model is affected by the following conditions until the beginning of the controlling player’s next turn:
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The controlling player of a model with a helical targeting array may activate it at the start of any of their own turns, or, if the controlling player is not taking the first turn of the battle, at the start of the battle, before the beginning of the opposing player&apos;s first turn. Once the helical targeting array is activated, this model is affected by the following conditions until the beginning of the controlling player’s next turn:
 • The model may not move, Run or declare or make any Reactions other than the Interceptor or Overwatch Reaction.
 • The controlling player may choose to use the Skyfire special rule when making any Shooting Attacks with the model.
 • No model may make a Damage Mitigation roll provided by the Shrouded special rule against an attack made by a model with a helical targeting array while it is active.
@@ -2190,9 +2198,9 @@ Example: A heavy bolter with a suspensor web, which is usually a Range 36&quot; 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b3b2-817f-8b68-fad0" name="Jet Pack (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="b3b2-817f-8b68-fad0" name="Jet Pack" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="9d71-90b3-c22b-b04b" name="Jet Pack (P3P)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="9d71-90b3-c22b-b04b" name="Jet Pack" publicationId="e77a-823a-da94-16b9" page="163" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Jet Pack: A unit entirely equipped with Jet Packs may choose to increase its Movement Characteristic by +6, move over friendly and enemy models/units, and ignore terrain while moving during the Movement phase. A unit that ends or begins its movement in Dangerous Terrain will still need to take Dangerous Terrain tests as normal, even when employing Jet Packs and treats Difficult Terrain as Dangerous Terrain. In addition to the bonus to move during the Movement phase, a unit equipped entirely with Jet Packs may make an additional move of 6&quot; during the Shooting phase. This move must be taken after the unit has completed any Shooting, is not limited by the weapons fired by that unit during the Shooting phase and ignores terrain and may move over friendly and enemy models/units in the same manner as moves made using a Jet Pack in the Movement phase.
 
@@ -2206,11 +2214,11 @@ During any Reaction that allows a unit equipped entirely with Jet Packs to move,
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="146a-27f1-259e-214f" name="Jump Pack (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="146a-27f1-259e-214f" name="Jump Pack" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="c192-835d-8c77-1424" name="Jump Pack (P3P LA)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="c192-835d-8c77-1424" name="Jump Pack" publicationId="a716-c1c4-7b26-8424" page="163" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Jump Pack: A unit composed entirely of models with Jump Packs may set its Movement Characteristic to a value of 12 for the duration of the controlling player’s turn. This allows the unit to move up to 12&quot;, regardless of the Movement Characteristic shown on its profile, and gain any other benefits of a Movement Characteristic of 12 (including the bonus to Charge Distance, see page 181). In addition, if the controlling player chooses to set the unit’s Movement to 12&quot;, the unit ignores terrain while Moving and Charging, and may move over friendly and enemy models units. A unit that ends or begins its Movement or a Charge in Dangerous Terrain will still need to take Dangerous Terrain tests as normal, even when employing Jump Packs, and treats all Difficult Terrain as Dangerous Terrain.
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Jump Pack: A unit composed entirely of models with Jump Packs may set its Movement Characteristic to a value of 12 for the duration of the controlling player’s turn. This allows the unit to move up to 12&quot;, regardless of the Movement Characteristic shown on its profile, and gain any other benefits of a Movement Characteristic of 12 (including the bonus to Charge Distance, see page 181). In addition, if the controlling player chooses to set the unit’s Movement to 12&quot;, the unit ignores terrain while Moving and Charging, and may move over friendly and enemy models/units. A unit that ends or begins its Movement or a Charge in Dangerous Terrain will still need to take Dangerous Terrain tests as normal, even when employing Jump Packs, and treats all Difficult Terrain as Dangerous Terrain.
 
 Any model equipped with a Jump Pack also gains the Bulky (2) and Deep Strike special rules, or if it already has the Bulky (2) special rule it gains the Bulky (3) special rule instead. A unit equipped with Jump Packs may not Run.
 
@@ -2233,7 +2241,7 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6865-354c-0880-ee5f" name="Banestrike Bolter (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6865-354c-0880-ee5f" name="Banestrike Bolter" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="f329-e697-b5c1-e382" name="Banestrike Bolter" hidden="false" targetId="421b-2cbd-57bf-9c37" type="profile"/>
         <infoLink id="2cd9-a771-b903-1058" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule"/>
@@ -2242,10 +2250,10 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d3eb-73ae-7b59-c348" name="Banestrike Combi-Bolter (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="d3eb-73ae-7b59-c348" name="Banestrike Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="70ad-5b2e-8836-6855" name="Banestrike Combi-Bolter (P3P ZW)" hidden="false" targetId="2c34-eb08-35b3-9ff3" type="profile"/>
-        <infoLink id="0a5a-dd30-9daf-a25b" name="Breaching (X) (P3P LA)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule"/>
+        <infoLink id="0a5a-dd30-9daf-a25b" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule"/>
         <infoLink id="b881-e9cb-3102-1b01" name="Twin-linked (P3P)" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
       </infoLinks>
       <costs>
@@ -2368,10 +2376,10 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4168-fc85-8912-7188" name="Servo-Arm (P3P)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4168-fc85-8912-7188" name="Servo-Arm" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="f147-3ca8-9cb5-c643" name="Servo-Arm (P3P LA)" hidden="false" targetId="71bf-775a-040f-6765" type="profile"/>
-        <infoLink id="271c-be14-3872-1989" name="Unwieldy (P3P) (P3P)" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+        <infoLink id="f147-3ca8-9cb5-c643" name="Servo-Arm" hidden="false" targetId="71bf-775a-040f-6765" type="profile"/>
+        <infoLink id="271c-be14-3872-1989" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -2820,6 +2828,9 @@ Four single Blast Shields</characteristic>
         <infoLink id="bb44-f852-1140-48ea" name="Twin-linked Lascannon" hidden="false" targetId="38e8-9e52-ec1a-5eed" type="profile"/>
         <infoLink id="6e43-3133-fcaa-5879" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -3499,6 +3510,9 @@ You can move a unit in one part of a multi-part Building into an adjacent and un
     <rule id="6c55-22c8-1b01-2105" name="Ordnance" publicationId="e77a-823a-da94-16b9" page="177" hidden="false">
       <description>When making Shooting Attacks, a model equipped with an Ordnance weapon fires the number of times indicated in its profile after its Type. A non-Cehicle model carrying an Ordnance weapon cannon attack with it in the Shooting phase if they moved in the preceding Movement phase. Ordnance weapons cannot make Snap Shots. Futhermore if a non-Vehicle model attacks with an Ordnance weapon, that model may not make any further Shooting Attacks with any other weapon in the Phase nor will it be able to Charge in the ensuing Assault phase. Vehicle models that fire Ordnance weapons may also suffer some restrictions based upon th distance they have moved that turn.
 Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&apos;s armour with an Ordnance weapon, roll two dice instead of one and pick the highest result.</description>
+    </rule>
+    <rule id="6f5f-8f7c-d18b-cd42" name="Grenades" publicationId="a716-c1c4-7b26-8424" page="142" hidden="false">
+      <description>Grenades are represented in battle as Wargear items with a specific effect rather than as weapons. Using grenades does not count as a Shooting Attack and their effects are entirely covered by the rules presented here. Note that grenade launchers do not use these rules and are Shooting Weapons governed by the standard Shooting rules.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -4729,7 +4743,7 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Breaching (4+)</characteristic>
       </characteristics>
     </profile>
-    <profile id="1f8a-2e6e-eb0e-09ed" name="Melta Cutters" publicationId="a716-c1c4-7b26-8424" page="133" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+    <profile id="1f8a-2e6e-eb0e-09ed" name="Melta Cutters (Ranged)" publicationId="a716-c1c4-7b26-8424" page="133" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="95ba-cda7-b831-6066">6&quot;</characteristic>
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
