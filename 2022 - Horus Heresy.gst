@@ -2832,7 +2832,47 @@ Four single Blast Shields</characteristic>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="85b9-4e50-af11-c295" name="Chainaxe" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7811-361e-ef23-9822" name="Chainaxe" hidden="false" targetId="2e6d-e75e-6309-aea6" type="profile"/>
+        <infoLink id="f1d7-4518-ec1f-161f" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="31bd-eebb-a079-ed0c" name="Magna Combi-Weapon" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="e6df-8ece-3000-87a3" name="Magna Combi-Weapon - Disintegrator" hidden="false" collective="false" import="true" targetId="1d05-f467-b0aa-88b2" type="selectionEntry"/>
+        <entryLink id="5150-6755-2b14-de31" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="0d1c-227e-a3f8-cd63" type="selectionEntry"/>
+        <entryLink id="3059-19ce-5ea6-872a" name="Magna Combi-Weapon - Plasma Gun" hidden="false" collective="false" import="true" targetId="cc98-8596-c713-516c" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="cd66-0c76-a384-edff" name="Minor Combi-Weapon" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="384f-7fa8-80e0-a1d6" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="34c4-db99-db36-0f2a" type="selectionEntry"/>
+        <entryLink id="f422-27fc-93ec-3e29" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" targetId="7e5c-3d25-5c88-32e0" type="selectionEntry"/>
+        <entryLink id="7f2a-fc8b-6c1d-4351" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="false" import="true" targetId="aa3c-f5a5-9ce9-1497" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="82b0-2459-4bbc-e15b" name="Charnabal Weapon" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="112b-cf32-1cc1-508c" name="Charnabal Glaive" hidden="false" collective="false" import="true" targetId="c07c-35e6-4616-ef25" type="selectionEntry"/>
+        <entryLink id="a904-5bf0-3545-575c" name="Charnabal Sabre" hidden="false" collective="false" import="true" targetId="30c2-57eb-5bbe-be0b" type="selectionEntry"/>
+        <entryLink id="ab58-eba4-3f11-89ca" name="Charnabal Tabar" hidden="false" collective="false" import="true" targetId="4611-c33e-f360-7246" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="47f2-74b9-936c-bf55" name="Power Weapon" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="114b-03d2-119b-957f" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry"/>
+        <entryLink id="16e8-d632-9c90-ba18" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
+        <entryLink id="aac9-37b3-4e28-6c40" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
+        <entryLink id="0f58-5074-311c-9283" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="0ac9-fab7-aef3-de1d" name="Rending (X)" publicationId="e77a-823a-da94-16b9" page="246" hidden="false">
       <description>If a model has the Rending special rule, or is attacking with a Melee weapon that has the Rending special rule, there is a chance that their close combat attacks will strike a critical blow. For each To Wound roll equal to or higher than the value listed, the target automatically suffers a Wound, regardless of its Toughness. The controlling player may choose to resolve these Wounds at AP 2 instead of the weapon’s normal AP value.
@@ -3328,7 +3368,7 @@ Skimmers can move over friendly and enemy models, but they cannot end their move
 
 If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If this is not possible (the base might have been glued in place, for example), then leave the base in place. Note that it is not otherwise permitted to remove the flying base, as Skimmers cannot land in battle conditions.</description>
     </rule>
-    <rule id="c772-87ea-d49c-c7ba" name="Master of the Legion" publicationId="a716-c1c4-7b26-8424" page="123" hidden="false">
+    <rule id="c772-87ea-d49c-c7ba" name="Master of the Legion" publicationId="a716-c1c4-7b26-8424" page="19 and 123" hidden="false">
       <description>The Master of the Legion special rule grants the following benefits:
 • Rites of War: If a Detachment with the Legiones Astartes Faction includes at least one model with the Master of the Legion special rule then that Detachment may select a single Rite of War. Rites of War are presented in the Appendix: Legiones Astartes Rites of War, found on page 96.
 • The Few and the Proud: An army may only include a maximum of one model with this special rule per 1,000 points. This counts across all Detachments of an army. Thus, an army that totals at least 1,000 points may include only a single model with the Master of the Legion special rule, and an army that includes at least 2,000 points may include up to two models with the Master of the Legion special rule, etc.
@@ -4837,6 +4877,14 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
         <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Sunder, twin-linked</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2e6d-e75e-6309-aea6" name="Chainaxe" publicationId="a716-c1c4-7b26-8424" page="136" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
