@@ -2489,6 +2489,15 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="06e7-a6ae-ed1c-eb03" name="Chainsword" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8730-e150-1d6e-7f6e" name="Chainsword (P3P)" hidden="false" targetId="538b-68a7-6f62-5710" type="profile"/>
+        <infoLink id="6601-1b13-b12f-081a" name="Shred (P3P)" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="5dae-7de0-325d-589b" name="Predator Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="d096-c001-95e4-a9e8" name="Predator Cannon" hidden="false" targetId="47d9-345a-2e9f-1a1d" type="profile"/>
@@ -2882,6 +2891,21 @@ Four single Blast Shields</characteristic>
         <entryLink id="16e8-d632-9c90-ba18" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
         <entryLink id="aac9-37b3-4e28-6c40" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
         <entryLink id="0f58-5074-311c-9283" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="2ee2-f647-6aef-cc1d" name="Archaeotech Pistol" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="1c40-0ee9-bbf5-4d60" name="Archaeotech Pistol" hidden="false" collective="false" import="true" targetId="c22a-ed4d-af68-bf00" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="8743-4455-3701-8420" name="Boarding Shield" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="e2f9-399a-2bae-aae2" name="Boarding Shield" hidden="false" collective="false" import="true" targetId="0c0f-f751-cc4e-4951" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="3f66-1da6-49b9-a48e" name="Chainaxe" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="9c9e-a6f2-fc71-ae4c" name="Chainaxe" hidden="false" collective="false" import="true" targetId="85b9-4e50-af11-c295" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
@@ -4708,6 +4732,14 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
         <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred, Two-handed</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="538b-68a7-6f62-5710" name="Chainsword" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred</characteristic>
       </characteristics>
     </profile>
     <profile id="47d9-345a-2e9f-1a1d" name="Predator Cannon" publicationId="a716-c1c4-7b26-8424" page="128" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
