@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="3" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="4" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 18th, 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" publicationDate="June 18th, 2022"/>
@@ -5421,14 +5421,6 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
         <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="48e7-8361-1567-37ea" name="Sabre Missile" publicationId="a716-c1c4-7b26-8424" page="133" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
-        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Rending (6+), One Shot</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
