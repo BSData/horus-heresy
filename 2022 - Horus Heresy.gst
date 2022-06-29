@@ -4639,11 +4639,44 @@ Four single Blast Shields</characteristic>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="8d9c-9f80-c0fd-adcf" name="Power Weapon" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="70dd-c9fb-cd1d-b509" name="Power Weapon" hidden="false" collective="false" import="true" targetId="47f2-74b9-936c-bf55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2376-af96-e101-e712" name="Charnabal Weapon" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="728d-3219-8e19-5569" name="Charnabal Weapon" hidden="false" collective="false" import="true" targetId="82b0-2459-4bbc-e15b" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e5b1-83e5-7272-a59e" name="Magna Combi-Weapon" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="d19d-0c22-985c-c674" name="Magna Combi-Weapon" hidden="false" collective="false" import="true" targetId="31bd-eebb-a079-ed0c" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="605e-1b86-ca08-9226" name="Minor Combi-Weapon" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="4302-34ff-d6a7-9160" name="Minor Combi-Weapon" hidden="false" collective="false" import="true" targetId="cd66-0c76-a384-edff" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="31bd-eebb-a079-ed0c" name="Magna Combi-Weapon" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24b9-f8f3-48c4-964a" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb92-9b56-ee75-7d43" type="min"/>
       </constraints>
       <entryLinks>
         <entryLink id="e6df-8ece-3000-87a3" name="Magna Combi-Weapon - Disintegrator" hidden="false" collective="false" import="true" targetId="1d05-f467-b0aa-88b2" type="selectionEntry"/>
@@ -4654,6 +4687,7 @@ Four single Blast Shields</characteristic>
     <selectionEntryGroup id="cd66-0c76-a384-edff" name="Minor Combi-Weapon" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e4c-3cf7-eaa6-a9a4" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6981-8384-e24b-cd56" type="min"/>
       </constraints>
       <entryLinks>
         <entryLink id="384f-7fa8-80e0-a1d6" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="34c4-db99-db36-0f2a" type="selectionEntry"/>
@@ -4661,9 +4695,13 @@ Four single Blast Shields</characteristic>
         <entryLink id="7f2a-fc8b-6c1d-4351" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="false" import="true" targetId="aa3c-f5a5-9ce9-1497" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="82b0-2459-4bbc-e15b" name="Charnabal Weapon" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="82b0-2459-4bbc-e15b" name="Charnabal Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="a904-5bf0-3545-575c">
+      <modifiers>
+        <modifier type="set" field="name" value="0.0"/>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3180-1876-0c05-1a10" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="122a-7f43-620c-2433" type="min"/>
       </constraints>
       <entryLinks>
         <entryLink id="112b-cf32-1cc1-508c" name="Charnabal Glaive" hidden="false" collective="false" import="true" targetId="c07c-35e6-4616-ef25" type="selectionEntry"/>
@@ -4671,30 +4709,16 @@ Four single Blast Shields</characteristic>
         <entryLink id="ab58-eba4-3f11-89ca" name="Charnabal Tabar" hidden="false" collective="false" import="true" targetId="4611-c33e-f360-7246" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="47f2-74b9-936c-bf55" name="Power Weapon" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="47f2-74b9-936c-bf55" name="Power Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="114b-03d2-119b-957f">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0739-e123-8b50-fab7" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0739-e123-8b50-fab7" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6195-f6ef-5b37-823c" type="max"/>
       </constraints>
       <entryLinks>
         <entryLink id="114b-03d2-119b-957f" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry"/>
         <entryLink id="16e8-d632-9c90-ba18" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
         <entryLink id="aac9-37b3-4e28-6c40" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
         <entryLink id="0f58-5074-311c-9283" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="2ee2-f647-6aef-cc1d" name="Archaeotech Pistol" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="1c40-0ee9-bbf5-4d60" name="Archaeotech Pistol" hidden="false" collective="false" import="true" targetId="c22a-ed4d-af68-bf00" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="8743-4455-3701-8420" name="Boarding Shield" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="e2f9-399a-2bae-aae2" name="Boarding Shield" hidden="false" collective="false" import="true" targetId="0c0f-f751-cc4e-4951" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="3f66-1da6-49b9-a48e" name="Chainaxe" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="9c9e-a6f2-fc71-ae4c" name="Chainaxe" hidden="false" collective="false" import="true" targetId="85b9-4e50-af11-c295" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>

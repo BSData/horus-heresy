@@ -11,11 +11,18 @@ Horus Heresy
 
 ## Important
 
-__BattleScribe v1.15 users Notice__: _However we don't support BattleScribe v1.15 any longer, all the files in their last revisions for that BattleScribe are available [here](https://github.com/BSData/horus-heresy/releases/tag/6.9.3). Downloading `.bsr` file(one of the Downloads) and importing it in BattleScribe v1.15 will allow you to use these no-longer-maintained datafiles._
+__BattleScribe v1.15 users Notice__: _However we don't support BattleScribe v1.15 any longer, all the files in their
+last revisions for that BattleScribe are available [here](https://github.com/BSData/horus-heresy/releases/tag/6.9.3).
+Downloading `.bsr` file(one of the Downloads) and importing it in BattleScribe v1.15 will allow you to use these
+no-longer-maintained datafiles._
 
 ## Overview ##
 
 __What's this?__
+
+This is the data repo for the Horus Heresy. Both the v1 and v2 versions of the game rules are here.
+The 2022 Version of the Horus Heresy is not complete at this time. Please refer to 
+[this Github issue][https://github.com/BSData/horus-heresy/issues/2070] to track the status of data entry or to volunteer.
 
 BSData organisation created this project. It's a GitHub repository of datafiles.
 Maintained by community, in no way endorsed by BattleScribe or any other company/publisher. If you want
@@ -29,10 +36,25 @@ __I found a bug!__ / *I have another request*
 
 Great, thank you! Please [Report a bug][bug report] - you can also suggest enhancements and raise other issues there.
 
-
 ## Standards
 
-### References
+### For 2.0
+
+In general, we remove the "Legion" prefix from units.
+
+We create a unit entry for each unit, and a model entry within that unit (even if it's a single model unit.
+This allows us to get an accurate model count and keeps everything consistent
+
+## References
+
+### For 2.0
+
+* Horus Heresy: Age of Darkness Rulebook
+* Liber Astartes
+* Liber Hereticus
+* "Both Astartes Army books" refers to the first section of both of the above books, as they are identical
+
+### For 1.0
 
 * Base Rulebook (7th Edition) = BRB 7th (I'm using the digital in order to copy/paste so no pages)
 * Legiones Astartes: Age of Darkness Army List = LA:AODAL
@@ -41,6 +63,7 @@ Great, thank you! Please [Report a bug][bug report] - you can also suggest enhan
 * Crusade Imperialis: Army List = CI:AL
 * Horus Heresy 1: Betrayal = HH1: Betrayal (and so on)
 * Horus Heresy: General Errata and FAQ v1.0 = HH:GEAFAQV1.0
+* Fan supplements
 
 ## Links ##
 
@@ -48,4 +71,5 @@ Great, thank you! Please [Report a bug][bug report] - you can also suggest enhan
 * [BattleScribe app homepage](https://www.battlescribe.net/)
 
 [BSData.net]: https://www.bsdata.net/
+
 [bug report]: https://github.com/BSData/horus-heresy/issues/new/choose
