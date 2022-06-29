@@ -4638,38 +4638,38 @@ Four single Blast Shields</characteristic>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="85b9-4e50-af11-c295" name="Chainaxe" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="7811-361e-ef23-9822" name="Chainaxe" hidden="false" targetId="2e6d-e75e-6309-aea6" type="profile"/>
-        <infoLink id="f1d7-4518-ec1f-161f" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="8d9c-9f80-c0fd-adcf" name="Power Weapon" page="" hidden="false" collective="false" import="true" type="upgrade">
       <entryLinks>
         <entryLink id="70dd-c9fb-cd1d-b509" name="Power Weapon" hidden="false" collective="false" import="true" targetId="47f2-74b9-936c-bf55" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="2376-af96-e101-e712" name="Charnabal Weapon" hidden="false" collective="false" import="true" type="upgrade">
       <entryLinks>
         <entryLink id="728d-3219-8e19-5569" name="Charnabal Weapon" hidden="false" collective="false" import="true" targetId="82b0-2459-4bbc-e15b" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e5b1-83e5-7272-a59e" name="Magna Combi-Weapon" hidden="false" collective="false" import="true" type="upgrade">
       <entryLinks>
         <entryLink id="d19d-0c22-985c-c674" name="Magna Combi-Weapon" hidden="false" collective="false" import="true" targetId="31bd-eebb-a079-ed0c" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="605e-1b86-ca08-9226" name="Minor Combi-Weapon" hidden="false" collective="false" import="true" type="upgrade">
       <entryLinks>
         <entryLink id="4302-34ff-d6a7-9160" name="Minor Combi-Weapon" hidden="false" collective="false" import="true" targetId="cd66-0c76-a384-edff" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
