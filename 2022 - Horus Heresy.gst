@@ -4671,6 +4671,221 @@ Four single Blast Shields</characteristic>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="861c-3744-c4ff-ef6c" name="Psychic Discipline: Biomancy" publicationId="e77a-823a-da94-16b9" page="323" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="0d9a-f665-8ca7-0047" name="Biomantic Augmentation" publicationId="e77a-823a-da94-16b9" page="323" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
+          <characteristics>
+            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a single friendly unit within 6&quot;, that unit increases its Strength by +1 for the duration of the current player turn. When using this power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed then both Strength and Toughness are increased by +1 for the duration of the current player turn. If the Check is failed, then the target unit gains no benefit and the Psyker suffers Perils of the Warp.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3be5-932c-3b8d-938d" name="Biomancer&apos;s Rage" publicationId="e77a-823a-da94-16b9" page="323" hidden="false" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">-</characteristic>
+            <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">10</characteristic>
+            <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">4</characteristic>
+            <characteristic name="Type" typeId="2159-62b6-4337-d516">Melee, Rending (4+), Psychic Focus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="c05b-4a08-a8cb-d8da" name="Psychic Discipline: Biomancy" publicationId="e77a-823a-da94-16b9" page="323" hidden="false">
+          <description>A Psyker with this Discipline gains all the listed Powers, weapons and other special rules, as well as the Aetheric Lightning Psychic Weapon.
+
+Biomantic Augmentation (Psychic Power)
+Biomancer’s Rage (Psychic Weapon)</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="ac1d-3629-2369-d13e" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule"/>
+        <infoLink id="ec5f-e33c-43bf-afe1" name="Psychic Focus" hidden="false" targetId="bff3-3548-b2b8-72f1" type="rule"/>
+        <infoLink id="2ae5-d2f7-574a-dfaf" name="Aetheric Lightning" hidden="false" targetId="3d0c-e779-247f-0332" type="profile"/>
+        <infoLink id="aa5d-e15b-1b4a-a71f" name="Force" hidden="false" targetId="f39e-4c3b-38e0-0050" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0c22-a776-e7e3-2981" name="Psychic Discipline: Divination" publicationId="e77a-823a-da94-16b9" page="323" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="a988-4aa9-a875-1fb0" name="Divinatory Aegis" publicationId="e77a-823a-da94-16b9" page="323" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
+          <characteristics>
+            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a single friendly unit within 12&quot;. The target unit gains the Precision Strikes (6+) and Precision Shots (6+) special rules for the duration of the current player turn. When using this power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed then the target unit instead gains the Precision Strikes (5+) and Precision Shots (5+) special rules for the duration of the current player turn. If the Check is failed then no additional benefit is gained and the Psyker suffers Perils of the Warp.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9616-6d6e-2516-9abd" name="Diviner&apos;s Dart" publicationId="e77a-823a-da94-16b9" page="323" hidden="false" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">18&quot;</characteristic>
+            <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">6</characteristic>
+            <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">2</characteristic>
+            <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 1, Sniper, Guided Fire, Psychic Focus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="2e0f-7630-7311-dff2" name="Psychic Discipline: Divination" publicationId="e77a-823a-da94-16b9" page="323" hidden="false">
+          <description>A Psyker with this Discipline gains all the listed Powers, weapons and other special rules, as well as the Aetheric Lightning Psychic Weapon .
+
+Divinatory Aegis (Psychic Power)
+Diviner’s Dart (Psychic Weapon)</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="fda9-e4f2-4f6b-6384" name="Sniper" hidden="false" targetId="9cd8-e726-5dbe-b106" type="rule"/>
+        <infoLink id="d79f-aa47-a6fb-ec22" name="Guided Fire" hidden="false" targetId="fa1e-0112-943e-b1f6" type="rule"/>
+        <infoLink id="0a17-e440-94c8-c6b3" name="Psychic Focus" hidden="false" targetId="bff3-3548-b2b8-72f1" type="rule"/>
+        <infoLink id="8568-89f5-75e0-4f0a" name="Precision Shots (X)" hidden="false" targetId="4b71-81ee-31f4-fa09" type="rule"/>
+        <infoLink id="4625-3e22-bd5a-84bf" name="Precision Strikes (X)" hidden="false" targetId="2206-8497-8fe1-e973" type="rule"/>
+        <infoLink id="21d2-337b-f1cb-62b9" name="Aetheric Lightning" hidden="false" targetId="3d0c-e779-247f-0332" type="profile"/>
+        <infoLink id="6f9a-d33f-54fc-8bbb" name="Force" hidden="false" targetId="f39e-4c3b-38e0-0050" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c73a-8c52-4780-71e1" name="Psychic Discipline: Pyromancy" publicationId="e77a-823a-da94-16b9" page="324" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="351f-522b-e017-41a5" name="Pyromantic Combustion" publicationId="e77a-823a-da94-16b9" page="324" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
+          <characteristics>
+            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of making a Shooting Attack, a Psyker with this Psychic Power can place a Large Blast (5&quot;) marker anywhere on the battlefield that is entirely within 18&quot; and within line of sight of the Psyker. Once placed, scatter the marker D6&quot; to determine its final position and then leave it in place until the beginning of the controlling player’s next Shooting phase. The area under the marker counts as Difficult Terrain and any model, friendly or enemy, under the marker’s final position, or that moves onto or through the marker, suffers a Strength 6, AP 4 Hit. When using this Psychic Power, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed then the Psyker’s controlling player may place and scatter up to three Large Blast (5&quot;) markers instead of just one. Any model under more than one Blast marker placed using this Psychic Power suffers 1 Hit for each Blast marker it is under. If the Check is failed then the power fails completely, no markers are placed and the Psyker suffers Perils of the Warp.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="288b-3bbb-82b9-d02c" name="Pyromantic Desolation" hidden="false" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">-</characteristic>
+            <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">6</characteristic>
+            <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">3</characteristic>
+            <characteristic name="Type" typeId="2159-62b6-4337-d516">Melee, Unwieldy, Pyromanric Desolation, Psychic Focus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="f780-6eff-7cb3-3e57" name="Psychic Discipline: Pyromancy" publicationId="e77a-823a-da94-16b9" page="324" hidden="false">
+          <description>A Psyker with this Discipline gains all the listed Powers, weapons and other special rules, as well as the Aetheric Lightning Psychic Weapon.
+
+Pyromantic Combustion (Psychic Power)
+Pyromantic Desolation (Psychic Weapon)</description>
+        </rule>
+        <rule id="9d07-7c9c-e549-3bc8" name="Pyromantic Desolation" publicationId="e77a-823a-da94-16b9" page="324" hidden="false">
+          <description>In addition to attacking normally in the Assault Phase, at the beginning of the Initiative Step at which the model using this Psychic Weapon would normally attack, but before any Pile-in moves or attacks are made, place a Blast (3&quot;) marker centred on the attacking model. All other models wholly or partially under the marker, friendly or enemy, suffer an automatic Hit with the profile shown. These Hits are resolved immediately and do not count for the purpose of resolving the winner of an assault. Once they are resolved, the attacking model may Pile-in and make any other attacks as normal.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="1a3c-185e-f382-f35a" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink id="1aa6-d3a5-43c8-476d" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+        <infoLink id="526e-4004-9564-3e2b" name="Psychic Focus" hidden="false" targetId="bff3-3548-b2b8-72f1" type="rule"/>
+        <infoLink id="9ccc-535b-8fa9-81dc" name="Aetheric Lightning" hidden="false" targetId="3d0c-e779-247f-0332" type="profile"/>
+        <infoLink id="9160-e33d-78ae-22c9" name="Force" hidden="false" targetId="f39e-4c3b-38e0-0050" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2599-31ff-74a5-70ec" name="Psychic Discipline: Telekinesis" publicationId="e77a-823a-da94-16b9" page="324" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="00e1-af1f-513f-4959" name="Telekine&apos;s Focus" publicationId="e77a-823a-da94-16b9" page="324" hidden="false" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">8</characteristic>
+            <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">4</characteristic>
+            <characteristic name="Type" typeId="2159-62b6-4337-d516">Heavy 1, Sunder, Blast (3&quot;), Psychic Focus</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0d1f-a4df-31cf-e0e9" name="Telekine Dome" publicationId="e77a-823a-da94-16b9" page="324" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
+          <characteristics>
+            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of moving during the Movement phase, a Psyker with this Psychic Power may instead activate this Psychic Power. All models, friendly and enemy, that are within 8&quot; of the Psyker gain a 6+ Invulnerable Save when targeted by any model that is not also within 8&quot; of the Psyker. If the Psyker moves, makes a Shooting Attack, Charges or is successfully Charged by an enemy unit, then the Psychic Power ends, otherwise it remains in effect indefinitely. When initially using the Psychic Power, or at the start of any of the controlling player’s subsequent Movement phase while it is in effect, the controlling player may choose to have the Psyker take a Psychic check. If the Check is passed then models affected by this Psychic Power gain a 4+ Invulnerable Save instead of a 6+ Invulnerable Save. If the Check is failed then the Psyker suffers Perils of the Warp and the Psychic Power immediately ends.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="5e7f-0e69-3082-7d3d" name="Psychic Discipline: Telekinesis" publicationId="e77a-823a-da94-16b9" page="324" hidden="false">
+          <description>A Psyker with this Discipline gains all the listed Powers, weapons and other special rules, as well as the Aetheric Lightning Psychic Weapon.
+
+Telekine Dome (Psychic Power)
+Telekine’s Focus (Psychic Weapon)
+</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="ec9a-85a7-18de-0fd0" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+        <infoLink id="47b8-f78e-b655-2744" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink id="199e-515a-ba53-0f73" name="Psychic Focus" hidden="false" targetId="bff3-3548-b2b8-72f1" type="rule"/>
+        <infoLink id="6850-1e44-1be3-3634" name="Aetheric Lightning" hidden="false" targetId="3d0c-e779-247f-0332" type="profile"/>
+        <infoLink id="f0a4-9181-76aa-4bb7" name="Force" hidden="false" targetId="f39e-4c3b-38e0-0050" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b751-a605-75e8-dd6f" name="Psychic Discipline: Telepathy" publicationId="e77a-823a-da94-16b9" page="325" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="44a2-c094-4470-09ff" name="Telepathic Fugue" publicationId="e77a-823a-da94-16b9" page="325" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
+          <characteristics>
+            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Once per turn, at the start of any Phase, the Psyker with this Psychic Power’s controlling player may select a single enemy unit within 24&quot; and line of sight of the Psyker and take a Psychic check. If that Check is passed then the target unit may not make any Reactions for the duration of that Phase. If the Check is failed then the Psyker suffers Perils of the Warp.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1f6e-2713-0da5-9f7b" name="Telepathic Hallucinations" publicationId="e77a-823a-da94-16b9" page="325" hidden="false" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">-</characteristic>
+            <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">-</characteristic>
+            <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 6, Hallucinations, Psychic Focus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="9a9c-4d42-2e75-2b5f" name="Hallucinations" publicationId="e77a-823a-da94-16b9" page="325" hidden="false">
+          <description>A unit that suffers one or more Hits from a Weapon with this special rule must make an immediate Pinning test, adding one to the result of the roll for each Hit scored by this attack before the result is decided. For example, if a Psyker attacks an enemy unit that has a Leadership of 8, scoring 3 Hits with Telepathic Hallucinations, then that unit must make an immediate Pinning test and add 3 to the result rolled before determining the result.</description>
+        </rule>
+        <rule id="af85-dce5-df91-5320" name="Psychic Discipline: Telepathy" hidden="false">
+          <description>A Psyker with this Discipline gains all the listed Powers, weapon and other special rules, as well as the AethericLightning Psychic Weapon.
+
+Telepathic Fugue (Psychic Power)
+Telepathic Hallucinations (Psychic Weapon)</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="418a-bed1-c9eb-e866" name="Psychic Focus" hidden="false" targetId="bff3-3548-b2b8-72f1" type="rule"/>
+        <infoLink id="174e-d416-e71a-7b22" name="Aetheric Lightning" hidden="false" targetId="3d0c-e779-247f-0332" type="profile"/>
+        <infoLink id="33e4-b972-7c01-d6b1" name="Force" hidden="false" targetId="f39e-4c3b-38e0-0050" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f7ab-1fb2-91b0-028d" name="Psychic Discipline: Thaumaturgy" publicationId="e77a-823a-da94-16b9" page="325" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="66c0-a79f-e220-cfb2" name="Thamaturgic Succour" publicationId="e77a-823a-da94-16b9" page="325" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
+          <characteristics>
+            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a single friendly unit with at least one model within 12&quot; and make a Psychic check. If the Psychic check is passed then all non-Vehicle models in the target unit may roll a D6. On a roll of a 5+, that model regains a single lost Wound. This ability cannot be used to increase a model’s Wounds beyond its starting Wounds Characteristic.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="021c-8e6e-e2ff-3813" name="Thamaturge&apos;s Cleansing" publicationId="e77a-823a-da94-16b9" page="325" hidden="false" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">Template</characteristic>
+            <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">4</characteristic>
+            <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">3</characteristic>
+            <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 1, Sanctic, Psychic Focus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="44f8-0dd6-9d7f-41b3" name="Psychic Discipline: Thaumaturgy" publicationId="e77a-823a-da94-16b9" page="325" hidden="false">
+          <description>A Psyker with this Discipline gains all the listed Powers, weapon and other special rules, as well as the Aetheric Lightning Psychic Weapon.
+
+Thaumaturgic Succour (Psychic Power)
+Thaumaturge’s Cleansing (Psychic Weapon)</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="9c7a-4767-7629-4160" name="Sanctic" hidden="false" targetId="d1c9-ee74-4e4f-8830" type="rule"/>
+        <infoLink id="050d-519f-8ccf-9742" name="Psychic Focus" hidden="false" targetId="bff3-3548-b2b8-72f1" type="rule"/>
+        <infoLink id="9bf9-12ec-72fb-14e1" name="Aetheric Lightning" hidden="false" targetId="3d0c-e779-247f-0332" type="profile"/>
+        <infoLink id="5b6d-8400-681f-e000" name="Force" hidden="false" targetId="f39e-4c3b-38e0-0050" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="31bd-eebb-a079-ed0c" name="Magna Combi-Weapon" hidden="false" collective="false" import="true">
@@ -4741,7 +4956,7 @@ Any model with a Legion Warhawk jump pack also gainst the Bulky (2), Hamer of Wr
 
 During a Reaction made in any Phase, a player may not choose to activate a model&apos;s Legion Warhawk jump pack to gain any bonus to its Movement Characteristic.</description>
     </rule>
-    <rule id="bff3-3548-b2b8-72f1" name="Psychic Focus (?? Where is this?)" hidden="false">
+    <rule id="bff3-3548-b2b8-72f1" name="Psychic Focus" publicationId="e77a-823a-da94-16b9" page="323" hidden="false">
       <description>Before making any To Hit rolls with this weapon, the Psyker must make a Psychic check. If the Check is passed, then the Psyker may attack as normal using the profile shown for this weapon. If the Check is failed, then the Psyker suffers Perils of the Warp, and if the model is not removed as a casualty then it may attack as normal but may not use this weapon.</description>
     </rule>
     <rule id="24e7-27da-9bf7-f096" name="Heavy Beam" publicationId="a716-c1c4-7b26-8424" page="121" hidden="false">
@@ -5403,6 +5618,9 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
     <rule id="6f5f-8f7c-d18b-cd42" name="Grenades" publicationId="a716-c1c4-7b26-8424" page="142" hidden="false">
       <description>Grenades are represented in battle as Wargear items with a specific effect rather than as weapons. Using grenades does not count as a Shooting Attack and their effects are entirely covered by the rules presented here. Note that grenade launchers do not use these rules and are Shooting Weapons governed by the standard Shooting rules.</description>
     </rule>
+    <rule id="d1c9-ee74-4e4f-8830" name="Sanctic" publicationId="e77a-823a-da94-16b9" page="325" hidden="false">
+      <description> A weapon with this special rule always Wounds Daemons on a 2+ and any successful Invulnerable Saves made by Daemon models against any Wounds it inflicts must be re-rolled.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="f52c-1f37-acd2-703c" name="Tartaros Terminator Armour" publicationId="a716-c1c4-7b26-8424" page="147" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
@@ -5421,6 +5639,14 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
         <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
         <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3d0c-e779-247f-0332" name="Aetheric Lightning" publicationId="e77a-823a-da94-16b9" page="322" hidden="false" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">18&quot;</characteristic>
+        <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">3</characteristic>
+        <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">4</characteristic>
+        <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 4, Force</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
