@@ -687,6 +687,13 @@
         <categoryLink id="3281-a38d-9db8-ddbd" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="f62b-3d2a-f993-53cc" name="Terminator Tartaros Squad" hidden="false" collective="false" import="true" targetId="1a8e-0ded-a4dc-2b4e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0782-1882-09ad-403b" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="a1f0-17a6-300a-9215" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="1369-9260-4f05-fe51" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="51e5-c28f-d9dd-5e52" name="Fulgrim (*)" hidden="true" collective="false" import="true" type="unit">
@@ -6691,9 +6698,13 @@ The Harrowing – At the start of the battle, before any models are deployed by 
       </costs>
     </selectionEntry>
     <selectionEntry id="21b1-2a90-9826-1782" name="Legion Vexilla" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="09ae-1d60-2816-7419" name="Legion Vexilla" hidden="false" targetId="7a34-e3d8-f7a2-180b" type="profile"/>
-      </infoLinks>
+      <profiles>
+        <profile id="5609-1e96-f0d4-37fb" name="Legion Vexilla" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with a Legion vexilla adds +1 to the Wounds score used to determine if they win a Combat in the Assault phase. In addition, a unit that includes at least one model with a Legion vexilla may, before any dice are rolled to determine Fall Back distance, choose to Fall Back only a distance equal to the roll of a D6 instead of 2D6 (or 3D6 if a Cavalry unit), and if forced to move off the edge of the battlefield will instead stop with each model 1&quot; away from the edge of the battlefield.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
@@ -12543,7 +12554,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
           <modifiers>
             <modifier type="increment" field="cf39-1343-64e9-ce58" value="1.0">
               <repeats>
-                <repeat field="selections" scope="aa72-63e4-bc60-4611" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="aa72-63e4-bc60-4611" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="355f-beeb-df61-355f" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="cf39-1343-64e9-ce58" value="1.0">
@@ -12554,7 +12565,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf39-1343-64e9-ce58" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf39-1343-64e9-ce58" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="b20a-5ab1-7a52-2b3c" name="Bayonet" hidden="false" collective="false" import="true" targetId="6904-6936-d6ca-a0eb" type="selectionEntry">
@@ -17452,7 +17463,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
             <infoLink id="4e6f-3180-c5b0-671d" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry id="f5fb-556e-925e-4dc9" name="May upgrade any one weapon to have the Master-crafted special rule" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="f5fb-556e-925e-4dc9" name="Give one weapon the Master-crafted special rule:" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6782-6511-36b9-5686" type="max"/>
               </constraints>
@@ -17618,43 +17629,6 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="3c3f-90e8-4aa3-c6db" name="May take one of the following:" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f245-abbe-3efa-7f00" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="5eb4-fd82-1614-f4f2" name="Bolter" hidden="false" collective="false" import="true" targetId="1ade-0c02-5612-252b" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="5be8-4563-2cf1-9ff9" name="Magna Combi-Weapon" hidden="false" collective="false" import="true" targetId="e5b1-83e5-7272-a59e" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="c206-1e1e-bcd7-eef1" name="Minor Combi-Weapon" hidden="false" collective="false" import="true" targetId="605e-1b86-ca08-9226" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="e413-366e-15c4-a093" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="6f6e-ad55-e093-6503" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="bc33-3193-ec45-0a8b" name="Astartes Shotgun" hidden="false" collective="false" import="true" targetId="6f79-5cf4-a689-7269" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="437d-1239-7086-6b7d" name="Nemesis Bolter" hidden="false" collective="false" import="true" targetId="c10a-61f8-9c33-fe8a" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
             <selectionEntryGroup id="ada8-1879-6c2d-aaf6" name="May take one of the following:" hidden="false" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="80c3-250f-9699-f47b" value="0.0">
@@ -17685,6 +17659,75 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                 <entryLink id="e254-77a1-6dae-14a0" name="Scimitar Jetbike" hidden="false" collective="false" import="true" targetId="6fb4-adf6-dbe8-86af" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="0a18-d9ee-0f07-fbdb" name="May take one of the following:" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf0d-cb68-eebb-2c13" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="5eb4-fd82-1614-f4f2" name="Bolter" hidden="false" collective="false" import="true" targetId="1ade-0c02-5612-252b" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="86ed-068a-b7fc-2aa9" name="Magna Combi-Weapon - Disintegrator" hidden="false" collective="false" import="true" targetId="1d05-f467-b0aa-88b2" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="6f8f-01d1-f965-8747" name="Minor Combi-Weapon - Alchem Flamer" hidden="false" collective="false" import="true" targetId="b941-687c-c95e-31a6" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="e90d-e5a8-f42d-da84" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd1f-1c51-706c-e5f7" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="e413-366e-15c4-a093" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="6f6e-ad55-e093-6503" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="bc33-3193-ec45-0a8b" name="Astartes Shotgun" hidden="false" collective="false" import="true" targetId="6f79-5cf4-a689-7269" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="437d-1239-7086-6b7d" name="Nemesis Bolter" hidden="false" collective="false" import="true" targetId="c10a-61f8-9c33-fe8a" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="953d-3362-075f-a91d" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="0d1c-227e-a3f8-cd63" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="9bea-7468-b71e-4edc" name="Magna Combi-Weapon - Plasma Gun" hidden="false" collective="false" import="true" targetId="cc98-8596-c713-516c" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="9784-9abd-c5ff-0cf8" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="34c4-db99-db36-0f2a" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="91ae-8ef6-bde1-42b6" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="false" import="true" targetId="aa3c-f5a5-9ce9-1497" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="a561-c15a-8c76-947f" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" targetId="7e5c-3d25-5c88-32e0" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -17767,7 +17810,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
               </constraints>
               <entryLinks>
                 <entryLink id="169d-631f-a1b3-3b01" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="a498-c66f-9eb7-ca9a" type="selectionEntry"/>
-                <entryLink id="ed68-de5d-8da9-0638" name="Magna Combi-Weapon" hidden="false" collective="false" import="true" targetId="31bd-eebb-a079-ed0c" type="selectionEntryGroup">
+                <entryLink id="ed68-de5d-8da9-0638" name="Magna Combi-Weapon - Disintegrator" hidden="false" collective="false" import="true" targetId="1d05-f467-b0aa-88b2" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
@@ -17777,20 +17820,52 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="b557-b666-05c7-23aa" name="Minor Combi-Weapon" hidden="false" collective="false" import="true" targetId="cd66-0c76-a384-edff" type="selectionEntryGroup">
+                <entryLink id="4b8c-b3dd-6417-e54d" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="0d1c-227e-a3f8-cd63" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="6d78-2456-9558-9573" name="Magna Combi-Weapon - Plasma Gun" hidden="false" collective="false" import="true" targetId="cc98-8596-c713-516c" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="47dc-7d05-a3c9-d3f2" name="Minor Combi-Weapon - Alchem Flamer" hidden="false" collective="false" import="true" targetId="b941-687c-c95e-31a6" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="e90d-e5a8-f42d-da84" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd1f-1c51-706c-e5f7" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="cb8f-19c0-16df-e085" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="false" import="true" targetId="aa3c-f5a5-9ce9-1497" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="5212-0334-3f78-6e3b" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" targetId="7e5c-3d25-5c88-32e0" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="4d77-d596-945b-3acb" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="34c4-db99-db36-0f2a" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="58ce-b8e9-9e1b-dec0" name="May exchange the power weapon for:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="58ce-b8e9-9e1b-dec0" name="May exchange the power weapon for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="2ad7-8f19-13dd-1e7b">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec84-6e45-026c-dbb9" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a81a-5ce7-8326-00df" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="2ad7-8f19-13dd-1e7b" name="Power Weapon" hidden="false" collective="false" import="true" targetId="47f2-74b9-936c-bf55" type="selectionEntryGroup"/>
+                <entryLink id="2ad7-8f19-13dd-1e7b" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry"/>
                 <entryLink id="78bc-eb09-b715-2c1a" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
@@ -17812,6 +17887,8 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="11e4-e94a-bf57-b2e2" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
+                <entryLink id="fd80-de37-1ec4-ff6c" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -17890,7 +17967,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
               </constraints>
               <entryLinks>
                 <entryLink id="5e15-2a71-5229-3691" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="a498-c66f-9eb7-ca9a" type="selectionEntry"/>
-                <entryLink id="d61a-4ff9-52cd-9027" name="Magna Combi-Weapon" hidden="false" collective="false" import="true" targetId="31bd-eebb-a079-ed0c" type="selectionEntryGroup">
+                <entryLink id="742c-11d9-444e-8039" name="Magna Combi-Weapon - Disintegrator" hidden="false" collective="false" import="true" targetId="1d05-f467-b0aa-88b2" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
@@ -17900,7 +17977,39 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="0eaa-fc9a-3f19-64d5" name="Minor Combi-Weapon" hidden="false" collective="false" import="true" targetId="cd66-0c76-a384-edff" type="selectionEntryGroup">
+                <entryLink id="1c9b-a032-5e94-d5b8" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="0d1c-227e-a3f8-cd63" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="7c59-d472-6873-1a6d" name="Magna Combi-Weapon - Plasma Gun" hidden="false" collective="false" import="true" targetId="cc98-8596-c713-516c" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="b9a5-3a5f-8be9-25c8" name="Minor Combi-Weapon - Alchem Flamer" hidden="false" collective="false" import="true" targetId="b941-687c-c95e-31a6" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="e90d-e5a8-f42d-da84" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd1f-1c51-706c-e5f7" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="9e4a-f43e-06d8-31a3" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="false" import="true" targetId="aa3c-f5a5-9ce9-1497" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="d88c-304d-273c-55bc" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" targetId="7e5c-3d25-5c88-32e0" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="2b91-3e9a-fbb0-5040" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="34c4-db99-db36-0f2a" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
@@ -17913,7 +18022,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8dc5-486d-f93b-813c" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="c442-f040-7219-5422" name="Power Weapon" hidden="false" collective="false" import="true" targetId="47f2-74b9-936c-bf55" type="selectionEntryGroup"/>
+                <entryLink id="c442-f040-7219-5422" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry"/>
                 <entryLink id="7e9e-6dce-128c-93f3" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
@@ -17935,6 +18044,8 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="ed48-3277-244a-da7a" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
+                <entryLink id="5361-47c8-3397-f643" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -18018,12 +18129,12 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="419a-9eda-4140-a515" name="Charnabal Weapon" hidden="false" collective="false" import="true" targetId="82b0-2459-4bbc-e15b" type="selectionEntryGroup">
+                <entryLink id="419a-9eda-4140-a515" name="Charnabal Glaive" hidden="false" collective="false" import="true" targetId="c07c-35e6-4616-ef25" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="b42f-5e74-c2d8-dad4" name="Power Weapon" hidden="false" collective="false" import="true" targetId="47f2-74b9-936c-bf55" type="selectionEntryGroup">
+                <entryLink id="b42f-5e74-c2d8-dad4" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
@@ -18045,6 +18156,26 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                   </costs>
                 </entryLink>
                 <entryLink id="b65c-f5fa-599c-cba1" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry"/>
+                <entryLink id="86cd-04c0-ea85-7ca0" name="Charnabal Sabre" hidden="false" collective="false" import="true" targetId="30c2-57eb-5bbe-be0b" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="6101-4eea-a61f-567a" name="Charnabal Tabar" hidden="false" collective="false" import="true" targetId="4611-c33e-f360-7246" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="8491-7a64-dcf6-6c43" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="bdce-df3b-14c2-9b01" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="525d-defc-1b29-0886" name="May take one of the following:" hidden="false" collective="false" import="true">
@@ -18057,12 +18188,19 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="d63b-e0d3-a555-60fa" name="Magna Combi-Weapon" hidden="false" collective="false" import="true" targetId="31bd-eebb-a079-ed0c" type="selectionEntryGroup">
+                <entryLink id="d63b-e0d3-a555-60fa" name="Magna Combi-Weapon - Disintegrator" hidden="false" collective="false" import="true" targetId="1d05-f467-b0aa-88b2" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="1f1f-c5e5-e02c-54fa" name="Minor Combi-Weapon" hidden="false" collective="false" import="true" targetId="cd66-0c76-a384-edff" type="selectionEntryGroup">
+                <entryLink id="1f1f-c5e5-e02c-54fa" name="Minor Combi-Weapon - Alchem Flamer" hidden="false" collective="false" import="true" targetId="b941-687c-c95e-31a6" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="e90d-e5a8-f42d-da84" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd1f-1c51-706c-e5f7" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
@@ -18080,6 +18218,31 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                 <entryLink id="5339-88ed-8e7c-02c6" name="Nemesis Bolter" hidden="false" collective="false" import="true" targetId="c10a-61f8-9c33-fe8a" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="3313-fc44-eee9-206f" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="0d1c-227e-a3f8-cd63" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="b595-7aed-9805-e9e9" name="Magna Combi-Weapon - Plasma Gun" hidden="false" collective="false" import="true" targetId="cc98-8596-c713-516c" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="854c-6a50-c6b3-2ccd" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="34c4-db99-db36-0f2a" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="40b4-401b-6f86-5548" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="false" import="true" targetId="aa3c-f5a5-9ce9-1497" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="211c-e425-cfb6-106e" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" targetId="7e5c-3d25-5c88-32e0" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -18157,16 +18320,6 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="46bf-ead1-aaf1-3df7" name="Charnabal Weapon" hidden="false" collective="false" import="true" targetId="82b0-2459-4bbc-e15b" type="selectionEntryGroup">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="7689-a114-9481-d393" name="Power Weapon" hidden="false" collective="false" import="true" targetId="47f2-74b9-936c-bf55" type="selectionEntryGroup">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
-                  </costs>
-                </entryLink>
                 <entryLink id="fc98-ddca-708c-fd04" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
@@ -18184,6 +18337,36 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                   </costs>
                 </entryLink>
                 <entryLink id="4da1-7810-954d-3fcd" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry"/>
+                <entryLink id="16b4-b530-9c81-837c" name="Charnabal Glaive" hidden="false" collective="false" import="true" targetId="c07c-35e6-4616-ef25" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="6865-e366-37c1-d6b2" name="Charnabal Sabre" hidden="false" collective="false" import="true" targetId="30c2-57eb-5bbe-be0b" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="6dc5-829c-6ec7-be80" name="Charnabal Tabar" hidden="false" collective="false" import="true" targetId="4611-c33e-f360-7246" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="2a78-9b96-f7cf-ef5a" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="0079-2ba9-83bc-e143" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="c0bb-8b67-02a9-1d44" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -18227,6 +18410,390 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="1a8e-0ded-a4dc-2b4e" name="Terminator Tartaros Squad" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntries>
+        <selectionEntry id="c995-8f83-515c-8969" name="Legion Tartaros" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2925-c474-e196-b4ca" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c990-c86f-d6c4-89eb" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="d72b-2602-f90d-af68" name="Legion Tartaros" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="c00b-2a1c-c3b8-b35e" name="May Exchange power weaponf for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="1632-9f9a-dc62-d669">
+              <modifiers>
+                <modifier type="set" field="fe23-f063-9a93-54b4" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7fa-de51-701c-df3f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="a2f7-d1aa-2275-b49d" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7fa-de51-701c-df3f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe23-f063-9a93-54b4" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2f7-d1aa-2275-b49d" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="1632-9f9a-dc62-d669" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry"/>
+                <entryLink id="6156-325c-6d7b-c9bf" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
+                <entryLink id="5ebb-3e0e-6357-e97f" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
+                <entryLink id="8db1-8638-c323-f518" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="6923-4e42-5691-b13f" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="fd47-19b1-89d3-0212" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="6a6e-b1f4-1890-9276" name="Chainfist" hidden="false" collective="false" import="true" targetId="7347-c5b1-5da3-a78f" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="a378-0fc5-9386-399c" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="bc1b-8923-df5e-539b" name="May exchange combi-bolter for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="31e0-85aa-f64c-ba90">
+              <modifiers>
+                <modifier type="set" field="38d7-d333-9284-4e9d" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7fa-de51-701c-df3f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5902-1b3e-8797-b8a5" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7fa-de51-701c-df3f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38d7-d333-9284-4e9d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5902-1b3e-8797-b8a5" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="31e0-85aa-f64c-ba90" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="a498-c66f-9eb7-ca9a" type="selectionEntry"/>
+                <entryLink id="ad88-4589-034a-6200" name="Magna Combi-Weapon - Disintegrator" hidden="false" collective="false" import="true" targetId="1d05-f467-b0aa-88b2" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="6420-6501-8f4c-4a5e" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="0d1c-227e-a3f8-cd63" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="ff58-8b16-ed8c-0090" name="Magna Combi-Weapon - Plasma Gun" hidden="false" collective="false" import="true" targetId="cc98-8596-c713-516c" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="9d4b-27cc-d1b2-40b0" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="increment" field="3505-2c9d-0f92-db3d" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="1a8e-0ded-a4dc-2b4e" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="3505-2c9d-0f92-db3d" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="1a8e-0ded-a4dc-2b4e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c44-ee45-056f-c665" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="3505-2c9d-0f92-db3d" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="1a8e-0ded-a4dc-2b4e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="993a-8959-a489-de8c" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="1a8e-0ded-a4dc-2b4e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3505-2c9d-0f92-db3d" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="d362-6150-baca-b836" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="34c4-db99-db36-0f2a" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="41a0-6533-eaa6-ccd0" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="false" import="true" targetId="aa3c-f5a5-9ce9-1497" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="7d24-b4d3-6499-7fed" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" targetId="7e5c-3d25-5c88-32e0" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="bc1e-0d67-cb36-8c05" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="6f6e-ad55-e093-6503" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="993a-8959-a489-de8c" name="Reaper Autocannon" hidden="false" collective="false" import="true" targetId="b87f-48de-6ced-043b" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="increment" field="40ce-0158-63c5-bf97" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="1a8e-0ded-a4dc-2b4e" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="40ce-0158-63c5-bf97" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="1a8e-0ded-a4dc-2b4e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c44-ee45-056f-c665" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="40ce-0158-63c5-bf97" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="1a8e-0ded-a4dc-2b4e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d4b-27cc-d1b2-40b0" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="1a8e-0ded-a4dc-2b4e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="40ce-0158-63c5-bf97" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="5c44-ee45-056f-c665" name="Plasma Blaster" hidden="false" collective="false" import="true" targetId="cd52-e9e8-3ab1-995c" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="increment" field="bb2b-9176-712e-14a1" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="1a8e-0ded-a4dc-2b4e" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="bb2b-9176-712e-14a1" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="1a8e-0ded-a4dc-2b4e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="993a-8959-a489-de8c" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="bb2b-9176-712e-14a1" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="1a8e-0ded-a4dc-2b4e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d4b-27cc-d1b2-40b0" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="1a8e-0ded-a4dc-2b4e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bb2b-9176-712e-14a1" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f1a1-b70d-46b4-c49a" name="Legion Tartaros Sergeant" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1acd-18a8-c1b1-8220" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1ea-1125-6adb-4cd8" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="d41c-648a-6c47-95a2" name="Legion Tartaros Sergeant" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="8234-6fef-a560-66a7" name="May exchange combi-bolter for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="4a3a-e1da-bc7d-55ae">
+              <modifiers>
+                <modifier type="set" field="a9f9-d7a3-5411-3e46" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7fa-de51-701c-df3f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="c345-3bb9-2dfe-4661" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7fa-de51-701c-df3f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9f9-d7a3-5411-3e46" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c345-3bb9-2dfe-4661" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="4a3a-e1da-bc7d-55ae" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="a498-c66f-9eb7-ca9a" type="selectionEntry"/>
+                <entryLink id="3e35-eafe-e0ec-542c" name="Magna Combi-Weapon - Disintegrator" hidden="false" collective="false" import="true" targetId="1d05-f467-b0aa-88b2" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="76d9-8196-4cde-1f7b" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="0d1c-227e-a3f8-cd63" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="5abe-6f86-6419-ea8d" name="Magna Combi-Weapon - Plasma Gun" hidden="false" collective="false" import="true" targetId="cc98-8596-c713-516c" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="cd76-51d9-b6bc-8917" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="6f6e-ad55-e093-6503" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="3547-8ece-4523-c56f" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="34c4-db99-db36-0f2a" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="19f3-d6ca-39c5-9707" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="false" import="true" targetId="aa3c-f5a5-9ce9-1497" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="b5d6-86af-1bf5-4663" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" targetId="7e5c-3d25-5c88-32e0" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="d28a-aa80-01bb-f627" name="May Exchange power weaponf for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="b678-948d-74b5-e04e">
+              <modifiers>
+                <modifier type="set" field="6431-b224-1673-e7e4" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7fa-de51-701c-df3f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="1468-d20e-3573-2d4b" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7fa-de51-701c-df3f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1468-d20e-3573-2d4b" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6431-b224-1673-e7e4" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="b678-948d-74b5-e04e" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry"/>
+                <entryLink id="8e29-ea8e-b861-72bf" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
+                <entryLink id="7ec5-6b1b-76b3-c56a" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
+                <entryLink id="a6fb-eb40-26db-5a63" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="6923-4e42-5691-b13f" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="e6ce-aaff-5524-5c93" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="27a2-256b-0624-4a62" name="Chainfist" hidden="false" collective="false" import="true" targetId="7347-c5b1-5da3-a78f" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="c2bd-06de-0356-030f" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="bfa7-c710-e82b-7e44" name="Grenade Harness" hidden="false" collective="false" import="true" targetId="251a-860d-2c4d-62cc" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c74-8d11-3162-0cf7" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="d7fa-de51-701c-df3f" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="6923-4e42-5691-b13f" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Pair of Lightning Claws"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f0f-adc5-5f5b-b364" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="87b7-091d-4bc3-9164" name="One Legion Tartaros may take:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="5735-f09b-b952-8e44" name="Nuncio-Vox" hidden="false" collective="false" import="true" targetId="005e-aae6-ddac-bb45" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e6a-05f8-2566-2d4a" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="8816-a7b3-3680-68b5" name="Augury Scanner" hidden="false" collective="false" import="true" targetId="67ee-7338-3b74-04b4" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42e2-94d5-1015-564f" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="d9ec-6c80-a321-0184" name="Legion Vexilla" hidden="false" collective="false" import="true" targetId="21b1-2a90-9826-1782" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="011c-54b9-38aa-b332" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -18896,11 +19463,6 @@ A model with the Infantry Unit Type that selects a Legion Scimitar jetbike as an
     <profile id="b147-feed-1b29-50d8" name="Proteus Land Speeder" publicationId="a716-c1c4-7b26-8424" page="144" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Legion Proteus Land Speeder has one Heavy Bolter.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="7a34-e3d8-f7a2-180b" name="Legion Vexilla" publicationId="a716-c1c4-7b26-8424" page="145" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with a Legion vexilla adds +1 to the Wounds score used to determine if they win a Combat in the Assault phase. In addition, a unit that includes at least one model with a Legion vexilla may, before any dice are rolled to determine Fall Back distance, choose to Fall Back only a distance equal to the roll of a D6 instead of 2D6 (or 3D6 if a Cavalry unit), and if forced to move off the edge of the battlefield will instead stop with each model 1&quot; away from the edge of the battlefield.</characteristic>
       </characteristics>
     </profile>
     <profile id="f16f-7855-6cee-490a" name="Legion Standard" publicationId="a716-c1c4-7b26-8424" page="144" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
