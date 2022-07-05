@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="4" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="5" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 18th, 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" publicationDate="June 18th, 2022"/>
@@ -355,7 +355,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart (LA)" hidden="false">
       <categoryLinks>
-		<categoryLink id="17a5-4c80-0c5d-df4d" name="Allegiance" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="false">
+        <categoryLink id="17a5-4c80-0c5d-df4d" name="Allegiance" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7ab6-7d01-ec54-52df" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fa4b-a703-9dbf-bb6a" type="max"/>
@@ -405,9 +405,9 @@ Conversely, if an Independent Character joins a unit after that unit has been th
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-	<forceEntry id="d4f2-6da5-b6de-06ec" name="Allied Detachment (LA)" hidden="false">
+    <forceEntry id="d4f2-6da5-b6de-06ec" name="Allied Detachment (LA)" hidden="false">
       <categoryLinks>
-		<categoryLink id="45cc-4d1d-6d5e-cdc9" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="false">
+        <categoryLink id="45cc-4d1d-6d5e-cdc9" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b459-8375-3ca8-72f1" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="df84-98ed-3840-b451" type="max"/>
@@ -4973,6 +4973,18 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="a6d2-b3a9-6d2c-1f6f" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="d233-cb08-eb24-5c8c" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="02f1-88d2-d3e6-2164" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+        <infoLink id="81bb-d70b-debf-9d17" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
+        <infoLink id="aee2-5411-5923-8b3e" name="Lightning Claw" hidden="false" targetId="00a9-04d4-17d3-3442" type="profile"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
