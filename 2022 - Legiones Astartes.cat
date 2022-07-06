@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="5" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="6" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="11f2-472f-c1d1-9ae9" name="Legiones Astartes" hidden="false">
       <infoLinks>
@@ -483,8 +483,9 @@
     </entryLink>
     <entryLink id="920f-23fb-cf62-526a" name="Legion" hidden="false" collective="false" import="true" targetId="c23e-df5b-6a22-5a33" type="selectionEntry">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f18f-c95a-ee24-7152" type="min"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="033e-1bc8-f31d-5b5e" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f18f-c95a-ee24-7152" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="033e-1bc8-f31d-5b5e" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c0eb-b7a5-6efe-d177" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="e20c-d51e-ef89-cf1c" name="New CategoryLink" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="true"/>
@@ -11977,10 +11978,6 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
       </costs>
     </selectionEntry>
     <selectionEntry id="c23e-df5b-6a22-5a33" name="Legion" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="forces" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e44f-defe-7b08-a753" type="min"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f2d-899c-3faf-1200" type="max"/>
-      </constraints>
       <entryLinks>
         <entryLink id="2e49-c6bd-f615-c99d" name="Legion" hidden="false" collective="false" import="true" targetId="4a48-4935-246d-0c2e" type="selectionEntryGroup"/>
       </entryLinks>
