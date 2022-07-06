@@ -5,6 +5,9 @@
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" publicationDate="June 18th, 2022"/>
     <publication id="09c5-eeae-f398-b653" name="Liber Hereticus – Traitor Legiones Astartes Army Book" publicationDate="June 18th, 2022"/>
     <publication id="a716-c1c4-7b26-8424" name="Both Astartes Army Books" publicationDate="June 18th, 2022"/>
+    <publication id="d0df-7166-5cd3-89fd" name="Legacies of The Age of Darkness"/>
+    <publication id="09b3-d525-cdea-260c" name="Exemplary Battles of Age of Darkness"/>
+    <publication id="d13e-e1ff-5dc7-b84b" name="Exemplary Battles - The Scouring of Gildens Star"/>
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1.0" hidden="false"/>
@@ -353,7 +356,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     </categoryEntry>
   </categoryEntries>
   <forceEntries>
-    <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart (LA)" hidden="false">
+    <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
       <categoryLinks>
         <categoryLink id="17a5-4c80-0c5d-df4d" name="Allegiance" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="false">
           <constraints>
@@ -405,7 +408,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="d4f2-6da5-b6de-06ec" name="Allied Detachment (LA)" hidden="false">
+    <forceEntry id="d4f2-6da5-b6de-06ec" name="Allied Detachment" hidden="false">
       <categoryLinks>
         <categoryLink id="45cc-4d1d-6d5e-cdc9" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="false">
           <constraints>
@@ -4985,6 +4988,9 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
         <infoLink id="81bb-d70b-debf-9d17" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
         <infoLink id="aee2-5411-5923-8b3e" name="Lightning Claw" hidden="false" targetId="00a9-04d4-17d3-3442" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
