@@ -616,6 +616,12 @@
         <categoryLink id="4c76-7464-7688-fa83" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="c3b8-4eb1-012c-e665" name="Terminator Cataphractii Squad" hidden="false" collective="false" import="true" targetId="d91a-a3c7-d7be-4293" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="a124-7892-7a9a-22ca" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="5575-e5b4-8b3a-5783" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="51e5-c28f-d9dd-5e52" name="Fulgrim (*)" hidden="true" collective="false" import="true" type="unit">
@@ -17702,23 +17708,6 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="0eab-b0c5-936f-2521" name="May exchange both his Bolt Pistol &amp; Chainsword for:" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f460-0ac6-3ad9-0ac5" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="6237-613f-43b5-9769" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="a6d2-b3a9-6d2c-1f6f" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="0ddd-d744-afd6-9c1f" name="Pair of Raven&apos;s Talons" hidden="false" collective="false" import="true" targetId="08e4-5e02-da82-f296" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink id="2492-abb9-4a93-b801" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
@@ -17744,6 +17733,11 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf8a-86e8-9de6-9df1" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d032-adf5-b65a-a555" type="min"/>
               </constraints>
+            </entryLink>
+            <entryLink id="b7e7-08fd-94b5-24d0" name="Paired Melee Weapons:" hidden="false" collective="false" import="true" targetId="b503-8902-fde3-7675" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" field="name" value="May exchange both the Bolt Pistol &amp; Chainsword for:"/>
+              </modifiers>
             </entryLink>
           </entryLinks>
           <costs>
@@ -17789,25 +17783,6 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
               </modifiers>
             </infoLink>
           </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="092d-d95a-2a8f-35f3" name="May exchange both his Combi-Bolter &amp; Power Weapon for:" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="000d-3573-b9a7-4398" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="6f3b-638a-abd4-ec85" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="a6d2-b3a9-6d2c-1f6f" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="8973-6507-c731-b808" name="Pair of Raven&apos;s Talons" hidden="false" collective="false" import="true" targetId="08e4-5e02-da82-f296" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
           <entryLinks>
             <entryLink id="5aba-6e0b-db50-0d75" name="Grenade Harness" hidden="false" collective="false" import="true" targetId="251a-860d-2c4d-62cc" type="selectionEntry">
               <constraints>
@@ -17826,6 +17801,11 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
             <entryLink id="51ab-96aa-5095-d60b" name="Terminator Ranged Weapon" hidden="false" collective="false" import="true" targetId="bb49-6a88-7ffa-6aa7" type="selectionEntryGroup">
               <modifiers>
                 <modifier type="set" field="name" value="May exchange combi-bolter for:"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="cffd-b7d2-1d19-58c2" name="Paired Melee Weapons:" hidden="false" collective="false" import="true" targetId="b503-8902-fde3-7675" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" field="name" value="May exchange both his Combi-Bolter &amp; Power Weapon for:"/>
               </modifiers>
             </entryLink>
           </entryLinks>
@@ -17884,25 +17864,6 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
               </modifiers>
             </infoLink>
           </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="341d-480b-cb6f-401e" name="May exchange both his Combi-Bolter &amp; Power Weapon for:" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b023-ef0c-ab45-7434" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="6720-115e-81e4-06b8" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="a6d2-b3a9-6d2c-1f6f" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="8de4-854a-49ca-2f40" name="Pair of Raven&apos;s Talons" hidden="false" collective="false" import="true" targetId="08e4-5e02-da82-f296" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
           <entryLinks>
             <entryLink id="5951-490f-9130-b77a" name="Grenade Harness" hidden="false" collective="false" import="true" targetId="251a-860d-2c4d-62cc" type="selectionEntry">
               <constraints>
@@ -17921,6 +17882,11 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
             <entryLink id="a602-e0f0-4950-3e63" name="Terminator Ranged Weapon" hidden="false" collective="false" import="true" targetId="bb49-6a88-7ffa-6aa7" type="selectionEntryGroup">
               <modifiers>
                 <modifier type="set" field="name" value="May exchange combi-bolter for:"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="03ed-056f-a97d-e68c" name="Paired Melee Weapons:" hidden="false" collective="false" import="true" targetId="b503-8902-fde3-7675" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" field="name" value="May exchange both his Combi-Bolter &amp; Power Weapon for:"/>
               </modifiers>
             </entryLink>
           </entryLinks>
@@ -18325,23 +18291,6 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="0cd6-f0ed-7f57-ae1a" name="May exchange both his Bolt Pistol &amp; Chainsword for:" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4ac-b393-7c07-312f" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="a0d2-eeac-8149-e231" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="a6d2-b3a9-6d2c-1f6f" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="c25b-282d-081e-f251" name="Pair of Raven&apos;s Talons" hidden="false" collective="false" import="true" targetId="08e4-5e02-da82-f296" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink id="ae48-827f-6320-94ee" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
@@ -18363,6 +18312,11 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f3c-1c32-67ef-52c2" type="max"/>
               </constraints>
             </entryLink>
+            <entryLink id="7309-fbdd-849e-4e96" name="Paired Melee Weapons:" hidden="false" collective="false" import="true" targetId="b503-8902-fde3-7675" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" field="name" value="May exchange both the Bolt Pistol and Chainsword for:"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60.0"/>
@@ -18373,7 +18327,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1a8e-0ded-a4dc-2b4e" name="Terminator Tartaros Squad" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1a8e-0ded-a4dc-2b4e" name="Terminator Tartaros Squad" hidden="false" collective="false" import="true" type="unit">
       <selectionEntries>
         <selectionEntry id="c995-8f83-515c-8969" name="Legion Tartaros" hidden="false" collective="false" import="true" type="model">
           <constraints>
@@ -18397,150 +18351,43 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
               </characteristics>
             </profile>
           </profiles>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="bc1b-8923-df5e-539b" name="May exchange combi-bolter for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="31e0-85aa-f64c-ba90">
-              <modifiers>
-                <modifier type="set" field="38d7-d333-9284-4e9d" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7fa-de51-701c-df3f" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="5902-1b3e-8797-b8a5" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7fa-de51-701c-df3f" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38d7-d333-9284-4e9d" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5902-1b3e-8797-b8a5" type="min"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="31e0-85aa-f64c-ba90" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="a498-c66f-9eb7-ca9a" type="selectionEntry"/>
-                <entryLink id="ad88-4589-034a-6200" name="Magna Combi-Weapon - Disintegrator" hidden="false" collective="false" import="true" targetId="1d05-f467-b0aa-88b2" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="6420-6501-8f4c-4a5e" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="0d1c-227e-a3f8-cd63" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="ff58-8b16-ed8c-0090" name="Magna Combi-Weapon - Plasma Gun" hidden="false" collective="false" import="true" targetId="cc98-8596-c713-516c" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="d362-6150-baca-b836" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="34c4-db99-db36-0f2a" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="41a0-6533-eaa6-ccd0" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="false" import="true" targetId="aa3c-f5a5-9ce9-1497" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="7d24-b4d3-6499-7fed" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" targetId="7e5c-3d25-5c88-32e0" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="bc1e-0d67-cb36-8c05" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="6f6e-ad55-e093-6503" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
           <entryLinks>
             <entryLink id="00af-2e78-8870-9c01" name="Terminator Ranged Weapon" hidden="false" collective="false" import="true" targetId="bb49-6a88-7ffa-6aa7" type="selectionEntryGroup">
               <modifiers>
                 <modifier type="set" field="name" value="May exchange combi-bolter for:"/>
+                <modifier type="set" field="b932-4d6c-e2f0-7299" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="c995-8f83-515c-8969" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bdce-5793-7a7f-8d2a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="c4c8-7ace-0530-0cc2" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="c995-8f83-515c-8969" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bdce-5793-7a7f-8d2a" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
-              <entryLinks>
-                <entryLink id="85d2-d9e0-4017-67cd" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="increment" field="c6c2-9e92-b85e-a024" value="1.0">
-                      <repeats>
-                        <repeat field="selections" scope="1a8e-0ded-a4dc-2b4e" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                    <modifier type="decrement" field="c6c2-9e92-b85e-a024" value="1.0">
-                      <repeats>
-                        <repeat field="selections" scope="1a8e-0ded-a4dc-2b4e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b87f-48de-6ced-043b" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                    <modifier type="decrement" field="c6c2-9e92-b85e-a024" value="1.0">
-                      <repeats>
-                        <repeat field="selections" scope="1a8e-0ded-a4dc-2b4e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd52-e9e8-3ab1-995c" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="1a8e-0ded-a4dc-2b4e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c6c2-9e92-b85e-a024" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="c802-89cc-ed83-cc67" name="Plasma Blaster" hidden="false" collective="false" import="true" targetId="cd52-e9e8-3ab1-995c" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="increment" field="b59c-26e0-0524-2840" value="1.0">
-                      <repeats>
-                        <repeat field="selections" scope="1a8e-0ded-a4dc-2b4e" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                    <modifier type="decrement" field="b59c-26e0-0524-2840" value="1.0">
-                      <repeats>
-                        <repeat field="selections" scope="1a8e-0ded-a4dc-2b4e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5507-b432-3b4c-df12" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                    <modifier type="decrement" field="b59c-26e0-0524-2840" value="1.0">
-                      <repeats>
-                        <repeat field="selections" scope="1a8e-0ded-a4dc-2b4e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b87f-48de-6ced-043b" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="1a8e-0ded-a4dc-2b4e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b59c-26e0-0524-2840" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="2217-28b2-fec4-5c0c" name="Reaper Autocannon" hidden="false" collective="false" import="true" targetId="b87f-48de-6ced-043b" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="increment" field="1b7a-31ff-9442-4de3" value="1.0">
-                      <repeats>
-                        <repeat field="selections" scope="1a8e-0ded-a4dc-2b4e" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                    <modifier type="decrement" field="1b7a-31ff-9442-4de3" value="1.0">
-                      <repeats>
-                        <repeat field="selections" scope="1a8e-0ded-a4dc-2b4e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd52-e9e8-3ab1-995c" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                    <modifier type="decrement" field="1b7a-31ff-9442-4de3" value="1.0">
-                      <repeats>
-                        <repeat field="selections" scope="1a8e-0ded-a4dc-2b4e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5507-b432-3b4c-df12" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="1a8e-0ded-a4dc-2b4e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b7a-31ff-9442-4de3" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
             </entryLink>
             <entryLink id="2b93-db4e-220d-756b" name="Terminator Melee Weapon" hidden="false" collective="false" import="true" targetId="8b46-faad-df3a-6929" type="selectionEntryGroup">
               <modifiers>
                 <modifier type="set" field="name" value="May exchange power weapon for:"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="92f2-6b7b-d7a5-0a9d" name="Terminator Heavy Weapons" hidden="false" collective="false" import="true" targetId="bdce-5793-7a7f-8d2a" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="decrement" field="2d40-bc05-c844-fcc4" value="1.0"/>
+                <modifier type="increment" field="2d40-bc05-c844-fcc4" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="1a8e-0ded-a4dc-2b4e" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="1a8e-0ded-a4dc-2b4e" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2d40-bc05-c844-fcc4" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="efc5-8c12-c868-a9c4" name="Paired Melee Weapons:" hidden="false" collective="false" import="true" targetId="b503-8902-fde3-7675" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" field="name" value="May exchange both his Combi-Bolter &amp; Power Weapon for:"/>
               </modifiers>
             </entryLink>
           </entryLinks>
@@ -18598,6 +18445,11 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
             <entryLink id="d546-c770-0aff-8f3b" name="Terminator Ranged Weapon" hidden="false" collective="false" import="true" targetId="bb49-6a88-7ffa-6aa7" type="selectionEntryGroup">
               <modifiers>
                 <modifier type="set" field="name" value="May exchange combi-bolter for:"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="f97d-37ce-3208-6e29" name="Paired Melee Weapons:" hidden="false" collective="false" import="true" targetId="b503-8902-fde3-7675" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" field="name" value="May exchange both his Combi-Bolter &amp; Power Weapon for:"/>
               </modifiers>
             </entryLink>
           </entryLinks>
@@ -19878,6 +19730,169 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="d91a-a3c7-d7be-4293" name="Terminator Cataphractii Squad" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="9369-a4cc-c1fa-0baf" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+        <infoLink id="a864-610c-7dc3-64c2" name="Inexorable" hidden="false" targetId="d863-8a5e-ddb6-d5a4" type="rule"/>
+        <infoLink id="9068-2e75-604b-a76b" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="d631-7bf0-2fb8-041d" name="Legion Cataphractii" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="748f-56ee-f0d8-a2ac" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd98-6ea7-ac93-d31f" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="4ce2-6d2e-34cc-86c0" name="Legion Cataphractii" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink id="c0c2-619e-da9d-55e2" name="Terminator Ranged Weapon" hidden="false" collective="false" import="true" targetId="bb49-6a88-7ffa-6aa7" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" field="name" value="May exchange combi-bolter for:"/>
+                <modifier type="set" field="b932-4d6c-e2f0-7299" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="d631-7bf0-2fb8-041d" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bdce-5793-7a7f-8d2a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="c4c8-7ace-0530-0cc2" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="d631-7bf0-2fb8-041d" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bdce-5793-7a7f-8d2a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="b933-0f72-4288-2d5f" name="Terminator Melee Weapon" hidden="false" collective="false" import="true" targetId="8b46-faad-df3a-6929" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" field="name" value="May exchange power weapon for:"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="ef74-3c5a-9bd3-cc75" name="Terminator Heavy Weapons" hidden="false" collective="false" import="true" targetId="bdce-5793-7a7f-8d2a" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="increment" field="4cda-9ef0-04e6-0bcf" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="d91a-a3c7-d7be-4293" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="decrement" field="4cda-9ef0-04e6-0bcf" value="1.0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="d91a-a3c7-d7be-4293" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4cda-9ef0-04e6-0bcf" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="31db-1317-59ec-1a79" name="Paired Melee Weapons:" hidden="false" collective="false" import="true" targetId="b503-8902-fde3-7675" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" field="name" value="May exchange both his Combi-Bolter &amp; Power Weapon for:"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="57d1-a55f-f536-9b99" name="Legion Tartaros Sergeant" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ceb-162c-6268-1fde" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4403-f36e-30c5-ee10" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="580e-718a-3a63-6eee" name="Legion Tartaros Sergeant" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy, Character)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink id="90c8-eaea-ab6d-7333" name="Grenade Harness" hidden="false" collective="false" import="true" targetId="251a-860d-2c4d-62cc" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="111c-b1d3-a876-e9dc" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="f65a-ba11-0b14-a239" name="Terminator Melee Weapon" hidden="false" collective="false" import="true" targetId="8b46-faad-df3a-6929" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" field="name" value="May exchange power weapon for:"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="25d8-93b3-6045-c2e1" name="Terminator Ranged Weapon" hidden="false" collective="false" import="true" targetId="bb49-6a88-7ffa-6aa7" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" field="name" value="May exchange combi-bolter for:"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="f00a-782d-4d92-59b5" name="Paired Melee Weapons:" hidden="false" collective="false" import="true" targetId="b503-8902-fde3-7675" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" field="name" value="May exchange both his Combi-Bolter &amp; Power Weapon for:"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b908-ada3-76ab-8d4d" name="One Legion Tartaros may take:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="fa31-6ba2-2032-289f" name="Nuncio-Vox" hidden="false" collective="false" import="true" targetId="005e-aae6-ddac-bb45" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c46e-6595-ec2a-1b00" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="411d-2c51-05d7-90f6" name="Augury Scanner" hidden="false" collective="false" import="true" targetId="67ee-7338-3b74-04b4" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2799-1b79-43ed-492b" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="e64f-6f9f-d48d-7c81" name="Legion Vexilla" hidden="false" collective="false" import="true" targetId="21b1-2a90-9826-1782" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2428-9280-c965-0006" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="61a2-7005-1e6c-c08e" name="Hexagrammaton Choice:" hidden="true" collective="false" import="true">
@@ -20383,24 +20398,14 @@ A model with this special rule, and any unit it joins, must either begin any bat
     <selectionEntryGroup id="8b46-faad-df3a-6929" name="Terminator Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="4123-9851-52ba-4f34">
       <modifiers>
         <modifier type="set" field="a4fb-6da9-e280-d703" value="0.0">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6d2-b3a9-6d2c-1f6f" type="equalTo"/>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08e4-5e02-da82-f296" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b503-8902-fde3-7675" type="equalTo"/>
+          </conditions>
         </modifier>
         <modifier type="set" field="d118-9289-f6da-204b" value="0.0">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6d2-b3a9-6d2c-1f6f" type="equalTo"/>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08e4-5e02-da82-f296" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b503-8902-fde3-7675" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -20413,7 +20418,19 @@ A model with this special rule, and any unit it joins, must either begin any bat
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
           </costs>
         </entryLink>
-        <entryLink id="450b-bacf-2dca-e73c" name="Paragon Blade" hidden="false" collective="false" import="true" targetId="2ab9-0e45-405e-056b" type="selectionEntry">
+        <entryLink id="450b-bacf-2dca-e73c" name="Paragon Blade" hidden="true" collective="false" import="true" targetId="2ab9-0e45-405e-056b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de73-2d79-156f-6f64" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2f0-15d9-2b7a-2204" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
           </costs>
@@ -20423,7 +20440,23 @@ A model with this special rule, and any unit it joins, must either begin any bat
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
           </costs>
         </entryLink>
-        <entryLink id="e1ae-e6f7-8661-d80b" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="6923-4e42-5691-b13f" type="selectionEntry"/>
+        <entryLink id="e1ae-e6f7-8661-d80b" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="6923-4e42-5691-b13f" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="d2ee-04cb-5f8a-2642" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de73-2d79-156f-6f64" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2f0-15d9-2b7a-2204" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+          </costs>
+        </entryLink>
         <entryLink id="b361-3d8b-c8b6-9969" name="Chainfist" hidden="false" collective="false" import="true" targetId="7347-c5b1-5da3-a78f" type="selectionEntry">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
@@ -20431,6 +20464,18 @@ A model with this special rule, and any unit it joins, must either begin any bat
         </entryLink>
         <entryLink id="4123-9851-52ba-4f34" name="Power Weapon" hidden="false" collective="false" import="true" targetId="8d9c-9f80-c0fd-adcf" type="selectionEntry"/>
         <entryLink id="391a-a1cd-2a6c-88dd" name="Raven&apos;s Talons" hidden="true" collective="false" import="true" targetId="09d8-64f5-1936-e8ab" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="d2ee-04cb-5f8a-2642" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de73-2d79-156f-6f64" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2f0-15d9-2b7a-2204" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
           </costs>
@@ -20443,8 +20488,8 @@ A model with this special rule, and any unit it joins, must either begin any bat
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6d2-b3a9-6d2c-1f6f" type="equalTo"/>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08e4-5e02-da82-f296" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bdce-5793-7a7f-8d2a" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b503-8902-fde3-7675" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -20453,16 +20498,16 @@ A model with this special rule, and any unit it joins, must either begin any bat
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6d2-b3a9-6d2c-1f6f" type="equalTo"/>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08e4-5e02-da82-f296" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bdce-5793-7a7f-8d2a" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b503-8902-fde3-7675" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4c8-7ace-0530-0cc2" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b932-4d6c-e2f0-7299" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c4c8-7ace-0530-0cc2" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b932-4d6c-e2f0-7299" type="max"/>
       </constraints>
       <entryLinks>
         <entryLink id="c0a9-4f05-4261-68ad" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="a498-c66f-9eb7-ca9a" type="selectionEntry"/>
@@ -20481,6 +20526,50 @@ A model with this special rule, and any unit it joins, must either begin any bat
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
           </costs>
         </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="bdce-5793-7a7f-8d2a" name="Terminator Heavy Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="103d-1f6c-f205-e8bb">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aaae-95e1-d853-c5ed" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="103d-1f6c-f205-e8bb" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="7bcc-a06d-a7b2-adc4" name="Plasma Blaster" hidden="false" collective="false" import="true" targetId="cd52-e9e8-3ab1-995c" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="7972-c078-240d-52a2" name="Reaper Autocannon" hidden="false" collective="false" import="true" targetId="b87f-48de-6ced-043b" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="b503-8902-fde3-7675" name="Paired Melee Weapons:" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="6444-d683-8f5a-be25" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bdce-5793-7a7f-8d2a" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8b46-faad-df3a-6929" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bb49-6a88-7ffa-6aa7" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6444-d683-8f5a-be25" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="749c-4663-0305-571f" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="a6d2-b3a9-6d2c-1f6f" type="selectionEntry"/>
+        <entryLink id="e1d1-e137-9cec-c68e" name="Pair of Raven&apos;s Talons" hidden="false" collective="false" import="true" targetId="08e4-5e02-da82-f296" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
