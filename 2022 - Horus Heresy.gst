@@ -3799,34 +3799,6 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f43f-d10f-b58a-c1d9" name="Power Dagger" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="aa7c-51d8-33d2-644c" name="Power Dagger" publicationId="09c5-eeae-f398-b653" page="334" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Sudden Strike (1), Breaching (5+)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="dc8e-d91e-7dd6-012d" name="Sudden Strike (X)" hidden="false" targetId="58b3-7d84-b92d-1363" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Sudden Strike (1)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="8e3f-44a3-c44d-2238" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Breaching (5+)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="3ae7-966a-9f93-97a3" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="768d-b89b-7328-d749" name="Power Fist" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="5103-7522-7419-fdc4" name="Power Fist" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
@@ -4962,6 +4934,325 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="4a48-4935-246d-0c2e" name="Legion" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3722-d55c-87e3-b16b" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1813-87b6-49aa-babb" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="b2b4-2198-0b90-dd9f" name="   I: Dark Angels" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="0d8d-2e8f-a616-d339" name="The Armoury of the Dark Angels" hidden="false">
+              <description>• Any model with the Character Unit Sub-type and the Legiones Astartes (Dark Angels) special rule may exchange a power sword for a Calibanite warblade for +5 Points, The weapon is counted as a &quot;Power&quot; Weapon for those rules that affect such weapons.
+
+•Any Models with the Legiones Astartes (Dark Angels) special rule may exchange a plasma gun or twin-linked plasma gun for a Plasma Repeater for +5 points or a Plasma Burner for +10 points. In the case of units with multiple plasma guns, all such weapons in the same unit must be upgraded to the same weapon if either option is chosen, Both weapons are counted as &quot;Plasma&quot; weapons for rules that affect such weaponry.
+
+•Any models with the Legiones Astartes (Dark Angels) special rule that have a missile launcher may take stasis missiles in addition to any other missile available to them for +5 points per model, all such weapons in the same unit must be upgraded with the same option if chosen. The weapon is counted as a &quot;Missile&quot; weapon for rules that affect such weapons.
+
+• The Dark Angels gain access to a Legion-Specific Legion Consularis Upgrade in the &quot;Paladin of the Hekatonystika&quot;</description>
+            </rule>
+            <rule id="4865-564e-606c-4503" name="Legion Consularis: Paladin of the Hekatonystika" hidden="false">
+              <description>Any Legion Centurion, Legion Tartaros Centurion or Legion Cataphractii Centurion with the Legiones Astartes (Dark Angels) special rule may be upgraded to a Paladin of the Hekatonystika Consul instead of selecting any standard Consul Upgrades which grants the following benefits.
+
+• A Paladin of the Hekatonystika must be given one of the Orders of the Hekatonystika options available to the Inner Circle Knights Cenobium at no additional points cost and must increase his WS to 6 and Ld to 10. In addition, a Paladin of the Hekatonystika gains the Stubborn and Adamantium Will (3+) special rules.
+
+• A Paladin of the Hekatonystika must take a Terranic greatsword for no additional points cost.</description>
+            </rule>
+            <rule id="7c77-8b9f-1e53-0a02" name="Legiones Astartes (Dark Angels)" hidden="false">
+              <description>All units composed entirely of models with the Legiones Astartes (Dark Angels) special rule must select a Hexagrammaton Unit Sub-type (some models may be required to select a specific Unit Sub-type – this will be noted on their Army List Profile). All models in a unit must select the same Hexagrammaton Unit Sub-type (a model selected as a Dedicated Transport must select the same Unit Sub-type as the unit it is selected for). However, a Legion Techmarine Covenant or Legion Apothecarion Detachment may select a different Hexagrammaton Unit Sub-type for each model in the unit – but when these models are assigned to other units, they must be assigned to a unit that includes at least one model with the same Hexagrammaton Unit Sub-type. Additionally, a unit selected as a Retinue may have a different Hexagrammaton Unit Sub-type than the model selected as its Leader.
+
+Models with the Independent Character special rule and a Hexagrammaton Unit Sub-type may join units that include models with a different Hexagrammaton Unit Sub-type
+
+Models in a unit only gain the benefits of a Hexagrammaton Unit Sub-type if that unit is made up entirely of models with the Legiones Astartes (Dark Angels) special rule, and at least one model with a Hexagrammaton Unit Sub-type. However, the models in a unit may only benefit from the rules of a single Hexagrammaton Unit Sub-type in any Game Turn. If, at the start of a player’s turn, any unit under that player’s control includes models with different Hexagrammaton Unit Sub-types then the controlling player must select one of those Hexagrammaton Unit Subtypes, whose benefits will be applied to the models in that unit until the start of the controlling player’s next turn – any other Hexagrammaton Unit Sub-types will grant no benefit to that unit for the duration of that Game Turn.
+
+While Embarked on any model, a unit gains no benefit from any Hexagrammaton Unit Sub-types that any model it includes may possess, but the model they are Embarked on may benefit from any Hexagrammaton Unit Sub-type that it itself possesses
+
+Stormwing Unit Sub-type
+All models in a unit under the effect of this Hexagrammaton Unit Sub-type gain a bonus of +1 To Hit when rolling To Hit as part of a Shooting Attack (including during a Reaction) with a bolter, combibolter or bolt pistol.
+
+Deathwing Unit Sub-type
+All models in a unit under the effect of this Hexagrammaton Unit Sub-type gain a bonus of +1 To Hit when rolling To Hit in an assault with one of the following weapons: chainsword, force sword, power sword, Terranic greatsword, Calibanite warblade, Charnabal sabre, and Paragon blades or close combat weapons modelled as swords. In addition, a model with the Vehicle Unit Type gains a +1 bonus to the Strength of all Hits inflicted as part of a Ram Attack (up to a maximum of Strength 10).
+
+Dreadwing Unit Sub-type
+All models in a unit under the effect of this Hexagrammaton Unit Sub-type reduce the Strength of all attacks made against them with Flame, Plasma, Volkite and Phosphex weapons by -1, and force all attacks made against them with the Poisoned (X) special
+rule to increase the roll needed to Wound by 1 (to a maximum of 6+).
+
+Ironwing Unit Sub-type
+All models in a unit under the effect of this Hexagrammaton Unit Sub-type may re-roll failed To Hit rolls of ‘1’ when targeting an enemy model with the Vehicle Unit Type. Additionally, a model with this Unit Sub-type and the Vehicle Unit Type makes all Snap Shots at BS 2 instead of BS 1.
+
+Firewing Unit Sub-type
+All models in a unit under the effect of this Hexagrammaton Unit Sub-type gain a bonus of +1 To Wound when attacking a unit that contains at least one model with the Independent Character special rule.
+
+Ravenwing Unit Sub-type
+All models in a unit under the effect of this Hexagrammaton Unit Sub-type, other than models with the Vehicle Unit Type, add +1 to the distance moved when the unit Runs, and models with the Cavalry Unit Type may also re-roll any failed Shrouded Damage Mitigation rolls. Models with this Unit Sub-type and the Vehicle Unit Type instead add +2 to their Movement Characteristic when moving at Cruising Speed.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3edc-a1b9-6dc6-b1ea" name="   III: Emperor&apos;s Children" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="b35c-3f2d-e16a-54fb" name="The Armoury of the Emperor&apos;s Children" hidden="false">
+              <description>• Any model with the Traitor Alliegance and both the Legiones Astartes (Emperor&apos;s Children) and Character Unit Sub-type but not the Unique Sub-type may select a single Surgical Augment from the list below for a cost of +20 Points
+- Sonic Shriekers
+- Sub-sonic Pulser
+- Sonic Lance
+
+• Any model with the Legiones Astartes (Emperor&apos;s Children) special rule and the Character Unit Sub-type may at no additional cost exchange a power weapon for a Pheonix Rapier or Pheonix Power Spear.Both weapons are counted as a &quot;Power&quot; Weapons for those rules that affect such weapon
+
+• The Emperor&apos;s Children gain access to a Legion-Specific Legion Consularis Upgrade in the &quot;Phoenix Warden&quot;
+</description>
+            </rule>
+            <rule id="9740-b3c0-6594-17cb" name="Legion Consularis: Phoenix Warden" hidden="false">
+              <description>A Legion Tartaros Centurion with the Legiones Astartes (Emperor&apos;s Children) special rule may be upgraded to a Phoenix Warden.
+
+• The Phoenix Warden gains the Skill Unmatched and Living Icons Special Rules.
+
+• The Phoenix Warden gains a Phoenix Pattern Power Weapon of any kind and a Iron Halo at no additional points cost.
+
+</description>
+            </rule>
+            <rule id="a2e9-3b71-9f0e-82ad" name="Legiones Astartes (Emperor&apos;s Children) " hidden="false">
+              <description>Flawless Execution: On a Turn in which they make a successful Charge, even if that Charge is considered a Disordered Charge, models with the Legiones astartes (Emperor&apos;s children) special rule make their attacks in an assult at on initiative step higher than normal - after any initiative modifiers from other special rules have been taken into account. Models with the Legiones Astartes (Emperor&apos;s Children) special rule and Vehicle unit type gain a bonus of +1 to all To Hit rolls made for Defensive Weapons when making a Shooting Attack as part of a reaction.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5f54-457a-fbb9-6730" name="   IV: Iron Warriors" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="50d0-9314-636f-0b0b" name="The Armoury of the Iron Warriors" hidden="false">
+              <description>• A single Legion Praetor, Legion Cataphractii Praetor or Legion Tartaros Praetor with the Legiones Astates (Iron Warriors) special rule in any given Detachment may be upgraded toa Warsmith for +20 points. A Warsmith gains a conrtex controller and Servo-arm as well as the Master of Automata and Battlesmith (3+) special rules. A model upgraded to a Warsmith may not be given a Legions Spatha combat bike, Legion Scimitar jetbke or Legion Warhawk jump pack.
+
+• Any model with the Legiones Astartes (Iron Warriors) special rule and the Character Sub-type may exchange a power weapon for a Graviton Mace or exchange a thunder hammer for a Graviton crusher for no additional points cost. Additionally, any model with the Legiones Astartes (Iron Warriors) special rule and the Dreadnought Unit Type may exchange a Gravis power fist for a Graviton Maul for +15 points per weapon (This does not replace or remove the built in weapon included with the Gravis Power Fist)
+
+• Any model with the Legiones Astartes (Iron Warriors) and Independent Character special rules may exchange a bolt pistol for a shrapnel pistol or a bolter for a shrapnel bolter for no additional points cost.
+
+• Any unit composed entirely of models with the Legiones Astartes (Iron Warriors) special rule may upgrade all bolt pistols in the unit to shrapnel pistols, and/or all bolters for shrapnel bolters and/or all heavy bolters for shrapnel cannons for a cost of +2 points per weapon.
+
+•Any unit composed entirely of models with the Vehicle Unit Type and the Legiones Astartes (Iron Warriors) special rule may exchange all heavy bolters in the unit for shrapnel cannons for +2 points per weapon and any unit composed entirely of models with the Dreadnought Unit Type and the Legiones Astartes (Iron Warriors) special rule may exchange all Gravis bolt cannons for Gravis shrapnel cannons for +5 points per weapon.</description>
+            </rule>
+            <rule id="fc44-1c30-d724-14cf" name="Legiones Astartes (Iron Warriors) " hidden="false">
+              <description>Wrack &amp; Ruin: When a model with this special rule makes a Shooting Attack or Melee attack targeting a model with the Dreadnought, Automata, Vehicle or Building Unit Type it gains +1 to the Strength of that attack.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e01e-5cdd-e512-8353" name="   V: White Scars" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="ad49-4098-2037-6dda" name="The Armoury of the White Scars" hidden="false">
+              <description>• Any model with both the Legiones Astartes (White Scars) and Independent Character sepcial rules, but not the Unique Sub-type, may exchange a Legion Scimitar jetbike for a Legion Shamshir jetbike for no additional points cost. A Legion Shamshir jetbike has one Scatterbolt Launcher, in addition, a model with a Legion Shamshir Jetbike that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player&apos;s next turn. A model with the Infantry Unit Type that selects a Legion Shamshir Jetbike as an upgrade must change its unit type to Cavalry (Antigrav), keeping any other Unit Sub-types it previously had, Changes it&apos;s movement characteristic to 15&quot;, gains the Firing Protocls (2) and Hammer of Wrath (1) special rules and improved its Armour Save to 2+ if it was worse.
+
+• Any model with both the Character Sub-type and the Legiones Astartes (White Scars) special rule may have a Power Weapon upgraded to a Power Glaive for +5 points.
+
+• Any Model with both the Legiones Astartes (White Scars) and Independent Character special rule that does not also have the Unique Sub-type may take a Cyber-Hawk for +10 points.
+
+• The White Scars gain access to a Legion-Specific Legion Consularis Upgrade in the &quot;Stormseer&quot;</description>
+            </rule>
+            <rule id="68a7-05de-b8eb-53b1" name="Legiones Cosularis: Stormseer" hidden="false">
+              <description>A Legion Centurion, Legion Tartaros Centurion or Legion Cataphractii Centurion with the Legiones Astartes (White Scars) special rule may be upgraded to a Stormseer Consul instead of selecting any of the standard Consul upgrades, gaining following benefits.
+
+
+• A Stormseer gains the Psyker Sub-type and must select one of the following Psychic Disciplines: The Storm’s Fury , Divination, Telepathy or Thaumaturgy. A Stormseer may not select any other Discipline. In addition, a Stormseer gains the Adamantium Will (4+) special rule.
+
+• A Stormseer may replace a power weapon, bolt pistol or combi-bolter with a force weapon at no additional points cost. In additon a  Stormseer may take a psychic hood for +15 points.</description>
+            </rule>
+            <rule id="1871-9f17-78ad-5c5c" name="Legiones Astartes (White Scars) " hidden="false">
+              <description>Swift of Action: All models with this special rule add +1 to their Movement Characteristic and whenever called upon to make a roll to determine which player will take the First Turn or to Seize the Initiative, the controlling player of an army whose Primary Detachment has this special rule may roll an additional dice and discard the lowest rolled dice before determining the result.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4916-965e-8339-44f6" name="   VI: Space Wolves" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="11d9-9375-cd1f-e22f" name="The Armoury of the Space Wolves" hidden="false">
+              <description>• Any model with the Legiones Astartes (Space Wolves) special rule may exchange a Chainsword for a Fenrisian Axe for +2 points each.
+
+• Any model with both the Legiones Astartes (Space Wolves) and Independent Character special rules may exchange a Power Weapon for a Frost Blade (Frost Sword, Frost Axe or Frost Claw) for +5 points each. Any model with both the Legiones Astartes (Space Wolves) and Independent Character Special Rules may excahnge a Power Weapon for a Great Frost Blade for +10 points.
+
+• Any model with both the Legiones Astartes (Space Woves) and Independent Character Special Rules that does not have the Unique Unit Sub-type may exchange artificer armour for Aether-rune Armour for +25 points each.
+
+•The Space Wolves gain access to three Legion-Specific Legion Consularis Upgrades in the &quot;Caster of Runes&quot;, &quot;Speaker of the Dead&quot; and &quot;Pack Thegn&quot;</description>
+            </rule>
+            <rule id="c5d7-d0b0-8b02-abc4" name="Legiones Consularis: Speaker of the Dead" hidden="false">
+              <description>A Legion Centurion, Legion Tartaros Centurion or Legion Cataphractii Centurion with the Legiones Astartes (Space Wolves) special rule may be upgraded to a Speaker of the Dead Consul instead of selecting any of the Standard Consul upgrades, gaining the following benefits:
+
+• A Speaker of the Dead must increase his Leadership to 10, and the Speaker of the Dead and all models with the Legions Astartes (Space Wolves) special rule in a unit they join gains the Stubborn and Hatred (Everything) special rules.
+
+• A Speaker of the Dead gains a Narthecium and a Master-crafted Power Maul for no additional points cost.
+
+• A Speaker of the Dead may not select two lightning claws, or a boarding shield.</description>
+            </rule>
+            <rule id="a1a0-55f5-6531-f7d4" name="Legiones Consularis: Caster of Runes" hidden="false">
+              <description>A Legion Centurion, Legion Tartaros Centurion or Legion Cataphractii Centurion with the Legiones Astartes (Space Wolves) special rule may be upgraded to a Caster of Runes instead of selecting any of the Standard Consul upgrades, gaining the following benefits:
+
+• A Caster of Runes gains the Psyker Sub-type and must select one of the following Psychic Disciplines: Winds of Fenris, Divination, Telekinesis or Biomancy. A Caster of Runes may not select any other Discipline. In addition, a Caster of Runes gains the Adamantium Will (4+) special rule.
+
+• A Caster of Runes may replace a power weapon, bolt pistol or combi-bolter with a Force Weapon at no additional points cost. In addition, a Caster of Runes may select a Psychic Hood for +15 points.</description>
+            </rule>
+            <rule id="97e2-bc89-32d0-3245" name="Legiones Astartes (Space Wolves) " hidden="false">
+              <description>Bestial Savagery: A unit made up entirely of models with the Infantry Unit Type and the Legiones Astartes (Space Wolves) special rule that chooses to Run in the Movement phase may still make a Shooting Attack in the Shooting phase, and declare a Charge in the Assault phase of the same turn – but any Shooting Attacks made in the same turn as that in which a unit with this special rule has Run are made as Snap Shots. Units that cannot Run (such as Legion Cataphractii Terminators) or models that do not have the Vehicle or Infantry Unit Type instead gain +1 WS on any turn in which they successfully Charge, even if that Charge is considered Disordered. Models with the Vehicle Unit Type and this special rule that make Ram Attacks increase the Strength of any Hits inflicted as part of that attack by +1, to a maximum of 10.
+
+Any Legion Centrurions, Legion Cataphractii Centurions and Legion Tartaros Centurions with this special rule may not select the Chaplain, Librarian or Primus Medicae Consul Upgrades. Instead these models gain access to the Pack Thegn, Speaker of the Dead and Caster of Runes Upgrades.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a0e1-f2c4-8bcd-0723" name="   VII: Imperial Fists" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="2ea8-e0fb-82bb-c602" name="Legiones Astartes (Imperial Fists)" hidden="false">
+              <description>Discipline and Resolve: Models with this special rule gain a bonus of +1 to all To Hit rolls with any Auto weapon or Bolt weapon as part ofany Shooting Attack (including as part of any Reaction)
+</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b28b-71f7-e4f4-8f9c" name="   VIII: Night Lords" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="8f7f-bef8-ee78-33d4" name="Legiones Astartes (Night Lords) " hidden="false">
+              <description>A Talent for Murder: When a unit made up entirely of models with this special rule attacks during the Fight sub-phase or makes a Shooting Attack against an enemy unit that is Pinned, Falling back or outnumbered by the attacking unit it gets a bonus of +1 to all To Wound or Armour Penetration rolls made during the Shooting Attack or Assult.
+
+When determining if a unit is outnumbered, models with the Bulky (X) special rules count as a number of models equal to the value included as part of that special rule. Models with the Vehicle Unit Type count as ten models for the purposes of determining if the model is outnumbered by another unit.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="296e-301e-3ce1-1c15" name="  IX: Blood Angels" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="3b2a-3aea-ff45-3f93" name="Legiones Astartes (Blood Angels) " hidden="false">
+              <description>Encarmine Fury: All models with the Legiones Astartes (Blood Angels) special rule require one lower result To Wound than they would normally, to a minimum of 2+, on any turn in which they are part of a successful Charge against an enemy unit even if that Charge is counted as Disordered. This effect applies regardless of the weapon they are using (for example, if using a Str 4 Melee weapon and attacking a target with a Toughness of 4, the Blood Angel will require a 3+ To Wound, rather than the usual 4+). In addition, any Vehicle with the Legiones Astartes (Blood Angels) special rule that makes a Ram Attack increases the Strength of any Hits inflicted by +1, to a maximum of Strength 10.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="bfc9-c99c-bf8a-3917" name="  X: Iron Hands" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="c666-993f-aea5-3476" name="Legiones Astartes (Iron Hands) " hidden="false">
+              <description>The Medusa’s Scales: All Shooting Attacks made against a model with this special rule that does not have the Vehicle Unit Type, suffer a modifier of -1 to the Strength of the attack. Models with this special rule and the Vehicle Unit Type instead gain the It Will Not Die (6+) special rule, or if such a model already has a variant of the It Will Not Die special rule then the value of that special rule is increased by +1 (for example, a model with the Vehicle Unit Type that already had the It Will Not Die (6+) and the Legiones Astartes (Iron Hands) special rule would instead gain the It Will Not Die (5+) special rule).</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="90ee-77dd-1b7f-ddfe" name="  XII: World Eaters" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="46ce-56e0-94e7-9840" name="Legiones Astartes (World Eaters) " hidden="false">
+              <description>Violence Incarnate: On any turn in which a unit with this special rule makes a successful Charge it gains +1 Attack for the remainder of that turn in addition to any other bonuses, even if that Charge is considered a Disordered Charge.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8e0f-3552-8842-f281" name="  XIII: Ultramarines" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="f839-ede6-403e-5a9f" name="Legiones Astartes (Ultramarines) " hidden="false">
+              <description>The Strength of Wisdom: When rolling To Hit for a model with this special rule as part of a Shooting Attack, add +1 to the result of the roll if the enemy unit targeted by the attack has already been the target of another friendly unit composed entirely of models with this special rule in the same Shooting phase, and if the attacking model is within 6&quot; of a model from that friendly unit. This does not affect attacks made with the Blast or Barrage special rules.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="dd1f-1c51-706c-e5f7" name="  XIV: Death Guard" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="fc30-f81a-b6c1-9d51" name="Legiones Astartes (Death Guard) " hidden="false">
+              <description>Remorseless:  A model with this special rule that does not have the Cavalry Unit Type or Artillery Unit Sub-type ignores any modifiers or restrictions on moving during the movement phase (Including modifiers imposed by Terrain or Restrictions from rules such Pinning which would normally stop them from moving) as long as the model does not Run or make use of another alternative form of Movement such as &apos;Activating a jump pack, Disembarking, or deploying via Deep Strike. Furthermore, as long as the model has not Run or used another alternative form of Movement in the controlling player&apos;s Movement phase, it is counted as Stationary when making shooting attacks until the start of the Controlling Player&apos;s next turn. This special rules does not affect whether or not a model may make a Charge, and does not allow models with the Vehicle Unit Type to ignore the effect of an Immobilised result on the Vehicle Damage table (But does allow a model with the Vehicle Unit Type to move even when under the effect of the Crew Stunned result on the Vehicle Damage table)</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="21c3-2f28-7820-e51a" name="  XV: Thousand Sons" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="ed58-2bdc-4e04-9892" name="Legiones Astartes (Thousand Sons) " hidden="false">
+              <description>Cult Arcana: All models with the Infantry or Cavalry Unit Type (but not those with the Artillery or Automated Artillery Sub-type) with this special rule gain the Psyker Sub-type (this does not grant any Disciplines, but does not otherwise remove any Discipline a model already has access to). In addition, all models with the Infantry or Cavalry Unit Type and and the Character Unit Sub-type that have this special rule must select one Minor Arcana option ( See the Prosperine Arcana special rule). Any model with the Infantry or or Cavalry Unit Types and both the independent Character and Legiones astartes (Thousand Sons) special rule that does not already have one or more Psychic Disciplines may be upgraded for +15 additional points to gain a single Psychic Discipline from the Core Psychic Discipline list.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="01b4-57c7-bf61-2abf" name="  XVI: Sons of Horus" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="5057-0238-adb5-2c8d" name="Legiones Astartes (Sons of Hours) " hidden="false">
+              <description>Merciless Fighters: During a turn in which a unit made up entirely of models with the Legiones Astartes (Sons of Horus) special rule successfully charges, or are successfully Charged, the Strength of all Melee attacks made against any model in that unit that does not have the Vehicle unit type suffer a modifier of -1. Models with the Vehicle Unit type and this special rule instead inflict an additional 3 Hits (for a total of 1D6+3 Hits, or 2D6+3 if the Vehicle has the Super-heavy Sub-type) on unitscomposed of models that do not have the vehicle Unit Type when conducting a Ramming Attack.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9dbf-0760-d7ae-f125" name="  XVII: Word Bearers" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="1c96-f26f-bf84-f001" name="Legiones Astartes (Word Bearers) " hidden="false">
+              <description>True Believers:A model with this special rule may never have a Leadership Characteristic modified below a value of 6. Futhermore if one or more models with this special rule are part of a combat that results in a draw, then the side that includes one or more models at the end of the fight sub-phase with this special rule is counted as having won the combat by 1 point. If both sides include models with this special rule then the combat remains a draw.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c805-ca3a-ff93-5e2f" name="  XVIII: Salamanders" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="2b4e-3fb2-7465-f944" name="Legiones Astartes (Salamanders) " hidden="false">
+              <description>Blood of Fire: When rolling To Wound against a model with this special rule for any attack inflicted by a Flame, Melta, Plasma, or Volkite weapon or effect, reduce the result of that roll To Wound by -1 (this does not affect the Strength of the attack, only the result of the roll To Wound). In addition, all models with this special rule that have more than one Wound or Hull point gain the It Will Not Die (6+) special rule.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="dc34-fe08-dd44-fb99" name=" XIX: Raven Guard" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="375e-3552-10ba-ff74" name="Legiones Astartes (Raven Guard) " hidden="false">
+              <description>Shadow and Fury: Models with the Legiones Astartes (Raven Guard) special rule gain one of the following special rules based on the Unit Type and Wargear of the model. Models that do not fulfil one of the listed criteria gain no additional benefit:
+
+• Models with the Legiones Astartes (Raven Guard) special rule that have the Infantry Unit Type, but do not also have the Heavy Unit Sub-type or a Legion Warhawk jump pack, Corvid pattern jump pack or Legion Tartaros Terminator armour, gain the Talons special rule.
+
+• Models with the Legiones Astartes (Raven Guard) special rule that have the Dreadnought Unit Type; any models with the Legiones Astartes (Raven Guard) special rule and both the Infantry Unit Type and the Heavy Unit Subtype; or any models with the Legiones Astartes (Raven Guard) special rule that have a Legion Warhawk jump pack, Corvid pattern jump pack or Legion Tartaros Terminator armour gain the Falcons special rule.
+
+• Models with the Legiones Astartes (Raven Guard) special rule and the Cavalry Unit Type or both the Vehicle Unit Type and Flyer or Fast Unit Sub-types, gain the Hawks special rule.
+
+Talons – If a unit composed entirely of models with the Talons special rule is targeted by a Shooting Attack, all models in the unit gain the Shrouded (6+) special rule if the attacking unit is more than 8&quot; from any model in the target unit. In addition, all models with this special rule also gain the Infiltrate special rule.
+
+Falcons – Any models with this special rule may re-roll all failed To Wound rolls of ‘1’ in any Assault phase in which they make a successful Charge – even if that Charge is considered Disordered.
+
+Hawks – Any models with this special rule gain the Shrouded (6+) special rule on any turn in which they Run, Move Flat Out or move as a Zooming Flyer, with this benefit lasting until the start of the controlling player’s next turn – or if that model would already gain the Shrouded (6+) special rule, it instead gains the Shrouded (5+) special rule (if the unit already has the Shrouded (5+) or better then it gains no additional benefit).</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c0df-c1fa-5ddc-9ee5" name=" XX: Alpha Legion" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="7d5a-37b4-eda8-96da" name="Legiones Astartes (Alpha Legion) " hidden="false">
+              <description>Lies and Obfuscation: A model with this special rule is always considered to be 2&quot; further away than it actually is when measuring range to it from any enemy model for the purpose of resolving a shooting attack, Charge or Reation declared by an enemy model or unit (This is cumulative with any other modifiers to range imposed by special rules, such as Night fighting or wargear)</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="0ac9-fab7-aef3-de1d" name="Rending (X)" publicationId="e77a-823a-da94-16b9" page="246" hidden="false">
