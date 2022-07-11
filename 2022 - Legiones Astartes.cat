@@ -18438,17 +18438,6 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
               </costs>
             </entryLink>
-            <entryLink id="d7fa-de51-701c-df3f" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="6923-4e42-5691-b13f" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="name" value="Pair of Lightning Claws"/>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f0f-adc5-5f5b-b364" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-              </costs>
-            </entryLink>
             <entryLink id="5421-a821-2cd5-12bf" name="Terminator Melee Weapon" hidden="false" collective="false" import="true" targetId="8b46-faad-df3a-6929" type="selectionEntryGroup">
               <modifiers>
                 <modifier type="set" field="name" value="May exchange power weapon for:"/>
@@ -18459,11 +18448,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                 <modifier type="set" field="name" value="May exchange combi-bolter for:"/>
               </modifiers>
             </entryLink>
-            <entryLink id="f97d-37ce-3208-6e29" name="Paired Melee Weapons:" hidden="false" collective="false" import="true" targetId="b503-8902-fde3-7675" type="selectionEntryGroup">
-              <modifiers>
-                <modifier type="set" field="name" value="May exchange both his Combi-Bolter &amp; Power Weapon for:"/>
-              </modifiers>
-            </entryLink>
+            <entryLink id="f97d-37ce-3208-6e29" name="Paired Melee Weapons:" hidden="false" collective="false" import="true" targetId="b503-8902-fde3-7675" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50.0"/>
@@ -21817,8 +21802,56 @@ A model with this special rule, and any unit it joins, must either begin any bat
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6444-d683-8f5a-be25" type="max"/>
       </constraints>
       <entryLinks>
-        <entryLink id="749c-4663-0305-571f" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="a6d2-b3a9-6d2c-1f6f" type="selectionEntry"/>
-        <entryLink id="e1d1-e137-9cec-c68e" name="Pair of Raven&apos;s Talons" hidden="false" collective="false" import="true" targetId="08e4-5e02-da82-f296" type="selectionEntry"/>
+        <entryLink id="749c-4663-0305-571f" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="a6d2-b3a9-6d2c-1f6f" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="d2ee-04cb-5f8a-2642" value="15.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25a2-7a52-632a-6b2c" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="d2ee-04cb-5f8a-2642" value="20.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="03be-5d55-d05a-771d" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="e1d1-e137-9cec-c68e" name="Pair of Raven&apos;s Talons" hidden="false" collective="false" import="true" targetId="08e4-5e02-da82-f296" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="d2ee-04cb-5f8a-2642" value="20.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="03be-5d55-d05a-771d" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="d2ee-04cb-5f8a-2642" value="15.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25a2-7a52-632a-6b2c" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="49d3-070b-f36f-5ff3" name="Caedere Weapons" hidden="false" collective="false" import="true">
