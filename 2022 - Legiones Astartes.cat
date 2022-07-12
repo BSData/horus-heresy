@@ -24164,8 +24164,22 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce37-f3c4-048f-4ac6" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45ff-ec4f-83f9-7eae" type="min"/>
           </constraints>
+          <profiles>
+            <profile id="33dd-dc97-125e-49db" name="Storm Eagle Gunship" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Flyer, Hover, Transport)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">18</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">22</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">One Access Point on each side and one at the front and rear ramps. </characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <infoLinks>
-            <infoLink id="adaf-de29-12e4-6e85" name="Storm Eagle Gunship" hidden="false" targetId="33dd-dc97-125e-49db" type="profile"/>
             <infoLink id="abe3-8f51-ea48-1e62" name="Power of the Machine Spirit" hidden="false" targetId="5a93-13e0-809d-782a" type="rule"/>
             <infoLink id="dfc7-65b8-7194-4ff9" name="Assault Vehicle" hidden="false" targetId="aa61-11f6-2bb5-7c0e" type="rule"/>
             <infoLink id="5535-1a83-5c91-7e7d" name="Legiones Astartes (X)" hidden="false" targetId="61cf-75c2-56cd-2a31" type="rule"/>
@@ -24239,6 +24253,18 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e02a-2de6-0b34-e02a" name="Coriolis Pattern Power Shield" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d3cf-f143-b4e4-e567" name="Coriolis Pattern Power Shield" publicationId="817a-6288-e016-7469" page="259" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Reduce the result of all To Wound rolls made that target a model with a Coriolis pattern power shield by a weapon with the Melee type by -1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -25761,253 +25787,6 @@ A Legion Centurion, Legion Cataphractii Centurion or Legion Tartaros Centurion t
     <profile id="d400-c912-c153-7541" name="Coriolis Pattern Power Shield" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
       <characteristics>
         <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Reduce the result of all To Wound rolls made that target a model with a Coriolis pattern power shield by a weapon with the Melee type by -1</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="434a-3a1a-393e-7f20" name="Falling-Star Power Spear" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
-        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Reach (1), Rending (5+)</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="b7fd-3e9b-6b09-2caa" name="Equinox Power Blades - Sunrise Blade" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred,, Sudden Strike (1)</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="8d77-0236-af31-55c4" name="Equinox Power Blades - Sunset Blade" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (5+), Sunder</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="624b-be83-c8b7-fbed" name="Grenade discharger - Frag bombs" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
-        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3, Pinning</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="ced5-9f54-3081-23df" name="Grenade discharger - Krak bombs" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="47d5-f3de-0409-bf3c" name="Angel&apos;s Tears Grenade Launcher" publicationId="817a-6288-e016-7469" page="261" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
-        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3, Rad-phage, Fleshbane</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="58de-d8c5-466a-a269" name="Talon of Perdition" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred, Brutal (2)</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="ebeb-7b5d-ad53-e443" name="Akkadic Hand Flamer" publicationId="09c5-eeae-f398-b653" page="313" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
-        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Torrent (6&quot;), Pinning</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="358f-b884-498e-50ac" name="Assault Grenade Launcher - Toxin" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">1</characteristic>
-        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 4, Poisoned (3+), Ignores Cover</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="25b7-05e0-30bb-5fc3" name="Assault Grenade Launcher - Frag" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="3290-c851-e9ac-a8d2" name="Trophies of Judgement" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Confers the Fear (1) special rule to models with Trophies Of Judgement.
-</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="2016-07d5-d559-cb5b" name="Chainaxe" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
-        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="2655-63a1-01c2-afb7" name="Dark Channeling" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">All models in this unit gain the Corrupted Sub-type</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="22e7-af43-f6bc-9d76" name="Twin-linked Bolter" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
-        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid-fire, Twin-linked</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="1eb5-79ed-ea2b-2f60" name="Achean Force Sword" publicationId="09c5-eeae-f398-b653" page="259" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-      <comment>validated nsh 2022/06/20</comment>
-      <characteristics>
-        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (6+), Achean Force</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="4a9d-4c4d-afb1-cf78" name="Achea Force Axe" publicationId="09c5-eeae-f398-b653" page="259" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-      <comment>validated nsh 2022/06/20</comment>
-      <characteristics>
-        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
-        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Achean Force</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="2139-4dc2-df3a-a3cc" name="Achea Force Maul" publicationId="09c5-eeae-f398-b653" page="259" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-      <comment>validated nsh 2022/06/20</comment>
-      <characteristics>
-        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
-        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Achean Force</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="20b3-e8d3-2e74-babe" name="Twin-linked Flamer" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
-        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Twin-linked</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="1df2-b08d-87d8-9f42" name="Twin-linked Meltagun" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Melta), Twin-linked</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="fa92-61ff-22d9-3a69" name="Twin-linked Plasma Gun" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7 </characteristic>
-        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Breaching (4+), Gets Hot, Twin-linked</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="6f43-10f9-5c6a-6db6" name="Preysight" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">All models in a unit with a Preysight upgrade gain the Night Vision special rule</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="7023-faf3-d69c-27a2" name="Armatus Necrotechnika" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-      <characteristics>
-        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Whenever a unit (friendly or enemy) with at least on model within 6&quot; of a model with the Vehicle Unit Type with this upgrade has one or more models removed as casualties, roll a D6 for each model removed as a casualty. For each result of a 6, the model with this upgrade regains 1 Hull Point. This may not bring it above the number of Hull points listed on its Army List Profile. In addition, any unit (friendly or enemy) with at least one model within 6&quot; of a model with the Armatus Necrotechnika must reduce the Leadership value of all models in that unit by -1. Units with the Stubborn special rule may not ignore this modifier.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="cf1b-bc7d-4c44-a815" name="Twin-linked Heavy Flamer" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
-        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Twin-linked</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="80ea-7332-62e3-cd56" name="Twin-linked Iliastus Assault Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 4, Rending (6+), Malfunction, Twin-linked</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="86b4-efec-000e-b5c4" name="Twin-linked Heavy Bolter" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
-        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Twin-linked</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="bdd5-110f-fd72-a823" name="Twin-linked Heavy Alchem Flamer" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
-        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Fleshbane, Gets hot, Twin-linked</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="c9c6-4e21-f6c2-c94b" name="Twin-linked Heavy Dragon&apos;s Breath Heavy Flamer" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
-        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Dragon&apos;s Breath</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="fc61-1ac3-f629-2204" name="Land Raider Proteus Carrier" publicationId="a716-c1c4-7b26-8424" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
-      <characteristics>
-        <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Transport, Reinforced)</characteristic>
-        <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">12</characteristic>
-        <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
-        <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
-        <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">14</characteristic>
-        <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">14</characteristic>
-        <characteristic name="HP" typeId="a76c-83b1-602f-9e62">5</characteristic>
-        <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
-        <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">One Access Point on each side of the hull and one at the front</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="f707-403e-d4c3-0ed6" name="Land Raider Spartan" publicationId="a716-c1c4-7b26-8424" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
-      <characteristics>
-        <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Transport, Reinforced)</characteristic>
-        <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">12</characteristic>
-        <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
-        <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
-        <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">14</characteristic>
-        <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">14</characteristic>
-        <characteristic name="HP" typeId="a76c-83b1-602f-9e62">6</characteristic>
-        <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">26</characteristic>
-        <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">One Access Point on each side of the hull and one at the front</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="33dd-dc97-125e-49db" name="Storm Eagle Gunship" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
-      <characteristics>
-        <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Flyer, Hover, Transport)</characteristic>
-        <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">18</characteristic>
-        <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
-        <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
-        <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
-        <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
-        <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
-        <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">22</characteristic>
-        <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">One Access Point on each side and one at the front and rear ramps. </characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
