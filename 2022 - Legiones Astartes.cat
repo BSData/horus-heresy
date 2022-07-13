@@ -14118,18 +14118,13 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
           <modifiers>
             <modifier type="increment" field="cf39-1343-64e9-ce58" value="1.0">
               <repeats>
-                <repeat field="selections" scope="aa72-63e4-bc60-4611" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="355f-beeb-df61-355f" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="cf39-1343-64e9-ce58" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="aa72-63e4-bc60-4611" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="98b5-8115-a626-d402" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="aa72-63e4-bc60-4611" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40ac-beb1-f733-1757" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="aa72-63e4-bc60-4611" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="a84f-1379-9c2a-b7e8" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="aa72-63e4-bc60-4611" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="cff8-b759-d545-c095" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf39-1343-64e9-ce58" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf39-1343-64e9-ce58" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="b20a-5ab1-7a52-2b3c" name="Bayonet" hidden="false" collective="false" import="true" targetId="6904-6936-d6ca-a0eb" type="selectionEntry">
@@ -14144,9 +14139,10 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="98b5-8115-a626-d402" name="The Legion Tactical Sergeant may exchange his Bolter for:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="98b5-8115-a626-d402" name="The Legion Tactical Sergeant may exchange his Bolter for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="a84f-1379-9c2a-b7e8">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ba3-9d89-0a9d-b55a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6da1-2346-6e9b-d10a" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="1134-91d8-78bd-5f84" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="0d1c-227e-a3f8-cd63" type="selectionEntry">
@@ -14189,6 +14185,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
               </costs>
             </entryLink>
+            <entryLink id="a84f-1379-9c2a-b7e8" name="Bolter" hidden="false" collective="false" import="true" targetId="1ade-0c02-5612-252b" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="0b7b-85d3-e994-5f28" name="Give all Legionaries additional Melee Weapons:" hidden="false" collective="false" import="true">
@@ -14415,9 +14412,10 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="f643-beef-92f9-13d2" name="The Legion Tactical Sergeant may exchange his Bolt Pistol for:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="f643-beef-92f9-13d2" name="The Legion Tactical Sergeant may exchange his Bolt Pistol for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="1468-561b-1a7a-06d4">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ede-b7df-ec6b-dd8a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27c0-4945-8397-af73" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="ff92-24f5-aebd-13c7" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="717f-cf0a-1593-4bd8" type="selectionEntry">
@@ -14475,6 +14473,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
               </costs>
             </entryLink>
+            <entryLink id="1468-561b-1a7a-06d4" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="906c-fbcb-0f02-ffd9" name="The Legion Tactical Sergeant may take (Wargear):" hidden="false" collective="false" import="true">
@@ -14571,19 +14570,15 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
             <entryLink id="6ec3-80e2-3b10-04d6" name="Surgical Augement" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="a61a-70e4-557e-eae2" name="Any Legionary may replace their Bolt Pistol with:" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="a61a-70e4-557e-eae2" name="Any Legionary may replace their Bolt Pistol with:" hidden="false" collective="false" import="true" defaultSelectionEntryId="4029-ea6c-2c4e-3579">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
             <modifier type="increment" field="e6ba-373f-f3eb-d378" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="aa72-63e4-bc60-4611" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="355f-beeb-df61-355f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="d189-57b1-94e3-2d42" value="9.0"/>
+            <modifier type="increment" field="d189-57b1-94e3-2d42" value="1.0">
               <repeats>
                 <repeat field="selections" scope="aa72-63e4-bc60-4611" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="355f-beeb-df61-355f" repeats="1" roundUp="false"/>
               </repeats>
@@ -14591,6 +14586,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6ba-373f-f3eb-d378" type="max"/>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d189-57b1-94e3-2d42" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="dada-6585-c205-f18f" name="Asphyx Bolt Pistol" hidden="false" collective="false" import="true" targetId="07f7-c486-f597-a1b9" type="selectionEntry">
@@ -14603,6 +14599,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
               </costs>
             </entryLink>
+            <entryLink id="4029-ea6c-2c4e-3579" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="0531-85dd-feb0-116d" name="Dedicated Transport:" hidden="false" collective="false" import="true">
@@ -14620,26 +14617,23 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
             <entryLink id="843f-efb4-84e1-4415" name="Rhino Transport" hidden="false" collective="false" import="true" targetId="03f1-8ed9-9867-8d18" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="40ac-beb1-f733-1757" name="Any Legionary may replace their Bolter with:" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="40ac-beb1-f733-1757" name="Any Legionary may replace their Bolter with:" hidden="false" collective="false" import="true" defaultSelectionEntryId="cff8-b759-d545-c095">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
             <modifier type="increment" field="4cfe-8c13-cfdb-9547" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="aa72-63e4-bc60-4611" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="355f-beeb-df61-355f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="4cfe-8c13-cfdb-9547" value="9.0"/>
+            <modifier type="increment" field="d772-d0f2-b143-0d58" value="1.0">
               <repeats>
                 <repeat field="selections" scope="aa72-63e4-bc60-4611" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="355f-beeb-df61-355f" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cfe-8c13-cfdb-9547" type="max"/>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cfe-8c13-cfdb-9547" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d772-d0f2-b143-0d58" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="bf33-40bc-2a78-0c6b" name="Shrapnel Bolter" hidden="false" collective="false" import="true" targetId="1941-21b5-932c-74d6" type="selectionEntry">
@@ -14652,6 +14646,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
               </costs>
             </entryLink>
+            <entryLink id="cff8-b759-d545-c095" name="Bolter" hidden="false" collective="false" import="true" targetId="1ade-0c02-5612-252b" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="89bf-b32d-f938-1896" name="Legiones Unit Upgrades:" hidden="false" collective="false" import="true">
@@ -14676,18 +14671,6 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="de1d-6aba-f3be-286e" name="Bolter" hidden="false" collective="false" import="true" targetId="1ade-0c02-5612-252b" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41c7-ca30-bb61-4cb0" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9df-2057-3237-ca2a" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="c8fb-96b1-bd5e-1d51" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbf5-a8e2-b36e-ffe2" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fa0-d330-158a-b224" type="min"/>
-          </constraints>
-        </entryLink>
         <entryLink id="6804-b228-859c-0ef9" name="Power Armour" hidden="false" collective="false" import="true" targetId="2d9d-480e-7c14-1a6f" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4abf-c33f-a9ff-61a4" type="max"/>
@@ -15511,6 +15494,11 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
             <entryLink id="1e38-6756-4d66-dd4c" name="Tainted Maul" hidden="false" collective="false" import="true" targetId="5b6e-b0b2-35ca-5e67" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="19d5-fd09-9ead-efd5" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -21252,7 +21240,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="ac85-ccd6-4750-09d9" name="Legionaries Melee Weapons" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="ac85-ccd6-4750-09d9" name="Legionaries Melee Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="603a-ccf8-f7bb-c9e1">
           <modifiers>
             <modifier type="decrement" field="7a88-e2b8-50e4-702b" value="1.0">
               <repeats>
@@ -21266,18 +21254,19 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
             </modifier>
             <modifier type="decrement" field="bebf-44aa-9dc4-00c4" value="1.0">
               <repeats>
-                <repeat field="selections" scope="a8e9-70e1-b8bc-8ee2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7972-d33f-e8aa-7196" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="a8e9-70e1-b8bc-8ee2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7972-d33f-e8aa-7196" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="bebf-44aa-9dc4-00c4" value="1.0">
               <repeats>
-                <repeat field="selections" scope="a8e9-70e1-b8bc-8ee2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f27-e636-6ed0-163f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="a8e9-70e1-b8bc-8ee2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f27-e636-6ed0-163f" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="decrement" field="7a88-e2b8-50e4-702b" value="9.0"/>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bebf-44aa-9dc4-00c4" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a88-e2b8-50e4-702b" type="min"/>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a88-e2b8-50e4-702b" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="b061-2743-006c-ca4d" name="Chainaxe" hidden="true" collective="false" import="true" targetId="85b9-4e50-af11-c295" type="selectionEntry">
@@ -21294,23 +21283,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
               </costs>
             </entryLink>
-            <entryLink id="603a-ccf8-f7bb-c9e1" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry">
-              <modifiers>
-                <modifier type="increment" field="5c53-665d-09e5-9d32" value="1.0">
-                  <repeats>
-                    <repeat field="selections" scope="a8e9-70e1-b8bc-8ee2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f27-e636-6ed0-163f" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-                <modifier type="set" field="5c53-665d-09e5-9d32" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="a8e9-70e1-b8bc-8ee2" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ac85-ccd6-4750-09d9" type="greaterThan"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c53-665d-09e5-9d32" type="min"/>
-              </constraints>
-            </entryLink>
+            <entryLink id="603a-ccf8-f7bb-c9e1" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -21609,32 +21582,33 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="3535-77a8-4b53-6eac" name="Any model in the unit may exchange it&apos;s Chainsword for:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="3535-77a8-4b53-6eac" name="Any model in the unit may exchange it&apos;s Chainsword for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="2252-aed5-57e1-ee43">
           <modifiers>
             <modifier type="increment" field="47c8-8796-c78b-ec45" value="1.0">
               <repeats>
-                <repeat field="selections" scope="4357-930e-165a-a6e3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="4357-930e-165a-a6e3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11f2-e3be-0679-ecc7" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="aa1e-e1a7-da8f-bb3c" value="1.0">
               <repeats>
-                <repeat field="selections" scope="4357-930e-165a-a6e3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="4357-930e-165a-a6e3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11f2-e3be-0679-ecc7" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="47c8-8796-c78b-ec45" value="1.0">
               <repeats>
-                <repeat field="selections" scope="4357-930e-165a-a6e3" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="91c7-043c-4fb4-0ca3" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="4357-930e-165a-a6e3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="91c7-043c-4fb4-0ca3" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="aa1e-e1a7-da8f-bb3c" value="1.0">
               <repeats>
-                <repeat field="selections" scope="4357-930e-165a-a6e3" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="91c7-043c-4fb4-0ca3" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="4357-930e-165a-a6e3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="91c7-043c-4fb4-0ca3" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="decrement" field="aa1e-e1a7-da8f-bb3c" value="9.0"/>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47c8-8796-c78b-ec45" type="max"/>
-            <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa1e-e1a7-da8f-bb3c" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47c8-8796-c78b-ec45" type="max"/>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa1e-e1a7-da8f-bb3c" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="79ff-63b2-44f9-65f4" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry">
@@ -21664,7 +21638,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="689e-acc8-fe5a-2d23" name="The Legion  Despoiler Sergeant must pick two:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="689e-acc8-fe5a-2d23" name="The Legion  Despoiler Sergeant must pick two:" hidden="false" collective="false" import="true" defaultSelectionEntryId="c572-bd97-d901-a905">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48bd-642c-9820-ed82" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73b1-c46a-a870-fc0b" type="min"/>
@@ -22583,14 +22557,19 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
               </repeats>
             </modifier>
             <modifier type="decrement" field="257d-8b00-53c4-bfcf" value="1.0">
-              <conditions>
-                <condition field="selections" scope="ad97-c090-fa67-696f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6b35-d3b4-2c92-b4bf" type="equalTo"/>
-              </conditions>
+              <repeats>
+                <repeat field="selections" scope="ad97-c090-fa67-696f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="479a-e42b-0093-c388" repeats="1" roundUp="false"/>
+              </repeats>
             </modifier>
             <modifier type="decrement" field="7d74-dcbb-f669-8d46" value="9.0"/>
             <modifier type="increment" field="7d74-dcbb-f669-8d46" value="1.0">
               <repeats>
                 <repeat field="selections" scope="ad97-c090-fa67-696f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3bfa-086f-26ea-0ade" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="7d74-dcbb-f669-8d46" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="ad97-c090-fa67-696f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="479a-e42b-0093-c388" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -23793,18 +23772,12 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
           <modifiers>
             <modifier type="increment" field="f9a5-f0ff-0271-3c0e" value="1.0">
               <repeats>
-                <repeat field="selections" scope="9b10-b657-a65a-9d60" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="f9a5-f0ff-0271-3c0e" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="9b10-b657-a65a-9d60" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b8e-4ac0-37af-c077" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="9b10-b657-a65a-9d60" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="24cd-30da-e39d-99bb" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="9b10-b657-a65a-9d60" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f0fd-094c-7992-1fee" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9a5-f0ff-0271-3c0e" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9a5-f0ff-0271-3c0e" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="3e39-0a7c-fc75-198a" name="Bayonet" hidden="false" collective="false" import="true" targetId="6904-6936-d6ca-a0eb" type="selectionEntry">
@@ -23819,9 +23792,10 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="5b8e-4ac0-37af-c077" name="The Legion Scout Sergeant may exchange his Bolter for:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="5b8e-4ac0-37af-c077" name="The Legion Scout Sergeant may exchange his Bolter for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="a6eb-e1d3-6462-35d1">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdde-5134-511a-32de" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f77-4bfd-fe68-d566" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="67a9-f5eb-1e18-96c8" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="0d1c-227e-a3f8-cd63" type="selectionEntry">
@@ -23864,11 +23838,19 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
               </costs>
             </entryLink>
+            <entryLink id="a6eb-e1d3-6462-35d1" name="Bolter" hidden="false" collective="false" import="true" targetId="1ade-0c02-5612-252b" type="selectionEntry"/>
+            <entryLink id="acec-656b-6888-6279" name="Nemesis Bolter" hidden="false" collective="false" import="true" targetId="c10a-61f8-9c33-fe8a" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="804c-8cfd-837d-26b3" name="Astartes Shotgun" hidden="false" collective="false" import="true" targetId="6f79-5cf4-a689-7269" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="7a23-bfa9-9530-9385" name="The Legion Scout Sergeant may exchange his Bolt Pistol for:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="7a23-bfa9-9530-9385" name="The Legion Scout Sergeant may exchange his Bolt Pistol for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="c3c8-bfd7-40f3-eb07">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a6f-6507-bd63-ac33" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a6f-6507-bd63-ac33" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cb8-7f90-ef8c-e342" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="3729-33c1-c23a-0fd9" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="717f-cf0a-1593-4bd8" type="selectionEntry">
@@ -23926,6 +23908,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
               </costs>
             </entryLink>
+            <entryLink id="c3c8-bfd7-40f3-eb07" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="850c-322d-5c15-59fd" name="The Legion Tactical Sergeant may take (Wargear):" hidden="false" collective="false" import="true">
@@ -24014,26 +23997,23 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
             <entryLink id="a62d-3a7d-790e-b811" name="Surgical Augement" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="f41d-00cf-ac8c-b242" name="Any Legion Scout  may replace their Bolt Pistol with:" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="f41d-00cf-ac8c-b242" name="Any Legion Scout  may replace their Bolt Pistol with:" hidden="false" collective="false" import="true" defaultSelectionEntryId="19e2-b55e-256f-1edd">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
             <modifier type="increment" field="f5e0-26f7-639c-bb17" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="9b10-b657-a65a-9d60" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8867-1af4-01f7-da72" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="f5e0-26f7-639c-bb17" value="4.0"/>
+            <modifier type="increment" field="b1c0-2bf0-69ed-68bd" value="1.0">
               <repeats>
                 <repeat field="selections" scope="9b10-b657-a65a-9d60" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8867-1af4-01f7-da72" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5e0-26f7-639c-bb17" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5e0-26f7-639c-bb17" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1c0-2bf0-69ed-68bd" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="ff82-6985-9f08-92d7" name="Asphyx Bolt Pistol" hidden="false" collective="false" import="true" targetId="07f7-c486-f597-a1b9" type="selectionEntry">
@@ -24046,6 +24026,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
               </costs>
             </entryLink>
+            <entryLink id="19e2-b55e-256f-1edd" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="7b90-31d7-3a64-772e" name="Dedicated Transport:" hidden="false" collective="false" import="true">
@@ -24077,21 +24058,23 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="24cd-30da-e39d-99bb" name="Any Legion Scout may replace their Bolter with:" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="24cd-30da-e39d-99bb" name="Any Legion Scout may replace their Bolter with:" hidden="false" collective="false" import="true" defaultSelectionEntryId="f0fd-094c-7992-1fee">
           <modifiers>
             <modifier type="increment" field="5207-8863-5ade-8a78" value="1.0">
               <repeats>
-                <repeat field="selections" scope="9b10-b657-a65a-9d60" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="9b10-b657-a65a-9d60" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8867-1af4-01f7-da72" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
-            <modifier type="decrement" field="5207-8863-5ade-8a78" value="1.0">
-              <conditions>
-                <condition field="selections" scope="9b10-b657-a65a-9d60" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de73-b98a-9f1e-8688" type="equalTo"/>
-              </conditions>
+            <modifier type="decrement" field="5207-8863-5ade-8a78" value="4.0"/>
+            <modifier type="increment" field="abd9-7506-b7f0-c5fe" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="9b10-b657-a65a-9d60" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8867-1af4-01f7-da72" repeats="1" roundUp="false"/>
+              </repeats>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5207-8863-5ade-8a78" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5207-8863-5ade-8a78" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abd9-7506-b7f0-c5fe" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="f928-1917-0629-6701" name="Shrapnel Bolter" hidden="false" collective="false" import="true" targetId="1941-21b5-932c-74d6" type="selectionEntry">
@@ -24125,6 +24108,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
               </costs>
             </entryLink>
+            <entryLink id="f0fd-094c-7992-1fee" name="Bolter" hidden="false" collective="false" import="true" targetId="1ade-0c02-5612-252b" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="de73-b98a-9f1e-8688" name="The Legion Scout Sergeant may take (Melee Weapon):" hidden="false" collective="false" import="true">
@@ -24297,18 +24281,6 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="3929-4e18-19b1-38ed" name="Bolter" hidden="false" collective="false" import="true" targetId="1ade-0c02-5612-252b" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44f5-77dd-2897-8940" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c212-1feb-d20a-eb9c" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="055b-3f67-5b9b-cbd7" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c8b-79f3-8687-de42" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a04-f629-1bd5-fcb6" type="min"/>
-          </constraints>
-        </entryLink>
         <entryLink id="fa36-0697-7efc-525e" name="Scout Armour" hidden="false" collective="false" import="true" targetId="b282-55aa-d1e2-ebe7" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8cd-cf45-1c32-851d" type="max"/>
