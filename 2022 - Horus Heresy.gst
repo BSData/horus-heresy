@@ -4603,9 +4603,9 @@ Four single Blast Shields</characteristic>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0f10-2b63-7d97-e5f4" name="Kracken Bolter" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0f10-2b63-7d97-e5f4" name="Kraken Bolter" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="89fa-8b2e-18d6-2b58" name="Kracken Bolter (Default)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="89fa-8b2e-18d6-2b58" name="Kraken Bolter (Default)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">30&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -4613,7 +4613,7 @@ Four single Blast Shields</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire</characteristic>
           </characteristics>
         </profile>
-        <profile id="6bde-dff7-fb20-f911" name="Kracken Bolter (Scorpius Rounds)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="6bde-dff7-fb20-f911" name="Kraken Bolter (Scorpius Rounds)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -4621,7 +4621,7 @@ Four single Blast Shields</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Breaching (4+)</characteristic>
           </characteristics>
         </profile>
-        <profile id="8b90-0051-fc53-67ba" name="Kracken Bolter (Tempest Rounds)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="8b90-0051-fc53-67ba" name="Kraken Bolter (Tempest Rounds)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
