@@ -1,19 +1,18 @@
-> ⚠️  NOTE: use notes like this to emphasize something about the PR. This could
-> include other PRs this PR is built on top of; reasons for why the PR is on hold; 
-or anything else you would like > to draw attention to
+Please set a title for the PR describing your changes,
+fill out the information below, and delete this heading.
 
-## Description
-_A few sentences describing the overall goals of the pull request.
-What is the current behavior of the app? What is the updated/expected behavior
-with this PR?_
+## Added Units
 
-## Related Issues
+## Fixed Units
+
+### Related Issues
+
 * closes # [insert issue name here](insert link here)
 
-## Todos
-_Fill out or remove list items as needed_
-- [ ] Tests
+## Not done yet
+
+_Any issues related to your new changes, or known missing options_
 
 ## Test Case
-_Notes This should be a link to test roster file that evidences your change._
-It would also be acceptable to upload the file as a comment.
+
+Please upload a roster do demonstrate your changes. 
