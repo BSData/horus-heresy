@@ -745,7 +745,7 @@
         <categoryLink id="9c8f-e956-8fe5-7091" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="9196-ec05-7801-54e8" name="Leviathan Dreadnought Talon (Placeholder Points)" hidden="false" collective="false" import="true" targetId="c2a7-9e2c-fc65-1b78" type="selectionEntry">
+    <entryLink id="9196-ec05-7801-54e8" name="Leviathan Dreadnought Talon" hidden="false" collective="false" import="true" targetId="c2a7-9e2c-fc65-1b78" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="81e0-ee0e-39a1-55a4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="4503-757d-8fb6-e3c8" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
@@ -24393,26 +24393,70 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c2a7-9e2c-fc65-1b78" name="Leviathan Dreadnought Talon (Placeholder Points)" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="c2a7-9e2c-fc65-1b78" name="Leviathan Dreadnought Talon" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="d0dc-82ff-0bd5-ade7" name="Legiones Astartes (X)" publicationId="e77a-823a-da94-16b9" page="242" hidden="false">
+          <description>Any unit with this special rule will have a number of additional special rules and abilities specific to their ‘named’ Legion, all of which will be defined in other Horus Heresy – Age of Darkness publications. A Space Marine unit may only have one such ‘named’ rule, e.g., Legiones Astartes (Sons of Horus). Space Marine units from a different Legion may only be included in an army using an Allied Detachment (see page 281) and in conjunction with the Allies in the Age of Darkness chart found on page 282.</description>
+        </rule>
+        <rule id="8c5b-65f7-5dbe-0263" name="Dreadnought Talon" publicationId="a716-c1c4-7b26-8424" page="118" hidden="false">
+          <description>When deployed onto the battlefield (either at the start of the battle or when arriving from Reserves), all models with this special rule in a unit must be placed within unit coherency, but afterwards operate independently and are not treated as a unit.</description>
+        </rule>
+        <rule id="2346-d720-e756-bf74" name="Hammer of Wrath (X)" publicationId="e77a-823a-da94-16b9" page="239" hidden="false">
+          <description>If a model with this special rule ends its Charge Move in base or hull contact with an enemy model, it makes a number of additional attacks equal to the value in brackets listed as part of this special rule.These attacks hit automatically and are resolved at the models unmodified Strength with AP-. These attacks do not benefit from any of the model&apos;s special rules (such as Furious Charge, Rending, etc.).These attacks are resolved during the Fight sub-phase at Initiative step 10 but do not grant the model an additional Pile-in Move.
+
+If a model with this special rule Charges a Vehicle of any kind or a Building, the hits are resolved against the Armour Value of the Facing the charging model is touching. If the model is in contact with two or more Facings, the player controlling the target model chooses a Facing upon which the attacks are resolved. If a model with this special rule Charges a Building or Vehicle that is a Transport, the hits are resolved against the Building or Vehicle, not the unit Embarked within the Building or Vehicle.</description>
+        </rule>
+        <rule id="c70f-9b28-80b9-7167" name="Move Through Cover" publicationId="e77a-823a-da94-16b9" page="243" hidden="false">
+          <description>A unit that contains only models with this special rule suffers no penalty for moving or charging through Difficult Terrain.</description>
+        </rule>
+      </rules>
       <categoryLinks>
         <categoryLink id="c543-976f-ef9d-d41e" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="9152-5697-6c00-ca89" name="Dreadnought Unit-type:" hidden="false" targetId="4280-4963-02b5-e31d" primary="false"/>
         <categoryLink id="7423-159b-9fbd-f718" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="ac2d-77a1-ecd7-a555" name="Leviathan" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="ac2d-77a1-ecd7-a555" name="Leviathan Dreadnought" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38cd-dc83-4d9f-ecac" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3574-849a-7cfe-73f4" type="max"/>
           </constraints>
+          <profiles>
+            <profile id="6bc5-3dcd-bcdf-ff32" name="Leviathan Dreadnought" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Dreadnought (Heavy)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">8</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">8</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">7</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">5</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry id="a3ad-3b70-433b-b9fa" name="Atomantic Deflector" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="e7f9-2244-31c7-e65f" name="Atomantic Deflector" publicationId="a716-c1c4-7b26-8424" page="140" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with an atomantic deflector gains a 5+ Invulnerable Save and any model with an atomantic deflector and a Wounds Characteristic that suffers an unsaved Wound with the Instant Death special rule is not immediately removed as a casualty, but instead loses D3 Wounds instead of one for each unsaved Wound with the Instant Death special rule inflicted on it. In addition, when a model with an atomantic deflector loses its last Wound or Hull Point, but before it is removed as a casualty or replaced with a Wreck, all models both friendly and enemy within D6&quot; suffer an automatic Hit at Str 8, AP -.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="270.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink id="c465-176c-d2a5-fa1e" name="Upgrade Points (Placeholders)" hidden="false" collective="false" import="true" targetId="8b48-2da0-15da-2c1b" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
