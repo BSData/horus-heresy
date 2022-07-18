@@ -24464,15 +24464,17 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                     <conditionGroup type="or">
                       <conditionGroups>
                         <conditionGroup type="and">
+                          <comment>Weapon Option 1</comment>
                           <conditions>
-                            <condition field="selections" scope="ac2d-77a1-ecd7-a555" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4af0-7de7-45cc-6565" type="notEqualTo"/>
-                            <condition field="selections" scope="ac2d-77a1-ecd7-a555" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89fa-96fc-fa4a-eddb" type="notEqualTo"/>
+                            <condition field="selections" scope="ac2d-77a1-ecd7-a555" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="9387-8dfb-2134-9387" type="notEqualTo"/>
+                            <condition field="selections" scope="ac2d-77a1-ecd7-a555" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="9b8b-a8c9-481f-fafe" type="notEqualTo"/>
                           </conditions>
                         </conditionGroup>
                         <conditionGroup type="and">
+                          <comment>Weapon Option 2</comment>
                           <conditions>
-                            <condition field="selections" scope="ac2d-77a1-ecd7-a555" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4266-4404-9224-8a49" type="notEqualTo"/>
-                            <condition field="selections" scope="ac2d-77a1-ecd7-a555" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f890-209d-317b-5b44" type="notEqualTo"/>
+                            <condition field="selections" scope="ac2d-77a1-ecd7-a555" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="a5fa-d13e-ae6d-19a9" type="notEqualTo"/>
+                            <condition field="selections" scope="ac2d-77a1-ecd7-a555" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="48c0-5a26-c6e5-eccb" type="notEqualTo"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -24495,495 +24497,81 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
               </characteristics>
             </profile>
           </profiles>
-          <rules>
-            <rule id="c2d0-9f6b-7652-c785" name="Move Through Cover" publicationId="e77a-823a-da94-16b9" page="243" hidden="false">
-              <description>A unit that contains only models with this special rule suffers no penalty for moving or charging through Difficult Terrain.</description>
-            </rule>
-            <rule id="f44f-03c9-12dd-a036" name="Hammer of Wrath (X)" publicationId="e77a-823a-da94-16b9" page="239" hidden="false">
+          <infoLinks>
+            <infoLink id="6d2a-dba8-c20e-aa15" name="Dreadnought Talon" hidden="false" targetId="a924-2634-73fd-aa96" type="rule"/>
+            <infoLink id="3f6b-6883-3750-4666" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
+            <infoLink id="479c-e947-d329-0eb4" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
               <modifiers>
                 <modifier type="set" field="name" value="Hammer of Wraith (3)"/>
               </modifiers>
-              <description>If a model with this special rule ends its Charge Move in base or hull contact with an enemy model, it makes a number of additional attacks equal to the value in brackets listed as part of this special rule.These attacks hit automatically and are resolved at the models unmodified Strength with AP-. These attacks do not benefit from any of the model&apos;s special rules (such as Furious Charge, Rending, etc.).These attacks are resolved during the Fight sub-phase at Initiative step 10 but do not grant the model an additional Pile-in Move.
-
-If a model with this special rule Charges a Vehicle of any kind or a Building, the hits are resolved against the Armour Value of the Facing the charging model is touching. If the model is in contact with two or more Facings, the player controlling the target model chooses a Facing upon which the attacks are resolved. If a model with this special rule Charges a Building or Vehicle that is a Transport, the hits are resolved against the Building or Vehicle, not the unit Embarked within the Building or Vehicle.</description>
-            </rule>
-            <rule id="0362-bbd5-3db6-b4e4" name="Dreadnought Talon" publicationId="a716-c1c4-7b26-8424" page="118" hidden="false">
-              <description>When deployed onto the battlefield (either at the start of the battle or when arriving from Reserves), all models with this special rule in a unit must be placed within unit coherency, but afterwards operate independently and are not treated as a unit.</description>
-            </rule>
-          </rules>
-          <selectionEntries>
-            <selectionEntry id="59ed-c7c7-af5f-0772" name="Atomantic Deflector" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e743-9a98-00c8-1180" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d508-3d54-86ee-720b" type="min"/>
-              </constraints>
-              <profiles>
-                <profile id="573e-36e1-d1ef-069f" name="Atomantic Deflector" publicationId="a716-c1c4-7b26-8424" page="140" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-                  <characteristics>
-                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with an atomantic deflector gains a 5+ Invulnerable Save and any model with an atomantic deflector and a Wounds Characteristic that suffers an unsaved Wound with the Instant Death special rule is not immediately removed as a casualty, but instead loses D3 Wounds instead of one for each unsaved Wound with the Instant Death special rule inflicted on it. In addition, when a model with an atomantic deflector loses its last Wound or Hull Point, but before it is removed as a casualty or replaced with a Wreck, all models both friendly and enemy within D6&quot; suffer an automatic Hit at Str 8, AP -.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </infoLink>
+          </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="5f5a-bc15-c9d5-e890" name="May take one of the following:" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5584-5c85-0695-6f61" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79ac-e95d-f127-67e6" type="max"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry id="77eb-0040-30ff-2f20" name="Phosphex Discharger" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="4ba7-e9b1-2da7-df92" name="Phosphex Discharger" publicationId="a716-c1c4-7b26-8424" page="135" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
-                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
-                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Barrage, Blast (3&quot;), Poisoned (3+), Crawling Fire, Lingering Death</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="0bdb-03d6-c821-2825" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
-                    <infoLink id="c76f-7f72-fc43-3ce4" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
-                      <modifiers>
-                        <modifier type="set" field="name" value="Poisoned (3+)"/>
-                      </modifiers>
-                    </infoLink>
-                    <infoLink id="027f-dd25-5006-f725" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
-                    <infoLink id="c60f-cb71-0a77-3f78" name="Crawling Fire" hidden="false" targetId="8258-a7af-e4df-531d" type="rule"/>
-                    <infoLink id="d2ad-bcf0-2b57-10ab" name="Lingering Death" hidden="false" targetId="be87-f0e5-7446-972b" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
+              <entryLinks>
+                <entryLink id="19d3-23d6-2693-b635" name="Phosphex Discharger" hidden="false" collective="false" import="true" targetId="2dfb-3606-923a-8987" type="selectionEntry"/>
+              </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="216e-eb0d-18a7-1000" name="Weapon Option 1" hidden="false" collective="false" import="true" defaultSelectionEntryId="89fa-96fc-fa4a-eddb">
+            <selectionEntryGroup id="216e-eb0d-18a7-1000" name="Weapon Option 1" hidden="false" collective="false" import="true" defaultSelectionEntryId="9387-8dfb-2134-9387">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4846-660a-83c5-06a5" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c29a-2645-e862-f8e1" type="max"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry id="89fa-96fc-fa4a-eddb" name="Leviathan Siege Claw" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="append" field="name" value="with bult-in meltagun"/>
-                  </modifiers>
-                  <profiles>
-                    <profile id="0c91-fc4b-397f-7dfa" name="Leviathan Siege Claw" publicationId="a716-c1c4-7b26-8424" page="138" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
-                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (3)</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="b9ff-0103-216b-6491" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
-                      <modifiers>
-                        <modifier type="set" field="name" value="Brutal (3)"/>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
-                  <selectionEntries>
-                    <selectionEntry id="a51e-9ad2-09f0-7537" name="Meltagun" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c62d-092c-a935-4020" type="min"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d64c-a4e6-b544-5f5b" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="6c02-99a1-1798-d04f" name="Meltagun" publicationId="a716-c1c4-7b26-8424" page="133" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                          <characteristics>
-                            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
-                            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-                            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-                            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Melta)</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink id="0fab-0541-47f7-bbbe" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
-                          <modifiers>
-                            <modifier type="set" field="name" value="Armourbane (Melta)"/>
-                          </modifiers>
-                        </infoLink>
-                      </infoLinks>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="4af0-7de7-45cc-6565" name="Leviathan Siege Drill" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="append" field="name" value="with bult-in meltagun"/>
-                  </modifiers>
-                  <profiles>
-                    <profile id="b898-e37e-fe58-dc15" name="Leviathan Siege Drill" publicationId="a716-c1c4-7b26-8424" page="138" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
-                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee)</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="9ce7-188b-62fd-afda" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
-                      <modifiers>
-                        <modifier type="set" field="name" value="Armourbane (Melee)"/>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
-                  <selectionEntries>
-                    <selectionEntry id="6a9f-d845-2d6f-84e9" name="Meltagun" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85df-5b2d-6cef-126c" type="min"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a92a-cf22-a212-653c" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="b367-28bd-eac4-cb73" name="Meltagun" publicationId="a716-c1c4-7b26-8424" page="133" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                          <characteristics>
-                            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
-                            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-                            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-                            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Melta)</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink id="a9e4-82d5-e0e2-a48f" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
-                          <modifiers>
-                            <modifier type="set" field="name" value="Armourbane (Melta)"/>
-                          </modifiers>
-                        </infoLink>
-                      </infoLinks>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="5cd4-428f-845b-eb4e" name="Leviathan Storm Cannon" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="ef24-b852-3888-3ac2" name="Leviathan Storm Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
-                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 6., Rending (5+), Sunder</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="c600-d51d-0441-3d9d" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
-                      <modifiers>
-                        <modifier type="set" field="name" value="Rending (5+)"/>
-                      </modifiers>
-                    </infoLink>
-                    <infoLink id="7c44-b3bc-a716-f9ae" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="9158-a529-a037-4f99" name="Cyclonic Melta Lance" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="2333-17ba-8775-96d8" name="Cyclonic Melta Lance" publicationId="a716-c1c4-7b26-8424" page="133" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
-                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Armourbane (Melta)</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="26cb-63d7-5d30-639b" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
-                      <modifiers>
-                        <modifier type="set" field="name" value="Armourbane (Melta)"/>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="cf64-d1a2-6a50-59df" name="Grav-Flux Bombard" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="5d7b-1b6b-01bd-1d51" name="Grav-Flux Bombard" publicationId="a716-c1c4-7b26-8424" page="131" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
-                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">†</characteristic>
-                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1,  Large Blast (5&quot;), †Graviton Collapse, Torsion Crusher, Ignores Cover, Concussive (1)</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="6aa2-99e6-648b-3dae" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
-                    <infoLink id="78ae-448e-4c74-20cb" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
-                    <infoLink id="5456-517f-b2a9-9f88" name="Graviton Collapse" hidden="false" targetId="60d8-5964-8671-7f3b" type="rule"/>
-                    <infoLink id="0664-c79d-6e42-66cd" name="Torsion Crusher" hidden="false" targetId="2cef-a40d-97b8-7d4e" type="rule"/>
-                    <infoLink id="268d-fb71-43a0-5ab2" name="Ignores Cover" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>
-                    <infoLink id="78c2-1dd7-1f5b-b548" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
-                      <modifiers>
-                        <modifier type="set" field="name" value="Concussive (1)"/>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
+              <entryLinks>
+                <entryLink id="9387-8dfb-2134-9387" name="Leviathan Siege Claw" hidden="false" collective="false" import="true" targetId="4838-a0ca-93d8-f6b2" type="selectionEntry"/>
+                <entryLink id="9b8b-a8c9-481f-fafe" name="Leviathan Siege Drill" hidden="false" collective="false" import="true" targetId="d266-0d1e-b8e5-1e90" type="selectionEntry"/>
+                <entryLink id="0260-3edc-aa2a-48ea" name="Grav-Flux Bombard" hidden="false" collective="false" import="true" targetId="4ab1-ee7c-0ab2-8372" type="selectionEntry"/>
+                <entryLink id="6522-1c85-a947-a6cf" name="Cyclonic Melta Lance" hidden="false" collective="false" import="true" targetId="454f-a4bc-46cc-6f1b" type="selectionEntry"/>
+                <entryLink id="0919-e4c0-5990-bbaf" name="Leviathan Storm Cannon" hidden="false" collective="false" import="true" targetId="7b60-94de-1d33-8317" type="selectionEntry"/>
+              </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="1e4a-80d4-7ad9-78c4" name="Weapon Option 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="f890-209d-317b-5b44">
+            <selectionEntryGroup id="1e4a-80d4-7ad9-78c4" name="Weapon Option 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="48c0-5a26-c6e5-eccb">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a36-e69d-308c-9005" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8275-a4a3-080d-5fb4" type="max"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry id="f890-209d-317b-5b44" name="Leviathan Siege Claw" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="append" field="name" value="with bult-in meltagun"/>
-                  </modifiers>
-                  <profiles>
-                    <profile id="18dd-09b0-18ec-b637" name="Leviathan Siege Claw" publicationId="a716-c1c4-7b26-8424" page="138" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
-                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (3)</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="7de1-cc73-136c-8761" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
-                      <modifiers>
-                        <modifier type="set" field="name" value="Brutal (3)"/>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
-                  <selectionEntries>
-                    <selectionEntry id="c801-63cc-ebb7-dd3f" name="Meltagun" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fb9-699a-215a-8f68" type="min"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a676-2953-8d66-01f8" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="d2b3-e800-f859-7870" name="Meltagun" publicationId="a716-c1c4-7b26-8424" page="133" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                          <characteristics>
-                            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
-                            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-                            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-                            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Melta)</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink id="6b0e-07af-dbcd-1e49" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
-                          <modifiers>
-                            <modifier type="set" field="name" value="Armourbane (Melta)"/>
-                          </modifiers>
-                        </infoLink>
-                      </infoLinks>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="4266-4404-9224-8a49" name="Leviathan Siege Drill" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="append" field="name" value="with bult-in meltagun"/>
-                  </modifiers>
-                  <profiles>
-                    <profile id="287e-18e3-fcc9-3f9a" name="Leviathan Siege Drill" publicationId="a716-c1c4-7b26-8424" page="138" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
-                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee)</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="478b-becd-b943-e99f" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
-                      <modifiers>
-                        <modifier type="set" field="name" value="Armourbane (Melee)"/>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
-                  <selectionEntries>
-                    <selectionEntry id="1412-c9a3-444d-b77e" name="Meltagun" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90fa-d133-7ad4-16be" type="min"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d306-06c0-393e-f314" type="max"/>
-                      </constraints>
-                      <profiles>
-                        <profile id="f444-d291-03f5-c17b" name="Meltagun" publicationId="a716-c1c4-7b26-8424" page="133" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                          <characteristics>
-                            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
-                            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-                            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-                            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Melta)</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink id="ce82-97f5-a76b-b73c" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
-                          <modifiers>
-                            <modifier type="set" field="name" value="Armourbane (Melta)"/>
-                          </modifiers>
-                        </infoLink>
-                      </infoLinks>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="a301-5043-3b44-37f2" name="Leviathan Storm Cannon" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="5a70-8563-7320-6908" name="Leviathan Storm Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
-                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 6., Rending (5+), Sunder</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="d225-3da0-5114-f31d" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
-                      <modifiers>
-                        <modifier type="set" field="name" value="Rending (5+)"/>
-                      </modifiers>
-                    </infoLink>
-                    <infoLink id="0f94-043d-3110-dae3" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="88e6-77a9-7334-6979" name="Cyclonic Melta Lance" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="959b-ae74-5ba7-d06c" name="Cyclonic Melta Lance" publicationId="a716-c1c4-7b26-8424" page="133" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
-                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Armourbane (Melta)</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="ad14-92d6-cb75-5d2e" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
-                      <modifiers>
-                        <modifier type="set" field="name" value="Armourbane (Melta)"/>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="3e14-b86d-5cf4-0c05" name="Grav-Flux Bombard" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="8ae5-8cab-f23c-507f" name="Grav-Flux Bombard" publicationId="a716-c1c4-7b26-8424" page="131" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
-                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">†</characteristic>
-                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1,  Large Blast (5&quot;), †Graviton Collapse, Torsion Crusher, Ignores Cover, Concussive (1)</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="3d8a-6f0a-8ab9-427d" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
-                    <infoLink id="068f-c5f2-08e3-a875" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
-                    <infoLink id="0428-878f-a060-c269" name="Graviton Collapse" hidden="false" targetId="60d8-5964-8671-7f3b" type="rule"/>
-                    <infoLink id="5e45-9dde-c1a0-4aff" name="Torsion Crusher" hidden="false" targetId="2cef-a40d-97b8-7d4e" type="rule"/>
-                    <infoLink id="339b-b22c-38d9-f60b" name="Ignores Cover" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>
-                    <infoLink id="e362-2164-b543-3304" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
-                      <modifiers>
-                        <modifier type="set" field="name" value="Concussive (1)"/>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
+              <entryLinks>
+                <entryLink id="f0c9-e2b9-f66b-e76a" name="Cyclonic Melta Lance" hidden="false" collective="false" import="true" targetId="454f-a4bc-46cc-6f1b" type="selectionEntry"/>
+                <entryLink id="1b96-dafe-f744-2186" name="Grav-Flux Bombard" hidden="false" collective="false" import="true" targetId="4ab1-ee7c-0ab2-8372" type="selectionEntry"/>
+                <entryLink id="48c0-5a26-c6e5-eccb" name="Leviathan Siege Claw" hidden="false" collective="false" import="true" targetId="4838-a0ca-93d8-f6b2" type="selectionEntry"/>
+                <entryLink id="a5fa-d13e-ae6d-19a9" name="Leviathan Siege Drill" hidden="false" collective="false" import="true" targetId="d266-0d1e-b8e5-1e90" type="selectionEntry"/>
+                <entryLink id="03c6-ed15-62df-d13f" name="Leviathan Storm Cannon" hidden="false" collective="false" import="true" targetId="7b60-94de-1d33-8317" type="selectionEntry"/>
+              </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="f42d-6f3b-4898-27dc" name="Hull" hidden="false" collective="false" import="true" defaultSelectionEntryId="02a9-990a-cf07-a47e">
+            <selectionEntryGroup id="f42d-6f3b-4898-27dc" name="2x Hull Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="02a9-990a-cf07-a47e">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24b3-9bb0-a1dd-445f" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7167-f42f-8fb4-4412" type="min"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry id="dc93-d046-db3c-0ad1" name="Volkite Caliver" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="name" value="2x Twin-linked volkite calivers"/>
-                  </modifiers>
-                  <profiles>
-                    <profile id="fc3f-e84f-6384-3dac" name="Volkite Caliver" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">30&quot;</characteristic>
-                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Deflagrate</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <rules>
-                    <rule id="fc12-d6bc-f5f3-33c6" name="Twin-linked" publicationId="e77a-823a-da94-16b9" page="249" hidden="false">
-                      <description>When attacking with a weapon that has this special rule, the controlling player may re-roll all failed To Hit rolls.
-
-Twin-linked Blast Weapons
-If the Scatter dice does not roll a Hit, you can choose to re-roll the dice when making a Shooting Attack with a Twin-linked Blast weapon. If you choose to do so, you must re-roll both the 2D6 and the Scatter dice.
-
-Twin-linked Template Weapons
-Twin-linked Template weapons are fired just like a single weapon, but must re-roll failed To Wound rolls and Armour Penetration rolls.</description>
-                    </rule>
-                  </rules>
-                  <infoLinks>
-                    <infoLink id="ce29-0038-14e2-971d" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
               <entryLinks>
                 <entryLink id="02a9-990a-cf07-a47e" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="name" value="2x Heavy Flamers"/>
                   </modifiers>
                 </entryLink>
+                <entryLink id="29d2-8a59-75c2-eec8" name="Volkite Caliver" hidden="false" collective="false" import="true" targetId="9250-490f-abeb-b901" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="2x Twin-linked volkite calivers"/>
+                  </modifiers>
+                  <infoLinks>
+                    <infoLink id="ff3d-ace8-e4fc-3b8e" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+                  </infoLinks>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="7a17-ed53-815a-066f" name="Atomantic Deflector" hidden="false" collective="false" import="true" targetId="38fb-9a0b-edef-a497" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7068-8997-473b-fefb" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="082c-7db0-e3de-638c" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="270.0"/>
           </costs>
