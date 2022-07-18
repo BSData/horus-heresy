@@ -2227,6 +2227,10 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     <selectionEntry id="0ec3-6c91-952c-e0ea" name="Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntries>
         <selectionEntry id="4a40-08ba-8b0f-82ec" name="Missile Launcher - Krak" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74db-5966-498f-6787" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ce6-b7fe-57fa-6fff" type="min"/>
+          </constraints>
           <profiles>
             <profile id="355a-6849-f24b-3246" name="Missile Launcher - Krak" publicationId="a716-c1c4-7b26-8424" page="133" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
@@ -2242,6 +2246,10 @@ Conversely, if an Independent Character joins a unit after that unit has been th
           </costs>
         </selectionEntry>
         <selectionEntry id="0da1-3e1d-c05b-b828" name="Missile Launcher - Flak" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c24-d983-f240-6596" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea50-ff1e-7d29-9dea" type="min"/>
+          </constraints>
           <profiles>
             <profile id="effc-0075-a2bf-f664" name="Missile Launcher - Flak" publicationId="a716-c1c4-7b26-8424" page="133" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
@@ -2260,6 +2268,10 @@ Conversely, if an Independent Character joins a unit after that unit has been th
           </costs>
         </selectionEntry>
         <selectionEntry id="92c9-17c7-1702-6eeb" name="Missile Launcher - Frag" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="025f-6ac0-19b8-766e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a1a-8453-65df-018f" type="min"/>
+          </constraints>
           <profiles>
             <profile id="5f55-a754-ba8a-c323" name="Missile Launcher - Frag" publicationId="a716-c1c4-7b26-8424" page="133" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
