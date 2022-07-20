@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="11" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="12" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="11f2-472f-c1d1-9ae9" name="Legiones Astartes" hidden="false">
       <infoLinks>
@@ -205,7 +205,19 @@
         <categoryLink id="7933-014f-bdbc-78d2" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="5d35-5265-17fb-46b8" name="Lion El&apos;Jonson " hidden="false" collective="false" import="true" targetId="c159-feb0-607f-bb5b" type="selectionEntry">
+    <entryLink id="5d35-5265-17fb-46b8" name="Lion El&apos;Jonson " hidden="true" collective="false" import="true" targetId="c159-feb0-607f-bb5b" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="2cba-f3cb-e339-5171" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="ddfd-8ea5-a35d-2c9d" name="New CategoryLink" hidden="false" targetId="ad5f-31db-8bc7-5c46" primary="true"/>
@@ -247,7 +259,19 @@
         <categoryLink id="6778-d3fb-2420-65f5" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="c5ee-ab63-c6aa-1ea0" name="Qin Xa" hidden="false" collective="false" import="true" targetId="ec0c-1416-50af-5f2d" type="selectionEntry">
+    <entryLink id="c5ee-ab63-c6aa-1ea0" name="Qin Xa" hidden="true" collective="false" import="true" targetId="ec0c-1416-50af-5f2d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="ff93-d19b-19b2-1b55" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="bb72-96a6-318e-2498" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
@@ -895,19 +919,6 @@
       <categoryLinks>
         <categoryLink id="e42d-0201-7908-664d" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="8069-9f7e-bbb1-b9e5" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="d1b8-adca-b7d0-6678" name="Deathwing Companion Detachment (Placeholders 2)" hidden="true" collective="false" import="true" targetId="d5f8-3620-24ed-044b" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="93ff-f6a6-7f28-dbb8" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
-        <categoryLink id="8b1b-4e99-c75c-d5c0" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="caf8-adf7-95de-1c27" name="Holguin (Placeholders 2)" hidden="true" collective="false" import="true" targetId="b151-c07e-6730-534b" type="selectionEntry">
@@ -2095,20 +2106,8 @@ Comes the Reaper – When making attacks as part of a Shooting Attack or during 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="155.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c159-feb0-607f-bb5b" name="Lion El&apos;Jonson " hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="c159-feb0-607f-bb5b" name="Lion El&apos;Jonson " hidden="false" collective="false" import="true" type="unit">
       <comment>Hexagrammaton</comment>
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f897-3258-da27-5e81" type="max"/>
       </constraints>
@@ -2596,19 +2595,7 @@ Preceptor of the Shattered Sceptre – If Marduk Sedras is the army’s Warlord 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="220.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ec0c-1416-50af-5f2d" name="Qin Xa" hidden="true" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="ec0c-1416-50af-5f2d" name="Qin Xa" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="380a-cadc-b450-0b5a" type="max"/>
       </constraints>
@@ -28299,203 +28286,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
         <entryLink id="21d8-eb9b-a36b-f6ee" name="Upgrade Points (Placeholders)" hidden="false" collective="false" import="true" targetId="8b48-2da0-15da-2c1b" type="selectionEntry"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry id="9c9a-2ae5-464f-b159" name="New (Placeholders 2)" publicationId="817a-6288-e016-7469" hidden="false" collective="false" import="true" type="unit">
-      <categoryLinks>
-        <categoryLink id="cc02-586a-73fa-c35c" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="653a-be06-f3af-5615" name="Sergeant" publicationId="817a-6288-e016-7469" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a14-bd1c-4995-ca21" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e35-5c12-a3f3-b7fb" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="82b8-ece0-7a29-6416" name="Troops" publicationId="817a-6288-e016-7469" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f57-1d60-ab86-8fda" type="min"/>
-            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fe3-b35d-2bbf-53c8" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="12.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="26dd-f589-3e8b-7f42" name="Upgrade Points (Placeholders)" hidden="false" collective="false" import="true" targetId="8b48-2da0-15da-2c1b" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntry>
-    <selectionEntry id="dbb3-e7a6-3fa5-ca8e" name="New (Placeholders 2)" publicationId="817a-6288-e016-7469" hidden="false" collective="false" import="true" type="unit">
-      <categoryLinks>
-        <categoryLink id="3186-e7a7-3f11-cd8f" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="b3f3-4364-ce3d-23ac" name="Sergeant" publicationId="817a-6288-e016-7469" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f38-2f54-28d4-c9dc" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1972-4654-0f2b-98d8" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="9101-d597-c6e6-a965" name="Troops" publicationId="817a-6288-e016-7469" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b981-9e59-94c0-7dcf" type="min"/>
-            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a56-1d23-dec8-6824" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="12.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="b131-84c4-f4c9-e2da" name="Upgrade Points (Placeholders)" hidden="false" collective="false" import="true" targetId="8b48-2da0-15da-2c1b" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntry>
-    <selectionEntry id="a4e6-6db4-23b0-67a6" name="New (Placeholders 2)" publicationId="817a-6288-e016-7469" hidden="false" collective="false" import="true" type="unit">
-      <categoryLinks>
-        <categoryLink id="4330-4195-543b-d85c" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="3366-ea68-941e-464f" name="Sergeant" publicationId="817a-6288-e016-7469" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa52-8ddc-ce57-efd6" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1517-ab4a-daef-afa5" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="cc39-de70-5b34-0101" name="Troops" publicationId="817a-6288-e016-7469" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3906-a687-6c89-b44c" type="min"/>
-            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e093-b8a5-ace5-abd4" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="12.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="f530-b1fa-dfeb-8ec8" name="Upgrade Points (Placeholders)" hidden="false" collective="false" import="true" targetId="8b48-2da0-15da-2c1b" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntry>
-    <selectionEntry id="5aef-12cf-758c-8aae" name="New (Placeholders 2)" publicationId="817a-6288-e016-7469" hidden="false" collective="false" import="true" type="unit">
-      <categoryLinks>
-        <categoryLink id="c31d-a9fe-729e-983e" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="861c-6a97-ac1e-89f0" name="Sergeant" publicationId="817a-6288-e016-7469" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e890-b6c4-bddb-96b6" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4993-ab83-b0b6-64b6" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="7058-dd91-6275-7ca1" name="Troops" publicationId="817a-6288-e016-7469" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="825f-3839-a49b-d88f" type="min"/>
-            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c7a-879d-d83d-27ac" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="12.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="3281-695a-e56e-bc52" name="Upgrade Points (Placeholders)" hidden="false" collective="false" import="true" targetId="8b48-2da0-15da-2c1b" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntry>
-    <selectionEntry id="2827-6c84-9d02-ab0f" name="New (Placeholders 2)" publicationId="817a-6288-e016-7469" hidden="false" collective="false" import="true" type="unit">
-      <categoryLinks>
-        <categoryLink id="8acd-9cf8-5e2c-c875" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="4542-5a80-b665-37f6" name="Sergeant" publicationId="817a-6288-e016-7469" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7caf-8206-4bd8-898a" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e62-aacf-d918-c4a9" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="1262-a34d-2718-a7bf" name="Troops" publicationId="817a-6288-e016-7469" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b99-cd0d-8f42-298c" type="min"/>
-            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="457f-55ba-9f14-6885" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="12.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="f572-385a-6729-8928" name="Upgrade Points (Placeholders)" hidden="false" collective="false" import="true" targetId="8b48-2da0-15da-2c1b" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntry>
-    <selectionEntry id="6cfa-161c-f54c-11c5" name="New (Placeholders 2)" publicationId="817a-6288-e016-7469" hidden="false" collective="false" import="true" type="unit">
-      <categoryLinks>
-        <categoryLink id="96e0-3d9f-8a51-7ece" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="a4e4-1293-9550-a038" name="Sergeant" publicationId="817a-6288-e016-7469" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c19-aa3d-1cb4-bd8a" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c38c-1460-7681-14d9" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="219b-e6f7-6ac8-7f6d" name="Troops" publicationId="817a-6288-e016-7469" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88e2-3ec2-b144-777b" type="min"/>
-            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43c9-4301-3c6a-636f" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="12.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="b627-2017-b456-8ef4" name="Upgrade Points (Placeholders)" hidden="false" collective="false" import="true" targetId="8b48-2da0-15da-2c1b" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntry>
-    <selectionEntry id="c4f0-6758-99f5-1e70" name="New (Placeholders 2)" publicationId="817a-6288-e016-7469" hidden="false" collective="false" import="true" type="unit">
-      <categoryLinks>
-        <categoryLink id="a556-6279-b225-3981" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="8c8f-82ec-f008-b20d" name="Sergeant" publicationId="817a-6288-e016-7469" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8cd-0173-315c-4239" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e83e-9c38-c5d1-b25f" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="351e-4aa1-270c-8aba" name="Troops" publicationId="817a-6288-e016-7469" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c391-994b-28df-81d1" type="min"/>
-            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f820-174c-a418-626d" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="12.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="01c7-fb6a-88c5-5099" name="Upgrade Points (Placeholders)" hidden="false" collective="false" import="true" targetId="8b48-2da0-15da-2c1b" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntry>
-    <selectionEntry id="898f-9d4e-ead3-ef0c" name="New (Placeholders 2)" publicationId="817a-6288-e016-7469" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="898f-9d4e-ead3-ef0c" name="New (Placeholders X)" publicationId="817a-6288-e016-7469" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="7128-ffbf-fc1a-1b9f" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
       </categoryLinks>
