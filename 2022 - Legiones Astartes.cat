@@ -2374,7 +2374,7 @@ This additional Reaction may only be made as long as the Warlord has not been re
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b94-13b3-f8f0-ad0c" type="max"/>
           </constraints>
           <profiles>
-            <profile id="bb81-db1a-c4be-c225" name="Armour of the Forest and the Mantle of the Champion (P3P ZW)" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+            <profile id="bb81-db1a-c4be-c225" name="Armour of the Forest and the Mantle of the Champion" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
               <characteristics>
                 <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Armour of the Forest and the Mantle of the Champion grant Corswain a 2+ Armour Save and a 4+ Invulnerable Save, improved to 3+ against close combat attacks.</characteristic>
               </characteristics>
@@ -2407,8 +2407,16 @@ This additional Reaction may only be made as long as the Warlord has not been re
           <infoLinks>
             <infoLink id="f1ff-769a-5e91-d3b5" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
             <infoLink id="b355-6ef8-09fb-46b1" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
-            <infoLink id="83c8-f150-27d3-239f" name="Duellist’s Edge (X)" hidden="false" targetId="7bf3-86ce-04c2-e6ba" type="rule"/>
-            <infoLink id="06a0-eeb3-47b4-ce85" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule"/>
+            <infoLink id="83c8-f150-27d3-239f" name="Duellist’s Edge (X)" hidden="false" targetId="7bf3-86ce-04c2-e6ba" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Duellist’s Edge (2)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="06a0-eeb3-47b4-ce85" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Murderous Strike (4+)"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
