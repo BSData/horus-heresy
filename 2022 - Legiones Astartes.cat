@@ -9886,7 +9886,7 @@ In additio, an army that includes Lorgar Transfigured may fill any non-compulsor
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2cc-1552-f277-86ed" type="min"/>
               </constraints>
             </entryLink>
-            <entryLink id="94df-d7ea-edcd-0650" name="Psychic Discipline: Anathemata (Move to GST)" hidden="false" collective="false" import="true" targetId="c6ec-edc0-034e-ed45" type="selectionEntry">
+            <entryLink id="94df-d7ea-edcd-0650" name="Psychic Discipline: Anathemata" hidden="false" collective="false" import="true" targetId="c6ec-edc0-034e-ed45" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -9918,7 +9918,14 @@ In additio, an army that includes Lorgar Transfigured may fill any non-compulsor
     </selectionEntry>
     <selectionEntry id="c6ec-edc0-034e-ed45" name="Psychic Discipline: Anathemata" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="8d74-fa05-de93-4f22" name="Breach the Veil (P3P ZW) (Move to GST)" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
+        <profile id="8d74-fa05-de93-4f22" name="Breach the Veil" publicationId="a716-c1c4-7b26-8424" page="107" hidden="true" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a point within 12&quot; and at least 3&quot; away from any enemy model or Impassable Terrain – place a 3&quot; Blast marker to represent the Warp Rift until this power is resolved.
 
@@ -9929,12 +9936,24 @@ Once the final location of the chosen point is determined, the Esoterist’s con
 Once all models in the unit have moved onto the battlefield, the Warp Rift marker is removed from play. The Daemon unit brought into play by use of this power may be targeted by the Interceptor Reaction and may act as normal in the Shooting phase in which it arrives and may declare a Charge in the Assault phase of the turn in which it enters play.</characteristic>
           </characteristics>
         </profile>
-        <profile id="a84d-ecca-26d1-4d10" name="Void Darts (Move to GST)" hidden="false" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon">
+        <profile id="a84d-ecca-26d1-4d10" name="Void Darts" publicationId="a716-c1c4-7b26-8424" page="107" hidden="false" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon">
           <characteristics>
             <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">18&quot;</characteristic>
             <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">5</characteristic>
             <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">4</characteristic>
             <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 12, Snctic, Deflagrate, Psychic Focus</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="76b2-37e1-c228-cdd5" name="Seal the Veil" publicationId="a716-c1c4-7b26-8424" page="106" hidden="true" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a single anemy unit composed entirely of models with the Daemon Unit Type or Corrupted Unit Sub-type that is within line of sight and has at least one model within 18&quot; of the Psyker. All models in the target unit must reduce their Strength and Toughness by 1 (to a minimum of Toughtness and Strength 1) until the end of the target unit&apos;s controlling player&apos;s next turn - the controlling player of the Psyker using this Power may then choose to make a Psychic check from the Psyker If the Check is passed the target unit also suffers Perils of the Warp, and if the Check is failed then both the target unit and the Psyker using this Psychic Power suffer Perils of the Warp.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10017,7 +10036,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="401c-6801-ff6a-bb7c" name="Psychic Discipline: Fury of the Salamander" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="401c-6801-ff6a-bb7c" name="Psychic Discipline: Fury of the Salamander (Awakening Fire RoW Only!)" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="3683-65cc-ce02-e09b" name="Salamander&apos;s Fury" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
           <characteristics>
@@ -19603,12 +19622,46 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                   </costs>
                 </entryLink>
                 <entryLink id="6bed-cdae-f95b-a6d5" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="5670-f70b-eda6-0cfa" name="Boarding Shield" hidden="false" collective="false" import="true" targetId="0c0f-f751-cc4e-4951" type="selectionEntry"/>
+                <entryLink id="5670-f70b-eda6-0cfa" name="Boarding Shield" hidden="false" collective="false" import="true" targetId="0c0f-f751-cc4e-4951" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
                 <entryLink id="06a3-8f73-222b-5633" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
                   </costs>
@@ -19619,6 +19672,15 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                       <conditions>
                         <condition field="selections" scope="c681-938e-6d11-cd43" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="cc07-940c-6707-6d42" type="equalTo"/>
                       </conditions>
+                    </modifier>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <costs>
@@ -19647,8 +19709,103 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                   </costs>
                 </entryLink>
                 <entryLink id="c248-3bbf-b234-977f" name="Raven&apos;s Talons" hidden="false" collective="false" import="true" targetId="09d8-64f5-1936-e8ab" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="67e3-0016-35b5-168b" name="Force Axe" hidden="true" collective="false" import="true" targetId="40bb-c99e-b4b3-12c1" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="81e2-2946-d675-055c" name="Force Maul" hidden="true" collective="false" import="true" targetId="da60-5978-bdd7-9c95" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="7857-3d0d-1aa4-7e86" name="Force Staff" hidden="true" collective="false" import="true" targetId="5132-9034-5e79-13c8" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="7465-9d30-a4ef-34a6" name="Force Sword" hidden="true" collective="false" import="true" targetId="6164-c01a-a879-37d7" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="0d97-ca8d-34b8-4002" name="Archaeotech Pistol" hidden="true" collective="false" import="true" targetId="c22a-ed4d-af68-bf00" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -19659,16 +19816,49 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
               </constraints>
               <entryLinks>
                 <entryLink id="078e-cb88-3469-492f" name="Bolter" hidden="false" collective="false" import="true" targetId="1ade-0c02-5612-252b" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="d63b-e0d3-a555-60fa" name="Magna Combi-Weapon - Disintegrator" hidden="false" collective="false" import="true" targetId="1d05-f467-b0aa-88b2" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="1f1f-c5e5-e02c-54fa" name="Minor Combi-Weapon - Alchem Flamer" hidden="false" collective="false" import="true" targetId="b941-687c-c95e-31a6" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
@@ -19689,26 +19879,81 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                   </costs>
                 </entryLink>
                 <entryLink id="3313-fc44-eee9-206f" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="0d1c-227e-a3f8-cd63" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="b595-7aed-9805-e9e9" name="Magna Combi-Weapon - Plasma Gun" hidden="false" collective="false" import="true" targetId="cc98-8596-c713-516c" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="854c-6a50-c6b3-2ccd" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="34c4-db99-db36-0f2a" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="40b4-401b-6f86-5548" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="false" import="true" targetId="aa3c-f5a5-9ce9-1497" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="211c-e425-cfb6-106e" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" targetId="7e5c-3d25-5c88-32e0" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
@@ -19769,6 +20014,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                             <condition field="selections" scope="c681-938e-6d11-cd43" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6d2-b3a9-6d2c-1f6f" type="equalTo"/>
                             <condition field="selections" scope="c681-938e-6d11-cd43" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08e4-5e02-da82-f296" type="equalTo"/>
                             <condition field="selections" scope="c681-938e-6d11-cd43" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c0f-f751-cc4e-4951" type="atLeast"/>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -19787,6 +20033,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                             <condition field="selections" scope="c681-938e-6d11-cd43" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6d2-b3a9-6d2c-1f6f" type="equalTo"/>
                             <condition field="selections" scope="c681-938e-6d11-cd43" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08e4-5e02-da82-f296" type="equalTo"/>
                             <condition field="selections" scope="c681-938e-6d11-cd43" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c0f-f751-cc4e-4951" type="atLeast"/>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -19847,12 +20094,46 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                   </costs>
                 </entryLink>
                 <entryLink id="fc98-ddca-708c-fd04" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="e5bb-d889-a9b9-2da2" name="Boarding Shield" hidden="false" collective="false" import="true" targetId="0c0f-f751-cc4e-4951" type="selectionEntry"/>
+                <entryLink id="e5bb-d889-a9b9-2da2" name="Boarding Shield" hidden="false" collective="false" import="true" targetId="0c0f-f751-cc4e-4951" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
                 <entryLink id="4cf3-8711-c39a-106a" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
                   </costs>
@@ -19863,6 +20144,15 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                       <conditions>
                         <condition field="selections" scope="c681-938e-6d11-cd43" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="d2be-c567-3071-b775" type="equalTo"/>
                       </conditions>
+                    </modifier>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <costs>
@@ -19901,8 +20191,87 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                   </costs>
                 </entryLink>
                 <entryLink id="ed94-bc2b-adb8-a28c" name="Raven&apos;s Talons" hidden="false" collective="false" import="true" targetId="09d8-64f5-1936-e8ab" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="7bef-372f-94f9-9e31" name="Force Axe" hidden="true" collective="false" import="true" targetId="40bb-c99e-b4b3-12c1" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="8000-a62c-5ccd-7ebc" name="Force Maul" hidden="true" collective="false" import="true" targetId="da60-5978-bdd7-9c95" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="5f7a-0fad-218f-50e4" name="Force Staff" hidden="true" collective="false" import="true" targetId="5132-9034-5e79-13c8" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="0798-c3c8-db80-7a32" name="Force Sword" hidden="true" collective="false" import="true" targetId="6164-c01a-a879-37d7" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -19931,6 +20300,32 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
             <entryLink id="7309-fbdd-849e-4e96" name="Paired Melee Weapons:" hidden="false" collective="false" import="true" targetId="b503-8902-fde3-7675" type="selectionEntryGroup">
               <modifiers>
                 <modifier type="set" field="name" value="May exchange both the Bolt Pistol and Chainsword for:"/>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="8568-014d-3ca9-d4bf" name="Legiones Consularis (Work in Progress)" hidden="false" collective="false" import="true" targetId="3cbf-9466-2558-2c22" type="selectionEntryGroup"/>
+            <entryLink id="3fce-27de-c92d-192a" name="Consul Additional Wargear and Options" hidden="false" collective="false" import="true" targetId="244a-2a7c-1349-94e7" type="selectionEntryGroup"/>
+            <entryLink id="5de5-1489-71ba-7756" name="Psychic Disciplines" hidden="true" collective="false" import="true" targetId="d632-a8aa-19f1-8e72" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0b6c-5897-3790-2940" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b625-1cef-3057-156c" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
               </modifiers>
             </entryLink>
           </entryLinks>
@@ -20158,7 +20553,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
     </selectionEntry>
     <selectionEntry id="8d9c-9f80-c0fd-adcf" name="Power Weapon" page="" hidden="false" collective="false" import="true" type="upgrade">
       <entryLinks>
-        <entryLink id="70dd-c9fb-cd1d-b509" name="Power Weapon" hidden="false" collective="false" import="true" targetId="47f2-74b9-936c-bf55" type="selectionEntryGroup"/>
+        <entryLink id="70dd-c9fb-cd1d-b509" name="Power Weapon (all)" hidden="false" collective="false" import="true" targetId="47f2-74b9-936c-bf55" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -30608,6 +31003,31 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="850.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="a9c2-6881-3391-9622" name="Force Weapon" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="f36a-0ebf-44d2-abc7" name="Force Weapons" hidden="false" collective="false" import="true" targetId="9970-2309-3a2a-b889" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="1080-1799-5629-c98c" name="Psychic Discipline: Aetherbane" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="4b04-96b4-5a0e-810f" name="Aetherblast" publicationId="d0df-7166-5cd3-89fd" page="9" hidden="false" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">18&quot;</characteristic>
+            <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">4</characteristic>
+            <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">3</characteristic>
+            <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 1, Blast (3&quot;), Santic, Crude Exegesis</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="6cbb-78d9-576c-0854" name="Crude Exegesis" publicationId="d0df-7166-5cd3-89fd" page="9" hidden="false">
+          <description>When rolling to scatter for this weapon, if both D6 result in the same number, for example both dice show a result of 3, the template is instead positioned over the centre of the model that is making the attack, regardless of the result rolled on the Scatter dice.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="468a-3e19-20e3-5c1b" name="Sanctic" hidden="false" targetId="d1c9-ee74-4e4f-8830" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="61a2-7005-1e6c-c08e" name="Hexagrammaton Choice:" hidden="true" collective="false" import="true">
@@ -30793,7 +31213,11 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
         <entryLink id="df55-a841-73fa-b829" name="Tainted Maul" hidden="false" collective="false" import="true" targetId="5b6e-b0b2-35ca-5e67" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="3cbf-9466-2558-2c22" name="Legiones Consularis (Work in Progress)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="3cbf-9466-2558-2c22" name="Legiones Consularis (Work in Progress)" hidden="false" collective="false" import="true" defaultSelectionEntryId="d3d6-dfc2-4da2-54cc">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c424-773c-1558-f760" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02ad-d3dc-564c-7630" type="max"/>
+      </constraints>
       <rules>
         <rule id="b1a4-9e87-ed6b-e517" name="Legiones Consularis" hidden="false">
           <description>Any Legion Centurion may select a single Consul upgrade; no model may take more than one such upgrade. The various Consul types are listed here, but full rules for them can be found in the appendix Legiones Consularis on page 104: 
@@ -30812,76 +31236,191 @@ Legion Only: Paladin of Hekatonystika (Dark Angels), Phoenix Warden (Emperor&apo
       </rules>
       <selectionEntries>
         <selectionEntry id="8846-2f93-a2be-18dc" name="Librarian" publicationId="a716-c1c4-7b26-8424" page="105" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4916-965e-8339-44f6" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink id="877c-be43-59a1-0487" name="Psyker:" hidden="false" targetId="6e0c-29ba-a445-8321" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d332-0e64-7ecf-6c35" name="Esoterist" publicationId="a716-c1c4-7b26-8424" page="106" hidden="false" collective="false" import="true" type="upgrade">
+          <entryLinks>
+            <entryLink id="7683-03eb-dfc3-7a27" name="Psychic Discipline: Anathemata" hidden="false" collective="false" import="true" targetId="c6ec-edc0-034e-ed45" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebad-99c6-4036-0ecf" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="620d-7ac3-7a44-8737" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="35ac-992e-97a7-1612" name="Master of Signals" publicationId="a716-c1c4-7b26-8424" page="105" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="5fb1-c000-121c-b16e" name="Strategic Comms" publicationId="a716-c1c4-7b26-8424" page="105" hidden="false">
+              <description>Once per turn, when any friendly unit is called upon to take a Morale check or Pinning test, that Check may be made using the Leaderhsip Characteristic of the model with this special rule or any other model in the same unit as the model with this special rule. In addition, as long as the model with this special rule is on the battlefield (but not Reserves) then all Reserves rolls made by the controlling player may be re-rolled.</description>
+            </rule>
+          </rules>
+          <entryLinks>
+            <entryLink id="143f-7317-3f56-2723" name="Cognis-Signum" hidden="false" collective="false" import="true" targetId="93b3-2d66-f7a3-be42" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="992c-1da8-9bdf-310e" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76fc-d3df-7014-f90c" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="a1d3-7395-f598-80a8" name="Vox Disruptor Array" hidden="false" collective="false" import="true" targetId="f091-857e-21b8-d49a" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="879f-62a2-2539-e458" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3202-fe52-b6c2-b403" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="177e-ece3-dbfa-0b53" name="Augury Scanner" hidden="false" collective="false" import="true" targetId="67ee-7338-3b74-04b4" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="158c-eb18-bdd0-4728" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bda6-7eb9-0aeb-06cc" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="92c9-d2c2-c2ed-1570" name="Nuncio-Vox" hidden="false" collective="false" import="true" targetId="005e-aae6-ddac-bb45" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd70-9425-a33b-4bba" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed8c-fef7-ac21-c630" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6f69-f2bd-fe7e-12c4" name="Paladin of Hekatonystika" publicationId="817a-6288-e016-7469" page="157" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="6f69-f2bd-fe7e-12c4" name="Paladin of Hekatonystika (Work in Progress)" publicationId="817a-6288-e016-7469" page="157" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b625-1cef-3057-156c" name="Caster Of Runes" publicationId="817a-6288-e016-7469" page="203" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="b625-1cef-3057-156c" name="Caster Of Runes (Work in Progress)" publicationId="817a-6288-e016-7469" page="203" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4916-965e-8339-44f6" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7962-e835-2ae5-c6f1" name="Castellan" publicationId="817a-6288-e016-7469" page="229" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="7962-e835-2ae5-c6f1" name="Castellan (Work in Progress)" publicationId="817a-6288-e016-7469" page="229" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0e1-f2c4-8bcd-0723" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="84ac-ebaf-8c66-3c1d" name="Dark Emissary" publicationId="09c5-eeae-f398-b653" page="285" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="84ac-ebaf-8c66-3c1d" name="Dark Emissary (Work in Progress)" publicationId="09c5-eeae-f398-b653" page="285" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4e1a-275e-e691-5b92" name="Diabolist" publicationId="09c5-eeae-f398-b653" page="308" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="4e1a-275e-e691-5b92" name="Diabolist (Work in Progress)" publicationId="09c5-eeae-f398-b653" page="308" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9dbf-0760-d7ae-f125" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink id="dd82-61d5-165c-b8ce" name="Psychic Discipline: Diabolism" hidden="true" collective="false" import="true" targetId="cc56-0599-fe21-9352" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e63-f0d1-ca74-cc1f" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a780-cb6f-45f1-b563" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e9ab-2cc5-4507-eded" name="Speaker Of The Dead" publicationId="817a-6288-e016-7469" page="202" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="e9ab-2cc5-4507-eded" name="Speaker Of The Dead (Work in Progress)" publicationId="817a-6288-e016-7469" page="202" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4916-965e-8339-44f6" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="aab9-d1c0-a5cb-9788" name="Pack Thegn" publicationId="817a-6288-e016-7469" page="201" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="aab9-d1c0-a5cb-9788" name="Pack Thegn (Work in Progress)" publicationId="817a-6288-e016-7469" page="201" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4916-965e-8339-44f6" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="0b6c-5897-3790-2940" name="Stormseer" publicationId="817a-6288-e016-7469" page="181" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="0b6c-5897-3790-2940" name="Stormseer (Work in Progress)" publicationId="817a-6288-e016-7469" page="181" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5aff-6654-f53b-c5ac" name="Phoenix Warden" publicationId="09c5-eeae-f398-b653" page="155" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5aff-6654-f53b-c5ac" name="Phoenix Warden (Work in Progress)" publicationId="09c5-eeae-f398-b653" page="155" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d71e-10a6-216f-d796" name="Primus Nullificator" publicationId="d0df-7166-5cd3-89fd" page="9" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="5491-8e10-05c3-18b3" name="Aetherblast" publicationId="d0df-7166-5cd3-89fd" page="9" hidden="false" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">18&quot;</characteristic>
-                <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">4</characteristic>
-                <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">3</characteristic>
-                <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 1, Blast (3&quot;), Santic, Crude Exegesis</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <rules>
             <rule id="0223-2170-627b-c5a2" name="Primus Nullificator" publicationId="d0df-7166-5cd3-89fd" page="9" hidden="false">
               <description>Primus Nullificator Consul +45 Points
@@ -30902,19 +31441,23 @@ A Legion Primus Nullificator Consul gains the Psyker Sub-type and has only the P
             <rule id="7e81-ebfc-ae8d-f7a2" name="Credo Annihilato" publicationId="d0df-7166-5cd3-89fd" page="9" hidden="false">
               <description>An army that includes at least one Legion Primus Nullificator Consul ignores the 0-1 restriction on Legion Nullificator units and may select them as Troops choices, but these units gain the Support Squad special rule.</description>
             </rule>
-            <rule id="7c4a-1b38-08d4-d6e0" name="Crude Exegesis" publicationId="d0df-7166-5cd3-89fd" page="9" hidden="false">
-              <description>When rolling to scatter for this weapon, if both D6 result in the same number, for example both dice show a result of 3, the template is instead positioned over the centre of the model that is making the attack, regardless of the result rolled on the Scatter dice.</description>
-            </rule>
           </rules>
           <infoLinks>
-            <infoLink id="c109-37c5-19b6-83f3" name="Sanctic" hidden="false" targetId="d1c9-ee74-4e4f-8830" type="rule"/>
             <infoLink id="8bb6-1ca9-a362-8c2a" name="Hexagrammatic Wards" hidden="false" targetId="5529-bb7a-9448-b1f5" type="rule"/>
           </infoLinks>
+          <entryLinks>
+            <entryLink id="dc0f-492a-3d5c-1872" name="Psychic Discipline: Aetherbane" hidden="false" collective="false" import="true" targetId="1080-1799-5629-c98c" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80bd-5d57-e6f6-cbdc" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed9f-9381-875d-c02c" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="d6cc-2e7f-16e3-e66c" name="Warmonger" publicationId="d0df-7166-5cd3-89fd" page="10" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="d6cc-2e7f-16e3-e66c" name="Warmonger (Work in Progress)" publicationId="d0df-7166-5cd3-89fd" page="10" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="0101-076d-11f2-1c6b" name="Aetheric Juncture Splicer" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
               <characteristics>
@@ -30941,82 +31484,101 @@ A model with this special rule, and any unit it joins, must either begin any bat
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="368d-0cdc-5ce6-eb38" name="Mortifactor" publicationId="a716-c1c4-7b26-8424" page="114" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="368d-0cdc-5ce6-eb38" name="Mortifactor (Work in Progress)" publicationId="a716-c1c4-7b26-8424" page="114" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="31f5-cbc4-58e0-ed6e" name="Armistos" publicationId="a716-c1c4-7b26-8424" page="112" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="31f5-cbc4-58e0-ed6e" name="Armistos (Work in Progress)" publicationId="a716-c1c4-7b26-8424" page="112" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b6d0-40f1-d82f-c01e" name="Herald" publicationId="a716-c1c4-7b26-8424" page="110" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="b6d0-40f1-d82f-c01e" name="Herald (Work in Progress)" publicationId="a716-c1c4-7b26-8424" page="110" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="35d4-0dcd-f7d2-a6da" name="Delegatus" publicationId="a716-c1c4-7b26-8424" page="108" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="35d4-0dcd-f7d2-a6da" name="Delegatus (Work in Progress)" publicationId="a716-c1c4-7b26-8424" page="108" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3c8b-1020-32f3-3b2a" name="Praevian" publicationId="a716-c1c4-7b26-8424" page="115" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="3c8b-1020-32f3-3b2a" name="Praevian (Work in Progress)" publicationId="a716-c1c4-7b26-8424" page="115" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="384d-df82-14cb-f918" name="Moritat" publicationId="a716-c1c4-7b26-8424" page="113" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="384d-df82-14cb-f918" name="Moritat (Work in Progress)" publicationId="a716-c1c4-7b26-8424" page="113" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a28d-408e-c833-9055" name="Pathfinder" publicationId="a716-c1c4-7b26-8424" page="110" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a28d-408e-c833-9055" name="Pathfinder (Work in Progress)" publicationId="a716-c1c4-7b26-8424" page="110" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4831-6948-851c-3925" name="Chaplain" publicationId="a716-c1c4-7b26-8424" page="109" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="4831-6948-851c-3925" name="Chaplain (Work in Progress)" publicationId="a716-c1c4-7b26-8424" page="109" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4916-965e-8339-44f6" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="27e9-630d-4cf4-6d68" name="Vigilator" publicationId="a716-c1c4-7b26-8424" page="109" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="27e9-630d-4cf4-6d68" name="Vigilator (Work in Progress)" publicationId="a716-c1c4-7b26-8424" page="109" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="9335-7da8-087e-30de" name="Siege Breaker" publicationId="a716-c1c4-7b26-8424" page="112" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="9335-7da8-087e-30de" name="Siege Breaker (Work in Progress)" publicationId="a716-c1c4-7b26-8424" page="112" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="62c8-8f27-9673-8450" name="Forge Lord" publicationId="a716-c1c4-7b26-8424" page="111" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="62c8-8f27-9673-8450" name="Forge Lord (Work in Progress)" publicationId="a716-c1c4-7b26-8424" page="111" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7df3-04e8-c056-47cb" name="Primus Medicae" publicationId="a716-c1c4-7b26-8424" page="111" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="7df3-04e8-c056-47cb" name="Primus Medicae (Work in Progress)" publicationId="a716-c1c4-7b26-8424" page="111" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4916-965e-8339-44f6" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="05a2-a69e-0c9e-1544" name="Champion" publicationId="a716-c1c4-7b26-8424" page="108" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="05a2-a69e-0c9e-1544" name="Champion (Work in Progress)" publicationId="a716-c1c4-7b26-8424" page="108" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c2a0-636c-9918-f851" name="Saboreur" publicationId="09c5-eeae-f398-b653" page="335" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="c2a0-636c-9918-f851" name="Saboreur (Work in Progress)" publicationId="09c5-eeae-f398-b653" page="335" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="d3d6-dfc2-4da2-54cc" name="Centurion" hidden="false" collective="false" import="true" type="upgrade"/>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="e909-feba-d9e9-1efa" name="Perdition Weapon" hidden="false" collective="false" import="true">
-      <modifiers>
-        <modifier type="set" field="name" value="0.0"/>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b7e-349d-05ae-b566" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b7c-2bb2-5687-cefe" type="min"/>
@@ -31029,9 +31591,6 @@ A model with this special rule, and any unit it joins, must either begin any bat
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="a176-0cea-601c-dea5" name="Tainted Weapon" hidden="false" collective="false" import="true">
-      <modifiers>
-        <modifier type="set" field="name" value="0.0"/>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2e7-b818-34fd-d810" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67f1-c2ec-b46b-91fe" type="min"/>
@@ -31066,9 +31625,6 @@ A model with this special rule, and any unit it joins, must either begin any bat
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="82b0-2459-4bbc-e15b" name="Charnabal Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="a904-5bf0-3545-575c">
-      <modifiers>
-        <modifier type="set" field="name" value="0.0"/>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3180-1876-0c05-1a10" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="122a-7f43-620c-2433" type="min"/>
@@ -31080,9 +31636,6 @@ A model with this special rule, and any unit it joins, must either begin any bat
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="47f2-74b9-936c-bf55" name="Power Weapon (all)" hidden="false" collective="false" import="true" defaultSelectionEntryId="114b-03d2-119b-957f">
-      <modifiers>
-        <modifier type="set" field="name" value="0.0"/>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0739-e123-8b50-fab7" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6195-f6ef-5b37-823c" type="max"/>
@@ -31352,9 +31905,6 @@ A model with this special rule, and any unit it joins, must either begin any bat
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="ad6b-7d92-5989-aef2" name="Phoenix Pattern Power Weapons" hidden="false" collective="false" import="true">
-      <modifiers>
-        <modifier type="set" field="name" value="0.0"/>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9538-3e29-57b9-8771" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26b0-2d27-b475-0d20" type="min"/>
@@ -31365,9 +31915,6 @@ A model with this special rule, and any unit it joins, must either begin any bat
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="e952-1b87-058f-cb2b" name="Achea Pattern Force Weapons" hidden="false" collective="false" import="true">
-      <modifiers>
-        <modifier type="set" field="name" value="0.0"/>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2be1-77f7-9eed-0cfd" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d09-366b-0e24-c1fd" type="min"/>
@@ -31379,9 +31926,6 @@ A model with this special rule, and any unit it joins, must either begin any bat
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="cc76-59c6-f1b7-0a9c" name="Frost Weapon:" hidden="false" collective="false" import="true">
-      <modifiers>
-        <modifier type="set" field="name" value="0.0"/>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3912-dd07-9452-248c" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="335a-0088-fefb-eee3" type="min"/>
@@ -31393,9 +31937,6 @@ A model with this special rule, and any unit it joins, must either begin any bat
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="e1f5-f863-346c-6e10" name="Nostraman Chain Weapons:" hidden="false" collective="false" import="true">
-      <modifiers>
-        <modifier type="set" field="name" value="0.0"/>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e424-a5de-64a7-f901" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b6d-f230-988f-6a15" type="min"/>
@@ -31411,9 +31952,6 @@ A model with this special rule, and any unit it joins, must either begin any bat
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="5290-5cd3-c4bd-07af" name="Caedere Weapons" hidden="false" collective="false" import="true">
-      <modifiers>
-        <modifier type="set" field="name" value="0.0"/>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b9e-6879-0779-f826" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e4e-8f30-b5fc-602a" type="min"/>
@@ -31465,9 +32003,6 @@ A model with this special rule, and any unit it joins, must either begin any bat
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="d52c-247f-4fe0-df6f" name="Thunder Hammer" hidden="false" collective="false" import="true">
-      <modifiers>
-        <modifier type="set" field="name" value="0.0"/>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e34-57c7-d7ee-a1a1" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2938-4b4e-4f78-4643" type="min"/>
@@ -31478,9 +32013,6 @@ A model with this special rule, and any unit it joins, must either begin any bat
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="3aae-b65d-3dbc-6f2e" name="Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="d15a-4432-a97a-64df">
-      <modifiers>
-        <modifier type="set" field="name" value="0.0"/>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1347-d456-97ca-d810" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2257-9147-b0a6-e571" type="min"/>
@@ -31501,9 +32033,6 @@ A model with this special rule, and any unit it joins, must either begin any bat
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="f707-d86b-f862-003a" name="Heavy Flamer" hidden="false" collective="false" import="true" defaultSelectionEntryId="b7a4-9714-d7c2-d571">
-      <modifiers>
-        <modifier type="set" field="name" value="0.0"/>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2a0-1521-947f-9966" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbe0-f0a0-5572-d4cc" type="min"/>
@@ -31520,9 +32049,6 @@ A model with this special rule, and any unit it joins, must either begin any bat
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="bd1f-b4a4-3517-31e4" name="Power Weapon (Basic)" hidden="false" collective="false" import="true">
-      <modifiers>
-        <modifier type="set" field="name" value="0.0"/>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4e0-9351-6028-69a1" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1f9-dfad-d26a-e32a" type="max"/>
@@ -31532,6 +32058,129 @@ A model with this special rule, and any unit it joins, must either begin any bat
         <entryLink id="581f-d0f8-d651-c07e" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry"/>
         <entryLink id="549d-840d-5a33-c0a3" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
         <entryLink id="0ce5-129b-6faa-930e" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="9970-2309-3a2a-b889" name="Force Weapons" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0307-d1f7-57ea-a51b" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f79d-98d6-e4c9-6d63" type="min"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="206e-ed03-21bf-a789" name="Force Axe" hidden="false" collective="false" import="true" targetId="40bb-c99e-b4b3-12c1" type="selectionEntry"/>
+        <entryLink id="45e6-9ab0-4918-dc6c" name="Force Maul" hidden="false" collective="false" import="true" targetId="da60-5978-bdd7-9c95" type="selectionEntry"/>
+        <entryLink id="188d-69d5-9640-5f7d" name="Force Sword" hidden="false" collective="false" import="true" targetId="6164-c01a-a879-37d7" type="selectionEntry"/>
+        <entryLink id="2d2b-3092-fd34-60e5" name="Force Staff" hidden="false" collective="false" import="true" targetId="5132-9034-5e79-13c8" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="244a-2a7c-1349-94e7" name="Consul Additional Wargear and Options" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="df40-226c-04a7-0bdb" name="Psychic Hood" hidden="true" collective="false" import="true" targetId="4df2-d42b-504d-3ec5" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="d2ee-04cb-5f8a-2642" value="20.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd97-6f7d-98ab-f7a6" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="d632-a8aa-19f1-8e72" name="Psychic Disciplines" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="0d2d-c811-8bdc-d53f" name="Psychic Discipline: Biomancy" hidden="false" collective="false" import="true" targetId="861c-3744-c4ff-ef6c" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0b6c-5897-3790-2940" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="9fcb-cc49-9907-2b68" name="Psychic Discipline: Divination" hidden="false" collective="false" import="true" targetId="0c22-a776-e7e3-2981" type="selectionEntry"/>
+        <entryLink id="3362-9642-1313-7811" name="Psychic Discipline: Fury of the Salamander (Awakening Fire RoW Only!)" hidden="true" collective="false" import="true" targetId="401c-6801-ff6a-bb7c" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="7e60-bd63-fe96-990e" name="Psychic Discipline: Pyromancy" hidden="false" collective="false" import="true" targetId="c73a-8c52-4780-71e1" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0b6c-5897-3790-2940" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b625-1cef-3057-156c" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="eba8-27b7-cf4b-0323" name="Psychic Discipline: Telekinesis" hidden="false" collective="false" import="true" targetId="2599-31ff-74a5-70ec" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0b6c-5897-3790-2940" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="874a-f99b-daca-7e4e" name="Psychic Discipline: Telepathy" hidden="false" collective="false" import="true" targetId="b751-a605-75e8-dd6f" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b625-1cef-3057-156c" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="89cb-9d5f-137b-baa1" name="Psychic Discipline: Thaumaturgy" hidden="false" collective="false" import="true" targetId="f7ab-1fb2-91b0-028d" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b625-1cef-3057-156c" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="9098-9678-858d-2dab" name="Psychic Discipline: The Storm&apos;s Fury" hidden="true" collective="false" import="true" targetId="23ca-7d98-98bc-cb70" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0b6c-5897-3790-2940" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="7455-1db7-7216-e4a2" name="Psychic Discipline: Winds of Fenris" hidden="true" collective="false" import="true" targetId="518d-8044-5aaf-e923" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b625-1cef-3057-156c" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
