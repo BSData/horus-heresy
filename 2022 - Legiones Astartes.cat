@@ -6209,17 +6209,12 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="125.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bd52-d86e-bbd8-bd9d" name="Exodus" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="bd52-d86e-bbd8-bd9d" name="Exodus" publicationId="09c5-eeae-f398-b653" page="340" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -6230,13 +6225,13 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
         <categoryLink id="f4a9-db80-1d93-6211" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="d295-6fda-40dc-ce5a" name="Exodus" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="d295-6fda-40dc-ce5a" name="Exodus" publicationId="09c5-eeae-f398-b653" page="340" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d04-d5da-ea14-39a5" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d032-0d9c-bea8-d58b" type="max"/>
           </constraints>
           <profiles>
-            <profile id="8ef5-fdbe-7a81-0e1a" name="Exodus" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="8ef5-fdbe-7a81-0e1a" name="Exodus" publicationId="09c5-eeae-f398-b653" page="340" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Light)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
@@ -6253,14 +6248,14 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
             </profile>
           </profiles>
           <rules>
-            <rule id="ec0f-66bd-cfca-d5f1" name="Lone Killer" hidden="false">
-              <description>Exodus may not be taken as a compulsory HQ choice, only as an optional HQ choice. He may never be an army’s Warlord, and may not join other units except Legion Reconnaissance squads or Alpha Legion Headhunter Kill Teams.</description>
+            <rule id="ec0f-66bd-cfca-d5f1" name="Lone Killer" publicationId="09c5-eeae-f398-b653" page="340" hidden="false">
+              <description>Exodus may not be taken as a compulsory HQ choice, only as an non-Compulsory HQ choice. He may never be an army’s Warlord, and may not join other units except Legion Reconnaissance squads or Alpha Legion Headhunter Kill Teams.</description>
             </rule>
-            <rule id="6e3c-e6d7-930c-0df5" name="Assassin&apos;s Eye" hidden="false">
-              <description>When Exodus makes any attacks as part of a Shooting Attack the range of any Weapons is not restricted or affected by the Night Fight rules, Shroud bombs or any other special rule. In addition, Exodus never suffers any penalty to his Ballistic Skill from Night Fight or any other special rules, always makes To Hit rolls using his full Ballistic Skill (including Snap Shots) and no model may make Shrouded rolls to negate Wounds inflicted by their attacks.</description>
+            <rule id="6e3c-e6d7-930c-0df5" name="Assassin&apos;s Eye" publicationId="09c5-eeae-f398-b653" page="341" hidden="false">
+              <description>When Exodus makes any attacks as part of a Shooting Attack, the range of any Weapons is not restricted or affected by the Night Fight rules, Shroud bombs or any other special rule. In addition, Exodus never suffers any penalty to his Ballistic Skill from Night Fight or any other special rules, always makes To Hit rolls using his full Ballistic Skill (including Snap Shots) and no model may make Shrouded rolls to negate Wounds inflicted by their attacks.</description>
             </rule>
-            <rule id="3bfa-72a9-cb4d-c5dd" name="The Hidden Hand" hidden="false">
-              <description>When deploying Exodus onto the battlefield at the start of the game, the controlling player may place him in any position on the battlefield, regardless of the Line of Sight or Proximity of enemy models. If Exodus is deployed from Reserve after the start of the first turn, then he may enter play from any point on the battlefield’s edge, chosen by the controlling player. If Exodus joins a unit during deployment or whilst in Reserves and is deployed as part of that unit, he may not use any of the benefits of this special rule, but instead gains the Scout and Infiltrate special rules only if the unit he has joined also possesses those special rules.</description>
+            <rule id="3bfa-72a9-cb4d-c5dd" name="The Hidden Hand" publicationId="09c5-eeae-f398-b653" page="340" hidden="false">
+              <description>When deploying Exodus onto the battlefield at the start of the battle, the controlling player may place him in any position on the battlefield, as long as Exodus is within Area Terrain, or at least 9&quot; from any enemy model if Exodus is not within Area Terrain, regardless of the Line of Sight or Proximity of enemy models. If Exodus is deployed from Reserve after the start of the first turn, then he may enter play from any point on the battlefield’s edge, chosen by the controlling player. If Exodus joins a unit during deployment or whilst in Reserves and is deployed as part of that unit, he may not use any of the benefits of this special rule, but instead gains the Scout and Infiltrate special rules only if the unit he has joined also possesses those special rules.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -6279,21 +6274,21 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6fd2-89da-5219-a09f" name="The Instrument" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="6fd2-89da-5219-a09f" name="The Instrument" publicationId="09c5-eeae-f398-b653" page="341" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0459-fd80-223d-b590" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10ed-6a9d-3d61-9dc2" type="max"/>
           </constraints>
           <profiles>
-            <profile id="acc3-03f5-9270-3491" name="The Instrument - Rapid Shot" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+            <profile id="acc3-03f5-9270-3491" name="The Instrument - Rapid Shot" publicationId="09c5-eeae-f398-b653" page="341" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
                 <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Sundering, Pinning</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3, Sundering, Pinning</characteristic>
               </characteristics>
             </profile>
-            <profile id="7f4f-d742-9136-ae76" name="The Instrument - Execution Shot" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+            <profile id="7f4f-d742-9136-ae76" name="The Instrument - Execution Shot" publicationId="09c5-eeae-f398-b653" page="341" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -6304,12 +6299,11 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
           </profiles>
           <rules>
             <rule id="55e6-7427-acb1-d97a" name="The Instrument" hidden="false">
-              <description>The Instrument has two profiles. Pick which profile is used every time the weapon is fired -
-however, any Shooting Attacks made with The Instrument as part of a Reaction must use the
-Rapid Shot profile.</description>
+              <description>The weapon listed here is counted as an &apos;Auto&apos; weapon for those rules that affect such weapons. 
+The Instrument has two profiles. Pick which profile is used every time the weapon is fired - however, any Shooting Attacks made with The Instrument as part of a Reaction must use the Rapid Shot profile.</description>
             </rule>
-            <rule id="2a0c-f2af-ff8c-6325" name="Deadly Aim" hidden="false">
-              <description>If Exodus has not moved in the turn a Shooting Attack is made using this profile the attack may be given the Instant Death special rule. If the attack is given the Instant Death special rule then no Charges may be declared for Exodus in that turn.</description>
+            <rule id="2a0c-f2af-ff8c-6325" name="Deadly Aim" publicationId="09c5-eeae-f398-b653" page="341" hidden="false">
+              <description>If Exodus has not moved in the turn a Shooting Attack is made using this profile, the attack may be given the Brutal (2) special rule. if the attack is given the Brutal (2) special rule then no Charges may be declared for Exodus in that turn.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -6370,6 +6364,12 @@ Rapid Shot profile.</description>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f93-d159-538c-af5c" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a5a-a0b6-064a-fa0f" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="7730-ddb3-830b-ad12" name="Shroud Bombs" hidden="false" collective="false" import="true" targetId="5d4d-36b7-6bf5-fc92" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5921-fa5c-afd1-4301" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="beb9-dc32-df1d-16ac" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
