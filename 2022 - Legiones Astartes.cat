@@ -6377,17 +6377,12 @@ The Instrument has two profiles. Pick which profile is used every time the weapo
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="165.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b94c-4c2d-c1de-d5ab" name="Armillus Dynat" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="b94c-4c2d-c1de-d5ab" name="Armillus Dynat" publicationId="09c5-eeae-f398-b653" page="342" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -6404,7 +6399,7 @@ The Instrument has two profiles. Pick which profile is used every time the weapo
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67c6-49d0-3193-1a2e" type="max"/>
           </constraints>
           <profiles>
-            <profile id="cd84-6acb-d6ae-8bd2" name="Armillus Dynat" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="cd84-6acb-d6ae-8bd2" name="Armillus Dynat" publicationId="09c5-eeae-f398-b653" page="342" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
@@ -6421,13 +6416,13 @@ The Instrument has two profiles. Pick which profile is used every time the weapo
             </profile>
           </profiles>
           <rules>
-            <rule id="664c-fe25-f824-06eb" name="Warlord: The Harrowing" hidden="false">
+            <rule id="664c-fe25-f824-06eb" name="Warlord: The Harrowing" publicationId="09c5-eeae-f398-b653" page="342" hidden="false">
               <description>If chosen as the army&apos;s Warlord, Armillus Dynat automatically has The Harrowing as his Warlord Trait and may not select any other
 
-The Harrowing – At the start of the battle, before any models are deployed by either player, the controlling player of an army whose Warlord is Armillus Dynat may choose to select three friendly units composed entirely of models with the Legiones Astartes (Alpha Legion) special rule and the Infantry Unit Type and give all models in those units one of the following rules: Infiltrate, Scout, or Outflank. In addition, an army whose Warlord is Armillus Dynat may make an additional Reaction in the Movement phase, as long as Armillus Dynat has not been removed as a casualty.</description>
+The Harrowing – At the start of the battle, before any models are deployed by either player, the controlling player of an army whose Warlord is Armillus Dynat may choose to select three friendly units composed entirely of models with the Legiones Astartes (Alpha Legion) special rule and the Infantry Unit Type and give all models in those units one of the following rules: Infiltrate, Scout, or Counter-attack (1). In addition, an army whose Warlord is Armillus Dynat may make an additional Reaction in the opposing player&apos;s Movement phase, as long as Armillus Dynat has not been removed as a casualty.</description>
             </rule>
-            <rule id="b9f5-8b4a-4e3c-ed68" name="Weapon Master" hidden="false">
-              <description>When attacking during the Assault phase a model with this special rule may choose to split his attacks between any of the weapons he is equipped with, declaring which Attacks will be used with which weapon profiles before any of his Attacks are rolled.</description>
+            <rule id="b9f5-8b4a-4e3c-ed68" name="Weapon Master" publicationId="09c5-eeae-f398-b653" page="343" hidden="false">
+              <description>When attacking during the Assault phase, Armillus Dynat may choose to split his attacks between any of the weapons he has, declaring which Attacks will be used with which weapon profiles before any of his Attacks are rolled.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -6451,33 +6446,38 @@ The Harrowing – At the start of the battle, before any models are deployed by 
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2577-6b8b-0d63-d3ae" type="max"/>
           </constraints>
           <profiles>
-            <profile id="2fac-8b81-ac53-5aa9" name="The Prince " hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+            <profile id="2fac-8b81-ac53-5aa9" name="The Prince " publicationId="09c5-eeae-f398-b653" page="343" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
                 <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (6+), Specialist Weapon</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (6+)</characteristic>
               </characteristics>
             </profile>
             <profile id="9f51-1c98-2f74-1b0e" name="The Prophet" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
                 <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Thunderstrike, Concussive (2), Specialist Weapon</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Thunderstrike</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <rules>
-            <rule id="f554-ecd8-0ee8-104a" name="Thunderstrike" hidden="false">
-              <description>If any enemy non-Vehicle model in the enemy unit targeted by attacks from The Prophet has suffered one or more Hits (Regardless of whether or not those Hits resulted in Wounds) from The Prince, then Armillus Dynat may make one additional Attack with the Prophet in the appropriate Initiative Step.</description>
+            <rule id="f554-ecd8-0ee8-104a" name="Thunderstrike" publicationId="09c5-eeae-f398-b653" page="343" hidden="false">
+              <description>If any enemy model that does not have the Vehicle Unit Type suffers one or more Hits (regardless of whether or not those Hits resulted in Wounds) from the Prince, then Armillus Dynat may make one Attack with The Prophet, in addition to any other attacks he has made with either weapon, in Iniciative step 1.</description>
+            </rule>
+            <rule id="302d-b530-325a-aa54" name="The Prince and the Prophet" publicationId="09c5-eeae-f398-b653" page="343" hidden="false">
+              <description>The weapons listed here are counted as &apos;Power&apos; weapons for those rules that affect such weapons.</description>
             </rule>
           </rules>
           <infoLinks>
-            <infoLink id="95d4-0fca-577c-3bc3" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule"/>
-            <infoLink id="aaa2-2739-748b-3b5f" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
+            <infoLink id="95d4-0fca-577c-3bc3" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Rending (6+)"/>
+              </modifiers>
+            </infoLink>
             <infoLink id="8fab-8ccf-b99f-1007" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
-            <infoLink id="ea91-1435-191b-10c9" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -6521,6 +6521,7 @@ The Harrowing – At the start of the battle, before any models are deployed by 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="541f-42ed-fddb-8230" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="7bed-21e6-ad8e-80f1" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="185.0"/>
