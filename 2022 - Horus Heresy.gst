@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="6" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="8" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 18th, 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" publicationDate="June 18th, 2022"/>
@@ -77,6 +77,11 @@
         <characteristicType id="3ec4-e581-338c-dfb1" name="HP"/>
         <characteristicType id="6faf-828d-4a08-151d" name="Transport Capacity"/>
         <characteristicType id="9d06-02d5-cc06-9698" name="Fire Points"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="7dee-5dcd-b6c5-0dd6" name="Warlord Trait">
+      <characteristicTypes>
+        <characteristicType id="d76d-c91f-12f1-ce9a" name="Text"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -408,6 +413,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
           </constraints>
         </categoryLink>
         <categoryLink id="609a-e750-e92c-da9f" name="Retinue:" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="false"/>
+        <categoryLink id="6f36-7897-767d-d826" name="Warlord Traits:" hidden="false" targetId="1158-146a-d9a0-39ad" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="d4f2-6da5-b6de-06ec" name="Allied Detachment" hidden="false">
@@ -1190,7 +1196,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     </selectionEntry>
     <selectionEntry id="0d1c-227e-a3f8-cd63" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntries>
-        <selectionEntry id="5802-2997-7df7-c667" name="Bolter (Primary)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5802-2997-7df7-c667" name="Bolter (Primary)" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a42-845e-25e9-5661" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6d7-c319-b5c6-cc22" type="min"/>
@@ -1202,7 +1208,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="f47b-bf0d-0541-c338" name="Meltagun (Secondary)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="f47b-bf0d-0541-c338" name="Meltagun (Secondary)" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b4a-3449-7a89-867b" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="321d-a019-b4c3-21f5" type="min"/>
@@ -1236,7 +1242,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     </selectionEntry>
     <selectionEntry id="cc98-8596-c713-516c" name="Magna Combi-Weapon - Plasma Gun" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntries>
-        <selectionEntry id="fce5-ae2c-346c-8d27" name="Bolter (Primary)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="fce5-ae2c-346c-8d27" name="Bolter (Primary)" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0659-90fd-1b44-364d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65c6-e26c-7e79-0286" type="min"/>
@@ -1248,7 +1254,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8ee3-1dbf-b5a8-74a3" name="Plasma Gun (Secondary)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="8ee3-1dbf-b5a8-74a3" name="Plasma Gun (Secondary)" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ae8-6d6e-461d-bfaf" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8197-8587-0e12-6cee" type="min"/>
@@ -1283,7 +1289,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     </selectionEntry>
     <selectionEntry id="1d05-f467-b0aa-88b2" name="Magna Combi-Weapon - Disintegrator" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntries>
-        <selectionEntry id="329f-976a-de55-f41b" name="Bolter (Primary)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="329f-976a-de55-f41b" name="Bolter (Primary)" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d45e-c49a-70a5-ec94" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f691-c29a-f763-8e25" type="min"/>
@@ -1295,7 +1301,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4ad2-e057-486a-ada6" name="Disintegrator (Secondary)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="4ad2-e057-486a-ada6" name="Disintegrator (Secondary)" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a27d-32f6-7f9b-0a30" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16fb-541f-2ece-8e9d" type="min"/>
@@ -1326,7 +1332,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     </selectionEntry>
     <selectionEntry id="34c4-db99-db36-0f2a" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntries>
-        <selectionEntry id="af40-7cac-918b-0ee7" name="Bolter (Primary)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="af40-7cac-918b-0ee7" name="Bolter (Primary)" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94ce-1755-26e4-acca" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5b7-c800-403c-8e7e" type="min"/>
@@ -1338,7 +1344,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="9a23-f724-ce24-967f" name="Flamer (Secondary)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="9a23-f724-ce24-967f" name="Flamer (Secondary)" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d080-03ee-c240-7beb" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61e4-3247-c1ca-4739" type="min"/>
@@ -1367,7 +1373,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     </selectionEntry>
     <selectionEntry id="7e5c-3d25-5c88-32e0" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntries>
-        <selectionEntry id="64a2-ce6d-6fc9-104e" name="Bolter (Primary)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="64a2-ce6d-6fc9-104e" name="Bolter (Primary)" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aeb8-1b41-ce76-26ca" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97e9-8636-71e2-92da" type="min"/>
@@ -1379,7 +1385,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="9197-d25e-cc9f-d492" name="Volkite Charger (Secondary)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="9197-d25e-cc9f-d492" name="Volkite Charger (Secondary)" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8806-60b5-670c-ebcf" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9d7-24a1-bc01-adab" type="max"/>
@@ -1408,7 +1414,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     </selectionEntry>
     <selectionEntry id="aa3c-f5a5-9ce9-1497" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntries>
-        <selectionEntry id="5754-890b-f99c-2584" name="Bolter (Primary)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5754-890b-f99c-2584" name="Bolter (Primary)" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a09-fb7e-5724-57d4" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4cd-17c5-3963-2e79" type="min"/>
@@ -1420,7 +1426,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="df94-9fc8-70a6-24ea" name="Grenade Launcher - Frag (Secondary)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="df94-9fc8-70a6-24ea" name="Grenade Launcher - Frag (Secondary)" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f2d-ac23-feca-8ae7" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30d8-ab2e-8dea-b576" type="min"/>
@@ -1443,7 +1449,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6896-8cca-bc55-cadd" name="Grenade Launcher - Krak (Secondary)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="6896-8cca-bc55-cadd" name="Grenade Launcher - Krak (Secondary)" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa2e-296f-ca66-85cb" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6b8-7824-7919-daab" type="min"/>
@@ -4946,6 +4952,14 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="a4e9-50b6-e6d1-575f" name="Warlord" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="91cd-99f9-12e7-7310" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e3b-aa5d-98c3-3667" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="adfe-e9a7-7ce0-67da" type="min"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f89a-e471-24d3-e187" type="min"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4a48-4935-246d-0c2e" name="Legion" hidden="false" collective="false" import="true">
@@ -5266,6 +5280,56 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
           </costs>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="fc61-a705-9600-8b57" name="Warlord Traits" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75c3-77d0-1765-7136" type="max"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="329b-0886-f555-8772" name="   IV: Iron Warriors" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="9d32-65fd-6d65-71c6" name="Tyrant of the Dodekathon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3606-ff83-2746-2d5e" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="6919-efa0-bcc1-8402" name="Tyrant of the Dodekathon" hidden="false" typeId="7dee-5dcd-b6c5-0dd6" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="d76d-c91f-12f1-ce9a">PLACEHOLDER</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="60e8-b8f9-eec5-96ff" name="Tyrant of the Lyssatra" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8384-4d47-5236-22c7" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="38af-b84e-bb46-a3e9" name="Tyrant of the Lyssatra" hidden="false" typeId="7dee-5dcd-b6c5-0dd6" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="d76d-c91f-12f1-ce9a">PLACEHOLDER</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry id="f186-0265-6a94-ff7c" name="Tyrant of the Apolokron" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c24-34f1-0b5e-d1b7" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="3f85-d759-7585-0341" name="Tyrant of the Apolokron" hidden="false" typeId="7dee-5dcd-b6c5-0dd6" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="d76d-c91f-12f1-ce9a">A Warlord with this Trait gains the Fearless special rule, but may not join any unit that is not entirely compsed of models with the Legiones Astartes (Iron Warriors) special rule. However, the Warlord and all models in any unit it joins must adhere to the following restrictions: during both the controlling player&apos;s Shooting phase and the Charge sub-phase, the unit must attempt a Shooting Attack and/or Charge if there is an enemy unit within range, and must target the closest enemy unit possible that is within its line of sight and is a valid target for a Shooting Attack or Charge. If two or more targets are equally close then the controlling player chooses which will be the target of a Shooting Attack or Charge. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player&apos;s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="8efd-b1f4-33bc-f3dd" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
