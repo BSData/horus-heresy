@@ -14554,11 +14554,6 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="7.0"/>
               </costs>
             </entryLink>
-            <entryLink id="c8a1-169f-3c4d-402a" name="Solarite Power Gauntlet" hidden="false" collective="false" import="true" targetId="b682-2c89-f979-aa74" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
-              </costs>
-            </entryLink>
             <entryLink id="4049-c9dc-f601-29c0" name="Raven&apos;s Talons" hidden="false" collective="false" import="true" targetId="09d8-64f5-1936-e8ab" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
@@ -14567,6 +14562,11 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
             <entryLink id="b88f-2184-64ca-63d5" name="Power Weapon" hidden="false" collective="false" import="true" targetId="8d9c-9f80-c0fd-adcf" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="90ea-0481-4200-f274" name="Power Fist" hidden="false" collective="false" import="true" targetId="a3e1-d633-dff9-028b" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -24862,7 +24862,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="911f-a94c-f1df-952a" name="Any Legion Seeker may replace their Kraken Bolter with:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="911f-a94c-f1df-952a" name="Any Legion Seeker may replace their Kraken Bolter with:" hidden="false" collective="false" import="true" defaultSelectionEntryId="3e95-cc23-5a1c-22b1">
           <modifiers>
             <modifier type="increment" field="a8e6-e333-92f6-0dd5" value="1.0">
               <repeats>
@@ -25112,7 +25112,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
             <entryLink id="6186-d863-1434-a056" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="b068-0079-7bb4-5674" name="The Legion Seeker Sergeant may exchange his Kraken Bolter for:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="b068-0079-7bb4-5674" name="The Legion Seeker Sergeant may exchange his Kraken Bolter for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="6dae-f265-feeb-a334">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69a8-831e-7640-f989" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b15-3270-ab80-9e61" type="min"/>
@@ -25198,6 +25198,11 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
             <entryLink id="6bfc-e28b-2ba2-b22f" name="Fenrisian Axe" hidden="false" collective="false" import="true" targetId="72ba-d2df-d98b-8b5d" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="63bc-3a5e-f87d-2462" name="Nemesis Bolter" hidden="false" collective="false" import="true" targetId="c10a-61f8-9c33-fe8a" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -31007,6 +31012,9 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
       <entryLinks>
         <entryLink id="f36a-0ebf-44d2-abc7" name="Force Weapons" hidden="false" collective="false" import="true" targetId="9970-2309-3a2a-b889" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1080-1799-5629-c98c" name="Psychic Discipline: Aetherbane" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -31027,6 +31035,9 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
       <infoLinks>
         <infoLink id="468a-3e19-20e3-5c1b" name="Sanctic" hidden="false" targetId="d1c9-ee74-4e4f-8830" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -31575,7 +31586,11 @@ A model with this special rule, and any unit it joins, must either begin any bat
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="d3d6-dfc2-4da2-54cc" name="Centurion" hidden="false" collective="false" import="true" type="upgrade"/>
+        <selectionEntry id="d3d6-dfc2-4da2-54cc" name="Centurion" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="e909-feba-d9e9-1efa" name="Perdition Weapon" hidden="false" collective="false" import="true">
