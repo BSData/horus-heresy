@@ -4957,8 +4957,10 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="91cd-99f9-12e7-7310" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e3b-aa5d-98c3-3667" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="adfe-e9a7-7ce0-67da" type="min"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f89a-e471-24d3-e187" type="min"/>
       </constraints>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -5299,6 +5301,9 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="60e8-b8f9-eec5-96ff" name="Tyrant of the Lyssatra" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -5311,6 +5316,9 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="f186-0265-6a94-ff7c" name="Tyrant of the Apolokron" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -5326,6 +5334,9 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
               <infoLinks>
                 <infoLink id="8efd-b1f4-33bc-f3dd" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
