@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="6" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="7" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 18th, 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" publicationDate="June 18th, 2022"/>
@@ -77,6 +77,11 @@
         <characteristicType id="3ec4-e581-338c-dfb1" name="HP"/>
         <characteristicType id="6faf-828d-4a08-151d" name="Transport Capacity"/>
         <characteristicType id="9d06-02d5-cc06-9698" name="Fire Points"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="a0e6-a7b4-d55d-85b8" name="Warlord Trait">
+      <characteristicTypes>
+        <characteristicType id="c68e-2cda-b67b-baca" name="Text"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -1188,7 +1193,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0d1c-227e-a3f8-cd63" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0d1c-227e-a3f8-cd63" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="true" import="true" type="upgrade">
       <selectionEntries>
         <selectionEntry id="5802-2997-7df7-c667" name="Bolter (Primary)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -1234,7 +1239,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cc98-8596-c713-516c" name="Magna Combi-Weapon - Plasma Gun" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="cc98-8596-c713-516c" name="Magna Combi-Weapon - Plasma Gun" hidden="false" collective="true" import="true" type="upgrade">
       <selectionEntries>
         <selectionEntry id="fce5-ae2c-346c-8d27" name="Bolter (Primary)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -1281,7 +1286,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1d05-f467-b0aa-88b2" name="Magna Combi-Weapon - Disintegrator" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1d05-f467-b0aa-88b2" name="Magna Combi-Weapon - Disintegrator" hidden="false" collective="true" import="true" type="upgrade">
       <selectionEntries>
         <selectionEntry id="329f-976a-de55-f41b" name="Bolter (Primary)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -1324,7 +1329,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="34c4-db99-db36-0f2a" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="34c4-db99-db36-0f2a" name="Minor Combi-Weapon - Flamer" hidden="false" collective="true" import="true" type="upgrade">
       <selectionEntries>
         <selectionEntry id="af40-7cac-918b-0ee7" name="Bolter (Primary)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -1365,7 +1370,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7e5c-3d25-5c88-32e0" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7e5c-3d25-5c88-32e0" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="true" import="true" type="upgrade">
       <selectionEntries>
         <selectionEntry id="64a2-ce6d-6fc9-104e" name="Bolter (Primary)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -1406,7 +1411,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="aa3c-f5a5-9ce9-1497" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="aa3c-f5a5-9ce9-1497" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="true" import="true" type="upgrade">
       <selectionEntries>
         <selectionEntry id="5754-890b-f99c-2584" name="Bolter (Primary)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -4946,6 +4951,16 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="0176-56a3-d590-b103" name="Warlord" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5617-ada9-bf10-f9b0" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4024-fa03-dada-cc4b" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0dff-37d2-448b-45a6" type="min"/>
+      </constraints>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4a48-4935-246d-0c2e" name="Legion" hidden="false" collective="false" import="true">
@@ -5266,6 +5281,65 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
           </costs>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="dd08-dc56-c555-7e09" name="Warlord Traits" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2214-d326-1005-c9c6" type="max"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="75c8-9b24-b75b-b137" name="   IV: Iron Warriors" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="16e5-b616-ae1c-7131" name="Tyrant of the Dodekathon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f5d-baf8-4f9b-c727" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="62d3-6c60-660f-c815" name="Tyrant of the Dodekathon" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">PLACEHOLDER</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e369-6ce6-212b-7420" name="Tyrant of the Lyssatra" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d73-c45f-e61f-357f" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="6139-ddbf-b9ec-f5da" name="Tyrant of the Lyssatra" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">PLACEHOLDER</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d4ac-f703-5add-8be4" name="Tyrant of the Apolokron" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12df-eee8-fd51-f207" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="d5a6-b772-ce1b-a0b7" name="Tyrant of the Apolokron" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait gains the Fearless special rule, but may not join any unit that is not entirely compsed of models with the Legiones Astartes (Iron Warriors) special rule. However, the Warlord and all models in any unit it joins must adhere to the following restrictions: during both the controlling player&apos;s Shooting phase and the Charge sub-phase, the unit must attempt a Shooting Attack and/or Charge if there is an enemy unit within range, and must target the closest enemy unit possible that is within its line of sight and is a valid target for a Shooting Attack or Charge. If two or more targets are equally close then the controlling player chooses which will be the target of a Shooting Attack or Charge. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player&apos;s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="2c31-8501-90cc-1180" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
