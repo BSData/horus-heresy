@@ -5257,8 +5257,24 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
         </selectionEntry>
         <selectionEntry id="c0df-c1fa-5ddc-9ee5" name=" XX: Alpha Legion" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
-            <rule id="7d5a-37b4-eda8-96da" name="Legiones Astartes (Alpha Legion) " hidden="false">
-              <description>Lies and Obfuscation: A model with this special rule is always considered to be 2&quot; further away than it actually is when measuring range to it from any enemy model for the purpose of resolving a shooting attack, Charge or Reation declared by an enemy model or unit (This is cumulative with any other modifiers to range imposed by special rules, such as Night fighting or wargear)</description>
+            <rule id="7d5a-37b4-eda8-96da" name="Legiones Astartes (Alpha Legion) " publicationId="09c5-eeae-f398-b653" page="330" hidden="false">
+              <description>Lies and Obfuscation: A model with this special rule is always considered to be 2&quot; further away than it actually is when measuring range to it from any enemy model for the purpose of resolving a Shooting Attack, Charge or any Reation declared by an enemy model or unit (this is cumulative with any other modifiers to range imposed by special rules, such as Night Fighting or Wargear).</description>
+            </rule>
+            <rule id="06c1-6ce0-6fc2-f106" name="Legion Consularis: Saboteur" publicationId="09c5-eeae-f398-b653" page="335" hidden="false">
+              <description>A Legion Centurion with the Legiones Astartes (Alpha Legion) special rule may be upgraded to a Saboteur.
+
+• A Saboteur gains the Infiltrate, Scout and False Colours special rules as well as the Skirmish Unit Sub-type. In addition, a Saboteur may never be selected as the army&apos;s Warlord and may not join any unit other than Legion Seeker Squads or Headhunter Kill Teams.
+
+• A Saboteur gains melta bombs, breacher charges and shroud bombs at no additional points cost, and may select a Nemesis bolter for +5 points. In addition, a Saboteur may not select a Legion Spatha combat bike, Legion Scimitar jetbike or Legion Warhawk jump pack.
+</description>
+            </rule>
+            <rule id="e886-acc4-33a2-9ffd" name="The Armoury of the Alpha Legion" publicationId="09c5-eeae-f398-b653" page="334" hidden="false">
+              <description>• Any model with the Legiones Astartes (Alpha Legion) special rule and the Character Unit Sub-type may take a power dagger for +5 points per model.
+
+• Any model with both the Independent Character and the Legiones Astartes (Alpha Legion) special rules may exchange a bolter for a Banestrike bolter or a combi-bolter for a Banestrike combi-bolter for +5 points each. Additionally, any models in a Legion Seeker Squad that has the Legiones Astartes (Alpha Legion) special rule may exchange their Kraken bolters for Banestrike bolters for no additional points cost or any models in a Legion Veteran Squad thas has the Legiones Astartes (Alpha Legion) special rule may exchange their bolters for Banestrike bolters for +2 points per model.
+
+• The Alpha Legion gains access to a Legion-Specific Legion Consularis Upgrade in the &quot;Saboteur&quot;.
+</description>
             </rule>
           </rules>
           <costs>
