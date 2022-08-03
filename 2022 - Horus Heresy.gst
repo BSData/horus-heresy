@@ -5304,7 +5304,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c78-410a-98bc-ddd6" type="max"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup id="75c8-9b24-b75b-b137" name="IV: Iron Warriors" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="75c8-9b24-b75b-b137" name="  IV: Iron Warriors" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -5370,7 +5370,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="c064-819f-d9ef-1775" name="Generic Warlord Traits" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="c064-819f-d9ef-1775" name="    Generic Warlord Traits" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ad6a-4187-c90c-95a7" type="max"/>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="65e6-9ba3-5bbf-efa0" type="max"/>
@@ -5426,7 +5426,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="fcc6-0dda-a0bd-8072" name="III: Emperor&apos;s Children (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="fcc6-0dda-a0bd-8072" name="  III: Emperor&apos;s Children (Placeholder)" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -5489,7 +5489,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="fa4e-9b26-7244-179d" name="V: White Scars (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="fa4e-9b26-7244-179d" name="  V: White Scars (Placeholder)" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -5552,7 +5552,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="0899-8b4b-2591-afac" name="X: Iron Hands (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="0899-8b4b-2591-afac" name=" X: Iron Hands (Placeholder)" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -5615,7 +5615,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="af62-dc9d-87c1-daf7" name="VII: Imperial Fists (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="af62-dc9d-87c1-daf7" name="  VII: Imperial Fists (Placeholder)" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -5678,7 +5678,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="9eb0-5436-0bce-5df2" name="VI: Space Wolves (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="9eb0-5436-0bce-5df2" name="  VI: Space Wolves (Placeholder)" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -5741,7 +5741,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="6cba-65a7-52c5-05e2" name="I: Dark Angels (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="6cba-65a7-52c5-05e2" name="  I: Dark Angels (Placeholder)" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -5804,7 +5804,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="655a-c3c6-380c-7d64" name="XII: World Eaters (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="655a-c3c6-380c-7d64" name=" XII: World Eaters (Placeholder)" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -5867,7 +5867,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="a8bf-22c3-6760-3f96" name="XIV: Death Guard (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="a8bf-22c3-6760-3f96" name=" XIV: Death Guard (Placeholder)" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -5930,7 +5930,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="e8b6-feff-5339-dda2" name="XIII: Ultramarines (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="e8b6-feff-5339-dda2" name=" XIII: Ultramarines (Placeholder)" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -5993,7 +5993,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="61ac-f6a6-6ae2-89c4" name="IX: Blood Angels (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="61ac-f6a6-6ae2-89c4" name=" IX: Blood Angels (Placeholder)" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6056,7 +6056,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="4e7b-2af8-0383-644f" name="VIII: Night Lords (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="4e7b-2af8-0383-644f" name="  VIII: Night Lords (Placeholder)" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6182,7 +6182,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="3377-34f2-e8f4-e84c" name="XVIII: Salamanders (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="3377-34f2-e8f4-e84c" name=" XVIII: Salamanders (Placeholder)" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6245,7 +6245,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="050a-0b05-638b-d6ad" name="XIV: Word Bearers (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="050a-0b05-638b-d6ad" name=" XVII: Word Bearers (Placeholder)" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6308,7 +6308,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="8fba-5b15-b959-4a17" name="XVI: Sons of Horus (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="8fba-5b15-b959-4a17" name=" XVI: Sons of Horus (Placeholder)" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6371,7 +6371,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="0402-be48-5bfc-9b31" name="XV: Thousand Sons (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="0402-be48-5bfc-9b31" name=" XV: Thousand Sons (Placeholder)" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
