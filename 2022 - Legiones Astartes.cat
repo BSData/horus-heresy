@@ -1223,7 +1223,7 @@
         <categoryLink id="90c3-0113-59f7-898d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="308a-94de-2ced-9a11" name="Vulkan" hidden="false" collective="false" import="true" targetId="fe24-20af-f493-649b" type="selectionEntry">
+    <entryLink id="308a-94de-2ced-9a11" name="Vulkan" hidden="true" collective="false" import="true" targetId="fe24-20af-f493-649b" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -38546,6 +38546,10 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="d70e-ac47-d428-c5f4" name="Dawnbringer" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e71-3748-a7d7-4b47" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5633-0557-3290-6f9f" type="max"/>
+          </constraints>
           <profiles>
             <profile id="181a-0345-988d-8251" name="Dawnbringer" publicationId="817a-6288-e016-7469" page="315" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
@@ -38566,8 +38570,15 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
             </infoLink>
             <infoLink id="904f-de7a-bcb1-df8a" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="8289-597c-36f7-669c" name="The Furnace&apos;s Heart" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bd0-297d-8ee1-bfa7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9059-7721-4316-c350" type="min"/>
+          </constraints>
           <profiles>
             <profile id="94cb-6300-7a6e-0720" name="The Furnace&apos;s Heart" publicationId="817a-6288-e016-7469" page="315" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
@@ -38578,15 +38589,43 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule id="478f-5e4c-56e6-3461" name="Burst (D6)" publicationId="817a-6288-e016-7469" page="315" hidden="false">
+              <description>If this weapon inflicts a Hit then instead of one Hit it inflicts a number of hits equal to the number in brackets included as part of this rule.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="3dc9-cfa7-8d5a-d3b5" name="Lance" hidden="false" targetId="3d6b-9e0b-56f0-8a1e" type="rule"/>
-            <infoLink id="46c5-5d68-1ec2-1703" name="Achean Force" hidden="false" targetId="c56f-80ff-5d8e-1af4" type="rule"/>
+            <infoLink id="e1e0-8717-289a-a277" name="Shock Pulse" hidden="false" targetId="9222-f6c5-dc19-905a" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="d311-fd67-9dae-5ecb" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry"/>
-        <entryLink id="e2e1-e4ac-486b-cd82" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry"/>
+        <entryLink id="d311-fd67-9dae-5ecb" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ddc-b845-be06-0ca5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60a4-cd56-f155-f507" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e2e1-e4ac-486b-cd82" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69e1-115a-ba11-d9aa" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="168a-43d8-3f2e-f0c8" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b5ff-54ca-7ce6-f791" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7e3-1ff0-87bb-4060" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="d346-e0a9-3fd8-9a2a" name="Warlord: Sire of the Salamanders" publicationId="817a-6288-e016-7469" page="314" hidden="false">
+              <description>All models with both the Infantry Unit Type and the Legiones Astartes (Salamanders) special rule in the same army as Vulkan gain the Stubborn special rule. In addition, an army with Vulkan as its Warlord gains an additional Reaction in the opposing player&apos;s Shooting phase as long as Vulkan has not been removed as a casualty.</description>
+            </rule>
+          </rules>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="465.0"/>
