@@ -101,6 +101,9 @@
 7+) Tatal Collapse: The Building is destroyed. All weapons and upgrades on the Building are destroyed. Each unit on the battlements suffer 2D6 Strength 6 AP- Hits with the Ignores Cover special rule and must then immediately make a 6&quot; move in order to move off the battlements are removed as casualties. If the Building is occupied , the occupying unit suffers 4D6 Strength 6 AP- Hits with the Ignores Cover special rule and must then immediately Disembark from the Building , performing an Emergency Disembarkation if necessary (survivors cannot Disembark to the battlements). Any model that cannot Disembark are removed as casualties. Assuming they were not destroyed, units that were on the battlements and those who have Disembarked must then take a Pinning test. The Building is then removed and replaced with an area of Ruins or a Crater roughly the same size if possible.</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink id="8449-7ce9-bf21-5851" name="Fortification" publicationId="d0df-7166-5cd3-89fd" page="103" hidden="false" targetId="11c9-a7b5-30fb-dc0c" type="rule"/>
+      </infoLinks>
     </categoryEntry>
     <categoryEntry id="ad5f-31db-8bc7-5c46" name="Primarch:" hidden="false">
       <rules>
@@ -360,6 +363,26 @@ Conversely, if an Independent Character joins a unit after that unit has been th
       </rules>
     </categoryEntry>
     <categoryEntry id="bbe5-14a5-68a1-544f" name="Retinue:" hidden="false"/>
+    <categoryEntry id="9f1e-fbf0-3032-32fe" name="Building Sub-type" hidden="false">
+      <infoLinks>
+        <infoLink id="6c42-15c6-3024-f8fd" name="Building Sub-type" hidden="false" targetId="01ec-a939-c01a-8a87" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="3eeb-b4b8-3d85-245a" name="Emplacement Sub-type" hidden="false">
+      <infoLinks>
+        <infoLink id="e5d5-8286-043f-382f" name="Emplacement Sub-type" hidden="false" targetId="d214-5efb-abbb-649e" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="473d-0126-2dab-25ea" name="Barricade Sub-type" hidden="false">
+      <infoLinks>
+        <infoLink id="c11b-ab5b-e30b-6761" name="Barricade Sub-type" hidden="false" targetId="a09b-30c8-c45e-3655" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="6ca2-0ab3-212d-7c76" name="Massive Sub-type" hidden="false">
+      <infoLinks>
+        <infoLink id="48c5-0237-0444-5170" name="Massive Sub-type" hidden="false" targetId="009e-1748-1af2-06e1" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
@@ -4953,9 +4976,9 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
     </selectionEntry>
     <selectionEntry id="0176-56a3-d590-b103" name="Warlord" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5617-ada9-bf10-f9b0" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4024-fa03-dada-cc4b" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0dff-37d2-448b-45a6" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5617-ada9-bf10-f9b0" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4024-fa03-dada-cc4b" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0dff-37d2-448b-45a6" type="min"/>
       </constraints>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -5300,14 +5323,27 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
     </selectionEntryGroup>
     <selectionEntryGroup id="dd08-dc56-c555-7e09" name="Warlord Traits" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2214-d326-1005-c9c6" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2214-d326-1005-c9c6" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c78-410a-98bc-ddd6" type="max"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup id="75c8-9b24-b75b-b137" name="   IV: Iron Warriors" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="75c8-9b24-b75b-b137" name="  IV: Iron Warriors" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f2d4-4d01-dadd-1770" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c966-c487-a925-6913" type="max"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="16e5-b616-ae1c-7131" name="Tyrant of the Dodekathon" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f5d-baf8-4f9b-c727" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2f5d-baf8-4f9b-c727" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b14b-42f7-275a-7c2c" type="max"/>
               </constraints>
               <profiles>
                 <profile id="62d3-6c60-660f-c815" name="Tyrant of the Dodekathon" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
@@ -5322,7 +5358,8 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
             <selectionEntry id="e369-6ce6-212b-7420" name="Tyrant of the Lyssatra" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d73-c45f-e61f-357f" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2d73-c45f-e61f-357f" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2aa9-1ac3-0e05-4b2d" type="max"/>
               </constraints>
               <profiles>
                 <profile id="6139-ddbf-b9ec-f5da" name="Tyrant of the Lyssatra" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
@@ -5337,7 +5374,8 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
             <selectionEntry id="d4ac-f703-5add-8be4" name="Tyrant of the Apolokron" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12df-eee8-fd51-f207" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="12df-eee8-fd51-f207" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f078-194e-c439-e0a1" type="max"/>
               </constraints>
               <profiles>
                 <profile id="d5a6-b772-ce1b-a0b7" name="Tyrant of the Apolokron" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
@@ -5349,6 +5387,1133 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
               <infoLinks>
                 <infoLink id="2c31-8501-90cc-1180" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c064-819f-d9ef-1775" name="    Generic Warlord Traits" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ad6a-4187-c90c-95a7" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="65e6-9ba3-5bbf-efa0" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="dcbb-3e5a-e54e-239c" name="Stoic Defender" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7573-3e0a-40df-3581" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b308-b123-4e8a-e63b" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="2fa5-25dc-1496-8033" name="Stoic Defender" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">When this Warlord or any friendly unit joined by a Warlord with this Trait makes a Shooting attack, the target unit must make a Pinning test if it suffers any unsaved Wounds. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d636-9d61-631b-1650" name="Ever-vigilant" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9dc0-14c9-8e55-f2e4" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="511b-49f7-23e7-6ff4" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="fae0-5913-3ee9-a799" name="Ever-vigilant" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">When this Warlord, and any unit it has joined, Runs during the Movement phase, it adds the value of the Warlord’s Initiative Characteristic, increased by 1, to the distance moved, rather than the lowest Initiative Characteristic in the unit. In addition, an army whose Warlord has this Trait may make an additional Reaction during their  opponent’s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2b87-826d-22a1-682c" name="Bloody-handed" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1436-7b3c-d4c9-ef66" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="213d-5a79-675a-dc7f" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="f05c-2db3-6a88-bd4b" name="Bloody-handed" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Any combat with at least one friendly model within 12&quot; of this Warlord, or a combat which includes this Warlord, gains a bonus of +1 to the number of Wounds caused for the purposes of combat resolution. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="fcc6-0dda-a0bd-8072" name="  III: Emperor&apos;s Children (Placeholder)" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="74bb-486e-c2a2-f6e1" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="98e4-0f15-7203-d6e0" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="57ba-e2df-127d-dfd5" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6a71-3953-9cad-5d3e" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bd99-108a-d9fb-1d41" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="5585-4c6e-1443-acf0" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ba2c-ab4d-9f97-e339" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="aa3c-c16e-8cf6-9d93" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a4d5-c5e2-c084-b6f5" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="967d-7f09-6cd4-e04e" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0859-6b27-4a66-e937" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="934a-d656-ee1b-e39d" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a19d-bab7-9822-86c5" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="6499-b0bb-25f5-5cbd" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="fa4e-9b26-7244-179d" name="  V: White Scars (Placeholder)" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="581c-1302-230c-4216" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3ee8-edaf-12ad-5ec2" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="fd20-efc4-b421-b8ef" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d766-2fb3-1383-5bd9" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e21f-621d-e09b-96f3" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="ac80-1ea9-97e7-085d" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c503-afd4-ba91-0f41" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bd00-65e8-78b3-04bf" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8f66-b93b-6188-2b83" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="7c21-0828-9bec-f4e0" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8a24-4c1b-ac43-5208" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ec2b-84e8-cc8a-195c" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a403-bca4-9575-a70b" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="93ce-b682-fd06-6541" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0899-8b4b-2591-afac" name=" X: Iron Hands (Placeholder)" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f40f-7bf0-d8a5-effa" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ffe2-18a4-e12e-01b4" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="53d2-df81-688e-0b8c" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f227-aaac-78c8-7739" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8d3f-91f9-5b0a-7767" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="772c-511d-93c3-51a8" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0899-3ff6-2c7d-2070" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8ac2-88b3-15f9-f3de" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3747-7d79-0b08-9f02" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="5c2c-d77b-2c48-5f3b" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b128-c1f2-ced0-2c0a" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b10a-fe95-c1da-6bf5" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8d66-354a-ca64-1686" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="7f9f-c80f-bd1f-c90b" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="af62-dc9d-87c1-daf7" name="  VII: Imperial Fists (Placeholder)" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0e1-f2c4-8bcd-0723" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="37b7-e9ab-88ba-2c8e" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8784-0bbd-bfdc-dea2" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="2c7c-efca-f9d3-c135" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="36ea-deb2-fbd2-78a6" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b4fb-a5c3-9a8c-ca75" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="1c56-e4c0-57fe-6348" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e431-fb60-bc92-ac7a" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8fcb-14a9-d2b1-e7f2" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2cd6-f952-7d06-01cd" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="f9bb-983d-694f-18ce" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e04f-f0cb-1033-2c7d" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="81c5-fb73-07ed-32ff" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3b61-b48f-40d1-dd1f" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="4847-d189-f8d3-d4cb" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="9eb0-5436-0bce-5df2" name="  VI: Space Wolves (Placeholder)" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4916-965e-8339-44f6" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7d5c-f0ed-1279-0b59" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a40a-8469-a6cf-0cf7" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="af06-fd03-5bd5-5bb8" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fd0f-9949-0cf2-53de" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5791-12e7-4011-d35c" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="6ac5-ba67-6277-9900" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0c77-14d6-b415-dc56" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a910-c1db-1d63-18d7" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ad54-3ddb-e165-09d7" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="dc32-0a70-e63e-53a6" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="99ae-5ddd-0342-51dc" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e9c2-4b03-9177-bf44" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="43a3-5c41-241f-3100" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="29b9-7f6b-6720-b93b" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="6cba-65a7-52c5-05e2" name="  I: Dark Angels (Placeholder)" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0792-c999-2bff-49a9" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f96c-7788-b7be-899b" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="7e91-27d0-042e-23a2" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8f32-d2a8-ace8-ab17" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d7b0-d70c-54c5-73ef" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="2010-3bb7-9a40-3b78" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b2c8-3b11-3f3e-7b7a" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1dfe-d786-e44a-c9b5" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2fef-2fa5-2ea4-a6b6" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="4fa8-deac-a9a4-c426" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0133-b8f5-33a6-cfd4" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2752-5a8d-66ac-76ba" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="480f-232e-9a2c-9da6" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="0bf8-9c06-d740-c4f1" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="655a-c3c6-380c-7d64" name=" XII: World Eaters (Placeholder)" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3bdb-2249-980d-8eeb" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4d83-b8f9-71e3-89c9" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="cf1a-36a8-19e8-8922" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8657-3675-d851-ce3b" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e81e-9842-7322-ee95" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="aeaa-284d-8d0d-b8e6" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4ed5-30f0-7bea-dd86" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="53a3-3792-5487-3b08" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8b17-f2d9-6c15-5f11" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="e277-863a-5618-0ade" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="11b3-ac83-e1e4-1233" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b8de-ca32-11fd-b6d8" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3ef9-d750-d2a8-3311" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="b191-c9c8-018d-be16" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="a8bf-22c3-6760-3f96" name=" XIV: Death Guard (Placeholder)" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd1f-1c51-706c-e5f7" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0d89-9db7-ab68-ae58" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c934-c4ef-309e-caaf" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="45e8-8798-b2a0-5bd5" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2305-66ef-6e57-27c5" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="25b0-9d79-8d10-a3a5" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="c6a5-da53-617f-783d" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="85bb-05da-1a50-cdba" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8fb9-a2d7-be76-4d12" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2890-0157-4a20-8f93" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="88fb-c5d9-60b3-7edf" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7f14-89b3-5e18-e522" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a417-3f4a-5141-16e4" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9228-e026-1803-7185" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="5a51-f239-0ae5-23e2" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="e8b6-feff-5339-dda2" name=" XIII: Ultramarines (Placeholder)" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e0f-3552-8842-f281" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d9fa-e912-a80a-1dd3" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="04c5-8510-1cd2-b6bc" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1c01-4039-4fcb-0bdd" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fd84-5b7b-5b93-a37e" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9c25-23a3-c8b8-f809" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="cf7d-08c6-7dde-6236" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="759e-de8a-912f-5c93" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3751-5e53-7119-e720" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5539-1a68-3e62-1ee8" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="4ea5-efa5-5b49-1e08" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0935-10ca-2c5f-5c9a" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ae34-8d11-2cd4-469e" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="766f-a1b6-bac4-c6ef" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="8b2e-cdb8-25b1-9f43" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="61ac-f6a6-6ae2-89c4" name=" IX: Blood Angels (Placeholder)" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2142-8ef5-d676-1636" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="caf4-9860-3581-c2eb" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="be09-319c-faf7-0555" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9069-a422-5789-5f4e" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="edc0-47aa-c98b-90df" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="ad05-1af3-a63c-cb64" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9c6a-574f-f70f-1df7" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="af21-1c08-34d0-44d5" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="79d2-5269-bd38-79cb" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="f1bc-3993-b686-c353" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9211-63df-a5ec-b698" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="badd-fd72-9198-5f08" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d78b-be73-bb8d-77fd" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="a08c-217e-089d-d31b" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="4e7b-2af8-0383-644f" name="  VIII: Night Lords (Placeholder)" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-71f7-e4f4-8f9c" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7d37-f586-392f-3b28" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a588-2dfc-d56f-b4da" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="cb7d-eb31-f002-72c4" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4a0c-bf60-b6d2-6b50" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="78c6-4648-7baf-8e43" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="71ea-b86f-e00f-86c1" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1d0c-7e32-b8e2-bc7d" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="282e-4f54-7511-aee8" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0dc3-f399-8bb4-8136" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="24d3-3121-c902-30a7" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f0cd-3b80-db54-a061" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b62-0dbe-b9e3-d2f9" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4bdb-6754-ee5d-4276" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="374f-b35c-4dde-ffb6" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0bb7-5fa2-b765-d27d" name="XIX: Raven Guard (Placeholder)" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc34-fe08-dd44-fb99" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b042-2961-41ac-f7f9" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2640-9d96-3aad-d699" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="bbb2-94d9-2474-4ff1" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="492e-4d60-b702-8c21" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a47f-12de-f2e9-ba7c" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="fedf-2a24-a535-60a6" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7c70-1f95-e09b-40d9" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d1b6-321b-f2b0-796a" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="aecb-929c-23b1-5f3b" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="bdda-a7f8-151b-5b25" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b660-b411-2493-231f" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b061-b4cd-b616-6c1e" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5cbd-6f98-6834-54a4" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="ea28-63ef-bf6d-7af8" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="3377-34f2-e8f4-e84c" name=" XVIII: Salamanders (Placeholder)" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dbf0-a0a7-8160-acbe" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6ba3-a81b-5760-72e6" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="7875-539f-85ce-34f6" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cafc-dd05-e93a-1d7a" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="08a7-bc5e-6472-02e7" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="414f-7d50-f292-a38d" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="452c-a94f-9574-1f47" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8c26-e0ab-81df-3a08" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d7d6-3f0f-d0f6-cdf3" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="69cf-d2ba-9d58-d998" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6ebb-9611-037a-a786" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1835-7ba2-8d09-4b59" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3a13-93cd-4031-c6d6" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="3f26-a29c-d250-8318" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="050a-0b05-638b-d6ad" name=" XVII: Word Bearers (Placeholder)" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9dbf-0760-d7ae-f125" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f101-4c3b-0ad2-468f" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="192c-5cd9-49b9-4453" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1feb-8835-0210-dd4f" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c323-8abb-95d7-1bba" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c0f4-1ce9-a21d-8953" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="9ece-e772-07fa-1a5d" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d9e3-a0e9-492d-d45b" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c813-5bbe-4965-5620" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e180-7d40-4700-529b" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="acd6-8152-e78b-6dcd" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2d93-454d-ea4f-5759" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="83fb-ad39-efb5-98f8" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a504-cb4f-93cb-3c76" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="5c65-60cb-3e61-1559" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8fba-5b15-b959-4a17" name=" XVI: Sons of Horus (Placeholder)" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4e56-7ed1-1eb9-5ffa" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="292d-8e60-a191-ffd8" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="989c-1089-47c6-60c4" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8dce-40e9-e4aa-7d43" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5a74-5c91-9e1d-2f36" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="b6bd-4421-6d5b-0b73" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2a11-8ffa-623b-5f66" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7a60-9519-c96b-5623" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ff28-4006-9ce4-d693" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="f3d7-0128-16db-b68c" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c7f9-9954-ac14-fee2" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="467a-583b-bff9-0ece" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="86ac-2779-cc62-d210" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="6db0-85e5-85c2-18d5" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0402-be48-5bfc-9b31" name=" XV: Thousand Sons (Placeholder)" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="acf2-2ca6-0d5d-b7e7" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fbb2-3451-5d7c-7fcd" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="3ebb-a8ef-429f-d050" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="25e4-4c50-7247-d8e9" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="14af-b3dc-66d7-64e2" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="a8b4-6196-1d45-24d5" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d64d-37bc-905a-3e30" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4ba7-29a8-a010-e2c9" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cee3-4aca-b486-2bc6" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="3e72-239a-2dee-f9aa" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="26aa-aeb8-133f-03c0" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6399-1be6-8139-6388" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9633-a5f5-0018-e17b" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="d6a1-81c3-1908-b79d" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="be90-69c4-929e-c852" name="XX: Alpha Legion (Placeholder)" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d4fa-2939-8634-d4ef" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="73e2-0e8e-bc95-bb94" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="47d2-7b7d-3818-5fdd" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9334-2e15-a1fe-912c" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ec62-054b-2aa2-fd2a" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="6fdb-415d-d441-40a2" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7f8e-c94e-b089-3558" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7fac-2e7a-3ee4-347a" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="60cb-bac7-55cf-b36b" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="b0c6-309d-2989-3008" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d7a5-4b0c-7fe1-2258" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bed6-eb06-b033-b04a" type="max"/>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8664-0283-01f2-44c8" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="f0fa-29b9-780a-4a58" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
@@ -6041,6 +7206,113 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
     </rule>
     <rule id="d1c9-ee74-4e4f-8830" name="Sanctic" publicationId="e77a-823a-da94-16b9" page="325" hidden="false">
       <description> A weapon with this special rule always Wounds Daemons on a 2+ and any successful Invulnerable Saves made by Daemon models against any Wounds it inflicts must be re-rolled.</description>
+    </rule>
+    <rule id="01ec-a939-c01a-8a87" name="Building Sub-type" publicationId="d0df-7166-5cd3-89fd" page="103" hidden="false">
+      <description>• A model with the Building Sub-type has an Armour Value
+instead of Toughness Characteristic and a reduced profile to
+reflect its limited capabilities. Page 224 of Warhammer: The
+Horus Heresy – Age of Darkness Rulebook presents rules for
+making attacks with or against models with this Unit Sub-
+type.
+• A model with the Building Sub-type uses all of the rules for
+the Transport Sub-type and other models with either the
+Infantry or Primarch Unit Types may Embark or Disembark
+upon them (see page 224 of Warhammer: The Horus Heresy –
+Age of Darkness Rulebook).
+• A model with this Unit Sub-type may never Move or be
+Moved by any special rule or effect – if it is forced to Move
+then it instead suffers the effects of the Total Collapse result
+on the Building Damage table.</description>
+    </rule>
+    <rule id="d214-5efb-abbb-649e" name="Emplacement Sub-type" publicationId="d0df-7166-5cd3-89fd" page="103" hidden="false">
+      <description>• A model with the Emplacement Sub-type has an Armour
+Value instead of Toughness Characteristic and a reduced
+profile to reflect its limited capabilities. Page 224 of
+Warhammer: The Horus Heresy – Age of Darkness Rulebook
+presents rules for making attacks against models with this
+Unit Sub-type.
+• A model with this Unit Sub-type may never Move or be
+Moved by any special rule or effect – if it is forced to Move
+then it instead suffers the effects of the Total Collapse result
+on the Building Damage table.</description>
+    </rule>
+    <rule id="a09b-30c8-c45e-3655" name="Barricade Sub-type" publicationId="d0df-7166-5cd3-89fd" page="104" hidden="false">
+      <description>• A model (friendly or enemy) in base contact with a model
+with the Barricade Unit Sub-type and at least 25% obscured
+from the attacking unit gains a 5+ Cover Save.
+• Any models (friendly or enemy) that are in base contact
+with the same model with the Barricade Unit Sub-type are
+considered to be in base contact with each other.
+• A unit that declares a Charge targeting an enemy unit that
+has at least one model in base contact with a model with
+the Barricade Unit Sub-type is considered to have charged
+through Difficult Terrain.
+• A model with the Barricade Sub-type has neither a Toughness
+Characteristic or Armour Value and cannot be damaged, or
+wounded and never rolls on either the Vehicle or Building
+Damage tables.
+• A model with the Barricade Sub-type is never counted as a
+unit for the purposes of any Objective or for the purposes of
+the Sudden Death Victory rule.
+• A model with this Unit Sub-type may never Move or be
+Moved by any special rule or effect – if it is forced to Move
+then it is instead removed as a casualty.
+• A model with the Barricade Sub-type may never make
+Shooting Attacks and may only have Emplacement Mounted
+weapons (see page 224 of Warhammer: The Horus Heresy – Age
+of Darkness Rulebook).</description>
+    </rule>
+    <rule id="009e-1748-1af2-06e1" name="Massive Sub-type" publicationId="d0df-7166-5cd3-89fd" page="104" hidden="false">
+      <description>• When rolling on the Building Damage table for a model
+with the Massive Sub-type, ignore any result other than a
+Total Collapse (but the model still suffers a point of Hull
+Point of damage for each Penetrating Hit. If the result of
+rolling on the Building Damage table is Total Collapse, the
+model with the Massive Sub-type suffers an additional D3
+Hull Point damage. When reduced to 0 Hull Points, a model
+with the Massive Sub-type is destroyed, any weapons and
+wargear on the Building are also destroyed and it also suffers
+a Catastrophic Collapse. Any models Embarked upon a
+model with the Massive Sub-type that suffers a Catastrophic
+Collapse are immediately removed as casualties and the
+model with the Massive Sub-type now counts as Ruins and
+may not be Embarked upon.
+• When selecting an army, the combined points value of all
+models with the Massive Sub-type, Lords of War Battlefield
+Role or Primarch Unit Type combined may not exceed 25% of
+the army’s total points limit, unless otherwise specified by the
+mission or Force Organisation chart in use.</description>
+    </rule>
+    <rule id="11c9-a7b5-30fb-dc0c" name="Fortification" publicationId="d0df-7166-5cd3-89fd" page="103" hidden="false">
+      <description>• A model with the Fortification Unit Type is a Terrain Piece
+that is selected as part of a player’s army and included as part
+of their Army Roster, and counts as a unit under that player’s
+control for all purposes (including Sudden Death Victories
+and Objectives).
+• A model with this Unit Type that is selected as part of a
+player’s army is always ‘claimed’ and remains under that
+player’s control at all times (see page 223 of Warhammer: The
+Horus Heresy – Age of Darkness Rulebook).
+• A model with the Fortification Unit Type can never be Pinned
+and never take Morale checks or Leadership tests.
+• A model with the Fortification Unit Type can never hold or
+deny objectives.
+• A model with the Fortification Unit Type can never make a
+Reaction of any type.
+• A model with the Fortification Unit Type can never declare
+a Charge or make attacks in the Assault Phase (but can be
+the target of a Charge or attacks by other models in the
+Assault Phase).
+• A model with the Fortification Unit Type may attack with
+all weapons it has in each Shooting Phase, targeting a
+single enemy unit unless another special rule allows it to
+do otherwise.
+• A model that has the Fortification Unit Type may not join
+other units, or be joined by any other model, including other
+models with the Fortification Unit Type. Each model with
+the Fortification Unit Type is always considered a separate
+unit (excepting only Multi-part fortifications, see page 225 of
+Warhammer: The Horus Heresy – Age of Darkness Rulebook).</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
