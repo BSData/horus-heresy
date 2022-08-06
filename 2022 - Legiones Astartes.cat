@@ -41104,7 +41104,14 @@ part of a close combat attack.</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fda1-d5ea-12b7-a641" name="Ammitara Occult Intercession Cabal" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="fda1-d5ea-12b7-a641" name="Ammitara Occult Intercession Cabal" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="f2f7-6a62-6987-56ca" name="Mind Killer" publicationId="d0df-7166-5cd3-89fd" page="90" hidden="false">
           <description>At the start of their turn, before any models are moved, a Psychic check may be made once for each Ammitara Intercession Cabal by the controlling player, using the Leadership Characteristic of any model with the unit that does not have the Independent Character special rule. If the Check is passed, the Shooting Attacks of all models in the unit with the Psyker Unit Sub-type gain the Rending (4+) and Ignores Cover special rules in addition to any other effects their weapons might have, for the duration of the turn. This does not replace or improve any other versions of the Rending (X) special rule already possessed by the unit and may not be used when attacking with weapons that have either the Template or the Blast (X) special rules. If the Check is failed then no benefit is gained and the unit suffers Perils of the Warp.</description>
