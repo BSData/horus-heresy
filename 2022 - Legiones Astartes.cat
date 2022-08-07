@@ -13932,6 +13932,15 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="9548-1353-aa48-059d" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e918-0944-7e62-c253" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="0a5f-fc14-8828-30e4" name="Rhino Transport" hidden="false" collective="false" import="true" targetId="03f1-8ed9-9867-8d18" type="selectionEntry"/>
+            <entryLink id="ec36-d3a1-60d1-35c4" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="e629-f355-0d92-6f84" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
@@ -14163,6 +14172,23 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
               </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="5db3-f38b-1bb3-5ad6" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efba-b6d3-9bae-3f2f" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="08d6-e168-6ea3-f85c" name="Land Raider Spartan" hidden="false" collective="false" import="true" targetId="bac1-f30e-2c04-d27d" type="selectionEntry"/>
+            <entryLink id="3d4c-c892-6df6-3e93" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="9628-45c5-2d68-6476" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
