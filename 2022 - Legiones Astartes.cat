@@ -1520,6 +1520,7 @@ Sire of the Emperor’s Children - All friendly models with the Legiones Astarte
             </profile>
           </profiles>
         </entryLink>
+        <entryLink id="1ae2-b2ae-6a45-7fe9" name="Retinue" hidden="false" collective="false" import="true" targetId="2dd0-7045-8ae5-f394" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="450.0"/>
@@ -36240,6 +36241,11 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
         </selectionEntry>
         <selectionEntry id="ebf0-87e9-3b4e-b43f" name="Phoenix Terminators" hidden="false" collective="false" import="true" type="model">
           <modifiers>
+            <modifier type="decrement" field="1b6f-7a84-2c6a-e58c" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="53c2-5d87-86bb-44fb" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
             <modifier type="decrement" field="c2c0-88d6-3fb5-28f9" value="1.0">
               <repeats>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="53c2-5d87-86bb-44fb" repeats="1" roundUp="false"/>
