@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1bbd-3041-4d34-5972" name="LA - IV: Iron Warriors" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2ee4-57ed-db44-8a63" name="LA - IV: Iron Warriors" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="fe10-3104-0252-96de" name="Nârik Dreygur" hidden="false" collective="false" import="true" targetId="ac97-c8ce-16ba-9c49" type="selectionEntry">
       <categoryLinks>
@@ -9,9 +9,9 @@
     </entryLink>
     <entryLink id="7fe3-8433-2dfa-2166" name="Perturabo" hidden="false" collective="false" import="true" targetId="f944-6641-a714-2fe8" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="4fe3-7aed-a86d-e3a9" name="New CategoryLink" hidden="false" targetId="ad5f-31db-8bc7-5c46" primary="false"/>
+        <categoryLink id="4fe3-7aed-a86d-e3a9" name="New CategoryLink" hidden="false" targetId="ad5f-31db-8bc7-5c46" primary="true"/>
         <categoryLink id="23ea-8f2f-28bd-c663" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
-        <categoryLink id="a42a-0125-6bda-676f" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="a42a-0125-6bda-676f" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="ede1-9c07-8401-67f9" name="Iron Havocs" hidden="false" collective="false" import="true" targetId="d355-5488-1277-fabf" type="selectionEntry">
@@ -59,6 +59,13 @@
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ac97-c8ce-16ba-9c49" name="Nârik Dreygur" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0913-39cc-5597-5069" type="max"/>
       </constraints>
@@ -183,6 +190,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="f944-6641-a714-2fe8" name="Perturabo" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="448d-767c-67a2-aae4" type="max"/>
       </constraints>
@@ -999,6 +1013,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="35e0-3b3a-f569-3da8" name="Kyr Vhalen" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="472c-9b3a-ee97-9794" type="max"/>
       </constraints>
@@ -1434,7 +1455,7 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="fc39-8924-a69f-10b5" name="Tartaros Command Squad (Placeholder Points)" hidden="false" collective="false" import="true" targetId="58d0-a0fd-d20b-cb1b" type="selectionEntry"/>
+        <entryLink id="fc39-8924-a69f-10b5" name="Tartaros Command Squad" hidden="false" collective="false" import="true" targetId="58d0-a0fd-d20b-cb1b" type="selectionEntry"/>
         <entryLink id="cd97-51bf-2a68-1186" name="Command Squad (Placeholder Points)" hidden="false" collective="false" import="true" targetId="0aca-632d-1642-8af9" type="selectionEntry"/>
         <entryLink id="9b82-c43c-3987-cea4" name="Iron Circle Maniple" hidden="true" collective="false" import="true" targetId="a6e3-baab-45b9-7fea" type="selectionEntry">
           <modifiers>
