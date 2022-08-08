@@ -40251,11 +40251,6 @@ part of a close combat attack.</description>
       <selectionEntries>
         <selectionEntry id="850b-f1fc-6fb4-d898" name="Contemptor-Osiron Dreadnought" hidden="false" collective="false" import="true" type="model">
           <modifiers>
-            <modifier type="set" field="bf88-2236-a649-415e" value="1.0">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="368d-0cdc-5ce6-eb38" type="instanceOf"/>
-              </conditions>
-            </modifier>
             <modifier type="set" field="name" value="Contemptor-Osiron Magus Dreadnought">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4068-5d1f-ceee-0c90" type="equalTo"/>
@@ -40442,7 +40437,7 @@ part of a close combat attack.</description>
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="5748-9e3a-7fd3-445f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="850b-f1fc-6fb4-d898" type="greaterThan"/>
+                <condition field="selections" scope="5748-9e3a-7fd3-445f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="850b-f1fc-6fb4-d898" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -40466,14 +40461,9 @@ part of a close combat attack.</description>
         <selectionEntryGroup id="1b29-fd11-a4c8-5b9c" name="Dedicated Transport:" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="368d-0cdc-5ce6-eb38" type="instanceOf"/>
-                    <condition field="selections" scope="5748-9e3a-7fd3-445f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="850b-f1fc-6fb4-d898" type="greaterThan"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition field="selections" scope="5748-9e3a-7fd3-445f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="850b-f1fc-6fb4-d898" type="greaterThan"/>
+              </conditions>
             </modifier>
           </modifiers>
           <entryLinks>
