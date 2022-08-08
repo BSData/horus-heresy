@@ -6399,7 +6399,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="0402-be48-5bfc-9b31" name=" XV: Thousand Sons (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="0402-be48-5bfc-9b31" name=" XV: Thousand Sons" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6412,15 +6412,22 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fbb2-3451-5d7c-7fcd" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="3ebb-a8ef-429f-d050" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="3ebb-a8ef-429f-d050" name="Evoker of Pain" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="25e4-4c50-7247-d8e9" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="14af-b3dc-66d7-64e2" type="max"/>
               </constraints>
               <profiles>
-                <profile id="a8b4-6196-1d45-24d5" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="a8b4-6196-1d45-24d5" name="Evoker of Pain" publicationId="09c5-eeae-f398-b653" page="256" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">When a Warlord with this Trait fails a Psychic check and suffers Perils of the Warp , neither the Warlord nor any models in a unit it has joined suffer any Wounds. Instead, select one enemy unit that either has at least one model w ithin 6&quot; of the Warlord with this Trait, or is locked in combat with the Warlord with this Trait. The selected enemy unit suffers D3 Wounds against which only Invulnerable Saves may be made and no Damage Mitigation rolls may be made, if there is no valid enemy unit within 6&quot; then resolve Perils of the Warp against the Warlord’s unit as normal. Wounds inflicted in this manner during the Assault phase do not count for resolving the winner of a combat and never cause Morale checks or Pinning tests. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6428,15 +6435,15 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d64d-37bc-905a-3e30" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="d64d-37bc-905a-3e30" name="Magister of Prospero" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4ba7-29a8-a010-e2c9" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cee3-4aca-b486-2bc6" type="max"/>
               </constraints>
               <profiles>
-                <profile id="3e72-239a-2dee-f9aa" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="3e72-239a-2dee-f9aa" name="Magister of Prospero" page="256" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait , and any model with the Legiones Astartes (Thousand Sons) special rule in a unit it joins that makes a Psychic check (such as when using the Force or Psychic Focus special rules) may roll an additional dice and discard the highest rolled dice before determining the result of the Check. In addition, whose Warlord has this Trait may make an additional Reaction during the opposing player’s Movement phase long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6444,15 +6451,15 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="26aa-aeb8-133f-03c0" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="26aa-aeb8-133f-03c0" name="Eidolon of Suffering" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6399-1be6-8139-6388" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9633-a5f5-0018-e17b" type="max"/>
               </constraints>
               <profiles>
-                <profile id="d6a1-81c3-1908-b79d" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="d6a1-81c3-1908-b79d" name="Eidolon of Suffering" publicationId="09c5-eeae-f398-b653" page="256" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait may not use Psychic Powers or Psychic Weapons and gains the Adamantium Will (3+) special rule. When another model, friendly or enemy, makes a psychic check within 12” of the Warlord , the controlling player must roll a D6. On the score of a &apos;1&apos;, there is no effect, and on the score of a ‘2’ or higher the Warlord gains the Rage (2) special rule for the remainder of the battle. If this Trait would grant the Warlord the Rage (2) special rule a further time then it instead increases the value of the Rage special rule by +1 (from Rage (2) to Rage (3) and so on) up to a maximum of Rage (4 ). In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
