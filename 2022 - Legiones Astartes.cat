@@ -1223,7 +1223,7 @@
         <categoryLink id="90c3-0113-59f7-898d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="308a-94de-2ced-9a11" name="Vulkan" hidden="false" collective="false" import="true" targetId="fe24-20af-f493-649b" type="selectionEntry">
+    <entryLink id="308a-94de-2ced-9a11" name="Vulkan" hidden="true" collective="false" import="true" targetId="fe24-20af-f493-649b" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -13932,6 +13932,15 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="9548-1353-aa48-059d" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e918-0944-7e62-c253" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="0a5f-fc14-8828-30e4" name="Rhino Transport" hidden="false" collective="false" import="true" targetId="03f1-8ed9-9867-8d18" type="selectionEntry"/>
+            <entryLink id="ec36-d3a1-60d1-35c4" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="e629-f355-0d92-6f84" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
@@ -14163,6 +14172,23 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
               </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="5db3-f38b-1bb3-5ad6" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efba-b6d3-9bae-3f2f" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="08d6-e168-6ea3-f85c" name="Land Raider Spartan" hidden="false" collective="false" import="true" targetId="bac1-f30e-2c04-d27d" type="selectionEntry"/>
+            <entryLink id="3d4c-c892-6df6-3e93" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="9628-45c5-2d68-6476" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -38546,6 +38572,10 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="d70e-ac47-d428-c5f4" name="Dawnbringer" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e71-3748-a7d7-4b47" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5633-0557-3290-6f9f" type="max"/>
+          </constraints>
           <profiles>
             <profile id="181a-0345-988d-8251" name="Dawnbringer" publicationId="817a-6288-e016-7469" page="315" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
@@ -38566,8 +38596,15 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
             </infoLink>
             <infoLink id="904f-de7a-bcb1-df8a" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="8289-597c-36f7-669c" name="The Furnace&apos;s Heart" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bd0-297d-8ee1-bfa7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9059-7721-4316-c350" type="min"/>
+          </constraints>
           <profiles>
             <profile id="94cb-6300-7a6e-0720" name="The Furnace&apos;s Heart" publicationId="817a-6288-e016-7469" page="315" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
@@ -38578,15 +38615,43 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule id="478f-5e4c-56e6-3461" name="Burst (D6)" publicationId="817a-6288-e016-7469" page="315" hidden="false">
+              <description>If this weapon inflicts a Hit then instead of one Hit it inflicts a number of hits equal to the number in brackets included as part of this rule.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="3dc9-cfa7-8d5a-d3b5" name="Lance" hidden="false" targetId="3d6b-9e0b-56f0-8a1e" type="rule"/>
-            <infoLink id="46c5-5d68-1ec2-1703" name="Achean Force" hidden="false" targetId="c56f-80ff-5d8e-1af4" type="rule"/>
+            <infoLink id="e1e0-8717-289a-a277" name="Shock Pulse" hidden="false" targetId="9222-f6c5-dc19-905a" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="d311-fd67-9dae-5ecb" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry"/>
-        <entryLink id="e2e1-e4ac-486b-cd82" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry"/>
+        <entryLink id="d311-fd67-9dae-5ecb" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ddc-b845-be06-0ca5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60a4-cd56-f155-f507" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e2e1-e4ac-486b-cd82" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69e1-115a-ba11-d9aa" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="168a-43d8-3f2e-f0c8" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b5ff-54ca-7ce6-f791" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7e3-1ff0-87bb-4060" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="d346-e0a9-3fd8-9a2a" name="Warlord: Sire of the Salamanders" publicationId="817a-6288-e016-7469" page="314" hidden="false">
+              <description>All models with both the Infantry Unit Type and the Legiones Astartes (Salamanders) special rule in the same army as Vulkan gain the Stubborn special rule. In addition, an army with Vulkan as its Warlord gains an additional Reaction in the opposing player&apos;s Shooting phase as long as Vulkan has not been removed as a casualty.</description>
+            </rule>
+          </rules>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="465.0"/>
@@ -38636,7 +38701,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a9c1-2633-b1f0-6e34" name="Order Cenobites" publicationId="09b3-d525-cdea-260c" page="7" hidden="false" collective="false" import="true" type="model">
@@ -38698,7 +38763,6 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
             <entryLink id="2f43-6d3c-fca6-c406" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2b4-c3cc-9b0d-1649" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a66-fc48-e5ea-09db" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -38812,9 +38876,6 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
         <entryLink id="2eaf-6b42-103c-9035" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" targetId="7c9b-b9ab-9a40-8eb5" type="selectionEntry"/>
         <entryLink id="d46d-d3e8-0bd2-6776" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
       </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="68d3-14e8-a6ee-229c" name="Inner Circle Knights Cenobium - Order of the Broken Claws" publicationId="09b3-d525-cdea-260c" page="7" hidden="true" collective="false" import="true" type="unit">
       <rules>
@@ -38868,7 +38929,7 @@ part of a close combat attack.</description>
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="9366-d32d-cb61-cc24" name="Order Cenobites" publicationId="09b3-d525-cdea-260c" page="7" hidden="false" collective="false" import="true" type="model">
@@ -38982,9 +39043,6 @@ part of a close combat attack.</description>
         <entryLink id="0504-171a-8b2d-fa8b" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" targetId="7c9b-b9ab-9a40-8eb5" type="selectionEntry"/>
         <entryLink id="7a4c-dae0-226e-264b" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
       </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="12b8-ffd2-d5d6-28c5" name="Advex-mors Greatsword" publicationId="09b3-d525-cdea-260c" page="7" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -39053,7 +39111,7 @@ part of a close combat attack.</description>
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f81e-4ad7-2cbd-ab3c" name="Interemptors" publicationId="817a-6288-e016-7469" page="162" hidden="false" collective="false" import="true" type="model">
@@ -39154,8 +39212,16 @@ part of a close combat attack.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d450-d7fd-6f87-879b" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="fc23-57bf-fc95-d515" name="Plasma Incinerator" hidden="false" collective="false" import="true" targetId="e0ff-7d2c-a195-6a45" type="selectionEntry"/>
-            <entryLink id="c983-5ac2-4ff7-2628" name="Missile launcher with suspensor web, rad missiles and statis missiles" hidden="false" collective="false" import="true" targetId="ba02-3861-5d52-de30" type="selectionEntry"/>
+            <entryLink id="fc23-57bf-fc95-d515" name="Plasma Incinerator" hidden="false" collective="false" import="true" targetId="e0ff-7d2c-a195-6a45" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="c983-5ac2-4ff7-2628" name="Missile launcher with suspensor web, rad missiles and statis missiles" hidden="false" collective="false" import="true" targetId="ba02-3861-5d52-de30" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="7eec-ab16-b63c-fb29" name="The Interemptor Praefectus may take up to:" hidden="false" collective="false" import="true">
@@ -39174,6 +39240,9 @@ part of a close combat attack.</description>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7742-ba12-2b5e-fa67" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bab8-002f-1a75-9eb2" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -39183,6 +39252,9 @@ part of a close combat attack.</description>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6856-0b59-82e9-578e" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -39226,7 +39298,7 @@ part of a close combat attack.</description>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45.0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ba02-3861-5d52-de30" name="Missile launcher with suspensor web, rad missiles and statis missiles" hidden="false" collective="false" import="true" type="upgrade">
