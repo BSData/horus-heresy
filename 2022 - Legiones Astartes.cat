@@ -1767,80 +1767,114 @@
             <categoryLink id="af14-1a0c-ce6c-3775" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false"/>
             <categoryLink id="ea62-4186-8e7a-e7ec" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
           </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="bdda-d4d0-76da-6c44" name="Master-crafted Asphyx Bolt Pistol" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4f8-9321-b66b-5078" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81c4-682c-ca79-9da5" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="ed66-8061-a7b2-caa2" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
-            <infoLink id="4a95-5da9-2ebe-6b5a" name="Asphyx Bolt Pistol" hidden="false" targetId="7a88-ce87-0cb7-6a99" type="profile">
-              <modifiers>
-                <modifier type="append" field="2f86-c8b4-b3b4-3ff9" value="Master-crafted"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="574a-fc26-22c4-69df" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="9395-80ae-15cf-94c6" name="The Corvidaean Sceptre" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67fd-a0f3-0c91-f08b" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9eeb-e1af-b4c7-9058" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="75e6-e8e3-8f20-c76b" name="The Corvidaean Sceptre" publicationId="09c5-eeae-f398-b653" page="270" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">.</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Reach (1), Force, Master-crafted</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="847a-85a3-911d-9df6" name="The Corvidaean Sceptre" publicationId="09c5-eeae-f398-b653" page="271" hidden="false">
-              <description>The weapon listed here is counted as a &quot;Force&quot; weapon for those rules that affect such weapons:</description>
-            </rule>
-          </rules>
-          <infoLinks>
-            <infoLink id="a3c3-4fa9-5c90-7e43" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
-            <infoLink id="f289-380e-8b92-b48b" name="Reach (X)" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Reach (1)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="1c71-5bcf-2224-e597" name="Force" hidden="false" targetId="f39e-4c3b-38e0-0050" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="9120-e1a1-e746-5341" name="Psychic Powers" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df0c-07ff-c7de-787d" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d815-6d52-478d-ad1f" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="99df-d9d2-7e82-ba25" name="Aetheric Lightning" hidden="false" targetId="3d0c-e779-247f-0332" type="profile"/>
-          </infoLinks>
-          <entryLinks>
-            <entryLink id="0752-cab2-8fec-9d09" name="Psychic Discipline: Divination" hidden="false" collective="false" import="true" targetId="0c22-a776-e7e3-2981" type="selectionEntry">
+          <selectionEntries>
+            <selectionEntry id="1c8e-4f72-eee9-b644" name="Master-crafted Asphyx Bolt Pistol" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e6c-0ffc-0db9-4c0c" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3dc7-bb8b-769d-6b9b" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0043-2217-9d6d-6fba" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8064-d4eb-0639-43b7" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="bf51-c317-3f6c-a836" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+                <infoLink id="bfbe-e9dc-6728-9e5f" name="Asphyx Bolt Pistol" hidden="false" targetId="7a88-ce87-0cb7-6a99" type="profile">
+                  <modifiers>
+                    <modifier type="append" field="2f86-c8b4-b3b4-3ff9" value="Master-crafted"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="12d2-115c-3aa2-b58b" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="36a4-2a33-a448-e26c" name="Psychic Powers" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9325-9130-5813-dfe4" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97cc-c1b0-753e-36c9" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="e42d-b435-22b2-68d7" name="Aetheric Lightning" hidden="false" targetId="3d0c-e779-247f-0332" type="profile"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="5e05-60c5-ecf0-29f0" name="Psychic Discipline: Divination" hidden="false" collective="false" import="true" targetId="0c22-a776-e7e3-2981" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e023-76bb-2c85-7efc" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cb0b-a570-2817-049b" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="3ae3-cd4d-e02e-5e75" name="Psychic Discipline: Thaumaturgy" hidden="false" collective="false" import="true" targetId="f7ab-1fb2-91b0-028d" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a07-174d-42c5-cbb9" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="650f-6c48-d371-5357" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e020-b569-f18d-bc3c" name="The Corvidaean Sceptre" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ea2-06c4-c1a6-3831" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71d8-9bac-3163-049b" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="48b3-dd1a-8f32-582f" name="The Corvidaean Sceptre" publicationId="09c5-eeae-f398-b653" page="270" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">.</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Reach (1), Force, Master-crafted</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="081f-74d0-1f61-611e" name="The Corvidaean Sceptre" publicationId="09c5-eeae-f398-b653" page="271" hidden="false">
+                  <description>The weapon listed here is counted as a &quot;Force&quot; weapon for those rules that affect such weapons:</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="ae82-56c6-f965-5189" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+                <infoLink id="ec56-454a-300c-0955" name="Reach (X)" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Reach (1)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="2e2b-6e8d-e068-b244" name="Force" hidden="false" targetId="f39e-4c3b-38e0-0050" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="66ac-9a91-abc4-0e4f" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8183-eb07-6b17-8e78" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2690-51a4-8c6d-e269" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="b28d-e530-2729-c674" name="Psychic Discipline: Thaumaturgy" hidden="false" collective="false" import="true" targetId="f7ab-1fb2-91b0-028d" type="selectionEntry">
+            <entryLink id="27f0-b8fd-9ee9-3c94" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bee8-d079-e1ff-daea" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9bbe-8c12-d0be-07a1" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e11f-f6d2-9692-44da" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a63-4047-684e-b95d" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="7dcb-3806-ce83-3448" name="Iron Halo" hidden="false" collective="false" import="true" targetId="b081-bf3c-f43d-4bd5" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2a4-3712-7a1b-f2a4" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3da8-022f-382b-dd07" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="17a9-4ab7-dcee-5ce8" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a60c-a981-26ac-b0dd" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0a5-f08c-81af-c562" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="9b7e-eba3-3ef1-f761" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08fd-d45f-ac7d-472e" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0623-b20f-b6d1-2f59" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -1850,30 +1884,6 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="f61a-ca57-e6cd-43de" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93d9-9b7b-61e7-d7fc" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24ac-e149-5789-1cba" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="d16c-82e3-a894-175a" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="291a-b60c-4191-fcb2" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3a5-5a05-a3d2-522a" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="fa4e-6684-185c-4ed6" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a41e-8300-6973-4335" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fabc-2d94-0a4a-721c" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="f30f-afb6-92b1-cc55" name="Iron Halo" hidden="false" collective="false" import="true" targetId="b081-bf3c-f43d-4bd5" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2fa-8c57-20f2-e916" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb65-112d-9fab-828e" type="min"/>
-          </constraints>
-        </entryLink>
         <entryLink id="801e-de07-63aa-7b66" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cbd-1d8c-59c5-8660" type="max"/>
@@ -1886,15 +1896,7 @@
             </profile>
           </profiles>
         </entryLink>
-        <entryLink id="6e7b-f7dd-e835-c92b" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d96-feaf-31e0-431f" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0dd-a60d-4832-bcf6" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="58db-5f47-5131-0af6" name="Retinue" hidden="false" collective="false" import="true" targetId="2dd0-7045-8ae5-f394" type="selectionEntryGroup"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink id="7572-c8e2-4de4-cbf9" name="Retinue" hidden="false" collective="false" import="true" targetId="2dd0-7045-8ae5-f394" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="185.0"/>
@@ -5238,29 +5240,157 @@ Captain Lucius is engaged in a Challenge all friendly models in the same combat 
             <infoLink id="5d28-9507-cd4e-20c5" name="Infiltrate" hidden="false" targetId="0e32-5b92-a95a-8464" type="rule"/>
             <infoLink id="33b1-7298-c465-ef9a" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
           </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="efce-d131-5c54-c091" name="Psychic powers" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1beb-a9b6-2b79-1739" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2331-df32-0e39-8db0" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="3963-4c39-f364-6b38" name="Aetheric Lightning" hidden="false" targetId="3d0c-e779-247f-0332" type="profile"/>
-          </infoLinks>
-          <entryLinks>
-            <entryLink id="1cc5-5184-5ff7-5e74" name="Psychic Discipline: Divination" hidden="false" collective="false" import="true" targetId="0c22-a776-e7e3-2981" type="selectionEntry">
+          <selectionEntries>
+            <selectionEntry id="5f65-a57c-97c7-a79a" name="Psychic powers" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5138-3fb8-22a7-f9b6" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6f12-ea31-b5e5-7f0d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d0f-3a2b-4868-8a9b" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2bd-7671-4154-22c0" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="7241-aff0-c7c1-a768" name="Aetheric Lightning" hidden="false" targetId="3d0c-e779-247f-0332" type="profile"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="bf83-7ef3-ed77-defa" name="Psychic Discipline: Divination" hidden="false" collective="false" import="true" targetId="0c22-a776-e7e3-2981" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d2e-5718-4701-6b42" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="88de-d293-8eb8-d2dc" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="ee0a-1634-3ba3-8ca8" name="Psychic Discipline: Telepathy" hidden="false" collective="false" import="true" targetId="b751-a605-75e8-dd6f" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48ab-8a29-eaad-e6b2" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4852-9618-257e-ea47" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ba07-f11e-06d2-7fbb" name="The Armour of Shades" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f31-2f82-ce96-4781" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e238-830e-2285-70a1" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="b2cd-8ff2-5905-675f" name="The Armour of Shades" publicationId="09c5-eeae-f398-b653" page="272" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Armour of Shades provides a 2+ Armour Save and on any turn in which Magistus Amon has moved or is within the bounds of a zone of Area Terrain it grants him the Shrouded (4+) special rule.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e3fb-e94c-4593-7fe0" name="The Reliquary of Dust (Melee)" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5993-560b-f66f-c84a" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1999-b35b-34f0-521a" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="a50d-e4f9-52d0-742d" name="The Reliquary of Dust (Melee)" publicationId="09c5-eeae-f398-b653" page="273" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Poisoned (4+), Reaping Blow (1), Master-crafted</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="0a3e-3860-7173-8b8f" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+                <infoLink id="6ddb-55b6-729e-71c3" name="Reach (X)" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Reach (1)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="0f7f-eb10-bed1-693b" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Poisoned (4+)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="16de-bc2b-0283-654c" name="Reaping Blow (X)" hidden="false" targetId="bd8c-4f52-d682-1b40" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Reaping Blow (1)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8804-6cbd-931a-e748" name="The Reliquary of Dust (Ranged)" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3a6-ed7e-dd35-d7e4" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44c7-d764-b974-c7da" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="d2b5-9410-da25-6e27" name="The Reliquary of Dust (Ranged)" publicationId="09c5-eeae-f398-b653" page="273" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">6&quot;</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">1</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2D6, Poisoned (4+ ), Concussive ( 3), Rending (6+ )</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="765e-09f6-64e9-7262" name="The Reliquary of Dust" publicationId="09c5-eeae-f398-b653" page="273" hidden="false">
+                  <description>The Reliquary of Dust may also be used to make a Shooting Attack once per battle, and instead of attacking normally, using the following profile:</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="082d-a504-ce15-1000" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Rending (6+)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="c032-3d31-ea69-b103" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Poisoned (4+)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="f9f7-3a41-04c2-a4a6" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Concussive (1)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="3fb4-cace-5b6b-c6b1" name="Archaeotech Pistol" hidden="false" collective="false" import="true" targetId="c22a-ed4d-af68-bf00" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a73-6b55-613f-8f3e" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45d7-dbcd-44c6-360f" type="min"/>
               </constraints>
             </entryLink>
-            <entryLink id="5e92-d2cc-2f45-ff30" name="Psychic Discipline: Telepathy" hidden="false" collective="false" import="true" targetId="b751-a605-75e8-dd6f" type="selectionEntry">
+            <entryLink id="734c-fea9-c0a8-89ab" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc8b-f928-f78b-ad15" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="35f0-d45d-83ea-a60d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3977-a62c-e7a9-d646" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1df6-b3e5-3145-d462" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="995f-fd57-5ccf-8048" name="Iron Halo" hidden="false" collective="false" import="true" targetId="b081-bf3c-f43d-4bd5" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbf2-777c-0e50-f36d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d24-3c08-345e-b441" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="1ce5-06bd-16e6-59e9" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0405-f980-4efb-1428" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5514-6add-24e9-769b" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="797f-8f43-df13-75b4" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2d9-38dd-3ec8-8d80" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9755-2fbd-bb62-9b25" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -5268,126 +5398,8 @@ Captain Lucius is engaged in a Challenge all friendly models in the same combat 
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="856a-f87c-2820-c99c" name="The Reliquary of Dust" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8dcf-e9f0-2ec6-076a" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="719f-bddc-47c3-a2b2" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="2b9e-6500-410e-cb4b" name="The Reliquary of Dust" publicationId="09c5-eeae-f398-b653" page="273" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Poisoned (4+), Reaping Blow (1), Master-crafted</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="3fb2-b368-8145-4f6c" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
-            <infoLink id="781f-36da-8fbb-593d" name="Reach (X)" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Reach (1)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="77c4-b68a-99d9-b927" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Poisoned (4+)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="4d3f-53b4-4696-1833" name="Reaping Blow (X)" hidden="false" targetId="bd8c-4f52-d682-1b40" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Reaping Blow (1)"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="c305-9181-4cbc-b442" name="The Armour of Shades" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6969-771d-e132-ddb4" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="801e-d670-527a-2c8e" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="af91-ee30-c1e4-7139" name="The Armour of Shades" publicationId="09c5-eeae-f398-b653" page="272" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-              <characteristics>
-                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Armour of Shades provides a 2+ Armour Save and on any turn in which Magistus Amon has moved or is within the bounds of a zone of Area Terrain it grants him the Shrouded (4+) special rule.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="0038-142f-af5c-b31a" name="The Reliquary of Dust*" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49ba-a5d6-3d1c-2ca5" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a6a-1248-e390-de1c" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="3676-32ba-8a2d-c729" name="The Reliquary of Dust*" publicationId="09c5-eeae-f398-b653" page="273" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">6&quot;</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">1</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2D6, Poisoned (4+ ), Concussive ( 3), Rending (6+ )</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="b500-e952-7fb3-1c27" name="The Reliquary of Dust*" publicationId="09c5-eeae-f398-b653" page="273" hidden="false">
-              <description>The Reliquary of Dust may also be used to make a Shooting Attack once per battle, and instead of attacking normally, using the following profile:</description>
-            </rule>
-          </rules>
-          <infoLinks>
-            <infoLink id="570c-e436-f2bd-6c28" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Rending (6+)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="f952-8ef3-f6ce-a6a6" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Poisoned (4+)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="cda0-382e-76c0-cbb8" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Concussive (1)"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="21ac-da7f-498b-96ba" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf7c-45e1-0d66-9600" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc92-0fa1-6c25-562e" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="1d20-734d-e955-e6fd" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fce3-452c-99a6-2071" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f3b-b3a7-0155-9a05" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="e5ed-3300-053e-4787" name="Iron Halo" hidden="false" collective="false" import="true" targetId="b081-bf3c-f43d-4bd5" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1668-64b2-18fc-4cf5" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="695e-4ef5-9274-072c" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="bf9a-9710-3fd6-8496" name="Archaeotech Pistol" hidden="false" collective="false" import="true" targetId="c22a-ed4d-af68-bf00" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ca9-a560-c42e-6310" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e2f-03ff-b8ee-fedd" type="min"/>
-          </constraints>
-        </entryLink>
         <entryLink id="3633-0ab6-0fd5-ae01" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad37-33d3-8db2-adb6" type="max"/>
@@ -5398,15 +5410,7 @@ Captain Lucius is engaged in a Challenge all friendly models in the same combat 
             </rule>
           </rules>
         </entryLink>
-        <entryLink id="7ca8-53ac-c94d-ad42" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="620d-0ec3-7b1b-89c8" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40be-7170-33b9-f9b5" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="044c-ee6a-ea8e-8bb5" name="Retinue" hidden="false" collective="false" import="true" targetId="2dd0-7045-8ae5-f394" type="selectionEntryGroup"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink id="af92-810b-d1e7-991a" name="Retinue" hidden="false" collective="false" import="true" targetId="2dd0-7045-8ae5-f394" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="185.0"/>
@@ -40252,6 +40256,11 @@ part of a close combat attack.</description>
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="368d-0cdc-5ce6-eb38" type="instanceOf"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="name" value="Contemptor-Osiron Magus Dreadnought">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4068-5d1f-ceee-0c90" type="equalTo"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6ea-1a8c-0bb2-ba8e" type="min"/>
@@ -40350,37 +40359,6 @@ part of a close combat attack.</description>
                   <modifiers>
                     <modifier type="append" field="name" value="with in-built combi-bolter"/>
                   </modifiers>
-                  <selectionEntryGroups>
-                    <selectionEntryGroup id="9770-62d0-a7f0-dad3" name="May replace an in-built combi-bolter on a Gravis force blade with one of the following:" hidden="false" collective="false" import="true" defaultSelectionEntryId="af36-ae75-2a2e-efd8">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb1f-ffb1-fba0-c1a4" type="min"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6f3-7ced-cfca-37d6" type="max"/>
-                      </constraints>
-                      <entryLinks>
-                        <entryLink id="af36-ae75-2a2e-efd8" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="a498-c66f-9eb7-ca9a" type="selectionEntry"/>
-                        <entryLink id="48ae-3533-60a2-b3e0" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
-                          <costs>
-                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink id="ed2f-fa69-d4e2-c5e5" name="Graviton Gun" hidden="false" collective="false" import="true" targetId="5303-5a3e-de51-1707" type="selectionEntry">
-                          <costs>
-                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink id="5b87-e8cd-35b9-6982" name="Meltagun" hidden="false" collective="false" import="true" targetId="4ebd-57e0-3560-e568" type="selectionEntry">
-                          <costs>
-                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink id="d8e5-a1f7-68c6-3293" name="Æther-Fire Blaster" hidden="false" collective="false" import="true" targetId="d078-5f42-c02b-c73d" type="selectionEntry">
-                          <costs>
-                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                          </costs>
-                        </entryLink>
-                      </entryLinks>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
                 </entryLink>
                 <entryLink id="1be0-c0b3-182a-cbb8" name="Volkite Dual-Culverin" hidden="false" collective="false" import="true" targetId="fead-f3b9-f7c7-1081" type="selectionEntry">
                   <costs>
@@ -40407,6 +40385,18 @@ part of a close combat attack.</description>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="1c56-fead-07b6-fb03" name="May replace an in-built combi-bolter on a Gravis force blade with one of the following:" hidden="false" collective="false" import="true" defaultSelectionEntryId="b362-9c72-8ea3-57e7">
+              <modifiers>
+                <modifier type="set" field="0bc2-9ac5-11b4-eee7" value="2.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c2f-ceee-1f1f-bbf4" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="d1ad-558b-a868-9708" value="2.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5c2f-ceee-1f1f-bbf4" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1ad-558b-a868-9708" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bc2-9ac5-11b4-eee7" type="max"/>
@@ -40448,7 +40438,7 @@ part of a close combat attack.</description>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4068-5d1f-ceee-0c90" name="Contemptor-Osiron Magus Dreadnought" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="4068-5d1f-ceee-0c90" name="Contemptor-Osiron Magus Upgrade" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -40516,78 +40506,6 @@ part of a close combat attack.</description>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3eed-7b17-4c20-0f80" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="d5f9-4e29-b3bd-de16" name="Psyfire serpenta" publicationId="09c5-eeae-f398-b653" page="261" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fce5-0288-a55d-2547" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1729-9b6d-bce1-12fa" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="5ae9-e20d-1d20-fac6" name="Psyfire serpenta" publicationId="09c5-eeae-f398-b653" page="261" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">15&quot;</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3, Deflagrate, Force</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="02dd-36cb-f61e-fcd5" name="Psyfire serpenta" publicationId="09c5-eeae-f398-b653" page="261" hidden="false">
-              <description>The weapon listed here is counted as &quot;Plasma&quot; and &quot;Force&quot; weapon for those rules that affect such weapons.</description>
-            </rule>
-          </rules>
-          <infoLinks>
-            <infoLink id="adb8-a7a9-c3fe-eb06" name="Force" hidden="false" targetId="f39e-4c3b-38e0-0050" type="rule"/>
-            <infoLink id="9d51-d30b-93c1-bc0b" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="5e7a-be7c-7993-b8f6" name="The Horned Raiment" publicationId="09c5-eeae-f398-b653" page="261" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4c6-5952-47c2-c059" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="473a-6f8d-9351-bc3d" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="50a9-d750-cae5-5c71" name="The Horned Raiment" publicationId="09c5-eeae-f398-b653" page="261" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-              <characteristics>
-                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Horned Raiment provides Magnus the Red with a 2+ Armour Save and a 4 + Invulnerable Save. In addition , if he is struck by a weapon with the Destroyer type, the amount of Wounds it inflicts is reduced by 1, to a minimum of 1</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="f213-662e-c2b7-5313" name="The Blade of Ahn-nunurta" publicationId="09c5-eeae-f398-b653" page="261" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bfb-d0a5-d4c6-b3f6" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="05d8-569d-b5d3-67d0" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="b509-da33-986f-9d56" name="The Blade of Ahn-nunurta" publicationId="09c5-eeae-f398-b653" page="261" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Force, Two- handed</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="e78e-1a8b-b2dd-139c" name="The Blade of Ahn-nunurta" publicationId="09c5-eeae-f398-b653" page="261" hidden="false">
-              <description>The weapon listed here is counted as a &quot;Power&quot; and &quot;Force&quot; weapon for those rules that affect such weapons.</description>
-            </rule>
-          </rules>
-          <infoLinks>
-            <infoLink id="30d0-1369-27c7-2e05" name="Force" hidden="false" targetId="f39e-4c3b-38e0-0050" type="rule"/>
-            <infoLink id="0517-2f29-f32c-57a7" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="191d-fe2e-c9b9-b9f2" name="Magnus the Red" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77d5-dad2-3724-e790" type="max"/>
@@ -40738,7 +40656,93 @@ part of a close combat attack.</description>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="8624-b33c-5d82-ab5f" name="Psyfire serpenta" publicationId="09c5-eeae-f398-b653" page="261" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="751d-317d-6e22-57a0" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3913-c1d4-6655-c9cb" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="e5b8-3df5-b690-011a" name="Psyfire serpenta" publicationId="09c5-eeae-f398-b653" page="261" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">15&quot;</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3, Deflagrate, Force</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="ed3e-3364-85e1-eb27" name="Psyfire serpenta" publicationId="09c5-eeae-f398-b653" page="261" hidden="false">
+                  <description>The weapon listed here is counted as &quot;Plasma&quot; and &quot;Force&quot; weapon for those rules that affect such weapons.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="7b28-45d9-8493-9703" name="Force" hidden="false" targetId="f39e-4c3b-38e0-0050" type="rule"/>
+                <infoLink id="ed3e-e389-50c6-8f7c" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="29b9-78a0-d0b9-f23a" name="The Blade of Ahn-nunurta" publicationId="09c5-eeae-f398-b653" page="261" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3689-2f41-cbf6-6451" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2b6d-ffb5-14e6-a7f5" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="ebb3-9936-c546-7ac6" name="The Blade of Ahn-nunurta" publicationId="09c5-eeae-f398-b653" page="261" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Force, Two- handed</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="1517-e95a-9451-069f" name="The Blade of Ahn-nunurta" publicationId="09c5-eeae-f398-b653" page="261" hidden="false">
+                  <description>The weapon listed here is counted as a &quot;Power&quot; and &quot;Force&quot; weapon for those rules that affect such weapons.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="139f-9e59-b2f5-a0a0" name="Force" hidden="false" targetId="f39e-4c3b-38e0-0050" type="rule"/>
+                <infoLink id="26ac-8257-13be-b8e4" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7643-82a2-a73d-b21b" name="The Horned Raiment" publicationId="09c5-eeae-f398-b653" page="261" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c098-58e9-1d0a-2868" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0bf9-4cf6-c316-db8b" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="9031-4692-6b72-aedb" name="The Horned Raiment" publicationId="09c5-eeae-f398-b653" page="261" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Horned Raiment provides Magnus the Red with a 2+ Armour Save and a 4 + Invulnerable Save. In addition , if he is struck by a weapon with the Destroyer type, the amount of Wounds it inflicts is reduced by 1, to a minimum of 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink id="6089-4080-f9c7-cb48" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="759b-29bc-a836-016e" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7f60-e108-e4f5-c55a" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="5da4-6b57-317b-07de" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ab2-f70e-df3e-63dc" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a78-07d6-3f89-7d8b" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
@@ -40757,21 +40761,7 @@ part of a close combat attack.</description>
             </profile>
           </profiles>
         </entryLink>
-        <entryLink id="214a-0990-d0fd-aacd" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2761-6c8e-eba5-5c0f" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="104e-b242-0d94-b845" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="4b09-2039-94e1-0101" name="Retinue" hidden="false" collective="false" import="true" targetId="2dd0-7045-8ae5-f394" type="selectionEntryGroup"/>
-          </entryLinks>
-        </entryLink>
-        <entryLink id="cedf-ca96-bfce-abcd" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="080f-58be-04df-d56e" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b3c2-327a-570f-4845" type="max"/>
-          </constraints>
-        </entryLink>
+        <entryLink id="f20f-c897-11a4-17df" name="Retinue" hidden="false" collective="false" import="true" targetId="2dd0-7045-8ae5-f394" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="520.0"/>
@@ -40937,7 +40927,7 @@ part of a close combat attack.</description>
           <profiles>
             <profile id="e957-332f-830a-0b7f" name="Khenetai Blademaster" publicationId="09c5-eeae-f398-b653" page="268" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <modifiers>
-                <modifier type="set" field="e478-41d4-a092-48a8" value="2+">
+                <modifier type="set" field="e593-6b3c-f169-04f0" value="2+">
                   <conditions>
                     <condition field="selections" scope="0396-6c5e-b7be-d7ea" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="583e-62cb-53f1-f952" type="equalTo"/>
                   </conditions>
@@ -41057,27 +41047,47 @@ part of a close combat attack.</description>
             <entryLink id="97cf-aada-139a-26b5" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="9197-82e2-6a2a-48a6" name="Achea Force Swords" hidden="false" collective="false" import="true" defaultSelectionEntryId="6384-56b7-6c2f-ec7e">
+        <selectionEntryGroup id="9197-82e2-6a2a-48a6" name="Pairs of Achea Force Swords" hidden="false" collective="false" import="true" defaultSelectionEntryId="1c34-352d-6e7b-e2ac">
           <modifiers>
-            <modifier type="increment" field="d27d-b762-7141-ee70" value="2.0">
+            <modifier type="decrement" field="d27d-b762-7141-ee70" value="4.0"/>
+            <modifier type="increment" field="d27d-b762-7141-ee70" value="1.0">
               <repeats>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="18b1-945c-0da9-ff8f" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
-            <modifier type="increment" field="1d70-a007-45ac-08c8" value="2.0">
+            <modifier type="increment" field="1d70-a007-45ac-08c8" value="1.0">
               <repeats>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="18b1-945c-0da9-ff8f" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
-            <modifier type="decrement" field="d27d-b762-7141-ee70" value="8.0"/>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d70-a007-45ac-08c8" type="max"/>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d27d-b762-7141-ee70" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d70-a007-45ac-08c8" type="max"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d27d-b762-7141-ee70" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="6384-56b7-6c2f-ec7e" name="Achea Force Sword" hidden="false" collective="false" import="true" targetId="3cf4-3b3b-2188-6bd4" type="selectionEntry"/>
-          </entryLinks>
+          <selectionEntries>
+            <selectionEntry id="1c34-352d-6e7b-e2ac" name="Pairs of Achea Force Swords" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="e589-090c-f27f-9243" name="Achean Force Sword" publicationId="09c5-eeae-f398-b653" page="259" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <comment>validated nsh 2022/06/20</comment>
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (6+), Achean Force</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="89f3-3928-00d7-045e" name="Achean Force" hidden="false" targetId="c56f-80ff-5d8e-1af4" type="rule"/>
+                <infoLink id="aee9-3a98-378b-63aa" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Rending (6+)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
