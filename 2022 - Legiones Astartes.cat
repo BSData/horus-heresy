@@ -224,7 +224,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="7961-69a3-d0fe-5c22" name="Corswain" hidden="true" collective="false" import="true" targetId="e589-a616-3a22-5b3e" type="selectionEntry">
-      <comment></comment>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -32444,6 +32443,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
         <infoLink id="5f82-5220-d260-d212" name="Chosen Warriors" hidden="false" targetId="13d1-9270-6539-08ed" type="rule"/>
         <infoLink id="c617-7e1b-edc6-9eba" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
         <infoLink id="8279-b26a-b441-b693" name="Death-sworn Companions" hidden="false" targetId="2f3e-89a5-27e0-33b7" type="rule"/>
+        <infoLink id="821b-d0ea-76c9-a3a6" name="Deathwing" hidden="false" targetId="5e82-8a8f-d64f-0839" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="57b8-5c22-c421-5350" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -32481,7 +32481,7 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="de41-ef06-4309-a047" name="Deathwing Companion" publicationId="817a-6288-e016-7469" page="164" hidden="false" collective="false" import="true" type="model">
@@ -32713,11 +32713,33 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
           </constraints>
         </entryLink>
       </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50.0"/>
-      </costs>
     </selectionEntry>
-    <selectionEntry id="3fc7-588f-6f75-d227" name="Deathwing Terminator Cataphractii Companions (Placeholders 2)" publicationId="d0df-7166-5cd3-89fd" page="48" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="3fc7-588f-6f75-d227" name="Deathwing Terminator Cataphractii Companions" publicationId="d0df-7166-5cd3-89fd" page="48" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="6bc0-b52b-ff6d-dd18" name="Deathwing Terminator Cataphractii Retinue" publicationId="09b3-d525-cdea-260c" page="49" hidden="false">
+          <description>A Deathwing Cataphractii Terminator Companion squad may only be selected as part of a Detachment that includes at least
+one model with both the Master of the Legion and the Legiones Astartes (Dark Angels) special rules and is equipped with
+Cataphractii Terminator armour. A unit selected in this manner is considered a ‘Retinue Squad’ and the model with both
+the Master of the Legion and Legiones Astartes (Dark Angels) special rules is referred to as the retinue squad’s Leader for the
+purposes of this special rule (if the Detachment includes more than one eligible Leader then the controlling player selects one
+as the unit’s Leader). The retinue squad does not use up a Force Organisation slot and is considered part of the same unit as the
+model selected as its Leader. The retinue squad must be deployed with the model selected as its Leader deployed as part of the
+unit and the Leader may not voluntarily leave the retinue squad during play. A Deathwing Cataphractii Terminator Companion
+Detachment may not be selected as part of an army without a Leader.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="e761-485f-672f-59a4" name="Chosen Warriors" hidden="false" targetId="13d1-9270-6539-08ed" type="rule"/>
+        <infoLink id="9525-b055-2bea-3252" name="Death-sworn Companions" hidden="false" targetId="2f3e-89a5-27e0-33b7" type="rule"/>
+        <infoLink id="e6cd-ec38-3f01-a9bb" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+        <infoLink id="1957-6204-86ca-12c7" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="61d5-b78b-53af-3d67" name="Inexorable" hidden="false" targetId="d863-8a5e-ddb6-d5a4" type="rule"/>
+        <infoLink id="9f4c-1cf2-2b8d-9ede" name="Deathwing" hidden="false" targetId="5e82-8a8f-d64f-0839" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="2dec-da68-6c81-2270" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="7472-1378-cbc4-3d6f" name="Terminators:" hidden="false" targetId="bab3-f50d-3e5f-2f78" primary="false"/>
@@ -32725,60 +32747,539 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
         <categoryLink id="2623-b952-d09a-acc3" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="ca9b-38a6-1daf-7f7c" name="Sergeant" publicationId="d0df-7166-5cd3-89fd" page="48" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="ca9b-38a6-1daf-7f7c" name="Deathwing Cataphractii Oathbearer" publicationId="d0df-7166-5cd3-89fd" page="48" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0998-677b-d47b-d873" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8de-bcfe-bd6c-520e" type="max"/>
           </constraints>
+          <profiles>
+            <profile id="4e49-e1d8-7e4a-87bb" name="Deathwing Cataphractii Oathbearer" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy, Character, Deathwing)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="f077-9aa3-6a63-b6cc" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+            <categoryLink id="6c00-11c1-dbe0-a058" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="95b9-a566-e66d-ee20" name="The Oathbearer may take a:" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="ec93-03ba-62ca-a38c" name="Grenade Harness" hidden="false" collective="false" import="true" targetId="251a-860d-2c4d-62cc" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e192-710f-3bf4-52b8" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="ca8b-02f7-a4b1-c67b" name="Any model in the unit may exchange its Calibanite warblade for on of the following:" hidden="false" collective="false" import="true" defaultSelectionEntryId="1c1b-2e4a-da87-8ceb">
+              <modifiers>
+                <modifier type="set" field="9f54-14bc-8af3-7252" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b503-8902-fde3-7675" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="2411-c40b-3406-bb6d" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b503-8902-fde3-7675" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2411-c40b-3406-bb6d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f54-14bc-8af3-7252" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="b726-1e98-8599-b4ef" name="Terranic Greatsword" hidden="false" collective="false" import="true" targetId="68b3-a64c-a609-6615" type="selectionEntry"/>
+                <entryLink id="2132-90c5-7fa8-d654" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry"/>
+                <entryLink id="f3a1-ca77-272c-6338" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="1c1b-2e4a-da87-8ceb" name="Calibanite Warblade" hidden="false" collective="false" import="true" targetId="88ee-fc77-42ea-872d" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="bcdc-d0e6-8c55-6638" name="Any model in the unit may exchange their combi-bolter for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="baaf-5501-fb21-fdbd">
+              <modifiers>
+                <modifier type="set" field="1648-d926-3578-04a2" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b503-8902-fde3-7675" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="55b0-6d90-3c57-c946" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b503-8902-fde3-7675" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55b0-6d90-3c57-c946" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1648-d926-3578-04a2" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="12f7-903c-f73e-bf77" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="34c4-db99-db36-0f2a" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="b783-cd51-c834-58ba" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="0d1c-227e-a3f8-cd63" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="02e3-393c-b7ca-0603" name="Magna Combi-Weapon - Plasma Gun" hidden="false" collective="false" import="true" targetId="cc98-8596-c713-516c" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="3d61-7f6e-64cb-4455" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" targetId="7e5c-3d25-5c88-32e0" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="c667-2af8-4a36-9a17" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="false" import="true" targetId="aa3c-f5a5-9ce9-1497" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="baaf-5501-fb21-fdbd" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="a498-c66f-9eb7-ca9a" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="e51b-1388-77d4-6ac5" name="Paired Melee Weapons:" hidden="false" collective="false" import="true" targetId="b503-8902-fde3-7675" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" field="name" value="May exchange both his Combi-Bolter &amp; Power Weapon for:"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="be1f-81fb-4842-13d3" name="Troops" publicationId="d0df-7166-5cd3-89fd" page="48" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="be1f-81fb-4842-13d3" name="Deathwing Cataphractii Companion" publicationId="d0df-7166-5cd3-89fd" page="48" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13ab-82c6-4d53-a2a7" type="min"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9dc8-5a59-4866-9231" type="max"/>
           </constraints>
+          <profiles>
+            <profile id="1804-e459-7695-0d3c" name="Deathwing Cataphractii Companion" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy, Deathwing)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="e203-dae9-4ca4-18fa" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+            <categoryLink id="d964-2fb9-e30c-2bfc" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="814b-a1b2-d8ea-e317" name="Any model in the unit may exchange their combi-bolter for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="65f4-f91d-06ba-dc0d">
+              <modifiers>
+                <modifier type="set" field="6f40-0a17-c9ca-4d46" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b503-8902-fde3-7675" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="4342-0fe4-8a2b-03b8" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b503-8902-fde3-7675" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4342-0fe4-8a2b-03b8" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f40-0a17-c9ca-4d46" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="3250-221d-5419-10e7" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="34c4-db99-db36-0f2a" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="035b-3686-bc45-5312" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="0d1c-227e-a3f8-cd63" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="f3ed-63c6-2005-050c" name="Magna Combi-Weapon - Plasma Gun" hidden="false" collective="false" import="true" targetId="cc98-8596-c713-516c" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="1f8e-fc19-2531-c0ce" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" targetId="7e5c-3d25-5c88-32e0" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="5c44-613c-bb81-8280" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="false" import="true" targetId="aa3c-f5a5-9ce9-1497" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="65f4-f91d-06ba-dc0d" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="a498-c66f-9eb7-ca9a" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="875d-b2cd-71c4-108d" name="Any model in the unit may exchange its Calibanite warblade for on of the following:" hidden="false" collective="false" import="true" defaultSelectionEntryId="02c5-e0ea-4c10-e1cf">
+              <modifiers>
+                <modifier type="set" field="8514-3740-1352-cca5" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b503-8902-fde3-7675" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="4032-2f74-4315-afff" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b503-8902-fde3-7675" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4032-2f74-4315-afff" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8514-3740-1352-cca5" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="9a94-ebe7-260f-b650" name="Terranic Greatsword" hidden="false" collective="false" import="true" targetId="68b3-a64c-a609-6615" type="selectionEntry"/>
+                <entryLink id="fade-7152-69b1-f9b2" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry"/>
+                <entryLink id="4797-ac54-7b7f-c6fe" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="02c5-e0ea-4c10-e1cf" name="Calibanite Warblade" hidden="false" collective="false" import="true" targetId="88ee-fc77-42ea-872d" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="2bac-7114-fd82-10b0" name="Paired Melee Weapons:" hidden="false" collective="false" import="true" targetId="b503-8902-fde3-7675" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" field="name" value="May exchange both his Combi-Bolter &amp; Power Weapon for:"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="16ff-1d49-f503-4348" name="Dedicated Transport:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9569-57b9-3062-545e" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="d119-b4c0-4869-0174" name="Land Raider Proteus Carrier Squadron" hidden="false" collective="false" import="true" targetId="b6cd-dd1a-6b2c-41d6" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="af8d-bfed-6f68-15dd" name="Upgrade Points (Placeholders)" hidden="false" collective="false" import="true" targetId="8b48-2da0-15da-2c1b" type="selectionEntry"/>
+        <entryLink id="7fa1-91b6-25c9-cce5" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" targetId="7c9b-b9ab-9a40-8eb5" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f913-0c6c-0418-e38a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9de8-bdf0-cd25-f38d" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="240.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="180e-a80f-663f-2f5b" name="Deathwing Terminator Tartaros Companions (Placeholders 2)" publicationId="d0df-7166-5cd3-89fd" page="50" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="180e-a80f-663f-2f5b" name="Deathwing Terminator Tartaros Companions" publicationId="d0df-7166-5cd3-89fd" page="50" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="022c-6418-1ddc-96bf" name="Deathwing Terminator Tartaros Retinue" publicationId="09b3-d525-cdea-260c" page="51" hidden="false">
+          <description>A Deathwing Tartaros Terminator Companion squad may only be selected as part of a Detachment that includes at least one
+model with both the Master of the Legion and the Legiones Astartes (Dark Angels) special rules and is equipped with Tartaros
+Terminator armour. A unit selected in this manner is considered a ‘Retinue Squad’ and the model with both the Master of the
+Legion and Legiones Astartes (Dark Angels) special rules is referred to as the retinue squad’s Leader for the purposes of this
+special rule (if the Detachment includes more than one eligible Leader then the controlling player selects one as the unit’s
+Leader). The retinue squad does not use up a Force Organisation slot and is considered part of the same unit as the model
+selected as its Leader. The retinue squad must be deployed with the model selected as its Leader deployed as part of the unit and
+the Leader may not voluntarily leave the retinue squad during play. A Deathwing Tartaros Terminator Companion Detachment
+may not be selected as part of an army without a Leader.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="85e8-f9a1-90f2-acf6" name="Chosen Warriors" hidden="false" targetId="13d1-9270-6539-08ed" type="rule"/>
+        <infoLink id="7667-ca29-30b4-fb0c" name="Death-sworn Companions" hidden="false" targetId="2f3e-89a5-27e0-33b7" type="rule"/>
+        <infoLink id="dd2c-d8a6-5837-0b4a" name="Inexorable" hidden="false" targetId="d863-8a5e-ddb6-d5a4" type="rule"/>
+        <infoLink id="29a7-e6e3-383c-b9d5" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+        <infoLink id="35a4-d693-39ee-e678" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="9e31-b27f-824e-1f15" name="Deathwing" hidden="false" targetId="5e82-8a8f-d64f-0839" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="85f2-bcd0-471d-a6fd" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="ff52-a568-eff0-24c8" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="f62d-1f66-3833-43bc" name="Sergeant" publicationId="d0df-7166-5cd3-89fd" page="50" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="25e0-cc9a-466b-b692" name="Deathwing Tartaros Companion" publicationId="d0df-7166-5cd3-89fd" page="48" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1c6-0251-2ebf-8c52" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec42-5171-1fa8-4f62" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bac-b81d-e09a-b2fb" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e309-e60f-4297-34f1" type="max"/>
           </constraints>
+          <profiles>
+            <profile id="97a3-19f5-6533-f518" name="Deathwing Tartaros Companion" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Deathwing)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="73c1-1369-6300-365f" name="Any model in the unit may exchange their combi-bolter for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="cd28-2869-4eaf-c5a2">
+              <modifiers>
+                <modifier type="set" field="28d2-5db3-8e07-1b56" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b503-8902-fde3-7675" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="e23b-606a-2e13-1e47" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b503-8902-fde3-7675" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e23b-606a-2e13-1e47" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28d2-5db3-8e07-1b56" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="f25a-6d01-9c7c-3318" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="34c4-db99-db36-0f2a" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="8bdd-d62b-e598-a96a" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="0d1c-227e-a3f8-cd63" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="1bd2-ff8a-7a6b-e9e9" name="Magna Combi-Weapon - Plasma Gun" hidden="false" collective="false" import="true" targetId="cc98-8596-c713-516c" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="1949-418a-b0ba-a95b" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" targetId="7e5c-3d25-5c88-32e0" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="5886-39b6-8ecb-c326" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="false" import="true" targetId="aa3c-f5a5-9ce9-1497" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="cd28-2869-4eaf-c5a2" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="a498-c66f-9eb7-ca9a" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="b630-22ab-5385-826b" name="Any model in the unit may exchange its Calibanite warblade for on of the following:" hidden="false" collective="false" import="true" defaultSelectionEntryId="c5de-b29e-09f3-6fa9">
+              <modifiers>
+                <modifier type="set" field="f7f6-1ce8-f83e-5530" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b503-8902-fde3-7675" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="89b8-848b-eb32-6710" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b503-8902-fde3-7675" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7f6-1ce8-f83e-5530" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89b8-848b-eb32-6710" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="ca47-1327-383a-ad85" name="Terranic Greatsword" hidden="false" collective="false" import="true" targetId="68b3-a64c-a609-6615" type="selectionEntry"/>
+                <entryLink id="6778-1ee9-9c8e-25b0" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry"/>
+                <entryLink id="08d9-1f3f-7050-2e4c" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="c5de-b29e-09f3-6fa9" name="Calibanite Warblade" hidden="false" collective="false" import="true" targetId="88ee-fc77-42ea-872d" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="6496-c8b6-73b8-781f" name="Paired Melee Weapons:" hidden="false" collective="false" import="true" targetId="b503-8902-fde3-7675" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" field="name" value="May exchange both his Combi-Bolter &amp; Power Weapon for:"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5584-1eab-bfdf-7fcd" name="Troops" publicationId="d0df-7166-5cd3-89fd" page="50" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="9e30-dc8f-1378-c8ac" name="Deathwing Tartaros Oathbearer" publicationId="d0df-7166-5cd3-89fd" page="48" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4795-d745-bc28-5409" type="min"/>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9637-8fd9-5067-6dab" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="047f-68a6-3d51-2729" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="557a-0e3b-d27a-85dc" type="max"/>
           </constraints>
+          <profiles>
+            <profile id="e98c-b51d-0b43-f9be" name="Deathwing Tartaros Oathbearer" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy, Character, Deathwing)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="b5e6-342f-65b2-150e" name="The Oathbearer may take a:" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="f6f7-b161-b636-822e" name="Grenade Harness" hidden="false" collective="false" import="true" targetId="251a-860d-2c4d-62cc" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6f8-c3be-5518-162e" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="9383-b816-eeaa-625a" name="Any model in the unit may exchange its Calibanite warblade for on of the following:" hidden="false" collective="false" import="true" defaultSelectionEntryId="002a-2dd5-64e4-640c">
+              <modifiers>
+                <modifier type="set" field="0aad-398c-270a-96d9" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b503-8902-fde3-7675" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="e17d-fa88-2d2f-63da" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b503-8902-fde3-7675" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e17d-fa88-2d2f-63da" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0aad-398c-270a-96d9" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="7228-13c3-918b-e3b3" name="Terranic Greatsword" hidden="false" collective="false" import="true" targetId="68b3-a64c-a609-6615" type="selectionEntry"/>
+                <entryLink id="0ee4-159a-558b-86b4" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry"/>
+                <entryLink id="7c19-1843-6ea4-d9fd" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="002a-2dd5-64e4-640c" name="Calibanite Warblade" hidden="false" collective="false" import="true" targetId="88ee-fc77-42ea-872d" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="12e1-b7b2-2341-877f" name="Any model in the unit may exchange their combi-bolter for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="222b-203d-18a5-bfcc">
+              <modifiers>
+                <modifier type="set" field="e4be-ea09-1f74-e923" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b503-8902-fde3-7675" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="b1b2-4a85-7217-0bd1" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b503-8902-fde3-7675" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4be-ea09-1f74-e923" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1b2-4a85-7217-0bd1" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="53b8-ee47-9c6d-a4a0" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="34c4-db99-db36-0f2a" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="8bc6-b591-cc64-e17d" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="0d1c-227e-a3f8-cd63" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="ebb3-2ee0-bb06-d719" name="Magna Combi-Weapon - Plasma Gun" hidden="false" collective="false" import="true" targetId="cc98-8596-c713-516c" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="b048-6952-0ea4-cc99" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" targetId="7e5c-3d25-5c88-32e0" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="51e6-e42e-03e2-5b1d" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="false" import="true" targetId="aa3c-f5a5-9ce9-1497" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="222b-203d-18a5-bfcc" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="a498-c66f-9eb7-ca9a" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="2056-9d03-5d1b-305d" name="Paired Melee Weapons:" hidden="false" collective="false" import="true" targetId="b503-8902-fde3-7675" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" field="name" value="May exchange both his Combi-Bolter &amp; Power Weapon for:"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink id="cbba-b832-8596-8601" name="Upgrade Points (Placeholders)" hidden="false" collective="false" import="true" targetId="8b48-2da0-15da-2c1b" type="selectionEntry"/>
-      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d2c3-50c7-c296-0ee8" name="Dedicated Transport:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bf7-d40d-59a2-09ae" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="c420-80e4-90d7-417d" name="Land Raider Proteus Carrier Squadron" hidden="false" collective="false" import="true" targetId="b6cd-dd1a-6b2c-41d6" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="225.0"/>
       </costs>
