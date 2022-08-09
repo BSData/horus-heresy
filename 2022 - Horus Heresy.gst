@@ -388,6 +388,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
         <infoLink id="48c5-0237-0444-5170" name="Massive Sub-type" hidden="false" targetId="009e-1748-1af2-06e1" type="rule"/>
       </infoLinks>
     </categoryEntry>
+    <categoryEntry id="bccc-f949-f478-50dc" name="Options:" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
@@ -441,6 +442,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
           </constraints>
         </categoryLink>
         <categoryLink id="609a-e750-e92c-da9f" name="Retinue:" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="false"/>
+        <categoryLink id="e5bc-c457-c4ea-7c12" name="Options:" hidden="false" targetId="bccc-f949-f478-50dc" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="d4f2-6da5-b6de-06ec" name="Allied Detachment" hidden="false">
@@ -478,6 +480,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0bc1-40ca-638b-3578" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="580c-fe11-23b1-1a99" name="Options:" hidden="false" targetId="bccc-f949-f478-50dc" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -506,6 +509,15 @@ Conversely, if an Independent Character joins a unit after that unit has been th
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="be90-a746-3c8f-b265" name="Expanded Army List Profiles:" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="561f-8b0c-bc45-f028" name="New CategoryLink" hidden="false" targetId="bccc-f949-f478-50dc" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a6e5-f49c-0fd3-da55" name="Exemplary Option" hidden="false" collective="false" import="true" targetId="126b-4225-a296-fae6" type="selectionEntryGroup"/>
+        <entryLink id="9538-bca0-cff7-8973" name="Legacy Option" hidden="false" collective="false" import="true" targetId="1870-325b-a58a-0e31" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
@@ -6530,6 +6542,34 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="1870-325b-a58a-0e31" name="Legacy Option" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d7f1-11d4-cc9f-ebb8" name="Legacy Units" publicationId="d0df-7166-5cd3-89fd" hidden="false" collective="false" import="true" defaultSelectionEntryId="0b3b-a68c-bd14-1e37">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fce2-34b4-bb7d-ed67" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6515-96bf-7f67-293d" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="0b3b-a68c-bd14-1e37" name="Legacy Units On" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="4f3a-1e98-f9fc-3034" name="Legacy Units Off" hidden="false" collective="false" import="true" type="upgrade"/>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="126b-4225-a296-fae6" name="Exemplary Option" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="97ce-b5a2-1d84-a776" name="Exemplary Battles" publicationId="09b3-d525-cdea-260c" hidden="false" collective="false" import="true" defaultSelectionEntryId="5e92-77d5-2825-ddcb">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="078f-e3a3-2cbe-d05a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3923-df9b-ae09-e7e1" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5e92-77d5-2825-ddcb" name="Exemplary Units On" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="37b0-78fc-09ec-0414" name="Exemplary Units Off" hidden="false" collective="false" import="true" type="upgrade"/>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
