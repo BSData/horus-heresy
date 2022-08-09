@@ -6223,15 +6223,22 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6ba3-a81b-5760-72e6" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="7875-539f-85ce-34f6" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="7875-539f-85ce-34f6" name="The Weight of Duty" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cafc-dd05-e93a-1d7a" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="08a7-bc5e-6472-02e7" type="max"/>
               </constraints>
               <profiles>
-                <profile id="414f-7d50-f292-a38d" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="414f-7d50-f292-a38d" name="The Weight of Duty" publicationId="817a-6288-e016-7469" page="309" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait, and all models in any unit he has joined, gain a bonus of +1 to their Strength Characteristic when locked in combat with any enemy unit that includes one or more models with any variant of the Fear special rule. Furthermore, this Warlord and any models in a unit he has joined composed entirely of models with the Legiones Astartes (Salamanders) special rule gain the Hatred (Traitors) special rule while the Warlord is part of the unit. An army whose Warlord has this Warlord Trait may not include Legion Destroyer Assault Squads, Legion Mortalis Destroyer Squads or Legion Centurions with the Moritat Consul upgrade that also have the Legiones Astartes (Salamanders) special rule. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player&apos;s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6239,15 +6246,22 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="452c-a94f-9574-1f47" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="452c-a94f-9574-1f47" name="Redemption of Flames" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8c26-e0ab-81df-3a08" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d7d6-3f0f-d0f6-cdf3" type="max"/>
               </constraints>
               <profiles>
-                <profile id="69cf-d2ba-9d58-d998" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="69cf-d2ba-9d58-d998" name="Redemption of Flames" publicationId="817a-6288-e016-7469" page="309" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait, and all models in a unit he has joined with the Legiones Astartes (Salamanders) special rule, gains a bonus of +1 for all To Wound rolls or Armour Penetration rolls made for Flame or Volkite weapons that are used by those units to make Shooting Attacks. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player&apos;s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6255,15 +6269,15 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6ebb-9611-037a-a786" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="6ebb-9611-037a-a786" name="Promethean Will" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1835-7ba2-8d09-4b59" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3a13-93cd-4031-c6d6" type="max"/>
               </constraints>
               <profiles>
-                <profile id="3f26-a29c-d250-8318" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="3f26-a29c-d250-8318" name="Promethean Will" publicationId="817a-6288-e016-7469" page="309" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait, and all models in any friendly unit composed entirely of models with the Legiones Astartes (Salamanders) special rule that is part of the same Detachment, gains a bonus of +1 to their Leadership Characteristic when making Pinning Tests (to a maximum of 11) and reduce the effects of the Fear special rule by 1 (note that this means the Fear(1) special rule has no effect on models granted this benefit, and negative modifiers conferred by other variants of the Fear special rule are reduced in effect by 1). An army whose Warlord has this trait may not include Legion Destroyer Assault Squads, Legion Mortalis Destroyer Squads or Legion Centurions with the Moritat Consul upgrade that also have the Legiones Astartes (Salamanders) special rule. In addition, an army whose Warlord has this trait may make an additional Reaction during the opposing player&apos;s Shooting phase as long as the Warlord has not been removed as a causalty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
