@@ -6223,11 +6223,11 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6ba3-a81b-5760-72e6" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="7875-539f-85ce-34f6" name="The Weight of Duty" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="7875-539f-85ce-34f6" name="The Weight of Duty" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6246,11 +6246,11 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="452c-a94f-9574-1f47" name="Redemption of Flames" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="452c-a94f-9574-1f47" name="Redemption of Flames" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
