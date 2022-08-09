@@ -6210,7 +6210,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="3377-34f2-e8f4-e84c" name=" XVIII: Salamanders (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="3377-34f2-e8f4-e84c" name=" XVIII: Salamanders" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
