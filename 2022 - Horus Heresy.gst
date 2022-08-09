@@ -4937,19 +4937,8 @@ All models in a unit under the effect of this Hexagrammaton Unit Sub-type, other
         </selectionEntry>
         <selectionEntry id="5f54-457a-fbb9-6730" name="   IV: Iron Warriors" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
-            <rule id="50d0-9314-636f-0b0b" name="The Armoury of the Iron Warriors" hidden="false">
-              <description>• A single Legion Praetor, Legion Cataphractii Praetor or Legion Tartaros Praetor with the Legiones Astates (Iron Warriors) special rule in any given Detachment may be upgraded toa Warsmith for +20 points. A Warsmith gains a conrtex controller and Servo-arm as well as the Master of Automata and Battlesmith (3+) special rules. A model upgraded to a Warsmith may not be given a Legions Spatha combat bike, Legion Scimitar jetbke or Legion Warhawk jump pack.
-
-• Any model with the Legiones Astartes (Iron Warriors) special rule and the Character Sub-type may exchange a power weapon for a Graviton Mace or exchange a thunder hammer for a Graviton crusher for no additional points cost. Additionally, any model with the Legiones Astartes (Iron Warriors) special rule and the Dreadnought Unit Type may exchange a Gravis power fist for a Graviton Maul for +15 points per weapon (This does not replace or remove the built in weapon included with the Gravis Power Fist)
-
-• Any model with the Legiones Astartes (Iron Warriors) and Independent Character special rules may exchange a bolt pistol for a shrapnel pistol or a bolter for a shrapnel bolter for no additional points cost.
-
-• Any unit composed entirely of models with the Legiones Astartes (Iron Warriors) special rule may upgrade all bolt pistols in the unit to shrapnel pistols, and/or all bolters for shrapnel bolters and/or all heavy bolters for shrapnel cannons for a cost of +2 points per weapon.
-
-•Any unit composed entirely of models with the Vehicle Unit Type and the Legiones Astartes (Iron Warriors) special rule may exchange all heavy bolters in the unit for shrapnel cannons for +2 points per weapon and any unit composed entirely of models with the Dreadnought Unit Type and the Legiones Astartes (Iron Warriors) special rule may exchange all Gravis bolt cannons for Gravis shrapnel cannons for +5 points per weapon.</description>
-            </rule>
-            <rule id="fc44-1c30-d724-14cf" name="Legiones Astartes (Iron Warriors) " hidden="false">
-              <description>Wrack &amp; Ruin: When a model with this special rule makes a Shooting Attack or Melee attack targeting a model with the Dreadnought, Automata, Vehicle or Building Unit Type it gains +1 to the Strength of that attack.</description>
+            <rule id="fc44-1c30-d724-14cf" name="Wrack &amp; Ruin" hidden="false">
+              <description>When a model with this special rule makes a Shooting Attack or Melee attack targeting a model with the Dreadnought, Automata, Vehicle or Building Unit Type it gains +1 to the Strength of that attack.</description>
             </rule>
           </rules>
           <costs>
