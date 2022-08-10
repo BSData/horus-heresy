@@ -1194,6 +1194,25 @@
         <categoryLink id="280e-ad37-d236-f49b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="fcb2-728e-33bf-3acf" name="Ferrus Manus" hidden="false" collective="false" import="true" targetId="2c27-5478-1a5b-f5e1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="af7f-3d88-8d4e-b12e" name="New CategoryLink" hidden="false" targetId="ad5f-31db-8bc7-5c46" primary="true"/>
+        <categoryLink id="3a1a-89a9-24c6-4839" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false"/>
+        <categoryLink id="b626-efc1-2bd9-43c7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5f04-6fa9-439f-c3d1" name="Medusan Immortal Squad" hidden="false" collective="false" import="true" targetId="cca9-59af-3e26-ab98" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f225-50ef-2ef5-16ac" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="8d5e-16d1-3cc7-b2dc" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6c87-97a8-0406-3e3a" name="Gorgon Terminator Squad" hidden="false" collective="false" import="true" targetId="76b5-1013-5e69-65a1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6080-1cc1-cdf1-9f7f" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="62e1-8798-aad1-8010" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="51e5-c28f-d9dd-5e52" name="Fulgrim" hidden="true" collective="false" import="true" type="unit">
@@ -27282,7 +27301,11 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79ac-e95d-f127-67e6" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="19d3-23d6-2693-b635" name="Phosphex Discharger" hidden="false" collective="false" import="true" targetId="2dfb-3606-923a-8987" type="selectionEntry"/>
+                <entryLink id="19d3-23d6-2693-b635" name="Phosphex Discharger" hidden="false" collective="false" import="true" targetId="2dfb-3606-923a-8987" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="216e-eb0d-18a7-1000" name="Weapon Option 1" hidden="false" collective="false" import="true" defaultSelectionEntryId="9387-8dfb-2134-9387">
@@ -42080,8 +42103,8 @@ part of a close combat attack.</description>
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0899-8b4b-2591-afac" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -42230,8 +42253,8 @@ part of a close combat attack.</description>
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0899-8b4b-2591-afac" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -42502,8 +42525,8 @@ part of a close combat attack.</description>
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0899-8b4b-2591-afac" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -42781,7 +42804,11 @@ part of a close combat attack.</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3e9b-f9e5-b5e0-73d9" name="Mortarion (Placeholder)" hidden="false" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="3e9b-f9e5-b5e0-73d9" name="Mortarion (Placeholder)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="61a2-7005-1e6c-c08e" name="Hexagrammaton Choice:" hidden="true" collective="false" import="true">
