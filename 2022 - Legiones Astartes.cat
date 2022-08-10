@@ -42809,6 +42809,116 @@ part of a close combat attack.</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="166b-de2d-ef89-f000" name="Cassian Dracos Reborn" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8cf7-d353-bf83-2ae6" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a775-b1c4-4ed5-3f5d" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="378d-9dad-378d-6460" name="Cassian Dracos Reborn" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Dreadnought (Heavy, Unique)</characteristic>
+            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6&quot;</characteristic>
+            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+            <characteristic name="S" typeId="e478-41d4-a092-48a8">6</characteristic>
+            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">6</characteristic>
+            <characteristic name="W" typeId="57ee-1126-32a9-5672">5</characteristic>
+            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cf2a-1ec8-6efd-f224" name="Two Gravis power fists with in-built Dragon’s breath heavy flamers.*" publicationId="d0df-7166-5cd3-89fd" page="69" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">*The additional close combat attacks are already included in profile.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="e2ae-38fd-19af-f695" name="The Voice of the Machine" publicationId="d0df-7166-5cd3-89fd" page="69" hidden="false">
+          <description>Cassian Dracos Reborn has the Cybertheurgic Arcana: Artificia Machina (see Liber Mechanicum).</description>
+        </rule>
+        <rule id="b9f3-b07e-6908-33f7" name="Avatar of the Sacred Flames" publicationId="d0df-7166-5cd3-89fd" page="69" hidden="false">
+          <description>As long as no HQ choices other than Xiaphas Jurr and Nârik Dreygur are included in the same Detachment, Cassian Dracos Reborn may be selected as the army’s Warlord. If selected as the army’s Warlord, Cassian Dracos must use the Bloody-handed Warlord Trait.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="6ece-7164-dbee-3061" name="Ferromantic Deflector" hidden="false" targetId="7884-e18a-16ee-068c" type="profile"/>
+        <infoLink id="4422-073c-8668-3dec" name="Loyalist" hidden="false" targetId="d1de-a45d-2b9b-c878" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="916e-0f42-97aa-25fe" name="Dreadnought Unit-type:" hidden="false" targetId="4280-4963-02b5-e31d" primary="true"/>
+        <categoryLink id="0c0c-563a-ed06-8691" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d117-7fc5-33a2-4154" name="Dreadnought Drop Pod" hidden="false" collective="false" import="true" targetId="1ffe-82e4-12db-538d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44e0-239f-a680-be05" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5aba-a608-15bd-4f60" name="Gravis Power Fist" hidden="false" collective="false" import="true" targetId="08be-6994-6a63-6279" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="652f-c361-2357-6146" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0079-fd3a-fff2-3bee" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d5bf-75a0-e2fb-d3fc" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="In-built Dragon&apos;s Breath Heavy Flamer"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f87d-ef46-f05f-1f80" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18bc-321e-7b08-9604" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="7e30-977a-51dc-f2f3" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3766-ea98-0aa7-62d0" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1b79-1951-5a63-4b9e" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3760-204e-444c-1044" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25a2-7a52-632a-6b2c" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f806-8a4e-d0d6-beaa" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="03be-5d55-d05a-771d" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e337-8239-5e92-7f5f" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="460a-6563-bdf2-e867" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="edd3-222c-f736-b708" name="Bloody-handed" hidden="false" collective="false" import="true" targetId="2b87-826d-22a1-682c" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8647-cc90-e032-1db0" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c914-7ec8-07f4-3031" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="310.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="61a2-7005-1e6c-c08e" name="Hexagrammaton Choice:" hidden="true" collective="false" import="true">
