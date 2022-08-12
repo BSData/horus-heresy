@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="8" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="9" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 18th, 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" publicationDate="June 18th, 2022"/>
@@ -388,6 +388,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
         <infoLink id="48c5-0237-0444-5170" name="Massive Sub-type" hidden="false" targetId="009e-1748-1af2-06e1" type="rule"/>
       </infoLinks>
     </categoryEntry>
+    <categoryEntry id="fa00-64ef-f48c-11ee" name="Options:" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
@@ -503,6 +504,15 @@ Conversely, if an Independent Character joins a unit after that unit has been th
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="15dd-ba85-599e-d215" name="Expanded Army List Profiles:" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="3790-e8af-d3e2-0dec" name="Exemplary Option" hidden="false" collective="false" import="true" targetId="a149-55c5-23a1-9236" type="selectionEntryGroup"/>
+        <entryLink id="e0e7-c67d-a672-77e3" name="Legacy Option" hidden="false" collective="false" import="true" targetId="58be-66fe-3385-cf9c" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
@@ -6386,6 +6396,50 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="58be-66fe-3385-cf9c" name="Legacy Option" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e196-9f62-2db3-4814" name="Legacy Units" publicationId="d0df-7166-5cd3-89fd" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a153-731e-d815-ff40" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83e1-20de-6cb4-1e59" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="d344-d97b-4687-8a62" name="Legacy Units On" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c377-6094-14e7-931d" name="Legacy Units Off" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="a149-55c5-23a1-9236" name="Exemplary Option" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9149-0b99-5a42-de1d" name="Exemplary Battles" publicationId="09b3-d525-cdea-260c" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85ed-bdad-e61d-dcdb" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cea4-7f7f-3de0-f765" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="8d56-d960-0687-7fee" name="Exemplary Units On" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="82e1-7558-ff71-035f" name="Exemplary Units Off" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
