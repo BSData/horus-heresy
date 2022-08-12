@@ -1213,6 +1213,18 @@
         <categoryLink id="62e1-8798-aad1-8010" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="c893-4d82-d18b-d259" name="Lord Chaplain Nomus Rhy&apos;Tan" hidden="false" collective="false" import="true" targetId="20d8-7781-988f-ed0d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6f34-b7b5-cb25-4532" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="2d02-5737-ca63-1dd8" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="45af-1d20-21eb-0256" name="Xiaphas Jurr" hidden="false" collective="false" import="true" targetId="4941-189b-5d8c-5ea5" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b6c5-41ed-88c7-94f2" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="f96d-9a73-060f-9fa4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="51e5-c28f-d9dd-5e52" name="Fulgrim" hidden="true" collective="false" import="true" type="unit">
@@ -19661,6 +19673,50 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="d00a-92fb-20de-35b9" name="Legion Specific Upgrades" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b562-f21d-22fa-88c2" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd11-dbe2-b9dc-85d4" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="8a3b-dec1-94e0-bb91" name="Master-craft one weapon" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0d6-51a9-ec33-1c11" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="384f-ef31-f641-8d6a" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="4c2d-a2b1-7cb5-bd43" name="Mantle of the Elder Drake" hidden="false" collective="false" import="true" targetId="bba6-42e4-5147-fe4f" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="77d9-9860-5112-d63c" name="Dragonscale Shield" hidden="false" collective="false" import="true" targetId="489d-88d0-a0d8-b3e6" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69a2-2a9d-00a6-4381" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="bb7b-00f9-bae0-5d56" name="May exchange the Bolt Pistol for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="cbe3-deba-8d71-041b">
@@ -20137,6 +20193,52 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
               </modifiers>
             </infoLink>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="47eb-cec4-c597-9997" name="Legion Specific Upgrades" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d589-7d71-119a-7f2c" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52ed-ea66-131a-7a24" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="2058-f4bb-59f3-5ef6" name="Master-craft one weapon" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db65-a245-f439-34e3" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="fcaf-71de-a4ce-10f7" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="5321-cfa8-9ff2-dd6b" name="Mantle of the Elder Drake" hidden="false" collective="false" import="true" targetId="bba6-42e4-5147-fe4f" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="04e9-a9b2-8a9b-8528" name="Dragonscale Shield" hidden="false" collective="false" import="true" targetId="489d-88d0-a0d8-b3e6" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa01-476b-d0b1-1e06" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <entryLinks>
             <entryLink id="5aba-6e0b-db50-0d75" name="Grenade Harness" hidden="false" collective="false" import="true" targetId="251a-860d-2c4d-62cc" type="selectionEntry">
               <constraints>
@@ -20241,6 +20343,52 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
               </modifiers>
             </infoLink>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="759c-e78d-2bd7-cb28" name="Legion Specific Upgrades" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b9b-2f47-4f02-770f" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b077-e07d-7a60-b8cf" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="09ff-5a43-77d8-945e" name="Master-craft one weapon" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef7f-97c4-28c1-be70" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="55af-b593-235d-874f" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="9fda-39a0-42b4-5916" name="Mantle of the Elder Drake" hidden="false" collective="false" import="true" targetId="bba6-42e4-5147-fe4f" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="83bb-1997-2408-d379" name="Dragonscale Shield" hidden="false" collective="false" import="true" targetId="489d-88d0-a0d8-b3e6" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02b5-b236-b0f8-17fb" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <entryLinks>
             <entryLink id="5951-490f-9130-b77a" name="Grenade Harness" hidden="false" collective="false" import="true" targetId="251a-860d-2c4d-62cc" type="selectionEntry">
               <constraints>
@@ -20465,6 +20613,47 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
             <infoLink id="4383-5ee3-a507-d62e" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
             <infoLink id="21e0-a06e-2f9e-0b2d" name="Legiones Consularis" hidden="false" targetId="dcc5-b4e0-35c5-0c17" type="rule"/>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="f268-5456-6a27-bc12" name="Legion Specific Upgrades" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e592-dd9c-d446-1aa7" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9461-4e81-9040-f2d5" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="0837-05b1-a9e3-714d" name="Master-craft one weapon" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4007-8d5f-2ead-90c9" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="e72b-ae40-9781-6169" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="d49e-d268-ef28-0016" name="Dragonscale Shield" hidden="false" collective="false" import="true" targetId="489d-88d0-a0d8-b3e6" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="943b-a1b3-4edd-62e7" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="a659-c5c9-2a20-a3e0" name="May exchange the Bolt Pistol for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="b65c-f5fa-599c-cba1">
               <modifiers>
@@ -42917,6 +43106,304 @@ part of a close combat attack.</description>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="310.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="20d8-7781-988f-ed0d" name="Lord Chaplain Nomus Rhy&apos;Tan" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8cf7-d353-bf83-2ae6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5ffb-f869-d0e1-1699" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="6818-5722-3bbf-1808" name="Lord Chaplain Nomus Rhy&apos;Tan" publicationId="d0df-7166-5cd3-89fd" page="70" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
+            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
+            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+            <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+            <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+            <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="c0f6-9477-25fe-0bda" name="Master of the Legion" hidden="false" targetId="c772-87ea-d49c-c7ba" type="rule"/>
+        <infoLink id="0373-5104-6694-e1b9" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+        <infoLink id="ac47-4e0c-cd4f-b272" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
+        <infoLink id="fb04-cc99-28c6-ac15" name="Hatred (X)" hidden="false" targetId="dc0b-fe69-6b71-e0a4" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Hatred (Everything)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7007-70e1-6263-ce40" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="3b56-dc86-1ffb-8808" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="99eb-f8ac-4ba7-4915" name="Darkstar Falling" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8e0-464c-4423-55be" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2337-32dc-ba38-444c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b777-f4a7-d5d6-fadc" name="Darkstar Falling" publicationId="d0df-7166-5cd3-89fd" page="70" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two handed, Unwieldy</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="1930-ddfb-8eed-d395" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+            <infoLink id="9a08-6948-350c-bb1f" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="fdbd-bcc4-94dd-9714" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3273-0d2d-c5cd-bfc0" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="140f-b298-49c1-0979" name="Warlord: Keeper of the Keys" publicationId="d0df-7166-5cd3-89fd" page="70" hidden="false">
+              <description>Any model with the Dreadnought Unit Type and the Legiones Astartes (Salamanders) special rule within 6&quot; of a Warlord with this Trait may add +2&quot; to their Charge Distance. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Shooting phase as long as the Warlord has not been removed as a casualty.</description>
+            </rule>
+          </rules>
+        </entryLink>
+        <entryLink id="d321-e9cf-42e9-8520" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="34c4-db99-db36-0f2a" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d21-9a6e-5ac0-1d74" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ede8-2b42-6878-308b" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="2e40-44ee-0080-38f7" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9879-5b75-be52-cdf4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23da-e327-7884-7e60" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="af30-b022-ee64-4b7f" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3555-199d-cb03-d5ce" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e610-de15-9ba7-0d3c" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="c85e-8f56-8ab5-4b48" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61ae-8275-9f98-16c5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe0a-32dc-6732-bc43" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f9fc-1be8-b89f-4525" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ea0-581b-4dde-a483" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="543b-925d-3ea2-24ef" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e0b8-af76-1b44-f74b" name="Iron Halo" hidden="false" collective="false" import="true" targetId="b081-bf3c-f43d-4bd5" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="472e-7742-595b-473c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="287d-cf72-23b6-31d5" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f7e6-b2ba-ee71-fcfc" name="Mantle of the Elder Drake" hidden="false" collective="false" import="true" targetId="bba6-42e4-5147-fe4f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="657c-3074-6224-935d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="838f-6efd-e5eb-bde6" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="215.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bba6-42e4-5147-fe4f" name="Mantle of the Elder Drake" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="89bc-482d-3f70-fe29" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="94f4-e39c-b136-cfb3" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="98d0-7cd8-1fe3-7a2d" name="Mantle of the Elder Drake" publicationId="817a-6288-e016-7469" page="313" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Mantle of the Elder Drake grants the Battle-hardened (1) special rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f98f-d587-2593-5fed" name="Battle-Hardened (X)" hidden="false" targetId="5c3b-ed0b-4ad0-d547" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Battle Hardened (1)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4941-189b-5d8c-5ea5" name="Xiaphas Jurr" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8cf7-d353-bf83-2ae6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="08da-dac3-7231-f3f1" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="06f1-61e9-5e0d-b46a" name="Xiaphas Jurr" publicationId="d0df-7166-5cd3-89fd" page="71" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
+            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
+            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+            <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+            <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="3c16-1155-d9a3-777d" name="Prophet of the Flame" publicationId="d0df-7166-5cd3-89fd" page="71" hidden="false">
+          <description>Xiaphas Jurr has the Pyromancy discipline but counts as having Leadership 7 for the purposes of making Psychic checks.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="5138-64b5-9837-37e0" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+        <infoLink id="8817-0f46-a38a-a21e" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
+        <infoLink id="9f2f-fff4-fb86-61e7" name="Hatred (X)" hidden="false" targetId="dc0b-fe69-6b71-e0a4" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Hatred (Everything)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e7b6-5207-d8a0-cc63" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="527e-b228-1d94-635d" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="7282-8176-e639-6935" name="Ignatus" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2c8-bdf9-13b0-dbfd" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9764-631e-9da4-b841" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="ad7f-ed76-16aa-b0dc" name="Ignatus" publicationId="d0df-7166-5cd3-89fd" page="71" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Master-crafted, Blind</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="20fb-8431-7d6b-93a0" name="Blind" hidden="false" targetId="d836-747d-07d6-2b63" type="rule"/>
+            <infoLink id="b37e-c11b-ed86-69ec" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1663-ee2f-6b7e-6eaa" name="The Burning Halo" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e16-9930-f5cf-6160" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce9d-2075-1056-2767" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="52d8-3904-d165-03f2" name="The Burning Halo" publicationId="d0df-7166-5cd3-89fd" page="71" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Burning Halo provides a 4+ Invulnerable Save, and automatically inflicts D3 Hits on the target unit when making an Overwatch Reaction, resolved at Strength 4, AP -.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="1873-5fae-c642-f904" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ec8-b465-7bd0-71ea" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3560-e52c-3cf1-4f9a" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="ad19-4b05-ca8b-b5d3" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f0a-2f7f-2743-72aa" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a44-97b5-d26c-4880" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d779-a4c0-b058-bf15" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="819b-77f8-938b-ed8c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d1a-c051-62f1-d674" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="103b-a323-5062-ba2e" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d324-fab5-a73d-d1a8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eee5-4fdb-5004-75cd" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b550-2e25-131c-f532" name="Dragonscale Shield" hidden="false" collective="false" import="true" targetId="489d-88d0-a0d8-b3e6" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7902-abf9-f52a-8be6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92f8-2d4f-3a58-c709" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="35b1-a099-7d76-5f83" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e2d-f2f3-61f0-11fd" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="1851-5b0a-329e-d055" name="Warlord: Beacon of Hope" hidden="false">
+              <description>As long as Xiaphas Jurr has not been removed from play, is in Reserve or Embarked upon a model with the Transport Sub-type, a single friendly unit comprised of models with the Legiones Astartes (Salamanders) special rules may choose to use Xiaphas Jurr’s unmodified Leadership value instead of their own, when making a Morale check or Pinning test in any turn.</description>
+            </rule>
+          </rules>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="145.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
