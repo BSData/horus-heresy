@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="8" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="7" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 18th, 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" publicationDate="June 18th, 2022"/>
@@ -1234,137 +1234,280 @@ Conversely, if an Independent Character joins a unit after that unit has been th
       </costs>
     </selectionEntry>
     <selectionEntry id="0d1c-227e-a3f8-cd63" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="b1d7-11cb-4c84-e5fd" name="Meltagun (Secondary)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Melta), One Shot</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="de57-acd3-fb12-e8e9" name="Bolter (Primary)" hidden="false" targetId="ace5-c6fe-e205-07d1" type="profile"/>
-        <infoLink id="831b-9477-56b1-ff35" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Armourbane (Melta)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="4044-e337-f6d9-6af6" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
-      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="5802-2997-7df7-c667" name="Bolter (Primary)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a42-845e-25e9-5661" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6d7-c319-b5c6-cc22" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="4a1f-485a-efeb-b1ac" name="Bolter (Primary)" hidden="false" targetId="ace5-c6fe-e205-07d1" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f47b-bf0d-0541-c338" name="Meltagun (Secondary)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b4a-3449-7a89-867b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="321d-a019-b4c3-21f5" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="fec9-6a14-0a52-621e" name="Meltagun (Secondary)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Melta), One Shot</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="18e0-4575-c5cd-6324" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Armourbane (Melta)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="68a2-2ef6-6583-efb1" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cc98-8596-c713-516c" name="Magna Combi-Weapon - Plasma Gun" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="7c1f-9fd7-99c5-b3ac" name="Plasma Gun (Secondary)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Breaching (4+), Gets Hot, One Shot</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="325e-3b2d-2e6d-350e" name="Bolter (Primary)" hidden="false" targetId="ace5-c6fe-e205-07d1" type="profile"/>
-        <infoLink id="db2d-8a33-5c54-80f6" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Breaching (4+)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="e0f6-8719-f2da-e916" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
-        <infoLink id="b916-01ec-36f7-4c1f" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
-      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="fce5-ae2c-346c-8d27" name="Bolter (Primary)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0659-90fd-1b44-364d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65c6-e26c-7e79-0286" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="d282-9fcb-9fa4-5d56" name="Bolter (Primary)" hidden="false" targetId="ace5-c6fe-e205-07d1" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8ee3-1dbf-b5a8-74a3" name="Plasma Gun (Secondary)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ae8-6d6e-461d-bfaf" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8197-8587-0e12-6cee" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="48ce-1fac-f9c0-6110" name="Plasma Gun (Secondary)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Breaching (4+), Gets Hot, One Shot</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="8dec-0a4c-aad6-9eef" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Breaching (4+)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="be39-a96c-606d-c370" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+            <infoLink id="d781-8d8b-9d49-4534" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1d05-f467-b0aa-88b2" name="Magna Combi-Weapon - Disintegrator" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="ebb6-18b7-561a-a720" name="Disintegrator (Secondary)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Instant Death, Gets Hot, One Shot</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="1ba4-225d-3684-1654" name="Bolter (Primary)" hidden="false" targetId="ace5-c6fe-e205-07d1" type="profile"/>
-        <infoLink id="c9a8-e582-be23-4976" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
-        <infoLink id="c38e-4540-8a5b-9e74" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
-        <infoLink id="8733-eec9-75d8-e139" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
-      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="329f-976a-de55-f41b" name="Bolter (Primary)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d45e-c49a-70a5-ec94" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f691-c29a-f763-8e25" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="1868-d556-c708-d363" name="Bolter (Primary)" hidden="false" targetId="ace5-c6fe-e205-07d1" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4ad2-e057-486a-ada6" name="Disintegrator (Secondary)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a27d-32f6-7f9b-0a30" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16fb-541f-2ece-8e9d" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="6c9b-2254-dd99-85f7" name="Disintegrator (Secondary)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Instant Death, Gets Hot, One Shot</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="2380-420c-f07f-828d" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+            <infoLink id="1742-4fbf-7c68-dde3" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+            <infoLink id="6b4e-ec44-8a04-1d77" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="34c4-db99-db36-0f2a" name="Minor Combi-Weapon - Flamer" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="ebe4-5e5f-0c3d-08ea" name="Flamer (Secondary)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="c640-b368-64ef-46eb" name="Bolter (Primary)" hidden="false" targetId="ace5-c6fe-e205-07d1" type="profile"/>
-        <infoLink id="f1ea-aaa1-f7b1-96bb" name="Template Weapons" hidden="false" targetId="5e0e-88e6-db81-5a70" type="rule"/>
-      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="af40-7cac-918b-0ee7" name="Bolter (Primary)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94ce-1755-26e4-acca" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5b7-c800-403c-8e7e" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="bf59-ccf1-a388-48b0" name="Bolter (Primary)" hidden="false" targetId="ace5-c6fe-e205-07d1" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9a23-f724-ce24-967f" name="Flamer (Secondary)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d080-03ee-c240-7beb" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61e4-3247-c1ca-4739" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="9976-abe4-ab53-acdf" name="Flamer (Secondary)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="697d-eea2-e7fd-8cb6" name="Template Weapons" hidden="false" targetId="5e0e-88e6-db81-5a70" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7e5c-3d25-5c88-32e0" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="ef29-8682-0c6f-43ea" name="Volkite Charger (Secondary)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">15&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Deflagrate</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="c005-d40f-1886-0e90" name="Bolter (Primary)" hidden="false" targetId="ace5-c6fe-e205-07d1" type="profile"/>
-        <infoLink id="2f6b-db86-19b5-c7f6" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
-      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="64a2-ce6d-6fc9-104e" name="Bolter (Primary)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aeb8-1b41-ce76-26ca" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97e9-8636-71e2-92da" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="667e-cf23-f650-a3e5" name="Bolter (Primary)" hidden="false" targetId="ace5-c6fe-e205-07d1" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9197-d25e-cc9f-d492" name="Volkite Charger (Secondary)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8806-60b5-670c-ebcf" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9d7-24a1-bc01-adab" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8b69-5a39-5f38-61c7" name="Volkite Charger (Secondary)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">15&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Deflagrate</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="67fa-0efa-ae43-93c3" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="aa3c-f5a5-9ce9-1497" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="71e6-ddb0-279a-7101" name="Grenade launcher - Krak (Secondary)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="5bff-6214-348d-0536" name="Grenade launcher - Frag (Secondary)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Blast (3&quot;), Pinning</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="e6d4-7d81-b610-6358" name="Bolter (Primary)" hidden="false" targetId="ace5-c6fe-e205-07d1" type="profile"/>
-        <infoLink id="ed62-62b5-171c-155a" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
-        <infoLink id="c8b8-9218-cf90-6751" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
-      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="5754-890b-f99c-2584" name="Bolter (Primary)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a09-fb7e-5724-57d4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4cd-17c5-3963-2e79" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="c74d-65af-928d-ac42" name="Bolter (Primary)" hidden="false" targetId="ace5-c6fe-e205-07d1" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="df94-9fc8-70a6-24ea" name="Grenade Launcher - Frag (Secondary)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f2d-ac23-feca-8ae7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30d8-ab2e-8dea-b576" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="25f0-61fd-a8da-64e0" name="Grenade launcher - Frag (Secondary)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Blast (3&quot;), Pinning</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="ae3e-608e-7cad-8c9a" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+            <infoLink id="94ed-534e-c204-ceb5" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6896-8cca-bc55-cadd" name="Grenade Launcher - Krak (Secondary)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa2e-296f-ca66-85cb" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6b8-7824-7919-daab" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="d225-edb4-8ffc-636d" name="Grenade launcher - Krak (Secondary)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
@@ -4949,8 +5092,19 @@ All models in a unit under the effect of this Hexagrammaton Unit Sub-type, other
         </selectionEntry>
         <selectionEntry id="5f54-457a-fbb9-6730" name="   IV: Iron Warriors" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
-            <rule id="fc44-1c30-d724-14cf" name="Wrack &amp; Ruin" hidden="false">
-              <description>When a model with this special rule makes a Shooting Attack or Melee attack targeting a model with the Dreadnought, Automata, Vehicle or Building Unit Type it gains +1 to the Strength of that attack.</description>
+            <rule id="50d0-9314-636f-0b0b" name="The Armoury of the Iron Warriors" hidden="false">
+              <description>• A single Legion Praetor, Legion Cataphractii Praetor or Legion Tartaros Praetor with the Legiones Astates (Iron Warriors) special rule in any given Detachment may be upgraded toa Warsmith for +20 points. A Warsmith gains a conrtex controller and Servo-arm as well as the Master of Automata and Battlesmith (3+) special rules. A model upgraded to a Warsmith may not be given a Legions Spatha combat bike, Legion Scimitar jetbke or Legion Warhawk jump pack.
+
+• Any model with the Legiones Astartes (Iron Warriors) special rule and the Character Sub-type may exchange a power weapon for a Graviton Mace or exchange a thunder hammer for a Graviton crusher for no additional points cost. Additionally, any model with the Legiones Astartes (Iron Warriors) special rule and the Dreadnought Unit Type may exchange a Gravis power fist for a Graviton Maul for +15 points per weapon (This does not replace or remove the built in weapon included with the Gravis Power Fist)
+
+• Any model with the Legiones Astartes (Iron Warriors) and Independent Character special rules may exchange a bolt pistol for a shrapnel pistol or a bolter for a shrapnel bolter for no additional points cost.
+
+• Any unit composed entirely of models with the Legiones Astartes (Iron Warriors) special rule may upgrade all bolt pistols in the unit to shrapnel pistols, and/or all bolters for shrapnel bolters and/or all heavy bolters for shrapnel cannons for a cost of +2 points per weapon.
+
+•Any unit composed entirely of models with the Vehicle Unit Type and the Legiones Astartes (Iron Warriors) special rule may exchange all heavy bolters in the unit for shrapnel cannons for +2 points per weapon and any unit composed entirely of models with the Dreadnought Unit Type and the Legiones Astartes (Iron Warriors) special rule may exchange all Gravis bolt cannons for Gravis shrapnel cannons for +5 points per weapon.</description>
+            </rule>
+            <rule id="fc44-1c30-d724-14cf" name="Legiones Astartes (Iron Warriors) " hidden="false">
+              <description>Wrack &amp; Ruin: When a model with this special rule makes a Shooting Attack or Melee attack targeting a model with the Dreadnought, Automata, Vehicle or Building Unit Type it gains +1 to the Strength of that attack.</description>
             </rule>
           </rules>
           <costs>
@@ -6068,7 +6222,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="3377-34f2-e8f4-e84c" name=" XVIII: Salamanders" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="3377-34f2-e8f4-e84c" name=" XVIII: Salamanders (Placeholder)" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6081,22 +6235,15 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6ba3-a81b-5760-72e6" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="7875-539f-85ce-34f6" name="The Weight of Duty" hidden="true" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
+            <selectionEntry id="7875-539f-85ce-34f6" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cafc-dd05-e93a-1d7a" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="08a7-bc5e-6472-02e7" type="max"/>
               </constraints>
               <profiles>
-                <profile id="414f-7d50-f292-a38d" name="The Weight of Duty" publicationId="817a-6288-e016-7469" page="309" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="414f-7d50-f292-a38d" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait, and all models in any unit he has joined, gain a bonus of +1 to their Strength Characteristic when locked in combat with any enemy unit that includes one or more models with any variant of the Fear special rule. Furthermore, this Warlord and any models in a unit he has joined composed entirely of models with the Legiones Astartes (Salamanders) special rule gain the Hatred (Traitors) special rule while the Warlord is part of the unit. An army whose Warlord has this Warlord Trait may not include Legion Destroyer Assault Squads, Legion Mortalis Destroyer Squads or Legion Centurions with the Moritat Consul upgrade that also have the Legiones Astartes (Salamanders) special rule. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player&apos;s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6104,22 +6251,15 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="452c-a94f-9574-1f47" name="Redemption of Flames" hidden="true" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
+            <selectionEntry id="452c-a94f-9574-1f47" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8c26-e0ab-81df-3a08" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d7d6-3f0f-d0f6-cdf3" type="max"/>
               </constraints>
               <profiles>
-                <profile id="69cf-d2ba-9d58-d998" name="Redemption of Flames" publicationId="817a-6288-e016-7469" page="309" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="69cf-d2ba-9d58-d998" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait, and all models in a unit he has joined with the Legiones Astartes (Salamanders) special rule, gains a bonus of +1 for all To Wound rolls or Armour Penetration rolls made for Flame or Volkite weapons that are used by those units to make Shooting Attacks. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player&apos;s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6127,15 +6267,15 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6ebb-9611-037a-a786" name="Promethean Will" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="6ebb-9611-037a-a786" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1835-7ba2-8d09-4b59" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3a13-93cd-4031-c6d6" type="max"/>
               </constraints>
               <profiles>
-                <profile id="3f26-a29c-d250-8318" name="Promethean Will" publicationId="817a-6288-e016-7469" page="309" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="3f26-a29c-d250-8318" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait, and all models in any friendly unit composed entirely of models with the Legiones Astartes (Salamanders) special rule that is part of the same Detachment, gains a bonus of +1 to their Leadership Characteristic when making Pinning Tests (to a maximum of 11) and reduce the effects of the Fear special rule by 1 (note that this means the Fear(1) special rule has no effect on models granted this benefit, and negative modifiers conferred by other variants of the Fear special rule are reduced in effect by 1). An army whose Warlord has this trait may not include Legion Destroyer Assault Squads, Legion Mortalis Destroyer Squads or Legion Centurions with the Moritat Consul upgrade that also have the Legiones Astartes (Salamanders) special rule. In addition, an army whose Warlord has this trait may make an additional Reaction during the opposing player&apos;s Shooting phase as long as the Warlord has not been removed as a causalty.</characteristic>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
                   </characteristics>
                 </profile>
               </profiles>
