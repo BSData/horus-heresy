@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="9" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="10" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 18th, 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" publicationDate="June 18th, 2022"/>
@@ -389,10 +389,19 @@ Conversely, if an Independent Character joins a unit after that unit has been th
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="fa00-64ef-f48c-11ee" name="Options:" hidden="false"/>
+    <categoryEntry id="f75a-d5c1-59ba-5c5a" name="Character" hidden="false"/>
+    <categoryEntry id="e8ed-ca49-ad6d-5688" name="Expanded Army Lists" hidden="false">
+      <rules>
+        <rule id="e6d4-65d6-66af-32da" name="Expanded Army Lists" hidden="false">
+          <description>Some events/group choose not to allow official rules in &quot;Legacies of The Age of Darkness&quot; download pdf (which are not playtest). This option is included to make it easier for users for those events/groups.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
       <categoryLinks>
+        <categoryLink id="d65e-4a0a-fa1a-7ec6" name="Explanded Army Lists" hidden="false" targetId="e8ed-ca49-ad6d-5688" primary="false"/>
         <categoryLink id="17a5-4c80-0c5d-df4d" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7ab6-7d01-ec54-52df" type="min"/>
@@ -405,6 +414,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="84d6-d8d5-49ec-27fb" type="min"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="609a-e750-e92c-da9f" name="Retinue:" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="false"/>
         <categoryLink id="1375-8457-86ca-67dd" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4fb9-8be5-6fb5-0869" type="max"/>
@@ -441,7 +451,6 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1c0d-0ff5-e468-703c" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="609a-e750-e92c-da9f" name="Retinue:" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="d4f2-6da5-b6de-06ec" name="Allied Detachment" hidden="false">
@@ -509,6 +518,13 @@ Conversely, if an Independent Character joins a unit after that unit has been th
       </costs>
     </selectionEntry>
     <selectionEntry id="15dd-ba85-599e-d215" name="Expanded Army List Profiles:" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b27-8da6-1ace-a81d" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e555-35cf-f840-e444" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="ec0a-62f9-971f-1f1e" name="New CategoryLink" hidden="false" targetId="e8ed-ca49-ad6d-5688" primary="true"/>
+      </categoryLinks>
       <entryLinks>
         <entryLink id="3790-e8af-d3e2-0dec" name="Exemplary Option" hidden="false" collective="false" import="true" targetId="a149-55c5-23a1-9236" type="selectionEntryGroup"/>
         <entryLink id="e0e7-c67d-a672-77e3" name="Legacy Option" hidden="false" collective="false" import="true" targetId="58be-66fe-3385-cf9c" type="selectionEntryGroup"/>
@@ -3679,14 +3695,14 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Murderous Strike (5+), Specialist Weapon</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Murderous Strike (6+), Specialist Weapon</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="8a45-89c7-57d1-2e8d" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Murderous Strike (5+)"/>
+            <modifier type="set" field="name" value="Murderous Strike (6+)"/>
           </modifiers>
         </infoLink>
         <infoLink id="5a15-43f8-d36a-d8db" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
@@ -6406,7 +6422,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
     </selectionEntryGroup>
     <selectionEntryGroup id="58be-66fe-3385-cf9c" name="Legacy Option" hidden="false" collective="false" import="true">
       <selectionEntryGroups>
-        <selectionEntryGroup id="e196-9f62-2db3-4814" name="Legacy Units" publicationId="d0df-7166-5cd3-89fd" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="e196-9f62-2db3-4814" name="Legacy Units" publicationId="d0df-7166-5cd3-89fd" hidden="false" collective="false" import="true" defaultSelectionEntryId="d344-d97b-4687-8a62">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a153-731e-d815-ff40" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83e1-20de-6cb4-1e59" type="min"/>
@@ -6428,7 +6444,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
     </selectionEntryGroup>
     <selectionEntryGroup id="a149-55c5-23a1-9236" name="Exemplary Option" hidden="false" collective="false" import="true">
       <selectionEntryGroups>
-        <selectionEntryGroup id="9149-0b99-5a42-de1d" name="Exemplary Battles" publicationId="09b3-d525-cdea-260c" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="9149-0b99-5a42-de1d" name="Exemplary Battles" publicationId="09b3-d525-cdea-260c" hidden="false" collective="false" import="true" defaultSelectionEntryId="8d56-d960-0687-7fee">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85ed-bdad-e61d-dcdb" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cea4-7f7f-3de0-f765" type="min"/>
