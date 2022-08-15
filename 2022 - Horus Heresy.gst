@@ -402,7 +402,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
       <categoryLinks>
-        <categoryLink id="d65e-4a0a-fa1a-7ec6" name="Explanded Army Lists" hidden="false" targetId="e8ed-ca49-ad6d-5688" primary="false"/>
+        <categoryLink id="d65e-4a0a-fa1a-7ec6" name="Expanded Army Lists" hidden="false" targetId="e8ed-ca49-ad6d-5688" primary="false"/>
         <categoryLink id="17a5-4c80-0c5d-df4d" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7ab6-7d01-ec54-52df" type="min"/>
