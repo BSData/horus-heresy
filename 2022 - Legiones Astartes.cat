@@ -6166,9 +6166,9 @@ The Instrument has two profiles. Pick which profile is used every time the weapo
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6988-e6e1-7b49-7430" name="Phosphex Shell (Arquitor Morbus Bombard)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6988-e6e1-7b49-7430" name="Phosphex Shell (Morbus Bombard)" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="edf3-bd46-18e3-896e" name="Phosphex Shell (Arquitor Morbus Bombard)" publicationId="a716-c1c4-7b26-8424" page="135" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="edf3-bd46-18e3-896e" name="Phosphex Shell (Morbus Bombard)" publicationId="a716-c1c4-7b26-8424" page="135" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -10654,6 +10654,9 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="4625-3a24-56db-4c25" name="Reavers" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -26935,7 +26938,6 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
           </constraints>
         </entryLink>
         <entryLink id="884f-7f68-fc53-2d96" name="Phosphex Shell (Arquitor Morbus Bombard)" hidden="true" collective="false" import="true" targetId="6988-e6e1-7b49-7430" type="selectionEntry">
-          <comment>This entry is hidden until I figure out a way to reference a certain Death Guard character outside of this catalog</comment>
           <modifiers>
             <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="20.0">
               <repeats>
@@ -26943,12 +26945,10 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
               </repeats>
             </modifier>
             <modifier type="set" field="hidden" value="false">
-              <comment>This entry is hidden until I figure out a way to reference a certain Death Guard character outside of this catalog</comment>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
                     <condition field="selections" scope="9e46-a480-c382-c49c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7102-6014-a965-bfd9" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="900.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -34314,19 +34314,13 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
               </constraints>
             </entryLink>
             <entryLink id="96d7-71a4-b02d-eeb4" name="Phosphex Canister Shot (Rapier)" hidden="true" collective="false" import="true" targetId="9bbe-701f-0a83-6ce8" type="selectionEntry">
-              <comment>This entry is hidden until I figure out a way to reference a certain Death Guard character outside of this catalog</comment>
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="20.0">
                   <repeats>
                     <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="925b-d3f3-4d4c-fe67" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
-                <modifier type="set" field="hidden" value="false">
-                  <comment>This entry is hidden until I figure out a way to reference a certain Death Guard character outside of this catalog</comment>
-                  <conditions>
-                    <condition field="selections" scope="force" value="500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="atLeast"/>
-                  </conditions>
-                </modifier>
+                <modifier type="set" field="hidden" value="false"/>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="084a-11e4-5f5f-d75e" type="max"/>
@@ -40762,6 +40756,28 @@ Special rules A Legion Warmonger Consul gains the Tip of the Spear special rule.
           </costs>
         </selectionEntry>
         <selectionEntry id="9335-7da8-087e-30de" name="Siege Breaker (Work in Progress)" publicationId="a716-c1c4-7b26-8424" page="112" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="428f-b139-bec4-f9dc" name="Art of Destruction" hidden="false">
+              <description>At the start of each Shooting phase, the controlling player may nominate one friendly unit with at least one model within 6&quot; of a model with this special rule. That unit gains the benefits of the Sunder special rule for the duration of that Shooting phase.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="dd00-9a24-bad4-aff4" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink id="a32b-9912-e88e-216e" name="Nuncio-Vox" hidden="false" collective="false" import="true" targetId="005e-aae6-ddac-bb45" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3f18-48a7-a2f3-901a" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ff71-829a-5b19-52d1" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="dfc5-2b89-75f7-5125" name="Phosphex Bomb" hidden="false" collective="false" import="true" targetId="4188-13ff-cb03-109e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e45f-fab1-c527-c8be" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f77c-d683-73ce-cc79" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45.0"/>
           </costs>
