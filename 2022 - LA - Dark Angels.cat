@@ -1409,7 +1409,7 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cf23-fd3a-15a0-7347" name="Excindio Battle-automata (Placeholders 2)" publicationId="d0df-7166-5cd3-89fd" page="54" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="cf23-fd3a-15a0-7347" name="Excindio Battle-automata" publicationId="d0df-7166-5cd3-89fd" page="54" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -1449,6 +1449,20 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
           </constraints>
           <profiles>
             <profile id="4d8a-177c-581b-9bbf" name="Excindio Battle-automata" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <modifiers>
+                <modifier type="decrement" field="f111-2ce5-dd12-d6b0" value="1">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="26d5-4bc6-d3db-bffc" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="76c5-fd1e-69a0-1c6f" type="atLeast"/>
+                        <condition field="selections" scope="26d5-4bc6-d3db-bffc" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1c73-9f7e-7e55-7f3e" type="atLeast"/>
+                        <condition field="selections" scope="26d5-4bc6-d3db-bffc" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c1c0-65c6-0693-02c9" type="atLeast"/>
+                        <condition field="selections" scope="26d5-4bc6-d3db-bffc" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="581f-252a-d38e-949c" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Shackled Artificia (Cybertheurgist, Heavy)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
@@ -1463,13 +1477,22 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
                 <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
               </characteristics>
             </profile>
+            <profile id="0f6c-1143-53f6-a1b2" name="Internal Refractor Field" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This model has a 5+ Invulnerable save. In addition, should the model lose its last wound then all models within D6+4&quot; suffer a Str 8 AP - hit.</characteristic>
+              </characteristics>
+            </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="2218-b59e-fc65-c067" name="An Excindio Battle-automata may exchange both an Extinctor power claw and a manipulator armfor one of the following:" hidden="false" collective="false" import="true" defaultSelectionEntryId="ff84-8cc4-3749-b2d8">
+            <selectionEntryGroup id="ea8f-4e7e-9951-04d0" name="An Excindio Battle-automata may exchange both an Extinctor power claw and a manipulator armfor one of the following:" hidden="false" collective="false" import="true" defaultSelectionEntryId="8c09-9769-8fa8-418f">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d29-2527-3d28-f46e" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3785-a08a-20f6-c560" type="max"/>
+              </constraints>
               <selectionEntries>
-                <selectionEntry id="ff84-8cc4-3749-b2d8" name="Extinctor power claw and a manipulator arm" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="8c09-9769-8fa8-418f" name="Extinctor power claw and a manipulator arm" hidden="false" collective="false" import="true" type="upgrade">
                   <profiles>
-                    <profile id="d0e1-2a26-02da-d05d" name="Extinctor power claw and a manipulator arm" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                    <profile id="8cac-b0f4-a732-b4b0" name="Extinctor power claw and a manipulator arm" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
                       <characteristics>
                         <characteristic name="Range" typeId="95ba-cda7-b831-6066"/>
                         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458"/>
@@ -1478,55 +1501,27 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
                       </characteristics>
                     </profile>
                   </profiles>
-                  <selectionEntries>
-                    <selectionEntry id="ac87-d00c-8b77-2e86" name="Extinctor power claw" hidden="false" collective="false" import="true" type="upgrade">
-                      <profiles>
-                        <profile id="cc2a-5c45-b3bb-321f" name="Extinctor power claw" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                          <characteristics>
-                            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
-                            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (2)</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink id="2e87-21cc-623d-dfe7" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
-                          <modifiers>
-                            <modifier type="set" field="name" value="Brutal (2)"/>
-                          </modifiers>
-                        </infoLink>
-                      </infoLinks>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="6c78-cda4-5996-e6fa" name="Manipulator Arm" hidden="false" collective="false" import="true" type="upgrade">
-                      <profiles>
-                        <profile id="ac4b-9c38-a2f3-46e8" name="Manipulator Arm" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                          <characteristics>
-                            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
-                            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Lance</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink id="58dc-7cbf-1a2b-6e11" name="Lance" hidden="false" targetId="3d6b-9e0b-56f0-8a1e" type="rule"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink id="9f43-642f-363b-b350" name="Manipulator Arm" hidden="false" collective="false" import="true" targetId="e2e3-64c6-4820-aa91" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e900-d300-3b94-336e" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0d3-f076-c451-1f7f" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="6276-940e-c459-30a6" name="Extinctor power claw" hidden="false" collective="false" import="true" targetId="919d-b99c-78c3-5732" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="552a-d545-6940-1a0b" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13d7-3077-1cb7-6c85" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="5d5c-f644-c9d5-c856" name="Athanax pattern phosphex canister launcher" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="c1c0-65c6-0693-02c9" name="Athanax pattern phosphex canister launcher" hidden="false" collective="false" import="true" type="upgrade">
                   <profiles>
-                    <profile id="6150-59a8-621b-d471" name="Athanax pattern phosphex canister launcher" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                    <profile id="3e9f-3b8d-a9b5-0a82" name="Athanax pattern phosphex canister launcher" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
                       <characteristics>
                         <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
                         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -1536,27 +1531,27 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink id="c598-0119-a589-bbe5" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+                    <infoLink id="5d19-11c1-fb70-a201" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
                       <modifiers>
                         <modifier type="set" field="name" value="Blast (3&quot;)"/>
                       </modifiers>
                     </infoLink>
-                    <infoLink id="3d21-3c33-5697-964f" name="Lingering Death" hidden="false" targetId="be87-f0e5-7446-972b" type="rule"/>
-                    <infoLink id="4a21-0a68-1b05-8c9f" name="Crawling Fire" hidden="false" targetId="8258-a7af-e4df-531d" type="rule"/>
-                    <infoLink id="ef7b-c6d8-5580-a45c" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
+                    <infoLink id="7927-16b9-1eb3-3b0e" name="Lingering Death" hidden="false" targetId="be87-f0e5-7446-972b" type="rule"/>
+                    <infoLink id="479e-9a86-4b48-6dbb" name="Crawling Fire" hidden="false" targetId="8258-a7af-e4df-531d" type="rule"/>
+                    <infoLink id="fec7-70b8-b27f-00b3" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
                       <modifiers>
                         <modifier type="set" field="name" value="Poisoned (3+)"/>
                       </modifiers>
                     </infoLink>
-                    <infoLink id="f7f2-2caf-7b03-1778" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
+                    <infoLink id="c817-1adc-bd5a-baff" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="70be-d5fe-a8c2-9b14" name="Tyrhenius pattern nerve induction shredder" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="76c5-fd1e-69a0-1c6f" name="Tyrhenius pattern nerve induction shredder" hidden="false" collective="false" import="true" type="upgrade">
                   <profiles>
-                    <profile id="61c6-ab78-0895-1017" name="Tyrhenius pattern nerve induction shredder" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                    <profile id="5cc3-9bdf-f2de-9979" name="Tyrhenius pattern nerve induction shredder" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
                       <characteristics>
                         <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
                         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">1</characteristic>
@@ -1566,13 +1561,13 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink id="ff7f-761a-7401-60bf" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+                    <infoLink id="8143-a1a0-3ec7-1c60" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
                       <modifiers>
                         <modifier type="set" field="name" value="Breaching (4+)"/>
                       </modifiers>
                     </infoLink>
-                    <infoLink id="f803-dbe9-5a1d-d555" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
-                    <infoLink id="ed1a-e8a6-86f9-6e74" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
+                    <infoLink id="904a-91ca-99f3-bb16" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+                    <infoLink id="5b7e-cbec-5ea4-1efe" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
                       <modifiers>
                         <modifier type="set" field="name" value="Poisoned (4+)"/>
                       </modifiers>
@@ -1582,9 +1577,9 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="3cd9-bb78-05b3-7719" name="Magaron pattern atomantic pulse cannon" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="581f-252a-d38e-949c" name="Magaron pattern atomantic pulse cannon" hidden="false" collective="false" import="true" type="upgrade">
                   <profiles>
-                    <profile id="6548-b053-ca55-1a30" name="Magaron pattern atomantic pulse cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                    <profile id="f715-7fee-6082-1c6e" name="Magaron pattern atomantic pulse cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
                       <characteristics>
                         <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
                         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
@@ -1594,16 +1589,16 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink id="ee7a-503d-c105-9071" name="Lance" hidden="false" targetId="3d6b-9e0b-56f0-8a1e" type="rule"/>
-                    <infoLink id="71dc-05cc-51ab-0704" name="Shock Pulse" hidden="false" targetId="9222-f6c5-dc19-905a" type="rule"/>
+                    <infoLink id="2ff8-9df8-9b12-d754" name="Lance" hidden="false" targetId="3d6b-9e0b-56f0-8a1e" type="rule"/>
+                    <infoLink id="f222-f3d6-6164-6ec3" name="Shock Pulse" hidden="false" targetId="9222-f6c5-dc19-905a" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="91c9-951f-bf8e-8787" name="Cytheron pattern graviton flux projector" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="1c73-9f7e-7e55-7f3e" name="Cytheron pattern graviton flux projector" hidden="false" collective="false" import="true" type="upgrade">
                   <profiles>
-                    <profile id="d32e-36c4-f8aa-1055" name="Cytheron pattern graviton flux projector" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                    <profile id="f859-3c4b-2b9b-e12d" name="Cytheron pattern graviton flux projector" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
                       <characteristics>
                         <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
                         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">†</characteristic>
@@ -1618,12 +1613,79 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup id="dd61-9dd9-cab1-bb31" name="An Excindio Battle-automata may exchange both of its combi-bolters for the following:" hidden="false" collective="false" import="true" defaultSelectionEntryId="f06c-1d37-01e1-3b00">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="080d-fe13-beed-6c37" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f7e-c802-c325-627a" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="f06c-1d37-01e1-3b00" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="a498-c66f-9eb7-ca9a" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="2x Combi-Bolters"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="be10-d52c-7254-34ee" name="Plasma Repeater" hidden="false" collective="false" import="true" targetId="7aa4-cb4e-0e15-6213" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="2x Plasma Repeaters"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="effb-7f71-cfd9-f700" name="Graviton Gun" hidden="false" collective="false" import="true" targetId="5303-5a3e-de51-1707" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="2x Graviton Guns"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="598f-cd9a-66db-2a2f" name=" An Excindio Battle-automata may take:" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23eb-d894-c3e1-c705" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f3d-0b62-c380-28a8" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="546e-be3f-9e24-00ea" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="1bf8-72f8-c331-6900" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="9ca2-598b-f7b5-2982" name="Extinctor power claw" hidden="false" collective="false" import="true" targetId="919d-b99c-78c3-5732" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc0a-ab62-720f-6dc5" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7af9-7251-6b43-345b" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="bc50-f35b-495e-f236" name="Manipulator Arm" hidden="false" collective="false" import="true" targetId="e2e3-64c6-4820-aa91" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6632-b4cd-5d36-9982" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="142f-e168-f507-5452" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f512-ae27-71ee-88f1" name="Dedicated Transport:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="752a-c5e3-15b2-9986" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="2116-479e-7909-f7c9" name="Dreadnought Drop Pod" hidden="false" collective="false" import="true" targetId="1ffe-82e4-12db-538d" type="selectionEntry"/>
+            <entryLink id="7100-7f88-abcc-c34e" name="Kharybdis Assault Claw" hidden="false" collective="false" import="true" targetId="f64a-90b7-19c8-182a" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="350.0"/>
       </costs>
@@ -3011,6 +3073,46 @@ part of a close combat attack.</description>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="220.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="919d-b99c-78c3-5732" name="Extinctor power claw" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1d30-9c5e-d363-a96d" name="Extinctor power claw" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b857-f18e-5760-fd64" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Brutal (2)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e2e3-64c6-4820-aa91" name="Manipulator Arm" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="9f99-d8a8-0c25-bb8a" name="Manipulator Arm" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Lance</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="edf9-9d44-6bb2-4d47" name="Lance" hidden="false" targetId="3d6b-9e0b-56f0-8a1e" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
