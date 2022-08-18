@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="25" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="27" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="7002-2f9a-59c4-2742" name="Cult Arcana">
       <characteristicTypes>
@@ -1048,6 +1048,18 @@
       <categoryLinks>
         <categoryLink id="6c58-ebd6-c983-e936" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
         <categoryLink id="0462-793b-4985-8c5a" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bca2-7506-0031-bbdf" name="Deathshroud Terminator Squad" hidden="false" collective="false" import="true" targetId="9732-fb77-ee9a-539b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b6c4-4711-5c09-4826" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="e19a-d8dd-6873-a7d0" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="55e6-7b1d-bf06-6860" name="Deathstorm Drop Pod Squadron" hidden="false" collective="false" import="true" targetId="f026-aabf-bff3-3d27" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="d3fe-8b40-c73e-3b6d" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="645b-b1bd-3d25-4151" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -6033,26 +6045,6 @@ The Instrument has two profiles. Pick which profile is used every time the weapo
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f454-e44a-8fd9-0bb1" name="Deathstorm Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="1fc5-6a78-b23d-eda7" name="Deathstorm Missile Launcher" publicationId="a716-c1c4-7b26-8424" page="133" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 9, Pinning, Deathstorm, Limited Ammunition</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="f147-5409-db3d-abf0" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
-        <infoLink id="d3ce-61ac-54ed-94bc" name="Deathstorm" hidden="false" targetId="7208-c178-683e-3e39" type="rule"/>
-        <infoLink id="c49a-7c1b-d98c-3c37" name="Limited Ammunition" hidden="false" targetId="9f09-5cb8-c3ea-c3f8" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="0460-524d-d071-4039" name="Arcus Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntries>
         <selectionEntry id="bf68-bcaf-545c-bf93" name="Arcus Missile Launcher - Arcus Warheads" hidden="false" collective="false" import="true" type="upgrade">
@@ -7237,11 +7229,11 @@ During a Reaction made in any Phase, a player may not choose to activate a model
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fa70-f0d0-b06d-5413" name="Carsoran Power Axe" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="fa70-f0d0-b06d-5413" name="Carsoran Power Axe" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="equalTo"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7767,21 +7759,21 @@ During a Reaction made in any Phase, a player may not choose to activate a model
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="10aa-3c70-2bbe-9509" name="Iliastus Asssult Cannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="10aa-3c70-2bbe-9509" name="Iliastus Assault Cannon" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="hidden" value="false">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0e1-f2c4-8bcd-0723" type="equalTo"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0e1-f2c4-8bcd-0723" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="4431-d799-343c-f673" name="Ilastus Asssult Cannon " hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="4431-d799-343c-f673" name="Ilastus Assault Cannon " hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
@@ -7792,6 +7784,11 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       </profiles>
       <infoLinks>
         <infoLink id="7403-b943-2e0d-a1a5" name="Malfunction " hidden="false" targetId="21e5-9f49-deea-a974" type="rule"/>
+        <infoLink id="4306-0e74-ffde-bd57" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (6+)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -13014,11 +13011,11 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ed76-dace-31e4-b174" name="Chainaxe" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ed76-dace-31e4-b174" name="Chainaxe" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="equalTo"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -15852,7 +15849,7 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="578c-7d59-601c-d25d" name="Sergeant may take:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="578c-7d59-601c-d25d" name="6) Sergeant may take:" hidden="false" collective="false" import="true">
           <selectionEntries>
             <selectionEntry id="53b9-48c7-29ae-98ee" name="Master-craft one weapon" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -15886,6 +15883,9 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c385-40c9-a0f5-e94f" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
             </entryLink>
             <entryLink id="8f77-0c41-bdd8-3a39" name="Cyber-Familiar" hidden="false" collective="false" import="true" targetId="6c85-4601-cf58-7b35" type="selectionEntry">
               <modifiers>
@@ -16016,7 +16016,7 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
             <entryLink id="9118-e0b1-98b0-e40c" name="Fenrisian Axe" hidden="false" collective="false" import="true" targetId="72ba-d2df-d98b-8b5d" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="031e-adc8-ad3d-99c1" name="Sergeant may exchange his Chainsword for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="8632-e799-a6a6-abbe">
+        <selectionEntryGroup id="031e-adc8-ad3d-99c1" name="5) Sergeant may exchange his Chainsword for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="8632-e799-a6a6-abbe">
           <entryLinks>
             <entryLink id="d4cf-c5f4-98e1-acc6" name="Power Fist" hidden="false" collective="false" import="true" targetId="a3e1-d633-dff9-028b" type="selectionEntry">
               <costs>
@@ -16799,6 +16799,7 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
                   <repeats>
                     <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b254-abfc-a57f-ab28" repeats="1" roundUp="false"/>
                     <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ffe-2820-9b97-99db" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08be-6994-6a63-6279" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
                 <modifier type="increment" field="dfbc-e43b-eaed-c60f" value="1.0">
@@ -17583,6 +17584,7 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1132-5714-ca6d-d167" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="24e6-c2a4-0e97-9edf" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="df94-2b41-f882-e07b" name="Battlesmith (X)" hidden="false" targetId="5d57-4d02-1e36-4a82" type="rule">
@@ -19251,11 +19253,11 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="08e4-5e02-da82-f296" name="Pair of Raven&apos;s Talons" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="08e4-5e02-da82-f296" name="Pair of Raven&apos;s Talons" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc34-fe08-dd44-fb99" type="equalTo"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc34-fe08-dd44-fb99" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -19656,13 +19658,10 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
               </characteristics>
             </profile>
           </profiles>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="37.0"/>
-          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="bfcb-8a09-e827-619d" name="The Entire unit may take:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="bfcb-8a09-e827-619d" name="3) The Entire unit may take:" hidden="false" collective="false" import="true">
           <entryLinks>
             <entryLink id="a203-e2f2-e026-3da6" name="Combat Shield" hidden="false" collective="false" import="true" targetId="472a-8297-2c71-3a9c" type="selectionEntry">
               <modifiers>
@@ -19678,61 +19677,7 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="a0a1-1191-6346-bb87" name="One in five may exchange their Bolt Pistol for:" hidden="false" collective="false" import="true">
-          <modifiers>
-            <modifier type="increment" field="762f-4f90-1983-6244" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="a8e9-70e1-b8bc-8ee2" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="762f-4f90-1983-6244" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="a55c-1633-cb93-15fc" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="d535-1da8-290d-69a6" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="a0bc-be4c-a21a-92d5" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="717f-cf0a-1593-4bd8" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="52e0-2a3e-d9d3-0a65" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="e337-adf4-a11f-0280" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="a1c0-81df-e43a-f03d" name="Alchem Pistol" hidden="false" collective="false" import="true" targetId="1899-9e9e-76dd-a7ba" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="0e49-57be-2d8e-eb8c" name="Graviton Pistol" hidden="false" collective="false" import="true" targetId="0087-19d3-eca0-cc75" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="5b82-d70a-2804-c462" name="Inferno Pistol" hidden="false" collective="false" import="true" targetId="dcd1-8b2a-9d97-40ef" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="cd0e-dbe3-46a8-082c" name="Warpfire Pistol" hidden="false" collective="false" import="true" targetId="a94d-1f53-2902-0237" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="c8fa-6c0a-1e89-9148" name="Æther-Fire Pistol" hidden="false" collective="false" import="true" targetId="ae13-0ae8-a3ba-f6ff" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="d06d-550f-d3fa-e45e" name="Legiones Unit Upgrades:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="d06d-550f-d3fa-e45e" name="0) Legiones Unit Upgrades:" hidden="false" collective="false" import="true">
           <entryLinks>
             <entryLink id="0584-3729-c877-bc87" name="Preysight" hidden="true" collective="false" import="true" targetId="b905-4d78-c141-4e63" type="selectionEntry">
               <modifiers>
@@ -19766,7 +19711,7 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="81cc-ac6d-99da-2a39" name="Sergeant may exchange his Bolt Pistol and Chainsword for:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="81cc-ac6d-99da-2a39" name="5) Sergeant may exchange his Bolt Pistol and Chainsword for:" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d3b-8472-7029-a792" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1d4-4a2c-7258-bef1" type="min"/>
@@ -19778,20 +19723,13 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
               </costs>
             </entryLink>
             <entryLink id="41cf-81fd-6866-6f81" name="Pair of Raven&apos;s Talons" hidden="true" collective="false" import="true" targetId="08e4-5e02-da82-f296" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc34-fe08-dd44-fb99" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
               </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="1ac3-5ffc-3179-17a1" name="Sergeant may take:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="1ac3-5ffc-3179-17a1" name="6) Sergeant may take:" hidden="false" collective="false" import="true">
           <selectionEntries>
             <selectionEntry id="6b11-7fb1-335b-93df" name="Master-craft a one weapon" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -19888,9 +19826,9 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="b8b5-1b75-870e-d226" name="Sergeant must pick two:" hidden="false" collective="false" import="true" defaultSelectionEntryId="538f-2696-e9a0-fa7f">
+        <selectionEntryGroup id="b8b5-1b75-870e-d226" name="4) Sergeant must pick two:" hidden="false" collective="false" import="true" defaultSelectionEntryId="538f-2696-e9a0-fa7f">
           <modifiers>
-            <modifier type="set" field="4f6e-c02f-c1ef-d06c" value="0.0">
+            <modifier type="set" field="062a-e9ee-35d7-fde4" value="0.0">
               <conditions>
                 <condition field="selections" scope="a8e9-70e1-b8bc-8ee2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="81cc-ac6d-99da-2a39" type="equalTo"/>
               </conditions>
@@ -19910,16 +19848,6 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f6e-c02f-c1ef-d06c" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="062a-e9ee-35d7-fde4" type="min"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="e99d-a87e-6c56-7aae" name="Charnable Weapon" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="682f-f1b2-3690-2ff5" name="Charnabal Weapon" hidden="false" collective="false" import="true" targetId="82b0-2459-4bbc-e15b" type="selectionEntryGroup"/>
-              </entryLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <entryLinks>
             <entryLink id="12a9-8e08-0061-d2b7" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry">
               <modifiers>
@@ -20005,6 +19933,9 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
               </modifiers>
             </entryLink>
             <entryLink id="bb94-5f2c-cce3-ff3f" name="Alchem Pistol" hidden="false" collective="false" import="true" targetId="1899-9e9e-76dd-a7ba" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c949-1db7-98fe-d2b9" type="max"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
               </costs>
@@ -20045,9 +19976,10 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
               </costs>
             </entryLink>
+            <entryLink id="79f2-145d-f870-bcc2" name="Charnabal Weapon" hidden="false" collective="false" import="true" targetId="2376-af96-e101-e712" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="ac85-ccd6-4750-09d9" name="Legionaries Melee Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="603a-ccf8-f7bb-c9e1">
+        <selectionEntryGroup id="ac85-ccd6-4750-09d9" name="1) Squad Melee Weapon Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="603a-ccf8-f7bb-c9e1">
           <modifiers>
             <modifier type="increment" field="7a88-e2b8-50e4-702b" value="1.0">
               <repeats>
@@ -20066,7 +19998,7 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
             <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a88-e2b8-50e4-702b" type="min"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup id="1000-cce2-faf2-15b3" name="For every five models in the unit, one Legionary may exchange their Chainsword for:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="1000-cce2-faf2-15b3" name="For every five models, one Legionary may exchange their Chainsword for:" hidden="false" collective="false" import="true">
               <modifiers>
                 <modifier type="increment" field="53c2-ee21-6f93-d723" value="1.0">
                   <repeats>
@@ -20131,22 +20063,82 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
             <entryLink id="603a-ccf8-f7bb-c9e1" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="47a0-bbd7-a0d2-3a94" name="Bolt Pistol Options" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="47a0-bbd7-a0d2-3a94" name="2) Bolt Pistol Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="0869-3d74-a320-fad7">
+          <modifiers>
+            <modifier type="decrement" field="d47e-46cd-d904-addd" value="4.0"/>
+            <modifier type="increment" field="d47e-46cd-d904-addd" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="a8e9-70e1-b8bc-8ee2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f27-e636-6ed0-163f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="7976-ea21-7c06-a4b0" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="a8e9-70e1-b8bc-8ee2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f27-e636-6ed0-163f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7976-ea21-7c06-a4b0" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7976-ea21-7c06-a4b0" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d47e-46cd-d904-addd" type="min"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="6f0f-6818-d5c8-c1c8" name="Shrapnel Pistol" hidden="false" collective="false" import="true" targetId="7d72-7f6d-6330-6871" type="selectionEntry">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="ecd3-d113-4f42-d93a" name="One in five may exchange their Bolt Pistol for:" hidden="false" collective="false" import="true">
               <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="2.0">
+                <modifier type="increment" field="d329-7be4-a2bb-1955" value="1.0">
                   <repeats>
-                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f27-e636-6ed0-163f" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="a8e9-70e1-b8bc-8ee2" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4930-389b-e19e-f1d8" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d329-7be4-a2bb-1955" type="max"/>
               </constraints>
+              <entryLinks>
+                <entryLink id="82b9-fb65-fa55-969b" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="d535-1da8-290d-69a6" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="83fd-bc8f-ff37-12bd" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="717f-cf0a-1593-4bd8" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="6876-1b8b-e1a5-8ac5" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="e337-adf4-a11f-0280" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="9497-9cef-76f0-5607" name="Alchem Pistol" hidden="false" collective="false" import="true" targetId="1899-9e9e-76dd-a7ba" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="fcf1-9591-5de5-45d0" name="Graviton Pistol" hidden="false" collective="false" import="true" targetId="0087-19d3-eca0-cc75" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="be8a-1076-7d9e-fb29" name="Inferno Pistol" hidden="false" collective="false" import="true" targetId="dcd1-8b2a-9d97-40ef" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="4859-6614-0abc-5a4a" name="Warpfire Pistol" hidden="false" collective="false" import="true" targetId="a94d-1f53-2902-0237" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="d2e0-460b-ae1a-33f6" name="Æther-Fire Pistol" hidden="false" collective="false" import="true" targetId="ae13-0ae8-a3ba-f6ff" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="6f0f-6818-d5c8-c1c8" name="Shrapnel Pistol" hidden="false" collective="false" import="true" targetId="7d72-7f6d-6330-6871" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
               </costs>
@@ -20159,9 +20151,11 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
                   </conditions>
                 </modifier>
               </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2292-a968-0418-3837" type="max"/>
-              </constraints>
+            </entryLink>
+            <entryLink id="5bde-ccec-6970-6551" name="Asphyx Bolt Pistol" hidden="false" collective="false" import="true" targetId="07f7-c486-f597-a1b9" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -20194,7 +20188,7 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
         <entryLink id="6e03-05a8-829d-8ff5" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="37.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4357-930e-165a-a6e3" name="Despoiler Squad" publicationId="a716-c1c4-7b26-8424" hidden="false" collective="false" import="true" type="unit">
@@ -20872,7 +20866,7 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
                 </modifier>
                 <modifier type="set" field="e593-6b3c-f169-04f0" value="2+">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e3b-c61d-5bd2-7b12" type="equalTo"/>
+                    <condition field="selections" scope="ad97-c090-fa67-696f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e3b-c61d-5bd2-7b12" type="equalTo"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Infantry (Character, Heavy, Line, Psyker)">
@@ -21041,7 +21035,6 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
               </costs>
             </entryLink>
-            <entryLink id="73e6-b41f-522e-1d56" name="Caedere Weapons" hidden="false" collective="false" import="true" targetId="e594-01b2-8381-7c6f" type="selectionEntry"/>
             <entryLink id="e00c-7992-2730-99b9" name="Chainaxe" hidden="false" collective="false" import="true" targetId="ed76-dace-31e4-b174" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
@@ -24610,7 +24603,7 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -25905,7 +25898,7 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
             <profile id="5669-278f-51c7-be2a" name="Predator" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
               <characteristics>
                 <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle</characteristic>
-                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">14</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">14&quot;</characteristic>
                 <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
                 <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
                 <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
@@ -25920,7 +25913,7 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
             <categoryLink id="8b77-ae5c-8bac-f9e0" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="5b1e-5fa8-bf4c-9339" name="A Predator may take:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="5b1e-5fa8-bf4c-9339" name="3) May take:" hidden="false" collective="false" import="true">
               <selectionEntries>
                 <selectionEntry id="541a-bffb-2d99-ff36" name="One Hull (Front) Mounted hunter-killer missile" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -25959,7 +25952,7 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
                 <entryLink id="0daf-96ca-7beb-99f4" name="Armatus Necrotechnika" hidden="false" collective="false" import="true" targetId="9221-0ef3-7962-eda0" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="6c92-baf0-d367-4890" name="May exchange its Predator Cannon for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="e341-6d86-da7f-35a7">
+            <selectionEntryGroup id="6c92-baf0-d367-4890" name="1) Main Weapon:" hidden="false" collective="false" import="true" defaultSelectionEntryId="e341-6d86-da7f-35a7">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c320-d7df-d92e-6085" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0973-e29c-4dc0-a0c1" type="max"/>
@@ -26039,75 +26032,18 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="acf3-c36e-4d4f-08f0" name="Iliastus Asssult Cannon" hidden="false" collective="false" import="true" targetId="10aa-3c70-2bbe-9509" type="selectionEntry">
+                  <infoLinks>
+                    <infoLink id="52d3-94ba-7ea2-c643" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+                  </infoLinks>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="34e3-ca73-1d69-5df2" name="Sponson Mounted Weapons:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="34e3-ca73-1d69-5df2" name="2) Sponson Mounted Weapons:" hidden="false" collective="false" import="true" defaultSelectionEntryId="09e8-1821-8089-4870">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fcc-19a2-3680-5306" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b88e-182b-2d31-41ab" type="max"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry id="f6d8-4e1b-9f24-66c9" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditions>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="name" value="2x Dragon&apos;s Breath Heavy Flamer"/>
-                  </modifiers>
-                  <infoLinks>
-                    <infoLink id="7c4a-6ed3-80ab-e513" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" targetId="e529-e7cc-734e-a552" type="profile"/>
-                    <infoLink id="18da-f8e8-54c2-17c6" name="Template Weapons" hidden="false" targetId="5e0e-88e6-db81-5a70" type="rule"/>
-                    <infoLink id="e2ea-87cf-40c9-b29f" name="Dragon&apos;s Breath" hidden="false" targetId="655c-988f-74b5-7e17" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="05e4-0160-3f3a-a938" name="Heavy Alchem Flamers" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditions>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd1f-1c51-706c-e5f7" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="name" value="2x Heavy Alchem Flamers"/>
-                  </modifiers>
-                  <infoLinks>
-                    <infoLink id="9510-861b-31a7-cbb0" name="Heavy Alchem Flamer" hidden="false" targetId="76aa-85d2-fb22-f0f5" type="profile"/>
-                    <infoLink id="1471-01b9-f671-87ba" name="Fleshbane" hidden="false" targetId="40cd-9505-253c-e76f" type="rule"/>
-                    <infoLink id="5f88-4b4e-ece9-c6d7" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
-                    <infoLink id="5b0c-9447-ea55-5259" name="Template Weapons" hidden="false" targetId="5e0e-88e6-db81-5a70" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="94d2-1cc9-aecc-fe74" name="Ilastus Assault Cannons" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0e1-f2c4-8bcd-0723" type="equalTo"/>
-                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                    <modifier type="set" field="name" value="2x Ilastus Assualt Cannons"/>
-                  </modifiers>
-                  <infoLinks>
-                    <infoLink id="90b3-ae93-811f-84fd" name="Ilastus Asssult Cannon " hidden="false" targetId="4431-d799-343c-f673" type="profile"/>
-                    <infoLink id="0c34-ad61-08e1-f937" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule"/>
-                    <infoLink id="59df-d1a2-8365-05de" name="Malfunction " hidden="false" targetId="21e5-9f49-deea-a974" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
               <entryLinks>
                 <entryLink id="09e8-1821-8089-4870" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
                   <modifiers>
@@ -26134,6 +26070,21 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
+                </entryLink>
+                <entryLink id="4179-877e-4858-775a" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="2x Dragon&apos;s Breath Heavy Flamers"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="c5d7-3770-d65b-9eb4" name="Heavy Alchem Flamer" hidden="false" collective="false" import="true" targetId="2a3d-a4bb-5326-a16a" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="2x Heavy Alchem Flamers"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="90cf-eee0-d339-ab10" name="Iliastus Asssult Cannon" hidden="false" collective="false" import="true" targetId="10aa-3c70-2bbe-9509" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="2x Iliastus Assault Cannons"/>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -27336,32 +27287,6 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="a1e5-e642-d7a8-b949" name="Scorpius Squadon (Placeholder Points)" hidden="false" collective="false" import="true" type="unit">
-      <categoryLinks>
-        <categoryLink id="ad45-230c-dea2-4aa6" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-        <categoryLink id="c60a-7acc-3df8-51d3" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="8ef2-6daf-a07c-63e8" name="Tank" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="081d-be6c-4c3b-04af" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="687a-a191-c5f9-79e0" type="max"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="4684-6a54-4726-58ab" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="105.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="6ab7-8d67-d625-ef80" name="Upgrade Points (Placeholders)" hidden="false" collective="false" import="true" targetId="8b48-2da0-15da-2c1b" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
       </costs>
@@ -29098,7 +29023,7 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
         <entryLink id="89c0-d302-765e-2133" name="Caedere Weapons" hidden="false" collective="false" import="true" targetId="5290-5cd3-c4bd-07af" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a3e1-d633-dff9-028b" name="Power Fist" hidden="false" collective="false" import="true" type="upgrade">
@@ -34866,8 +34791,10 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
           <repeats>
             <repeat field="d2ee-04cb-5f8a-2642" scope="force" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
           </repeats>
+        </modifier>
+        <modifier type="increment" field="1882-f7ef-7aa3-5304" value="1.0">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35d4-0dcd-f7d2-a6da" type="atLeast"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35d4-0dcd-f7d2-a6da" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -36964,7 +36891,7 @@ part of a close combat attack.</description>
             <categoryLink id="5e23-61e4-47a0-0e3e" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="ae74-5d4e-7532-84ac" name="May Take:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="ae74-5d4e-7532-84ac" name="2) May Take:" hidden="false" collective="false" import="true">
               <entryLinks>
                 <entryLink id="58ed-26fa-df6a-a348" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="1bf8-72f8-c331-6900" type="selectionEntry">
                   <constraints>
@@ -36992,7 +36919,7 @@ part of a close combat attack.</description>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="3221-c88b-d393-21ce" name="Pintle Mounted Weapon:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="3221-c88b-d393-21ce" name="1) Pintle Mounted Weapon:" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca66-95dd-473c-74bd" type="max"/>
               </constraints>
@@ -37115,7 +37042,7 @@ part of a close combat attack.</description>
           <entryLinks>
             <entryLink id="6303-470c-590c-5041" name="Scorpius Missile Launcher" hidden="false" collective="false" import="true" targetId="e2de-a469-ae54-3f31" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="name" value="Turrent Mounted Scorpius Missile Launcher"/>
+                <modifier type="set" field="name" value="Turret Mounted Scorpius Missile Launcher"/>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9029-2909-d555-5270" type="max"/>
@@ -37164,8 +37091,8 @@ part of a close combat attack.</description>
           <profiles>
             <profile id="1ff9-a191-f619-ce45" name="Kratos" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
               <characteristics>
-                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vechile (Reinforced)</characteristic>
-                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">10</characteristic>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Reinforced)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">10&quot;</characteristic>
                 <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
                 <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
                 <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">14</characteristic>
@@ -37234,43 +37161,6 @@ part of a close combat attack.</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67d1-78d0-fe08-9b25" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="42fd-ae7b-45fd-26a7" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditions>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="name" value="2x Dragon&apos;s Breath Heavy Flamer"/>
-                  </modifiers>
-                  <infoLinks>
-                    <infoLink id="fa31-119e-ebb5-ec5b" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" targetId="e529-e7cc-734e-a552" type="profile"/>
-                    <infoLink id="3c80-45e8-4b7e-e4ef" name="Template Weapons" hidden="false" targetId="5e0e-88e6-db81-5a70" type="rule"/>
-                    <infoLink id="0d5b-3401-9edb-98cc" name="Dragon&apos;s Breath" hidden="false" targetId="655c-988f-74b5-7e17" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="a6ef-71ba-0a61-df8b" name="Heavy Alchem Flamers" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditions>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd1f-1c51-706c-e5f7" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="name" value="2x Heavy Alchem Flamers"/>
-                  </modifiers>
-                  <infoLinks>
-                    <infoLink id="b62f-4c59-9c13-cc7e" name="Heavy Alchem Flamer" hidden="false" targetId="76aa-85d2-fb22-f0f5" type="profile"/>
-                    <infoLink id="9666-7262-315c-edb4" name="Fleshbane" hidden="false" targetId="40cd-9505-253c-e76f" type="rule"/>
-                    <infoLink id="f50b-e062-d74d-72f8" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
-                    <infoLink id="b100-132b-fdd1-5969" name="Template Weapons" hidden="false" targetId="5e0e-88e6-db81-5a70" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                  </costs>
-                </selectionEntry>
                 <selectionEntry id="30f1-d30d-a6df-5198" name="Ilastus Assault Cannons" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
@@ -37321,6 +37211,16 @@ part of a close combat attack.</description>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
                   </costs>
+                </entryLink>
+                <entryLink id="2705-1b32-2590-a0cd" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="2x Dragon&apos;s Breath Heavy Flamer"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="4ac4-4b05-05b4-f709" name="Heavy Alchem Flamer" hidden="false" collective="false" import="true" targetId="2a3d-a4bb-5326-a16a" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="2x Heavy Alchem Flamers"/>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -37462,11 +37362,17 @@ part of a close combat attack.</description>
                   </costs>
                 </entryLink>
                 <entryLink id="59fa-884a-7f19-c210" name="Flare Shield" hidden="false" collective="false" import="true" targetId="0e77-6285-22bb-1534" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cdc-014d-5099-a10a" type="max"/>
+                  </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="eabb-df64-ff7e-cadd" name="Dozer Blade" hidden="false" collective="false" import="true" targetId="42e1-f6cf-1f2b-a492" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1540-02fb-6c9c-5c1c" type="max"/>
+                  </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
@@ -40890,13 +40796,13 @@ part of a close combat attack.</description>
         <infoLink id="93ba-565b-dbbd-1e06" name="Legiones Astartes (X)" hidden="false" targetId="61cf-75c2-56cd-2a31" type="rule"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry id="50f2-4e31-2b38-674a" name="Turret Mounted Deathstorm Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="50f2-4e31-2b38-674a" name="Turret Mounted Deathstorm missile launcher" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7bd7-7b89-c9c0-1328" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0813-5d10-efce-1143" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="0a41-d0d2-f020-c531" name="Deathstorm Missile Launcher" hidden="false" collective="false" import="true" targetId="f454-e44a-8fd9-0bb1" type="selectionEntry">
+            <entryLink id="0a41-d0d2-f020-c531" name="Deathstorm Missile Launcher" hidden="false" collective="false" import="true" targetId="236f-b627-0fca-131d" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="aae8-d44b-d2ce-e7ef" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="779a-d74f-df39-aaa1" type="max"/>
@@ -40910,6 +40816,257 @@ part of a close combat attack.</description>
       </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="235.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9732-fb77-ee9a-539b" name="Deathshroud Terminator Squad" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd1f-1c51-706c-e5f7" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink id="e4d3-5e1c-0b45-5058" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+        <infoLink id="e7bb-3dcb-3a20-b59f" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
+        <infoLink id="1734-0c4b-bd25-2a71" name="Battle-Hardened (X)" hidden="false" targetId="5c3b-ed0b-4ad0-d547" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Battle-hardened (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="7d97-138f-437e-6f64" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="b012-c5cd-8f7f-f083" name="Legiones Astartes (Death Guard) " hidden="false" targetId="48a9-493f-e255-5070" type="rule"/>
+        <infoLink id="9b12-f134-81c8-bf12" name="Chosen Warriors" hidden="false" targetId="13d1-9270-6539-08ed" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="c70e-c037-73a8-f054" name="Deathshroud" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2095-b8bf-685f-7361" type="min"/>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c752-7574-441f-612d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="23b2-81f0-0579-1daa" name="Deathshroud" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink id="9950-8e96-9204-12ee" name="Alchem Pistol" hidden="false" collective="false" import="true" targetId="1899-9e9e-76dd-a7ba" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d648-67d4-65f5-8ed7" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c81-a03a-c878-3bd3" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="3320-627f-b7af-a58f" name="Power Scythe" hidden="false" collective="false" import="true" targetId="2166-369e-0757-6f98" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9aab-30ec-c020-45c4" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6faa-90d8-57c0-3313" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="cc65-7315-156b-ef5f" name="Tartaros Terminator Armour" hidden="false" collective="false" import="true" targetId="f850-d0af-8663-ccac" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4ac-1bc6-7659-23b1" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ce8-f558-9468-b025" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ba1f-0921-be3c-26b9" name="1) Any model may take:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="d962-4d77-d540-1275" name="Meltabombs" hidden="false" collective="false" import="true" targetId="b9dd-3b21-f3f8-78e3" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="c483-ea3c-79ec-c957" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="9732-fb77-ee9a-539b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c483-ea3c-79ec-c957" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="fe5c-6b10-b4a6-a144" name="Grenade Harness" hidden="false" collective="false" import="true" targetId="251a-860d-2c4d-62cc" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="ac5a-4ee6-051c-56cf" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="9732-fb77-ee9a-539b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ac5a-4ee6-051c-56cf" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="63e3-d0dc-abc9-1aae" name="Dedicated Transport:" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="eaac-4b32-f501-d7e2" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="5f88-6c38-2ba6-d3d7" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="dfac-2b73-4682-3a78" name="2) May exchange power scythe for:" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2dd0-7045-8ae5-f394" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="916a-2425-07c3-9dc7" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="8aea-a72d-0d6f-01c0" name="Legion standard &amp; power weapon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b7d8-8207-aca1-061b" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="36b3-80ee-943e-de66" name="Legion Standard" hidden="false" collective="false" import="true" targetId="7e13-cc1f-6bd7-7ac6" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9342-07ca-5685-81cc" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5a79-8652-97ee-359a" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="3a86-e041-bd60-eb5c" name="Power Weapon" hidden="false" collective="false" import="true" targetId="8d9c-9f80-c0fd-adcf" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d271-50a8-5016-ecfb" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7dd1-97db-b2e7-c12e" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="97ad-7991-5b27-c031" name="Two Falax Blades" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="a438-da9a-42cd-1d2d" name="Two Falax Blades " publicationId="09c5-eeae-f398-b653" page="219" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Specialist Weapon, Rending (4+), Duellist’s Edge (1)
+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="34f3-d04e-cb54-1dd5" name="Duellist’s Edge (X)" hidden="false" targetId="7bf3-86ce-04c2-e6ba" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Duellist’s Edge (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="4e1a-8a14-8b2e-472d" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value=" Rending (4+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="cf09-a07e-3b32-f40d" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f026-aabf-bff3-3d27" name="Deathstorm Drop Pod Squadron" hidden="false" collective="false" import="true" type="unit">
+      <selectionEntries>
+        <selectionEntry id="be93-7427-4579-fbb5" name="Deathstorm Drop Pod" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3f55-69d7-3a73-ceb5" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6199-2d67-64d6-2c7c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="bad5-5182-2560-b010" name="Deathstorm Drop Pod" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">-</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">12</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">3</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">-</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547"/>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="449f-86d7-6ff9-4d8c" name="Legiones Astartes (X)" hidden="false" targetId="61cf-75c2-56cd-2a31" type="rule"/>
+            <infoLink id="307d-ce6d-63f6-1941" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
+            <infoLink id="dce5-9f0e-50f5-dcb3" name="Impact-reactive Doors" hidden="false" targetId="6c21-dd77-4c93-eeed" type="rule"/>
+            <infoLink id="495a-d4b0-5c85-3b92" name="Orbital Assault Vehicle" hidden="false" targetId="7fc9-7bcd-b44c-6719" type="rule"/>
+            <infoLink id="e86f-1704-7b9e-96f6" name="Area Denial Drop" hidden="false" targetId="5cd0-cbd0-6e0a-282a" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="272e-277f-2634-ac89" name="Turret Mounted Deathstorm missile launcher" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f914-431f-b2bf-f2e3" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8959-b678-8311-0c8a" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="64f6-5fdb-87b6-ce43" name="Deathstorm Missile Launcher" hidden="false" collective="false" import="true" targetId="236f-b627-0fca-131d" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="90.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -41611,7 +41768,7 @@ A Legion Primus Nullificator Consul gains the Psyker Sub-type and has only the P
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="27e9-630d-4cf4-6d68" name="*Vigilator" publicationId="a716-c1c4-7b26-8424" page="109" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="27e9-630d-4cf4-6d68" name="Vigilator" publicationId="a716-c1c4-7b26-8424" page="109" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -41660,6 +41817,9 @@ A Legion Primus Nullificator Consul gains the Psyker Sub-type and has only the P
           <infoLinks>
             <infoLink id="dd00-9a24-bad4-aff4" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="adba-7175-ffe9-c597" name="Siege Breaker:" hidden="false" targetId="8247-54dc-9194-948f" primary="false"/>
+          </categoryLinks>
           <entryLinks>
             <entryLink id="a32b-9912-e88e-216e" name="Nuncio-Vox" hidden="false" collective="false" import="true" targetId="005e-aae6-ddac-bb45" type="selectionEntry">
               <constraints>
@@ -41721,11 +41881,9 @@ A Legion Primus Nullificator Consul gains the Psyker Sub-type and has only the P
               </conditions>
             </modifier>
           </modifiers>
-          <rules>
-            <rule id="3a49-63d4-1a0c-5034" name="Sacred Trust" hidden="false">
-              <description>Any models with the Infantry or Cavalry Unit Type in the same unit as a model with this special rule may re-roll any failed It Will Not Die rolls made. This effect immediately ends if the model with the Sacred Trust special rule is removed as a casualty or otherwise leaves the unit.</description>
-            </rule>
-          </rules>
+          <infoLinks>
+            <infoLink id="c6a1-ab59-ccdf-1990" name="Sacred Trust" hidden="false" targetId="7cdc-4095-eb1e-2b07" type="rule"/>
+          </infoLinks>
           <entryLinks>
             <entryLink id="f5ae-106e-fece-1209" name="Narthecium" hidden="false" collective="false" import="true" targetId="dd7a-d404-a96c-1251" type="selectionEntry">
               <constraints>
@@ -41875,7 +42033,20 @@ A Legion Primus Nullificator Consul gains the Psyker Sub-type and has only the P
           </costs>
         </entryLink>
         <entryLink id="54f1-3963-f6fb-ae8f" name="Phoenix Pattern Power Weapons" hidden="false" collective="false" import="true" targetId="48ad-b63f-2c9c-ad87" type="selectionEntry"/>
-        <entryLink id="a8e0-3826-8ad5-7432" name="Graviton Mace" hidden="false" collective="false" import="true" targetId="74db-af77-bc35-b62a" type="selectionEntry"/>
+        <entryLink id="a8e0-3826-8ad5-7432" name="Graviton Mace" hidden="true" collective="false" import="true" targetId="74db-af77-bc35-b62a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4f07-3d45-4f28-a0c6" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f75a-d5c1-59ba-5c5a" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
         <entryLink id="b845-92b2-4965-46e8" name="Tainted Weapon" hidden="false" collective="false" import="true" targetId="e01b-5f42-a67b-c97f" type="selectionEntry">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
@@ -41898,7 +42069,6 @@ A Legion Primus Nullificator Consul gains the Psyker Sub-type and has only the P
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
           </costs>
         </entryLink>
-        <entryLink id="8a64-0365-19b1-f228" name="Caedere Weapons" hidden="false" collective="false" import="true" targetId="e594-01b2-8381-7c6f" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="8b46-faad-df3a-6929" name="Terminator Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="4123-9851-52ba-4f34">
@@ -42182,9 +42352,6 @@ A Legion Primus Nullificator Consul gains the Psyker Sub-type and has only the P
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="5123-62ae-8298-d982" name="Power Fist" hidden="false" collective="false" import="true" defaultSelectionEntryId="6109-15a7-e083-4e48">
-      <modifiers>
-        <modifier type="set" field="name" value="0.0"/>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f468-1a25-b206-c38f" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a73-d622-d4ed-f553" type="max"/>
@@ -42201,7 +42368,26 @@ A Legion Primus Nullificator Consul gains the Psyker Sub-type and has only the P
     <selectionEntryGroup id="87f6-1951-d3b4-37dd" name="Chainsword" hidden="false" collective="false" import="true" defaultSelectionEntryId="8c6c-7028-af50-2cdd">
       <entryLinks>
         <entryLink id="3ccb-a1b1-cded-67f8" name="Fenrisian Axe" hidden="false" collective="false" import="true" targetId="72ba-d2df-d98b-8b5d" type="selectionEntry"/>
-        <entryLink id="f868-2e1c-c9cc-8bd6" name="Caedere Weapons" hidden="false" collective="false" import="true" targetId="5290-5cd3-c4bd-07af" type="selectionEntryGroup">
+        <entryLink id="f868-2e1c-c9cc-8bd6" name="Caedere Weapons" hidden="true" collective="false" import="true" targetId="5290-5cd3-c4bd-07af" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4f07-3d45-4f28-a0c6" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f75a-d5c1-59ba-5c5a" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
           </costs>
@@ -42212,13 +42398,14 @@ A Legion Primus Nullificator Consul gains the Psyker Sub-type and has only the P
     </selectionEntryGroup>
     <selectionEntryGroup id="2dd0-7045-8ae5-f394" name="Retinue" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="23c6-2615-b71f-9d0a" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="23c6-2615-b71f-9d0a" type="max"/>
       </constraints>
       <entryLinks>
         <entryLink id="fc36-b29b-2d95-2681" name="Cataphractii Command Squad" hidden="false" collective="false" import="true" targetId="1b17-dcd6-0153-3efe" type="selectionEntry"/>
         <entryLink id="c6ad-de73-56ef-71e0" name="Tartaros Command Squad (Placeholder Points)" hidden="false" collective="false" import="true" targetId="58d0-a0fd-d20b-cb1b" type="selectionEntry"/>
         <entryLink id="be75-5482-2c14-3cf0" name="Command Squad (Placeholder Points)" hidden="false" collective="false" import="true" targetId="0aca-632d-1642-8af9" type="selectionEntry"/>
         <entryLink id="a423-7653-eb32-1142" name="Phoenix Terminator Squad" hidden="false" collective="false" import="true" targetId="bea3-69db-c555-e384" type="selectionEntry"/>
+        <entryLink id="6cba-fbea-3f3e-c8af" name="Deathshroud Terminator Squad" hidden="false" collective="false" import="true" targetId="9732-fb77-ee9a-539b" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="d52c-247f-4fe0-df6f" name="Thunder Hammer" hidden="false" collective="false" import="true" defaultSelectionEntryId="c7f0-651b-e794-f198">
@@ -42229,7 +42416,20 @@ A Legion Primus Nullificator Consul gains the Psyker Sub-type and has only the P
       <entryLinks>
         <entryLink id="c7f0-651b-e794-f198" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry"/>
         <entryLink id="13b6-051f-97ae-cddf" name="Solarite Power Gauntlet" hidden="false" collective="false" import="true" targetId="b682-2c89-f979-aa74" type="selectionEntry"/>
-        <entryLink id="3759-b43f-6eef-75ef" name="Graviton Crusher" hidden="false" collective="false" import="true" targetId="cc01-7fb0-8c1e-f968" type="selectionEntry"/>
+        <entryLink id="3759-b43f-6eef-75ef" name="Graviton Crusher" hidden="true" collective="false" import="true" targetId="cc01-7fb0-8c1e-f968" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4f07-3d45-4f28-a0c6" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f75a-d5c1-59ba-5c5a" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="3aae-b65d-3dbc-6f2e" name="Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="d15a-4432-a97a-64df">
@@ -42759,6 +42959,14 @@ A Perfect Fury: If a model or models with the Skill Unmatched special rule selec
     </rule>
     <rule id="be8a-5395-7470-d45b" name="Cloaked in Murder" publicationId="09b3-d525-cdea-260c" page="3" hidden="false">
       <description>When a unit composed entirely of models with this special rule declares a Charge targeting a unit that is already engaged in combat, the Charge roll gains an additional +1 modifier, and if the  Charge is successful then all models in the Charging unit gain +1 To Hit for the duration of the turn in which that Charge is made.</description>
+    </rule>
+    <rule id="7cdc-4095-eb1e-2b07" name="Sacred Trust" hidden="false">
+      <description>Any models with the Infantry or Cavalry Unit Type in the same unit as a model with this special rule may re-roll any failed It Will Not Die rolls made. This effect immediately ends if the model with the Sacred Trust special rule is removed as a casualty or otherwise leaves the unit.</description>
+    </rule>
+    <rule id="1864-f270-d462-ecb5" name="Ravening Madmen" hidden="false">
+      <description>Any model making a To Wound roll in the Assault phase against a unit composed entirely of models with this special rule reduces its Strength by -1 when determining the score required To Wound (this does not affect the attacking unit&apos;s Strength for the purposes of inflicting Instant Death). Additionally, any To Hit rolls made in the Assault phase targeting a unit that includes one or more models with this special rule, always count the majority Weapon Skill of the target unit as 3, regardless of the actual Weapon Skill of the models in that unit.
+
+A unit that includes models with this special rule may only be joined by models with this special rule, or the Primarch Angron, and models with this special rule may not join a unit that includes any models without this special rule.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
