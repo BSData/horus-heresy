@@ -367,7 +367,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry id="bbe5-14a5-68a1-544f" name="Retinue:" hidden="false"/>
+    <categoryEntry id="bbe5-14a5-68a1-544f" name="Primarch's Retinue:" hidden="false"/>
     <categoryEntry id="9f1e-fbf0-3032-32fe" name="Building Sub-type" hidden="false">
       <infoLinks>
         <infoLink id="6c42-15c6-3024-f8fd" name="Building Sub-type" hidden="false" targetId="01ec-a939-c01a-8a87" type="rule"/>
@@ -415,7 +415,6 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="84d6-d8d5-49ec-27fb" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="609a-e750-e92c-da9f" name="Retinue:" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="false"/>
         <categoryLink id="1375-8457-86ca-67dd" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4fb9-8be5-6fb5-0869" type="max"/>
@@ -447,6 +446,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3210-baff-f554-8019" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="609a-e750-e92c-da9f" name="Primarch's Retinue:" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="false"/>
         <categoryLink id="db9f-30b3-e5db-3e0f" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1c0d-0ff5-e468-703c" type="max"/>
