@@ -12429,8 +12429,11 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="35cb-31a0-80f5-3eb1" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+          </categoryLinks>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -12941,28 +12944,10 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
         <entryLink id="ccb3-845e-c34b-459b" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="88ee-fc77-42ea-872d" name="Calibanite Warblade" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="self" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d5f8-3620-24ed-044b" type="notInstanceOf"/>
-          </conditions>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f07-3d45-4f28-a0c6" type="notInstanceOf">
-                  <comment>TODO: Make this one &quot;Character&quot;</comment>
-                </condition>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f07-3d45-4f28-a0c6" type="notInstanceOf"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="88ee-fc77-42ea-872d" name="Calibanite Warblade" hidden="true" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="6c60-169a-4e05-7fb8" name="Calibanite Warblade" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
@@ -14082,7 +14067,7 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1131-d08f-5cc1-f724" name="The entire unit must choose Spatha Combat Bike Weaponry." hidden="false" collective="false" import="true" defaultSelectionEntryId="2740-5dc4-afd7-ed6e">
+        <selectionEntryGroup id="1131-d08f-5cc1-f724" name="1) Spatha Combat Bike Weaponry." hidden="false" collective="false" import="true" defaultSelectionEntryId="2740-5dc4-afd7-ed6e">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8cc-98bf-93b5-f262" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afe0-e036-4b73-dfe6" type="min"/>
@@ -14136,7 +14121,7 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="dec4-5dcd-f996-d7c7" name="The Legion Outrider Sergeant must choose one Pistol from:" hidden="false" collective="false" import="true" defaultSelectionEntryId="00d6-a94a-1a51-20e2">
+        <selectionEntryGroup id="dec4-5dcd-f996-d7c7" name="6) The Legion Outrider Sergeant must choose one Pistol from:" hidden="false" collective="false" import="true" defaultSelectionEntryId="00d6-a94a-1a51-20e2">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92be-29e9-4b69-15be" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1864-7829-60f3-df72" type="min"/>
@@ -14203,7 +14188,7 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="0b4e-c0ab-e8af-d518" name="All Outriders must choose one melee weapon from:" hidden="false" collective="false" import="true" defaultSelectionEntryId="465c-deee-249d-3394">
+        <selectionEntryGroup id="0b4e-c0ab-e8af-d518" name="2) All Outriders must choose one melee weapon from:" hidden="false" collective="false" import="true" defaultSelectionEntryId="465c-deee-249d-3394">
           <modifiers>
             <modifier type="increment" field="5e4e-d576-18ac-2c07" value="1.0">
               <repeats>
@@ -14284,7 +14269,7 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="503c-a6d6-3b60-f4c7" name="All Outriders must choose one Pistol from:" hidden="false" collective="false" import="true" defaultSelectionEntryId="02ee-7490-b9c4-32e0">
+        <selectionEntryGroup id="503c-a6d6-3b60-f4c7" name="3) All Outriders must choose one Pistol from:" hidden="false" collective="false" import="true" defaultSelectionEntryId="02ee-7490-b9c4-32e0">
           <modifiers>
             <modifier type="increment" field="f463-3323-9485-b7ec" value="1.0">
               <repeats>
@@ -14334,7 +14319,7 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="e88f-73c7-dc41-b2f1" name="One Outrider may take:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="e88f-73c7-dc41-b2f1" name="4) One Outrider may take:" hidden="false" collective="false" import="true">
           <entryLinks>
             <entryLink id="b8de-26b8-e93a-3951" name="Legion Vexilla" hidden="false" collective="false" import="true" targetId="21b1-2a90-9826-1782" type="selectionEntry">
               <constraints>
@@ -14346,7 +14331,7 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="d7c1-ee99-c11d-eafa" name="The Legion Outrider Sergeant must choose one Melee Weapon from:" hidden="false" collective="false" import="true" defaultSelectionEntryId="3d17-8b0c-3fe0-ea59">
+        <selectionEntryGroup id="d7c1-ee99-c11d-eafa" name="5) The Legion Outrider Sergeant must choose one Melee Weapon from:" hidden="false" collective="false" import="true" defaultSelectionEntryId="3d17-8b0c-3fe0-ea59">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8cf8-408e-462b-a730" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7031-3174-48a5-08f4" type="min"/>
@@ -14357,20 +14342,7 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
               </costs>
             </entryLink>
-            <entryLink id="a50f-b6cc-5e01-474f" name="Solarite Power Gauntlet" hidden="false" collective="false" import="true" targetId="b682-2c89-f979-aa74" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="fea0-64f6-0be2-bc38" name="Chainaxe" hidden="false" collective="false" import="true" targetId="ed76-dace-31e4-b174" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
+            <entryLink id="fea0-64f6-0be2-bc38" name="Chainaxe" hidden="false" collective="false" import="true" targetId="ed76-dace-31e4-b174" type="selectionEntry"/>
             <entryLink id="2b45-33cd-a302-3cc3" name="Raven&apos;s Talons" hidden="false" collective="false" import="true" targetId="09d8-64f5-1936-e8ab" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
@@ -14384,9 +14356,14 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
             <entryLink id="624a-bc4c-9768-666b" name="Power Weapon" hidden="false" collective="false" import="true" targetId="8d9c-9f80-c0fd-adcf" type="selectionEntry"/>
             <entryLink id="f8e1-746a-f562-a5aa" name="Charnabal Weapon" hidden="false" collective="false" import="true" targetId="2376-af96-e101-e712" type="selectionEntry"/>
             <entryLink id="3d17-8b0c-3fe0-ea59" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry"/>
+            <entryLink id="97bc-4820-d9ca-ddbd" name="Power Fist" hidden="false" collective="false" import="true" targetId="a3e1-d633-dff9-028b" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="d91a-71ef-acce-00c0" name="The Legion Outrider Sergeant may take:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="d91a-71ef-acce-00c0" name="7) The Legion Outrider Sergeant may take:" hidden="false" collective="false" import="true">
           <selectionEntries>
             <selectionEntry id="5fe6-6fab-765c-42a1" name="Master-craft a weapon" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -14460,7 +14437,7 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
             <entryLink id="9ebd-f531-a9d0-0e00" name="Surgical Augment" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="94a6-e831-8994-432c" name="Squad Upgrades" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="94a6-e831-8994-432c" name="0) Legion-specific upgrades" hidden="false" collective="false" import="true">
           <entryLinks>
             <entryLink id="5904-997b-82e3-5c1f" name="Preysight" hidden="false" collective="false" import="true" targetId="b905-4d78-c141-4e63" type="selectionEntry">
               <costs>
@@ -17766,26 +17743,60 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
           <categoryLinks>
             <categoryLink id="55e0-8c05-884e-ba8c" name="Independant Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
           </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="47eb-cec4-c597-9997" name="Legion Specific Upgrades" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d589-7d71-119a-7f2c" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52ed-ea66-131a-7a24" type="max"/>
-              </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="0181-2379-0257-5024" name="0) Legion-specific upgrades" hidden="false" collective="false" import="true">
               <selectionEntries>
-                <selectionEntry id="2058-f4bb-59f3-5ef6" name="Master-craft one weapon" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="35e5-03bb-0f6d-cc32" name="Warsmith" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="true">
+                    <modifier type="set" field="hidden" value="false">
                       <conditions>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db65-a245-f439-34e3" type="max"/>
+                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="33ca-6e8e-6686-f096" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bdc2-43af-1bc2-cc01" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="fcaf-71de-a4ce-10f7" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+                    <infoLink id="9dab-abe2-ed99-8e93" name="Battlesmith (X)" hidden="false" targetId="5d57-4d02-1e36-4a82" type="rule">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Battlesmith (3+)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="9864-61aa-df60-da03" name="Master of Automata" hidden="false" targetId="8eef-f84b-37cb-554b" type="rule"/>
+                  </infoLinks>
+                  <entryLinks>
+                    <entryLink id="6474-e2ae-ad9e-4f30" name="Servo-Arm" hidden="false" collective="false" import="true" targetId="4168-fc85-8912-7188" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecb4-e8c5-774b-3f10" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f5f-be1b-3e96-7790" type="min"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="56f5-e820-9998-a700" name="Cortex Controller" hidden="false" collective="false" import="true" targetId="2fda-455f-d34d-97e0" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7eaf-65c2-6b29-89ca" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6de-90aa-a699-0181" type="min"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="87eb-235f-9a28-c102" name="Master-craft one weapon" hidden="true" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3ba-1952-ac69-8aea" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="6eae-0679-cc1f-2d05" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
@@ -17793,25 +17804,40 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="5321-cfa8-9ff2-dd6b" name="Mantle of the Elder Drake" hidden="false" collective="false" import="true" targetId="bba6-42e4-5147-fe4f" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="04e9-a9b2-8a9b-8528" name="Dragonscale Shield" hidden="false" collective="false" import="true" targetId="489d-88d0-a0d8-b3e6" type="selectionEntry">
+                <entryLink id="8221-2c06-793d-b7e4" name="Dragonscale Shield" hidden="true" collective="false" import="true" targetId="489d-88d0-a0d8-b3e6" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa01-476b-d0b1-1e06" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db96-53fa-7c65-acf8" type="max"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="2508-4f08-5106-722a" name="Mantle of the Elder Drake" hidden="true" collective="false" import="true" targetId="bba6-42e4-5147-fe4f" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="454e-94e1-7160-afd5" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="ba1b-d78c-1b28-efaf" name="Surgical Augment" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup"/>
               </entryLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks>
             <entryLink id="5aba-6e0b-db50-0d75" name="Grenade Harness" hidden="false" collective="false" import="true" targetId="251a-860d-2c4d-62cc" type="selectionEntry">
               <constraints>
@@ -17837,7 +17863,6 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
                 <modifier type="set" field="name" value="May exchange both his Combi-Bolter &amp; Power Weapon for:"/>
               </modifiers>
             </entryLink>
-            <entryLink id="0016-5d3b-7889-3bba" name="Surgical Augment" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup"/>
             <entryLink id="a402-8989-2991-049e" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34ac-8f7c-f63b-4970" type="max"/>
@@ -17919,26 +17944,60 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
           <categoryLinks>
             <categoryLink id="5e17-8334-68c0-04a0" name="Independant Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
           </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="759c-e78d-2bd7-cb28" name="Legion Specific Upgrades" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b9b-2f47-4f02-770f" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b077-e07d-7a60-b8cf" type="max"/>
-              </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="d9b8-84a4-8be3-f0d0" name="0) Legion-specific upgrades" hidden="false" collective="false" import="true">
               <selectionEntries>
-                <selectionEntry id="09ff-5a43-77d8-945e" name="Master-craft one weapon" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="1fc0-f3a0-e574-70eb" name="Warsmith" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="true">
+                    <modifier type="set" field="hidden" value="false">
                       <conditions>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef7f-97c4-28c1-be70" type="max"/>
+                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="57ba-f4e4-f1e4-5ce4" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4929-42c8-6998-5e30" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="55af-b593-235d-874f" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+                    <infoLink id="2430-f970-84fe-ee11" name="Battlesmith (X)" hidden="false" targetId="5d57-4d02-1e36-4a82" type="rule">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Battlesmith (3+)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="6347-45e5-dab5-8f26" name="Master of Automata" hidden="false" targetId="8eef-f84b-37cb-554b" type="rule"/>
+                  </infoLinks>
+                  <entryLinks>
+                    <entryLink id="d6fa-54e4-715c-9021" name="Servo-Arm" hidden="false" collective="false" import="true" targetId="4168-fc85-8912-7188" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b399-a83e-a0ce-02f6" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7743-2b43-c624-11f0" type="min"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="7823-04c2-d040-f2a5" name="Cortex Controller" hidden="false" collective="false" import="true" targetId="2fda-455f-d34d-97e0" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a05d-755f-7464-bd88" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5f9-53e9-1b81-f2ae" type="min"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d2dd-8cf1-c626-7099" name="Master-craft one weapon" hidden="true" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5240-9fbe-b5ba-cbf4" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="47d0-6eb1-5b31-f61b" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
@@ -17946,25 +18005,40 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="9fda-39a0-42b4-5916" name="Mantle of the Elder Drake" hidden="false" collective="false" import="true" targetId="bba6-42e4-5147-fe4f" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="83bb-1997-2408-d379" name="Dragonscale Shield" hidden="false" collective="false" import="true" targetId="489d-88d0-a0d8-b3e6" type="selectionEntry">
+                <entryLink id="c788-f4fd-1d1b-cf6f" name="Dragonscale Shield" hidden="true" collective="false" import="true" targetId="489d-88d0-a0d8-b3e6" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02b5-b236-b0f8-17fb" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b634-fcdd-fd89-f11e" type="max"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="47d5-c94f-0bec-ab52" name="Mantle of the Elder Drake" hidden="true" collective="false" import="true" targetId="bba6-42e4-5147-fe4f" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d12-a1e4-2bcb-e013" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="a1d0-380b-dfb6-3380" name="Surgical Augment" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup"/>
               </entryLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks>
             <entryLink id="5951-490f-9130-b77a" name="Grenade Harness" hidden="false" collective="false" import="true" targetId="251a-860d-2c4d-62cc" type="selectionEntry">
               <constraints>
@@ -17974,23 +18048,15 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
               </costs>
             </entryLink>
-            <entryLink id="d95a-b940-6d41-8ea7" name="Tartaros Terminator Armour" hidden="false" collective="false" import="true" targetId="f850-d0af-8663-ccac" type="selectionEntry"/>
-            <entryLink id="a809-a4ab-a16a-fde9" name="Terminator Melee Weapon" hidden="false" collective="false" import="true" targetId="8b46-faad-df3a-6929" type="selectionEntryGroup">
-              <modifiers>
-                <modifier type="set" field="name" value="May exchange power weapon for:"/>
-              </modifiers>
+            <entryLink id="d95a-b940-6d41-8ea7" name="Tartaros Terminator Armour" hidden="false" collective="false" import="true" targetId="f850-d0af-8663-ccac" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ced5-303d-0be2-9f20" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cdea-880a-9e0f-2288" type="max"/>
+              </constraints>
             </entryLink>
-            <entryLink id="a602-e0f0-4950-3e63" name="Terminator Ranged Weapon" hidden="false" collective="false" import="true" targetId="bb49-6a88-7ffa-6aa7" type="selectionEntryGroup">
-              <modifiers>
-                <modifier type="set" field="name" value="May exchange combi-bolter for:"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="03ed-056f-a97d-e68c" name="Paired Melee Weapons:" hidden="false" collective="false" import="true" targetId="b503-8902-fde3-7675" type="selectionEntryGroup">
-              <modifiers>
-                <modifier type="set" field="name" value="May exchange both his Combi-Bolter &amp; Power Weapon for:"/>
-              </modifiers>
-            </entryLink>
-            <entryLink id="8ce5-96a4-7a84-7708" name="Surgical Augment" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup"/>
+            <entryLink id="a809-a4ab-a16a-fde9" name="Terminator Melee Weapon" hidden="false" collective="false" import="true" targetId="8b46-faad-df3a-6929" type="selectionEntryGroup"/>
+            <entryLink id="a602-e0f0-4950-3e63" name="Terminator Ranged Weapon" hidden="false" collective="false" import="true" targetId="bb49-6a88-7ffa-6aa7" type="selectionEntryGroup"/>
+            <entryLink id="03ed-056f-a97d-e68c" name="Paired Melee Weapons:" hidden="false" collective="false" import="true" targetId="b503-8902-fde3-7675" type="selectionEntryGroup"/>
             <entryLink id="1097-01dd-ec7d-9762" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccc1-ccc4-17c2-6d22" type="max"/>
@@ -19658,6 +19724,9 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
