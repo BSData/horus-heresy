@@ -372,7 +372,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry id="bbe5-14a5-68a1-544f" name="Retinue:" hidden="false"/>
+    <categoryEntry id="bbe5-14a5-68a1-544f" name="Primarch&apos;s Retinue:" hidden="false"/>
     <categoryEntry id="9f1e-fbf0-3032-32fe" name="Building Sub-type" hidden="false">
       <infoLinks>
         <infoLink id="6c42-15c6-3024-f8fd" name="Building Sub-type" hidden="false" targetId="01ec-a939-c01a-8a87" type="rule"/>
