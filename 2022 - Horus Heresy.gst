@@ -116,14 +116,15 @@
       </rules>
       <infoLinks>
         <infoLink id="0d88-efe0-d7f2-b00a" name="Independent Character (P3P)" hidden="false" targetId="c57d-4820-458a-7ab5" type="rule"/>
-        <infoLink id="8234-2d15-6c2f-6062" name="Eternal Warrior (P3P)" hidden="false" targetId="000b-fe96-31f8-c0ad" type="rule"/>
+        <infoLink id="8234-2d15-6c2f-6062" name="Eternal Warrior" hidden="false" targetId="000b-fe96-31f8-c0ad" type="rule"/>
         <infoLink id="d5ca-7903-8a29-f059" name="Fearless (P3P)" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
         <infoLink id="e721-b1da-84ba-8996" name="It Will Not Die (X) (P3P)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="It Will Not Die (5+)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="2a4b-7961-1ac1-06d9" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+        <infoLink id="058b-7554-0d99-1e7a" name="Relentless (P3P)" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+        <infoLink id="55ae-6639-0842-15df" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Bulky (4)"/>
             <modifier type="set" field="hidden" value="true">
@@ -138,7 +139,6 @@
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="058b-7554-0d99-1e7a" name="Relentless (P3P)" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="c658-dc6b-727b-c488" name="Lords of War:" hidden="false"/>
@@ -264,7 +264,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
     </categoryEntry>
     <categoryEntry id="0d4f-ff28-d819-a512" name="Deep Strike:" hidden="false">
       <infoLinks>
-        <infoLink id="155a-8fd2-5d2a-2bd3" name="Deep Strike (P3P)" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
+        <infoLink id="155a-8fd2-5d2a-2bd3" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="7d95-f9d1-440a-67bd" name="Monstrous Sub-type:" hidden="false">
@@ -304,8 +304,8 @@ During any Reaction that allows a unit equipped entirely with Jet PAcks to move,
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="e757-190e-9de5-961a" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
-        <infoLink id="59ee-4836-c868-3517" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+        <infoLink id="e757-190e-9de5-961a" name="Deep Strike (P3P)" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
+        <infoLink id="59ee-4836-c868-3517" name="Bulky (X) (P3P)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Bulky (2 or 3)"/>
           </modifiers>
@@ -420,7 +420,6 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="84d6-d8d5-49ec-27fb" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="609a-e750-e92c-da9f" name="Retinue:" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="false"/>
         <categoryLink id="1375-8457-86ca-67dd" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4fb9-8be5-6fb5-0869" type="max"/>
@@ -452,6 +451,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3210-baff-f554-8019" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="609a-e750-e92c-da9f" name="Primarch&apos;s Retinue:" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="false"/>
         <categoryLink id="db9f-30b3-e5db-3e0f" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1c0d-0ff5-e468-703c" type="max"/>
@@ -4878,9 +4878,9 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f467-70bb-c27c-5ed5" name="Needle Pistol" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="fdd4-06c7-4608-b07f" name="Needle Pistol" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="83b4-0276-dfd8-2d11" name="Needle Pistol" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="179e-ff9e-8fd6-8ba5" name="Needle Pistol" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">2</characteristic>
@@ -4890,8 +4890,8 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="564d-1003-8078-651d" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
-        <infoLink id="a54a-ecfb-a650-fc9f" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
+        <infoLink id="1d65-bca2-3a1a-ed6d" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="e727-aac2-c672-c6e5" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Poisoned (3+)"/>
           </modifiers>
