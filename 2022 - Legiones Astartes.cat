@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="25" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="26" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="7002-2f9a-59c4-2742" name="Cult Arcana">
       <characteristicTypes>
@@ -40952,6 +40952,33 @@ part of a close combat attack.</description>
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="16ca-e521-1c1b-0716" name="Gorgon Terminator Armour" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="4cd6-3857-3e36-5cae" name="Gorgon Terminator Armour" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Any Legion Cataphractii Praetor or Legion Cataphractii Centurion may exchange their Legion Cataphractii Terminator armour for Gorgon Terminator armour at no additional points cost. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="941f-1987-4128-9de1" name="Blind" hidden="false" targetId="d836-747d-07d6-2b63" type="rule"/>
+        <infoLink id="2962-d497-a0de-d397" name="Feel No Pain (X)" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Feel No Pain (5+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
