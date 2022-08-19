@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="c01b-0224-f806-0d23" name="2022 - Titan Legions" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry id="aebe-bed9-b32f-a8ea" name="Titan Maniple" hidden="false">
+      <categoryLinks>
+        <categoryLink id="20a9-5d4b-e686-aa09" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7441-87f2-a319-dc9e" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="37ab-5bc5-c178-0c45" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="6bdb-a1dc-ecdf-16b5" name="Expanded Army Lists" hidden="false" targetId="e8ed-ca49-ad6d-5688" primary="false"/>
+        <categoryLink id="d328-fc14-ae81-e58f" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3a48-d3db-f3ab-a272" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="dd8b-2d47-ad0f-f152" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="false">
+          <modifiers>
+            <modifier type="increment" field="e4cd-8a9e-0f33-2138" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c658-dc6b-727b-c488" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e4cd-8a9e-0f33-2138" type="min"/>
+            <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a819-e905-205c-af5a" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="882a-092f-96da-a684" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="false">
+          <modifiers>
+            <modifier type="increment" field="d51d-0b0c-e7f2-da44" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b5d-fac7-799b-d7e7" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9657-b309-85f1-3a34" type="max"/>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d51d-0b0c-e7f2-da44" type="min"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <entryLinks>
+    <entryLink id="6b36-d1b3-cba5-f217" name="Divisio Tactica: The Titan Legions" hidden="false" collective="false" import="true" targetId="47f0-bba9-6d89-9baa" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b71-5246-c019-3c96" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="277b-dd85-3a29-3e6d" name="New CategoryLink" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+</catalogue>

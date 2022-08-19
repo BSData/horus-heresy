@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="10" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="11" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 18th, 2022"/>
-    <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" publicationDate="June 18th, 2022"/>
-    <publication id="09c5-eeae-f398-b653" name="Liber Hereticus – Traitor Legiones Astartes Army Book" publicationDate="June 18th, 2022"/>
+    <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 18th, 2022"/>
+    <publication id="09c5-eeae-f398-b653" name="Liber Hereticus – Traitor Legiones Astartes Army Book" shortName="LA - Traitor" publicationDate="June 18th, 2022"/>
     <publication id="a716-c1c4-7b26-8424" name="Both Astartes Army Books" publicationDate="June 18th, 2022"/>
-    <publication id="d0df-7166-5cd3-89fd" name="Legacies of The Age of Darkness"/>
-    <publication id="09b3-d525-cdea-260c" name="Exemplary Battles of Age of Darkness"/>
-    <publication id="d13e-e1ff-5dc7-b84b" name="Exemplary Battles - The Scouring of Gildens Star"/>
+    <publication id="d0df-7166-5cd3-89fd" name="Legacies of The Age of Darkness" shortName="LotAoD"/>
+    <publication id="09b3-d525-cdea-260c" name="Exemplary Battles of Age of Darkness" shortName="EBoAoD"/>
+    <publication id="d13e-e1ff-5dc7-b84b" name="Exemplary Battles - The Scouring of Gildens Star" shortName="EBoAoD - TSoGS"/>
+    <publication id="bde1-6db1-163b-3b76" name="Liber Mechanicum - Forces of the Omnissiah Army Book" shortName="Mech" publicationDate="August 20th, 2022"/>
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1.0" hidden="false"/>
@@ -116,29 +117,24 @@
       </rules>
       <infoLinks>
         <infoLink id="0d88-efe0-d7f2-b00a" name="Independent Character (P3P)" hidden="false" targetId="c57d-4820-458a-7ab5" type="rule"/>
-        <infoLink id="8234-2d15-6c2f-6062" name="Eternal Warrior" hidden="false" targetId="000b-fe96-31f8-c0ad" type="rule"/>
+        <infoLink id="8234-2d15-6c2f-6062" name="Eternal Warrior (P3P)" hidden="false" targetId="000b-fe96-31f8-c0ad" type="rule"/>
         <infoLink id="d5ca-7903-8a29-f059" name="Fearless (P3P)" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
         <infoLink id="e721-b1da-84ba-8996" name="It Will Not Die (X) (P3P)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="It Will Not Die (5+)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="058b-7554-0d99-1e7a" name="Relentless (P3P)" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
-        <infoLink id="55ae-6639-0842-15df" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+        <infoLink id="2a4b-7961-1ac1-06d9" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Bulky (4)"/>
             <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd1f-1c51-706c-e5f7" type="equalTo"/>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink id="058b-7554-0d99-1e7a" name="Relentless (P3P)" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="c658-dc6b-727b-c488" name="Lords of War:" hidden="false"/>
@@ -264,7 +260,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
     </categoryEntry>
     <categoryEntry id="0d4f-ff28-d819-a512" name="Deep Strike:" hidden="false">
       <infoLinks>
-        <infoLink id="155a-8fd2-5d2a-2bd3" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
+        <infoLink id="155a-8fd2-5d2a-2bd3" name="Deep Strike (P3P)" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="7d95-f9d1-440a-67bd" name="Monstrous Sub-type:" hidden="false">
@@ -346,7 +342,7 @@ If a Flyer is Hovering, it is treated exactly as a Skimmer (see page 214).</desc
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry id="4f07-3d45-4f28-a0c6" name="Independent Character" hidden="false">
+    <categoryEntry id="4f07-3d45-4f28-a0c6" name="Independant Character" hidden="false">
       <rules>
         <rule id="c57d-4820-458a-7ab5" name="Independent Character" publicationId="e77a-823a-da94-16b9" page="241" hidden="false">
           <description>Independent Characters can join other units. They cannot, however, join units that contain Vehicles, Dreadnoughts, Automata or any model with the Monstrous sub-type (unless the Independent Character also has that Unit Type or sub-type). They can join other Independent Characters though to form a powerful multicharacter unit.
@@ -451,7 +447,23 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3210-baff-f554-8019" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="609a-e750-e92c-da9f" name="Primarch&apos;s Retinue:" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="false"/>
+        <categoryLink id="609a-e750-e92c-da9f" name="Primarch&apos;s Retinue:" hidden="true" targetId="bbe5-14a5-68a1-544f" primary="false">
+          <modifiers>
+            <modifier type="set" field="4c49-82d1-d750-1b0c" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad5f-31db-8bc7-5c46" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad5f-31db-8bc7-5c46" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c49-82d1-d750-1b0c" type="max"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="db9f-30b3-e5db-3e0f" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1c0d-0ff5-e468-703c" type="max"/>
@@ -4878,25 +4890,29 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fdd4-06c7-4608-b07f" name="Needle Pistol" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="179e-ff9e-8fd6-8ba5" name="Needle Pistol" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">2</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 2, Poisoned (3+), Pinning</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="1d65-bca2-3a1a-ed6d" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
-        <infoLink id="e727-aac2-c672-c6e5" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Poisoned (3+)"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
+    <selectionEntry id="ddf5-d792-3146-6e9a" name="Mechanicum" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7ae-8da7-ad16-cea6" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2c74-7db8-469e-8327" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="47f0-bba9-6d89-9baa" name="Divisio Tactica: The Titan Legions" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31c7-df83-f074-96c2" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a4d5-236b-696a-421c" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="807e-0cf8-7f28-7b6d" name="Divisio Tactica: Questoris Household" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2e8-407b-52b4-b4a8" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a560-b7f2-a69b-5143" type="max"/>
+      </constraints>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
