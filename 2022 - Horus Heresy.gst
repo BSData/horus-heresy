@@ -116,10 +116,10 @@
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="0d88-efe0-d7f2-b00a" name="Independent Character (P3P)" hidden="false" targetId="c57d-4820-458a-7ab5" type="rule"/>
-        <infoLink id="8234-2d15-6c2f-6062" name="Eternal Warrior (P3P)" hidden="false" targetId="000b-fe96-31f8-c0ad" type="rule"/>
-        <infoLink id="d5ca-7903-8a29-f059" name="Fearless (P3P)" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
-        <infoLink id="e721-b1da-84ba-8996" name="It Will Not Die (X) (P3P)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
+        <infoLink id="0d88-efe0-d7f2-b00a" name="Independent Character" hidden="false" targetId="c57d-4820-458a-7ab5" type="rule"/>
+        <infoLink id="8234-2d15-6c2f-6062" name="Eternal Warrior" hidden="false" targetId="000b-fe96-31f8-c0ad" type="rule"/>
+        <infoLink id="d5ca-7903-8a29-f059" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
+        <infoLink id="e721-b1da-84ba-8996" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="It Will Not Die (5+)"/>
           </modifiers>
@@ -134,7 +134,7 @@
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="058b-7554-0d99-1e7a" name="Relentless (P3P)" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+        <infoLink id="058b-7554-0d99-1e7a" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="c658-dc6b-727b-c488" name="Lords of War:" hidden="false"/>
@@ -149,8 +149,8 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="2fb2-ff7b-13ff-b31c" name="Deep Strike (P3P)" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
-        <infoLink id="0dcd-416f-c33a-ece0" name="Bulky (X) (P3P)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+        <infoLink id="2fb2-ff7b-13ff-b31c" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
+        <infoLink id="0dcd-416f-c33a-ece0" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Bulky (2 or 3)"/>
           </modifiers>
@@ -181,7 +181,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="453b-86e9-01b1-0a96" name="Fearless (P3P)" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
+        <infoLink id="453b-86e9-01b1-0a96" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="4171-e276-e90d-b8e5" name="Legion Consularis:" hidden="false"/>
@@ -237,7 +237,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="bbcb-0615-829f-4875" name="Fear (X) (P3P)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+        <infoLink id="bbcb-0615-829f-4875" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Fear (1)"/>
           </modifiers>
@@ -255,12 +255,12 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="7163-a73e-7f6d-2357" name="Fearless (P3P)" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
+        <infoLink id="7163-a73e-7f6d-2357" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="0d4f-ff28-d819-a512" name="Deep Strike:" hidden="false">
       <infoLinks>
-        <infoLink id="155a-8fd2-5d2a-2bd3" name="Deep Strike (P3P)" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
+        <infoLink id="155a-8fd2-5d2a-2bd3" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="7d95-f9d1-440a-67bd" name="Monstrous Sub-type:" hidden="false">
@@ -284,7 +284,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="1c25-8c44-6c9f-8d44" name="Fear (X) (P3P)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+        <infoLink id="1c25-8c44-6c9f-8d44" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Fear (1)"/>
           </modifiers>
@@ -300,8 +300,8 @@ During any Reaction that allows a unit equipped entirely with Jet PAcks to move,
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="e757-190e-9de5-961a" name="Deep Strike (P3P)" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
-        <infoLink id="59ee-4836-c868-3517" name="Bulky (X) (P3P)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+        <infoLink id="e757-190e-9de5-961a" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
+        <infoLink id="59ee-4836-c868-3517" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Bulky (2 or 3)"/>
           </modifiers>
@@ -342,7 +342,7 @@ If a Flyer is Hovering, it is treated exactly as a Skimmer (see page 214).</desc
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry id="4f07-3d45-4f28-a0c6" name="Independant Character" hidden="false">
+    <categoryEntry id="4f07-3d45-4f28-a0c6" name="Independent Character" hidden="false">
       <rules>
         <rule id="c57d-4820-458a-7ab5" name="Independent Character" publicationId="e77a-823a-da94-16b9" page="241" hidden="false">
           <description>Independent Characters can join other units. They cannot, however, join units that contain Vehicles, Dreadnoughts, Automata or any model with the Monstrous sub-type (unless the Independent Character also has that Unit Type or sub-type). They can join other Independent Characters though to form a powerful multicharacter unit.
