@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d228-55e8-b58c-1b77" name="LA -  XIV: Death Guard" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d228-55e8-b58c-1b77" name="LA -  XIV: Death Guard" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="fb89-32c1-bdc5-2e3d" name="Mortarion (Placeholder)" hidden="false" collective="false" import="true" targetId="7427-bdfa-c359-ebb8" type="selectionEntry">
       <categoryLinks>
@@ -36,13 +36,6 @@
       <categoryLinks>
         <categoryLink id="6535-1408-9914-1567" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
         <categoryLink id="952c-b3c9-50e1-b074" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="6a97-78dc-859b-0297" name="Deathshroud Terminator Squad (PLACEHOLDER)" hidden="false" collective="false" import="true" targetId="ee2c-3aa9-6c2b-c96d" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="ec7a-e187-e711-a841" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
-        <categoryLink id="cdfc-ca77-c869-cf5e" name="Retinue:" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="false"/>
-        <categoryLink id="38bf-00e8-ac6b-d1f8" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="47ce-73d3-f6bf-7f54" name="  XIV: Death Guard" hidden="false" collective="false" import="true" targetId="dd1f-1c51-706c-e5f7" type="selectionEntry">
@@ -147,51 +140,67 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="12c3-3529-d487-48b3" name="Psychic Powers" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7427-bdfa-c359-ebb8" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd68-6070-3c39-0960" type="max"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3601-98d1-75b4-8735" type="min"/>
-              </constraints>
-              <profiles>
-                <profile id="1079-edc1-2eec-792d" name="Witchsense" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
-                  <characteristics>
-                    <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">At the start of any Assault Phase Calas Typhon’s controlling player may choose to make a Psychic check for him. If that Check is passed then Calas Typhon’s Weapon Skill Characteristic is increased by +1 and his Attacks Characteristic is increased by D3 for the duration of that Assault Phase. If the Check is failed then Calas Typhon suffers Perils of the Warp.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="bf74-bd33-0bf7-52f0" name="Toxin Cloud " hidden="false" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon">
-                  <comment>Psychic Focus: Before making any To Hit rolls with this weapon, the Psyker must make a Psychic check. If the Check is passed then the Psyker may attack as normal using the profile shown for this weapon. If the Check is failed then the Psyker suffers Perils of the Warp, and if the model is not removed as a casualty then it may attack as normal but may not use this weapon.</comment>
-                  <characteristics>
-                    <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">24&quot;</characteristic>
-                    <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">1</characteristic>
-                    <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">4</characteristic>
-                    <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 1, Large Blast (5&quot;), Fleshbane, Pinning, Psychic Focus</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="2621-cbbd-e2c1-f5c4" name="Fleshbane" hidden="false" targetId="40cd-9505-253c-e76f" type="rule"/>
-                <infoLink id="5229-bfad-a369-0c59" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
-                <infoLink id="a2c6-aeea-cff7-3b3a" name="Psychic Focus (?? Where is this?)" hidden="false" targetId="bff3-3548-b2b8-72f1" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
-          <entryLinks>
-            <entryLink id="1ac9-e9d8-7153-d0de" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="774f-3b57-9042-0047" name="Psychic Powers" hidden="false" collective="false" import="true" defaultSelectionEntryId="bce2-5933-df34-76f0">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="793a-4b27-f60c-1d5b" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f8c-c772-41df-d258" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aba0-a8a6-ce04-4a51" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c5a-1fcb-80b6-ee87" type="min"/>
               </constraints>
-            </entryLink>
+              <selectionEntries>
+                <selectionEntry id="bce2-5933-df34-76f0" name="Psychic Powers" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7427-bdfa-c359-ebb8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <profiles>
+                    <profile id="cbc9-4758-39ef-ffb6" name="Witchsense" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">At the start of any Assault Phase Calas Typhon’s controlling player may choose to make a Psychic check for him. If that Check is passed then Calas Typhon’s Weapon Skill Characteristic is increased by +1 and his Attacks Characteristic is increased by D3 for the duration of that Assault Phase. If the Check is failed then Calas Typhon suffers Perils of the Warp.</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile id="cd0e-e3a9-e58a-3826" name="Toxin Cloud " hidden="false" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon">
+                      <comment>Psychic Focus: Before making any To Hit rolls with this weapon, the Psyker must make a Psychic check. If the Check is passed then the Psyker may attack as normal using the profile shown for this weapon. If the Check is failed then the Psyker suffers Perils of the Warp, and if the model is not removed as a casualty then it may attack as normal but may not use this weapon.</comment>
+                      <characteristics>
+                        <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">24&quot;</characteristic>
+                        <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">1</characteristic>
+                        <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">4</characteristic>
+                        <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 1, Large Blast (5&quot;), Fleshbane, Pinning, Psychic Focus</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink id="0bf0-66bd-f147-6697" name="Fleshbane" hidden="false" targetId="40cd-9505-253c-e76f" type="rule"/>
+                    <infoLink id="db05-e595-8bd5-e117" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+                    <infoLink id="239c-affa-db28-97a9" name="Psychic Focus (?? Where is this?)" hidden="false" targetId="bff3-3548-b2b8-72f1" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4fd1-5f3d-038f-be02" name="Witchblood" hidden="true" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7427-bdfa-c359-ebb8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <profiles>
+                    <profile id="2fa8-a03c-3675-3ba5" name="Witchblood" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">When included as part of an army that includes Mortarion, or if Mortarion is present in a battle as part of another friendly army, then Calas Typhon may not make use of any of his Psychic Powers or Psychic Weapons.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
             <entryLink id="f40c-7314-8386-5153" name="Rad Grenades" hidden="false" collective="false" import="true" targetId="1b0b-3dfc-9521-b27e" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3474-64b3-db1b-05d4" type="max"/>
@@ -236,13 +245,19 @@
             </profile>
           </profiles>
         </entryLink>
-        <entryLink id="76ec-91ce-1e3b-fc50" name="Retinue" hidden="false" collective="false" import="true" targetId="4b87-408d-beba-2eb2" type="selectionEntryGroup"/>
+        <entryLink id="76ec-91ce-1e3b-fc50" name="Retinue" hidden="false" collective="false" import="true" targetId="2dd0-7045-8ae5-f394" type="selectionEntryGroup"/>
+        <entryLink id="2495-f058-c049-5675" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e093-57dc-8b0f-afcb" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84e1-82bc-f67a-bec8" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7427-bdfa-c359-ebb8" name="Mortarion (Placeholder)" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="7427-bdfa-c359-ebb8" name="Mortarion" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -250,6 +265,138 @@
           </conditions>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="031f-3c06-53e7-0ee3" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="4106-fc7b-3756-ae9a" name="Mortarion" hidden="false" collective="false" import="true" type="model">
+          <profiles>
+            <profile id="b27d-c9d8-fa58-207a" name="Mortarion" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Primarch (Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">7</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">6</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">7</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">7</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">7</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">6</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="b29b-79a3-7a3b-efe8" name="Shadow of the Reaper" hidden="false">
+              <description>So long as Mortarion is not Embarked on any model, in Reserves, locked in combat or part of a unit with the Retinue or Deathshroud Retinue special rules, in the player&apos;s Shooting phase in lieu of making a Shooting Attack, Mortarion may be redeployed by his controlling player, this counts as an alternative form of Movement and cancels the benefits of the Legiones Astartes (Death Guard) special rule when used.
+
+If this option is used then Mortarion is removed from the battlefield, leaving any unit that he was part of. The controlling player must then redeploy Mortarion to any point on the battlefield that is within 10&quot; of his original position, as long as there is space for his model and the chosen position is not within 3&quot; of an enemy model. He may not be placed within Impassable Terrain or inside a Vehicle or Building. This is not counted as a move as such, and the intervening terrain does not affect him in any way. Mortarion may Charge normally in a turn that he is redeployed in this way, but counts as making a Disordered Charge if doing so.</description>
+            </rule>
+            <rule id="6363-8841-1d61-e78a" name="Prenatural Resilience" hidden="false">
+              <description>Any Hits allocated to Mortarion with the Poisoned (X), Rending (X), or Fleshbane special rules only affect Mortarion on a D6 roll of a 6 instead of their usual effect.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="bec8-13ea-971a-7514" name="Legiones Astartes (Death Guard) " hidden="false" targetId="48a9-493f-e255-5070" type="rule"/>
+            <infoLink id="db78-46f8-faf7-adf8" name="Hatred (X)" hidden="false" targetId="dc0b-fe69-6b71-e0a4" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Hatred (Psykers)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="66bb-eddf-416b-fbee" name="Adamantium Will (X+)" hidden="false" targetId="4380-44a5-f01a-d964" type="rule"/>
+            <infoLink id="40f6-ba7c-cc2b-8fce" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Fear (2)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="591e-2e96-ef7f-e714" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="It Will Not Die (4+)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="3735-149b-ec53-4faf" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Bulky (6)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="42ad-a253-7a63-f86f" name="Silence" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="734d-1adc-9847-77ce" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="13af-8276-99e5-41e9" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="95b6-ef9b-d09c-3e26" name="Silence" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Instant Death, Sunder, Two-handed, Reaping Blow (2)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="8870-0505-2c44-0b61" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+                <infoLink id="9b44-565b-bcfe-1248" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+                <infoLink id="aef3-0dd2-e221-c59e" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+                <infoLink id="ecc3-b478-c1f3-5303" name="Reaping Blow (X)" hidden="false" targetId="bd8c-4f52-d682-1b40" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Reaping Blow (2)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="7d9f-0cea-7243-dbe3" name="The Lantern" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c522-fcc7-db67-e979" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="abef-cd4b-abc5-4a3d" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="cd5e-466a-8e36-a743" name="The Lantern" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Sunder</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="d9cb-608a-2855-518d" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="5d32-6cfe-58e7-3931" name="The Barbaran Plate" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fb62-f9a0-5d1f-c50d" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7201-bd60-95ce-765d" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="9cc5-317a-dae5-3c01" name="The Barbaran Plate" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Barbaran Plate provides a 2+ Armour Save and a 4+ Invulnerable Save.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="ab65-06b4-3938-47e7" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b529-18d9-662c-a97d" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fcc3-2cdd-fc00-0ebc" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="33f0-90c6-b638-ec5e" name="Phosphex Bomb" hidden="false" collective="false" import="true" targetId="4188-13ff-cb03-109e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c311-fe6b-6aa8-6b01" type="min"/>
+                <constraint field="selections" scope="parent" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d5e3-a3e5-de90-65c0" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="8aa8-5aa2-84ed-cd21" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
           <constraints>
@@ -257,7 +404,19 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01cb-07f7-b45b-7819" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="4507-6ea6-a449-9e16" name="Retinue" hidden="false" collective="false" import="true" targetId="4b87-408d-beba-2eb2" type="selectionEntryGroup"/>
+        <entryLink id="4507-6ea6-a449-9e16" name="Retinue" hidden="false" collective="false" import="true" targetId="2dd0-7045-8ae5-f394" type="selectionEntryGroup"/>
+        <entryLink id="f100-5ea6-0653-7bb7" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a5b-701f-bf05-2c14" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4f47-b860-15fb-4ff7" name="Sire of the Death Guard" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">All friendly units composed entirely of models with the Legiones Astartes (Death Guard) in the same army as Mortarion, including Mortarion himself, ignore all penalties to their Leadership caused by the Fear and Shell Shock (X) special rules and when locked in combat suffer no penaltry to their Leadership Characteristics due to casualties suffered during an assault. In addition, an army with Mortarion as its Warlord may take an additional Reaction in the opposing player&apos;s Assault phase as long as Mortarion has not been removed as a casualty.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="425.0"/>
@@ -777,7 +936,7 @@
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f47c-aed4-2beb-6417" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f47c-aed4-2beb-6417" type="max"/>
       </constraints>
       <profiles>
         <profile id="dd5e-f503-609a-2353" name="Crysos Morturg" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -935,7 +1094,7 @@
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8ecc-5681-8f65-1628" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8ecc-5681-8f65-1628" type="max"/>
       </constraints>
       <profiles>
         <profile id="460f-7d2b-eaef-5abf" name="Marshal Durak Rask" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -962,6 +1121,9 @@
       <infoLinks>
         <infoLink id="6127-484d-d453-b4e0" name="Legiones Astartes (Death Guard) " hidden="false" targetId="48a9-493f-e255-5070" type="rule"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="58d0-40f3-bf65-136f" name="Siege Breaker:" hidden="false" targetId="8247-54dc-9194-948f" primary="false"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="dd03-bdde-aa4c-d15d" name="Defiant" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -1059,25 +1221,7 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="165.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ee2c-3aa9-6c2b-c96d" name="Deathshroud Terminator Squad (PLACEHOLDER)" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
   </sharedSelectionEntries>
-  <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="4b87-408d-beba-2eb2" name="Retinue" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="11c6-2051-399c-c765" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="4ddf-16c1-c0e7-f194" name="Cataphractii Command Squad" hidden="false" collective="false" import="true" targetId="1b17-dcd6-0153-3efe" type="selectionEntry"/>
-        <entryLink id="ccd3-9948-3030-b8d4" name="Tartaros Command Squad" hidden="false" collective="false" import="true" targetId="58d0-a0fd-d20b-cb1b" type="selectionEntry"/>
-        <entryLink id="9f21-f44c-903b-1cd4" name="Command Squad (Placeholder Points)" hidden="false" collective="false" import="true" targetId="0aca-632d-1642-8af9" type="selectionEntry"/>
-        <entryLink id="635e-a05a-ae79-39f8" name="Deathshroud Terminator Squad (PLACEHOLDER)" hidden="false" collective="false" import="true" targetId="ee2c-3aa9-6c2b-c96d" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntryGroup>
-  </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="2a8e-65b7-11c5-f84a" name="Shrouded in Death" hidden="false">
       <description>When an enemy unit successfully Charges a unit that includes one or more models with this special rule, the Charge is always considered to be Disordered.</description>
