@@ -6277,6 +6277,147 @@ In addition, a model with the Paragon of Metal special rule may not be targeted 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="f227-a61a-3215-932b" name="Heavy Stubber" publicationId="bde1-6db1-163b-3b76" page="114" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="129d-1b6c-7ba2-29ec" name="Heavy Stubber" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9ccc-276b-eb67-9a0f" name="Ion Gauntlet Shield" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c622-aa22-5d98-69d2" name="Ion Gauntlet Shield" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with an ion gauntlet shield gains a 5+ Invulnerable Save against Shooting Attacks which target its Front or Side Armour Values, and a 5+ Invulnerable Save against all Melee Attacks.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dde9-961b-5765-21a2" name="Ion Shield" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="dcde-df05-1912-9a61" name="Ion Shield" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with an ion shield gains a 4+ Invulnerable Save against Shooting Attacks which target its Front Armour Value, and a 5+ Invulnerable Save against Shooting Attacks which target its Side Armour Value.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c587-8d02-aaba-ce19" name="Ionic Deflector" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d6e7-9365-6336-6a51" name="Ionic Deflector" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with an ionic deflector gains a 5+ Invulnerable Save, and any model with an ionic deflector and a Wounds Characteristic gains the Eternal Warrior special rule. In addition, when a model with an ionic deflector loses its last Wound or Hull Point, but before it is removed as a casualty or replaced with a Wreck, all models both friendly and enemy within D6+3&quot; suffer an automatic Hit atStr 8, AP -.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2b9f-41fb-a0a8-285e" name="Karacnos Mortar Battery" publicationId="bde1-6db1-163b-3b76" page="118" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="97fa-5adc-b1ff-7b4c" name="Karacnos Mortar Battery" publicationId="bde1-6db1-163b-3b76" page="118" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">60&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Massive Blast (7&quot;), Barrage, Fleshbane, Rad-phage, Ignores Cover, Pinning, Shell Shock (3), Crawling Fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b378-f4a5-c40d-d64a" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink id="6031-ae7a-062e-5ccd" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
+        <infoLink id="705a-cf38-e62c-7a55" name="Fleshbane" hidden="false" targetId="40cd-9505-253c-e76f" type="rule"/>
+        <infoLink id="3280-c04a-93ac-714d" name="Rad-Phage" hidden="false" targetId="8189-e963-d2e5-5d3d" type="rule"/>
+        <infoLink id="9096-5899-2d97-fc5e" name="Ignores Cover" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>
+        <infoLink id="41b1-f84b-91c7-ee55" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="7480-ec76-4171-3619" name="Shell Shock (X)" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Shell Shock (3)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="4e85-a243-72be-79b9" name="Crawling Fire" hidden="false" targetId="8258-a7af-e4df-531d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="003b-af4b-0094-f5c3" name="Multi-Laser" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="39e5-062a-576b-91a9" name="Multi-Laser" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="17c6-afe9-c5da-d9b6" name="Phased Plasma-Fusil" publicationId="bde1-6db1-163b-3b76" page="118" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="acdc-4f26-a91b-d291" name="Phased Plasma-Fusil" publicationId="bde1-6db1-163b-3b76" page="118" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Breaching (4+), Gets Hot</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d8b4-3250-f14b-e288" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (4+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="6c91-aca4-85e2-1bfc" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="31eb-9c83-cc5e-ef2d" name="Lightning Cannon " publicationId="bde1-6db1-163b-3b76" page="113" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="119e-f108-83fe-d0e3" name="Lightning Cannon " hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Rending (4+), Shred, Exoshock (4+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1fbe-2216-51fa-2356" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink id="add5-4981-3dc4-de5f" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (4+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="e2e0-62d9-16cf-53c4" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+        <infoLink id="d61a-2390-b6ad-5413" name="Exoshock (X)" hidden="false" targetId="69ca-318a-b47a-7a3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Exoshock (4+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4a48-4935-246d-0c2e" name="Legion" hidden="false" collective="false" import="true">
@@ -8705,6 +8846,25 @@ Maxima :When destroyed, a model with this special rule resolves Hits caused by C
     </rule>
     <rule id="ba77-a802-55df-da67" name="Wrecker" publicationId="bde1-6db1-163b-3b76" page="111" hidden="false">
       <description>Penetrating Hits caused by attacks made with weapons or models with this special rule add +1 to the result of any rolls on the Vehicle or Building Damage tables.</description>
+    </rule>
+    <rule id="4eb9-9e5e-bb27-3644" name="Disruption (X)" publicationId="bde1-6db1-163b-3b76" page="103" hidden="false">
+      <description>To Hit rolls of the value X indicated made by a weapon with this rule cause an automatic Glancing Hit against models with the Vehicle Unit Type instead of rolling for Armour Penetration, and an automatic Wound against models with the Dreadnought or Automata Unit Types, instead of rolling To Wound.</description>
+    </rule>
+    <rule id="d840-fbd0-352e-b33e" name="Armiger and Moirax Talons" publicationId="bde1-6db1-163b-3b76" page="102" hidden="false">
+      <description>The Scout Knights of the Taghmata and Questoris Households often roamed the battlefield independently as the vanguard of their orders. While each war machine strode the battlefield distant from their companions, they shared fierce bonds of fealty and brotherhood.
+When deployed onto the battlefield (either at the start of the battle or when arriving from Reserves) all models in the unit must be placed within unit coherency, but afterwards operate independently and are not treated as a single unit.</description>
+    </rule>
+    <rule id="41ab-227d-9d91-8001" name="Flank Speed" publicationId="bde1-6db1-163b-3b76" page="104" hidden="false">
+      <description>A model with this special rule may increase its Movement Distance by 4&quot; in any Movement phase, but if it does so it may not make any Shooting Attacks in the subsequent Shooting phase. Note this model may still Charge in the Assault phase. In addition, when declaring a Charge after making a Shooting Attack, a model with this special rule may Charge a unit that it did not target in that turn’s Shooting phase, provided that the target of the Charge meets all other criteria of a valid Charge target.</description>
+    </rule>
+    <rule id="c41f-6ac9-6909-44c4" name="Catastrophic Destruction" publicationId="bde1-6db1-163b-3b76" page="103" hidden="false">
+      <description>When destroyed, a model with this special rule resolves Catastrophic Damage at AP 1.</description>
+    </rule>
+    <rule id="a13f-e697-6017-5a04" name="Catastrophic Explosion" publicationId="bde1-6db1-163b-3b76" page="103" hidden="false">
+      <description>When destroyed, a model with this special rule resolves Catastrophic Damage at AP 2</description>
+    </rule>
+    <rule id="5f22-e7a4-4141-ee2e" name="Overtaxed Reactor" publicationId="bde1-6db1-163b-3b76" page="105" hidden="false">
+      <description>When destroyed, a model with this special rule resolves Catastrophic Damage at AP 3.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
