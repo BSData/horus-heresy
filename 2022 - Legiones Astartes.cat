@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="28" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
-    <profileType id="7002-2f9a-59c4-2742" name="Cult Arcana">
+    <profileType id="7002-2f9a-59c4-2742" name="Minor Arcana">
       <characteristicTypes>
         <characteristicType id="931f-3b2d-da54-8d8d" name="Description"/>
       </characteristicTypes>
@@ -5195,6 +5195,9 @@ At the start of any turn in which the controlling player is the Active player, a
           </conditions>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cd97-3a4a-a124-815f" type="max"/>
+      </constraints>
       <profiles>
         <profile id="1e8d-61f6-e390-3a01" name="Dragonscale Shield" publicationId="817a-6288-e016-7469" page="313" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
@@ -10239,16 +10242,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9628-45c5-2d68-6476" name="Firedrake Terminator Squad" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="9628-45c5-2d68-6476" name="Firedrake Terminator Squad" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <rules>
-        <rule id="138d-3eb8-43d4-5972" name="Favoured of Vulkan " hidden="false">
+        <rule id="138d-3eb8-43d4-5972" name="Favoured of Vulkan " hidden="true">
           <description>A Firedrake Squad may be selected as a Retinue Squad in a Detachment that includes at least one model with both the Master of the Legion and Legiones Astartes (Salamanders) special rules, instead of as an Elites choice. A unit selected as a ‘Retinue Squad’ must have one model with both the Master of the Legion and Legiones Astartes (Salamanders) special rules from the same Detachment selected by the controlling player as the Firedrake Squad’s Leader for the purposes of this special rule. A Firedrake Squad selected as a Retinue Squad does not use up a Force Organisation slot and is considered part of the same unit as the model selected as its Leader. A Firedrake Squad selected as a Retinue Squad must be deployed with the model selected as its Leader deployed as part of the unit and the Leader may not voluntarily leave the Retinue Squad during play</description>
         </rule>
         <rule id="ce66-3a3a-1e85-3f3c" name="Forge-craft of Nocturne" hidden="false">
@@ -10298,6 +10301,88 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="62b6-0bc4-a531-9fae" name="1) Melee Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="770a-9d42-bf8a-c5dd">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c36-bc0d-71e7-913c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e94-9490-30ad-b92c" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="6400-52a7-373d-787e" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
+                <entryLink id="770a-9d42-bf8a-c5dd" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry"/>
+                <entryLink id="4183-b236-56e0-6a71" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
+                <entryLink id="7c08-adb2-d971-e73a" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="985d-e0a2-2a9d-7f68" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="b2cd-6279-3611-ca9a" name="Chainfist" hidden="false" collective="false" import="true" targetId="7347-c5b1-5da3-a78f" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="c1ce-acc8-f937-d676" name="2) Ranged Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="9975-5bb6-47d6-e784">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="9628-45c5-2d68-6476" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3366-549a-1c4e-3517" type="equalTo"/>
+                        <condition field="selections" scope="1821-6c30-42fe-9369" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ba74-1b10-f488-6895" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" field="01cf-7c06-25d9-6ffa" value="0.0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="9628-45c5-2d68-6476" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3366-549a-1c4e-3517" type="equalTo"/>
+                        <condition field="selections" scope="1821-6c30-42fe-9369" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ba74-1b10-f488-6895" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9824-7b78-598f-bb78" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01cf-7c06-25d9-6ffa" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="6a21-07a1-d357-7bd0" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="34c4-db99-db36-0f2a" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="038a-a552-b768-8ec1" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="0d1c-227e-a3f8-cd63" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="9975-5bb6-47d6-e784" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="a498-c66f-9eb7-ca9a" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="ba74-1b10-f488-6895" name="One model may exchange either their Combi-bolter or Dragonscale Shield with:" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="9628-45c5-2d68-6476" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4028-45ac-aac0-a6de" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5518-45a7-a490-fb4b" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="1d12-231f-c997-df16" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45.0"/>
           </costs>
@@ -10324,118 +10409,94 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="c858-e1b2-de92-9542" name="1) Melee Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="1533-eefe-3428-8562">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f471-6da4-65d1-7463" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3613-71bd-81ad-1603" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="00dd-2719-e2a9-0e0f" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
+                <entryLink id="1533-eefe-3428-8562" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry"/>
+                <entryLink id="1b5d-f666-d49f-19a1" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
+                <entryLink id="ad09-7409-9291-919c" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="1e8d-2e99-089a-5f96" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="2632-fc01-4ecc-c2b9" name="Chainfist" hidden="false" collective="false" import="true" targetId="7347-c5b1-5da3-a78f" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="6ed4-a94d-f341-d40c" name="One model may exchange either their Combi-bolter or Dragonscale Shield with:" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="9628-45c5-2d68-6476" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9e9b-5a64-982f-da44" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3262-d201-cd4b-dd31" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="af07-2f91-4b07-968a" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="7119-19d5-5b99-85b9" name="2) Ranged Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="30fa-fd79-3d9a-4b7c">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="9628-45c5-2d68-6476" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3366-549a-1c4e-3517" type="equalTo"/>
+                        <condition field="selections" scope="dce9-806a-ad5b-2fd0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ed4-a94d-f341-d40c" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" field="efd7-95f7-073b-c9f8" value="0.0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="9628-45c5-2d68-6476" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3366-549a-1c4e-3517" type="equalTo"/>
+                        <condition field="selections" scope="dce9-806a-ad5b-2fd0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6ed4-a94d-f341-d40c" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6004-b830-0fe6-3e66" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efd7-95f7-073b-c9f8" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="da27-03bf-a185-5d48" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="34c4-db99-db36-0f2a" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="d310-f301-f73f-8f10" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="0d1c-227e-a3f8-cd63" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="30fa-fd79-3d9a-4b7c" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="a498-c66f-9eb7-ca9a" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="5be2-ec32-1285-333b" name="Every model in the unit must choose from:" hidden="false" collective="false" import="true">
-          <modifiers>
-            <modifier type="increment" field="5052-a348-402a-c526" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="9628-45c5-2d68-6476" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1821-6c30-42fe-9369" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="0b7e-9f6b-ceec-473d" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="9628-45c5-2d68-6476" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1821-6c30-42fe-9369" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b7e-9f6b-ceec-473d" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5052-a348-402a-c526" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="def0-e47f-7fc4-c204" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
-            <entryLink id="9c32-064b-5aab-fc43" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry"/>
-            <entryLink id="b34c-f0a0-6fcd-157d" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
-            <entryLink id="3e0a-4f14-d1cf-db5b" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="01a4-e1cd-0047-cab5" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="b083-3702-d3d2-da4c" name="Chainfist" hidden="false" collective="false" import="true" targetId="7347-c5b1-5da3-a78f" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="0f7f-d6fb-aebc-866b" name="Any model in the unit may exchange their Combi-bolter with:" hidden="false" collective="false" import="true">
-          <modifiers>
-            <modifier type="increment" field="0633-eb1e-e34f-ec3f" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="9628-45c5-2d68-6476" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1821-6c30-42fe-9369" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc8c-2a22-16c4-de70" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="decrement" field="0633-eb1e-e34f-ec3f" value="1.0">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d34b-26a4-95bb-12ab" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0633-eb1e-e34f-ec3f" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="59d1-c5ac-5214-c3c6" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="34c4-db99-db36-0f2a" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="676c-e9a6-0f01-1901" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="0d1c-227e-a3f8-cd63" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="cc8c-2a22-16c4-de70" name="The entire squad may replace their Combi-bolters with:" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="727f-8a9b-6511-2da9" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="b7d7-0d01-3abb-c0c7" name="Dragonscale Shield" hidden="false" collective="false" import="true" targetId="489d-88d0-a0d8-b3e6" type="selectionEntry">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5.0">
-                  <repeats>
-                    <repeat field="selections" scope="9628-45c5-2d68-6476" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1821-6c30-42fe-9369" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8f3-caf9-1546-31c5" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="d34b-26a4-95bb-12ab" name="One model may exchange either their Combi-bolter or Dragonscale Shield with:" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26eb-ff9c-4126-4619" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="351c-06ca-f8fd-211d" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup id="5db3-f38b-1bb3-5ad6" name="Dedicated Transport" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efba-b6d3-9bae-3f2f" type="max"/>
@@ -10450,6 +10511,25 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   </conditions>
                 </modifier>
               </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="3366-549a-1c4e-3517" name="The entire squad may swap their combi-bolters for:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="faaa-f0b5-2580-da87" name="Dragonscale Shield" hidden="false" collective="false" import="true" targetId="489d-88d0-a0d8-b3e6" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5.0">
+                  <repeats>
+                    <repeat field="selections" scope="9628-45c5-2d68-6476" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1821-6c30-42fe-9369" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4701-721b-e929-ffa7" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -11422,7 +11502,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
     </selectionEntry>
     <selectionEntry id="1aa4-4557-f274-2ba1" name="Raptora" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="b8a1-9e1b-5bb6-9267" name="Raptora" publicationId="09c5-eeae-f398-b653" page="255" hidden="false" typeId="7002-2f9a-59c4-2742" typeName="Cult Arcana">
+        <profile id="b8a1-9e1b-5bb6-9267" name="Raptora" publicationId="09c5-eeae-f398-b653" page="255" hidden="false" typeId="7002-2f9a-59c4-2742" typeName="Minor Arcana">
           <characteristics>
             <characteristic name="Description" typeId="931f-3b2d-da54-8d8d">When a unit that includes a Psyker with this power is selected to make a Move or a Run move during the controlling player&apos;s Movement phase that ends within 12&quot; of an enemy unit, the controlling player may make a Psychic check for the Psyker with this power before any models in the unit are moved. If the Psychic check is successful then all models in the unit with the Psyker Sub-type and Legiones Astartes (Thousand Sons) special rule gain a 6+ Invulnerable Save, or if the unit already has an Invulnerable Save, that save is increased by one step (for example, from 6+ to 5+) up to a maximum of a 4+ Invulnerable Save, until the start of the controlling player&apos;s next turn. If the Psychic check is failed then the Psyker suffers Perils of the Warp.</characteristic>
           </characteristics>
@@ -11434,7 +11514,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
     </selectionEntry>
     <selectionEntry id="78eb-adbb-1cc2-b002" name="Pyrae" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="317c-9940-79a1-e015" name="Pyrae" publicationId="09c5-eeae-f398-b653" page="255" hidden="false" typeId="7002-2f9a-59c4-2742" typeName="Cult Arcana">
+        <profile id="317c-9940-79a1-e015" name="Pyrae" publicationId="09c5-eeae-f398-b653" page="255" hidden="false" typeId="7002-2f9a-59c4-2742" typeName="Minor Arcana">
           <characteristics>
             <characteristic name="Description" typeId="931f-3b2d-da54-8d8d">When a Charge is declared for a unit that includes a Psyker with this power, the controlling player may make a Psychic check for the Psyker with this power before any dice are rolled to determine if the Charge is successful. If the Psychic check is passed then all models in the Charging unit with the Psyker Sub-type and Legiones Astartes (Thousand Sons) special rule gain the Hamer of Wrath (2) special rules - with all hits infliicted by this Hammer of Wrath special rule counted as &apos;Flame&apos; attacks. IF the Check is failed then the Psyker suffers Perils of the Warp.</characteristic>
           </characteristics>
@@ -11446,7 +11526,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
     </selectionEntry>
     <selectionEntry id="5532-04aa-8302-2038" name="Pavoni" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="cf42-9ef7-801e-0e7d" name="Pavoni" publicationId="09c5-eeae-f398-b653" page="255" hidden="false" typeId="7002-2f9a-59c4-2742" typeName="Cult Arcana">
+        <profile id="cf42-9ef7-801e-0e7d" name="Pavoni" publicationId="09c5-eeae-f398-b653" page="255" hidden="false" typeId="7002-2f9a-59c4-2742" typeName="Minor Arcana">
           <characteristics>
             <characteristic name="Description" typeId="931f-3b2d-da54-8d8d">When a unit that includes a Psyker with this power is selected to make a Move or a Run move during the controlling player&apos;s Movement Phase, the controlling player may make a Psychic check for the Psyker with this power before any models in the unit are moved. If the Check is successful then all models in the moving unit with the Psyker Sub-type and the Legiones Astartes (Thousand Sons) special rule add a bonus of +3 to the distance moved and may ignore any penalties to their movement for moving through Difficult Terrain during the Movement phase only. If the Psychic check is failed then the unit suffers Perils of the Warp.</characteristic>
           </characteristics>
@@ -11458,7 +11538,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
     </selectionEntry>
     <selectionEntry id="f040-f723-e145-9e1f" name="Corvidae" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="6565-75e7-64c1-50a3" name="Corvidae" publicationId="09c5-eeae-f398-b653" page="255" hidden="false" typeId="7002-2f9a-59c4-2742" typeName="Cult Arcana">
+        <profile id="6565-75e7-64c1-50a3" name="Corvidae" publicationId="09c5-eeae-f398-b653" page="255" hidden="false" typeId="7002-2f9a-59c4-2742" typeName="Minor Arcana">
           <characteristics>
             <characteristic name="Description" typeId="931f-3b2d-da54-8d8d">When a unit that includes a Psyker with this power makes a Shooting Attack, the controlling player may make a Psychic check for the Psyker with this power before any rolls To Hit are made. If the Check is successful then the first Wound scored on the target unit by the Shooting Attack is allocated by the Psyker&apos;s controlling player (but once this model has been removed as a casualty, any further Wounds are allocated as per the normal rules). If the Psychic check is failed then the Psyker suffers Perils of the Warp.</characteristic>
           </characteristics>
@@ -11470,7 +11550,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
     </selectionEntry>
     <selectionEntry id="a06f-f3f7-ba92-365d" name="Athanaen" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="ac61-8beb-2cb9-7588" name="Athanaen" publicationId="09c5-eeae-f398-b653" page="255" hidden="false" typeId="7002-2f9a-59c4-2742" typeName="Cult Arcana">
+        <profile id="ac61-8beb-2cb9-7588" name="Athanaen" publicationId="09c5-eeae-f398-b653" page="255" hidden="false" typeId="7002-2f9a-59c4-2742" typeName="Minor Arcana">
           <characteristics>
             <characteristic name="Description" typeId="931f-3b2d-da54-8d8d">When a unit that includes a Psyker with this power makes a Shooting Attack, the controlling player may make a Psychic check for the Psyker with this power before any rolls To Hit are made. or Reactions declared. If the Psychic check is successful, then the enemy unit targeted by the Shooting Attack must reduce the Leadership Characteristic of all models in the unit by 1 for any Pinning or Morale check caused by the Shooting Attack. If the Psychic check is failed then the Psyker suffers Perils of the Warp.</characteristic>
           </characteristics>
@@ -15765,7 +15845,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <modifiers>
         <modifier type="set" field="name" value="Warsmith">
           <conditions>
-            <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7eeb-fc27-81d6-9cba" type="equalTo"/>
+            <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb35-21a5-c296-ddd9" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -16130,64 +16210,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="f662-22a4-b0b4-3f15" name="0) Legion-specific upgrades" hidden="false" collective="false" import="true">
-              <selectionEntries>
-                <selectionEntry id="7eeb-fc27-81d6-9cba" name="Warsmith" hidden="true" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1132-5714-ca6d-d167" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="24e6-c2a4-0e97-9edf" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="df94-2b41-f882-e07b" name="Battlesmith (X)" hidden="false" targetId="5d57-4d02-1e36-4a82" type="rule">
-                      <modifiers>
-                        <modifier type="set" field="name" value="Battlesmith (3+)"/>
-                      </modifiers>
-                    </infoLink>
-                    <infoLink id="109d-4244-fbe8-eb3a" name="Master of Automata" hidden="false" targetId="8eef-f84b-37cb-554b" type="rule"/>
-                  </infoLinks>
-                  <entryLinks>
-                    <entryLink id="d9ee-ea6c-4b9e-fbe3" name="Servo-Arm" hidden="false" collective="false" import="true" targetId="4168-fc85-8912-7188" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01f5-403c-4c43-13cb" type="max"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b006-df95-ea07-72b0" type="min"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="ca1a-d2d3-fa6f-bc90" name="Cortex Controller" hidden="false" collective="false" import="true" targetId="2fda-455f-d34d-97e0" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f33e-9324-8490-53b2" type="max"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a3b-98d6-b55a-dd96" type="min"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="0245-c17d-a059-6192" name="Master-craft one weapon" hidden="true" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0cc-a43d-c797-c8ec" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="3151-7edf-fda8-30bc" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
               <entryLinks>
                 <entryLink id="ab3a-707f-7f67-8804" name="Dragonscale Shield" hidden="true" collective="false" import="true" targetId="489d-88d0-a0d8-b3e6" type="selectionEntry">
                   <modifiers>
@@ -16197,9 +16219,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                       </conditions>
                     </modifier>
                   </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbe6-3553-05e2-568f" type="max"/>
-                  </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
@@ -16212,14 +16231,72 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                       </conditions>
                     </modifier>
                   </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c9b-089e-42dc-83fe" type="max"/>
-                  </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="63e4-7f4f-70e7-64fd" name="Surgical Augment" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup"/>
+                <entryLink id="63e4-7f4f-70e7-64fd" name="Surgical Augment" hidden="true" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="64fb-5893-d8d7-af94" name="Prosperine Arcana:" hidden="true" collective="false" import="true" targetId="e6a0-3ea2-f7ca-411f" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="936a-8106-b9c3-e5be" name="Psychic Disciplines" hidden="true" collective="false" import="true" targetId="d632-a8aa-19f1-8e72" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d25a-f9ee-4a45-916e" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="02ae-949c-4e90-3c34" name="Master-craft one weapon:" hidden="true" collective="false" import="true" targetId="3d6e-5c80-d195-0f2e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="2aa6-ed38-ddc9-60fa" name="Cult Arcana Discipline" hidden="true" collective="false" import="true" targetId="d25a-f9ee-4a45-916e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="fa9b-23fa-ab59-4853" name="Warsmith" hidden="false" collective="false" import="true" targetId="cb35-21a5-c296-ddd9" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -16287,9 +16364,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1b79-1951-5a63-4b9e" name="Cataphractii Praetor" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="1b79-1951-5a63-4b9e" name="Praetor, Cataphractii" hidden="false" collective="false" import="true" type="unit">
       <selectionEntries>
         <selectionEntry id="de73-2d79-156f-6f64" name="Legion Cataphractii Praetor" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="name" value="Warsmith">
+              <conditions>
+                <condition field="selections" scope="1b79-1951-5a63-4b9e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb35-21a5-c296-ddd9" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f35-d6cb-d5f8-cb90" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f663-fb11-3b82-4d85" type="min"/>
@@ -16324,9 +16408,74 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <categoryLink id="55e0-8c05-884e-ba8c" name="Independant Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="0181-2379-0257-5024" name="0) Legion-specific upgrades" hidden="false" collective="false" import="true">
-              <selectionEntries>
-                <selectionEntry id="35e5-03bb-0f6d-cc32" name="Warsmith" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntryGroup id="7d85-7f39-4fb3-f3ef" name="0) Legion-specific upgrades" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="1f9e-637f-409f-3183" name="Mantle of the Elder Drake" hidden="true" collective="false" import="true" targetId="bba6-42e4-5147-fe4f" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="b8e0-dc95-36b4-0a3f" name="Surgical Augment" hidden="true" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="a7a6-4c33-3c37-5d07" name="Prosperine Arcana:" hidden="true" collective="false" import="true" targetId="e6a0-3ea2-f7ca-411f" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="00b2-9553-f9da-6339" name="Psychic Disciplines" hidden="true" collective="false" import="true" targetId="d632-a8aa-19f1-8e72" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d25a-f9ee-4a45-916e" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="578d-181f-23d9-159f" name="Master-craft one weapon:" hidden="true" collective="false" import="true" targetId="3d6e-5c80-d195-0f2e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="b9d1-005a-edcb-2ce8" name="Cult Arcana Discipline" hidden="true" collective="false" import="true" targetId="d25a-f9ee-4a45-916e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="b946-fbdd-acd1-467d" name="Warsmith" hidden="true" collective="false" import="true" targetId="cb35-21a5-c296-ddd9" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -16334,87 +16483,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                       </conditions>
                     </modifier>
                   </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="33ca-6e8e-6686-f096" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bdc2-43af-1bc2-cc01" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="9dab-abe2-ed99-8e93" name="Battlesmith (X)" hidden="false" targetId="5d57-4d02-1e36-4a82" type="rule">
-                      <modifiers>
-                        <modifier type="set" field="name" value="Battlesmith (3+)"/>
-                      </modifiers>
-                    </infoLink>
-                    <infoLink id="9864-61aa-df60-da03" name="Master of Automata" hidden="false" targetId="8eef-f84b-37cb-554b" type="rule"/>
-                  </infoLinks>
-                  <entryLinks>
-                    <entryLink id="6474-e2ae-ad9e-4f30" name="Servo-Arm" hidden="false" collective="false" import="true" targetId="4168-fc85-8912-7188" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecb4-e8c5-774b-3f10" type="max"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f5f-be1b-3e96-7790" type="min"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="56f5-e820-9998-a700" name="Cortex Controller" hidden="false" collective="false" import="true" targetId="2fda-455f-d34d-97e0" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7eaf-65c2-6b29-89ca" type="max"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6de-90aa-a699-0181" type="min"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="87eb-235f-9a28-c102" name="Master-craft one weapon" hidden="true" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3ba-1952-ac69-8aea" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="6eae-0679-cc1f-2d05" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <entryLinks>
-                <entryLink id="8221-2c06-793d-b7e4" name="Dragonscale Shield" hidden="true" collective="false" import="true" targetId="489d-88d0-a0d8-b3e6" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db96-53fa-7c65-acf8" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
-                  </costs>
                 </entryLink>
-                <entryLink id="2508-4f08-5106-722a" name="Mantle of the Elder Drake" hidden="true" collective="false" import="true" targetId="bba6-42e4-5147-fe4f" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="454e-94e1-7160-afd5" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="ba1b-d78c-1b28-efaf" name="Surgical Augment" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -16488,9 +16557,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3760-204e-444c-1044" name="Tartaros Praetor" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="3760-204e-444c-1044" name="Praetor, Tartaros" hidden="false" collective="false" import="true" type="unit">
       <selectionEntries>
         <selectionEntry id="a2f0-15d9-2b7a-2204" name="Legion Tartaros Praetor" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="name" value="Warsmith">
+              <conditions>
+                <condition field="selections" scope="3760-204e-444c-1044" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ddb-2b80-2369-5fa8" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8fb-f47b-26ed-a722" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb8f-f1f6-67e9-f5a8" type="max"/>
@@ -16525,9 +16601,74 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <categoryLink id="5e17-8334-68c0-04a0" name="Independant Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="d9b8-84a4-8be3-f0d0" name="0) Legion-specific upgrades" hidden="false" collective="false" import="true">
-              <selectionEntries>
-                <selectionEntry id="1fc0-f3a0-e574-70eb" name="Warsmith" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntryGroup id="e1fe-0b11-8d2e-7266" name="0) Legion-specific upgrades" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="a7c3-6621-283f-13e2" name="Mantle of the Elder Drake" hidden="true" collective="false" import="true" targetId="bba6-42e4-5147-fe4f" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="3a9d-a0b7-4e30-3f78" name="Surgical Augment" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="73c1-c17a-4ee8-5ac6" name="Prosperine Arcana:" hidden="true" collective="false" import="true" targetId="e6a0-3ea2-f7ca-411f" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="7fb7-f113-3a7f-202f" name="Psychic Disciplines" hidden="true" collective="false" import="true" targetId="d632-a8aa-19f1-8e72" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d25a-f9ee-4a45-916e" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="93c1-f916-db90-ccee" name="Master-craft one weapon:" hidden="true" collective="false" import="true" targetId="3d6e-5c80-d195-0f2e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="893e-d449-4c77-8463" name="Cult Arcana Discipline" hidden="true" collective="false" import="true" targetId="d25a-f9ee-4a45-916e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="9ddb-2b80-2369-5fa8" name="Warsmith" hidden="false" collective="false" import="true" targetId="cb35-21a5-c296-ddd9" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -16535,87 +16676,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                       </conditions>
                     </modifier>
                   </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="57ba-f4e4-f1e4-5ce4" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4929-42c8-6998-5e30" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="2430-f970-84fe-ee11" name="Battlesmith (X)" hidden="false" targetId="5d57-4d02-1e36-4a82" type="rule">
-                      <modifiers>
-                        <modifier type="set" field="name" value="Battlesmith (3+)"/>
-                      </modifiers>
-                    </infoLink>
-                    <infoLink id="6347-45e5-dab5-8f26" name="Master of Automata" hidden="false" targetId="8eef-f84b-37cb-554b" type="rule"/>
-                  </infoLinks>
-                  <entryLinks>
-                    <entryLink id="d6fa-54e4-715c-9021" name="Servo-Arm" hidden="false" collective="false" import="true" targetId="4168-fc85-8912-7188" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b399-a83e-a0ce-02f6" type="max"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7743-2b43-c624-11f0" type="min"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="7823-04c2-d040-f2a5" name="Cortex Controller" hidden="false" collective="false" import="true" targetId="2fda-455f-d34d-97e0" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a05d-755f-7464-bd88" type="max"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5f9-53e9-1b81-f2ae" type="min"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="d2dd-8cf1-c626-7099" name="Master-craft one weapon" hidden="true" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5240-9fbe-b5ba-cbf4" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="47d0-6eb1-5b31-f61b" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <entryLinks>
-                <entryLink id="c788-f4fd-1d1b-cf6f" name="Dragonscale Shield" hidden="true" collective="false" import="true" targetId="489d-88d0-a0d8-b3e6" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b634-fcdd-fd89-f11e" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
-                  </costs>
                 </entryLink>
-                <entryLink id="47d5-c94f-0bec-ab52" name="Mantle of the Elder Drake" hidden="true" collective="false" import="true" targetId="bba6-42e4-5147-fe4f" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d12-a1e4-2bcb-e013" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="a1d0-380b-dfb6-3380" name="Surgical Augment" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -17413,46 +17474,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <entryLink id="3d3b-1303-1b7b-4599" name="Charnabal Weapon" hidden="false" collective="false" import="true" targetId="2376-af96-e101-e712" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="0360-a327-c23f-cd57" name="0) Legion-specific upgrades" hidden="false" collective="false" import="true">
-              <selectionEntries>
-                <selectionEntry id="6039-40db-1dd8-53c1" name="Master-craft one weapon" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditions>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36a2-5a0e-7059-a32f" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="dbe4-c0f1-f133-cbfb" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <entryLinks>
-                <entryLink id="c28b-ab5f-75fa-9dd4" name="Surgical Augment" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup"/>
-                <entryLink id="a228-6f4c-ea41-0a75" name="Dragonscale Shield" hidden="false" collective="false" import="true" targetId="489d-88d0-a0d8-b3e6" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditions>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f89-3ee9-46a6-6afb" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
             <selectionEntryGroup id="feef-cc1d-1494-9a48" name="6) Armor Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="841b-3517-cac2-a68f">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bdd-4c50-3894-762b" type="min"/>
@@ -17619,6 +17640,83 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
                   </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="2ee7-3c56-2c58-6f71" name="0) Legion-specific upgrades" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="a70a-8a55-aa79-8b14" name="Prosperine Arcana:" hidden="true" collective="false" import="true" targetId="e6a0-3ea2-f7ca-411f" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="0bca-42a1-657c-53cb" name="Psychic Disciplines" hidden="true" collective="false" import="true" targetId="d632-a8aa-19f1-8e72" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d25a-f9ee-4a45-916e" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="ef99-fb2d-94b1-f476" name="Dragonscale Shield" hidden="false" collective="false" import="true" targetId="489d-88d0-a0d8-b3e6" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3b7-5fe0-15b9-6e15" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="41ee-8989-dc30-a9c3" name="Cult Arcana Discipline" hidden="false" collective="false" import="true" targetId="d25a-f9ee-4a45-916e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="a0ce-7130-54f7-edc5" name="Surgical Augment" hidden="true" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="2454-d9c6-e742-a9db" name="Master-craft one weapon:" hidden="false" collective="false" import="true" targetId="3d6e-5c80-d195-0f2e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -17894,6 +17992,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46b7-029f-74ca-b9a2" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="10a2-c571-1c37-9d78" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -18211,6 +18310,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c0f-a80e-adb1-6653" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="1f6a-f447-eded-4c65" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -21314,7 +21414,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="49.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3766-ea98-0aa7-62d0" name="Cataphractii Centurion" publicationId="a716-c1c4-7b26-8424" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="3766-ea98-0aa7-62d0" name="Centurion, Cataphractii " publicationId="a716-c1c4-7b26-8424" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="e86d-463c-30ea-0722" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="b8e8-4253-0c09-b2ef" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
@@ -21479,6 +21579,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   </costs>
                 </entryLink>
                 <entryLink id="d935-4ccc-5515-a677" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="a498-c66f-9eb7-ca9a" type="selectionEntry"/>
+                <entryLink id="128a-f88d-9603-3917" name="Dragonscale Shield" hidden="false" collective="false" import="true" targetId="489d-88d0-a0d8-b3e6" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="ebdd-46f1-6836-8322" name="2) Melee Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="cd4b-5b1d-92ef-7a0f">
@@ -21544,6 +21649,68 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="a031-e635-2dbe-4bd7" name="0) Legion-specific upgrades" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="5c0e-ba91-3251-851a" name="Prosperine Arcana:" hidden="true" collective="false" import="true" targetId="e6a0-3ea2-f7ca-411f" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="2ce7-0bf4-7a51-fbd9" name="Psychic Disciplines" hidden="true" collective="false" import="true" targetId="d632-a8aa-19f1-8e72" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d25a-f9ee-4a45-916e" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="0771-1b0c-c7a4-c2b3" name="Cult Arcana Discipline" hidden="false" collective="false" import="true" targetId="d25a-f9ee-4a45-916e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
+                            <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="fd33-8f12-d27e-04a7" name="Master-craft one weapon:" hidden="false" collective="false" import="true" targetId="3d6e-5c80-d195-0f2e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="0fc9-8d7b-c87d-ef5f" name="Surgical Augment" hidden="true" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -24076,7 +24243,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f806-8a4e-d0d6-beaa" name="Tartaros Centurion" publicationId="a716-c1c4-7b26-8424" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="f806-8a4e-d0d6-beaa" name="Centurion, Tartaros " publicationId="a716-c1c4-7b26-8424" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="cccf-e162-2ea4-885a" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="ef44-0d1e-aaaf-9f04" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
@@ -24241,6 +24408,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <constraint field="selections" scope="69fc-a6ab-d7a8-0e83" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7773-5157-97a1-0692" type="min"/>
                   </constraints>
                 </entryLink>
+                <entryLink id="4c3d-93b2-427d-a5e6" name="Dragonscale Shield" hidden="false" collective="false" import="true" targetId="489d-88d0-a0d8-b3e6" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="dbce-bd19-c2f4-35a7" name="2) Melee Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="aa6d-5871-8e12-c20d">
@@ -24306,6 +24478,68 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="862b-d3b4-d30f-57bf" name="0) Legion-specific upgrades" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="df55-79b5-886c-9bd3" name="Prosperine Arcana:" hidden="true" collective="false" import="true" targetId="e6a0-3ea2-f7ca-411f" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="f34f-b5a4-9e59-f78f" name="Psychic Disciplines" hidden="true" collective="false" import="true" targetId="d632-a8aa-19f1-8e72" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d25a-f9ee-4a45-916e" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="b08d-3b96-5579-a6f9" name="Cult Arcana Discipline" hidden="false" collective="false" import="true" targetId="d25a-f9ee-4a45-916e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
+                            <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="79b3-7678-eb25-14a1" name="Master-craft one weapon:" hidden="false" collective="false" import="true" targetId="3d6e-5c80-d195-0f2e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="2973-fa28-948b-8797" name="Surgical Augment" hidden="true" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -33413,6 +33647,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0788-8354-4dd2-ef9b" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="15a3-411e-fc61-415e" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
@@ -34263,8 +34498,8 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <modifier type="set" field="name" value="Co-axial Mounted Autocannon"/>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9118-591e-8eba-3dd7" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2b3-3b32-2987-5444" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9118-591e-8eba-3dd7" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c2b3-3b32-2987-5444" type="min"/>
               </constraints>
             </entryLink>
             <entryLink id="af45-c937-9a32-30ff" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
@@ -35127,11 +35362,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="215.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bba6-42e4-5147-fe4f" name="Mantle of the Elder Drake" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="bba6-42e4-5147-fe4f" name="Mantle of the Elder Drake" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -36601,6 +36836,77 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="225.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="3d6e-5c80-d195-0f2e" name="Master-craft one weapon:" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24d3-a12d-358b-1930" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="0528-fcac-7d0f-6157" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d25a-f9ee-4a45-916e" name="Cult Arcana Discipline" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d6b-c1db-0d42-e711" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cb35-21a5-c296-ddd9" name="Warsmith" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2c81-1d23-1ca9-f80f" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9367-23ec-3d27-7158" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="7d34-ca9a-5a1a-439c" name="Battlesmith (X)" hidden="false" targetId="5d57-4d02-1e36-4a82" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Battlesmith (3+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="cc20-196a-4ebc-7e1e" name="Master of Automata" hidden="false" targetId="8eef-f84b-37cb-554b" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="7d01-2d81-485f-25aa" name="Servo-Arm" hidden="false" collective="false" import="true" targetId="4168-fc85-8912-7188" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f9e-3f31-4a8e-8257" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b08-f37f-3a15-805a" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b86a-76cd-0e6a-b336" name="Cortex Controller" hidden="false" collective="false" import="true" targetId="2fda-455f-d34d-97e0" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3daf-c661-62ee-6e6a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2dc-4293-4c11-ba2a" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="61a2-7005-1e6c-c08e" name="Hexagrammaton Choice:" hidden="true" collective="false" import="true">
@@ -36676,7 +36982,7 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="e6a0-3ea2-f7ca-411f" name="Cult Arcana:" hidden="true" collective="false" import="true">
+    <selectionEntryGroup id="e6a0-3ea2-f7ca-411f" name="Prosperine Arcana:" hidden="true" collective="false" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -37739,6 +38045,18 @@ A Legion Primus Nullificator Consul gains the Psyker Sub-type and has only the P
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
           </costs>
         </entryLink>
+        <entryLink id="50bd-0e9b-25a2-d141" name="Dragonscale Shield" hidden="true" collective="false" import="true" targetId="489d-88d0-a0d8-b3e6" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="bdce-5793-7a7f-8d2a" name="Terminator Heavy Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="103d-1f6c-f205-e8bb">
@@ -38298,13 +38616,19 @@ A Legion Primus Nullificator Consul gains the Psyker Sub-type and has only the P
     <selectionEntryGroup id="d632-a8aa-19f1-8e72" name="Psychic Disciplines" hidden="false" collective="false" import="true">
       <modifiers>
         <modifier type="set" field="b222-9e4a-491e-cd2e" value="1.0">
-          <conditions>
-            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="instanceOf"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d25a-f9ee-4a45-916e" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b222-9e4a-491e-cd2e" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b222-9e4a-491e-cd2e" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="866a-03f6-d40a-3ace" type="max"/>
       </constraints>
       <entryLinks>
         <entryLink id="0d2d-c811-8bdc-d53f" name="Psychic Discipline: Biomancy" hidden="false" collective="false" import="true" targetId="861c-3744-c4ff-ef6c" type="selectionEntry">
