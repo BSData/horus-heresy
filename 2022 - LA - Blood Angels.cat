@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cd4d-8765-5387-8409" name="Legiones Astartes: IX - Blood Angels" revision="3" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cd4d-8765-5387-8409" name="Legiones Astartes: IX - Blood Angels" revision="3" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="1900-3f09-f47b-bed2" name="Praetor" hidden="false" collective="false" import="true" targetId="03be-5d55-d05a-771d" type="selectionEntry">
       <categoryLinks>
@@ -456,7 +456,7 @@
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="e465-bf6a-6b58-2b32" name="Plasma Burner" hidden="false" collective="false" import="true" targetId="de47-02c8-3273-2f9b" type="selectionEntry">
+                    <entryLink id="e465-bf6a-6b58-2b32" name="Plasma Blaster" hidden="false" collective="false" import="true" targetId="cd52-e9e8-3ab1-995c" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9af-4143-36ef-9381" type="max"/>
                       </constraints>
@@ -836,7 +836,7 @@
         <infoLink id="a544-53c8-2a96-e422" name="Legiones Astartes (Blood Angels) " hidden="false" targetId="b0d1-ccab-8708-500f" type="rule"/>
         <infoLink id="e1c9-60eb-31a2-0510" name="Counter-Attack (X)" hidden="false" targetId="fd6d-2a76-10e0-936a" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Counter-Attack (1)"/>
+            <modifier type="append" field="name" value="(1)"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -872,6 +872,186 @@
             <categoryLink id="c36e-bb39-8df0-74e2" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
             <categoryLink id="b4d7-4ed5-a971-32a5" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
           </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="cc0f-26fa-472e-ae51" name="The Arch-Erelim may exchange their chainsword for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="01b2-db36-8e0b-cd59">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8397-cb6e-a9a3-e328" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="576e-3898-3187-a657" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="0de2-df72-a8b7-b3ef" name="Heavy Chainsword" hidden="false" collective="false" import="true" targetId="ba92-3eda-3a71-dabb" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f889-23a0-c001-7af5" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="4bf0-21fe-9205-84e7" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ed3-6084-bb4d-e328" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="6847-756b-f5e1-ba39" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="6923-4e42-5691-b13f" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17cd-386b-7d4a-bb27" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="6d85-0475-82b6-fef6" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc1c-ab75-8fca-5417" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="01b2-db36-8e0b-cd59" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e177-069b-d7a6-7a85" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="220a-dbe5-2dcb-60c5" name="Power Weapon (Basic)" hidden="false" collective="false" import="true" targetId="bd1f-b4a4-3517-31e4" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" field="c4e0-9351-6028-69a1" value="0.0"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="0bca-2d71-49e6-54db" name="Perdition Weapon" hidden="false" collective="false" import="true" targetId="e909-feba-d9e9-1efa" type="selectionEntryGroup">
+                  <modifiers>
+                    <modifier type="set" field="9b7c-2bb2-5687-cefe" value="0.0"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="e8aa-3629-7d00-f8a2" name="May Replace one Volkite Serpenta:" hidden="false" collective="false" import="true" defaultSelectionEntryId="d876-904d-a371-d7d7">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2fd-5f96-9073-6879" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f8c-1e64-ccfb-fb3f" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="391c-abd2-1da8-7439" name="Angel&apos;s Tears Grenade Launcher" hidden="false" collective="false" import="true" targetId="e789-15b5-1256-4806" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e07-801a-8c36-5588" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="a8e9-b4be-fbd0-1b5a" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01ad-1cc6-7087-8cb7" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="cea3-7cc1-5097-7aab" name="Iliastus Asssult Cannon" hidden="false" collective="false" import="true" targetId="10aa-3c70-2bbe-9509" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="273a-d2ed-1c29-5264" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="9c9d-9b7d-902e-59bc" name="Rotor Cannon" hidden="false" collective="false" import="true" targetId="5ce3-3aa5-3f5e-9ead" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b261-d4d3-0bc0-1f19" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="8241-ed16-743b-b822" name="Heavy Chainsword" hidden="false" collective="false" import="true" targetId="ba92-3eda-3a71-dabb" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f610-fb14-742b-e3bb" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="d876-904d-a371-d7d7" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="d535-1da8-290d-69a6" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="69f7-3b28-642b-9d41" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="c102-7bec-2c77-0678" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="717f-cf0a-1593-4bd8" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3f66-8f12-2a98-d59b" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="0f01-2d72-673e-0f22" name="Power Armor:" hidden="false" collective="false" import="true" defaultSelectionEntryId="fcc7-994d-ab1a-abb2">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a86c-42bf-838a-d6a7" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e331-11b7-f38c-d866" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="83f9-f15f-221f-662d" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56a4-ee9a-0d0e-19d5" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="fcc7-994d-ab1a-abb2" name="Power Armour" hidden="false" collective="false" import="true" targetId="2d9d-480e-7c14-1a6f" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e771-219f-7dce-ed99" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="e160-57e9-3001-0fe7" name="May Replace second Volkite Serpenta:" hidden="false" collective="false" import="true" defaultSelectionEntryId="96db-1445-8d4b-efc0">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abd6-3ede-68a0-935b" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c42-59d4-2730-454f" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="96db-1445-8d4b-efc0" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="d535-1da8-290d-69a6" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d4e2-fbe9-486b-deff" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="f9d9-ae9c-b074-20b4" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="717f-cf0a-1593-4bd8" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="45bd-044d-2e08-e998" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="4ad0-2d38-7602-3d08" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16c6-4e84-0eba-4d5a" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4abd-df43-0c63-55c1" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="7f76-f119-4168-858f" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d45-77cd-af26-ec88" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7819-e408-c7d5-eb45" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="533c-b3c4-d0e2-ec2e" name="Rad Grenades" hidden="false" collective="false" import="true" targetId="1b0b-3dfc-9521-b27e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4be2-c93d-aa2c-6505" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2f7-1c8d-b673-71ba" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="99e0-b80b-1cc6-f488" name="Warhawk Jump Pack" hidden="false" collective="false" import="true" targetId="a298-8584-70ed-18ce" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c94-e00d-782b-fcac" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1487-7228-eb89-28e8" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70.0"/>
           </costs>
@@ -898,31 +1078,84 @@
               </characteristics>
             </profile>
           </profiles>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="62b8-1989-173a-e6a1" name="The Arch-Erelim may upgrade his power armour for Artificer Armour" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="name" value="Artificer Armour">
-              <conditions>
-                <condition field="selections" scope="dda1-0fcf-0245-6c10" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62b8-1989-173a-e6a1" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4d6-5b11-4462-5343" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="6278-aa97-834e-3999" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="3abe-1c18-2d60-0225" name="May Replace one Volkite Serpenta:" hidden="false" collective="false" import="true" defaultSelectionEntryId="164c-51e0-d015-94e7">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e3e-a2f2-9468-ffa3" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae5a-7249-cfae-327b" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10f1-907e-02bc-e5ef" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f74b-a425-3f00-cbc5" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="15e4-7d55-0ac9-6e3b" name="Angel&apos;s Tears Grenade Launcher" hidden="false" collective="false" import="true" targetId="e789-15b5-1256-4806" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="2023-c6dd-8217-9b49" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="ea2b-9908-2d93-787a" name="Iliastus Assault Cannon" hidden="false" collective="false" import="true" targetId="10aa-3c70-2bbe-9509" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="a23c-4f5d-3dbb-b09d" name="Rotor Cannon" hidden="false" collective="false" import="true" targetId="5ce3-3aa5-3f5e-9ead" type="selectionEntry"/>
+                <entryLink id="1aa9-6fc2-2cca-0e65" name="Heavy Chainsword" hidden="false" collective="false" import="true" targetId="ba92-3eda-3a71-dabb" type="selectionEntry"/>
+                <entryLink id="164c-51e0-d015-94e7" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="d535-1da8-290d-69a6" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cc26-a8e6-f955-c182" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="a8c3-ddc6-f674-cacc" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="d535-1da8-290d-69a6" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87c7-d1f7-69aa-0b86" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3dd9-9bfb-c290-e0e0" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="8459-9971-ef9e-a3cd" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2552-61cc-26e1-2e07" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8040-e902-80eb-733a" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="b148-028b-db15-72fd" name="Power Armour" hidden="false" collective="false" import="true" targetId="2d9d-480e-7c14-1a6f" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b4d-5e9f-51a4-2523" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3af0-ddcc-9278-2018" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="5883-6f31-a9cd-a4a6" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1ee-a2ca-6a58-c264" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7d0-4a2b-1a16-3123" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="7d26-dd89-8d72-5aa8" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64d1-19c7-a191-76fe" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8115-95cb-6fd7-fa54" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="c0a2-c8e0-dfbf-7a6a" name="Rad Grenades" hidden="false" collective="false" import="true" targetId="1b0b-3dfc-9521-b27e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c92f-21af-90fe-b408" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3875-6dba-8d14-cc0c" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="7c8a-6d57-572a-ee0e" name="Warhawk Jump Pack" hidden="false" collective="false" import="true" targetId="a298-8584-70ed-18ce" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c855-4959-cdae-a763" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2c4-0193-813b-6747" type="min"/>
               </constraints>
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="7bb9-6f7e-d482-34df" name="The entire unit may take meltabombs" hidden="false" collective="false" import="true" type="upgrade">
@@ -949,175 +1182,6 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="61e0-cbdd-ab63-3279" name="The Arch-Erelim may exchange their chainsword for:" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9cd-1b80-b938-c04c" type="max"/>
-          </constraints>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="9e47-f4c8-fe53-46ed" name="Power Weapon" hidden="false" collective="false" import="true">
-              <selectionEntryGroups>
-                <selectionEntryGroup id="f35d-857c-3a89-7ce3" name="Power Weapons" hidden="false" collective="false" import="true">
-                  <entryLinks>
-                    <entryLink id="d14f-ba0b-e387-6ecf" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="c998-8896-ae6a-6cc5" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="c863-342f-f172-3cd4" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-                <selectionEntryGroup id="0644-e3b2-8695-323e" name="Perdition Weapons" hidden="false" collective="false" import="true">
-                  <entryLinks>
-                    <entryLink id="27ca-1aa6-611d-3fd7" name="Blade Of Perdition" hidden="false" collective="false" import="true" targetId="7830-e9d6-7e07-ad2f" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="cf07-beb8-96e9-81e0" name="Axe Of Perdition" hidden="false" collective="false" import="true" targetId="0478-8201-90fc-bfd5" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="2474-eec9-d0d3-5f1e" name="Spear Of Perdition" hidden="false" collective="false" import="true" targetId="cb7e-e113-9008-6bdc" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="18fc-a06e-407b-33f3" name="Maul Of Perdition" hidden="false" collective="false" import="true" targetId="1ea3-9a76-1597-a49a" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks>
-            <entryLink id="00a8-9b64-a31b-5316" name="Heavy Chainsword" hidden="false" collective="false" import="true" targetId="ba92-3eda-3a71-dabb" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="5cb9-5f4a-fd1a-00a9" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="4b0b-ebb4-870a-43bd" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="6923-4e42-5691-b13f" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="b7e4-6d55-5ee8-0280" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="94b9-e91a-8e3e-bc3d" name="The Arch-Erelim may exchange one of their Volkite Serpenta for:" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82af-0f61-a2f0-6467" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="7069-22e7-b400-d17e" name="Angel&apos;s Tears Grenade Launcher" hidden="false" collective="false" import="true" targetId="e789-15b5-1256-4806" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="10d4-0838-28ea-f39c" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="11d9-1ffa-e05d-8fad" name="Iliastus Asssult Cannon" hidden="false" collective="false" import="true" targetId="10aa-3c70-2bbe-9509" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="eeec-0089-7d8e-a74e" name="Rotor Cannon" hidden="false" collective="false" import="true" targetId="5ce3-3aa5-3f5e-9ead" type="selectionEntry"/>
-            <entryLink id="d1f8-be1e-4142-80fe" name="Heavy Chainsword" hidden="false" collective="false" import="true" targetId="ba92-3eda-3a71-dabb" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="6e3e-7ca3-282a-927a" name="Any model in the unit may exchange one of its Volkite Serpenta for:" hidden="false" collective="false" import="true">
-          <modifiers>
-            <modifier type="increment" field="318e-0f5e-4ae1-6623" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="318e-0f5e-4ae1-6623" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="ba5c-815c-1759-1e98" name="Angel&apos;s Tears Grenade Launcher" hidden="false" collective="false" import="true" targetId="e789-15b5-1256-4806" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="b155-59bf-cfef-0746" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="0528-21aa-5c16-dff8" name="Iliastus Assault Cannon" hidden="false" collective="false" import="true" targetId="10aa-3c70-2bbe-9509" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="fbc0-3a0d-697a-5a7f" name="Rotor Cannon" hidden="false" collective="false" import="true" targetId="5ce3-3aa5-3f5e-9ead" type="selectionEntry"/>
-            <entryLink id="8f1d-0ecc-dd7e-cf03" name="Heavy Chainsword" hidden="false" collective="false" import="true" targetId="ba92-3eda-3a71-dabb" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="69f0-8ec1-d56d-1b08" name="The Arch-Erelim may exchange one or both of their Volkite Serpentas for:" hidden="false" collective="false" import="true">
-          <modifiers>
-            <modifier type="decrement" field="72f9-ed01-d305-33aa" value="1.0">
-              <conditions>
-                <condition field="selections" scope="dda1-0fcf-0245-6c10" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="94b9-e91a-8e3e-bc3d" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72f9-ed01-d305-33aa" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="e282-bc0b-0a06-52b8" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="717f-cf0a-1593-4bd8" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="2514-9f3e-1df0-1ab4" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="d535-1da8-290d-69a6" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="name" value="Two Volkite Serpenta"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e42-0ea2-7bc5-457f" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8819-f452-0e4d-bed0" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="a3ef-7ee7-7aa9-a4ec" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51d7-2065-bad4-e979" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3992-da59-9ab6-eff9" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
