@@ -246,16 +246,6 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0420-3735-e0aa-eb82" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51a4-fd5a-5a5e-a037" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="fe4c-3b4d-5b20-0357" name="Reaper Chainfist" publicationId="bde1-6db1-163b-3b76" page="120" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <infoLinks>
             <infoLink id="89b3-cb2e-5135-028f" name="Twin-linked Heavy Bolter" hidden="false" targetId="9268-9301-e5ff-4c49" type="profile"/>
             <infoLink id="9c78-4210-6db2-8d94" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
@@ -264,6 +254,7 @@
                 <modifier type="set" field="name" value="Armourbane (Melee)"/>
               </modifiers>
             </infoLink>
+            <infoLink id="6081-b621-5a83-c703" name="Reaper Chainfist" hidden="false" targetId="fe4c-3b4d-5b20-0357" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -971,53 +962,14 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc99-bc8e-f010-bb8d" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="bd87-e395-1602-d73a" name="Twin-Linked Icarus Autocannon" publicationId="bde1-6db1-163b-3b76" page="114" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="29ff-cf22-701c-8812" name="Twin-Linked Icarus Autocannon" publicationId="bde1-6db1-163b-3b76" page="114" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Rending (6+), Skyfire, Twin-linked</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="a85a-b6c3-41e4-5ba6" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Rending (6+)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="2d8f-4d37-09c3-0a59" name="Skyfire" hidden="false" targetId="f2bf-5daa-9f93-0b01" type="rule"/>
-                <infoLink id="2793-0dbe-6c03-a853" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="1809-a6e7-c4a2-bc91" name="Stormspear Rocket Pod" publicationId="bde1-6db1-163b-3b76" page="118" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="9110-4a13-087c-24a3" name="Stormspear Rocket Pod" publicationId="bde1-6db1-163b-3b76" page="118" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <entryLinks>
             <entryLink id="47ff-a20f-4699-5bd7" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="82e0-160b-28f5-f01e" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
               </costs>
             </entryLink>
+            <entryLink id="1fb7-cc60-ebc8-d6e6" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="1809-a6e7-c4a2-bc91" type="selectionEntry"/>
+            <entryLink id="24ef-fb02-2c82-8d23" name="Twin-Linked Icarus Autocannon" hidden="false" collective="false" import="true" targetId="bd87-e395-1602-d73a" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1071,6 +1023,7 @@
               </modifiers>
             </infoLink>
             <infoLink id="9c6f-5a54-cc55-722d" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
+            <infoLink id="bd26-a7f9-ef54-36af" name="Armiger and Moirax Talons" hidden="false" targetId="d840-fbd0-352e-b33e" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="6c49-4990-c232-e94a" name="Phaeton Autocannon" publicationId="bde1-6db1-163b-3b76" page="114" hidden="false" collective="false" import="true" type="upgrade">
@@ -1180,9 +1133,14 @@
               </modifiers>
             </infoLink>
             <infoLink id="a85b-a5f0-cb95-75a0" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
+            <infoLink id="1105-4d29-df97-2df0" name="Armiger and Moirax Talons" hidden="false" targetId="d840-fbd0-352e-b33e" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="e4e9-9456-1828-d57b" name="Reaper Chainblade" publicationId="bde1-6db1-163b-3b76" page="120" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed72-974e-1a59-9489" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4372-9594-d5d8-0653" type="max"/>
+              </constraints>
               <profiles>
                 <profile id="74fb-33d3-4e56-97b0" name="Reaper Chainblade" publicationId="bde1-6db1-163b-3b76" page="120" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
                   <characteristics>
@@ -1201,6 +1159,10 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="5a5d-1173-1210-73a8" name="Thermal Lance" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a218-e517-f139-9d75" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d2a-9dcb-a4c4-31de" type="max"/>
+              </constraints>
               <profiles>
                 <profile id="f220-4068-517b-9120" name="Thermal Lance" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
                   <characteristics>
@@ -1362,19 +1324,10 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5249-b203-b02f-d96d" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a312-91ee-a6cc-827a" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="2af9-d755-936d-0fa8" name="Twin-Linked Magna Lascannon" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 2, Large Blast (5&quot;)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <infoLinks>
             <infoLink id="70c6-6b16-2b8e-fd78" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
             <infoLink id="9e87-d58e-bde1-7cb3" name="Ordnance" hidden="false" targetId="6c55-22c8-1b01-2105" type="rule"/>
+            <infoLink id="5970-5f4a-3bd7-aea8" name="Twin-Linked Magna Lascannon" hidden="false" targetId="2af9-d755-936d-0fa8" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -1594,16 +1547,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="3470-29ee-7415-96c2" name="Siege Claw with In-Built Irad-Cleanser" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="f417-99e0-bb03-dfa7" name="Siege Claw" publicationId="bde1-6db1-163b-3b76" page="123" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (2), Sunder, Wrecker</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <infoLinks>
                 <infoLink id="5085-bc21-4999-38da" name="Irad-Cleanser" hidden="false" targetId="484b-1446-7bac-46d9" type="profile"/>
                 <infoLink id="e760-49ee-51db-5808" name="Fleshbane" hidden="false" targetId="40cd-9505-253c-e76f" type="rule"/>
@@ -1615,6 +1558,7 @@
                 </infoLink>
                 <infoLink id="5750-724b-05cf-a83d" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
                 <infoLink id="9446-ac4f-0c60-4793" name="Wrecker" hidden="false" targetId="ba77-a802-55df-da67" type="rule"/>
+                <infoLink id="b4ed-c3b4-ebf3-b1f3" name="Siege Claw" hidden="false" targetId="f417-99e0-bb03-dfa7" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
@@ -1784,6 +1728,9 @@
             <infoLink id="7d8d-e406-9fde-3a13" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
             <infoLink id="403c-4eeb-4934-1616" name="Lightning Cannon " publicationId="bde1-6db1-163b-3b76" page="113" hidden="false" targetId="119e-f108-83fe-d0e3" type="profile"/>
           </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -1794,16 +1741,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="6fa6-da43-5460-36aa" name="Siege Claw with In-Built Irad-Cleanser" publicationId="bde1-6db1-163b-3b76" page="123" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="dd93-aef0-e44a-0405" name="Siege Claw" publicationId="bde1-6db1-163b-3b76" page="123" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (2), Sunder, Wrecker</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <infoLinks>
                 <infoLink id="f930-5397-a911-040a" name="Irad-Cleanser" hidden="false" targetId="484b-1446-7bac-46d9" type="profile"/>
                 <infoLink id="6b8a-652b-dc9e-2a30" name="Fleshbane" hidden="false" targetId="40cd-9505-253c-e76f" type="rule"/>
@@ -1815,6 +1752,7 @@
                 </infoLink>
                 <infoLink id="fc68-38ed-f813-3bd0" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
                 <infoLink id="6d28-a833-d8f9-48b1" name="Wrecker" hidden="false" targetId="ba77-a802-55df-da67" type="rule"/>
+                <infoLink id="fa68-f793-874a-a7e2" name="Siege Claw" hidden="false" targetId="f417-99e0-bb03-dfa7" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
@@ -2006,6 +1944,9 @@
             </infoLink>
             <infoLink id="91ae-b3d4-c3dc-91d7" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="6853-a562-8371-604b" name="Arm Mounted Singularity Cannon" publicationId="bde1-6db1-163b-3b76" page="116" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -2036,6 +1977,9 @@
               </modifiers>
             </infoLink>
           </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -2218,64 +2162,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="625.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2164-1725-d032-ed49" name="Reaper Chainsword" publicationId="bde1-6db1-163b-3b76" page="120" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="bd92-cdfc-9ca6-ee9b" name="Reaper Chainsword" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="b6ab-efff-1452-2296" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="13f4-be52-e1a7-4e51" name="Avenger Gatling Cannon" publicationId="bde1-6db1-163b-3b76" page="114" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="691d-aafb-9299-a873" name="Avenger Gatling Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 12, Rending (6+)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="e1d2-2383-ce28-27b5" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Rending (6+)"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="82e0-160b-28f5-f01e" name="Ironstorm Missile Pod" publicationId="bde1-6db1-163b-3b76" page="118" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="c180-49e9-713a-0702" name="Ironstorm Missile Pod" publicationId="bde1-6db1-163b-3b76" page="118" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Large Blast (5&quot;)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="d695-cac5-a598-3187" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1b29-a58e-296c-3946" name="Household Ranks" hidden="true" collective="false" import="true">
@@ -2402,4 +2288,7 @@ Preceptor: Any units of Armiger Warglaives or Armiger Helverins that have at lea
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <catalogueLinks>
+    <catalogueLink id="f98f-e172-8ed2-4bef" name="2022 - Mech Library" targetId="3129-da35-55e0-642d" type="catalogue" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>
