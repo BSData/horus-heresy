@@ -980,11 +980,13 @@ May join units that include models with the Cavalry Unit Type despite the usual 
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68a9-7dc7-3818-54a7" type="max"/>
           </constraints>
-          <rules>
-            <rule id="8363-d356-a090-79d5" name="Warlord: Sire of the White Scars" hidden="false">
-              <description>All Infantry and Cavalry models with the Legiones Astartes (White Scars) special rule in the same army as Jaghatai Khan, including Jaghatai Khan, gain the Furious Charge (1) special rule on any turn in which they have moved. In addition, an army with the Jaghatai Khan as it&apos;s Warlord may make an additional Reaction in the opposing player&apos;s Movement phase as long as Jaghatai Khan has not been removed as a casualty. </description>
-            </rule>
-          </rules>
+          <profiles>
+            <profile id="ea35-d3d1-0915-8e04" name="Warlord: Sire of the White Scars" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">All Infantry and Cavalry models with the Legiones Astartes (White Scars) special rule in the same army as Jaghatai Khan, including Jaghatai Khan, gain the Furious Charge (1) special rule on any turn in which they have moved. In addition, an army with the Jaghatai Khan as it&apos;s Warlord may make an additional Reaction in the opposing player&apos;s Movement phase as long as Jaghatai Khan has not been removed as a casualty. </characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </entryLink>
         <entryLink id="f70b-e7c5-fd24-f414" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
           <constraints>
