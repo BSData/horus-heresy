@@ -229,6 +229,108 @@
           </modifiers>
         </infoLink>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2484-a122-76a2-b142" name="Triaros Armoured Conveyor " publicationId="bde1-6db1-163b-3b76" page="38" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5f4-5acb-8b82-a398" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9c35-7828-ae5a-edd1" name="Triaros Armoured Conveyor " publicationId="bde1-6db1-163b-3b76" page="38" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">• Vehicle (Transport)</characteristic>
+            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">12</characteristic>
+            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
+            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
+            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">5</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">22</characteristic>
+            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">A Triaros Armoured Conveyor has one Access Point on each side of the hull.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4bd4-3a9e-5bf3-8e9d" name="Galvanic Traction Drive" hidden="false" targetId="e51e-cae1-d9e7-d317" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="fe7e-d7ac-b8ff-a623" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0158-716f-8819-36c8" name="Centreline Mounted Volkite Calivers" hidden="false" collective="false" import="true" defaultSelectionEntryId="473a-89d7-e6ba-b3fa">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6abc-293c-3012-39a0" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5087-e127-5d50-22d0" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="473a-89d7-e6ba-b3fa" name="Volkite Caliver" hidden="false" collective="false" import="true" targetId="9250-490f-abeb-b901" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="7332-6e75-9ca7-1113" name="Pintle Mounted Twin-Linked Mauler Bolt Cannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="8a3b-2033-fd0b-78ca">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95d9-70a6-903d-8080" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7646-2d77-c613-2c28" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="8a3b-2033-fd0b-78ca" name="Twin-linked Mauler Bolt Cannon" hidden="false" collective="false" import="true" targetId="ac88-bcf4-d7b4-5c56" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="cab5-253f-bd6d-1b68" name="Up to two Hull (Front) Mounted Hunter-Killer Missiles" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0421-e81c-41c6-cca5" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="a180-22e5-6e87-1189" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="1bf8-72f8-c331-6900" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="bdb6-0f3e-c8e0-76ad" name="Shock Ram" hidden="false" collective="false" import="true" targetId="e22e-df78-c49b-7b98" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99dc-42d5-e907-65d8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9292-8cd9-d375-9d8a" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d0c6-98c2-9332-c626" name="Flare Shield" hidden="false" collective="false" import="true" targetId="0e77-6285-22bb-1534" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2856-a7c3-7b8f-cc0e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f380-89be-2b65-a3ab" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="135.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e22e-df78-c49b-7b98" name="Shock Ram" publicationId="bde1-6db1-163b-3b76" page="123" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="8b5f-efb1-b545-2e1c" name="Shock Ram" publicationId="bde1-6db1-163b-3b76" page="123" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Concussive (3), Ram (D6)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1153-8a95-34f0-bf46" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Concussive (3)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="fd0d-0e02-31f8-a1f4" name="Ram (X)" hidden="false" targetId="e993-bb10-e7fc-c959" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Ram (D6)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -246,6 +348,12 @@
     <rule id="d840-fbd0-352e-b33e" name="Armiger and Moirax Talons" publicationId="bde1-6db1-163b-3b76" page="102" hidden="false">
       <description>The Scout Knights of the Taghmata and Questoris Households often roamed the battlefield independently as the vanguard of their orders. While each war machine strode the battlefield distant from their companions, they shared fierce bonds of fealty and brotherhood.
 When deployed onto the battlefield (either at the start of the battle or when arriving from Reserves) all models in the unit must be placed within unit coherency, but afterwards operate independently and are not treated as a single unit.</description>
+    </rule>
+    <rule id="e993-bb10-e7fc-c959" name="Ram (X)" publicationId="bde1-6db1-163b-3b76" page="106" hidden="false">
+      <description>When a model with a weapon with this special rule performs a Ram Attack, it makes a number of additional attacks equal to the value of X. These attacks automatically hit the target of the Ram Attack and are resolved using the profile of the weapon with this special rule equal to the value of (X).</description>
+    </rule>
+    <rule id="e51e-cae1-d9e7-d317" name="Galvanic Traction Drive" publicationId="bde1-6db1-163b-3b76" page="104" hidden="false">
+      <description>A model with this special rule must re-roll failed Dangerous Terrain tests.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
