@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="2275-5253-2421-7383" name="Rewards of Trechery" hidden="false"/>
   </categoryEntries>
@@ -9,6 +9,9 @@
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c912-48ac-8379-8a6f" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6adb-8f1a-1abc-c97d" type="min"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink id="2a09-da27-d0a0-76b1" name="New CategoryLink" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="true"/>
+      </categoryLinks>
       <entryLinks>
         <entryLink id="cfdf-2176-3870-f8c1" name="Legion" hidden="false" collective="false" import="true" targetId="4a48-4935-246d-0c2e" type="selectionEntryGroup"/>
       </entryLinks>
@@ -36,7 +39,7 @@
         </modifier>
         <modifier type="set" field="96e6-7d51-3b4a-f4b1" value="0.0">
           <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2275-5253-2421-7383" type="greaterThan"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2275-5253-2421-7383" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -47,9 +50,6 @@
         <categoryLink id="007a-4705-5f7a-695b" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="69ff-87ed-3c34-3742" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="c4b2-f741-e6c2-5680" name="RoT" hidden="false" collective="false" import="true" type="upgrade"/>
-      </selectionEntries>
     </entryLink>
     <entryLink id="8bd1-2ebe-9806-2c7a" name="Alpharius" hidden="false" collective="false" import="true" targetId="4492-950e-2b00-b14d" type="selectionEntry">
       <categoryLinks>
@@ -74,6 +74,69 @@
     <entryLink id="d20f-c0b6-43bd-93a0" name="Lernaean Terminator Squad" hidden="false" collective="false" import="true" targetId="6161-d387-f086-0958" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="46d2-e42c-5804-d2d4" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="197c-c0fc-a23e-6f2b" name="Contemptor-Incaendius Dreadnought" hidden="true" collective="false" import="true" targetId="090c-5656-0180-16c8" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="1814-bc90-62af-e1d3" value="0.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2275-5253-2421-7383" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1814-bc90-62af-e1d3" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="004d-4f4f-8712-5c8a" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="9d18-8623-549e-3074" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3e6a-8a36-2833-18f6" name="The Angel&apos;s Tears" hidden="true" collective="false" import="true" targetId="dda1-0fcf-0245-6c10" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="375d-9955-99c9-5061" value="0.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2275-5253-2421-7383" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="375d-9955-99c9-5061" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="e573-0785-198f-75e0" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="511d-ee20-25c6-41e0" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="fed6-4895-5d98-6fab" name="Dawnbreaker Cohort" hidden="true" collective="false" import="true" targetId="3c67-35da-d64a-f22b" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="490b-34fd-cd38-f9b7" value="0.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2275-5253-2421-7383" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="490b-34fd-cd38-f9b7" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="19b6-1435-9fa0-1179" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="b752-1bf4-f46c-00e8" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -698,26 +761,30 @@ The Instrument has two profiles. Pick which profile is used every time the weapo
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="185.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="70e6-ace3-8feb-1ddc" name="Headhunter Kill Team" hidden="false" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="70e6-ace3-8feb-1ddc" name="Headhunter Kill Team" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink id="2f60-18fb-e6ed-8574" name="(HH V2) Legions Astartes" targetId="6393-649c-7213-a327" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="c2da-96e4-de72-6af5" name="Legiones Astartes: IX - Blood Angels" targetId="cd4d-8765-5387-8409" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="272b-fd4e-9675-94d1" name="LA -   I: Dark Angels" targetId="12ce-9c46-5335-827a" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="a164-9b86-cdff-a77e" name="LA -   III: Emperor&apos;s Children" targetId="72ba-61c2-37ad-c785" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="f3da-bf4c-5557-55ca" name="LA -   IV: Iron Warriors" targetId="2ee4-57ed-db44-8a63" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="a765-0d93-a1aa-429d" name="LA -   V: White Scars" targetId="caa9-c50e-8eed-2259" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="deaf-52e5-4b05-f2d6" name="LA -   VI: Space Wolves" targetId="ca15-13de-89cb-bbb2" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="7d3f-8f37-29e5-3a1e" name="LA -   VII: Imperial Fists" targetId="8866-00ec-715f-f21a" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="31b5-a244-30e0-6609" name="LA -   VIII: Night Lords" targetId="9b01-77b9-2f38-6413" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="7ea8-b20e-d38f-def3" name="LA -  X: Iron Hands" targetId="b73e-125f-db29-17f2" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="1ab3-19e2-4e09-4cef" name="LA -  XII: World Eaters" targetId="d901-0eca-48b5-304a" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="e1d9-0e0d-dd7c-564b" name="LA -  XIII: Ultramarines" targetId="68ae-9855-b56a-95e6" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="8bd2-e90a-499a-652d" name="LA -  XIV: Death Guard" targetId="d228-55e8-b58c-1b77" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="cb9a-9b14-8dcf-910f" name="LA -  XV: Thousand Sons" targetId="abac-8dd1-df65-e253" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="3289-8848-fef8-7f7a" name="LA -  XVI: Sons of Horus" targetId="62c7-42f4-5523-af1b" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="4c19-55ad-bb7b-187c" name="LA -  XVII: Word Bearers" targetId="1df7-bbbc-b70e-6a3f" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="615e-dbe4-e349-94ca" name="LA -  XVIII: Salamanders" targetId="3547-84d8-d789-bab7" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="0fd7-0093-a46a-ad80" name="LA - XIX: Raven Guard" targetId="d21e-9c80-a7f8-728c" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="c2da-96e4-de72-6af5" name="LA-   IX - Blood Angels" targetId="cd4d-8765-5387-8409" type="catalogue" importRootEntries="false"/>
+    <catalogueLink id="272b-fd4e-9675-94d1" name="LA -   I: Dark Angels" targetId="12ce-9c46-5335-827a" type="catalogue" importRootEntries="false"/>
+    <catalogueLink id="a164-9b86-cdff-a77e" name="LA -   III: Emperor&apos;s Children" targetId="72ba-61c2-37ad-c785" type="catalogue" importRootEntries="false"/>
+    <catalogueLink id="f3da-bf4c-5557-55ca" name="LA -   IV: Iron Warriors" targetId="2ee4-57ed-db44-8a63" type="catalogue" importRootEntries="false"/>
+    <catalogueLink id="a765-0d93-a1aa-429d" name="LA -   V: White Scars" targetId="caa9-c50e-8eed-2259" type="catalogue" importRootEntries="false"/>
+    <catalogueLink id="deaf-52e5-4b05-f2d6" name="LA -   VI: Space Wolves" targetId="ca15-13de-89cb-bbb2" type="catalogue" importRootEntries="false"/>
+    <catalogueLink id="7d3f-8f37-29e5-3a1e" name="LA -   VII: Imperial Fists" targetId="8866-00ec-715f-f21a" type="catalogue" importRootEntries="false"/>
+    <catalogueLink id="31b5-a244-30e0-6609" name="LA -   VIII: Night Lords" targetId="9b01-77b9-2f38-6413" type="catalogue" importRootEntries="false"/>
+    <catalogueLink id="7ea8-b20e-d38f-def3" name="LA -  X: Iron Hands" targetId="b73e-125f-db29-17f2" type="catalogue" importRootEntries="false"/>
+    <catalogueLink id="1ab3-19e2-4e09-4cef" name="LA -  XII: World Eaters" targetId="d901-0eca-48b5-304a" type="catalogue" importRootEntries="false"/>
+    <catalogueLink id="e1d9-0e0d-dd7c-564b" name="LA -  XIII: Ultramarines" targetId="68ae-9855-b56a-95e6" type="catalogue" importRootEntries="false"/>
+    <catalogueLink id="8bd2-e90a-499a-652d" name="LA -  XIV: Death Guard" targetId="d228-55e8-b58c-1b77" type="catalogue" importRootEntries="false"/>
+    <catalogueLink id="cb9a-9b14-8dcf-910f" name="LA -  XV: Thousand Sons" targetId="abac-8dd1-df65-e253" type="catalogue" importRootEntries="false"/>
+    <catalogueLink id="3289-8848-fef8-7f7a" name="LA -  XVI: Sons of Horus" targetId="62c7-42f4-5523-af1b" type="catalogue" importRootEntries="false"/>
+    <catalogueLink id="4c19-55ad-bb7b-187c" name="LA -  XVII: Word Bearers" targetId="1df7-bbbc-b70e-6a3f" type="catalogue" importRootEntries="false"/>
+    <catalogueLink id="615e-dbe4-e349-94ca" name="LA -  XVIII: Salamanders" targetId="3547-84d8-d789-bab7" type="catalogue" importRootEntries="false"/>
+    <catalogueLink id="0fd7-0093-a46a-ad80" name="LA - XIX: Raven Guard" targetId="d21e-9c80-a7f8-728c" type="catalogue" importRootEntries="false"/>
   </catalogueLinks>
 </catalogue>
