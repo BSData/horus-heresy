@@ -1628,7 +1628,7 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">†</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1,  Large Blast (5&quot;), †Graviton Collapse, Torsion Crusher, Ignores Cover, Concussive (1)</characteristic>
           </characteristics>
         </profile>

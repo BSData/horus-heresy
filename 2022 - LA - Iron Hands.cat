@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b73e-125f-db29-17f2" name="LA -  X: Iron Hands" revision="2" battleScribeVersion="2.03" authorName="Figjam Bohica" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b73e-125f-db29-17f2" name="LA -  X: Iron Hands" revision="4" battleScribeVersion="2.03" authorName="Figjam Bohica" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
-    <entryLink id="6107-168e-198e-2e94" name="  X: Iron Hands" hidden="false" collective="false" import="true" targetId="bfc9-c99c-bf8a-3917" type="selectionEntry">
+    <entryLink id="6107-168e-198e-2e94" name="  X: Iron Hands" hidden="false" collective="false" import="false" targetId="bfc9-c99c-bf8a-3917" type="selectionEntry">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4452-bec3-6da1-2edd" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da6a-761c-e00e-569b" type="max"/>
@@ -10,34 +10,92 @@
         <categoryLink id="8e8d-01b9-6875-ad9c" name="New CategoryLink" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="2fdc-7a7e-ae85-ad77" name="Iron Father Autek Mor" hidden="false" collective="false" import="true" targetId="0283-efdd-6ee3-6741" type="selectionEntry">
+    <entryLink id="2fdc-7a7e-ae85-ad77" name="Iron Father Autek Mor" hidden="false" collective="false" import="false" targetId="0283-efdd-6ee3-6741" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="0ea8-3c19-bd9e-00d7" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
         <categoryLink id="1b49-70c4-2fde-68f7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="adaf-b561-c972-57ac" name="Shadrak Meduson" hidden="false" collective="false" import="true" targetId="44c8-4cd9-3121-5a52" type="selectionEntry">
+    <entryLink id="adaf-b561-c972-57ac" name="Shadrak Meduson" hidden="false" collective="false" import="false" targetId="44c8-4cd9-3121-5a52" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="4352-3cd4-e3da-54fa" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
         <categoryLink id="5628-344a-7f03-95bf" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="a6cc-0043-82f4-20f4" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="e1ce-d9b7-2ea1-760b" name="Medusan Immortal Squad" hidden="false" collective="false" import="true" targetId="f9e4-0da2-5049-df81" type="selectionEntry">
+    <entryLink id="e1ce-d9b7-2ea1-760b" name="Medusan Immortal Squad" hidden="false" collective="false" import="false" targetId="f9e4-0da2-5049-df81" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="028c-19b9-ccdf-9229" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="3f2e-25c7-b685-51db" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="01ed-67ea-cdc1-b2e2" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="de83-37e7-9228-0b81" name="Gorgon Terminator Squad" hidden="false" collective="false" import="true" targetId="ea50-6315-7a52-f560" type="selectionEntry">
+    <entryLink id="de83-37e7-9228-0b81" name="Gorgon Terminator Squad" hidden="false" collective="false" import="false" targetId="ea50-6315-7a52-f560" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="26b1-401b-c49d-a163" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="0ac3-4093-1c72-a6c2" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="e78f-9b56-5432-ae85" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="acbb-d53d-6be7-eef8" name="Ferrus Manus" hidden="false" collective="false" import="true" targetId="554b-1024-a345-0d14" type="selectionEntry">
+    <entryLink id="acbb-d53d-6be7-eef8" name="Ferrus Manus" hidden="false" collective="false" import="false" targetId="554b-1024-a345-0d14" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="84ec-691d-8d75-7998" name="New CategoryLink" hidden="false" targetId="ad5f-31db-8bc7-5c46" primary="true"/>
         <categoryLink id="4198-15b1-372c-89c8" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -91,7 +149,7 @@
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="4653-40ba-a2a5-80ae" name="1) Melee Options" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="4653-40ba-a2a5-80ae" name="1) Melee Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="882f-3e65-bdba-4565">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54ae-0b67-04be-a5bd" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="565f-ea74-9344-5d98" type="max"/>
@@ -115,7 +173,7 @@
                 <entryLink id="882f-3e65-bdba-4565" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="b079-4516-5f67-7afb" name="2) Ranged Options" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="b079-4516-5f67-7afb" name="2) Ranged Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="e3e1-09f3-5ae9-6ba5">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b998-bc32-0c38-1e4c" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6b52-98e1-1bdf-8f61" type="max"/>
@@ -149,6 +207,7 @@
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="ea50-6315-7a52-f560" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f3a9-e972-9665-1212" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4b88-e9cc-4cde-382e" type="max"/>
               </constraints>
               <entryLinks>
                 <entryLink id="8904-db91-bea3-5f3a" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
@@ -201,7 +260,7 @@
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="7470-b3a9-08e3-cb35" name="The Gorgon Hammerbearer may exchange their combi-bolter for:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="7470-b3a9-08e3-cb35" name="The Gorgon Hammerbearer may exchange their combi-bolter for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="a76e-1c70-a447-4e6d">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="967f-d676-525f-2e31" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f13-0213-38bf-2e49" type="max"/>
@@ -273,7 +332,7 @@
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4802-8c54-43d4-293b" type="greaterThan"/>
+                    <condition field="selections" scope="ea50-6315-7a52-f560" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -285,7 +344,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="db7f-08dc-b6bc-8e4a" name="Gorgon Terminator Armour" hidden="false" collective="false" import="true" targetId="6ee0-262f-191a-1c6b" type="selectionEntry">
+        <entryLink id="db7f-08dc-b6bc-8e4a" name="Gorgon Terminator Armour" hidden="false" collective="false" import="true" targetId="16ca-e521-1c1b-0716" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d28b-2b3d-55e8-3df4" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="292a-0d1d-dfae-51db" type="max"/>
@@ -373,6 +432,7 @@
           <categoryLinks>
             <categoryLink id="ce14-5b51-ca57-a479" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
             <categoryLink id="3981-f592-d5f7-9f94" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+            <categoryLink id="ecc9-de7f-c8ba-d75a" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="18.0"/>
@@ -431,7 +491,7 @@
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
-            <modifier type="decrement" field="ec16-79a3-05cd-331b" value="9.0"/>
+            <modifier type="decrement" field="ec16-79a3-05cd-331b" value="10.0"/>
             <modifier type="increment" field="f852-299d-96f6-3034" value="1.0">
               <repeats>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
@@ -439,7 +499,7 @@
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec16-79a3-05cd-331b" type="min"/>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec16-79a3-05cd-331b" type="min"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f852-299d-96f6-3034" type="max"/>
           </constraints>
           <entryLinks>
@@ -452,7 +512,7 @@
             <entryLink id="386a-9c46-cb43-4b7c" name="Bolter" hidden="false" collective="false" import="true" targetId="1ade-0c02-5612-252b" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="1316-daf2-ce11-2e27" name="For every 5 models in the unit one may exchange their Bolter for" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="1316-daf2-ce11-2e27" name="1 in every 5 models in the unit may exchange their Bolter for:" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="increment" field="f22c-6567-0028-d2de" value="1.0">
               <repeats>
@@ -589,16 +649,10 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="554b-1024-a345-0d14" name="Ferrus Manus" publicationId="817a-6288-e016-7469" page="280" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="554b-1024-a345-0d14" name="Ferrus Manus" publicationId="817a-6288-e016-7469" page="280" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5bb9-b8ff-92fb-a4d6" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bbac-3de7-7dbd-15c1" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="e1e5-95e5-40c2-6e26" name="New CategoryLink" hidden="false" targetId="ad5f-31db-8bc7-5c46" primary="false"/>
@@ -638,56 +692,97 @@
               </modifiers>
             </infoLink>
             <infoLink id="5395-1a9f-10c7-a5dd" name="Legiones Astartes (Iron Hands) " hidden="false" targetId="2e45-4b61-44fb-260b" type="rule"/>
-            <infoLink id="12bb-65e7-45b6-059f" name="Master of the Legion" hidden="false" targetId="c772-87ea-d49c-c7ba" type="rule"/>
           </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="34a6-76b9-4894-6e28" name="The Medusan Carapace" publicationId="817a-6288-e016-7469" page="281" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8752-62cc-08c0-bb1b" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1064-fd12-3345-f702" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="cf42-4199-cf8e-0a8b" name="The Medusan Carapace" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-              <characteristics>
-                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Medusan Carapace grants a 2+ armor save and a 3+ invulnerable save</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="3bc2-ed95-b1a4-e07d" name="Forgebreaker" publicationId="817a-6288-e016-7469" page="281" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8a5-9254-b085-367c" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="294d-913b-cad5-ca19" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="a74e-bfbf-4d2a-7ff7" name="Forgebreaker" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Master-crafted, Exoshock (3+), Brutal (3)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="b40e-08fc-c2a3-56ee" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
-            <infoLink id="45be-5735-cda9-e45c" name="Exoshock (X)" hidden="false" targetId="69ca-318a-b47a-7a3c" type="rule">
+          <selectionEntries>
+            <selectionEntry id="d8b9-24a9-2ad2-72d4" name="Forgebreaker" publicationId="817a-6288-e016-7469" page="281" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db5d-62bb-7495-5d8d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3c5-07c8-e92b-3ade" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="6444-8212-2829-0f03" name="Forgebreaker" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Master-crafted, Exoshock (3+), Brutal (3)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="35b8-f9e3-cd86-d4fd" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+                <infoLink id="6c15-3ba3-6b4a-9cea" name="Exoshock (X)" hidden="false" targetId="69ca-318a-b47a-7a3c" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Exoshock (3+)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="b973-54a9-26f9-6cbc" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Brutal (3)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9553-da46-1067-b72c" name="The Medusan Carapace" publicationId="817a-6288-e016-7469" page="281" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ec8-e96f-172f-ea78" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e460-4b82-5eec-c35c" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="f106-46c8-97ad-e6f8" name="The Medusan Carapace" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Medusan Carapace grants a 2+ armor save and a 3+ invulnerable save</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="2318-ef55-a30e-9a25" name="Graviton Shredder" hidden="false" collective="false" import="true" targetId="0849-b63b-0b1b-fd4f" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="name" value="Exoshock (3+)"/>
+                <modifier type="set" field="name" value="Master-crafted gravitron shredder"/>
               </modifiers>
-            </infoLink>
-            <infoLink id="5af2-be68-c2b4-105c" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2fc7-0b16-d667-f4a0" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="21c1-0aef-72a0-8437" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="2c5f-3e0e-c1de-3696" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+              </infoLinks>
+            </entryLink>
+            <entryLink id="d559-4570-b59a-7122" name="Grenade Harness" hidden="false" collective="false" import="true" targetId="251a-860d-2c4d-62cc" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e3c3-3760-d3e6-444f" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7ca8-a5f5-ec30-8ca5" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="29cd-6cfa-09bc-e643" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="06a8-6294-bfaf-896e" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a01f-9f8b-7f24-4edc" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="ee23-700b-a686-3259" name="Plasma Blaster" hidden="false" collective="false" import="true" targetId="cd52-e9e8-3ab1-995c" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="name" value="Brutal (3)"/>
+                <modifier type="set" field="name" value="Master-crafted plasma blaster"/>
               </modifiers>
-            </infoLink>
-          </infoLinks>
+              <infoLinks>
+                <infoLink id="4020-4046-51a9-10c5" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+              </infoLinks>
+            </entryLink>
+            <entryLink id="9f9e-2a43-4724-15a2" name="Servo-Arm" hidden="false" collective="false" import="true" targetId="4168-fc85-8912-7188" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="84cb-970c-4831-3a3a" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="47e8-9de1-5095-679a" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
@@ -706,44 +801,6 @@
             </profile>
           </profiles>
         </entryLink>
-        <entryLink id="f512-667f-5aee-2443" name="Servo-Arm" hidden="false" collective="false" import="true" targetId="4168-fc85-8912-7188" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1601-aa2c-d6f0-42ec" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2a9f-8915-2d05-3bca" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="05b2-b6f7-2347-1b12" name="Plasma Blaster" hidden="false" collective="false" import="true" targetId="cd52-e9e8-3ab1-995c" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="name" value="Master-crafted plasma blaster"/>
-          </modifiers>
-          <infoLinks>
-            <infoLink id="b938-ec89-df43-d1d9" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
-          </infoLinks>
-        </entryLink>
-        <entryLink id="1924-f49c-3ff3-0753" name="Graviton Shredder" hidden="false" collective="false" import="true" targetId="0849-b63b-0b1b-fd4f" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="name" value="Master-crafted gravitron shredder"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="25e5-d81b-6ff8-1fdc" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e117-d751-08fa-a9b4" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="d6b1-ae65-6149-4929" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
-          </infoLinks>
-        </entryLink>
-        <entryLink id="1d2c-46df-8166-8e84" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="244f-49f3-3fa8-de42" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e478-eaa3-baf8-a244" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="b53d-e7cb-c7a0-e6f4" name="Grenade Harness" hidden="false" collective="false" import="true" targetId="251a-860d-2c4d-62cc" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0cda-6b5e-9194-61b4" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8097-2d44-a114-0beb" type="min"/>
-          </constraints>
-        </entryLink>
         <entryLink id="6028-f01f-0288-e01d" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="115e-61df-b95e-9c12" type="min"/>
@@ -756,140 +813,145 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="465.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0283-efdd-6ee3-6741" name="Iron Father Autek Mor" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="0283-efdd-6ee3-6741" name="Iron Father Autek Mor" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6a7d-46e8-4f67-aa91" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6a7d-46e8-4f67-aa91" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9e96-f78b-5bbc-f13d" type="max"/>
       </constraints>
-      <profiles>
-        <profile id="e5fc-ed7a-e913-1fcd" name="Iron Father Autek Mor" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Heavy, Unique)</characteristic>
-            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
-            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
-            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
-            <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">4</characteristic>
-            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
-            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="7b97-50a5-ebe6-961d" name="Armis Panoptikos" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Armis Panoptikos confers Autek Mor a 2+ Armour Save, a 4+ Invulnerable Save and the Feel No Pain (5+) special rule.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="2913-c0f1-322c-a951" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
-        <infoLink id="1509-3caa-4df6-9898" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
-        <infoLink id="bbfd-f6ed-5fd7-504a" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Bulky (2)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="440d-5532-a0d4-feda" name="Battlesmith (X)" hidden="false" targetId="5d57-4d02-1e36-4a82" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Battlesmith (3+)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="0f29-5b7b-33af-7f5f" name="Loyalist" hidden="false" targetId="d1de-a45d-2b9b-c878" type="rule"/>
-        <infoLink id="761b-351a-101e-b7bc" name="Feel No Pain (X)" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Feel No Pain (5+)"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="e549-4739-d1b7-8507" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false"/>
+        <categoryLink id="f1af-c02b-85f4-4611" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+        <categoryLink id="e07c-741f-a596-fad1" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="a346-645f-eeec-7790" name="Argonikos" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="9aef-f396-b30d-8cd0" name="Iron Father Autek Mor" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1cc9-9377-f0ca-4e6b" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9863-446f-106b-acb4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0c97-08c5-f603-a33c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3394-a09e-c924-e21d" type="max"/>
           </constraints>
           <profiles>
-            <profile id="b8cc-d346-fc1c-8002" name="Argonikos" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+            <profile id="6be7-eb7c-96d5-fa12" name="Iron Father Autek Mor" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Reaping Blow (2)</characteristic>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Heavy, Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">4</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="50f5-52f7-d87b-1449" name="Armis Panoptikos" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Armis Panoptikos confers Autek Mor a 2+ Armour Save, a 4+ Invulnerable Save and the Feel No Pain (5+) special rule.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="0ff4-467a-8efb-01c7" name="Reaping Blow (X)" hidden="false" targetId="bd8c-4f52-d682-1b40" type="rule">
+            <infoLink id="18e5-53a4-4720-b6b2" name="Battlesmith (X)" hidden="false" targetId="5d57-4d02-1e36-4a82" type="rule">
               <modifiers>
-                <modifier type="set" field="name" value="Reaping Blow (2)"/>
+                <modifier type="set" field="name" value="Battlesmith (3+)"/>
               </modifiers>
             </infoLink>
-            <infoLink id="a09b-4ab1-cf99-5676" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+            <infoLink id="cdc8-a07c-e7b2-7541" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Bulky (2)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="4585-da80-77ac-0701" name="Feel No Pain (X)" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Feel No Pain (5+)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="f93a-c80e-3b93-e746" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
+            <infoLink id="eb66-9d2b-3d3f-6871" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
           </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="7d0d-edb7-1303-80b0" name="Manipulator Array" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e393-a6cd-9cdd-be66" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="066c-554e-eeb6-f769" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="334f-89e5-6c6c-f2f6" name="Manipulator Array" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Shred, Armourbane (Melee), Precision Strikes (3+)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="5075-a692-be6b-8745" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
-            <infoLink id="d60b-7f0e-0a49-be6a" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
-            <infoLink id="bef2-72f1-5898-5a0c" name="Precision Strikes (X)" hidden="false" targetId="2206-8497-8fe1-e973" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Precision Strikes (3+)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="a875-6c7b-f505-6fa8" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Armourbane (Melee)"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="ef4b-7287-2ab3-5886" name="Argonikos" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="188c-c870-b656-1100" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2ed7-a89e-cc98-3f0a" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="c583-8cde-f351-cf47" name="Argonikos" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Reaping Blow (2)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="fc1c-cd7f-6582-52ba" name="Reaping Blow (X)" hidden="false" targetId="bd8c-4f52-d682-1b40" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Reaping Blow (2)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="c96e-12e5-c3de-4072" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1782-e1aa-a946-88d2" name="Manipulator Array" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1801-7421-2046-bf8a" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d60d-782c-90e8-d499" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="4a3a-0b6b-002f-c308" name="Manipulator Array" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Shred, Armourbane (Melee), Precision Strikes (3+)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="dfd0-a2a7-7025-0f3f" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+                <infoLink id="8d89-5fd8-56f0-15be" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+                <infoLink id="106f-ac9c-b12c-573a" name="Precision Strikes (X)" hidden="false" targetId="2206-8497-8fe1-e973" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Precision Strikes (3+)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="02cb-f9e3-4df4-578d" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Armourbane (Melee)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="93c5-b805-4b68-6460" name="Cyber-Familiar" hidden="false" collective="false" import="true" targetId="6c85-4601-cf58-7b35" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e956-c702-4c8e-2500" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="af25-6aef-68d7-04e2" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="2fa7-5eaa-4292-6e3f" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="6f6e-ad55-e093-6503" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0bf9-6291-98b7-0ef2" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="efe7-524b-ecea-0505" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="2088-5bfc-68f3-0696" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="6f6e-ad55-e093-6503" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="783b-2d1c-69ff-eb74" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c1c7-33c7-9fc1-897b" type="min"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="4489-1584-bb84-bfb4" name="Cyber-Familiar" hidden="false" collective="false" import="true" targetId="6c85-4601-cf58-7b35" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cb02-6555-dda0-4a9e" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="661b-5514-8f73-a2a5" type="min"/>
-          </constraints>
-        </entryLink>
         <entryLink id="6ea9-1d51-bd12-0eae" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1aa-05bf-dc51-e4ac" type="max"/>
@@ -914,64 +976,107 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="225.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="44c8-4cd9-3121-5a52" name="Shadrak Meduson" hidden="true" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="44c8-4cd9-3121-5a52" name="Shadrak Meduson" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6bfb-1f1f-67e0-0d4b" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7b9a-32a2-58e0-b6dc" type="max"/>
       </constraints>
-      <profiles>
-        <profile id="0c36-1084-b870-9afa" name="Shadrak Meduson" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
-            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
-            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
-            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
-            <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
-            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
-            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="db55-a877-1e76-d27a" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="0a37-199d-ac29-af4a" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="450f-62a0-e20f-f6c1" name="Albian power gladius" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="94ef-185a-f5bc-cc1c" name="Shadrak Meduson" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f317-f5e7-5a79-41c1" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2359-cd70-fef1-ceab" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3187-c2a5-59ab-e77d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="869b-c5d2-e9ca-fad0" type="max"/>
           </constraints>
           <profiles>
-            <profile id="a1dc-a91d-15f2-6bb4" name="Albian power gladius" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+            <profile id="aa84-8156-adf8-6d51" name="Shadrak Meduson" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Breaching (5+), Master-crafted</characteristic>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="a4f9-1927-3532-e4a1" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Breaching (5+)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="8c50-0149-4384-88ab" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+            <infoLink id="03df-cf4e-8145-84cf" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="09cb-065d-9ee0-ac34" name="Albian power gladius" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8323-2174-4b9d-5ab7" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bd0d-8574-2858-535f" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="8396-f6d5-3317-df44" name="Albian power gladius" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Breaching (5+), Master-crafted</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="8c57-32cb-7956-b6fb" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Breaching (5+)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="a96f-cef1-3a9c-6aa5" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="50a4-48ab-7521-2710" name="Archaeotech Pistol" hidden="false" collective="false" import="true" targetId="c22a-ed4d-af68-bf00" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8cc2-0df9-4e2e-f265" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4553-ed2c-754d-cfbf" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="10db-a1a9-318c-4417" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1266-a91b-53ed-5bcb" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2322-26b3-54d3-fc5f" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="52c0-57aa-6dc4-d949" name="Bolter" hidden="false" collective="false" import="true" targetId="1ade-0c02-5612-252b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c6b8-37df-e747-0674" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c5f6-3819-76c9-65db" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="d75b-eb77-7186-6868" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ea6c-d5d7-a228-6e22" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fe1d-a670-0be4-d20b" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="1a34-fb33-5155-2d55" name="Iron Halo" hidden="false" collective="false" import="true" targetId="b081-bf3c-f43d-4bd5" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="25fa-02b8-c2ce-aee2" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="781f-f01c-2dc5-7cec" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="40d3-b640-81bf-11f0" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d583-2a9e-ccaa-e17c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="aede-cbde-3573-6fac" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
@@ -989,42 +1094,6 @@
               </characteristics>
             </profile>
           </profiles>
-        </entryLink>
-        <entryLink id="dabf-b157-9e35-9aa8" name="Archaeotech Pistol" hidden="false" collective="false" import="true" targetId="c22a-ed4d-af68-bf00" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="53db-1932-fb09-1628" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="04c2-7666-e324-ba8b" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="6718-9364-3aa3-c153" name="Bolter" hidden="false" collective="false" import="true" targetId="1ade-0c02-5612-252b" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="313f-5dbf-32ce-0311" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="60c4-a3dd-7f7f-84d1" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="3341-33f1-a05c-94e5" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0e5f-b3ca-2afa-921f" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c095-b71d-bec5-091d" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="1881-2f36-a0ad-8022" name="Iron Halo" hidden="false" collective="false" import="true" targetId="b081-bf3c-f43d-4bd5" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="13b6-7681-95e8-23fb" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b60b-35de-0b35-0f58" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="ef8a-9cae-f4d5-eb6f" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ab26-a40a-c987-18d8" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="07a5-f6b1-8512-79f2" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="5e51-c8fa-6753-2c80" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="02e3-e14b-9096-1fc3" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3995-6b80-5d7c-fc9d" type="min"/>
-          </constraints>
         </entryLink>
         <entryLink id="35ad-5d30-9ad4-43d6" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
           <constraints>
