@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="92b4-d476-8b4c-e7ef" name="2022 - Questoris Household" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="92b4-d476-8b4c-e7ef" name="2022 - Questoris Household" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="28d3-4be2-608d-bf8a" name="Questoris Household Force Organisation Chart" hidden="false">
       <categoryLinks>
@@ -116,6 +116,38 @@
         <categoryLink id="fe46-14a5-092c-1063" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
         <categoryLink id="6233-a9df-929f-7b0c" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="9f63-749f-01c1-f860" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8651-9463-821d-db3a" name="Archmagos Draykavac (Placeholder)" hidden="false" collective="false" import="true" targetId="8b4c-01f4-f39f-7c55" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="5008-a53a-6786-d9cf" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="8ff1-561d-b9e0-a956" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a1b2-9894-0769-31af" name="Castellax Battle-Automata Maniple " hidden="true" collective="false" import="true" targetId="537f-846d-90e3-2526" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b4c-01f4-f39f-7c55" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="4a67-a200-71c0-1ed7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="a47d-d432-118d-bd75" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="cbc2-40d7-1ad8-6430" name="Vorax Battle-automata Maniple" hidden="true" collective="false" import="true" targetId="f144-1079-11ff-019d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b4c-01f4-f39f-7c55" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="dff8-4608-5fa0-9dbd" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="4264-d41e-828b-e3e0" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -2183,6 +2215,9 @@
 Dolorous: A model with this special rule may attempt to make Sweeping Advances (as an exception to the normal rules for models with the Knight Unit Sub-type).</description>
             </rule>
           </rules>
+          <entryLinks>
+            <entryLink id="2951-58a8-0306-09d4" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
           </costs>
@@ -2193,6 +2228,9 @@ Dolorous: A model with this special rule may attempt to make Sweeping Advances (
               <description>A model with this upgrade must reduce its Weapon Skill and Ballistic Skill Characteristics by -1 and its Movement Characteristics by -2.</description>
             </rule>
           </rules>
+          <entryLinks>
+            <entryLink id="9430-6fff-8170-22f2" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="-30.0"/>
           </costs>
@@ -2204,6 +2242,9 @@ Dolorous: A model with this special rule may attempt to make Sweeping Advances (
 Arbalester: When a model with this special rule is required to make a Scatter roll, roll an additional Scatter dice and the model’s controlling player chooses which is used to determine the results of the Scatter roll.</description>
             </rule>
           </rules>
+          <entryLinks>
+            <entryLink id="eec3-225c-0a4d-5798" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55.0"/>
           </costs>
@@ -2231,6 +2272,13 @@ A model with this upgrade gains the Character Unit Sub-type and increases its We
 Master of the Household: Any friendly model with the Vehicle Unit Type and the Knight Unit Sub-type within 8&quot; of a Warlord with this Warlord Trait may make Reactions as per the standard rules, ignoring the usual restriction for Knights and Titans. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Shooting phase as long as the Warlord has not been removed as a casualty.</description>
             </rule>
           </rules>
+          <entryLinks>
+            <entryLink id="2dbc-0743-caa3-52bf" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea5d-ff65-abfb-1cf6" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="80.0"/>
           </costs>
@@ -2242,6 +2290,9 @@ Master of the Household: Any friendly model with the Vehicle Unit Type and the K
 Aucteller: When engaged in a Challenge against an enemy model with the Knight, Titan or Monstrous Unit Sub-type, the Primarch Unit Type or a model with a Wounds Characteristic of 8 or higher, a model with this special rule gains +1 Weapon Skill and +1 Attack. This bonus to Weapon Skill is in addition to the +1 Weapon Skill increase from the Aucteller upgrade detailed above.</description>
             </rule>
           </rules>
+          <entryLinks>
+            <entryLink id="0ba2-741b-3f61-cfd5" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55.0"/>
           </costs>
@@ -2253,6 +2304,9 @@ Aucteller: When engaged in a Challenge against an enemy model with the Knight, T
 Implacable: No attack targeting a model with this special rule may inflict more than a single Hull Point of damage, including those attacks with the Exoshock (X) special rule</description>
             </rule>
           </rules>
+          <entryLinks>
+            <entryLink id="d231-6612-3f73-e39d" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65.0"/>
           </costs>
@@ -2264,6 +2318,9 @@ Implacable: No attack targeting a model with this special rule may inflict more 
 Preceptor: Any units of Armiger Warglaives or Armiger Helverins that have at least one model within 6&quot; of a friendly model with this special rule increase the Leadership of all models in the unit to 9.</description>
             </rule>
           </rules>
+          <entryLinks>
+            <entryLink id="68b2-68cd-5316-474d" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45.0"/>
           </costs>
@@ -2281,6 +2338,9 @@ Preceptor: Any units of Armiger Warglaives or Armiger Helverins that have at lea
               <description>A model with this upgrade increases its Movement Characteristic by +4 and gains the Character Unit Sub-type and the Scout and Outflank special rules. An Acastus Knight Porphyrion may not be given this upgrade.</description>
             </rule>
           </rules>
+          <entryLinks>
+            <entryLink id="7616-ff3d-ddc5-0658" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
           </costs>
