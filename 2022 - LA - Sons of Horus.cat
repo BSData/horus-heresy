@@ -17,7 +17,6 @@
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="equalTo"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d56-d960-0687-7fee" type="equalTo"/>
               </conditions>
             </conditionGroup>
@@ -34,7 +33,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="equalTo"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
@@ -109,7 +108,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="equalTo"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
@@ -163,7 +162,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="equalTo"/>
               </conditions>
@@ -451,29 +450,17 @@
                 </profile>
               </profiles>
               <rules>
-                <rule id="5651-2420-0871-121f" name="Master of War" hidden="false"/>
-                <rule id="2f6b-7800-e71c-ed83" name="Master of Weapons" hidden="false"/>
+                <rule id="5651-2420-0871-121f" name="Master of War" hidden="false">
+                  <description>Once per battle, at the start of any turn where Horus Lupercal’s controlling player is the Reactive player, this special rule may be activated. For the duration of the turn on which this special rule is activated, the Reaction Allotment of the army that includes Horus is increased by +1 in every Phase.</description>
+                </rule>
+                <rule id="2f6b-7800-e71c-ed83" name="Master of Weapons" hidden="false">
+                  <description>During the Assault phase Horus Lupercal can never be hit by a Melee Attack on a score of better than 4+, regardless of the Weapon Skill of his opponent. In addition, during the Assault phase Horus Lupercal may choose to split his Attacks between any of the weapons he is equipped with, declaring which attacks will be used with which weaponprofiles before any of his attacks are rolled.</description>
+                </rule>
               </rules>
               <infoLinks>
                 <infoLink id="cd95-c533-b08f-b9db" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
                 <infoLink id="d673-531e-d9f4-4d10" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
               </infoLinks>
-              <entryLinks>
-                <entryLink id="b120-2bb7-67ae-5802" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="467f-fb18-cf45-e38b" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="8dcf-c6ba-4add-b3a7" name="Warlord: Sire of the Sons of Horus" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
-                      <characteristics>
-                        <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If chosen as the army&apos;s Warlord, Horus automatically has the Sire of the Sons of Horus Warlord Trait and may not select any other Warlord Trait. 
-
-All models of the Infantry Unit Type in the same army as Horus Lupercal, regardless of Faction, gain +1 Leadership and the Stubborn special rule. </characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </entryLink>
-              </entryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
@@ -500,11 +487,23 @@ All models of the Infantry Unit Type in the same army as Horus Lupercal, regardl
                 </profile>
               </profiles>
               <rules>
-                <rule id="dd1b-0330-aab1-7188" name="A Dark Fate" hidden="false"/>
-                <rule id="3f6d-8e47-55b5-3f8b" name="The Power of Chaos Eternal" hidden="false"/>
-                <rule id="d859-aa19-1907-0790" name="Spreading Corruption" hidden="false"/>
-                <rule id="ea23-e07f-69c4-0dd5" name="Master of War" hidden="false"/>
-                <rule id="9335-c9c9-abbc-62f6" name="Master of Weapons" hidden="false"/>
+                <rule id="dd1b-0330-aab1-7188" name="A Dark Fate" hidden="false">
+                  <description>The first time in any battle that Horus Ascended loses his last Wound, or is otherwise removed from play as a casualty, the model is instead placed into Reserves with a single Wound remaining – any unit Horus Ascended was part of remains in play, even a Retinue or other unit that would normally not allow the removal of a model from the unit. After having been placed in Reserves due to this special rule, Horus Ascended may choose to re-enter play, with the controlling player making Reserves rolls for the model as per the normal rules. If the Slay the Warlord objective, or any other objective that requires the enemy Warlord be removed as a casualty to score Victory points, is in effect then it is still triggered when Horus Ascended is moved into Reserves due to this special rule – and may be triggered a second time if Horus Ascended returns to play and is removed as a casualty again</description>
+                </rule>
+                <rule id="3f6d-8e47-55b5-3f8b" name="The Power of Chaos Eternal" hidden="false">
+                  <description>Once per battle, at the start of any Assault phase (whether Horus Ascended’s controlling player is the Active or Reactive player), Horus Ascended’s controlling player
+may choose to activate the Power of Chaos Eternal. Onc eactivated, Horus Ascended increases his Strength and Toughness Characteristics to 10 for the duration of the Assault phase and ignores all the effects of the Unwieldy special rule on attacks made with Worldbreaker. Once the Assault phase is ended, all combats being fought have been resolved and the effects of the Power of Chaos Eternal have ended, Horus Ascended automatically suffers Perils of the Warp – but any Wounds caused must be allocated to friendly models in the same unit as Horus Ascended, if any such models exist, before they are allocated to Horus Ascended</description>
+                </rule>
+                <rule id="d859-aa19-1907-0790" name="The Spreading Corruption" hidden="false">
+                  <description>All models in a unit made up entirely of models withthe Infantry, Cavalry or Dreadnought Unit Types inthesame Detachment as Horus Ascended may be giiven the Corrupted Unit Sub-type at a cost of +25 points per unit . If this upgrade is selected for a unit then all models in the unit must gain the Corrupted Sub-type – models that are attached to units, such as Apothecaries or Techmarines, must be upgraded separately. For Apothecary Detachments, Techmarine Covenants and other units which are bought as a single Force Organisation slot and then separated, divided or attached to other units (including units bought using the Retinue special rule or any variant of that rule which allows a unit to be counted as part of the same Force Organisation slot as a Leader model), the upgrade is bought once for
+the entire set of models before they are separated and must be applied to all models chosen as part of that Force Organisation slot.</description>
+                </rule>
+                <rule id="9445-c0b8-f082-54cb" name="Master of War" hidden="false">
+                  <description>Once per battle, at the start of any turn where Horus Lupercal’s controlling player is the Reactive player, this special rule may be activated. For the duration of the turn on which this special rule is activated, the Reaction Allotment of the army that includes Horus is increased by +1 in every Phase.</description>
+                </rule>
+                <rule id="ade0-2be2-4fad-a2b9" name="Master of Weapons" hidden="false">
+                  <description>During the Assault phase Horus Lupercal can never be hit by a Melee Attack on a score of better than 4+, regardless of the Weapon Skill of his opponent. In addition, during the Assault phase Horus Lupercal may choose to split his Attacks between any of the weapons he is equipped with, declaring which attacks will be used with which weaponprofiles before any of his attacks are rolled.</description>
+                </rule>
               </rules>
               <infoLinks>
                 <infoLink id="6ecc-afc9-a699-ce44" name="Feel No Pain (X)" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule">
@@ -520,22 +519,6 @@ All models of the Infantry Unit Type in the same army as Horus Lupercal, regardl
                 <infoLink id="63c5-a1e6-28a4-8fab" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
                 <infoLink id="0045-6d12-8659-8fdb" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
               </infoLinks>
-              <entryLinks>
-                <entryLink id="5f73-6ee3-00bb-1e0a" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ec9-2e4c-4bf3-70c8" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="4c47-125e-0aac-fb55" name="Warlord: Sire of the Sons of Horus" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
-                      <characteristics>
-                        <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If chosen as the army&apos;s Warlord, Horus automatically has the Sire of the Sons of Horus Warlord Trait and may not select any other Warlord Trait. 
-
-All models of the Infantry Unit Type in the same army as Horus Lupercal, regardless of Faction, gain +1 Leadership and the Stubborn special rule. </characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </entryLink>
-              </entryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="400.0"/>
               </costs>
@@ -550,12 +533,32 @@ All models of the Infantry Unit Type in the same army as Horus Lupercal, regardl
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e35a-06a7-2457-0dd1" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="a075-487c-3b98-e8aa" name="Cognis-Signum" hidden="false" collective="false" import="true" targetId="93b3-2d66-f7a3-be42" type="selectionEntry"/>
+        <entryLink id="a075-487c-3b98-e8aa" name="Cognis-Signum" hidden="false" collective="false" import="true" targetId="93b3-2d66-f7a3-be42" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6ed-7f5a-2208-6aaf" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d080-41a8-483b-0753" type="max"/>
+          </constraints>
+        </entryLink>
         <entryLink id="6c67-67b9-f9cb-1485" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="254c-71b4-dd86-7f35" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5a1-aac3-84e1-b65f" type="max"/>
           </constraints>
+        </entryLink>
+        <entryLink id="37f1-d5b3-ab0c-5079" name="Retinue" hidden="false" collective="false" import="true" targetId="b574-7838-ac21-b8f6" type="selectionEntryGroup"/>
+        <entryLink id="f8a4-123d-bab3-2847" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17f2-8cec-334a-82ca" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2902-12cc-7ca8-fb07" name="Warlord: Sire of the Sons of Horus" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If chosen as the army&apos;s Warlord, Horus automatically has the Sire of the Sons of Horus Warlord Trait and may not select any other Warlord Trait. 
+
+All models of the Infantry Unit Type in the same army as Horus Lupercal, regardless of Faction, gain +1 Leadership and the Stubborn special rule. </characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </entryLink>
       </entryLinks>
       <costs>
@@ -615,11 +618,8 @@ All models of the Infantry Unit Type in the same army as Horus Lupercal, regardl
               </characteristics>
             </profile>
           </profiles>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="22.0"/>
-          </costs>
         </selectionEntry>
-        <selectionEntry id="e222-7677-b70e-f1be" name="Reaver" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="e222-7677-b70e-f1be" name="Reaver" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="19.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bed-6ccd-6598-6e17" type="max"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ceec-7959-9e98-92c5" type="min"/>
@@ -899,6 +899,14 @@ All models of the Infantry Unit Type in the same army as Horus Lupercal, regardl
             </infoLink>
             <infoLink id="e98c-8773-4421-8985" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
           </infoLinks>
+          <entryLinks>
+            <entryLink id="3ddd-275a-e9dc-0ffb" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8ad-4686-f9b4-f519" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f189-d516-409d-6e53" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
@@ -920,7 +928,7 @@ All models of the Infantry Unit Type in the same army as Horus Lupercal, regardl
         <entryLink id="aad5-0ff0-c0c3-19cf" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50bd-5338-4abf-e913" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="215d-b02b-d1fe-8364" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="215d-b02b-d1fe-8364" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="22ef-e21f-bb40-3b4f" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry">
@@ -965,6 +973,7 @@ All models of the Infantry Unit Type in the same army as Horus Lupercal, regardl
             </profile>
           </profiles>
         </entryLink>
+        <entryLink id="cdd3-63e5-5cb7-7f49" name="Retinue" hidden="false" collective="false" import="true" targetId="b574-7838-ac21-b8f6" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="140.0"/>
@@ -1063,26 +1072,37 @@ All models of the Infantry Unit Type in the same army as Horus Lupercal, regardl
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="5bb2-42bc-dfc8-01a1" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" targetId="7c9b-b9ab-9a40-8eb5" type="selectionEntry"/>
+        <entryLink id="5bb2-42bc-dfc8-01a1" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" targetId="7c9b-b9ab-9a40-8eb5" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="216b-de86-dad8-0d1f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="669d-f1ec-91bf-d9bf" type="min"/>
+          </constraints>
+        </entryLink>
         <entryLink id="681e-c5cb-1a2f-7497" name="Grenade Harness" hidden="false" collective="false" import="true" targetId="251a-860d-2c4d-62cc" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a49-6e72-d288-08ef" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e03-550c-4309-1154" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="0c03-36bc-20c4-f546" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="a498-c66f-9eb7-ca9a" type="selectionEntry"/>
+        <entryLink id="0c03-36bc-20c4-f546" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="a498-c66f-9eb7-ca9a" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d400-ff52-9cf2-3b1c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f84f-3d2f-8693-a9bd" type="min"/>
+          </constraints>
+        </entryLink>
         <entryLink id="0c79-b670-22af-34b1" name="Paragon Blade" hidden="false" collective="false" import="true" targetId="2ab9-0e45-405e-056b" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0525-9671-fb9d-6d8e" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c10f-86af-ac28-4659" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="8a96-234d-ab6e-9e98" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+        <entryLink id="7651-956e-11f3-f994" name="Retinue" hidden="false" collective="false" import="true" targetId="b574-7838-ac21-b8f6" type="selectionEntryGroup"/>
+        <entryLink id="61b2-faf9-6930-9f3a" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="944a-f107-1de5-473e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fafd-2200-42ec-eda1" type="max"/>
           </constraints>
           <profiles>
-            <profile id="465f-8390-ebe7-5354" name="Warlord: The Vengeful Spirit" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+            <profile id="f860-1d2b-1915-a74d" name="Warlord: The Vengeful Spirit" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
               <characteristics>
                 <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Ezekyle Abbadon and any unit he joins gain the Feel No Pain (4+) special rule during the Movement and Shooting phases of any turn in which they are deployed as part of a Deep Strike Assault. In addition, an army with Ezekyle Abaddon as its Warlord may make an additional Reaction during the Movement phase as long as Ezekyle Abaddon has not been removed as a casualty.</characteristic>
               </characteristics>
@@ -1203,6 +1223,7 @@ remains in play and regains 1D3 Wounds.</description>
             </profile>
           </profiles>
         </entryLink>
+        <entryLink id="1001-50f5-7ab3-1c6f" name="Retinue" hidden="false" collective="false" import="true" targetId="b574-7838-ac21-b8f6" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="175.0"/>
@@ -1527,6 +1548,7 @@ remains in play and regains 1D3 Wounds.</description>
             </profile>
           </profiles>
         </entryLink>
+        <entryLink id="4383-2955-67f1-bb4c" name="Retinue" hidden="false" collective="false" import="true" targetId="b574-7838-ac21-b8f6" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -1585,11 +1607,8 @@ remains in play and regains 1D3 Wounds.</description>
               </characteristics>
             </profile>
           </profiles>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
-          </costs>
         </selectionEntry>
-        <selectionEntry id="35fc-92c4-ecd6-b80a" name="Reaver Aggressor" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="35fc-92c4-ecd6-b80a" name="Reaver Aggressor" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="19.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f678-5b06-a5fa-b689" type="max"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49b5-cbd5-6690-5c32" type="min"/>
@@ -1662,7 +1681,7 @@ remains in play and regains 1D3 Wounds.</description>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="2a0f-03a9-3833-0f98" name="Any model in the unit may exchange their bolt pistol for a:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="2a0f-03a9-3833-0f98" name="Any model in the unit may exchange their bolt pistol for a:" hidden="false" collective="false" import="true" defaultSelectionEntryId="ba51-7368-4ac7-eb48">
           <modifiers>
             <modifier type="increment" field="5676-2f77-4b9d-7c70" value="1.0">
               <repeats>
@@ -1818,10 +1837,23 @@ remains in play and regains 1D3 Wounds.</description>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="47.0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="b574-7838-ac21-b8f6" name="Retinue" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8601-e12f-064d-ca77" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="e953-7a39-2608-827f" name="Command Squad, Tartaros " hidden="false" collective="false" import="true" targetId="58d0-a0fd-d20b-cb1b" type="selectionEntry"/>
+        <entryLink id="8a6b-c862-f210-ef44" name="Command Squad (Placeholder Points)" hidden="false" collective="false" import="true" targetId="0aca-632d-1642-8af9" type="selectionEntry"/>
+        <entryLink id="1d47-f8b8-ca8f-f960" name="Command Squad, Cataphractii" hidden="false" collective="false" import="true" targetId="1b17-dcd6-0153-3efe" type="selectionEntry"/>
+        <entryLink id="ddb3-29af-c3e2-0cf6" name="Justaerin Terminator Squad" hidden="false" collective="false" import="true" targetId="c45d-ade3-6b28-68a2" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
   <catalogueLinks>
     <catalogueLink id="2f60-18fb-e6ed-8574" name="(HH V2) Legions Astartes" targetId="6393-649c-7213-a327" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
