@@ -14,10 +14,11 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="equalTo"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d56-d960-0687-7fee" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -65,6 +66,9 @@
         <categoryLink id="aa5f-6290-d3fb-abdc" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="0929-6baa-85a0-1f92" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="175.0"/>
+      </costs>
     </entryLink>
     <entryLink id="79f4-181d-3ce9-f37b" name="Reaver Aggressor Squad" hidden="false" collective="false" import="false" targetId="af3a-334f-152f-d55f" type="selectionEntry">
       <modifiers>
@@ -123,7 +127,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
-            <conditionGroup type="and">
+            <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="equalTo"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
@@ -175,17 +179,6 @@
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="0c73-9141-d1b4-6a40" name="Chieftain Squad" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d56-d960-0687-7fee" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <rules>
         <rule id="7612-00a4-0f95-1d31" name="Chieftain Retinue" hidden="false">
           <description>A Chieftain Squad in a Detachment that includes at least one model with both the Master of the Legion and Legiones Astartes (Sons of Horus) special rules may be selected as a Retinue Squad instead of as an HQ choice. The model with both the Master of the Legion and Legiones Astartes (Sons of Horus) special rules is referred to as the Retinue Squad’s Leader for the purposes of this special rule (if the Detachment includes more than one model with both the Master of the Legion and Legiones Astartes (Sons of Horus) special rules then the controlling player selects one as the unit’s Leader). A Chieftain Squad selected as a Retinue Squad does not use up a Force Organisation slot and is considered part of the same unit as the model selected as its Leader. A Chieftain Squad selected as a Retinue Squad must be deployed with the model selected as its Leader deployed as part of the unit and the Leader may not voluntarily leave the Retinue Squad during play.</description>
@@ -360,14 +353,213 @@
     </selectionEntry>
     <selectionEntry id="f0a3-4ae4-e07a-91b8" name="Horus Lupercal" hidden="false" collective="false" import="true" type="unit">
       <selectionEntries>
-        <selectionEntry id="e396-9501-9791-c7b4" name="Horus Lupercal" hidden="false" collective="false" import="true" type="model">
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
+        <selectionEntry id="28c5-de31-09e9-9a57" name="The Serpent&apos;s Scales" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7473-da29-c5e8-2c41" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f91-041f-beb7-8445" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="ded9-f55f-df24-0505" name="The Serpent&apos;s Scales" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Serpent&apos;s Scales provide 2+ Armour Save and a 3+ Invulnerable Save.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="bc32-bea3-06d2-338d" name="The Warmaster&apos;s Talon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc8e-0524-73f4-41eb" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed14-fc69-c511-0ec7" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="44ef-30cd-a29e-5fc7" name="The Warmaster&apos;s Talon (Melee)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred, Deflagrate</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="7ea2-6480-8a45-60bd" name="The Warmaster&apos;s Talon (Shooting)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3, Twin-linked</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="d5f6-c201-6be9-29b9" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+            <infoLink id="52e3-c93b-1b55-76a1" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+            <infoLink id="9696-333a-f9bb-535d" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="ae00-4cb3-fc75-80de" name="Worldbreaker" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6337-a300-a2d3-573b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8b1-f349-f67f-c19f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="38f7-03d2-8858-0049" name="Worldbreaker" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Master-crafted, Brutal (2), Sunder, Unwieldy</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="23c4-6c0e-b178-baca" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+            <infoLink id="1723-b746-1b08-a0e8" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Brutal (2)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="0b04-e9fc-242c-694b" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+            <infoLink id="6db7-9837-a7f0-466b" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6eef-889c-3277-7e9d" name="Horus" hidden="false" collective="false" import="true" defaultSelectionEntryId="e577-a40b-3770-17a6">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3301-91b4-4b51-e5cd" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="927d-00e6-c2a7-6aee" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="e577-a40b-3770-17a6" name="Horus Lupercal" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0ab-1f0c-5f0d-16db" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="57ec-4b1f-426b-d539" name="Horus Lupercal" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Primarch (Unique)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">8</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">6</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">7</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">7</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">7</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">6</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">6</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="5651-2420-0871-121f" name="Master of War" hidden="false"/>
+                <rule id="2f6b-7800-e71c-ed83" name="Master of Weapons" hidden="false"/>
+              </rules>
+              <infoLinks>
+                <infoLink id="cd95-c533-b08f-b9db" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
+                <infoLink id="d673-531e-d9f4-4d10" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="b120-2bb7-67ae-5802" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="467f-fb18-cf45-e38b" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="8dcf-c6ba-4add-b3a7" name="Warlord: Sire of the Sons of Horus" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                      <characteristics>
+                        <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If chosen as the army&apos;s Warlord, Horus automatically has the Sire of the Sons of Horus Warlord Trait and may not select any other Warlord Trait. 
+
+All models of the Infantry Unit Type in the same army as Horus Lupercal, regardless of Faction, gain +1 Leadership and the Stubborn special rule. </characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4a11-c7c1-e1a1-d067" name="Horus Ascended" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3b5-10bc-7885-c908" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="7152-ae03-3008-4647" name="Horus Ascended" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Primarch (Unique, Corrupted)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">8</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">6</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">8</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">8</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">8</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">6</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">6</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="dd1b-0330-aab1-7188" name="A Dark Fate" hidden="false"/>
+                <rule id="3f6d-8e47-55b5-3f8b" name="The Power of Chaos Eternal" hidden="false"/>
+                <rule id="d859-aa19-1907-0790" name="Spreading Corruption" hidden="false"/>
+                <rule id="ea23-e07f-69c4-0dd5" name="Master of War" hidden="false"/>
+                <rule id="9335-c9c9-abbc-62f6" name="Master of Weapons" hidden="false"/>
+              </rules>
+              <infoLinks>
+                <infoLink id="6ecc-afc9-a699-ce44" name="Feel No Pain (X)" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Feel No Pain (4+)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="6bfb-c229-3493-acb0" name="Rage (X)" hidden="false" targetId="564d-3550-ae44-2f99" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Rage (3)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="63c5-a1e6-28a4-8fab" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
+                <infoLink id="0045-6d12-8659-8fdb" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="5f73-6ee3-00bb-1e0a" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ec9-2e4c-4bf3-70c8" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="4c47-125e-0aac-fb55" name="Warlord: Sire of the Sons of Horus" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                      <characteristics>
+                        <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If chosen as the army&apos;s Warlord, Horus automatically has the Sire of the Sons of Horus Warlord Trait and may not select any other Warlord Trait. 
+
+All models of the Infantry Unit Type in the same army as Horus Lupercal, regardless of Faction, gain +1 Leadership and the Stubborn special rule. </characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="400.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="2f3f-8bef-916f-bb9a" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b8a-86b3-166d-3ba1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e35a-06a7-2457-0dd1" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a075-487c-3b98-e8aa" name="Cognis-Signum" hidden="false" collective="false" import="true" targetId="93b3-2d66-f7a3-be42" type="selectionEntry"/>
+        <entryLink id="6c67-67b9-f9cb-1485" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="254c-71b4-dd86-7f35" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5a1-aac3-84e1-b65f" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="600.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8b29-bf2a-a814-5642" name="Reaver Attack Squad" hidden="false" collective="false" import="true" type="unit">
@@ -765,11 +957,13 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ada3-79ac-e227-f963" type="max"/>
           </constraints>
-          <rules>
-            <rule id="832a-5734-b319-8ee3" name="Warlord: Bearer of the Eye" hidden="false">
-              <description>Any unit joined by Maloghurst the Twisted gains the Line sub-type and counts as a Scoring unit, and when Maloghurst the Twisted or any unit he has joined controls an objective, that control may not be cancelled or contested by enemy Denial units - only an enemy Scoring unit can contest an objective held by Maloghurst the Twisted and any unit he has joined. In addition, an army with Maloghurst the Twisted as its Warlord may make an additional Reaction during the Shooting phase as long as Maloghurst the Twisted has not been removed as a casualty.</description>
-            </rule>
-          </rules>
+          <profiles>
+            <profile id="92ae-bca5-5ad8-45b1" name="Warlord: Bearer of the Eye" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Any unit joined by Maloghurst the Twisted gains the Line sub-type and counts as a Scoring unit, and when Maloghurst the Twisted or any unit he has joined controls an objective, that control may not be cancelled or contested by enemy Denial units - only an enemy Scoring unit can contest an objective held by Maloghurst the Twisted and any unit he has joined. In addition, an army with Maloghurst the Twisted as its Warlord may make an additional Reaction during the Shooting phase as long as Maloghurst the Twisted has not been removed as a casualty.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </entryLink>
       </entryLinks>
       <costs>
@@ -777,18 +971,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="09df-6357-0a00-80a6" name="Ezekyle Abaddon" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e3ed-3bd7-17d5-5c60" type="max"/>
       </constraints>
@@ -899,11 +1081,13 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="944a-f107-1de5-473e" type="max"/>
           </constraints>
-          <rules>
-            <rule id="e929-18b3-3962-9f0d" name="Warlord: The Vengeful Spirit" hidden="false">
-              <description>Ezekyle Abbadon and any unit he joins gain the Feel No Pain (4+) special rule during the Movement and Shooting phases of any turn in which they are deployed as part of a Deep Strike Assault. In addition, an army with Ezekyle Abaddon as its Warlord may make an additional Reaction during the Movement phase as long as Ezekyle Abaddon has not been removed as a casualty.</description>
-            </rule>
-          </rules>
+          <profiles>
+            <profile id="465f-8390-ebe7-5354" name="Warlord: The Vengeful Spirit" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Ezekyle Abbadon and any unit he joins gain the Feel No Pain (4+) special rule during the Movement and Shooting phases of any turn in which they are deployed as part of a Deep Strike Assault. In addition, an army with Ezekyle Abaddon as its Warlord may make an additional Reaction during the Movement phase as long as Ezekyle Abaddon has not been removed as a casualty.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </entryLink>
       </entryLinks>
       <costs>
@@ -911,18 +1095,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="44bf-8a69-f21a-dfba" name="Garviel Loken" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ee89-21f5-174e-4fe4" type="max"/>
       </constraints>
@@ -997,7 +1169,7 @@ remains in play and regains 1D3 Wounds.</description>
         </entryLink>
         <entryLink id="66eb-6a1d-b144-735f" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb05-dcbb-1c7f-20ce" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb05-dcbb-1c7f-20ce" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37c3-c7be-161f-2072" type="max"/>
           </constraints>
         </entryLink>
@@ -1023,11 +1195,13 @@ remains in play and regains 1D3 Wounds.</description>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9200-4f65-64e8-4fd6" type="max"/>
           </constraints>
-          <rules>
-            <rule id="1168-a71e-8e38-181b" name="Warlord: Wolf of Luna" hidden="false">
-              <description>A Warlord with this Trait may only join a unit composed entirely of models with both the Legiones Astartes (Sons of Horus) special rule and the Loyalist Allegiance. Both the Warlord and any unit it joins gain +1 Attack on any turn in which they successfully Charge, or are successfully charged by, an enemy unit with both the Legiones Astartes special rule and the Traitor Allegiance. These increases are in addition to any other bonuses granted by other special rules. In addition, an army whose Warlord has this Trait may make an additional Reaction during the Assault phase as long as the Warlord has not been removed as a casualty.</description>
-            </rule>
-          </rules>
+          <profiles>
+            <profile id="3f4f-0288-3d43-f0f8" name="Warlord: Wolf of Luna" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait may only join a unit composed entirely of models with both the Legiones Astartes (Sons of Horus) special rule and the Loyalist Allegiance. Both the Warlord and any unit it joins gain +1 Attack on any turn in which they successfully Charge, or are successfully charged by, an enemy unit with both the Legiones Astartes special rule and the Traitor Allegiance. These increases are in addition to any other bonuses granted by other special rules. In addition, an army whose Warlord has this Trait may make an additional Reaction during the Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </entryLink>
       </entryLinks>
       <costs>
@@ -1035,13 +1209,6 @@ remains in play and regains 1D3 Wounds.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="c45d-ade3-6b28-68a2" name="Justaerin Terminator Squad" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <rules>
         <rule id="7c0d-6e3e-9350-dc1c" name="Justaerin Retinue" hidden="false">
           <description>A Justaerin Terminator Squad may be selected as a Retinue Squad in a Detachment that includes one model with both the Master of the Legion and the Legiones Astartes (Sons of Horus) special rules, instead of as an Elites choice, A unit selected a a Retinue Squad must have one model with both the Master of the Legion and Legiones Astartes (Sons of Horus) special rules from the same Detachment selected by the controlling player as the Justaerin Terminator Squad&apos;s Leader for the purposes of this special rule. A Justaerin Terminator Squad selected as a Retinue Squad does not use up a Force Organisation slot and is considered part of the same unit as the model selected as its Leader. A Justearin Terminator Squad selected as a Retinue Squad must be deployed with the model selected as its Leader as part of the unit and the Leader may not voluntarly leave the Retinue Squad during play. If that Leader has the Deep Strike special rule then all models in the Justaerin Terminator Squad selected as a Retinue Squad gain the Deep Strike special rule as well. One Justaerin in a Justaerin Terminator Squad selected as a Retinue may exchange a Banestrike combi-weapon for a Legion standard for +15 points.</description>
@@ -1235,14 +1402,132 @@ remains in play and regains 1D3 Wounds.</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c3db-b014-dfaa-d189" name="Tybalt Marr" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="c3db-b014-dfaa-d189" name="Tybalt Marr" publicationId="d0df-7166-5cd3-89fd" page="92" hidden="false" collective="false" import="true" type="unit">
       <selectionEntries>
         <selectionEntry id="8165-001f-c7ba-8de5" name="Tybalt Marr" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64ba-2ccc-5d99-29ad" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99af-053f-f170-f460" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="112a-4878-acf8-8ec1" name="Tybalt Marr" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="11d2-529d-3ded-0f1b" name="Independent Character" hidden="false" targetId="c57d-4820-458a-7ab5" type="rule"/>
+            <infoLink id="71b7-6c0f-1caf-6a1e" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+            <infoLink id="8da0-4c52-eb10-6c14" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink id="ac74-6c61-3ccf-d1b5" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5949-3aae-cab9-9049" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="449b-af2d-f6f0-9aec" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="2095-6d87-7bf5-f840" name="The Culling Blade" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b3a-542c-9f64-43fd" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6677-0feb-f086-8037" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="5472-3591-df1c-a996" name="The Culling Blade" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Breaching (5+)., Murderous Strike (5+), Duellist&apos;s Edge (1), Master-crafted</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="70dd-29b5-f2ac-7708" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+            <infoLink id="1a2d-c26e-cea1-2765" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Breaching (5+)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="877d-a1ab-2147-6daf" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Murderous Strike (5+)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="2be1-f255-4992-5f54" name="Duellist’s Edge (X)" hidden="false" targetId="7bf3-86ce-04c2-e6ba" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Duellist’s Edge (1)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="3d80-bb4b-a338-1dfd" name="Banestrike Bolter" hidden="false" collective="false" import="true" targetId="6865-354c-0880-ee5f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a844-395b-2fc8-778a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d165-ac5d-f854-3f4e" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4b62-a476-4e9c-aaf4" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7af3-a824-7d02-d2f9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfb4-ca62-5028-c016" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="dac0-477b-9e13-a353" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a115-8f9f-39a0-30ad" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="897b-6f25-e7f8-e75a" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="674e-472c-04d3-bf50" name="Iron Halo" hidden="false" collective="false" import="true" targetId="b081-bf3c-f43d-4bd5" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="125d-6670-0228-4400" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c783-5790-0c2b-ccb9" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="513d-254f-0c57-77ec" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82b4-e53e-8e87-58fa" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6574-afa2-ff46-b34c" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="11d9-cec7-c3b1-7a6e" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f38-ca61-86e7-b1a5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa27-d393-180e-c5e7" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3fc5-0ceb-c9f6-ab2b" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c7d-51de-08ef-ce26" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6adb-cd45-d7d4-caee" name="Warlord: The Armour of Pride" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If Chosen as the army&apos;s Warlord, Tybalt Marr automatically has The Armour of Pride as his Warlord Trait and may not select any other. </characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
