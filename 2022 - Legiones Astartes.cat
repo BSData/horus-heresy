@@ -7171,6 +7171,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Infantry (Psyker)">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
@@ -7209,6 +7214,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <condition field="selections" scope="d30b-59bb-8ae0-36d1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="583e-62cb-53f1-f952" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Infantry (Character, Psyker)">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character)</characteristic>
@@ -7231,7 +7241,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f6a5-151f-1d1c-62b6" name="1) Every Destroyer must choose one from:" hidden="false" collective="false" import="true" defaultSelectionEntryId="2363-7a9d-30e4-8242">
+        <selectionEntryGroup id="f6a5-151f-1d1c-62b6" name="1) Every Destroyer must choose one from:" hidden="false" collective="false" import="true" defaultSelectionEntryId="7823-2812-5168-f560">
           <modifiers>
             <modifier type="increment" field="44ad-2c17-c6e3-1198" value="1.0">
               <repeats>
@@ -7250,21 +7260,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6516-77d8-5967-ddb4" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="2363-7a9d-30e4-8242" name="Two Bolt Pistols" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="d30b-59bb-8ae0-36d1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f37c-dd77-547b-29d0" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <infoLinks>
-                <infoLink id="37aa-6f36-956a-e316" name="Bolt Pistol" hidden="false" targetId="c0d3-c136-ef6e-3ff7" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="49fe-eecc-5f85-b2fe" name="Two Volkite Serpenta" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="e9d9-e4cc-57e6-80e2" name="Volkite Serpenta" hidden="false" targetId="6150-1ce8-ef78-f686" type="profile"/>
@@ -7325,6 +7320,64 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9f3b-68c3-1c8d-e4fd" name="Two Asphyx Bolt Pistol" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="d30b-59bb-8ae0-36d1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f37c-dd77-547b-29d0" type="atLeast"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <infoLinks>
+                <infoLink id="a101-1114-49bc-56bb" name="Asphyx Bolt Pistol" hidden="false" targetId="7a88-ce87-0cb7-6a99" type="profile"/>
+                <infoLink id="88a0-dfbf-ca70-e252" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7823-2812-5168-f560" name="Two Bolt Pistols" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="d30b-59bb-8ae0-36d1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f37c-dd77-547b-29d0" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <infoLinks>
+                <infoLink id="8429-8708-c904-e79d" name="Bolt Pistol" hidden="false" targetId="c0d3-c136-ef6e-3ff7" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="31ca-b8ab-89ac-2033" name="Asphyx Bolt Pistol &amp; Bolt Pistol" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="d30b-59bb-8ae0-36d1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f37c-dd77-547b-29d0" type="atLeast"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <infoLinks>
+                <infoLink id="4c46-fe05-fb7d-3dcc" name="Asphyx Bolt Pistol" hidden="false" targetId="7a88-ce87-0cb7-6a99" type="profile"/>
+                <infoLink id="b912-c140-81ab-4190" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+                <infoLink id="50f7-ad6d-ce6e-1cbf" name="Bolt Pistol" hidden="false" targetId="c0d3-c136-ef6e-3ff7" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -11652,7 +11705,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
               </costs>
             </entryLink>
-            <entryLink id="64c4-84fa-0cab-0960" name="Cult Arcana:" hidden="false" collective="false" import="true" targetId="e6a0-3ea2-f7ca-411f" type="selectionEntryGroup"/>
+            <entryLink id="64c4-84fa-0cab-0960" name="Prosperine Arcana:" hidden="false" collective="false" import="true" targetId="e6a0-3ea2-f7ca-411f" type="selectionEntryGroup"/>
             <entryLink id="c01b-92ed-8763-7aab" name="Surgical Augment" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup"/>
             <entryLink id="c157-57f5-6f93-53e7" name="Meltabombs" hidden="false" collective="false" import="true" targetId="b9dd-3b21-f3f8-78e3" type="selectionEntry">
               <constraints>
@@ -16245,6 +16298,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <condition field="selections" scope="415c-6834-f4d2-d967" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="583e-62cb-53f1-f952" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Infantry (Character, Psyker)">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character)</characteristic>
@@ -17049,12 +17107,12 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           <profiles>
             <profile id="1d28-2760-4519-6fb6" name="Techmarine" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <modifiers>
-                <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Infantry (Psyker, Character)">
+                <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Infantry (Character, Psyker)">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Infantry (Psyker, Heavy, Character)">
+                <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Infantry (Heavy, Character, Psyker)">
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
@@ -17181,7 +17239,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="cc00-d00a-c4cb-bed5" name="Plasma Gun" hidden="false" collective="false" import="true" targetId="f0d1-332b-c719-ede7" type="selectionEntry">
+                <entryLink id="cc00-d00a-c4cb-bed5" name="Æther-Fire Blaster" hidden="false" collective="false" import="true" targetId="d078-5f42-c02b-c73d" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
@@ -17194,6 +17252,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <entryLink id="4519-ccf5-af72-122e" name="Dragon&apos;s Breath Flamer" hidden="false" collective="false" import="true" targetId="d6c6-779a-0b83-fd15" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="794c-826a-bd77-edb6" name="Plasma Gun" hidden="false" collective="false" import="true" targetId="f0d1-332b-c719-ede7" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -17223,6 +17286,9 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="a62f-d832-9366-5c37" name="Achea Force Axe" hidden="false" collective="false" import="true" targetId="d27f-9247-2c27-4450" type="selectionEntry"/>
+                <entryLink id="4b93-be97-d700-9ff4" name="Achea Force Maul" hidden="false" collective="false" import="true" targetId="126d-534d-dcb0-e931" type="selectionEntry"/>
+                <entryLink id="e66c-be6c-1bb0-3747" name="Achea Force Sword" hidden="false" collective="false" import="true" targetId="3cf4-3b3b-2188-6bd4" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="9192-581b-f084-c977" name="4) May take (Wargear):" hidden="false" collective="false" import="true">
@@ -28322,7 +28388,7 @@ A Legion Primus Nullificator Consul gains the Psyker Sub-type and has only the P
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
           </costs>
         </entryLink>
-        <entryLink id="6e20-c99c-dd42-9365" name="Achea Force Weapon" hidden="false" collective="false" import="true" targetId="9b80-5dc6-ad47-f1ac" type="selectionEntry"/>
+        <entryLink id="6e20-c99c-dd42-9365" name="Achea Force Axe" hidden="false" collective="false" import="true" targetId="d27f-9247-2c27-4450" type="selectionEntry"/>
         <entryLink id="3d54-423b-4560-9c47" name="Perdition Weapon" hidden="false" collective="false" import="true" targetId="d93a-033b-233b-453a" type="selectionEntry">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
@@ -28365,6 +28431,8 @@ A Legion Primus Nullificator Consul gains the Psyker Sub-type and has only the P
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
           </costs>
         </entryLink>
+        <entryLink id="e334-f98a-0171-5f67" name="Achea Force Maul" hidden="false" collective="false" import="true" targetId="126d-534d-dcb0-e931" type="selectionEntry"/>
+        <entryLink id="533c-6b0e-4646-9af8" name="Achea Force Sword" hidden="false" collective="false" import="true" targetId="3cf4-3b3b-2188-6bd4" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="8b46-faad-df3a-6929" name="Terminator Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="4123-9851-52ba-4f34">
