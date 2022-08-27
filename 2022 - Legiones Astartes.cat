@@ -5661,9 +5661,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
     <selectionEntry id="3cf4-3b3b-2188-6bd4" name="Achea Force Sword" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f07-3d45-4f28-a0c6" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <profiles>
@@ -5692,9 +5697,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
     <selectionEntry id="d27f-9247-2c27-4450" name="Achea Force Axe" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f07-3d45-4f28-a0c6" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <profiles>
@@ -5719,9 +5729,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
     <selectionEntry id="126d-534d-dcb0-e931" name="Achea Force Maul" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f07-3d45-4f28-a0c6" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <profiles>
@@ -9147,6 +9162,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   </costs>
                 </entryLink>
                 <entryLink id="22f1-1f9f-0146-3495" name="Shrapnel Pistol" hidden="false" collective="false" import="true" targetId="7d72-7f6d-6330-6871" type="selectionEntry"/>
+                <entryLink id="2099-8351-9c16-bb0b" name="Asphyx Bolt Pistol" hidden="false" collective="false" import="true" targetId="07f7-c486-f597-a1b9" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="0cd1-10ce-edbd-de27" name="Æther-Fire Pistol" hidden="false" collective="false" import="true" targetId="ae13-0ae8-a3ba-f6ff" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="fb94-51ab-dd77-b7a1" name="4) May take one of the following:" hidden="false" collective="false" import="true">
@@ -9262,6 +9287,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <entryLink id="2e66-31b4-eb99-fb5f" name="Raven&apos;s Talons" hidden="false" collective="false" import="true" targetId="09d8-64f5-1936-e8ab" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="d0b9-44fc-a663-bfda" name="Æther-Fire Pistol" hidden="false" collective="false" import="true" targetId="ae13-0ae8-a3ba-f6ff" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -10380,6 +10410,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="1f53-7d39-bf66-5030" name="Asphyx Bolt Pistol" hidden="false" collective="false" import="true" targetId="07f7-c486-f597-a1b9" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="bee8-635e-0f01-7cf5" name="Æther-Fire Pistol" hidden="false" collective="false" import="true" targetId="ae13-0ae8-a3ba-f6ff" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="525d-defc-1b29-0886" name="4) May take one:" hidden="false" collective="false" import="true">
@@ -10702,6 +10742,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   </constraints>
                 </entryLink>
                 <entryLink id="3d3b-1303-1b7b-4599" name="Charnabal Weapon" hidden="false" collective="false" import="true" targetId="2376-af96-e101-e712" type="selectionEntry"/>
+                <entryLink id="75dc-bb9c-0230-a896" name="Æther-Fire Pistol" hidden="false" collective="false" import="true" targetId="ae13-0ae8-a3ba-f6ff" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="feef-cc1d-1494-9a48" name="6) Armor Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="841b-3517-cac2-a68f">
@@ -10869,6 +10914,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <entryLink id="bafd-0249-ddaf-a9e3" name="Disintegrator Pistol" hidden="false" collective="false" import="true" targetId="980e-b1e7-a4a4-407f" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="fb1b-292a-d639-d221" name="Asphyx Bolt Pistol" hidden="false" collective="false" import="true" targetId="07f7-c486-f597-a1b9" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="9eee-53f4-b50b-de61" name="Æther-Fire Pistol" hidden="false" collective="false" import="true" targetId="ae13-0ae8-a3ba-f6ff" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
