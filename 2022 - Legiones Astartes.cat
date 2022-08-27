@@ -440,7 +440,7 @@
         <categoryLink id="0677-09a8-31e7-5c88" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="6f4c-2147-7533-01b4" name="Sicaran Punisher (Placeholder Points)" hidden="false" collective="false" import="true" targetId="13d9-b56a-6194-d521" type="selectionEntry">
+    <entryLink id="6f4c-2147-7533-01b4" name="Sicaran Punisher Squadron" hidden="false" collective="false" import="true" targetId="13d9-b56a-6194-d521" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="06b3-8689-fe77-97ae" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="2bbc-3578-0b01-d6d3" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
@@ -605,6 +605,19 @@
       <categoryLinks>
         <categoryLink id="d3fe-8b40-c73e-3b6d" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
         <categoryLink id="645b-b1bd-3d25-4151" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3a01-b6ad-e684-ed73" name="Spatha Attack Bike Squadron" hidden="false" collective="false" import="true" targetId="4d72-1cc1-8bee-aa88" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="e90d-e5a8-f42d-da84" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="bd79-6dbc-db0d-b6c4" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="9494-2781-8a66-ecd6" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1370,6 +1383,11 @@ A model with the Infantry Unit Type that selects a Legion Spatha combat bike as 
         <infoLink id="71ac-69f4-fb08-dee5" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Hammer of Wrath (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="9546-9198-c0da-d164" name="Shrouded (X)" hidden="false" targetId="10c3-fdb0-089f-ca65" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Shrouded 5{+)"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -27618,6 +27636,174 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4d72-1cc1-8bee-aa88" name="Spatha Attack Bike Squadron" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="995e-aa85-478b-de47" name="Skirmish:" hidden="false" targetId="59a4-7b61-600a-c457" primary="false"/>
+        <categoryLink id="1b08-e6e5-3d06-e1a1" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="a0ea-afcb-5c88-a699" name="Legion Spatha Attack Bike" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f362-734a-b5ea-7823" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a43-062f-f600-c41a" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="8e0d-7e2f-c5f8-431c" name="Legion Spatha Attack Bike" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <modifiers>
+                <modifier type="set" field="893e-2d76-8f04-44e5" value="15&quot;">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Cavalry (Skirmish, Psyker)">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Skirmish)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">14&quot;</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ab6f-9089-b5a1-f345" name="One Legion Spatha attack bike may take a Legion vexilla" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4234-91db-19dc-a279" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="aeda-fe87-5b0f-7001" name="Legion Vexilla" hidden="false" collective="false" import="true" targetId="21b1-2a90-9826-1782" type="selectionEntry"/>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="cc7e-d36d-d4ee-25ee" name="1) Spatha Combat Bike Weaponry." hidden="false" collective="false" import="true" defaultSelectionEntryId="da06-7115-9200-c8b0">
+          <modifiers>
+            <modifier type="increment" field="929d-7e0e-c2ea-d4b6" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0ea-afcb-5c88-a699" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="8386-7110-6341-04e6" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0ea-afcb-5c88-a699" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="929d-7e0e-c2ea-d4b6" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8386-7110-6341-04e6" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="ea58-34cc-521a-b079" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
+            <entryLink id="da06-7115-9200-c8b0" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="4e1e-d48b-0f56-b474" type="selectionEntry"/>
+            <entryLink id="f7bc-6a0b-b856-0611" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="419d-bad9-4d79-8bd6" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="9332-3834-cf3a-56b4" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="ba75-6e7b-fc74-f866" name="0) Legion-specific upgrades" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="d1a6-5f3f-ec17-59f9" name="Preysight" hidden="false" collective="false" import="true" targetId="b905-4d78-c141-4e63" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="17e4-41b2-ab13-65be" name="2) Bolt Pistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="17cf-dd72-b1e9-9ce2">
+          <modifiers>
+            <modifier type="increment" field="7d03-782f-d1df-8809" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0ea-afcb-5c88-a699" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="5395-860a-bf8c-54df" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0ea-afcb-5c88-a699" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d03-782f-d1df-8809" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5395-860a-bf8c-54df" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="17cf-dd72-b1e9-9ce2" name="Asphyx Bolt Pistol" hidden="false" collective="false" import="true" targetId="07f7-c486-f597-a1b9" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="d861-d2fc-5945-51a0" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="c682-9ebd-2246-71a6" name="Spatha Attack Bike" hidden="false" collective="false" import="true" targetId="0683-1d39-067a-d377" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6037-73f6-aa5b-758b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eefb-4307-6f8b-9966" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="240f-8c48-51e1-9260" name="Power Armour" hidden="false" collective="false" import="true" targetId="2d9d-480e-7c14-1a6f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6d4-a2cd-7781-cd2d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d99-d4b7-21ff-888b" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="c162-2a8f-e4c1-986f" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0683-1d39-067a-d377" name="Spatha Attack Bike" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="7166-dbc7-284b-5e76" name="Spatha Combat Bike" publicationId="a716-c1c4-7b26-8424" page="144" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Legion Spatha attack bike has one twin-linked bolter and one heavy bolter. In addition, a model with
+a Legion Spatha attack bike that chooses to Run gains the Shrouded (5+) special rule until the start of
+the controlling player’s next turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="56b3-de80-beb7-fd8a" name="Shrouded (X)" hidden="false" targetId="10c3-fdb0-089f-ca65" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Shrouded 5{+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="36ce-dbff-1fff-10c7" name="Cavalry Sub-type:" hidden="false" targetId="6d79-a3e4-381f-7b0f" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
