@@ -1368,9 +1368,7 @@ A model with the Infantry Unit Type that selects a Legion Scimitar jetbike as an
       <profiles>
         <profile id="d853-6df2-8fe8-0325" name="Spatha Combat Bike" publicationId="a716-c1c4-7b26-8424" page="144" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Legion Spatha combat bike has one twin-linked bolter In addition, a model with a Legion Spatha combat bike that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player’s next turn.
-
-A model with the Infantry Unit Type that selects a Legion Spatha combat bike as an upgrade must change its Unit Type to Cavalry, keeping any Unit Sub-types it previously had, changes its Movement Characteristic to 14 and gains the Firing Protocols (2) and Hammer of Wrath (1) special rules.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a Legion Spatha combat bike that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player’s next turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1380,20 +1378,28 @@ A model with the Infantry Unit Type that selects a Legion Spatha combat bike as 
             <modifier type="set" field="name" value="Firing Protocols (2)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="71ac-69f4-fb08-dee5" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)"/>
-          </modifiers>
-        </infoLink>
         <infoLink id="9546-9198-c0da-d164" name="Shrouded (X)" hidden="false" targetId="10c3-fdb0-089f-ca65" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Shrouded 5{+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="e1d9-6c05-c06e-ffaf" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Hammer of Wrath (1)"/>
           </modifiers>
         </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0cc8-f4f2-3819-c907" name="Cavalry Sub-type:" hidden="false" targetId="6d79-a3e4-381f-7b0f" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="5e20-fe7d-10cb-a203" name="Twin-linked Bolter" hidden="false" collective="false" import="true" targetId="e31a-fd70-35c7-8bed" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d98-3c3c-b8dd-d868" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a39-efd0-dadc-a370" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
@@ -2962,11 +2968,11 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1941-21b5-932c-74d6" name="Shrapnel Bolter" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1941-21b5-932c-74d6" name="Shrapnel Bolter" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="equalTo"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2987,11 +2993,11 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="975e-14eb-caed-4b5b" name="Shrapnel Cannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="975e-14eb-caed-4b5b" name="Shrapnel Cannon" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="equalTo"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3765,11 +3771,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7d72-7f6d-6330-6871" name="Shrapnel Pistol" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7d72-7f6d-6330-6871" name="Shrapnel Pistol" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="equalTo"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -15214,7 +15220,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Infantry (Character, Line, Corrupted)">
+                <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Infantry (Character, Corrupted)">
                   <conditions>
                     <condition field="selections" scope="a423-7dd8-3f1b-3e28" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bc7e-1e83-8e1a-afab" type="equalTo"/>
                   </conditions>
@@ -17341,14 +17347,9 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   </conditionGroups>
                 </modifier>
                 <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Infantry (Heavy, Character)">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="fc32-089e-1c59-70bd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c0f-f751-cc4e-4951" type="equalTo"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
+                  <conditions>
+                    <condition field="selections" scope="fc32-089e-1c59-70bd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c0f-f751-cc4e-4951" type="equalTo"/>
+                  </conditions>
                 </modifier>
               </modifiers>
               <characteristics>
@@ -21698,9 +21699,13 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </constraints>
             </entryLink>
             <entryLink id="e5e2-1fd6-d0fe-b254" name="Asphyx Bolt Pistol" hidden="false" collective="false" import="true" targetId="07f7-c486-f597-a1b9" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
-              </costs>
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -27757,6 +27762,19 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
       </costs>
     </selectionEntry>
     <selectionEntry id="4d72-1cc1-8bee-aa88" name="Spatha Attack Bike Squadron" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="4e5f-ff66-6b18-54e4" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Hammer of Wrath (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="7566-7f84-ae68-c9a3" name="Firing Protocols (X)" hidden="false" targetId="32a3-f599-5c92-2945" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Firing Protocols (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="3ad4-12b0-97c0-d07a" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="995e-aa85-478b-de47" name="Skirmish:" hidden="false" targetId="59a4-7b61-600a-c457" primary="false"/>
         <categoryLink id="1b08-e6e5-3d06-e1a1" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -27796,7 +27814,19 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
                 <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
               </characteristics>
             </profile>
+            <profile id="3846-b803-9e73-ebf7" name="Spatha Attack Bike" publicationId="a716-c1c4-7b26-8424" page="144" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Legion Spatha attack bike that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player’s next turn.</characteristic>
+              </characteristics>
+            </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="a4d6-d04d-a62c-b2e0" name="Shrouded (X)" hidden="false" targetId="10c3-fdb0-089f-ca65" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Shrouded 5{+)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="9567-10de-6aca-4152" name="Cavalry Sub-type:" hidden="false" targetId="6d79-a3e4-381f-7b0f" primary="false"/>
             <categoryLink id="3c05-436f-b6d7-44e2" name="Skirmish Sub-type:" hidden="false" targetId="59a4-7b61-600a-c457" primary="false"/>
@@ -27805,12 +27835,16 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ab6f-9089-b5a1-f345" name="One Legion Spatha attack bike may take a Legion vexilla" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="ab6f-9089-b5a1-f345" name="One Legion Spatha attack bike may take:" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4234-91db-19dc-a279" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="aeda-fe87-5b0f-7001" name="Legion Vexilla" hidden="false" collective="false" import="true" targetId="21b1-2a90-9826-1782" type="selectionEntry"/>
+            <entryLink id="aeda-fe87-5b0f-7001" name="Legion Vexilla" hidden="false" collective="false" import="true" targetId="21b1-2a90-9826-1782" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3bd-9cce-6d91-0477" type="max"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
@@ -27830,10 +27864,11 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0ea-afcb-5c88-a699" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="decrement" field="8386-7110-6341-04e6" value="1.0"/>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="929d-7e0e-c2ea-d4b6" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8386-7110-6341-04e6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8386-7110-6341-04e6" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="ea58-34cc-521a-b079" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
@@ -27859,7 +27894,7 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="17e4-41b2-ab13-65be" name="2) Bolt Pistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="17cf-dd72-b1e9-9ce2">
+        <selectionEntryGroup id="17e4-41b2-ab13-65be" name="2) Bolt Pistol Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="17cf-dd72-b1e9-9ce2">
           <modifiers>
             <modifier type="increment" field="7d03-782f-d1df-8809" value="1.0">
               <repeats>
@@ -27871,10 +27906,11 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0ea-afcb-5c88-a699" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="decrement" field="5395-860a-bf8c-54df" value="1.0"/>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d03-782f-d1df-8809" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5395-860a-bf8c-54df" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5395-860a-bf8c-54df" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="17cf-dd72-b1e9-9ce2" name="Asphyx Bolt Pistol" hidden="false" collective="false" import="true" targetId="07f7-c486-f597-a1b9" type="selectionEntry">
@@ -27882,17 +27918,24 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
               </costs>
             </entryLink>
-            <entryLink id="d861-d2fc-5945-51a0" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry"/>
+            <entryLink id="d861-d2fc-5945-51a0" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="4d72-1cc1-8bee-aa88" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d72-7f6d-6330-6871" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="6390-0fd0-15ae-4b31" name="Shrapnel Pistol" hidden="false" collective="false" import="true" targetId="7d72-7f6d-6330-6871" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="c682-9ebd-2246-71a6" name="Spatha Attack Bike" hidden="false" collective="false" import="true" targetId="0683-1d39-067a-d377" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6037-73f6-aa5b-758b" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eefb-4307-6f8b-9966" type="min"/>
-          </constraints>
-        </entryLink>
         <entryLink id="240f-8c48-51e1-9260" name="Power Armour" hidden="false" collective="false" import="true" targetId="2d9d-480e-7c14-1a6f" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6d4-a2cd-7781-cd2d" type="max"/>
@@ -27900,33 +27943,15 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
           </constraints>
         </entryLink>
         <entryLink id="c162-2a8f-e4c1-986f" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
+        <entryLink id="cc1f-0fd5-51a8-c353" name="Twin-linked Bolter" hidden="false" collective="false" import="true" targetId="e31a-fd70-35c7-8bed" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfc3-2085-601d-b3e8" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0250-762c-3aaf-4096" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="0683-1d39-067a-d377" name="Spatha Attack Bike" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="7166-dbc7-284b-5e76" name="Spatha Combat Bike" publicationId="a716-c1c4-7b26-8424" page="144" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Legion Spatha attack bike has one twin-linked bolter and one heavy bolter. In addition, a model with
-a Legion Spatha attack bike that chooses to Run gains the Shrouded (5+) special rule until the start of
-the controlling player’s next turn.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="56b3-de80-beb7-fd8a" name="Shrouded (X)" hidden="false" targetId="10c3-fdb0-089f-ca65" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Shrouded 5{+)"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="36ce-dbff-1fff-10c7" name="Cavalry Sub-type:" hidden="false" targetId="6d79-a3e4-381f-7b0f" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
