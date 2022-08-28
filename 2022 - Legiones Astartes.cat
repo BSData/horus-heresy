@@ -2540,14 +2540,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4e21-746a-8d09-ee37" name="Legatine Axe" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e0f-3552-8842-f281" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="4e21-746a-8d09-ee37" name="Legatine Axe" hidden="true" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="a184-cb95-e073-30f1" name="Legatine Axe " hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
@@ -9501,16 +9494,59 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink id="8242-426d-847c-f859" name="Argyrum pattern boarding shield" hidden="false" collective="false" import="true" targetId="f670-7544-e4f3-f5fa" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b7f8-bf4b-eed4-5081" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="8f1c-19e3-51c3-6ed6" name="6) Armor Choice" hidden="false" collective="false" import="true" defaultSelectionEntryId="102d-3f7d-958d-f5d7">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a864-e45b-2cfd-df8d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d58-fa44-c066-f3e4" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="0ac0-5be9-8b18-3d9a" name="Mantle of Ultramar" hidden="true" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e0f-3552-8842-f281" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6535-af83-4f21-ea9b" type="max"/>
+                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1043-bf14-fef3-a83c" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="53d3-282a-188f-500b" name="Mantle of Ultramar" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+                      <characteristics>
+                        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Mantle of Ultramar confers a 2+ Armour Save. In addition,  it grants the Battle-hardened (1) special rule to the model with it, and that model is not affected by the Blind special rule (however, any unit the model has joined is affected by Blind as normal).</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink id="3f2f-512a-8414-5d3c" name="Battle-Hardened (X)" hidden="false" targetId="5c3b-ed0b-4ad0-d547" type="rule">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Battle-Hardened (1)"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="102d-3f7d-958d-f5d7" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="2492-abb9-4a93-b801" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9640-3e76-7078-80b2" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f988-4191-bf78-058d" type="min"/>
-              </constraints>
-            </entryLink>
             <entryLink id="e870-b82f-f972-820d" name="Iron Halo" hidden="false" collective="false" import="true" targetId="b081-bf3c-f43d-4bd5" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="393b-76de-87b1-56bc" type="max"/>
@@ -9702,6 +9738,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                       </conditions>
                     </modifier>
                   </modifiers>
+                </entryLink>
+                <entryLink id="aff1-8ab6-d2d9-7815" name="Argyrum pattern boarding shield" hidden="false" collective="false" import="true" targetId="f670-7544-e4f3-f5fa" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="668f-c973-038d-fa09" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -9902,6 +9946,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                       </conditions>
                     </modifier>
                   </modifiers>
+                </entryLink>
+                <entryLink id="25b5-b886-b63e-1dab" name="Argyrum pattern boarding shield" hidden="false" collective="false" import="true" targetId="f670-7544-e4f3-f5fa" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2577-956c-43b3-58a4" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -11008,6 +11060,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                       </conditions>
                     </modifier>
                   </modifiers>
+                </entryLink>
+                <entryLink id="e626-5dfd-9a76-b4fc" name="Argyrum pattern boarding shield" hidden="false" collective="false" import="true" targetId="f670-7544-e4f3-f5fa" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dea2-e736-dc92-45d8" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -15034,6 +15094,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink id="ad07-147d-3ca8-d130" name="Argyrum pattern boarding shield" hidden="false" collective="false" import="true" targetId="f670-7544-e4f3-f5fa" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3080-e2bd-2ce8-8e2a" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -17949,6 +18017,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                       </conditionGroups>
                     </modifier>
                   </modifiers>
+                </entryLink>
+                <entryLink id="eb1a-46ec-b7be-8aa1" name="Argyrum pattern boarding shield" hidden="false" collective="false" import="true" targetId="f670-7544-e4f3-f5fa" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d6e8-70aa-30fa-80bc" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -27764,6 +27840,18 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="f670-7544-e4f3-f5fa" name="Argyrum pattern boarding shield" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="de24-f317-3b22-4a32" name="Argyrum pattern boarding shield" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">An Argyrum pattern boarding shield provides a 5+ Invulnerable Save against Shooting Attacks in any Phase that increases to 4+ against any attacks made while engaged in an assault. Invulnerable Saves granted by an Argyrum pattern boarding shield do not stack with other Invulnerable Saves and cannot be modified by any other special rule. If a model has another Invulnerable Save then the controlling player must choose which one to use. In addition, a model with has another Invulnerable Save then the controlling player must choose which one to use. In addition, a model with an Argyrum pattern boarding shield may not make attacks with any weapon that has the Two-handed special rule. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="4d72-1cc1-8bee-aa88" name="Spatha Attack Bike Squadron" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="4e5f-ff66-6b18-54e4" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
@@ -29139,7 +29227,19 @@ A Legion Primus Nullificator Consul gains the Psyker Sub-type and has only the P
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
           </costs>
         </entryLink>
-        <entryLink id="8860-cdf7-dd1a-234c" name="Legatine Axe" hidden="false" collective="false" import="true" targetId="4e21-746a-8d09-ee37" type="selectionEntry">
+        <entryLink id="8860-cdf7-dd1a-234c" name="Legatine Axe" hidden="true" collective="false" import="true" targetId="4e21-746a-8d09-ee37" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4f07-3d45-4f28-a0c6" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e0f-3552-8842-f281" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
           </costs>
