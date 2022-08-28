@@ -152,9 +152,9 @@
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="a35d-8563-eb47-e985" name="Robute Gulliman" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="a35d-8563-eb47-e985" name="Roboute Guilliman" hidden="false" collective="false" import="true" type="unit">
       <selectionEntries>
-        <selectionEntry id="c91f-d9e6-97eb-9233" name="Robute Gulliman" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="c91f-d9e6-97eb-9233" name="Roboute Guilliman" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26d3-605d-c832-2a1f" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce30-ba57-5303-3207" type="min"/>
@@ -1161,7 +1161,7 @@ player’s turn as long as Roboute Guilliman has not been removed as a casualty.
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
               </costs>
             </entryLink>
-            <entryLink id="d206-a6a8-9488-71e9" name="Argean power sword" hidden="false" collective="false" import="true" targetId="89a5-c10e-a503-54d0" type="selectionEntry"/>
+            <entryLink id="d206-a6a8-9488-71e9" name="Argean power sword" hidden="false" collective="false" import="true" targetId="013e-d478-87eb-badc" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="72b7-c6b9-10e8-227f" name="For every five models in the unit, one Locutarus may exchange their bolt pistol for one of the following options:" hidden="false" collective="false" import="true">
@@ -1248,7 +1248,7 @@ player’s turn as long as Roboute Guilliman has not been removed as a casualty.
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="32d1-29a6-9023-142c" name="Nemisis Destroyer Squad" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="32d1-29a6-9023-142c" name="Nemesis Destroyer Squad" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="3b70-e562-2c3b-f4c1" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
         <infoLink id="9427-32e6-58b3-b667" name="Counter-Attack (X)" hidden="false" targetId="fd6d-2a76-10e0-936a" type="rule">
@@ -1307,11 +1307,77 @@ player’s turn as long as Roboute Guilliman has not been removed as a casualty.
               </characteristics>
             </profile>
           </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="3d76-9955-751a-735e" name="May take:" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="eb99-9aef-7d56-3200" name="Phosphex Bomb" hidden="false" collective="false" import="true" targetId="4188-13ff-cb03-109e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="A single Phosphex Bomb"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b44-3f3b-3f1c-716f" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="8de6-04fa-eb4b-92cc" name="Meltabombs" hidden="false" collective="false" import="true" targetId="b9dd-3b21-f3f8-78e3" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6417-c0d1-7bc2-0409" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="3f91-237c-f3e9-8bad" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="051f-1178-cf46-6541" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="3eb4-9ecf-3161-1d56" name="May exchange their chainsword for one of the following:" hidden="false" collective="false" import="true" defaultSelectionEntryId="f7e7-5798-3921-9132">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aad7-58d5-4835-1490" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12fd-9e0d-6bc2-92d7" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="a1ea-a4ea-858e-4acd" name="Power Weapon" hidden="false" collective="false" import="true" targetId="8d9c-9f80-c0fd-adcf" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="f8a2-c2f6-a6df-d5d7" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="e7e4-6213-1e68-a6b2" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="6923-4e42-5691-b13f" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="23d6-e825-e1dc-2398" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="f7e7-5798-3921-9132" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1b72-51c3-4128-2085" name="Mortifier bolter" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d613-d518-f1a7-c10f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2891-c30e-6100-27f5" type="max"/>
+          </constraints>
           <profiles>
             <profile id="28c8-8b49-387e-34ff" name="Mortifier bolter" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
@@ -1350,7 +1416,7 @@ player’s turn as long as Roboute Guilliman has not been removed as a casualty.
             <entryLink id="8479-b4c2-d473-4720" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="34d7-3bb6-99a6-7a62" name="For every five models in the unit, one Nemesis Destroyer may exchange their Mortifier bolter for one of the following:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="34d7-3bb6-99a6-7a62" name="For every five models, one Nemesis Destroyer may exchange their Mortifier bolter for:" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="increment" field="209e-7635-859c-d764" value="1.0">
               <repeats>
@@ -1403,70 +1469,6 @@ player’s turn as long as Roboute Guilliman has not been removed as a casualty.
             <entryLink id="a74a-0eff-31f6-1f11" name="Lascutter" hidden="false" collective="false" import="true" targetId="6331-c1b9-bf0e-d0e5" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="db1b-efac-0a5d-96a2" name="The Nemesis Destroyer Sergeant may exchange their chainsword for one of the following:" hidden="false" collective="false" import="true" defaultSelectionEntryId="7c1a-07c9-7d35-0859">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78a0-31c8-cce4-2154" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d418-8727-b0c0-1dbe" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="84cf-be97-df6d-ad43" name="Power Weapon" hidden="false" collective="false" import="true" targetId="8d9c-9f80-c0fd-adcf" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="9109-1aa7-6305-2d84" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="91d5-b7f4-5dea-3b0f" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="6923-4e42-5691-b13f" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="f606-2524-3ddf-95f4" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="7c1a-07c9-7d35-0859" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="1165-b560-03a3-9c61" name="The Nemesis Destroyer Sergeant may upgrade their power armour to:" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae22-e472-595a-323d" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="aa5c-ac7e-57b1-6929" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="c31a-1736-c2e5-7539" name="The Nemesis Destroyer Sergeant may take:" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="9636-e7c4-4e0b-f1c1" name="Phosphex Bomb" hidden="false" collective="false" import="true" targetId="4188-13ff-cb03-109e" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="name" value="A single Phosphex Bomb"/>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da35-3001-b20d-b424" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="6454-79ab-aad0-8e4f" name="Meltabombs" hidden="false" collective="false" import="true" targetId="b9dd-3b21-f3f8-78e3" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b846-a137-5127-020b" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -1528,9 +1530,21 @@ player’s turn as long as Roboute Guilliman has not been removed as a casualty.
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="89a5-c10e-a503-54d0" name="Argean power sword" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="bd9c-928f-16d6-6ecd" name="Argyrum pattern boarding shield" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="4baf-f082-5460-cfb8" name="Argean power sword" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="268e-fea5-731b-ee97" name="Argyrum pattern boarding shield" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">An Argyrum pattern boarding shield provides a 5+ Invulnerable Save against Shooting Attacks in any Phase that increases to 4+ against any attacks made while engaged in an assault. Invulnerable Saves granted by an Argyrum pattern boarding shield do not stack with other Invulnerable Saves and cannot be modified by any other special rule. If a model has another Invulnerable Save then the controlling player must choose which one to use. In addition, a model with has another Invulnerable Save then the controlling player must choose which one to use. In addition, a model with an Argyrum pattern boarding shield may not make attacks with any weapon that has the Two-handed special rule. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="013e-d478-87eb-badc" name="Argean power sword" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2fea-5202-9f6b-0d91" name="Argean power sword" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
@@ -1540,12 +1554,12 @@ player’s turn as long as Roboute Guilliman has not been removed as a casualty.
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="69eb-ebb0-e79a-5397" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+        <infoLink id="cf92-723e-8a5c-0b93" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Rending (5+)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="1332-41b8-c194-655d" name="Duellist’s Edge (X)" hidden="false" targetId="7bf3-86ce-04c2-e6ba" type="rule">
+        <infoLink id="6a6c-5ad8-54ae-d6f1" name="Duellist’s Edge (X)" hidden="false" targetId="7bf3-86ce-04c2-e6ba" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Duellist’s Edge (1)"/>
           </modifiers>
@@ -1554,15 +1568,6 @@ player’s turn as long as Roboute Guilliman has not been removed as a casualty.
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
-    </selectionEntry>
-    <selectionEntry id="bd9c-928f-16d6-6ecd" name="Argyrum pattern boarding shield" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="268e-fea5-731b-ee97" name="Argyrum pattern boarding shield" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">An Argyrum pattern boarding shield provides a 5+ Invulnerable Save against Shooting Attacks in any Phase that increases to 4+ against any attacks made while engaged in an assault. Invulnerable Saves granted by an Argyrum pattern boarding shield do not stack with other Invulnerable Saves and cannot be modified by any other special rule. If a model has another Invulnerable Save then the controlling player must choose which one to use. In addition, a model with has another Invulnerable Save then the controlling player must choose which one to use. In addition, a model with an Argyrum pattern boarding shield may not make attacks with any weapon that has the Two-handed special rule. </characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
