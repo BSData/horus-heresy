@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
-    <categoryEntry id="2275-5253-2421-7383" name="Rewards of Trechery" hidden="false"/>
+    <categoryEntry id="2275-5253-2421-7383" name="Rewards of Trechery" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2807-51e3-d25f-a9ec" type="max"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="a1f5-1d6d-acb1-d888" name="Rewards of Trechery" hidden="false" collective="false" import="true" type="upgrade">
@@ -34,22 +38,11 @@
             <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="greaterThan"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="96e6-7d51-3b4a-f4b1" value="0.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2275-5253-2421-7383" type="greaterThan"/>
-          </conditions>
-        </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96e6-7d51-3b4a-f4b1" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="007a-4705-5f7a-695b" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="69ff-87ed-3c34-3742" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="c4b2-f741-e6c2-5680" name="RoT" hidden="false" collective="false" import="true" type="upgrade"/>
-      </selectionEntries>
     </entryLink>
     <entryLink id="8bd1-2ebe-9806-2c7a" name="Alpharius" hidden="false" collective="false" import="true" targetId="4492-950e-2b00-b14d" type="selectionEntry">
       <categoryLinks>
@@ -59,6 +52,7 @@
     <entryLink id="d7e9-6d99-675b-0a20" name="Armillus Dynat" hidden="false" collective="false" import="true" targetId="11f7-a291-e12f-a717" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="dd12-09e4-7e98-1293" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="3732-e871-9e0b-7235" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="9515-498a-82b3-893b" name="Exodus" hidden="false" collective="false" import="true" targetId="f912-9416-39ea-b3fc" type="selectionEntry">
@@ -76,17 +70,788 @@
         <categoryLink id="46d2-e42c-5804-d2d4" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
       </categoryLinks>
     </entryLink>
-  </entryLinks>
-  <sharedSelectionEntries>
-    <selectionEntry id="4492-950e-2b00-b14d" name="Alpharius" publicationId="09c5-eeae-f398-b653" page="336" hidden="true" collective="false" import="true" type="unit">
-      <comment>Primarch of the Alpha Legion, the Aleph Null, the Hydra, the Threefold Serpent, The Final Configuration</comment>
+    <entryLink id="3249-0974-fb92-4e6b" name="Contemptor-Incaendius Dreadnought" hidden="true" collective="false" import="true" targetId="090c-5656-0180-16c8" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink id="c05e-35d3-2f58-ee87" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="85bf-5c39-d77e-de7e" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="fef9-8f33-d164-6c07" name="Dawnbreaker Cohort" hidden="true" collective="false" import="true" targetId="3c67-35da-d64a-f22b" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="a8ff-df82-9b34-d336" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="2a5f-6671-1cd0-8824" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5a11-ffcb-138c-07af" name="The Angel&apos;s Tears" hidden="true" collective="false" import="true" targetId="dda1-0fcf-0245-6c10" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="04c0-2b59-6737-2841" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="4cb8-a680-b384-2e82" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4ebf-55c4-fb59-569d" name="Dreadwing Interemptor Squad" hidden="true" collective="false" import="true" targetId="3008-e8ed-9e97-71c9" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="b3ad-92e7-3dcd-b644" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="ea34-926e-6a09-afe1" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4d98-c46c-40f7-b5f4" name="Firewing Enigmatus Cabal" hidden="true" collective="false" import="true" targetId="3731-e0df-bd0c-a33e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="46a9-0c8d-202d-f470" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="1cb0-db62-d7b8-96fb" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="948c-2c74-497e-47e8" name="Excindio Battle-automata" hidden="true" collective="false" import="true" targetId="cf23-fd3a-15a0-7347" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6141-22f3-bbe6-e74f" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="1aa8-88aa-6181-ff4c" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3d59-14ba-095f-f402" name="Inner Circle Knights Cenobium" hidden="true" collective="false" import="true" targetId="9946-61c0-3656-36dd" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="10d9-0cba-6158-32a9" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="f31f-785e-2f52-2ebc" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="853d-6ff7-293a-3474" name="Inner Circle Knights Cenobium - Order of the Broken Claws" hidden="true" collective="false" import="true" targetId="b9ad-ab3e-437e-c373" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="41da-54c7-c6c3-4991" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="b730-a050-02af-16d5" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1193-4e5a-ab65-f739" name="Mortus Poisoner Squad" hidden="true" collective="false" import="true" targetId="dd7b-fe21-cf53-0ebc" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd1f-1c51-706c-e5f7" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="b9f4-db55-fe6d-94b2" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="2c47-5afd-2dc9-7b56" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="241d-6c1a-dfe4-5b69" name="Grave Warden Terminator Squad" hidden="true" collective="false" import="true" targetId="be32-77c9-fe55-7dc0" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="16e5-e6f3-635f-6251" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="c1e3-bbfd-225e-5ab3" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="26ab-aed8-c986-17d5" name="Kakophoni Squad" hidden="true" collective="false" import="true" targetId="8359-c463-9cde-4f21" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="027a-256b-f351-75f5" name="Palatine Blade Squad" hidden="true" collective="false" import="true" targetId="fa86-f7a5-0062-a205" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="c326-cb15-c3dd-3f9c" name="Phoenix Terminator Squad" hidden="true" collective="false" import="true" targetId="5b08-65c1-cc45-1b91" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="4dbb-34a4-fdd2-0cbf" name="Sun Killer Squad" hidden="true" collective="false" import="true" targetId="cce2-fd03-ac17-88e4" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="0830-4929-8091-746a" name="Huscarl Squad" hidden="true" collective="false" import="true" targetId="4420-5ce0-beb7-cb5e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0e1-f2c4-8bcd-0723" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6c1e-4c9e-e3bd-1ed1" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="85c5-b06d-1d39-aad0" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0457-3563-1aab-ece5" name="Templar Brethren" hidden="true" collective="false" import="true" targetId="6f69-665c-3199-77aa" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0e1-f2c4-8bcd-0723" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="bae3-e5c1-dfc6-dc12" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="274f-7764-d62a-c30a" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e31e-95d0-222e-589c" name="Phalanx Warder Squad" hidden="true" collective="false" import="true" targetId="19ce-b8dc-dd40-fee9" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0e1-f2c4-8bcd-0723" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="08d9-f6ed-b8dd-e10c" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="a4fa-28fa-2625-6b6e" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c427-5adb-5425-5ab9" name="Gorgon Terminator Squad" hidden="true" collective="false" import="true" targetId="ea50-6315-7a52-f560" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="e9fb-2b4f-655a-82db" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="b6ff-7cb7-13c3-ade3" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+        <categoryLink id="90cd-cd1d-07cb-c23b" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="dac8-a583-c05d-6c22" name="Medusan Immortal Squad" hidden="true" collective="false" import="true" targetId="f9e4-0da2-5049-df81" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="ae0e-4cf9-c6f7-c1a2" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="bed1-a653-73a8-4680" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+        <categoryLink id="a82b-8ee2-5f4e-826f" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="84af-f180-93a9-b4e6" name="Iron Circle Maniple" hidden="true" collective="false" import="true" targetId="a6e3-baab-45b9-7fea" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="475a-4d51-e6b1-b353" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="8fbf-49ab-198c-04a8" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+        <categoryLink id="9758-f439-2d9f-f6c0" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="21ea-86f3-aab1-a0cc" name="Tyrant Siege Terminator Squad" hidden="true" collective="false" import="true" targetId="795a-5698-a1bc-6ec6" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="8d21-c340-4539-6209" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="8daf-d124-9b5c-e0c1" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f48c-ea6c-0fbc-598a" name="Dominator Cohort" hidden="true" collective="false" import="true" targetId="1bfa-2413-beb9-5f32" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="f056-f0c1-ad40-6834" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="54f4-39a6-c4fc-c33e" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c4d9-2b32-325e-9c4f" name="Iron Havocs" hidden="true" collective="false" import="true" targetId="d355-5488-1277-fabf" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6eb4-905f-5c57-cf57" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="68dc-de7f-8ab8-838d" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3291-aa2f-0e9e-017f" name="Atramentar Squad" hidden="true" collective="false" import="true" targetId="12d3-9df0-4118-997f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-71f7-e4f4-8f9c" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c435-91dd-cb19-23ed" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="cdf9-f163-9e6d-1243" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="30e5-1996-ad7f-1cb8" name="Terror Squad" hidden="true" collective="false" import="true" targetId="53ce-6dc9-aa69-fbaa" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-71f7-e4f4-8f9c" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="1f0a-5ac7-30de-45e8" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="ae02-dcb6-4b6e-f03e" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0303-9efb-a46c-9e35" name="Night Raptor Squad" hidden="true" collective="false" import="true" targetId="9bb8-8fe4-11c1-9e50" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-71f7-e4f4-8f9c" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="a09d-624d-b66c-4f59" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="1175-0a3e-b135-13f0" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="522b-84dd-0422-1ca5" name="Contekar Terminator Squad" hidden="true" collective="false" import="true" targetId="837e-c3ca-437e-dfbf" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-71f7-e4f4-8f9c" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="57a2-7099-cbed-ecc4" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="d02b-01a8-c88c-266f" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3449-42bd-723e-8f58" name="Dark Furies" hidden="true" collective="false" import="true" targetId="58f4-3d8d-f243-6e5d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc34-fe08-dd44-fb99" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="97b1-3f08-d172-8a15" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="90c2-8531-b18d-b9b9" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="61aa-3233-8f98-7243" name="Mor Deythan Squad" hidden="true" collective="false" import="true" targetId="c268-08ac-5b90-d034" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc34-fe08-dd44-fb99" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="0d35-e913-d462-7066" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="6267-16c3-3f0c-d3ce" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2563-d825-3a1f-556a" name="Deliverers Squad" hidden="true" collective="false" import="true" targetId="5d1d-8348-ed95-d366" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc34-fe08-dd44-fb99" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="95ea-2552-bc04-8f45" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="8610-0a32-a51b-1666" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9c8e-6562-6c4b-5687" name="Firedrake Terminator Squad" hidden="true" collective="false" import="true" targetId="6775-8379-8d6b-9614" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="5fe0-ce32-6415-3d27" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="b2d4-8fb2-d07a-d9d1" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2982-0553-c877-9b8c" name="Pyroclast Squad" hidden="true" collective="false" import="true" targetId="71fe-d3bc-b7f9-75ca" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="fe9d-d416-66cc-3840" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="5bbd-91c1-a792-d250" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e30f-252c-9d00-eb3a" name="Deathsworn Pack" hidden="true" collective="false" import="true" targetId="3fa0-d6ed-981b-e361" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4916-965e-8339-44f6" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="ab26-ddb6-3918-328e" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="6b1d-a72a-6eae-d530" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1d61-9489-044c-4d84" name="Chieftain Squad" hidden="true" collective="false" import="true" targetId="0c73-9141-d1b4-6a40" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="aa05-6f88-816e-bfda" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="387c-5bef-8480-79fa" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3762-6cfd-39ef-1a13" name="Justaerin Terminator Squad" hidden="true" collective="false" import="true" targetId="c45d-ade3-6b28-68a2" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="a321-0fd1-53f5-1756" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="75fd-7486-ed31-b419" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="38cc-adf2-fed4-85be" name="Reaver Aggressor Squad" hidden="true" collective="false" import="true" targetId="af3a-334f-152f-d55f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="e5a7-c6bf-98d1-b1f7" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="5f5b-f5e8-7f86-eb96" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4ed2-aeff-41a0-466f" name="Reaver Attack Squad" hidden="true" collective="false" import="true" targetId="8b29-bf2a-a814-5642" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6400-720a-7c91-b8c6" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="dcf6-53ba-4274-e748" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7666-52aa-d0d6-05f9" name="Varagyr Wolf Guard Terminator Squad" hidden="true" collective="false" import="true" targetId="9359-61a5-fcdb-c28e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4916-965e-8339-44f6" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="13ca-19e6-fa4c-59a3" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="226f-9aa6-780b-aac9" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d7de-2fe2-d8a3-0134" name="Grey Slayer Pack" hidden="true" collective="false" import="true" targetId="4bbf-f3df-7b18-4a49" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4916-965e-8339-44f6" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6792-3273-84df-2c16" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="ae24-f3cc-26f6-f8ed" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="c36d-5646-132d-cfde" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="76d1-b4cc-e1c4-f8d0" name="Grey Stalker Pack" hidden="true" collective="false" import="true" targetId="4dbc-6266-853a-5114" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4916-965e-8339-44f6" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="dc7c-154a-28ef-62cc" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="9e6c-a4a4-973d-f93f" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="90e3-ff3c-3b76-d42c" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d7db-4065-219f-32fe" name="Jorlund Hunter Pack" hidden="true" collective="false" import="true" targetId="fcc8-bc3c-e443-eb3f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4916-965e-8339-44f6" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="8fc2-00bd-c7a6-0cca" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="c1c1-f2a0-d7a8-8a2f" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="59b0-23da-b88c-698b" name="Ammitara Occult Intercession Cabal" hidden="true" collective="false" import="true" targetId="d3ad-275c-e22b-a28f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="8cce-74a0-825f-76b2" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="fcea-6b0f-9886-453f" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="87d8-139a-0e23-da54" name="Castellax-Achea Automata" hidden="true" collective="false" import="true" targetId="95cb-9366-295e-f10d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4916-965e-8339-44f6" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="10b6-efe8-eb05-1122" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="8493-2d60-abcf-0341" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6cc5-b7ae-1d59-c024" name="Khenetai Occult Cabal" hidden="true" collective="false" import="true" targetId="faa7-27d5-2ee2-5d58" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="43b6-e5db-d065-4c3d" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="3e9e-aa2d-e31b-82b4" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7471-4aa8-40a3-ba58" name="Sekhmet Terminator Cabal" hidden="true" collective="false" import="true" targetId="dda2-bdd0-3ced-b427" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="e9db-b17f-ef90-49c9" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="9881-969b-bd71-6e33" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9e0a-dda3-e372-0548" name="Fulmentarus Terminator Squad" hidden="true" collective="false" import="true" targetId="7fb0-6302-d46f-029d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e0f-3552-8842-f281" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="4b53-0b13-f50e-bd04" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="4e61-2ef8-09c5-342f" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ffee-e152-1467-4bed" name="Invictarus Suzerain Squad" hidden="true" collective="false" import="true" targetId="ed63-e872-9410-a4b5" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e0f-3552-8842-f281" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6081-3aef-69a9-0723" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="46a6-2a49-b309-965a" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f900-3681-c641-0842" name="Locutarus Storm Squad" hidden="true" collective="false" import="true" targetId="314d-f363-fb52-743a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e0f-3552-8842-f281" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="10ca-0f92-db85-de6f" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="4582-1241-6135-f55c" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="35c9-cc7b-a14e-a4c7" name="Nemesis Destroyer Squad" hidden="true" collective="false" import="true" targetId="32d1-29a6-9023-142c" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e0f-3552-8842-f281" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="8576-3c18-b764-3bf9" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="b291-e267-0c5b-6b07" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="dbed-4afc-faad-50c6" name="Praetorian Breacher Squad" hidden="true" collective="false" import="true" targetId="7587-35cc-01f6-b5d2" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e0f-3552-8842-f281" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="b90f-7fe3-220d-b301" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="2601-513b-bf12-ee56" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ab1f-ce36-7a3a-e274" name="Golden Keshig Squadron" hidden="true" collective="false" import="true" targetId="1d55-faa7-caa5-a132" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="2abe-d220-2c83-214a" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="8957-dd47-1e4a-f19e" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7aa6-6013-0a0a-ea52" name="Ebon Keshig Cohort" hidden="true" collective="false" import="true" targetId="eb44-e977-2ce5-b239" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="336e-3223-67ce-912c" name="Kyzagan Assualt Speeder Squadron" hidden="true" collective="false" import="true" targetId="e37e-09ea-50c6-2daa" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="3e18-b878-223f-289e" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="1538-9081-32fa-c24b" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="034d-cae7-d430-71a5" name="Dark Sons of Death " hidden="true" collective="false" import="true" targetId="4372-ad51-04a6-97ce" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="806e-73fd-00f3-b1ca" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="55ad-798d-1f21-7563" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="00c2-d209-94ce-05ad" name="Falcon&apos;s Claws" hidden="true" collective="false" import="true" targetId="c598-7fda-13d0-7523" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="89aa-08cc-1ad3-9073" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="6cef-29a8-2dba-b29a" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b16e-245e-993e-37a4" name="Ashen Circle" hidden="true" collective="false" import="true" targetId="f4e7-a798-a322-dc10" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9dbf-0760-d7ae-f125" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="b1a0-b911-73a6-3f52" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="399f-5ed8-9211-f7be" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="54d0-9a88-bfb3-dce5" name="Mhara Gal Dreadnought" hidden="true" collective="false" import="true" targetId="5254-5c76-10d4-c909" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9dbf-0760-d7ae-f125" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="581b-17a1-da13-5fea" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="7f2e-7d15-717b-90a6" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1ffe-18a3-a1e0-fae5" name="Gal Vorbak Squad" hidden="true" collective="false" import="true" targetId="be3a-5acc-b4bd-8621" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9dbf-0760-d7ae-f125" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6af3-1969-4705-0fb1" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="91af-e352-f10a-b59a" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e2e9-3770-5b79-8838" name="Rampager Squad" hidden="true" collective="false" import="true" targetId="2fb9-74a8-43b0-dd00" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="d168-2562-e83e-8e9b" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="2eb1-2e57-dbbc-957b" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="62ad-e646-2deb-0a06" name="Red Butchers" hidden="true" collective="false" import="true" targetId="1987-2aa5-929b-979e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="bab1-bf37-f813-87b0" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="7d89-c6b5-084b-5ed7" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5613-923b-06e3-3d91" name="Red Hand Destroyer Assault Squad" hidden="true" collective="false" import="true" targetId="7a04-bc44-70bb-cb98" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6601-3a00-9ee4-d330" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="822c-7e6e-04bd-e562" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="4492-950e-2b00-b14d" name="Alpharius" publicationId="09c5-eeae-f398-b653" page="336" hidden="false" collective="false" import="true" type="unit">
+      <comment>Primarch of the Alpha Legion, the Aleph Null, the Hydra, the Threefold Serpent, The Final Configuration</comment>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="86c3-be12-48b4-76f1" type="max"/>
       </constraints>
@@ -244,14 +1009,7 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="465.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6161-d387-f086-0958" name="Lernaean Terminator Squad" publicationId="09c5-eeae-f398-b653" page="338" hidden="true" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntry id="6161-d387-f086-0958" name="Lernaean Terminator Squad" publicationId="09c5-eeae-f398-b653" page="338" hidden="false" collective="false" import="true" type="unit">
       <rules>
         <rule id="e2f0-815b-eec3-19e0" name="Hydran Exemplars" publicationId="09c5-eeae-f398-b653" page="338" hidden="false">
           <description>The controlling player of a unit composed entirely of models with this special rule must select any one variant of the Legiones Astartes (X) special rule other than Legiones Astartes (Alpha Legion) at the start of the battle before any models are deployed. All models in the unit with this special rule gain a bonus of +1 to all To Hit rolls made against models with the chosen variant of the Legiones Astartes (X) special rule.</description>
@@ -391,7 +1149,7 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="250.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f912-9416-39ea-b3fc" name="Exodus" publicationId="09c5-eeae-f398-b653" page="340" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="f912-9416-39ea-b3fc" name="Exodus" publicationId="09c5-eeae-f398-b653" page="340" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d2f7-3019-371b-64e4" type="max"/>
       </constraints>
@@ -543,7 +1301,7 @@ The Instrument has two profiles. Pick which profile is used every time the weapo
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="165.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="11f7-a291-e12f-a717" name="Armillus Dynat" publicationId="09c5-eeae-f398-b653" page="342" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="11f7-a291-e12f-a717" name="Armillus Dynat" publicationId="09c5-eeae-f398-b653" page="342" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="95b1-0c2e-b922-a5de" type="max"/>
       </constraints>
@@ -698,7 +1456,11 @@ The Instrument has two profiles. Pick which profile is used every time the weapo
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="185.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="70e6-ace3-8feb-1ddc" name="Headhunter Kill Team" hidden="false" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="70e6-ace3-8feb-1ddc" name="Headhunter Kill Team" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink id="2f60-18fb-e6ed-8574" name="(HH V2) Legions Astartes" targetId="6393-649c-7213-a327" type="catalogue" importRootEntries="true"/>
