@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="caa9-c50e-8eed-2259" name="LA -   V: White Scars" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="caa9-c50e-8eed-2259" name="LA -   V: White Scars" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="a738-6a11-dfe7-286c" name="   V: White Scars" hidden="false" collective="false" import="false" targetId="e01e-5cdd-e512-8353" type="selectionEntry">
       <constraints>
@@ -171,7 +171,7 @@
             <categoryLink id="597d-1cf2-1be6-94af" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="8126-aa08-3eb9-d49d" name="The Golden Keshig Champion may Exchange their Chainsword for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="a0d6-d7e7-83b1-cb65">
+            <selectionEntryGroup id="8126-aa08-3eb9-d49d" name="May exchange their Chainsword for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="a0d6-d7e7-83b1-cb65">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b46e-c4d9-ca76-13d7" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf28-d4d8-836a-0dff" type="max"/>
@@ -581,31 +581,21 @@
               </characteristics>
             </profile>
           </profiles>
-          <rules>
-            <rule id="a32d-a8e1-a5e6-eef3" name="Kyzagan Assault Speeder" hidden="false">
-              <description>A Kyzagan Assault Speeder has one Kheres Assault Cannon and two Reaper Autocannons.</description>
-            </rule>
-          </rules>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="105.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="43ff-1354-e17c-df7d" name="Any model may take up to two Hunter-killer Missiles:" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="increment" field="c443-a3e0-c5f0-27a8" value="2.0">
-              <conditions>
-                <condition field="selections" scope="e37e-09ea-50c6-2daa" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60de-1577-35ed-5a0b" type="equalTo"/>
-              </conditions>
+            <modifier type="increment" field="c443-a3e0-c5f0-27a8" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
             </modifier>
-            <modifier type="increment" field="c443-a3e0-c5f0-27a8" value="4.0">
-              <conditions>
-                <condition field="selections" scope="e37e-09ea-50c6-2daa" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60de-1577-35ed-5a0b" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Hunter-Killer Missile"/>
+            <modifier type="set" field="name" value="2x Hunter-Killer Missile"/>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c443-a3e0-c5f0-27a8" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c443-a3e0-c5f0-27a8" type="max"/>
           </constraints>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
@@ -633,7 +623,7 @@
         </entryLink>
         <entryLink id="77ad-648d-63a9-ca15" name="Reaper Autocannon" hidden="false" collective="false" import="true" targetId="b87f-48de-6ced-043b" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="name" value="Two Reaper Autocannons"/>
+            <modifier type="set" field="name" value="2x Reaper Autocannons"/>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3eb-63df-d025-f869" type="min"/>
@@ -655,109 +645,111 @@
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4529-c7c2-0eb5-4dcd" type="max"/>
       </constraints>
-      <profiles>
-        <profile id="1655-a614-0aaa-cb68" name="Qin Xa" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
-            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8&quot;</characteristic>
-            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
-            <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
-            <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">4</characteristic>
-            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">6</characteristic>
-            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">5</characteristic>
-            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="9ffa-7c31-a040-9a7e" name="Master of the Keshig" hidden="false">
-          <description>If Qin Xa is selected as the Leader of a Legion Tartaros Command Squad, any model in that Tartaros Command Squad may replace its power weapon with a power glaive for +5 points each.</description>
-        </rule>
-        <rule id="ef3b-0a51-fadc-3850" name="The Tails of the Dragon" hidden="false">
-          <description>The Tails of the Dragon are two separate but identical weapons, and the bonus for wielding two melee weapons has already been included in Qin Xa’s profile. When attacking with the Tails of the Dragon in close combat, select one of the profiles to use from those shown below for both weapons at the start of each of the controlling player’s Assault phases, before any attacks are made.</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink id="f774-6585-e49c-11a0" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Bulky (2)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="3bb3-c9eb-0d29-6887" name="Counter-Attack (X)" hidden="false" targetId="fd6d-2a76-10e0-936a" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Counter Attack (2)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="d16c-7bc8-e70d-70da" name="Furious Charge (X)" hidden="false" targetId="2821-9269-862f-0554" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Furious Charge (1)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="a01b-5853-0e5e-cee2" name="Legiones Astartes (White Scars) " hidden="false" targetId="4b54-8bd0-9fdd-cbc4" type="rule"/>
-        <infoLink id="1430-6c24-1ce7-1869" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
-        <infoLink id="096c-7918-da0f-5b8e" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="87b8-ba68-482d-dca9" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="906f-612d-b9f1-c6ae" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-        <categoryLink id="dcd9-7698-7834-cea4" name="Qin Za" hidden="false" targetId="11f1-8f5a-4058-99ab" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="4811-89a6-be8e-1fc8" name="The Tails of the Dragon" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fa6-5c4d-1d37-c274" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4156-af2f-ed2b-5eed" type="max"/>
-          </constraints>
+        <selectionEntry id="206b-bdce-668d-8411" name="Qin Xa" hidden="false" collective="false" import="true" type="model">
           <profiles>
-            <profile id="5f9d-79c6-f89f-1216" name="Split the Mountain" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+            <profile id="1f58-6fa0-8344-6080" name="Qin Xa" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+3</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Master-crafted</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="28fd-5751-3ae3-aea6" name="Part the Horse&apos;s Mane" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Precision Strikes (3+), Master-crafted</characteristic>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8&quot;</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">4</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">6</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">5</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule id="ccce-710a-ee3e-931f" name="The Tails of the Dragon" hidden="false">
+              <description>The Tails of the Dragon are two separate but identical weapons, and the bonus for wielding two melee weapons has already been included in Qin Xa’s profile. When attacking with the Tails of the Dragon in close combat, select one of the profiles to use from those shown below for both weapons at the start of each of the controlling player’s Assault phases, before any attacks are made.</description>
+            </rule>
+          </rules>
           <infoLinks>
-            <infoLink id="d09f-e169-0691-b11c" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
-            <infoLink id="ca96-e523-f147-3e1f" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
-            <infoLink id="b948-2445-ac3b-d41a" name="Precision Strikes (X)" hidden="false" targetId="2206-8497-8fe1-e973" type="rule"/>
+            <infoLink id="20e6-10cd-a922-db01" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Bulky (2)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="638c-4489-52d6-3c02" name="Counter-Attack (X)" hidden="false" targetId="fd6d-2a76-10e0-936a" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Counter Attack (2)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="d230-18ac-5cf9-299f" name="Furious Charge (X)" hidden="false" targetId="2821-9269-862f-0554" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Furious Charge (1)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="87d2-fb5f-dd51-6135" name="Legiones Astartes (White Scars) " hidden="false" targetId="4b54-8bd0-9fdd-cbc4" type="rule"/>
+            <infoLink id="fac2-2ccc-4a48-6a82" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+            <infoLink id="e17d-ef99-6194-a113" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
           </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
+          <selectionEntries>
+            <selectionEntry id="76d2-0deb-4c9e-f4bf" name="The Tails of the Dragon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="513b-6d00-c413-62aa" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f9a-6b07-5c79-196b" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="751f-1d36-d560-ba9a" name="Split the Mountain" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+3</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Master-crafted</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="62f1-c303-cd64-11a4" name="Part the Horse&apos;s Mane" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Precision Strikes (3+), Master-crafted</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="6f14-16c2-87c6-129a" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+                <infoLink id="2474-bcfc-0fc3-cd24" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+                <infoLink id="a74a-3c86-affb-0e3a" name="Precision Strikes (X)" hidden="false" targetId="2206-8497-8fe1-e973" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="8660-954f-abb5-9eb4" name="Grenade Harness" hidden="false" collective="false" import="true" targetId="251a-860d-2c4d-62cc" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c11b-3348-632e-68c3" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0ee-f59e-0c3a-6f07" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="2e4b-ff4b-316a-f3a0" name="Iron Halo" hidden="false" collective="false" import="true" targetId="b081-bf3c-f43d-4bd5" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b274-44ca-83a9-b85d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83ff-61e0-c15e-198e" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="f0ba-5a38-9ad7-56c9" name="Tartaros Terminator Armour" hidden="false" collective="false" import="true" targetId="f850-d0af-8663-ccac" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e007-fded-6214-8726" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f24c-d109-d46b-0c4a" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="cfb9-dd58-4e42-79e3" name="Iron Halo" hidden="false" collective="false" import="true" targetId="b081-bf3c-f43d-4bd5" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d9b-42fd-ba1a-1d62" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f1b-dcec-d62c-a04a" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="20ea-c7e5-c8dd-3c80" name="Grenade Harness" hidden="false" collective="false" import="true" targetId="251a-860d-2c4d-62cc" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a21c-35a4-a122-980c" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce3d-f718-f584-1775" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="7c25-51af-7f7e-e7b2" name="Tartaros Terminator Armour" hidden="false" collective="false" import="true" targetId="f850-d0af-8663-ccac" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee2c-b8f0-6d5e-6471" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="906e-1806-a4a3-1eb7" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="7667-3f97-01a5-f106" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc06-6b4c-8289-7b7f" type="max"/>
@@ -805,7 +797,6 @@
         <infoLink id="9c3c-8ecd-dd6f-ba76" name="Crusader" hidden="false" targetId="c705-0829-75f6-a785" type="rule"/>
         <infoLink id="58f2-5045-cc30-ed29" name="Pathfinder" hidden="false" targetId="ec97-7aa8-49f5-b298" type="rule"/>
         <infoLink id="cd8f-b416-5f62-c6e1" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
-        <infoLink id="912a-dde2-400c-79e9" name="Loyalist" hidden="false" targetId="d1de-a45d-2b9b-c878" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4a08-e7f1-f263-1e3d" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -852,11 +843,99 @@
               </characteristics>
             </profile>
           </profiles>
-          <entryLinks>
-            <entryLink id="cdbb-518e-dca8-5b09" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
+          <selectionEntries>
+            <selectionEntry id="739d-d366-7344-bd3a" name="Storm&apos;s Voice" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df94-c86c-4a9e-8aa0" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e346-d02b-9947-0ba0" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32c5-c051-273c-9d24" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afbf-9b42-b8fa-e0d0" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="47ae-cce0-65d5-bb47" name="Storm&apos;s Voice" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 2, Rending (5+), Deflagrate, Concussive (1), Master-crafted</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="cf55-eca8-0f79-a646" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Rending (5+)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="acbb-8ad3-52f4-41e3" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+                <infoLink id="ba54-3521-2a11-8e8e" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Concussive (1)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="e46c-3b47-f233-5545" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cf69-2a95-2f98-2f97" name="The White Tiger Dao" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d3d-4ded-ec25-8fd8" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afd4-90d6-2533-04ba" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="17f2-1f76-2160-c9ed" name="The White Tiger Dao" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-	</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Duellist&apos;s Edge (1), Furious Charge (2), Murderous Strike (5+), Master-crafted</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="ba1e-c2be-8595-4c88" name="Duellist’s Edge (X)" hidden="false" targetId="7bf3-86ce-04c2-e6ba" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Duellist&apos;s Edge (1)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="17b8-dd98-a422-54e2" name="Furious Charge (X)" hidden="false" targetId="2821-9269-862f-0554" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Furious Charge (2)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="602b-be3a-59fc-f3df" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Murderous Strike (5+)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="feb3-abac-30ee-7e4e" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d363-43e5-c28f-e16c" name="The Wildfire Panoply" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbe7-c815-1af7-76de" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57fd-5400-3bd9-7013" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="2999-7ff1-c51c-a802" name="The Wildfire Panoply" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Wildfire Panoply provides a 2+ Armour Save, a 4+ Invulnerable Save during the Shooting phase and a 3+ Invulnerable Save duing both the Movement phase and the Assault phase. </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="eeae-f3ea-1788-89cf" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd84-33d2-2cd7-1aad" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea30-b06f-8eb9-a011" type="min"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -917,92 +996,6 @@ May join units that include models with the Cavalry Unit Type despite the usual 
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4dc4-9f22-6698-4ae0" name="The Wildfire Panoply" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1ee-ce44-a691-6b29" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33e2-6297-55e8-f08c" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="73a8-3504-989b-b07b" name="The Wildfire Panoply" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-              <characteristics>
-                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Wildfire Panoply provides a 2+ Armour Save, a 4+ Invulnerable Save during the Shooting phase and a 3+ Invulnerable Save duing both the Movement phase and the Assault phase. </characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="d5b0-7bc3-340d-ebb8" name="The White Tiger Dao" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad85-03d5-1e35-2acf" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f269-c93c-3004-317b" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="7c97-c03b-f998-3db8" name="The White Tiger Dao" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-	</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Duellist&apos;s Edge (1), Furious Charge (2), Murderous Strike (5+), Master-crafted</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="a0de-615f-9cea-b68f" name="Duellist’s Edge (X)" hidden="false" targetId="7bf3-86ce-04c2-e6ba" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Duellist&apos;s Edge (1)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="fe66-3032-ce2d-a5ea" name="Furious Charge (X)" hidden="false" targetId="2821-9269-862f-0554" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Furious Charge (2)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="8e15-4428-9237-2092" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Murderous Strike (5+)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="e888-bbb6-ff33-42a1" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="7443-e0e8-92c8-b162" name="Storm&apos;s Voice" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1bb-4519-6647-98bf" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2a3-601b-74b6-759a" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="d124-c5ce-2671-9617" name="Storm&apos;s Voice" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 2, Rending (5+), Deflagrate, Concussive (1), Master-crafted</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="d444-0ff9-a449-37eb" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Rending (5+)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="ce76-6c3f-9305-b8e2" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
-            <infoLink id="5196-47fc-1eb6-938e" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Concussive (1)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="0695-ab74-5742-bb45" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="e074-0347-f0b3-b329" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
@@ -1017,12 +1010,13 @@ May join units that include models with the Cavalry Unit Type despite the usual 
             </profile>
           </profiles>
         </entryLink>
-        <entryLink id="f70b-e7c5-fd24-f414" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+        <entryLink id="8974-17dc-667a-1dea" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d6b-17af-9330-3dc0" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efc1-de7e-b9e4-a12e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="266d-97dc-3b2a-37d6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02a2-dc0c-87db-afa6" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="768f-8d68-c068-d0af" name="Retinue" hidden="false" collective="false" import="true" targetId="2dd0-7045-8ae5-f394" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="440.0"/>
@@ -1075,7 +1069,7 @@ May join units that include models with the Cavalry Unit Type despite the usual 
             <categoryLink id="3df5-3e2a-1236-5e80" name="Skirmish Sub-type:" hidden="false" targetId="59a4-7b61-600a-c457" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="c141-ae35-dee5-390a" name="The Falcon&apos;s Claw Champion may take:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="c141-ae35-dee5-390a" name="May take:" hidden="false" collective="false" import="true">
               <entryLinks>
                 <entryLink id="123c-fd8c-5613-bcfc" name="Cyber Hawk" hidden="false" collective="false" import="true" targetId="2284-3de0-0f73-a311" type="selectionEntry">
                   <costs>
@@ -1084,7 +1078,7 @@ May join units that include models with the Cavalry Unit Type despite the usual 
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="843b-15a2-0997-a73d" name="The Falcon&apos;s Claw champion may exchange one of his Lightning Claws for:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="843b-15a2-0997-a73d" name="May exchange one of his Lightning Claws for:" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5763-2112-4573-3d23" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af30-742e-3753-8153" type="min"/>
@@ -1171,7 +1165,7 @@ May join units that include models with the Cavalry Unit Type despite the usual 
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="8f99-5ed0-a80f-403a" name="1) Falcon&apos;s Claws may take:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="8f99-5ed0-a80f-403a" name="1) Falcon&apos;s Claws may take:" hidden="false" collective="false" import="true" defaultSelectionEntryId="6d16-1236-9296-31d1">
           <modifiers>
             <modifier type="increment" field="6b8a-1092-b1f4-c390" value="1.0">
               <repeats>
@@ -1183,10 +1177,11 @@ May join units that include models with the Cavalry Unit Type despite the usual 
                 <repeat field="selections" scope="c598-7fda-13d0-7523" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="edca-ef5b-9fd1-172d" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="decrement" field="6b8a-1092-b1f4-c390" value="4.0"/>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdb8-54c5-2c0b-125b" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b8a-1092-b1f4-c390" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b8a-1092-b1f4-c390" type="min"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="6d16-1236-9296-31d1" name="Power weapon and Bolt Pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -1197,7 +1192,12 @@ May join units that include models with the Cavalry Unit Type despite the usual 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca4d-e9a0-78ae-c08e" type="min"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="580f-79a7-b4ab-a4ca" name="Power Weapon (Basic)" hidden="false" collective="true" import="true" targetId="bd1f-b4a4-3517-31e4" type="selectionEntryGroup"/>
+                <entryLink id="580f-79a7-b4ab-a4ca" name="Power Weapon (Basic)" hidden="false" collective="true" import="true" targetId="bd1f-b4a4-3517-31e4" type="selectionEntryGroup">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cd9-5970-0076-fdba" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="646b-9c54-24c2-99c4" type="min"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -1259,127 +1259,131 @@ May join units that include models with the Cavalry Unit Type despite the usual 
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="47d7-b819-de9e-4e8d" type="max"/>
       </constraints>
-      <profiles>
-        <profile id="a7c6-1a91-a0be-6348" name="Tsolmon Khan" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
-            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8*</characteristic>
-            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
-            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
-            <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
-            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
-            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
-            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
-            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="28ab-be92-e778-42e5" name="Ally of the Silent Order" hidden="false">
-          <description>A Detachment that includes Tsolmon Khan may include a single Knight Centura as a non-Compulsory HQ choice without taking up a Force Organisation slot (see  Liber Imperium). A Raptora Cadre may be taken as a Retinue for a Knight Centura included in this way (see Liber Imperium). Sisters of Silence included in an army with Tsolmon Khan are treated as Sworn Brothers.</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink id="9de1-18e3-0692-bf00" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
-        <infoLink id="1811-0e85-0f25-36aa" name="Loyalist" hidden="false" targetId="d1de-a45d-2b9b-c878" type="rule"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="da88-4753-9e78-e31b" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
         <categoryLink id="b56a-2bc6-bbaa-251a" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="de86-0cdf-6221-8532" name="Tians&apos;han" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfa9-e93e-36a9-2daf" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b325-e34b-3f56-0d01" type="min"/>
-          </constraints>
+        <selectionEntry id="0d2a-fe4a-bcff-3a24" name="Tsolmon Khan" hidden="false" collective="false" import="true" type="model">
           <profiles>
-            <profile id="ecc4-11ab-805b-2987" name="Tians&apos;han" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+            <profile id="4c5b-3a2b-5316-202a" name="Tsolmon Khan" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Brutal (2), Specialist Weapon, Reapon Blow (1), Hammerhand</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="ba93-aa3b-df85-4078" name="Hammerhand" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (3)</characteristic>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8*</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <rules>
-            <rule id="7adf-6adc-b29d-3ee5" name="Hammerhand" hidden="false">
-              <description>During any Fight sub-phase, Tsolmon Khan’s controlling player may choose to have
-Tsolmon Khan make a single attack at Initiative Step 10 with the profile below instead of attacking
-normally (while using this option Tsolmon Khan may not gain bonus attacks for Charging, additional
-weapons or from any other special rule):</description>
+            <rule id="a2a5-b7a9-f23c-4c21" name="Ally of the Silent Order" hidden="false">
+              <description>A Detachment that includes Tsolmon Khan may include a single Knight Centura as a non-Compulsory HQ choice without taking up a Force Organisation slot (see  Liber Imperium). A Raptora Cadre may be taken as a Retinue for a Knight Centura included in this way (see Liber Imperium). Sisters of Silence included in an army with Tsolmon Khan are treated as Sworn Brothers.</description>
             </rule>
           </rules>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="1437-013a-2add-46e0" name="May take a Scimitar jetbike" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd5c-7450-5625-4db2" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="bdd3-da6e-42cb-fee7" name="Scimitar Jetbike" hidden="false" collective="false" import="true" targetId="6fb4-adf6-dbe8-86af" type="selectionEntry">
+          <infoLinks>
+            <infoLink id="2a1e-bc49-8b16-b376" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+            <infoLink id="4d30-22f7-cfec-691e" name="Legiones Astartes (White Scars) " hidden="false" targetId="4b54-8bd0-9fdd-cbc4" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="6e50-be26-b65f-055c" name="Tians&apos;han" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f224-5757-fd46-0db3" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c98e-bfa2-dd94-9c5f" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="b4a7-3d98-5028-e409" name="Tians&apos;han" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Brutal (2), Specialist Weapon, Reapon Blow (1), Hammerhand</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="2ca7-5244-71fe-74dd" name="Hammerhand" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (3)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="f1fb-873d-b816-682a" name="Hammerhand" hidden="false">
+                  <description>During any Fight sub-phase, Tsolmon Khan’s controlling player may choose to have
+Tsolmon Khan make a single attack at Initiative Step 10 with this profile instead of attacking normally (while using this option Tsolmon Khan may not gain bonus attacks for Charging, additional weapons or from any other special rule).</description>
+                </rule>
+              </rules>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="6d67-376c-ce00-b0b6" name="May take a Scimitar jetbike" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a483-b271-ba61-0b17" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="7b18-f33e-9a36-897a" name="Scimitar Jetbike" hidden="false" collective="false" import="true" targetId="6fb4-adf6-dbe8-86af" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="be55-5300-f667-154c" name="Iron Halo" hidden="false" collective="false" import="true" targetId="b081-bf3c-f43d-4bd5" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f71a-de5e-2c7c-a230" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c2a-b298-bbdc-3d58" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="ce8f-6ac5-0e0f-5c37" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d20-c12a-e4b7-2fe6" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a57-e7a4-f8a6-a13f" type="min"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
               </costs>
             </entryLink>
+            <entryLink id="ab77-f4b1-f166-f28a" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab15-704e-4465-649c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a05-685d-8937-9216" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="264a-aae1-e0ec-9d64" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e19-3dea-b665-4ce5" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7eae-d126-ab7d-ab1a" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="bb86-bc0c-cbfb-f6bb" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b44b-c314-904f-9ecf" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3520-8766-4f39-64de" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="4fbe-344e-329b-326b" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="0d1c-227e-a3f8-cd63" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2a9-cd8d-d9b0-91ec" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8b8-df11-8d63-5e25" type="max"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
-        <entryLink id="3c69-9024-fac8-59dd" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f66b-c7fd-a083-e27f" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b61-d24a-3c10-f66e" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="8284-8a75-b8a8-ed52" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3c2-3bc3-0191-54fd" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52a3-eb7b-34da-c804" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="a763-eb8a-82e5-7702" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdf4-53c8-e227-26d4" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="743c-d7f5-bc92-ad88" type="min"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="9f9a-37ef-5786-f99c" name="Iron Halo" hidden="false" collective="false" import="true" targetId="b081-bf3c-f43d-4bd5" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d554-13ec-f111-f985" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a5f-0ac1-5852-1672" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="5a79-c4e9-f1c6-a5ea" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="0d1c-227e-a3f8-cd63" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fd3-bede-1aee-eb12" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c2f-ec84-1195-35f2" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="1464-8734-b513-b619" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abfe-366b-2b4f-d333" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51be-1cff-fe64-fa69" type="min"/>
-          </constraints>
-        </entryLink>
         <entryLink id="82ac-f927-2506-a3e8" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry"/>
         <entryLink id="77e5-f3ff-9d6e-f063" name="Retinue" hidden="false" collective="false" import="true" targetId="2dd0-7045-8ae5-f394" type="selectionEntryGroup"/>
       </entryLinks>
@@ -1392,7 +1396,7 @@ weapons or from any other special rule):</description>
         <rule id="7d33-191d-454e-acca" name="Shadow of Death" hidden="false">
           <description>A unit that includes any models with this special rule may only be joined by a Legion Centurion with the Legiones Consularis: Stormseer upgrade or a Legion Centurion with the Legiones Consularis: Moritat upgrade. Note that Legion Techmarines and Legion Apothecaries may not be assigned to a unit with this special rule unless they also have this special rule.</description>
         </rule>
-        <rule id="33f0-02c4-2542-63e2" name="Stormseer&apos;s Conclave" hidden="false">
+        <rule id="33f0-02c4-2542-63e2" name="Stormseer&apos;s Conclave" hidden="true">
           <description>A Dark Sons of Death Squad may be selected as a Retinue Squad in a Detachment that includes a Legion Centurion with the Legiones Consularis: Stormseer upgrade and the Legiones Astartes (White Scars) special rules, instead of as an Elites choice. A unit selected as a ‘Retinue Squad’ must have one Legion Centurion with the Legiones Consularis: Stormseer upgrade and the Legiones Astartes (White Scars) special rules from the same Detachment selected by the controlling player as the Dark Sons of Death Squad’s Leader for the purposes of this special rule. A Dark Sons of Death Squad selected as a Retinue Squad does not use up a Force Organisation slot and is considered part of the same unit as the model selected as its Leader. A Dark Sons of Death Squad selected as a Retinue Squad must be deployed with the model selected as its Leader deployed as part of the unit and the Leader may not voluntarily leave the Retinue Squad during play.</description>
         </rule>
         <rule id="089b-4708-a5a0-4d1b" name="Invocation of Razing Tempest" hidden="false">
@@ -1546,7 +1550,7 @@ weapons or from any other special rule):</description>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="02be-b3a5-0ff9-af62" name="1) Dark Son melee weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="ea60-23ed-528f-287f">
+        <selectionEntryGroup id="02be-b3a5-0ff9-af62" name="1) Dark Son Melee weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="ea60-23ed-528f-287f">
           <modifiers>
             <modifier type="increment" field="33c3-0919-d541-0af5" value="1.0">
               <repeats>
@@ -1588,7 +1592,7 @@ weapons or from any other special rule):</description>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="eedc-a1a0-7d24-1e83" name="2) For every 5 models one Dark Son may exchange their bolt pistol for:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="eedc-a1a0-7d24-1e83" name="2) For every 5 models, one Dark Son may exchange their bolt pistol for:" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="increment" field="7686-9f80-8adc-46e9" value="1.0">
               <repeats>
@@ -1604,7 +1608,7 @@ weapons or from any other special rule):</description>
             <entryLink id="9fce-c27d-c58b-872c" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="e337-adf4-a11f-0280" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="4d53-c834-d7e3-9c8e" name="3) For every 5 models in the unit, One Dark Son may take:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="4d53-c834-d7e3-9c8e" name="3) For every 5 models, One Dark Son may take:" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="increment" field="c8f0-b9d7-6634-d36d" value="1.0">
               <repeats>

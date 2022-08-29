@@ -29707,6 +29707,13 @@ containing the model that failed its Check. If the Psyker survives Perils of the
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="a306-fd54-024d-60f9" name="Master of the Keshig" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="0e4f-ac87-3aac-751e" name="Master of the Keshig" hidden="false">
+          <description>If Qin Xa is selected as the Leader of a Legion Tartaros Command Squad, any model in that Tartaros Command Squad may replace its power weapon with a power glaive for +5 points each.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="61a2-7005-1e6c-c08e" name="Hexagrammaton Choice:" hidden="true" collective="false" import="true">
@@ -30667,8 +30674,8 @@ A Legion Primus Nullificator Consul gains the Psyker Sub-type and has only the P
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11f1-8f5a-4058-99ab" type="instanceOf"/>
                         <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="58d0-a0fd-d20b-cb1b" type="instanceOf"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a306-fd54-024d-60f9" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                     <conditionGroup type="and">
