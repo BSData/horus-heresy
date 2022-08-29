@@ -436,7 +436,6 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry id="11f1-8f5a-4058-99ab" name="Qin Za&apos;s Retinue" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">

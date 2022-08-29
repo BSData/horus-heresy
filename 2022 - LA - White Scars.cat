@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="caa9-c50e-8eed-2259" name="LA -   V: White Scars" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="caa9-c50e-8eed-2259" name="LA -   V: White Scars" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="a738-6a11-dfe7-286c" name="   V: White Scars" hidden="false" collective="false" import="false" targetId="e01e-5cdd-e512-8353" type="selectionEntry">
       <constraints>
@@ -651,6 +651,10 @@
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="206b-bdce-668d-8411" name="Qin Xa" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5c64-e058-60ec-a2f9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="23dd-96f8-f041-681a" type="min"/>
+          </constraints>
           <profiles>
             <profile id="1f58-6fa0-8344-6080" name="Qin Xa" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <characteristics>
@@ -747,6 +751,9 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -769,6 +776,12 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9385-f3ab-570f-a819" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="f167-3346-f0e4-c5d4" name="Master of the Keshig" hidden="false" collective="false" import="true" targetId="a306-fd54-024d-60f9" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2bc6-f804-2149-2ed1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6fe6-701e-3c28-470e" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="220.0"/>
@@ -778,26 +791,15 @@
       <modifiers>
         <modifier type="add" field="category" value="6d79-a3e4-381f-7b0f">
           <conditions>
-            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c7dc-206c-3e60-80fa" type="equalTo"/>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f1e4-7799-685b-0c23" type="equalTo"/>
           </conditions>
         </modifier>
         <modifier type="add" field="category" value="8b4f-bfe2-ce7b-f1b1">
           <conditions>
-            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c7dc-206c-3e60-80fa" type="equalTo"/>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f1e4-7799-685b-0c23" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <rules>
-        <rule id="8644-13e3-c1f1-af83" name="Lightning From Blue Skies" hidden="false">
-          <description>When held in Reserve, do not roll for Jaghatai Khan or any unit he is considered to be part of while in Reserve. Instead, at the beginning of any of the controlling player&apos;s turns except the first, Jaghatai Khan and any unit he has joined may be brought into play from Reserves without making a Reserves Roll. If Jaghatai Khan is part of a Flanking Assault then this rule applies to all units that are part of that Flanking Assault - but does not apply to a Deep Strike Assault, Drop Pod Assault, or Subterranean Assault that includes Jaghatai Khan. </description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink id="59ae-ca4c-7c53-1b0c" name="Hit &amp; Run" hidden="false" targetId="5986-e960-d432-affd" type="rule"/>
-        <infoLink id="9c3c-8ecd-dd6f-ba76" name="Crusader" hidden="false" targetId="c705-0829-75f6-a785" type="rule"/>
-        <infoLink id="58f2-5045-cc30-ed29" name="Pathfinder" hidden="false" targetId="ec97-7aa8-49f5-b298" type="rule"/>
-        <infoLink id="cd8f-b416-5f62-c6e1" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="4a08-e7f1-f263-1e3d" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="3ab5-6177-9c3f-8d9f" name="Independant Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
@@ -814,17 +816,17 @@
               <modifiers>
                 <modifier type="set" field="893e-2d76-8f04-44e5" value="18">
                   <conditions>
-                    <condition field="selections" scope="4b3a-8550-a3aa-1b91" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c7dc-206c-3e60-80fa" type="greaterThan"/>
+                    <condition field="selections" scope="4b3a-8550-a3aa-1b91" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f1e4-7799-685b-0c23" type="greaterThan"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" field="57ee-1126-32a9-5672" value="7">
                   <conditions>
-                    <condition field="selections" scope="4b3a-8550-a3aa-1b91" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c7dc-206c-3e60-80fa" type="greaterThan"/>
+                    <condition field="selections" scope="4b3a-8550-a3aa-1b91" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f1e4-7799-685b-0c23" type="greaterThan"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Primarch (Unique, Antigrav)">
                   <conditions>
-                    <condition field="selections" scope="4b3a-8550-a3aa-1b91" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c7dc-206c-3e60-80fa" type="greaterThan"/>
+                    <condition field="selections" scope="4b3a-8550-a3aa-1b91" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f1e4-7799-685b-0c23" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -843,6 +845,17 @@
               </characteristics>
             </profile>
           </profiles>
+          <rules>
+            <rule id="6f4f-e9bb-992e-f94b" name="Lightning From Blue Skies" hidden="false">
+              <description>When held in Reserve, do not roll for Jaghatai Khan or any unit he is considered to be part of while in Reserve. Instead, at the beginning of any of the controlling player&apos;s turns except the first, Jaghatai Khan and any unit he has joined may be brought into play from Reserves without making a Reserves Roll. If Jaghatai Khan is part of a Flanking Assault then this rule applies to all units that are part of that Flanking Assault - but does not apply to a Deep Strike Assault, Drop Pod Assault, or Subterranean Assault that includes Jaghatai Khan. </description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="a8dc-6571-ceea-2aad" name="Crusader" hidden="false" targetId="c705-0829-75f6-a785" type="rule"/>
+            <infoLink id="ff7c-57b8-8b75-7ee1" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
+            <infoLink id="7bde-e3f6-b3fa-d653" name="Hit &amp; Run" hidden="false" targetId="5986-e960-d432-affd" type="rule"/>
+            <infoLink id="4dd1-8415-c195-d10b" name="Pathfinder" hidden="false" targetId="ec97-7aa8-49f5-b298" type="rule"/>
+          </infoLinks>
           <selectionEntries>
             <selectionEntry id="739d-d366-7344-bd3a" name="Storm&apos;s Voice" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -946,52 +959,42 @@
         <selectionEntry id="f1e4-7799-685b-0c23" name="Sojutsu Pattern Voidbike" publicationId="817a-6288-e016-7469" page="183" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac73-803c-ccbf-4767" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2eff-f1c6-23d9-7039" type="min"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="c7dc-206c-3e60-80fa" name="Sojutsu Pattern Voidbike" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b3e-0396-071a-d8ce" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ebe-3d20-d9bf-88aa" type="min"/>
-              </constraints>
-              <rules>
-                <rule id="0be0-c809-3e96-c45e" name="Sojutsu Pattern Voidbike" hidden="false">
-                  <description>Falls Back 3D6&quot; instead of 2D6&quot;
+          <rules>
+            <rule id="6e15-5cbf-f46c-2ac0" name="Sojutsu Pattern Voidbike" hidden="false">
+              <description>Falls Back 3D6&quot; instead of 2D6&quot;
 
 May join units that include models with the Cavalry Unit Type despite the usual restrictions, and any rules that target the Cavalry Unit Type are considered to affect Jaghatai Khan as if he had that type. </description>
-                </rule>
-              </rules>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="43d5-4859-91b6-9026" name="Antigrav Sub-type" hidden="false" targetId="e1d7-0fe8-59f4-af89" type="rule"/>
+            <infoLink id="a7b6-576e-a227-84d4" name="Firing Protocols (X)" hidden="false" targetId="32a3-f599-5c92-2945" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Firing Protocols (3)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="d8f0-118d-2cc9-9946" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Hammer of Wrarth (2)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <entryLinks>
+            <entryLink id="b6b9-f060-71f5-4f0a" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value=" - Master-crafted"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0f6-5ad7-9b11-ff27" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64d7-4c38-ddfc-e997" type="min"/>
+              </constraints>
               <infoLinks>
-                <infoLink id="2d70-5425-ce07-fd73" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Hammer of Wrarth (2)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="f87b-2f15-6f73-6035" name="Firing Protocols (X)" hidden="false" targetId="32a3-f599-5c92-2945" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Firing Protocols (3)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="6691-3f63-bc11-2c74" name="Antigrav Sub-type" hidden="false" targetId="e1d7-0fe8-59f4-af89" type="rule"/>
+                <infoLink id="c27e-e50c-2b01-d927" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
               </infoLinks>
-              <entryLinks>
-                <entryLink id="c870-1572-4830-df97" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="append" field="name" value=" - Master-crafted"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfd6-1bb4-a207-2433" type="max"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c83-c58a-c112-4747" type="min"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="754b-90d5-a094-9e72" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
-                  </infoLinks>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
           </costs>
@@ -1265,6 +1268,10 @@ May join units that include models with the Cavalry Unit Type despite the usual 
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="0d2a-fe4a-bcff-3a24" name="Tsolmon Khan" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="55c4-1260-6503-f6f8" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="05cd-0944-4775-4b15" type="min"/>
+          </constraints>
           <profiles>
             <profile id="4c5b-3a2b-5316-202a" name="Tsolmon Khan" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <characteristics>
@@ -1381,10 +1388,18 @@ Tsolmon Khan make a single attack at Initiative Step 10 with this profile instea
               </constraints>
             </entryLink>
           </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="82ac-f927-2506-a3e8" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry"/>
+        <entryLink id="82ac-f927-2506-a3e8" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c0ac-e9cc-6013-a5c1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d37e-2a3a-b7b9-951f" type="max"/>
+          </constraints>
+        </entryLink>
         <entryLink id="77e5-f3ff-9d6e-f063" name="Retinue" hidden="false" collective="false" import="true" targetId="2dd0-7045-8ae5-f394" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="35" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="36" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="7002-2f9a-59c4-2742" name="Prosperine Arcana">
       <characteristicTypes>
@@ -15248,7 +15248,19 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="1e0b-a053-83e4-c987" name="Upgrade Points (Placeholders)" hidden="false" collective="false" import="true" targetId="8b48-2da0-15da-2c1b" type="selectionEntry"/>
+        <entryLink id="2642-efe9-6d1d-03a9" name="Qin Xa Retinue (unlocks Power Glaives)" hidden="true" collective="false" import="true" targetId="d1dd-6d81-beca-a794" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a306-fd54-024d-60f9" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0009-a223-126a-4219" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7482-9c0b-f8fc-e255" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50.0"/>
@@ -29713,7 +29725,11 @@ containing the model that failed its Check. If the Psyker survives Perils of the
           <description>If Qin Xa is selected as the Leader of a Legion Tartaros Command Squad, any model in that Tartaros Command Squad may replace its power weapon with a power glaive for +5 points each.</description>
         </rule>
       </rules>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
+    <selectionEntry id="d1dd-6d81-beca-a794" name="Qin Xa Retinue (unlocks Power Glaives)" hidden="false" collective="false" import="true" type="upgrade"/>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="61a2-7005-1e6c-c08e" name="Hexagrammaton Choice:" hidden="true" collective="false" import="true">
@@ -30675,7 +30691,7 @@ A Legion Primus Nullificator Consul gains the Psyker Sub-type and has only the P
                     <conditionGroup type="and">
                       <conditions>
                         <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="58d0-a0fd-d20b-cb1b" type="instanceOf"/>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a306-fd54-024d-60f9" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1dd-6d81-beca-a794" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                     <conditionGroup type="and">
