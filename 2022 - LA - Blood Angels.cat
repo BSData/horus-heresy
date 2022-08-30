@@ -767,7 +767,7 @@
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="2c54-82c1-c1e4-3aee" name="Sanguinius" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2c54-82c1-c1e4-3aee" name="Sanguinius" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="3679-27a6-38ce-1715" name="Sanguinius" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
@@ -889,7 +889,7 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="485.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8dba-83cd-4922-bc63" name="Judicar Aster Crohne" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8dba-83cd-4922-bc63" name="Judicar Aster Crohne" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="3016-8dba-083b-e98b" name="Judicar Aster Crohne" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
@@ -915,6 +915,11 @@
         </infoLink>
         <infoLink id="b5fb-e24a-7e45-3cb7" name="Loyalist" hidden="false" targetId="d1de-a45d-2b9b-c878" type="rule"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9443-2cc4-be17-c3d0" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="e910-b4f4-561a-a680" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink id="8d3c-13bd-b351-0939" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="6d52-9172-1a5d-5406" name="Saiphan shard-axe" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -988,7 +993,7 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="155.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="33fe-9683-bde5-95ca" name="Crimson Paladins" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="33fe-9683-bde5-95ca" name="Crimson Paladins" hidden="false" collective="false" import="true" type="unit">
       <rules>
         <rule id="e7b7-06df-ae02-5617" name="The Blood is Forever" hidden="false"/>
       </rules>
@@ -1005,6 +1010,8 @@
       <categoryLinks>
         <categoryLink id="21ac-518e-b688-7692" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="5bf7-7060-f4e9-3862" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+        <categoryLink id="4987-c258-3ee9-7079" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="38d1-09b6-7e6d-9833" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="c757-a32a-2351-be7e" name="Crimson Exemplar" hidden="false" collective="false" import="true" type="model">
@@ -1029,6 +1036,11 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="f69b-2b54-8d15-5c73" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+            <categoryLink id="c012-908d-abb8-1f88" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+            <categoryLink id="310b-bcb8-52f5-55e7" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+          </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="59c2-658e-99fa-9d85" name="Arms" hidden="false" collective="false" import="true" defaultSelectionEntryId="42c3-773b-4122-7898">
               <constraints>
@@ -1281,12 +1293,26 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="985f-7ba1-f985-3cad" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="dd78-9833-19ee-827d" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="33fe-9683-bde5-95ca" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="7b04-16aa-d202-342c" name="Land Raider Spartan" hidden="false" collective="false" import="true" targetId="bac1-f30e-2c04-d27d" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="090c-5656-0180-16c8" name="Contemptor-Incaendius Dreadnought" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="090c-5656-0180-16c8" name="Contemptor-Incaendius Dreadnought" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="63a2-999d-1d56-c98b" name="Contemptor-Incaendius Dreadnought" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
@@ -1300,6 +1326,11 @@
       <infoLinks>
         <infoLink id="9387-662d-f57c-6b3b" name="Legiones Astartes (Blood Angels) " hidden="false" targetId="b0d1-ccab-8708-500f" type="rule"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="22af-8bdb-ac49-af08" name="Dreadnought Unit-type:" hidden="false" targetId="4280-4963-02b5-e31d" primary="false"/>
+        <categoryLink id="8f2a-d33d-1b36-8cb0" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink id="54cd-45a1-895c-e9a0" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="862e-307d-4c73-4992" name="Incaedius booster pack" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -1367,7 +1398,7 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="59f7-9abf-c171-e9e4" name="Chapter Master Raldoron" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="59f7-9abf-c171-e9e4" name="Chapter Master Raldoron" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="848e-4fab-588a-b8f0" name="Chapter Master Raldoron" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
@@ -1828,7 +1859,7 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="180.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="98d4-555a-6911-7c1a" name="Dominion Zephon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="98d4-555a-6911-7c1a" name="Dominion Zephon" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="5956-601d-0c41-91a3" name="Dominion Zephon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
@@ -1988,6 +2019,8 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
       <categoryLinks>
         <categoryLink id="54b5-51ed-7e8b-f3fb" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="42e7-a248-5756-01f9" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink id="feb6-58bf-657f-310e" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+        <categoryLink id="7bd8-4f22-3143-1abc" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="8b62-d772-1eac-44bc" name="Arch-Erelim" hidden="false" collective="false" import="true" type="model">
@@ -2013,9 +2046,9 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
             </profile>
           </profiles>
           <categoryLinks>
-            <categoryLink id="baea-f587-8cbb-62fd" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="false"/>
             <categoryLink id="c36e-bb39-8df0-74e2" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
             <categoryLink id="b4d7-4ed5-a971-32a5" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+            <categoryLink id="191b-abdd-c10c-0657" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="cc0f-26fa-472e-ae51" name="The Arch-Erelim may exchange their chainsword for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="01b2-db36-8e0b-cd59">
@@ -2348,6 +2381,7 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
       <categoryLinks>
         <categoryLink id="ea81-014b-635d-47bb" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="8925-58cb-6e34-0c0c" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink id="fe06-2eba-9dca-6733" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="e958-de95-0a5b-de1f" name="Dawnbreaker Champion" hidden="false" collective="false" import="true" type="model">
@@ -2372,6 +2406,10 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="7e67-d421-30d9-0127" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+            <categoryLink id="6b93-ada7-2d5d-09a7" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+          </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="2683-ff01-5aff-0bf9" name="May replace Falling-star Pattern Spear with:" hidden="false" collective="false" import="true" defaultSelectionEntryId="8973-aea3-2fcf-5ac6">
               <constraints>
