@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="10" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="16" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="1900-3f09-f47b-bed2" name="Praetor" hidden="false" collective="false" import="false" targetId="03be-5d55-d05a-771d" type="selectionEntry">
       <infoLinks>
@@ -851,21 +851,29 @@
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6322-1568-a1e6-0fa4" name="Sire of the Blood Angels" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="6322-1568-a1e6-0fa4" name="Sire of the Blood Angels" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="30ef-4cec-c31a-8f74" value="1.0">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="lessThan"/>
+                <condition field="selections" scope="2c54-82c1-c1e4-3aee" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="2c54-82c1-c1e4-3aee" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30ef-4cec-c31a-8f74" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30ef-4cec-c31a-8f74" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55b7-7c79-4c3c-d435" type="max"/>
           </constraints>
           <rules>
             <rule id="6f4f-d437-6c7f-ab60" name="Warlord: Sire of the Blood Angels" hidden="false"/>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -966,11 +974,11 @@
           </constraints>
         </entryLink>
         <entryLink id="3e3a-4ef3-210b-f38e" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
-        <entryLink id="2bf0-4ea7-a358-b83c" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="4f09-6be3-276d-2756" type="selectionEntryGroup">
+        <entryLink id="2bf0-4ea7-a358-b83c" name="Warlord Traits" hidden="true" collective="false" import="true" targetId="4f09-6be3-276d-2756" type="selectionEntryGroup">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="lessThan"/>
+                <condition field="selections" scope="8dba-83cd-4922-bc63" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1022,7 +1030,7 @@
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="59c2-658e-99fa-9d85" name="Arms" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="59c2-658e-99fa-9d85" name="Arms" hidden="false" collective="false" import="true" defaultSelectionEntryId="42c3-773b-4122-7898">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0dc7-b49f-9533-052d" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23b8-551c-6580-c51c" type="min"/>
@@ -1032,13 +1040,26 @@
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e66-0d35-40ec-069c" type="max"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink id="83eb-213b-da8f-eb1a" name="CP PW" hidden="false" collective="false" import="true" targetId="9615-d8cc-0e11-c629" type="selectionEntryGroup">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="7c11-669e-fd86-8725" name="CP PW" hidden="false" collective="false" import="true" defaultSelectionEntryId="778f-99e9-1c85-9383">
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a871-3bcc-5dd4-1b3f" type="min"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7dfb-79b3-519d-aa57" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc4c-b274-28e0-ec97" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79f2-bc1a-e348-6ab8" type="max"/>
                       </constraints>
-                    </entryLink>
+                      <entryLinks>
+                        <entryLink id="67d2-0557-df7e-d990" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
+                        <entryLink id="fb09-4921-6c02-11ba" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry"/>
+                        <entryLink id="419a-45ef-fee4-81ea" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
+                        <entryLink id="778f-99e9-1c85-9383" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry"/>
+                        <entryLink id="1223-8176-a9f1-34d6" name="Sunset blade" hidden="false" collective="false" import="true" targetId="2fd3-e09f-173f-6b0a" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3b5-eed9-0a44-06f7" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <entryLinks>
                     <entryLink id="b2c8-f3e1-2498-0549" name="Coriolis Pattern Power Shield" hidden="false" collective="false" import="true" targetId="298b-c5d8-2fb0-9dd4" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a16e-40b2-2667-6dca" type="max"/>
@@ -1100,14 +1121,53 @@
             </profile>
           </profiles>
           <selectionEntries>
-            <selectionEntry id="f434-9ec3-7876-6fea" name="Paladin w/ PW &amp; Shield" hidden="false" collective="false" import="true" type="model">
-              <entryLinks>
-                <entryLink id="1ef0-badb-7c9a-e2ae" name="CP PW" hidden="false" collective="false" import="true" targetId="9615-d8cc-0e11-c629" type="selectionEntryGroup">
+            <selectionEntry id="f434-9ec3-7876-6fea" name="Paladin" hidden="false" collective="false" import="true" type="model">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="748e-36f2-eab1-9c5e" name="CP PW" hidden="false" collective="false" import="true" defaultSelectionEntryId="5d4c-1509-e8aa-71af">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b723-4e2b-e998-9292" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a4b-591b-49be-5089" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b820-866a-9fdf-e90b" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a3a-718f-ca93-fcfc" type="max"/>
                   </constraints>
-                </entryLink>
+                  <entryLinks>
+                    <entryLink id="27d7-49a7-b891-cc82" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry"/>
+                    <entryLink id="88ca-bca0-319b-6d89" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
+                    <entryLink id="5d4c-1509-e8aa-71af" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry"/>
+                    <entryLink id="ed57-8a84-78ae-ee1d" name="Sunset blade" hidden="false" collective="false" import="true" targetId="2fd3-e09f-173f-6b0a" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8ea-5d3b-a943-15f2" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="e486-5f2e-6e1b-308b" name="Chainfist" hidden="false" collective="false" import="true" targetId="7347-c5b1-5da3-a78f" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="decrement" field="04d4-d85b-a9b9-6052" value="1.0">
+                          <repeats>
+                            <repeat field="selections" scope="33fe-9683-bde5-95ca" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="3dc0-9787-5fda-f4a4" repeats="1" roundUp="false"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdc3-08c1-e44c-533f" type="max"/>
+                        <constraint field="selections" scope="33fe-9683-bde5-95ca" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="04d4-d85b-a9b9-6052" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="b42b-0298-2344-2ff3" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="decrement" field="92a5-1182-7671-4b33" value="1.0">
+                          <repeats>
+                            <repeat field="selections" scope="33fe-9683-bde5-95ca" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="3dc0-9787-5fda-f4a4" repeats="1" roundUp="false"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cc4-c2e2-d12b-7a41" type="max"/>
+                        <constraint field="selections" scope="33fe-9683-bde5-95ca" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="92a5-1182-7671-4b33" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="0d96-6e8c-b627-6ea1" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
                 <entryLink id="b2ca-8555-d96d-c427" name="Coriolis Pattern Power Shield" hidden="false" collective="false" import="true" targetId="298b-c5d8-2fb0-9dd4" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="325b-3d73-ef69-8b7d" type="min"/>
@@ -1161,12 +1221,25 @@
                         </entryLink>
                       </entryLinks>
                     </selectionEntryGroup>
+                    <selectionEntryGroup id="8cff-bb2f-635d-a54f" name="CP PW" hidden="false" collective="false" import="true" defaultSelectionEntryId="a5dc-fcae-750c-bd52">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1540-1322-d666-9996" type="max"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink id="ed7e-6a05-4873-b53a" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
+                        <entryLink id="ae4a-297c-ba7e-5022" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry"/>
+                        <entryLink id="3994-7183-e373-6266" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
+                        <entryLink id="a5dc-fcae-750c-bd52" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry"/>
+                        <entryLink id="3677-5c4b-9aa1-f42e" name="Sunset blade" hidden="false" collective="false" import="true" targetId="2fd3-e09f-173f-6b0a" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fc6-5067-3a18-ceca" type="max"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
                   </selectionEntryGroups>
-                  <entryLinks>
-                    <entryLink id="48c1-9994-884a-8f36" name="CP PW" hidden="false" collective="false" import="true" targetId="9615-d8cc-0e11-c629" type="selectionEntryGroup"/>
-                  </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup id="74f7-7b51-712b-6621" name="Ranged" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="74f7-7b51-712b-6621" name="Ranged" hidden="false" collective="false" import="true" defaultSelectionEntryId="65f0-b9f0-4c5d-cef1">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f91-c409-eae1-892c" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bc1-d8cf-7947-0fd7" type="min"/>
@@ -1201,56 +1274,6 @@
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="e15a-ff0d-c562-0a9c" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" targetId="7c9b-b9ab-9a40-8eb5" type="selectionEntry"/>
-              </entryLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="afff-46f0-0448-dd2f" name="Paladin w/ Fist &amp; Shield" hidden="false" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="decrement" field="48f5-b2f2-38cf-98c8" value="1.0">
-                  <repeats>
-                    <repeat field="selections" scope="33fe-9683-bde5-95ca" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc0-9787-5fda-f4a4" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48f5-b2f2-38cf-98c8" type="max"/>
-              </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="8217-b8b5-37e4-024d" name="Fists" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="808b-cdde-e263-a42b" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="409a-ba7c-e956-5fa8" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="4849-adba-22ff-2e21" name="Power Fist" hidden="false" collective="false" import="true" targetId="a3e1-d633-dff9-028b" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a55f-9376-bccf-15cf" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="3e00-ca5b-9bf7-bbde" name="Chainfist" hidden="false" collective="false" import="true" targetId="7347-c5b1-5da3-a78f" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b464-f9e8-31b6-0c1a" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="d922-8258-7ddd-8e2c" name="Coriolis Pattern Power Shield" hidden="false" collective="false" import="true" targetId="298b-c5d8-2fb0-9dd4" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="befd-49ca-4af0-ab60" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fadd-7f99-fb3f-dcd3" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="1282-50d5-ba11-c0f4" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" targetId="7c9b-b9ab-9a40-8eb5" type="selectionEntry"/>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40.0"/>
@@ -1393,17 +1416,22 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="8cd1-ce5d-fd30-0347" name=" Archein of Wisdom" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="8cd1-ce5d-fd30-0347" name=" Archein of Wisdom" hidden="true" collective="false" import="true">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="dc00-3563-f64e-a3c4" value="1.0">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="lessThan"/>
+                <condition field="selections" scope="59f7-9abf-c171-e9e4" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="59f7-9abf-c171-e9e4" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54a1-614c-6c8e-69be" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc00-3563-f64e-a3c4" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc00-3563-f64e-a3c4" type="min"/>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a81a-4fbe-1646-d06d" type="max"/>
           </constraints>
           <rules>
@@ -1475,6 +1503,9 @@ Characteristic when locked in combat with one or more enemy units that have the 
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="7a87-5709-57b3-9b50" name="Warden of Inwit" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -1488,6 +1519,9 @@ Characteristic when locked in combat with one or more enemy units that have the 
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -1508,6 +1542,9 @@ Characteristic when locked in combat with one or more enemy units that have the 
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="a534-a8a1-f736-f6ec" name="Heroes Never Die" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -1521,6 +1558,9 @@ Characteristic when locked in combat with one or more enemy units that have the 
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -1541,6 +1581,9 @@ Characteristic when locked in combat with one or more enemy units that have the 
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="d8f1-e4d3-b786-d969" name="Hunger of the Void" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -1554,6 +1597,9 @@ Characteristic when locked in combat with one or more enemy units that have the 
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="cecf-23a2-82dd-16f4" name="Crown Breaker" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -1568,6 +1614,9 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -1588,6 +1637,9 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="4d49-a202-7e5c-d2a3" name="The Aegis of Wisdom" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -1601,6 +1653,9 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -1621,6 +1676,9 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="15ab-63eb-8305-401b" name="Silver-iron Will" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -1634,6 +1692,9 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -1654,6 +1715,9 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="ccbd-0f31-cdc1-96dc" name="The Bane of Tyrants" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -1669,6 +1733,9 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -1689,6 +1756,9 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="2cbb-44a5-ee52-102d" name="Promethean Will" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -1702,6 +1772,9 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -1826,21 +1899,29 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6947-3fb9-ddb6-4b6c" name="Exarch of the High Host" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="6947-3fb9-ddb6-4b6c" name="Exarch of the High Host" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="lessThan"/>
+                <condition field="selections" scope="98d4-555a-6911-7c1a" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="3f65-fb85-96f7-32a0" value="1.0">
+              <conditions>
+                <condition field="selections" scope="98d4-555a-6911-7c1a" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f65-fb85-96f7-32a0" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f65-fb85-96f7-32a0" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13a8-cf0e-2fcf-8607" type="max"/>
           </constraints>
           <rules>
             <rule id="2028-d920-0def-33e3" name="Exarch of the High Host" hidden="false"/>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -2402,37 +2483,37 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
                 </profile>
               </profiles>
               <entryLinks>
-                <entryLink id="a159-5439-120e-cc0d" name="Equinox Power Blade Case" hidden="false" collective="true" import="true" targetId="c117-96cb-919f-f806" type="selectionEntry">
+                <entryLink id="a159-5439-120e-cc0d" name="Equinox Power Blade Case" hidden="false" collective="false" import="true" targetId="c117-96cb-919f-f806" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e44-452d-2161-8139" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61ec-4bdf-7aa9-bbda" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="2d2b-e338-2a44-4b6e" name="Artificer Armour" hidden="false" collective="true" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
+                <entryLink id="2d2b-e338-2a44-4b6e" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="9196-3af7-9545-e62b" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fcc-1e1f-6651-5304" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2553-9086-4a88-cf9a" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="7165-ae8a-21bd-5d64" name="Frag Grenades" hidden="false" collective="true" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+                <entryLink id="7165-ae8a-21bd-5d64" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="dba0-cd36-e29d-b865" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90d2-0fc0-61c4-68a1" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de2e-6d04-fc69-8751" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="592e-fa38-5790-ec20" name="Grenade Discharger" hidden="false" collective="true" import="true" targetId="5702-2ab3-66f0-dfc1" type="selectionEntry">
+                <entryLink id="592e-fa38-5790-ec20" name="Grenade Discharger" hidden="false" collective="false" import="true" targetId="0eba-48ae-95a0-81e5" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79bc-3402-6dcc-39d4" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca1e-bfcb-cfd2-f416" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="57a8-3230-c657-ab5d" name="Warhawk Jump Pack" hidden="false" collective="true" import="true" targetId="a298-8584-70ed-18ce" type="selectionEntry">
+                <entryLink id="57a8-3230-c657-ab5d" name="Warhawk Jump Pack" hidden="false" collective="false" import="true" targetId="5771-78ae-a47f-a6b7" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5874-0c8b-8560-88b7" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06ed-b40d-7eeb-394f" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="62f0-4d20-1404-f796" name="Krak Grenades" hidden="false" collective="true" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
+                <entryLink id="62f0-4d20-1404-f796" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="311a-5ecf-bce1-a513" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e08-8eaa-d615-4b41" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4397-2b58-109d-99ec" type="max"/>
@@ -2462,37 +2543,37 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
                 </profile>
               </profiles>
               <entryLinks>
-                <entryLink id="524d-3acc-b602-1126" name="Falling-Star Power Spear" hidden="false" collective="true" import="true" targetId="ffe1-7b85-01c8-b0c7" type="selectionEntry">
+                <entryLink id="524d-3acc-b602-1126" name="Falling-Star Power Spear" hidden="false" collective="false" import="true" targetId="ffe1-7b85-01c8-b0c7" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e547-cabe-0c44-a7e5" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="305c-5ad7-188b-7e11" type="min"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="d85a-2041-b84f-ddcc" name="Artificer Armour" hidden="false" collective="true" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
+                <entryLink id="d85a-2041-b84f-ddcc" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="9196-3af7-9545-e62b" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fed1-514b-c488-b332" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43e9-bf92-7d7e-60e1" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="5338-609f-e2bf-314d" name="Frag Grenades" hidden="false" collective="true" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+                <entryLink id="5338-609f-e2bf-314d" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="dba0-cd36-e29d-b865" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18a0-247e-3ac3-6c8d" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a6b-1cfa-847b-771e" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="fe1f-93a9-e005-5120" name="Grenade Discharger" hidden="false" collective="true" import="true" targetId="5702-2ab3-66f0-dfc1" type="selectionEntry">
+                <entryLink id="fe1f-93a9-e005-5120" name="Grenade Discharger" hidden="false" collective="false" import="true" targetId="0eba-48ae-95a0-81e5" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e817-8a36-20f8-95fc" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b96a-d4b6-bb0d-29c8" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="c792-8769-5173-8ea4" name="Warhawk Jump Pack" hidden="false" collective="true" import="true" targetId="a298-8584-70ed-18ce" type="selectionEntry">
+                <entryLink id="c792-8769-5173-8ea4" name="Warhawk Jump Pack" hidden="false" collective="false" import="true" targetId="5771-78ae-a47f-a6b7" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="227f-9502-b3b7-e416" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a669-250a-6e7e-7162" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="ac43-e578-b3c7-b2c4" name="Krak Grenades" hidden="false" collective="true" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
+                <entryLink id="ac43-e578-b3c7-b2c4" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="311a-5ecf-bce1-a513" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6331-03ef-6c10-c66c" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c65-9ccc-ccfa-6552" type="max"/>
@@ -2614,6 +2695,96 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="9196-3af7-9545-e62b" name="Artificer Armour" hidden="false" collective="true" import="true" type="upgrade">
+      <profiles>
+        <profile id="62a7-5842-033f-9ee1" name="Artificer Armour" publicationId="a716-c1c4-7b26-8424" page="140" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Artificer armour confers a 2+ Armour Save.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dba0-cd36-e29d-b865" name="Frag Grenades" hidden="false" collective="true" import="true" type="upgrade">
+      <profiles>
+        <profile id="e977-e9af-b8be-3fc1" name="Frag Grenades" publicationId="a716-c1c4-7b26-8424" page="143" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with frag grenades makes attacks at its normal Initiative Step during an Assault after it has successfully Charged through Difficult Terrain or Dangerous Terrain, but still suffers any penalties to Charge rolls imposed by Difficult Terrain or Dangerous Terrain when resolving a Charge through Difficult Terrain or Dangerous Terrain.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e097-f47a-bf27-b788" name="Grenades" hidden="false" targetId="6f5f-8f7c-d18b-cd42" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0eba-48ae-95a0-81e5" name="Grenade Discharger" hidden="false" collective="true" import="true" type="upgrade">
+      <profiles>
+        <profile id="a273-206f-0e23-5745" name="Grenade discharger - Frag bombs" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3, Pinning</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4e6c-aff2-c03f-ff46" name="Grenade discharger - Krak bombs" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="445f-37fe-5208-2146" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="311a-5ecf-bce1-a513" name="Krak Grenades" hidden="false" collective="true" import="true" type="upgrade">
+      <profiles>
+        <profile id="d57e-4de1-ada8-08b5" name="Krak Grenades" publicationId="a716-c1c4-7b26-8424" page="143" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The controlling player may choose to have a model with krak grenades that is Engaged or otherwise in base contact during the Assault phase with a Building or Fortification, or a model with the Vehicle, Dreadnought or Automata Unit Type, inflict one automatic Str 6, AP 3 Hit on the target in Initiative Step 1 instead of attacking normally. Any model in a unit that is chosen to inflict Hits using krak grenades may not otherwise attack or make use of any other special rule or item of Wargear that inflicts Hits or Wounds on a model in the same Assault phase (but may participate in Sweeping Advances as normal).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5d6f-9f40-5df0-fe0a" name="Grenades" hidden="false" targetId="6f5f-8f7c-d18b-cd42" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5771-78ae-a47f-a6b7" name="Warhawk Jump Pack" hidden="false" collective="true" import="true" type="upgrade">
+      <profiles>
+        <profile id="4e3e-1ba8-cf85-f679" name="Warhawk Jump Pack" publicationId="a716-c1c4-7b26-8424" page="145" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">At the start of the controlling player’s Movement phase, a model with a Legion Warhawk jump pack may set its Move Characteristic to a value of 12 for the duration of the controlling player’s turn (sometimes referred to as ‘activating’ the jump pack). This allows a model with a Warhawk jump pack to move up to 12&quot;, regardless of the Movement Characteristic shown on its profile and gain any other benefits of a Movement Characteristic of 12 (including the bonus to Charge distance). In addition, all models with a Warhawk jump pack that have been activated ignore terrain while Moving and Charging, but must take Dangerous Terrain tests as normal when beginning or ending their Movement in Dangerous Terrain. A model with an activated Legion Warhawk jump pack treats all Difficult Terrain as Dangerous Terrain and may move over both friendly and enemy models or units without penalty – but must end its Movement at least 1&quot; away from any model from another unit.
+
+A model with a Legion Warhawk jump pack may still Run if it would normally be able to Run (this does not allow units that include any models with the Heavy Sub-type to Run). When making a Run move for a model with an activated Legion Warhawk jump pack, add the Initiative Characteristic of that model to 12 to determine how far it may move – the model ignores terrain and models from other units while making a Run move with a Legion Warhawk jump pack as previously noted, but may not make Shooting Attacks or declare a Charge in the same turn in which it has Run as per the normal rules for Running.
+
+Any model with a Legion Warhawk jump pack also gains the Bulky (2), Hammer of Wrath (1) and Deep Strike special rules – if it already has the Bulky (2) special rule, it gains the Bulky (3) special rule instead.
+
+During a Reaction made in any Phase, a player may not choose to activate a model’s Legion Warhawk jump pack to gain any bonus to its Movement Characteristic.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="53bb-21e7-47cb-7fd3" name="Deep Strike:" hidden="false" targetId="0d4f-ff28-d819-a512" primary="false"/>
+        <categoryLink id="11bd-ec5c-3b48-15a2" name="Jump Infantry:" hidden="false" targetId="eee8-3c7c-2762-e33e" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="6307-ed53-0ac4-0212" name="Retinue" hidden="false" collective="false" import="true">
@@ -2633,23 +2804,6 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
           </modifiers>
         </entryLink>
         <entryLink id="39fb-8564-0b08-b456" name="Command Squad, Cataphractii" hidden="false" collective="false" import="true" targetId="1b17-dcd6-0153-3efe" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="9615-d8cc-0e11-c629" name="CP PW" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a252-f05d-a0f1-e8f1" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="e949-0e4e-5eef-8cd7" name="Power Weapon (Basic)" hidden="false" collective="false" import="true" targetId="bd1f-b4a4-3517-31e4" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="c4e0-9351-6028-69a1" value="0.0"/>
-          </modifiers>
-        </entryLink>
-        <entryLink id="539b-c71c-b966-2376" name="Sunset blade" hidden="false" collective="false" import="true" targetId="2fd3-e09f-173f-6b0a" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de0a-514e-c0aa-2d55" type="max"/>
-          </constraints>
-        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="4f09-6be3-276d-2756" name="Warlord Traits" hidden="false" collective="false" import="true">
