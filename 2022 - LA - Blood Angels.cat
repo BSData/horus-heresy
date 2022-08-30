@@ -781,7 +781,6 @@
       <rules>
         <rule id="384a-287a-50ae-ba39" name="Angelic Presence" hidden="false"/>
         <rule id="1703-b985-b67c-004c" name="Great Wings" hidden="false"/>
-        <rule id="bea6-62f8-b877-360f" name="Warlord: Sire of the Blood Angels" hidden="false"/>
       </rules>
       <infoLinks>
         <infoLink id="b1d6-f7af-626b-ae5f" name="Legiones Astartes (Blood Angels) " hidden="false" targetId="b0d1-ccab-8708-500f" type="rule"/>
@@ -851,6 +850,22 @@
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="6322-1568-a1e6-0fa4" name="Sire of the Blood Angels" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="lessThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30ef-4cec-c31a-8f74" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55b7-7c79-4c3c-d435" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="6f4f-d437-6c7f-ab60" name="Warlord: Sire of the Blood Angels" hidden="false"/>
+          </rules>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -951,6 +966,15 @@
           </constraints>
         </entryLink>
         <entryLink id="3e3a-4ef3-210b-f38e" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
+        <entryLink id="2bf0-4ea7-a358-b83c" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="4f09-6be3-276d-2756" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="lessThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="155.0"/>
@@ -1331,9 +1355,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="c867-bbd9-24a6-909f" name="Warlord: Archein of Wisdom" hidden="false"/>
-      </rules>
       <infoLinks>
         <infoLink id="287e-842f-fa00-9c37" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
         <infoLink id="9d73-b5f5-7d29-eba0" name="Legiones Astartes (Blood Angels) " hidden="false" targetId="b0d1-ccab-8708-500f" type="rule"/>
@@ -1371,6 +1392,325 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8cd1-ce5d-fd30-0347" name=" Archein of Wisdom" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="lessThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54a1-614c-6c8e-69be" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc00-3563-f64e-a3c4" type="min"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a81a-4fbe-1646-d06d" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="fd98-41ac-2643-cd54" name="Warlord: Archein of Wisdom" hidden="false"/>
+          </rules>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="22d0-70ac-8353-879a" name=" IX: Blood Angels" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f7e2-738c-1ca4-37d6" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="621c-1d6d-09e8-7c95" name="Encarmine Paladin" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="aa39-41ae-1149-85c1" type="max"/>
+                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4bc2-2a95-c01d-c0d2" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="093a-6bba-13ad-4e1f" name="Encarmine Paladin" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                      <characteristics>
+                        <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait gains the Fear (1) special rule when the enemy army has the Traitor Allegiance.
+Whenever a Warlord with this Trait is on the winning side of a combat in which the Warlord was Engaged and that includes at least one enemy model with the Traitor Allegiance, he increases the value of his Fear special rule by one point at the end of the Assault phase in which the combat is won, to a maximum of Fear (4). For example, if a Warlord with this Trait and the Fear (1) special rule is locked in combat with an enemy unit with the Traitor Allegiance and wins the resulting combat, his Fear special rule would become Fear (2) at the end of that Assault phase. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player&apos;s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="c5c2-393b-0e08-7010" name="Paragon of Unity" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6870-215b-7a95-3806" type="max"/>
+                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d9ce-6a6c-f639-cc87" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="67d6-358b-aad8-ef73" name="Paragon of Unity" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                      <characteristics>
+                        <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Any friendly unit made up entirely of models with the Legiones Astartes (Blood Angels) special rule that can draw a line of sight to a Warlord with this Trait, to any model in a unit this Warlord has joined, or to any model that is Engaged in a combat which this Warlord is part of, gains a bonus of +1 to their Leadership Characteristic, to a maximum of 10. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player&apos;s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="8e62-5fbd-9422-68ec" name="Imperial Fists" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a0d0-e3b7-090a-3caf" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="ea56-2930-97c8-85ba" name="Solar Marshal " hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a102-0648-be1a-beee" type="max"/>
+                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="69da-b69c-aabb-78b7" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="e4aa-53da-2db5-5573" name="Solar Marshal " hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                      <characteristics>
+                        <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait and all models in any friendly unit that Warlord joins gain +1 to their Weapon Skill
+Characteristic when locked in combat with one or more enemy units that have the Traitor Allegiance. In addition, an army whose Warlord has this Trait may make one additional Reaction per turn in any one of the opposing player&apos;s Phases, as long as the Warlord has not been removed as a casualty. This additional Reaction may only be made by the Warlord&apos;s unit and does not allow any unit to make more than one Reaction per Phase.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry id="7a87-5709-57b3-9b50" name="Warden of Inwit" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2fb7-c2e6-7fac-fbc6" type="max"/>
+                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="81ef-1a30-b312-7c4a" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="c331-1f95-28e3-da31" name="Warden of Inwit" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                      <characteristics>
+                        <characteristic name="Text" typeId="c68e-2cda-b67b-baca">When within 6&quot; of an objective, or within their own Deployment Zone, a Warlord with this Trait, and all models in any friendly unit that Warlord joins, automatically pass any Morale checks or Pinning tests they are called upon to make. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player&apos;s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="81d9-eec8-996f-1026" name="White Scars" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0e05-2882-3e96-4f84" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="6130-2702-a4b5-9f04" name="Born to the Saddle" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8490-bdb8-7f9b-6c97" type="max"/>
+                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5d03-d8e1-a289-45f1" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="3b3b-460c-2713-f743" name="Born to the Saddle" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                      <characteristics>
+                        <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord and all models in the same army with the Legiones Astartes (White Scars) special rule and the Cavalry Unit Type ignore all the effects of Difficult Terrain and gain a 4+ Invulnerable Save against all Wounds inflicted by failed Dangerous Terrain tests they are called upon to make. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player&apos;s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry id="a534-a8a1-f736-f6ec" name="Heroes Never Die" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d8fb-d559-4298-2617" type="max"/>
+                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="946e-ec94-893c-6dd2" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="a031-22eb-bebd-f13a" name="Heroes Never Die" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                      <characteristics>
+                        <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait, and all models in any unit he joins, gains the Stubborn special rule. Furthermore, if the Warlord is removed as a casualty, all models in any friendly unit composed entirely of models with the Legiones Astartes (White Scars) special rule, from which one or more models can draw a line of sight to the Warlord at the point when he is removed as a casualty, gain the Fearless special rule for the remainder of the battle. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player&apos;s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="b783-311b-a8f0-1538" name="Space Wolves" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3e21-7a40-5ba1-3236" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="050a-32ec-727e-80b0" name="Howl of Morkai" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8c2e-4f01-4fb9-3bb2" type="max"/>
+                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="46ab-145f-5dbc-e180" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="097d-e985-c00c-3c4d" name="Howl of Morkai" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                      <characteristics>
+                        <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Once per battle, the controlling player of a Warlord with this Trait may declare the use of this Trait at the start of their player turn. For the duration of that player turn only, all friendly models with the Legiones Astartes (Space Wolves) special rule gain a bonus of +1 Strength if the unit they are part of has successfully Charged an enemy unit. In addition, an army whose Warlord has this Trait may make an additional Reaction in the opposing player&apos;s Movement phase so long as the Warlord has not been removed as a casualty.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry id="d8f1-e4d3-b786-d969" name="Hunger of the Void" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3a84-1913-7629-e798" type="max"/>
+                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a5a4-680d-2b1f-7097" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="00fe-43b8-93ff-0e98" name="Hunger of the Void" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                      <characteristics>
+                        <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait gains an additional Wound at the end of any Assault phase in which he inflicts at least one unsaved Wound on an enemy model. This can not increase the Warlord&apos;s Wounds Characteristic above his starting value (including any bonuses from Wargear items like /Ether-rune armour), but if this effect is triggered while the Warlord has his maximum possible number of Wounds then he instead gains +1 Attacks and Strength until the end of the controlling player&apos;s next turn. In addition, an army whose Warlord has this Trait may make an additional Reaction in the opposing player&apos;s Assault phase so long as the Warlord has not been removed as a casualty.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry id="cecf-23a2-82dd-16f4" name="Crown Breaker" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4da7-2c83-277c-493d" type="max"/>
+                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9710-474c-a7de-fac1" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="3711-0e34-98bc-95fb" name="Crown Breaker" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                      <characteristics>
+                        <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord and all models in any unit he has joined gain the Preferred Enemy (Independent Characters) special rule.
+Those models also gain the Feel No Pain (5+) special rule when locked in combat with one or more enemy models with the Independent Character special rule. In addition, an army whose Warlord has this Trait may make an additional Reaction in the opposing player&apos;s Movement phase so long as the Warlord has not been removed as a casualty.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="06d9-44ea-e05e-b868" name="Ultramarines" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3dad-8dde-8fe1-1a1e" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="ac40-9072-138a-6d98" name="The Burden of Kings" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3b37-db20-fdf2-8f9e" type="max"/>
+                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d7ed-38b4-f48c-de92" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="5929-63cd-d2e3-58a5" name="The Burden of Kings" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                      <characteristics>
+                        <characteristic name="Text" typeId="c68e-2cda-b67b-baca">In any Phase in which one or more Wounds has been allocated to a Warlord with this Trait, whether saved or unsaved, the Warlord gains the It Will Not Die (4+) and Fearless special rules until the end of the Warlord&apos;s controlling player&apos;s next turn. In addition, an army whose Warlord has this Trait may, once in each of the opposing player&apos;s turns, make a single Reaction without spending a point of the controlling player&apos;s Reaction Allotment, as long as the Reaction is made by the Warlord or a unit the Warlord has joined.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry id="4d49-a202-7e5c-d2a3" name="The Aegis of Wisdom" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5faa-8a0d-d323-fb91" type="max"/>
+                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e466-1d5c-52c9-dc82" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="234b-6de2-0008-086f" name="The Aegis of Wisdom" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                      <characteristics>
+                        <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Any friendly unit made up entirely of models with the Legiones Astartes (Ultramarines) special rule that can draw a line of sight to a Warlord with this Warlord Trait, may, when called upon to Regroup, use the Warlord&apos;s Leadership Characteristic for that test, and if successful the unit may make Shooting Attacks and declare Charges as normal, ignoring the normal restrictions for units that have Regrouped in the same turn. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player&apos;s Shooting phase as long as the Warlord has not been removed as a casualty</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="f035-9ea4-3fa1-2dc8" name="Iron Hands" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a9a3-f152-c71c-7248" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="d46e-bf3d-1aec-27ac" name="From Hel&apos;s Heart" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4d63-05a8-a25a-58d9" type="max"/>
+                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a53b-8600-7ba6-e362" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="629b-396c-5a51-6b7a" name="From Hel&apos;s Heart" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                      <characteristics>
+                        <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait, and all models in any unit he joins, gain the Fear (1) special rule and should the Warlord be reduced to 0 Wounds, the controlling player may choose to inflict D6 automatic Hits upon the unit whose attacks caused the final Wound, with these Hits allocated as per the standard rules. Each Hit is resolved using the profile of either any one of the Warlord&apos;s ranged weapons if he lost his last Wound to a Shooting Attack, or using the profile of any one of the Warlord&apos;s melee weapons if he lost his last Wound as part of an Assault, with all Hits resolved using the same profile (if the Wound is lost to neither a Shooting Attack nor a Melee Attack then this rule has no effect and no Hits are inflicted). In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player&apos;s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry id="15ab-63eb-8305-401b" name="Silver-iron Will" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a47a-816c-0fa5-c9d2" type="max"/>
+                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6f07-0a5a-8aa3-6f4a" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="166b-761e-6f25-fe33" name="Silver-iron Will" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                      <characteristics>
+                        <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait and all models in any unit he has joined are never affected by any special rule or effect that lowers a Characteristic - including the Fear (X) and Rad-phage special rules and due to losing an assault where the enemy has inflicted more Wounds. In addition, an army whose Warlord has this Trait may not make Reactions during the Movement phase, but may make an additional Reaction in either one of the opposing player&apos;s Shooting or Assault phases (but not both). If the Warlord is removed as a casualty then this additional Reaction is lost, but the army may make Reactions in the Movement phase as normal in any appropriate Phases after the Warlord has been removed as a casualty.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="01a3-5952-89d2-45af" name="Raven Guard" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c7a7-1084-a803-564d" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="4377-1aa8-9cdb-bb66" name="The Hidden Hand" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7826-915d-dec9-fe28" type="max"/>
+                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="156e-0472-5537-f3a0" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="c031-54aa-c6d1-4175" name="The Hidden Hand" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                      <characteristics>
+                        <characteristic name="Text" typeId="c68e-2cda-b67b-baca">While a Warlord with this Trait is in Reserves, the controlling player may choose to re-roll all failed Reserves rolls and when deployed to the battlefield the Warlord and all models in any unit he has joined gain the Fleet(2) special rule. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player&apos;s Movement phase as long as the Warlord has not been removed as a casualty. </characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry id="ccbd-0f31-cdc1-96dc" name="The Bane of Tyrants" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a641-0ada-47b4-4868" type="max"/>
+                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3bfd-8786-59b9-16bb" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="81fa-0a3a-87ea-360f" name="The Bane of Tyrants" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                      <characteristics>
+                        <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord increases his Attacks and Strength Characteristics by +1 when Engaged in a Challenge, and by +2 when Engaged in a Challenge with the enemy Warlord. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent&apos;s Assault phase as long as the Warlord has not been removed as a casualty. (edited)
+[1:15 PM]
+</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="84ff-70e4-e949-b251" name="Salamanders" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="aac0-f3e8-ad29-81d9" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="f5f9-0c44-3309-466c" name="The Weight of Duty" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="18e2-de60-bf2b-da28" type="max"/>
+                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="867a-f37c-2334-fbe9" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="ef4f-b960-e347-ea5b" name="The Weight of Duty" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                      <characteristics>
+                        <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait, and all models in any unit he has joined, gain a bonus of +1 to their Strength Characteristic when locked in combat with any enemy unit that includes one or more models with any variant of the Fear special rule. Furthermore, this Warlord and any models in a unit he has joined composed entirely of models with the Legiones Astartes (Salamanders) special rule gain the Hatred (Traitors) special rule while the Warlord is part of the unit. An army whose Warlord has this Warlord Trait may not include Legion Destroyer Assault Squads, Legion Mortalis Destroyer Squads or Legion Centurions with the Moritat Consul upgrade that also have the Legiones Astartes (Salamanders) special rule. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player&apos;s Assault phase as long as the Warlord has not been removed as a casualty. </characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry id="2cbb-44a5-ee52-102d" name="Promethean Will" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fa8c-3cc3-9d52-972c" type="max"/>
+                    <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="fafb-10ec-8cc4-37ff" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="66f8-15c8-18db-850a" name="Promethean Will" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                      <characteristics>
+                        <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait, and all models in any friendly unit composed entirely of models with the Legiones Astartes (Salamanders) special rule that is part of the same Detachment, gains a bonus of +1 to their Leadership Characteristic when making Pinning tests (to a maximum of 11) and reduce the effects of the Fear special rule by 1 (note that this means the Fear (1) special rule has no effect on models granted this benefit, and negative modifiers conferred by other variants of the Fear special rule are reduced in effect by 1). An army whose Warlord has this Warlord Trait may not include Legion Destroyer Assault Squads, Legion Mortalis Destroyer Squads or Legion Centurions with the Moritat Consul upgrade that also have the Legiones Astartes (Salamanders) special rule. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player&apos;s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="05e8-17f8-ad69-2f44" name="    Generic Warlord Traits" hidden="false" collective="false" import="true" targetId="c064-819f-d9ef-1775" type="selectionEntryGroup"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="1b04-8704-13f6-3eb2" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
           <constraints>
@@ -1429,7 +1769,6 @@
       <rules>
         <rule id="d6f9-0148-5c6e-5e87" name="Bitter Duty" hidden="false"/>
         <rule id="308f-78bb-90b4-76f9" name="Paragon of Restoration" hidden="false"/>
-        <rule id="a61e-4eda-16f4-c032" name="Warlord: Exarch of the High Host" hidden="false"/>
       </rules>
       <infoLinks>
         <infoLink id="901c-bb1a-646c-6ea7" name="Legiones Astartes (Blood Angels) " hidden="false" targetId="b0d1-ccab-8708-500f" type="rule"/>
@@ -1486,6 +1825,22 @@
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="6947-3fb9-ddb6-4b6c" name="Exarch of the High Host" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="lessThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f65-fb85-96f7-32a0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13a8-cf0e-2fcf-8607" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="2028-d920-0def-33e3" name="Exarch of the High Host" hidden="false"/>
+          </rules>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
