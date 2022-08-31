@@ -4941,6 +4941,18 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="0176-56a3-d590-b103" name="Warlord" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="5617-ada9-bf10-f9b0" value="0.0">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="0dff-37d2-448b-45a6" value="0.0">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5617-ada9-bf10-f9b0" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4024-fa03-dada-cc4b" type="max"/>
@@ -7424,6 +7436,9 @@ An army whose Warlord has this Trait counts any Allied Detachment that has any v
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="34f8-053a-3802-6207" name="The Logic of Victory" publicationId="bde1-6db1-163b-3b76" page="16" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -7437,6 +7452,9 @@ An army whose Warlord has this Trait counts any Allied Detachment that has any v
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="ab8f-29a2-a435-8a49" name="The Science of Slaughter" publicationId="bde1-6db1-163b-3b76" page="16" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -7450,6 +7468,9 @@ An army whose Warlord has this Trait counts any Allied Detachment that has any v
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
