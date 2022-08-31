@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="13" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="14" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 18th, 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 18th, 2022"/>
@@ -98,6 +98,11 @@
         <characteristicType id="91b3-4335-71bf-3fa9" name="I"/>
         <characteristicType id="d54a-56a6-68c5-ae72" name="A"/>
         <characteristicType id="2490-aa2f-f5db-6070" name="HP"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="90b9-7fab-87db-aed3" name="Reactions">
+      <characteristicTypes>
+        <characteristicType id="c627-4637-8de5-65fb" name="Description"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -4967,6 +4972,14 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7ae-8da7-ad16-cea6" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2c74-7db8-469e-8327" type="max"/>
       </constraints>
+      <profiles>
+        <profile id="9e5f-b65f-2f13-f24e" name="Advanced Reaction: Scornful Fire" publicationId="bde1-6db1-163b-3b76" page="17" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+          <characteristics>
+            <characteristic name="Description" typeId="c627-4637-8de5-65fb">Scornful Fire – This Advanced Reaction may be made once per battle during the Shooting phase when any enemy unit declares a Shooting Attack targeting a unit that includes a model with the Independent Character special rule under the Reactive player’s control which is part of the Mechanicum Detachment. The Reacting unit, and any friendly Mechanicum units eligible to make a Reaction within 12&quot;, may make a Shooting Attack, targeting the unit that triggered this Reaction and following all the usual rules for Shooting Attacks. Any unit that makes a Shooting Attack as part of this Reaction counts as having made a Reaction in this Phase. 
+A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not make any attacks indirectly (without line of sight) including weapons with the Barrage special rule or other weapons or special rules that otherwise ignore line of sight, and Vehicles may only fire Defensive Weapons. Template weapons may only be used as part of a Scornful Fire Reaction if the target unit is within 8&quot; and must use the Wall of Death rule instead of firing normally.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
@@ -6043,7 +6056,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c78-410a-98bc-ddd6" type="max"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup id="75c8-9b24-b75b-b137" name="  IV: Iron Warriors" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="75c8-9b24-b75b-b137" name="  IV: Iron Warriors" publicationId="09c5-eeae-f398-b653" page="176" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6056,15 +6069,15 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c966-c487-a925-6913" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="16e5-b616-ae1c-7131" name="Tyrant of the Dodekathon" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="16e5-b616-ae1c-7131" name="Tyrant of the Dodekathon" publicationId="09c5-eeae-f398-b653" page="176" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2f5d-baf8-4f9b-c727" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b14b-42f7-275a-7c2c" type="max"/>
               </constraints>
               <profiles>
-                <profile id="62d3-6c60-660f-c815" name="Tyrant of the Dodekathon" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="62d3-6c60-660f-c815" name="Tyrant of the Dodekathon" publicationId="09c5-eeae-f398-b653" page="176" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">PLACEHOLDER</characteristic>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">After all armies have been deployed onto the battlefield but before Scout moves and Infiltrators are placed, the controlling player of a Warlord with this Trait may nominate one area of terrain, Building or Fortification on the battlefield. If the chosen item is an area of terrain that provides a Cover Save, then that Cover Save is removed and the area counts as both Difficult Terrain and Dangerous Terrain instead. If the item chosen is a Building or Fortification then all rolls on the Building Damage table made for that Building or Fortification gain a modifier of +1. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6072,15 +6085,15 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e369-6ce6-212b-7420" name="Tyrant of the Lyssatra" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="e369-6ce6-212b-7420" name="Tyrant of the Lyssatra" publicationId="09c5-eeae-f398-b653" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2d73-c45f-e61f-357f" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2aa9-1ac3-0e05-4b2d" type="max"/>
               </constraints>
               <profiles>
-                <profile id="6139-ddbf-b9ec-f5da" name="Tyrant of the Lyssatra" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="6139-ddbf-b9ec-f5da" name="Tyrant of the Lyssatra" publicationId="09c5-eeae-f398-b653" page="177" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">PLACEHOLDER</characteristic>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait, and every model with the Infantry Unit Type in a unit it has joined with the Legiones Astartes (Iron Warriors) special rule may choose to roll an additional dice when making a Shooting Attack with any Rapid Fire, Assault or Heavy weapon that does not have the Blast or Template special rules, but these weapons gain the Gets Hot special rule for that Shooting Attack. If a Warlord and/or unit under the effect of this Trait makes the Bitter Fury Reaction, then a single additional dice is added to the number of attacks made by each model after the effects of Bitter Fury have been applied. In addition, whenever a Warlord with this Trait, and any unit it has joined, is the target of an enemy Shooting Attack it must make either the Return Fire or Bitter Fury Reactions if possible – this Reaction does not cost a point of the Reactive player’s Reaction Allotment, but does not allow that unit to make any further Reactions in that Phase and does not allow the Bitter Fury Reaction to be made more than once per battle. However, a Warlord with this Trait and any unit it has joined may make no other Reaction in any Phase, excepting only the Interceptor Advanced Reaction.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6088,13 +6101,13 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d4ac-f703-5add-8be4" name="Tyrant of the Apolokron" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="d4ac-f703-5add-8be4" name="Tyrant of the Apolokron" publicationId="09c5-eeae-f398-b653" page="176" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="12df-eee8-fd51-f207" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f078-194e-c439-e0a1" type="max"/>
               </constraints>
               <profiles>
-                <profile id="d5a6-b772-ce1b-a0b7" name="Tyrant of the Apolokron" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="d5a6-b772-ce1b-a0b7" name="Tyrant of the Apolokron" publicationId="09c5-eeae-f398-b653" page="176" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
                     <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait gains the Fearless special rule, but may not join any unit that is not entirely compsed of models with the Legiones Astartes (Iron Warriors) special rule. However, the Warlord and all models in any unit it joins must adhere to the following restrictions: during both the controlling player&apos;s Shooting phase and the Charge sub-phase, the unit must attempt a Shooting Attack and/or Charge if there is an enemy unit within range, and must target the closest enemy unit possible that is within its line of sight and is a valid target for a Shooting Attack or Charge. If two or more targets are equally close then the controlling player chooses which will be the target of a Shooting Attack or Charge. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player&apos;s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
@@ -6165,7 +6178,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="fcc6-0dda-a0bd-8072" name="  III: Emperor&apos;s Children (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="fcc6-0dda-a0bd-8072" name="  III: Emperor&apos;s Children" publicationId="09c5-eeae-f398-b653" page="152" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6178,15 +6191,23 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="98e4-0f15-7203-d6e0" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="57ba-e2df-127d-dfd5" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="57ba-e2df-127d-dfd5" name="The Broken Mirror (Traitor only)" publicationId="09c5-eeae-f398-b653" page="152" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6a71-3953-9cad-5d3e" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bd99-108a-d9fb-1d41" type="max"/>
               </constraints>
               <profiles>
-                <profile id="5585-4c6e-1443-acf0" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="5585-4c6e-1443-acf0" name="The Broken Mirror" publicationId="09c5-eeae-f398-b653" page="152" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord Trait may only be selected by a model with the Traitor Allegiance.
+When a friendly unit comprised of more than one model and within 12&quot; of a Warlord with this Trait, including the Warlord and any unit it has joined, fails a Morale check, instead of Falling Back it must instead suffer one Wound that cannot be negated by any Armour Saves or Damage Mitigation rolls (this Wound is allocated by the unit’s controlling player). Once this Wound has been resolved, the unit is considered to have passed the Morale check and play continues as normal. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6194,15 +6215,15 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ba2c-ab4d-9f97-e339" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="ba2c-ab4d-9f97-e339" name="Paragon of Excellence" publicationId="09c5-eeae-f398-b653" page="152" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="aa3c-c16e-8cf6-9d93" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a4d5-c5e2-c084-b6f5" type="max"/>
               </constraints>
               <profiles>
-                <profile id="967d-7f09-6cd4-e04e" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="967d-7f09-6cd4-e04e" name="Paragon of Excellence" publicationId="09c5-eeae-f398-b653" page="152" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">When any friendly unit within 12&quot; of a Warlord with this Trait, including the Warlord and any unit it has joined, passes a Morale check it gains +1 Weapon Skill until the end of the controlling player’s next turn (this benefit can only be applied once per Game Turn to any single unit). In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6210,15 +6231,23 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0859-6b27-4a66-e937" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="0859-6b27-4a66-e937" name="Martyrs of Isstvan (Loyalist only)" publicationId="09c5-eeae-f398-b653" page="152" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="934a-d656-ee1b-e39d" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a19d-bab7-9822-86c5" type="max"/>
               </constraints>
               <profiles>
-                <profile id="6499-b0bb-25f5-5cbd" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="6499-b0bb-25f5-5cbd" name="Martyrs of Isstvan" publicationId="09c5-eeae-f398-b653" page="152" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord Trait may only be selected by a model with the Loyalist Allegiance.
+A Warlord with this Trait and all models in a unit the Warlord has joined that have the Legiones Astartes (Emperor’s Children) special rule gain a bonus of +1 to all To Hit rolls made while locked in combat with an enemy unit that has any version of the Legiones Astartes (X) special rule and the Traitor Allegiance. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6228,7 +6257,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="fa4e-9b26-7244-179d" name="  V: White Scars (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="fa4e-9b26-7244-179d" name="  V: White Scars" publicationId="817a-6288-e016-7469" page="178" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6241,15 +6270,23 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3ee8-edaf-12ad-5ec2" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="fd20-efc4-b421-b8ef" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="fd20-efc4-b421-b8ef" name="Heroes Never Die  (Loyalist only)" publicationId="817a-6288-e016-7469" page="178" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d766-2fb3-1383-5bd9" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e21f-621d-e09b-96f3" type="max"/>
               </constraints>
               <profiles>
-                <profile id="ac80-1ea9-97e7-085d" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="ac80-1ea9-97e7-085d" name="Heroes Never Die" publicationId="817a-6288-e016-7469" page="178" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord Trait may only be selected by a model with the Loyalist Allegiance.
+A Warlord with this Trait, and all models in any unit he joins, gains the Stubborn special rule. Furthermore, if the Warlord is removed as a casualty, all models in any friendly unit composed entirely of models with the Legiones Astartes (White Scars) special rule, from which one or more models can draw a line of sight to the Warlord at the point when he is removed as a casualty, gain the Fearless special rule for the remainder of the battle. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Assault phase as long as the Warlord has not been removed as a casualty. </characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6257,15 +6294,15 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="c503-afd4-ba91-0f41" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="c503-afd4-ba91-0f41" name="Born to the Saddle" publicationId="817a-6288-e016-7469" page="178" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bd00-65e8-78b3-04bf" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8f66-b93b-6188-2b83" type="max"/>
               </constraints>
               <profiles>
-                <profile id="7c21-0828-9bec-f4e0" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="7c21-0828-9bec-f4e0" name="Born to the Saddle" publicationId="817a-6288-e016-7469" page="178" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord and all models in the same army with the Legiones Astartes (White Scars) special rule and the Cavalry Unit Type ignore all the effects of Difficult Terrain and gain a 4+ Invulnerable Save against all Wounds inflicted by failed Dangerous Terrain tests they are called upon to make. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6273,15 +6310,23 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8a24-4c1b-ac43-5208" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="8a24-4c1b-ac43-5208" name="The Forgotten Sons (Traitor only)" publicationId="817a-6288-e016-7469" page="178" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ec2b-84e8-cc8a-195c" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a403-bca4-9575-a70b" type="max"/>
               </constraints>
               <profiles>
-                <profile id="93ce-b682-fd06-6541" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="93ce-b682-fd06-6541" name="The Forgotten Sons" publicationId="817a-6288-e016-7469" page="178" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord Trait may only be selected by a model with the Traitor Allegiance.
+If an army whose Warlord has this Trait includes an Allied Detachment with the Legiones Astartes (Sons of Horus) special rule, the Warlord and any unit he joins automatically pass any Morale checks or Pinning tests they are called upon to make without any dice being rolled as long as at least one friendly unit with the Legiones Astartes (Sons of Horus) special rule can draw line of sight to the Warlord or his unit. In addition, the Warlord, and any unit he has joined, may make the Death Dealers Reaction (this Advanced Reaction is detailed in Liber Hereticus) without expending a point from the controlling player’s Reaction Allotment and counting all models in that unit that have the Legiones Astartes (White Scars) special rule as though they also had the Legiones Astartes (Sons of Horus) special rule (though they gain none of the benefits of that special rule) – this Advanced Reaction may still only be used once per battle. </characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6291,7 +6336,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="0899-8b4b-2591-afac" name=" X: Iron Hands (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="0899-8b4b-2591-afac" name=" X: Iron Hands" publicationId="817a-6288-e016-7469" page="276" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6304,15 +6349,23 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ffe2-18a4-e12e-01b4" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="53d2-df81-688e-0b8c" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="53d2-df81-688e-0b8c" name="The Eye of Vigilance (Traitor only)" publicationId="817a-6288-e016-7469" page="276" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f227-aaac-78c8-7739" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8d3f-91f9-5b0a-7767" type="max"/>
               </constraints>
               <profiles>
-                <profile id="772c-511d-93c3-51a8" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="772c-511d-93c3-51a8" name="The Eye of Vigilance" publicationId="817a-6288-e016-7469" page="276" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord Trait may only be selected by a model with the Traitor Allegiance.
+A Warlord with this Trait, and all models in any friendly unit that Warlord joins, gains the Preferred Enemy (Loyalist) special rule. In addition, once per battle, while the controlling player is the Reactive Player, the Warlord and any unit the Warlord has joined may make a single Reaction without expending a point from the army’s Reaction Allotment – this can allow the Warlord and his unit to make more than one Reaction in the same Phase, but that unit may not make the same Reaction twice.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6320,15 +6373,15 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0899-3ff6-2c7d-2070" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="0899-3ff6-2c7d-2070" name="Silver-iron Will" publicationId="817a-6288-e016-7469" page="276" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8ac2-88b3-15f9-f3de" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3747-7d79-0b08-9f02" type="max"/>
               </constraints>
               <profiles>
-                <profile id="5c2c-d77b-2c48-5f3b" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="5c2c-d77b-2c48-5f3b" name="Silver-iron Will" publicationId="817a-6288-e016-7469" page="276" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait and all models in any unit he has joined are never affected by any special rule or effect that lowers a Characteristic – including the Fear (X) and Rad-phage special rules and due to losing an assault where the enemy has inflicted more Wounds. In addition, an army whose Warlord has this Trait may not make Reactions during the Movement phase, but may make an additional Reaction in either one of the opposing player’s Shooting or Assault phases (but not both). If the Warlord is removed as a casualty then this additional Reaction is lost, but the army may make Reactions in the Movement phase as normal in any appropriate Phases after the Warlord has been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6336,15 +6389,23 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b128-c1f2-ced0-2c0a" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="b128-c1f2-ced0-2c0a" name="From Hel’s Heart (Loyalist only)" publicationId="817a-6288-e016-7469" page="276" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b10a-fe95-c1da-6bf5" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8d66-354a-ca64-1686" type="max"/>
               </constraints>
               <profiles>
-                <profile id="7f9f-c80f-bd1f-c90b" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="7f9f-c80f-bd1f-c90b" name="From Hel’s Heart" publicationId="817a-6288-e016-7469" page="276" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord Trait may only be selected by a model with the Loyalist Allegiance.
+A Warlord with this Trait, and all models in any unit he joins, gain the Fear (1) special rule and should the Warlord be reduced to 0 Wounds, the controlling player may choose to inflict D6 automatic Hits upon the unit whose attacks caused the final Wound, with these Hits allocated as per the standard rules. Each Hit is resolved using the profile of either any one of the Warlord’s ranged weapons if he lost his last Wound to a Shooting Attack, or using the profile of any one of the Warlord’s melee weapons if he lost his last Wound as part of an Assault, with all Hits resolved using the same profile (if the Wound is lost to neither a Shooting Attack nor a Melee Attack then this rule has no effect and no Hits are inflicted). In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6354,7 +6415,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="af62-dc9d-87c1-daf7" name="  VII: Imperial Fists (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="af62-dc9d-87c1-daf7" name="  VII: Imperial Fists" publicationId="817a-6288-e016-7469" page="225" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6367,15 +6428,23 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8784-0bbd-bfdc-dea2" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="2c7c-efca-f9d3-c135" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="2c7c-efca-f9d3-c135" name="Solar Marshal (Loyalist only)" publicationId="817a-6288-e016-7469" page="225" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="36ea-deb2-fbd2-78a6" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b4fb-a5c3-9a8c-ca75" type="max"/>
               </constraints>
               <profiles>
-                <profile id="1c56-e4c0-57fe-6348" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="1c56-e4c0-57fe-6348" name="Solar Marshal" publicationId="817a-6288-e016-7469" page="225" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord Trait may only be selected by a model with the Loyalist Allegiance.
+A Warlord with this Trait and all models in any friendly unit that Warlord joins gain +1 to their Weapon Skill Characteristic when locked in combat with one or more enemy units that have the Traitor Allegiance. In addition, an army whose Warlord has this Trait may make one additional Reaction per turn in any one of the opposing player’s Phases, as long as the Warlord has not been removed as a casualty. This additional Reaction may only be made by the Warlord’s unit and does not allow any unit to make more than one Reaction per Phase.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6383,15 +6452,15 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e431-fb60-bc92-ac7a" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="e431-fb60-bc92-ac7a" name="Warden of Inwit" publicationId="817a-6288-e016-7469" page="225" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8fcb-14a9-d2b1-e7f2" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2cd6-f952-7d06-01cd" type="max"/>
               </constraints>
               <profiles>
-                <profile id="f9bb-983d-694f-18ce" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="f9bb-983d-694f-18ce" name="Warden of Inwit" publicationId="817a-6288-e016-7469" page="225" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">When within 6&quot; of an objective, or within their own Deployment Zone, a Warlord with this Trait, and all models in any friendly unit that Warlord joins, automatically pass any Morale checks or Pinning tests they are called upon to make. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6399,15 +6468,15 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e04f-f0cb-1033-2c7d" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="e04f-f0cb-1033-2c7d" name="Architect of Devastation" publicationId="817a-6288-e016-7469" page="225" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="81c5-fb73-07ed-32ff" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3b61-b48f-40d1-dd1f" type="max"/>
               </constraints>
               <profiles>
-                <profile id="4847-d189-f8d3-d4cb" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="4847-d189-f8d3-d4cb" name="Architect of Devastation" publicationId="817a-6288-e016-7469" page="225" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord, and all models with the Legiones Astartes (Imperial Fists) special rule in any unit he joins, may re-roll failed To Hit rolls of ‘1’ as long as that unit is entirely within an area of Terrain that grants a Cover Save or Embarked within a Fortification. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6417,7 +6486,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="9eb0-5436-0bce-5df2" name="  VI: Space Wolves (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="9eb0-5436-0bce-5df2" name="  VI: Space Wolves" publicationId="817a-6288-e016-7469" page="197" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6430,15 +6499,15 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a40a-8469-a6cf-0cf7" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="af06-fd03-5bd5-5bb8" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="af06-fd03-5bd5-5bb8" name="Howl of Morkai" publicationId="817a-6288-e016-7469" page="197" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fd0f-9949-0cf2-53de" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5791-12e7-4011-d35c" type="max"/>
               </constraints>
               <profiles>
-                <profile id="6ac5-ba67-6277-9900" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="6ac5-ba67-6277-9900" name="Howl of Morkai" publicationId="817a-6288-e016-7469" page="197" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Once per battle, the controlling player of a Warlord with this Trait may declare the use of this Trait at the start of their player turn. For the duration of that player turn only, all friendly models with the Legiones Astartes (Space Wolves) special rule gain a bonus of +1 Strength if the unit they are part of has successfully Charged an enemy unit. In addition, an army whose Warlord has this Trait may make an additional Reaction in the opposing player’s Movement phase so long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6446,15 +6515,15 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0c77-14d6-b415-dc56" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="0c77-14d6-b415-dc56" name="Hunger of the Void" publicationId="817a-6288-e016-7469" page="197" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a910-c1db-1d63-18d7" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ad54-3ddb-e165-09d7" type="max"/>
               </constraints>
               <profiles>
-                <profile id="dc32-0a70-e63e-53a6" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="dc32-0a70-e63e-53a6" name="Hunger of the Void" publicationId="817a-6288-e016-7469" page="197" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait gains an additional Wound at the end of any Assault phase in which he inflicts at least one unsaved Wound on an enemy model. This can not increase the Warlord’s Wounds Characteristic above his starting value (including any bonuses from Wargear items like Æther-rune armour), but if this effect is triggered while the Warlord has his maximum possible number of Wounds then he instead gains +1 Attacks and Strength until the end of the controlling player’s next turn. In addition, an army whose Warlord has this Trait may make an additional Reaction in the opposing player’s Assault phase so long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6462,15 +6531,15 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="99ae-5ddd-0342-51dc" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="99ae-5ddd-0342-51dc" name="Crown Breaker" publicationId="817a-6288-e016-7469" page="197" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e9c2-4b03-9177-bf44" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="43a3-5c41-241f-3100" type="max"/>
               </constraints>
               <profiles>
-                <profile id="29b9-7f6b-6720-b93b" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="29b9-7f6b-6720-b93b" name="Crown Breaker" publicationId="817a-6288-e016-7469" page="197" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The Warlord and all models in any unit he has joined gain the Preferred Enemy (Independent Characters) special rule. Those models also gain the Feel No Pain (5+) special rule when locked in combat with one or more enemy models with the Independent Character special rule. In addition, an army whose Warlord has this Trait may make an additional Reaction in the opposing player’s Movement phase so long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6480,7 +6549,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="6cba-65a7-52c5-05e2" name="  I: Dark Angels (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="6cba-65a7-52c5-05e2" name="  I: Dark Angels" publicationId="817a-6288-e016-7469" page="152" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6493,15 +6562,19 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f96c-7788-b7be-899b" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="7e91-27d0-042e-23a2" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="7e91-27d0-042e-23a2" name="Marshal of the Crown" publicationId="817a-6288-e016-7469" page="152" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8f32-d2a8-ace8-ab17" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d7b0-d70c-54c5-73ef" type="max"/>
               </constraints>
               <profiles>
-                <profile id="2010-3bb7-9a40-3b78" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="2010-3bb7-9a40-3b78" name="Marshal of the Crown" publicationId="817a-6288-e016-7469" page="152" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait must select one of the Hexagrammaton Unit Sub-types. All units that include at least one model with the corresponding Unit Sub-type and at least one model with line of sight to the Warlord gain +1 Leadership (to a maximum of 10). In addition, an army whose Warlord has this Trait may make an additional Reaction in a Phase of the opponent’s turn dictated by the Hexagrammaton Unit Sub-type possessed by the Warlord:
+• Deathwing, Dreadwing – Assault phase
+• Stormwing, Ironwing – Shooting phase
+• Ravenwing, Firewing – Movement phase
+This additional Reaction may only be made as long as the Warlord has not been removed as a casualty</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6509,29 +6582,13 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b2c8-3b11-3f3e-7b7a" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="b2c8-3b11-3f3e-7b7a" name="Seneschal of the Keys" publicationId="817a-6288-e016-7469" page="152" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1dfe-d786-e44a-c9b5" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2fef-2fa5-2ea4-a6b6" type="max"/>
               </constraints>
               <profiles>
-                <profile id="4fa8-deac-a9a4-c426" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
-                  <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="0133-b8f5-33a6-cfd4" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2752-5a8d-66ac-76ba" type="max"/>
-                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="480f-232e-9a2c-9da6" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="0bf8-9c06-d740-c4f1" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="4fa8-deac-a9a4-c426" name="Seneschal of the Keys" publicationId="817a-6288-e016-7469" page="152" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
                     <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
                   </characteristics>
@@ -6543,7 +6600,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="655a-c3c6-380c-7d64" name=" XII: World Eaters (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="655a-c3c6-380c-7d64" name=" XII: World Eaters" publicationId="09c5-eeae-f398-b653" page="216" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6556,15 +6613,23 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4d83-b8f9-71e3-89c9" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="cf1a-36a8-19e8-8922" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="cf1a-36a8-19e8-8922" name="Blood Hunger (Traitor only)" publicationId="09c5-eeae-f398-b653" page="216" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8657-3675-d851-ce3b" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e81e-9842-7322-ee95" type="max"/>
               </constraints>
               <profiles>
-                <profile id="aeaa-284d-8d0d-b8e6" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="aeaa-284d-8d0d-b8e6" name="Blood Hunger" publicationId="09c5-eeae-f398-b653" page="216" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord Trait may only be selected by a model with the Traitor Allegiance.
+A Warlord with this Trait gains a bonus Wound whenever a melee attack it has made causes an enemy model to be removed as a casualty (this may raise the model’s Wounds score above its starting value, but no higher than 6 Wounds). In addition, a Warlord with this Trait, and any unit it has joined, must declare a Charge in any of the Controlling player’s Assault phases where there is an enemy unit within 12&quot; and line of sight of the Warlord or its unit, and must always target the closest enemy unit if possible. Furthermore, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Movement phase as long as the Warlord has not been removed as a casualty. </characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6572,15 +6637,15 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4ed5-30f0-7bea-dd86" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="4ed5-30f0-7bea-dd86" name="Cloaked in Blood" publicationId="09c5-eeae-f398-b653" page="216" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="53a3-3792-5487-3b08" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8b17-f2d9-6c15-5f11" type="max"/>
               </constraints>
               <profiles>
-                <profile id="e277-863a-5618-0ade" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="e277-863a-5618-0ade" name="Cloaked in Blood" publicationId="09c5-eeae-f398-b653" page="216" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Any model that does not have the Legiones Astartes (World Eaters) special rule must reduce its Leadership by -2 while locked in combat with this Warlord or any unit that includes this Warlord. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Movement phase as long as the Warlord has not been removed as a casualty. </characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6588,15 +6653,15 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="11b3-ac83-e1e4-1233" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="11b3-ac83-e1e4-1233" name="The Butcher’s Claws" publicationId="09c5-eeae-f398-b653" page="216" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b8de-ca32-11fd-b6d8" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3ef9-d750-d2a8-3311" type="max"/>
               </constraints>
               <profiles>
-                <profile id="b191-c9c8-018d-be16" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="b191-c9c8-018d-be16" name="The Butcher’s Claws" publicationId="09c5-eeae-f398-b653" page="216" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">When a Warlord with this Trait, and all models with the Legiones Astartes (World Eaters) special rule in a unit that it has joined, gain a bonus attack from the Violence Incarnate clause of the Legiones Astartes (World Eaters) special rule they also gain +1 Strength for the remainder of that turn. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Assault phase as long as the Warlord has not been removed as a casualty. </characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6606,7 +6671,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="a8bf-22c3-6760-3f96" name=" XIV: Death Guard (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="a8bf-22c3-6760-3f96" name=" XIV: Death Guard" publicationId="09c5-eeae-f398-b653" page="234" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6619,15 +6684,23 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c934-c4ef-309e-caaf" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="45e8-8798-b2a0-5bd5" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="45e8-8798-b2a0-5bd5" name="The Reaper’s Visage (Traitor only)" publicationId="09c5-eeae-f398-b653" page="234" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2305-66ef-6e57-27c5" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="25b0-9d79-8d10-a3a5" type="max"/>
               </constraints>
               <profiles>
-                <profile id="c6a5-da53-617f-783d" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="c6a5-da53-617f-783d" name="The Reaper’s Visage" publicationId="09c5-eeae-f398-b653" page="234" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord Trait may only be selected by a model with the Traitor Allegiance.
+Any enemy unit with at least one model within 12&quot; of a Warlord with this Trait must reduce the Leadership of all models in that unit by -2 whenever making a Leadership test, a Morale check, or attempting to Regroup – unless that unit also includes at least one model with the Independent Character special rule or the Primarch Unit Type. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Assault phase as long as the Warlord has not been removed as a casualty. </characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6635,15 +6708,15 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="85bb-05da-1a50-cdba" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="85bb-05da-1a50-cdba" name="Witch Hunter" publicationId="09c5-eeae-f398-b653" page="234" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8fb9-a2d7-be76-4d12" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2890-0157-4a20-8f93" type="max"/>
               </constraints>
               <profiles>
-                <profile id="88fb-c5d9-60b3-7edf" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="88fb-c5d9-60b3-7edf" name="Witch Hunter" publicationId="09c5-eeae-f398-b653" page="234" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait gains +1 to his Toughness and Weapon Skill when locked in combat with any unit that includes at least one model with the Psyker Sub-type. All friendly units composed entirely of models with the Legiones Astartes (Death Guard) special rule, and with at least one model within 12&quot; of the Warlord gain a 6+ Invulnerable Save against any Hits inflicted by a Psychic Weapon, Psychic Power or Perils of the Warp. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6651,15 +6724,15 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7f14-89b3-5e18-e522" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="7f14-89b3-5e18-e522" name="The Blood of Barbarus" publicationId="09c5-eeae-f398-b653" page="234" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a417-3f4a-5141-16e4" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9228-e026-1803-7185" type="max"/>
               </constraints>
               <profiles>
-                <profile id="5a51-f239-0ae5-23e2" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="5a51-f239-0ae5-23e2" name="The Blood of Barbarus" publicationId="09c5-eeae-f398-b653" page="234" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Any Hits with the Rending (X), Murderous Strike (X), Poisoned (X) or Fleshbane special rule allocated to a Warlord with this Trait, or any model with the Legiones Astartes (Death Guard) special rule in a unit he joins, only gain the benefit of those special rules on a D6 roll of a 6 instead of the value listed as part of that special rule. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6669,7 +6742,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="e8b6-feff-5339-dda2" name=" XIII: Ultramarines (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="e8b6-feff-5339-dda2" name=" XIII: Ultramarines" publicationId="817a-6288-e016-7469" page="292" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6682,15 +6755,23 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="04c5-8510-1cd2-b6bc" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="1c01-4039-4fcb-0bdd" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="1c01-4039-4fcb-0bdd" name="The Burden of Kings (Loyalist only)" publicationId="817a-6288-e016-7469" page="292" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fd84-5b7b-5b93-a37e" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9c25-23a3-c8b8-f809" type="max"/>
               </constraints>
               <profiles>
-                <profile id="cf7d-08c6-7dde-6236" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="cf7d-08c6-7dde-6236" name="The Burden of Kings" publicationId="817a-6288-e016-7469" page="292" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord Trait may only be selected by a model with the Loyalist Allegiance.
+In any Phase in which one or more Wounds has been allocated to a Warlord with this Trait, whether saved or unsaved, the Warlord gains the It Will Not Die (4+) and Fearless special rules until the end of the Warlord’s controlling player’s next turn. In addition, an army whose Warlord has this Trait may, once in each of the opposing player’s turns, make a single Reaction without spending a point of the controlling player’s Reaction Allotment, as long as the Reaction is made by the Warlord or a unit the Warlord has joined.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6698,15 +6779,15 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="759e-de8a-912f-5c93" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="759e-de8a-912f-5c93" name="The Aegis of Wisdom" publicationId="817a-6288-e016-7469" page="292" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3751-5e53-7119-e720" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5539-1a68-3e62-1ee8" type="max"/>
               </constraints>
               <profiles>
-                <profile id="4ea5-efa5-5b49-1e08" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="4ea5-efa5-5b49-1e08" name="The Aegis of Wisdom" publicationId="817a-6288-e016-7469" page="292" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Any friendly unit made up entirely of models with the Legiones Astartes (Ultramarines) special rule that can draw a line of sight to a Warlord with this Warlord Trait, may, when called upon to Regroup, use the Warlord’s Leadership Characteristic for that test, and if successful the unit may make Shooting Attacks and declare Charges as normal, ignoring the normal restrictions for units that have Regrouped in the same turn. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6714,15 +6795,23 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0935-10ca-2c5f-5c9a" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="0935-10ca-2c5f-5c9a" name="Pride’s Dark Power (Traitor only)" publicationId="817a-6288-e016-7469" page="292" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ae34-8d11-2cd4-469e" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="766f-a1b6-bac4-c6ef" type="max"/>
               </constraints>
               <profiles>
-                <profile id="8b2e-cdb8-25b1-9f43" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="8b2e-cdb8-25b1-9f43" name="Pride’s Dark Power" publicationId="817a-6288-e016-7469" page="292" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord Trait may only be selected by a model with the Traitor Allegiance.
+Once per battle, a Warlord with this Warlord Trait may, at the start of any one Phase in either players’ turn, choose to use his Leadership Characteristic in place of his Toughness when resolving any To Wound rolls made against it until the end of that Phase (thus, a Warlord with Leadership 10 that chooses to activate this Trait at the start of the enemy player’s Shooting phase would treat his Toughness as if it was 10 until the end of that Phase). In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Assault phase as long as the Warlord has not been removed as a casualty. </characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6732,7 +6821,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="61ac-f6a6-6ae2-89c4" name=" IX: Blood Angels (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="61ac-f6a6-6ae2-89c4" name=" IX: Blood Angels" publicationId="817a-6288-e016-7469" page="250" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6745,15 +6834,23 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="caf4-9860-3581-c2eb" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="be09-319c-faf7-0555" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="be09-319c-faf7-0555" name="Encarmine Paladin (Loyalist only)" publicationId="817a-6288-e016-7469" page="250" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9069-a422-5789-5f4e" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="edc0-47aa-c98b-90df" type="max"/>
               </constraints>
               <profiles>
-                <profile id="ad05-1af3-a63c-cb64" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="ad05-1af3-a63c-cb64" name="Encarmine Paladin" publicationId="817a-6288-e016-7469" page="250" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord Trait may only be selected by a model with the Loyalist Allegiance.
+A Warlord with this Trait gains the Fear (1) special rule when the enemy army has the Traitor Allegiance. Whenever a Warlord with this Trait is on the winning side of a combat in which the Warlord was Engaged and that includes at least one enemy model with the Traitor Allegiance, he increases the value of his Fear special rule by one point at the end of the Assault phase in which the combat is won, to a maximum of Fear (4). For example, if a Warlord with this Trait and the Fear (1) special rule is locked in combat with an enemy unit with the Traitor Allegiance and wins the resulting combat, his Fear special rule would become Fear (2) at the end of that Assault phase. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6761,15 +6858,15 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9c6a-574f-f70f-1df7" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="9c6a-574f-f70f-1df7" name="Paragon of Unity" publicationId="817a-6288-e016-7469" page="250" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="af21-1c08-34d0-44d5" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="79d2-5269-bd38-79cb" type="max"/>
               </constraints>
               <profiles>
-                <profile id="f1bc-3993-b686-c353" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="f1bc-3993-b686-c353" name="Paragon of Unity" publicationId="817a-6288-e016-7469" page="250" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Any friendly unit made up entirely of models with the Legiones Astartes (Blood Angels) special rule that can draw a line of sight to a Warlord with this Trait, to any model in a unit this Warlord has joined, or to any model that is Engaged in a combat which this Warlord is part of, gains a bonus of +1 to their Leadership Characteristic, to a maximum of 10. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6777,15 +6874,23 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9211-63df-a5ec-b698" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="9211-63df-a5ec-b698" name="Thrall of the Red Thirst (Traitor only)" publicationId="817a-6288-e016-7469" page="250" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="badd-fd72-9198-5f08" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d78b-be73-bb8d-77fd" type="max"/>
               </constraints>
               <profiles>
-                <profile id="a08c-217e-089d-d31b" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="a08c-217e-089d-d31b" name="Thrall of the Red Thirst" publicationId="817a-6288-e016-7469" page="250" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord Trait may only be selected by a model with the Traitor Allegiance.
+If, at the start of the controlling player’s Charge sub-phase, there are any enemy units with at least one model within 12&quot; of a Warlord with this Trait, or any model in a unit this Warlord has joined, and the Warlord and any unit he has joined are eligible to make a Charge, then the controlling player must declare a Charge for the Warlord and any unit he has joined targeting that enemy unit. If there is more than one potential target then the Warlord’s controlling player may select any of those units to be the target of the Charge. Whenever this Warlord and any unit he has joined make a successful Charge that is not Disordered, the Warlord and all other models in a unit the Warlord has joined gain +2 attacks, instead of the standard +1 attack granted for Charging. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6795,7 +6900,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="4e7b-2af8-0383-644f" name="  VIII: Night Lords (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="4e7b-2af8-0383-644f" name="  VIII: Night Lords" publicationId="09c5-eeae-f398-b653" page="196" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6808,13 +6913,20 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a588-2dfc-d56f-b4da" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="cb7d-eb31-f002-72c4" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="cb7d-eb31-f002-72c4" name="Warmonger (Traitor only)" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4a0c-bf60-b6d2-6b50" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="78c6-4648-7baf-8e43" type="max"/>
               </constraints>
               <profiles>
-                <profile id="71ea-b86f-e00f-86c1" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="71ea-b86f-e00f-86c1" name="Warmonger" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
                     <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
                   </characteristics>
@@ -6824,13 +6936,13 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1d0c-7e32-b8e2-bc7d" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="1d0c-7e32-b8e2-bc7d" name="Flaymaster" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="282e-4f54-7511-aee8" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0dc3-f399-8bb4-8136" type="max"/>
               </constraints>
               <profiles>
-                <profile id="24d3-3121-c902-30a7" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="24d3-3121-c902-30a7" name="Flaymaster" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
                     <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
                   </characteristics>
@@ -6840,13 +6952,13 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f0cd-3b80-db54-a061" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="f0cd-3b80-db54-a061" name="Jadhek Clanlord" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b62-0dbe-b9e3-d2f9" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4bdb-6754-ee5d-4276" type="max"/>
               </constraints>
               <profiles>
-                <profile id="374f-b35c-4dde-ffb6" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="374f-b35c-4dde-ffb6" name="Jadhek Clanlord" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
                     <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
                   </characteristics>
@@ -6858,7 +6970,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="0bb7-5fa2-b765-d27d" name="XIX: Raven Guard (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="0bb7-5fa2-b765-d27d" name="XIX: Raven Guard" publicationId="817a-6288-e016-7469" page="328" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6871,15 +6983,23 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2640-9d96-3aad-d699" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="bbb2-94d9-2474-4ff1" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="bbb2-94d9-2474-4ff1" name="The Bane of Tyrants (Loyalist only)" publicationId="817a-6288-e016-7469" page="328" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="492e-4d60-b702-8c21" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a47f-12de-f2e9-ba7c" type="max"/>
               </constraints>
               <profiles>
-                <profile id="fedf-2a24-a535-60a6" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="fedf-2a24-a535-60a6" name="The Bane of Tyrants" publicationId="817a-6288-e016-7469" page="328" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord Trait may only be selected by a model with the Loyalist Allegiance.
+This Warlord increases his Attacks and Strength Characteristics by +1 when Engaged in a Challenge, and by +2 when Engaged in a Challenge with the enemy Warlord. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6887,15 +7007,23 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7c70-1f95-e09b-40d9" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="7c70-1f95-e09b-40d9" name="No Gods or Masters (Traitor only)" publicationId="817a-6288-e016-7469" page="328" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d1b6-321b-f2b0-796a" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="aecb-929c-23b1-5f3b" type="max"/>
               </constraints>
               <profiles>
-                <profile id="bdda-a7f8-151b-5b25" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="bdda-a7f8-151b-5b25" name="No Gods or Masters" publicationId="817a-6288-e016-7469" page="328" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord Trait may only be selected by a model with the Traitor Allegiance.
+When in base to base contact with an enemy Infantry or Cavalry model whose Weapon Skill, Strength or Initiative is higher than this Warlord’s, a Warlord with this Trait increases their Weapon Skill, Strength and/or Initiative to match those of the enemy model with the highest value in that Characteristic that it is in base contact with. In addition, an army whose Warlord has this Trait may, once per battle, make a single Reaction without spending a point of the controlling player’s Reaction Allotment, as long as the Reaction is made by the Warlord or a unit the Warlord has joined.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6903,15 +7031,15 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b660-b411-2493-231f" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="b660-b411-2493-231f" name="The Hidden Hand" publicationId="817a-6288-e016-7469" page="328" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b061-b4cd-b616-6c1e" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5cbd-6f98-6834-54a4" type="max"/>
               </constraints>
               <profiles>
-                <profile id="ea28-63ef-bf6d-7af8" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="ea28-63ef-bf6d-7af8" name="The Hidden Hand" publicationId="817a-6288-e016-7469" page="328" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">While a Warlord with this Trait is in Reserves, the controlling player may choose to re-roll all failed Reserves rolls and when deployed to the battlefield the Warlord and all models in any unit he has joined gain the Fleet (2) special rule. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6921,7 +7049,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="3377-34f2-e8f4-e84c" name=" XVIII: Salamanders" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="3377-34f2-e8f4-e84c" name=" XVIII: Salamanders" publicationId="817a-6288-e016-7469" page="309" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -6934,11 +7062,11 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6ba3-a81b-5760-72e6" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="7875-539f-85ce-34f6" name="The Weight of Duty" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="7875-539f-85ce-34f6" name="The Weight of Duty (Loyalist only)" publicationId="817a-6288-e016-7469" page="309" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6957,11 +7085,11 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="452c-a94f-9574-1f47" name="Redemption of Flames" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="452c-a94f-9574-1f47" name="Redemption of Flames (Traitor only)" publicationId="817a-6288-e016-7469" page="309" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6980,7 +7108,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6ebb-9611-037a-a786" name="Promethean Will" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="6ebb-9611-037a-a786" name="Promethean Will" publicationId="817a-6288-e016-7469" page="309" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1835-7ba2-8d09-4b59" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3a13-93cd-4031-c6d6" type="max"/>
@@ -6998,7 +7126,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="050a-0b05-638b-d6ad" name=" XVII: Word Bearers (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="050a-0b05-638b-d6ad" name=" XVII: Word Bearers" publicationId="09c5-eeae-f398-b653" page="304" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -7011,15 +7139,23 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="192c-5cd9-49b9-4453" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="1feb-8835-0210-dd4f" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="1feb-8835-0210-dd4f" name="Enslaved by Darkness (Traitor only)" publicationId="09c5-eeae-f398-b653" page="304" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c323-8abb-95d7-1bba" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c0f4-1ce9-a21d-8953" type="max"/>
               </constraints>
               <profiles>
-                <profile id="9ece-e772-07fa-1a5d" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="9ece-e772-07fa-1a5d" name="Enslaved by Darkness" publicationId="09c5-eeae-f398-b653" page="304" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord Trait may only be selected by a model with the Traitor Allegiance and the Corrupted Unit Sub-type.
+A Warlord with this Trait modifies his Strength and Toughness by a value determined by the current Game Turn: +1 on Game Turns 1, 2 &amp; 3 , no modifier on turns 4 &amp; 5, and -1 on Game Turns 6+. When targeted by any weapon or special rule that targets the Daemon Unit Type, this Warlord is counted as though it had that Unit Type. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7027,15 +7163,15 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d9e3-a0e9-492d-d45b" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="d9e3-a0e9-492d-d45b" name="Unswerving Devotion" publicationId="09c5-eeae-f398-b653" page="304" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c813-5bbe-4965-5620" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e180-7d40-4700-529b" type="max"/>
               </constraints>
               <profiles>
-                <profile id="acd6-8152-e78b-6dcd" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="acd6-8152-e78b-6dcd" name="Unswerving Devotion" publicationId="09c5-eeae-f398-b653" page="304" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Any units that include at least one model with the Legiones Astartes (Word Bearers) special rule and have at least one model within 6&quot; of a Warlord with this Trait (including the Warlord himself and any unit he has joined) automatically pass the first failed Morale check or Pinning test they are called upon to make each turn. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7043,15 +7179,15 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2d93-454d-ea4f-5759" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="2d93-454d-ea4f-5759" name="Iconoclast" publicationId="09c5-eeae-f398-b653" page="304" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="83fb-ad39-efb5-98f8" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a504-cb4f-93cb-3c76" type="max"/>
               </constraints>
               <profiles>
-                <profile id="5c65-60cb-3e61-1559" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="5c65-60cb-3e61-1559" name="Iconoclast" publicationId="09c5-eeae-f398-b653" page="304" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait, and any unit he has joined, gain a bonus of +1 Attack when locked in combat with an enemy unit that includes at least one model with the Independent Character special rule, a Legion vexilla or a Legion standard. When making a Shooting Attack or Melee Attack targeting a Fortification, Building or other Terrain piece with a Toughness Characteristic, they gain a bonus of +2 to their Strength or the Strength of any weapons used. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7061,7 +7197,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="8fba-5b15-b959-4a17" name=" XVI: Sons of Horus (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="8fba-5b15-b959-4a17" name=" XVI: Sons of Horus" publicationId="09c5-eeae-f398-b653" page="282" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -7074,15 +7210,23 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="292d-8e60-a191-ffd8" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="989c-1089-47c6-60c4" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="989c-1089-47c6-60c4" name="Chosen by Dark Gods (Traitor only)" publicationId="09c5-eeae-f398-b653" page="282" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8dce-40e9-e4aa-7d43" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5a74-5c91-9e1d-2f36" type="max"/>
               </constraints>
               <profiles>
-                <profile id="b6bd-4421-6d5b-0b73" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="b6bd-4421-6d5b-0b73" name="Chosen by Dark Gods" publicationId="09c5-eeae-f398-b653" page="282" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord Trait may only be selected by a model with the Traitor Allegiance.
+The controlling player of a Warlord with this Trait may choose to roll a D6 at the start of each of that player’s turns. On the roll of a 2-5, the Warlord’s Strength and Toughness Characteristics are increased by +1 until the start of the controlling player’s next turn, and on the roll of a 6 the Warlord may also regain a single Wound (this may not take that model’s Wound score above its starting amount). However, on the roll of a 1 the Warlord suffers a single Wound instead which cannot be negated by any Saving Throw (including Invulnerable Saves) or Damage Mitigation roll (but can be regained as normal, either by this Trait or another special rule that restores Wounds). In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7090,15 +7234,23 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2a11-8ffa-623b-5f66" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="2a11-8ffa-623b-5f66" name="Wolf of Luna (Loyalist only)" publicationId="09c5-eeae-f398-b653" page="282" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7a60-9519-c96b-5623" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ff28-4006-9ce4-d693" type="max"/>
               </constraints>
               <profiles>
-                <profile id="f3d7-0128-16db-b68c" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="f3d7-0128-16db-b68c" name="Wolf of Luna" publicationId="09c5-eeae-f398-b653" page="282" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord Trait may only be selected by a model with the Loyalist Allegiance.
+A Warlord with this Trait may only join a unit composed entirely of models with both the Legiones Astartes (Sons of Horus) special rule and the Loyalist Allegiance. Both the Warlord and any unit it joins gain +1 Attack on any turn in which they successfully Charge, or are successfully charged by, an enemy unit that includes any models with both the Legiones Astartes (X) special rule and the Traitor Allegiance. These increases are in addition to any other bonuses granted by other special rules. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Assault phase as long as the Warlord has not been removed as a casualty. </characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7106,15 +7258,15 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="c7f9-9954-ac14-fee2" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="c7f9-9954-ac14-fee2" name="The Armour of Pride" publicationId="09c5-eeae-f398-b653" page="282" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="467a-583b-bff9-0ece" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="86ac-2779-cc62-d210" type="max"/>
               </constraints>
               <profiles>
-                <profile id="6db0-85e5-85c2-18d5" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="6db0-85e5-85c2-18d5" name="The Armour of Pride" publicationId="09c5-eeae-f398-b653" page="282" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The first time in any battle when a Warlord with this Trait is reduced to 0 Wounds for any reason, the controlling player must immediately make a Leadership test for that model. If the Test is failed then the Warlord is removed as a casualty as normal, but if the Test is passed then the Warlord is not removed as a casualty, remains in play and regains D3 Wounds. This has no effect against attacks or rules which remove the model as a casualty without inflicting Wounds or against attacks with the Instant Death special rule. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Shooting phase as long as the Warlord has not been removed as a casualty. </characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7124,7 +7276,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="0402-be48-5bfc-9b31" name=" XV: Thousand Sons" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="0402-be48-5bfc-9b31" name=" XV: Thousand Sons" publicationId="09c5-eeae-f398-b653" page="256" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -7137,11 +7289,11 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fbb2-3451-5d7c-7fcd" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="3ebb-a8ef-429f-d050" name="Evoker of Pain" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="3ebb-a8ef-429f-d050" name="Evoker of Pain (Traitor only)" publicationId="09c5-eeae-f398-b653" page="256" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7160,13 +7312,13 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d64d-37bc-905a-3e30" name="Magister of Prospero" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="d64d-37bc-905a-3e30" name="Magister of Prospero" publicationId="09c5-eeae-f398-b653" page="256" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4ba7-29a8-a010-e2c9" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cee3-4aca-b486-2bc6" type="max"/>
               </constraints>
               <profiles>
-                <profile id="3e72-239a-2dee-f9aa" name="Magister of Prospero" page="256" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="3e72-239a-2dee-f9aa" name="Magister of Prospero" publicationId="09c5-eeae-f398-b653" page="256" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
                     <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait , and any model with the Legiones Astartes (Thousand Sons) special rule in a unit it joins that makes a Psychic check (such as when using the Force or Psychic Focus special rules) may roll an additional dice and discard the highest rolled dice before determining the result of the Check. In addition, whose Warlord has this Trait may make an additional Reaction during the opposing player’s Movement phase long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
@@ -7176,7 +7328,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="26aa-aeb8-133f-03c0" name="Eidolon of Suffering" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="26aa-aeb8-133f-03c0" name="Eidolon of Suffering" publicationId="09c5-eeae-f398-b653" page="256" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6399-1be6-8139-6388" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9633-a5f5-0018-e17b" type="max"/>
@@ -7194,7 +7346,7 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="be90-69c4-929e-c852" name="XX: Alpha Legion (Placeholder)" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="be90-69c4-929e-c852" name="XX: Alpha Legion" publicationId="09c5-eeae-f398-b653" page="332" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -7207,15 +7359,23 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="73e2-0e8e-bc95-bb94" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="47d2-7b7d-3818-5fdd" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="47d2-7b7d-3818-5fdd" name="The Mobius Configuration (Loyalist Only)" publicationId="09c5-eeae-f398-b653" page="332" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9334-2e15-a1fe-912c" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ec62-054b-2aa2-fd2a" type="max"/>
               </constraints>
               <profiles>
-                <profile id="6fdb-415d-d441-40a2" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="6fdb-415d-d441-40a2" name="The Mobius Configuration" publicationId="09c5-eeae-f398-b653" page="332" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord Trait may only be selected for a model with the Loyalist Allegiance.
+An army whose Warlord has this Trait counts any Allied Detachment that has any version of the Legiones Astartes (X) special rule as though it had the Fellow Warriors level of Alliance, regardless of the variant of the Legiones Astartes (X) special rule it has. Units from this Allied Detachment that are removed as casualties do not score Victory points for the opposing player, regardless of the Mission Objectives in play, and if all models that were part of the Allied Detachment have been removed as casualties at the end of the battle, the controlling player gains +1 Victory point. No unit in the Allied Detachment may make Reactions of any kind, but the first unit in the Primary Detachment to make a Reaction each turn does not use up a point of the controlling player’s Reaction Allotment when making that Reaction.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7223,15 +7383,15 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7f8e-c94e-b089-3558" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="7f8e-c94e-b089-3558" name="Master of Lies" publicationId="09c5-eeae-f398-b653" page="332" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7fac-2e7a-3ee4-347a" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="60cb-bac7-55cf-b36b" type="max"/>
               </constraints>
               <profiles>
-                <profile id="b0c6-309d-2989-3008" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="b0c6-309d-2989-3008" name="Master of Lies" publicationId="09c5-eeae-f398-b653" page="332" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">An army whose Warlord has this Trait, may, at the start of the battle once all players have deployed all of their units onto the battlefield (including Infiltrators and Scouts) and any rolls to Seize the Initiative have been made, select up to three units that are under their control. The selected units may be redeployed as the controlling player wishes, within the constraints of the mission being played – they may be placed into Reserves, but may not be brought out of Reserves and onto the battlefield or assigned to a Deep Strike Assault, Subterranean Assault or Flanking Assault. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7239,15 +7399,78 @@ Hawks – Any models with this special rule gain the Shrouded (6+) special rule 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d7a5-4b0c-7fe1-2258" name="PLACEHOLDER" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="d7a5-4b0c-7fe1-2258" name="Hydran Excursor" publicationId="09c5-eeae-f398-b653" page="332" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bed6-eb06-b033-b04a" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8664-0283-01f2-44c8" type="max"/>
               </constraints>
               <profiles>
-                <profile id="f0fa-29b9-780a-4a58" name="PLACEHOLDER" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                <profile id="f0fa-29b9-780a-4a58" name="Hydran Excursor" publicationId="09c5-eeae-f398-b653" page="332" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait, must select any one variant of the Legiones Astartes (X) special rule other than Legiones Astartes (Alpha Legion) at the start of the battle, before any models are deployed. The Warlord and any unit he has joined gain a bonus of +1 to all To Hit rolls made against models with the chosen variant of the Legiones Astartes (X) special rule. In addition, an army whose Warlord has this Trait may make an additional Reaction during the Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="6745-e221-cd80-057e" name="    Mechanicum" publicationId="bde1-6db1-163b-3b76" page="16" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddf5-d792-3146-6e9a" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="610d-1d4a-c873-f911" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f6a5-62e7-9bef-eb0d" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6df3-b52e-27dc-de41" name="A Soul of Cold Iron" publicationId="bde1-6db1-163b-3b76" page="16" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6b31-b21b-17f8-c737" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08b8-9f59-d7dd-5f99" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="1808-e2d8-8d9d-fe8d" name="A Soul of Cold Iron" publicationId="bde1-6db1-163b-3b76" page="16" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait and any friendly unit with at least one model within 6&quot; that is Pinned may still move and declare Charges, but is limited to only firing Snap Shots until it is no longer Pinned. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Movement phase as long as the Warlord has not been removed as a casualty</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="34f8-053a-3802-6207" name="The Logic of Victory" publicationId="bde1-6db1-163b-3b76" page="16" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="487f-772e-d34e-61de" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2387-88ed-4698-660d" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="3333-c7c5-db36-cc43" name="The Logic of Victory" publicationId="bde1-6db1-163b-3b76" page="16" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If, at no point during this Warlord’s controlling player’s turn as the Active player, a Warlord with this Trait has neither made a Shooting Attack or been locked in combat then they gain an additional Reaction in each Phase of the following turn as the Reactive player. In addition, a Warlord with this Trait and any unit it has joined gains +1 WS and +1 BS when making attacks as part of any Reaction and +3 Initiative or +3 Movement when making a move as part of any Reaction.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ab8f-29a2-a435-8a49" name="The Science of Slaughter" publicationId="bde1-6db1-163b-3b76" page="16" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e57c-0b1c-53fa-6fb7" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1077-ab88-1a25-42b9" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="dd61-a29c-8f79-6d8e" name="The Science of Slaughter" publicationId="bde1-6db1-163b-3b76" page="16" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">On the second turn of each combat a Warlord with this Trait is engaged in, and each turn it is locked in the same combat after that, it gains a bonus of +1 to its WS and +1 Strength (to a maximum of 10). Once a given combat has ended and the Warlord is no longer locked in combat, the Warlord’s WS and Strength Characteristics are reset to the original values. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7876,10 +8099,6 @@ In addition, when moving in Hover mode, the controlling player may choose to inf
     <rule id="c6e2-3d5a-b8f9-005c" name="Neutron-flux" publicationId="a716-c1c4-7b26-8424" page="123" hidden="false">
       <description>A weapon with this special rule gains the Instant Death special rule when targeting models with the Automata Unit Type.</description>
     </rule>
-    <rule id="8c83-e084-bb04-d98c" name="Advanced Reaction:Combat Air Patrol" publicationId="a716-c1c4-7b26-8424" page="123" hidden="false">
-      <description>Combat Air Patrol – This Advanced Reaction may be made whenever any enemy model that has the Vehicle Unit Type and the Flyer Sub-type enters the battlefield from Reserves. The Reactive player may nominate any one model that has been assigned to Combat Air Patrol. Once the enemy model with the Vehicle Unit Type and Flyer Sub-type that triggered this Reaction has finished any and all Movement as it is brought into play, the chosen model assigned to Combat Air Patrol is brought into play from any point on the edge of the battlefield, moving into play as if it had entered play from Reserves. Once the Combat Air Patrol model has finished its Movement it may immediately make a Shooting Attack targeting the enemy model that triggered this Reaction – as long as it has finished its Movement with line of sight to that model.
-Only models with the Vehicle Unit Type and Flyer Sub-type may make the Combat Air Patrol Reaction.</description>
-    </rule>
     <rule id="93e9-2806-e822-bfaf" name="Techmarine Covenant" publicationId="a716-c1c4-7b26-8424" page="125" hidden="false">
       <description>A Techmarine Covenant is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed to the battlefield, all models in a Techmarine Covenant must be assigned to another unit from the same Detachment of the army they were selected as part of. Legion Techmarines that have not selected a Legion Spatha combat bike or Legion Scimitar jetbike may only be assigned to units composed entirely of models with the Infantry Unit Type and the same Legiones Astartes (X) special rule as the Legion Techmarine, and may not join units with Terminator armour of any kind. Legion Techmarines that have selected a Legion Spatha combat bike may only be assigned to units composed entirely of models with Legion Spatha combat bikes and the same Legiones Astartes (X) special rule as the Legion Techmarine, and any Legion Techmarines that have selected a Legion Scimitar jetbike may only be assigned to units composed entirely of models with Legion Scimitar jetbikes and the same Legiones Astartes (X) special rule as the Legion Techmarine. No Legion Techmarine may be assigned to any unit that includes one or more models with the Independent Character special rule or Unique Sub-type (but such models may join a unit that includes a Legion Techmarine as normal during either deployment or any following turn). No more than one Legion Techmarine may be assigned to any given unit.
 Once assigned to a unit, the Legion Techmarine is considered part of that unit and may not leave it under any circumstances – if that unit is removed as a casualty then the Legion Techmarine is removed as well. In battles using Victory points, no Victory points are ever scored for removing a Legion Techmarine as a casualty. When assigned to a unit, a Legion Techmarine gains all of the special rules (with the exception of those that specifically forbid it, such as the Bitter Duty special rule) and Unit Sub-types listed for the unit to which it is attached, but does not gain access to any additional Wargear options available to the unit to which it is assigned.</description>
@@ -8163,6 +8382,12 @@ Maxima :When destroyed, a model with this special rule resolves Hits caused by C
         <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">3</characteristic>
         <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">4</characteristic>
         <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 4, Force</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0ab2-3765-d019-2730" name="Advanced Reaction: Combat Air Patrol" publicationId="a716-c1c4-7b26-8424" page="123" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+      <characteristics>
+        <characteristic name="Description" typeId="c627-4637-8de5-65fb">Combat Air Patrol – This Advanced Reaction may be made whenever any enemy model that has the Vehicle Unit Type and the Flyer Sub-type enters the battlefield from Reserves. The Reactive player may nominate any one model that has been assigned to Combat Air Patrol. Once the enemy model with the Vehicle Unit Type and Flyer Sub-type that triggered this Reaction has finished any and all Movement as it is brought into play, the chosen model assigned to Combat Air Patrol is brought into play from any point on the edge of the battlefield, moving into play as if it had entered play from Reserves. Once the Combat Air Patrol model has finished its Movement it may immediately make a Shooting Attack targeting the enemy model that triggered this Reaction – as long as it has finished its Movement with line of sight to that model.
+Only models with the Vehicle Unit Type and Flyer Sub-type may make the Combat Air Patrol Reaction.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
