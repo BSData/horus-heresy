@@ -729,7 +729,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1299-a8c3-881d-8fa4" name="Every Varagyr must choose one from:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="1299-a8c3-881d-8fa4" name="1) Every Varagyr must choose one melee weapon from:" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="increment" field="cbb9-4ac2-cba9-9b75" value="1.0">
               <repeats>
@@ -767,7 +767,7 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="1b42-67fd-a9a9-8414" name="Every model in the unit must choose from:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="1b42-67fd-a9a9-8414" name="2) Every model in the unit must choose another weapon:" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="increment" field="7b51-ff21-8384-f749" value="1.0">
               <repeats>
@@ -781,8 +781,8 @@
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0658-22ac-9d20-1edf" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b51-ff21-8384-f749" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0658-22ac-9d20-1edf" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b51-ff21-8384-f749" type="min"/>
           </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup id="e477-98cb-c797-1d70" name="Second Frost Weapon" hidden="false" collective="false" import="true">
@@ -794,7 +794,7 @@
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7fc-58e9-cd56-907d" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7fc-58e9-cd56-907d" type="max"/>
               </constraints>
               <entryLinks>
                 <entryLink id="5c7b-149c-c05a-de7a" name="Frost Axe" hidden="false" collective="false" import="true" targetId="dba2-6933-b915-6196" type="selectionEntry">
@@ -906,6 +906,23 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
               </costs>
             </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="15eb-5d0d-2691-9283" name="Dedicated Transport:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c4c-af4a-58c3-14c3" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="575c-a529-2c44-7d7a" name="Land Raider Proteus Carrier Squadron" hidden="false" collective="false" import="true" targetId="b6cd-dd1a-6b2c-41d6" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="9359-61a5-fcdb-c28e" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="a48f-8638-d56c-edef" name="Land Raider Spartan" hidden="false" collective="false" import="true" targetId="bac1-f30e-2c04-d27d" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
