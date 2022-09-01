@@ -486,43 +486,6 @@
           <categoryLinks>
             <categoryLink id="7e1b-a2cc-89f8-3824" name="Dreadnought Unit-type:" hidden="false" targetId="4280-4963-02b5-e31d" primary="false"/>
           </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="51f2-4b7a-a6c0-08e7" name="Minor Arcana" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd0c-8e04-d251-c0f8" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="37c5-59fc-8437-d725" name="Gravis Force Blade" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7746-4c2e-bedd-a78a" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c449-801e-95fa-0898" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="f713-b149-183a-f379" name="Gravis Force Blade" publicationId="09c5-eeae-f398-b653" page="265" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Achean Force, Brutal (2)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="a99b-5a77-2229-8085" name="Achean Force" hidden="false" targetId="c56f-80ff-5d8e-1af4" type="rule"/>
-                <infoLink id="24f3-bfd8-7291-9218" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Brutal (2)"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="0d4e-fb30-c8db-6ebc" name="1) May replace its Gravis bolt cannon with one of the following:" hidden="false" collective="false" import="true" defaultSelectionEntryId="e55e-1905-46b8-71ba">
               <constraints>
@@ -589,12 +552,12 @@
               <modifiers>
                 <modifier type="set" field="8d22-ecdd-65cd-534a" value="2.0">
                   <conditions>
-                    <condition field="selections" scope="1626-a09f-d9ed-dca1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2881-e11d-8a07-78a3" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2881-e11d-8a07-78a3" type="equalTo"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" field="ce2c-6462-a0ce-5894" value="2.0">
                   <conditions>
-                    <condition field="selections" scope="1626-a09f-d9ed-dca1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2881-e11d-8a07-78a3" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2881-e11d-8a07-78a3" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -634,15 +597,13 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3862-99b9-ceeb-f0d4" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="fee6-d44c-3f1d-23e2" name="Prosperine Arcana:" hidden="false" collective="false" import="true" targetId="e6a0-3ea2-f7ca-411f" type="selectionEntryGroup">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="51f2-4b7a-a6c0-08e7" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
+            <entryLink id="7f00-c665-e967-00e9" name="Gravis Force Blade" hidden="false" collective="false" import="true" targetId="96aa-954e-b2e9-92df" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8c29-21ca-3ac5-21ad" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d907-0448-70b4-c7d2" type="max"/>
+              </constraints>
             </entryLink>
+            <entryLink id="70f1-3c3a-46ca-4d34" name="Prosperine Arcana:" hidden="false" collective="false" import="true" targetId="e6a0-3ea2-f7ca-411f" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200.0"/>
@@ -1729,34 +1690,6 @@
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="49.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="034f-641c-4c27-3b63" name="Pair of Achea Force Swords" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f9f-d02d-35c7-954c" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac83-781a-6e14-aedd" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="b25b-0654-8c53-6057" name="Achean Force Sword" publicationId="09c5-eeae-f398-b653" page="259" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <comment>validated nsh 2022/06/20</comment>
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (6+), Achean Force</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="ae68-8180-857e-ea86" name="Achean Force" hidden="false" targetId="c56f-80ff-5d8e-1af4" type="rule"/>
-            <infoLink id="b7bb-12ea-6c07-f842" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Rending (6+)"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="31d8-ca46-050a-2468" name="Dedicated Transport:" hidden="false" collective="false" import="true">
@@ -1779,7 +1712,7 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="6ab2-bc10-3cae-a54a" name="1) Bolt Pistol Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="e624-f792-fc7e-1fa4">
+        <selectionEntryGroup id="6ab2-bc10-3cae-a54a" name="2) Bolt Pistol Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="e624-f792-fc7e-1fa4">
           <modifiers>
             <modifier type="increment" field="6033-1413-065f-67fe" value="1.0">
               <repeats>
@@ -1831,6 +1764,51 @@
             </entryLink>
             <entryLink id="e624-f792-fc7e-1fa4" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry"/>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="23c3-affb-7174-4373" name="1) Pairs of Achea Force Swords" hidden="false" collective="false" import="true" defaultSelectionEntryId="4aa9-f452-1462-aad7">
+          <modifiers>
+            <modifier type="decrement" field="3848-f49d-6760-889e" value="4.0"/>
+            <modifier type="increment" field="9d2f-75e6-31ae-3b4f" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa09-819a-fa02-c669" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="3848-f49d-6760-889e" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa09-819a-fa02-c669" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d2f-75e6-31ae-3b4f" type="max"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3848-f49d-6760-889e" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4aa9-f452-1462-aad7" name="Pairs of Achea Force Swords" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="5abd-2347-6303-dcda" name="Achean Force Sword" publicationId="09c5-eeae-f398-b653" page="259" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <comment>validated nsh 2022/06/20</comment>
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (6+), Achean Force</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="92fc-9b77-741e-67a2" name="Achean Force" hidden="false" targetId="c56f-80ff-5d8e-1af4" type="rule"/>
+                <infoLink id="fe62-d0d3-a5ae-4183" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Rending (6+)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
