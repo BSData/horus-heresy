@@ -454,6 +454,16 @@ Corvus Corax may still Run on a turn when the Korvidine Pinions have been activa
               </characteristics>
             </profile>
           </profiles>
+          <entryLinks>
+            <entryLink id="7491-8fbc-22ec-a29d" name="Infravisor" hidden="false" collective="false" import="true" targetId="bc5b-fcd7-aeed-e97c" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6eb-ff8a-19d3-12a2" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
@@ -472,10 +482,11 @@ Corvus Corax may still Run on a turn when the Korvidine Pinions have been activa
                 <repeat field="selections" scope="c268-08ac-5b90-d034" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="set" field="868d-4ca7-1a27-247e" value="0.0"/>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cfbd-ca65-a86c-1783" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="868d-4ca7-1a27-247e" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="868d-4ca7-1a27-247e" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="5088-2629-d993-68b7" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry"/>
@@ -523,10 +534,11 @@ Corvus Corax may still Run on a turn when the Korvidine Pinions have been activa
                 <repeat field="selections" scope="c268-08ac-5b90-d034" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="set" field="aca2-63fa-6366-ed41" value="0.0"/>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc94-f60c-c4dc-7753" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aca2-63fa-6366-ed41" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aca2-63fa-6366-ed41" type="min"/>
           </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup id="52e8-1d56-3a40-2b27" name="One in three models may instead take:" hidden="false" collective="false" import="true">
@@ -634,6 +646,15 @@ Corvus Corax may still Run on a turn when the Korvidine Pinions have been activa
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
               </costs>
             </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="916e-4d5b-da33-1735" name="Dedicated Transport:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb69-1f8d-29e8-0d97" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="acbb-746b-c25c-b7a0" name="Rhino Transport" hidden="false" collective="false" import="true" targetId="03f1-8ed9-9867-8d18" type="selectionEntry"/>
+            <entryLink id="aae2-c86e-309f-8a14" name="Storm Eagle Gunship" hidden="false" collective="false" import="true" targetId="8aa5-ff31-7de7-19d4" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -775,6 +796,14 @@ Corvus Corax may still Run on a turn when the Korvidine Pinions have been activa
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6649-f011-842d-491d" type="max"/>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04fe-4d1a-c32c-f7dc" type="min"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="8172-055e-a5cf-19c2" name="Infravisor" hidden="false" collective="false" import="true" targetId="bc5b-fcd7-aeed-e97c" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51b4-9fe4-4f55-68b7" type="max"/>
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
@@ -1129,6 +1158,14 @@ Corvus Corax may still Run on a turn when the Korvidine Pinions have been activa
               <modifiers>
                 <modifier type="set" field="name" value="May exchange both his Combi-Bolter &amp; Power Weapon for:"/>
               </modifiers>
+            </entryLink>
+            <entryLink id="e652-fb27-42b4-0229" name="Infravisor" hidden="false" collective="false" import="true" targetId="bc5b-fcd7-aeed-e97c" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6507-77dd-547c-b32d" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
             </entryLink>
           </entryLinks>
           <costs>

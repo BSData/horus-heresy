@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3129-da35-55e0-642d" name="2022 - Mech Library" revision="4" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3129-da35-55e0-642d" name="2022 - Mech Library" revision="5" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="4086-0589-f010-e688" name="Titan Legion Min Troop/LoW" hidden="false"/>
+    <categoryEntry id="57a1-ae47-ff1b-36e4" name="Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="92-96" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry id="e825-c60e-e6c3-60f0" name="Photon Gauntlet" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" collective="false" import="true" type="upgrade">
@@ -489,40 +490,171 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8b4c-01f4-f39f-7c55" name="Archmagos Draykavac (Placeholder)" publicationId="bde1-6db1-163b-3b76" page="60" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="8b4c-01f4-f39f-7c55" name="Archmagos Draykavac" publicationId="bde1-6db1-163b-3b76" page="60" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="greaterThan"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="7d95-f9d1-440a-67bd"/>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c9ef-5940-dfd1-cb76" type="max"/>
       </constraints>
+      <profiles>
+        <profile id="ef26-ae17-8c5f-049b" name="Archmagos Draykavac" publicationId="bde1-6db1-163b-3b76" page="60" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+          <modifiers>
+            <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Infantry (Character, Monstrous, Antigrav, Cybertheurgist, Unique)">
+              <conditions>
+                <condition field="selections" scope="8b4c-01f4-f39f-7c55" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9dd5-bfd0-50c9-25c2" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="c32b-5fdd-3fbe-9b1f" value="7">
+              <conditions>
+                <condition field="selections" scope="8b4c-01f4-f39f-7c55" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9dd5-bfd0-50c9-25c2" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Cybertheurgist, Unique)</characteristic>
+            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+            <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">6</characteristic>
+            <characteristic name="W" typeId="57ee-1126-32a9-5672">4</characteristic>
+            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="97f7-826f-b7f0-15de" name="Cruel Taskmaster" publicationId="bde1-6db1-163b-3b76" page="61" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+          <characteristics>
+            <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If chosen as the army’s Warlord, Archmagos Draykavac automatically has Cruel Taskmaster as his Warlord Trait and may not select any other.
+Cruel Taskmaster – If any friendly unit with at least one model within 12&quot; of a Warlord with this Trait fails a Morale check or Pinning test, the controlling player may choose to remove a single model from that unit as a casualty, without any Armour Saves or Damage Mitigation rolls being made, and instead have the unit automatically pass the Morale check or Pinning test without re-rolling any dice.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="6efd-6227-fa9e-1ea3" name="Liquifractor" publicationId="bde1-6db1-163b-3b76" page="61" hidden="false">
+          <description>Archmagos Draykavac may exchange all his attacks in an Assault phase for a single special Liquifractor attack. This attack Hits automatically and may be used against a single model in base contact with Draykavac at Initiative step 1. To resolve the attack, Draykavac’s player rolls 2D6. If the target has a Toughness Characteristic, they suffer a number of Wounds equal to Draykavac’s roll minus their Toughness Characteristic with an AP value of 2. If the target has an Armour Value, reduce the rolled value by half of the Armour Value struck; the result is the number of Penetrating Hits the Vehicle suffers. For example, if Archmagos Draykavac’s player rolls a result of 9 against a Karacnos Assault Tank with a Front Armour Value of 14 (halved to 7), two Penetrating Hits are inflicted (9-7=2).</description>
+        </rule>
+        <rule id="772d-eca4-f823-35bd" name="Incursus Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="61" hidden="false">
+          <description>Archmagos Draykavac has the Artificia Machina and Ephemera Incursus Cybertheurgic Arcana, and has all Rites and weapons that are part of those Arcana.</description>
+        </rule>
+        <rule id="cf9e-42d8-ee4d-f5f3" name="High Techno-arcana: Stataraga" publicationId="bde1-6db1-163b-3b76" page="61" hidden="false">
+          <description>Archmagos Draykavac may be chosen as an HQ choice in a Traitor Allegiance Mechanicum Detachment, and may also be taken as a Troops choice in an army using the Divisio Tactica: Questoris Household. As part of a Questoris Knights Detachment, Archmagos Draykavac allows Castellax Battle-automata Maniples and Vorax Battle-automata Maniples to be chosen as non-Compulsory Troops choices for any Detachment in which he is included</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="3d04-70b8-12cc-8cef" name="Battlesmith (X)" hidden="false" targetId="5d57-4d02-1e36-4a82" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Battlesmith (3+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="c651-6822-b6f8-4a48" name="Firing Protocols (X)" hidden="false" targetId="32a3-f599-5c92-2945" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Firing Protocols (2)"/>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="8b4c-01f4-f39f-7c55" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9dd5-bfd0-50c9-25c2" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="2990-ed54-79f6-4bed" name="Preferred Enemy (X)" hidden="false" targetId="37ab-d4db-891a-de8c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Preferred Enemy (Infantry)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="23d5-ba06-421d-dfcb" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+        <infoLink id="227c-ac61-2fe9-bc65" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
+        <infoLink id="a282-1e6a-565d-cc6a" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
+        <infoLink id="15d1-5846-5b65-2e9a" name="Pride of Place" hidden="false" targetId="f83c-9442-8102-5da4" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="8b4c-01f4-f39f-7c55" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9dd5-bfd0-50c9-25c2" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="535d-121f-5839-a712" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="ab7c-4dce-52a0-3b2a" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+        <categoryLink id="ca1a-d504-80f8-2b44" name="Cybertheurgist" hidden="false" targetId="57a1-ae47-ff1b-36e4" primary="false"/>
+      </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="60b4-29cf-1e6e-2a87" name="Draykavac" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="1e24-6126-d3d2-5aba" name="Djinn-skein" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b655-65c1-01a9-1e77" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="054f-8b94-48e9-35a2" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e35-ae3c-98a7-3c0c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b6c-481c-4494-0a3c" type="max"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="7789-b912-d5d3-ff2b" name=" Abeyant" hidden="false" collective="false" import="true" type="upgrade">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+          <profiles>
+            <profile id="e884-4204-2aed-1983" name="Djinn-skein" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Archmagos Draykavac increases the Ballistic Skill of any unit he joins by +1. In addition, while Archmagos Draykavac is present on the battlefield and not Embarked in a Building or on a unit with the Transport Unit Sub-type and not locked in combat, the controlling player may re-roll any Scatter rolls made (whether as part of a weapon attack or the deployment of a model or unit), as long as Archmagos Draykavac has line of sight to the unit targeted by the attack or the point chosen as the target of the deployment.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="240.0"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="09c2-496c-1a2f-caf7" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
+        <entryLink id="6055-57e9-8d45-c7dd" name=" Abeyant" hidden="false" collective="false" import="true" targetId="9dd5-bfd0-50c9-25c2" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="6f06-3dd3-a757-f7bb" name="Paragon Blade" hidden="false" collective="false" import="true" targetId="2ab9-0e45-405e-056b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62d7-e6c8-cefb-02a4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29cc-fe4b-bf22-197b" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8389-c368-1fcf-bf97" name="Graviton Gun" hidden="false" collective="false" import="true" targetId="5303-5a3e-de51-1707" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e7c-54bb-3635-60c8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="def8-b8a6-7870-9571" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="35dd-831f-0e39-5148" name="Cortex Controller" hidden="false" collective="false" import="true" targetId="2fda-455f-d34d-97e0" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d604-32f6-39f6-830b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b571-a60b-49ba-4e97" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="2488-1b46-7385-0fb6" name="Machinator Array" hidden="false" collective="false" import="true" targetId="66f5-697c-605c-f1bb" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4be6-059c-d995-861a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2475-6ea8-031b-73d0" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8583-0f85-c95a-74d2" name="Mechanicum Protectiva" hidden="false" collective="false" import="true" targetId="7908-9b34-c5bb-21c2" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c483-2586-dcba-76e3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5c6-b20f-160d-6a29" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5beb-4ce4-78b3-5887" name="Artificia Machina" hidden="false" collective="false" import="true" targetId="51ed-f978-9a5e-1e04" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f20-00ce-8065-a54a" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f978-9bec-6cc0-85b8" name="Ephemera Incursus" hidden="false" collective="false" import="true" targetId="12fc-d4d8-d36c-6f14" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db4e-e2a3-3e8e-b605" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="240.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3ca1-6daa-7f73-22f4" name="Binaric Stratagems" publicationId="bde1-6db1-163b-3b76" page="102" hidden="false" collective="false" import="true" type="upgrade">
@@ -3569,6 +3701,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <condition field="selections" scope="c48e-f9ea-9d9d-46aa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5331-31f3-87ed-5ebe" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="15c6-ecce-8258-7e00" value="1.0">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f85-eb33-30c9-8f51" type="instanceOf"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce6c-c4a0-3622-b76b" type="min"/>
@@ -3637,8 +3774,16 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="4c16-20c7-f928-2aa6" name="Thanatar Calix" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="2f6a-1de2-c92c-d63b" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f85-eb33-30c9-8f51" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="2903-fef6-e839-368b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e22a-28db-8399-2c86" type="max"/>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f6a-1de2-c92c-d63b" type="min"/>
                   </constraints>
                   <profiles>
                     <profile id="df17-9de2-31bf-f684" name="Thanatar Calix" publicationId="bde1-6db1-163b-3b76" page="46" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -3657,6 +3802,18 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                       </characteristics>
                     </profile>
                   </profiles>
+                  <rules>
+                    <rule id="48be-ab7a-6431-5d25" name="Avatar of Destruction" publicationId="bde1-6db1-163b-3b76" page="101" hidden="true">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f85-eb33-30c9-8f51" type="instanceOf"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <description>A single Thanatar Siege-automata Maniple unit consisting of a single model may be taken as a non-Compulsory HQ choice in a Detachment that includes a model with this special rule. This model must be replaced with a Thanatar-Calix and may not take the Paragon of Metal upgrade. While wholly within 6&quot; of a Thanatar-Calix taken as an HQ choice in this way, friendly Myrmidon Secutor Hosts and Myrmidon Destructor Hosts gain the Line Unit Sub-type and add +1 to the Wounds score used to determine if they win a combat in the Assault phase.</description>
+                    </rule>
+                  </rules>
                   <infoLinks>
                     <infoLink id="47a6-bf07-a5c0-fa73" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
                       <modifiers>
@@ -3701,9 +3858,14 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <entryLink id="8ea9-e0ad-492b-4eb5" name="Paragon of Metal" hidden="false" collective="false" import="true" targetId="cc2a-46fe-bbf3-6ba2" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="2903-fef6-e839-368b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c48e-f9ea-9d9d-46aa" type="greaterThan"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="primary-category" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f85-eb33-30c9-8f51" type="instanceOf"/>
+                        <condition field="selections" scope="2903-fef6-e839-368b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c48e-f9ea-9d9d-46aa" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <costs>
@@ -4012,6 +4174,380 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="9dd5-bfd0-50c9-25c2" name=" Abeyant" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a81b-a191-fcb8-f43e" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7908-9b34-c5bb-21c2" name="Mechanicum Protectiva" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f0e-2878-6e2c-eaeb" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="69de-85b2-7a04-eaf2" name="Mechanicum Protectiva" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a Mechanicum Protectiva gains a 4+ Invulnerable Save.
+Invulnerable Saves granted by a Mechanicum Protectiva do not stack with other Invulnerable Saves, but can benefit from rules (like cyber-familiar) that specifically increase existing Saves. If a model has another Invulnerable Save then the controlling player must choose which one to use.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="27ff-3ae1-5cb6-774b" name="Feudal Hierarchy" publicationId="bde1-6db1-163b-3b76" page="104" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="3bfe-5668-c301-81f0" value="2.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cd1-fe10-db22-54bd" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba13-315d-0773-9e1f" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6f75-29a0-d321-91d3" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3bfe-5668-c301-81f0" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26cd-3bd0-9e15-48db" type="min"/>
+      </constraints>
+      <rules>
+        <rule id="23bf-6360-311d-fcee" name="Feudal Hierarchy" publicationId="bde1-6db1-163b-3b76" page="104" hidden="false">
+          <description>A single Detachment may not include both an Archmagos Prime and an Archmagos Prime on Abeyant</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d342-dbdb-33ec-5191" name="Artificia Cybernetica" publicationId="bde1-6db1-163b-3b76" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2ef-891c-51e8-5728" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="dead-87ed-fb0d-0628" name="Cybernetica Exortus (Cybertheurgic Rite)" publicationId="bde1-6db1-163b-3b76" page="94" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="255b-8955-ef87-9ea2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9e4-d354-e70d-8649" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="11fa-16c9-2547-4274" name="Cybernetica Exortus (Cybertheurgic Rite)" publicationId="bde1-6db1-163b-3b76" page="94" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
+              <characteristics>
+                <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of making a Shooting Attack, a Cybertheurgist with this Cybertheurgic Rite may select a single friendly unit with a model within 12&quot; which contains at least one model with the Automata Unit Type and apply one of the following effects to all models with the Automata Unit Type in the unit:
+• When making a Charge roll for the unit in the same turn as this Rite is used, roll an additional dice and discard the lowest rolled dice before determining the results of the Charge roll.
+• The unit (not each individual model) ignores the first Wound inflicted upon it in each Shooting Attack that targets it until the beginning of the controlling player’s next player turn. Simply discard that Wound without allocating it to a model.
+• The unit adds +1 to its BS for the remainder of the Shooting phase in which this power is used.
+• Until the start of the controlling player’s next turn as the Active player, the unit may ignore the restriction against making Reactions imposed by the Automata Unit Type.
+The Cybertheurgist’s controlling player may choose to make a Cybertheurgy check before using this power, if the Check is successful then two different options may be applied to the target unit instead of one. If the Check is failed then no options may be chosen and the Cybertheurgist suffers Cybertheurgic Feedback.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d3cc-0712-8f4a-7f56" name="Mordeo Cogita (Cybertheurgic Weapon)" publicationId="bde1-6db1-163b-3b76" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="875e-e2b2-4fb0-788e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5892-ea07-8441-baca" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7ef2-3f6b-9f48-a8c8" name="Mordeo Cogita (Cybertheurgic Weapon)" publicationId="bde1-6db1-163b-3b76" page="95" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Data-djinn, Instant Death, Cybertheurgic Focus</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="0e3c-94c8-78cf-eae4" name="Cybertheurgic Focus" hidden="false" targetId="f420-6cdb-5d9b-ef30" type="rule"/>
+            <infoLink id="f09f-6a66-a4a4-e67e" name="Data-djinn" hidden="false" targetId="3e2e-cdc0-8a31-06f6" type="rule"/>
+            <infoLink id="582d-1b43-a9b5-2d9f" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="51ed-f978-9a5e-1e04" name="Artificia Machina" publicationId="bde1-6db1-163b-3b76" page="94" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="191e-da91-3bc0-6ceb" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="5e23-856f-186d-618c" name="Animatus Integro (Cybertheurgic Rite)" publicationId="bde1-6db1-163b-3b76" page="94" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5944-ea7e-411e-f651" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="475b-312f-188b-e845" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="ccb9-cbbc-d6b4-ff6b" name="Animatus Integro (Cybertheurgic Rite)" publicationId="bde1-6db1-163b-3b76" page="94" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
+              <characteristics>
+                <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of making a Shooting Attack, a Cybertheurgist with this Cybertheurgic Rite may apply the effects of any version of the Battlesmith (X) special rule they have to a single model with the Vehicle, Dreadnought or Automata Unit Type that is within 12&quot; of the Cybertheurgist. The effect is rolled for as normally required by the Battlesmith (X) special rule, but does not require the Cybertheurgist to be in base contact or Embarked upon the model. If successful, the controlling player may choose to make a Cybertheurgy check for the Cybertheurgist model, if successful then the effect of the Battlesmith (X) special rule is applied twice without further rolls (i.e., an additional Wound is restored, or an additional Weapon Destroyed result removed from the target, etc.). If the Cybertheurgy check is failed then the Cybertheurgist suffers Cybertheurgic Feedback.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="caa2-99d2-b7a0-21b7" name="Animatus Excindor (Cybertheurgic Weapon)" publicationId="bde1-6db1-163b-3b76" page="94" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f44e-ecb9-5287-4fda" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="038e-117d-ec60-b6a9" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d964-0897-cc8a-f4a0" name="Animatus Excindor (Cybertheurgic Weapon)" publicationId="bde1-6db1-163b-3b76" page="94" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">1</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault D6, Haywire, Data-djinn, Cybertheurgic Focus</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="45e1-c3ec-7f8b-7021" name="Data-djinn" hidden="false" targetId="3e2e-cdc0-8a31-06f6" type="rule"/>
+            <infoLink id="337e-b4bc-6363-b413" name="Cybertheurgic Focus" hidden="false" targetId="f420-6cdb-5d9b-ef30" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b627-88f0-ee8c-c43c" name="Artificia Reductor" publicationId="bde1-6db1-163b-3b76" page="96" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c8e-aaf1-7efa-f4c6" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="d46c-b64d-855c-37f5" name="Porta Fractis (Cybertheurgic Rite)" publicationId="bde1-6db1-163b-3b76" page="96" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5748-7f1e-fae0-ed19" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae65-37c3-e8e6-dc1e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="90f2-78f1-92ea-3c5a" name="Porta Fractis (Cybertheurgic Rite)" publicationId="bde1-6db1-163b-3b76" page="96" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
+              <characteristics>
+                <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of making a Shooting Attack, a Cybertheurgist with this Cybertheurgic Rite may select a single Building, Fortification or enemy unit with the Transport Unit Sub-type that has an enemy unit Embarked within and is within 12&quot; of the Cybertheurgist and must then make a Cybertheurgy check. If the Check is successful then the enemy unit Embarked on the chosen target must immediately make an emergency Disembarkation and once Disembarked must make a Pinning test. If the Cybertheurgy check is failed then the Cybertheurgist suffers Cybertheurgic Feedback.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f8bb-912d-7f54-eb0e" name="Manos Ruinus (Cybertheurgic Weapon)" publicationId="bde1-6db1-163b-3b76" page="96" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f67e-3b2a-2481-819e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e154-33fa-a001-f3e2" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="eae8-bb40-578b-1fc2" name="Manos Ruinus (Cybertheurgic Weapon)" publicationId="bde1-6db1-163b-3b76" page="96" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Data-djinn, Armourbane, Exoshock (3+), Unwieldy, Cumbersome, Cybertheurgic Focus</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="06b4-be75-38f9-0f46" name="Data-djinn" hidden="false" targetId="3e2e-cdc0-8a31-06f6" type="rule"/>
+            <infoLink id="ab1a-cd94-09f7-2135" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule"/>
+            <infoLink id="a2e9-5096-a43f-5119" name="Exoshock (X)" hidden="false" targetId="69ca-318a-b47a-7a3c" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Exoshock (3+)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="31e1-3386-6936-1978" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+            <infoLink id="a294-1f5a-bb4b-097f" name="Cumbersome" hidden="false" targetId="d89a-c10e-8a7a-92c3" type="rule"/>
+            <infoLink id="bca5-a9fd-fd46-f58d" name="Cybertheurgic Focus" hidden="false" targetId="f420-6cdb-5d9b-ef30" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="12fc-d4d8-d36c-6f14" name="Ephemera Incursus" publicationId="bde1-6db1-163b-3b76" page="95" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7fd-f043-090d-e79c" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="0c41-188d-3206-fb63" name="Ephemera Perfidiae (Cybertheurgic Rite)" publicationId="bde1-6db1-163b-3b76" page="95" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7945-2055-8c27-fda5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff24-d09e-b3dc-19dc" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="90d2-faf0-e267-7e00" name="Ephemera Perfidiae (Cybertheurgic Rite)" publicationId="bde1-6db1-163b-3b76" page="95" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
+              <characteristics>
+                <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of making a Shooting Attack, a Cybertheurgist with this Cybertheurgic Rite may select a single enemy unit with a model within 12&quot; that is entirely composed of models with the Vehicle or Automata Unit Type. The Cybertheurgist’s controlling player may immediately make a Shooting Attack as if they controlled the chosen unit – this Shooting Attack may target any unit that is considered an enemy unit by the Cybertheurgist’s controlling player and is made as Snap Shots. The Cybertheurgist may choose to make a Cybertheurgy check before making this Shooting Attack, if successful the Shooting Attack is made using the Cybertheurgist’s BS and is not made as Snap Shots. If the Check is failed then the Cybertheurgist suffers Cybertheurgic Feedback and no Shooting Attack is made. An enemy unit used to make a Shooting Attack with this Rite may attack normally in its controlling player’s turn and gains the Hatred (Cybertheurgists) special rule for the rest of the battle.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="17f3-49ff-d6da-c8d1" name="Ephemera Exocluo (Cybertheurgic Weapon)" publicationId="bde1-6db1-163b-3b76" page="95" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e72-fb09-75b2-d7f1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a7f-7acc-120b-735a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a84a-1d7b-36f3-d1aa" name="Ephemera Exocluo (Cybertheurgic Weapon)" publicationId="bde1-6db1-163b-3b76" page="95" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 6, Data-djinn, Blind, Vox Silence,	Cybertheurgic Focus</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="f54f-ff37-6bb4-9a02" name="Cybertheurgic Focus" hidden="false" targetId="f420-6cdb-5d9b-ef30" type="rule"/>
+            <infoLink id="f248-4b0a-9b48-a06f" name="Data-djinn" hidden="false" targetId="3e2e-cdc0-8a31-06f6" type="rule"/>
+            <infoLink id="ac54-46d5-89c4-d7b8" name="Blind" hidden="false" targetId="d836-747d-07d6-2b63" type="rule"/>
+            <infoLink id="5aaf-3c18-aaae-c2c3" name="Vox Silence" hidden="false" targetId="919e-7a5b-6283-3cff" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="25df-a541-0d05-6f61" name="Ephemera Lacyraemarta" publicationId="bde1-6db1-163b-3b76" page="96" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae85-7ea2-45c7-c7bc" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="96a2-9e4a-e3cb-d5f4" name="Ephemera Instigare (Cybertheurgic Rite)" publicationId="bde1-6db1-163b-3b76" page="96" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ed7-0060-288f-aa04" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43ee-d32b-650a-9c19" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="1e26-2025-57fd-080e" name="Ephemera Instigare (Cybertheurgic Rite)" publicationId="bde1-6db1-163b-3b76" page="96" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
+              <characteristics>
+                <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of making a Shooting Attack, a Cybertheurgist with this Cybertheurgic Rite may select a single friendly unit within 12&quot; that is entirely composed of models with the Infantry Unit Type and is of the Mechanicum Faction. The chosen unit may immediately move a number of inches up to twice its unmodified Initiative Characteristic directly towards the nearest enemy unit. If the chosen unit has mixed Initiative Characteristics, use the highest unmodified Characteristic. The Cybertheurgist’s controlling player may choose to make a Cybertheurgy check for the Cybertheurgist. If the Check is successful, then the chosen unit gains the Hammer of Wrath (1) and Furious Charge (1) special rules until the end of the subsequent Assault phase. If the Check is failed, the chosen unit and the Cybertheurgist suffer Cybertheurgic Feedback.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="d58c-6b87-7108-b1a0" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Hammer of Wrath (1)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="1371-d2ce-9902-4e8c" name="Furious Charge (X)" hidden="false" targetId="2821-9269-862f-0554" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Furious Charge (1)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7aca-b21b-891e-3c52" name="Ephemera Excrusis (Cybertheurgic Weapon)" publicationId="bde1-6db1-163b-3b76" page="96" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aea6-d96f-475e-dd2d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18ae-e271-cc3b-22e5" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="007a-5f81-6323-4931" name="Ephemera Excrusis (Cybertheurgic Weapon)" publicationId="bde1-6db1-163b-3b76" page="96" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">*</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Fleshbane, Rad-phage,  Concussive (3), Cybertheurgic Focus</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="d166-d1f6-0a11-fc29" name="Fleshbane" hidden="false" targetId="40cd-9505-253c-e76f" type="rule"/>
+            <infoLink id="75e8-993b-f406-245c" name="Rad-Phage" hidden="false" targetId="8189-e963-d2e5-5d3d" type="rule"/>
+            <infoLink id="5755-3446-ab31-49aa" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Concussive (3)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="9dda-2365-f1b9-1a47" name="Cybertheurgic Focus" hidden="false" targetId="f420-6cdb-5d9b-ef30" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="73fe-4e82-6207-a09a" name="Arc Blaster" publicationId="bde1-6db1-163b-3b76" page="113" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6cb7-b1f7-5f95-814d" name="Arc Blaster" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Shred, Disruption (4+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a189-98f6-a655-2731" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+        <infoLink id="7515-0f1b-67cd-f9ea" name="Disruption (X)" hidden="false" targetId="4eb9-9e5e-bb27-3644" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dd74-951d-8540-5ea1" name="Lightning Lock" publicationId="bde1-6db1-163b-3b76" page="113" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f1d7-08a2-bd66-2f80" name="Lightning Lock" publicationId="bde1-6db1-163b-3b76" page="113" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Rending (4+), Shred, Exoshock (4+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="fe00-acf9-39c9-3499" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (4+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="36dd-1931-cb97-787e" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+        <infoLink id="72a1-30d6-58ea-410d" name="Exoshock (X)" hidden="false" targetId="69ca-318a-b47a-7a3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Exoshock (4+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="d284-2126-b24b-c3da" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1b29-a58e-296c-3946" name="Household Ranks" hidden="true" collective="false" import="true">
@@ -4165,6 +4701,162 @@ Preceptor: Any units of Armiger Warglaives or Armiger Helverins that have at lea
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
+    <selectionEntryGroup id="c36b-a6a2-9cb2-b090" name="Orders of High Techno-arcana" publicationId="bde1-6db1-163b-3b76" page="98" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="982a-7267-a5bb-3229" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9780-13f0-c1ca-107c" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="2cd1-fe10-db22-54bd" name="Archimandrite" publicationId="bde1-6db1-163b-3b76" page="98" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="3295-4acb-b579-75b7" name="Archimandrite" publicationId="bde1-6db1-163b-3b76" page="98" hidden="false">
+              <description>• Bonds of Vassalage: A model with this special rule must be the army’s Warlord. In addition, a Mechanicum army that includes a model with this special rule may include a Mechanicum Allied Detachment. An Archmagos Prime or Archmagos Prime on Abeyant included in this Allied Detachment cannot select the Archimandrite Order of High Techno-arcana.
+
+• Magister Theurgica: A model with this special rule may select an additional Cybertheurgic Arcana from those available to it.
+
+• Master Technomancer: Models with the Battlesmith (X) special rule in a Detachment that includes a model with this special rule may add the following effect to the list of options they may apply to units with the Vehicle, Dreadnought or Automata Unit Type targeted by the Battlesmith (X) rule:
+- Until the end of the Shooting phase, the target unit may make Shooting Attacks using the Ballistic Skill of the model that successfully used the Battlesmith (X) rule.
+- Until the end of the Shooting phase, the target gains the Power of the Machine Spirit special rule. This effect may only be applied to units with the Vehicle Unit Type.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9bcd-f556-5740-2f9f" name="Cybernetica" publicationId="bde1-6db1-163b-3b76" page="99" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="2218-0cd7-1d91-407f" name="Cybernetica" publicationId="bde1-6db1-163b-3b76" page="99" hidden="false">
+              <description>• Cohorts Cybernetica: All Castellax Battle-automata Maniples in a Detachment that includes a model with this special rule gain the Line Unit Sub-type.
+
+• Networked Sensorium Protocols: When making Shooting Attacks, models with the Automata Unit Type in a Detachment that includes a model with this special rule reduce the benefits of any Cover Save the target unit has by -2 (a 4+ becoming a 6+, a 5+ being ignored entirely, and so on) if the model making the Shooting Attack is within 12&quot; of two or more friendly models with cortex controllers.
+
+• Preservation Protocols: A model with this special rule gains the Patris Cybernetica special rule. In addition, when joined to a unit with the Automata Unit Type, any Wounds which would be allocated to the Character (even those caused by the Precision Strikes (X) or Sniper special rules) may instead be allocated to a model with the Automata Unit Type first.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="882c-7f2d-e0ed-193a" name="Patris Cybernetica" hidden="false" targetId="0893-4bd0-d5a1-14db" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="bd4b-63fa-928c-887d" name="Lacyraemarta" publicationId="bde1-6db1-163b-3b76" page="99" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="35bb-61ef-92ac-71ec" name="Lacyraemarta" publicationId="bde1-6db1-163b-3b76" page="99" hidden="false">
+              <description>• Incorruptible Flesh: Any Hits allocated to a model with this special rule, or any model with the Infantry Unit Type in a unit they join, with the Rending (X), Poisoned (X) or Fleshbane special rules only affect that model on a D6 roll of a 6 instead of their usual effect.
+
+• Opus Viscera: If a model with the Battlesmith (X) special rule in a Detachment that includes a model with this special rule is in base contact with at least one model in a unit comprised of only models with the Infantry Unit Type during the Shooting phase, they can attempt to enhance that unit instead of making a Shooting Attack. Roll a D6. If the result is equal to or more than the value listed in brackets as part of the Battlesmith (X) rule, then one of the following effects may be applied to the unit this model is in base contact with:
+- Restore a lost Wound. This will not return a model that has been previously removed from the battle.
+- The unit may immediately move a number of inches equal to twice the Initiative Characteristic of the majority of models in the unit. This movement is not Running, and therefore, if the unit did not Run in the Movement phase, it may still make Shooting Attacks and declare a Charge as normal for the remainder of the turn.
+
+• The Sanguine Hook: A model with this special rule gains the Ephemera Lacyraemarta Cybertheurgic Arcana, but may not select any other Cybertheurgic Arcana from those available with the Cybertheurgist special rule.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1247-a94b-070d-2a7b" name="Macrotek" publicationId="bde1-6db1-163b-3b76" page="100" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="9f38-c49a-e26b-40e9" name="Macrotek" publicationId="bde1-6db1-163b-3b76" page="100" hidden="false">
+              <description>• High Enginseer: Tech-Priest Auxilia units in a Detachment that includes a model with this special rule may be taken as Troops choices. However, any Tech-Priest Auxilia that are taken in this way must choose the Enginseer Techno-arcana.
+
+• Moderati Munitoria: During the battle’s set-up, but before Objective markers have been placed or deployment has been determined, the player that controls a model with this special rule may choose to alter the terrain set-up on the battlefield. The player that controls a model with this special rule may choose to move up to three pieces of terrain each up to 6&quot;, so long as their final position is not within 2&quot; of another piece of terrain. If two or more players control models with this special rule, they roll off. They then take turns choosing and moving terrain, starting with the winner of the roll-off, until each player has moved three pieces of terrain, or chosen to pass. A piece of terrain can only be moved once by this rule.
+
+• Rector Aedificii: Models with the Battlesmith (X) special rule in a Detachment that includes a model with this special rule may repair Buildings in addition to units with the Vehicle, Dreadnought or Automata Unit Type. In addition, they add the following effects to the list of options they may apply to models targeted by the Battlesmith (X) rule:
+- Until the start of the controlling player’s next turn, any Hits allocated to the chosen model, with the Breaching (X), Exoshock (X) or Rending (X) special rules only affect that model on a D6 roll of a 6 instead of their usual effect.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5e62-8d7e-a487-0490" name="Malagra" publicationId="bde1-6db1-163b-3b76" page="100" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="ddb0-51e0-9185-1b5f" name="Malagra" publicationId="bde1-6db1-163b-3b76" page="100" hidden="false">
+              <description>• Ictus Insidiae: Any models with the Character Unit Sub-type in a Detachment that includes a model with this special rule may upgrade a machinator array or servo-arm they are equipped with to include an in-built prehensile data-spike for +10 points.
+
+• Interfector Auxilia: Tech-Priest Auxilia units in a Detachment that includes a model with this special rule may choose the Interfector Techno-arcana instead of Enginseer, Lachrimallus, or Reductor options.
+- Interfector: Tech-Priests and Magos Auxilia in the unit are each equipped with a prehensile data-spike. In addition, models in the unit gain the Scout special rule.
+
+• Sacred Mission: A single Arcuitor Magisterium unit in a Detachment that includes a model with this special rule may be taken as an HQ choice. A unit taken in this way loses the Hunter Killer special rule and instead gains the Scout and Court of Executioners special rules. Note that this unit is still a 0-1 choice, so if it is taken as an HQ, another Arcuitor Magisterium unit cannot be taken as an Elites choice and vice versa.
+- Court of Executioners: A unit with this special rule may include up to two additional Arcuitor Magisterium for 110 points each. When deployed onto the battlefield (either at the start of the battle or when arriving from Reserves), all models with this special rule in a unit must be deployed within unit coherency, but afterwards operate independently and are not treated as a unit.
+
+• Scindex-malagrus: A model with this special rule gains the Preferred Enemy (Characters), Precision Strikes (5+) and the Monster Hunter special rules. In addition, a model with this special rule increases their Weapon Skill Characteristic to 5 and Attacks Characteristic to 3.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="3879-8145-0a76-f742" name="Preferred Enemy (X)" hidden="false" targetId="37ab-d4db-891a-de8c" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Preferred Enemy (Characters)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="7c46-e53d-6dd6-8d7d" name="Precision Strikes (X)" hidden="false" targetId="2206-8497-8fe1-e973" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Precision Strikes (5+)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="b6fc-e305-2627-95c4" name="Monster Hunter" hidden="false" targetId="118d-58ce-8611-ab15" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8305-5ac6-f395-e570" name="Myrmidax" publicationId="bde1-6db1-163b-3b76" page="101" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="e4ad-3f1e-c347-5d0a" name="Myrmidax" publicationId="bde1-6db1-163b-3b76" page="101" hidden="false">
+              <description>• Avatar of Destruction: A single Thanatar Siege-automata Maniple unit consisting of a single model may be taken as a non-Compulsory HQ choice in a Detachment that includes a model with this special rule. This model must be replaced with a Thanatar-Calix and may not take the Paragon of Metal upgrade. While wholly within 6&quot; of a Thanatar-Calix taken as an HQ choice in this way, friendly Myrmidon Secutor Hosts and Myrmidon Destructor Hosts gain the Line Unit Sub-type and add +1 to the Wounds score used to determine if they win a combat in the Assault phase.
+
+• The Myrmidon Host: Myrmidon Secutor Hosts in a Detachment that includes a model with this special rule may be taken as Troops choices and Myrmidon Destructor Hosts may be taken as Elites choices.
+
+• Vessel of Destruction: A model with this special rule gains the Hatred (Everything) and Bulky (3) special rules. In addition, a model with this special rule increases their Wound Characteristic to 5.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="2931-aa55-9066-e89b" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Bulky (3)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="e7e8-4a46-8209-6455" name="Hatred (X)" hidden="false" targetId="dc0b-fe69-6b71-e0a4" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Hatred (Everything)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="73dc-f5bb-be45-2547" name="Reductor" publicationId="bde1-6db1-163b-3b76" page="101" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="bb15-1388-a02c-6ff5" name="Reductor" publicationId="bde1-6db1-163b-3b76" page="101" hidden="false">
+              <description>• Demolisher: Models with the Battlesmith (X) special rule in a Detachment that includes a model with this special rule may target Buildings with the Battlesmith (X) special rule, in addition to models with the Vehicle, Dreadnought or Automata Unit Type. However, they may neither choose any option in the Battlesmith (X) special rule that restores lost Wounds or Hull Points, nor options that repair Weapon Destroyed or Immobilised results. Instead they may only choose from the following effects:
+- Cause a target Building or model with the Vehicle Unit Type to lose a single Hull Point.
+- Inflict an automatic Wound with no Saves of any kind to a model with the Dreadnought or Automata Unit Type.
+- Inflict an automatic Weapon Destroyed result on a Building or model with the Vehicle Unit Type. The target does not lose a Hull Point as a result of this effect.
+- Inflict an automatic Immobilised result on a model with the Vehicle Unit Type. The target does not lose a Hull Point as a result of this effect.
+
+• Harbinger of Devastation: During the battle’s set-up, but before Objective markers have been placed or deployment has been determined, the player that controls a model with this special rule may nominate up to three areas of terrain, Buildings, or Fortifications. If the chosen item is an area of terrain that provides a Cover Save, then that Cover Save is removed and the area counts as both Difficult Terrain and Dangerous Terrain. If the item chosen is a Building or Fortification then all rolls on the Building Damage table made for that Building or Fortification gain a modifier of +1. If two or more players control models with this special rule, they roll off. They then take turns nominating terrain, starting with the winner of the roll-off, until each player has nominated three pieces of terrain, or chosen to pass. A piece of terrain can only be nominated once by this rule.
+
+• Secrets of Annihilation: A model with this special rule gains the Artificia Reductor Cybertheurgic Arcana, but may not select any other Cybertheurgic Arcana from those available with the Cybertheurgist special rule.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="bd27-d2a1-da2b-f649" name="Cybertheurgic Arcana" publicationId="bde1-6db1-163b-3b76" page="94" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="a86a-b799-0077-c457" name="Artificia Machina" hidden="false" collective="false" import="true" targetId="51ed-f978-9a5e-1e04" type="selectionEntry"/>
+        <entryLink id="adc1-f74a-b8f5-c935" name="Artificia Cybernetica" hidden="false" collective="false" import="true" targetId="d342-dbdb-33ec-5191" type="selectionEntry"/>
+        <entryLink id="0098-1b87-a87d-08fb" name="Ephemera Incursus" hidden="false" collective="false" import="true" targetId="12fc-d4d8-d36c-6f14" type="selectionEntry"/>
+        <entryLink id="6018-be9c-b4f9-76d0" name="Ephemera Lacyraemarta" hidden="false" collective="false" import="true" targetId="25df-a541-0d05-6f61" type="selectionEntry"/>
+        <entryLink id="0c98-b1ae-1e0c-218d" name="Artificia Reductor" hidden="false" collective="false" import="true" targetId="b627-88f0-ee8c-c43c" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="41ab-227d-9d91-8001" name="Flank Speed" publicationId="bde1-6db1-163b-3b76" page="104" hidden="false">
@@ -4193,6 +4885,21 @@ When deployed onto the battlefield (either at the start of the battle or when ar
     </rule>
     <rule id="66b8-7232-1ed3-3f70" name="God-Engine" publicationId="bde1-6db1-163b-3b76" page="104" hidden="false">
       <description>A model with this special rule ignores all Psychic Powers and Cybertheurgic Rites and Attacks made by Psychic and Cybertheurgic Weapons. In addition, a model with this special rule ignores the effects of the Haywire and Disruption (X) special rules. In all cases, weapons which benefit from these special rules must attempt to damage a model with this special rule normally using the attack’s Strength value. In addition, all friendly Mechanicum units with at least one model within 24&quot; of a model with this special rule gain the Fearless special rule.</description>
+    </rule>
+    <rule id="f83c-9442-8102-5da4" name="Pride of Place" publicationId="bde1-6db1-163b-3b76" page="106" hidden="false">
+      <description>A model with this special rule may not embark upon any model with the Transport Unit Sub-type, regardless of its Unit Type or any special rules the model with the Transport Sub-type may have.</description>
+    </rule>
+    <rule id="f420-6cdb-5d9b-ef30" name="Cybertheurgic Focus" publicationId="bde1-6db1-163b-3b76" page="94" hidden="false">
+      <description>Before making any To Hit rolls with this weapon, the Cybertheurgist must make a Cybertheurgy check. If the Check is passed then the Cybertheurgist may attack as normal using the profile shown for this weapon. If the Check is failed then the Cybertheurgist suffers Cybertheurgic Feedback, and if the model is not removed as a casualty then it may attack as normal but may not use this weapon.</description>
+    </rule>
+    <rule id="3e2e-cdc0-8a31-06f6" name="Data-djinn" publicationId="bde1-6db1-163b-3b76" page="103" hidden="false">
+      <description>When allocated to a model that does not have the Automata, Vehicle or Dreadnought Unit Types or is not a Building or Fortification, any Hits from a weapon with this special rule automatically fail to Wound without any dice being rolled and regardless of the weapon’s Strength or the target’s Toughness.</description>
+    </rule>
+    <rule id="919e-7a5b-6283-3cff" name="Vox Silence" publicationId="bde1-6db1-163b-3b76" page="111" hidden="false">
+      <description>Any models with the Infantry or Cavalry Unit Types in a unit that suffers one or more Hits from a weapon with this special rule must reduce their Leadership by -2 until the start of their controlling player’s next turn. This modifier is not cumulative, and any given unit can only be affected by a single instance of the Vox Silence special rule at a time. Nor is it cumulative with other special rules that negatively modify Leadership. Always use the highest single modifier among those applicable. In addition, units affected by this special rule do not gain the benefits of nuncio vox, command vox or other similar Wargear items until the start of their controlling player’s next turn. Units that include one or more models with the Stubborn special rule ignore this effect.</description>
+    </rule>
+    <rule id="0893-4bd0-d5a1-14db" name="Patris Cybernetica" publicationId="bde1-6db1-163b-3b76" page="106" hidden="false">
+      <description>An Independent Character with this special rule may join a unit composed of models with the Automata Unit Type or Monstrous Unit Sub-type. However they cannot join a unit which contains models of any other Unit Type if the model with this rule also has the Automata or Dreadnought Unit Type, or the Monstrous Unit Sub-type.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
