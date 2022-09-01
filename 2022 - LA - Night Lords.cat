@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="36dc-14fc-8872-476b" name="LA -   VIII: Night Lords" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="36dc-14fc-8872-476b" name="LA -   VIII: Night Lords" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="f491-c7fa-f6d3-917d" name="Contekar Terminator Squad" hidden="false" collective="false" import="false" targetId="837e-c3ca-437e-dfbf" type="selectionEntry">
       <modifiers>
@@ -144,6 +144,24 @@
         <categoryLink id="e1a5-7428-ea5b-f5c1" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="d717-e23d-e2a2-0349" name="Atramentar Squad" hidden="false" collective="false" import="true" targetId="12d3-9df0-4118-997f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2193-063a-03e7-6c04" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d56-d960-0687-7fee" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="2e80-7dc9-ea08-c397" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="fc50-4558-2e33-bedb" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="d2ce-94c1-242d-2a7f" name="Sevatar" publicationId="09c5-eeae-f398-b653" hidden="false" collective="false" import="true" type="unit">
@@ -256,6 +274,27 @@
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="2193-063a-03e7-6c04" name="Sworn Loyalty" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="d2ce-94c1-242d-2a7f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0176-56a3-d590-b103" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="8d4b-a3ad-f0ee-3804" value="1.0">
+              <conditions>
+                <condition field="selections" scope="d2ce-94c1-242d-2a7f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0176-56a3-d590-b103" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d4b-a3ad-f0ee-3804" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a52-a69c-fea4-f4a4" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="6b86-7cc4-0d92-0221" name="Sworn Loyalty" hidden="false" targetId="3938-864e-6801-3410" type="rule"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -433,10 +472,11 @@
                 <repeat field="selections" scope="53ce-6dc9-aa69-fbaa" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a9ec-199a-7493-5e0a" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="decrement" field="ee7f-183a-0568-6caf" value="4.0"/>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22da-9d9d-b76a-88fd" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee7f-183a-0568-6caf" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee7f-183a-0568-6caf" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="6485-8181-878f-7005" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry"/>
