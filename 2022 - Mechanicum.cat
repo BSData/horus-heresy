@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c247-da79-1654-d39e" name="2022 - Mechanicum" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c247-da79-1654-d39e" name="2022 - Mechanicum" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="29c6-0ec7-0162-e817" name="Mechanicum" hidden="false" collective="false" import="false" targetId="ddf5-d792-3146-6e9a" type="selectionEntry">
       <constraints>
@@ -51,6 +51,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="d629-dd69-e689-c38a" name="Arcuitor Magisterium (Placeholder)" hidden="false" collective="false" import="true" targetId="6f33-657c-a1b4-710e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="4833-3ad9-f086-2980" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="0c0f-9a1e-4050-56d4" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
@@ -80,7 +87,6 @@
       <categoryLinks>
         <categoryLink id="6658-9df3-d4ac-70d7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="f1b8-f9a4-e1fb-c21f" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
-        <categoryLink id="878a-d92e-8123-7041" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="de1b-2a5f-b271-fd61" name="Arlatax Battle-Automata Maniple (Placeholder)" hidden="false" collective="false" import="true" targetId="b178-7d35-136f-d305" type="selectionEntry">
@@ -175,6 +181,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="3c04-f537-6cf1-65bc" name="Castellax Battle-Automata Maniple " hidden="false" collective="false" import="true" targetId="537f-846d-90e3-2526" type="selectionEntry">
+      <modifiers>
+        <modifier type="add" field="category" value="6399-5c65-7833-1025">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bcd-f556-5740-2f9f" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="b52a-0f4e-b317-2bcd" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="12ad-c3f3-cdb7-1735" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
@@ -199,6 +212,76 @@
         <categoryLink id="22c6-2c40-c433-b524" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="0d52-bf5d-15d6-0470" name="Tech-Priest Auxilia (Placeholder)" hidden="true" collective="false" import="true" targetId="0eae-0c52-1087-a3b0" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1247-a94b-070d-2a7b" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="22e8-b76e-e559-5ac5" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="093d-3993-8774-9f21" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a311-28b2-65d1-193d" name="Arcuitor Magisterium (Placeholder)" hidden="true" collective="false" import="true" targetId="6f33-657c-a1b4-710e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e62-8d7e-a487-0490" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="ac20-54eb-277f-85ca" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="a52f-f980-0f7d-36c3" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d1c5-ff4b-1a9e-2a92" name="Thanatar Siege-automata Maniple" hidden="true" collective="false" import="true" targetId="2903-fef6-e839-368b" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8305-5ac6-f395-e570" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="19e9-28c4-f881-a0b3" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="db76-cda6-0690-9f5c" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3ca2-40e2-1b7e-b0b3" name="Myrmidon Secutor Host (Placeholder)" hidden="true" collective="false" import="true" targetId="1869-2d16-d825-04c3" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8305-5ac6-f395-e570" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="e4bc-e382-e2f4-1151" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="6609-996b-bd48-3075" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="001b-6e55-0b99-c015" name="Myrmidon Destructor Host (Placeholder)" hidden="true" collective="false" import="true" targetId="356f-a88b-1d13-3700" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8305-5ac6-f395-e570" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="9a3c-7e17-b013-675c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="7c96-b532-93cb-02c2" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="7c8d-b21a-1f72-7e22" name="Upgrade Points (Placeholders)" hidden="false" collective="false" import="true" type="upgrade">
@@ -210,26 +293,143 @@
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7627-04e3-89f2-e14f" type="max"/>
       </constraints>
+      <profiles>
+        <profile id="17bc-b919-f988-4e8a" name="Archmagos Prime" publicationId="bde1-6db1-163b-3b76" page="20" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+          <modifiers>
+            <modifier type="set" field="cc42-7ed5-7092-5c84" value="5">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e62-8d7e-a487-0490" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="f111-2ce5-dd12-d6b0" value="3">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e62-8d7e-a487-0490" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="57ee-1126-32a9-5672" value="5">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8305-5ac6-f395-e570" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Cybertheurgist, Character)</characteristic>
+            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+            <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+            <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="fc8b-7c82-9965-120f" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
         <categoryLink id="699b-4a76-ee6f-f722" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="2eab-eaf4-105a-f2a0" name="Cybertheurgist" hidden="false" targetId="57a1-ae47-ff1b-36e4" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="1e18-34a0-fdae-d2d5" name="Archmagos Prime " publicationId="bde1-6db1-163b-3b76" page="20" hidden="false" collective="false" import="true" type="model">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f96e-eae0-68fa-be28" name="Cybertheurgic Arcana" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="3701-d454-88b0-a947" value="2.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cd1-fe10-db22-54bd" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="b3d1-0513-1249-ae81" value="2.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cd1-fe10-db22-54bd" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="878f-00fd-c5a4-fea9" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f0f-c00f-03d5-77e0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3701-d454-88b0-a947" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3d1-0513-1249-ae81" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="a196-485d-c1fc-b6cb" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
+            <entryLink id="b805-864e-e177-a3e8" name="Ephemera Lacyraemarta" hidden="true" collective="false" import="true" targetId="25df-a541-0d05-6f61" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="0ff0-07e8-a1b1-9fbd" name="Artificia Machina" hidden="false" collective="false" import="true" targetId="51ed-f978-9a5e-1e04" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="7ded-27cc-e57e-bf87" name="Ephemera Incursus" hidden="false" collective="false" import="true" targetId="12fc-d4d8-d36c-6f14" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="8aba-8369-430a-d197" name="Artificia Cybernetica" hidden="false" collective="false" import="true" targetId="d342-dbdb-33ec-5191" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="756e-9e13-103f-1228" name="Artificia Reductor" hidden="true" collective="false" import="true" targetId="b627-88f0-ee8c-c43c" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="830a-54b7-2ab0-8382" name="Upgrade Points (Placeholders)" hidden="false" collective="false" import="true" targetId="7c8d-b21a-1f72-7e22" type="selectionEntry"/>
+        <entryLink id="34f8-3711-2e5b-5bad" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="ff1b-f9d7-b417-c057" value="1.0">
+              <conditions>
+                <condition field="selections" scope="d0f2-ee39-450c-39db" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cd1-fe10-db22-54bd" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff1b-f9d7-b417-c057" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="fe5d-5729-e3c2-771e" name="Upgrade Points (Placeholders)" hidden="false" collective="false" import="true" targetId="7c8d-b21a-1f72-7e22" type="selectionEntry"/>
+        <entryLink id="4417-2a5d-c0ec-dd84" name="Orders of High Techno-arcana" hidden="false" collective="false" import="true" targetId="c36b-a6a2-9cb2-b090" type="selectionEntryGroup"/>
+        <entryLink id="3ed3-cc97-d116-35df" name="Feudal Hierarchy" hidden="false" collective="false" import="true" targetId="27ff-3ae1-5cb6-774b" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="155.0"/>
@@ -239,27 +439,138 @@
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a42-ed80-41ab-7cb1" type="max"/>
       </constraints>
+      <profiles>
+        <profile id="4707-5f1c-c47a-07e0" name="Archmagos Prime on Abeyant" publicationId="bde1-6db1-163b-3b76" page="22" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+          <modifiers>
+            <modifier type="set" field="cc42-7ed5-7092-5c84" value="5">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e62-8d7e-a487-0490" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="f111-2ce5-dd12-d6b0" value="3">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e62-8d7e-a487-0490" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Monstrous, Antigrav, Cybertheurgist, Character)</characteristic>
+            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+            <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">6</characteristic>
+            <characteristic name="W" typeId="57ee-1126-32a9-5672">5</characteristic>
+            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
+            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <categoryLinks>
         <categoryLink id="8bf8-9627-3e73-b8bc" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
         <categoryLink id="6a96-9d2f-a329-7562" name="Monstrous Sub-type:" hidden="false" targetId="7d95-f9d1-440a-67bd" primary="false"/>
         <categoryLink id="ff95-2620-6ec4-9e60" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="0738-353d-bfc2-3c6d" name="Archmagos Prime on Abeyant" publicationId="bde1-6db1-163b-3b76" page="22" hidden="false" collective="false" import="true" type="model">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1906-287d-d848-d9b6" name="Cybertheurgic Arcana" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="e268-664b-629f-444b" value="2.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cd1-fe10-db22-54bd" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="737d-08c3-9945-3527" value="2.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cd1-fe10-db22-54bd" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6f3-51e9-7a76-292e" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e0f-719e-7b0c-a282" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e268-664b-629f-444b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="737d-08c3-9945-3527" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="390b-6386-3362-3c62" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
+            <entryLink id="c9c8-73e7-da3a-94b6" name="Ephemera Lacyraemarta" hidden="true" collective="false" import="true" targetId="25df-a541-0d05-6f61" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="6aef-752f-c493-d67a" name="Artificia Machina" hidden="false" collective="false" import="true" targetId="51ed-f978-9a5e-1e04" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="9a09-1b52-c2a1-8a67" name="Ephemera Incursus" hidden="false" collective="false" import="true" targetId="12fc-d4d8-d36c-6f14" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="5eed-b694-9170-88dc" name="Artificia Cybernetica" hidden="false" collective="false" import="true" targetId="d342-dbdb-33ec-5191" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="221a-4910-3210-71d0" name="Artificia Reductor" hidden="true" collective="false" import="true" targetId="b627-88f0-ee8c-c43c" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="11bd-b0d7-ac49-5e45" name="Upgrade Points (Placeholders)" hidden="false" collective="false" import="true" targetId="7c8d-b21a-1f72-7e22" type="selectionEntry"/>
+        <entryLink id="080a-3d66-7fa3-b65d" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="a96c-007d-083d-b58c" value="1.0">
+              <conditions>
+                <condition field="selections" scope="3821-7503-6139-3054" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cd1-fe10-db22-54bd" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a96c-007d-083d-b58c" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="51ec-4169-13a5-abe4" name="Orders of High Techno-arcana" hidden="false" collective="false" import="true" targetId="c36b-a6a2-9cb2-b090" type="selectionEntryGroup"/>
+        <entryLink id="a990-eb17-4c30-6fbb" name="Feudal Hierarchy" hidden="false" collective="false" import="true" targetId="27ff-3ae1-5cb6-774b" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="185.0"/>
@@ -271,22 +582,9 @@
         <categoryLink id="176d-fff6-f157-330a" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="a16c-e7f6-08fc-a357" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="4a2d-63b4-6d19-0e60" name="Magos Dominus" publicationId="bde1-6db1-163b-3b76" page="24" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="024c-d512-9532-95f8" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0471-4b2f-6020-b6cb" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="8203-c3ae-baa1-45f9" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
-          </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
         <entryLink id="a63a-9dfe-ee64-913c" name="Upgrade Points (Placeholders)" hidden="false" collective="false" import="true" targetId="7c8d-b21a-1f72-7e22" type="selectionEntry"/>
+        <entryLink id="9dcc-9b17-198f-5691" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75.0"/>
@@ -299,22 +597,9 @@
         <categoryLink id="f75f-bd69-3fb1-c37d" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="ad3f-ad1c-6a50-2d8c" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="61ec-7e8f-3cb2-eea2" name="Magos Dominus on Abeyant" publicationId="bde1-6db1-163b-3b76" page="25" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="840f-7afb-7ada-2311" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f43f-6c6e-38c5-4b57" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="e6f4-dfdb-0ce7-7628" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
-          </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
         <entryLink id="1380-c529-afc1-fec4" name="Upgrade Points (Placeholders)" hidden="false" collective="false" import="true" targetId="7c8d-b21a-1f72-7e22" type="selectionEntry"/>
+        <entryLink id="fc61-b732-41ab-b1b8" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="105.0"/>
@@ -324,7 +609,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="greaterThan"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -334,22 +619,21 @@
       <categoryLinks>
         <categoryLink id="4870-4291-805f-07db" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="4c5f-370c-7dfe-c488" name="Calleb Decima Invictus" publicationId="bde1-6db1-163b-3b76" page="26" hidden="false" collective="false" import="true" type="model">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0ad9-b637-48ef-d9ca" name="Guardian Retinue" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d2a-c0d2-b4bb-41c0" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47a1-0cdf-9ad4-4ca9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3bd-333f-c92b-7cca" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="060c-f269-5410-5819" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
+            <entryLink id="aaf4-a361-cb00-532c" name="Tech-Priest Auxilia (Placeholder)" hidden="false" collective="false" import="true" targetId="0eae-0c52-1087-a3b0" type="selectionEntry"/>
+            <entryLink id="28da-44a5-3785-0b1d" name="Scyllax Guardian-Automata Maniple (Placeholder)" hidden="false" collective="false" import="true" targetId="57ab-2409-6707-b967" type="selectionEntry"/>
           </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="f0bb-1603-401f-ad2a" name="Upgrade Points (Placeholders)" hidden="false" collective="false" import="true" targetId="7c8d-b21a-1f72-7e22" type="selectionEntry"/>
+        <entryLink id="bc40-d9d2-9a73-a9e6" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
+        <entryLink id="d123-3dad-767a-3dab" name="Feudal Hierarchy" hidden="false" collective="false" import="true" targetId="27ff-3ae1-5cb6-774b" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200.0"/>
@@ -362,6 +646,92 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b4a-a1f4-d598-6560" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64d9-295f-21ea-27d9" type="max"/>
           </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="00db-3638-6000-b067" name="Techno-Arcana" publicationId="bde1-6db1-163b-3b76" page="29" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99b2-12de-3b94-b707" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18fd-06bd-5c73-1019" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="42f9-e690-11a6-4b1a" name="Enginseer" publicationId="bde1-6db1-163b-3b76" page="29" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="a71b-2300-5eb8-03dc" value="1.0">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b5d-fac7-799b-d7e7" type="instanceOf"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1247-a94b-070d-2a7b" type="greaterThan"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a71b-2300-5eb8-03dc" type="min"/>
+                  </constraints>
+                  <rules>
+                    <rule id="ca01-10d0-a753-6fa2" name="Enginseer" publicationId="bde1-6db1-163b-3b76" page="29" hidden="false">
+                      <description>Tech-Priests and Magos Auxilia in the unit are each equipped with a servo-arm. While the unit contains any number of Servo-automata, Tech-Priests and Magos Auxilia in the unit improve their Battlesmith (X) special rule to Battlesmith (4+). </description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="94f3-8a54-ed2e-5cfb" name="Lachrimallus" publicationId="bde1-6db1-163b-3b76" page="29" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="3452-6b13-669c-e68c" name="Lachrimallus" publicationId="bde1-6db1-163b-3b76" page="29" hidden="false">
+                      <description>Tech-Priests, Magos Auxilia and Servo-automata in the unit have the Feel No Pain (5+) special rule. Friendly Adsecularis Tech-thrall units with at least one model within 6&quot; of one or more Tech-Priest or Magos Auxilia with this special rule add +1 to their Feel No Pain Damage Mitigation rolls or the Feel No Pain (6+) special rule if they do not already possess the Feel No Pain (X) special rule. </description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink id="64bc-bbee-5358-be8a" name="Feel No Pain (X)" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0749-4e5b-1bf4-a4ab" name="Reductor" publicationId="bde1-6db1-163b-3b76" page="29" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="dbfc-425c-3aa6-9123" name="Reductor" publicationId="bde1-6db1-163b-3b76" page="29" hidden="false">
+                      <description>Tech-Priests and Magos Auxilia in the unit are each equipped with a servo-arm, and all models in the unit gain the Sunder and Wrecker special rules. Magos Auxilia may exchange their servo-arm for either a conversion beamer or graviton imploder for +25 points each. </description>
+                    </rule>
+                  </rules>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="757a-cd91-e5f1-b5f7" name="Interfector" hidden="true" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e62-8d7e-a487-0490" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <rules>
+                    <rule id="7043-476d-533c-93a2" name="Interfector" publicationId="bde1-6db1-163b-3b76" page="100" hidden="false">
+                      <description>Tech-Priests and Magos Auxilia in the unit are each equipped with a prehensile data-spike. In addition, models in the unit gain the Scout special rule.</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink id="522d-e3ed-7ce3-92fe" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
+                  </infoLinks>
+                  <entryLinks>
+                    <entryLink id="6a15-2014-925e-8d4c" name=" Prehensile Data-Spike" hidden="false" collective="true" import="true" targetId="2a20-c068-3230-ad17" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e2e-79f2-0021-77f3" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce85-1432-520f-0da3" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
           </costs>
@@ -394,26 +764,41 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="6f33-657c-a1b4-710e" name="Arcuitor Magisterium (Placeholder)" publicationId="bde1-6db1-163b-3b76" page="30" hidden="true" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <selectionEntries>
         <selectionEntry id="b9e8-8c2b-084c-1952" name="Arcuitor" publicationId="bde1-6db1-163b-3b76" page="30" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="b335-3906-c30c-81d8" value="3.0">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f85-eb33-30c9-8f51" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b42a-2aa0-028a-7865" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b335-3906-c30c-81d8" type="max"/>
           </constraints>
+          <rules>
+            <rule id="6957-b5ed-1429-1231" name="Court of Executioners" publicationId="bde1-6db1-163b-3b76" page="100" hidden="false">
+              <description>A unit with this special rule may include up to two additional Arcuitor Magisterium for 110 points each. When deployed onto the battlefield (either at the start of the battle or when arriving from Reserves), all models with this special rule in a unit must be deployed within unit coherency, but afterwards operate independently and are not treated as a unit.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="f23f-5b3c-2874-6306" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
+          </infoLinks>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="110.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="4ed0-53aa-6a8b-10fe" name="Hunter Killer" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f85-eb33-30c9-8f51" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2024-57a7-0e42-2a3e" type="max"/>
           </constraints>
@@ -443,7 +828,7 @@ This unit may be upgraded freely as described in their profile, though they may 
         <entryLink id="c52b-c6b0-8dc4-9546" name="Upgrade Points (Placeholders)" hidden="false" collective="false" import="true" targetId="7c8d-b21a-1f72-7e22" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85.0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="-25.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1869-2d16-d825-04c3" name="Myrmidon Secutor Host (Placeholder)" publicationId="bde1-6db1-163b-3b76" page="32" hidden="false" collective="false" import="true" type="unit">
@@ -830,29 +1215,49 @@ This unit may be upgraded freely as described in their profile, though they may 
         <categoryLink id="1048-d3fc-35af-c693" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="75ce-3f3b-dc4a-ecad" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="42df-5e10-be80-f13a" name="Anacharis Scoria" publicationId="bde1-6db1-163b-3b76" page="62" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1565-e3d8-ebc6-89c9" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdf5-456d-95ed-c766" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="2dc5-2c49-78b8-6a9b" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c03e-735c-c6af-7c13" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
         <entryLink id="acc5-93d9-18f8-008f" name="Upgrade Points (Placeholders)" hidden="false" collective="false" import="true" targetId="7c8d-b21a-1f72-7e22" type="selectionEntry"/>
+        <entryLink id="8fca-c03a-73a7-e888" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b6d-6b67-f0eb-d494" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d607-72a9-d945-8779" name="Feudal Hierarchy" hidden="false" collective="false" import="true" targetId="27ff-3ae1-5cb6-774b" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="365.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2a20-c068-3230-ad17" name=" Prehensile Data-Spike" publicationId="bde1-6db1-163b-3b76" page="123" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2406-ef6a-7e5f-bf1b" name=" Prehensile Data-Spike" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Breaching (4+), Murderous Strike (6+), Reach (2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="77a6-d876-9bb2-7883" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (4+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="34c3-c042-3e68-3202" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Murderous Strike (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="78cb-7697-69e7-1948" name="Reach (X)" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Reach (2)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
