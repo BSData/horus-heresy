@@ -8137,6 +8137,16 @@ Maxima :When destroyed, a model with this special rule resolves Hits caused by C
     <rule id="ba77-a802-55df-da67" name="Wrecker" publicationId="bde1-6db1-163b-3b76" page="111" hidden="false">
       <description>Penetrating Hits caused by attacks made with weapons or models with this special rule add +1 to the result of any rolls on the Vehicle or Building Damage tables.</description>
     </rule>
+    <rule id="97aa-da60-3ccc-7152" name="Sentry Protocols" publicationId="d0df-7166-5cd3-89fd" page="16" hidden="false">
+      <description>A unit that includes any models with this special rule must make a Shooting Attack targeting the enemy unit which has the closest model in line of sight to any model in the attacking unit in the controlling player’s Shooting phase.</description>
+    </rule>
+    <rule id="c036-66e2-4e07-c2b8" name="Automated Artillery Sub-type" publicationId="e77a-823a-da94-16b9" page="16" hidden="false">
+      <description>The following rules apply to all models with the Automated Artillery Sub-type:
+
+• A unit that includes one or more models with the Automated Artillery Sub-type may not Run,  declare or otherwise make Charge moves, or make Reactions.
+• A unit that includes one or more models with the Automated Artillery Sub-type may not make  Sweeping Advances and if targeted by a Sweeping Advance automatically fails without rolling any dice and is destroyed.
+• A unit that includes one or more models with this Unit Sub-type may never hold or deny an Objective.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="f52c-1f37-acd2-703c" name="Tartaros Terminator Armour" publicationId="a716-c1c4-7b26-8424" page="147" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
