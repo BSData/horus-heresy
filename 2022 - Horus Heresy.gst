@@ -100,11 +100,6 @@
         <characteristicType id="2490-aa2f-f5db-6070" name="HP"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="90b9-7fab-87db-aed3" name="Reactions">
-      <characteristicTypes>
-        <characteristicType id="c627-4637-8de5-65fb" name="Description"/>
-      </characteristicTypes>
-    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="4f85-eb33-30c9-8f51" name="HQ:" hidden="false"/>
@@ -4972,14 +4967,13 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7ae-8da7-ad16-cea6" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2c74-7db8-469e-8327" type="max"/>
       </constraints>
-      <profiles>
-        <profile id="9e5f-b65f-2f13-f24e" name="Advanced Reaction: Scornful Fire" publicationId="bde1-6db1-163b-3b76" page="17" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
-          <characteristics>
-            <characteristic name="Description" typeId="c627-4637-8de5-65fb">Scornful Fire – This Advanced Reaction may be made once per battle during the Shooting phase when any enemy unit declares a Shooting Attack targeting a unit that includes a model with the Independent Character special rule under the Reactive player’s control which is part of the Mechanicum Detachment. The Reacting unit, and any friendly Mechanicum units eligible to make a Reaction within 12&quot;, may make a Shooting Attack, targeting the unit that triggered this Reaction and following all the usual rules for Shooting Attacks. Any unit that makes a Shooting Attack as part of this Reaction counts as having made a Reaction in this Phase.
-A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not make any attacks indirectly (without line of sight) including weapons with the Barrage special rule or other weapons or special rules that otherwise ignore line of sight, and Vehicles may only fire Defensive Weapons. Template weapons may only be used as part of a Scornful Fire Reaction if the target unit is within 8&quot; and must use the Wall of Death rule instead of firing normally.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
+      <rules>
+        <rule id="ae0b-c8e9-7566-8ba4" name="Mechanicum Advanced Reaction" publicationId="bde1-6db1-163b-3b76" page="17" hidden="false">
+          <description>This Advanced Reaction is available only to units as part of a Mechanicum Detachment. Unlike Core Reactions, it is activated in unique and specific circumstances, as noted in its description, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
+Scornful Fire – This Advanced Reaction may be made once per battle during the Shooting phase when any enemy unit declares a Shooting Attack targeting a unit that includes a model with the Independent Character special rule under the Reactive player’s control which is part of the Mechanicum Detachment. The Reacting unit, and any friendly Mechanicum units eligible to make a Reaction within 12&quot;, may make a Shooting Attack, targeting the unit that triggered this Reaction and following all the usual rules for Shooting Attacks. Any unit that makes a Shooting Attack as part of this Reaction counts as having made a Reaction in this Phase. 
+A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not make any attacks indirectly (without line of sight) including weapons with the Barrage special rule or other weapons or special rules that otherwise ignore line of sight, and Vehicles may only fire Defensive Weapons. Template weapons may only be used as part of a Scornful Fire Reaction if the target unit is within 8&quot; and must use the Wall of Death rule instead of firing normally.</description>
+        </rule>
+      </rules>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
@@ -7442,69 +7436,6 @@ An army whose Warlord has this Trait counts any Allied Detachment that has any v
                   </characteristics>
                 </profile>
               </profiles>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="34f8-053a-3802-6207" name="The Logic of Victory" publicationId="bde1-6db1-163b-3b76" page="16" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="487f-772e-d34e-61de" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2387-88ed-4698-660d" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="3333-c7c5-db36-cc43" name="The Logic of Victory" publicationId="bde1-6db1-163b-3b76" page="16" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
-                  <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If, at no point during this Warlord’s controlling player’s turn as the Active player, a Warlord with this Trait has neither made a Shooting Attack or been locked in combat then they gain an additional Reaction in each Phase of the following turn as the Reactive player. In addition, a Warlord with this Trait and any unit it has joined gains +1 WS and +1 BS when making attacks as part of any Reaction and +3 Initiative or +3 Movement when making a move as part of any Reaction.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="ab8f-29a2-a435-8a49" name="The Science of Slaughter" publicationId="bde1-6db1-163b-3b76" page="16" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e57c-0b1c-53fa-6fb7" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1077-ab88-1a25-42b9" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="dd61-a29c-8f79-6d8e" name="The Science of Slaughter" publicationId="bde1-6db1-163b-3b76" page="16" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
-                  <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">On the second turn of each combat a Warlord with this Trait is engaged in, and each turn it is locked in the same combat after that, it gains a bonus of +1 to its WS and +1 Strength (to a maximum of 10). Once a given combat has ended and the Warlord is no longer locked in combat, the Warlord’s WS and Strength Characteristics are reset to the original values. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="6745-e221-cd80-057e" name="    Mechanicum" publicationId="bde1-6db1-163b-3b76" page="16" hidden="true" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddf5-d792-3146-6e9a" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="610d-1d4a-c873-f911" type="max"/>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f6a5-62e7-9bef-eb0d" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="6df3-b52e-27dc-de41" name="A Soul of Cold Iron" publicationId="bde1-6db1-163b-3b76" page="16" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6b31-b21b-17f8-c737" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08b8-9f59-d7dd-5f99" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="1808-e2d8-8d9d-fe8d" name="A Soul of Cold Iron" publicationId="bde1-6db1-163b-3b76" page="16" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
-                  <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait and any friendly unit with at least one model within 6&quot; that is Pinned may still move and declare Charges, but is limited to only firing Snap Shots until it is no longer Pinned. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Movement phase as long as the Warlord has not been removed as a casualty</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
             </selectionEntry>
             <selectionEntry id="34f8-053a-3802-6207" name="The Logic of Victory" publicationId="bde1-6db1-163b-3b76" page="16" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -8153,6 +8084,10 @@ In addition, when moving in Hover mode, the controlling player may choose to inf
     <rule id="c6e2-3d5a-b8f9-005c" name="Neutron-flux" publicationId="a716-c1c4-7b26-8424" page="123" hidden="false">
       <description>A weapon with this special rule gains the Instant Death special rule when targeting models with the Automata Unit Type.</description>
     </rule>
+    <rule id="8c83-e084-bb04-d98c" name="Advanced Reaction:Combat Air Patrol" publicationId="a716-c1c4-7b26-8424" page="123" hidden="false">
+      <description>Combat Air Patrol – This Advanced Reaction may be made whenever any enemy model that has the Vehicle Unit Type and the Flyer Sub-type enters the battlefield from Reserves. The Reactive player may nominate any one model that has been assigned to Combat Air Patrol. Once the enemy model with the Vehicle Unit Type and Flyer Sub-type that triggered this Reaction has finished any and all Movement as it is brought into play, the chosen model assigned to Combat Air Patrol is brought into play from any point on the edge of the battlefield, moving into play as if it had entered play from Reserves. Once the Combat Air Patrol model has finished its Movement it may immediately make a Shooting Attack targeting the enemy model that triggered this Reaction – as long as it has finished its Movement with line of sight to that model.
+Only models with the Vehicle Unit Type and Flyer Sub-type may make the Combat Air Patrol Reaction.</description>
+    </rule>
     <rule id="93e9-2806-e822-bfaf" name="Techmarine Covenant" publicationId="a716-c1c4-7b26-8424" page="125" hidden="false">
       <description>A Techmarine Covenant is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed to the battlefield, all models in a Techmarine Covenant must be assigned to another unit from the same Detachment of the army they were selected as part of. Legion Techmarines that have not selected a Legion Spatha combat bike or Legion Scimitar jetbike may only be assigned to units composed entirely of models with the Infantry Unit Type and the same Legiones Astartes (X) special rule as the Legion Techmarine, and may not join units with Terminator armour of any kind. Legion Techmarines that have selected a Legion Spatha combat bike may only be assigned to units composed entirely of models with Legion Spatha combat bikes and the same Legiones Astartes (X) special rule as the Legion Techmarine, and any Legion Techmarines that have selected a Legion Scimitar jetbike may only be assigned to units composed entirely of models with Legion Scimitar jetbikes and the same Legiones Astartes (X) special rule as the Legion Techmarine. No Legion Techmarine may be assigned to any unit that includes one or more models with the Independent Character special rule or Unique Sub-type (but such models may join a unit that includes a Legion Techmarine as normal during either deployment or any following turn). No more than one Legion Techmarine may be assigned to any given unit.
 Once assigned to a unit, the Legion Techmarine is considered part of that unit and may not leave it under any circumstances – if that unit is removed as a casualty then the Legion Techmarine is removed as well. In battles using Victory points, no Victory points are ever scored for removing a Legion Techmarine as a casualty. When assigned to a unit, a Legion Techmarine gains all of the special rules (with the exception of those that specifically forbid it, such as the Bitter Duty special rule) and Unit Sub-types listed for the unit to which it is attached, but does not gain access to any additional Wargear options available to the unit to which it is assigned.</description>
@@ -8446,12 +8381,6 @@ Maxima :When destroyed, a model with this special rule resolves Hits caused by C
         <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">3</characteristic>
         <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">4</characteristic>
         <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 4, Force</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="0ab2-3765-d019-2730" name="Advanced Reaction: Combat Air Patrol" publicationId="a716-c1c4-7b26-8424" page="123" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
-      <characteristics>
-        <characteristic name="Description" typeId="c627-4637-8de5-65fb">Combat Air Patrol – This Advanced Reaction may be made whenever any enemy model that has the Vehicle Unit Type and the Flyer Sub-type enters the battlefield from Reserves. The Reactive player may nominate any one model that has been assigned to Combat Air Patrol. Once the enemy model with the Vehicle Unit Type and Flyer Sub-type that triggered this Reaction has finished any and all Movement as it is brought into play, the chosen model assigned to Combat Air Patrol is brought into play from any point on the edge of the battlefield, moving into play as if it had entered play from Reserves. Once the Combat Air Patrol model has finished its Movement it may immediately make a Shooting Attack targeting the enemy model that triggered this Reaction – as long as it has finished its Movement with line of sight to that model.
-Only models with the Vehicle Unit Type and Flyer Sub-type may make the Combat Air Patrol Reaction.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
