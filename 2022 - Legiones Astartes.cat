@@ -787,6 +787,45 @@
         <categoryLink id="3abf-2d44-2ccd-1ecc" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="f897-5e09-f53a-2b4d" name="Thunderbolt Fighter" hidden="false" collective="false" import="true" targetId="5d24-1e9a-ad9d-95ca" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="e90d-e5a8-f42d-da84" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="5333-80e9-72a5-883c" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="363e-366b-185d-d165" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a94c-b360-0ae0-7fe2" name="Avenger Strike Fighter" hidden="false" collective="false" import="true" targetId="b25c-e85c-1c29-9e05" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="e90d-e5a8-f42d-da84" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="024d-d1b3-0bcb-0a9c" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="83df-468b-34be-f738" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="841c-d71d-b9fc-602b" name="Primaris-Lightning Strike Fighter" hidden="false" collective="false" import="true" targetId="5fdc-bbd1-5610-2a50" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="e90d-e5a8-f42d-da84" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="1a2b-32b6-fc87-320c" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="e050-521b-8424-fc9e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="82f5-cca1-51a0-31dd" name="Venom Spheres" hidden="false" collective="false" import="true" type="upgrade">
@@ -30253,6 +30292,430 @@ containing the model that failed its Check. If the Psyker survives Perils of the
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5d24-1e9a-ad9d-95ca" name="Thunderbolt Fighter" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="8319-4d8b-93a8-53d9" name="Thunderbolt Fighter" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Flyer)</characteristic>
+            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">22&quot;</characteristic>
+            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d264-8b0c-1ce4-c398" name="Legiones Astartes (X)" hidden="false" targetId="61cf-75c2-56cd-2a31" type="rule"/>
+        <infoLink id="90d7-fcba-28ff-2f20" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="992a-101e-f1c0-2b6f" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink id="53cc-a648-20ea-e349" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="711c-9e09-5b39-7922" name="Four Centerline (Front) Mounted Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c36e-b2c6-0875-2ecd" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c557-59a2-06ee-0a77" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="abaa-2570-1d86-1395" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b49-9dad-7dd5-cfc7" type="min"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe81-c8e3-8288-2b8b" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d91a-1969-1d1c-8828" name="Two Centerline (Front) Mounted Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5905-7dac-b19e-bbc4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e36c-215e-6911-0ad1" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="7df5-2d3a-9814-e705" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8195-25a4-9928-f7e3" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6273-afcc-1d72-4841" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ee7e-a739-4575-9ad9" name="May take the following:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="9dd4-d4ed-ea24-d281" name="Ramjet Diffraction Grid" hidden="false" collective="false" import="true" targetId="a884-7de7-32c4-3ef6" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bc0-f410-0f39-0139" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80a7-5081-0704-4ff3" type="min"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="53d0-67eb-f75f-485c" name="Blessed Auto-simulacra" hidden="true" collective="false" import="true" targetId="dc49-518b-0f77-5e3e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="32b2-fada-8f2f-bf01" name="Missile options:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a44-10ab-d3a7-b704" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c4e9-de41-b8b9-460f" name="Four Hull (Front) Mounted Hellstrike missiles" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="2d1d-76dc-7b78-ef90" name="Hellstrike Missile" hidden="false" collective="false" import="true" targetId="5e24-bdca-a89c-0f40" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7539-c06f-9228-eecc" type="max"/>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="662e-9299-1b9b-49cb" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="927f-e843-16b4-ff8c" name="Four Hull (Front) Mounted Skystrike missiles" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="3bc9-7b1b-d230-d0e9" name="Skystrike Missile" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cc0-e05e-cc3c-9b12" type="max"/>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4021-aecf-f379-f3b0" type="min"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="caff-7911-fcf7-3c91" name="Skystrike Missile" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066"/>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458"/>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d"/>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="170.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b25c-e85c-1c29-9e05" name="Avenger Strike Fighter" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="7734-ee3f-d6f4-ed4b" name="Avenger Strike Fighter" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Flyer)</characteristic>
+            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">22&quot;</characteristic>
+            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">10</characteristic>
+            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f83c-e0f0-aac7-d0cc" name="Legiones Astartes (X)" hidden="false" targetId="61cf-75c2-56cd-2a31" type="rule"/>
+        <infoLink id="6e6e-5987-17a1-42d9" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b39e-518d-9b15-bc14" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink id="56be-a381-5681-4467" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="b870-bb30-dc67-fce8" name="Hull (Front) Mounted Avenger bolt cannon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68b0-b52d-25cd-1054" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="589b-f6f8-a30e-8266" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="e394-8971-616f-54f0" name="Avenger Bolt Cannon" hidden="false" collective="false" import="true" targetId="0694-69c5-e871-589a" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3d3-53a4-049f-c128" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c14-883e-fde3-8d75" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="66cc-83ba-50ae-30a9" name="Two Hull (Front) Mounted Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c849-3c2a-485d-7c85" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27f3-d043-892a-6e54" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="3c84-2fca-b946-85fb" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b22-de2b-cade-6643" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e870-6f1b-7686-4c6f" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="cecd-adba-f58b-2218" name="Hull (Rear) Mounted heavy stubber" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48a7-ea23-2100-1c5c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f97-062b-03a4-846c" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="124a-be4c-6bd0-b7c9" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f367-5168-33b8-7173" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e0f-06d3-fe57-70ce" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="88ee-36be-4bc5-2dc0" name="May take the following:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="f1e7-4192-8d0e-8fc5" name="Ramjet Diffraction Grid" hidden="false" collective="false" import="true" targetId="a884-7de7-32c4-3ef6" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d17b-add3-d23e-d01d" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69f5-ff7f-ba15-e24e" type="min"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="8606-b28b-2d42-2a77" name="Blessed Auto-simulacra" hidden="true" collective="false" import="true" targetId="dc49-518b-0f77-5e3e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="cf49-9019-77eb-d874" name="Missile options:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f0b-0370-1f02-0393" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="7323-63a6-21b3-1116" name="Four Hull (Front) Mounted Hellstrike missiles" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="fcf3-5921-6d8e-b30e" name="Hellstrike Missile" hidden="false" collective="false" import="true" targetId="5e24-bdca-a89c-0f40" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22a9-4139-bdbe-dbae" type="max"/>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76a4-6401-bf03-d068" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="482c-fc47-84da-d2d1" name="Four Hull (Front) Mounted Skystrike missiles" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="15d4-f7e4-940c-c8bc" name="Skystrike Missile" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d51-20c8-2ecd-9982" type="max"/>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65a7-8539-3228-4743" type="min"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="6dec-e403-cf65-c5a4" name="Skystrike Missile" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066"/>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458"/>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d"/>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="170.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5fdc-bbd1-5610-2a50" name="Primaris-Lightning Strike Fighter" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="cf86-91cb-432a-176b" name="Primaris-Lightning Strike Fighter" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Flyer)</characteristic>
+            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">26&quot;</characteristic>
+            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="0526-d97f-9452-0e11" name="Legiones Astartes (X)" hidden="false" targetId="61cf-75c2-56cd-2a31" type="rule"/>
+        <infoLink id="bc1b-b3d0-c1b5-97e5" name="Talons of the Legion" hidden="false" targetId="1703-5d6d-048c-7287" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8d00-8a0b-d3d5-58a7" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink id="5822-e87b-5749-5a7d" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="c254-6dc7-a769-8eec" name="Two Centerline Mounted Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddb6-147d-90c3-b9b2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b884-3404-f99e-fb19" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="20ef-e718-b3f7-cf53" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d08-e805-0913-852f" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ae0-b075-8838-9b86" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="aa79-1382-6a4d-d728" name="May take the following:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="9588-be69-0025-7c52" name="Ramjet Diffraction Grid" hidden="false" collective="false" import="true" targetId="a884-7de7-32c4-3ef6" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="daeb-2f51-c174-0c31" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54dd-65af-d747-cc38" type="min"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="807a-4337-d6f6-ea5d" name="Blessed Auto-simulacra" hidden="true" collective="false" import="true" targetId="dc49-518b-0f77-5e3e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c83b-5436-ac59-a0c3" name="Missile options:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d060-a1b5-56f0-f419" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1c21-8ce1-ae7b-a4c0" name="Four Hull (Front) Mounted Kraken penetrator missiles" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="be62-fb05-9e4d-fcb3" name="Kraken Penetrator Missile" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3ea-5cf7-6eb6-57e7" type="max"/>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="089a-1f38-2b83-1651" type="min"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="730a-23c8-64c1-d6ff" name="Kraken Penetrator Missile" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Armourbane (Ranged), One Use</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink id="d5c4-834b-40f9-3f4f" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule"/>
+                    <infoLink id="a0c6-6850-b506-befb" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ef9c-149c-8cdf-de0f" name="Four Hull (Front) Mounted Sunfury missiles" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="9c0e-838e-75a2-c8a7" name="Sunfury Missile" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e679-3c68-d6e5-c14b" type="max"/>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bef-2c8b-4741-1a3d" type="min"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="c274-8d22-b527-288f" name="Sunfury Missile" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Breaching (4+), Gets Hot, One Use</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink id="597e-8751-923c-2aa7" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+                    <infoLink id="9132-ba95-cf07-758a" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Breaching (4+)"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="170.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="124f-0ced-9231-bba4" name="Tarantula Sentry Gun Battery" hidden="false" collective="false" import="true" type="upgrade">
