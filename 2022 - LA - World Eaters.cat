@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d901-0eca-48b5-304a" name="LA -  XII: World Eaters" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d901-0eca-48b5-304a" name="LA -  XII: World Eaters" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="d647-fd99-73e0-bd57" name="Angron" hidden="false" collective="false" import="false" targetId="71b3-6007-e056-fbea" type="selectionEntry">
       <modifiers>
@@ -170,7 +170,6 @@
           <categoryLinks>
             <categoryLink id="65ff-4f4f-8a5f-2d3e" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
             <categoryLink id="4280-0e72-5d44-7261" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
-            <categoryLink id="ca89-e38f-cbe7-8a97" name="Primarch:" hidden="false" targetId="ad5f-31db-8bc7-5c46" primary="false"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry id="386b-f522-0662-2464" name="Gorefather &amp; Gorechild" hidden="false" collective="false" import="true" type="upgrade">
@@ -1014,6 +1013,25 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5b3d-cf2e-8db7-3218" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f07e-0132-bcfb-4b15" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="febf-42b6-eb0a-67bb" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="1987-2aa5-929b-979e" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="dee6-894f-0cb5-e993" name="Land Raider Spartan" hidden="false" collective="false" import="true" targetId="bac1-f30e-2c04-d27d" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="4163-d5b0-7a32-b48d" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" targetId="7c9b-b9ab-9a40-8eb5" type="selectionEntry">
           <constraints>
@@ -1154,12 +1172,12 @@
           <modifiers>
             <modifier type="increment" field="31f1-d6a8-462a-f603" value="1.0">
               <repeats>
-                <repeat field="selections" scope="2fb9-74a8-43b0-dd00" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="2fb9-74a8-43b0-dd00" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="29b2-9244-a29d-a1dc" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="18b3-b3bf-8311-25a5" value="1.0">
               <repeats>
-                <repeat field="selections" scope="2fb9-74a8-43b0-dd00" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="2fb9-74a8-43b0-dd00" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="29b2-9244-a29d-a1dc" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="decrement" field="31f1-d6a8-462a-f603" value="5.0"/>
