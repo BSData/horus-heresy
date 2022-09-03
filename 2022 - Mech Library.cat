@@ -3229,9 +3229,10 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                     <repeat field="selections" scope="ab78-91e2-bb5c-9da3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2121-ee7c-8ac9-5133" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
+                <modifier type="decrement" field="c6d4-44b8-d12d-4ca7" value="2.0"/>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6d4-44b8-d12d-4ca7" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6d4-44b8-d12d-4ca7" type="min"/>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a49-dc8a-95be-56d5" type="max"/>
               </constraints>
               <entryLinks>
@@ -3278,7 +3279,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
       <entryLinks>
         <entryLink id="7db0-719f-b641-ec3c" name="Searchlights" hidden="false" collective="false" import="true" targetId="4ae3-79b4-6051-505e" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="d2ee-04cb-5f8a-2642" value="1.0">
+            <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1.0">
               <repeats>
                 <repeat field="selections" scope="537f-846d-90e3-2526" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ab78-91e2-bb5c-9da3" repeats="1" roundUp="false"/>
               </repeats>
@@ -3712,7 +3713,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15c6-ecce-8258-7e00" type="max"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup id="3a98-3aba-8cca-3ce8" name="A single Thanatar-Cavas in the Maniple may be replaced with a Thanatar Calix" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="3a98-3aba-8cca-3ce8" name="A single Thanatar-Cavas in the Maniple may be replaced with a Thanatar Calix" hidden="false" collective="false" import="true" defaultSelectionEntryId="5331-31f3-87ed-5ebe">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff2e-8bb8-49ba-0128" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c70-688d-3d16-152b" type="max"/>
