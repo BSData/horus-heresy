@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="72ba-61c2-37ad-c785" name="LA -   III: Emperor&apos;s Children" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="72ba-61c2-37ad-c785" name="LA -   III: Emperor&apos;s Children" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="b36e-8c73-fe83-f087" name="   III: Emperor&apos;s Children" hidden="false" collective="false" import="false" targetId="3edc-a1b9-6dc6-b1ea" type="selectionEntry">
       <constraints>
@@ -354,17 +354,26 @@ Sire of the Emperor’s Children - All friendly models with the Legiones Astarte
               </costs>
             </entryLink>
           </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60.0"/>
-          </costs>
         </selectionEntry>
         <selectionEntry id="f359-944c-ca5d-f245" name="Phoenix Terminators" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="decrement" field="6d70-c466-3e6d-51e4" value="1.0">
+              <conditions>
+                <condition field="selections" scope="5b08-65c1-cc45-1b91" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8299-7028-93bc-0355" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="b79e-330d-7d05-1fce" value="1.0">
+              <conditions>
+                <condition field="selections" scope="5b08-65c1-cc45-1b91" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8299-7028-93bc-0355" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b79e-330d-7d05-1fce" type="max"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d70-c466-3e6d-51e4" type="min"/>
           </constraints>
           <profiles>
-            <profile id="49f9-a644-e073-d49d" name="Pheonix Terminator" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="49f9-a644-e073-d49d" name="Phoenix Terminator" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
@@ -384,9 +393,52 @@ Sire of the Emperor’s Children - All friendly models with the Legiones Astarte
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="8299-7028-93bc-0355" name="Phoenix Terminator Standard Bearer" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-category" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7aee-565f-b0ae-294e" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="c1a0-7cbc-c18e-e62d" name="Phoenix Terminator" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink id="46fe-3ac4-6c77-c35e" name="Phoenix Rapier" hidden="false" collective="false" import="true" targetId="868d-b957-c9ae-d3f2" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4983-ce41-21fc-a2b7" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac1f-4891-7ad0-b170" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="f04e-2979-636b-a6f7" name="Legion Standard" hidden="false" collective="false" import="true" targetId="7e13-cc1f-6bd7-7ac6" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74ff-2ebf-4553-f766" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebbe-b4b6-c02c-c959" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="3db2-9797-2637-ceeb" name="All models in the unit may take a Surgical Augment all models must choose the same Augment:" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="3db2-9797-2637-ceeb" name="All models in the unit may take a Surgical Augment; all models must choose the same Augment:" hidden="true" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9cb-33c7-dd52-6efb" type="max"/>
           </constraints>
@@ -408,59 +460,6 @@ Sire of the Emperor’s Children - All friendly models with the Legiones Astarte
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="f442-04d5-c78d-5e02" name="One Phoenix Terminator may exchange their Phoenix power spear for:" publicationId="09c5-eeae-f398-b653" page="159" hidden="false" collective="false" import="true">
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="primary-category" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7aee-565f-b0ae-294e" type="instanceOf"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="hidden" value="true"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7661-9e00-575e-6932" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="77df-cad2-e99d-e1a1" name="Phoenix Teminator Standard Bearer" hidden="false" collective="false" import="true" type="model">
-              <profiles>
-                <profile id="0310-6d26-8e8f-b4e8" name="Pheonix Terminator" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character)</characteristic>
-                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
-                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-                    <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
-                    <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
-                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
-                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
-                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <entryLinks>
-                <entryLink id="3186-bec0-f8c8-9681" name="Phoenix Rapier" hidden="false" collective="false" import="true" targetId="868d-b957-c9ae-d3f2" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edf1-07b2-89f3-8116" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eda8-51cf-29a6-921d" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="c75c-2d10-9c6c-b748" name="Legion Standard" hidden="false" collective="false" import="true" targetId="7e13-cc1f-6bd7-7ac6" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3334-1d9d-b8fb-b1fc" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7323-ae00-fd56-9b97" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
         <selectionEntryGroup id="ce56-222a-b516-5455" name="Dedicated Transport" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b11b-335c-e01a-c068" type="max"/>
@@ -470,7 +469,7 @@ Sire of the Emperor’s Children - All friendly models with the Legiones Astarte
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
-                    <condition field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="greaterThan"/>
+                    <condition field="selections" scope="5b08-65c1-cc45-1b91" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -497,7 +496,7 @@ Sire of the Emperor’s Children - All friendly models with the Legiones Astarte
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fa86-f7a5-0062-a205" name="Palatine Blade Squad" hidden="false" collective="false" import="true" type="unit">
