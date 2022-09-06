@@ -10229,11 +10229,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="02ae-949c-4e90-3c34" name="Master-craft one weapon:" hidden="true" collective="false" import="true" targetId="3d6e-5c80-d195-0f2e" type="selectionEntry">
+                <entryLink id="02ae-949c-4e90-3c34" name="Master-craft one weapon" hidden="false" collective="false" import="true" targetId="3d6e-5c80-d195-0f2e" type="selectionEntry">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="false">
+                    <modifier type="set" field="hidden" value="true">
                       <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -10350,7 +10350,13 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fb5-0534-e502-b144" type="min"/>
               </constraints>
             </entryLink>
-            <entryLink id="5205-936c-9904-7d1c" name="Master-craft one weapon:" hidden="true" collective="false" import="true" targetId="3d6e-5c80-d195-0f2e" type="selectionEntry">
+            <entryLink id="5205-936c-9904-7d1c" name="Master-craft one weapon" hidden="true" collective="false" import="true" targetId="3d6e-5c80-d195-0f2e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1af-8fed-2c86-1049" type="max"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
               </costs>
@@ -11296,7 +11302,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7775-8d6e-8625-928a" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7775-8d6e-8625-928a" type="max"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
@@ -23096,14 +23102,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="48ad-b63f-2c9c-ad87" name="Phoenix Pattern Power Weapons" hidden="false" collective="false" import="true" type="upgrade">
-      <entryLinks>
-        <entryLink id="a106-1e98-9157-3132" name="Phoenix Pattern Power Weapons" hidden="false" collective="false" import="true" targetId="ad6b-7d92-5989-aef2" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="9b80-5dc6-ad47-f1ac" name="Achea Force Weapon" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
@@ -30607,14 +30605,9 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
     <selectionEntry id="3d6e-5c80-d195-0f2e" name="Master-craft one weapon" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="03be-5d55-d05a-771d" type="instanceOf"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -34522,6 +34515,9 @@ containing the model that failed its Check. If the Psyker survives Perils of the
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="be27-bd7b-bc0e-e1ee" type="max"/>
           </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -35029,6 +35025,9 @@ Legion Only: Paladin of Hekatonystika (Dark Angels), Phoenix Warden (Emperor&apo
                   </modifiers>
                 </infoLink>
               </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <costs>
@@ -35809,20 +35808,6 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
           </costs>
         </entryLink>
-        <entryLink id="54f1-3963-f6fb-ae8f" name="Phoenix Pattern Power Weapons" hidden="true" collective="false" import="true" targetId="48ad-b63f-2c9c-ad87" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f75a-d5c1-59ba-5c5a" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
         <entryLink id="a8e0-3826-8ad5-7432" name="Graviton Mace" hidden="true" collective="false" import="true" targetId="74db-af77-bc35-b62a" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -35991,6 +35976,34 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
           </costs>
+        </entryLink>
+        <entryLink id="b613-8531-7ee6-40d8" name="Phoenix Power Spear" hidden="true" collective="false" import="true" targetId="356b-300e-d83d-72b8" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f75a-d5c1-59ba-5c5a" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="b891-d6d2-96b4-344a" name="Phoenix Rapier" hidden="true" collective="false" import="true" targetId="868d-b957-c9ae-d3f2" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f75a-d5c1-59ba-5c5a" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -36206,16 +36219,6 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
           </costs>
         </entryLink>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="ad6b-7d92-5989-aef2" name="Phoenix Pattern Power Weapons" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9538-3e29-57b9-8771" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26b0-2d27-b475-0d20" type="min"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="1ea4-589e-4f5c-6ad3" name="Phoenix Rapier" hidden="false" collective="false" import="true" targetId="868d-b957-c9ae-d3f2" type="selectionEntry"/>
-        <entryLink id="0e84-ba3a-3da0-57a8" name="Phoenix Power Spear" hidden="false" collective="false" import="true" targetId="356b-300e-d83d-72b8" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="e952-1b87-058f-cb2b" name="Achea Pattern Force Weapons" hidden="false" collective="false" import="true">
@@ -36504,6 +36507,9 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="045a-2241-a256-ba14" type="max"/>
           </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
