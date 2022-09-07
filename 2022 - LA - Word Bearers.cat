@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1df7-bbbc-b70e-6a3f" name="LA -  XVII: Word Bearers" revision="4" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1df7-bbbc-b70e-6a3f" name="LA -  XVII: Word Bearers" revision="4" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="70a7-c1ee-bf88-94ab" name="  XVII: Word Bearers" hidden="false" collective="false" import="false" targetId="9dbf-0760-d7ae-f125" type="selectionEntry">
       <constraints>
@@ -913,7 +913,12 @@ In addition, once per battle, one friendly unit composed entirely of models with
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="949f-4f0c-4f66-440d" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="03c8-674d-da0e-aa34" name="Akkadic Hand Flamer" hidden="false" collective="false" import="true" targetId="0480-9726-cc82-7565" type="selectionEntry"/>
+        <entryLink id="03c8-674d-da0e-aa34" name="Akkadic Hand Flamer" hidden="false" collective="false" import="true" targetId="0480-9726-cc82-7565" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7dd-0a44-e42a-9920" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b59-140d-b4a9-d8c8" type="max"/>
+          </constraints>
+        </entryLink>
         <entryLink id="ee56-93b6-88ec-2269" name="Meltabombs" hidden="false" collective="false" import="true" targetId="b9dd-3b21-f3f8-78e3" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="779b-ca3e-3b79-971e" type="max"/>
