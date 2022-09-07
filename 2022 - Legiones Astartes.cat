@@ -29446,7 +29446,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
     </selectionEntry>
     <selectionEntry id="eb13-c744-eba0-77be" name="Chainsword" hidden="false" collective="false" import="true" type="upgrade">
       <entryLinks>
-        <entryLink id="a396-57ed-7d4d-60cf" name="Chainsword" hidden="false" collective="false" import="true" targetId="87f6-1951-d3b4-37dd" type="selectionEntryGroup"/>
+        <entryLink id="a396-57ed-7d4d-60cf" name="Chainsword (all)" hidden="false" collective="false" import="true" targetId="87f6-1951-d3b4-37dd" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -30802,7 +30802,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d30b-59bb-8ae0-36d1" name="Destroyer Assault Squad" publicationId="a716-c1c4-7b26-8424" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="d30b-59bb-8ae0-36d1" name="*Destroyer Assault Squad" publicationId="a716-c1c4-7b26-8424" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="3821-3eb2-2940-2179" name="Bitter Duty" hidden="false" targetId="d1b8-31da-c53c-4fe2" type="rule"/>
         <infoLink id="3db5-2f63-6179-7c14" name="Counter-Attack (X)" hidden="false" targetId="fd6d-2a76-10e0-936a" type="rule">
@@ -30934,16 +30934,6 @@ containing the model that failed its Check. If the Psyker survives Perils of the
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="46ed-6943-ff71-a654" name="Chainaxe" hidden="false" collective="false" import="true" targetId="ed76-dace-31e4-b174" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c497-8388-e3cb-49c2" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="fede-0d0a-d455-056d" name="Fenrisian Axe" hidden="false" collective="false" import="true" targetId="72ba-d2df-d98b-8b5d" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8abe-b05d-fd84-7959" type="max"/>
-                  </constraints>
-                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="ef56-eedd-5f83-4453" name="3) Wargear" hidden="false" collective="false" import="true">
@@ -31059,9 +31049,14 @@ containing the model that failed its Check. If the Psyker survives Perils of the
                 <entryLink id="ac92-8d82-9e4f-4c45" name="Two Bolt Pistols" hidden="false" collective="false" import="true" targetId="02ca-5c58-a852-8020" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
-                      <conditions>
-                        <condition field="selections" scope="d30b-59bb-8ae0-36d1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="880e-822b-0170-cff5" type="equalTo"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="d30b-59bb-8ae0-36d1" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d72-7f6d-6330-6871" type="greaterThan"/>
+                            <condition field="selections" scope="d30b-59bb-8ae0-36d1" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="880e-822b-0170-cff5" type="greaterThan"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </entryLink>
@@ -31140,7 +31135,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1100-0433-5ecd-655a" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="e013-14b4-8b7a-8277" name="Destroyer w/Asphyx/ Bolt Pistol" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="e013-14b4-8b7a-8277" name="Destroyer w/Asphyx Pistol &amp; Bolt Pistol" hidden="false" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -31558,7 +31553,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="a073-7784-de53-bc81" name=" Destroyer w/2x Bolt Pistols, Fen axe" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="a073-7784-de53-bc81" name=" Destroyer w/2x Bolt Pistols, Fenrisian Axe" hidden="false" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -31680,7 +31675,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="bd56-1a8b-ee84-ab51" name="Destroyer w/2x Hand Flamers, Fen Axe" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="bd56-1a8b-ee84-ab51" name="Destroyer w/2x Hand Flamers, Fenrisian Axe" hidden="false" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -31796,7 +31791,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f6f9-60f4-bd23-6c63" name="Destroyer w/2x Volkite Serpenta, Fen Axe" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="f6f9-60f4-bd23-6c63" name="Destroyer w/2x Volkite Serpenta, Fenrisian Axe" hidden="false" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -31949,7 +31944,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
                 </profile>
               </profiles>
               <selectionEntryGroups>
-                <selectionEntryGroup id="1b94-8374-7f54-bdb1" name="CCW:" hidden="false" collective="false" import="true" defaultSelectionEntryId="e4d1-5d1b-b715-6751">
+                <selectionEntryGroup id="1b94-8374-7f54-bdb1" name="Melee Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="e4d1-5d1b-b715-6751">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d50-6362-46d5-20fa" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22ad-4ced-dffe-7250" type="max"/>
@@ -32037,7 +32032,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup id="6707-ff9f-acae-7806" name="May take:" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="6707-ff9f-acae-7806" name=" May take:" hidden="false" collective="false" import="true">
                   <entryLinks>
                     <entryLink id="7872-7587-1c55-6567" name="Legion Vexilla" hidden="false" collective="false" import="true" targetId="21b1-2a90-9826-1782" type="selectionEntry">
                       <constraints>
@@ -32068,7 +32063,14 @@ containing the model that failed its Check. If the Psyker survives Perils of the
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup id="e8f5-5362-2593-363f" name="Pistol Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="b91b-9ba3-f753-3e68">
+                <selectionEntryGroup id="e8f5-5362-2593-363f" name="Pistol Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="b91b-9ba3-f753-3e68">
+                  <modifiers>
+                    <modifier type="set" field="52c8-82d7-9ec5-b539" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5ba-5d31-0521-0276" type="lessThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52c8-82d7-9ec5-b539" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3198-dcb1-e775-a7d3" type="min"/>
@@ -32080,16 +32082,39 @@ containing the model that failed its Check. If the Psyker survives Perils of the
                       </constraints>
                       <selectionEntryGroups>
                         <selectionEntryGroup id="a9f1-c190-658f-28b0" name="Offhand" hidden="false" collective="false" import="true" defaultSelectionEntryId="8dae-d32d-388c-76c3">
+                          <modifiers>
+                            <modifier type="set" field="f2da-01d3-4054-046d" value="1.0">
+                              <conditions>
+                                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2441-ff4a-c3ce-7f51" type="equalTo"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
                           <constraints>
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12eb-6f92-3450-d4ba" type="max"/>
+                            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2da-01d3-4054-046d" type="min"/>
                           </constraints>
                           <entryLinks>
                             <entryLink id="4d54-5e18-b102-3239" name="Asphyx Bolt Pistol" hidden="false" collective="false" import="true" targetId="07f7-c486-f597-a1b9" type="selectionEntry">
                               <constraints>
                                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1d0-011c-40e9-9370" type="max"/>
                               </constraints>
+                              <costs>
+                                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+                              </costs>
                             </entryLink>
                             <entryLink id="8dae-d32d-388c-76c3" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry">
+                              <modifiers>
+                                <modifier type="set" field="hidden" value="true">
+                                  <conditionGroups>
+                                    <conditionGroup type="or">
+                                      <conditions>
+                                        <condition field="selections" scope="d30b-59bb-8ae0-36d1" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="880e-822b-0170-cff5" type="greaterThan"/>
+                                        <condition field="selections" scope="d30b-59bb-8ae0-36d1" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d72-7f6d-6330-6871" type="greaterThan"/>
+                                      </conditions>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                </modifier>
+                              </modifiers>
                               <constraints>
                                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df8c-1302-89c2-952f" type="max"/>
                               </constraints>
@@ -32098,6 +32123,9 @@ containing the model that failed its Check. If the Psyker survives Perils of the
                               <constraints>
                                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ea6-e432-550a-5bd0" type="max"/>
                               </constraints>
+                              <costs>
+                                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+                              </costs>
                             </entryLink>
                           </entryLinks>
                         </selectionEntryGroup>
@@ -32110,13 +32138,19 @@ containing the model that failed its Check. If the Psyker survives Perils of the
                             </modifier>
                             <modifier type="set" field="2b78-9e4f-e0e9-a02d" value="1.0">
                               <conditions>
-                                <condition field="selections" scope="d30b-59bb-8ae0-36d1" value="9.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="lessThan"/>
+                                <condition field="selections" scope="d30b-59bb-8ae0-36d1" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="lessThan"/>
+                              </conditions>
+                            </modifier>
+                            <modifier type="set" field="f4b8-69ef-bad5-c625" value="1.0">
+                              <conditions>
+                                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a9f1-c190-658f-28b0" type="equalTo"/>
                               </conditions>
                             </modifier>
                           </modifiers>
                           <constraints>
                             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2b78-9e4f-e0e9-a02d" type="max"/>
                             <constraint field="selections" scope="d30b-59bb-8ae0-36d1" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7314-c353-9438-7859" type="max"/>
+                            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4b8-69ef-bad5-c625" type="min"/>
                           </constraints>
                           <entryLinks>
                             <entryLink id="bf4b-0031-356d-8b86" name="Missile Launcher (With suspensor web and rad missiles only)" hidden="false" collective="false" import="true" targetId="d000-9713-6bc2-e93b" type="selectionEntry">
@@ -32135,12 +32169,18 @@ containing the model that failed its Check. If the Psyker survives Perils of the
                                   <modifiers>
                                     <modifier type="set" field="hidden" value="false">
                                       <conditions>
-                                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="equalTo"/>
+                                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="equalTo"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="set" field="9d13-6f55-f308-481e" value="1.0">
+                                      <conditions>
+                                        <condition field="selections" scope="d30b-59bb-8ae0-36d1" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fae4-6429-a591-d82f" type="greaterThan"/>
                                       </conditions>
                                     </modifier>
                                   </modifiers>
                                   <constraints>
                                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2f09-0fe0-07ce-c048" type="max"/>
+                                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d13-6f55-f308-481e" type="min"/>
                                   </constraints>
                                   <costs>
                                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
@@ -32179,7 +32219,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <entryLinks>
-                    <entryLink id="7f3d-0bf4-3b69-5d87" name="Two Asphyx Bolt Pistols" hidden="false" collective="false" import="true" targetId="a03e-291a-b611-b548" type="selectionEntry">
+                    <entryLink id="7f3d-0bf4-3b69-5d87" name="Two Asphyx Bolt Pistols" hidden="false" collective="false" import="true" targetId="263e-fa2a-768b-aa9c" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5d8-6484-2e4f-a992" type="max"/>
                       </constraints>
@@ -32187,7 +32227,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="25ac-b186-5d8a-ee7c" name="Two Alchem Pistols" hidden="false" collective="false" import="true" targetId="9b30-d725-82b2-637e" type="selectionEntry">
+                    <entryLink id="25ac-b186-5d8a-ee7c" name="Two Alchem Pistols" hidden="false" collective="false" import="true" targetId="b330-8572-2fea-3bee" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e23-a80c-43a6-119d" type="max"/>
                       </constraints>
@@ -32195,7 +32235,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="69bd-6a5e-a543-aafc" name="Two Dragon&apos;s Breath Pistols" hidden="false" collective="false" import="true" targetId="d20e-2010-469c-c5b7" type="selectionEntry">
+                    <entryLink id="69bd-6a5e-a543-aafc" name="Two Dragon&apos;s Breath Pistols" hidden="false" collective="false" import="true" targetId="2d48-b470-add1-ea5f" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6980-d890-889f-3152" type="max"/>
                       </constraints>
@@ -32203,7 +32243,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="0e56-4026-b1d0-f0a0" name="Two Volkite Serpenta" hidden="false" collective="false" import="true" targetId="837a-2c69-79d3-f382" type="selectionEntry">
+                    <entryLink id="0e56-4026-b1d0-f0a0" name="Two Volkite Serpenta" hidden="false" collective="false" import="true" targetId="5148-691a-f7fc-aa9c" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da73-b5ee-d7cc-518b" type="max"/>
                       </constraints>
@@ -32211,7 +32251,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="eab5-eebc-bd6d-aa93" name="Two Hand Flamers" hidden="false" collective="false" import="true" targetId="d202-8f0a-8fe9-a59c" type="selectionEntry">
+                    <entryLink id="eab5-eebc-bd6d-aa93" name="Two Hand Flamers" hidden="false" collective="false" import="true" targetId="5b3f-2b0e-245b-712f" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ad8-8bf1-0350-ecf4" type="max"/>
                       </constraints>
@@ -32219,7 +32259,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="66cf-56d0-347e-158b" name="Two Shrapnel Pistols" hidden="false" collective="false" import="true" targetId="880e-822b-0170-cff5" type="selectionEntry">
+                    <entryLink id="66cf-56d0-347e-158b" name="Two Shrapnel Pistols" hidden="false" collective="false" import="true" targetId="73dc-8e0f-abbe-27d6" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cabf-42ee-65b3-bb0c" type="max"/>
                       </constraints>
@@ -32227,19 +32267,24 @@ containing the model that failed its Check. If the Psyker survives Perils of the
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="4.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="b91b-9ba3-f753-3e68" name="Two Bolt Pistols" hidden="false" collective="false" import="true" targetId="02ca-5c58-a852-8020" type="selectionEntry">
+                    <entryLink id="b91b-9ba3-f753-3e68" name="Two Bolt Pistols" hidden="false" collective="false" import="true" targetId="cfa6-e4c6-a328-6f4f" type="selectionEntry">
                       <modifiers>
                         <modifier type="set" field="hidden" value="true">
-                          <conditions>
-                            <condition field="selections" scope="d30b-59bb-8ae0-36d1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="880e-822b-0170-cff5" type="equalTo"/>
-                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition field="selections" scope="d30b-59bb-8ae0-36d1" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="880e-822b-0170-cff5" type="greaterThan"/>
+                                <condition field="selections" scope="d30b-59bb-8ae0-36d1" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d72-7f6d-6330-6871" type="greaterThan"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                       </modifiers>
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76ca-f3c5-3133-ac38" type="max"/>
                       </constraints>
                     </entryLink>
-                    <entryLink id="f6d6-2904-a795-ef76" name="Asphyx Bolt Pistol &amp; Bolt Pistol" hidden="false" collective="false" import="true" targetId="dacb-96f1-2d0d-fe04" type="selectionEntry">
+                    <entryLink id="f6d6-2904-a795-ef76" name="Asphyx Bolt Pistol &amp; Bolt Pistol" hidden="false" collective="false" import="true" targetId="e3d6-451d-82c9-b445" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edc9-8ead-9644-7a2a" type="max"/>
                       </constraints>
@@ -32264,7 +32309,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="00af-6ff3-166e-754a" name="Destroyer w/Alchem Pistol/ Hand Flamer" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="00af-6ff3-166e-754a" name="Destroyer w/Alchem Pistol &amp; Hand Flamer" hidden="false" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -32316,7 +32361,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9bc6-711d-9083-c226" name="Destroyer w/Dragon&apos;s Breath Pistol/ Hand Flamer" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="9bc6-711d-9083-c226" name="Destroyer w/Dragon&apos;s Breath Pistol &amp; Hand Flamer" hidden="false" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -32844,7 +32889,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="7e39-f046-6176-d552" name="1) Bolt Pistol/Chainsword Options" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="7e39-f046-6176-d552" name="1) Bolt Pistol/Chainsword Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="7f18-534f-6799-9efb">
               <modifiers>
                 <modifier type="set" field="4a5e-1df7-9fc9-337c" value="1.0">
                   <conditionGroups>
@@ -32887,7 +32932,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                 </entryLink>
                 <entryLink id="742e-7d4f-935c-2a77" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="e337-adf4-a11f-0280" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63c9-97f1-6962-0bb6" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63c9-97f1-6962-0bb6" type="max"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
@@ -32903,7 +32948,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                 </entryLink>
                 <entryLink id="3a99-3428-84e6-ebfc" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="6923-4e42-5691-b13f" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f252-990e-ec04-aabd" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f252-990e-ec04-aabd" type="max"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
@@ -32911,7 +32956,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                 </entryLink>
                 <entryLink id="5cf7-e9f0-4181-14c5" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="717f-cf0a-1593-4bd8" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66f2-dace-72d3-a5ad" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66f2-dace-72d3-a5ad" type="max"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
@@ -32919,7 +32964,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                 </entryLink>
                 <entryLink id="1fc3-d032-21a0-394c" name="Power Fist" hidden="false" collective="false" import="true" targetId="a3e1-d633-dff9-028b" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34ed-9d28-4837-5184" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34ed-9d28-4837-5184" type="max"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
@@ -32927,7 +32972,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                 </entryLink>
                 <entryLink id="27c7-3723-567e-21bb" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="d535-1da8-290d-69a6" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6d7-66f4-a42d-0393" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6d7-66f4-a42d-0393" type="max"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
@@ -32936,9 +32981,14 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                 <entryLink id="7f18-534f-6799-9efb" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
-                      <conditions>
-                        <condition field="selections" scope="a8e9-70e1-b8bc-8ee2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d72-7f6d-6330-6871" type="atLeast"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="a8e9-70e1-b8bc-8ee2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d72-7f6d-6330-6871" type="atLeast"/>
+                            <condition field="selections" scope="a8e9-70e1-b8bc-8ee2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb41-0199-e8e8-622b" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -32955,7 +33005,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                 </entryLink>
                 <entryLink id="124c-1d0a-6567-b310" name="Graviton Pistol" hidden="false" collective="false" import="true" targetId="0087-19d3-eca0-cc75" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30b0-9276-b3cf-f4fe" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30b0-9276-b3cf-f4fe" type="max"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
@@ -32963,7 +33013,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                 </entryLink>
                 <entryLink id="5e9e-1ed6-42b2-b3cc" name="Dragon&apos;s Breath Pistol" hidden="false" collective="false" import="true" targetId="c1cb-0fa7-0d39-73ae" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afd5-ec8c-32c3-ab09" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afd5-ec8c-32c3-ab09" type="max"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
@@ -32971,7 +33021,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                 </entryLink>
                 <entryLink id="4aa3-7fbf-8783-01f1" name="Raven&apos;s Talon" hidden="false" collective="false" import="true" targetId="09d8-64f5-1936-e8ab" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b067-ea28-f644-f52a" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b067-ea28-f644-f52a" type="max"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
@@ -32991,7 +33041,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                 </entryLink>
                 <entryLink id="c50b-3a0f-2e95-4329" name="Alchem Pistol" hidden="false" collective="false" import="true" targetId="1899-9e9e-76dd-a7ba" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52e2-d91f-ebd7-dabe" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52e2-d91f-ebd7-dabe" type="max"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
@@ -32999,7 +33049,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                 </entryLink>
                 <entryLink id="7bb9-2076-a6d2-7f17" name="Æther-Fire Pistol" hidden="false" collective="false" import="true" targetId="ae13-0ae8-a3ba-f6ff" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d313-a868-54b3-aab7" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d313-a868-54b3-aab7" type="max"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
@@ -33015,7 +33065,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                 </entryLink>
                 <entryLink id="79ee-3073-7bc3-24ad" name="Warpfire Pistol" hidden="false" collective="false" import="true" targetId="a94d-1f53-2902-0237" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70aa-2173-0770-e44f" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70aa-2173-0770-e44f" type="max"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
@@ -33023,7 +33073,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                 </entryLink>
                 <entryLink id="6a69-ebdc-3fa9-ce92" name="Inferno Pistol" hidden="false" collective="false" import="true" targetId="dcd1-8b2a-9d97-40ef" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3cd-d398-a50d-d13e" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3cd-d398-a50d-d13e" type="max"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
@@ -33031,7 +33081,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                 </entryLink>
                 <entryLink id="4edb-746d-303c-6998" name="Power Weapon" hidden="false" collective="false" import="true" targetId="8d9c-9f80-c0fd-adcf" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1f9-d01d-ed10-0a8f" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1f9-d01d-ed10-0a8f" type="max"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
@@ -33146,7 +33196,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="6650-b0cd-fb32-b405" name="0) Legionaries" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="6650-b0cd-fb32-b405" name="0) Legionaries" hidden="false" collective="false" import="true" defaultSelectionEntryId="d491-d1b6-0c2a-ed9c">
           <constraints>
             <constraint field="selections" scope="parent" value="19.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc1c-8767-8431-57ca" type="max"/>
             <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08ee-a1cc-edfb-7e98" type="min"/>
@@ -33338,7 +33388,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="12.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="d491-d1b6-0c2a-ed9c" name="Legionary w/ Chainsword/Bolt Pistol" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="d491-d1b6-0c2a-ed9c" name=" Legionary w/ Chainsword/Bolt Pistol" hidden="false" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -33502,7 +33552,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                 </profile>
               </profiles>
               <selectionEntryGroups>
-                <selectionEntryGroup id="c44b-97f7-25ec-2c77" name="Chainsword:" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="c44b-97f7-25ec-2c77" name="Chainsword:" hidden="false" collective="false" import="true" defaultSelectionEntryId="076c-b2eb-b473-ac6f">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b94c-53ad-3cdc-f298" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ac0-f833-7cad-a7dc" type="max"/>
@@ -33585,7 +33635,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup id="4905-77a9-cf62-9166" name="Bolt Pistol" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="4905-77a9-cf62-9166" name="Bolt Pistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="e16d-a86e-7507-b8bc">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2658-af15-0046-b6c2" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9655-dbab-3141-f212" type="max"/>
@@ -33659,9 +33709,14 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                     <entryLink id="e16d-a86e-7507-b8bc" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry">
                       <modifiers>
                         <modifier type="set" field="hidden" value="true">
-                          <conditions>
-                            <condition field="selections" scope="a8e9-70e1-b8bc-8ee2" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="85ce-4c16-e2d7-f46c" type="greaterThan"/>
-                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition field="selections" scope="a8e9-70e1-b8bc-8ee2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d72-7f6d-6330-6871" type="atLeast"/>
+                                <condition field="selections" scope="a8e9-70e1-b8bc-8ee2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb41-0199-e8e8-622b" type="atLeast"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                       </modifiers>
                       <constraints>
@@ -33742,7 +33797,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dbd4-930e-e003-9449" name="Mortalis Destroyer Squad" publicationId="a716-c1c4-7b26-8424" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="dbd4-930e-e003-9449" name="*Mortalis Destroyer Squad" publicationId="a716-c1c4-7b26-8424" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="1845-6dea-afaa-9c05" name="Bitter Duty" hidden="false" targetId="d1b8-31da-c53c-4fe2" type="rule"/>
         <infoLink id="9533-4e59-9981-83e1" name="Counter-Attack (X)" hidden="false" targetId="fd6d-2a76-10e0-936a" type="rule">
@@ -33874,16 +33929,6 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="f839-13c5-e0aa-022e" name="Chainaxe" hidden="false" collective="false" import="true" targetId="ed76-dace-31e4-b174" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8df2-27d8-35b0-815b" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="55df-c6fc-e448-d4cd" name="Fenrisian Axe" hidden="false" collective="false" import="true" targetId="72ba-d2df-d98b-8b5d" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2c6-2ad0-cb49-2409" type="max"/>
-                  </constraints>
-                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="45e0-bf7c-66dd-d287" name="3) Wargear" hidden="false" collective="false" import="true">
@@ -33999,9 +34044,14 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                 <entryLink id="790a-767c-68f3-2730" name="Two Bolt Pistols" hidden="false" collective="false" import="true" targetId="02ca-5c58-a852-8020" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
-                      <conditions>
-                        <condition field="selections" scope="dbd4-930e-e003-9449" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="880e-822b-0170-cff5" type="equalTo"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="dbd4-930e-e003-9449" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d72-7f6d-6330-6871" type="atLeast"/>
+                            <condition field="selections" scope="dbd4-930e-e003-9449" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="880e-822b-0170-cff5" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </entryLink>
@@ -34498,18 +34548,12 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="22.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="63fd-b3cc-c9be-8d55" name=" Destroyer w/2x Bolt Pistols, Fen axe" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="63fd-b3cc-c9be-8d55" name=" Destroyer w/2x Bolt Pistols, Fenrisian Axe" hidden="false" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="dbd4-930e-e003-9449" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d72-7f6d-6330-6871" type="atLeast"/>
-                        <condition field="selections" scope="dbd4-930e-e003-9449" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="880e-822b-0170-cff5" type="atLeast"/>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4916-965e-8339-44f6" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4916-965e-8339-44f6" type="equalTo"/>
+                  </conditions>
                 </modifier>
               </modifiers>
               <constraints>
@@ -34993,7 +35037,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                 </profile>
               </profiles>
               <selectionEntryGroups>
-                <selectionEntryGroup id="decc-c1f4-94a4-376f" name="CCW:" hidden="false" collective="false" import="true" defaultSelectionEntryId="ab5f-bcec-6700-ea26">
+                <selectionEntryGroup id="decc-c1f4-94a4-376f" name="Melee Weapon:" hidden="false" collective="false" import="true" defaultSelectionEntryId="ab5f-bcec-6700-ea26">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a8e-cea7-4b39-c1b8" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea40-25ee-c6ba-ab9f" type="max"/>
@@ -35003,9 +35047,6 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0af-69ff-8131-6850" type="max"/>
                       </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
-                      </costs>
                     </entryLink>
                     <entryLink id="ab5f-bcec-6700-ea26" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry">
                       <constraints>
@@ -35016,9 +35057,6 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf33-876b-60d7-6988" type="max"/>
                       </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
-                      </costs>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -35054,6 +35092,13 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="421e-f875-bb26-b8ae" name="Pistol Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="7c0d-e30d-618b-0201">
+                  <modifiers>
+                    <modifier type="set" field="944f-b5a9-26a9-f49b" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bc2d-b95d-18c4-6fcb" type="lessThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="944f-b5a9-26a9-f49b" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1776-d474-f7f0-9dd7" type="min"/>
@@ -35065,16 +35110,39 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                       </constraints>
                       <selectionEntryGroups>
                         <selectionEntryGroup id="21d5-610b-4aa2-c554" name="Offhand" hidden="false" collective="false" import="true" defaultSelectionEntryId="6eaf-2e0e-29f5-1995">
+                          <modifiers>
+                            <modifier type="set" field="3fa6-5d34-1277-37fd" value="1.0">
+                              <conditions>
+                                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ec5b-93a5-ae52-1f64" type="equalTo"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
                           <constraints>
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="944c-cd2d-dbc8-f12e" type="max"/>
+                            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fa6-5d34-1277-37fd" type="min"/>
                           </constraints>
                           <entryLinks>
                             <entryLink id="5118-219f-8dd0-e7cb" name="Asphyx Bolt Pistol" hidden="false" collective="false" import="true" targetId="07f7-c486-f597-a1b9" type="selectionEntry">
                               <constraints>
                                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32c2-7db7-979f-7c28" type="max"/>
                               </constraints>
+                              <costs>
+                                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+                              </costs>
                             </entryLink>
                             <entryLink id="6eaf-2e0e-29f5-1995" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry">
+                              <modifiers>
+                                <modifier type="set" field="hidden" value="true">
+                                  <conditionGroups>
+                                    <conditionGroup type="or">
+                                      <conditions>
+                                        <condition field="selections" scope="dbd4-930e-e003-9449" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d72-7f6d-6330-6871" type="atLeast"/>
+                                        <condition field="selections" scope="dbd4-930e-e003-9449" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="880e-822b-0170-cff5" type="atLeast"/>
+                                      </conditions>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                </modifier>
+                              </modifiers>
                               <constraints>
                                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91f2-87f8-92ec-3555" type="max"/>
                               </constraints>
@@ -35083,6 +35151,9 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                               <constraints>
                                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9d9-b8f6-4b28-b623" type="max"/>
                               </constraints>
+                              <costs>
+                                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+                              </costs>
                             </entryLink>
                           </entryLinks>
                         </selectionEntryGroup>
@@ -35095,53 +35166,21 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                             </modifier>
                             <modifier type="set" field="341e-6634-1164-99b5" value="1.0">
                               <conditions>
-                                <condition field="selections" scope="dbd4-930e-e003-9449" value="9.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="lessThan"/>
+                                <condition field="selections" scope="dbd4-930e-e003-9449" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="lessThan"/>
+                              </conditions>
+                            </modifier>
+                            <modifier type="set" field="b26d-4940-8182-db09" value="1.0">
+                              <conditions>
+                                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21d5-610b-4aa2-c554" type="equalTo"/>
                               </conditions>
                             </modifier>
                           </modifiers>
                           <constraints>
                             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="341e-6634-1164-99b5" type="max"/>
                             <constraint field="selections" scope="dbd4-930e-e003-9449" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3553-2964-01d1-7c0b" type="max"/>
+                            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b26d-4940-8182-db09" type="min"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink id="6623-a2b9-b363-1a60" name="Missile Launcher (With suspensor web and rad missiles only)" hidden="false" collective="false" import="true" targetId="d000-9713-6bc2-e93b" type="selectionEntry">
-                              <modifiers>
-                                <modifier type="set" field="name" value="Missile Launcher (with suspensor web, rad &amp; stasis missiles)">
-                                  <conditions>
-                                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fae4-6429-a591-d82f" type="equalTo"/>
-                                  </conditions>
-                                </modifier>
-                              </modifiers>
-                              <constraints>
-                                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b76-78db-102d-ed04" type="max"/>
-                              </constraints>
-                              <entryLinks>
-                                <entryLink id="1cd4-243b-6a44-fb7f" name="Stasis Missiles" hidden="true" collective="false" import="true" targetId="fae4-6429-a591-d82f" type="selectionEntry">
-                                  <modifiers>
-                                    <modifier type="set" field="hidden" value="false">
-                                      <conditions>
-                                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="equalTo"/>
-                                      </conditions>
-                                    </modifier>
-                                  </modifiers>
-                                  <constraints>
-                                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="941e-7563-52ab-688c" type="max"/>
-                                  </constraints>
-                                  <costs>
-                                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-                                  </costs>
-                                </entryLink>
-                                <entryLink id="8472-6275-37b1-6847" name="Suspensor Web" hidden="false" collective="false" import="true" targetId="6472-db7f-08b0-d7c7" type="selectionEntry">
-                                  <constraints>
-                                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cc8-ad37-b93f-b333" type="min"/>
-                                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ccc-e415-2afd-1b7b" type="max"/>
-                                  </constraints>
-                                </entryLink>
-                              </entryLinks>
-                              <costs>
-                                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
-                              </costs>
-                            </entryLink>
                             <entryLink id="b7e6-bfb9-57db-24f0" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="717f-cf0a-1593-4bd8" type="selectionEntry">
                               <constraints>
                                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8c2-fdcf-1fb2-f73e" type="max"/>
@@ -35185,13 +35224,57 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
                               </costs>
                             </entryLink>
+                            <entryLink id="34a3-703c-9282-70dd" name="Missile Launcher (With suspensor web and rad missiles only)" hidden="false" collective="false" import="true" targetId="d000-9713-6bc2-e93b" type="selectionEntry">
+                              <modifiers>
+                                <modifier type="set" field="name" value="Missile Launcher (with suspensor web, rad &amp; stasis missiles)">
+                                  <conditions>
+                                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fae4-6429-a591-d82f" type="equalTo"/>
+                                  </conditions>
+                                </modifier>
+                              </modifiers>
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50a7-576a-6eaf-1260" type="max"/>
+                              </constraints>
+                              <entryLinks>
+                                <entryLink id="829d-e6f3-7148-9f3c" name="Stasis Missiles" hidden="true" collective="false" import="true" targetId="fae4-6429-a591-d82f" type="selectionEntry">
+                                  <modifiers>
+                                    <modifier type="set" field="hidden" value="false">
+                                      <conditions>
+                                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="equalTo"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="set" field="c1c7-5540-9cda-09db" value="1.0">
+                                      <conditions>
+                                        <condition field="selections" scope="dbd4-930e-e003-9449" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fae4-6429-a591-d82f" type="greaterThan"/>
+                                      </conditions>
+                                    </modifier>
+                                  </modifiers>
+                                  <constraints>
+                                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0235-3b8e-d8b3-1efd" type="max"/>
+                                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1c7-5540-9cda-09db" type="min"/>
+                                  </constraints>
+                                  <costs>
+                                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                                  </costs>
+                                </entryLink>
+                                <entryLink id="689e-0dba-b445-9ace" name="Suspensor Web" hidden="false" collective="false" import="true" targetId="6472-db7f-08b0-d7c7" type="selectionEntry">
+                                  <constraints>
+                                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a359-5089-7677-a5e8" type="min"/>
+                                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a726-1417-27b3-9fff" type="max"/>
+                                  </constraints>
+                                </entryLink>
+                              </entryLinks>
+                              <costs>
+                                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+                              </costs>
+                            </entryLink>
                           </entryLinks>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <entryLinks>
-                    <entryLink id="4366-f154-cc9b-99d4" name="Two Asphyx Bolt Pistols" hidden="false" collective="false" import="true" targetId="a03e-291a-b611-b548" type="selectionEntry">
+                    <entryLink id="4366-f154-cc9b-99d4" name="Two Asphyx Bolt Pistols" hidden="false" collective="false" import="true" targetId="263e-fa2a-768b-aa9c" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e830-fc2e-7917-4b8e" type="max"/>
                       </constraints>
@@ -35199,7 +35282,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="405e-8faf-6e1b-2883" name="Two Alchem Pistols" hidden="false" collective="false" import="true" targetId="9b30-d725-82b2-637e" type="selectionEntry">
+                    <entryLink id="405e-8faf-6e1b-2883" name="Two Alchem Pistols" hidden="false" collective="false" import="true" targetId="b330-8572-2fea-3bee" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d951-2c1b-2fbc-934c" type="max"/>
                       </constraints>
@@ -35207,7 +35290,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="1d48-155a-81a8-d0be" name="Two Dragon&apos;s Breath Pistols" hidden="false" collective="false" import="true" targetId="d20e-2010-469c-c5b7" type="selectionEntry">
+                    <entryLink id="1d48-155a-81a8-d0be" name="Two Dragon&apos;s Breath Pistols" hidden="false" collective="false" import="true" targetId="2d48-b470-add1-ea5f" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ea0-471a-5bb9-e62f" type="max"/>
                       </constraints>
@@ -35215,7 +35298,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="42b5-79c4-5fad-aa93" name="Two Volkite Serpenta" hidden="false" collective="false" import="true" targetId="837a-2c69-79d3-f382" type="selectionEntry">
+                    <entryLink id="42b5-79c4-5fad-aa93" name="Two Volkite Serpenta" hidden="false" collective="false" import="true" targetId="5148-691a-f7fc-aa9c" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e872-856f-68e9-a175" type="max"/>
                       </constraints>
@@ -35223,7 +35306,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="512b-74ae-daff-8cf3" name="Two Hand Flamers" hidden="false" collective="false" import="true" targetId="d202-8f0a-8fe9-a59c" type="selectionEntry">
+                    <entryLink id="512b-74ae-daff-8cf3" name="Two Hand Flamers" hidden="false" collective="false" import="true" targetId="5b3f-2b0e-245b-712f" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b102-246f-a4fa-f49d" type="max"/>
                       </constraints>
@@ -35231,7 +35314,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="01b1-b53e-51ae-a1f7" name="Two Shrapnel Pistols" hidden="false" collective="false" import="true" targetId="880e-822b-0170-cff5" type="selectionEntry">
+                    <entryLink id="01b1-b53e-51ae-a1f7" name="Two Shrapnel Pistols" hidden="false" collective="false" import="true" targetId="73dc-8e0f-abbe-27d6" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4cb-be8d-4139-f34d" type="max"/>
                       </constraints>
@@ -35239,19 +35322,24 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="4.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="7c0d-e30d-618b-0201" name="Two Bolt Pistols" hidden="false" collective="false" import="true" targetId="02ca-5c58-a852-8020" type="selectionEntry">
+                    <entryLink id="7c0d-e30d-618b-0201" name="Two Bolt Pistols" hidden="false" collective="false" import="true" targetId="cfa6-e4c6-a328-6f4f" type="selectionEntry">
                       <modifiers>
                         <modifier type="set" field="hidden" value="true">
-                          <conditions>
-                            <condition field="selections" scope="dbd4-930e-e003-9449" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="880e-822b-0170-cff5" type="equalTo"/>
-                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition field="selections" scope="dbd4-930e-e003-9449" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d72-7f6d-6330-6871" type="atLeast"/>
+                                <condition field="selections" scope="dbd4-930e-e003-9449" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="880e-822b-0170-cff5" type="atLeast"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                       </modifiers>
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd3a-6766-8362-c58c" type="max"/>
                       </constraints>
                     </entryLink>
-                    <entryLink id="3d7c-e77e-1b1e-5f99" name="Asphyx Bolt Pistol &amp; Bolt Pistol" hidden="false" collective="false" import="true" targetId="dacb-96f1-2d0d-fe04" type="selectionEntry">
+                    <entryLink id="3d7c-e77e-1b1e-5f99" name="Asphyx Bolt Pistol &amp; Bolt Pistol" hidden="false" collective="false" import="true" targetId="e3d6-451d-82c9-b445" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a49e-7393-b94e-92d7" type="max"/>
                       </constraints>
@@ -35308,6 +35396,116 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="57.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b330-8572-2fea-3bee" name="Two Alchem Pistols" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd1f-1c51-706c-e5f7" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink id="18d7-3e50-be56-d164" name="Alchem Pistol " hidden="false" targetId="c9bc-f720-f183-be0d" type="profile"/>
+        <infoLink id="ca00-e96a-b2bb-9f02" name="Template Weapons" hidden="false" targetId="5e0e-88e6-db81-5a70" type="rule"/>
+        <infoLink id="bf53-ff2c-e567-3f46" name="Fleshbane" hidden="false" targetId="40cd-9505-253c-e76f" type="rule"/>
+        <infoLink id="17bb-eb4a-d122-5b24" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="263e-fa2a-768b-aa9c" name="Two Asphyx Bolt Pistols" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink id="7715-a104-bb65-7ade" name="Asphyx Bolt Pistol" hidden="false" targetId="7a88-ce87-0cb7-6a99" type="profile"/>
+        <infoLink id="ea12-2789-dee3-16b9" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cfa6-e4c6-a328-6f4f" name="Two Bolt Pistols" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1c02-1058-ab8b-f979" name="Bolt Pistol" hidden="false" targetId="c0d3-c136-ef6e-3ff7" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2d48-b470-add1-ea5f" name="Two Dragon&apos;s Breath Pistols" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink id="bed9-dfc6-fc05-2fd5" name="Dragon&apos;s Breath Pistol" hidden="false" targetId="c4ff-6453-7bc3-1832" type="profile"/>
+        <infoLink id="a870-8fa1-8bbf-a0d6" name="Template Weapons" hidden="false" targetId="5e0e-88e6-db81-5a70" type="rule"/>
+        <infoLink id="2ca0-5cf2-881d-b514" name="Dragon&apos;s Breath" hidden="false" targetId="655c-988f-74b5-7e17" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5b3f-2b0e-245b-712f" name="Two Hand Flamers" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="69ed-86b6-6792-4d28" name="Hand Flamer" hidden="false" targetId="eb62-ccfd-b605-ab5e" type="profile"/>
+        <infoLink id="a32c-1f44-053c-6d42" name="Template Weapons" hidden="false" targetId="5e0e-88e6-db81-5a70" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="73dc-8e0f-abbe-27d6" name="Two Shrapnel Pistols" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink id="3b88-300f-08ea-2e1c" name="Shrapnel Pistol" hidden="false" targetId="237f-c069-a680-dfae" type="profile"/>
+        <infoLink id="6616-1705-c5ff-bfc5" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5148-691a-f7fc-aa9c" name="Two Volkite Serpenta" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ee6c-fb54-a7ac-dd89" name="Volkite Serpenta" hidden="false" targetId="6150-1ce8-ef78-f686" type="profile"/>
+        <infoLink id="8cc3-938a-bd96-82bd" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e3d6-451d-82c9-b445" name="Asphyx Bolt Pistol &amp; Bolt Pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink id="325e-77a2-2686-5294" name="Asphyx Bolt Pistol" hidden="false" targetId="7a88-ce87-0cb7-6a99" type="profile"/>
+        <infoLink id="fef4-bb73-14d2-8284" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+        <infoLink id="e751-f4bf-0880-296b" name="Bolt Pistol" hidden="false" targetId="c0d3-c136-ef6e-3ff7" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
