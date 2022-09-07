@@ -3258,6 +3258,9 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -4929,6 +4932,9 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="4cc0-c7df-7157-6bf0" name="Volkite Incinerator" publicationId="bde1-6db1-163b-3b76" page=" &amp; 123" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntries>
@@ -4950,6 +4956,9 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
           <infoLinks>
             <infoLink id="2bca-f8d1-dc31-245a" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="9149-00e8-dd49-c213" name="Volkite incinerator (Melee)" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
@@ -4974,8 +4983,14 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
           <infoLinks>
             <infoLink id="e4db-a990-aa36-e516" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="9033-c395-43b3-5612" name="Arc Scourge" publicationId="bde1-6db1-163b-3b76" page="120" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -5000,6 +5015,9 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
           </modifiers>
         </infoLink>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="9978-8a9e-ab4b-5e0f" name="Light Autocannon" publicationId="bde1-6db1-163b-3b76" page="114" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -5012,6 +5030,9 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="3d50-2f85-06ff-6aee" name="Close Combat Weapon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -5024,6 +5045,24 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="654d-be88-b0a8-7ae5" name="Laspistol" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="a0ca-3d2e-5151-b9c7" name="Laspistol" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -5380,6 +5419,14 @@ When deployed onto the battlefield (either at the start of the battle or when ar
     </rule>
     <rule id="50f4-db05-3e45-467f" name="Djinn-Sight" publicationId="bde1-6db1-163b-3b76" page="104" hidden="false">
       <description>When making Shooting Attacks, djinn-sight reduces the benefits of any Cover Save the target unit has by -2 (a 4+ becoming a 6+, a 5+ being ignored entirely, and so on). Additionally, Infiltrators may not be set up within 24&quot; of units with this special rule, regardless of line of sight.</description>
+    </rule>
+    <rule id="a686-026f-6674-102e" name="Guardian Unit Sub-type" publicationId="bde1-6db1-163b-3b76" page="91" hidden="false">
+      <description>• Units including models with the Guardian Unit Sub-type may Embark freely upon models with the Transport Unit Sub-type and within Buildings and Fortifications as if they had the Infantry Type, even if their Unit Type would normally restrict this.
+• Units including models with the Guardian Unit Sub-type may be joined by friendly models with the Character Unit Sub-type or Independent Character special rule, and when they are joined in this manner may make Reactions, even if their Unit Type would normally restrict this.
+• If a unit contains any models with the Guardian Unit Sub-type as well as one or more models with the Character Unit Sub-type, any Wounds which would be allocated to the Character (even those caused by the Precision Strikes (X) or Sniper special rules) may instead be allocated to a model with the Guardian Unit Sub-type first.
+• Unless they are joined by a friendly Character, all models with the Guardian Unit Sub-type suffer the following provisions:
+-	Reduce their Movement Characteristic by -2 and may not Run.
+-	Reduce their Initiative Characteristic to 1.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
